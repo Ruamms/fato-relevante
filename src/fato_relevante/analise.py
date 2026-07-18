@@ -279,6 +279,7 @@ def montar_raio_x(
         gestao=fundo.tipo_gestao,
         dados_ate=formato.competencia_br(atual["competencia"]),
         cotacao_em=_cotacao_com_hora(meta_cotacao["cotado_em"]) if meta_cotacao else "",
+        cotado_em_iso=(meta_cotacao["cotado_em"] or "") if meta_cotacao else "",
         indicadores=indicadores,
         red_flags=resultado.flags,
         sem_alerta=resultado.aprovadas,

@@ -234,7 +234,7 @@ table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-a
   </div>
   <div class="meta">
     {_e(raiox.cnpj)} · {_e(raiox.classificacao)} · Gestão {_e(raiox.gestao.lower())}<br>
-    informes CVM até <b>{_e(raiox.dados_ate)}</b>{_cotacao_em(raiox)} · relatório gerado em {agora.strftime("%d/%m/%Y %H:%M")}
+    informes CVM até <b>{_e(raiox.dados_ate)}</b>{_cotacao_em(raiox, agora)} · relatório gerado em {agora.strftime("%d/%m/%Y %H:%M")}
   </div>
 
   <div class="cards">{_cards_indicadores(raiox)}</div>
@@ -352,10 +352,21 @@ def _selo_html(raiox: RaioX) -> str:
     )
 
 
-def _cotacao_em(raiox: RaioX) -> str:
+def _cotacao_em(raiox: RaioX, agora: datetime) -> str:
     if not raiox.cotacao_em:
         return ""
-    return f" · cotação de <b>{_e(raiox.cotacao_em)}</b>"
+    idade = formato.idade_legivel(raiox.cotado_em_iso, agora)
+    if not idade:
+        return f" · cotação de <b>{_e(raiox.cotacao_em)}</b>"
+    defasada = "dia" in idade  # mais de 48h: fim de semana/feriado/cache antigo
+    cor = "#eab308" if defasada else "#8b98a9"
+    aviso = " ⚠" if defasada else ""
+    return (
+        f" · cotação de <b>{_e(raiox.cotacao_em)}</b> "
+        f'<span style="color:{cor};cursor:help" title="Idade do preço usado: {_e(idade)}. '
+        "Cotação, P/VP e oscilações refletem esse momento — a fonte tem atraso mínimo de "
+        f'~15 min em relação ao pregão.">({_e(idade)}){aviso}</span>'
+    )
 
 
 def _ajuda(termo: str) -> str:

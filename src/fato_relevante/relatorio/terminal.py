@@ -65,6 +65,15 @@ def _cabecalho(raiox: RaioX) -> Panel:
     if raiox.cotacao_em:
         detalhes += f"  ·  cotação de {raiox.cotacao_em}"
     linha2 = Text(detalhes, style="dim")
+    if raiox.cotado_em_iso:
+        from datetime import datetime
+
+        from .. import formato
+
+        idade = formato.idade_legivel(raiox.cotado_em_iso, datetime.now())
+        if idade:
+            estilo = "yellow" if "dia" in idade else "dim"
+            linha2 = Text.assemble(linha2, (f" ({idade})", estilo))
     return Panel(
         Group(linha1, linha2),
         title="[bold]FATO RELEVANTE[/] [dim]— o raio-x dos ativos da bolsa[/]",

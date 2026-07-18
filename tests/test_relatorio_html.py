@@ -93,6 +93,9 @@ def test_gerar_html_completo(con, zip_cvm):
     assert "informes CVM até <b>02/2026</b>" in pagina
     assert "cotação de <b>17/02/2026</b>" in pagina
     assert "18/07/2026 15:00" in pagina
+    # idade do preço visível e com aviso de defasagem (>48h entre 17/02 e 18/07)
+    assert "(há 151 dias)" in pagina
+    assert "Idade do preço usado" in pagina
     # gráficos SVG embutidos e disclaimer
     assert pagina.count("<svg") >= 2
     assert "não é recomendação de investimento" in pagina

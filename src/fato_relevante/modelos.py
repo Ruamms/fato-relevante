@@ -89,6 +89,7 @@ class RaioX:
     gestao: str
     dados_ate: str
     cotacao_em: str = ""
+    cotado_em_iso: str = ""  # bruto ('AAAA-MM-DD HH:MM') para cálculo de idade no render
     indicadores: list[IndicadorLinha] = field(default_factory=list)
     red_flags: list[RedFlag] = field(default_factory=list)
     sem_alerta: list[str] = field(default_factory=list)
