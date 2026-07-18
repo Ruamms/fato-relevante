@@ -55,7 +55,7 @@ def test_montar_raio_x_com_dados_reais(con, zip_cvm):
     # a CVM grava DY como fração (0.011 = 1,1%); exibição converte para %
     dy = next(linha for linha in raiox.indicadores if linha.nome == "DY mensal")
     assert dy.atual == "1,10%"
-    assert dy.doze_meses == "2,00% 12m"
+    assert dy.doze_meses == "2,00% acumulado"
 
 
 def test_cli_analisar_com_base_carregada(con, zip_cvm, tmp_path, monkeypatch):

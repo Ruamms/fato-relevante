@@ -265,7 +265,7 @@ def montar_raio_x(
                 "Vacância",
                 formato.percentual(vacancia),
                 "—",
-                f"em {formato.competencia_br(imoveis_atuais[0]['competencia'])}",
+                f"informe de {formato.competencia_br(imoveis_atuais[0]['competencia'])}",
             )
         )
     indicadores = _marcar_alertas(indicadores, resultado.flags)
@@ -468,7 +468,7 @@ def _montar_indicadores(
                 "Patrimônio líquido",
                 formato.moeda_compacta(pl),
                 _variacao_12m(serie, "patrimonio_liquido"),
-                f"desde {formato.competencia_br(primeira)}",
+                f"dados desde {formato.competencia_br(primeira)}",
             )
         )
 
@@ -578,7 +578,7 @@ def _dy_acumulado_12m(serie: list[sqlite3.Row]) -> str:
     acumulado = series.dy_acumulado(serie, 12)
     if acumulado is None:
         return "—"
-    return f"{formato.percentual(acumulado * 100)} 12m"
+    return f"{formato.percentual(acumulado * 100)} acumulado"
 
 
 def _media_dy(serie: list[sqlite3.Row]) -> str:

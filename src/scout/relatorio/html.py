@@ -395,9 +395,16 @@ def _cards_indicadores(raiox: RaioX) -> str:
     cards = []
     for linha in raiox.indicadores:
         classe = "card alerta" if linha.alerta else "card"
-        extra = f"12m: {_e(linha.doze_meses)}" if linha.doze_meses != "—" else ""
-        historico = _e(linha.historico) if linha.historico != "—" else ""
-        separador = " · " if extra and historico else ""
+        # cada informação em sua própria linha, com rótulo por extenso
+        detalhes = []
+        if linha.doze_meses != "—":
+            detalhes.append(f"em 12 meses: {linha.doze_meses}")
+        if linha.historico != "—":
+            historico = linha.historico
+            if historico.startswith("média "):
+                historico = "média histórica: " + historico[len("média "):]
+            detalhes.append(historico)
+        extra = "".join(f'<div class="extra">{_e(texto)}</div>' for texto in detalhes)
         aviso = ""
         if linha.alerta:
             motivo = linha.alerta_motivo or "ver a seção Red flags"
@@ -405,8 +412,7 @@ def _cards_indicadores(raiox: RaioX) -> str:
         cards.append(
             f'<div class="{classe}"><div class="nome">{_e(linha.nome)}'
             f"{aviso}{_ajuda(linha.nome)}</div>"
-            f'<div class="valor">{_e(linha.atual)}</div>'
-            f'<div class="extra">{extra}{separador}{historico}</div></div>'
+            f'<div class="valor">{_e(linha.atual)}</div>{extra}</div>'
         )
     return "".join(cards)
 
