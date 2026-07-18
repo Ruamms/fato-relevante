@@ -22,7 +22,7 @@ def _garantir_stdio_utf8() -> None:
 _garantir_stdio_utf8()
 
 app = typer.Typer(
-    help="Scout — conhecimento antes da decisão. Fatos, não dicas.",
+    help="Scout — nós exploramos, você decide. Fatos, não dicas.",
     no_args_is_help=False,
     add_completion=False,
 )
@@ -42,7 +42,7 @@ def principal(ctx: typer.Context) -> None:
 
 def _modo_interativo() -> None:
     console.print()
-    console.print("[bold]SCOUT[/] [dim]— conhecimento antes da decisão[/]")
+    console.print("[bold]SCOUT[/] [dim]— nós exploramos, você decide[/]")
     console.print(
         "[dim]Comandos: [bold]TICKER[/bold] · [bold]TICKER html[/bold] (relatório com gráficos) · "
         "[bold]atualizar[/bold] · [bold]ranking \\[dy|pvp|pl|cotistas] \\[sem-alertas][/bold] · "

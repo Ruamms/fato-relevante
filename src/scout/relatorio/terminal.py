@@ -76,7 +76,7 @@ def _cabecalho(raiox: RaioX) -> Panel:
             linha2 = Text.assemble(linha2, (f" ({idade})", estilo))
     return Panel(
         Group(linha1, linha2),
-        title="[bold]SCOUT[/] [dim]— conhecimento antes da decisão[/]",
+        title="[bold]SCOUT[/] [dim]— nós exploramos, você decide[/]",
         box=box.ROUNDED,
         padding=(0, 1),
     )

@@ -226,7 +226,7 @@ table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-a
 </head>
 <body>
 <div class="pagina">
-  <div class="marca">SCOUT — conhecimento antes da decisão</div>
+  <div class="marca">SCOUT — nós exploramos, você decide</div>
   <div class="topo">
     <h1>{_e(raiox.ticker)} <small>{_e(raiox.nome)}</small></h1>
     {_selo_html(raiox)}
