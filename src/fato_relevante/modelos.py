@@ -55,6 +55,17 @@ class IndicadorLinha:
 
 
 @dataclass(frozen=True)
+class Imovel:
+    """Um imóvel do fundo, do informe trimestral (frações já em %)."""
+
+    nome: str
+    area: float | None
+    vacancia: float | None       # %
+    inadimplencia: float | None  # %
+    pct_receita: float | None    # % da receita do fundo
+
+
+@dataclass(frozen=True)
 class RaioX:
     """Resultado completo da análise de um ativo."""
 
@@ -69,6 +80,8 @@ class RaioX:
     red_flags: list[RedFlag] = field(default_factory=list)
     sem_alerta: list[str] = field(default_factory=list)
     notas: list[str] = field(default_factory=list)
+    imoveis: list[Imovel] = field(default_factory=list)
+    imoveis_em: str = ""  # competência do informe trimestral dos imóveis
     selo: Selo | None = None
     red_flags_avaliadas: bool = True
     exemplo: bool = False

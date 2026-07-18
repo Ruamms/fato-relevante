@@ -11,14 +11,16 @@ import dataclasses
 import sqlite3
 
 from . import armazenamento, formato, redflags, series
-from .modelos import IndicadorLinha, RaioX
+from .modelos import Imovel, IndicadorLinha, RaioX
 from .redflags.contexto import Contexto
 
 # regra disparada -> linha de indicador que ganha o ⚠
 _INDICADOR_DA_REGRA = {
     "distribuicao": "DY mensal",
+    "distribuicao_exata": "DY mensal",
     "diluicao": "Nº de cotas",
     "vp_queda": "VP/cota",
+    "vacancia": "Vacância",
     "cotistas": "Cotistas",
     "pvp_faixa": "P/VP",
 }
@@ -44,6 +46,7 @@ class DadosGraficos:
     pl_por_mes: Serie
     # janela ("12 meses"/"5 anos"/"máximo") -> [(nome da série, pontos % acumulado)]
     rentabilidade: dict[str, list[tuple[str, Serie]]]
+    vacancia: Serie = dataclasses.field(default_factory=list)  # % por trimestre
 
 
 @dataclasses.dataclass(frozen=True)
@@ -63,9 +66,32 @@ def montar_completo(con: sqlite3.Connection, ticker: str) -> AnaliseCompleta | N
     indices = {
         nome: armazenamento.serie_indice(con, nome) for nome in ("CDI", "IPCA")
     }
-    return AnaliseCompleta(
-        raiox=raiox, graficos=_dados_graficos(serie, cotacoes, vp_ajustada, indices)
+    graficos = _dados_graficos(serie, cotacoes, vp_ajustada, indices)
+    graficos = dataclasses.replace(
+        graficos, vacancia=_serie_vacancia(armazenamento.serie_imoveis(con, fundo.cnpj))
     )
+    return AnaliseCompleta(raiox=raiox, graficos=graficos)
+
+
+def _serie_vacancia(imoveis: list[sqlite3.Row]) -> list[tuple[str, float]]:
+    """Vacância % por trimestre, ponderada por área (lixo fora de [0,1] descartado)."""
+    por_competencia: dict[str, list[tuple[float, float]]] = {}
+    for linha in imoveis:
+        if linha["vacancia"] is None or not 0 <= linha["vacancia"] <= 1:
+            continue
+        por_competencia.setdefault(linha["competencia"], []).append(
+            (linha["vacancia"], linha["area"] or 0)
+        )
+    serie_v = []
+    for competencia in sorted(por_competencia):
+        pares = por_competencia[competencia]
+        area_total = sum(area for _, area in pares)
+        if area_total > 0:
+            valor = 100 * sum(v * area for v, area in pares) / area_total
+        else:
+            valor = 100 * sum(v for v, _ in pares) / len(pares)
+        serie_v.append((competencia, valor))
+    return serie_v
 
 
 def _dados_graficos(
@@ -190,12 +216,17 @@ def montar_raio_x(con: sqlite3.Connection, ticker: str) -> RaioX | None:
     meta_cotacao = armazenamento.cotacao_meta(con, ticker)
     preco = meta_cotacao["preco_atual"] if meta_cotacao else None
     vp_ajustada = series.serie_vp_ajustada(serie)
+    imoveis_atuais = armazenamento.imoveis_atuais(con, fundo.cnpj)
+    resultados = armazenamento.serie_resultados(con, fundo.cnpj)
 
     contexto = Contexto(
         serie=serie,
         vp_ajustada=vp_ajustada,
         cotacoes=cotacoes,
         preco_atual=preco,
+        imoveis_atuais=imoveis_atuais,
+        resultados=resultados,
+        tem_informe_trimestral=bool(imoveis_atuais or resultados),
     )
     resultado = redflags.avaliar(contexto)
 
@@ -209,6 +240,16 @@ def montar_raio_x(con: sqlite3.Connection, ticker: str) -> RaioX | None:
         )
 
     indicadores = _montar_indicadores(serie, cotacoes, preco, vp_ajustada)
+    vacancia = contexto.vacancia_atual()
+    if vacancia is not None:
+        indicadores.append(
+            IndicadorLinha(
+                "Vacância",
+                formato.percentual(vacancia),
+                "—",
+                f"em {formato.competencia_br(imoveis_atuais[0]['competencia'])}",
+            )
+        )
     indicadores = _marcar_alertas(indicadores, resultado.flags)
 
     atual = serie[-1]
@@ -224,6 +265,23 @@ def montar_raio_x(con: sqlite3.Connection, ticker: str) -> RaioX | None:
         red_flags=resultado.flags,
         sem_alerta=resultado.aprovadas,
         notas=notas,
+        imoveis=[
+            Imovel(
+                nome=linha["nome"],
+                area=linha["area"],
+                vacancia=100 * linha["vacancia"]
+                if linha["vacancia"] is not None and 0 <= linha["vacancia"] <= 1
+                else None,
+                inadimplencia=100 * linha["inadimplencia"]
+                if linha["inadimplencia"] is not None and 0 <= linha["inadimplencia"] <= 1
+                else None,
+                pct_receita=linha["pct_receita"],
+            )
+            for linha in imoveis_atuais
+        ],
+        imoveis_em=formato.competencia_br(imoveis_atuais[0]["competencia"])
+        if imoveis_atuais
+        else "",
         selo=redflags.selo(resultado),
         red_flags_avaliadas=True,
         exemplo=False,

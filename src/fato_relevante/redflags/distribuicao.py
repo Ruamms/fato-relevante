@@ -19,6 +19,13 @@ _QUEDA_RELEVANTE = -3.0
 _QUEDA_GRAVE = -8.0
 
 
+def suprimida(ctx: Contexto) -> bool:
+    """Quando o dado oficial do trimestral existe, a regra exata substitui este proxy."""
+    from . import distribuicao_exata
+
+    return distribuicao_exata.aplicavel(ctx)
+
+
 def aplicavel(ctx: Contexto) -> bool:
     return ctx.dy_acumulado_12m() is not None and ctx.variacao_vp(12) is not None
 

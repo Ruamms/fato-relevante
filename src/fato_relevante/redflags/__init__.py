@@ -12,10 +12,30 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 
 from ..modelos import RedFlag, Selo, Severidade
-from . import cotistas, diluicao, distribuicao, pvp_faixa, rendimento, vp_queda
+from . import (
+    cotistas,
+    diluicao,
+    distribuicao,
+    distribuicao_exata,
+    fundo_novo,
+    pvp_faixa,
+    rendimento,
+    vacancia,
+    vp_queda,
+)
 from .contexto import Contexto
 
-REGRAS = [distribuicao, diluicao, vp_queda, cotistas, pvp_faixa, rendimento]
+REGRAS = [
+    distribuicao_exata,
+    distribuicao,
+    diluicao,
+    vp_queda,
+    vacancia,
+    cotistas,
+    pvp_faixa,
+    rendimento,
+    fundo_novo,
+]
 
 _ORDEM_SEVERIDADE = {Severidade.ALTA: 0, Severidade.MEDIA: 1, Severidade.BAIXA: 2}
 
@@ -30,6 +50,9 @@ class Resultado:
 def avaliar(ctx: Contexto) -> Resultado:
     resultado = Resultado()
     for regra in REGRAS:
+        suprimida = getattr(regra, "suprimida", None)
+        if suprimida is not None and suprimida(ctx):
+            continue  # outra regra mais precisa cobre o mesmo tema
         if not regra.aplicavel(ctx):
             resultado.nao_avaliadas.append(regra.NOME)
             continue

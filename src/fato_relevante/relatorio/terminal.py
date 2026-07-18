@@ -35,6 +35,8 @@ def renderizar(raiox: RaioX, console: Console) -> None:
         )
     console.print(_cabecalho(raiox))
     console.print(_tabela_indicadores(raiox))
+    if raiox.imoveis:
+        console.print(_tabela_imoveis(raiox))
     console.print(_secao_red_flags(raiox))
     if raiox.sem_alerta:
         console.print(_sem_alerta(raiox))
@@ -90,6 +92,40 @@ def _tabela_indicadores(raiox: RaioX) -> Table:
             Text(linha.atual, style=estilo),
             Text(linha.doze_meses + marca, style=estilo),
             linha.historico,
+        )
+    return tabela
+
+
+def _tabela_imoveis(raiox: RaioX, limite: int = 5) -> Table:
+    tabela = Table(
+        title=f"IMÓVEIS ({len(raiox.imoveis)}) — informe de {raiox.imoveis_em}",
+        title_justify="left",
+        title_style="bold",
+        box=box.SIMPLE_HEAD,
+        pad_edge=False,
+        padding=(0, 2, 0, 1),
+    )
+    tabela.add_column("")
+    tabela.add_column("área m²", justify="right")
+    tabela.add_column("% receita", justify="right")
+    tabela.add_column("vacância", justify="right")
+    tabela.add_column("inadimpl.", justify="right")
+
+    def _pct(valor):
+        return f"{valor:.1f}%".replace(".", ",") if valor is not None else "—"
+
+    for imovel in raiox.imoveis[:limite]:
+        tabela.add_row(
+            imovel.nome[:38],
+            f"{imovel.area:,.0f}".replace(",", ".") if imovel.area else "—",
+            _pct(imovel.pct_receita),
+            _pct(imovel.vacancia),
+            _pct(imovel.inadimplencia),
+        )
+    if len(raiox.imoveis) > limite:
+        tabela.add_row(
+            Text(f"… e mais {len(raiox.imoveis) - limite} imóveis", style="dim"),
+            "", "", "", "",
         )
     return tabela
 

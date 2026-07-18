@@ -68,6 +68,16 @@ def gerar(completo: AnaliseCompleta, agora: datetime | None = None) -> str:
                 ),
             )
         )
+    if dados.vacancia:
+        secoes_graficos.append(
+            _card_grafico(
+                "Vacância (%)",
+                graficos.grafico_linhas(
+                    [("Vacância", dados.vacancia)], formatador=lambda v: formato.percentual(v)
+                ),
+                nota="vacância física ponderada pela área dos imóveis, por trimestre",
+            )
+        )
     if dados.rentabilidade:
         pct = lambda v: formato.percentual(v)  # noqa: E731
         paineis = [
@@ -191,6 +201,10 @@ ul {{ padding-left:20px; }} li {{ margin:3px 0; }}
 .calc .res .rotulo {{ color:#8b98a9; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; }}
 .calc .res .num {{ font-size:19px; font-weight:700; margin-top:2px; color:#5eead4; }}
 .calc .aviso {{ color:#66707d; font-size:11.5px; margin-top:10px; }}
+table.imoveis {{ width:100%; border-collapse:collapse; font-size:13.5px; }}
+table.imoveis th {{ color:#8b98a9; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; text-align:left; padding:6px 10px; border-bottom:1px solid #2a3441; }}
+table.imoveis td {{ padding:7px 10px; border-bottom:1px solid #1a2432; }}
+table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-align:right; }}
 .rodape {{ color:#8b98a9; font-size:12.5px; border-top:1px solid #1f2a38; margin-top:30px; padding-top:14px; }}
 @media print {{ body {{ background:#fff; color:#111; }} }}
 </style>
@@ -211,6 +225,8 @@ ul {{ padding-left:20px; }} li {{ margin:3px 0; }}
 
   <h2>🚩 Red flags{_ajuda("Red flags")}</h2>
   {_secao_flags(raiox)}
+
+  {_secao_imoveis(raiox)}
 
   <h2>Gráficos</h2>
   {"".join(secoes_graficos) or '<p class="na">sem séries suficientes para gráficos</p>'}
@@ -329,6 +345,39 @@ def _secao_flags(raiox: RaioX) -> str:
     for nota in raiox.notas:
         partes.append(f'<p class="na">· {_e(nota)}</p>')
     return "".join(partes)
+
+
+def _secao_imoveis(raiox: RaioX, limite: int = 10) -> str:
+    if not raiox.imoveis:
+        return ""
+
+    def _pct(valor: float | None) -> str:
+        return formato.percentual(valor) if valor is not None else "—"
+
+    linhas = []
+    for imovel in raiox.imoveis[:limite]:
+        area = f"{formato.decimal(imovel.area, 0)} m²" if imovel.area else "—"
+        linhas.append(
+            f"<tr><td>{_e(imovel.nome)}</td><td>{area}</td>"
+            f"<td>{_pct(imovel.pct_receita)}</td><td>{_pct(imovel.vacancia)}</td>"
+            f"<td>{_pct(imovel.inadimplencia)}</td></tr>"
+        )
+    rodape_tabela = ""
+    if len(raiox.imoveis) > limite:
+        rodape_tabela = (
+            f'<tr><td colspan="5" class="na">… e mais '
+            f"{len(raiox.imoveis) - limite} imóveis no informe</td></tr>"
+        )
+    return f"""
+  <h2>Imóveis ({len(raiox.imoveis)}){_ajuda("Imóveis")}</h2>
+  <div class="grafico" style="overflow-x:auto">
+  <table class="imoveis">
+    <thead><tr><th>imóvel</th><th>área</th><th>% da receita</th><th>vacância</th><th>inadimplência</th></tr></thead>
+    <tbody>{"".join(linhas)}{rodape_tabela}</tbody>
+  </table>
+  <div class="nota">informe trimestral de {_e(raiox.imoveis_em)} · ordenados por participação na receita</div>
+  </div>
+"""
 
 
 def _secao_calculadoras(completo: AnaliseCompleta) -> str:

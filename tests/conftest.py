@@ -30,9 +30,44 @@ def montar_zip_cvm(novo_schema: bool, ano: int = 2026) -> bytes:
     return buffer.getvalue()
 
 
+def montar_zip_trimestral(
+    novo_schema: bool = True,
+    ano: int = 2026,
+    resultado_financeiro: str = "100000",
+    rendimentos: str = "90000",
+    vacancias: tuple[str, str] = ("0.10", "0.50"),
+) -> bytes:
+    cnpj_col = "CNPJ_Fundo_Classe" if novo_schema else "CNPJ_Fundo"
+    imovel = (
+        f"{cnpj_col};Data_Referencia;Versao;Classe;Nome_Imovel;Endereco;Area;"
+        "Percentual_Vacancia;Percentual_Inadimplencia;Percentual_Receitas_FII\n"
+        f"11.111.111/0001-11;{ano}-03-01;1;Classe;GALPAO A;Rua X, 1;1000;"
+        f"{vacancias[0]};0.02;60\n"
+        f"11.111.111/0001-11;{ano}-03-01;1;Classe;;Rua Y, 2;500;{vacancias[1]};;40\n"
+    )
+    resultado = (
+        f"{cnpj_col};Data_Referencia;Versao;Resultado_Trimestral_Liquido_Financeiro;"
+        "Rendimentos_Declarados;Lucro_Contabil\n"
+        f"11.111.111/0001-11;{ano}-03-01;1;{resultado_financeiro};{rendimentos};80000\n"
+    )
+    buffer = io.BytesIO()
+    with zipfile.ZipFile(buffer, "w") as zf:
+        zf.writestr(f"inf_trimestral_fii_imovel_{ano}.csv", imovel.encode("latin-1"))
+        zf.writestr(
+            f"inf_trimestral_fii_resultado_contabil_financeiro_{ano}.csv",
+            resultado.encode("latin-1"),
+        )
+    return buffer.getvalue()
+
+
 @pytest.fixture()
 def zip_cvm():
     return montar_zip_cvm
+
+
+@pytest.fixture()
+def zip_trimestral():
+    return montar_zip_trimestral
 
 
 @pytest.fixture()

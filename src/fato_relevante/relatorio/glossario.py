@@ -67,6 +67,20 @@ TERMOS = {
         "A evolução do tamanho do fundo. Crescimento por emissão de cotas não é a mesma "
         "coisa que crescimento por valorização — confira o número de cotas junto."
     ),
+    "Vacância": (
+        "Percentual da área dos imóveis que está vazia, sem inquilino. Área vaga não gera "
+        "aluguel — e o fundo ainda paga condomínio e IPTU dela. Ponderada pela área de "
+        "cada imóvel."
+    ),
+    "Imóveis": (
+        "Os imóveis do fundo, do informe trimestral oficial. \"% da receita\" mostra o peso "
+        "de cada imóvel no aluguel total — um imóvel dominante é risco de concentração. "
+        "Inadimplência é aluguel devido e não pago pelos inquilinos daquele imóvel."
+    ),
+    "Vacância (%)": (
+        "A evolução da área vaga ao longo do tempo. Vacância subindo trimestre após "
+        "trimestre importa mais do que um número alto isolado."
+    ),
     "Calculadoras": (
         "Simulações matemáticas com os números deste fundo já preenchidos. Não tem botão "
         "de calcular: edite qualquer campo e os resultados se atualizam na hora. São "

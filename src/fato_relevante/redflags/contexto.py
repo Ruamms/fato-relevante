@@ -20,6 +20,9 @@ class Contexto:
     vp_ajustada: dict[str, float] = field(default_factory=dict)
     cotacoes: list = field(default_factory=list)
     preco_atual: float | None = None
+    imoveis_atuais: list = field(default_factory=list)      # linhas do trimestre mais recente
+    resultados: list = field(default_factory=list)          # resultados trimestrais (cronológico)
+    tem_informe_trimestral: bool = False                    # fundo aparece no dataset trimestral
 
     def dy_acumulado_12m(self) -> float | None:
         if len(self.serie) < 12:
@@ -53,6 +56,39 @@ class Contexto:
         if not vp:
             return None
         return self.preco_atual / vp
+
+    def meses_de_historico(self) -> int:
+        return len(self.serie)
+
+    def vacancia_atual(self) -> float | None:
+        """Vacância física do trimestre mais recente, em %, ponderada por área.
+
+        A CVM grava a vacância por imóvel como fração (1.0 = 100% vago);
+        valores fora de [0, 1] são lixo auto-declarado e ficam de fora.
+        """
+        pares = [
+            (linha["vacancia"], linha["area"] or 0)
+            for linha in self.imoveis_atuais
+            if linha["vacancia"] is not None and 0 <= linha["vacancia"] <= 1
+        ]
+        if not pares:
+            return None
+        area_total = sum(area for _, area in pares)
+        if area_total > 0:
+            return 100 * sum(v * area for v, area in pares) / area_total
+        return 100 * sum(v for v, _ in pares) / len(pares)
+
+    def resultado_financeiro_4t(self) -> float | None:
+        return self._soma_trimestres("resultado_financeiro")
+
+    def rendimentos_declarados_4t(self) -> float | None:
+        return self._soma_trimestres("rendimentos_declarados")
+
+    def _soma_trimestres(self, campo: str) -> float | None:
+        ultimos = [linha[campo] for linha in self.resultados[-4:]]
+        if len(ultimos) < 4 or any(valor is None for valor in ultimos):
+            return None
+        return sum(ultimos)
 
     def pvp_historico(self) -> list[float]:
         return [

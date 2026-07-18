@@ -52,6 +52,25 @@ CREATE TABLE IF NOT EXISTS indices_meta (
     serie         TEXT PRIMARY KEY,
     atualizado_em TEXT
 );
+CREATE TABLE IF NOT EXISTS imoveis (
+    cnpj          TEXT NOT NULL,
+    competencia   TEXT NOT NULL,  -- AAAA-MM do trimestre
+    nome          TEXT NOT NULL,
+    endereco      TEXT,
+    area          REAL,
+    vacancia      REAL,  -- fração (0.12 = 12%)
+    inadimplencia REAL,  -- fração
+    pct_receita   REAL,  -- percentual (0-100), escala da própria CVM
+    PRIMARY KEY (cnpj, competencia, nome)
+);
+CREATE TABLE IF NOT EXISTS resultados_trimestrais (
+    cnpj                   TEXT NOT NULL,
+    competencia            TEXT NOT NULL,  -- AAAA-MM do trimestre
+    resultado_financeiro   REAL,  -- R$ no trimestre
+    rendimentos_declarados REAL,  -- R$ no trimestre
+    lucro_contabil         REAL,
+    PRIMARY KEY (cnpj, competencia)
+);
 CREATE TABLE IF NOT EXISTS informes_complemento (
     cnpj                   TEXT NOT NULL,
     competencia            TEXT NOT NULL,  -- AAAA-MM
@@ -179,6 +198,31 @@ def cotacao_meta(con: sqlite3.Connection, ticker: str) -> sqlite3.Row | None:
     return con.execute(
         "SELECT * FROM cotacoes_meta WHERE ticker = ?", (ticker,)
     ).fetchone()
+
+
+def serie_imoveis(con: sqlite3.Connection, cnpj: str) -> list[sqlite3.Row]:
+    return con.execute(
+        "SELECT * FROM imoveis WHERE cnpj = ? ORDER BY competencia, nome", (cnpj,)
+    ).fetchall()
+
+
+def imoveis_atuais(con: sqlite3.Connection, cnpj: str) -> list[sqlite3.Row]:
+    return con.execute(
+        """
+        SELECT * FROM imoveis
+         WHERE cnpj = ?
+           AND competencia = (SELECT MAX(competencia) FROM imoveis WHERE cnpj = ?)
+         ORDER BY pct_receita DESC, area DESC
+        """,
+        (cnpj, cnpj),
+    ).fetchall()
+
+
+def serie_resultados(con: sqlite3.Connection, cnpj: str) -> list[sqlite3.Row]:
+    return con.execute(
+        "SELECT * FROM resultados_trimestrais WHERE cnpj = ? ORDER BY competencia",
+        (cnpj,),
+    ).fetchall()
 
 
 def gravar_indice(
