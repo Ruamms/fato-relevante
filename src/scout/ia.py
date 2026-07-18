@@ -16,8 +16,8 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
-URL_OLLAMA = os.environ.get("FATO_OLLAMA_URL", "http://localhost:11434")
-MODELO_PADRAO = os.environ.get("FATO_MODELO_IA", "qwen2.5:14b")
+URL_OLLAMA = os.environ.get("SCOUT_OLLAMA_URL", "http://localhost:11434")
+MODELO_PADRAO = os.environ.get("SCOUT_MODELO_IA", "qwen2.5:14b")
 _MAX_CARACTERES = 24_000  # ~6k tokens de relatório; o que passar disso é cortado
 
 PROMPT_SISTEMA = (

@@ -1,4 +1,4 @@
-"""Interface de linha de comando do Fato Relevante."""
+"""Interface de linha de comando do Scout."""
 
 from __future__ import annotations
 
@@ -22,7 +22,7 @@ def _garantir_stdio_utf8() -> None:
 _garantir_stdio_utf8()
 
 app = typer.Typer(
-    help="Fato Relevante — o raio-x dos ativos da bolsa. Fatos, não dicas.",
+    help="Scout — conhecimento antes da decisão. Fatos, não dicas.",
     no_args_is_help=False,
     add_completion=False,
 )
@@ -31,7 +31,7 @@ console = Console()
 
 @app.callback(invoke_without_command=True)
 def principal(ctx: typer.Context) -> None:
-    """Sem argumentos: modo interativo (ex.: duplo clique no fato.exe)."""
+    """Sem argumentos: modo interativo (ex.: duplo clique no scout.exe)."""
     if ctx.invoked_subcommand is not None:
         return
     if sys.stdin is not None and sys.stdin.isatty() and console.is_terminal:
@@ -42,7 +42,7 @@ def principal(ctx: typer.Context) -> None:
 
 def _modo_interativo() -> None:
     console.print()
-    console.print("[bold]FATO RELEVANTE[/] [dim]— o raio-x dos ativos da bolsa[/]")
+    console.print("[bold]SCOUT[/] [dim]— conhecimento antes da decisão[/]")
     console.print(
         "[dim]Comandos: [bold]TICKER[/bold] · [bold]TICKER html[/bold] (relatório com gráficos) · "
         "[bold]atualizar[/bold] · [bold]ranking \\[dy|pvp|pl|cotistas] \\[sem-alertas][/bold] · "
@@ -51,7 +51,7 @@ def _modo_interativo() -> None:
     while True:
         console.print()
         try:
-            entrada = console.input("[bold cyan]fato> [/]").strip()
+            entrada = console.input("[bold cyan]scout> [/]").strip()
         except (EOFError, KeyboardInterrupt):
             break
         if not entrada:
@@ -66,7 +66,7 @@ def _modo_interativo() -> None:
 def _executar_entrada(entrada: str) -> bool:
     """Interpreta uma linha do modo interativo. False encerra o loop."""
     tokens = entrada.split()
-    if tokens and tokens[0].lower() == "fato":  # quem digita 'fato analisar X' também acerta
+    if tokens and tokens[0].lower() in ("scout", "fato"):  # quem digita 'scout analisar X' também acerta
         tokens = tokens[1:]
     if not tokens:
         return True
@@ -124,7 +124,7 @@ def _exibir_raio_x(ticker: str, html: bool = False, interativo: bool = False) ->
         if completo is None:
             console.print(
                 f"[red]Ticker '{ticker.strip().upper()}' não encontrado nos informes da CVM.[/] "
-                "[dim]Confira o código ou rode 'fato atualizar' para renovar a base.[/]"
+                "[dim]Confira o código ou rode 'scout atualizar' para renovar a base.[/]"
             )
             return False
         raiox = completo.raiox
@@ -137,7 +137,7 @@ def _exibir_raio_x(ticker: str, html: bool = False, interativo: bool = False) ->
         if html:
             _gerar_html(completo)
         elif interativo:
-            console.print(f"  [dim]relatório com gráficos: fato analisar {raiox.ticker} --html[/]")
+            console.print(f"  [dim]relatório com gráficos: scout analisar {raiox.ticker} --html[/]")
         return True
     finally:
         con.close()
@@ -159,7 +159,7 @@ def _gerar_html(completo) -> None:
 
 def _oferecer_atualizacao(con, interativo: bool) -> bool:
     if not interativo:
-        console.print("[yellow]Base local vazia.[/] Rode [bold]fato atualizar[/] para baixar os dados da CVM.")
+        console.print("[yellow]Base local vazia.[/] Rode [bold]scout atualizar[/] para baixar os dados da CVM.")
         return False
     resposta = console.input(
         "Base local vazia. Baixar agora os informes de FII da CVM (~10 MB)? [S/n] "
@@ -242,7 +242,7 @@ def _mostrar_ranking(
     con = armazenamento.conectar()
     try:
         if armazenamento.base_vazia(con):
-            console.print("[yellow]Base local vazia.[/] Rode [bold]fato atualizar[/] primeiro.")
+            console.print("[yellow]Base local vazia.[/] Rode [bold]scout atualizar[/] primeiro.")
             raise typer.Exit(1)
         try:
             resultado = modulo_ranking.montar(
@@ -276,7 +276,7 @@ def site(
     con = armazenamento.conectar()
     try:
         if armazenamento.base_vazia(con):
-            console.print("[yellow]Base local vazia.[/] Rode [bold]fato atualizar[/] primeiro.")
+            console.print("[yellow]Base local vazia.[/] Rode [bold]scout atualizar[/] primeiro.")
             raise typer.Exit(1)
         pasta = Path(destino) if destino else armazenamento.diretorio_dados() / "site"
         console.print(f"Gerando site em [bold]{pasta}[/]…")
@@ -331,7 +331,7 @@ def ia(
     con = armazenamento.conectar()
     try:
         if armazenamento.base_vazia(con):
-            console.print("[yellow]Base local vazia.[/] Rode [bold]fato atualizar[/] primeiro.")
+            console.print("[yellow]Base local vazia.[/] Rode [bold]scout atualizar[/] primeiro.")
             raise typer.Exit(1)
         if not modulo_ia.disponivel():
             console.print(
@@ -340,7 +340,7 @@ def ia(
                 "  1. instale:  [bold]winget install Ollama.Ollama[/]\n"
                 "  2. baixe um modelo:  [bold]ollama pull qwen2.5:14b[/]  "
                 "(ou [bold]llama3.1:8b[/] se tiver menos de 16 GB de RAM)\n"
-                "  3. rode de novo:  [bold]fato ia " + ticker.upper() + "[/]"
+                "  3. rode de novo:  [bold]scout ia " + ticker.upper() + "[/]"
             )
             raise typer.Exit(1)
         modelo_final = modelo or modulo_ia.MODELO_PADRAO

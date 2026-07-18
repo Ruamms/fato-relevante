@@ -2,8 +2,8 @@ import json
 
 import pytest
 
-from fato_relevante import armazenamento, ia
-from fato_relevante.coleta import fnet
+from scout import armazenamento, ia
+from scout.coleta import fnet
 
 
 # --- helpers ---------------------------------------------------------------------
@@ -125,8 +125,8 @@ def test_analisar_relatorio_monta_chamada_ao_ollama(monkeypatch):
 
 
 def test_contexto_do_raiox(con, zip_cvm):
-    from fato_relevante import analise
-    from fato_relevante.coleta import cvm
+    from scout import analise
+    from scout.coleta import cvm
 
     cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
     raiox = analise.montar_raio_x(con, "tste11")
@@ -139,13 +139,13 @@ def test_contexto_do_raiox(con, zip_cvm):
 def test_cli_ia_fluxo_completo(con, zip_cvm, tmp_path, monkeypatch):
     from typer.testing import CliRunner
 
-    from fato_relevante import ia as modulo_ia
-    from fato_relevante.cli import app
-    from fato_relevante.coleta import cvm
-    from fato_relevante.coleta import fnet as modulo_fnet
+    from scout import ia as modulo_ia
+    from scout.cli import app
+    from scout.coleta import cvm
+    from scout.coleta import fnet as modulo_fnet
 
     cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
-    monkeypatch.setenv("FATO_DATA_DIR", str(tmp_path))
+    monkeypatch.setenv("SCOUT_DATA_DIR", str(tmp_path))
     caminho_pdf = tmp_path / "150.pdf"
     caminho_pdf.write_bytes(_pdf_minimo("Texto longo do relatorio " * 50))
     monkeypatch.setattr(modulo_ia, "disponivel", lambda: True)
@@ -170,12 +170,12 @@ def test_cli_ia_fluxo_completo(con, zip_cvm, tmp_path, monkeypatch):
 def test_cli_ia_sem_ollama_orienta_instalacao(con, zip_cvm, tmp_path, monkeypatch):
     from typer.testing import CliRunner
 
-    from fato_relevante import ia as modulo_ia
-    from fato_relevante.cli import app
-    from fato_relevante.coleta import cvm
+    from scout import ia as modulo_ia
+    from scout.cli import app
+    from scout.coleta import cvm
 
     cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
-    monkeypatch.setenv("FATO_DATA_DIR", str(tmp_path))
+    monkeypatch.setenv("SCOUT_DATA_DIR", str(tmp_path))
     monkeypatch.setattr(modulo_ia, "disponivel", lambda: False)
     resultado = CliRunner().invoke(app, ["ia", "tste11"])
     assert resultado.exit_code == 1

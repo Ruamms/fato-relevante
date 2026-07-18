@@ -76,7 +76,7 @@ def _cabecalho(raiox: RaioX) -> Panel:
             linha2 = Text.assemble(linha2, (f" ({idade})", estilo))
     return Panel(
         Group(linha1, linha2),
-        title="[bold]FATO RELEVANTE[/] [dim]— o raio-x dos ativos da bolsa[/]",
+        title="[bold]SCOUT[/] [dim]— conhecimento antes da decisão[/]",
         box=box.ROUNDED,
         padding=(0, 1),
     )

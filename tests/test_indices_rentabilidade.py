@@ -2,9 +2,9 @@ from datetime import date
 
 import pytest
 
-from fato_relevante import analise, armazenamento
-from fato_relevante.coleta import cvm, indices
-from fato_relevante.relatorio import html as relatorio_html
+from scout import analise, armazenamento
+from scout.coleta import cvm, indices
+from scout.relatorio import html as relatorio_html
 
 
 def test_extrair_sgs():

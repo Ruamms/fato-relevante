@@ -1,6 +1,6 @@
 """Varredura da base inteira: resumo + red flags de todos os fundos.
 
-Alimenta o `fato ranking` e a comparação com pares do segmento. Tudo em
+Alimenta o `scout ranking` e a comparação com pares do segmento. Tudo em
 poucas consultas agrupadas (uma passada por tabela) — a base toda é
 avaliada em segundos.
 

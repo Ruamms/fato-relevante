@@ -52,7 +52,7 @@ def garantir_atualizados(con: sqlite3.Connection, hoje: date | None = None) -> s
 
 def buscar(serie: str) -> list[tuple[str, float]]:
     url = URL.format(codigo=SERIES_SGS[serie])
-    requisicao = urllib.request.Request(url, headers={"User-Agent": "fato-relevante"})
+    requisicao = urllib.request.Request(url, headers={"User-Agent": "scout"})
     with urllib.request.urlopen(requisicao, timeout=60) as resposta:
         return extrair(json.load(resposta))
 

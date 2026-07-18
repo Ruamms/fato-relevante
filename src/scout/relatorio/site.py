@@ -1,7 +1,7 @@
 """Gera o site estático completo: índice buscável + página de cada FII.
 
 Pensado para rodar no GitHub Actions e publicar no GitHub Pages, mas
-funciona igual localmente: `fato site` gera tudo em uma pasta.
+funciona igual localmente: `scout site` gera tudo em uma pasta.
 """
 
 from __future__ import annotations
@@ -17,9 +17,9 @@ from . import apoio
 from . import html as relatorio_html
 
 _COR_SELO = relatorio_html._COR_SELO
-_URL_WORKFLOW = "https://github.com/Ruamms/fato-relevante/actions/workflows/site.yml"
+_URL_WORKFLOW = "https://github.com/Ruamms/scout/actions/workflows/site.yml"
 _URL_API_RUNS = (
-    "https://api.github.com/repos/Ruamms/fato-relevante/actions/workflows/site.yml/runs?per_page=1"
+    "https://api.github.com/repos/Ruamms/scout/actions/workflows/site.yml/runs?per_page=1"
 )
 
 
@@ -99,7 +99,7 @@ def _indice(fundos: list, base: list, agora: datetime) -> str:
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Fato Relevante — o raio-x dos FIIs</title>
+<title>Scout — o raio-x dos FIIs</title>
 <style>
 :root {{ color-scheme: dark; }}
 * {{ box-sizing:border-box; margin:0; }}
@@ -137,7 +137,7 @@ h2 {{ font-size:18px; margin:28px 0 10px; }}
 </head>
 <body>
 <div class="pagina">
-  <div class="marca">FATO RELEVANTE</div>
+  <div class="marca">SCOUT</div>
   <h1>Lemos os documentos oficiais para que você não precise</h1>
   <div class="meta" style="font-size:14.5px;margin-bottom:4px">"Será que tem algum problema
   escondido naquele relatório?" — essa dúvida vira uma lista de alertas com a conta e a
@@ -169,7 +169,7 @@ h2 {{ font-size:18px; margin:28px 0 10px; }}
 
   <div class="rodape">Isto não é recomendação de investimento. Fontes: dados abertos da CVM,
   Banco Central (SGS) e cotações via Yahoo Finance. Critérios de todos os alertas são públicos:
-  <a href="https://github.com/Ruamms/fato-relevante">github.com/Ruamms/fato-relevante</a></div>
+  <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a></div>
 </div>
 <script>
 function filtrar(texto) {{

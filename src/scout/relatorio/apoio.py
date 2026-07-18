@@ -71,7 +71,7 @@ def gerar() -> str:
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Apoie o Fato Relevante</title>
+<title>Apoie o Scout</title>
 <style>
 * {{ box-sizing:border-box; margin:0; }}
 body {{ background:#0b1017; color:#dbe3ec; font-family:system-ui,sans-serif; line-height:1.6; }}
@@ -90,9 +90,9 @@ a {{ color:#5eead4; }}
 </head>
 <body>
 <div class="pagina">
-  <div class="marca">FATO RELEVANTE</div>
+  <div class="marca">SCOUT</div>
   <h1>☕ Apoie o projeto</h1>
-  <p>O Fato Relevante é gratuito e de código aberto. Se ele te ajudou, qualquer
+  <p>O Scout é gratuito e de código aberto. Se ele te ajudou, qualquer
   contribuição via PIX ajuda a manter o projeto vivo — pagando os custos de
   infraestrutura e mantendo o site <b>sem anúncios</b>.</p>
   <div class="qr">{qr_svg(payload)}</div>
@@ -104,7 +104,7 @@ a {{ color:#5eead4; }}
   <div class="rodape">
   Contato: <a href="mailto:{EMAIL_CONTATO}">{EMAIL_CONTATO}</a>{_link_linkedin()}<br>
   Projeto open source:
-  <a href="https://github.com/Ruamms/fato-relevante">github.com/Ruamms/fato-relevante</a></div>
+  <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a></div>
 </div>
 </body>
 </html>

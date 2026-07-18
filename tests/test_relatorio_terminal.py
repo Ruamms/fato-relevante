@@ -1,8 +1,8 @@
 from rich.console import Console
 
-from fato_relevante.dados_exemplo import raio_x_exemplo
-from fato_relevante.modelos import RaioX
-from fato_relevante.relatorio.terminal import renderizar
+from scout.dados_exemplo import raio_x_exemplo
+from scout.modelos import RaioX
+from scout.relatorio.terminal import renderizar
 
 
 def _render(raiox: RaioX) -> str:

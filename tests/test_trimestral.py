@@ -1,9 +1,9 @@
 import pytest
 
-from fato_relevante import analise, armazenamento, redflags
-from fato_relevante.coleta import cvm
-from fato_relevante.redflags import distribuicao, distribuicao_exata, fundo_novo, vacancia
-from fato_relevante.redflags.contexto import Contexto
+from scout import analise, armazenamento, redflags
+from scout.coleta import cvm
+from scout.redflags import distribuicao, distribuicao_exata, fundo_novo, vacancia
+from scout.redflags.contexto import Contexto
 
 
 @pytest.mark.parametrize("novo_schema", [True, False], ids=["pos_rcvm175", "pre_rcvm175"])
@@ -147,8 +147,8 @@ def test_pct_receita_em_fracao_e_normalizado(con, zip_cvm):
 
 
 def test_html_botao_ver_todos_imoveis(con, zip_cvm, zip_trimestral):
-    from fato_relevante.relatorio import html as relatorio_html
-    from fato_relevante.modelos import Imovel
+    from scout.relatorio import html as relatorio_html
+    from scout.modelos import Imovel
     import dataclasses
 
     cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
@@ -168,7 +168,7 @@ def test_html_botao_ver_todos_imoveis(con, zip_cvm, zip_trimestral):
 
 
 def test_indicador_com_alerta_traz_motivo_no_tooltip(con, zip_cvm, zip_trimestral):
-    from fato_relevante.relatorio import html as relatorio_html
+    from scout.relatorio import html as relatorio_html
 
     cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
     cvm.carregar_zip_trimestral(con, zip_trimestral(), "inf_trimestral_fii_2026.zip")
@@ -182,7 +182,7 @@ def test_indicador_com_alerta_traz_motivo_no_tooltip(con, zip_cvm, zip_trimestra
 
 
 def test_html_com_secao_imoveis_e_grafico_vacancia(con, zip_cvm, zip_trimestral):
-    from fato_relevante.relatorio import html as relatorio_html
+    from scout.relatorio import html as relatorio_html
 
     cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
     cvm.carregar_zip_trimestral(con, zip_trimestral(), "inf_trimestral_fii_2026.zip")

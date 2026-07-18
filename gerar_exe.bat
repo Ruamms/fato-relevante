@@ -3,7 +3,7 @@ setlocal
 cd /d "%~dp0"
 
 echo ============================================
-echo  Fato Relevante - gerador de executavel
+echo  Scout - gerador de executavel
 echo ============================================
 echo.
 
@@ -26,16 +26,16 @@ if errorlevel 1 goto :erro
 
 echo.
 echo [2/2] Gerando executavel (PyInstaller)...
-python -m uv run pyinstaller --onefile --console --clean --noconfirm --name fato src\fato_relevante\__main__.py
+python -m uv run pyinstaller --onefile --console --clean --noconfirm --name scout src\scout\__main__.py
 if errorlevel 1 goto :erro
 
 echo.
 echo ============================================
 echo  OK! Executavel gerado em:
-echo  %~dp0dist\fato.exe
+echo  %~dp0dist\scout.exe
 echo.
 echo  Teste rapido (num terminal):
-echo  dist\fato.exe analisar ADSH11
+echo  dist\scout.exe analisar ADSH11
 echo ============================================
 echo.
 pause

@@ -1,5 +1,5 @@
-from fato_relevante import formato
-from fato_relevante.relatorio import apoio, graficos
+from scout import formato
+from scout.relatorio import apoio, graficos
 
 
 # --- PIX ------------------------------------------------------------------------

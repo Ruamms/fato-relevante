@@ -1,8 +1,8 @@
 from datetime import datetime
 
-from fato_relevante import armazenamento
-from fato_relevante.coleta import cvm
-from fato_relevante.relatorio import site
+from scout import armazenamento
+from scout.coleta import cvm
+from scout.relatorio import site
 from conftest import montar_zip_universo
 
 

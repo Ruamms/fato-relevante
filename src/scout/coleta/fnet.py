@@ -22,7 +22,7 @@ URL_PESQUISA = (
     "&idCategoriaDocumento=0&idTipoDocumento=0&idEspecieDocumento=0"
 )
 URL_DOWNLOAD = "https://fnet.bmfbovespa.com.br/fnet/publico/downloadDocumento?id={id}"
-_HEADERS = {"User-Agent": "Mozilla/5.0 (fato-relevante)"}
+_HEADERS = {"User-Agent": "Mozilla/5.0 (scout)"}
 
 
 def so_digitos(cnpj: str) -> str:

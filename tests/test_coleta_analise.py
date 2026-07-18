@@ -1,7 +1,7 @@
 import pytest
 
-from fato_relevante import analise, armazenamento
-from fato_relevante.coleta import cvm
+from scout import analise, armazenamento
+from scout.coleta import cvm
 
 
 @pytest.mark.parametrize("novo_schema", [True, False], ids=["pos_rcvm175", "pre_rcvm175"])
@@ -61,11 +61,11 @@ def test_montar_raio_x_com_dados_reais(con, zip_cvm):
 def test_cli_analisar_com_base_carregada(con, zip_cvm, tmp_path, monkeypatch):
     from typer.testing import CliRunner
 
-    from fato_relevante.cli import app
-    from fato_relevante.coleta import cotacoes, indices
+    from scout.cli import app
+    from scout.coleta import cotacoes, indices
 
     cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
-    monkeypatch.setenv("FATO_DATA_DIR", str(tmp_path))
+    monkeypatch.setenv("SCOUT_DATA_DIR", str(tmp_path))
     # a CLI sincroniza cotações e índices antes de analisar; teste não vai à rede
     monkeypatch.setattr(cotacoes, "garantir_atualizada", lambda con, ticker: None)
     monkeypatch.setattr(indices, "garantir_atualizados", lambda con: None)
@@ -78,18 +78,18 @@ def test_cli_analisar_com_base_carregada(con, zip_cvm, tmp_path, monkeypatch):
 def test_cli_analisar_base_vazia_orienta_atualizar(tmp_path, monkeypatch):
     from typer.testing import CliRunner
 
-    from fato_relevante.cli import app
+    from scout.cli import app
 
-    monkeypatch.setenv("FATO_DATA_DIR", str(tmp_path / "vazio"))
+    monkeypatch.setenv("SCOUT_DATA_DIR", str(tmp_path / "vazio"))
     resultado = CliRunner().invoke(app, ["analisar", "tste11"])
     assert resultado.exit_code == 1
-    assert "fato atualizar" in resultado.output
+    assert "scout atualizar" in resultado.output
 
 
 def test_cli_sem_argumentos_fora_de_terminal_mostra_ajuda():
     from typer.testing import CliRunner
 
-    from fato_relevante.cli import app
+    from scout.cli import app
 
     # stdin do CliRunner não é um TTY, então deve cair na ajuda, não no interativo
     resultado = CliRunner().invoke(app, [])
@@ -98,7 +98,7 @@ def test_cli_sem_argumentos_fora_de_terminal_mostra_ajuda():
 
 
 def test_formatacao_ptbr():
-    from fato_relevante import formato, series
+    from scout import formato, series
 
     assert formato.decimal(1234.5) == "1.234,50"
     assert formato.percentual(7.649, sinal=True) == "+7,65%"

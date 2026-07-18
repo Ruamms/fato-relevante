@@ -1,10 +1,10 @@
 from datetime import datetime
 
-from fato_relevante import analise, armazenamento, redflags
-from fato_relevante.coleta import cvm
-from fato_relevante.modelos import RedFlag, Severidade
-from fato_relevante.relatorio import graficos
-from fato_relevante.relatorio import html as relatorio_html
+from scout import analise, armazenamento, redflags
+from scout.coleta import cvm
+from scout.modelos import RedFlag, Severidade
+from scout.relatorio import graficos
+from scout.relatorio import html as relatorio_html
 
 
 def _completo(con, zip_cvm):
@@ -100,7 +100,7 @@ def test_gerar_html_completo(con, zip_cvm):
     assert pagina.count("<svg") >= 2
     assert "não é recomendação de investimento" in pagina
     # glossário para leigos: todo indicador exibido tem um "?" com explicação
-    from fato_relevante.relatorio.glossario import TERMOS
+    from scout.relatorio.glossario import TERMOS
 
     for linha in completo.raiox.indicadores:
         assert linha.nome in TERMOS, f"indicador sem verbete no glossário: {linha.nome}"
@@ -130,7 +130,7 @@ def test_botao_calculadoras_e_ancora(con, zip_cvm):
 def test_calculadora_retroativa_com_rentabilidade(con, zip_cvm):
     import json
 
-    from fato_relevante.coleta import cvm as cvm_mod
+    from scout.coleta import cvm as cvm_mod
 
     cvm_mod.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
     candles = [(f"{ano}-{mes:02d}", 100.0 + i, 100.0 + i) for i, (ano, mes) in enumerate(
@@ -171,11 +171,11 @@ def test_salvar_html_escreve_arquivo(con, zip_cvm, tmp_path):
 def test_cli_html_gera_e_abre(con, zip_cvm, tmp_path, monkeypatch):
     from typer.testing import CliRunner
 
-    from fato_relevante.cli import app
-    from fato_relevante.coleta import cotacoes, indices
+    from scout.cli import app
+    from scout.coleta import cotacoes, indices
 
     _completo(con, zip_cvm)
-    monkeypatch.setenv("FATO_DATA_DIR", str(tmp_path))
+    monkeypatch.setenv("SCOUT_DATA_DIR", str(tmp_path))
     monkeypatch.setattr(cotacoes, "garantir_atualizada", lambda con, ticker: None)
     monkeypatch.setattr(indices, "garantir_atualizados", lambda con: None)
     abertos = []

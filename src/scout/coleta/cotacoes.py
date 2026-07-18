@@ -19,7 +19,7 @@ from datetime import datetime, timedelta, timezone
 from .. import armazenamento
 
 URL = "https://query1.finance.yahoo.com/v8/finance/chart/{simbolo}?range=max&interval=1mo"
-_HEADERS = {"User-Agent": "Mozilla/5.0 (fato-relevante)"}
+_HEADERS = {"User-Agent": "Mozilla/5.0 (scout)"}
 
 # A B3 só libera dado em tempo real sob licença paga; o Yahoo entrega com
 # ~15 min de atraso. Buscar mais rápido que isso não traz preço mais novo.

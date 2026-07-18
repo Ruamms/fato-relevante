@@ -157,7 +157,7 @@ def gerar(completo: AnaliseCompleta, agora: datetime | None = None) -> str:
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{_e(raiox.ticker)} — Fato Relevante</title>
+<title>{_e(raiox.ticker)} — Scout</title>
 <style>
 :root {{ color-scheme: dark; }}
 html {{ scroll-behavior: smooth; }}
@@ -226,7 +226,7 @@ table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-a
 </head>
 <body>
 <div class="pagina">
-  <div class="marca">FATO RELEVANTE — o raio-x dos ativos da bolsa</div>
+  <div class="marca">SCOUT — conhecimento antes da decisão</div>
   <div class="topo">
     <h1>{_e(raiox.ticker)} <small>{_e(raiox.nome)}</small></h1>
     {_selo_html(raiox)}
@@ -254,7 +254,7 @@ table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-a
   {_secao_calculadoras(completo)}
 
   <div class="rodape">{_RODAPE}<br>
-  Projeto open source: <a href="https://github.com/Ruamms/fato-relevante">github.com/Ruamms/fato-relevante</a>
+  Projeto open source: <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a>
   · <a href="apoie.html">☕ Apoie o projeto (PIX)</a></div>
 </div>
 <script>

@@ -26,20 +26,20 @@ jobs:
       - name: Instalar dependências
         run: uv sync
 
-      # cache do banco local entre execuções: o `fato atualizar` só rebaixa
+      # cache do banco local entre execuções: o `scout atualizar` só rebaixa
       # os 2 últimos anos, então o cache poupa ~20 downloads da CVM por dia
       - name: Cache da base de dados
         uses: actions/cache@v4
         with:
-          path: ~/.fato-relevante/fato.db
+          path: ~/.scout/scout.db
           key: fato-db-${{ github.run_id }}
           restore-keys: fato-db-
 
       - name: Atualizar dados da CVM
-        run: uv run fato atualizar
+        run: uv run scout atualizar
 
       - name: Gerar site
-        run: uv run fato site --destino _site
+        run: uv run scout site --destino _site
 
       - name: Publicar artefato do Pages
         uses: actions/upload-pages-artifact@v3

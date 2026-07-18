@@ -1,7 +1,7 @@
 import pytest
 
-from fato_relevante import analise, ranking
-from fato_relevante.coleta import cvm
+from scout import analise, ranking
+from scout.coleta import cvm
 
 
 @pytest.fixture()
@@ -61,9 +61,9 @@ def test_ranking_criterio_invalido(base):
 def test_cli_ranking(base, tmp_path, monkeypatch):
     from typer.testing import CliRunner
 
-    from fato_relevante.cli import app
+    from scout.cli import app
 
-    monkeypatch.setenv("FATO_DATA_DIR", str(tmp_path))
+    monkeypatch.setenv("SCOUT_DATA_DIR", str(tmp_path))
     resultado = CliRunner().invoke(app, ["ranking", "--por", "pl", "--top", "3"])
     assert resultado.exit_code == 0
     assert "BETA FII" in resultado.output
@@ -81,7 +81,7 @@ def test_pares_do_segmento_no_raio_x(base):
 
 
 def test_html_com_secao_pares(base):
-    from fato_relevante.relatorio import html as relatorio_html
+    from scout.relatorio import html as relatorio_html
 
     completo = analise.montar_completo(base, "alfa11")
     pagina = relatorio_html.gerar(completo)

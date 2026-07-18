@@ -1,4 +1,4 @@
-from fato_relevante import cli
+from scout import cli
 
 
 def test_entrada_ticker_simples(monkeypatch):
@@ -16,7 +16,7 @@ def test_entrada_com_prefixo_fato_e_html(monkeypatch):
         cli, "_exibir_raio_x", lambda ticker, html=False, interativo=False: chamadas.append((ticker, html))
     )
     # exatamente o que o usuário digitou e não funcionava
-    assert cli._executar_entrada("fato analisar KNCR11 --html") is True
+    assert cli._executar_entrada("scout analisar KNCR11 --html") is True
     assert chamadas == [("KNCR11", True)]
     assert cli._executar_entrada("KNCR11 html") is True
     assert chamadas[-1] == ("KNCR11", True)
@@ -25,8 +25,8 @@ def test_entrada_com_prefixo_fato_e_html(monkeypatch):
 def test_entrada_atualizar(monkeypatch):
     chamadas = []
     monkeypatch.setattr(cli, "_executar_atualizacao", lambda con: chamadas.append("atualizou"))
-    monkeypatch.setenv("FATO_DATA_DIR", "")
-    import fato_relevante.armazenamento as arm
+    monkeypatch.setenv("SCOUT_DATA_DIR", "")
+    import scout.armazenamento as arm
 
     class _ConFake:
         def close(self):
@@ -34,7 +34,7 @@ def test_entrada_atualizar(monkeypatch):
 
     monkeypatch.setattr(arm, "conectar", lambda diretorio=None: _ConFake())
     assert cli._executar_entrada("atualizar") is True
-    assert cli._executar_entrada("fato atualizar") is True
+    assert cli._executar_entrada("scout atualizar") is True
     assert chamadas == ["atualizou", "atualizou"]
 
 

@@ -2,8 +2,8 @@ from datetime import date, datetime, timezone
 
 import pytest
 
-from fato_relevante import analise, armazenamento
-from fato_relevante.coleta import cotacoes, cvm
+from scout import analise, armazenamento
+from scout.coleta import cotacoes, cvm
 
 
 def _ts(ano, mes):
@@ -92,7 +92,7 @@ def test_sem_conexao_usa_cache_com_aviso(con, monkeypatch):
 
 
 def test_serie_vp_ajustada_neutraliza_desdobramento():
-    from fato_relevante import series
+    from scout import series
 
     serie = [
         dict(competencia="2019-10", vp_cota=1600.0),

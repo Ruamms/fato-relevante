@@ -3,7 +3,7 @@ import zipfile
 
 import pytest
 
-from fato_relevante import armazenamento
+from scout import armazenamento
 
 
 def montar_zip_cvm(novo_schema: bool, ano: int = 2026) -> bytes:

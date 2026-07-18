@@ -1,7 +1,7 @@
 """Cache local de dados oficiais em SQLite.
 
-O banco fica em ``~/.fato-relevante/fato.db`` (ou no diretório apontado
-pela variável de ambiente ``FATO_DATA_DIR``). Toda análise lê daqui;
+O banco fica em ``~/.scout/scout.db`` (ou no diretório apontado
+pela variável de ambiente ``SCOUT_DATA_DIR``). Toda análise lê daqui;
 nenhuma análise consulta a internet.
 """
 
@@ -100,14 +100,27 @@ CREATE TABLE IF NOT EXISTS informes_complemento (
 
 
 def diretorio_dados() -> Path:
-    padrao = Path.home() / ".fato-relevante"
-    return Path(os.environ.get("FATO_DATA_DIR") or padrao)
+    configurado = os.environ.get("SCOUT_DATA_DIR") or os.environ.get("FATO_DATA_DIR")
+    if configurado:
+        return Path(configurado)
+    novo = Path.home() / ".scout"
+    legado = Path.home() / ".fato-relevante"  # era Fato Relevante (rebrand 07/2026)
+    if legado.exists() and not novo.exists():
+        try:
+            legado.rename(novo)
+        except OSError:
+            return legado  # em uso por outro processo: segue no lugar antigo
+    return novo
 
 
 def conectar(diretorio: Path | None = None) -> sqlite3.Connection:
     destino = Path(diretorio) if diretorio else diretorio_dados()
     destino.mkdir(parents=True, exist_ok=True)
-    con = sqlite3.connect(destino / "fato.db")
+    banco_legado = destino / "fato.db"
+    banco = destino / "scout.db"
+    if banco_legado.exists() and not banco.exists():
+        banco_legado.rename(banco)
+    con = sqlite3.connect(banco)
     con.row_factory = sqlite3.Row
     _migrar(con)
     con.executescript(_SCHEMA)

@@ -1,6 +1,6 @@
-from fato_relevante import redflags, series
-from fato_relevante.modelos import Severidade
-from fato_relevante.redflags import (
+from scout import redflags, series
+from scout.modelos import Severidade
+from scout.redflags import (
     cotistas,
     diluicao,
     distribuicao,
@@ -8,7 +8,7 @@ from fato_relevante.redflags import (
     rendimento,
     vp_queda,
 )
-from fato_relevante.redflags.contexto import Contexto
+from scout.redflags.contexto import Contexto
 
 
 def _serie(meses: int, vp=100.0, dy=0.008, cotas=1000.0, cotistas_=1000.0, **por_mes):

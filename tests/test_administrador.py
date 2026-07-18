@@ -1,8 +1,8 @@
 import io
 import zipfile
 
-from fato_relevante import analise, armazenamento
-from fato_relevante.coleta import cvm
+from scout import analise, armazenamento
+from scout.coleta import cvm
 
 
 def _zip_dois_fundos(ano: int = 2026) -> bytes:
@@ -52,7 +52,7 @@ def test_raio_x_traz_fundos_irmaos_com_selo(con):
 
 
 def test_html_com_secao_administrador(con):
-    from fato_relevante.relatorio import html as relatorio_html
+    from scout.relatorio import html as relatorio_html
 
     cvm.carregar_zip(con, _zip_dois_fundos(), "inf_mensal_fii_2026.zip")
     completo = analise.montar_completo(con, "tste11")
@@ -73,7 +73,7 @@ def test_migracao_adiciona_colunas_e_forca_recarga(tmp_path):
     import sqlite3
 
     # simula uma base antiga: informes_gerais sem as colunas de administrador
-    caminho = tmp_path / "fato.db"
+    caminho = tmp_path / "scout.db"
     velho = sqlite3.connect(caminho)
     velho.execute(
         "CREATE TABLE informes_gerais (cnpj TEXT, competencia TEXT, nome TEXT,"
