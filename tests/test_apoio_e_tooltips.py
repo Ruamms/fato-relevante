@@ -28,6 +28,13 @@ def test_pagina_apoio(tmp_path):
     assert "ruamms3@gmail.com" in conteudo
     assert "<svg" in conteudo  # QR code
     assert "copia-e-cola" in conteudo
+    assert f'mailto:{apoio.EMAIL_CONTATO}' in conteudo
+
+
+def test_linkedin_so_aparece_quando_configurado(tmp_path, monkeypatch):
+    assert "LinkedIn" not in apoio.gerar()
+    monkeypatch.setattr(apoio, "LINKEDIN", "https://www.linkedin.com/in/exemplo")
+    assert 'href="https://www.linkedin.com/in/exemplo"' in apoio.gerar()
 
 
 # --- rótulos e tooltips dos gráficos ----------------------------------------------

@@ -12,6 +12,8 @@ from pathlib import Path
 CHAVE_PIX = "ruamms3@gmail.com"
 NOME_RECEBEDOR = "Ruan Sampaio"
 CIDADE = "BRASIL"
+EMAIL_CONTATO = "ruamms3@gmail.com"
+LINKEDIN = ""  # URL do perfil (ex.: https://www.linkedin.com/in/usuario); vazio = não exibe
 
 
 def payload_pix(
@@ -98,9 +100,17 @@ a {{ color:#5eead4; }}
   <p style="margin-top:14px">ou use o PIX copia-e-cola:</p>
   <textarea id="payload" rows="3" readonly onclick="this.select()">{payload}</textarea>
   <br><button onclick="navigator.clipboard.writeText(document.getElementById('payload').value).then(()=>this.textContent='Copiado!')">Copiar código PIX</button>
-  <div class="rodape">Projeto open source:
+  <div class="rodape">
+  Contato: <a href="mailto:{EMAIL_CONTATO}">{EMAIL_CONTATO}</a>{_link_linkedin()}<br>
+  Projeto open source:
   <a href="https://github.com/Ruamms/fato-relevante">github.com/Ruamms/fato-relevante</a></div>
 </div>
 </body>
 </html>
 """
+
+
+def _link_linkedin() -> str:
+    if not LINKEDIN:
+        return ""
+    return f' · <a href="{LINKEDIN}">LinkedIn</a>'
