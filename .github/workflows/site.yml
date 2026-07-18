@@ -32,10 +32,16 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.scout/scout.db
-          key: fato-db-${{ github.run_id }}
-          restore-keys: fato-db-
+          key: scout-db-${{ github.run_id }}
+          restore-keys: |
+            scout-db-
+            fato-db-
 
+      # se a CVM estiver fora do ar (janela de manutenção), publica com o cache
+      # do dia anterior em vez de derrubar o deploy — as páginas mostram a data
+      # dos dados; sem cache nenhum, o passo seguinte falha e nada é publicado
       - name: Atualizar dados da CVM
+        continue-on-error: true
         run: uv run scout atualizar
 
       - name: Gerar site

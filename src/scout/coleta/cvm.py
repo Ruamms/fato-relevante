@@ -10,6 +10,8 @@ from __future__ import annotations
 import csv
 import io
 import sqlite3
+import time
+import urllib.error
 import urllib.request
 import zipfile
 from collections.abc import Callable
@@ -35,9 +37,19 @@ def nome_arquivo_trimestral(ano: int) -> str:
     return f"inf_trimestral_fii_{ano}.zip"
 
 
-def _baixar_url(url: str) -> bytes:
-    with urllib.request.urlopen(url, timeout=120) as resposta:
-        return resposta.read()
+def _baixar_url(url: str, tentativas: int = 3) -> bytes:
+    """Download com retry: a CVM tem janelas de indisponibilidade curtas
+    (madrugadas/fins de semana) que não devem derrubar uma atualização."""
+    ultimo_erro: Exception | None = None
+    for tentativa in range(tentativas):
+        try:
+            with urllib.request.urlopen(url, timeout=120) as resposta:
+                return resposta.read()
+        except (urllib.error.URLError, OSError) as erro:
+            ultimo_erro = erro
+            if tentativa < tentativas - 1:
+                time.sleep(5 * (tentativa + 1) ** 2)  # 5s, depois 20s
+    raise ultimo_erro
 
 
 def baixar(ano: int) -> bytes:

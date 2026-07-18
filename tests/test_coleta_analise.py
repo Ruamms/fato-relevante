@@ -97,6 +97,34 @@ def test_cli_sem_argumentos_fora_de_terminal_mostra_ajuda():
     assert "analisar" in resultado.output
 
 
+def test_baixar_url_com_retry(monkeypatch):
+    import urllib.error
+    import urllib.request
+
+    tentativas = []
+    monkeypatch.setattr(cvm.time, "sleep", lambda segundos: tentativas.append(f"sleep {segundos}"))
+
+    def _urlopen_instavel(url, timeout=None):
+        tentativas.append("tentou")
+        if tentativas.count("tentou") < 3:
+            raise urllib.error.URLError(OSError(101, "Network is unreachable"))
+        import io
+
+        class _Resposta(io.BytesIO):
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *args):
+                return False
+
+        return _Resposta(b"conteudo")
+
+    monkeypatch.setattr(urllib.request, "urlopen", _urlopen_instavel)
+    assert cvm._baixar_url("https://exemplo/x.zip") == b"conteudo"
+    # 2 falhas com espera progressiva, sucesso na 3ª
+    assert tentativas == ["tentou", "sleep 5", "tentou", "sleep 20", "tentou"]
+
+
 def test_formatacao_ptbr():
     from scout import formato, series
 
