@@ -52,17 +52,52 @@ def _modo_interativo() -> None:
             break
         if not ticker:
             break
-        _exibir_raio_x(ticker)
+        _exibir_raio_x(ticker, interativo=True)
 
 
-def _exibir_raio_x(ticker: str, html: bool = False) -> None:
-    from .dados_exemplo import raio_x_exemplo
+def _exibir_raio_x(ticker: str, html: bool = False, interativo: bool = False) -> bool:
+    from . import analise, armazenamento
     from .relatorio.terminal import renderizar
 
-    raiox = raio_x_exemplo(ticker.strip().upper())
-    renderizar(raiox, console)
-    if html:
-        console.print("[yellow]Relatório HTML ainda não implementado (milestone 5 do ROADMAP).[/]")
+    con = armazenamento.conectar()
+    try:
+        if armazenamento.base_vazia(con) and not _oferecer_atualizacao(con, interativo):
+            return False
+        raiox = analise.montar_raio_x(con, ticker)
+        if raiox is None:
+            console.print(
+                f"[red]Ticker '{ticker.strip().upper()}' não encontrado nos informes da CVM.[/] "
+                "[dim]Confira o código ou rode 'fato atualizar' para renovar a base.[/]"
+            )
+            return False
+        renderizar(raiox, console)
+        if html:
+            console.print("[yellow]Relatório HTML ainda não implementado (milestone 5 do ROADMAP).[/]")
+        return True
+    finally:
+        con.close()
+
+
+def _oferecer_atualizacao(con, interativo: bool) -> bool:
+    if not interativo:
+        console.print("[yellow]Base local vazia.[/] Rode [bold]fato atualizar[/] para baixar os dados da CVM.")
+        return False
+    resposta = console.input(
+        "Base local vazia. Baixar agora os informes de FII da CVM (~10 MB)? [S/n] "
+    )
+    if resposta.strip().lower() not in ("", "s", "sim"):
+        return False
+    _executar_atualizacao(con)
+    return True
+
+
+def _executar_atualizacao(con) -> None:
+    from . import armazenamento
+    from .coleta import cvm
+
+    console.print(f"Baixando informes mensais de FII da CVM para [dim]{armazenamento.diretorio_dados()}[/]…")
+    cvm.atualizar(con, ao_progredir=lambda msg: console.print(f"  [dim]{msg}[/]"))
+    console.print("[green]Base atualizada.[/]")
 
 
 @app.command()
@@ -71,13 +106,20 @@ def analisar(
     html: bool = typer.Option(False, "--html", help="Gera o relatório em HTML e abre no navegador."),
 ) -> None:
     """Monta o raio-x de um ativo a partir do cache local de dados oficiais."""
-    _exibir_raio_x(ticker, html)
+    if not _exibir_raio_x(ticker, html):
+        raise typer.Exit(1)
 
 
 @app.command()
 def atualizar() -> None:
     """Baixa/atualiza os dados abertos da CVM para o cache local."""
-    console.print("[yellow]Coletor CVM ainda não implementado (milestone 2 do ROADMAP).[/]")
+    from . import armazenamento
+
+    con = armazenamento.conectar()
+    try:
+        _executar_atualizacao(con)
+    finally:
+        con.close()
 
 
 if __name__ == "__main__":

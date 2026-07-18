@@ -56,4 +56,6 @@ class RaioX:
     indicadores: list[IndicadorLinha] = field(default_factory=list)
     red_flags: list[RedFlag] = field(default_factory=list)
     sem_alerta: list[str] = field(default_factory=list)
+    notas: list[str] = field(default_factory=list)
+    red_flags_avaliadas: bool = True
     exemplo: bool = False

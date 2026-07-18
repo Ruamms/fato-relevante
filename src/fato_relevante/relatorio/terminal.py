@@ -35,6 +35,8 @@ def renderizar(raiox: RaioX, console: Console) -> None:
     console.print(_secao_red_flags(raiox))
     if raiox.sem_alerta:
         console.print(_sem_alerta(raiox))
+    for nota in raiox.notas:
+        console.print(Padding(Text(f"· {nota}", style="dim"), (0, 0, 0, 2)))
     console.print(Padding(Text(_RODAPE, style="dim italic"), (1, 0, 1, 2)))
 
 
@@ -85,6 +87,12 @@ def _tabela_indicadores(raiox: RaioX) -> Table:
 
 
 def _secao_red_flags(raiox: RaioX) -> Group:
+    if not raiox.red_flags_avaliadas:
+        aviso = Text(
+            "🚩 red flags: motor de regras ainda não implementado",
+            style="dim",
+        )
+        return Group(Padding(aviso, (1, 0, 0, 1)))
     if not raiox.red_flags:
         titulo = Text("✓ RED FLAGS — nenhum alerta disparado", style="bold green")
         return Group(Padding(titulo, (1, 0, 0, 1)))
