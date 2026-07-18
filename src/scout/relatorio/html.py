@@ -14,14 +14,14 @@ from .glossario import TERMOS
 
 _COR_SELO = {
     "sem_alertas": "#22c55e",
-    "leves": "#eab308",
+    "leves": "#D9B44A",
     "atencao": "#f97316",
-    "grave": "#ef4444",
+    "grave": "#D66A6A",
     "insuficiente": "#94a3b8",
 }
 
 _COR_SEVERIDADE = {
-    Severidade.ALTA: "#ef4444",
+    Severidade.ALTA: "#D66A6A",
     Severidade.MEDIA: "#f97316",
     Severidade.BAIXA: "#38bdf8",
 }
@@ -162,65 +162,65 @@ def gerar(completo: AnaliseCompleta, agora: datetime | None = None) -> str:
 :root {{ color-scheme: dark; }}
 html {{ scroll-behavior: smooth; }}
 * {{ box-sizing: border-box; margin: 0; }}
-body {{ background:#0b1017; color:#dbe3ec; font-family:system-ui,-apple-system,sans-serif; line-height:1.5; }}
+body {{ background:#101415; color:#F4F5F6; font-family:system-ui,-apple-system,sans-serif; line-height:1.5; }}
 .pagina {{ max-width:960px; margin:0 auto; padding:28px 20px 40px; }}
-a {{ color:#5eead4; }}
+a {{ color:#8FCB9B; }}
 .topo {{ display:flex; flex-wrap:wrap; align-items:baseline; gap:10px 14px; }}
 .marca {{ color:#8b98a9; font-size:14px; letter-spacing:.14em; text-transform:uppercase; }}
 h1 {{ font-size:34px; }} h1 small {{ color:#8b98a9; font-size:17px; font-weight:400; }}
-.selo {{ display:inline-block; padding:4px 14px; border-radius:999px; font-weight:700; font-size:14px; color:#0b1017; white-space:nowrap; }}
-.btn-topo {{ margin-left:auto; background:#1a2432; border:1px solid #2a3441; color:#5eead4; text-decoration:none; padding:6px 14px; border-radius:8px; font-size:13px; font-weight:600; }}
-.btn-topo:hover {{ border-color:#5eead4; }}
+.selo {{ display:inline-block; padding:4px 14px; border-radius:999px; font-weight:700; font-size:14px; color:#101415; white-space:nowrap; }}
+.btn-topo {{ margin-left:auto; background:#232D31; border:1px solid #314045; color:#8FCB9B; text-decoration:none; padding:6px 14px; border-radius:8px; font-size:13px; font-weight:600; }}
+.btn-topo:hover {{ border-color:#8FCB9B; }}
 .meta {{ color:#8b98a9; font-size:13px; margin-top:6px; }}
 .cards {{ display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:10px; margin:22px 0; }}
-.card {{ background:#121a24; border:1px solid #1f2a38; border-radius:10px; padding:12px 14px; }}
+.card {{ background:#182024; border:1px solid #232D31; border-radius:10px; padding:12px 14px; }}
 .card .nome {{ color:#8b98a9; font-size:12px; text-transform:uppercase; letter-spacing:.06em; }}
 .card .valor {{ font-size:21px; font-weight:700; margin-top:2px; }}
 .card .extra {{ color:#8b98a9; font-size:12px; margin-top:2px; }}
-.card.alerta {{ border-color:#eab308; }}
+.card.alerta {{ border-color:#D9B44A; }}
 h2 {{ font-size:18px; margin:26px 0 10px; }}
-.flag {{ background:#121a24; border:1px solid #1f2a38; border-left:4px solid; border-radius:10px; padding:14px 16px; margin-bottom:10px; }}
+.flag {{ background:#182024; border:1px solid #232D31; border-left:4px solid; border-radius:10px; padding:14px 16px; margin-bottom:10px; }}
 .flag .sev {{ font-size:12px; font-weight:800; letter-spacing:.08em; }}
 .flag h3 {{ font-size:16px; margin:2px 0 6px; }}
 .flag .evid, .flag .fonte {{ color:#8b98a9; font-size:13px; }}
 .ok {{ color:#4ade80; font-size:14px; }} .na {{ color:#8b98a9; font-size:13px; }}
 ul {{ padding-left:20px; }} li {{ margin:3px 0; }}
-.grafico {{ background:#121a24; border:1px solid #1f2a38; border-radius:10px; padding:14px 16px 8px; margin-bottom:14px; }}
+.grafico {{ background:#182024; border:1px solid #232D31; border-radius:10px; padding:14px 16px 8px; margin-bottom:14px; }}
 .grafico h3 {{ font-size:15px; color:#aeb9c7; margin-bottom:8px; }}
 .grafico .nota {{ color:#66707d; font-size:11px; }}
 .grafico .cab {{ display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap; }}
-.abas button {{ background:#1a2432; color:#8b98a9; border:1px solid #2a3441; border-radius:7px; padding:3px 12px; font-size:12px; cursor:pointer; }}
-.abas button.ativo {{ background:#5eead4; color:#0b1017; border-color:#5eead4; font-weight:700; }}
+.abas button {{ background:#232D31; color:#8b98a9; border:1px solid #314045; border-radius:7px; padding:3px 12px; font-size:12px; cursor:pointer; }}
+.abas button.ativo {{ background:#8FCB9B; color:#101415; border-color:#8FCB9B; font-weight:700; }}
 .ajuda {{ display:inline-flex; align-items:center; justify-content:center; width:15px; height:15px;
-  border-radius:50%; background:#2a3441; color:#8b98a9; font-size:10px; font-weight:700;
+  border-radius:50%; background:#314045; color:#8b98a9; font-size:10px; font-weight:700;
   cursor:help; position:relative; vertical-align:middle; margin-left:5px; }}
 .ajuda .dica {{ visibility:hidden; opacity:0; transition:opacity .15s; position:absolute; z-index:10;
-  bottom:135%; left:50%; transform:translateX(-50%); width:270px; background:#1a2432;
-  border:1px solid #2a3441; border-radius:9px; padding:10px 12px; color:#dbe3ec;
+  bottom:135%; left:50%; transform:translateX(-50%); width:270px; background:#232D31;
+  border:1px solid #314045; border-radius:9px; padding:10px 12px; color:#F4F5F6;
   font-size:12.5px; font-weight:400; line-height:1.45; text-transform:none; letter-spacing:0;
   text-align:left; box-shadow:0 6px 20px rgba(0,0,0,.45); }}
 .ajuda:hover .dica, .ajuda:focus .dica {{ visibility:visible; opacity:1; }}
-.calc {{ background:#121a24; border:1px solid #1f2a38; border-radius:10px; padding:16px; margin-bottom:14px; }}
+.calc {{ background:#182024; border:1px solid #232D31; border-radius:10px; padding:16px; margin-bottom:14px; }}
 .calc h3 {{ font-size:15px; color:#aeb9c7; margin-bottom:4px; }}
 .calc .desc {{ color:#8b98a9; font-size:13px; margin-bottom:12px; }}
 .calc .campos {{ display:flex; flex-wrap:wrap; gap:10px; align-items:end; }}
 .calc label {{ display:block; color:#8b98a9; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; margin-bottom:3px; }}
-.calc input[type=number] {{ background:#0b1017; color:#dbe3ec; border:1px solid #2a3441; border-radius:8px; padding:8px 10px; width:130px; font-size:15px; }}
-.calc select {{ background:#0b1017; color:#dbe3ec; border:1px solid #2a3441; border-radius:8px; padding:8px 10px; font-size:15px; }}
+.calc input[type=number] {{ background:#101415; color:#F4F5F6; border:1px solid #314045; border-radius:8px; padding:8px 10px; width:130px; font-size:15px; }}
+.calc select {{ background:#101415; color:#F4F5F6; border:1px solid #314045; border-radius:8px; padding:8px 10px; font-size:15px; }}
 .calc .check {{ display:flex; align-items:center; gap:6px; color:#aeb9c7; font-size:13px; padding-bottom:8px; }}
 .calc .resultado {{ display:grid; grid-template-columns:repeat(auto-fill,minmax(170px,1fr)); gap:10px; margin-top:14px; }}
-.calc .res {{ background:#0b1017; border:1px solid #1f2a38; border-radius:9px; padding:10px 12px; }}
+.calc .res {{ background:#101415; border:1px solid #232D31; border-radius:9px; padding:10px 12px; }}
 .calc .res .rotulo {{ color:#8b98a9; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; }}
-.calc .res .num {{ font-size:19px; font-weight:700; margin-top:2px; color:#5eead4; }}
+.calc .res .num {{ font-size:19px; font-weight:700; margin-top:2px; color:#8FCB9B; }}
 .calc .aviso {{ color:#66707d; font-size:11.5px; margin-top:10px; }}
 table.imoveis {{ width:100%; border-collapse:collapse; font-size:13.5px; }}
-table.imoveis th {{ color:#8b98a9; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; text-align:left; padding:6px 10px; border-bottom:1px solid #2a3441; }}
-table.imoveis td {{ padding:7px 10px; border-bottom:1px solid #1a2432; }}
+table.imoveis th {{ color:#8b98a9; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; text-align:left; padding:6px 10px; border-bottom:1px solid #314045; }}
+table.imoveis td {{ padding:7px 10px; border-bottom:1px solid #232D31; }}
 table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-align:right; }}
-.ver-mais {{ background:#1a2432; color:#5eead4; border:1px solid #2a3441; border-radius:8px;
+.ver-mais {{ background:#232D31; color:#8FCB9B; border:1px solid #314045; border-radius:8px;
   padding:6px 16px; font-size:13px; font-weight:600; cursor:pointer; margin-top:10px; }}
-.ver-mais:hover {{ border-color:#5eead4; }}
-.rodape {{ color:#8b98a9; font-size:12.5px; border-top:1px solid #1f2a38; margin-top:30px; padding-top:14px; }}
+.ver-mais:hover {{ border-color:#8FCB9B; }}
+.rodape {{ color:#8b98a9; font-size:12.5px; border-top:1px solid #232D31; margin-top:30px; padding-top:14px; }}
 @media print {{ body {{ background:#fff; color:#111; }} }}
 </style>
 </head>
@@ -359,7 +359,7 @@ def _cotacao_em(raiox: RaioX, agora: datetime) -> str:
     if not idade:
         return f" · cotação de <b>{_e(raiox.cotacao_em)}</b>"
     defasada = "dia" in idade  # mais de 48h: fim de semana/feriado/cache antigo
-    cor = "#eab308" if defasada else "#8b98a9"
+    cor = "#D9B44A" if defasada else "#8b98a9"
     aviso = " ⚠" if defasada else ""
     return (
         f" · cotação de <b>{_e(raiox.cotacao_em)}</b> "
@@ -531,7 +531,7 @@ def _secao_pares(raiox: RaioX) -> str:
         )
     media = raiox.pares_media
     linhas.append(
-        f'<tr style="border-top:2px solid #2a3441"><td colspan="2"><b>média do segmento '
+        f'<tr style="border-top:2px solid #314045"><td colspan="2"><b>média do segmento '
         f"({media.get('n', 0)} fundos)</b></td>"
         f"<td><b>{_celula(media.get('dy'), formato.percentual)}</b></td>"
         f"<td><b>{_celula(media.get('pvp'), formato.decimal)}</b></td>"

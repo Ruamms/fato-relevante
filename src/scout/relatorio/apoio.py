@@ -74,17 +74,17 @@ def gerar() -> str:
 <title>Apoie o Scout</title>
 <style>
 * {{ box-sizing:border-box; margin:0; }}
-body {{ background:#0b1017; color:#dbe3ec; font-family:system-ui,sans-serif; line-height:1.6; }}
+body {{ background:#101415; color:#F4F5F6; font-family:system-ui,sans-serif; line-height:1.6; }}
 .pagina {{ max-width:560px; margin:0 auto; padding:40px 20px; text-align:center; }}
 .marca {{ color:#8b98a9; font-size:13px; letter-spacing:.14em; text-transform:uppercase; }}
 h1 {{ font-size:26px; margin:8px 0 14px; }}
 p {{ color:#aeb9c7; }}
 .qr {{ background:#fff; border-radius:14px; padding:14px; display:inline-block; margin:22px 0 10px; max-width:280px; }}
 .qr svg {{ width:100%; height:auto; display:block; }}
-.chave {{ font-size:17px; font-weight:700; background:#121a24; border:1px solid #1f2a38; border-radius:9px; padding:10px 16px; display:inline-block; margin:8px 0; }}
-textarea {{ width:100%; background:#121a24; color:#8b98a9; border:1px solid #1f2a38; border-radius:9px; padding:10px; font-size:11px; margin-top:14px; resize:none; }}
-button {{ background:#5eead4; color:#0b1017; border:0; border-radius:8px; padding:8px 18px; font-weight:700; cursor:pointer; margin-top:8px; }}
-a {{ color:#5eead4; }}
+.chave {{ font-size:17px; font-weight:700; background:#182024; border:1px solid #232D31; border-radius:9px; padding:10px 16px; display:inline-block; margin:8px 0; }}
+textarea {{ width:100%; background:#182024; color:#8b98a9; border:1px solid #232D31; border-radius:9px; padding:10px; font-size:11px; margin-top:14px; resize:none; }}
+button {{ background:#8FCB9B; color:#101415; border:0; border-radius:8px; padding:8px 18px; font-weight:700; cursor:pointer; margin-top:8px; }}
+a {{ color:#8FCB9B; }}
 .rodape {{ color:#66707d; font-size:12px; margin-top:30px; }}
 </style>
 </head>

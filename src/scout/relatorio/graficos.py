@@ -18,8 +18,8 @@ MARGEM_DIR = 16
 MARGEM_TOPO = 14
 MARGEM_BAIXO = 34
 
-CORES = ("#5eead4", "#f59e0b", "#a78bfa")
-COR_GRADE = "#2a3441"
+CORES = ("#8FCB9B", "#f59e0b", "#a78bfa")
+COR_GRADE = "#314045"
 COR_TEXTO = "#8b98a9"
 COR_MEDIA = "#f472b6"
 

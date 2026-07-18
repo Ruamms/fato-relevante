@@ -103,36 +103,36 @@ def _indice(fundos: list, base: list, agora: datetime) -> str:
 <style>
 :root {{ color-scheme: dark; }}
 * {{ box-sizing:border-box; margin:0; }}
-body {{ background:#0b1017; color:#dbe3ec; font-family:system-ui,sans-serif; line-height:1.5; }}
+body {{ background:#101415; color:#F4F5F6; font-family:system-ui,sans-serif; line-height:1.5; }}
 .pagina {{ max-width:1020px; margin:0 auto; padding:28px 20px 40px; }}
 .marca {{ color:#8b98a9; font-size:14px; letter-spacing:.14em; text-transform:uppercase; }}
 h1 {{ font-size:30px; margin:4px 0 6px; }}
 .meta {{ color:#8b98a9; font-size:13px; }}
-a {{ color:#5eead4; }}
-input#busca {{ width:100%; background:#121a24; color:#dbe3ec; border:1px solid #2a3441;
+a {{ color:#8FCB9B; }}
+input#busca {{ width:100%; background:#182024; color:#F4F5F6; border:1px solid #314045;
   border-radius:10px; padding:12px 16px; font-size:16px; margin:18px 0 10px; }}
 .atualizacao {{ display:flex; align-items:center; gap:12px; flex-wrap:wrap; margin-top:10px; }}
-.btn-atu {{ background:#1a2432; border:1px solid #2a3441; color:#5eead4; text-decoration:none;
+.btn-atu {{ background:#232D31; border:1px solid #314045; color:#8FCB9B; text-decoration:none;
   padding:5px 13px; border-radius:8px; font-size:12.5px; font-weight:600; }}
-.btn-atu:hover {{ border-color:#5eead4; }}
-.barra {{ width:180px; height:6px; background:#1a2432; border-radius:99px; overflow:hidden; }}
-.barra .preencher {{ width:40%; height:100%; background:#5eead4; border-radius:99px;
+.btn-atu:hover {{ border-color:#8FCB9B; }}
+.barra {{ width:180px; height:6px; background:#232D31; border-radius:99px; overflow:hidden; }}
+.barra .preencher {{ width:40%; height:100%; background:#8FCB9B; border-radius:99px;
   animation: desliza 1.2s ease-in-out infinite; }}
 @keyframes desliza {{ 0% {{ margin-left:-40%; }} 100% {{ margin-left:100%; }} }}
 table {{ width:100%; border-collapse:collapse; font-size:13.5px; }}
 th {{ color:#8b98a9; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em;
-  text-align:left; padding:6px 10px; border-bottom:1px solid #2a3441; position:sticky; top:0; background:#0b1017; }}
-td {{ padding:7px 10px; border-bottom:1px solid #1a2432; }}
+  text-align:left; padding:6px 10px; border-bottom:1px solid #314045; position:sticky; top:0; background:#101415; }}
+td {{ padding:7px 10px; border-bottom:1px solid #232D31; }}
 td:not(:first-child):not(:nth-child(2)):not(:nth-child(3)), th:not(:first-child):not(:nth-child(2)):not(:nth-child(3)) {{ text-align:right; }}
 .selo {{ display:inline-block; padding:2px 10px; border-radius:999px; font-weight:700;
-  font-size:11px; color:#0b1017; white-space:nowrap; }}
+  font-size:11px; color:#101415; white-space:nowrap; }}
 h2 {{ font-size:18px; margin:28px 0 10px; }}
 .blocos {{ display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:14px; }}
-.bloco {{ background:#121a24; border:1px solid #1f2a38; border-radius:10px; padding:14px 16px; }}
+.bloco {{ background:#182024; border:1px solid #232D31; border-radius:10px; padding:14px 16px; }}
 .bloco h3 {{ font-size:14px; color:#aeb9c7; margin-bottom:8px; }}
 .bloco ol {{ padding-left:22px; font-size:13.5px; }}
 .bloco li {{ margin:4px 0; }}
-.rodape {{ color:#8b98a9; font-size:12.5px; border-top:1px solid #1f2a38; margin-top:30px; padding-top:14px; }}
+.rodape {{ color:#8b98a9; font-size:12.5px; border-top:1px solid #232D31; margin-top:30px; padding-top:14px; }}
 </style>
 </head>
 <body>
