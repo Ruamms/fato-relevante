@@ -31,10 +31,10 @@ def test_pagina_apoio(tmp_path):
     assert f'mailto:{apoio.EMAIL_CONTATO}' in conteudo
 
 
-def test_linkedin_so_aparece_quando_configurado(tmp_path, monkeypatch):
+def test_linkedin_configurado_aparece_e_vazio_oculta(monkeypatch):
+    assert 'href="https://www.linkedin.com/in/ruan-magalhaes-sampaio/"' in apoio.gerar()
+    monkeypatch.setattr(apoio, "LINKEDIN", "")
     assert "LinkedIn" not in apoio.gerar()
-    monkeypatch.setattr(apoio, "LINKEDIN", "https://www.linkedin.com/in/exemplo")
-    assert 'href="https://www.linkedin.com/in/exemplo"' in apoio.gerar()
 
 
 # --- rótulos e tooltips dos gráficos ----------------------------------------------

@@ -13,7 +13,7 @@ CHAVE_PIX = "ruamms3@gmail.com"
 NOME_RECEBEDOR = "Ruan Sampaio"
 CIDADE = "BRASIL"
 EMAIL_CONTATO = "ruamms3@gmail.com"
-LINKEDIN = ""  # URL do perfil (ex.: https://www.linkedin.com/in/usuario); vazio = não exibe
+LINKEDIN = "https://www.linkedin.com/in/ruan-magalhaes-sampaio/"
 
 
 def payload_pix(
