@@ -1,20 +1,27 @@
 """Monta o RaioX de um ativo a partir do cache local (sem internet).
 
-Nesta fase os indicadores vêm dos informes mensais da CVM. Cotação de
-mercado (e portanto P/VP) e o motor de red flags entram nos próximos
-milestones.
+Os indicadores vêm dos informes mensais da CVM e das cotações em cache;
+o motor de red flags roda sobre as mesmas séries e devolve alertas com
+evidência e fonte.
 """
 
 from __future__ import annotations
 
+import dataclasses
 import sqlite3
 
-from . import armazenamento
+from . import armazenamento, formato, redflags, series
 from .modelos import IndicadorLinha, RaioX
+from .redflags.contexto import Contexto
 
-_NOTAS_FASE_ATUAL = [
-    "motor de red flags entra no milestone 4",
-]
+# regra disparada -> linha de indicador que ganha o ⚠
+_INDICADOR_DA_REGRA = {
+    "distribuicao": "DY mensal",
+    "diluicao": "Nº de cotas",
+    "vp_queda": "VP/cota",
+    "cotistas": "Cotistas",
+    "pvp_faixa": "P/VP",
+}
 
 
 def montar_raio_x(con: sqlite3.Connection, ticker: str) -> RaioX | None:
@@ -27,43 +34,74 @@ def montar_raio_x(con: sqlite3.Connection, ticker: str) -> RaioX | None:
         return None
     cotacoes = armazenamento.serie_cotacoes(con, ticker)
     meta_cotacao = armazenamento.cotacao_meta(con, ticker)
-    atual = serie[-1]
-    notas = list(_NOTAS_FASE_ATUAL)
+    preco = meta_cotacao["preco_atual"] if meta_cotacao else None
+    vp_ajustada = series.serie_vp_ajustada(serie)
+
+    contexto = Contexto(
+        serie=serie,
+        vp_ajustada=vp_ajustada,
+        cotacoes=cotacoes,
+        preco_atual=preco,
+    )
+    resultado = redflags.avaliar(contexto)
+
+    notas = []
     if not cotacoes:
-        notas.insert(0, "sem cotação de bolsa para este ticker")
+        notas.append("sem cotação de bolsa para este ticker")
+    if resultado.nao_avaliadas:
+        notas.append(
+            "não avaliadas por falta de histórico ou dado: "
+            + "; ".join(resultado.nao_avaliadas)
+        )
+
+    indicadores = _montar_indicadores(serie, cotacoes, preco, vp_ajustada)
+    indicadores = _marcar_alertas(indicadores, resultado.flags)
+
+    atual = serie[-1]
     return RaioX(
         ticker=ticker,
         nome=fundo.nome,
         cnpj=fundo.cnpj,
         classificacao=fundo.segmento,
         gestao=fundo.tipo_gestao,
-        dados_ate=_competencia_br(atual["competencia"]),
-        cotacao_em=_dia_br(meta_cotacao["cotado_em"]) if meta_cotacao else "",
-        indicadores=_montar_indicadores(serie, cotacoes, meta_cotacao),
-        red_flags=[],
-        sem_alerta=[],
+        dados_ate=formato.competencia_br(atual["competencia"]),
+        cotacao_em=formato.dia_br(meta_cotacao["cotado_em"]) if meta_cotacao else "",
+        indicadores=indicadores,
+        red_flags=resultado.flags,
+        sem_alerta=resultado.aprovadas,
         notas=notas,
-        red_flags_avaliadas=False,
+        red_flags_avaliadas=True,
         exemplo=False,
     )
+
+
+def _marcar_alertas(indicadores: list[IndicadorLinha], flags) -> list[IndicadorLinha]:
+    nomes_com_alerta = {
+        _INDICADOR_DA_REGRA[flag.codigo]
+        for flag in flags
+        if flag.codigo in _INDICADOR_DA_REGRA
+    }
+    return [
+        dataclasses.replace(linha, alerta=True) if linha.nome in nomes_com_alerta else linha
+        for linha in indicadores
+    ]
 
 
 def _montar_indicadores(
     serie: list[sqlite3.Row],
     cotacoes: list[sqlite3.Row],
-    meta_cotacao: sqlite3.Row | None,
+    preco: float | None,
+    vp_ajustada: dict[str, float],
 ) -> list[IndicadorLinha]:
     atual = serie[-1]
     primeira = serie[0]["competencia"]
-    vp_ajustada = _serie_vp_ajustada(serie)
     linhas = []
 
-    preco = meta_cotacao["preco_atual"] if meta_cotacao else None
     if preco is not None and cotacoes:
         linhas.append(
             IndicadorLinha(
                 "Cotação",
-                f"R$ {_decimal(preco)}",
+                f"R$ {formato.decimal(preco)}",
                 _oscilacao_12m(cotacoes, preco),
                 _oscilacao_no_ano(cotacoes, preco),
             )
@@ -73,7 +111,7 @@ def _montar_indicadores(
             linhas.append(
                 IndicadorLinha(
                     "P/VP",
-                    _decimal(preco / vp),
+                    formato.decimal(preco / vp),
                     "—",
                     _media_pvp(cotacoes, vp_ajustada),
                 )
@@ -84,9 +122,9 @@ def _montar_indicadores(
         linhas.append(
             IndicadorLinha(
                 "Patrimônio líquido",
-                _moeda_compacta(pl),
+                formato.moeda_compacta(pl),
                 _variacao_12m(serie, "patrimonio_liquido"),
-                f"desde {_competencia_br(primeira)}",
+                f"desde {formato.competencia_br(primeira)}",
             )
         )
 
@@ -95,7 +133,7 @@ def _montar_indicadores(
         linhas.append(
             IndicadorLinha(
                 "VP/cota",
-                _decimal(vp),
+                formato.decimal(vp),
                 _variacao_12m(serie, "vp_cota"),
                 _media_vp_ajustada(vp_ajustada),
             )
@@ -106,7 +144,7 @@ def _montar_indicadores(
         linhas.append(
             IndicadorLinha(
                 "Nº de cotas",
-                _compacto(cotas),
+                formato.compacto(cotas),
                 _variacao_12m(serie, "cotas_emitidas"),
                 "—",
             )
@@ -117,7 +155,7 @@ def _montar_indicadores(
         linhas.append(
             IndicadorLinha(
                 "Valor do ativo",
-                _moeda_compacta(ativo),
+                formato.moeda_compacta(ativo),
                 _variacao_12m(serie, "valor_ativo"),
                 "—",
             )
@@ -128,7 +166,7 @@ def _montar_indicadores(
         linhas.append(
             IndicadorLinha(
                 "DY mensal",
-                _percentual(dy * 100),
+                formato.percentual(dy * 100),
                 _dy_acumulado_12m(serie),
                 _media_dy(serie),
             )
@@ -139,7 +177,7 @@ def _montar_indicadores(
         linhas.append(
             IndicadorLinha(
                 "Cotistas",
-                _compacto(cotistas),
+                formato.compacto(cotistas),
                 _variacao_12m(serie, "cotistas"),
                 "—",
             )
@@ -148,150 +186,59 @@ def _montar_indicadores(
     return linhas
 
 
-# --- cotações e P/VP --------------------------------------------------------
+# --- células formatadas ------------------------------------------------------
+
+
+def _variacao_12m(serie: list[sqlite3.Row], campo: str) -> str:
+    variacao = series.variacao_pct(serie, campo, 12)
+    if variacao is None:
+        return "—"
+    return formato.percentual(variacao, sinal=True)
 
 
 def _oscilacao_12m(cotacoes: list[sqlite3.Row], preco_atual: float) -> str:
-    alvo = _competencia_menos_meses(cotacoes[-1]["competencia"], 12)
-    base = next((c["fechamento"] for c in cotacoes if c["competencia"] == alvo), None)
+    alvo = series.competencia_menos_meses(cotacoes[-1]["competencia"], 12)
+    base = series.valor_em(cotacoes, "fechamento", alvo)
     if not base:
         return "—"
-    return _percentual(100 * (preco_atual - base) / base, sinal=True)
+    return formato.percentual(100 * (preco_atual - base) / base, sinal=True)
 
 
 def _oscilacao_no_ano(cotacoes: list[sqlite3.Row], preco_atual: float) -> str:
     dezembro = f"{int(cotacoes[-1]['competencia'][:4]) - 1}-12"
-    base = next((c["fechamento"] for c in cotacoes if c["competencia"] == dezembro), None)
+    base = series.valor_em(cotacoes, "fechamento", dezembro)
     if not base:
         return "—"
-    return f"{_percentual(100 * (preco_atual - base) / base, sinal=True)} no ano"
+    return f"{formato.percentual(100 * (preco_atual - base) / base, sinal=True)} no ano"
 
 
 def _media_pvp(cotacoes: list[sqlite3.Row], vp_ajustada: dict[str, float]) -> str:
     razoes = [
-        c["fechamento"] / vp_ajustada[c["competencia"]]
-        for c in cotacoes
-        if c["fechamento"] and vp_ajustada.get(c["competencia"])
+        candle["fechamento"] / vp_ajustada[candle["competencia"]]
+        for candle in cotacoes
+        if candle["fechamento"] and vp_ajustada.get(candle["competencia"])
     ]
     if not razoes:
         return "—"
-    return f"média {_decimal(sum(razoes) / len(razoes))}"
+    return f"média {formato.decimal(sum(razoes) / len(razoes))}"
 
 
 def _media_vp_ajustada(vp_ajustada: dict[str, float]) -> str:
     if not vp_ajustada:
         return "—"
     valores = list(vp_ajustada.values())
-    return f"média {_decimal(sum(valores) / len(valores))}"
-
-
-def _serie_vp_ajustada(serie: list[sqlite3.Row]) -> dict[str, float]:
-    """VP/cota com desdobramentos neutralizados (na base de cotas atual).
-
-    A CVM publica o VP/cota da época; um desdobramento 10:1 faz o valor
-    despencar 90% de um mês para o outro sem perda patrimonial nenhuma.
-    Saltos além de 2,5x para qualquer lado são tratados como evento de
-    cotas (desdobramento/grupamento) e neutralizados, para que médias e
-    comparações históricas façam sentido.
-    """
-    bruta = [
-        (linha["competencia"], linha["vp_cota"])
-        for linha in serie
-        if linha["vp_cota"]
-    ]
-    ajustada: dict[str, float] = {}
-    fator = 1.0
-    vp_posterior = None
-    for competencia, vp in reversed(bruta):
-        if vp_posterior is not None:
-            razao = vp / vp_posterior
-            if razao >= 2.5 or razao <= 0.4:
-                fator *= vp_posterior / vp
-        ajustada[competencia] = vp * fator
-        vp_posterior = vp
-    return ajustada
-
-
-# --- séries -----------------------------------------------------------------
-
-
-def _valor_12m_atras(serie: list[sqlite3.Row], campo: str) -> float | None:
-    alvo = _competencia_menos_meses(serie[-1]["competencia"], 12)
-    for linha in serie:
-        if linha["competencia"] == alvo:
-            return linha[campo]
-    return None
-
-
-def _variacao_12m(serie: list[sqlite3.Row], campo: str) -> str:
-    atual = serie[-1][campo]
-    anterior = _valor_12m_atras(serie, campo)
-    if atual is None or anterior in (None, 0):
-        return "—"
-    return _percentual(100 * (atual - anterior) / abs(anterior), sinal=True)
-
-
-def _media_historica(serie: list[sqlite3.Row], campo: str, prefixo: str = "") -> str:
-    valores = [linha[campo] for linha in serie if linha[campo] is not None]
-    if not valores:
-        return "—"
-    return prefixo + _decimal(sum(valores) / len(valores))
-
-
-def _dy_valido(valor: float | None) -> bool:
-    """Filtra lixo auto-declarado (há DY negativo e até de 8,6 bilhões % na base)."""
-    return valor is not None and 0 <= valor <= 0.10
+    return f"média {formato.decimal(sum(valores) / len(valores))}"
 
 
 def _dy_acumulado_12m(serie: list[sqlite3.Row]) -> str:
-    ultimos = [linha["dy_mes"] for linha in serie[-12:] if _dy_valido(linha["dy_mes"])]
-    if not ultimos:
+    acumulado = series.dy_acumulado(serie, 12)
+    if acumulado is None:
         return "—"
-    return f"{_percentual(sum(ultimos) * 100)} 12m"
+    return f"{formato.percentual(acumulado * 100)} 12m"
 
 
 def _media_dy(serie: list[sqlite3.Row]) -> str:
-    validos = [linha["dy_mes"] for linha in serie if _dy_valido(linha["dy_mes"])]
+    validos = [linha["dy_mes"] for linha in serie if series.dy_valido(linha["dy_mes"])]
     if not validos:
         return "—"
-    return f"média {_percentual(sum(validos) / len(validos) * 100)}"
-
-
-def _competencia_menos_meses(competencia: str, meses: int) -> str:
-    ano, mes = int(competencia[:4]), int(competencia[5:7])
-    total = ano * 12 + (mes - 1) - meses
-    return f"{total // 12:04d}-{total % 12 + 1:02d}"
-
-
-def _competencia_br(competencia: str) -> str:
-    return f"{competencia[5:7]}/{competencia[:4]}"
-
-
-def _dia_br(data_iso: str | None) -> str:
-    if not data_iso or len(data_iso) < 10:
-        return ""
-    return f"{data_iso[8:10]}/{data_iso[5:7]}/{data_iso[:4]}"
-
-
-# --- formatação pt-BR -------------------------------------------------------
-
-
-def _decimal(valor: float, casas: int = 2) -> str:
-    texto = f"{valor:,.{casas}f}"
-    return texto.replace(",", "\0").replace(".", ",").replace("\0", ".")
-
-
-def _percentual(valor: float, sinal: bool = False) -> str:
-    prefixo = "+" if sinal and valor > 0 else ""
-    return f"{prefixo}{_decimal(valor)}%"
-
-
-def _compacto(valor: float) -> str:
-    for limite, sufixo in ((1e9, "B"), (1e6, "M"), (1e3, "mil")):
-        if abs(valor) >= limite:
-            return f"{_decimal(valor / limite, 1)}{sufixo}"
-    return _decimal(valor, 0)
-
-
-def _moeda_compacta(valor: float) -> str:
-    return f"R$ {_compacto(valor)}"
+    return f"média {formato.percentual(sum(validos) / len(validos) * 100)}"

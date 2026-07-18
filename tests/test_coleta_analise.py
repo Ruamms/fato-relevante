@@ -42,7 +42,9 @@ def test_montar_raio_x_com_dados_reais(con, zip_cvm):
     assert raiox.nome == "FUNDO TESTE FII"
     assert raiox.dados_ate == "02/2026"
     assert raiox.exemplo is False
-    assert raiox.red_flags_avaliadas is False
+    assert raiox.red_flags_avaliadas is True
+    # com 2 meses de série, a maioria das regras fica como "não avaliada"
+    assert any("não avaliadas" in nota for nota in raiox.notas)
     nomes = [linha.nome for linha in raiox.indicadores]
     assert "Patrimônio líquido" in nomes
     assert "VP/cota" in nomes
@@ -95,9 +97,11 @@ def test_cli_sem_argumentos_fora_de_terminal_mostra_ajuda():
 
 
 def test_formatacao_ptbr():
-    assert analise._decimal(1234.5) == "1.234,50"
-    assert analise._percentual(7.649, sinal=True) == "+7,65%"
-    assert analise._moeda_compacta(466_244_000) == "R$ 466,2M"
-    assert analise._compacto(46_277_022) == "46,3M"
-    assert analise._competencia_menos_meses("2026-02", 12) == "2025-02"
-    assert analise._competencia_menos_meses("2026-01", 12) == "2025-01"
+    from fato_relevante import formato, series
+
+    assert formato.decimal(1234.5) == "1.234,50"
+    assert formato.percentual(7.649, sinal=True) == "+7,65%"
+    assert formato.moeda_compacta(466_244_000) == "R$ 466,2M"
+    assert formato.compacto(46_277_022) == "46,3M"
+    assert series.competencia_menos_meses("2026-02", 12) == "2025-02"
+    assert series.competencia_menos_meses("2026-01", 12) == "2025-01"

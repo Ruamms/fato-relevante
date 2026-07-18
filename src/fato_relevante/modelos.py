@@ -30,6 +30,7 @@ class RedFlag:
     fato: str
     evidencia: str
     fonte: str
+    codigo: str = ""
 
 
 @dataclass(frozen=True)

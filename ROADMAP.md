@@ -8,7 +8,9 @@ Cada etapa é pensada para gerar valor sozinha — e virar conteúdo (post/víde
 - [x] **Indicadores** — cotação de mercado (Yahoo Finance, candles mensais desde 2011, sem chave), oscilações 12m e no ano, P/VP atual e média histórica, PL, VP/cota (média ajustada por desdobramento), nº de cotas, valor do ativo, DY mensal (fração→%, com filtro de lixo auto-declarado), cotistas
   - sincronização de cotação é preguiçosa (1x/dia por ticker) e degrada com aviso quando offline
   - pendente para depois: rendimento em R$ por cota, receita (informe trimestral)
-- [ ] **Motor de red flags** — regras auditáveis com evidência, ex.: distribuição acima do resultado gerado, diluição relevante sem crescimento de resultado, vacância fora da curva do segmento
+- [x] **Motor de red flags** — 6 regras auditáveis, cada uma com severidade, evidência numérica e fonte; regras sem histórico suficiente aparecem como "não avaliadas" (nunca como aprovação silenciosa)
+  - distribuição acima da variação patrimonial · diluição destrutiva por emissão · VP/cota em queda relevante · base de cotistas (mínimo legal de 100 para isenção de IR, Lei 14.754/2023) · P/VP fora da faixa histórica · rendimentos irregulares
+  - pendente para leva 2: vacância fora da curva (precisa do informe trimestral da CVM)
 - [ ] **Relatório de saída** — raio-x do ativo em Markdown/HTML apresentável (bom de ler e bom de filmar)
 
 ## Fase 2 — Camada qualitativa

@@ -71,17 +71,15 @@ def test_sem_conexao_usa_cache_com_aviso(con, monkeypatch):
 
 
 def test_serie_vp_ajustada_neutraliza_desdobramento():
-    class Linha(dict):
-        def __getitem__(self, chave):
-            return dict.__getitem__(self, chave)
+    from fato_relevante import series
 
     serie = [
-        Linha(competencia="2019-10", vp_cota=1600.0),
-        Linha(competencia="2019-11", vp_cota=1660.0),
-        Linha(competencia="2019-12", vp_cota=166.0),  # desdobramento 10:1
-        Linha(competencia="2020-01", vp_cota=168.0),
+        dict(competencia="2019-10", vp_cota=1600.0),
+        dict(competencia="2019-11", vp_cota=1660.0),
+        dict(competencia="2019-12", vp_cota=166.0),  # desdobramento 10:1
+        dict(competencia="2020-01", vp_cota=168.0),
     ]
-    ajustada = analise._serie_vp_ajustada(serie)
+    ajustada = series.serie_vp_ajustada(serie)
     assert ajustada["2019-12"] == 166.0
     assert ajustada["2020-01"] == 168.0
     assert ajustada["2019-11"] == pytest.approx(166.0)
