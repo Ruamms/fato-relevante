@@ -72,6 +72,31 @@ def test_gerar_site_com_limite(con, tmp_path):
     assert not (tmp_path / "site" / "ALFA11.html").exists()
 
 
+def test_paginas_do_site_tem_navegacao_e_sem_links_mortos(con, tmp_path):
+    _base(con)
+    site.gerar(con, tmp_path / "site", com_cotacoes=False, limite=2)
+    # com limite=2 (maiores PLs: BETA e GAMA), ALFA11 fica fora do site
+    assert not (tmp_path / "site" / "ALFA11.html").exists()
+    pagina = (tmp_path / "site" / "BETA11.html").read_text(encoding="utf-8")
+    # navegação: voltar ao índice + salto por ticker
+    assert 'href="index.html">← todos os fundos</a>' in pagina
+    assert "function irTicker" in pagina
+    # ALFA11 é fundo irmão (mesmo administrador) mas não tem página: sem link morto
+    assert 'href="ALFA11.html"' not in pagina
+    assert "ALFA11" in pagina  # segue visível, como texto
+
+
+def test_relatorio_local_nao_tem_navegacao_de_site(con):
+    from scout import analise
+    from scout.relatorio import html as relatorio_html
+
+    _base(con)
+    completo = analise.montar_completo(con, "alfa11")
+    pagina = relatorio_html.gerar(completo)  # sem `publicados` = relatório avulso
+    assert "todos os fundos</a>" not in pagina
+    assert 'id="ir-ticker"' not in pagina
+
+
 def test_pagina_do_fundo_no_site_tem_pares_via_varredura(con, tmp_path):
     _base(con)
     site.gerar(con, tmp_path / "site", com_cotacoes=False)

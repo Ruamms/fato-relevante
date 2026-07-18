@@ -35,25 +35,38 @@ _RODAPE = (
 
 # O glifo da marca (bússola do logo) desenhado em SVG: favicon nítido em
 # qualquer tamanho, embutido na página — sem arquivo externo.
-FAVICON = (
-    "data:image/svg+xml,"
+_SVG_FAVICON = (
     "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'>"
-    "<circle cx='32' cy='32' r='23' fill='none' stroke='%238FCB9B' stroke-width='6'/>"
-    "<polygon points='54,10 38,25 10,54 26,39' fill='%238FCB9B'/>"
-    "<circle cx='32' cy='32' r='6' fill='%23101415'/>"
+    "<circle cx='32' cy='32' r='23' fill='none' stroke='#8FCB9B' stroke-width='6'/>"
+    "<polygon points='54,10 38,25 10,54 26,39' fill='#8FCB9B'/>"
+    "<circle cx='32' cy='32' r='6' fill='#101415'/>"
     "</svg>"
 )
+import base64 as _base64  # noqa: E402
+
+FAVICON = "data:image/svg+xml;base64," + _base64.b64encode(_SVG_FAVICON.encode()).decode()
 TAG_FAVICON = f'<link rel="icon" href="{FAVICON}">'
 
 
-def salvar(completo: AnaliseCompleta, destino: Path, agora: datetime | None = None) -> Path:
+def salvar(
+    completo: AnaliseCompleta,
+    destino: Path,
+    agora: datetime | None = None,
+    publicados: set[str] | None = None,
+) -> Path:
     destino.mkdir(parents=True, exist_ok=True)
     caminho = destino / f"{completo.raiox.ticker}.html"
-    caminho.write_text(gerar(completo, agora), encoding="utf-8")
+    caminho.write_text(gerar(completo, agora, publicados), encoding="utf-8")
     return caminho
 
 
-def gerar(completo: AnaliseCompleta, agora: datetime | None = None) -> str:
+def gerar(
+    completo: AnaliseCompleta,
+    agora: datetime | None = None,
+    publicados: set[str] | None = None,
+) -> str:
+    """`publicados` = tickers com página no site: liga a navegação entre
+    páginas e evita links mortos (None = relatório local avulso)."""
     raiox = completo.raiox
     dados = completo.graficos
     agora = agora or datetime.now()
@@ -184,6 +197,10 @@ h1 {{ font-size:34px; }} h1 small {{ color:#8b98a9; font-size:17px; font-weight:
 .selo {{ display:inline-block; padding:4px 14px; border-radius:999px; font-weight:700; font-size:14px; color:#101415; white-space:nowrap; }}
 .btn-topo {{ margin-left:auto; background:#232D31; border:1px solid #314045; color:#8FCB9B; text-decoration:none; padding:6px 14px; border-radius:8px; font-size:13px; font-weight:600; }}
 .btn-topo:hover {{ border-color:#8FCB9B; }}
+.nav-site {{ display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-top:12px; }}
+.nav-site a {{ color:#8FCB9B; text-decoration:none; font-size:13.5px; font-weight:600; }}
+.nav-site input {{ background:#182024; color:#F4F5F6; border:1px solid #314045; border-radius:8px;
+  padding:7px 12px; font-size:13.5px; width:280px; }}
 .meta {{ color:#8b98a9; font-size:13px; margin-top:6px; }}
 .cards {{ display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:10px; margin:22px 0; }}
 .card {{ background:#182024; border:1px solid #232D31; border-radius:10px; padding:12px 14px; }}
@@ -245,6 +262,7 @@ table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-a
     {_selo_html(raiox)}
     <a class="btn-topo" href="#calculadoras">🧮 Calculadoras</a>
   </div>
+  {_nav_site(publicados)}
   <div class="meta">
     {_e(raiox.cnpj)} · {_e(raiox.classificacao)} · Gestão {_e(raiox.gestao.lower())}<br>
     informes CVM até <b>{_e(raiox.dados_ate)}</b>{_cotacao_em(raiox, agora)} · relatório gerado em {agora.strftime("%d/%m/%Y %H:%M")}
@@ -257,9 +275,9 @@ table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-a
 
   {_secao_imoveis(raiox)}
 
-  {_secao_administrador(raiox)}
+  {_secao_administrador(raiox, publicados=publicados)}
 
-  {_secao_pares(raiox)}
+  {_secao_pares(raiox, publicados=publicados)}
 
   <h2>Gráficos</h2>
   {"".join(secoes_graficos) or '<p class="na">sem séries suficientes para gráficos</p>'}
@@ -322,6 +340,12 @@ function atualizaRent() {{
   card.querySelectorAll('.painel').forEach(p => p.hidden = (p.dataset.painel !== alvo));
 }}
 
+function irTicker(evento, campo) {{
+  if (evento.key !== 'Enter') return;
+  const ticker = campo.value.trim().toUpperCase();
+  if (ticker) location.href = ticker + '.html';
+}}
+
 function verMais(botao, classe) {{
   const card = botao.closest('.grafico');
   const abertas = botao.textContent === botao.dataset.menos;
@@ -353,6 +377,24 @@ if (document.getElementById('rt-valor')) {{ calcRetro(); }}
 
 def _e(texto: str) -> str:
     return html_escape.escape(str(texto), quote=True)
+
+
+def _nav_site(publicados: set[str] | None) -> str:
+    """Barra de navegação entre páginas — só no site (relatório local é avulso)."""
+    if publicados is None:
+        return ""
+    return (
+        '<div class="nav-site"><a href="index.html">← todos os fundos</a>'
+        '<input id="ir-ticker" placeholder="ir para outro fundo… (ex.: HGLG11)" '
+        'onkeydown="irTicker(event, this)"></div>'
+    )
+
+
+def _link_se_publicado(ticker: str, publicados: set[str] | None) -> str:
+    """Link para a página do ticker apenas quando ela existe no site."""
+    if publicados is not None and ticker not in publicados:
+        return _e(ticker)
+    return f'<a href="{_e(ticker)}.html">{_e(ticker)}</a>'
 
 
 def _selo_html(raiox: RaioX) -> str:
@@ -477,14 +519,16 @@ def _secao_imoveis(raiox: RaioX, limite: int = 10) -> str:
 """
 
 
-def _secao_administrador(raiox: RaioX, limite: int = 12) -> str:
+def _secao_administrador(
+    raiox: RaioX, limite: int = 12, publicados: set[str] | None = None
+) -> str:
     if not raiox.fundos_irmaos:
         return ""
     linhas = []
     for indice, irmao in enumerate(raiox.fundos_irmaos):
         selo = _selo_tabela(irmao.selo, irmao.motivos)
         rotulo = (
-            f'<a href="{_e(irmao.ticker)}.html">{_e(irmao.ticker)}</a>'
+            _link_se_publicado(irmao.ticker, publicados)
             if irmao.ticker
             else _e(irmao.nome[:40])
         )
@@ -530,7 +574,7 @@ def _selo_tabela(selo, motivos: tuple[str, ...]) -> str:
     )
 
 
-def _secao_pares(raiox: RaioX) -> str:
+def _secao_pares(raiox: RaioX, publicados: set[str] | None = None) -> str:
     if not raiox.pares:
         return ""
 
@@ -540,7 +584,7 @@ def _secao_pares(raiox: RaioX) -> str:
     linhas = []
     for par in raiox.pares:
         rotulo = (
-            f'<a href="{_e(par.ticker)}.html">{_e(par.ticker)}</a>' if par.ticker else _e(par.nome[:30])
+            _link_se_publicado(par.ticker, publicados) if par.ticker else _e(par.nome[:30])
         )
         linhas.append(
             f"<tr><td>{rotulo}</td><td>{_e(par.nome[:40])}</td>"

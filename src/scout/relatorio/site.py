@@ -66,12 +66,13 @@ def gerar(
         por_ticker = {resumo.ticker: resumo for resumo in base if resumo.ticker}
         fundos = [por_ticker.get(resumo.ticker, resumo) for resumo in fundos]
 
+    tickers_no_site = {resumo.ticker for resumo in fundos}
     publicados = []
     for posicao, resumo in enumerate(fundos, start=1):
         completo = analise.montar_completo(con, resumo.ticker, varredura=base)
         if completo is None:
             continue
-        relatorio_html.salvar(completo, destino, agora=agora)
+        relatorio_html.salvar(completo, destino, agora=agora, publicados=tickers_no_site)
         publicados.append(resumo)
         item("páginas", posicao, len(fundos))
         if posicao % 50 == 0:
