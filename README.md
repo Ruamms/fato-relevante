@@ -1,9 +1,10 @@
 # Fato Relevante
 
-**Pare de garimpar 20 PDFs para entender um FII.**
+**Lemos os documentos oficiais para que você não precise.**
 
-Tudo o que os documentos oficiais dizem sobre um fundo imobiliário, numa página só —
-com alertas que mostram a conta, a fonte e **exatamente o que merece a sua atenção**.
+A dúvida que trava todo investidor de FII — *"será que tem algum problema escondido
+naquele relatório de 200 páginas?"* — vira uma lista de alertas com a conta, a fonte
+e **exatamente o que merece a sua atenção**.
 
 > *EN summary: Fato Relevante is an open-source tool that builds a fact-based "x-ray" of Brazilian REITs (FIIs) from official public data (CVM open data, B3/FNET filings, Central Bank series). A deterministic engine computes indicators and auditable red flags; a local LLM (Ollama) reads management reports and extracts quoted facts. Facts with sources — never buy/sell recommendations.*
 
