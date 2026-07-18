@@ -118,11 +118,34 @@ def _oferecer_atualizacao(con, interativo: bool) -> bool:
 
 
 def _executar_atualizacao(con) -> None:
+    from datetime import date
+
+    from rich.progress import BarColumn, Progress, TaskProgressColumn, TextColumn
+
     from . import armazenamento
     from .coleta import cvm
 
-    console.print(f"Baixando informes mensais de FII da CVM para [dim]{armazenamento.diretorio_dados()}[/]…")
-    cvm.atualizar(con, ao_progredir=lambda msg: console.print(f"  [dim]{msg}[/]"))
+    console.print(f"Baixando informes de FII da CVM para [dim]{armazenamento.diretorio_dados()}[/]…")
+    hoje = date.today()
+    total = len(cvm.anos_pendentes(con, hoje)) + len(
+        cvm.anos_pendentes(con, hoje, cvm.nome_arquivo_trimestral)
+    )
+    if not console.is_terminal:
+        cvm.atualizar(con, ao_progredir=lambda msg: console.print(f"  [dim]{msg}[/]"))
+    else:
+        with Progress(
+            TextColumn("[progress.description]{task.description}"),
+            BarColumn(),
+            TaskProgressColumn(),
+            console=console,
+        ) as barra:
+            tarefa = barra.add_task("informes CVM", total=total)
+
+            def _avanca(msg: str) -> None:
+                barra.console.print(f"  [dim]{msg}[/]")
+                barra.advance(tarefa)
+
+            cvm.atualizar(con, ao_progredir=_avanca)
     console.print("[green]Base atualizada.[/]")
 
 
@@ -194,13 +217,37 @@ def site(
             raise typer.Exit(1)
         pasta = Path(destino) if destino else armazenamento.diretorio_dados() / "site"
         console.print(f"Gerando site em [bold]{pasta}[/]…")
-        resumo = modulo_site.gerar(
-            con,
-            pasta,
-            com_cotacoes=not sem_cotacoes,
-            limite=limite,
-            ao_progredir=lambda msg: console.print(f"  [dim]{msg}[/]"),
-        )
+        if not console.is_terminal:
+            resumo = modulo_site.gerar(
+                con,
+                pasta,
+                com_cotacoes=not sem_cotacoes,
+                limite=limite,
+                ao_progredir=lambda msg: console.print(f"  [dim]{msg}[/]"),
+            )
+        else:
+            from rich.progress import BarColumn, Progress, TaskProgressColumn, TextColumn
+
+            with Progress(
+                TextColumn("[progress.description]{task.description}"),
+                BarColumn(),
+                TaskProgressColumn(),
+                console=console,
+            ) as barra:
+                tarefas: dict[str, object] = {}
+
+                def _item(fase: str, atual: int, total: int) -> None:
+                    if fase not in tarefas:
+                        tarefas[fase] = barra.add_task(fase, total=total)
+                    barra.update(tarefas[fase], completed=atual, total=total)
+
+                resumo = modulo_site.gerar(
+                    con,
+                    pasta,
+                    com_cotacoes=not sem_cotacoes,
+                    limite=limite,
+                    ao_item=_item,
+                )
         console.print(f"[green]{resumo['paginas']} páginas geradas em {resumo['destino']}[/]")
     finally:
         con.close()

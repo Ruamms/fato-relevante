@@ -17,6 +17,10 @@ from . import apoio
 from . import html as relatorio_html
 
 _COR_SELO = relatorio_html._COR_SELO
+_URL_WORKFLOW = "https://github.com/Ruamms/fato-relevante/actions/workflows/site.yml"
+_URL_API_RUNS = (
+    "https://api.github.com/repos/Ruamms/fato-relevante/actions/workflows/site.yml/runs?per_page=1"
+)
 
 
 def gerar(
@@ -25,10 +29,14 @@ def gerar(
     com_cotacoes: bool = True,
     limite: int | None = None,
     ao_progredir: Callable[[str], None] | None = None,
+    ao_item: Callable[[str, int, int], None] | None = None,
     agora: datetime | None = None,
 ) -> dict:
+    """`ao_progredir(msg)` = log textual esporádico; `ao_item(fase, atual, total)`
+    = callback por item, para barras de progresso."""
     destino.mkdir(parents=True, exist_ok=True)
     progresso = ao_progredir or (lambda mensagem: None)
+    item = ao_item or (lambda fase, atual, total: None)
 
     base = ranking.varrer(con)
     fundos = sorted(
@@ -50,6 +58,7 @@ def gerar(
         for posicao, resumo in enumerate(fundos, start=1):
             cotacoes.garantir_atualizada(con, resumo.ticker)
             time.sleep(0.15)  # educação com a fonte de cotações
+            item("cotações", posicao, len(fundos))
             if posicao % 50 == 0:
                 progresso(f"cotações: {posicao}/{len(fundos)}")
         # re-varre para os resumos (P/VP dos rankings/pares) enxergarem os preços
@@ -64,6 +73,7 @@ def gerar(
             continue
         relatorio_html.salvar(completo, destino, agora=agora)
         publicados.append(resumo)
+        item("páginas", posicao, len(fundos))
         if posicao % 50 == 0:
             progresso(f"páginas: {posicao}/{len(fundos)}")
 
@@ -101,6 +111,14 @@ h1 {{ font-size:30px; margin:4px 0 6px; }}
 a {{ color:#5eead4; }}
 input#busca {{ width:100%; background:#121a24; color:#dbe3ec; border:1px solid #2a3441;
   border-radius:10px; padding:12px 16px; font-size:16px; margin:18px 0 10px; }}
+.atualizacao {{ display:flex; align-items:center; gap:12px; flex-wrap:wrap; margin-top:10px; }}
+.btn-atu {{ background:#1a2432; border:1px solid #2a3441; color:#5eead4; text-decoration:none;
+  padding:5px 13px; border-radius:8px; font-size:12.5px; font-weight:600; }}
+.btn-atu:hover {{ border-color:#5eead4; }}
+.barra {{ width:180px; height:6px; background:#1a2432; border-radius:99px; overflow:hidden; }}
+.barra .preencher {{ width:40%; height:100%; background:#5eead4; border-radius:99px;
+  animation: desliza 1.2s ease-in-out infinite; }}
+@keyframes desliza {{ 0% {{ margin-left:-40%; }} 100% {{ margin-left:100%; }} }}
 table {{ width:100%; border-collapse:collapse; font-size:13.5px; }}
 th {{ color:#8b98a9; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em;
   text-align:left; padding:6px 10px; border-bottom:1px solid #2a3441; position:sticky; top:0; background:#0b1017; }}
@@ -124,6 +142,14 @@ h2 {{ font-size:18px; margin:28px 0 10px; }}
   <div class="meta">{len(fundos)} fundos negociáveis analisados com dados públicos oficiais ·
   atualizado em {agora.strftime("%d/%m/%Y %H:%M")} ·
   <a href="apoie.html">☕ apoie o projeto</a></div>
+
+  <div class="atualizacao">
+    <span id="atu-texto" class="meta">verificando status da atualização…</span>
+    <div id="atu-barra" class="barra" hidden><div class="preencher"></div></div>
+    <a class="btn-atu" href="{_URL_WORKFLOW}" target="_blank" rel="noopener"
+     title="Abre o GitHub Actions — clique em 'Run workflow' para atualizar agora (requer permissão no repositório)">
+    🔄 Atualizar agora</a>
+  </div>
 
   <input id="busca" type="search" placeholder="Busque por ticker, nome ou segmento… (ex.: HGLG, shopping, logística)"
    oninput="filtrar(this.value)">
@@ -149,6 +175,36 @@ function filtrar(texto) {{
     tr.hidden = termo !== '' && !tr.dataset.busca.includes(termo);
   }});
 }}
+
+// status da atualização via API pública do GitHub (repo público: sem token)
+async function statusAtualizacao() {{
+  const texto = document.getElementById('atu-texto');
+  const barra = document.getElementById('atu-barra');
+  try {{
+    const resposta = await fetch('{_URL_API_RUNS}');
+    const dados = await resposta.json();
+    const run = (dados.workflow_runs || [])[0];
+    if (!run) {{ texto.textContent = ''; return; }}
+    const quando = new Date(run.run_started_at).toLocaleString('pt-BR',
+      {{day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit'}});
+    if (run.status === 'completed') {{
+      barra.hidden = true;
+      texto.textContent = run.conclusion === 'success'
+        ? `última atualização concluída em ${{quando}}`
+        : `última atualização falhou (${{quando}}) — veja o log no GitHub`;
+    }} else {{
+      barra.hidden = false;
+      texto.textContent = `atualização em andamento (iniciada ${{quando}})… a página recarrega ao concluir`;
+      setTimeout(async () => {{
+        const r2 = await fetch('{_URL_API_RUNS}');
+        const d2 = await r2.json();
+        if ((d2.workflow_runs || [])[0]?.status === 'completed') location.reload();
+        else statusAtualizacao();
+      }}, 30000);
+    }}
+  }} catch (e) {{ texto.textContent = ''; }}
+}}
+statusAtualizacao();
 </script>
 </body>
 </html>

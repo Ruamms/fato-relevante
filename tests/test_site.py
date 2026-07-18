@@ -43,6 +43,24 @@ def test_gerar_site_completo(con, tmp_path):
     assert "não recomendação" in indice
     # linha com dados de busca em minúsculas
     assert 'data-busca="alfa11 alfa fii shoppings"' in indice
+    # botão de atualização manual + status ao vivo via API pública do GitHub
+    assert "Atualizar agora" in indice
+    assert "actions/workflows/site.yml" in indice
+    assert "async function statusAtualizacao" in indice
+    assert 'id="atu-barra"' in indice
+
+
+def test_gerar_site_com_callback_de_progresso(con, tmp_path):
+    _base(con)
+    chamadas = []
+    site.gerar(
+        con,
+        tmp_path / "site",
+        com_cotacoes=False,
+        ao_item=lambda fase, atual, total: chamadas.append((fase, atual, total)),
+    )
+    assert ("páginas", 1, 3) in chamadas
+    assert ("páginas", 3, 3) in chamadas
 
 
 def test_gerar_site_com_limite(con, tmp_path):
