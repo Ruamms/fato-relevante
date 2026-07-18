@@ -18,7 +18,6 @@ Repository = "https://github.com/Ruamms/scout"
 
 [project.scripts]
 scout = "scout.cli:app"
-fato = "scout.cli:app"  # alias legado da era Fato Relevante
 
 [dependency-groups]
 dev = [

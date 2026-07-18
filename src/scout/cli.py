@@ -66,7 +66,7 @@ def _modo_interativo() -> None:
 def _executar_entrada(entrada: str) -> bool:
     """Interpreta uma linha do modo interativo. False encerra o loop."""
     tokens = entrada.split()
-    if tokens and tokens[0].lower() in ("scout", "fato"):  # quem digita 'scout analisar X' também acerta
+    if tokens and tokens[0].lower() == "scout":  # quem digita 'scout analisar X' também acerta
         tokens = tokens[1:]
     if not tokens:
         return True

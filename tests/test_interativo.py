@@ -54,7 +54,7 @@ def test_entrada_ranking(monkeypatch):
 
 def test_entrada_sair():
     assert cli._executar_entrada("sair") is False
-    assert cli._executar_entrada("fato exit") is False
+    assert cli._executar_entrada("scout exit") is False
 
 
 def test_entrada_ia_sem_ticker_orienta(monkeypatch):
