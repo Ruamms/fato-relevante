@@ -18,12 +18,19 @@ if errorlevel 1 goto :erro
 
 echo.
 echo ============================================
-echo  OK! Executavel gerado em: dist\fato.exe
-echo  Teste rapido: dist\fato.exe analisar ADSH11
+echo  OK! Executavel gerado em:
+echo  %~dp0dist\fato.exe
+echo.
+echo  Teste rapido (num terminal):
+echo  dist\fato.exe analisar ADSH11
 echo ============================================
+echo.
+pause
 exit /b 0
 
 :erro
 echo.
 echo *** BUILD FALHOU - veja as mensagens acima. ***
+echo.
+pause
 exit /b 1
