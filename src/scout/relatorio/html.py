@@ -37,9 +37,9 @@ _RODAPE = (
 # qualquer tamanho, embutido na página — sem arquivo externo.
 _SVG_FAVICON = (
     "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'>"
-    "<circle cx='32' cy='32' r='23' fill='none' stroke='#8FCB9B' stroke-width='6'/>"
-    "<polygon points='54,10 38,25 10,54 26,39' fill='#8FCB9B'/>"
-    "<circle cx='32' cy='32' r='6' fill='#101415'/>"
+    "<circle cx='32' cy='32' r='24' fill='none' stroke='#8FCB9B' stroke-width='5'/>"
+    "<polygon points='55,9 40,40 9,55 24,24' fill='#B9E2C1'/>"
+    "<circle cx='32' cy='32' r='4' fill='#101415'/>"
     "</svg>"
 )
 import base64 as _base64  # noqa: E402
