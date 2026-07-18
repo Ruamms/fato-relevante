@@ -79,18 +79,7 @@ def gerar(completo: AnaliseCompleta, agora: datetime | None = None) -> str:
             )
         )
     if dados.rentabilidade:
-        pct = lambda v: formato.percentual(v)  # noqa: E731
-        paineis = [
-            (janela, graficos.grafico_linhas(series_janela, formatador=pct))
-            for janela, series_janela in dados.rentabilidade.items()
-        ]
-        secoes_graficos.append(
-            _card_grafico_abas(
-                "Rentabilidade acumulada (com proventos) × CDI × IPCA",
-                paineis,
-                nota="fundo: cotação ajustada por proventos (Yahoo); CDI e IPCA: Banco Central (SGS)",
-            )
-        )
+        secoes_graficos.append(_card_rentabilidade(dados))
     if dados.dy_por_ano:
         pct = lambda v: formato.percentual(v)  # noqa: E731
         rs = lambda v: f"≈ R$ {formato.decimal(v)}" if v is not None else None  # noqa: E731
@@ -279,11 +268,27 @@ function calcAportes() {{
   põe('pa-renda', brl((reinvestir ? saldo : aportado) * taxa));
 }}
 
+function janelaRent(botao, janela) {{
+  const card = document.getElementById('card-rent');
+  card.dataset.janela = janela;
+  card.querySelectorAll('.abas button').forEach(b => b.classList.toggle('ativo', b === botao));
+  atualizaRent();
+}}
+
+function atualizaRent() {{
+  const card = document.getElementById('card-rent');
+  if (!card) return;
+  const modo = document.getElementById('rent-reinvestir').checked ? 'com' : 'sem';
+  const alvo = card.dataset.janela + '|' + modo;
+  card.querySelectorAll('.painel').forEach(p => p.hidden = (p.dataset.painel !== alvo));
+}}
+
 function calcRetro() {{
   if (typeof RETRO === 'undefined') return;
   const valor = num('rt-valor');
   const janela = document.getElementById('rt-janela').value;
-  const series = RETRO[janela] || {{}};
+  const modo = document.getElementById('rt-reinvestir').checked ? 'com' : 'sem';
+  const series = (RETRO[janela] || {{}})[modo] || {{}};
   const alvo = document.getElementById('rt-resultado');
   alvo.innerHTML = Object.entries(series).map(([nome, pct]) =>
     `<div class="res"><div class="rotulo">${{nome === 'Fundo' ? 'no fundo' : 'no ' + nome}}</div>` +
@@ -466,6 +471,43 @@ def _secao_calculadoras(completo: AnaliseCompleta) -> str:
 """
 
 
+def _card_rentabilidade(dados) -> str:
+    """Card de rentabilidade com abas de janela + checkbox de reinvestimento.
+
+    Os painéis são pré-renderizados por (janela, modo) e o JS só alterna a
+    visibilidade — a página continua estática.
+    """
+    pct = lambda v: formato.percentual(v)  # noqa: E731
+    paineis = []
+    for janela, modos in dados.rentabilidade.items():
+        for modo, series_janela in modos.items():
+            paineis.append(
+                (f"{janela}|{modo}", graficos.grafico_linhas(series_janela, formatador=pct))
+            )
+    janelas = list(dados.rentabilidade)
+    botoes = "".join(
+        f'<button class="{"ativo" if indice == 0 else ""}" '
+        f"onclick=\"janelaRent(this,'{_e(janela)}')\">{_e(janela)}</button>"
+        for indice, janela in enumerate(janelas)
+    )
+    corpo = "".join(
+        f'<div class="painel" data-painel="{_e(chave)}"'
+        f'{"" if chave == janelas[0] + "|com" else " hidden"}>{svg}</div>'
+        for chave, svg in paineis
+    )
+    titulo = "Rentabilidade acumulada × CDI × IPCA"
+    return f"""<div class="grafico" id="card-rent" data-janela="{_e(janelas[0])}">
+    <div class="cab"><h3>{_e(titulo)}{_ajuda("Rentabilidade acumulada (com proventos) × CDI × IPCA")}</h3>
+    <div class="abas">{botoes}</div></div>
+    {corpo}
+    <div class="check" style="margin-top:6px"><input type="checkbox" id="rent-reinvestir" checked onchange="atualizaRent()">
+    <label for="rent-reinvestir" style="all:unset;cursor:pointer;color:#aeb9c7;font-size:13px">
+    reinvestir os rendimentos *</label></div>
+    <div class="nota">* marcado: rentabilidade com proventos reinvestidos (cotação ajustada, Yahoo);
+    desmarcado: apenas variação de preço. CDI e IPCA: Banco Central (SGS).</div>
+  </div>"""
+
+
 def _calculadora_retroativa(completo: AnaliseCompleta) -> str:
     """"E se eu tivesse investido?" — usa a rentabilidade REAL que aconteceu."""
     import json
@@ -473,10 +515,13 @@ def _calculadora_retroativa(completo: AnaliseCompleta) -> str:
     rentabilidade = completo.graficos.rentabilidade
     if not rentabilidade:
         return ""
-    # % final acumulado de cada série por janela: {"12 meses": {"Fundo": 5.1, ...}}
+    # % final por janela e modo: {"12 meses": {"com": {"Fundo": 5.1, ...}, "sem": {...}}}
     finais = {
-        janela: {nome: pontos[-1][1] for nome, pontos in series_janela if pontos}
-        for janela, series_janela in rentabilidade.items()
+        janela: {
+            modo: {nome: pontos[-1][1] for nome, pontos in series_janela if pontos}
+            for modo, series_janela in modos.items()
+        }
+        for janela, modos in rentabilidade.items()
     }
     opcoes = "".join(
         f'<option value="{_e(janela)}">{_e("há " + janela.replace("máximo", "todo o histórico"))}</option>'
@@ -492,6 +537,8 @@ def _calculadora_retroativa(completo: AnaliseCompleta) -> str:
       <input type="number" id="rt-valor" value="1000" step="100" min="1" oninput="calcRetro()"></div>
       <div><label for="rt-janela">Período</label>
       <select id="rt-janela" onchange="calcRetro()">{opcoes}</select></div>
+      <div class="check"><input type="checkbox" id="rt-reinvestir" checked onchange="calcRetro()">
+      <label for="rt-reinvestir" style="all:unset;cursor:pointer">reinvestindo os rendimentos</label></div>
     </div>
     <div class="resultado" id="rt-resultado"></div>
     <p class="aviso">Cálculo sobre a rentabilidade observada no período (fundo: cotação

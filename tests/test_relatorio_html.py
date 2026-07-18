@@ -146,7 +146,8 @@ def test_calculadora_retroativa_com_rentabilidade(con, zip_cvm):
     trecho = pagina.split("const RETRO = ")[1].split(";</script>")[0]
     retro = json.loads(trecho)
     assert "12 meses" in retro
-    assert "Fundo" in retro["12 meses"] and "CDI" in retro["12 meses"]
+    assert "Fundo" in retro["12 meses"]["com"] and "CDI" in retro["12 meses"]["com"]
+    assert "Fundo" in retro["12 meses"]["sem"]
 
 
 def test_sem_cotacao_nao_mostra_calculadoras(con, zip_cvm):

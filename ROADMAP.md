@@ -18,7 +18,7 @@ A visão de produto completa (referências de mercado, backlog e decisões de de
   - gotcha de escala CVM: no mesmo arquivo, vacância/inadimplência são FRAÇÃO (1.0=100%) e % receita é PERCENTUAL (0-100)
   - pendente: agrupamento por estado (parsing de endereço), setores/inquilinos, e usar reservas acumuladas para refinar a regra de distribuição
 - [ ] **M7 — Raio-x do administrador** — outros FIIs do mesmo administrador, com idade, segmento e contagem de alertas, linkáveis
-- [ ] **M8 — Ranking / pesquisa avançada** — `fato ranking`: top N fundos por DY/P-VP/PL/cotistas com filtro "sem alertas" e por segmento; critério sempre explícito na saída
+- [ ] **M8 — Ranking / pesquisa avançada** — `fato ranking`: top N fundos por DY/P-VP/PL/cotistas com filtro "sem alertas" e por segmento; critério sempre explícito na saída; inclui a comparação com pares do mesmo segmento na página do fundo (estilo "comparando com outros FIIs")
 - [ ] **M9 — Site estático** — GitHub Actions gera as páginas de todos os FIIs + rankings 1x/dia e publica no GitHub Pages
 
 ## Fase 2 — Camada qualitativa

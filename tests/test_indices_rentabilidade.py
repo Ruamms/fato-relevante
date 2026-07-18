@@ -64,10 +64,16 @@ def test_html_com_rentabilidade_e_abas(con, zip_cvm):
     )
     completo = analise.montar_completo(con, "tste11")
     assert "12 meses" in completo.graficos.rentabilidade
-    series_12m = dict(completo.graficos.rentabilidade["12 meses"])
+    modos = completo.graficos.rentabilidade["12 meses"]
+    assert "com" in modos and "sem" in modos
+    series_12m = dict(modos["com"])
     assert "Fundo" in series_12m and "CDI" in series_12m
 
     pagina = relatorio_html.gerar(completo)
     assert "Rentabilidade acumulada" in pagina
     assert "class=\"abas\"" in pagina
     assert "function mostrar" in pagina
+    # checkbox de reinvestimento com painéis por (janela, modo)
+    assert 'id="rent-reinvestir"' in pagina
+    assert 'data-painel="12 meses|com"' in pagina
+    assert 'data-painel="12 meses|sem"' in pagina

@@ -44,8 +44,8 @@ class DadosGraficos:
     rend_por_mes: list[float | None]
     pl_por_ano: Serie
     pl_por_mes: Serie
-    # janela ("12 meses"/"5 anos"/"máximo") -> [(nome da série, pontos % acumulado)]
-    rentabilidade: dict[str, list[tuple[str, Serie]]]
+    # janela -> modo ("com"/"sem" reinvestimento) -> [(nome da série, pontos % acumulado)]
+    rentabilidade: dict[str, dict[str, list[tuple[str, Serie]]]]
     vacancia: Serie = dataclasses.field(default_factory=list)  # % por trimestre
 
 
@@ -160,28 +160,38 @@ def _dados_graficos(
         rend_por_mes=rend_por_mes[-12:],
         pl_por_ano=[(rotulo(ano), valor) for ano, valor in sorted(pl_por_ano.items())],
         pl_por_mes=pl_por_mes,
-        rentabilidade=_rentabilidades(ajustado, indices),
+        rentabilidade=_rentabilidades(cotacao, ajustado, indices),
     )
 
 
 def _rentabilidades(
+    cotacao: list[tuple[str, float]],
     ajustado: list[tuple[str, float]],
     indices: dict[str, dict[str, float]],
-) -> dict[str, list[tuple[str, list[tuple[str, float]]]]]:
-    """Retorno % acumulado do fundo (com proventos) vs índices, por janela."""
+) -> dict[str, dict[str, list[tuple[str, list[tuple[str, float]]]]]]:
+    """Retorno % acumulado do fundo vs índices, por janela e modo.
+
+    Modo "com" reinveste os rendimentos (cotação ajustada por proventos);
+    modo "sem" é só a variação de preço. CDI/IPCA são iguais nos dois.
+    """
     janelas = {"12 meses": 13, "5 anos": 61, "máximo": None}
-    resultado: dict[str, list] = {}
+    fontes = {"com": ajustado, "sem": cotacao}
+    resultado: dict[str, dict[str, list]] = {}
     for nome_janela, tamanho in janelas.items():
-        recorte = ajustado[-tamanho:] if tamanho else ajustado
-        if len(recorte) < 3 or (tamanho and len(ajustado) < tamanho):
-            continue
-        series_janela = [("Fundo", _acumulado_fundo(recorte))]
-        competencias = [competencia for competencia, _ in recorte]
-        for nome_indice, valores in indices.items():
-            acumulado = _acumulado_indice(valores, competencias)
-            if len(acumulado) >= 3:
-                series_janela.append((nome_indice, acumulado))
-        resultado[nome_janela] = series_janela
+        modos: dict[str, list] = {}
+        for modo, fonte in fontes.items():
+            recorte = fonte[-tamanho:] if tamanho else fonte
+            if len(recorte) < 3 or (tamanho and len(fonte) < tamanho):
+                continue
+            series_janela = [("Fundo", _acumulado_fundo(recorte))]
+            competencias = [competencia for competencia, _ in recorte]
+            for nome_indice, valores in indices.items():
+                acumulado = _acumulado_indice(valores, competencias)
+                if len(acumulado) >= 3:
+                    series_janela.append((nome_indice, acumulado))
+            modos[modo] = series_janela
+        if "com" in modos:
+            resultado[nome_janela] = modos
     return resultado
 
 
