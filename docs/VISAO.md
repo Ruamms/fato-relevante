@@ -68,6 +68,15 @@ Nunca usar linguagem de veredito de investimento ("bomba", "compre"). O selo res
 - **ETFs**: composição, taxa, tracking error.
 - **Renda fixa/CDB**: alerta de concentração acima do teto do FGC (R$ 250 mil por CPF por instituição), saúde do emissor via IF.data (Banco Central).
 
+### Raio-x do imóvel — camada de risco geográfico (pós-M6, incremental)
+Todo alerta de imóvel segue o padrão do produto: fato + fonte + data, e **nunca aparece sozinho — sempre pareado com o desfecho observado** (vacância/inadimplência real do imóvel), como argumento ou contra-argumento: "apesar do histórico de enchentes no município, a vacância do imóvel está abaixo da média do segmento" / "vacância alta, possivelmente ligada a fator estrutural do município (população de 40 mil hab.)".
+
+1. **Já no M6 (sem fonte nova)**: concentração de receita por imóvel e por inquilino (risco monoinquilino), vacância e inadimplência individuais.
+2. **Desastres naturais por município** — S2iD/Atlas Digital de Desastres (decretos oficiais de emergência/calamidade por município, com tipo e data); cruzar com o endereço do imóvel do informe trimestral. Ex.: "município com N decretos por enchente desde 2016".
+3. **Mercado local restrito** — população do município (IBGE) × % da receita do fundo no imóvel.
+4. **Idade/retrofit/sinistros do imóvel** — não existe estruturado; é extraído dos relatórios gerenciais e fatos relevantes pela camada de IA (Fase 2), sempre com citação do trecho.
+5. **Criminalidade** — explorar com MUITA cautela e prioridade baixa: apenas agregado municipal de fonte oficial (Atlas da Violência/IPEA), citado como estatística com ano; nunca rotular área ("perigosa"). Risco reputacional/jurídico alto; só entra se agregar valor claro.
+
 ### Ideias registradas (sem prioridade definida)
 - Checklist buy-and-hold com critérios públicos (estilo Investidor10, mas com fonte por critério).
 - Comparação com pares do mesmo segmento e vs média do segmento.
