@@ -28,9 +28,9 @@ _COR_SEVERIDADE = {
 
 _RODAPE = (
     "Isto não é recomendação de investimento. As informações vêm de fontes públicas "
-    "(dados abertos da CVM; cotações via Yahoo Finance) e são apresentadas com a "
-    "respectiva evidência. Os critérios de todos os alertas são públicos e auditáveis "
-    "no código-fonte."
+    "(dados abertos da CVM; cotações via Yahoo Finance, com atraso de ~15 minutos em "
+    "relação ao pregão) e são apresentadas com a respectiva evidência. Os critérios de "
+    "todos os alertas são públicos e auditáveis no código-fonte."
 )
 
 

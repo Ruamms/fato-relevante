@@ -278,7 +278,7 @@ def montar_raio_x(
         classificacao=fundo.segmento,
         gestao=fundo.tipo_gestao,
         dados_ate=formato.competencia_br(atual["competencia"]),
-        cotacao_em=formato.dia_br(meta_cotacao["cotado_em"]) if meta_cotacao else "",
+        cotacao_em=_cotacao_com_hora(meta_cotacao["cotado_em"]) if meta_cotacao else "",
         indicadores=indicadores,
         red_flags=resultado.flags,
         sem_alerta=resultado.aprovadas,
@@ -354,6 +354,15 @@ def _fundos_irmaos(con: sqlite3.Connection, admin, cnpj_fundo: str) -> list[Fund
 
 
 _ticker_do_isin = series.ticker_do_isin
+
+
+def _cotacao_com_hora(cotado_em: str | None) -> str:
+    """'2026-07-17 18:04' -> '17/07/2026 18:04' (hora do último negócio, se houver)."""
+    if not cotado_em:
+        return ""
+    data = formato.dia_br(cotado_em)
+    hora = cotado_em[11:16] if len(cotado_em) >= 16 else ""
+    return f"{data} {hora}".strip()
 
 
 def _pares_do_segmento(

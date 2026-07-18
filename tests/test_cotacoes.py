@@ -34,38 +34,59 @@ def test_extrair_json_yahoo():
     candles, preco, cotado_em = cotacoes.extrair(_json_yahoo())
     assert candles == [("2026-01", 100.0, 99.0), ("2026-02", 105.5, 105.5)]
     assert preco == 105.5
-    assert cotado_em == "2026-02-17"
+    # 17/02 00:00 UTC convertido para o fuso do pregão (BRT, -3h) = 16/02 21:00
+    assert cotado_em == "2026-02-16 21:00"
 
 
 def test_garantir_atualizada_busca_e_grava(con, monkeypatch):
     monkeypatch.setattr(
-        cotacoes, "buscar", lambda ticker: ([("2026-01", 100.0, 99.0)], 101.0, "2026-02-17")
+        cotacoes, "buscar", lambda ticker: ([("2026-01", 100.0, 99.0)], 101.0, "2026-02-17 18:04")
     )
-    aviso = cotacoes.garantir_atualizada(con, "tste11", hoje=date(2026, 2, 18))
+    agora = datetime(2026, 2, 18, 10, 0)
+    aviso = cotacoes.garantir_atualizada(con, "tste11", agora=agora)
     assert aviso is None
     meta = armazenamento.cotacao_meta(con, "TSTE11")
     assert meta["preco_atual"] == 101.0
-    assert meta["atualizado_em"] == "2026-02-18"
+    assert meta["atualizado_em"] == "2026-02-18T10:00:00"
 
 
-def test_garantir_atualizada_nao_rebaixa_no_mesmo_dia(con, monkeypatch):
+def test_garantir_atualizada_respeita_frescor_de_15_minutos(con, monkeypatch):
+    armazenamento.gravar_cotacoes(
+        con, "TSTE11", [], 101.0, "2026-02-17 18:04", "2026-02-18T10:00:00"
+    )
+    chamadas = []
+    monkeypatch.setattr(
+        cotacoes, "buscar", lambda ticker: chamadas.append(1) or ([], 102.0, "2026-02-18 10:20")
+    )
+    # 10 minutos depois: cache fresco, não vai à rede
+    assert cotacoes.garantir_atualizada(con, "TSTE11", agora=datetime(2026, 2, 18, 10, 10)) is None
+    assert chamadas == []
+    # 20 minutos depois: renova
+    assert cotacoes.garantir_atualizada(con, "TSTE11", agora=datetime(2026, 2, 18, 10, 20)) is None
+    assert chamadas == [1]
+
+
+def test_base_antiga_com_so_data_forca_renovacao(con, monkeypatch):
+    # bases antigas gravavam só a data — deve renovar na primeira oportunidade
     armazenamento.gravar_cotacoes(con, "TSTE11", [], 101.0, "2026-02-17", "2026-02-18")
-
-    def _explode(ticker):
-        raise AssertionError("não deveria ir à rede")
-
-    monkeypatch.setattr(cotacoes, "buscar", _explode)
-    assert cotacoes.garantir_atualizada(con, "TSTE11", hoje=date(2026, 2, 18)) is None
+    chamadas = []
+    monkeypatch.setattr(
+        cotacoes, "buscar", lambda ticker: chamadas.append(1) or ([], 102.0, "2026-02-18 10:20")
+    )
+    assert cotacoes.garantir_atualizada(con, "TSTE11", agora=datetime(2026, 2, 18, 10, 0)) is None
+    assert chamadas == [1]
 
 
 def test_sem_conexao_usa_cache_com_aviso(con, monkeypatch):
-    armazenamento.gravar_cotacoes(con, "TSTE11", [], 101.0, "2026-02-17", "2026-02-10")
+    armazenamento.gravar_cotacoes(
+        con, "TSTE11", [], 101.0, "2026-02-17 18:04", "2026-02-10T09:00:00"
+    )
 
     def _falha(ticker):
         raise OSError("sem rede")
 
     monkeypatch.setattr(cotacoes, "buscar", _falha)
-    aviso = cotacoes.garantir_atualizada(con, "TSTE11", hoje=date(2026, 2, 18))
+    aviso = cotacoes.garantir_atualizada(con, "TSTE11", agora=datetime(2026, 2, 18, 10, 0))
     assert aviso is not None
     assert "17/02/2026" in aviso
 

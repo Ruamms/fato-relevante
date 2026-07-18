@@ -14,24 +14,31 @@ from __future__ import annotations
 import json
 import sqlite3
 import urllib.request
-from datetime import date, datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 from .. import armazenamento
 
 URL = "https://query1.finance.yahoo.com/v8/finance/chart/{simbolo}?range=max&interval=1mo"
 _HEADERS = {"User-Agent": "Mozilla/5.0 (fato-relevante)"}
 
+# A B3 só libera dado em tempo real sob licença paga; o Yahoo entrega com
+# ~15 min de atraso. Buscar mais rápido que isso não traz preço mais novo.
+FRESCOR = timedelta(minutes=15)
 
-def garantir_atualizada(con: sqlite3.Connection, ticker: str, hoje: date | None = None) -> str | None:
-    """Sincroniza as cotações do ticker se necessário.
+
+def garantir_atualizada(
+    con: sqlite3.Connection, ticker: str, agora: datetime | None = None
+) -> str | None:
+    """Sincroniza as cotações do ticker se o cache tiver mais de 15 minutos.
 
     Retorna None quando está tudo certo, ou uma mensagem de aviso para
     exibir ao usuário (cache antigo ou cotação indisponível).
     """
     ticker = ticker.strip().upper()
-    hoje = hoje or date.today()
+    agora = agora or datetime.now()
     meta = armazenamento.cotacao_meta(con, ticker)
-    if meta is not None and meta["atualizado_em"] == hoje.isoformat():
+    ultima = _parse_datahora(meta["atualizado_em"]) if meta is not None else None
+    if ultima is not None and agora - ultima < FRESCOR:
         return None
     try:
         candles, preco_atual, cotado_em = buscar(ticker)
@@ -39,8 +46,23 @@ def garantir_atualizada(con: sqlite3.Connection, ticker: str, hoje: date | None 
         if meta is not None:
             return f"sem conexão com a fonte de cotações — usando cache de {_data_br(meta['cotado_em'])}"
         return "cotação de bolsa indisponível para este ticker (sem conexão ou ticker não listado)"
-    armazenamento.gravar_cotacoes(con, ticker, candles, preco_atual, cotado_em, hoje.isoformat())
+    armazenamento.gravar_cotacoes(
+        con, ticker, candles, preco_atual, cotado_em, agora.isoformat(timespec="seconds")
+    )
     return None
+
+
+def _parse_datahora(valor: str | None) -> datetime | None:
+    """Aceita o formato novo (datetime ISO) e o antigo (só a data = tratado como velho)."""
+    if not valor:
+        return None
+    try:
+        analisado = datetime.fromisoformat(valor)
+    except ValueError:
+        return None
+    if len(valor) <= 10:  # base antiga gravava só a data: força a primeira renovação
+        return None
+    return analisado
 
 
 def buscar(ticker: str) -> tuple[list[tuple[str, float, float]], float, str]:
@@ -72,7 +94,11 @@ def extrair(dados: dict) -> tuple[list[tuple[str, float, float]], float, str]:
 
     meta = resultado["meta"]
     preco_atual = meta["regularMarketPrice"]
-    cotado_em = datetime.fromtimestamp(meta["regularMarketTime"], tz=timezone.utc).strftime("%Y-%m-%d")
+    # horário do último negócio no fuso local do pregão (B3 = gmtoffset do Yahoo)
+    deslocamento = timezone(timedelta(seconds=meta.get("gmtoffset", -10800)))
+    cotado_em = datetime.fromtimestamp(
+        meta["regularMarketTime"], tz=deslocamento
+    ).strftime("%Y-%m-%d %H:%M")
     return candles, preco_atual, cotado_em
 
 
