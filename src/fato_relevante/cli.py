@@ -254,6 +254,88 @@ def site(
 
 
 @app.command()
+def ia(
+    ticker: str = typer.Argument(..., help="Código de negociação do FII, ex.: HGLG11."),
+    modelo: str = typer.Option(None, "--modelo", help="Modelo do Ollama (padrão: qwen2.5:14b)."),
+) -> None:
+    """Lê o último relatório gerencial do fundo com IA local (Ollama)."""
+    from rich.panel import Panel
+
+    from . import analise, armazenamento
+    from . import ia as modulo_ia
+    from .coleta import fnet
+
+    con = armazenamento.conectar()
+    try:
+        if armazenamento.base_vazia(con):
+            console.print("[yellow]Base local vazia.[/] Rode [bold]fato atualizar[/] primeiro.")
+            raise typer.Exit(1)
+        if not modulo_ia.disponivel():
+            console.print(
+                "[red]Ollama não encontrado em http://localhost:11434.[/]\n"
+                "Para usar a leitura por IA local (grátis, nada sai da sua máquina):\n"
+                "  1. instale:  [bold]winget install Ollama.Ollama[/]\n"
+                "  2. baixe um modelo:  [bold]ollama pull qwen2.5:14b[/]  "
+                "(ou [bold]llama3.1:8b[/] se tiver menos de 16 GB de RAM)\n"
+                "  3. rode de novo:  [bold]fato ia " + ticker.upper() + "[/]"
+            )
+            raise typer.Exit(1)
+        modelo_final = modelo or modulo_ia.MODELO_PADRAO
+        instalados = modulo_ia.modelos_instalados()
+        if not any(nome.startswith(modelo_final.split(":")[0]) for nome in instalados):
+            console.print(
+                f"[red]Modelo '{modelo_final}' não está instalado no Ollama.[/] "
+                f"Instalados: {', '.join(instalados) or 'nenhum'}.\n"
+                f"Baixe com: [bold]ollama pull {modelo_final}[/] ou use [bold]--modelo[/]."
+            )
+            raise typer.Exit(1)
+
+        fundo = armazenamento.resolver_fundo(con, ticker)
+        if fundo is None:
+            console.print(f"[red]Ticker '{ticker.strip().upper()}' não encontrado.[/]")
+            raise typer.Exit(1)
+
+        console.print(f"Buscando o último relatório gerencial de {ticker.upper()} no FNET…")
+        resultado = fnet.garantir_relatorio(con, fundo.cnpj)
+        if resultado is None:
+            console.print("[yellow]Nenhum relatório gerencial encontrado no FNET para este fundo.[/]")
+            raise typer.Exit(1)
+        caminho, meta = resultado
+        console.print(f"  [dim]{meta['tipo']} de {meta['data_entrega']} — {caminho}[/]")
+
+        console.print("Extraindo texto do PDF…")
+        texto = modulo_ia.extrair_texto_pdf(caminho)
+        if len(texto) < 500:
+            console.print(
+                "[yellow]O PDF tem pouco texto extraível (provavelmente é imagem/escaneado) — "
+                "a leitura por IA ficaria pobre. Abra o original:[/] " + str(caminho)
+            )
+            raise typer.Exit(1)
+
+        raiox = analise.montar_raio_x(con, ticker)
+        contexto = modulo_ia.contexto_do_raiox(raiox) if raiox else ""
+        console.print(f"Lendo com o modelo [bold]{modelo_final}[/] (local)… pode levar alguns minutos.")
+        leitura = modulo_ia.analisar_relatorio(texto, contexto, modelo_final)
+
+        console.print()
+        console.print(
+            Panel(
+                leitura,
+                title=f"[bold]Leitura do relatório gerencial — {ticker.upper()} ({meta['data_entrega'][:10]})[/]",
+                subtitle=f"[dim]IA local ({modelo_final}) · confira o original: {caminho}[/]",
+                padding=(1, 2),
+            )
+        )
+        console.print(
+            "[dim italic]Resumo gerado por IA a partir do relatório oficial — pode conter "
+            "erros de leitura; os trechos citados permitem conferir. Não é recomendação "
+            "de investimento.[/]"
+        )
+    finally:
+        con.close()
+
+
+@app.command()
 def atualizar() -> None:
     """Baixa/atualiza os dados abertos da CVM para o cache local."""
     from . import armazenamento

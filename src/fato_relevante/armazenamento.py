@@ -74,6 +74,15 @@ CREATE TABLE IF NOT EXISTS resultados_trimestrais (
     lucro_contabil         REAL,
     PRIMARY KEY (cnpj, competencia)
 );
+CREATE TABLE IF NOT EXISTS documentos (
+    cnpj         TEXT NOT NULL,
+    id_fnet      INTEGER NOT NULL,
+    tipo         TEXT,
+    categoria    TEXT,
+    data_entrega TEXT,
+    arquivo      TEXT,   -- caminho local do PDF baixado
+    PRIMARY KEY (cnpj, id_fnet)
+);
 CREATE TABLE IF NOT EXISTS informes_complemento (
     cnpj                   TEXT NOT NULL,
     competencia            TEXT NOT NULL,  -- AAAA-MM
@@ -257,6 +266,32 @@ def fundos_do_administrador(
         """,
         (cnpj_administrador, excluir_cnpj),
     ).fetchall()
+
+
+def gravar_documento(
+    con: sqlite3.Connection,
+    cnpj: str,
+    id_fnet: int,
+    tipo: str,
+    categoria: str,
+    data_entrega: str,
+    arquivo: str,
+) -> None:
+    con.execute(
+        """
+        INSERT OR REPLACE INTO documentos
+            (cnpj, id_fnet, tipo, categoria, data_entrega, arquivo)
+        VALUES (?, ?, ?, ?, ?, ?)
+        """,
+        (cnpj, id_fnet, tipo, categoria, data_entrega, arquivo),
+    )
+    con.commit()
+
+
+def documento(con: sqlite3.Connection, cnpj: str, id_fnet: int) -> sqlite3.Row | None:
+    return con.execute(
+        "SELECT * FROM documentos WHERE cnpj = ? AND id_fnet = ?", (cnpj, id_fnet)
+    ).fetchone()
 
 
 def serie_imoveis(con: sqlite3.Connection, cnpj: str) -> list[sqlite3.Row]:
