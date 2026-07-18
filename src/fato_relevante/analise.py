@@ -277,20 +277,7 @@ def montar_raio_x(con: sqlite3.Connection, ticker: str) -> RaioX | None:
         red_flags=resultado.flags,
         sem_alerta=resultado.aprovadas,
         notas=notas,
-        imoveis=[
-            Imovel(
-                nome=linha["nome"],
-                area=linha["area"],
-                vacancia=100 * linha["vacancia"]
-                if linha["vacancia"] is not None and 0 <= linha["vacancia"] <= 1
-                else None,
-                inadimplencia=100 * linha["inadimplencia"]
-                if linha["inadimplencia"] is not None and 0 <= linha["inadimplencia"] <= 1
-                else None,
-                pct_receita=linha["pct_receita"],
-            )
-            for linha in imoveis_atuais
-        ],
+        imoveis=_montar_imoveis(imoveis_atuais),
         imoveis_em=formato.competencia_br(imoveis_atuais[0]["competencia"])
         if imoveis_atuais
         else "",
@@ -302,6 +289,33 @@ def montar_raio_x(con: sqlite3.Connection, ticker: str) -> RaioX | None:
         red_flags_avaliadas=True,
         exemplo=False,
     )
+
+
+def _montar_imoveis(imoveis_atuais: list[sqlite3.Row]) -> list[Imovel]:
+    """Converte as linhas do informe em Imovel, normalizando escalas.
+
+    O % da receita é auto-declarado sem escala padronizada: uns fundos
+    mandam percentual (soma ~100), outros mandam fração (soma ~1).
+    Normaliza pela soma do próprio fundo.
+    """
+    somatorio = sum(linha["pct_receita"] or 0 for linha in imoveis_atuais)
+    fator_receita = 100 if 0 < somatorio <= 2 else 1
+
+    def _fracao_pct(valor: float | None) -> float | None:
+        return 100 * valor if valor is not None and 0 <= valor <= 1 else None
+
+    return [
+        Imovel(
+            nome=linha["nome"],
+            area=linha["area"],
+            vacancia=_fracao_pct(linha["vacancia"]),
+            inadimplencia=_fracao_pct(linha["inadimplencia"]),
+            pct_receita=linha["pct_receita"] * fator_receita
+            if linha["pct_receita"] is not None
+            else None,
+        )
+        for linha in imoveis_atuais
+    ]
 
 
 def _fundos_irmaos(con: sqlite3.Connection, admin, cnpj_fundo: str) -> list[FundoIrmao]:

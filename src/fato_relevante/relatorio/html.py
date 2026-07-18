@@ -198,6 +198,9 @@ table.imoveis {{ width:100%; border-collapse:collapse; font-size:13.5px; }}
 table.imoveis th {{ color:#8b98a9; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; text-align:left; padding:6px 10px; border-bottom:1px solid #2a3441; }}
 table.imoveis td {{ padding:7px 10px; border-bottom:1px solid #1a2432; }}
 table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-align:right; }}
+.ver-mais {{ background:#1a2432; color:#5eead4; border:1px solid #2a3441; border-radius:8px;
+  padding:6px 16px; font-size:13px; font-weight:600; cursor:pointer; margin-top:10px; }}
+.ver-mais:hover {{ border-color:#5eead4; }}
 .rodape {{ color:#8b98a9; font-size:12.5px; border-top:1px solid #1f2a38; margin-top:30px; padding-top:14px; }}
 @media print {{ body {{ background:#fff; color:#111; }} }}
 </style>
@@ -285,6 +288,13 @@ function atualizaRent() {{
   const modo = document.getElementById('rent-reinvestir').checked ? 'com' : 'sem';
   const alvo = card.dataset.janela + '|' + modo;
   card.querySelectorAll('.painel').forEach(p => p.hidden = (p.dataset.painel !== alvo));
+}}
+
+function verImoveis(botao) {{
+  const card = botao.closest('.grafico');
+  const abertas = botao.textContent === botao.dataset.menos;
+  card.querySelectorAll('.imovel-extra').forEach(tr => tr.hidden = abertas);
+  botao.textContent = abertas ? botao.dataset.mais : botao.dataset.menos;
 }}
 
 function calcRetro() {{
@@ -383,26 +393,29 @@ def _secao_imoveis(raiox: RaioX, limite: int = 10) -> str:
         return formato.percentual(valor) if valor is not None else "—"
 
     linhas = []
-    for imovel in raiox.imoveis[:limite]:
+    for indice, imovel in enumerate(raiox.imoveis):
         area = f"{formato.decimal(imovel.area, 0)} m²" if imovel.area else "—"
+        oculta = ' class="imovel-extra" hidden' if indice >= limite else ""
         linhas.append(
-            f"<tr><td>{_e(imovel.nome)}</td><td>{area}</td>"
+            f"<tr{oculta}><td>{_e(imovel.nome)}</td><td>{area}</td>"
             f"<td>{_pct(imovel.pct_receita)}</td><td>{_pct(imovel.vacancia)}</td>"
             f"<td>{_pct(imovel.inadimplencia)}</td></tr>"
         )
-    rodape_tabela = ""
+    botao = ""
     if len(raiox.imoveis) > limite:
-        rodape_tabela = (
-            f'<tr><td colspan="5" class="na">… e mais '
-            f"{len(raiox.imoveis) - limite} imóveis no informe</td></tr>"
+        botao = (
+            f'<button class="ver-mais" onclick="verImoveis(this)" '
+            f'data-mais="ver todos os {len(raiox.imoveis)} imóveis" data-menos="mostrar menos">'
+            f"ver todos os {len(raiox.imoveis)} imóveis</button>"
         )
     return f"""
   <h2>Imóveis ({len(raiox.imoveis)}){_ajuda("Imóveis")}</h2>
   <div class="grafico" style="overflow-x:auto">
   <table class="imoveis">
     <thead><tr><th>imóvel</th><th>área</th><th>% da receita</th><th>vacância</th><th>inadimplência</th></tr></thead>
-    <tbody>{"".join(linhas)}{rodape_tabela}</tbody>
+    <tbody>{"".join(linhas)}</tbody>
   </table>
+  {botao}
   <div class="nota">informe trimestral de {_e(raiox.imoveis_em)} · ordenados por participação na receita</div>
   </div>
 """

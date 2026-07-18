@@ -121,6 +121,52 @@ def test_raio_x_com_imoveis_e_vacancia(con, zip_cvm, zip_trimestral):
     assert any(flag.codigo == "vacancia" for flag in raiox.red_flags)
 
 
+def test_pct_receita_em_fracao_e_normalizado(con, zip_cvm):
+    # fundo que declara % da receita como fração (soma ~1): 0.6 + 0.4
+    import io
+    import zipfile
+
+    imovel = (
+        "CNPJ_Fundo_Classe;Data_Referencia;Versao;Nome_Imovel;Area;"
+        "Percentual_Vacancia;Percentual_Inadimplencia;Percentual_Receitas_FII\n"
+        "11.111.111/0001-11;2026-03-01;1;A;1000;0.1;0;0.6\n"
+        "11.111.111/0001-11;2026-03-01;1;B;500;0.1;0;0.4\n"
+    )
+    buffer = io.BytesIO()
+    with zipfile.ZipFile(buffer, "w") as zf:
+        zf.writestr("inf_trimestral_fii_imovel_2026.csv", imovel.encode("latin-1"))
+        zf.writestr(
+            "inf_trimestral_fii_resultado_contabil_financeiro_2026.csv",
+            "CNPJ_Fundo_Classe;Data_Referencia;Versao\n".encode("latin-1"),
+        )
+    cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
+    cvm.carregar_zip_trimestral(con, buffer.getvalue(), "inf_trimestral_fii_2026.zip")
+    raiox = analise.montar_raio_x(con, "tste11")
+    assert raiox.imoveis[0].pct_receita == pytest.approx(60.0)
+    assert raiox.imoveis[1].pct_receita == pytest.approx(40.0)
+
+
+def test_html_botao_ver_todos_imoveis(con, zip_cvm, zip_trimestral):
+    from fato_relevante.relatorio import html as relatorio_html
+    from fato_relevante.modelos import Imovel
+    import dataclasses
+
+    cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
+    cvm.carregar_zip_trimestral(con, zip_trimestral(), "inf_trimestral_fii_2026.zip")
+    completo = analise.montar_completo(con, "tste11")
+    # infla a lista para além do limite de 10
+    muitos = [
+        Imovel(nome=f"IM {i}", area=100.0, vacancia=1.0, inadimplencia=0.0, pct_receita=1.0)
+        for i in range(15)
+    ]
+    raiox = dataclasses.replace(completo.raiox, imoveis=muitos)
+    completo = dataclasses.replace(completo, raiox=raiox)
+    pagina = relatorio_html.gerar(completo)
+    assert "ver todos os 15 imóveis" in pagina
+    assert pagina.count('class="imovel-extra" hidden') == 5
+    assert "function verImoveis" in pagina
+
+
 def test_html_com_secao_imoveis_e_grafico_vacancia(con, zip_cvm, zip_trimestral):
     from fato_relevante.relatorio import html as relatorio_html
 
