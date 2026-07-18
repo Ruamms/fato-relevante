@@ -85,21 +85,31 @@ def grafico_linhas(
     return "".join(partes)
 
 
-def grafico_barras(pontos: list[Ponto], formatador: Formatador | None = None) -> str:
-    """Gráfico de barras com base em zero; `pontos` = [(rotulo, valor)]."""
+def grafico_barras(
+    pontos: list[Ponto],
+    formatador: Formatador | None = None,
+    extras: list[str | None] | None = None,
+) -> str:
+    """Gráfico de barras com base em zero; `pontos` = [(rotulo, valor)].
+
+    `extras` é um rótulo adicional por barra (ex.: rendimento em R$/cota):
+    com poucas barras vira uma segunda linha no topo; com muitas, entra
+    apenas no tooltip.
+    """
     formatador = formatador or (lambda v: formato.decimal(v))
     if not pontos:
         return ""
+    extras = extras or [None] * len(pontos)
     maximo = max(v for _, v in pontos) or 1
-    maximo *= 1.15
+    maximo *= 1.30 if any(extras) else 1.15  # espaço para as linhas de valor
     area = LARGURA - MARGEM_ESQ - MARGEM_DIR
     passo = area / len(pontos)
     largura_barra = min(passo * 0.62, 64)
 
-    # com muitas barras (visão mensal), rótulos e valores viram poluição:
-    # espaça os rótulos e omite o valor no topo
+    # com muitas barras (visão mensal): rótulos do eixo espaçados,
+    # valor no topo em texto vertical e extra somente no tooltip
     passo_rotulo = max(1, -(-len(pontos) // 12))
-    mostrar_valores = len(pontos) <= 15
+    poucas_barras = len(pontos) <= 15
 
     partes = [_abre_svg(), *_grade_y(0, maximo, formatador)]
     for indice, (rotulo, valor) in enumerate(pontos):
@@ -108,15 +118,29 @@ def grafico_barras(pontos: list[Ponto], formatador: Formatador | None = None) ->
         base = ALTURA - MARGEM_BAIXO
         centro = x + largura_barra / 2
         rotulo_bonito = formato.competencia_curta(rotulo) if _parece_competencia(rotulo) else rotulo
+        extra = extras[indice] if indice < len(extras) else None
+        tooltip = f"{rotulo_bonito}: {formatador(valor)}" + (f" · {extra}" if extra else "")
         partes.append(
             f'<rect x="{x:.1f}" y="{y:.1f}" width="{largura_barra:.1f}" '
             f'height="{max(base - y, 0):.1f}" rx="3" fill="{CORES[0]}" opacity="0.85">'
-            f"<title>{rotulo_bonito}: {formatador(valor)}</title></rect>"
+            f"<title>{tooltip}</title></rect>"
         )
-        if mostrar_valores:
+        if poucas_barras:
             partes.append(
-                f'<text x="{centro:.1f}" y="{y - 6:.1f}" text-anchor="middle" '
+                f'<text x="{centro:.1f}" y="{y - (20 if extra else 6):.1f}" text-anchor="middle" '
                 f'fill="{COR_TEXTO}" font-size="11">{formatador(valor)}</text>'
+            )
+            if extra:
+                partes.append(
+                    f'<text x="{centro:.1f}" y="{y - 6:.1f}" text-anchor="middle" '
+                    f'fill="#66707d" font-size="10">{extra}</text>'
+                )
+        else:
+            # valor em texto vertical acima da barra
+            partes.append(
+                f'<text x="{centro:.1f}" y="{y - 5:.1f}" '
+                f'transform="rotate(-90 {centro:.1f} {y - 5:.1f})" text-anchor="start" '
+                f'fill="{COR_TEXTO}" font-size="9">{formatador(valor)}</text>'
             )
         if indice % passo_rotulo == 0:
             partes.append(

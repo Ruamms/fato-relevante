@@ -37,6 +37,9 @@ class DadosGraficos:
     pvp_media: float | None
     dy_por_ano: Serie
     dy_por_mes: Serie  # últimos 36 meses
+    # rendimento estimado em R$/cota (DY × VP da cota do mês), alinhado às séries de DY
+    rend_por_ano: list[float | None]
+    rend_por_mes: list[float | None]
     pl_por_ano: Serie
     pl_por_mes: Serie
     # janela ("12 meses"/"5 anos"/"máximo") -> [(nome da série, pontos % acumulado)]
@@ -90,28 +93,45 @@ def _dados_graficos(
     pvp_media = sum(v for _, v in pvp) / len(pvp) if pvp else None
 
     dy_por_ano: dict[str, float] = {}
+    rend_por_ano: dict[str, float | None] = {}
     pl_por_ano: dict[str, float] = {}
     dy_por_mes: list[tuple[str, float]] = []
+    rend_por_mes: list[float | None] = []
     pl_por_mes: list[tuple[str, float]] = []
     for linha in serie:
         ano = linha["competencia"][:4]
         if series.dy_valido(linha["dy_mes"]):
             dy_por_ano[ano] = dy_por_ano.get(ano, 0.0) + linha["dy_mes"] * 100
             dy_por_mes.append((linha["competencia"], linha["dy_mes"] * 100))
+            # rendimento estimado: o DY da CVM é relativo ao VP da cota do mês;
+            # usa o VP ajustado por desdobramento para os R$ serem comparáveis
+            # na base de cotas atual
+            vp_mes = vp_ajustada.get(linha["competencia"])
+            rendimento = linha["dy_mes"] * vp_mes if vp_mes else None
+            rend_por_mes.append(rendimento)
+            if rendimento is None:
+                rend_por_ano[ano] = None  # mês sem VP contamina o total do ano
+            elif ano not in rend_por_ano:
+                rend_por_ano[ano] = rendimento
+            elif rend_por_ano[ano] is not None:
+                rend_por_ano[ano] += rendimento
         if linha["patrimonio_liquido"] is not None:
             pl_por_ano[ano] = linha["patrimonio_liquido"]  # último mês do ano vence
             pl_por_mes.append((linha["competencia"], linha["patrimonio_liquido"]))
 
     ano_parcial = serie[-1]["competencia"][:4] if serie else ""
     rotulo = lambda ano: f"{ano}*" if ano == ano_parcial else ano  # noqa: E731
+    anos_dy = sorted(dy_por_ano)
 
     return DadosGraficos(
         cotacao=cotacao,
         vp_ajustado=sorted(vp_ajustada.items()),
         pvp=pvp,
         pvp_media=pvp_media,
-        dy_por_ano=[(rotulo(ano), valor) for ano, valor in sorted(dy_por_ano.items())],
+        dy_por_ano=[(rotulo(ano), dy_por_ano[ano]) for ano in anos_dy],
         dy_por_mes=dy_por_mes[-36:],
+        rend_por_ano=[rend_por_ano.get(ano) for ano in anos_dy],
+        rend_por_mes=rend_por_mes[-36:],
         pl_por_ano=[(rotulo(ano), valor) for ano, valor in sorted(pl_por_ano.items())],
         pl_por_mes=pl_por_mes,
         rentabilidade=_rentabilidades(ajustado, indices),

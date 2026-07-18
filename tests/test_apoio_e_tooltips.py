@@ -71,3 +71,25 @@ def test_barras_mensais_com_tooltip_e_rotulo_curto():
     svg = graficos.grafico_barras(pontos, formatador=lambda v: formato.percentual(v))
     assert "<title>jan/25: 0,51%</title>" in svg
     assert "jan/25" in svg
+
+
+def test_barras_anuais_mostram_extra_no_topo():
+    pontos = [("2024", 8.5), ("2025", 9.1)]
+    svg = graficos.grafico_barras(
+        pontos, formatador=lambda v: formato.percentual(v), extras=["≈ R$ 12,30", None]
+    )
+    assert "≈ R$ 12,30" in svg  # segunda linha no topo da barra
+    assert "<title>2024: 8,50% · ≈ R$ 12,30</title>" in svg
+    assert "<title>2025: 9,10%</title>" in svg  # sem extra, tooltip só com %
+
+
+def test_barras_mensais_extra_so_no_tooltip_e_valor_vertical():
+    pontos = [(f"2024-{m:02d}", 1.0) for m in range(1, 13)] + [
+        (f"2025-{m:02d}", 1.0) for m in range(1, 13)
+    ]
+    extras = ["≈ R$ 1,10"] * len(pontos)
+    svg = graficos.grafico_barras(pontos, formatador=lambda v: formato.percentual(v), extras=extras)
+    assert "<title>jan/24: 1,00% · ≈ R$ 1,10</title>" in svg
+    assert 'rotate(-90' in svg  # valor % em texto vertical no topo
+    # extra não vira texto solto no topo com muitas barras
+    assert svg.count("≈ R$ 1,10") == len(pontos)  # só nos tooltips

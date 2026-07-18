@@ -82,14 +82,34 @@ def gerar(completo: AnaliseCompleta, agora: datetime | None = None) -> str:
         )
     if dados.dy_por_ano:
         pct = lambda v: formato.percentual(v)  # noqa: E731
-        paineis = [("Ano", graficos.grafico_barras(dados.dy_por_ano, formatador=pct))]
+        rs = lambda v: f"≈ R$ {formato.decimal(v)}" if v is not None else None  # noqa: E731
+        paineis = [
+            (
+                "Ano",
+                graficos.grafico_barras(
+                    dados.dy_por_ano, formatador=pct, extras=[rs(v) for v in dados.rend_por_ano]
+                ),
+            )
+        ]
         if len(dados.dy_por_mes) >= 6:
-            paineis.append(("Mês", graficos.grafico_barras(dados.dy_por_mes, formatador=pct)))
+            paineis.append(
+                (
+                    "Mês",
+                    graficos.grafico_barras(
+                        dados.dy_por_mes, formatador=pct, extras=[rs(v) for v in dados.rend_por_mes]
+                    ),
+                )
+            )
         secoes_graficos.append(
             _card_grafico_abas(
                 "Dividend yield (%)",
                 paineis,
-                nota="* ano parcial · visão mensal: últimos 36 meses",
+                nota=(
+                    "* ano parcial · visão mensal: últimos 36 meses · "
+                    "≈ R$ = rendimento por cota estimado (DY informado à CVM × VP ajustado da cota, "
+                    "na base de cotas atual); "
+                    "na visão mensal, o R$/cota aparece ao passar o mouse na barra"
+                ),
             )
         )
     if dados.pl_por_ano:
