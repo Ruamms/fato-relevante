@@ -21,3 +21,6 @@ desktop.ini
 
 # Segredos
 .env
+
+# lista de fundos com erro no lote de IA (efemera)
+leituras/_erros.txt

@@ -317,6 +317,54 @@ def test_cli_ia_lote_incremental(con, zip_cvm, tmp_path, monkeypatch):
     assert chamadas == ["rel", "fatos"]  # a IA não foi chamada de novo
 
 
+def test_cli_ia_lote_registra_erros_e_reprocessa_so_eles(con, zip_cvm, tmp_path, monkeypatch):
+    from typer.testing import CliRunner
+
+    from scout import cli as modulo_cli
+    from scout import ia as modulo_ia
+    from scout.cli import app
+    from scout.coleta import cvm
+    from scout.coleta import fnet as modulo_fnet
+
+    cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
+    monkeypatch.setenv("SCOUT_DATA_DIR", str(tmp_path))
+    monkeypatch.setattr(modulo_cli, "_preparar_ia", lambda modelo: "teste:1b")
+    monkeypatch.setattr(modulo_fnet, "listar", lambda cnpj, quantidade=30: _DOCUMENTOS)
+    caminho_pdf = tmp_path / "doc.pdf"
+    caminho_pdf.write_bytes(_pdf_minimo("Relatorio para o lote " * 50))
+    monkeypatch.setattr(
+        modulo_fnet, "_garantir_documento", lambda con_, cnpj, doc, destino: caminho_pdf
+    )
+    # primeira rodada: a IA explode -> fundo vai para a lista de erros
+    monkeypatch.setattr(
+        modulo_ia,
+        "analisar_relatorio",
+        lambda *args, **kwargs: (_ for _ in ()).throw(RuntimeError("modelo caiu")),
+    )
+    pasta = tmp_path / "leituras"
+    resultado = CliRunner().invoke(app, ["ia-lote", "--destino", str(pasta), "--sem-fatos"])
+    assert resultado.exit_code == 0, resultado.output
+    assert "1 com erro" in resultado.output
+    erros = (pasta / "_erros.txt").read_text(encoding="utf-8")
+    assert erros.startswith("TSTE11\t")
+    assert "modelo caiu" in erros
+
+    # segunda rodada com --apenas-erros: agora a IA funciona -> lê e limpa a lista
+    monkeypatch.setattr(
+        modulo_ia,
+        "analisar_relatorio",
+        lambda texto, ctx, modelo=None, ao_progresso=None: "leitura ok",
+    )
+    resultado2 = CliRunner().invoke(
+        app, ["ia-lote", "--destino", str(pasta), "--sem-fatos", "--apenas-erros"]
+    )
+    assert resultado2.exit_code == 0, resultado2.output
+    assert "Reprocessando apenas os 1 fundos" in resultado2.output
+    assert "1 lidos" in resultado2.output
+    assert (pasta / "TSTE11.json").exists()
+    assert not (pasta / "_erros.txt").exists()  # rodada limpa apaga a lista
+
+
 def test_cli_ia_sem_ollama_orienta_instalacao(con, zip_cvm, tmp_path, monkeypatch):
     from typer.testing import CliRunner
 

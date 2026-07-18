@@ -484,15 +484,20 @@ def _ler_fatos_relevantes(con, fundo, contexto: str, modelo_final: str, ticker: 
 
 @app.command(name="ia-lote")
 def ia_lote(
-    modelo: str = typer.Option(None, "--modelo", help="Modelo do Ollama (dica: llama3.1:8b é bem mais rápido para o lote)."),
+    modelo: str = typer.Option(None, "--modelo", help="Modelo do Ollama (padrão: qwen2.5:14b — o mais confiável)."),
     destino: str = typer.Option("leituras", "--destino", help="Pasta dos JSONs de leitura (versionada no repo)."),
     limite: int = typer.Option(None, "--limite", help="Só os N maiores fundos (para teste)."),
     sem_fatos: bool = typer.Option(False, "--sem-fatos", help="Só relatórios gerenciais."),
+    apenas_erros: bool = typer.Option(
+        False, "--apenas-erros", help="Reprocessa somente os fundos listados no arquivo de erros da rodada anterior."
+    ),
 ) -> None:
     """Lê com IA os relatórios de TODOS os fundos negociáveis (incremental).
 
-    Documento já lido (mesmo id no FNET) é pulado — o lote é retomável e a
-    rodada mensal só processa o que é novo.
+    Um por um, salvando ao terminar cada fundo. Pode interromper (Ctrl+C ou
+    fechar a janela) e retomar depois: documento já lido é pulado. Fundos com
+    erro são pulados e registrados em `<destino>/_erros.txt` — reprocesse só
+    eles com --apenas-erros.
     """
     import time as _time
     from pathlib import Path
@@ -508,6 +513,7 @@ def ia_lote(
             raise typer.Exit(1)
         modelo_final = _preparar_ia(modelo)
         pasta = Path(destino)
+        arquivo_erros = pasta / "_erros.txt"
 
         base = ranking.varrer(con)
         fundos = sorted(
@@ -517,6 +523,17 @@ def ia_lote(
         )
         vistos: set[str] = set()
         fundos = [f for f in fundos if not (f.ticker in vistos or vistos.add(f.ticker))]
+        if apenas_erros:
+            if not arquivo_erros.exists():
+                console.print(f"[yellow]Nenhum arquivo de erros em {arquivo_erros} — nada a reprocessar.[/]")
+                raise typer.Exit(0)
+            com_erro = {
+                linha.split()[0].upper()
+                for linha in arquivo_erros.read_text(encoding="utf-8").splitlines()
+                if linha.strip()
+            }
+            fundos = [f for f in fundos if f.ticker in com_erro]
+            console.print(f"Reprocessando apenas os {len(fundos)} fundos com erro da rodada anterior.")
         if limite:
             fundos = fundos[:limite]
 
@@ -524,7 +541,8 @@ def ia_lote(
             f"Lote de leitura por IA: {len(fundos)} fundos · modelo [bold]{modelo_final}[/] · "
             f"destino [bold]{pasta}[/] · incremental por documento (interrompeu? rode de novo que continua)"
         )
-        novos, pulados, erros = 0, 0, 0
+        novos, pulados = 0, 0
+        falhas: list[tuple[str, str]] = []
         inicio = _time.monotonic()
         for posicao, resumo in enumerate(fundos, start=1):
             prefixo = f"[{posicao}/{len(fundos)}] {resumo.ticker}"
@@ -552,7 +570,7 @@ def ia_lote(
                 texto = modulo_ia.extrair_texto_pdf(caminho)
                 if len(texto) < 500:
                     console.print(f"{prefixo}: [yellow]PDF sem texto extraível — pulado[/]")
-                    erros += 1
+                    falhas.append((resumo.ticker, "PDF sem texto extraível (imagem/escaneado)"))
                     continue
                 leitura_relatorio = modulo_ia.analisar_relatorio(texto, contexto, modelo_final)
 
@@ -585,11 +603,27 @@ def ia_lote(
                 console.print("\n[yellow]Interrompido — rode de novo para continuar de onde parou.[/]")
                 break
             except Exception as erro:  # fundo problemático não derruba o lote
-                erros += 1
+                falhas.append((resumo.ticker, str(erro)[:120]))
                 console.print(f"{prefixo}: [red]erro[/] [dim]{erro}[/]")
 
+        if falhas:
+            pasta.mkdir(parents=True, exist_ok=True)
+            arquivo_erros.write_text(
+                "\n".join(f"{ticker}\t{motivo}" for ticker, motivo in falhas) + "\n",
+                encoding="utf-8",
+            )
+        elif not apenas_erros or novos:
+            arquivo_erros.unlink(missing_ok=True)  # rodada limpa: some a lista antiga
+
         console.print(
-            f"\n[bold]Lote concluído:[/] {novos} lidos, {pulados} já em dia, {erros} com erro.\n"
+            f"\n[bold]Lote concluído:[/] {novos} lidos, {pulados} já em dia, {len(falhas)} com erro."
+        )
+        if falhas:
+            console.print(
+                f"Fundos com erro registrados em [bold]{arquivo_erros}[/] — "
+                "reprocesse só eles com [bold]scout ia-lote --apenas-erros[/]"
+            )
+        console.print(
             f"Para publicar no site: [bold]git add {pasta} && git commit -m 'leituras' && git push[/]"
         )
     finally:

@@ -11,9 +11,10 @@ echo  %date% %time%
 echo ============================================
 
 python -m uv run scout atualizar
-python -m uv run scout ia-lote --modelo llama3.1:8b
+rem modelo padrao (qwen2.5:14b): mais lento, porem mais confiavel - decisao de produto
+python -m uv run scout ia-lote
 if errorlevel 1 (
-    echo Lote terminou com erros - veja acima. Leituras parciais serao publicadas.
+    echo Lote terminou com erros - veja leituras\_erros.txt. Leituras parciais serao publicadas.
 )
 
 git add leituras
