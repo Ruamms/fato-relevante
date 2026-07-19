@@ -1,0 +1,143 @@
+============================================================
+ SCOUT - GUIA DE COMANDOS
+ (copie e cole qualquer linha num terminal dentro de C:\rab\scout)
+============================================================
+
+O EXECUTAVEL DE VERDADE E UM SO:  dist\scout.exe
+Os arquivos .bat sao apenas atalhos que chamam ele (veja no final).
+
+
+------------------------------------------------------------
+ 1. DADOS  (rode antes de tudo, e depois quando quiser renovar)
+------------------------------------------------------------
+
+dist\scout.exe atualizar
+    Baixa os dados oficiais da CVM (informes mensais e trimestrais de
+    todos os FIIs desde 2016) para o banco local. Na primeira vez baixa
+    tudo (~20 MB); nas seguintes so pega o que e novo. Tem barra de
+    progresso.
+
+
+------------------------------------------------------------
+ 2. ANALISAR UM FUNDO
+------------------------------------------------------------
+
+dist\scout.exe analisar HGLG11
+    Raio-x do fundo no proprio terminal: indicadores, selo, red flags
+    com evidencia e fonte, imoveis, administrador e pares do segmento.
+
+dist\scout.exe analisar HGLG11 --html
+    O mesmo raio-x como pagina completa no navegador, com graficos,
+    calculadoras e glossario. Salva em C:\Users\ruam_\.scout\relatorios
+
+
+------------------------------------------------------------
+ 3. RANKING  (pesquisa avancada)
+------------------------------------------------------------
+
+dist\scout.exe ranking
+    Top 10 fundos por maior DY dos ultimos 12 meses.
+
+dist\scout.exe ranking --por dy --sem-alertas
+    Maior DY, so fundos SEM alertas de atencao ou graves.
+
+dist\scout.exe ranking --por pvp --sem-alertas
+    Menor P/VP (mais "descontados"), so fundos sem alertas.
+
+dist\scout.exe ranking --por pl --top 20
+    Os 20 maiores fundos por patrimonio liquido.
+
+dist\scout.exe ranking --por cotacao
+    Menor preco de cota (so fundos com cotacao ja em cache).
+
+dist\scout.exe ranking --por dy --segmento shopping
+    Filtra por segmento (vale "logistica", "papel", etc.).
+
+    Criterios do --por:  dy | pvp | pl | cotistas | cotacao
+
+
+------------------------------------------------------------
+ 4. IA LOCAL  (requer Ollama instalado e aberto)
+------------------------------------------------------------
+
+dist\scout.exe ia HGLG11
+    Le com IA o ultimo relatorio gerencial E os ultimos 3 fatos
+    relevantes do fundo, citando os trechos. Demora alguns minutos.
+
+dist\scout.exe ia HGLG11 --sem-fatos
+    So o relatorio gerencial (mais rapido).
+
+dist\scout.exe ia-lote
+    Le os relatorios de TODOS os fundos negociaveis, um por um,
+    salvando cada leitura em leituras\TICKER.json.
+    - Pode fechar a janela ou Ctrl+C quando quiser: nada se perde.
+    - Rodar de novo continua de onde parou (nao rele o que ja leu).
+    - Fundos com erro vao para leituras\_erros.txt.
+
+dist\scout.exe ia-lote --apenas-erros
+    Tenta de novo SOMENTE os fundos que falharam na rodada anterior.
+    Quem passar sai da lista; quem falhar de novo permanece.
+
+dist\scout.exe ia-lote --limite 5
+    So os 5 maiores fundos (bom para testar o ritmo da maquina).
+
+    Depois do lote, para publicar as leituras no site:
+    git add leituras
+    git commit -m "leituras"
+    git push
+
+
+------------------------------------------------------------
+ 5. SITE
+------------------------------------------------------------
+
+dist\scout.exe site
+    Gera o site completo (indice buscavel + pagina de cada fundo)
+    em C:\Users\ruam_\.scout\site — util para conferir localmente.
+    O site publico e gerado sozinho pelo GitHub Actions, 1x/dia util:
+    https://ruamms.github.io/scout/
+
+dist\scout.exe site --leituras leituras
+    Idem, incluindo as leituras por IA nas paginas.
+
+
+------------------------------------------------------------
+ 6. MODO INTERATIVO  (para quem nao gosta de terminal)
+------------------------------------------------------------
+
+Duplo clique em dist\scout.exe abre um prompt "scout>" que aceita:
+
+    HGLG11              -> raio-x no terminal
+    HGLG11 html         -> raio-x no navegador
+    atualizar           -> baixa dados da CVM
+    ranking pvp sem-alertas
+    ia HGLG11
+    sair
+
+
+------------------------------------------------------------
+ 7. OS ARQUIVOS .BAT  (atalhos de duplo clique)
+------------------------------------------------------------
+
+ler_relatorios.bat
+    Roda o lote de leituras por IA (dist\scout.exe ia-lote).
+    Se houver erros da rodada anterior, PERGUNTA se quer rodar so eles.
+    E o botao "ler tudo" do dia a dia.
+
+lote_mensal.bat
+    O mesmo lote + git push no final. E o que o Agendador de Tarefas
+    do Windows roda sozinho todo dia 16 as 22h (o PC precisa estar
+    ligado). Pode rodar manualmente tambem.
+
+gerar_exe.bat
+    Recompila o dist\scout.exe a partir do codigo-fonte. So e preciso
+    apos mudancas no codigo.
+
+
+------------------------------------------------------------
+ AJUDA EMBUTIDA
+------------------------------------------------------------
+
+dist\scout.exe --help              lista os comandos
+dist\scout.exe ranking --help      opcoes de um comando especifico
+(funciona para qualquer comando)
