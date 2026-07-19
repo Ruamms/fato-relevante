@@ -97,9 +97,23 @@ def montar_dados_etf(con: sqlite3.Connection, ticker: str, classificacoes: dict 
         for linha in cotacoes
         if linha["fechamento_ajustado"]
     ]
-    return {
+    carteira = armazenamento.etf_carteira_atual(con, etf["cnpj"])
+    classe = (classificacao.get("classificacao_scout") or "").strip() or None
+
+    divergencia_classe = None
+    if carteira and classe:
+        grupos = {linha["grupo"]: linha["pct"] for linha in carteira}
+        apontamentos = cda.verificar(
+            {etf["cnpj"]: grupos},
+            {etf["cnpj"]: {"ticker": etf["ticker"], "classificacao_scout": classe}},
+        )
+        duras = [a for a in apontamentos if a["tipo"] == "divergência"]
+        if duras:
+            divergencia_classe = duras[0]["motivo"]
+
+    dados = {
         "etf": etf,
-        "classe": (classificacao.get("classificacao_scout") or "").strip() or None,
+        "classe": classe,
         "observacoes": (classificacao.get("observacoes") or "").strip(),
         "gestor": (cadastro["gestor"] if cadastro else None) or (classificacao.get("gestor") or "").strip(),
         "cotacao": cotacao,
@@ -109,9 +123,17 @@ def montar_dados_etf(con: sqlite3.Connection, ticker: str, classificacoes: dict 
             [{"competencia": c, "fechamento": v} for c, v in ajustado], "fechamento", 12
         ),
         "rentabilidade": analise._rentabilidades(cotacao, ajustado, indices),
-        "carteira": armazenamento.etf_carteira_atual(con, etf["cnpj"]),
+        "carteira": carteira,
         "pl": armazenamento.etf_pl_atual(con, etf["cnpj"]),
+        "liquidez": armazenamento.liquidez_recente(con, etf["ticker"]),
+        "divergencia_classe": divergencia_classe,
     }
+    from .. import etf_flags, redflags
+
+    resultado = etf_flags.avaliar(dados)
+    dados["flags"] = resultado
+    dados["selo"] = redflags.selo(resultado)
+    return dados
 
 
 def gerar(dados: dict, agora: datetime | None = None) -> str:
@@ -183,6 +205,41 @@ def gerar(dados: dict, agora: datetime | None = None) -> str:
                 "proventos — o preço JÁ É o retorno total) · índices: Banco Central e B3</div></div>"
             )
 
+    from .html import _COR_SELO, _COR_SEVERIDADE
+
+    selo_html = ""
+    if dados.get("selo"):
+        cor = _COR_SELO.get(dados["selo"].nivel, "#94a3b8")
+        selo_html = (
+            f'<span class="selo" style="background:{cor}" title="{_e(dados["selo"].descricao)}">'
+            f"{_e(dados['selo'].rotulo)}</span>"
+        )
+
+    flags_html = ""
+    if dados.get("flags"):
+        resultado = dados["flags"]
+        partes = []
+        for flag in resultado.flags:
+            cor = _COR_SEVERIDADE[flag.severidade]
+            partes.append(
+                f'<div class="flag" style="border-left-color:{cor}">'
+                f'<span class="sev" style="color:{cor}">{_e(flag.severidade.value)}</span>'
+                f"<h3>{_e(flag.titulo)}</h3><p>{_e(flag.fato)}</p>"
+                f'<p class="evid">evidência: {_e(flag.evidencia)}</p>'
+                f'<p class="fonte">fonte: {_e(flag.fonte)}</p></div>'
+            )
+        if not partes and resultado.aprovadas:
+            partes.append('<p class="ok">✓ nenhum alerta disparado</p>')
+        if resultado.aprovadas:
+            itens_aprovadas = "".join(f"<li>{_e(texto)}</li>" for texto in resultado.aprovadas)
+            partes.append(
+                '<p class="ok">✓ Verificações que rodaram e passaram sem alerta:</p>'
+                f'<ul class="ok">{itens_aprovadas}</ul>'
+            )
+        for pendente in resultado.nao_avaliadas:
+            partes.append(f'<p class="na">· não avaliada: {_e(pendente)}</p>')
+        flags_html = f"<h2>🚩 Red flags</h2>{''.join(partes)}"
+
     itens_regras = "".join(f"<li>{_e(regra)}</li>" for regra in regras)
     observacao = (
         f'<div class="nota" style="margin-top:8px">nota da curadoria: {_e(dados["observacoes"])}</div>'
@@ -211,6 +268,18 @@ a {{ color:#8FCB9B; }}
 .card .nome {{ color:#8b98a9; font-size:12px; text-transform:uppercase; letter-spacing:.06em; }}
 .card .valor {{ font-size:21px; font-weight:700; margin-top:2px; }}
 .card .extra {{ color:#8b98a9; font-size:12px; margin-top:2px; }}
+.selo {{ display:inline-block; padding:3px 12px; border-radius:999px; font-weight:700;
+  font-size:12px; color:#101415; white-space:nowrap; vertical-align:middle; }}
+.flag {{ background:#182024; border:1px solid #232D31; border-left:4px solid; border-radius:10px; padding:14px 16px; margin-bottom:10px; }}
+.flag .sev {{ font-size:12px; font-weight:800; letter-spacing:.08em; }}
+.flag h3 {{ font-size:16px; margin:2px 0 6px; }}
+.flag .evid {{ background:#101415; border:1px solid #232D31; border-radius:7px; padding:6px 10px;
+  font-family:ui-monospace,Consolas,monospace; font-size:12.5px; color:#aeb9c7; margin-top:8px; }}
+.flag .fonte {{ color:#66707d; font-size:12px; margin-top:5px; }}
+.ok {{ color:#4ade80; font-size:14px; }} .na {{ color:#8b98a9; font-size:13px; }}
+ul.ok {{ list-style:none; padding-left:6px; }}
+ul.ok li {{ color:#8b98a9; margin:3px 0; }}
+ul.ok li::before {{ content:'✓  '; color:#4ade80; font-weight:700; }}
 .regras {{ background:#182024; border:1px solid #3E8E7E; border-radius:10px; padding:16px 18px; }}
 .regras h2 {{ margin:0 0 8px; font-size:16px; color:#8FCB9B; }}
 .regras li {{ margin:6px 0 6px 18px; font-size:14px; }}
@@ -228,10 +297,12 @@ table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-a
 <body>
 <div class="pagina">
   {marca_html("index.html")}
-  <h1>{_e(etf["ticker"])} <small>{_e((etf["denominacao"] or "")[:70])}</small></h1>
+  <h1>{_e(etf["ticker"])} <small>{_e((etf["denominacao"] or "")[:70])}</small> {selo_html}</h1>
   <div class="meta">ETF · {_e(classe)} · dados oficiais B3 + CVM · página gerada em {agora.strftime("%d/%m/%Y %H:%M")}</div>
 
   <div class="cards">{"".join(cards)}</div>
+
+  {flags_html}
 
   <div class="regras">
   <h2>🧭 As regras deste tipo de ETF ({_e(classe)})</h2>

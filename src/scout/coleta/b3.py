@@ -62,14 +62,14 @@ CODBDIS = ("12", "14")
 
 def extrair_pregoes(
     conteudo: bytes, codbdis: tuple[str, ...] = CODBDIS
-) -> dict[str, list[tuple[str, float]]]:
-    """{ticker: [(dia AAAA-MM-DD, fechamento), ...]} dos fundos do arquivo.
+) -> dict[str, list[tuple[str, float, float]]]:
+    """{ticker: [(dia AAAA-MM-DD, fechamento, volume R$), ...]} dos fundos.
 
     Registro tipo 01, códigos BDI de fundos (12 = FII, 14 = ETF) e código de
     negociação padrão de cota (XXXX11 — direitos e recibos ficam fora).
-    Layout posicional oficial: PREULT em [108:121], V99 (2 decimais).
+    Layout posicional oficial: PREULT em [108:121], VOLTOT em [170:188] (V99).
     """
-    pregoes: dict[str, list[tuple[str, float]]] = {}
+    pregoes: dict[str, list[tuple[str, float, float]]] = {}
     with zipfile.ZipFile(io.BytesIO(conteudo)) as zf:
         with zf.open(zf.namelist()[0]) as fh:
             for bruta in io.TextIOWrapper(fh, encoding="latin-1"):
@@ -82,23 +82,37 @@ def extrair_pregoes(
                 fechamento = int(bruta[108:121]) / 100
                 if fechamento <= 0:
                     continue
-                pregoes.setdefault(codneg, []).append((dia, fechamento))
+                try:
+                    volume = int(bruta[170:188]) / 100
+                except ValueError:
+                    volume = 0.0
+                pregoes.setdefault(codneg, []).append((dia, fechamento, volume))
     return pregoes
 
 
-def gravar_pregoes(con: sqlite3.Connection, pregoes: dict[str, list[tuple[str, float]]]) -> int:
-    """Agrega por mês (vale o último pregão) e grava em cotacoes_b3."""
+def gravar_pregoes(con: sqlite3.Connection, pregoes: dict[str, list[tuple[str, float, float]]]) -> int:
+    """Agrega por mês (fechamento do último pregão; volume = SOMA do mês)."""
     linhas = []
     for ticker, dias in pregoes.items():
         por_mes: dict[str, tuple[str, float]] = {}
-        for dia, fechamento in sorted(dias):
-            por_mes[dia[:7]] = (dia, fechamento)
+        volume_mes: dict[str, float] = {}
+        pregoes_mes: dict[str, int] = {}
+        for registro in sorted(dias):
+            dia, fechamento = registro[0], registro[1]
+            volume = registro[2] if len(registro) > 2 else 0.0
+            mes = dia[:7]
+            por_mes[mes] = (dia, fechamento)
+            volume_mes[mes] = volume_mes.get(mes, 0.0) + volume
+            pregoes_mes[mes] = pregoes_mes.get(mes, 0) + 1
         for competencia, (dia, fechamento) in por_mes.items():
-            linhas.append((ticker, competencia, fechamento, dia))
+            linhas.append(
+                (ticker, competencia, fechamento, dia, volume_mes[competencia], pregoes_mes[competencia])
+            )
     con.executemany(
         """
-        INSERT OR REPLACE INTO cotacoes_b3 (ticker, competencia, fechamento, dia)
-        VALUES (?, ?, ?, ?)
+        INSERT OR REPLACE INTO cotacoes_b3
+            (ticker, competencia, fechamento, dia, volume, pregoes)
+        VALUES (?, ?, ?, ?, ?, ?)
         """,
         linhas,
     )

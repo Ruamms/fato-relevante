@@ -41,9 +41,9 @@ def test_extrair_pregoes_filtra_fiis():
             _linha_cotahist("20260130", "ACAO11", 7000, codbdi="02"),  # BDI não é FII
         ]
     )
-    pregoes = b3.extrair_pregoes(conteudo)
+    pregoes = b3.extrair_pregoes(conteudo, codbdis=("12",))
     assert list(pregoes) == ["TSTE11"]
-    assert pregoes["TSTE11"] == [("2026-01-15", 90.0), ("2026-01-30", 100.0)]
+    assert pregoes["TSTE11"] == [("2026-01-15", 90.0, 0.0), ("2026-01-30", 100.0, 0.0)]
 
 
 def test_gravar_pregoes_agrega_por_mes_ultimo_pregao(con):

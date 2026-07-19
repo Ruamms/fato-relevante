@@ -131,6 +131,46 @@ def _semear_etf(con):
     con.commit()
 
 
+def test_flags_de_etf_pl_liquidez_e_selo():
+    from scout import etf_flags, redflags
+
+    # ETF saudável: tudo aprovado
+    saudavel = {
+        "pl": {"pl": 500_000_000, "competencia": "2026-06"},
+        "liquidez": 5_000_000.0,
+        "cotacao": [("x", 1.0)] * 24,
+        "carteira": [{"grupo": "Ações", "pct": 95.0}],
+        "divergencia_classe": None,
+    }
+    resultado = etf_flags.avaliar(saudavel)
+    assert resultado.flags == []
+    assert len(resultado.aprovadas) == 5
+    assert redflags.selo(resultado).nivel == "sem_alertas"
+
+    # PL inviável + sem liquidez + novo + carteira fechada
+    problema = {
+        "pl": {"pl": 10_000_000, "competencia": "2026-06"},
+        "liquidez": 20_000.0,
+        "cotacao": [("x", 1.0)] * 5,
+        "carteira": [],
+        "divergencia_classe": None,
+    }
+    resultado = etf_flags.avaliar(problema)
+    codigos = {flag.codigo for flag in resultado.flags}
+    assert codigos == {"etf_pl_inviavel", "etf_liquidez", "etf_novo", "etf_carteira_fechada"}
+    assert redflags.selo(resultado).nivel == "grave"
+
+    # dados ausentes viram "não avaliada", nunca aprovação silenciosa
+    vazio = {"pl": None, "liquidez": None, "cotacao": [], "carteira": []}
+    resultado = etf_flags.avaliar(vazio)
+    assert len(resultado.nao_avaliadas) == 3
+
+    # divergência de classe (do verificador CDA) vira flag leve
+    divergente = dict(saudavel, divergencia_classe="Ações em 40% (esperado ≥ 70%)")
+    resultado = etf_flags.avaliar(divergente)
+    assert [flag.codigo for flag in resultado.flags] == ["etf_classe_divergente"]
+
+
 def test_pagina_etf_com_carteirinha_de_regras(con):
     from datetime import datetime
 
@@ -155,6 +195,11 @@ def test_pagina_etf_com_carteirinha_de_regras(con):
     assert "fechamento oficial" in pagina
     # não é recomendação, nunca
     assert "não é recomendação" in pagina
+    # selo + red flags de ETF na página (PL 1,5B ok; liquidez sem dado = não avaliada)
+    assert dados["selo"] is not None
+    assert "Red flags" in pagina
+    assert "não avaliada: liquidez" in pagina
+    assert "piso de viabilidade" in pagina  # aprovada do PL
 
     # ticker que não é ETF -> None
     assert etf_html.montar_dados_etf(con, "HGLG11", classificacoes) is None
@@ -191,4 +236,4 @@ def test_cotahist_codbdi_14_entra_como_etf(con):
 
     pregoes = b3.extrair_pregoes(conteudo)
     assert set(pregoes) == {"TSTE11", "BOVA11"}
-    assert pregoes["BOVA11"] == [("2026-06-30", 169.12)]
+    assert pregoes["BOVA11"] == [("2026-06-30", 169.12, 0.0)]

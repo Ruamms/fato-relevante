@@ -139,12 +139,21 @@ def _indice_etfs(etfs: list[dict], agora) -> str:
             else "—"
         )
         pl = formato.moeda_compacta(dados["pl"]["pl"]) if dados["pl"] else "—"
+        selo_html = "—"
+        if dados.get("selo"):
+            cor = _COR_SELO.get(dados["selo"].nivel, "#94a3b8")
+            motivos = "; ".join(flag.titulo for flag in dados["flags"].flags) or dados["selo"].descricao
+            selo_html = (
+                f'<span class="selo" style="background:{cor}" title="{_e(motivos)}">'
+                f"{_e(dados['selo'].rotulo)}</span>"
+            )
         busca = f"{etf['ticker']} {etf['denominacao'] or ''} {classe}".lower().replace('"', "")
         linhas.append(
             f'<tr data-busca="{busca}" data-classe="{_e(classe)}">'
             f'<td><a href="{etf["ticker"]}.html">{etf["ticker"]}</a></td>'
             f"<td>{_e((etf['denominacao'] or '')[:48])}</td>"
-            f"<td>{_e(classe)}</td><td>{preco}</td><td>{variacao}</td><td>{pl}</td></tr>"
+            f"<td>{_e(classe)}</td><td>{preco}</td><td>{variacao}</td><td>{pl}</td>"
+            f"<td>{selo_html}</td></tr>"
         )
     return f"""<!doctype html>
 <html lang="pt-BR">
@@ -173,6 +182,8 @@ th {{ color:#8b98a9; font-size:11.5px; text-transform:uppercase; letter-spacing:
 td {{ padding:7px 10px; border-bottom:1px solid #232D31; }}
 td:nth-child(n+4), th:nth-child(n+4) {{ text-align:right; }}
 tbody tr:hover td {{ background:#182024; }}
+.selo {{ display:inline-block; padding:2px 10px; border-radius:999px; font-weight:700;
+  font-size:11px; color:#101415; white-space:nowrap; }}
 .rodape {{ color:#8b98a9; font-size:12.5px; border-top:1px solid #232D31; margin-top:26px; padding-top:12px; }}
 {relatorio_html.CSS_MARCA}
 </style>
@@ -188,7 +199,7 @@ tbody tr:hover td {{ background:#182024; }}
    oninput="filtrar()">
   <div class="filtros"><button class="filtro ativo" onclick="filtraClasse(this, '')">Todas</button>{botoes}</div>
   <table id="etfs">
-    <thead><tr><th>ticker</th><th>fundo</th><th>classe</th><th>preço (D-1)</th><th>12 meses</th><th>PL</th></tr></thead>
+    <thead><tr><th>ticker</th><th>fundo</th><th>classe</th><th>preço (D-1)</th><th>12 meses</th><th>PL</th><th>selo</th></tr></thead>
     <tbody>{"".join(linhas)}</tbody>
   </table>
   <div class="rodape">Não é recomendação de investimento. Fontes: B3 e CVM — critérios públicos:

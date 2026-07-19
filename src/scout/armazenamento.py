@@ -134,6 +134,8 @@ CREATE TABLE IF NOT EXISTS cotacoes_b3 (
     competencia TEXT NOT NULL,  -- AAAA-MM
     fechamento  REAL,           -- último fechamento NOMINAL do mês (COTAHIST)
     dia         TEXT,           -- data do pregão usado (AAAA-MM-DD)
+    volume      REAL,           -- volume financeiro somado no mês (R$)
+    pregoes     INTEGER,        -- dias com negócio no mês
     PRIMARY KEY (ticker, competencia)
 );
 CREATE TABLE IF NOT EXISTS cadastro (
@@ -206,16 +208,25 @@ def _migrar(con: sqlite3.Connection) -> None:
             # recarga dos trimestrais para preencher o acumulado histórico
             con.execute("DELETE FROM cargas WHERE arquivo LIKE 'inf_trimestral%'")
             con.commit()
+    if "cotacoes_b3" in tabelas:
+        colunas_b3 = {linha[1] for linha in con.execute("PRAGMA table_info(cotacoes_b3)")}
+        if "volume" not in colunas_b3:
+            con.execute("ALTER TABLE cotacoes_b3 ADD COLUMN volume REAL")
+            con.execute("ALTER TABLE cotacoes_b3 ADD COLUMN pregoes INTEGER")
+            con.commit()
     if "cargas" in tabelas:
         marcador = con.execute(
-            "SELECT 1 FROM cargas WHERE arquivo = 'COTAHIST_V2_ETFS'"
+            "SELECT 1 FROM cargas WHERE arquivo = 'COTAHIST_V3_ETFS_VOLUME'"
         ).fetchone()
         if marcador is None:
-            # COTAHIST v2: os arquivos passaram a incluir ETFs (codbdi 14);
-            # bases que já carregaram só FIIs precisam rebaixar
-            con.execute("DELETE FROM cargas WHERE arquivo LIKE 'COTAHIST_A%' OR arquivo LIKE 'COTAHIST_M%'")
+            # COTAHIST v3: os arquivos passaram a incluir ETFs (codbdi 14) e o
+            # volume financeiro; bases carregadas antes disso precisam rebaixar
             con.execute(
-                "INSERT INTO cargas (arquivo, carregado_em) VALUES ('COTAHIST_V2_ETFS', datetime('now'))"
+                "DELETE FROM cargas WHERE arquivo LIKE 'COTAHIST_A%' OR arquivo LIKE 'COTAHIST_M%'"
+                " OR arquivo = 'COTAHIST_V2_ETFS'"
+            )
+            con.execute(
+                "INSERT INTO cargas (arquivo, carregado_em) VALUES ('COTAHIST_V3_ETFS_VOLUME', datetime('now'))"
             )
             con.commit()
 
@@ -476,6 +487,23 @@ def etfs_listados(con: sqlite3.Connection) -> list[sqlite3.Row]:
     return con.execute(
         "SELECT * FROM etfs WHERE ticker IS NOT NULL AND ticker <> '' ORDER BY ticker"
     ).fetchall()
+
+
+def liquidez_recente(con: sqlite3.Connection, ticker: str, meses: int = 3) -> float | None:
+    """Volume financeiro médio POR PREGÃO nos últimos meses fechados (R$/dia)."""
+    linhas = con.execute(
+        """
+        SELECT volume, pregoes FROM cotacoes_b3
+         WHERE ticker = ? AND volume IS NOT NULL AND pregoes > 0
+         ORDER BY competencia DESC LIMIT ?
+        """,
+        (ticker.strip().upper(), meses),
+    ).fetchall()
+    if not linhas:
+        return None
+    total_volume = sum(linha["volume"] for linha in linhas)
+    total_pregoes = sum(linha["pregoes"] for linha in linhas)
+    return total_volume / total_pregoes if total_pregoes else None
 
 
 def etf_carteira_atual(con: sqlite3.Connection, cnpj: str) -> list[sqlite3.Row]:
