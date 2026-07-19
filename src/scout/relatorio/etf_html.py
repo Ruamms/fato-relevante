@@ -136,6 +136,11 @@ def montar_dados_etf(con: sqlite3.Connection, ticker: str, classificacoes: dict 
     return dados
 
 
+def _trunca(texto: str, limite: int) -> str:
+    texto = texto or ""
+    return texto if len(texto) <= limite else texto[: limite - 1].rstrip() + "…"
+
+
 def gerar(dados: dict, agora: datetime | None = None, com_menu: bool = False) -> str:
     from .html import CSS_MENU, JS_MENU, menu_html
 
@@ -143,6 +148,14 @@ def gerar(dados: dict, agora: datetime | None = None, com_menu: bool = False) ->
     menu = menu_html() if com_menu else ""
     css_menu = CSS_MENU if com_menu else ""
     js_menu = JS_MENU if com_menu else ""
+    if com_menu:
+        js_menu += """
+function irTicker(evento, campo) {
+  if (evento.key !== 'Enter') return;
+  const ticker = campo.value.trim().toUpperCase();
+  if (ticker) location.href = ticker + '.html';
+}
+"""
     etf = dados["etf"]
     classe = dados["classe"] or "ETF"
     regras = REGRAS_POR_CLASSE.get(dados["classe"] or "", ())
@@ -170,7 +183,7 @@ def gerar(dados: dict, agora: datetime | None = None, com_menu: bool = False) ->
               f"carteira CVM de {formato.competencia_br(dados['pl']['competencia'])}")
     _card("Classe (Scout)", _e(classe), _e(f"segmento B3: {etf['tipo_b3']}"))
     if dados["gestor"]:
-        _card("Gestora", _e(str(dados["gestor"])[:38]), "")
+        _card("Gestora", f'<span class="compacto">{_e(_trunca(str(dados["gestor"]), 52))}</span>', "")
 
     composicao = ""
     if dados["carteira"]:
@@ -274,6 +287,7 @@ a {{ color:#8FCB9B; }}
 .card {{ background:#182024; border:1px solid #232D31; border-radius:10px; padding:12px 14px; }}
 .card .nome {{ color:#8b98a9; font-size:12px; text-transform:uppercase; letter-spacing:.06em; }}
 .card .valor {{ font-size:21px; font-weight:700; margin-top:2px; }}
+.card .valor .compacto {{ font-size:15px; line-height:1.35; display:block; }}
 .card .extra {{ color:#8b98a9; font-size:12px; margin-top:2px; }}
 .selo {{ display:inline-block; padding:3px 12px; border-radius:999px; font-weight:700;
   font-size:12px; color:#101415; white-space:nowrap; vertical-align:middle; }}
@@ -313,9 +327,9 @@ table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-a
 </head>
 <body>
 <div class="pagina">
-  {marca_html("index.html")}
+  {marca_html("index.html", com_busca_ticker=com_menu)}
   {menu}
-  <h1>{_e(etf["ticker"])} <small>{_e((etf["denominacao"] or "")[:70])}</small> {selo_html}</h1>
+  <h1>{_e(etf["ticker"])} <small title="{_e(etf["denominacao"] or "")}">{_e(_trunca(etf["denominacao"] or "", 82))}</small> {selo_html}</h1>
   <div class="meta">ETF · {_e(classe)} · dados oficiais B3 + CVM · página gerada em {agora.strftime("%d/%m/%Y %H:%M")}</div>
 
   <div class="cards">{"".join(cards)}</div>

@@ -344,11 +344,13 @@ def _indice_etfs(etfs: list[dict], agora) -> str:
                 f'<span class="selo" style="background:{cor}" title="{_e(motivos)}">'
                 f"{_e(dados['selo'].rotulo)}</span>"
             )
+        from .etf_html import _trunca
+
         busca = f"{etf['ticker']} {etf['denominacao'] or ''} {classe}".lower().replace('"', "")
         linhas.append(
             f'<tr data-busca="{busca}" data-classe="{_e(classe)}">'
             f'<td><a href="{etf["ticker"]}.html">{etf["ticker"]}</a></td>'
-            f"<td>{_e((etf['denominacao'] or '')[:48])}</td>"
+            f'<td title="{_e(etf["denominacao"] or "")}">{_e(_trunca(etf["denominacao"] or "", 48))}</td>'
             f"<td>{_e(classe)}</td><td>{preco}</td><td>{variacao}</td><td>{pl}</td>"
             f"<td>{selo_html}</td></tr>"
         )

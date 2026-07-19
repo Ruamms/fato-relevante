@@ -235,6 +235,11 @@ def test_site_publica_etfs(con, tmp_path):
     _semear_etf(con)
     site.gerar(con, tmp_path / "site", com_cotacoes=False)
     assert (tmp_path / "site" / "BOVA11.html").exists()
+    pagina_etf = (tmp_path / "site" / "BOVA11.html").read_text(encoding="utf-8")
+    # no site, a página de ETF tem menu E campo de busca por ticker
+    assert "FIIs ▾" in pagina_etf
+    assert 'id="ir-ticker"' in pagina_etf
+    assert "function irTicker" in pagina_etf
     listagem = (tmp_path / "site" / "etfs.html").read_text(encoding="utf-8")
     assert 'href="BOVA11.html"' in listagem
     assert "function filtraClasse" in listagem
