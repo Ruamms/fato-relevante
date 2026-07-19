@@ -329,6 +329,7 @@ def montar_raio_x(
     imoveis_atuais = armazenamento.imoveis_atuais(con, fundo.cnpj)
     resultados = armazenamento.serie_resultados(con, fundo.cnpj)
 
+    cadastro = armazenamento.cadastro_do_fundo(con, fundo.cnpj)
     contexto = Contexto(
         serie=serie,
         vp_ajustada=vp_ajustada,
@@ -337,10 +338,10 @@ def montar_raio_x(
         imoveis_atuais=imoveis_atuais,
         resultados=resultados,
         tem_informe_trimestral=bool(imoveis_atuais or resultados),
+        situacao_cvm=cadastro["situacao"] if cadastro else None,
     )
     resultado = redflags.avaliar(contexto)
     admin = armazenamento.administrador_do_fundo(con, fundo.cnpj)
-    cadastro = armazenamento.cadastro_do_fundo(con, fundo.cnpj)
     pares, pares_media = _pares_do_segmento(con, fundo.cnpj, fundo.segmento, varredura)
 
     notas = []
@@ -492,11 +493,13 @@ def _montar_relacionados(con: sqlite3.Connection, linhas) -> list[FundoIrmao]:
         serie = armazenamento.serie_complemento(con, linha["cnpj"])
         if not serie:
             continue
+        cadastro_irmao = armazenamento.cadastro_do_fundo(con, linha["cnpj"])
         contexto = Contexto(
             serie=serie,
             vp_ajustada=series.serie_vp_ajustada(serie),
             imoveis_atuais=armazenamento.imoveis_atuais(con, linha["cnpj"]),
             resultados=armazenamento.serie_resultados(con, linha["cnpj"]),
+            situacao_cvm=cadastro_irmao["situacao"] if cadastro_irmao else None,
         )
         resultado = redflags.avaliar(contexto)
         irmaos.append(

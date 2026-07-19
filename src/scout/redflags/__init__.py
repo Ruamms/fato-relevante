@@ -20,12 +20,14 @@ from . import (
     fundo_novo,
     pvp_faixa,
     rendimento,
+    situacao,
     vacancia,
     vp_queda,
 )
 from .contexto import Contexto
 
 REGRAS = [
+    situacao,
     distribuicao_exata,
     distribuicao,
     diluicao,

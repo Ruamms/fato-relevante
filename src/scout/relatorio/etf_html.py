@@ -116,6 +116,7 @@ def montar_dados_etf(con: sqlite3.Connection, ticker: str, classificacoes: dict 
         "classe": classe,
         "observacoes": (classificacao.get("observacoes") or "").strip(),
         "gestor": (cadastro["gestor"] if cadastro else None) or (classificacao.get("gestor") or "").strip(),
+        "situacao_cvm": cadastro["situacao"] if cadastro else None,
         "cotacao": cotacao,
         "preco_atual": meta["preco_atual"] if meta else None,
         "cotado_em": meta["cotado_em"] if meta else None,

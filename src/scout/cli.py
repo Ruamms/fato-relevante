@@ -570,6 +570,22 @@ def ia_lote(
             key=lambda resumo: resumo.pl or 0,
             reverse=True,
         )
+        # fundo em liquidação/cancelado no registro CVM: a página exibe a red
+        # flag, mas a leitura por IA não gasta tempo com quem está encerrando
+        situacoes = ranking.situacoes_do_cadastro(con)
+
+        def _encerrando(cnpj: str) -> bool:
+            situacao = (situacoes.get(armazenamento.so_digitos(cnpj)) or "").upper()
+            return situacao.startswith(("EM LIQUIDA", "CANCELAD"))
+
+        pulados = [f.ticker for f in fundos if _encerrando(f.cnpj)]
+        if pulados:
+            fundos = [f for f in fundos if not _encerrando(f.cnpj)]
+            console.print(
+                f"[dim]{len(pulados)} fundos em liquidação/cancelados fora da fila "
+                f"(a página deles mostra a red flag): {', '.join(pulados[:10])}"
+                f"{'…' if len(pulados) > 10 else ''}[/]"
+            )
         vistos: set[str] = set()
         fundos = [f for f in fundos if not (f.ticker in vistos or vistos.add(f.ticker))]
         # E7: ETFs entram no fim da fila — sem relatório gerencial, o fluxo

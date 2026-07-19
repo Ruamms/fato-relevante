@@ -105,7 +105,8 @@ CREATE TABLE IF NOT EXISTS etfs (
     tipo_b3       TEXT,              -- 'ETF' (renda variável) | 'ETF-RF' (renda fixa)
     denominacao   TEXT,
     nome_pregao   TEXT,
-    atualizado_em TEXT
+    atualizado_em TEXT,
+    listado       INTEGER DEFAULT 1  -- 0 = sumiu da listagem da B3 (deslistado)
 );
 CREATE TABLE IF NOT EXISTS etf_proventos (
     cnpj           TEXT NOT NULL,
@@ -267,6 +268,11 @@ def _migrar(con: sqlite3.Connection) -> None:
         if "volume" not in colunas_b3:
             con.execute("ALTER TABLE cotacoes_b3 ADD COLUMN volume REAL")
             con.execute("ALTER TABLE cotacoes_b3 ADD COLUMN pregoes INTEGER")
+            con.commit()
+    if "etfs" in tabelas:
+        colunas_etfs = {linha[1] for linha in con.execute("PRAGMA table_info(etfs)")}
+        if "listado" not in colunas_etfs:
+            con.execute("ALTER TABLE etfs ADD COLUMN listado INTEGER DEFAULT 1")
             con.commit()
     if "cargas" in tabelas:
         marcador_cda = con.execute(
@@ -560,9 +566,11 @@ def etf_por_ticker(con: sqlite3.Connection, ticker: str) -> sqlite3.Row | None:
 
 
 def etfs_listados(con: sqlite3.Connection) -> list[sqlite3.Row]:
-    """Todos os ETFs com código de negociação, para o site."""
+    """ETFs com código de negociação E ainda listados na B3 (deslistado não
+    negocia mais — sai do site e do lote de leitura)."""
     return con.execute(
-        "SELECT * FROM etfs WHERE ticker IS NOT NULL AND ticker <> '' ORDER BY ticker"
+        "SELECT * FROM etfs WHERE ticker IS NOT NULL AND ticker <> ''"
+        " AND (listado IS NULL OR listado = 1) ORDER BY ticker"
     ).fetchall()
 
 

@@ -13,9 +13,18 @@ from __future__ import annotations
 import dataclasses
 import sqlite3
 
-from . import redflags, series
+from . import armazenamento, redflags, series
 from .modelos import Selo
 from .redflags.contexto import Contexto
+
+
+def situacoes_do_cadastro(con: sqlite3.Connection) -> dict[str, str]:
+    """CNPJ (só dígitos) -> situação no registro de fundos da CVM."""
+    return {
+        linha["cnpj"]: linha["situacao"]
+        for linha in con.execute("SELECT cnpj, situacao FROM cadastro")
+        if linha["situacao"]
+    }
 
 
 @dataclasses.dataclass(frozen=True)
@@ -99,6 +108,7 @@ def varrer(con: sqlite3.Connection, cnpjs: set[str] | None = None) -> list[Fundo
         linha["ticker"]: linha["preco_atual"]
         for linha in con.execute("SELECT ticker, preco_atual FROM cotacoes_meta")
     }
+    situacoes = situacoes_do_cadastro(con)
     corte = _corte_atividade(complementos)
 
     resumos = []
@@ -117,6 +127,7 @@ def varrer(con: sqlite3.Connection, cnpjs: set[str] | None = None) -> list[Fundo
             vp_ajustada=series.serie_vp_ajustada(serie),
             imoveis_atuais=imoveis.get(cnpj, []),
             resultados=resultados.get(cnpj, []),
+            situacao_cvm=situacoes.get(armazenamento.so_digitos(cnpj)),
         )
         resultado = redflags.avaliar(contexto)
         resumos.append(

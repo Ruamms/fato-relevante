@@ -76,10 +76,13 @@ def atualizar_etfs(
         linha[0] for linha in con.execute("SELECT id_fnet FROM etfs WHERE ticker IS NOT NULL")
     }
     novos = 0
+    na_listagem: set[int] = set()
     for tipo in TIPOS:
         for fundo in listar(tipo):
             id_fnet = fundo.get("id")
             radical = (fundo.get("acronym") or "").strip()
+            if id_fnet:
+                na_listagem.add(id_fnet)
             if not id_fnet or not radical or id_fnet in conhecidos:
                 continue
             detalhe = detalhar(id_fnet, radical, tipo)
@@ -106,13 +109,29 @@ def atualizar_etfs(
                 ),
             )
             novos += 1
+    # quem sumiu da listagem foi deslistado: sai do site e do lote na hora.
+    # Linhas de curadoria manual (sem id_fnet, ex.: XFIX11) nunca são mexidas.
+    deslistados = 0
+    if na_listagem:  # listagem vazia = falha da fonte; não deslista ninguém
+        for linha in con.execute(
+            "SELECT cnpj, ticker, id_fnet, listado FROM etfs WHERE id_fnet IS NOT NULL"
+        ).fetchall():
+            esta = 1 if linha["id_fnet"] in na_listagem else 0
+            if esta != (1 if linha["listado"] in (None, 1) else 0):
+                con.execute("UPDATE etfs SET listado = ? WHERE cnpj = ?", (esta, linha["cnpj"]))
+                if not esta:
+                    deslistados += 1
     con.execute(
         "INSERT OR REPLACE INTO cargas (arquivo, carregado_em) VALUES ('ETFS_B3', ?)",
         (hoje.isoformat(),),
     )
     con.commit()
-    total = con.execute("SELECT COUNT(*) FROM etfs").fetchone()[0]
+    total = con.execute(
+        "SELECT COUNT(*) FROM etfs WHERE listado IS NULL OR listado = 1"
+    ).fetchone()[0]
     mensagem = f"ETFs listados na B3: {total} no total ({novos} novos nesta rodada)"
+    if deslistados:
+        mensagem += f" · {deslistados} saíram da listagem (deslistados)"
     if ao_progredir:
         ao_progredir(mensagem)
     return mensagem

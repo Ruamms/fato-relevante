@@ -23,6 +23,7 @@ class Contexto:
     imoveis_atuais: list = field(default_factory=list)      # linhas do trimestre mais recente
     resultados: list = field(default_factory=list)          # resultados trimestrais (cronológico)
     tem_informe_trimestral: bool = False                    # fundo aparece no dataset trimestral
+    situacao_cvm: str | None = None                         # situação no registro de fundos da CVM
 
     def dy_acumulado_12m(self) -> float | None:
         if len(self.serie) < 12:

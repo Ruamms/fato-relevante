@@ -22,6 +22,36 @@ def avaliar(dados: dict) -> redflags.Resultado:
     """`dados` = dicionário do montar_dados_etf (etf_html)."""
     resultado = redflags.Resultado()
 
+    situacao = (dados.get("situacao_cvm") or "").strip()
+    chave = situacao.upper()
+    if chave.startswith(("EM LIQUIDA", "CANCELAD")):
+        encerrando = chave.startswith("EM LIQUIDA")
+        resultado.flags.append(
+            RedFlag(
+                severidade=Severidade.ALTA,
+                titulo=(
+                    "Fundo em liquidação (encerramento)"
+                    if encerrando
+                    else "Registro cancelado na CVM"
+                ),
+                fato=(
+                    "O registro do fundo na CVM está como “Em Liquidação”: o fundo está "
+                    "sendo encerrado — os ativos são vendidos e o dinheiro devolvido aos "
+                    "cotistas. Não é um fundo em operação normal."
+                    if encerrando
+                    else "O registro do fundo na CVM está como “Cancelado”: o fundo encerrou. "
+                    "Os dados exibidos vêm das últimas informações publicadas."
+                ),
+                evidencia=f'situação cadastral: "{situacao}"',
+                fonte="registro de fundos da CVM (dados abertos, atualização semanal)",
+                codigo="etf_situacao_cvm",
+            )
+        )
+    elif situacao:
+        resultado.aprovadas.append("registro na CVM em funcionamento normal")
+    else:
+        resultado.nao_avaliadas.append("situação cadastral (fora do registro FII/FIIM da CVM)")
+
     pl = dados.get("pl")
     if pl is None:
         resultado.nao_avaliadas.append("patrimônio líquido (sem carteira CVM ainda)")

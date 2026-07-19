@@ -173,10 +173,11 @@ def test_flags_de_etf_pl_liquidez_e_selo():
         "cotacao": [("x", 1.0)] * 24,
         "carteira": [{"grupo": "Ações", "pct": 95.0}],
         "divergencia_classe": None,
+        "situacao_cvm": "Em Funcionamento Normal",
     }
     resultado = etf_flags.avaliar(saudavel)
     assert resultado.flags == []
-    assert len(resultado.aprovadas) == 5
+    assert len(resultado.aprovadas) == 6
     assert redflags.selo(resultado).nivel == "sem_alertas"
 
     # PL inviável + sem liquidez + novo + carteira fechada
@@ -193,9 +194,10 @@ def test_flags_de_etf_pl_liquidez_e_selo():
     assert redflags.selo(resultado).nivel == "grave"
 
     # dados ausentes viram "não avaliada", nunca aprovação silenciosa
+    # (inclui a situação cadastral dos ETFs fora do registro FII/FIIM)
     vazio = {"pl": None, "liquidez": None, "cotacao": [], "carteira": []}
     resultado = etf_flags.avaliar(vazio)
-    assert len(resultado.nao_avaliadas) == 3
+    assert len(resultado.nao_avaliadas) == 4
 
     # divergência de classe (do verificador CDA) vira flag leve
     divergente = dict(saudavel, divergencia_classe="Ações em 40% (esperado ≥ 70%)")
@@ -473,3 +475,69 @@ def test_cotahist_codbdi_14_entra_como_etf(con):
     # desde a fase de Ações, o codbdi 02 (PETR4) também entra
     assert set(pregoes) == {"TSTE11", "BOVA11", "PETR4"}
     assert pregoes["BOVA11"] == [("2026-06-30", 169.12, 0.0)]
+
+
+# --- deslistagem e situação cadastral (aprovado em 20/07/2026) ------------------
+
+
+def test_etf_que_some_da_listagem_vira_deslistado(con, monkeypatch):
+    from scout import armazenamento
+
+    monkeypatch.setattr(b3fundos, "listar", _lista_fake)
+    monkeypatch.setattr(b3fundos, "detalhar", lambda i, r, t: _DETALHES[i])
+    monkeypatch.setattr(b3fundos.time, "sleep", lambda s: None)
+    b3fundos.atualizar_etfs(con, hoje=date(2026, 7, 19))
+    # linha de curadoria manual (sem id_fnet, tipo XFIX11): nunca é mexida
+    con.execute(
+        "INSERT INTO etfs (cnpj, ticker, radical, id_fnet, tipo_b3) "
+        "VALUES ('99999999000199', 'XFIX11', 'XFIX', NULL, 'ETF')"
+    )
+    con.commit()
+    assert len(armazenamento.etfs_listados(con)) == 5
+
+    # semana seguinte: HASH sumiu da listagem da B3 (deslistado)
+    def _lista_sem_hash(tipo):
+        return [] if tipo == "ETF-Cripto" else _lista_fake(tipo)
+
+    monkeypatch.setattr(b3fundos, "listar", _lista_sem_hash)
+    mensagem = b3fundos.atualizar_etfs(con, hoje=date(2026, 7, 27))
+    assert "1 saíram da listagem" in mensagem
+    tickers = {etf["ticker"] for etf in armazenamento.etfs_listados(con)}
+    assert "HASH11" not in tickers  # fora do site e do lote
+    assert "XFIX11" in tickers      # curadoria manual intocada
+    linha = con.execute("SELECT listado FROM etfs WHERE ticker = 'HASH11'").fetchone()
+    assert linha[0] == 0
+
+    # se voltar à listagem, volta ao site
+    monkeypatch.setattr(b3fundos, "listar", _lista_fake)
+    b3fundos.atualizar_etfs(con, hoje=date(2026, 8, 3))
+    assert con.execute("SELECT listado FROM etfs WHERE ticker = 'HASH11'").fetchone()[0] == 1
+
+
+def test_listagem_vazia_nao_deslista_ninguem(con, monkeypatch):
+    from scout import armazenamento
+
+    monkeypatch.setattr(b3fundos, "listar", _lista_fake)
+    monkeypatch.setattr(b3fundos, "detalhar", lambda i, r, t: _DETALHES[i])
+    monkeypatch.setattr(b3fundos.time, "sleep", lambda s: None)
+    b3fundos.atualizar_etfs(con, hoje=date(2026, 7, 19))
+
+    monkeypatch.setattr(b3fundos, "listar", lambda tipo: [])  # fonte fora do ar
+    b3fundos.atualizar_etfs(con, hoje=date(2026, 7, 27))
+    assert len(armazenamento.etfs_listados(con)) == 4  # ninguém deslistado
+
+
+def test_etf_em_liquidacao_ganha_flag_alta_na_pagina(con):
+    from scout.relatorio import etf_html
+
+    _semear_etf(con)
+    con.execute(
+        "INSERT INTO cadastro (cnpj, denominacao, situacao) "
+        "VALUES ('10406511000161', 'ISHARES IBOVESPA', 'Em Liquidação')"
+    )
+    con.commit()
+    classificacoes = {"10406511000161": {"classificacao_scout": "Ações Brasil", "observacoes": ""}}
+    dados = etf_html.montar_dados_etf(con, "BOVA11", classificacoes)
+    codigos = {flag.codigo for flag in dados["flags"].flags}
+    assert "etf_situacao_cvm" in codigos
+    assert dados["selo"].nivel == "grave"

@@ -190,3 +190,44 @@ def test_motor_ordena_por_severidade():
     assert severidades == sorted(
         severidades, key=lambda s: {Severidade.ALTA: 0, Severidade.MEDIA: 1, Severidade.BAIXA: 2}[s]
     )
+
+# --- situação do registro CVM -------------------------------------------------
+
+
+def test_situacao_em_liquidacao_dispara_alta():
+    from scout.redflags import situacao
+
+    ctx = _contexto(_serie(14), situacao_cvm="Em Liquidação")
+    assert situacao.aplicavel(ctx)
+    flag = situacao.avaliar(ctx)
+    assert flag is not None
+    assert flag.severidade == Severidade.ALTA
+    assert "encerrado" in flag.fato or "encerra" in flag.fato
+    assert "Em Liquidação" in flag.evidencia
+
+
+def test_situacao_cancelado_dispara_alta():
+    from scout.redflags import situacao
+
+    flag = situacao.avaliar(_contexto(_serie(14), situacao_cvm="Cancelado"))
+    assert flag is not None
+    assert flag.severidade == Severidade.ALTA
+    assert "Cancelado" in flag.evidencia
+
+
+def test_situacao_normal_aprova_e_sem_cadastro_nao_avalia():
+    from scout.redflags import situacao
+
+    ctx = _contexto(_serie(14), situacao_cvm="Em Funcionamento Normal")
+    assert situacao.aplicavel(ctx)
+    assert situacao.avaliar(ctx) is None
+    # pré-operacional não é encerramento (regra "fundo novo" cobre)
+    assert situacao.avaliar(_contexto(_serie(14), situacao_cvm="Fase Pré-Operacional")) is None
+    # fundo fora do cadastro: regra não avaliada (nunca aprovação silenciosa)
+    assert not situacao.aplicavel(_contexto(_serie(14)))
+
+
+def test_selo_de_fundo_em_liquidacao_e_grave():
+    resultado = redflags.avaliar(_contexto(_serie(30), situacao_cvm="Em Liquidação"))
+    assert any(f.codigo == "situacao_cvm" for f in resultado.flags)
+    assert redflags.selo(resultado).nivel == "grave"
