@@ -1,7 +1,7 @@
 # Roadmap
 
 Cada etapa é pensada para gerar valor sozinha — e virar conteúdo (post/vídeo) ao ser concluída.
-A visão de produto completa (referências de mercado, backlog e decisões de design) está em [docs/VISAO.md](docs/VISAO.md). **v1 = 100% FIIs.**
+A visão de produto completa (referências de mercado, backlog e decisões de design) está em [docs/VISAO.md](docs/VISAO.md). As fontes de dados, APIs e o porquê de cada uma estão em [docs/FONTES.md](docs/FONTES.md). **v1 = 100% FIIs.**
 
 ## Fase 1 — Fundação (MVP CLI, foco em FIIs)
 

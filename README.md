@@ -53,6 +53,10 @@ Porque nada aqui é caixa-preta:
 | [B3 — Série Histórica (COTAHIST)](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/mercado-a-vista/series-historicas/) | Cotações oficiais de fechamento, desde 2011 (D-1 — preço em tempo real é serviço licenciado da B3) |
 | Banco Central (SGS) | CDI e IPCA para os comparativos de rentabilidade |
 
+Cada fonte, endpoint e o **porquê** de cada escolha estão detalhados em
+**[docs/FONTES.md](docs/FONTES.md)** (inclui as APIs da B3 para ETFs e ações, o
+modelo local de IA e as funcionalidades determinísticas).
+
 ## Site
 
 O raio-x de todos os FIIs negociáveis, atualizado diariamente via GitHub Actions:
