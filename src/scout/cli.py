@@ -584,6 +584,7 @@ def ia_lote(
                     try:
                         docs_p = fnet.listar(resumo_p.cnpj)
                         relatorio_p, docs_meta_p = _selecao(docs_p)
+                        df_p = fnet.ultima_demonstracao_financeira(docs_p)
                         existente_p = leituras.carregar(pasta, resumo_p.ticker)
                         ids_lidos_p = leituras.ids_comunicados(existente_p)
                         # espelho da decisão do consumidor: fundo pulável não gasta download
@@ -597,9 +598,14 @@ def ia_lote(
                         marcado_sem_relatorio = bool(
                             relatorio_p is None and existente_p and existente_p.get("sem_relatorio")
                         )
+                        parecer_atual_p = df_p is None or bool(
+                            existente_p and (existente_p.get("parecer") or {}).get("id") == df_p["id"]
+                        )
                         pulavel = (
-                            relatorio_reaproveitavel or marcado_sem_relatorio
-                        ) and ids_lidos_p >= {meta["id"] for meta in docs_meta_p}
+                            (relatorio_reaproveitavel or marcado_sem_relatorio)
+                            and ids_lidos_p >= {meta["id"] for meta in docs_meta_p}
+                            and parecer_atual_p
+                        )
                         if not pulavel:
                             if relatorio_p and not relatorio_reaproveitavel:
                                 fnet._garantir_documento(
@@ -610,6 +616,10 @@ def ia_lote(
                                     fnet._garantir_documento(
                                         con_prefetch, resumo_p.cnpj, meta_p, destino_docs
                                     )
+                            if df_p and not parecer_atual_p:
+                                fnet._garantir_documento(
+                                    con_prefetch, resumo_p.cnpj, df_p, destino_docs
+                                )
                         fila.put((docs_p, None))
                     except Exception as erro_p:  # o consumidor registra a falha
                         fila.put((None, erro_p))
@@ -656,32 +666,68 @@ def ia_lote(
                         ),
                     )
 
+            def _processar_parecer(df: dict | None, existente: dict | None) -> dict | None:
+                """Bloco `parecer` do JSON: classificação determinística do
+                parecer do auditor na DF anual. Reaproveita quando a DF é a
+                mesma; DF nova custa só download + regex (sem IA)."""
+                from . import parecer as modulo_parecer
+
+                if df is None:
+                    return (existente or {}).get("parecer")
+                if existente and (existente.get("parecer") or {}).get("id") == df["id"]:
+                    return existente["parecer"]
+                caminho_df = fnet._garantir_documento(
+                    con, resumo.cnpj, df, armazenamento.diretorio_dados() / "documentos"
+                )
+                texto_df = modulo_ia.extrair_texto_pdf(caminho_df)
+                resultado = (
+                    modulo_parecer.classificar(texto_df)
+                    if len(texto_df) >= 500
+                    else {"tipo": "nao_identificado", "rotulo": "PDF sem texto extraível",
+                          "grave": False, "continuidade": False, "trecho": ""}
+                )
+                return {"id": df["id"], "data_entrega": df["data_entrega"], **resultado}
+
+            def _parecer_atual(existente: dict | None, df: dict | None) -> bool:
+                if df is None:
+                    return True
+                return bool(existente and (existente.get("parecer") or {}).get("id") == df["id"])
+
             try:
                 docs, erro_prefetch = _proximo_da_fila()
                 if erro_prefetch is not None:
                     raise erro_prefetch
                 relatorio, docs_meta = _selecao(docs)
+                df = fnet.ultima_demonstracao_financeira(docs)
                 existente = leituras.carregar(pasta, resumo.ticker)
                 ids_novos = {meta["id"] for meta in docs_meta}
+                # comunicados já lidos podem ser reaproveitados quando não há documento novo
+                bloco_lido = leituras.bloco_comunicados_lido(existente)
+                reusar_docs = bool(
+                    docs_meta and bloco_lido and bloco_lido["texto"] and set(bloco_lido["ids"]) >= ids_novos
+                )
                 if relatorio is None:
                     # relatório gerencial é opcional no FNET; fatos relevantes,
                     # comunicados e assembleias, quando existem, são lidos mesmo assim
                     if existente and existente.get("sem_relatorio") and leituras.ids_comunicados(
                         existente
-                    ) >= ids_novos:
+                    ) >= ids_novos and _parecer_atual(existente, df):
                         pulados += 1
                         continue  # já marcado e sem documento novo
                     texto_docs = None
-                    if docs_meta:
+                    if docs_meta and not reusar_docs:
                         raiox = analise.montar_raio_x(con, resumo.ticker, varredura=base)
                         contexto = modulo_ia.contexto_do_raiox(raiox) if raiox else ""
                         texto_docs = _ler_documentos(docs_meta, contexto)
-                    leituras.salvar(
-                        pasta,
-                        leituras.montar_sem_relatorio(
-                            resumo.ticker, docs_meta, texto_docs, modelo=modelo_final
-                        ),
+                    dados = leituras.montar_sem_relatorio(
+                        resumo.ticker, docs_meta, texto_docs, modelo=modelo_final
                     )
+                    if reusar_docs:
+                        dados["comunicados"] = bloco_lido
+                    bloco_parecer = _processar_parecer(df, existente)
+                    if bloco_parecer:
+                        dados["parecer"] = bloco_parecer
+                    leituras.salvar(pasta, dados)
                     if texto_docs:
                         novos += 1
                         _registrar(
@@ -697,7 +743,7 @@ def ia_lote(
                     continue
                 if existente and existente.get("relatorio") and existente["relatorio"]["id"] == relatorio["id"] and leituras.ids_comunicados(
                     existente
-                ) >= ids_novos:
+                ) >= ids_novos and _parecer_atual(existente, df):
                     pulados += 1
                     if pulados % 25 == 0:
                         console.print(f"[dim][{posicao}/{len(fundos)}] {pulados} fundos já em dia até aqui…[/]")
@@ -736,14 +782,19 @@ def ia_lote(
                             ),
                         )
 
-                texto_docs = _ler_documentos(docs_meta, contexto) if docs_meta else None
-
-                leituras.salvar(
-                    pasta,
-                    leituras.montar(
-                        resumo.ticker, modelo_final, relatorio, leitura_relatorio, docs_meta, texto_docs
-                    ),
+                texto_docs = (
+                    _ler_documentos(docs_meta, contexto) if docs_meta and not reusar_docs else None
                 )
+
+                dados = leituras.montar(
+                    resumo.ticker, modelo_final, relatorio, leitura_relatorio, docs_meta, texto_docs
+                )
+                if reusar_docs:
+                    dados["comunicados"] = bloco_lido
+                bloco_parecer = _processar_parecer(df, existente)
+                if bloco_parecer:
+                    dados["parecer"] = bloco_parecer
+                leituras.salvar(pasta, dados)
                 novos += 1
                 decorrido = _time.monotonic() - inicio
                 _registrar(f"{resumo.ticker}\tlido\t{_time.monotonic() - inicio_fundo:.0f}s")

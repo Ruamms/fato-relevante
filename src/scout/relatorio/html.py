@@ -329,6 +329,8 @@ table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-a
   <h2>🚩 Red flags{_ajuda("Red flags")}</h2>
   {_secao_flags(raiox)}
 
+  {_secao_parecer(leitura)}
+
   {_secao_imoveis(raiox)}
 
   {_secao_administrador(raiox, publicados=publicados)}
@@ -804,6 +806,58 @@ def _secao_oscilacoes(completo: AnaliseCompleta, leitura: dict | None, visiveis:
   <div class="nota" style="margin-top:8px">meses em que a cota (ajustada por desdobramento) variou
   mais de ±10% · os eventos listados ocorreram no mesmo período — é coincidência de calendário
   registrada como fato, <b>não</b> afirmação de causa · fatos/comunicados: apenas os já lidos pela IA</div>
+  </div>
+"""
+
+
+def _secao_parecer(leitura: dict | None) -> str:
+    """Parecer do auditor independente na DF anual — classificação
+    determinística (regex sobre o texto oficial), com trecho e link."""
+    if not leitura or not leitura.get("parecer"):
+        return ""
+    from ..coleta.fnet import URL_DOWNLOAD
+
+    parecer = leitura["parecer"]
+    tipo = parecer.get("tipo", "nao_identificado")
+    grave = parecer.get("grave", False)
+    continuidade = parecer.get("continuidade", False)
+    if grave:
+        cor, icone = "#D66A6A", "⚠"
+    elif continuidade:
+        cor, icone = "#D9B44A", "⚠"
+    elif tipo == "sem_ressalva":
+        cor, icone = "#4ade80", "✓"
+    else:
+        cor, icone = "#8b98a9", "—"
+    data = parecer.get("data_entrega", "")[:10]
+    aviso_continuidade = (
+        '<p style="color:#D9B44A;font-size:13.5px;margin-top:6px">⚠ o auditor apontou '
+        "<b>incerteza relevante quanto à continuidade operacional</b> do fundo.</p>"
+        if continuidade
+        else ""
+    )
+    trecho = (
+        f'<p class="evid" style="background:#101415;border:1px solid #232D31;border-radius:7px;'
+        f'padding:6px 10px;font-family:ui-monospace,Consolas,monospace;font-size:12.5px;'
+        f'color:#aeb9c7;margin-top:8px">“{_e(parecer["trecho"])}”</p>'
+        if parecer.get("trecho")
+        else ""
+    )
+    link = (
+        f' · <a href="{URL_DOWNLOAD.format(id=parecer["id"])}" target="_blank" rel="noopener">'
+        "📄 baixar a DF original (FNET)</a>"
+        if parecer.get("id")
+        else ""
+    )
+    return f"""
+  <h2>Parecer do auditor{_ajuda("Parecer do auditor")}</h2>
+  <div class="grafico" style="border-left:4px solid {cor}">
+  <p style="font-size:15px"><span style="color:{cor};font-weight:800">{icone} {_e(parecer.get("rotulo", ""))}</span>
+  <span class="nota"> · demonstrações financeiras entregues em {_e(data)}{link}</span></p>
+  {aviso_continuidade}
+  {trecho}
+  <div class="nota" style="margin-top:8px">classificação automática por texto sobre o PDF oficial
+  (fórmulas normatizadas do relatório de auditoria) — confira no documento original</div>
   </div>
 """
 

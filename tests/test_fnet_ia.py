@@ -61,6 +61,15 @@ def test_seleciona_relatorio_e_fatos():
     assert [fato["id"] for fato in fatos] == [120]
 
 
+def test_ultima_demonstracao_financeira():
+    docs = _DOCUMENTOS + [
+        {"id": 400, "tipo": "Demonstrações Financeiras", "categoria": "Informes Periódicos", "data_entrega": "18/02/2026 10:00"},
+        {"id": 300, "tipo": "Demonstrações Financeiras", "categoria": "Informes Periódicos", "data_entrega": "18/02/2025 10:00"},
+    ]
+    assert fnet.ultima_demonstracao_financeira(docs)["id"] == 400
+    assert fnet.ultima_demonstracao_financeira(_DOCUMENTOS) is None
+
+
 def test_comunicados_e_assembleias_selecao():
     from datetime import date
 
@@ -448,6 +457,83 @@ def test_cli_ia_lote_sem_relatorio_le_fatos_relevantes(con, zip_cvm, tmp_path, m
     # segunda rodada: mesmo fato -> nada a refazer
     resultado2 = CliRunner().invoke(app, ["ia-lote", "--destino", str(pasta)])
     assert "0 lidos, 1 já em dia" in resultado2.output
+
+
+def test_cli_ia_lote_parecer_do_auditor(con, zip_cvm, tmp_path, monkeypatch):
+    from typer.testing import CliRunner
+
+    from scout import cli as modulo_cli
+    from scout import ia as modulo_ia
+    from scout.cli import app
+    from scout.coleta import cvm
+    from scout.coleta import fnet as modulo_fnet
+
+    cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
+    monkeypatch.setenv("SCOUT_DATA_DIR", str(tmp_path))
+    monkeypatch.setattr(modulo_cli, "_preparar_ia", lambda modelo: "teste:1b")
+
+    df_ok = {"id": 400, "tipo": "Demonstrações Financeiras", "categoria": "Informes Periódicos", "data_entrega": "18/02/2026 10:00"}
+    docs = _DOCUMENTOS + [df_ok]
+    monkeypatch.setattr(modulo_fnet, "listar", lambda cnpj, quantidade=30: docs)
+
+    pdf_relatorio = tmp_path / "rel.pdf"
+    pdf_relatorio.write_bytes(_pdf_minimo("Relatorio para o lote " * 50))
+    pdf_df = tmp_path / "df.pdf"
+    pdf_df.write_bytes(
+        _pdf_minimo(
+            "Em nossa opiniao, as demonstracoes apresentam adequadamente, "
+            "em todos os aspectos relevantes, a posicao do Fundo. " * 10
+        )
+    )
+    por_id = {400: pdf_df, 401: pdf_df}
+    monkeypatch.setattr(
+        modulo_fnet,
+        "_garantir_documento",
+        lambda con_, cnpj, doc, destino: por_id.get(doc["id"], pdf_relatorio),
+    )
+    chamadas = []
+    monkeypatch.setattr(
+        modulo_ia,
+        "analisar_relatorio",
+        lambda texto, ctx, modelo=None, ao_progresso=None: chamadas.append("rel") or "L",
+    )
+    monkeypatch.setattr(
+        modulo_ia,
+        "analisar_comunicados",
+        lambda itens, ctx, modelo=None, ao_progresso=None: chamadas.append("docs") or "F",
+    )
+    pasta = tmp_path / "leituras"
+
+    resultado = CliRunner().invoke(app, ["ia-lote", "--destino", str(pasta)])
+    assert resultado.exit_code == 0, resultado.output
+    leitura = json.loads((pasta / "TSTE11.json").read_text(encoding="utf-8"))
+    assert leitura["parecer"]["id"] == 400
+    assert leitura["parecer"]["tipo"] == "sem_ressalva"
+    assert chamadas == ["rel", "docs"]
+
+    # segunda rodada: tudo em dia (parecer incluído)
+    resultado2 = CliRunner().invoke(app, ["ia-lote", "--destino", str(pasta)])
+    assert "0 lidos, 1 já em dia" in resultado2.output
+    assert chamadas == ["rel", "docs"]
+
+    # DF nova (id 401): parecer reprocessado SEM nenhuma chamada de IA
+    pdf_df.write_bytes(
+        _pdf_minimo(
+            "Opiniao com ressalva. Exceto pelo assunto descrito, as demonstracoes "
+            "apresentam adequadamente a posicao do Fundo. " * 10
+        )
+    )
+    df_nova = {**df_ok, "id": 401, "data_entrega": "18/02/2027 10:00"}
+    monkeypatch.setattr(modulo_fnet, "listar", lambda cnpj, quantidade=30: _DOCUMENTOS + [df_nova])
+    resultado3 = CliRunner().invoke(app, ["ia-lote", "--destino", str(pasta)])
+    assert resultado3.exit_code == 0, resultado3.output
+    leitura = json.loads((pasta / "TSTE11.json").read_text(encoding="utf-8"))
+    assert leitura["parecer"]["id"] == 401
+    assert leitura["parecer"]["tipo"] == "ressalva"
+    assert leitura["parecer"]["grave"] is True
+    assert chamadas == ["rel", "docs"]  # IA não foi chamada: relatório e comunicados reaproveitados
+    assert leitura["relatorio"]["texto"] == "L"
+    assert leitura["comunicados"]["texto"] == "F"
 
 
 def test_cli_ia_lote_registra_erros_e_reprocessa_so_eles(con, zip_cvm, tmp_path, monkeypatch):

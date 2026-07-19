@@ -270,6 +270,32 @@ def test_secao_ia_formato_novo_com_rotulos(con, zip_cvm):
     assert "bloco dos comunicados" in pagina
 
 
+def test_secao_parecer_do_auditor(con, zip_cvm):
+    completo = _completo(con, zip_cvm)
+    leitura = {
+        "ticker": "TSTE11",
+        "relatorio": {"id": 1, "data_entrega": "10/07/2026 18:00", "texto": "leitura"},
+        "parecer": {
+            "id": 400,
+            "data_entrega": "18/02/2026 10:00",
+            "tipo": "ressalva",
+            "rotulo": "opinião com ressalva",
+            "grave": True,
+            "continuidade": True,
+            "trecho": "Opinião com ressalva. Exceto pelo assunto descrito.",
+        },
+    }
+    pagina = relatorio_html.gerar(completo, leitura=leitura)
+    assert "Parecer do auditor" in pagina
+    assert "opinião com ressalva" in pagina
+    assert "continuidade operacional" in pagina  # alerta máximo em destaque
+    assert "Exceto pelo assunto descrito" in pagina
+    assert "downloadDocumento?id=400" in pagina
+
+    # sem parecer no JSON, a seção não existe
+    assert "Parecer do auditor" not in relatorio_html.gerar(completo)
+
+
 def test_sem_cotacao_nao_mostra_calculadoras(con, zip_cvm):
     cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
     completo = analise.montar_completo(con, "tste11")

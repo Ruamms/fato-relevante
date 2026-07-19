@@ -117,6 +117,13 @@ TERMOS = {
         "Juros compostos na prática: aporte inicial + aportes mensais rendendo à taxa "
         "definida. Reinvestir os rendimentos é o que faz a curva dobrar no longo prazo."
     ),
+    "Parecer do auditor": (
+        "A opinião de uma auditoria independente sobre as contas do fundo, publicada nas "
+        "demonstrações financeiras anuais. \"Sem ressalvas\" é o normal. Ressalva, opinião "
+        "adversa ou abstenção significam que o auditor encontrou problema sério nas contas — "
+        "e \"incerteza de continuidade\" é o alerta máximo: dúvida se o fundo consegue seguir "
+        "operando. Poucos investidores leem; é exatamente por isso que mostramos."
+    ),
     "Gestora": (
         "Quem decide o que o fundo compra e vende — a estratégia. Não confunda com o "
         "administrador, que cuida da burocracia e da custódia. Olhar os outros fundos da "

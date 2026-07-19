@@ -60,13 +60,27 @@ def _bloco_comunicados(docs_meta: list[dict], texto: str | None) -> dict:
     }
 
 
-def ids_comunicados(leitura: dict | None) -> set:
-    """Ids dos comunicados já lidos, aceitando o formato novo (`comunicados`)
-    e o legado (`fatos`)."""
+def bloco_comunicados_lido(leitura: dict | None) -> dict | None:
+    """Bloco de comunicados de uma leitura existente, normalizado — aceita o
+    formato novo (`comunicados`) e o legado (`fatos`)."""
     if not leitura:
-        return set()
-    bloco = leitura.get("comunicados") or leitura.get("fatos") or {}
-    return set(bloco.get("ids", []))
+        return None
+    bloco = leitura.get("comunicados") or leitura.get("fatos")
+    if not bloco:
+        return None
+    ids = bloco.get("ids", [])
+    return {
+        "ids": ids,
+        "datas": bloco.get("datas", []),
+        "rotulos": bloco.get("rotulos", ["Fato Relevante"] * len(ids)),
+        "texto": bloco.get("texto"),
+    }
+
+
+def ids_comunicados(leitura: dict | None) -> set:
+    """Ids dos comunicados já lidos (formato novo ou legado)."""
+    bloco = bloco_comunicados_lido(leitura)
+    return set(bloco["ids"]) if bloco else set()
 
 
 def montar_sem_relatorio(

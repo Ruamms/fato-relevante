@@ -86,6 +86,14 @@ def fatos_relevantes(documentos: list[dict], quantidade: int = 3) -> list[dict]:
     ][:quantidade]
 
 
+def ultima_demonstracao_financeira(documentos: list[dict]) -> dict | None:
+    """DF anual mais recente — é nela que mora o parecer do auditor."""
+    for documento_ in documentos:
+        if "demonstra" in documento_["tipo"].lower() and "financeira" in documento_["tipo"].lower():
+            return documento_
+    return None
+
+
 def comunicados_e_assembleias(documentos: list[dict], hoje=None) -> list[dict]:
     """Comunicados ao Mercado (até 2) e Assembleias (até 2) dos últimos 12
     meses, com um `rotulo` legível para o prompt e a página. Junto com os
