@@ -466,12 +466,16 @@ def test_lote_ia_inclui_etfs_pelo_fluxo_sem_relatorio(con, zip_cvm, tmp_path, mo
         ],
     }
     monkeypatch.setattr(
-        modulo_fnet, "listar", lambda cnpj, quantidade=30: docs_por_cnpj.get(cnpj, [])
+        modulo_fnet,
+        "listar",
+        lambda cnpj, quantidade=30, timeout=60, tentativas=3: docs_por_cnpj.get(cnpj, []),
     )
     caminho_pdf = tmp_path / "doc.pdf"
     caminho_pdf.write_bytes(_pdf_minimo("Ata de assembleia do ETF " * 30))
     monkeypatch.setattr(
-        modulo_fnet, "_garantir_documento", lambda con_, cnpj, doc, destino: caminho_pdf
+        modulo_fnet,
+        "_garantir_documento",
+        lambda con_, cnpj, doc, destino, timeout=180, tentativas=3: caminho_pdf,
     )
     monkeypatch.setattr(
         modulo_ia,

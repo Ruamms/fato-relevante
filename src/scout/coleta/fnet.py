@@ -167,13 +167,14 @@ def garantir_fatos_relevantes(
 
 
 def _garantir_documento(
-    con: sqlite3.Connection, cnpj: str, documento_: dict, destino: Path
+    con: sqlite3.Connection, cnpj: str, documento_: dict, destino: Path,
+    timeout: int = 180, tentativas: int = 3,
 ) -> Path:
     registrado = armazenamento.documento(con, cnpj, documento_["id"])
     if registrado and registrado["arquivo"] and Path(registrado["arquivo"]).exists():
         return Path(registrado["arquivo"])
 
-    conteudo = baixar(documento_["id"])
+    conteudo = baixar(documento_["id"], timeout=timeout, tentativas=tentativas)
     pasta = destino / so_digitos(cnpj)
     pasta.mkdir(parents=True, exist_ok=True)
     caminho = pasta / f"{documento_['id']}.pdf"

@@ -641,6 +641,7 @@ def ia_lote(
 
         _registrar(f"--- lote iniciado · modelo {modelo_final} · {len(fundos)} fundos na fila")
 
+        import concurrent.futures as _futures
         import queue as _queue
         import threading as _threading
 
@@ -657,62 +658,80 @@ def ia_lote(
             )
             return relatorio, docs_meta
 
-        # A IA é o gargalo (GPU) e fica estritamente sequencial; esta thread
-        # adianta a parte de REDE/DISCO do próximo fundo (listagem no FNET +
-        # download dos PDFs) enquanto o modelo lê o fundo atual.
-        fila: _queue.Queue = _queue.Queue(maxsize=2)
+        # A IA é o gargalo (GPU) e fica estritamente sequencial; o prefetch
+        # adianta a parte de REDE/DISCO (listagem no FNET + download dos PDFs).
+        # É PARALELO (pool de threads) porque o `fnet.listar` de cada fundo
+        # oscila e, em série, a fila de 1200+ fundos levava ~15 min só nas
+        # checagens antes de a IA começar. `executor.map` PRESERVA A ORDEM — o
+        # consumidor pareia `fundos[i]` com o i-ésimo item da fila. Timeout
+        # curto: um fundo que pendura vira erro e é retomado na próxima rodada.
+        _PREFETCH_WORKERS = 8  # benchmark real: 5,1x vs serial quando o FNET oscila
+        _TIMEOUT_LISTA, _TIMEOUT_DOC = 12, 60
+        fila: _queue.Queue = _queue.Queue(maxsize=_PREFETCH_WORKERS * 2)
+        _local = _threading.local()
+
+        def _con_worker():
+            # uma conexão por thread do pool (~8): SQLite proíbe usar/fechar uma
+            # conexão fora da thread que a criou — ficam abertas até o processo
+            # sair (batch curto), sem cross-thread close
+            con_w = getattr(_local, "con", None)
+            if con_w is None:
+                con_w = _local.con = armazenamento.conectar()
+                con_w.execute("PRAGMA busy_timeout=30000")  # 8 threads gravam o cache de docs
+            return con_w
+
+        def _preparar(resumo_p):
+            """SÓ REDE/DISCO (roda numa thread do pool): lista o FNET e baixa
+            os documentos novos. Retorna o `docs` bruto — o consumidor refaz a
+            seleção e a decisão de leitura (fonte única da verdade)."""
+            try:
+                con_p = _con_worker()
+                destino_docs = armazenamento.diretorio_dados() / "documentos"
+                # 80 documentos: fundo movimentado publica dezenas de informes
+                # por ano e a DF anual cairia fora dos 30
+                docs_p = fnet.listar(
+                    resumo_p.cnpj, quantidade=80, timeout=_TIMEOUT_LISTA, tentativas=1
+                )
+                relatorio_p, docs_meta_p = _selecao(docs_p)
+                df_p = fnet.ultima_demonstracao_financeira(docs_p)
+                existente_p = leituras.carregar(pasta, resumo_p.ticker)
+                ids_lidos_p = leituras.ids_comunicados(existente_p)
+                # espelho da decisão do consumidor: fundo pulável não gasta download
+                relatorio_reaproveitavel = bool(
+                    relatorio_p
+                    and existente_p
+                    and existente_p.get("relatorio")
+                    and existente_p["relatorio"]["id"] == relatorio_p["id"]
+                    and existente_p["relatorio"].get("texto")
+                )
+                marcado_sem_relatorio = bool(
+                    relatorio_p is None and existente_p and existente_p.get("sem_relatorio")
+                )
+                parecer_atual_p = df_p is None or bool(
+                    existente_p and (existente_p.get("parecer") or {}).get("id") == df_p["id"]
+                )
+                pulavel = (
+                    (relatorio_reaproveitavel or marcado_sem_relatorio)
+                    and ids_lidos_p >= {meta["id"] for meta in docs_meta_p}
+                    and parecer_atual_p
+                )
+                if not pulavel:
+                    baixa = dict(timeout=_TIMEOUT_DOC, tentativas=1)
+                    if relatorio_p and not relatorio_reaproveitavel:
+                        fnet._garantir_documento(con_p, resumo_p.cnpj, relatorio_p, destino_docs, **baixa)
+                    for meta_p in docs_meta_p:
+                        if meta_p["id"] not in ids_lidos_p:
+                            fnet._garantir_documento(con_p, resumo_p.cnpj, meta_p, destino_docs, **baixa)
+                    if df_p and not parecer_atual_p:
+                        fnet._garantir_documento(con_p, resumo_p.cnpj, df_p, destino_docs, **baixa)
+                return docs_p, None
+            except Exception as erro_p:  # o consumidor registra a falha
+                return None, erro_p
 
         def _prefetch() -> None:
-            con_prefetch = armazenamento.conectar()
-            destino_docs = armazenamento.diretorio_dados() / "documentos"
-            try:
-                for resumo_p in fundos:
-                    try:
-                        # 80 documentos: fundo movimentado publica dezenas de
-                        # informes por ano e a DF anual cairia fora dos 30
-                        docs_p = fnet.listar(resumo_p.cnpj, quantidade=80)
-                        relatorio_p, docs_meta_p = _selecao(docs_p)
-                        df_p = fnet.ultima_demonstracao_financeira(docs_p)
-                        existente_p = leituras.carregar(pasta, resumo_p.ticker)
-                        ids_lidos_p = leituras.ids_comunicados(existente_p)
-                        # espelho da decisão do consumidor: fundo pulável não gasta download
-                        relatorio_reaproveitavel = bool(
-                            relatorio_p
-                            and existente_p
-                            and existente_p.get("relatorio")
-                            and existente_p["relatorio"]["id"] == relatorio_p["id"]
-                            and existente_p["relatorio"].get("texto")
-                        )
-                        marcado_sem_relatorio = bool(
-                            relatorio_p is None and existente_p and existente_p.get("sem_relatorio")
-                        )
-                        parecer_atual_p = df_p is None or bool(
-                            existente_p and (existente_p.get("parecer") or {}).get("id") == df_p["id"]
-                        )
-                        pulavel = (
-                            (relatorio_reaproveitavel or marcado_sem_relatorio)
-                            and ids_lidos_p >= {meta["id"] for meta in docs_meta_p}
-                            and parecer_atual_p
-                        )
-                        if not pulavel:
-                            if relatorio_p and not relatorio_reaproveitavel:
-                                fnet._garantir_documento(
-                                    con_prefetch, resumo_p.cnpj, relatorio_p, destino_docs
-                                )
-                            for meta_p in docs_meta_p:
-                                if meta_p["id"] not in ids_lidos_p:
-                                    fnet._garantir_documento(
-                                        con_prefetch, resumo_p.cnpj, meta_p, destino_docs
-                                    )
-                            if df_p and not parecer_atual_p:
-                                fnet._garantir_documento(
-                                    con_prefetch, resumo_p.cnpj, df_p, destino_docs
-                                )
-                        fila.put((docs_p, None))
-                    except Exception as erro_p:  # o consumidor registra a falha
-                        fila.put((None, erro_p))
-            finally:
-                con_prefetch.close()
+            with _futures.ThreadPoolExecutor(max_workers=_PREFETCH_WORKERS) as executor:
+                for resultado in executor.map(_preparar, fundos):
+                    fila.put(resultado)  # ordem preservada
 
         _threading.Thread(target=_prefetch, daemon=True).start()
 
@@ -735,7 +754,8 @@ def ia_lote(
                 itens = []
                 for meta in docs_meta:
                     caminho_doc = fnet._garantir_documento(
-                        con, resumo.cnpj, meta, armazenamento.diretorio_dados() / "documentos"
+                        con, resumo.cnpj, meta, armazenamento.diretorio_dados() / "documentos",
+                        timeout=60, tentativas=1,
                     )
                     texto_doc = modulo_ia.extrair_texto_pdf(caminho_doc, max_paginas=6)
                     if len(texto_doc) >= 200:
@@ -768,7 +788,8 @@ def ia_lote(
                             "grave": False, "continuidade": False, "trecho": ""}
                 try:
                     caminho_df = fnet._garantir_documento(
-                        con, resumo.cnpj, df, armazenamento.diretorio_dados() / "documentos"
+                        con, resumo.cnpj, df, armazenamento.diretorio_dados() / "documentos",
+                        timeout=60, tentativas=1,
                     )
                     texto_df = modulo_ia.extrair_texto_pdf(caminho_df)
                     resultado = modulo_parecer.classificar(texto_df) if len(texto_df) >= 500 else ilegivel
@@ -861,7 +882,8 @@ def ia_lote(
                     leitura_relatorio = existente["relatorio"]["texto"]
                 if leitura_relatorio is None:
                     caminho = fnet._garantir_documento(
-                        con, resumo.cnpj, relatorio, armazenamento.diretorio_dados() / "documentos"
+                        con, resumo.cnpj, relatorio, armazenamento.diretorio_dados() / "documentos",
+                        timeout=60, tentativas=1,
                     )
                     texto = modulo_ia.extrair_texto_pdf(caminho)
                     if len(texto) < 500:

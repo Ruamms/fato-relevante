@@ -91,9 +91,9 @@ def test_comunicados_e_assembleias_selecao():
 
 def test_garantir_fatos_relevantes_baixa_e_e_idempotente(con, tmp_path, monkeypatch):
     downloads = []
-    monkeypatch.setattr(fnet, "listar", lambda cnpj, quantidade=30: _DOCUMENTOS)
+    monkeypatch.setattr(fnet, "listar", lambda cnpj, quantidade=30, timeout=60, tentativas=3: _DOCUMENTOS)
     monkeypatch.setattr(
-        fnet, "baixar", lambda id_fnet: downloads.append(id_fnet) or _pdf_minimo()
+        fnet, "baixar", lambda id_fnet, timeout=180, tentativas=3: downloads.append(id_fnet) or _pdf_minimo()
     )
     documentos = fnet.garantir_fatos_relevantes(con, "11.111.111/0001-11", destino=tmp_path)
     assert [meta["id"] for _, meta in documentos] == [120]
@@ -135,9 +135,9 @@ def test_analisar_fatos_relevantes_monta_prompt(monkeypatch):
 
 def test_garantir_relatorio_baixa_e_e_idempotente(con, tmp_path, monkeypatch):
     downloads = []
-    monkeypatch.setattr(fnet, "listar", lambda cnpj, quantidade=30: _DOCUMENTOS)
+    monkeypatch.setattr(fnet, "listar", lambda cnpj, quantidade=30, timeout=60, tentativas=3: _DOCUMENTOS)
     monkeypatch.setattr(
-        fnet, "baixar", lambda id_fnet: downloads.append(id_fnet) or _pdf_minimo()
+        fnet, "baixar", lambda id_fnet, timeout=180, tentativas=3: downloads.append(id_fnet) or _pdf_minimo()
     )
     caminho, meta = fnet.garantir_relatorio(con, "11.111.111/0001-11", destino=tmp_path)
     assert caminho.exists()
@@ -322,11 +322,11 @@ def test_cli_ia_lote_incremental(con, zip_cvm, tmp_path, monkeypatch):
     cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
     monkeypatch.setenv("SCOUT_DATA_DIR", str(tmp_path))
     monkeypatch.setattr(modulo_cli, "_preparar_ia", lambda modelo: "teste:1b")
-    monkeypatch.setattr(modulo_fnet, "listar", lambda cnpj, quantidade=30: _DOCUMENTOS)
+    monkeypatch.setattr(modulo_fnet, "listar", lambda cnpj, quantidade=30, timeout=60, tentativas=3: _DOCUMENTOS)
     caminho_pdf = tmp_path / "doc.pdf"
     caminho_pdf.write_bytes(_pdf_minimo("Relatorio para o lote " * 50))
     monkeypatch.setattr(
-        modulo_fnet, "_garantir_documento", lambda con_, cnpj, doc, destino: caminho_pdf
+        modulo_fnet, "_garantir_documento", lambda con_, cnpj, doc, destino, timeout=180, tentativas=3: caminho_pdf
     )
     chamadas = []
     monkeypatch.setattr(
@@ -357,7 +357,7 @@ def test_cli_ia_lote_incremental(con, zip_cvm, tmp_path, monkeypatch):
     docs_com_novo = _DOCUMENTOS + [
         {"id": 300, "tipo": "", "categoria": "Comunicado ao Mercado", "data_entrega": "16/07/2026 12:00"}
     ]
-    monkeypatch.setattr(modulo_fnet, "listar", lambda cnpj, quantidade=30: docs_com_novo)
+    monkeypatch.setattr(modulo_fnet, "listar", lambda cnpj, quantidade=30, timeout=60, tentativas=3: docs_com_novo)
     resultado3 = CliRunner().invoke(app, ["ia-lote", "--destino", str(pasta)])
     assert "1 lidos" in resultado3.output
     assert chamadas == ["rel", "fatos", "fatos"]  # relatório NÃO foi relido
@@ -380,7 +380,7 @@ def test_cli_ia_lote_marca_fundo_sem_relatorio_e_le_quando_aparece(con, zip_cvm,
     monkeypatch.setattr(modulo_cli, "_preparar_ia", lambda modelo: "teste:1b")
     # FNET só com documentos estruturados: relatório gerencial é opcional e este fundo não tem
     so_estruturados = [d for d in _DOCUMENTOS if d["tipo"] != "Relatório Gerencial"]
-    monkeypatch.setattr(modulo_fnet, "listar", lambda cnpj, quantidade=30: so_estruturados)
+    monkeypatch.setattr(modulo_fnet, "listar", lambda cnpj, quantidade=30, timeout=60, tentativas=3: so_estruturados)
     pasta = tmp_path / "leituras"
 
     resultado = CliRunner().invoke(app, ["ia-lote", "--destino", str(pasta), "--sem-fatos"])
@@ -395,11 +395,11 @@ def test_cli_ia_lote_marca_fundo_sem_relatorio_e_le_quando_aparece(con, zip_cvm,
     assert "lote iniciado" in historico and "lote encerrado" in historico
 
     # o fundo publica um relatório gerencial depois: o marcador não trava a leitura
-    monkeypatch.setattr(modulo_fnet, "listar", lambda cnpj, quantidade=30: _DOCUMENTOS)
+    monkeypatch.setattr(modulo_fnet, "listar", lambda cnpj, quantidade=30, timeout=60, tentativas=3: _DOCUMENTOS)
     caminho_pdf = tmp_path / "doc.pdf"
     caminho_pdf.write_bytes(_pdf_minimo("Relatorio para o lote " * 50))
     monkeypatch.setattr(
-        modulo_fnet, "_garantir_documento", lambda con_, cnpj, doc, destino: caminho_pdf
+        modulo_fnet, "_garantir_documento", lambda con_, cnpj, doc, destino, timeout=180, tentativas=3: caminho_pdf
     )
     monkeypatch.setattr(
         modulo_ia,
@@ -430,11 +430,11 @@ def test_cli_ia_lote_sem_relatorio_le_fatos_relevantes(con, zip_cvm, tmp_path, m
     monkeypatch.setattr(modulo_cli, "_preparar_ia", lambda modelo: "teste:1b")
     # sem relatório gerencial, mas COM fato relevante publicado
     so_estruturados = [d for d in _DOCUMENTOS if d["tipo"] != "Relatório Gerencial"]
-    monkeypatch.setattr(modulo_fnet, "listar", lambda cnpj, quantidade=30: so_estruturados)
+    monkeypatch.setattr(modulo_fnet, "listar", lambda cnpj, quantidade=30, timeout=60, tentativas=3: so_estruturados)
     caminho_pdf = tmp_path / "doc.pdf"
     caminho_pdf.write_bytes(_pdf_minimo("Fato relevante para o lote " * 30))
     monkeypatch.setattr(
-        modulo_fnet, "_garantir_documento", lambda con_, cnpj, doc, destino: caminho_pdf
+        modulo_fnet, "_garantir_documento", lambda con_, cnpj, doc, destino, timeout=180, tentativas=3: caminho_pdf
     )
     monkeypatch.setattr(
         modulo_ia,
@@ -474,7 +474,7 @@ def test_cli_ia_lote_parecer_do_auditor(con, zip_cvm, tmp_path, monkeypatch):
 
     df_ok = {"id": 400, "tipo": "Demonstrações Financeiras", "categoria": "Informes Periódicos", "data_entrega": "18/02/2026 10:00"}
     docs = _DOCUMENTOS + [df_ok]
-    monkeypatch.setattr(modulo_fnet, "listar", lambda cnpj, quantidade=30: docs)
+    monkeypatch.setattr(modulo_fnet, "listar", lambda cnpj, quantidade=30, timeout=60, tentativas=3: docs)
 
     pdf_relatorio = tmp_path / "rel.pdf"
     pdf_relatorio.write_bytes(_pdf_minimo("Relatorio para o lote " * 50))
@@ -489,7 +489,7 @@ def test_cli_ia_lote_parecer_do_auditor(con, zip_cvm, tmp_path, monkeypatch):
     monkeypatch.setattr(
         modulo_fnet,
         "_garantir_documento",
-        lambda con_, cnpj, doc, destino: por_id.get(doc["id"], pdf_relatorio),
+        lambda con_, cnpj, doc, destino, timeout=180, tentativas=3: por_id.get(doc["id"], pdf_relatorio),
     )
     chamadas = []
     monkeypatch.setattr(
@@ -524,7 +524,7 @@ def test_cli_ia_lote_parecer_do_auditor(con, zip_cvm, tmp_path, monkeypatch):
         )
     )
     df_nova = {**df_ok, "id": 401, "data_entrega": "18/02/2027 10:00"}
-    monkeypatch.setattr(modulo_fnet, "listar", lambda cnpj, quantidade=30: _DOCUMENTOS + [df_nova])
+    monkeypatch.setattr(modulo_fnet, "listar", lambda cnpj, quantidade=30, timeout=60, tentativas=3: _DOCUMENTOS + [df_nova])
     resultado3 = CliRunner().invoke(app, ["ia-lote", "--destino", str(pasta)])
     assert resultado3.exit_code == 0, resultado3.output
     leitura = json.loads((pasta / "TSTE11.json").read_text(encoding="utf-8"))
@@ -548,11 +548,11 @@ def test_cli_ia_lote_registra_erros_e_reprocessa_so_eles(con, zip_cvm, tmp_path,
     cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
     monkeypatch.setenv("SCOUT_DATA_DIR", str(tmp_path))
     monkeypatch.setattr(modulo_cli, "_preparar_ia", lambda modelo: "teste:1b")
-    monkeypatch.setattr(modulo_fnet, "listar", lambda cnpj, quantidade=30: _DOCUMENTOS)
+    monkeypatch.setattr(modulo_fnet, "listar", lambda cnpj, quantidade=30, timeout=60, tentativas=3: _DOCUMENTOS)
     caminho_pdf = tmp_path / "doc.pdf"
     caminho_pdf.write_bytes(_pdf_minimo("Relatorio para o lote " * 50))
     monkeypatch.setattr(
-        modulo_fnet, "_garantir_documento", lambda con_, cnpj, doc, destino: caminho_pdf
+        modulo_fnet, "_garantir_documento", lambda con_, cnpj, doc, destino, timeout=180, tentativas=3: caminho_pdf
     )
     # primeira rodada: a IA explode -> fundo vai para a lista de erros
     monkeypatch.setattr(
