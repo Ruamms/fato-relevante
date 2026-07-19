@@ -559,6 +559,8 @@ def ia_lote(
                     existente.get("fatos", {}).get("ids", [])
                 ) >= {meta["id"] for meta in fatos_meta}:
                     pulados += 1
+                    if pulados % 25 == 0:
+                        console.print(f"[dim][{posicao}/{len(fundos)}] {pulados} fundos já em dia até aqui…[/]")
                     continue  # nada novo desde a última leitura
 
                 raiox = analise.montar_raio_x(con, resumo.ticker, varredura=base)
@@ -572,7 +574,15 @@ def ia_lote(
                     console.print(f"{prefixo}: [yellow]PDF sem texto extraível — pulado[/]")
                     falhas.append((resumo.ticker, "PDF sem texto extraível (imagem/escaneado)"))
                     continue
-                leitura_relatorio = modulo_ia.analisar_relatorio(texto, contexto, modelo_final)
+                with console.status(f"{prefixo}: lendo o relatório com IA…") as estado:
+                    leitura_relatorio = modulo_ia.analisar_relatorio(
+                        texto,
+                        contexto,
+                        modelo_final,
+                        ao_progresso=lambda n: estado.update(
+                            f"{prefixo}: lendo o relatório com IA… {n} trechos recebidos"
+                        ),
+                    )
 
                 texto_fatos = None
                 if fatos_meta:
@@ -585,7 +595,15 @@ def ia_lote(
                         if len(texto_fato) >= 200:
                             fatos.append((meta["data_entrega"][:10], texto_fato))
                     if fatos:
-                        texto_fatos = modulo_ia.analisar_fatos_relevantes(fatos, contexto, modelo_final)
+                        with console.status(f"{prefixo}: lendo os fatos relevantes…") as estado:
+                            texto_fatos = modulo_ia.analisar_fatos_relevantes(
+                                fatos,
+                                contexto,
+                                modelo_final,
+                                ao_progresso=lambda n: estado.update(
+                                    f"{prefixo}: lendo os fatos relevantes… {n} trechos recebidos"
+                                ),
+                            )
 
                 leituras.salvar(
                     pasta,

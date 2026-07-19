@@ -10,9 +10,14 @@ echo  Scout - lote mensal de leituras por IA
 echo  %date% %time%
 echo ============================================
 
-python -m uv run scout atualizar
+if not exist dist\scout.exe (
+    echo dist\scout.exe nao encontrado - rode gerar_exe.bat primeiro.
+    exit /b 1
+)
+
+dist\scout.exe atualizar
 rem modelo padrao (qwen2.5:14b): mais lento, porem mais confiavel - decisao de produto
-python -m uv run scout ia-lote
+dist\scout.exe ia-lote
 if errorlevel 1 (
     echo Lote terminou com erros - veja leituras\_erros.txt. Leituras parciais serao publicadas.
 )
