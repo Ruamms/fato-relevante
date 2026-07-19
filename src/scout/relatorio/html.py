@@ -475,6 +475,8 @@ def _cards_indicadores(raiox: RaioX) -> str:
             historico = linha.historico
             if historico.startswith("média "):
                 historico = "média histórica: " + historico[len("média "):]
+            elif historico.endswith(" no ano"):
+                historico = "no ano: " + historico[: -len(" no ano")]
             detalhes.append(historico)
         extra = "".join(f'<div class="extra">{_e(texto)}</div>' for texto in detalhes)
         aviso = ""
