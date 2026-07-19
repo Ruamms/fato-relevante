@@ -582,7 +582,9 @@ def ia_lote(
             try:
                 for resumo_p in fundos:
                     try:
-                        docs_p = fnet.listar(resumo_p.cnpj)
+                        # 80 documentos: fundo movimentado publica dezenas de
+                        # informes por ano e a DF anual cairia fora dos 30
+                        docs_p = fnet.listar(resumo_p.cnpj, quantidade=80)
                         relatorio_p, docs_meta_p = _selecao(docs_p)
                         df_p = fnet.ultima_demonstracao_financeira(docs_p)
                         existente_p = leituras.carregar(pasta, resumo_p.ticker)
@@ -676,16 +678,16 @@ def ia_lote(
                     return (existente or {}).get("parecer")
                 if existente and (existente.get("parecer") or {}).get("id") == df["id"]:
                     return existente["parecer"]
-                caminho_df = fnet._garantir_documento(
-                    con, resumo.cnpj, df, armazenamento.diretorio_dados() / "documentos"
-                )
-                texto_df = modulo_ia.extrair_texto_pdf(caminho_df)
-                resultado = (
-                    modulo_parecer.classificar(texto_df)
-                    if len(texto_df) >= 500
-                    else {"tipo": "nao_identificado", "rotulo": "PDF sem texto extraível",
-                          "grave": False, "continuidade": False, "trecho": ""}
-                )
+                ilegivel = {"tipo": "nao_identificado", "rotulo": "PDF não legível (protegido/escaneado)",
+                            "grave": False, "continuidade": False, "trecho": ""}
+                try:
+                    caminho_df = fnet._garantir_documento(
+                        con, resumo.cnpj, df, armazenamento.diretorio_dados() / "documentos"
+                    )
+                    texto_df = modulo_ia.extrair_texto_pdf(caminho_df)
+                    resultado = modulo_parecer.classificar(texto_df) if len(texto_df) >= 500 else ilegivel
+                except Exception:  # DF problemática não derruba a leitura do fundo
+                    resultado = ilegivel
                 return {"id": df["id"], "data_entrega": df["data_entrega"], **resultado}
 
             def _parecer_atual(existente: dict | None, df: dict | None) -> bool:

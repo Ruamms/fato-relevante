@@ -40,12 +40,14 @@ def _normalizar(texto: str) -> str:
 
 
 def _trecho_original(texto: str, padrao_normalizado: str) -> str:
-    """Frase do texto ORIGINAL em torno da primeira menção a 'opinião'."""
-    encontro = re.search(r"[^.]*opini[ãa]o[^.]*\.", texto, flags=re.IGNORECASE)
-    if not encontro:
-        return ""
-    frase = re.sub(r"\s+", " ", encontro.group(0)).strip()
-    return frase[:400]
+    """Frase do texto ORIGINAL com a conclusão do auditor — prefere "nossa
+    opinião" (a frase-veredito) a um título de seção que só diz "Opinião"."""
+    for padrao in (r"[^.]*nossa opini[ãa]o[^.]*\.", r"[^.]*opini[ãa]o[^.]*\."):
+        encontro = re.search(padrao, texto, flags=re.IGNORECASE)
+        if encontro:
+            frase = re.sub(r"\s+", " ", encontro.group(0)).strip()
+            return frase[:400]
+    return ""
 
 
 def classificar(texto: str) -> dict:
