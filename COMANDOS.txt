@@ -28,7 +28,7 @@ dist\scout.exe analisar HGLG11
 
 dist\scout.exe analisar HGLG11 --html
     O mesmo raio-x como pagina completa no navegador, com graficos,
-    calculadoras e glossario. Salva em C:\Users\ruam_\.scout\relatorios
+    calculadoras e glossario. Salva em %USERPROFILE%\.scout\relatorios
 
 
 ------------------------------------------------------------
@@ -93,7 +93,7 @@ dist\scout.exe ia-lote --limite 5
 
 dist\scout.exe site
     Gera o site completo (indice buscavel + pagina de cada fundo)
-    em C:\Users\ruam_\.scout\site — util para conferir localmente.
+    em %USERPROFILE%\.scout\site — util para conferir localmente.
     O site publico e gerado sozinho pelo GitHub Actions, 1x/dia util:
     https://ruamms.github.io/scout/
 

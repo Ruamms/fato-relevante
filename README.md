@@ -61,7 +61,10 @@ rankings do dia com critérios explícitos.
 
 ## Como usar
 
-Com [uv](https://docs.astral.sh/uv/) instalado (`pip install uv`):
+Nunca instalou um projeto Python? Siga o **[guia de instalação passo a passo](docs/INSTALACAO.md)** —
+do zero ao primeiro raio-x, incluindo os problemas comuns.
+
+Resumo para quem já tem o ambiente ([uv](https://docs.astral.sh/uv/) instalado — `pip install uv`):
 
 ```
 uv sync
