@@ -195,6 +195,9 @@ def test_pagina_etf_com_carteirinha_de_regras(con):
     assert "fechamento oficial" in pagina
     # não é recomendação, nunca
     assert "não é recomendação" in pagina
+    # glossário: todo card tem o "?" com explicação para leigos
+    assert 'class="ajuda"' in pagina
+    assert "tamanho real do fundo" in pagina  # verbete do Patrimônio líquido
     # selo + red flags de ETF na página (PL 1,5B ok; liquidez sem dado = não avaliada)
     assert dados["selo"] is not None
     assert "Red flags" in pagina

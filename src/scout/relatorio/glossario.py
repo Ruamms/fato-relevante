@@ -118,6 +118,19 @@ TERMOS = {
         "Juros compostos na prática: aporte inicial + aportes mensais rendendo à taxa "
         "definida. Reinvestir os rendimentos é o que faz a curva dobrar no longo prazo."
     ),
+    "Cotação (fechamento oficial)": (
+        "O preço da cota no FIM do último pregão, direto dos arquivos oficiais da B3 (D-1). "
+        "Preço em tempo real é serviço pago da bolsa — nenhuma fonte gratuita tem."
+    ),
+    "Variação 12 meses": (
+        "Quanto o preço da cota mudou nos últimos 12 meses, já ajustado por desdobramento. "
+        "Nos ETFs que reinvestem os proventos, essa variação JÁ É o retorno total."
+    ),
+    "Classe (Scout)": (
+        "Nossa classificação em linguagem simples (Ações Brasil, Renda Fixa, Cripto…), revisada "
+        "manualmente e conferida TODO MÊS contra a carteira oficial do fundo na CVM. O segmento "
+        "da B3 aparece junto — é o dado original."
+    ),
     "Parecer do auditor": (
         "A opinião de uma auditoria independente sobre as contas do fundo, publicada nas "
         "demonstrações financeiras anuais. \"Sem ressalvas\" é o normal. Ressalva, opinião "

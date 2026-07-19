@@ -142,12 +142,14 @@ def gerar(dados: dict, agora: datetime | None = None) -> str:
     classe = dados["classe"] or "ETF"
     regras = REGRAS_POR_CLASSE.get(dados["classe"] or "", ())
 
+    from .html import _ajuda
+
     cards = []
 
     def _card(nome: str, valor: str, extra: str = "") -> None:
         extra_html = f'<div class="extra">{extra}</div>' if extra else ""
         cards.append(
-            f'<div class="card"><div class="nome">{nome}</div>'
+            f'<div class="card"><div class="nome">{nome}{_ajuda(nome)}</div>'
             f'<div class="valor">{valor}</div>{extra_html}</div>'
         )
 
@@ -270,6 +272,15 @@ a {{ color:#8FCB9B; }}
 .card .extra {{ color:#8b98a9; font-size:12px; margin-top:2px; }}
 .selo {{ display:inline-block; padding:3px 12px; border-radius:999px; font-weight:700;
   font-size:12px; color:#101415; white-space:nowrap; vertical-align:middle; }}
+.ajuda {{ display:inline-flex; align-items:center; justify-content:center; width:15px; height:15px;
+  border-radius:50%; background:#314045; color:#8b98a9; font-size:10px; font-weight:700;
+  cursor:help; position:relative; vertical-align:middle; margin-left:5px; }}
+.ajuda .dica {{ visibility:hidden; opacity:0; transition:opacity .15s; position:absolute; z-index:10;
+  bottom:135%; left:50%; transform:translateX(-50%); width:270px; background:#232D31;
+  border:1px solid #314045; border-radius:9px; padding:10px 12px; color:#F4F5F6;
+  font-size:12.5px; font-weight:400; line-height:1.45; text-transform:none; letter-spacing:0;
+  text-align:left; box-shadow:0 6px 20px rgba(0,0,0,.45); white-space:normal; }}
+.ajuda:hover .dica, .ajuda:focus .dica {{ visibility:visible; opacity:1; }}
 .flag {{ background:#182024; border:1px solid #232D31; border-left:4px solid; border-radius:10px; padding:14px 16px; margin-bottom:10px; }}
 .flag .sev {{ font-size:12px; font-weight:800; letter-spacing:.08em; }}
 .flag h3 {{ font-size:16px; margin:2px 0 6px; }}
