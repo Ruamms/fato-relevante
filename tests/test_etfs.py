@@ -61,6 +61,38 @@ def test_atualizar_etfs_grava_ticker_cnpj_e_tipo(con, monkeypatch):
     assert chamadas_detalhe == []
 
 
+def test_posicoes_do_etf_com_cross_link(con, zip_cvm):
+    from datetime import datetime
+
+    from scout.coleta import cvm
+    from scout.relatorio import etf_html
+
+    cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")  # TSTE11 (FII) na base
+    _semear_etf(con)
+    con.executemany(
+        "INSERT INTO etf_posicoes (cnpj, competencia, item, codigo, nome, cnpj_emissor, pct) "
+        "VALUES (?, ?, ?, ?, ?, ?, ?)",
+        [
+            ("10406511000161", "2026-06", 0, "PETR4", "PETROBRAS PN", "", 8.5),
+            ("10406511000161", "2026-06", 1, "", "FUNDO TESTE FII", "11111111000111", 4.2),
+        ],
+    )
+    con.commit()
+    classificacoes = {"10406511000161": {"classificacao_scout": "Ações Brasil", "observacoes": ""}}
+    dados = etf_html.montar_dados_etf(con, "BOVA11", classificacoes)
+    posicoes = dados["posicoes"]
+    assert posicoes[0]["codigo"] == "PETR4" and posicoes[0]["classe_alvo"] == "Ação"
+    # a posição em FII foi resolvida pelo CNPJ do emissor -> ticker + classe
+    assert posicoes[1]["ticker_alvo"] == "TSTE11" and posicoes[1]["classe_alvo"] == "FII"
+
+    pagina = etf_html.gerar(
+        dados, agora=datetime(2026, 7, 20, 0, 0), publicados={"TSTE11", "BOVA11"}
+    )
+    assert "Principais posições" in pagina
+    assert 'href="TSTE11.html"' in pagina  # o cross-link do usuário
+    assert "PETR4" in pagina
+
+
 def test_extrair_carteiras_e_verificador():
     import io
     import zipfile
@@ -84,7 +116,7 @@ def test_extrair_carteiras_e_verificador():
         zf.writestr("cda_fie_CONFID_202605.csv", b"")
 
     cnpjs = {"10406511000161", "31024153000100"}
-    composicao, pls, competencia = cda.extrair_carteiras(buffer.getvalue(), cnpjs)
+    composicao, pls, competencia, top_posicoes = cda.extrair_carteiras(buffer.getvalue(), cnpjs)
     assert competencia == "2026-05"
     assert composicao["10406511000161"]["Ações"] == 90.0
     assert composicao["31024153000100"]["Renda Fixa"] == 40.0

@@ -108,6 +108,7 @@ def gerar(
                 agora=agora,
                 com_menu=True,
                 leitura=todas_leituras.get(etf["ticker"]),
+                publicados=tickers_no_site | {e["ticker"] for e in armazenamento.etfs_listados(con)},
             ),
             encoding="utf-8",
         )

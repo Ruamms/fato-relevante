@@ -71,15 +71,16 @@ def _baixar_mes(ano: int, mes: int) -> bytes | None:
         return None
 
 
-def extrair_carteiras(conteudo: bytes, cnpjs: set[str]) -> tuple[dict, dict, str]:
-    """({cnpj: {grupo: pct}}, {cnpj: pl}, competencia) do arquivo cda_fie."""
+def extrair_carteiras(conteudo: bytes, cnpjs: set[str]) -> tuple[dict, dict, str, dict]:
+    """({cnpj: {grupo: pct}}, {cnpj: pl}, competencia, {cnpj: top posições})."""
     posicoes: dict[str, dict[str, float]] = defaultdict(lambda: defaultdict(float))
+    itens: dict[str, list[dict]] = defaultdict(list)
     pls: dict[str, float] = {}
     competencia = ""
     with zipfile.ZipFile(io.BytesIO(conteudo)) as zf:
         membro = next((n for n in zf.namelist() if n.startswith("cda_fie_") and "CONFID" not in n), None)
         if membro is None:
-            return {}, {}, ""
+            return {}, {}, "", {}
         with zf.open(membro) as fh:
             leitor = csv.DictReader(io.TextIOWrapper(fh, encoding="latin-1"), delimiter=";")
             for linha in leitor:
@@ -100,12 +101,41 @@ def extrair_carteiras(conteudo: bytes, cnpjs: set[str]) -> tuple[dict, dict, str
                     continue
                 if valor > 0:
                     posicoes[cnpj][grupo] += valor
+                    codigo = (linha.get("CD_ATIVO") or "").strip().upper()
+                    nome = (
+                        (linha.get("DS_ATIVO") or "").strip()
+                        or (linha.get("EMISSOR") or "").strip()
+                        or codigo
+                    )
+                    if codigo or nome:
+                        itens[cnpj].append(
+                            {
+                                "codigo": codigo,
+                                "nome": nome,
+                                "cnpj_emissor": armazenamento.so_digitos(linha.get("CPF_CNPJ_EMISSOR")),
+                                "valor": valor,
+                            }
+                        )
     composicao = {}
+    top_posicoes: dict[str, list[dict]] = {}
     for cnpj, grupos in posicoes.items():
         total = sum(grupos.values())
-        if total > 0:
-            composicao[cnpj] = {grupo: 100 * valor / total for grupo, valor in grupos.items()}
-    return composicao, pls, competencia
+        if total <= 0:
+            continue
+        composicao[cnpj] = {grupo: 100 * valor / total for grupo, valor in grupos.items()}
+        # posições homônimas se somam (mesmo papel em carteira e emprestado)
+        agregadas: dict[tuple, dict] = {}
+        for item in itens.get(cnpj, []):
+            chave = (item["codigo"], item["nome"])
+            if chave in agregadas:
+                agregadas[chave]["valor"] += item["valor"]
+            else:
+                agregadas[chave] = dict(item)
+        maiores = sorted(agregadas.values(), key=lambda i: -i["valor"])[:10]
+        top_posicoes[cnpj] = [
+            {**item, "pct": 100 * item["valor"] / total} for item in maiores
+        ]
+    return composicao, pls, competencia, top_posicoes
 
 
 def carregar_classificacoes(raiz: Path | None = None) -> dict[str, dict]:
@@ -224,12 +254,23 @@ def atualizar_composicao(
             break
     if not conteudo:
         return "CDA (carteiras de ETF) indisponível no momento — usando o cache local"
-    composicao, pls, competencia = extrair_carteiras(conteudo, cnpjs)
+    composicao, pls, competencia, top_posicoes = extrair_carteiras(conteudo, cnpjs)
     for cnpj, grupos in composicao.items():
         con.execute("DELETE FROM etf_carteira WHERE cnpj = ? AND competencia = ?", (cnpj, competencia))
         con.executemany(
             "INSERT INTO etf_carteira (cnpj, competencia, grupo, pct) VALUES (?, ?, ?, ?)",
             [(cnpj, competencia, grupo, pct) for grupo, pct in grupos.items()],
+        )
+        con.execute("DELETE FROM etf_posicoes WHERE cnpj = ?", (cnpj,))
+        con.executemany(
+            """
+            INSERT INTO etf_posicoes (cnpj, competencia, item, codigo, nome, cnpj_emissor, pct)
+            VALUES (?, ?, ?, ?, ?, ?, ?)
+            """,
+            [
+                (cnpj, competencia, indice, item["codigo"], item["nome"], item["cnpj_emissor"], item["pct"])
+                for indice, item in enumerate(top_posicoes.get(cnpj, []))
+            ],
         )
     con.executemany(
         "INSERT OR REPLACE INTO etf_pl (cnpj, competencia, pl) VALUES (?, ?, ?)",

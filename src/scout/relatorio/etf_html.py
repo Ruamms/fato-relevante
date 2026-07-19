@@ -128,6 +128,7 @@ def montar_dados_etf(con: sqlite3.Connection, ticker: str, classificacoes: dict 
         "liquidez": armazenamento.liquidez_recente(con, etf["ticker"]),
         "divergencia_classe": divergencia_classe,
         "proventos": armazenamento.proventos_do_etf(con, etf["cnpj"]),
+        "posicoes": _posicoes_com_links(con, etf["cnpj"]),
     }
     from .. import etf_flags, redflags
 
@@ -135,6 +136,37 @@ def montar_dados_etf(con: sqlite3.Connection, ticker: str, classificacoes: dict 
     dados["flags"] = resultado
     dados["selo"] = redflags.selo(resultado)
     return dados
+
+
+def _posicoes_com_links(con: sqlite3.Connection, cnpj: str) -> list[dict]:
+    """Top posições da carteira, com o ticker/classe resolvidos quando o
+    ativo é algo que TAMBÉM analisamos (FII pelo CNPJ do emissor, ETF idem,
+    ações pelo código) — o cruzamento vira link na página."""
+    posicoes = []
+    for linha in armazenamento.etf_posicoes_atuais(con, cnpj):
+        ticker_alvo, classe_alvo = None, None
+        if linha["cnpj_emissor"]:
+            ticker_fii = armazenamento.ticker_fii_por_cnpj(con, linha["cnpj_emissor"])
+            if ticker_fii:
+                ticker_alvo, classe_alvo = ticker_fii, "FII"
+            else:
+                etf_alvo = con.execute(
+                    "SELECT ticker FROM etfs WHERE cnpj = ?", (linha["cnpj_emissor"],)
+                ).fetchone()
+                if etf_alvo and etf_alvo["ticker"]:
+                    ticker_alvo, classe_alvo = etf_alvo["ticker"], "ETF"
+        if ticker_alvo is None and linha["codigo"]:
+            classe_alvo = "Ação" if not linha["codigo"].endswith("11") else None
+        posicoes.append(
+            {
+                "nome": linha["nome"] or linha["codigo"],
+                "codigo": linha["codigo"],
+                "pct": linha["pct"],
+                "ticker_alvo": ticker_alvo,
+                "classe_alvo": classe_alvo,
+            }
+        )
+    return posicoes
 
 
 def _trunca(texto: str, limite: int) -> str:
@@ -147,6 +179,7 @@ def gerar(
     agora: datetime | None = None,
     com_menu: bool = False,
     leitura: dict | None = None,
+    publicados: set[str] | None = None,
 ) -> str:
     from .html import (
         CSS_BUSCA_TOPO,
@@ -214,6 +247,37 @@ def gerar(
     <tbody>{linhas}</tbody>
   </table>
   <div class="nota">carteira oficial informada à CVM (CDA) · {competencia} · agrupada por tipo de ativo</div>
+  </div>
+"""
+
+    secao_posicoes = ""
+    if dados.get("posicoes"):
+        linhas_posicoes = []
+        for posicao in dados["posicoes"]:
+            rotulo = _e(posicao["codigo"] or _trunca(posicao["nome"], 44))
+            if posicao["ticker_alvo"] and publicados and posicao["ticker_alvo"] in publicados:
+                rotulo = f'<a href="{_e(posicao["ticker_alvo"])}.html">{_e(posicao["ticker_alvo"])}</a>'
+            elif posicao["ticker_alvo"]:
+                rotulo = _e(posicao["ticker_alvo"])
+            badge = (
+                f' <span class="badge-posicao">{_e(posicao["classe_alvo"])}</span>'
+                if posicao["classe_alvo"]
+                else ""
+            )
+            nome_completo = _e(_trunca(posicao["nome"], 46)) if posicao["codigo"] or posicao["ticker_alvo"] else ""
+            linhas_posicoes.append(
+                f"<tr><td>{rotulo}{badge}</td><td>{nome_completo}</td>"
+                f"<td>{formato.percentual(posicao['pct'])}</td></tr>"
+            )
+        secao_posicoes = f"""
+  <h2>Principais posições</h2>
+  <div class="grafico">
+  <table class="imoveis">
+    <thead><tr><th>ativo</th><th>nome</th><th>% da carteira</th></tr></thead>
+    <tbody>{"".join(linhas_posicoes)}</tbody>
+  </table>
+  <div class="nota">as 10 maiores posições da carteira oficial (CDA/CVM) · quando o ativo é um fundo
+  que o Scout também analisa, o link leva ao raio-x dele</div>
   </div>
 """
 
@@ -310,6 +374,8 @@ a {{ color:#8FCB9B; }}
 .card .nome {{ color:#8b98a9; font-size:12px; text-transform:uppercase; letter-spacing:.06em; }}
 .card .valor {{ font-size:21px; font-weight:700; margin-top:2px; }}
 .card .valor .compacto {{ font-size:15px; line-height:1.35; display:block; }}
+.badge-posicao {{ font-size:9.5px; font-weight:700; letter-spacing:.05em; text-transform:uppercase;
+  background:#232D31; color:#8FCB9B; border:1px solid #314045; border-radius:99px; padding:1px 7px; }}
 .card .extra {{ color:#8b98a9; font-size:12px; margin-top:2px; }}
 .selo {{ display:inline-block; padding:3px 12px; border-radius:999px; font-weight:700;
   font-size:12px; color:#101415; white-space:nowrap; vertical-align:middle; }}
@@ -376,6 +442,8 @@ table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-a
   </div>
 
   {composicao}
+
+  {secao_posicoes}
 
   {grafico_cotacao}
   {rentabilidade}

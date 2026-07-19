@@ -117,6 +117,16 @@ CREATE TABLE IF NOT EXISTS etf_proventos (
     isento         INTEGER,           -- rendimento de ETF NÃO costuma ser isento
     PRIMARY KEY (cnpj, id_doc)
 );
+CREATE TABLE IF NOT EXISTS etf_posicoes (
+    cnpj         TEXT NOT NULL,
+    competencia  TEXT NOT NULL,
+    item         INTEGER NOT NULL,  -- posição no top 10 (0 = maior)
+    codigo       TEXT,              -- ticker do ativo quando o CDA informa (ações)
+    nome         TEXT,
+    cnpj_emissor TEXT,              -- para casar cotas de fundos com a nossa base
+    pct          REAL,
+    PRIMARY KEY (cnpj, competencia, item)
+);
 CREATE TABLE IF NOT EXISTS etf_carteira (
     cnpj        TEXT NOT NULL,
     competencia TEXT NOT NULL,  -- AAAA-MM do CDA
@@ -225,6 +235,16 @@ def _migrar(con: sqlite3.Connection) -> None:
             con.execute("ALTER TABLE cotacoes_b3 ADD COLUMN pregoes INTEGER")
             con.commit()
     if "cargas" in tabelas:
+        marcador_cda = con.execute(
+            "SELECT 1 FROM cargas WHERE arquivo = 'CDA_V2_POSICOES'"
+        ).fetchone()
+        if marcador_cda is None:
+            # CDA v2: passamos a extrair também as principais posições
+            con.execute("DELETE FROM cargas WHERE arquivo LIKE 'cda_fi_%'")
+            con.execute(
+                "INSERT INTO cargas (arquivo, carregado_em) VALUES ('CDA_V2_POSICOES', datetime('now'))"
+            )
+            con.commit()
         marcador = con.execute(
             "SELECT 1 FROM cargas WHERE arquivo = 'COTAHIST_V3_ETFS_VOLUME'"
         ).fetchone()
@@ -514,6 +534,33 @@ def liquidez_recente(con: sqlite3.Connection, ticker: str, meses: int = 3) -> fl
     total_volume = sum(linha["volume"] for linha in linhas)
     total_pregoes = sum(linha["pregoes"] for linha in linhas)
     return total_volume / total_pregoes if total_pregoes else None
+
+
+def etf_posicoes_atuais(con: sqlite3.Connection, cnpj: str) -> list[sqlite3.Row]:
+    return con.execute(
+        "SELECT * FROM etf_posicoes WHERE cnpj = ? ORDER BY item",
+        (cnpj,),
+    ).fetchall()
+
+
+def ticker_fii_por_cnpj(con: sqlite3.Connection, cnpj_digitos: str) -> str | None:
+    """Ticker de FII a partir do CNPJ (via ISIN do informe mais recente)."""
+    if not cnpj_digitos:
+        return None
+    linha = con.execute(
+        """
+        SELECT isin FROM informes_gerais
+         WHERE REPLACE(REPLACE(REPLACE(cnpj, '.', ''), '/', ''), '-', '') = ?
+           AND isin IS NOT NULL
+         ORDER BY competencia DESC LIMIT 1
+        """,
+        (cnpj_digitos,),
+    ).fetchone()
+    if linha is None:
+        return None
+    from . import series
+
+    return series.ticker_do_isin(linha["isin"]) or None
 
 
 def proventos_do_etf(con: sqlite3.Connection, cnpj: str, limite: int = 13) -> list[sqlite3.Row]:
