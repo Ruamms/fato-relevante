@@ -343,6 +343,19 @@ def test_cli_ia_lote_incremental(con, zip_cvm, tmp_path, monkeypatch):
     assert "0 lidos, 1 já em dia" in resultado2.output
     assert chamadas == ["rel", "fatos"]  # a IA não foi chamada de novo
 
+    # terceira rodada: surge um comunicado novo, mas o relatório é o mesmo ->
+    # reaproveita a leitura do relatório e só lê os comunicados
+    docs_com_novo = _DOCUMENTOS + [
+        {"id": 300, "tipo": "", "categoria": "Comunicado ao Mercado", "data_entrega": "16/07/2026 12:00"}
+    ]
+    monkeypatch.setattr(modulo_fnet, "listar", lambda cnpj, quantidade=30: docs_com_novo)
+    resultado3 = CliRunner().invoke(app, ["ia-lote", "--destino", str(pasta)])
+    assert "1 lidos" in resultado3.output
+    assert chamadas == ["rel", "fatos", "fatos"]  # relatório NÃO foi relido
+    leitura = json.loads((pasta / "TSTE11.json").read_text(encoding="utf-8"))
+    assert leitura["relatorio"]["texto"] == "L"  # leitura original preservada
+    assert 300 in leitura["comunicados"]["ids"]
+
 
 def test_cli_ia_lote_marca_fundo_sem_relatorio_e_le_quando_aparece(con, zip_cvm, tmp_path, monkeypatch):
     from typer.testing import CliRunner

@@ -641,24 +641,35 @@ def ia_lote(
                 raiox = analise.montar_raio_x(con, resumo.ticker, varredura=base)
                 contexto = modulo_ia.contexto_do_raiox(raiox) if raiox else ""
 
-                caminho = fnet._garantir_documento(
-                    con, resumo.cnpj, relatorio, armazenamento.diretorio_dados() / "documentos"
-                )
-                texto = modulo_ia.extrair_texto_pdf(caminho)
-                if len(texto) < 500:
-                    console.print(f"{prefixo}: [yellow]PDF sem texto extraível — pulado[/]")
-                    falhas.append((resumo.ticker, "PDF sem texto extraível (imagem/escaneado)"))
-                    _registrar(f"{resumo.ticker}\terro\tPDF sem texto extraível")
-                    continue
-                with console.status(f"{prefixo}: lendo o relatório com IA…") as estado:
-                    leitura_relatorio = modulo_ia.analisar_relatorio(
-                        texto,
-                        contexto,
-                        modelo_final,
-                        ao_progresso=lambda n: estado.update(
-                            f"{prefixo}: lendo o relatório com IA… {n} trechos recebidos"
-                        ),
+                # relatório já lido nesta versão do documento: reaproveita a
+                # leitura e só processa os comunicados que faltam
+                leitura_relatorio = None
+                if (
+                    existente
+                    and existente.get("relatorio")
+                    and existente["relatorio"]["id"] == relatorio["id"]
+                    and existente["relatorio"].get("texto")
+                ):
+                    leitura_relatorio = existente["relatorio"]["texto"]
+                if leitura_relatorio is None:
+                    caminho = fnet._garantir_documento(
+                        con, resumo.cnpj, relatorio, armazenamento.diretorio_dados() / "documentos"
                     )
+                    texto = modulo_ia.extrair_texto_pdf(caminho)
+                    if len(texto) < 500:
+                        console.print(f"{prefixo}: [yellow]PDF sem texto extraível — pulado[/]")
+                        falhas.append((resumo.ticker, "PDF sem texto extraível (imagem/escaneado)"))
+                        _registrar(f"{resumo.ticker}\terro\tPDF sem texto extraível")
+                        continue
+                    with console.status(f"{prefixo}: lendo o relatório com IA…") as estado:
+                        leitura_relatorio = modulo_ia.analisar_relatorio(
+                            texto,
+                            contexto,
+                            modelo_final,
+                            ao_progresso=lambda n: estado.update(
+                                f"{prefixo}: lendo o relatório com IA… {n} trechos recebidos"
+                            ),
+                        )
 
                 texto_docs = _ler_documentos(docs_meta, contexto) if docs_meta else None
 
