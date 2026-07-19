@@ -118,3 +118,74 @@ TERMOS = {
         "definida. Reinvestir os rendimentos é o que faz a curva dobrar no longo prazo."
     ),
 }
+
+# Jargão de mercado que aparece nos relatórios gerenciais (e, portanto, nas
+# leituras por IA). Definições determinísticas nossas — nunca do modelo.
+# O termo vira um sublinhado pontilhado com a explicação no hover.
+JARGAO = {
+    "CRI": (
+        "Certificado de Recebíveis Imobiliários: um \"empréstimo imobiliário empacotado\". "
+        "O fundo empresta dinheiro para projetos/empresas do setor e recebe juros. "
+        "É o principal ativo dos FIIs \"de papel\"."
+    ),
+    "CDI": (
+        "Taxa de referência dos juros no Brasil, que anda colada na Selic. "
+        "\"CDI + 2%\" significa render a taxa básica da economia mais 2% ao ano."
+    ),
+    "LCI": (
+        "Letra de Crédito Imobiliário: título emitido por banco, lastreado em crédito "
+        "imobiliário. Costuma ser a parte mais conservadora da carteira."
+    ),
+    "LCA": (
+        "Letra de Crédito do Agronegócio: título de banco lastreado em crédito do agro, "
+        "parente da LCI."
+    ),
+    "Selic": (
+        "A taxa básica de juros da economia, definida pelo Banco Central. Quando sobe, "
+        "fundos atrelados a juros rendem mais; quando cai, rendem menos."
+    ),
+    "IPCA": (
+        "O índice oficial de inflação do Brasil. \"IPCA + 6%\" = rende a inflação mais "
+        "6% ao ano — protege o poder de compra."
+    ),
+    "IGP-M": (
+        "Índice de inflação muito usado em contratos de aluguel. Mais volátil que o IPCA "
+        "por sofrer influência do dólar e de preços no atacado."
+    ),
+    "ABL": (
+        "Área Bruta Locável: os metros quadrados que o fundo tem disponíveis para alugar. "
+        "É a \"capacidade produtiva\" de um fundo de tijolo."
+    ),
+    "cap rate": (
+        "Renda anual do imóvel dividida pelo seu valor. Um cap rate de 8% significa que o "
+        "imóvel gera 8% do próprio valor em aluguel por ano."
+    ),
+    "high grade": (
+        "Carteira de crédito com devedores mais sólidos e garantias fortes: menos risco, "
+        "juros menores."
+    ),
+    "high yield": (
+        "Carteira de crédito com juros maiores em troca de mais risco de calote. "
+        "O oposto de high grade."
+    ),
+    "pro-soluto": (
+        "Crédito em que, entregue a garantia combinada, o vendedor não pode cobrar do "
+        "devedor o que faltar. Na prática: risco maior para quem compra esse crédito."
+    ),
+    "pró-soluto": (
+        "Crédito em que, entregue a garantia combinada, o vendedor não pode cobrar do "
+        "devedor o que faltar. Na prática: risco maior para quem compra esse crédito."
+    ),
+    "FoF": (
+        "Fund of Funds — fundo que investe em cotas de outros FIIs em vez de comprar "
+        "imóveis ou títulos diretamente."
+    ),
+    "duration": (
+        "Prazo médio (em anos) para o dinheiro investido nos títulos voltar. Quanto maior, "
+        "mais sensível a carteira é a mudanças de juros."
+    ),
+    "spread": (
+        "A \"gordura\" de juros acima do índice de referência. Num CRI que paga CDI + 3%, "
+        "o spread é os 3%."
+    ),
+}

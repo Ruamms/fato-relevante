@@ -169,6 +169,19 @@ def test_secao_ia_linka_documentos_originais(con, zip_cvm):
     assert "downloadDocumento?id=9" in pagina
 
 
+def test_leitura_ia_explica_jargao_para_leigos():
+    texto = "Alocação: 78% em CRI atrelados ao CDI. Novos CRI em análise."
+    saida = relatorio_html._texto_ia_para_html(texto)
+    # primeira ocorrência ganha tooltip com definição nossa (determinística)
+    assert saida.count('class="termo"') == 2  # CRI e CDI, uma vez cada
+    assert "Certificado de Recebíveis Imobiliários" in saida
+    assert "colada na Selic" in saida
+    # definição citando outro termo (Selic, na dica do CDI) não vira tooltip aninhado
+    assert '<span class="termo" tabindex="0">Selic' not in saida
+    # segunda menção a CRI fica limpa
+    assert saida.endswith("Novos CRI em análise.")
+
+
 def test_sem_cotacao_nao_mostra_calculadoras(con, zip_cvm):
     cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
     completo = analise.montar_completo(con, "tste11")

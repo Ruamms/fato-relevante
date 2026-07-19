@@ -269,12 +269,13 @@ ul.ok li::before {{ content:'✓  '; color:#4ade80; font-weight:700; }}
 .ajuda {{ display:inline-flex; align-items:center; justify-content:center; width:15px; height:15px;
   border-radius:50%; background:#314045; color:#8b98a9; font-size:10px; font-weight:700;
   cursor:help; position:relative; vertical-align:middle; margin-left:5px; }}
-.ajuda .dica {{ visibility:hidden; opacity:0; transition:opacity .15s; position:absolute; z-index:10;
+.ajuda .dica, .termo .dica {{ visibility:hidden; opacity:0; transition:opacity .15s; position:absolute; z-index:10;
   bottom:135%; left:50%; transform:translateX(-50%); width:270px; background:#232D31;
   border:1px solid #314045; border-radius:9px; padding:10px 12px; color:#F4F5F6;
   font-size:12.5px; font-weight:400; line-height:1.45; text-transform:none; letter-spacing:0;
-  text-align:left; box-shadow:0 6px 20px rgba(0,0,0,.45); }}
-.ajuda:hover .dica, .ajuda:focus .dica {{ visibility:visible; opacity:1; }}
+  text-align:left; box-shadow:0 6px 20px rgba(0,0,0,.45); white-space:normal; }}
+.ajuda:hover .dica, .ajuda:focus .dica, .termo:hover .dica, .termo:focus .dica {{ visibility:visible; opacity:1; }}
+.termo {{ border-bottom:1px dotted #8b98a9; cursor:help; position:relative; }}
 .calc {{ background:#182024; border:1px solid #232D31; border-radius:10px; padding:16px; margin-bottom:14px; }}
 .calc h3 {{ font-size:15px; color:#aeb9c7; margin-bottom:4px; }}
 .calc .desc {{ color:#8b98a9; font-size:13px; margin-bottom:12px; }}
@@ -654,11 +655,34 @@ def _secao_pares(raiox: RaioX, publicados: set[str] | None = None) -> str:
 
 
 def _texto_ia_para_html(texto: str) -> str:
-    """Render mínimo do texto do modelo: escapa tudo e converte só **negrito**."""
+    """Render mínimo do texto do modelo: escapa tudo e converte só **negrito**.
+    Jargão de mercado (CRI, CDI, LCI…) ganha tooltip com explicação para leigos —
+    definição determinística do nosso glossário, nunca do modelo."""
     import re as _re
 
+    from .glossario import JARGAO
+
     escapado = _e(texto)
-    return _re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", escapado)
+    resultado = _re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", escapado)
+
+    # passada única: só a primeira ocorrência de cada termo ganha tooltip, e o
+    # texto inserido nunca é re-escaneado (definições citam outros termos)
+    usados: set[str] = set()
+    padrao = _re.compile(
+        r"\b(" + "|".join(sorted((_re.escape(t) for t in JARGAO), key=len, reverse=True)) + r")s?\b"
+    )
+
+    def _marca(encontro: "_re.Match[str]") -> str:
+        termo = encontro.group(1)
+        if termo in usados:
+            return encontro.group(0)
+        usados.add(termo)
+        return (
+            f'<span class="termo" tabindex="0">{encontro.group(0)}'
+            f'<span class="dica">{_e(JARGAO[termo])}</span></span>'
+        )
+
+    return padrao.sub(_marca, resultado)
 
 
 def _secao_ia(leitura: dict | None, agora: datetime) -> str:
