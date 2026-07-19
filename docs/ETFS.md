@@ -49,6 +49,46 @@ geração nova (2024+) passou a **distribuir renda**; e há casos que fazem os d
 - **PL pequeno**: risco real de deslistagem/encerramento.
 - **Liquidez/volume** e presença de formador de mercado.
 
+## Por que cada tipo existe — e a pegadinha de cada um
+
+Comprar os ativos direto costuma ser mais barato em taxa; o ETF existe quando o
+formato entrega algo que a compra direta não entrega. A página de cada tipo deve
+contar OS DOIS lados:
+
+**Ações Brasil** — o sentido: 1 cota ≈ a cesta inteira (BOVA11 a ~R$ 170 expõe a
+80+ empresas; montar isso na mão custaria dezenas de milhares de reais e
+rebalanceamento manual eterno). Uma ação cai, as outras seguram. A pegadinha:
+os dividendos das ações — **isentos** quando recebidos direto — são reinvestidos
+dentro do fundo e viram ganho de capital **tributado em 15%** na venda. O ETF
+converte renda isenta em ganho tributável (pegadinha nº 3).
+
+**Dividendos (IDIV e afins)** — o sentido: suaviza a renda (um paga menos, outro
+paga mais). A pegadinha: idem acima — se o ETF não for da geração distribuidora,
+a "renda" nunca chega na sua conta.
+
+**Ações Internacionais** — o sentido: exposição ao exterior sem abrir conta lá
+fora, sem remessa, sem spread de câmbio físico, e no IR brasileiro. A pegadinha:
+**dupla exposição** — você carrega o índice E o dólar; o S&P pode subir e a cota
+cair (real valorizou). Volatilidade que o iniciante não espera.
+
+**Renda Fixa** — o sentido: liquidez de bolsa (D+2) para uma carteira de títulos
+que individualmente travariam até o vencimento; sem IOF; sem come-cotas;
+carteira >720 dias = IR fixo de 15%. A pegadinha: **marcação a mercado** — juro
+sobe, IMAB11 cai; "renda fixa" que oscila assusta quem veio da poupança. E o
+rendimento é invisível (cota engorda; nada pinga na conta até vender).
+
+**Cripto** — o sentido: exposição sem carteira própria, sem seed phrase, sem
+exchange, e com IR simplificado (a corretora reporta). A pegadinha: taxa de
+administração alta para o padrão ETF, e **perde a isenção de R$ 35 mil/mês**
+que a cripto direta tem.
+
+**Commodities (ouro etc.)** — o sentido: ouro sem barra física ou contrato
+futuro. A pegadinha: mesma conversão de regime tributário, taxa, e tracking.
+
+**Misto/Híbrido** — o sentido: alocação pronta em um papel só. A pegadinha: a
+proporção interna muda o comportamento inteiro — 70/30 renda fixa/cripto é OUTRO
+produto que 30/70. Por isso a classificação dinâmica (abaixo).
+
 ## Fontes mapeadas (investigação de 19/07/2026)
 
 | Dado | Fonte | Status |
@@ -81,7 +121,10 @@ geração nova (2024+) passou a **distribuir renda**; e há casos que fazem os d
    CONFERÊNCIA visual durante a revisão (não copiamos os rótulos deles para o
    produto — taxonomia própria). Nomenclatura adotada (linguagem de leigo):
    **Ações Brasil · Ações Internacionais · Renda Fixa · Cripto · Commodities ·
-   FIIs (índice) · Misto/Híbrido**.
+   FIIs (índice) · Misto/Híbrido**. Para o Misto/Híbrido, a classificação é
+   DINÂMICA: exibir a composição real por classe ("Renda Fixa 70% · Cripto 30%")
+   no selo/hover, calculada da carteira oficial do fundo (CVM publica a
+   composição mensal — dataset CDA dos fundos 555; a validar volumetria no E1).
 4. **Renda fixa entra desde o início** mesmo sem preço de bolsa (ver E4): o
    informe diário da CVM publica o VALOR DA COTA de cada ETF todo dia útil; para
    ETF de renda fixa o preço de tela gruda nesse valor (o formador de mercado
