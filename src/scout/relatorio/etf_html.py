@@ -142,20 +142,12 @@ def _trunca(texto: str, limite: int) -> str:
 
 
 def gerar(dados: dict, agora: datetime | None = None, com_menu: bool = False) -> str:
-    from .html import CSS_MENU, JS_MENU, menu_html
+    from .html import CSS_BUSCA_TOPO, CSS_MENU, JS_BUSCA_TOPO, JS_MENU, menu_html
 
     agora = agora or datetime.now()
     menu = menu_html() if com_menu else ""
-    css_menu = CSS_MENU if com_menu else ""
-    js_menu = JS_MENU if com_menu else ""
-    if com_menu:
-        js_menu += """
-function irTicker(evento, campo) {
-  if (evento.key !== 'Enter') return;
-  const ticker = campo.value.trim().toUpperCase();
-  if (ticker) location.href = ticker + '.html';
-}
-"""
+    css_menu = (CSS_MENU + CSS_BUSCA_TOPO) if com_menu else ""
+    js_menu = (JS_MENU + JS_BUSCA_TOPO) if com_menu else ""
     etf = dados["etf"]
     classe = dados["classe"] or "ETF"
     regras = REGRAS_POR_CLASSE.get(dados["classe"] or "", ())

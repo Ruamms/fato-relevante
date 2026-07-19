@@ -236,10 +236,16 @@ def test_site_publica_etfs(con, tmp_path):
     site.gerar(con, tmp_path / "site", com_cotacoes=False)
     assert (tmp_path / "site" / "BOVA11.html").exists()
     pagina_etf = (tmp_path / "site" / "BOVA11.html").read_text(encoding="utf-8")
-    # no site, a página de ETF tem menu E campo de busca por ticker
+    # no site, a página de ETF tem menu E a busca VIVA do topo (mesma da home)
     assert "FIIs ▾" in pagina_etf
     assert 'id="ir-ticker"' in pagina_etf
-    assert "function irTicker" in pagina_etf
+    assert "buscaTopo" in pagina_etf and "busca.json" in pagina_etf
+    # o índice compartilhado da busca existe e cobre as duas classes
+    import json
+
+    ativos = json.loads((tmp_path / "site" / "busca.json").read_text(encoding="utf-8"))
+    tickers = {a["t"] for a in ativos}
+    assert "BOVA11" in tickers and "ALFA11" in tickers
     listagem = (tmp_path / "site" / "etfs.html").read_text(encoding="utf-8")
     assert 'href="BOVA11.html"' in listagem
     assert "function filtraClasse" in listagem

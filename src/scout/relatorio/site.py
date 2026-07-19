@@ -111,6 +111,12 @@ def gerar(
 
     apoio.salvar(destino)
     momento = agora or datetime.now()
+    import json as _json
+
+    (destino / "busca.json").write_text(
+        _json.dumps(_ativos_busca(publicados, etfs_publicados), ensure_ascii=False),
+        encoding="utf-8",
+    )
     (destino / "fiis.html").write_text(_indice(publicados, base, momento), encoding="utf-8")
     (destino / "index.html").write_text(
         _home(publicados, etfs_publicados, momento), encoding="utf-8"
@@ -121,10 +127,8 @@ def gerar(
     return {"paginas": len(publicados), "etfs": len(etfs_publicados), "destino": str(destino)}
 
 
-def _home(fundos: list, etfs: list[dict], agora: datetime) -> str:
-    """Home multi-classe: busca ao vivo em TUDO que temos + resumo por classe."""
-    import json as _json
-
+def _ativos_busca(fundos: list, etfs: list[dict]) -> list[dict]:
+    """Índice compacto da busca viva (home embutida + busca.json das páginas)."""
     ativos = []
     for resumo in fundos:
         ativos.append(
@@ -146,6 +150,14 @@ def _home(fundos: list, etfs: list[dict], agora: datetime) -> str:
                 "r": dados["selo"].rotulo if dados["selo"] else "",
             }
         )
+    return ativos
+
+
+def _home(fundos: list, etfs: list[dict], agora: datetime) -> str:
+    """Home multi-classe: busca ao vivo em TUDO que temos + resumo por classe."""
+    import json as _json
+
+    ativos = _ativos_busca(fundos, etfs)
     json_ativos = _json.dumps(ativos, ensure_ascii=False).replace("</", "<\\/")
     cores_selo = _json.dumps(_COR_SELO)
 

@@ -130,6 +130,74 @@ def menu_html() -> str:
 
 
 
+# busca viva do cabeçalho (mesma experiência da home): dropdown com ticker,
+# nome, ponto do selo e badge da classe. O índice vem de busca.json (gerado
+# pelo site) — baixado uma vez e cacheado pelo navegador.
+CSS_BUSCA_TOPO = """
+.busca-topo { position:relative; margin-left:auto; }
+.busca-topo input { background:#182024; color:#F4F5F6; border:1px solid #314045;
+  border-radius:8px; padding:7px 12px; font-size:13.5px; width:280px; }
+#resultados-topo { position:absolute; top:100%; right:0; z-index:45; width:380px; max-width:86vw;
+  background:#182024; border:1px solid #314045; border-radius:12px; margin-top:6px;
+  overflow:hidden; box-shadow:0 16px 44px rgba(0,0,0,.55); }
+#resultados-topo a { display:flex; align-items:center; gap:9px; padding:9px 12px;
+  color:#F4F5F6; text-decoration:none; border-bottom:1px solid #232D31; font-size:13.5px; }
+#resultados-topo a:last-child { border-bottom:none; }
+#resultados-topo a:hover, #resultados-topo a.foco { background:#232D31; }
+#resultados-topo .tk { font-weight:800; min-width:64px; }
+#resultados-topo .nm { color:#8b98a9; font-size:12px; flex:1; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; }
+#resultados-topo .badge { font-size:9.5px; font-weight:700; letter-spacing:.05em; text-transform:uppercase;
+  background:#232D31; color:#8FCB9B; border:1px solid #314045; border-radius:99px; padding:2px 8px; white-space:nowrap; }
+#resultados-topo .ponto { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
+"""
+
+JS_BUSCA_TOPO = """
+let _ativosTopo = null;
+let _focoTopo = -1;
+const CORES_SELO_TOPO = {"sem_alertas": "#22c55e", "leves": "#D9B44A", "atencao": "#f97316", "grave": "#D66A6A", "insuficiente": "#94a3b8"};
+
+async function buscaTopo() {
+  const campo = document.getElementById('ir-ticker');
+  const caixa = document.getElementById('resultados-topo');
+  if (!campo || !caixa) return;
+  const termo = campo.value.trim().toLowerCase();
+  _focoTopo = -1;
+  if (termo.length < 2) { caixa.hidden = true; caixa.innerHTML = ''; return; }
+  if (_ativosTopo === null) {
+    try { _ativosTopo = await (await fetch('busca.json')).json(); }
+    catch (e) { _ativosTopo = []; }
+  }
+  const achados = _ativosTopo.filter(a =>
+    a.t.toLowerCase().includes(termo) || a.n.toLowerCase().includes(termo) || a.c.toLowerCase().includes(termo)
+  ).slice(0, 8);
+  if (!achados.length) { caixa.hidden = true; caixa.innerHTML = ''; return; }
+  caixa.innerHTML = achados.map(a =>
+    `<a href="${a.t}.html"><span class="tk">${a.t}</span><span class="nm">${a.n}</span>` +
+    (a.s ? `<span class="ponto" style="background:${CORES_SELO_TOPO[a.s] || '#94a3b8'}" title="${a.r}"></span>` : '') +
+    `<span class="badge">${a.c}</span></a>`
+  ).join('');
+  caixa.hidden = false;
+}
+
+function navegaTopo(evento) {
+  const caixa = document.getElementById('resultados-topo');
+  const links = caixa && !caixa.hidden ? caixa.querySelectorAll('a[href]') : [];
+  if (evento.key === 'Enter') {
+    evento.preventDefault();
+    if (links.length) { links[Math.max(_focoTopo, 0)].click(); return; }
+    const ticker = evento.target.value.trim().toUpperCase();
+    if (ticker) location.href = ticker + '.html';
+  } else if ((evento.key === 'ArrowDown' || evento.key === 'ArrowUp') && links.length) {
+    evento.preventDefault();
+    _focoTopo = (_focoTopo + (evento.key === 'ArrowDown' ? 1 : -1) + links.length) % links.length;
+    links.forEach((l, i) => l.classList.toggle('foco', i === _focoTopo));
+  } else if (evento.key === 'Escape' && caixa) {
+    caixa.hidden = true;
+  }
+}
+"""
+
+
 def marca_html(inicio_href: str | None = None, com_busca_ticker: bool = False) -> str:
     """Cabeçalho de marca (bússola + SCOUT + tagline), como manda a vitrine."""
     conteudo = (
@@ -145,8 +213,10 @@ def marca_html(inicio_href: str | None = None, com_busca_ticker: bool = False) -
         '<span class="brand-o">você decide.</span></span>'
     )
     busca = (
-        '<input id="ir-ticker" placeholder="ir para um fundo… (ex.: HGLG11)" '
-        'onkeydown="irTicker(event, this)">'
+        '<div class="busca-topo">'
+        '<input id="ir-ticker" placeholder="buscar um fundo… (ex.: HGLG11)" autocomplete="off" '
+        'oninput="buscaTopo()" onkeydown="navegaTopo(event)">'
+        '<div id="resultados-topo" hidden></div></div>'
         if com_busca_ticker
         else ""
     )
@@ -377,6 +447,7 @@ table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-a
 .rodape {{ color:#8b98a9; font-size:12.5px; border-top:1px solid #232D31; margin-top:30px; padding-top:14px; }}
 {CSS_MENU if publicados is not None else ""}
 {CSS_MARCA}
+{CSS_BUSCA_TOPO if publicados is not None else ""}
 @media print {{ body {{ background:#fff; color:#111; }} }}
 </style>
 </head>
@@ -503,7 +574,7 @@ function calcRetro() {{
 
 if (document.getElementById('uc-preco')) {{ calcUmaCota(); calcAportes(); }}
 if (document.getElementById('rt-valor')) {{ calcRetro(); }}
-{JS_MENU if publicados is not None else ""}
+{(JS_MENU + JS_BUSCA_TOPO) if publicados is not None else ""}
 </script>
 </body>
 </html>
