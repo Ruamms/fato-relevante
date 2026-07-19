@@ -31,8 +31,12 @@ geração nova (2024+) passou a **distribuir renda**; e há casos que fazem os d
 **2. Tributação (informativa, com fonte — nunca conselho).**
 - ETF de ações: 15% sobre o ganho na venda e **NÃO tem a isenção de R$ 20 mil/mês
   das ações** — a pegadinha nº 1 do investidor iniciante.
-- ETF de renda fixa: IR regressivo pelo **prazo médio da carteira** (25%/20%/15%),
-  **sem come-cotas**, cobrado só na venda — o grande diferencial do formato.
+- ETF de renda fixa (Lei 13.043/2014): IR pelo **prazo médio de repactuação da
+  carteira** — ≤180 dias: 25% · 181–720 dias: 20% · **>720 dias: 15% FIXO**
+  (não importa quanto tempo VOCÊ segura; importa o prazo da carteira do fundo).
+  **Sem come-cotas** e **SEM IOF** (nem nos primeiros 30 dias — diferente de
+  CDB/Tesouro). IR retido na fonte só na venda. É o combo que faz o formato
+  brilhar para curto e longo prazo ao mesmo tempo.
 - ETF de cripto: 15% sem isenção (cripto direto tem isenção até R$ 35 mil/mês —
   pegadinha nº 2).
 
@@ -57,16 +61,31 @@ geração nova (2024+) passou a **distribuir renda**; e há casos que fazem os d
 | Proventos dos ETFs distribuidores | B3 (corporate actions) | investigar no E6 |
 | Relatórios para IA | ETF **não usa o FNET** (isso é de estruturados) | fase 2 do ETF |
 
-## Decisões de produto (a validar com o dono do produto)
+## Decisões de produto (validadas com o dono do produto em 19/07/2026)
 
 1. **Página de ETF é DIFERENTE da página de FII** — sem imóveis/vacância/DY
    mensal; com regime de distribuição, tributação do tipo, prêmio/desconto,
    taxa, tracking. O topo ganha a "carteirinha de regras" do tipo: 3-4 linhas
    didáticas dizendo como AQUELE tipo se comporta (distribui? como é tributado?
    onde o rendimento aparece?).
-2. **Classificação por tipo é curadoria assistida**: heurística pelo índice/nome
-   + revisão manual (212 fundos é revisável) — errar o tipo aqui é errar tudo.
-3. **Renda fixa entra desde o início** mesmo sem preço de bolsa: a cota
-   patrimonial diária da CVM vira o "valor de referência" com aviso honesto,
-   até a fonte de preço ser resolvida.
-4. Selo/red flags de ETF têm **regras próprias** (as de FII não fazem sentido).
+2. **Home multi-classe com mega-menu**: o site ganha uma home nova com um resumo
+   de indicadores POR CLASSE (FIIs, ETFs) e um menu superior interativo estilo
+   mega-menu (referência visual: Investidor10), com as opções de cada classe
+   (todos os fundos, rankings, comparador, calculadoras). Viável no GitHub Pages:
+   menu é HTML/CSS/JS puro, nenhuma limitação técnica — a única restrição do
+   Pages é não ter servidor, e menu não precisa de servidor.
+3. **Classificação por tipo é curadoria assistida por planilha**:
+   `dados/classificacao_etfs.csv` (no repo) — linhas = 212 ETFs do registro CVM,
+   colunas = classificação sugerida pela heurística de nome/índice, sinais
+   mistos, e `classificacao_final` (humana). Sites de mercado servem como
+   CONFERÊNCIA visual durante a revisão (não copiamos os rótulos deles para o
+   produto — taxonomia própria). Nomenclatura adotada (linguagem de leigo):
+   **Ações Brasil · Ações Internacionais · Renda Fixa · Cripto · Commodities ·
+   FIIs (índice) · Misto/Híbrido**.
+4. **Renda fixa entra desde o início** mesmo sem preço de bolsa (ver E4): o
+   informe diário da CVM publica o VALOR DA COTA de cada ETF todo dia útil; para
+   ETF de renda fixa o preço de tela gruda nesse valor (o formador de mercado
+   arbitra qualquer descolamento). Exibimos esse valor oficial rotulado como
+   "valor da cota (patrimonial)" com aviso de que não é o preço de negociação —
+   informação honesta hoje em vez de página nenhuma até resolver a fonte.
+5. Selo/red flags de ETF têm **regras próprias** (as de FII não fazem sentido).

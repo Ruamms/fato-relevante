@@ -41,7 +41,7 @@ A visão de produto completa (referências de mercado, backlog e decisões de de
 - [ ] **E2 — Raio-x de ETF (página própria)**: indicadores certos para a classe (preço oficial, cota patrimonial, prêmio/desconto, PL, cotistas, rentabilidade vs CDI/IPCA/IFIX) + **"carteirinha de regras" do tipo** no topo (regime de distribuição, tributação factual com fonte, onde o rendimento aparece) — a página de FII NÃO serve de molde
 - [ ] **E3 — Red flags de ETF**: regras próprias no motor existente (PL pequeno/risco de deslistagem, prêmio/desconto persistente, tracking difference, liquidez baixa, taxa muito acima dos pares do mesmo índice) + selo
 - [ ] **E4 — Preço de ETF de renda fixa**: NÃO está no COTAHIST (negocia em ambiente próprio da B3) — investigar fonte oficial; até lá, cota patrimonial diária como valor de referência com aviso honesto
-- [ ] **E5 — Site multi-classe**: ETFs no índice do site com filtro por tipo; comparador estendido com guarda de "classes diferentes"
+- [ ] **E5 — Home multi-classe com mega-menu**: home nova com resumo de indicadores por classe (FIIs, ETFs) e menu superior interativo (referência: mega-menu do Investidor10 — HTML/CSS/JS puro, sem limitação no GitHub Pages) com as opções de cada classe (todos os fundos, rankings, comparador, calculadoras); comparador com guarda de "classes diferentes"
 - [ ] **E6 — ETFs distribuidores de renda**: detectar quem paga proventos (fonte B3 a investigar) + histórico; calculadoras por regime (total return sem "uma cota por mês"; distribuidores com ela)
 
 ## Fase 4 — Demais classes (depois dos ETFs)
