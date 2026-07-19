@@ -45,11 +45,18 @@ def _abrir_com_retry(requisicao, timeout: int, tentativas: int = 3):
     raise ultimo_erro
 
 
-def listar(cnpj: str, quantidade: int = 30) -> list[dict]:
-    """Documentos mais recentes do fundo no FNET (mais novo primeiro)."""
+def listar(
+    cnpj: str, quantidade: int = 30, timeout: int = 60, tentativas: int = 3
+) -> list[dict]:
+    """Documentos mais recentes do fundo no FNET (mais novo primeiro).
+
+    `timeout`/`tentativas` são frouxos por padrão (leitura de UM fundo, robusta).
+    Numa varredura em LOTE (etf_renda, 200+ fundos) convém passar valores curtos:
+    a busca do FNET pendura para alguns CNPJs, e 60s×3 por fundo ruim trava a
+    rodada inteira — melhor pular rápido e retomar na semana seguinte."""
     url = URL_PESQUISA.format(cnpj=so_digitos(cnpj), quantidade=quantidade)
     requisicao = urllib.request.Request(url, headers=_HEADERS)
-    with _abrir_com_retry(requisicao, timeout=60) as resposta:
+    with _abrir_com_retry(requisicao, timeout=timeout, tentativas=tentativas) as resposta:
         dados = json.load(resposta)
     return [
         {

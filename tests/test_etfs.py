@@ -374,7 +374,9 @@ def test_proventos_de_etf_extrai_e_grava(con, monkeypatch):
         {"id": 1240950, "tipo": "Proventos em dinheiro", "categoria": "Aviso aos Cotistas - Estruturado", "data_entrega": "07/07/2026 12:42"},
         {"id": 999, "tipo": "Informe Diário", "categoria": "Informes Periódicos", "data_entrega": "17/07/2026 10:00"},
     ]
-    monkeypatch.setattr(etf_renda.fnet, "listar", lambda cnpj, quantidade=40: docs)
+    monkeypatch.setattr(
+        etf_renda.fnet, "listar", lambda cnpj, quantidade=40, timeout=60, tentativas=3: docs
+    )
     monkeypatch.setattr(etf_renda.fnet, "baixar", lambda id_doc: _XML_PROVENTO)
     monkeypatch.setattr(etf_renda.time, "sleep", lambda s: None)
 
@@ -388,6 +390,34 @@ def test_proventos_de_etf_extrai_e_grava(con, monkeypatch):
 
     # semana fresca: não vai à rede
     assert etf_renda.atualizar_proventos(con, hoje=date(2026, 7, 20)) is None
+
+
+def test_proventos_repete_busca_do_fnet_que_oscilou(con, monkeypatch):
+    """O FNET pendura de forma intermitente; a busca que falha na 1ª volta na
+    2ª passada — sem isso, distribuidores somem por azar de timing."""
+    from scout.coleta import etf_renda
+
+    con.execute(
+        "INSERT INTO etfs (cnpj, ticker, radical, id_fnet, tipo_b3) "
+        "VALUES ('52116337000162', 'NDIV11', 'NDIV', 10677, 'ETF')"
+    )
+    con.commit()
+    docs = [{"id": 1240950, "tipo": "Proventos em dinheiro", "categoria": "", "data_entrega": ""}]
+    chamadas = {"n": 0}
+
+    def _listar(cnpj, quantidade=40, timeout=60, tentativas=3):
+        chamadas["n"] += 1
+        if chamadas["n"] == 1:
+            raise TimeoutError("FNET oscilou")  # 1ª chamada pendura
+        return docs
+
+    monkeypatch.setattr(etf_renda.fnet, "listar", _listar)
+    monkeypatch.setattr(etf_renda.fnet, "baixar", lambda id_doc: _XML_PROVENTO)
+    monkeypatch.setattr(etf_renda.time, "sleep", lambda s: None)
+
+    mensagem = etf_renda.atualizar_proventos(con, hoje=date(2026, 7, 19))
+    assert chamadas["n"] == 2  # 1ª falhou -> 2ª passada recuperou
+    assert "1 avisos novos" in mensagem
 
 
 def test_pagina_etf_distribuidor_mostra_renda(con):

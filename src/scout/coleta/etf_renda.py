@@ -70,13 +70,16 @@ def atualizar_proventos(
         (linha[0], linha[1])
         for linha in con.execute("SELECT cnpj, id_doc FROM etf_proventos")
     }
-    novos = 0
-    for etf in etfs:
+
+    def _varrer(etf) -> int | None:
+        """Baixa os proventos NOVOS de um ETF. Retorna o nº de avisos gravados,
+        ou None quando a busca do FNET falhou (candidato à repetição)."""
         try:
-            documentos = fnet.listar(etf["cnpj"], quantidade=40)
+            # timeout curto na varredura em lote: a busca do FNET oscila e
+            # pendura de forma intermitente; 60s×3 por fundo travava a rodada
+            documentos = fnet.listar(etf["cnpj"], quantidade=40, timeout=12, tentativas=1)
         except Exception:
-            continue  # FNET oscila; o fundo fica para a próxima rodada
-        time.sleep(0.2)  # educação com a fonte
+            return None
         novos_no_etf = 0
         for documento in documentos:
             if documento["tipo"].lower() != TIPO_DOCUMENTO:
@@ -104,12 +107,36 @@ def atualizar_proventos(
                         1 if provento["isento"] else 0,
                     ),
                 )
-                novos += 1
                 novos_no_etf += 1
-        # grava a cada ETF que trouxe novidade: um Ctrl+C na varredura (que é
-        # longa, uma requisição FNET por fundo) não joga fora o que já baixou.
+        # grava a cada ETF com novidade: Ctrl+C na varredura longa não perde o baixado
         if novos_no_etf:
             con.commit()
+        return novos_no_etf
+
+    novos = 0
+    falharam = []
+    for indice, etf in enumerate(etfs, start=1):
+        resultado = _varrer(etf)
+        if resultado is None:
+            falharam.append(etf)
+        else:
+            novos += resultado
+        time.sleep(0.3)  # SEMPRE (educação + evita throttling do FNET)
+        # progresso visível: sem isto a etapa parece "travada no 100%"
+        if ao_progredir and indice % 25 == 0:
+            ao_progredir(
+                f"proventos de ETF: {indice}/{len(etfs)} varridos"
+                f"{f' ({len(falharam)} a repetir)' if falharam else ''}"
+            )
+    # 2ª passada só nos que a busca oscilou (o FNET costuma responder na repetição)
+    if falharam:
+        if ao_progredir:
+            ao_progredir(f"proventos de ETF: repetindo {len(falharam)} buscas que oscilaram")
+        for etf in falharam:
+            resultado = _varrer(etf)
+            if resultado:
+                novos += resultado
+            time.sleep(0.3)
     con.execute(
         "INSERT OR REPLACE INTO cargas (arquivo, carregado_em) VALUES ('ETF_PROVENTOS', ?)",
         (hoje.isoformat(),),
