@@ -253,6 +253,52 @@ def test_site_publica_etfs(con, tmp_path):
     assert 'href="etfs.html"' in indice
 
 
+def test_cotacao_rf_upsert_diario_idempotente(con, monkeypatch):
+    from datetime import date
+
+    from scout.coleta import b3rf
+
+    con.execute(
+        "INSERT INTO etfs (cnpj, ticker, radical, id_fnet, tipo_b3, denominacao) "
+        "VALUES ('31024153000100', 'IMAB11', 'IMAB', 5678, 'ETF-RF', 'IT NOW IMA-B')"
+    )
+    con.commit()
+    respostas = {"dia": "2026-07-17", "preco": 113.82, "volume": 102000.0}
+    monkeypatch.setattr(
+        b3rf, "buscar", lambda ticker: (respostas["dia"], respostas["preco"], respostas["volume"])
+    )
+    monkeypatch.setattr(b3rf.time, "sleep", lambda s: None)
+
+    assert b3rf.atualizar_diaria(con, hoje=date(2026, 7, 17)) is not None
+    linha = con.execute(
+        "SELECT * FROM cotacoes_b3 WHERE ticker='IMAB11' AND competencia='2026-07'"
+    ).fetchone()
+    assert (linha["fechamento"], linha["volume"], linha["pregoes"]) == (113.82, 102000.0, 1)
+    # série derivada e preço atual aparecem para a página
+    from scout import armazenamento
+
+    meta = armazenamento.cotacao_meta(con, "IMAB11")
+    assert meta["preco_atual"] == 113.82
+
+    # mesmo dia de novo (rodada repetida): freshness segura, nada muda
+    assert b3rf.atualizar_diaria(con, hoje=date(2026, 7, 17)) is None
+
+    # dia seguinte: acumula volume e pregões, fechamento vira o novo
+    respostas.update({"dia": "2026-07-18", "preco": 114.10, "volume": 98000.0})
+    assert b3rf.atualizar_diaria(con, hoje=date(2026, 7, 18)) is not None
+    linha = con.execute(
+        "SELECT * FROM cotacoes_b3 WHERE ticker='IMAB11' AND competencia='2026-07'"
+    ).fetchone()
+    assert (linha["fechamento"], linha["volume"], linha["pregoes"]) == (114.10, 200000.0, 2)
+
+    # fim de semana: a fonte repete o pregão de sexta -> upsert ignora
+    assert b3rf.atualizar_diaria(con, hoje=date(2026, 7, 19)) is not None
+    linha = con.execute(
+        "SELECT * FROM cotacoes_b3 WHERE ticker='IMAB11' AND competencia='2026-07'"
+    ).fetchone()
+    assert linha["pregoes"] == 2
+
+
 def test_cotahist_codbdi_14_entra_como_etf(con):
     from tests.test_cotacoes import _linha_cotahist, _zip_cotahist
 

@@ -54,12 +54,15 @@ def gerar(
         fundos = fundos[:limite]
 
     if com_cotacoes:
-        from ..coleta import b3, indices
+        from ..coleta import b3, b3rf, indices
 
         indices.garantir_atualizados(con)
         # UM arquivo da B3 cobre a base inteira (antes: 1 requisição por ticker)
         aviso = b3.garantir_mes_corrente(con)
         progresso(aviso or "cotações oficiais da B3 atualizadas (arquivo do mês corrente)")
+        aviso_rf = b3rf.atualizar_diaria(con)
+        if aviso_rf:
+            progresso(aviso_rf)
         item("cotações", len(fundos), len(fundos))
         # re-varre para os resumos (P/VP dos rankings/pares) enxergarem os preços
         base = ranking.varrer(con)
