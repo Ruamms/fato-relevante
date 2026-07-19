@@ -176,15 +176,21 @@ def _executar_atualizacao(con) -> None:
     from rich.progress import BarColumn, Progress, TaskProgressColumn, TextColumn
 
     from . import armazenamento
-    from .coleta import cvm
+    from .coleta import b3, cvm
 
-    console.print(f"Baixando informes de FII da CVM para [dim]{armazenamento.diretorio_dados()}[/]…")
+    console.print(
+        f"Baixando informes da CVM e cotações da B3 para [dim]{armazenamento.diretorio_dados()}[/]…"
+    )
     hoje = date.today()
-    total = len(cvm.anos_pendentes(con, hoje)) + len(
-        cvm.anos_pendentes(con, hoje, cvm.nome_arquivo_trimestral)
+    total = (
+        len(cvm.anos_pendentes(con, hoje))
+        + len(cvm.anos_pendentes(con, hoje, cvm.nome_arquivo_trimestral))
+        + len(b3.arquivos_pendentes(con, hoje))
     )
     if not console.is_terminal:
-        cvm.atualizar(con, ao_progredir=lambda msg: console.print(f"  [dim]{msg}[/]"))
+        progresso = lambda msg: console.print(f"  [dim]{msg}[/]")  # noqa: E731
+        cvm.atualizar(con, ao_progredir=progresso)
+        b3.atualizar(con, ao_progredir=progresso)
     else:
         with Progress(
             TextColumn("[progress.description]{task.description}"),
@@ -192,13 +198,14 @@ def _executar_atualizacao(con) -> None:
             TaskProgressColumn(),
             console=console,
         ) as barra:
-            tarefa = barra.add_task("informes CVM", total=total)
+            tarefa = barra.add_task("CVM + B3", total=total)
 
             def _avanca(msg: str) -> None:
                 barra.console.print(f"  [dim]{msg}[/]")
                 barra.advance(tarefa)
 
             cvm.atualizar(con, ao_progredir=_avanca)
+            b3.atualizar(con, ao_progredir=_avanca)
     console.print("[green]Base atualizada.[/]")
 
 

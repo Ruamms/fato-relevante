@@ -1,0 +1,30 @@
+{
+  "ticker": "PBLV11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-19T04:29:56",
+  "comunicados": {
+    "ids": [
+      1181000,
+      1130381
+    ],
+    "datas": [
+      "06/05/2026",
+      "06/03/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGE"
+    ],
+    "texto": "### 05/05/2026\n**A assembleia aprovou as demonstrações financeiras do Fundo referentes ao exercício social de 2025.**\n- A assembleia foi realizada em São Paulo, com presença total dos cotistas.\n- \"Os Cotistas deliberaram, por unanimidade, sem quaisquer ressalvas ou restrições, aprovar as Demonstrações Financeiras do Fundo, das Notas Explicativas e do parecer do auditor independente, todos relativos ao exercício social findo em 31 de dezembro de 2025.\" (p. 1)\n\n### 06/03/2026\n**A assembleia aprovou alterações no Regulamento e contratação de MAMG Advogados para representar PLD Dutra RJ II em um potencial litígio envolvendo Ribeiro Caram.**\n- A assembleia foi realizada em São Paulo, com presença total dos cotistas.\n- \"Os Cotistas deliberaram, por unanimidade, sem quaisquer ressalvas ou restrições: (i) Alteração do Regulamento, de forma a alterar o item 3.2, referente ao prazo de duração do Fundo; (ii) Em razão da alteração acima mencionada, consolidação da nova versão do Regulamento; (iii) Aprovada a contratação do MAMG Advogados a fim de representar o PLD Dutra RJ II em conexão com o potencial litígio envolvendo a Ribeiro Caram e para auxiliar na avaliação contínua de riscos.\" (p. 2)"
+  },
+  "modelo": "qwen2.5:14b",
+  "parecer": {
+    "id": 1117575,
+    "data_entrega": "18/02/2026 18:41",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "(“Administradora do Fundo”) São Paulo - SP Opinião Examinamos as demonstrações financeiras do Prologis Brazil Logistics Venture Fundo de Investimento Imobiliário de Responsabilidade Limitada (“Fundo”) que compreendem o balanço patrimonial em 31 de dezembro de 2025 e as respectivas demonstrações do resultado, das mutações do patrimônio líquido e dos fluxos de caixa para o exercício findo nessa data"
+  }
+}

@@ -53,15 +53,13 @@ def gerar(
         fundos = fundos[:limite]
 
     if com_cotacoes:
-        from ..coleta import cotacoes, indices
+        from ..coleta import b3, indices
 
         indices.garantir_atualizados(con)
-        for posicao, resumo in enumerate(fundos, start=1):
-            cotacoes.garantir_atualizada(con, resumo.ticker)
-            time.sleep(0.15)  # educação com a fonte de cotações
-            item("cotações", posicao, len(fundos))
-            if posicao % 50 == 0:
-                progresso(f"cotações: {posicao}/{len(fundos)}")
+        # UM arquivo da B3 cobre a base inteira (antes: 1 requisição por ticker)
+        aviso = b3.garantir_mes_corrente(con)
+        progresso(aviso or "cotações oficiais da B3 atualizadas (arquivo do mês corrente)")
+        item("cotações", len(fundos), len(fundos))
         # re-varre para os resumos (P/VP dos rankings/pares) enxergarem os preços
         base = ranking.varrer(con)
         por_ticker = {resumo.ticker: resumo for resumo in base if resumo.ticker}
@@ -214,7 +212,7 @@ h2 {{ font-size:18px; margin:28px 0 10px; }}
   só fundos negociáveis · "sem alertas de atenção" = selo verde ou amarelo</p>
 
   <div class="rodape">Isto não é recomendação de investimento. Fontes: dados abertos da CVM,
-  Banco Central (SGS) e cotações via Yahoo Finance. Critérios de todos os alertas são públicos:
+  Banco Central (SGS) e cotações oficiais da B3 (COTAHIST). Critérios de todos os alertas são públicos:
   <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a></div>
 </div>
 <script>

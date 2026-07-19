@@ -1,0 +1,15 @@
+{
+  "ticker": "0EBI11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-19T03:19:35",
+  "relatorio": {
+    "id": 1242377,
+    "data_entrega": "08/07/2026 18:41",
+    "texto": "1. **Novas Investidas na Carteira**: O fundo realizou investimentos no valor total de R$ 72,6 milhões em novas operações desde o último relatório.\n   - \"Desde nosso último relatório, realizamos investimentos em novas operações no valor total de R$ 72,6 milhões.\" (p. 2)\n\n2. **Alocação da Carteira**: A alocação do fundo é composta por 92,3% em ativos alvo e 8,3% em instrumentos de caixa.\n   - \"Na data deste relatório, o Kinea Unique apresentava alocação, em relação ao seu patrimônio, de 92,3% em ativos alvo e 8,3% em instrumentos de caixa.\" (p. 1)\n\n3. **Taxa Média do Fundo**: A taxa média do fundo (MTM) é CDI + 4,68% a.a.\n   - \"A remuneração média (MTM) de CDI + 4,68% a.a.\" (p. 1)\n\n4. **Dividendos Distribuídos**: O fundo distribuiu dividendos no valor de R$ 1,15 por cota em junho.\n   - \"Os dividendos referentes a junho, cuja distribuição ocorrerá no dia 10/07/2026, são de R$ 1,15 por cota.\" (p. 1)\n\n5. **Resultado do Fundo**: O resultado líquido do fundo em junho foi de R$ 28,8 milhões.\n   - \"O resultado líquido no mês de junho foi de R$ 28,8 milhões.\" (página não especificada)\n\n6. **Projeções da Selic**: A última reunião do Copom reduziu a taxa Selic em 0,25 ponto percentual para 14,25% ao ano.\n   - \"O comunicado do BACEN e a ata divulgada posteriormente trouxeram incertezas sobre os movimentos futuros, deixando em aberto a possibilidade de uma pausa no ritmo de cortes.\" (p. 4)\n\n7. **Progresso do Projeto Residencial Campinas**: O projeto está próximo da finalização e deve receber o Habite-se nos próximos dias.\n   - \"Durante o mês de junho, ocorreram marcos importantes na finalização do Projeto Residencial Campinas... Foram realizadas as vistorias e aprovações necessárias para a emissão do Habite-se do empreendimento.\" (p. 8)\n\nO que observar em seguida:\n- Novas atualizações sobre o progresso do projeto residencial Campinas.\n- Eventuais novos investimentos anunciados no próximo relatório mensal."
+  },
+  "fatos": {
+    "ids": [],
+    "datas": [],
+    "texto": null
+  }
+}

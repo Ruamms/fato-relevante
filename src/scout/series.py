@@ -52,6 +52,27 @@ def dy_acumulado(serie: list, meses: int = 12) -> float | None:
     return sum(validos)
 
 
+def ajustada_por_evento_de_cotas(bruta: list[tuple[str, float]]) -> list[tuple[str, float]]:
+    """Neutraliza desdobramento/grupamento em qualquer série de valores por
+    cota (preço, VP): salto além de 2,5x para qualquer lado entre pontos
+    consecutivos vira fator, na base de cotas ATUAL (o último ponto fica
+    igual ao bruto). Mesmo algoritmo do ajuste de VP."""
+    ajustada: list[tuple[str, float]] = []
+    fator = 1.0
+    valor_posterior = None
+    for competencia, valor in reversed(bruta):
+        if not valor:
+            continue
+        if valor_posterior is not None:
+            razao = valor / valor_posterior
+            if razao >= 2.5 or razao <= 0.4:
+                fator *= valor_posterior / valor
+        ajustada.append((competencia, valor * fator))
+        valor_posterior = valor
+    ajustada.reverse()
+    return ajustada
+
+
 def serie_vp_ajustada(serie: list) -> dict[str, float]:
     """VP/cota com desdobramentos neutralizados (na base de cotas atual).
 

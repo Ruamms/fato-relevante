@@ -6,8 +6,9 @@ quem está começando — sem dumbing down para quem já sabe.
 
 TERMOS = {
     "Cotação": (
-        "O preço da cota na bolsa agora — quanto custa comprar uma \"fatia\" do fundo. "
-        "Sobe e desce conforme oferta e procura, como uma ação."
+        "O preço da cota na bolsa — quanto custa comprar uma \"fatia\" do fundo. Sobe e "
+        "desce conforme oferta e procura, como uma ação. Usamos o fechamento OFICIAL do "
+        "último pregão da B3 (preço em tempo real é serviço pago da bolsa)."
     ),
     "P/VP": (
         "Preço dividido pelo Valor Patrimonial da cota. Em 1,00 você paga exatamente o que "

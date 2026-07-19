@@ -1,0 +1,15 @@
+{
+  "ticker": "0QCK11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-19T03:47:59",
+  "fatos": {
+    "ids": [
+      1065413
+    ],
+    "datas": [
+      "17/12/2025"
+    ],
+    "texto": "### 17/12/2025\n\n**O que aconteceu:** O XP CDI II Fundo de Investimento Imobiliário anunciou a criação de novas subclasses e uma nova emissão de cotas.\n\n**Resumo:** A administração do fundo criou as subclasses \"E\", \"F\" e \"G\" da Classe Única, além de aprovar a segunda emissão da Subclasse D. As novas subclasses terão montantes totais de colocação privada de R$ 300 milhões cada (Subclasses E, F e G), com preço unitário de R$ 100 por cota. A Colocação Privada é destinada a investidores profissionais conforme definido pela Resolução CVM nº 30.\n\n**Trechos-chave:**\n- \"foi aprovada (i) a criação das novas subclasses “E”, “F” e “G” da Classe (“Subclasse E”, “Subclasse F” e “Subclasse G”, respectivamente e, quando em conjunto com a Subclasse D (conforme definido no Regulamento), as “Subclasses”), as quais terão as características constantes dos Apêndices “E”, “F” e “G” à nova versão do Regulamento\" (p. 1).\n- \"O montante total da Colocação Privada Cotas E será de até R$ 300.000.000,00 (trezentos milhões de reais)\" (p. 2)."
+  },
+  "modelo": "qwen2.5:14b"
+}

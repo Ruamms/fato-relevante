@@ -1,0 +1,19 @@
+{
+  "ticker": "HCTR11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-19T03:07:36",
+  "relatorio": {
+    "id": 1242361,
+    "data_entrega": "08/07/2026 18:32",
+    "texto": "1. **Distribuição de dividendos**: O fundo anunciou uma distribuição de R$ 0,26 por cota em abril, correspondendo a um dividend yield de 1,39% ao mês (p. 5).\n   \n2. **Ações contra inadimplentes**: A gestora está atuando na cobrança dos ativos inadimplentes e monitora mensalmente os indicadores operacionais das empresas que receberam waivers (p. 5).\n\n3. **Características da carteira**: O fundo investe principalmente em Certificados de Recebíveis Imobiliários (CRIs) e possui uma exposição a setores e operações complexas, resultando em maior volatilidade e retorno potencial no longo prazo (p. 4).\n\n4. **Renda do mês**: O rendimento mensal foi R$ 0,26 por cota, com um dividend yield anualizado de 3,5% a.m., considerando o valor da cota a mercado no fechamento do mês (p. 3).\n\n5. **Inadimplência e carência**: A inadimplência acumulada é de 3,8% para o empreendimento Morada Verde, enquanto a Alta Vista Thermas Resort tem uma inadimplência de apenas 0,59% (p. 14).\n\n6. **Taxa de administração e gestão**: O fundo cobra taxas de administração, controladoria e custódia de 0,21% ao ano do patrimônio líquido a mercado e uma taxa de gestão de 0,99% ao ano (p. 2).\n\n7. **Patrimônio Líquido**: O fundo tem um patrimônio líquido de R$ 2,2 bilhões, com uma queda de 3,70% nos últimos 12 meses (p. 2).\n\n8. **Taxa de performance**: A taxa de performance é de 10% sobre o que exceder a variação de 100% do CDI (p. 2).\n\n**O que observar em seguida:**\n- Monitorar as taxas de inadimplência e carência de juros dos CRIs.\n- Verificar os resultados financeiros futuros, especialmente se continuarão superando o rendimento distribuído."
+  },
+  "fatos": {
+    "ids": [
+      1173338
+    ],
+    "datas": [
+      "29/04/2026"
+    ],
+    "texto": "**29/04/2026**\n\n**Remarcação de ativos resulta em variação negativa no patrimônio líquido do fundo**\n\nO Hectare CE FII comunicou que realizou a remarcação de determinados ativos, com base na revisão da metodologia de marcação a mercado da administradora Vórtx Distribuidora. Essa ação resultou em uma variação negativa de 6,54% no valor do patrimônio líquido do fundo em 20/02/2026.\n\n*\"O Fundo realizou a remarcação de determinados ativos, com base na revisão da metodologia de marcação a mercado da Administradora, resultando em uma variação negativa de 6,54% no valor do patrimônio líquido do Fundo em 20/02/2026.\"* (p. 1)\n\nEsta remarcação está alinhada com o contexto recente de desvalorização do fundo, refletindo a queda no patrimônio líquido e na cotação ao longo dos últimos 12 meses."
+  }
+}

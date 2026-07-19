@@ -57,6 +57,6 @@ def avaliar(ctx: Contexto) -> RedFlag | None:
             f"P/VP atual {formato.decimal(atual)} vs média histórica {formato.decimal(media)} "
             f"({len(historico)} meses observados)"
         ),
-        fonte="cotações Yahoo Finance + valor patrimonial da cota (CVM)",
+        fonte="cotações oficiais da B3 (COTAHIST) + valor patrimonial da cota (CVM)",
         codigo=CODIGO,
     )

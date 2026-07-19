@@ -1,105 +1,39 @@
-"""Coleta de cotações (candles mensais) via API pública do Yahoo Finance.
+"""Fachada de cotações da análise — hoje servida pelos arquivos oficiais
+COTAHIST da B3 (ver `coleta/b3.py`).
 
-Sem chave/cadastro: é a única fonte gratuita que funciona de primeira
-para quem clonar o projeto. A camada é isolada de propósito — trocar de
-provedor no futuro é reescrever só este arquivo.
+`garantir_atualizada` mantém o contrato antigo (por ticker), mas por baixo
+UM refresh diário do arquivo do mês corrente cobre a base inteira — a
+primeira chamada do dia baixa e recalcula; as demais são instantâneas.
 
-A sincronização é preguiçosa e diária: `garantir_atualizada` só vai à
-rede se a última sincronização do ticker não for de hoje; sem conexão,
-a análise segue com o cache e um aviso.
+O preço exibido é o último FECHAMENTO OFICIAL de pregão (D-1) — melhor
+fonte gratuita e documentada que existe; preço em tempo real é licenciado
+e pago na B3.
 """
 
 from __future__ import annotations
 
-import json
 import sqlite3
-import urllib.request
-from datetime import datetime, timedelta, timezone
+from datetime import datetime
 
 from .. import armazenamento
-
-URL = "https://query1.finance.yahoo.com/v8/finance/chart/{simbolo}?range=max&interval=1mo"
-_HEADERS = {"User-Agent": "Mozilla/5.0 (scout)"}
-
-# A B3 só libera dado em tempo real sob licença paga; o Yahoo entrega com
-# ~15 min de atraso. Buscar mais rápido que isso não traz preço mais novo.
-FRESCOR = timedelta(minutes=15)
+from . import b3
 
 
 def garantir_atualizada(
     con: sqlite3.Connection, ticker: str, agora: datetime | None = None
 ) -> str | None:
-    """Sincroniza as cotações do ticker se o cache tiver mais de 15 minutos.
+    """Garante o cache de cotações fresco (1x/dia, base inteira de uma vez).
 
     Retorna None quando está tudo certo, ou uma mensagem de aviso para
-    exibir ao usuário (cache antigo ou cotação indisponível).
-    """
+    exibir ao usuário (cache antigo ou ticker sem negociação)."""
     ticker = ticker.strip().upper()
-    agora = agora or datetime.now()
+    aviso = b3.garantir_mes_corrente(con, agora)
     meta = armazenamento.cotacao_meta(con, ticker)
-    ultima = _parse_datahora(meta["atualizado_em"]) if meta is not None else None
-    if ultima is not None and agora - ultima < FRESCOR:
-        return None
-    try:
-        candles, preco_atual, cotado_em = buscar(ticker)
-    except Exception:
-        if meta is not None:
-            return f"sem conexão com a fonte de cotações — usando cache de {_data_br(meta['cotado_em'])}"
-        return "cotação de bolsa indisponível para este ticker (sem conexão ou ticker não listado)"
-    armazenamento.gravar_cotacoes(
-        con, ticker, candles, preco_atual, cotado_em, agora.isoformat(timespec="seconds")
-    )
+    if meta is None:
+        return "cotação de bolsa indisponível para este ticker (não negociado na B3 ou base desatualizada — rode scout atualizar)"
+    if aviso:
+        return f"{aviso} — preço de {_data_br(meta['cotado_em'])}"
     return None
-
-
-def _parse_datahora(valor: str | None) -> datetime | None:
-    """Aceita o formato novo (datetime ISO) e o antigo (só a data = tratado como velho)."""
-    if not valor:
-        return None
-    try:
-        analisado = datetime.fromisoformat(valor)
-    except ValueError:
-        return None
-    if len(valor) <= 10:  # base antiga gravava só a data: força a primeira renovação
-        return None
-    return analisado
-
-
-def buscar(ticker: str) -> tuple[list[tuple[str, float, float]], float, str]:
-    url = URL.format(simbolo=f"{ticker}.SA")
-    requisicao = urllib.request.Request(url, headers=_HEADERS)
-    with urllib.request.urlopen(requisicao, timeout=60) as resposta:
-        dados = json.load(resposta)
-    return extrair(dados)
-
-
-def extrair(dados: dict) -> tuple[list[tuple[str, float, float]], float, str]:
-    """Converte o JSON do Yahoo em (candles, preço atual, data do pregão).
-
-    Cada candle é (competencia AAAA-MM, fechamento, fechamento_ajustado).
-    O fechamento do Yahoo já vem ajustado por desdobramento; o ajustado
-    inclui também proventos.
-    """
-    resultado = dados["chart"]["result"][0]
-    timestamps = resultado["timestamp"]
-    fechamentos = resultado["indicators"]["quote"][0]["close"]
-    ajustados = resultado["indicators"].get("adjclose", [{}])[0].get("adjclose") or fechamentos
-
-    candles = []
-    for ts, fechamento, ajustado in zip(timestamps, fechamentos, ajustados):
-        if fechamento is None:
-            continue
-        competencia = datetime.fromtimestamp(ts, tz=timezone.utc).strftime("%Y-%m")
-        candles.append((competencia, fechamento, ajustado))
-
-    meta = resultado["meta"]
-    preco_atual = meta["regularMarketPrice"]
-    # horário do último negócio no fuso local do pregão (B3 = gmtoffset do Yahoo)
-    deslocamento = timezone(timedelta(seconds=meta.get("gmtoffset", -10800)))
-    cotado_em = datetime.fromtimestamp(
-        meta["regularMarketTime"], tz=deslocamento
-    ).strftime("%Y-%m-%d %H:%M")
-    return candles, preco_atual, cotado_em
 
 
 def _data_br(iso: str | None) -> str:

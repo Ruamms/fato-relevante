@@ -28,8 +28,8 @@ _COR_SEVERIDADE = {
 
 _RODAPE = (
     "Isto não é recomendação de investimento. As informações vêm de fontes públicas "
-    "(dados abertos da CVM; cotações via Yahoo Finance, com atraso de ~15 minutos em "
-    "relação ao pregão) e são apresentadas com a respectiva evidência. Os critérios de "
+    "(dados abertos da CVM; cotações oficiais da B3 — série histórica COTAHIST, com o "
+    "fechamento do último pregão) e são apresentadas com a respectiva evidência. Os critérios de "
     "todos os alertas são públicos e auditáveis no código-fonte."
 )
 
@@ -472,8 +472,8 @@ def _cotacao_em(raiox: RaioX, agora: datetime) -> str:
     return (
         f" · cotação de <b>{_e(raiox.cotacao_em)}</b> "
         f'<span style="color:{cor};cursor:help" title="Idade do preço usado: {_e(idade)}. '
-        "Cotação, P/VP e oscilações refletem esse momento — a fonte tem atraso mínimo de "
-        f'~15 min em relação ao pregão.">({_e(idade)}){aviso}</span>'
+        "Cotação, P/VP e oscilações refletem esse momento — o preço é o fechamento OFICIAL "
+        f'do último pregão da B3 (D-1).">({_e(idade)}){aviso}</span>'
     )
 
 
@@ -1063,7 +1063,8 @@ def _card_rentabilidade(dados) -> str:
     <div class="check" style="margin-top:6px"><input type="checkbox" id="rent-reinvestir" checked onchange="atualizaRent()">
     <label for="rent-reinvestir" style="all:unset;cursor:pointer;color:#aeb9c7;font-size:13px">
     reinvestir os rendimentos *</label></div>
-    <div class="nota">* marcado: rentabilidade com proventos reinvestidos (cotação ajustada, Yahoo);
+    <div class="nota">* marcado: rentabilidade com proventos reinvestidos (retorno total estimado
+    a partir do fechamento oficial B3 + rendimentos informados à CVM);
     desmarcado: apenas variação de preço. CDI e IPCA: Banco Central (SGS).</div>
   </div>"""
 

@@ -19,7 +19,7 @@ _COR_SEVERIDADE = {
 
 _RODAPE = (
     "Isto não é recomendação de investimento. "
-    "Fontes: dados abertos da CVM; cotações via Yahoo Finance (atraso de ~15 min)."
+    "Fontes: dados abertos da CVM; cotações oficiais da B3 (COTAHIST, fechamento D-1)."
 )
 
 

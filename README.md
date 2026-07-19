@@ -49,8 +49,8 @@ Porque nada aqui é caixa-preta:
 | Fonte | O que fornece |
 |---|---|
 | [CVM Dados Abertos](https://dados.cvm.gov.br) | Informes mensais e trimestrais de FII (2016+): PL, cotas, rendimentos, imóveis, vacância, resultado financeiro — oficial |
-| FNET (B3) | Relatórios gerenciais e fatos relevantes (PDFs oficiais dos fundos) |
-| Yahoo Finance | Cotações (atraso de ~15 min em relação ao pregão — limite de toda fonte gratuita) |
+| FNET (B3) | Relatórios gerenciais, fatos relevantes, comunicados, assembleias e DFs (PDFs oficiais dos fundos) |
+| [B3 — Série Histórica (COTAHIST)](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/mercado-a-vista/series-historicas/) | Cotações oficiais de fechamento, desde 2011 (D-1 — preço em tempo real é serviço licenciado da B3) |
 | Banco Central (SGS) | CDI e IPCA para os comparativos de rentabilidade |
 
 ## Site

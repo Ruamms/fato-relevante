@@ -96,6 +96,13 @@ CREATE TABLE IF NOT EXISTS informes_complemento (
     cotistas               REAL,
     PRIMARY KEY (cnpj, competencia)
 );
+CREATE TABLE IF NOT EXISTS cotacoes_b3 (
+    ticker      TEXT NOT NULL,
+    competencia TEXT NOT NULL,  -- AAAA-MM
+    fechamento  REAL,           -- último fechamento NOMINAL do mês (COTAHIST)
+    dia         TEXT,           -- data do pregão usado (AAAA-MM-DD)
+    PRIMARY KEY (ticker, competencia)
+);
 CREATE TABLE IF NOT EXISTS cadastro (
     cnpj               TEXT PRIMARY KEY,  -- só dígitos (formato do registro CVM)
     denominacao        TEXT,

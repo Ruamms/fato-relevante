@@ -1,15 +1,40 @@
 {
   "ticker": "KNCR11",
   "modelo": "qwen2.5:14b",
-  "gerada_em": "2026-07-18T22:17:14",
+  "gerada_em": "2026-07-19T04:52:53",
   "relatorio": {
     "id": 1242367,
     "data_entrega": "08/07/2026 18:36",
     "texto": "1. **Novos investimentos em CRI**: O fundo realizou novos investimentos no valor total de R$ 226 milhões, incluindo um projeto \"mixed-use\" chamado \"O Parque\" e uma carteira de créditos pro-soluto da MRV.\n   - *\"Neste mês, realizamos investimentos em novas operações de CRI no valor total de R$ 226,0 milhões.\"*\n\n2. **Expectativa de desembolsos futuros**: O fundo prevê desembolsos totais de R$ 1,78 bilhão nos próximos meses.\n   - *\"TOTAL 1.780\"*\n\n3. **Alocação da carteira**: A alocação do fundo é composta por 78,6% em CRI baseados em CDI, 12,6% em LCI e 8,7% em caixa.\n   - *\"CRI 78,6% CDI + 2,06% 2,05% 4,1 0,0\"*\n\n4. **Resultado do mês**: O resultado líquido do fundo no mês foi de R$ 124,3 milhões.\n   - *\"Resultado Líquido 106,8 97,9 102,6 111,1 102,0 127,9 119,8 103,2 133,8 121,2 119,5 124,3\"*\n\n5. **Dividendos distribuídos**: O fundo pagará dividendos de R$ 1,10 por cota em 13/07/2026.\n   - *\"Os dividendos referentes a junho, cuja distribuição ocorrerá no dia 13/07/2026, são de R$ 1,10 por cota\"*\n\n6. **Taxa Selic**: A taxa Selic foi reduzida em 0,25 ponto percentual para 14,25% ao ano.\n   - *\"O resultado do Fundo no mês seguiu positivamente impactado pelo patamar da Selic, que permanece em nível elevado mesmo após a redução deliberada pelo Copom em meados de junho.\"*\n\n7. **Volume negociado**: O volume médio diário transacionado foi de R$ 22,78 milhões.\n   - *\"No mês, foi transacionado um volume de R$ 478,41 milhões, correspondendo a uma média de aproximadamente R$ 22,78 milhões por dia.\"*\n\n**O que observar em seguida:**\n- **Desembolsos futuros**: Monitorar o cumprimento das expectativas de desembolso apresentadas.\n- **Taxa Selic**: Manter-se atualizado sobre possíveis ajustes na taxa Selic e seus impactos no rendimento do fundo."
   },
-  "fatos": {
-    "ids": [],
-    "datas": [],
-    "texto": null
+  "comunicados": {
+    "ids": [
+      962129,
+      1010035,
+      1048922,
+      1013103
+    ],
+    "datas": [
+      "07/08/2025",
+      "09/10/2025",
+      "27/11/2025",
+      "14/10/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Fato Relevante entregue em 07/08/2025\n\n**O QUE ACONTECEU:** O KINEA RENDIMENTOS IMOBILIÁRIOS FII aprovou a 12ª emissão de cotas.\n\n**RESUMO:** A assembleia geral extraordinária do fundo aprovou a emissão de até 24.555.544 novas cotas, com valor de emissão sugerido por R$ 101,81 cada, podendo ser corrigido pela variação do patrimônio do fundo.\n\n**TRECHO-CHAVE:**\n\"foi aprovada a 12ª emissão de cotas do Fundo (“Novas Cotas”), a ser realizada no Brasil, as quais serão distribuídas, após a obtenção de registro perante a CVM, sob coordenação do ITAÚ BBA ASSESSORIA FINANCEIRA S.A., instituição integrante do sistema de distribuição de valores mobiliários\" (p. 1).\n\n### Comunicado ao Mercado entregue em 09/10/2025\n\n**O QUE ACONTECEU:** O período de exercício do direito de preferência foi encerrado e iniciou o período de subscrição de sobras.\n\n**RESUMO:** Foram subscritas e integralizadas 4.587.307 novas cotas durante o período de direito de preferência, restando 19.968.237 que poderão ser subscritas pelos cotistas interessados no período entre 10/10/2025 e 16/10/2025.\n\n**TRECHO-CHAVE:**\n\"De acordo com as informações recebidas da B3 e da ITAÚ CORRETORA DE VALORES S.A., foram subscritas e integralizadas 4.587.307 (quatro milhões, quinhentas e oitenta e sete mil, trezentas e sete) Novas Cotas durante o Período de Exercício do Direito de Preferência\" (p. 1).\n\n### Assembleia AGO entregue em 27/11/2025\n\n**O QUE ACONTECEU:** Foram aprovadas as demonstrações contábeis do exercício findo em 30/06/2025.\n\n**RESUMO:** A assembleia geral ordinária aprovou as demonstrações financeiras e o relatório dos auditores independentes, disponíveis para consulta no site da administradora.\n\n**TRECHO-CHAVE:**\n\"MATÉRIA DELIBERADA: aprovadas as Demonstrações Contábeis do Fundo, devidamente acompanhadas do relatório dos auditores independentes, documentos disponibilizados aos cotistas nos termos da regulamentação em vigor, relativos ao exercício social findo em 30.06.2025\" (p. 1).\n\n### Assembleia AGO entregue em 14/10/2025\n\n**O QUE ACONTECEU:** Consulta formal eletrônica aos cotistas para aprovar as demonstrações financeiras do exercício findo em 30/06/2025.\n\n**RESUMO:** Os cotistas foram consultados sobre a aprovação das demonstrações contábeis e notas explicativas, com prazo de manifestação até 27/11/2025.\n\n**TRECHO-CHAVE:**\n\"KINEA RENDIMENTOS IMOBILIÁRIOS FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA vem submeter à consulta formal eletrônica de quotistas a aprovação das demonstrações financeiras, notas explicativas e parecer dos auditores independentes, relativas ao exercício social findo em 30 de junho de 2025\" (p. 1)."
+  },
+  "parecer": {
+    "id": 994939,
+    "data_entrega": "22/09/2025 09:34",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
   }
 }
