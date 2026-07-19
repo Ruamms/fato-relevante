@@ -35,10 +35,18 @@ A visão de produto completa (referências de mercado, backlog e decisões de de
 - [x] **Leitura de IA no relatório HTML** — FEITO junto com as leituras versionadas: secao "Leitura por IA" na pagina do fundo (leituras/*.json via scout ia-lote), com modelo, data, aviso de idade >40 dias e glossario
 - [x] **Cotações oficiais B3 (COTAHIST)** — FEITO (pré-requisito de IP da VISAO antes da divulgação ampla): Yahoo removido; `coleta/b3.py` baixa a Série Histórica oficial (anuais 2011+ uma vez + mensal do ano corrente, refresh 1x/dia), agrega por mês e reconstrói as séries com ajustes PRÓPRIOS e auditáveis — desdobramento (mesmo algoritmo do VP) e retorno total por proventos (DY CVM × VP ajustado, ancorado no preço atual). Um arquivo cobre a base inteira: morreram as 568 requisições+sleep do build do site. Preço exibido = fechamento oficial D-1 (tempo real é serviço licenciado da B3); textos/tooltips/fontes atualizados
 
-## Fase 3 — Outras classes (depois da v1 FII completa)
+## Fase 3 — ETFs (próxima vertical; entendimento registrado em [docs/ETFS.md](docs/ETFS.md))
+
+- [ ] **E1 — Fundação de dados**: identificar os ~212 ETFs (registro CVM, Tipo_Fundo=FIIM — já baixamos), mapear ticker↔CNPJ, **classificar por tipo** (ações BR / internacional / renda fixa / cripto / FII-índice / híbrido — heurística + curadoria manual), preços via COTAHIST codbdi 14 (infra pronta) e cota patrimonial/PL/cotistas via informe diário de fundos 555 da CVM
+- [ ] **E2 — Raio-x de ETF (página própria)**: indicadores certos para a classe (preço oficial, cota patrimonial, prêmio/desconto, PL, cotistas, rentabilidade vs CDI/IPCA/IFIX) + **"carteirinha de regras" do tipo** no topo (regime de distribuição, tributação factual com fonte, onde o rendimento aparece) — a página de FII NÃO serve de molde
+- [ ] **E3 — Red flags de ETF**: regras próprias no motor existente (PL pequeno/risco de deslistagem, prêmio/desconto persistente, tracking difference, liquidez baixa, taxa muito acima dos pares do mesmo índice) + selo
+- [ ] **E4 — Preço de ETF de renda fixa**: NÃO está no COTAHIST (negocia em ambiente próprio da B3) — investigar fonte oficial; até lá, cota patrimonial diária como valor de referência com aviso honesto
+- [ ] **E5 — Site multi-classe**: ETFs no índice do site com filtro por tipo; comparador estendido com guarda de "classes diferentes"
+- [ ] **E6 — ETFs distribuidores de renda**: detectar quem paga proventos (fonte B3 a investigar) + histórico; calculadoras por regime (total return sem "uma cota por mês"; distribuidores com ela)
+
+## Fase 4 — Demais classes (depois dos ETFs)
 
 - [ ] **Ações** — DFP/ITR da CVM + Formulário de Referência (histórico de diretoria, sempre factual)
-- [ ] **ETFs** — composição, taxa, tracking error
 - [ ] **Renda fixa/CDB** — alerta de concentração acima do teto do FGC (R$ 250 mil) e saúde do emissor (IF.data/BCB)
 - [x] **Comparação entre ativos** — FEITO para FIIs (19/07/2026): `comparar.html` no site com 2-3 fundos lado a lado (mesmos fatos: selo com motivos, cotação, DY, P/VP, PL, cotistas, idade, alertas), links cruzados e `?f1=X&f2=Y` na URL; sem destaque de "vencedor" — comparação de fatos, não recomendação. Estende às outras classes quando existirem
 - [ ] **API/site dinâmico** — expor o núcleo via FastAPI quando o site estático não bastar
