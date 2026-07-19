@@ -129,20 +129,28 @@ def _oscilacoes(
             continue
         eventos = []
         base_cotas, cotas_mes = cotas.get(mes_anterior), cotas.get(mes)
-        if base_cotas and cotas_mes and cotas_mes > base_cotas * 1.005:
+        if base_cotas and cotas_mes and cotas_mes >= base_cotas * 2.5:
+            # salto de 2,5x+ na base de cotas é desdobramento, não emissão
+            # (mesmo limiar do ajuste de VP em series.serie_vp_ajustada)
             eventos.append(
-                f"emissão de cotas no período (+{100 * (cotas_mes / base_cotas - 1):.1f}% na base de cotas)"
+                f"desdobramento de cotas no período (base multiplicada por {cotas_mes / base_cotas:.0f})"
+            )
+        elif base_cotas and cotas_mes and cotas_mes > base_cotas * 1.005:
+            eventos.append(
+                f"emissão de cotas no período (+{formato.decimal(100 * (cotas_mes / base_cotas - 1), 1)}% na base de cotas)"
             )
         rend_anterior, rend_mes = rendimento.get(mes_anterior), rendimento.get(mes)
         if rend_anterior and rend_mes and rend_anterior > 0:
             delta = 100 * (rend_mes - rend_anterior) / rend_anterior
             if delta <= -30:
                 eventos.append(
-                    f"rendimento por cota caiu de ≈R$ {rend_anterior:.2f} para ≈R$ {rend_mes:.2f}"
+                    f"rendimento por cota caiu de ≈R$ {formato.decimal(rend_anterior)} "
+                    f"para ≈R$ {formato.decimal(rend_mes)}"
                 )
             elif delta >= 30:
                 eventos.append(
-                    f"rendimento por cota subiu de ≈R$ {rend_anterior:.2f} para ≈R$ {rend_mes:.2f}"
+                    f"rendimento por cota subiu de ≈R$ {formato.decimal(rend_anterior)} "
+                    f"para ≈R$ {formato.decimal(rend_mes)}"
                 )
         oscilacoes.append(Oscilacao(mes=mes, variacao=variacao, eventos=eventos))
     return oscilacoes
