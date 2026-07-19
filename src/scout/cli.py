@@ -554,6 +554,78 @@ def ia_lote(
                 saida.write(f"{_dt.now():%Y-%m-%d %H:%M:%S}\t{linha}\n")
 
         _registrar(f"--- lote iniciado · modelo {modelo_final} · {len(fundos)} fundos na fila")
+
+        import queue as _queue
+        import threading as _threading
+
+        def _selecao(docs: list[dict]) -> tuple[dict | None, list[dict]]:
+            relatorio = fnet.ultimo_relatorio_gerencial(docs)
+            docs_meta = (
+                []
+                if sem_fatos
+                else [
+                    {**meta, "rotulo": "Fato Relevante"}
+                    for meta in fnet.fatos_relevantes(docs, 3)
+                ]
+                + fnet.comunicados_e_assembleias(docs)
+            )
+            return relatorio, docs_meta
+
+        # A IA é o gargalo (GPU) e fica estritamente sequencial; esta thread
+        # adianta a parte de REDE/DISCO do próximo fundo (listagem no FNET +
+        # download dos PDFs) enquanto o modelo lê o fundo atual.
+        fila: _queue.Queue = _queue.Queue(maxsize=2)
+
+        def _prefetch() -> None:
+            con_prefetch = armazenamento.conectar()
+            destino_docs = armazenamento.diretorio_dados() / "documentos"
+            try:
+                for resumo_p in fundos:
+                    try:
+                        docs_p = fnet.listar(resumo_p.cnpj)
+                        relatorio_p, docs_meta_p = _selecao(docs_p)
+                        existente_p = leituras.carregar(pasta, resumo_p.ticker)
+                        ids_lidos_p = leituras.ids_comunicados(existente_p)
+                        # espelho da decisão do consumidor: fundo pulável não gasta download
+                        relatorio_reaproveitavel = bool(
+                            relatorio_p
+                            and existente_p
+                            and existente_p.get("relatorio")
+                            and existente_p["relatorio"]["id"] == relatorio_p["id"]
+                            and existente_p["relatorio"].get("texto")
+                        )
+                        marcado_sem_relatorio = bool(
+                            relatorio_p is None and existente_p and existente_p.get("sem_relatorio")
+                        )
+                        pulavel = (
+                            relatorio_reaproveitavel or marcado_sem_relatorio
+                        ) and ids_lidos_p >= {meta["id"] for meta in docs_meta_p}
+                        if not pulavel:
+                            if relatorio_p and not relatorio_reaproveitavel:
+                                fnet._garantir_documento(
+                                    con_prefetch, resumo_p.cnpj, relatorio_p, destino_docs
+                                )
+                            for meta_p in docs_meta_p:
+                                if meta_p["id"] not in ids_lidos_p:
+                                    fnet._garantir_documento(
+                                        con_prefetch, resumo_p.cnpj, meta_p, destino_docs
+                                    )
+                        fila.put((docs_p, None))
+                    except Exception as erro_p:  # o consumidor registra a falha
+                        fila.put((None, erro_p))
+            finally:
+                con_prefetch.close()
+
+        _threading.Thread(target=_prefetch, daemon=True).start()
+
+        def _proximo_da_fila() -> tuple[list[dict] | None, Exception | None]:
+            # timeout curto mantém o Ctrl+C responsivo no Windows
+            while True:
+                try:
+                    return fila.get(timeout=1)
+                except _queue.Empty:
+                    continue
+
         novos, pulados = 0, 0
         falhas: list[tuple[str, str]] = []
         inicio = _time.monotonic()
@@ -585,17 +657,10 @@ def ia_lote(
                     )
 
             try:
-                docs = fnet.listar(resumo.cnpj)
-                relatorio = fnet.ultimo_relatorio_gerencial(docs)
-                docs_meta = (
-                    []
-                    if sem_fatos
-                    else [
-                        {**meta, "rotulo": "Fato Relevante"}
-                        for meta in fnet.fatos_relevantes(docs, 3)
-                    ]
-                    + fnet.comunicados_e_assembleias(docs)
-                )
+                docs, erro_prefetch = _proximo_da_fila()
+                if erro_prefetch is not None:
+                    raise erro_prefetch
+                relatorio, docs_meta = _selecao(docs)
                 existente = leituras.carregar(pasta, resumo.ticker)
                 ids_novos = {meta["id"] for meta in docs_meta}
                 if relatorio is None:
