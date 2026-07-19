@@ -383,6 +383,7 @@ def montar_raio_x(
         imoveis_em=formato.competencia_br(imoveis_atuais[0]["competencia"])
         if imoveis_atuais
         else "",
+        imoveis_por_estado=_imoveis_por_estado(imoveis_atuais),
         administrador=admin["administrador"] if admin else "",
         fundos_irmaos=_fundos_irmaos(con, admin, fundo.cnpj) if admin else [],
         gestora=(cadastro["gestor"] or "") if cadastro else "",
@@ -425,6 +426,44 @@ def _montar_imoveis(imoveis_atuais: list[sqlite3.Row]) -> list[Imovel]:
         )
         for linha in imoveis_atuais
     ]
+
+
+_UFS = {
+    "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG",
+    "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO",
+}
+
+
+def _uf_do_endereco(endereco: str | None) -> str | None:
+    """Estima a UF pelo endereço do informe (a CVM não publica campo próprio).
+    Vale a ÚLTIMA sigla válida — endereços terminam em '... cidade - UF'
+    (a última evita falsos positivos como 'AL' de Alameda no início)."""
+    import re as _re
+
+    if not endereco:
+        return None
+    candidatas = _re.findall(r"(?<![A-Za-zÀ-ú])([A-Z]{2})(?![A-Za-zÀ-ú])", endereco.upper())
+    validas = [sigla for sigla in candidatas if sigla in _UFS]
+    return validas[-1] if validas else None
+
+
+def _imoveis_por_estado(imoveis_atuais: list[sqlite3.Row]) -> list[tuple[str, float]]:
+    """Participação de cada UF na área total dos imóveis (maiores primeiro);
+    imóvel sem UF identificável entra como '?'."""
+    area_por_uf: dict[str, float] = {}
+    for linha in imoveis_atuais:
+        area = linha["area"] or 0
+        if area <= 0:
+            continue
+        uf = _uf_do_endereco(linha["endereco"]) or "?"
+        area_por_uf[uf] = area_por_uf.get(uf, 0) + area
+    total = sum(area_por_uf.values())
+    if total <= 0:
+        return []
+    return sorted(
+        ((uf, 100 * area / total) for uf, area in area_por_uf.items()),
+        key=lambda item: -item[1],
+    )
 
 
 def _fundos_irmaos(con: sqlite3.Connection, admin, cnpj_fundo: str) -> list[FundoIrmao]:

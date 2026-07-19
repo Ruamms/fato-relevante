@@ -569,9 +569,24 @@ def _secao_imoveis(raiox: RaioX, limite: int = 10) -> str:
     <tbody>{"".join(linhas)}</tbody>
   </table>
   {botao}
+  {_linha_estados(raiox)}
   <div class="nota">informe trimestral de {_e(raiox.imoveis_em)} · ordenados por participação na receita</div>
   </div>
 """
+
+
+def _linha_estados(raiox: RaioX) -> str:
+    """Distribuição da área por estado (UF estimada pelo endereço do informe)."""
+    estados = [(uf, pct) for uf, pct in raiox.imoveis_por_estado if uf != "?"]
+    if not estados:
+        return ""
+    nao_identificado = next((pct for uf, pct in raiox.imoveis_por_estado if uf == "?"), 0)
+    partes = " · ".join(f"<b>{_e(uf)}</b> {formato.percentual(pct)}" for uf, pct in estados[:8])
+    resto = f" · não identificado {formato.percentual(nao_identificado)}" if nao_identificado >= 1 else ""
+    return (
+        f'<div class="nota" style="margin-top:8px">área por estado (estimada pelo endereço): '
+        f"{partes}{resto}</div>"
+    )
 
 
 def _tabela_relacionados(

@@ -21,6 +21,26 @@ def test_carga_trimestral(con, zip_trimestral, novo_schema):
     assert resultado["rendimentos_declarados"] == 90000
 
 
+def test_uf_do_endereco():
+    assert analise._uf_do_endereco("Av. Paulista, 1000 - São Paulo - SP") == "SP"
+    # "AL" de Alameda no início não engana: vale a ÚLTIMA sigla válida
+    assert analise._uf_do_endereco("AL SANTOS, 200 - SAO PAULO SP") == "SP"
+    assert analise._uf_do_endereco("Rodovia BR-116, km 20, Duque de Caxias RJ") == "RJ"
+    assert analise._uf_do_endereco("Rua sem estado, 10") is None
+    assert analise._uf_do_endereco(None) is None
+
+
+def test_imoveis_por_estado_por_area():
+    imoveis = [
+        {"area": 1000, "endereco": "Rua A - São Paulo - SP"},
+        {"area": 500, "endereco": "Rua B - Rio de Janeiro - RJ"},
+        {"area": 500, "endereco": "Rua C - Campinas - SP"},
+        {"area": 0, "endereco": "Rua D - Salvador - BA"},  # sem área: fora
+    ]
+    resultado = analise._imoveis_por_estado(imoveis)
+    assert resultado == [("SP", pytest.approx(75.0)), ("RJ", pytest.approx(25.0))]
+
+
 # --- contexto: vacância ponderada -----------------------------------------------
 
 
