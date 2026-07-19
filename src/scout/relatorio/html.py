@@ -62,6 +62,74 @@ CSS_MARCA = """
 """
 
 
+# CSS + HTML do menu superior com dropdowns (mega-menu), compartilhado pelas
+# páginas de navegação (home, fiis, etfs, comparar). HTML/CSS/JS puro — o
+# GitHub Pages não impõe limitação nenhuma a menu interativo.
+CSS_MENU = """
+.nav { display:flex; align-items:center; gap:4px; margin:14px 0 6px; flex-wrap:wrap; }
+.nav .item { position:relative; }
+.nav .topo-btn { background:none; border:none; color:#aeb9c7; font-size:14.5px; font-weight:600;
+  padding:8px 14px; border-radius:8px; cursor:pointer; }
+.nav .topo-btn:hover, .nav .item.aberto .topo-btn { background:#182024; color:#8FCB9B; }
+.nav .painel { display:none; position:absolute; top:100%; left:0; z-index:40; min-width:230px;
+  background:#182024; border:1px solid #314045; border-radius:12px; padding:10px;
+  box-shadow:0 14px 40px rgba(0,0,0,.5); }
+.nav .item.aberto .painel { display:block; }
+.nav .painel a { display:block; color:#F4F5F6; text-decoration:none; font-size:13.5px;
+  padding:8px 10px; border-radius:8px; }
+.nav .painel a:hover { background:#232D31; color:#8FCB9B; }
+.nav .painel .grupo { color:#66707d; font-size:11px; text-transform:uppercase;
+  letter-spacing:.06em; padding:6px 10px 2px; }
+.nav > a { color:#aeb9c7; font-size:14.5px; font-weight:600; text-decoration:none;
+  padding:8px 14px; border-radius:8px; }
+.nav > a:hover { background:#182024; color:#8FCB9B; }
+"""
+
+JS_MENU = """
+document.querySelectorAll('.nav .topo-btn').forEach(botao => {
+  botao.addEventListener('click', evento => {
+    evento.stopPropagation();
+    const item = botao.parentElement;
+    const estava = item.classList.contains('aberto');
+    document.querySelectorAll('.nav .item').forEach(i => i.classList.remove('aberto'));
+    if (!estava) item.classList.add('aberto');
+  });
+});
+document.addEventListener('click', () => {
+  document.querySelectorAll('.nav .item').forEach(i => i.classList.remove('aberto'));
+});
+"""
+
+
+def menu_html() -> str:
+    return """
+  <nav class="nav">
+    <div class="item">
+      <button class="topo-btn" type="button">FIIs ▾</button>
+      <div class="painel">
+        <a href="fiis.html">Todos os FIIs</a>
+        <a href="fiis.html#rankings">Rankings do dia</a>
+        <a href="comparar.html">⚖ Comparar FIIs</a>
+      </div>
+    </div>
+    <div class="item">
+      <button class="topo-btn" type="button">ETFs ▾</button>
+      <div class="painel">
+        <a href="etfs.html">Todos os ETFs</a>
+        <div class="grupo">por classe</div>
+        <a href="etfs.html?classe=Ações Brasil">Ações Brasil</a>
+        <a href="etfs.html?classe=Ações Internacionais">Ações Internacionais</a>
+        <a href="etfs.html?classe=Renda Fixa">Renda Fixa</a>
+        <a href="etfs.html?classe=Cripto">Cripto</a>
+      </div>
+    </div>
+    <a href="apoie.html">☕ Apoie</a>
+  </nav>
+"""
+
+
+
+
 def marca_html(inicio_href: str | None = None, com_busca_ticker: bool = False) -> str:
     """Cabeçalho de marca (bússola + SCOUT + tagline), como manda a vitrine."""
     conteudo = (
@@ -307,6 +375,7 @@ table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-a
   padding:6px 16px; font-size:13px; font-weight:600; cursor:pointer; margin-top:10px; }}
 .ver-mais:hover {{ border-color:#8FCB9B; }}
 .rodape {{ color:#8b98a9; font-size:12.5px; border-top:1px solid #232D31; margin-top:30px; padding-top:14px; }}
+{CSS_MENU if publicados is not None else ""}
 {CSS_MARCA}
 @media print {{ body {{ background:#fff; color:#111; }} }}
 </style>
@@ -314,6 +383,7 @@ table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-a
 <body>
 <div class="pagina">
   {marca_html("index.html" if publicados is not None else None, com_busca_ticker=publicados is not None)}
+  {menu_html() if publicados is not None else ""}
   <div class="topo">
     <h1>{_e(raiox.ticker)} <small>{_e(raiox.nome)}</small></h1>
     {_selo_html(raiox)}
@@ -433,6 +503,7 @@ function calcRetro() {{
 
 if (document.getElementById('uc-preco')) {{ calcUmaCota(); calcAportes(); }}
 if (document.getElementById('rt-valor')) {{ calcRetro(); }}
+{JS_MENU if publicados is not None else ""}
 </script>
 </body>
 </html>

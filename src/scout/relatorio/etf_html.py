@@ -136,8 +136,13 @@ def montar_dados_etf(con: sqlite3.Connection, ticker: str, classificacoes: dict 
     return dados
 
 
-def gerar(dados: dict, agora: datetime | None = None) -> str:
+def gerar(dados: dict, agora: datetime | None = None, com_menu: bool = False) -> str:
+    from .html import CSS_MENU, JS_MENU, menu_html
+
     agora = agora or datetime.now()
+    menu = menu_html() if com_menu else ""
+    css_menu = CSS_MENU if com_menu else ""
+    js_menu = JS_MENU if com_menu else ""
     etf = dados["etf"]
     classe = dados["classe"] or "ETF"
     regras = REGRAS_POR_CLASSE.get(dados["classe"] or "", ())
@@ -302,12 +307,14 @@ table.imoveis th {{ color:#8b98a9; font-size:11.5px; text-transform:uppercase; l
 table.imoveis td {{ padding:7px 10px; border-bottom:1px solid #232D31; }}
 table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-align:right; }}
 .rodape {{ color:#8b98a9; font-size:12.5px; border-top:1px solid #232D31; margin-top:30px; padding-top:14px; }}
+{css_menu}
 {CSS_MARCA}
 </style>
 </head>
 <body>
 <div class="pagina">
   {marca_html("index.html")}
+  {menu}
   <h1>{_e(etf["ticker"])} <small>{_e((etf["denominacao"] or "")[:70])}</small> {selo_html}</h1>
   <div class="meta">ETF · {_e(classe)} · dados oficiais B3 + CVM · página gerada em {agora.strftime("%d/%m/%Y %H:%M")}</div>
 
@@ -330,6 +337,9 @@ table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-a
   Projeto open source: <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a>
   · <a href="etfs.html">todos os ETFs</a> · <a href="index.html">FIIs</a></div>
 </div>
+<script>
+{js_menu}
+</script>
 </body>
 </html>
 """

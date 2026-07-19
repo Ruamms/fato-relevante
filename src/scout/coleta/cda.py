@@ -132,9 +132,31 @@ def carregar_classificacoes(raiz: Path | None = None) -> dict[str, dict]:
         }
 
 
+# segmento oficial da B3 -> classes Scout compatíveis (contradição = erro na certa)
+_SEGMENTO_COMPATIVEL = {
+    "ETF-RF": {"Renda Fixa", "Renda Fixa Internacional"},
+    "ETF-Cripto": {"Cripto", "Misto/Híbrido"},
+}
+
+
 def verificar(composicao: dict[str, dict[str, float]], classificacoes: dict[str, dict]) -> list[dict]:
     """Divergências entre a carteira real e a classificação da curadoria."""
     divergencias = []
+    # checagem independente de carteira: classe Scout vs segmento oficial B3
+    for cnpj, classificado in classificacoes.items():
+        classe = (classificado.get("classificacao_scout") or "").strip()
+        segmento = (classificado.get("segmento_b3") or "").strip()
+        compativeis = _SEGMENTO_COMPATIVEL.get(segmento)
+        if classe and compativeis and classe not in compativeis:
+            divergencias.append(
+                {
+                    "ticker": (classificado.get("ticker") or "").strip() or cnpj,
+                    "tipo": "divergência",
+                    "classificacao_scout": classe,
+                    "carteira": f"segmento oficial B3: {segmento}",
+                    "motivo": f"segmento B3 '{segmento}' é incompatível com a classe '{classe}'",
+                }
+            )
     for cnpj, grupos in composicao.items():
         classificado = classificacoes.get(cnpj)
         if not classificado:

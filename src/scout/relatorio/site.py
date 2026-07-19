@@ -15,7 +15,7 @@ from pathlib import Path
 from .. import analise, armazenamento, formato, ranking
 from . import apoio
 from . import html as relatorio_html
-from .html import _e
+from .html import CSS_MENU, JS_MENU, _e, menu_html
 
 _COR_SELO = relatorio_html._COR_SELO
 _URL_WORKFLOW = "https://github.com/Ruamms/scout/actions/workflows/site.yml"
@@ -100,7 +100,7 @@ def gerar(
         if dados_etf is None or not (dados_etf["cotacao"] or dados_etf["pl"]):
             continue  # sem preço nem carteira: página vazia não ajuda ninguém
         (destino / f"{etf['ticker']}.html").write_text(
-            etf_html.gerar(dados_etf, agora=agora), encoding="utf-8"
+            etf_html.gerar(dados_etf, agora=agora, com_menu=True), encoding="utf-8"
         )
         etfs_publicados.append(dados_etf)
         item("etfs", len(etfs_publicados), len(etfs_publicados))
@@ -119,72 +119,6 @@ def gerar(
         _pagina_comparar(publicados), encoding="utf-8"
     )
     return {"paginas": len(publicados), "etfs": len(etfs_publicados), "destino": str(destino)}
-
-
-# CSS + HTML do menu superior com dropdowns (mega-menu), compartilhado pelas
-# páginas de navegação (home, fiis, etfs, comparar). HTML/CSS/JS puro — o
-# GitHub Pages não impõe limitação nenhuma a menu interativo.
-CSS_MENU = """
-.nav { display:flex; align-items:center; gap:4px; margin:14px 0 6px; flex-wrap:wrap; }
-.nav .item { position:relative; }
-.nav .topo-btn { background:none; border:none; color:#aeb9c7; font-size:14.5px; font-weight:600;
-  padding:8px 14px; border-radius:8px; cursor:pointer; }
-.nav .topo-btn:hover, .nav .item.aberto .topo-btn { background:#182024; color:#8FCB9B; }
-.nav .painel { display:none; position:absolute; top:100%; left:0; z-index:40; min-width:230px;
-  background:#182024; border:1px solid #314045; border-radius:12px; padding:10px;
-  box-shadow:0 14px 40px rgba(0,0,0,.5); }
-.nav .item.aberto .painel { display:block; }
-.nav .painel a { display:block; color:#F4F5F6; text-decoration:none; font-size:13.5px;
-  padding:8px 10px; border-radius:8px; }
-.nav .painel a:hover { background:#232D31; color:#8FCB9B; }
-.nav .painel .grupo { color:#66707d; font-size:11px; text-transform:uppercase;
-  letter-spacing:.06em; padding:6px 10px 2px; }
-.nav > a { color:#aeb9c7; font-size:14.5px; font-weight:600; text-decoration:none;
-  padding:8px 14px; border-radius:8px; }
-.nav > a:hover { background:#182024; color:#8FCB9B; }
-"""
-
-JS_MENU = """
-document.querySelectorAll('.nav .topo-btn').forEach(botao => {
-  botao.addEventListener('click', evento => {
-    evento.stopPropagation();
-    const item = botao.parentElement;
-    const estava = item.classList.contains('aberto');
-    document.querySelectorAll('.nav .item').forEach(i => i.classList.remove('aberto'));
-    if (!estava) item.classList.add('aberto');
-  });
-});
-document.addEventListener('click', () => {
-  document.querySelectorAll('.nav .item').forEach(i => i.classList.remove('aberto'));
-});
-"""
-
-
-def menu_html() -> str:
-    return """
-  <nav class="nav">
-    <div class="item">
-      <button class="topo-btn" type="button">FIIs ▾</button>
-      <div class="painel">
-        <a href="fiis.html">Todos os FIIs</a>
-        <a href="fiis.html#rankings">Rankings do dia</a>
-        <a href="comparar.html">⚖ Comparar FIIs</a>
-      </div>
-    </div>
-    <div class="item">
-      <button class="topo-btn" type="button">ETFs ▾</button>
-      <div class="painel">
-        <a href="etfs.html">Todos os ETFs</a>
-        <div class="grupo">por classe</div>
-        <a href="etfs.html?classe=Ações Brasil">Ações Brasil</a>
-        <a href="etfs.html?classe=Ações Internacionais">Ações Internacionais</a>
-        <a href="etfs.html?classe=Renda Fixa">Renda Fixa</a>
-        <a href="etfs.html?classe=Cripto">Cripto</a>
-      </div>
-    </div>
-    <a href="apoie.html">☕ Apoie</a>
-  </nav>
-"""
 
 
 def _home(fundos: list, etfs: list[dict], agora: datetime) -> str:

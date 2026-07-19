@@ -171,6 +171,23 @@ def test_flags_de_etf_pl_liquidez_e_selo():
     assert [flag.codigo for flag in resultado.flags] == ["etf_classe_divergente"]
 
 
+def test_verificador_pega_classe_contra_segmento_b3():
+    from scout.coleta import cda
+
+    # caso AUPO11 real: segmento oficial ETF-RF com classe Scout de ações
+    apontamentos = cda.verificar(
+        {},
+        {
+            "1": {"ticker": "AUPO11", "classificacao_scout": "Ações Brasil", "segmento_b3": "ETF-RF"},
+            "2": {"ticker": "IMAB11", "classificacao_scout": "Renda Fixa", "segmento_b3": "ETF-RF"},
+            "3": {"ticker": "HASH11", "classificacao_scout": "Cripto", "segmento_b3": "ETF-Cripto"},
+        },
+    )
+    assert [a["ticker"] for a in apontamentos] == ["AUPO11"]
+    assert apontamentos[0]["tipo"] == "divergência"
+    assert "incompatível" in apontamentos[0]["motivo"]
+
+
 def test_pagina_etf_com_carteirinha_de_regras(con):
     from datetime import datetime
 
