@@ -104,6 +104,31 @@ def test_pagina_comparar_fundos(con, tmp_path):
     assert 'sem "vencedor"' in comparar
 
 
+def test_paginas_sem_artefatos_de_template(con, tmp_path):
+    """O bug real do menu (19/07): CSS com chaves duplas de f-string chegou
+    inválido ao navegador e 168 testes não viram. Este varre TODAS as páginas
+    geradas atrás de artefatos de template quebrado."""
+    import re
+
+    from tests.test_etfs import _semear_etf
+
+    _base(con)
+    _semear_etf(con)
+    site.gerar(con, tmp_path / "site", com_cotacoes=False)
+    paginas = list((tmp_path / "site").glob("*.html"))
+    assert len(paginas) >= 7  # home, fiis, etfs, comparar, apoie + fundos
+    for arquivo in paginas:
+        conteudo = arquivo.read_text(encoding="utf-8")
+        # escape de f-string vazando para o navegador
+        assert "{{" not in conteudo, f"chaves duplas em {arquivo.name}"
+        # placeholder não expandido
+        for placeholder in ("{CSS_", "{JS_", "{relatorio_html.", "{menu_html"):
+            assert placeholder not in conteudo, f"{placeholder} cru em {arquivo.name}"
+        # todo bloco <style> precisa ter chaves balanceadas (CSS válido de forma)
+        for bloco in re.findall(r"<style>(.*?)</style>", conteudo, re.S):
+            assert bloco.count("{") == bloco.count("}"), f"CSS desbalanceado em {arquivo.name}"
+
+
 def test_home_multiclasse_com_busca_ao_vivo_e_menu(con, tmp_path):
     _base(con)
     site.gerar(con, tmp_path / "site", com_cotacoes=False, agora=datetime(2026, 7, 19, 9, 0))

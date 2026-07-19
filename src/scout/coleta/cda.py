@@ -241,7 +241,20 @@ def atualizar_composicao(
     )
     con.commit()
 
-    divergencias = verificar(composicao, carregar_classificacoes(raiz))
+    classificacoes = carregar_classificacoes(raiz)
+    divergencias = verificar(composicao, classificacoes)
+    # ETF listado na B3 sem linha na curadoria: aparece como "?" no site — apontar
+    for linha in con.execute("SELECT cnpj, ticker FROM etfs"):
+        if linha["cnpj"] not in classificacoes:
+            divergencias.append(
+                {
+                    "ticker": linha["ticker"] or linha["cnpj"],
+                    "tipo": "divergência",
+                    "classificacao_scout": "",
+                    "carteira": "—",
+                    "motivo": "ETF listado na B3 sem linha na curadoria (dados/classificacao_etfs.csv)",
+                }
+            )
     destino = armazenamento.diretorio_dados() / "etf_divergencias.csv"
     if divergencias:
         with destino.open("w", encoding="utf-8-sig", newline="") as fh:
