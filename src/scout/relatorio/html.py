@@ -324,6 +324,8 @@ table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-a
 
   {_secao_administrador(raiox, publicados=publicados)}
 
+  {_secao_gestora(raiox, publicados=publicados)}
+
   {_secao_pares(raiox, publicados=publicados)}
 
   {_secao_oscilacoes(completo, leitura)}
@@ -561,13 +563,17 @@ def _secao_imoveis(raiox: RaioX, limite: int = 10) -> str:
 """
 
 
-def _secao_administrador(
-    raiox: RaioX, limite: int = 12, publicados: set[str] | None = None
+def _tabela_relacionados(
+    titulo_html: str,
+    descricao_html: str,
+    relacionados: list,
+    classe_extra: str,
+    limite: int,
+    publicados: set[str] | None,
 ) -> str:
-    if not raiox.fundos_irmaos:
-        return ""
+    """Tabela de fundos ligados à mesma instituição (administrador ou gestora)."""
     linhas = []
-    for indice, irmao in enumerate(raiox.fundos_irmaos):
+    for indice, irmao in enumerate(relacionados):
         selo = _selo_tabela(irmao.selo, irmao.motivos)
         rotulo = (
             _link_se_publicado(irmao.ticker, publicados)
@@ -575,24 +581,23 @@ def _secao_administrador(
             else _e(irmao.nome[:40])
         )
         idade = f"{irmao.anos:.0f} anos" if irmao.anos >= 1 else "&lt;1 ano"
-        oculta = ' class="admin-extra" hidden' if indice >= limite else ""
+        oculta = f' class="{classe_extra}" hidden' if indice >= limite else ""
         linhas.append(
             f"<tr{oculta}><td>{rotulo}</td><td>{_e(irmao.nome[:44])}</td>"
             f'<td style="white-space:nowrap">{idade}</td>'
             f"<td>{_e(irmao.segmento)}</td><td>{selo}</td></tr>"
         )
     botao = ""
-    if len(raiox.fundos_irmaos) > limite:
+    if len(relacionados) > limite:
         botao = (
-            f'<button class="ver-mais" onclick="verMais(this, \'admin-extra\')" '
-            f'data-mais="ver todos os {len(raiox.fundos_irmaos)} fundos" data-menos="mostrar menos">'
-            f"ver todos os {len(raiox.fundos_irmaos)} fundos</button>"
+            f'<button class="ver-mais" onclick="verMais(this, \'{classe_extra}\')" '
+            f'data-mais="ver todos os {len(relacionados)} fundos" data-menos="mostrar menos">'
+            f"ver todos os {len(relacionados)} fundos</button>"
         )
     return f"""
-  <h2>Administrador{_ajuda("Administrador")}</h2>
+  <h2>{titulo_html}</h2>
   <div class="grafico" style="overflow-x:auto">
-  <p class="desc" style="color:#aeb9c7;font-size:13.5px;margin-bottom:10px">
-  <b>{_e(raiox.administrador)}</b> administra outros {len(raiox.fundos_irmaos)} FIIs na base da CVM:</p>
+  <p class="desc" style="color:#aeb9c7;font-size:13.5px;margin-bottom:10px">{descricao_html}</p>
   <table class="imoveis">
     <thead><tr><th>ticker</th><th>fundo</th><th>idade</th><th>segmento</th><th>selo</th></tr></thead>
     <tbody>{"".join(linhas)}</tbody>
@@ -602,6 +607,48 @@ def _secao_administrador(
   ver o motivo · o link abre o relatório do fundo se ele já tiver sido gerado · ticker derivado do ISIN</div>
   </div>
 """
+
+
+def _secao_administrador(
+    raiox: RaioX, limite: int = 12, publicados: set[str] | None = None
+) -> str:
+    if not raiox.fundos_irmaos:
+        return ""
+    complemento = " — que também é a gestora do fundo" if raiox.gestora_e_admin else ""
+    return _tabela_relacionados(
+        f'Administrador{_ajuda("Administrador")}',
+        f"<b>{_e(raiox.administrador)}</b>{complemento} administra outros "
+        f"{len(raiox.fundos_irmaos)} FIIs na base da CVM:",
+        raiox.fundos_irmaos,
+        "admin-extra",
+        limite,
+        publicados,
+    )
+
+
+def _secao_gestora(
+    raiox: RaioX, limite: int = 12, publicados: set[str] | None = None
+) -> str:
+    """Fundos da mesma gestora — quem decide a estratégia. Quando gestora e
+    administrador são a mesma instituição, a seção do administrador já conta
+    a história e esta é omitida."""
+    if not raiox.gestora or raiox.gestora_e_admin:
+        return ""
+    if not raiox.fundos_gestora:
+        return f"""
+  <h2>Gestora{_ajuda("Gestora")}</h2>
+  <div class="grafico"><div class="nota" style="font-size:13px"><b>{_e(raiox.gestora)}</b>
+  é a gestora deste fundo (cadastro CVM) e não gere nenhum outro FII na base — fundo único da casa.</div></div>
+"""
+    return _tabela_relacionados(
+        f'Gestora{_ajuda("Gestora")}',
+        f"<b>{_e(raiox.gestora)}</b> é a gestora deste fundo (cadastro CVM) e gere outros "
+        f"{len(raiox.fundos_gestora)} FIIs:",
+        raiox.fundos_gestora,
+        "gestora-extra",
+        limite,
+        publicados,
+    )
 
 
 def _selo_tabela(selo, motivos: tuple[str, ...]) -> str:

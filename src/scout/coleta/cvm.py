@@ -19,7 +19,10 @@ from datetime import date
 
 URL_BASE = "https://dados.cvm.gov.br/dados/FII/DOC/INF_MENSAL/DADOS/"
 URL_BASE_TRIMESTRAL = "https://dados.cvm.gov.br/dados/FII/DOC/INF_TRIMESTRAL/DADOS/"
+# cadastro vivo de todos os fundos: gestora e administrador por CNPJ
+URL_REGISTRO = "https://dados.cvm.gov.br/dados/FI/CAD/DADOS/registro_fundo_classe.zip"
 ANO_INICIAL = 2016
+DIAS_FRESCOR_REGISTRO = 7  # cadastro muda devagar; 1 download por semana basta
 
 # A Resolução CVM 175 renomeou colunas a partir de 2024; este mapa
 # normaliza os dois vocabulários para o antigo.
@@ -93,7 +96,53 @@ def atualizar(
         resumo.append(mensagem)
         if ao_progredir:
             ao_progredir(mensagem)
+    mensagem_registro = atualizar_registro(con, hoje)
+    if mensagem_registro:
+        resumo.append(mensagem_registro)
+        if ao_progredir:
+            ao_progredir(mensagem_registro)
     return resumo
+
+
+def atualizar_registro(con: sqlite3.Connection, hoje: date | None = None) -> str | None:
+    """Baixa o cadastro de fundos da CVM (gestora/administrador) se o local
+    tiver mais de DIAS_FRESCOR_REGISTRO dias. Retorna a mensagem de progresso,
+    ou None quando não havia nada a fazer."""
+    from .. import armazenamento
+
+    hoje = hoje or date.today()
+    meta = armazenamento.cadastro_meta(con)
+    if meta and meta["atualizado_em"]:
+        idade = (hoje - date.fromisoformat(meta["atualizado_em"][:10])).days
+        if idade < DIAS_FRESCOR_REGISTRO:
+            return None
+    total = carregar_registro(con, _baixar_url(URL_REGISTRO), hoje)
+    return f"registro de fundos (cadastro CVM): {total} FIIs com gestora/administrador"
+
+
+def carregar_registro(con: sqlite3.Connection, conteudo: bytes, hoje: date | None = None) -> int:
+    """Grava do registro CVM apenas os fundos Tipo_Fundo = FII."""
+    from .. import armazenamento
+
+    hoje = hoje or date.today()
+    with zipfile.ZipFile(io.BytesIO(conteudo)) as zf:
+        linhas = _ler_csv(zf, "registro_fundo")
+    registros = [
+        (
+            armazenamento.so_digitos(linha.get("CNPJ_Fundo")),
+            (linha.get("Denominacao_Social") or "").strip() or None,
+            (linha.get("Situacao") or "").strip() or None,
+            (linha.get("Administrador") or "").strip() or None,
+            (linha.get("CNPJ_Administrador") or "").strip() or None,
+            (linha.get("Gestor") or "").strip() or None,
+            armazenamento.so_digitos(linha.get("CPF_CNPJ_Gestor")) or None,
+            (linha.get("Tipo_Pessoa_Gestor") or "").strip() or None,
+        )
+        for linha in linhas
+        if (linha.get("Tipo_Fundo") or "").strip().upper() == "FII"
+        and armazenamento.so_digitos(linha.get("CNPJ_Fundo"))
+    ]
+    return armazenamento.gravar_cadastro(con, registros, hoje.isoformat())
 
 
 def carregar_zip(con: sqlite3.Connection, conteudo: bytes, arquivo: str) -> tuple[int, int]:

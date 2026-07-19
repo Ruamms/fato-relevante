@@ -327,6 +327,7 @@ def montar_raio_x(
     )
     resultado = redflags.avaliar(contexto)
     admin = armazenamento.administrador_do_fundo(con, fundo.cnpj)
+    cadastro = armazenamento.cadastro_do_fundo(con, fundo.cnpj)
     pares, pares_media = _pares_do_segmento(con, fundo.cnpj, fundo.segmento, varredura)
 
     notas = []
@@ -371,6 +372,13 @@ def montar_raio_x(
         else "",
         administrador=admin["administrador"] if admin else "",
         fundos_irmaos=_fundos_irmaos(con, admin, fundo.cnpj) if admin else [],
+        gestora=(cadastro["gestor"] or "") if cadastro else "",
+        gestora_e_admin=bool(
+            cadastro
+            and cadastro["cnpj_gestor"]
+            and cadastro["cnpj_gestor"] == armazenamento.so_digitos(cadastro["cnpj_administrador"])
+        ),
+        fundos_gestora=_fundos_da_gestora(con, cadastro, fundo.cnpj),
         pares=pares,
         pares_media=pares_media,
         selo=redflags.selo(resultado),
@@ -408,10 +416,23 @@ def _montar_imoveis(imoveis_atuais: list[sqlite3.Row]) -> list[Imovel]:
 
 def _fundos_irmaos(con: sqlite3.Connection, admin, cnpj_fundo: str) -> list[FundoIrmao]:
     """Outros fundos do mesmo administrador, cada um com seu selo (sem cotação)."""
+    return _montar_relacionados(
+        con, armazenamento.fundos_do_administrador(con, admin["cnpj_administrador"], cnpj_fundo)
+    )
+
+
+def _fundos_da_gestora(con: sqlite3.Connection, cadastro, cnpj_fundo: str) -> list[FundoIrmao]:
+    """Outros fundos da mesma gestora (cadastro CVM), cada um com seu selo."""
+    if not cadastro or not cadastro["cnpj_gestor"]:
+        return []
+    return _montar_relacionados(
+        con, armazenamento.fundos_do_gestor(con, cadastro["cnpj_gestor"], cnpj_fundo)
+    )
+
+
+def _montar_relacionados(con: sqlite3.Connection, linhas) -> list[FundoIrmao]:
     irmaos = []
-    for linha in armazenamento.fundos_do_administrador(
-        con, admin["cnpj_administrador"], cnpj_fundo
-    ):
+    for linha in linhas:
         serie = armazenamento.serie_complemento(con, linha["cnpj"])
         if not serie:
             continue

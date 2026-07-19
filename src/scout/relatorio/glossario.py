@@ -117,6 +117,12 @@ TERMOS = {
         "Juros compostos na prática: aporte inicial + aportes mensais rendendo à taxa "
         "definida. Reinvestir os rendimentos é o que faz a curva dobrar no longo prazo."
     ),
+    "Gestora": (
+        "Quem decide o que o fundo compra e vende — a estratégia. Não confunda com o "
+        "administrador, que cuida da burocracia e da custódia. Olhar os outros fundos da "
+        "mesma gestora ajuda a conhecer o histórico de quem toma as decisões: problemas "
+        "recorrentes na casa merecem atenção."
+    ),
     "Oscilações com contexto": (
         "Os meses em que a cota subiu ou caiu mais de 10%, lado a lado com o que aconteceu "
         "no mesmo período (emissão de cotas, mudança no rendimento, fato relevante). "

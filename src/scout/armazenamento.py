@@ -96,7 +96,25 @@ CREATE TABLE IF NOT EXISTS informes_complemento (
     cotistas               REAL,
     PRIMARY KEY (cnpj, competencia)
 );
+CREATE TABLE IF NOT EXISTS cadastro (
+    cnpj               TEXT PRIMARY KEY,  -- só dígitos (formato do registro CVM)
+    denominacao        TEXT,
+    situacao           TEXT,
+    administrador      TEXT,
+    cnpj_administrador TEXT,
+    gestor             TEXT,
+    cnpj_gestor        TEXT,              -- CPF ou CNPJ da gestora, só dígitos
+    tipo_pessoa_gestor TEXT
+);
+CREATE TABLE IF NOT EXISTS cadastro_meta (
+    id            INTEGER PRIMARY KEY CHECK (id = 1),
+    atualizado_em TEXT
+);
 """
+
+
+def so_digitos(texto: str | None) -> str:
+    return "".join(c for c in texto or "" if c.isdigit())
 
 
 def diretorio_dados() -> Path:
@@ -238,6 +256,67 @@ def cotacao_meta(con: sqlite3.Connection, ticker: str) -> sqlite3.Row | None:
     return con.execute(
         "SELECT * FROM cotacoes_meta WHERE ticker = ?", (ticker,)
     ).fetchone()
+
+
+def gravar_cadastro(con: sqlite3.Connection, linhas: list[tuple], atualizado_em: str) -> int:
+    """Cadastro CVM (registro de fundos): gestora e administrador por CNPJ.
+    `linhas` = (cnpj_digitos, denominacao, situacao, administrador,
+    cnpj_administrador, gestor, cnpj_gestor_digitos, tipo_pessoa_gestor)."""
+    con.executemany(
+        """
+        INSERT OR REPLACE INTO cadastro
+            (cnpj, denominacao, situacao, administrador, cnpj_administrador,
+             gestor, cnpj_gestor, tipo_pessoa_gestor)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        """,
+        linhas,
+    )
+    con.execute(
+        "INSERT OR REPLACE INTO cadastro_meta (id, atualizado_em) VALUES (1, ?)",
+        (atualizado_em,),
+    )
+    con.commit()
+    return len(linhas)
+
+
+def cadastro_meta(con: sqlite3.Connection) -> sqlite3.Row | None:
+    return con.execute("SELECT * FROM cadastro_meta WHERE id = 1").fetchone()
+
+
+def cadastro_do_fundo(con: sqlite3.Connection, cnpj: str) -> sqlite3.Row | None:
+    return con.execute(
+        "SELECT * FROM cadastro WHERE cnpj = ?", (so_digitos(cnpj),)
+    ).fetchone()
+
+
+def fundos_do_gestor(
+    con: sqlite3.Connection, cnpj_gestor: str, excluir_cnpj: str
+) -> list[sqlite3.Row]:
+    """Outros fundos da mesma gestora (cadastro CVM), com os dados do informe
+    mais recente — mesma forma de fundos_do_administrador."""
+    return con.execute(
+        """
+        WITH ultimo AS (
+            SELECT cnpj, MAX(competencia) AS competencia
+              FROM informes_gerais
+             GROUP BY cnpj
+        )
+        SELECT g.cnpj,
+               g.nome,
+               g.segmento,
+               g.isin,
+               (SELECT MIN(competencia) FROM informes_gerais i WHERE i.cnpj = g.cnpj) AS inicio,
+               g.competencia AS fim
+          FROM informes_gerais g
+          JOIN ultimo u ON u.cnpj = g.cnpj AND u.competencia = g.competencia
+          JOIN cadastro c
+            ON c.cnpj = REPLACE(REPLACE(REPLACE(g.cnpj, '.', ''), '/', ''), '-', '')
+         WHERE c.cnpj_gestor = ?
+           AND c.cnpj <> ?
+         ORDER BY inicio
+        """,
+        (so_digitos(cnpj_gestor), so_digitos(excluir_cnpj)),
+    ).fetchall()
 
 
 def administrador_do_fundo(con: sqlite3.Connection, cnpj: str) -> sqlite3.Row | None:

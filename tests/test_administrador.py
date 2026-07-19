@@ -63,6 +63,82 @@ def test_html_com_secao_administrador(con):
     assert 'title="Alertas: ' in pagina
 
 
+def test_carregar_registro_filtra_fii_e_grava_gestora(con):
+    from datetime import date
+
+    from conftest import montar_zip_registro
+
+    total = cvm.carregar_registro(con, montar_zip_registro(), hoje=date(2026, 7, 19))
+    assert total == 3  # o FMIA fica fora
+    cadastro = armazenamento.cadastro_do_fundo(con, "11.111.111/0001-11")
+    assert cadastro["gestor"] == "GESTORA G"
+    assert cadastro["cnpj_gestor"] == "88888888000188"
+    assert cadastro["administrador"] == "ADMIN X"
+    assert armazenamento.cadastro_meta(con)["atualizado_em"] == "2026-07-19"
+
+
+def test_atualizar_registro_respeita_frescor(con, monkeypatch):
+    from datetime import date
+
+    from conftest import montar_zip_registro
+
+    chamadas = []
+    monkeypatch.setattr(
+        cvm, "_baixar_url", lambda url: chamadas.append(url) or montar_zip_registro()
+    )
+    assert cvm.atualizar_registro(con, hoje=date(2026, 7, 19)) is not None
+    assert cvm.atualizar_registro(con, hoje=date(2026, 7, 20)) is None  # fresco: não baixa
+    assert cvm.atualizar_registro(con, hoje=date(2026, 7, 30)) is not None  # 11 dias: baixa
+    assert len(chamadas) == 2
+
+
+def test_raio_x_traz_gestora_e_fundos_da_gestora(con):
+    from conftest import montar_zip_registro
+
+    cvm.carregar_zip(con, _zip_dois_fundos(), "inf_mensal_fii_2026.zip")
+    cvm.carregar_registro(con, montar_zip_registro())
+    raiox = analise.montar_raio_x(con, "tste11")
+    assert raiox.gestora == "GESTORA G"
+    assert raiox.gestora_e_admin is False  # admin 99..., gestora 88...
+    assert [irmao.ticker for irmao in raiox.fundos_gestora] == ["IRMO11"]
+
+
+def test_html_secao_gestora(con):
+    from conftest import montar_zip_registro
+    from scout.relatorio import html as relatorio_html
+
+    cvm.carregar_zip(con, _zip_dois_fundos(), "inf_mensal_fii_2026.zip")
+    cvm.carregar_registro(con, montar_zip_registro())
+    completo = analise.montar_completo(con, "tste11")
+    pagina = relatorio_html.gerar(completo)
+    assert "Gestora" in pagina
+    assert "GESTORA G" in pagina
+    assert "gere outros 1 FIIs" in pagina
+
+
+def test_gestora_igual_admin_nao_duplica_secao(con):
+    from scout.relatorio import html as relatorio_html
+
+    cvm.carregar_zip(con, _zip_dois_fundos(), "inf_mensal_fii_2026.zip")
+    # registro em que a gestora É o próprio administrador
+    linhas = (
+        "ID_Registro_Fundo;CNPJ_Fundo;Tipo_Fundo;Denominacao_Social;Situacao;"
+        "CNPJ_Administrador;Administrador;Tipo_Pessoa_Gestor;CPF_CNPJ_Gestor;Gestor\n"
+        "1;11111111000111;FII;FUNDO TESTE FII;Em Funcionamento Normal;"
+        "99999999000199;ADMIN EXEMPLO;PJ;99999999000199;ADMIN EXEMPLO\n"
+    )
+    buffer = io.BytesIO()
+    with zipfile.ZipFile(buffer, "w") as zf:
+        zf.writestr("registro_fundo.csv", linhas.encode("latin-1"))
+    cvm.carregar_registro(con, buffer.getvalue())
+
+    completo = analise.montar_completo(con, "tste11")
+    assert completo.raiox.gestora_e_admin is True
+    pagina = relatorio_html.gerar(completo)
+    assert "que também é a gestora do fundo" in pagina
+    assert "<h2>Gestora" not in pagina  # sem seção duplicada
+
+
 def test_ticker_do_isin():
     assert analise._ticker_do_isin("BRHGLGCTF004") == "HGLG11"
     assert analise._ticker_do_isin(None) == ""

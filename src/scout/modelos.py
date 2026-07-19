@@ -98,6 +98,9 @@ class RaioX:
     imoveis_em: str = ""  # competência do informe trimestral dos imóveis
     administrador: str = ""
     fundos_irmaos: list[FundoIrmao] = field(default_factory=list)
+    gestora: str = ""  # do cadastro CVM (registro de fundos)
+    gestora_e_admin: bool = False  # gestora e administrador são a mesma instituição
+    fundos_gestora: list[FundoIrmao] = field(default_factory=list)
     pares: list = field(default_factory=list)          # FundoResumo dos maiores pares do segmento
     pares_media: dict = field(default_factory=dict)    # médias do segmento: dy, pvp, pl, n
     selo: Selo | None = None

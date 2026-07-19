@@ -91,6 +91,25 @@ def montar_zip_universo(ano: int = 2026) -> bytes:
     return buffer.getvalue()
 
 
+def montar_zip_registro() -> bytes:
+    """ZIP mínimo do registro de fundos da CVM (cadastro: gestora/administrador)."""
+    linhas = (
+        "ID_Registro_Fundo;CNPJ_Fundo;Tipo_Fundo;Denominacao_Social;Situacao;"
+        "CNPJ_Administrador;Administrador;Tipo_Pessoa_Gestor;CPF_CNPJ_Gestor;Gestor\n"
+        "1;11111111000111;FII;FUNDO TESTE FII;Em Funcionamento Normal;"
+        "99999999000199;ADMIN X;PJ;88888888000188;GESTORA G\n"
+        "2;22222222000122;FII;BETA FII;Em Funcionamento Normal;"
+        "99999999000199;ADMIN X;PJ;88888888000188;GESTORA G\n"
+        "3;33333333000133;FII;GAMA FII;Em Funcionamento Normal;"
+        "77777777000177;ADMIN Y;PJ;66666666000166;GESTORA H\n"
+        "4;55555555000155;FMIA;NAO E FII;Cancelado;;;PJ;88888888000188;GESTORA G\n"
+    )
+    buffer = io.BytesIO()
+    with zipfile.ZipFile(buffer, "w") as zf:
+        zf.writestr("registro_fundo.csv", linhas.encode("latin-1"))
+    return buffer.getvalue()
+
+
 @pytest.fixture()
 def zip_cvm():
     return montar_zip_cvm
