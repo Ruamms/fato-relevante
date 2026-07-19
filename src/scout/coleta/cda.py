@@ -156,10 +156,19 @@ def carregar_classificacoes(raiz: Path | None = None) -> dict[str, dict]:
     if caminho is None:
         return {}
     with caminho.open(encoding="utf-8-sig", newline="") as fh:
-        return {
+        classificacoes = {
             armazenamento.so_digitos(linha["cnpj"]): linha
             for linha in csv.DictReader(fh, delimiter=";")
         }
+    # overlay das reclassificações automáticas: a classe efetiva já reflete a
+    # correção, e a metadata `reclassificado` alimenta o selo na página do ETF
+    for cnpj, entrada in carregar_reclassificacoes(raiz).items():
+        base = classificacoes.get(cnpj)
+        nova = (entrada.get("classe_nova") or "").strip()
+        if base is not None and nova:
+            base["classificacao_scout"] = nova
+            base["reclassificado"] = entrada
+    return classificacoes
 
 
 # segmento oficial da B3 -> classes Scout compatíveis (contradição = erro na certa)
@@ -218,6 +227,203 @@ def verificar(composicao: dict[str, dict[str, float]], classificacoes: dict[str,
             }
         )
     return divergencias
+
+
+# --- reclassificação automática (aprovada pelo dono em 20/07/2026) ----------
+# Quando a carteira real diverge DURAMENTE da classe declarada, o Scout corrige
+# a classe sozinho — mas só quando o alvo é determinável, UMA vez por ETF (nunca
+# re-rola) e sempre com rastro auditável. O grupo "Exterior" é ambíguo (ações
+# intl/cripto/commodities/RF intl caem todos nele): resolve-se pelos NOMES das
+# posições, primeiro por palavra-chave e, no que sobrar, pela IA local (que só
+# LÊ os nomes — nunca inventa classe nem número).
+
+_CANDIDATAS_EXTERIOR = [
+    "Ações Internacionais",
+    "Renda Fixa Internacional",
+    "Cripto",
+    "Commodities",
+]
+
+# nome/código da posição -> classe. A primeira lista que casar vence; "Ações
+# Internacionais" fica por último por ser a mais genérica.
+_PALAVRAS_POSICAO = [
+    ("Cripto", ("BITCOIN", "ETHEREUM", "ETHER", "CRIPTO", "CRYPTO", "SOLANA",
+                "HASHDEX", "BLOCKCHAIN", "WEB3", " BTC", " ETH ")),
+    ("Commodities", ("GOLD", "OURO", "SILVER", "PRATA", "COMMODIT", "PETROLE",
+                     "CRUDE", "BRENT", "URANI")),
+    ("Renda Fixa Internacional", ("TREASURY", "T-BOND", "T BOND", "GOV BOND",
+                                  " BOND", "TIPS", "FIXED INCOME", "AGG ")),
+    ("Ações Internacionais", ("S&P", "SP 500", "SP500", "NASDAQ", "MSCI",
+                              "DOW JONES", "RUSSELL", "EQUITY", "STOCK",
+                              "ISHARES CORE", "STOXX", "FTSE")),
+]
+
+_CAMPOS_RECLASSIFICACAO = [
+    "data", "cnpj", "ticker", "classe_anterior", "classe_nova", "origem", "motivo",
+]
+
+
+def _grupo_dominante(grupos: dict[str, float]) -> tuple[str, float]:
+    if not grupos:
+        return "", 0.0
+    grupo = max(grupos, key=grupos.get)
+    return grupo, grupos[grupo]
+
+
+def _alvo_por_segmento(grupos: dict[str, float], segmento: str) -> str | None:
+    if segmento == "ETF-RF":
+        return "Renda Fixa Internacional" if grupos.get("Exterior", 0) >= 60 else "Renda Fixa"
+    if segmento == "ETF-Cripto":
+        return "Cripto"
+    return None
+
+
+def _alvo_por_grupo(grupos: dict[str, float]) -> tuple[str, str] | None:
+    grupo, pct = _grupo_dominante(grupos)
+    if grupo == "Renda Fixa" and pct >= 80:
+        return "Renda Fixa", f"carteira {pct:.0f}% em renda fixa"
+    if grupo == "Cotas de Fundos" and pct >= 70:
+        return "FIIs (índice)", f"carteira {pct:.0f}% em cotas de fundos"
+    if grupo == "Ações" and pct >= 70:
+        return "Ações Brasil", f"carteira {pct:.0f}% em ações"
+    return None
+
+
+def _alvo_por_posicoes(posicoes: list[dict]) -> tuple[str, str] | None:
+    for classe, palavras in _PALAVRAS_POSICAO:
+        for pos in posicoes:
+            texto = f" {(pos.get('nome') or '')} {(pos.get('codigo') or '')} ".upper()
+            if any(palavra in texto for palavra in palavras):
+                nome = (pos.get("nome") or pos.get("codigo") or "").strip()
+                return classe, f"posição “{nome}” indica {classe.lower()}"
+    return None
+
+
+def _alvo_deterministico(
+    classe_atual: str, grupos: dict[str, float], segmento: str, posicoes: list[dict]
+) -> tuple[str, str] | None:
+    """(classe_nova, motivo) por regra fixa/palavra-chave; None se for ambíguo
+    (aí quem decide é a IA, ou fica para revisão manual)."""
+    por_seg = _alvo_por_segmento(grupos, segmento)
+    if por_seg and por_seg != classe_atual:
+        return por_seg, f"segmento oficial da B3 é {segmento}"
+    por_grupo = _alvo_por_grupo(grupos)
+    if por_grupo and por_grupo[0] != classe_atual:
+        return por_grupo
+    if grupos.get("Exterior", 0) >= 60:  # ambíguo por natureza: tenta pelas posições
+        por_pos = _alvo_por_posicoes(posicoes)
+        if por_pos and por_pos[0] != classe_atual:
+            return por_pos
+    return None
+
+
+def carregar_reclassificacoes(raiz: Path | None = None) -> dict[str, dict]:
+    """{cnpj: última reclassificação} — junta o registro local (~/.scout) e o
+    versionado (dados/reclassificacoes.csv); a entrada mais recente vence."""
+    import sys
+
+    entradas: dict[str, dict] = {}
+    caminhos = [
+        armazenamento.diretorio_dados() / "reclassificacoes.csv",
+        (raiz or Path(".")) / "dados" / "reclassificacoes.csv",
+        Path(__file__).resolve().parents[3] / "dados" / "reclassificacoes.csv",
+    ]
+    meipass = getattr(sys, "_MEIPASS", None)
+    if meipass:
+        caminhos.append(Path(meipass) / "dados" / "reclassificacoes.csv")
+    vistos: set[str] = set()
+    for caminho in caminhos:
+        try:
+            chave = str(caminho.resolve())
+        except OSError:
+            continue
+        if chave in vistos or not caminho.exists():
+            continue
+        vistos.add(chave)
+        with caminho.open(encoding="utf-8-sig", newline="") as fh:
+            for linha in csv.DictReader(fh, delimiter=";"):
+                cnpj = armazenamento.so_digitos(linha.get("cnpj"))
+                if not cnpj:
+                    continue
+                atual = entradas.get(cnpj)
+                if atual is None or (linha.get("data") or "") >= (atual.get("data") or ""):
+                    entradas[cnpj] = linha
+    return entradas
+
+
+def registrar_reclassificacao(
+    cnpj: str, ticker: str, classe_anterior: str, classe_nova: str,
+    origem: str, motivo: str, data: str,
+) -> None:
+    """Anexa a mudança ao rastro em ~/.scout/reclassificacoes.csv (append-only)."""
+    caminho = armazenamento.diretorio_dados() / "reclassificacoes.csv"
+    caminho.parent.mkdir(parents=True, exist_ok=True)
+    novo = not caminho.exists()
+    with caminho.open("a", encoding="utf-8-sig", newline="") as fh:
+        escritor = csv.DictWriter(fh, fieldnames=_CAMPOS_RECLASSIFICACAO, delimiter=";")
+        if novo:
+            escritor.writeheader()
+        escritor.writerow(
+            {
+                "data": data, "cnpj": cnpj, "ticker": ticker,
+                "classe_anterior": classe_anterior, "classe_nova": classe_nova,
+                "origem": origem, "motivo": motivo,
+            }
+        )
+
+
+def reclassificar(
+    composicao: dict[str, dict[str, float]],
+    top_posicoes: dict[str, list[dict]],
+    classificacoes: dict[str, dict],
+    hoje: date | None = None,
+    usar_ia: bool | None = None,
+    ao_progredir=None,
+) -> list[dict]:
+    """Corrige a classe dos ETFs cuja carteira diverge DURAMENTE da declarada.
+    Decide UMA vez por ETF (quem já tem rastro é pulado), grava a mudança e
+    devolve a lista do que mudou. A IA local só entra no ambíguo que sobra."""
+    hoje = hoje or date.today()
+    if usar_ia is None:
+        from .. import ia
+        usar_ia = ia.disponivel()
+    ja = carregar_reclassificacoes()
+    mudancas = []
+    for cnpj, grupos in composicao.items():
+        classificado = classificacoes.get(cnpj)
+        if not classificado:
+            continue
+        classe_atual = (classificado.get("classificacao_scout") or "").strip()
+        if not classe_atual or cnpj in ja:
+            continue  # sem classe declarada, ou já reclassificado (decide uma vez)
+        # é divergência DURA? reusa EXATAMENTE a lógica do verificador (pontos de
+        # atenção — captação, cotas — não disparam reclassificação)
+        if not any(
+            d["tipo"] == "divergência"
+            for d in verificar({cnpj: grupos}, {cnpj: classificado})
+        ):
+            continue
+        posicoes = top_posicoes.get(cnpj, [])
+        segmento = (classificado.get("segmento_b3") or "").strip()
+        origem, resultado = "auto", _alvo_deterministico(classe_atual, grupos, segmento, posicoes)
+        if resultado is None and usar_ia and grupos.get("Exterior", 0) >= 60:
+            from .. import ia
+            escolha = ia.classificar_etf(
+                (classificado.get("ticker") or cnpj), posicoes, _CANDIDATAS_EXTERIOR
+            )
+            if escolha and escolha[0] != classe_atual:
+                origem, resultado = "ia", escolha
+        if resultado is None:
+            continue  # não deu para determinar com segurança: fica para revisão manual
+        classe_nova, motivo = resultado
+        ticker = (classificado.get("ticker") or "").strip()
+        registrar_reclassificacao(cnpj, ticker, classe_atual, classe_nova, origem, motivo, hoje.isoformat())
+        mudancas.append(
+            {"ticker": ticker or cnpj, "de": classe_atual, "para": classe_nova, "origem": origem, "motivo": motivo}
+        )
+        if ao_progredir:
+            ao_progredir(f"reclassificado {ticker or cnpj}: {classe_atual} → {classe_nova} ({origem})")
+    return mudancas
 
 
 def atualizar_composicao(
@@ -283,6 +489,13 @@ def atualizar_composicao(
     con.commit()
 
     classificacoes = carregar_classificacoes(raiz)
+    # reclassificação autônoma ANTES do relatório: quem for corrigido some da
+    # lista de divergências (agora está certo) e ganha rastro auditável
+    mudancas = reclassificar(
+        composicao, top_posicoes, classificacoes, hoje=hoje, ao_progredir=ao_progredir
+    )
+    if mudancas:
+        classificacoes = carregar_classificacoes(raiz)  # recarrega com o overlay novo
     divergencias = verificar(composicao, classificacoes)
     # ETF listado na B3 sem linha na curadoria: aparece como "?" no site — apontar
     for linha in con.execute("SELECT cnpj, ticker FROM etfs"):
@@ -310,8 +523,10 @@ def atualizar_composicao(
         destino.unlink(missing_ok=True)
     duras = sum(1 for d in divergencias if d["tipo"] == "divergência")
     brandas = len(divergencias) - duras
+    prefixo = f"{len(mudancas)} reclassificados · " if mudancas else ""
     mensagem = (
         f"carteiras de ETF ({competencia}): {len(composicao)} fundos · "
+        + prefixo
         + (
             f"⚠ {duras} divergências e {brandas} pontos de atenção — revisar {destino}"
             if divergencias

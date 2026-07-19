@@ -141,31 +141,49 @@ Estas transformam a fonte bruta em informação — tudo em código testável:
 - **Parecer do auditor.** Classificação determinística (regex sobre as fórmulas
   normatizadas NBC TA) do parecer na DF — **sem IA**: sem ressalva / com
   ressalva / adversa / abstenção + alerta de continuidade operacional.
-- **Verificador de classificação de ETF.** Compara a carteira real (CDA) com a
-  **sua** curadoria (`classificacao_etfs.csv`) e **escreve um relatório**
-  (`etf_divergencias.csv`) para você revisar. **Nunca sobrescreve a curadoria** —
-  a classificação é decisão humana (ver seção abaixo).
+- **Verificador + reclassificação automática de ETF.** Compara a carteira real
+  (CDA) com a curadoria (`classificacao_etfs.csv`) e, nas **divergências duras**,
+  corrige a classe sozinho — com salvaguardas (ver seção abaixo). O que sobra
+  vira relatório (`etf_divergencias.csv`) para revisão manual.
 - **Selo-síntese.** Resumo mecânico de 5 níveis (grave / atenção / histórico
   insuficiente / leves / sem alertas), com critério público — nunca veredito.
 
 ---
 
-## O verificador NÃO altera a sua classificação
+## Reclassificação automática de ETF (com salvaguardas)
 
-Ponto importante, porque é fácil confundir: quando o `atualizar` mostra algo
-como *"1 divergência e 24 pontos de atenção — revisar"*, **isso não é erro** —
-é o verificador fazendo o trabalho dele.
+Quando o `atualizar` mostra *"N reclassificados · X divergências e Y pontos de
+atenção"*, isso **não é erro** — é o verificador corrigindo classe onde tem
+certeza e apontando o resto.
 
-O que ele faz, exatamente:
+Como funciona, em camadas (só as **divergências duras** disparam — "pontos de
+atenção" como captação e exposição via cotas nunca):
 
-1. **Lê** a sua curadoria em `dados/classificacao_etfs.csv` (só leitura).
-2. **Compara** com a carteira real do mês (CDA da CVM) e com o segmento da B3.
-3. **Escreve um relatório** em `~/.scout/etf_divergencias.csv` listando o que
-   destoa — para **você** decidir.
+1. **Determinístico inequívoco** — o grupo dominante mapeia numa classe única
+   (Renda Fixa, FIIs índice) ou o segmento oficial da B3 manda.
+2. **Palavra-chave nas posições** — o grupo "Exterior" é ambíguo (ações intl /
+   cripto / commodities / RF intl caem todos nele); o NOME das 10 maiores
+   posições desempata ("BITCOIN" → Cripto, "S&P 500" → Ações Internacionais,
+   "GOLD" → Commodities, "TREASURY" → RF Internacional).
+3. **IA local (Ollama)** — só no ambíguo que sobra, lendo os nomes das posições
+   e citando a que decidiu. Roda **apenas quando o Ollama está disponível** (sua
+   máquina); no GitHub Actions, sem GPU, o caso fica pendente até o próximo
+   `atualizar` local.
 
-Ele **nunca** reescreve `classificacao_etfs.csv`. A classificação Scout é sua
-curadoria; o sistema aponta, você decide. "Divergência" = a carteira não bate
-com a classe declarada (rever a classe ou é realocação em curso); "ponto de
-atenção" = caso conhecido e explicável (fundo novo ~100% em renda fixa durante
-a captação, exposição via cotas de outro fundo). Revisar o CSV é opcional e
-manual.
+As salvaguardas (a "ressalva"):
+
+- **Decide uma vez, nunca re-rola.** Uma vez classificado, a decisão é gravada e
+  os `atualizar` seguintes leem o registro — a classe não oscila mês a mês.
+- **Rastro auditável** em `~/.scout/reclassificacoes.csv`: `data · ticker ·
+  classe_anterior · classe_nova · origem (auto/ia) · motivo`. A página do ETF
+  mostra o selo *"reclassificado em DD/MM por leitura das posições — antes: X"*.
+- **Humano sempre vence.** Como decide uma vez, qualquer ajuste manual seu
+  depois disso fica — o robô não briga. Para vetar/ajustar, edite a linha do
+  ticker em `reclassificacoes.csv` com `origem=manual`.
+- **Conservador de propósito.** Onde a carteira é genuinamente mista (ex.: o
+  Safra Ibovespa, 59% ações + 41% renda fixa estrutural), o determinístico
+  **não chuta** — fica como divergência para você decidir.
+
+Publicação: as decisões nascem em `~/.scout/reclassificacoes.csv` (sua máquina);
+para o site publicado refleti-las, commite-as em `dados/reclassificacoes.csv`
+(o carregador lê os dois).

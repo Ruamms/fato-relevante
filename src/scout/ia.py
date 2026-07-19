@@ -185,6 +185,53 @@ def _conversar(prompt_sistema: str, conteudo_usuario: str, modelo: str | None, a
     return "".join(pedacos).strip()
 
 
+PROMPT_CLASSIFICAR = (
+    "Você classifica ETFs brasileiros lendo APENAS os nomes das maiores "
+    "posições da carteira. Escolha EXATAMENTE UMA das classes oferecidas — "
+    "não invente classe nova, não calcule nada. Responda em uma única linha no "
+    "formato: CLASSE | trecho citando a posição que decidiu. Se as posições não "
+    "permitirem decidir com segurança, responda apenas: INDEFINIDO."
+)
+
+
+def classificar_etf(
+    ticker: str,
+    posicoes: list[dict],
+    candidatas: list[str],
+    modelo: str | None = None,
+) -> tuple[str, str] | None:
+    """Desempata a classe de um ETF pela LEITURA dos nomes das posições
+    (ex.: 'ISHARES S&P 500' → Ações Internacionais; 'BITCOIN' → Cripto).
+
+    É interpretação de TEXTO — a IA escolhe entre classes que o código já
+    ofereceu, nunca inventa número nem classe. Retorna (classe, justificativa)
+    ou None quando o modelo não decide ou não está disponível."""
+    if not posicoes or not candidatas:
+        return None
+    lista = "\n".join(
+        f"- {(p.get('nome') or '').strip()} ({(p.get('codigo') or '').strip()}) {p.get('pct', 0):.0f}%"
+        for p in posicoes[:10]
+    )
+    conteudo = (
+        f"ETF {ticker}. Classes possíveis: {', '.join(candidatas)}.\n"
+        f"Maiores posições da carteira:\n{lista}"
+    )
+    try:
+        resposta = _conversar(PROMPT_CLASSIFICAR, conteudo, modelo, None)
+    except (urllib.error.URLError, OSError):
+        return None
+    if not resposta or "INDEFINIDO" in resposta.upper():
+        return None
+    # casa a classe pelo nome (mais longa primeiro: "Ações Internacionais"
+    # antes de "Ações Brasil") e usa o texto após '|' como justificativa
+    alvo = resposta.upper()
+    for classe in sorted(candidatas, key=len, reverse=True):
+        if classe.upper() in alvo:
+            justificativa = resposta.split("|", 1)[1].strip() if "|" in resposta else resposta.strip()
+            return classe, justificativa[:200]
+    return None
+
+
 def contexto_do_raiox(raiox) -> str:
     """Resume o RaioX determinístico em texto para o modelo."""
     linhas = [

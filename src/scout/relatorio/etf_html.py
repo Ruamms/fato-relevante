@@ -114,6 +114,7 @@ def montar_dados_etf(con: sqlite3.Connection, ticker: str, classificacoes: dict 
     dados = {
         "etf": etf,
         "classe": classe,
+        "reclassificado": classificacao.get("reclassificado"),
         "observacoes": (classificacao.get("observacoes") or "").strip(),
         "gestor": (cadastro["gestor"] if cadastro else None) or (classificacao.get("gestor") or "").strip(),
         "situacao_cvm": cadastro["situacao"] if cadastro else None,
@@ -221,7 +222,18 @@ def gerar(
     if dados["pl"]:
         _card("Patrimônio líquido", formato.moeda_compacta(dados["pl"]["pl"]),
               f"carteira CVM de {formato.competencia_br(dados['pl']['competencia'])}")
-    _card("Classe (Scout)", _e(classe), _e(f"segmento B3: {etf['tipo_b3']}"))
+    recl = dados.get("reclassificado")
+    if recl:
+        origem = "leitura das posições pela IA" if recl.get("origem") == "ia" else "carteira real"
+        iso = (recl.get("data") or "")[:10]
+        data_br = f"{iso[8:10]}/{iso[5:7]}/{iso[0:4]}" if len(iso) == 10 else ""
+        rodape_classe = _e(
+            f"reclassificado{f' em {data_br}' if data_br else ''} por {origem} — "
+            f"antes: {recl.get('classe_anterior') or '—'} · {recl.get('motivo') or ''}".strip(" ·—")
+        )
+    else:
+        rodape_classe = _e(f"segmento B3: {etf['tipo_b3']}")
+    _card("Classe (Scout)", _e(classe), rodape_classe)
     if dados["gestor"]:
         _card("Gestora", f'<span class="compacto">{_e(_trunca(str(dados["gestor"]), 52))}</span>', "")
     proventos = dados.get("proventos") or []
