@@ -103,7 +103,13 @@ def gerar(
         if dados_etf is None or not (dados_etf["cotacao"] or dados_etf["pl"]):
             continue  # sem preço nem carteira: página vazia não ajuda ninguém
         (destino / f"{etf['ticker']}.html").write_text(
-            etf_html.gerar(dados_etf, agora=agora, com_menu=True), encoding="utf-8"
+            etf_html.gerar(
+                dados_etf,
+                agora=agora,
+                com_menu=True,
+                leitura=todas_leituras.get(etf["ticker"]),
+            ),
+            encoding="utf-8",
         )
         etfs_publicados.append(dados_etf)
         item("etfs", len(etfs_publicados), len(etfs_publicados))

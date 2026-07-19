@@ -215,7 +215,7 @@ def _executar_atualizacao(con) -> None:
         + len(cvm.anos_pendentes(con, hoje, cvm.nome_arquivo_trimestral))
         + len(b3.arquivos_pendentes(con, hoje))
     )
-    from .coleta import b3fundos, b3rf, cda
+    from .coleta import b3fundos, b3rf, cda, etf_renda
 
     if not console.is_terminal:
         progresso = lambda msg: console.print(f"  [dim]{msg}[/]")  # noqa: E731
@@ -224,6 +224,7 @@ def _executar_atualizacao(con) -> None:
         b3fundos.atualizar_etfs(con, ao_progredir=progresso)
         cda.atualizar_composicao(con, ao_progredir=progresso)
         b3rf.atualizar_diaria(con, ao_progredir=progresso)
+        etf_renda.atualizar_proventos(con, ao_progredir=progresso)
     else:
         with Progress(
             TextColumn("[progress.description]{task.description}"),
@@ -242,6 +243,7 @@ def _executar_atualizacao(con) -> None:
             b3fundos.atualizar_etfs(con, ao_progredir=_avanca)
             cda.atualizar_composicao(con, ao_progredir=_avanca)
             b3rf.atualizar_diaria(con, ao_progredir=_avanca)
+            etf_renda.atualizar_proventos(con, ao_progredir=_avanca)
     console.print("[green]Base atualizada.[/]")
 
 
@@ -566,6 +568,15 @@ def ia_lote(
         )
         vistos: set[str] = set()
         fundos = [f for f in fundos if not (f.ticker in vistos or vistos.add(f.ticker))]
+        # E7: ETFs entram no fim da fila — sem relatório gerencial, o fluxo
+        # sem_relatorio lê fatos/comunicados/assembleias e o parecer da DF
+        from types import SimpleNamespace as _NS
+
+        fundos += [
+            _NS(ticker=etf["ticker"], cnpj=etf["cnpj"])
+            for etf in armazenamento.etfs_listados(con)
+            if etf["ticker"] not in vistos
+        ]
         if apenas_erros:
             if not arquivo_erros.exists():
                 console.print(f"[yellow]Nenhum arquivo de erros em {arquivo_erros} — nada a reprocessar.[/]")

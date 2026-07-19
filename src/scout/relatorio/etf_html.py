@@ -127,6 +127,7 @@ def montar_dados_etf(con: sqlite3.Connection, ticker: str, classificacoes: dict 
         "pl": armazenamento.etf_pl_atual(con, etf["cnpj"]),
         "liquidez": armazenamento.liquidez_recente(con, etf["ticker"]),
         "divergencia_classe": divergencia_classe,
+        "proventos": armazenamento.proventos_do_etf(con, etf["cnpj"]),
     }
     from .. import etf_flags, redflags
 
@@ -141,8 +142,21 @@ def _trunca(texto: str, limite: int) -> str:
     return texto if len(texto) <= limite else texto[: limite - 1].rstrip() + "…"
 
 
-def gerar(dados: dict, agora: datetime | None = None, com_menu: bool = False) -> str:
-    from .html import CSS_BUSCA_TOPO, CSS_MENU, JS_BUSCA_TOPO, JS_MENU, menu_html
+def gerar(
+    dados: dict,
+    agora: datetime | None = None,
+    com_menu: bool = False,
+    leitura: dict | None = None,
+) -> str:
+    from .html import (
+        CSS_BUSCA_TOPO,
+        CSS_MENU,
+        JS_BUSCA_TOPO,
+        JS_MENU,
+        _secao_ia,
+        _secao_parecer,
+        menu_html,
+    )
 
     agora = agora or datetime.now()
     menu = menu_html() if com_menu else ""
@@ -176,6 +190,14 @@ def gerar(dados: dict, agora: datetime | None = None, com_menu: bool = False) ->
     _card("Classe (Scout)", _e(classe), _e(f"segmento B3: {etf['tipo_b3']}"))
     if dados["gestor"]:
         _card("Gestora", f'<span class="compacto">{_e(_trunca(str(dados["gestor"]), 52))}</span>', "")
+    proventos = dados.get("proventos") or []
+    if proventos:
+        ultimo = proventos[0]
+        _card(
+            "Distribui renda",
+            f"R$ {formato.decimal(ultimo['valor'])}/cota",
+            f"pago em {formato.dia_br(ultimo['data_pagamento'])} · NÃO isento de IR",
+        )
 
     composicao = ""
     if dados["carteira"]:
@@ -253,6 +275,14 @@ def gerar(dados: dict, agora: datetime | None = None, com_menu: bool = False) ->
         flags_html = f"<h2>🚩 Red flags</h2>{''.join(partes)}"
 
     itens_regras = "".join(f"<li>{_e(regra)}</li>" for regra in regras)
+    if proventos:
+        ultimo = proventos[0]
+        itens_regras += (
+            f"<li><b>Este fundo é da geração DISTRIBUIDORA:</b> paga renda em dinheiro "
+            f"(último provento: R$ {formato.decimal(ultimo['valor'])}/cota em "
+            f"{formato.dia_br(ultimo['data_base'])}) — e diferente de FII, o rendimento "
+            f"de ETF <b>não é isento de IR</b> (o próprio aviso oficial diz).</li>"
+        )
     observacao = (
         f'<div class="nota" style="margin-top:8px">nota da curadoria: {_e(dados["observacoes"])}</div>'
         if dados["observacoes"]
@@ -292,6 +322,13 @@ a {{ color:#8FCB9B; }}
   font-size:12.5px; font-weight:400; line-height:1.45; text-transform:none; letter-spacing:0;
   text-align:left; box-shadow:0 6px 20px rgba(0,0,0,.45); white-space:normal; }}
 .ajuda:hover .dica, .ajuda:focus .dica {{ visibility:visible; opacity:1; }}
+.termo {{ border-bottom:1px dotted #8b98a9; cursor:help; position:relative; }}
+.termo .dica {{ visibility:hidden; opacity:0; transition:opacity .15s; position:absolute; z-index:10;
+  bottom:135%; left:50%; transform:translateX(-50%); width:270px; background:#232D31;
+  border:1px solid #314045; border-radius:9px; padding:10px 12px; color:#F4F5F6;
+  font-size:12.5px; font-weight:400; line-height:1.45; text-align:left;
+  box-shadow:0 6px 20px rgba(0,0,0,.45); white-space:normal; }}
+.termo:hover .dica, .termo:focus .dica {{ visibility:visible; opacity:1; }}
 .flag {{ background:#182024; border:1px solid #232D31; border-left:4px solid; border-radius:10px; padding:14px 16px; margin-bottom:10px; }}
 .flag .sev {{ font-size:12px; font-weight:800; letter-spacing:.08em; }}
 .flag h3 {{ font-size:16px; margin:2px 0 6px; }}
@@ -327,6 +364,10 @@ table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-a
   <div class="cards">{"".join(cards)}</div>
 
   {flags_html}
+
+  {_secao_parecer(leitura)}
+
+  {_secao_ia(leitura, agora)}
 
   <div class="regras">
   <h2>🧭 As regras deste tipo de ETF ({_e(classe)})</h2>

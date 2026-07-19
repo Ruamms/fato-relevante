@@ -107,6 +107,16 @@ CREATE TABLE IF NOT EXISTS etfs (
     nome_pregao   TEXT,
     atualizado_em TEXT
 );
+CREATE TABLE IF NOT EXISTS etf_proventos (
+    cnpj           TEXT NOT NULL,
+    id_doc         INTEGER NOT NULL,  -- documento estruturado no FNET
+    ticker         TEXT,
+    data_base      TEXT,              -- AAAA-MM-DD
+    valor          REAL,              -- R$ por cota
+    data_pagamento TEXT,
+    isento         INTEGER,           -- rendimento de ETF NÃO costuma ser isento
+    PRIMARY KEY (cnpj, id_doc)
+);
 CREATE TABLE IF NOT EXISTS etf_carteira (
     cnpj        TEXT NOT NULL,
     competencia TEXT NOT NULL,  -- AAAA-MM do CDA
@@ -504,6 +514,19 @@ def liquidez_recente(con: sqlite3.Connection, ticker: str, meses: int = 3) -> fl
     total_volume = sum(linha["volume"] for linha in linhas)
     total_pregoes = sum(linha["pregoes"] for linha in linhas)
     return total_volume / total_pregoes if total_pregoes else None
+
+
+def proventos_do_etf(con: sqlite3.Connection, cnpj: str, limite: int = 13) -> list[sqlite3.Row]:
+    """Últimos proventos anunciados (mais recente primeiro)."""
+    return con.execute(
+        """
+        SELECT * FROM etf_proventos
+         WHERE cnpj = ?
+         ORDER BY data_base DESC
+         LIMIT ?
+        """,
+        (cnpj, limite),
+    ).fetchall()
 
 
 def etf_carteira_atual(con: sqlite3.Connection, cnpj: str) -> list[sqlite3.Row]:

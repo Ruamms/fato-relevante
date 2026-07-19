@@ -299,6 +299,130 @@ def test_cotacao_rf_upsert_diario_idempotente(con, monkeypatch):
     assert linha["pregoes"] == 2
 
 
+_XML_PROVENTO = b"""<?xml version="1.0" encoding="UTF-8"?>
+<DadosEconomicoFinanceiros>
+  <InformeRendimentos>
+    <Provento>
+      <CodNegociacao>NDIV11</CodNegociacao>
+      <Rendimento>
+        <DataBase>2026-07-07</DataBase>
+        <ValorProvento>0.3895801</ValorProvento>
+        <DataPagamento>2026-07-14</DataPagamento>
+        <RendimentoIsentoIR>N\xc3\xa3o</RendimentoIsentoIR>
+      </Rendimento>
+    </Provento>
+  </InformeRendimentos>
+</DadosEconomicoFinanceiros>"""
+
+
+def test_proventos_de_etf_extrai_e_grava(con, monkeypatch):
+    from datetime import date
+
+    from scout.coleta import etf_renda
+
+    proventos = etf_renda.extrair_proventos(_XML_PROVENTO)
+    assert proventos == [
+        {
+            "ticker": "NDIV11",
+            "data_base": "2026-07-07",
+            "valor": 0.3895801,
+            "data_pagamento": "2026-07-14",
+            "isento": False,
+        }
+    ]
+
+    con.execute(
+        "INSERT INTO etfs (cnpj, ticker, radical, id_fnet, tipo_b3, denominacao) "
+        "VALUES ('52116337000162', 'NDIV11', 'NDIV', 10677, 'ETF', 'NU RENDA IBOV SMART DIVIDENDOS')"
+    )
+    con.commit()
+    docs = [
+        {"id": 1240950, "tipo": "Proventos em dinheiro", "categoria": "Aviso aos Cotistas - Estruturado", "data_entrega": "07/07/2026 12:42"},
+        {"id": 999, "tipo": "Informe Diário", "categoria": "Informes Periódicos", "data_entrega": "17/07/2026 10:00"},
+    ]
+    monkeypatch.setattr(etf_renda.fnet, "listar", lambda cnpj, quantidade=40: docs)
+    monkeypatch.setattr(etf_renda.fnet, "baixar", lambda id_doc: _XML_PROVENTO)
+    monkeypatch.setattr(etf_renda.time, "sleep", lambda s: None)
+
+    mensagem = etf_renda.atualizar_proventos(con, hoje=date(2026, 7, 19))
+    assert "1 avisos novos" in mensagem and "1 ETFs distribuem" in mensagem
+    from scout import armazenamento
+
+    ultimos = armazenamento.proventos_do_etf(con, "52116337000162")
+    assert ultimos[0]["valor"] == 0.3895801
+    assert ultimos[0]["isento"] == 0
+
+    # semana fresca: não vai à rede
+    assert etf_renda.atualizar_proventos(con, hoje=date(2026, 7, 20)) is None
+
+
+def test_pagina_etf_distribuidor_mostra_renda(con):
+    from datetime import datetime
+
+    from scout.relatorio import etf_html
+
+    _semear_etf(con)
+    con.execute(
+        "INSERT INTO etf_proventos (cnpj, id_doc, ticker, data_base, valor, data_pagamento, isento) "
+        "VALUES ('10406511000161', 1, 'BOVA11', '2026-07-07', 0.39, '2026-07-14', 0)"
+    )
+    con.commit()
+    classificacoes = {"10406511000161": {"classificacao_scout": "Ações Brasil", "observacoes": ""}}
+    dados = etf_html.montar_dados_etf(con, "BOVA11", classificacoes)
+    pagina = etf_html.gerar(dados, agora=datetime(2026, 7, 19, 11, 0))
+    assert "Distribui renda" in pagina
+    assert "R$ 0,39/cota" in pagina
+    assert "geração DISTRIBUIDORA" in pagina
+    assert "não é isento de IR" in pagina
+
+
+def test_lote_ia_inclui_etfs_pelo_fluxo_sem_relatorio(con, zip_cvm, tmp_path, monkeypatch):
+    import json as _json
+
+    from typer.testing import CliRunner
+
+    from scout import cli as modulo_cli
+    from scout import ia as modulo_ia
+    from scout.cli import app
+    from scout.coleta import cvm
+    from scout.coleta import fnet as modulo_fnet
+    from tests.test_fnet_ia import _pdf_minimo
+
+    cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
+    _semear_etf(con)  # BOVA11 na tabela etfs
+    monkeypatch.setenv("SCOUT_DATA_DIR", str(tmp_path))
+    monkeypatch.setattr(modulo_cli, "_preparar_ia", lambda modelo: "teste:1b")
+
+    docs_por_cnpj = {
+        # FII TSTE11: sem nada (sai rápido)
+        "11.111.111/0001-11": [],
+        # ETF BOVA11: uma assembleia recente para a IA ler
+        "10406511000161": [
+            {"id": 777, "tipo": "AGE", "categoria": "Assembleia", "data_entrega": "10/07/2026 10:00"},
+        ],
+    }
+    monkeypatch.setattr(
+        modulo_fnet, "listar", lambda cnpj, quantidade=30: docs_por_cnpj.get(cnpj, [])
+    )
+    caminho_pdf = tmp_path / "doc.pdf"
+    caminho_pdf.write_bytes(_pdf_minimo("Ata de assembleia do ETF " * 30))
+    monkeypatch.setattr(
+        modulo_fnet, "_garantir_documento", lambda con_, cnpj, doc, destino: caminho_pdf
+    )
+    monkeypatch.setattr(
+        modulo_ia,
+        "analisar_comunicados",
+        lambda itens, ctx, modelo=None, ao_progresso=None: "assembleia lida",
+    )
+    pasta = tmp_path / "leituras"
+    resultado = CliRunner().invoke(app, ["ia-lote", "--destino", str(pasta)])
+    assert resultado.exit_code == 0, resultado.output
+    leitura = _json.loads((pasta / "BOVA11.json").read_text(encoding="utf-8"))
+    assert leitura["sem_relatorio"] is True
+    assert leitura["comunicados"]["texto"] == "assembleia lida"
+    assert leitura["comunicados"]["rotulos"] == ["Assembleia AGE"]
+
+
 def test_cotahist_codbdi_14_entra_como_etf(con):
     from tests.test_cotacoes import _linha_cotahist, _zip_cotahist
 
