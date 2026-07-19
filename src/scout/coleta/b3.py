@@ -56,10 +56,16 @@ def _baixar(nome: str, tentativas: int = 3) -> bytes:
     raise ultimo_erro
 
 
-def extrair_pregoes(conteudo: bytes) -> dict[str, list[tuple[str, float]]]:
-    """{ticker: [(dia AAAA-MM-DD, fechamento), ...]} dos FIIs do arquivo.
+# códigos BDI que nos interessam: 12 = FII · 14 = ETF/cotas de fundo (renda variável)
+CODBDIS = ("12", "14")
 
-    Registro tipo 01, código BDI 12 (Fundos Imobiliários) e código de
+
+def extrair_pregoes(
+    conteudo: bytes, codbdis: tuple[str, ...] = CODBDIS
+) -> dict[str, list[tuple[str, float]]]:
+    """{ticker: [(dia AAAA-MM-DD, fechamento), ...]} dos fundos do arquivo.
+
+    Registro tipo 01, códigos BDI de fundos (12 = FII, 14 = ETF) e código de
     negociação padrão de cota (XXXX11 — direitos e recibos ficam fora).
     Layout posicional oficial: PREULT em [108:121], V99 (2 decimais).
     """
@@ -67,7 +73,7 @@ def extrair_pregoes(conteudo: bytes) -> dict[str, list[tuple[str, float]]]:
     with zipfile.ZipFile(io.BytesIO(conteudo)) as zf:
         with zf.open(zf.namelist()[0]) as fh:
             for bruta in io.TextIOWrapper(fh, encoding="latin-1"):
-                if not bruta.startswith("01") or bruta[10:12] != "12":
+                if not bruta.startswith("01") or bruta[10:12] not in codbdis:
                     continue
                 codneg = bruta[12:24].strip()
                 if not _CODNEG_FII.fullmatch(codneg):

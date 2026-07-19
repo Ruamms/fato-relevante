@@ -97,6 +97,16 @@ CREATE TABLE IF NOT EXISTS informes_complemento (
     cotistas               REAL,
     PRIMARY KEY (cnpj, competencia)
 );
+CREATE TABLE IF NOT EXISTS etfs (
+    cnpj          TEXT PRIMARY KEY,  -- só dígitos
+    ticker        TEXT,              -- código de negociação (BOVA11)
+    radical       TEXT,              -- idCEM na B3 (BOVA)
+    id_fnet       INTEGER,
+    tipo_b3       TEXT,              -- 'ETF' (renda variável) | 'ETF-RF' (renda fixa)
+    denominacao   TEXT,
+    nome_pregao   TEXT,
+    atualizado_em TEXT
+);
 CREATE TABLE IF NOT EXISTS setores_inquilinos (
     cnpj            TEXT NOT NULL,
     competencia     TEXT NOT NULL,  -- AAAA-MM do trimestre
