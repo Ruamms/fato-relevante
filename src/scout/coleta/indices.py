@@ -1,14 +1,13 @@
-"""Coleta de índices de referência (CDI, IPCA) via API SGS do Banco Central.
+"""Coleta de índices de referência: CDI e IPCA (SGS/Banco Central) e IFIX
+(estatísticas históricas oficiais da B3).
 
-Fonte oficial, gratuita e sem chave: https://api.bcb.gov.br
-Valores são percentuais MENSAIS (ex.: 1.16 = 1,16% no mês).
-
-IFIX: sem fonte pública programável hoje (Yahoo não tem histórico do
-índice; Stooq exige desafio JS). Fica registrado como pendência.
+Fontes oficiais, gratuitas e sem chave. Valores gravados são percentuais
+MENSAIS (ex.: 1.16 = 1,16% no mês).
 """
 
 from __future__ import annotations
 
+import base64
 import json
 import sqlite3
 import urllib.request
@@ -21,14 +20,18 @@ URL = (
     "https://api.bcb.gov.br/dados/serie/bcdata.sgs.{codigo}/dados"
     "?formato=json&dataInicial=01/01/2016"
 )
+URL_IFIX = (
+    "https://sistemaswebb3-listados.b3.com.br/indexStatisticsProxy/IndexCall/GetPortfolioDay/{token}"
+)
+ANO_INICIAL_IFIX = 2011  # primeiro ano do índice
 
 
 def garantir_atualizados(con: sqlite3.Connection, hoje: date | None = None) -> str | None:
-    """Sincroniza CDI e IPCA (1x/dia). Retorna aviso se ficou sem dado novo."""
+    """Sincroniza CDI, IPCA e IFIX (1x/dia). Retorna aviso se ficou sem dado novo."""
     hoje = hoje or date.today()
     pendentes = [
         serie
-        for serie in SERIES_SGS
+        for serie in list(SERIES_SGS) + ["IFIX"]
         if (meta := armazenamento.indice_meta(con, serie)) is None
         or meta["atualizado_em"] != hoje.isoformat()
     ]
@@ -37,7 +40,7 @@ def garantir_atualizados(con: sqlite3.Connection, hoje: date | None = None) -> s
     falhas = []
     for serie in pendentes:
         try:
-            valores = buscar(serie)
+            valores = buscar_ifix(hoje) if serie == "IFIX" else buscar(serie)
         except Exception:
             falhas.append(serie)
             continue
@@ -45,8 +48,8 @@ def garantir_atualizados(con: sqlite3.Connection, hoje: date | None = None) -> s
     if falhas:
         tem_cache = all(armazenamento.serie_indice(con, serie) for serie in falhas)
         if tem_cache:
-            return f"sem conexão com o Banco Central — usando cache de {'/'.join(falhas)}"
-        return f"índices indisponíveis (sem conexão com o Banco Central): {'/'.join(falhas)}"
+            return f"sem conexão com a fonte de índices — usando cache de {'/'.join(falhas)}"
+        return f"índices indisponíveis (sem conexão): {'/'.join(falhas)}"
     return None
 
 
@@ -55,6 +58,68 @@ def buscar(serie: str) -> list[tuple[str, float]]:
     requisicao = urllib.request.Request(url, headers={"User-Agent": "scout"})
     with urllib.request.urlopen(requisicao, timeout=60) as resposta:
         return extrair(json.load(resposta))
+
+
+def buscar_ifix(hoje: date | None = None) -> list[tuple[str, float]]:
+    """% mensal do IFIX a partir dos fechamentos oficiais da B3 (um request
+    leve por ano). O encadeamento entre anos usa o dezembro anterior."""
+    hoje = hoje or date.today()
+    fechos: dict[str, float] = {}
+    for ano in range(ANO_INICIAL_IFIX, hoje.year + 1):
+        fechos.update(fechos_ifix_do_ano(_buscar_ano_ifix(ano), ano))
+    return variacoes_mensais(fechos)
+
+
+def _buscar_ano_ifix(ano: int) -> dict:
+    parametros = {
+        "index": "IFIX",
+        "language": "pt-br",
+        "year": str(ano),
+        "pageNumber": 1,
+        "pageSize": 40,
+    }
+    token = base64.b64encode(json.dumps(parametros).encode()).decode()
+    requisicao = urllib.request.Request(
+        URL_IFIX.format(token=token), headers={"User-Agent": "Mozilla/5.0 (scout)"}
+    )
+    with urllib.request.urlopen(requisicao, timeout=60) as resposta:
+        return json.load(resposta)
+
+
+def fechos_ifix_do_ano(dados: dict, ano: int) -> dict[str, float]:
+    """{competencia: fechamento} — o valor do maior dia com dado em cada mês.
+    O JSON da B3 traz uma grade dia × mês (rateValue1..12, formato pt-BR)."""
+    ultimo_por_mes: dict[int, tuple[int, float]] = {}
+    for linha in dados.get("results") or []:
+        dia = linha.get("day")
+        if not dia:
+            continue
+        for mes in range(1, 13):
+            valor = _numero_br(linha.get(f"rateValue{mes}"))
+            if valor is None:
+                continue
+            if mes not in ultimo_por_mes or dia > ultimo_por_mes[mes][0]:
+                ultimo_por_mes[mes] = (dia, valor)
+    return {f"{ano}-{mes:02d}": valor for mes, (_, valor) in ultimo_por_mes.items()}
+
+
+def variacoes_mensais(fechos: dict[str, float]) -> list[tuple[str, float]]:
+    """Fechamentos mensais -> % de variação mês a mês (competências ordenadas)."""
+    ordenado = sorted(fechos.items())
+    valores = []
+    for (comp_anterior, fecho_anterior), (competencia, fecho) in zip(ordenado, ordenado[1:]):
+        if fecho_anterior:
+            valores.append((competencia, 100 * (fecho / fecho_anterior - 1)))
+    return valores
+
+
+def _numero_br(texto) -> float | None:
+    if not texto or not str(texto).strip():
+        return None
+    try:
+        return float(str(texto).replace(".", "").replace(",", "."))
+    except ValueError:
+        return None
 
 
 def extrair(dados: list[dict]) -> list[tuple[str, float]]:

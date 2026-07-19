@@ -25,13 +25,32 @@ def test_garantir_atualizados_grava_e_nao_rebaixa(con, monkeypatch):
         return [("2026-01", 1.0)]
 
     monkeypatch.setattr(indices, "buscar", _buscar_fake)
+    monkeypatch.setattr(
+        indices, "buscar_ifix", lambda hoje=None: chamadas.append("IFIX") or [("2026-01", 0.5)]
+    )
     assert indices.garantir_atualizados(con, hoje=date(2026, 2, 18)) is None
-    assert sorted(chamadas) == ["CDI", "IPCA"]
+    assert sorted(chamadas) == ["CDI", "IFIX", "IPCA"]
     assert armazenamento.serie_indice(con, "CDI") == {"2026-01": 1.0}
+    assert armazenamento.serie_indice(con, "IFIX") == {"2026-01": 0.5}
     # segunda chamada no mesmo dia: nada de rede
     chamadas.clear()
     assert indices.garantir_atualizados(con, hoje=date(2026, 2, 18)) is None
     assert chamadas == []
+
+
+def test_fechos_ifix_do_ano_e_variacoes():
+    dados = {
+        "results": [
+            {"day": 15, "rateValue1": "3.700,00", "rateValue2": "3.800,00", "rateValue3": ""},
+            {"day": 30, "rateValue1": "3.750,50", "rateValue2": "", "rateValue3": ""},
+        ]
+    }
+    fechos = indices.fechos_ifix_do_ano(dados, 2026)
+    # vale o maior dia com dado em cada mês
+    assert fechos == {"2026-01": 3750.50, "2026-02": 3800.00}
+    variacoes = indices.variacoes_mensais({"2025-12": 3600.0, **fechos})
+    assert variacoes[0] == ("2026-01", pytest.approx(100 * (3750.5 / 3600 - 1)))
+    assert variacoes[1] == ("2026-02", pytest.approx(100 * (3800 / 3750.5 - 1)))
 
 
 def test_acumulado_indice_composto():

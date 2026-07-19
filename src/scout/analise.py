@@ -79,7 +79,7 @@ def montar_completo(
     cotacoes = armazenamento.serie_cotacoes(con, raiox.ticker)
     vp_ajustada = series.serie_vp_ajustada(serie)
     indices = {
-        nome: armazenamento.serie_indice(con, nome) for nome in ("CDI", "IPCA")
+        nome: armazenamento.serie_indice(con, nome) for nome in ("CDI", "IPCA", "IFIX")
     }
     graficos = _dados_graficos(serie, cotacoes, vp_ajustada, indices)
     graficos = dataclasses.replace(

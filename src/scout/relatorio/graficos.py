@@ -18,7 +18,7 @@ MARGEM_DIR = 16
 MARGEM_TOPO = 14
 MARGEM_BAIXO = 34
 
-CORES = ("#8FCB9B", "#f59e0b", "#a78bfa")
+CORES = ("#8FCB9B", "#f59e0b", "#a78bfa", "#38bdf8")  # Fundo, CDI, IPCA, IFIX
 COR_GRADE = "#314045"
 COR_TEXTO = "#8b98a9"
 COR_MEDIA = "#f472b6"
