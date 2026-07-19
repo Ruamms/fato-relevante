@@ -1,15 +1,49 @@
 {
   "ticker": "KNHY11",
   "modelo": "qwen2.5:14b",
-  "gerada_em": "2026-07-19T01:12:42",
+  "gerada_em": "2026-07-19T08:21:48",
   "relatorio": {
     "id": 1242369,
     "data_entrega": "08/07/2026 18:37",
     "texto": "1. **Compra de novos ativos**: No mês de junho, foram realizados investimentos em novas operações de CRI no valor total de R$ 50,3 milhões.\n   - \"No mês de junho, realizamos investimento em novas operações de CRI, no valor total de R$ 50,3 milhões.\" (p. 2)\n\n2. **Alocação da carteira**: O fundo apresenta alocação de 102,4% em ativos alvo e 4,4% em instrumentos de caixa.\n   - \"O portfólio é dedicado ao investimento em Ativos de renda fixa de natureza Imobiliária, especialmente em Certificados de Recebíveis Imobiliários (“CRI”), predominantemente indexados à inflação.\" (p. 1)\n\n3. **Resultado financeiro**: O resultado líquido do fundo foi R$ 43,5 milhões no mês de junho.\n   - \"Resultado Líquido: R$ 43,5 milhões\" (página não especificada)\n\n4. **Dividendos distribuídos**: Os dividendos referentes a junho serão pagos em 13/07/26 e são de R$ 1,20 por cota.\n   - \"Os dividendos referentes a junho, cuja distribuição ocorrerá no dia 13/07/2026, são de R$ 1,20 por cota.\" (p. 1)\n\n5. **Operações compromissadas reversas**: O fundo possui operações compromissadas reversas lastreadas em CRI, representando aproximadamente 7% do patrimônio líquido.\n   - \"O Fundo possui atualmente operações compromissadas reversas lastreadas em CRI. Essas operações permitem maior flexibilidade e dinamismo na alocação de recursos.\" (p. 2)\n\n6. **Projeções inflacionárias**: A projeção mais recente indica uma inflação de 0,33% para junho, com estimativas de 5,33% a.a. em 2026 e 4,17% a.a. em 2027.\n   - \"O último relatório do Boletim Focus indica que a mediana das projeções dos economistas de mercado para o IPCA está em 5,33% a.a. para 2026 e 4,17% a.a. em 2027.\" (página não especificada)\n\nO que observar em seguida:\n- Novas compras ou vendas de ativos no próximo relatório.\n- Eventuais ajustes na alocação da carteira entre CRI indexados à inflação e CDI."
   },
-  "fatos": {
-    "ids": [],
-    "datas": [],
-    "texto": null
+  "comunicados": {
+    "ids": [
+      934589,
+      1029823,
+      1049006,
+      1013122
+    ],
+    "datas": [
+      "27/06/2025",
+      "06/11/2025",
+      "27/11/2025",
+      "14/10/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 27/11/2025\n**Aprovadas as Demonstrações Contábeis do Fundo**\nAs demonstrações contábeis do KINEA HIGH YIELD CRI FUNDO DE INVESTIMENTO IMOBILIÁRIO, acompanhadas pelo relatório dos auditores independentes, foram aprovadas em assembleia geral extraordinária realizada no dia 27 de novembro de 2025.\n\n### 14/10/2025\n**Consulta Formal Eletrônica para Aprovação das Demonstrações Financeiras**\nA INTRAG DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA. submeteu à consulta formal eletrônica dos cotistas a aprovação das demonstrações financeiras, notas explicativas e parecer dos auditores independentes referentes ao exercício social findo em 30 de junho de 2025.\n\n### 06/11/2025\n**Identificação de Irregularidades na Destinação de Recursos**\nA Kinea Investimentos Ltda. identificou indícios de irregularidades na destinação de recursos dos Certificados de Recebíveis Imobiliários (CRI) da Classe Única da 301ª Emissão da Opea Securitizadora, envolvendo a Galoppo Gestão de Recursos Ltda. A gestora adotou medidas para proteger os interesses dos investidores e esclareceu que o ativo possui garantias suficientes.\n\n### 27/06/2025\n**Aprovação da 7ª Emissão de Cotas**\nFoi aprovada a 7ª emissão de cotas do KINEA HIGH YIELD CRI FUNDO DE INVESTIMENTO IMOBILIÁRIO, com até 6 milhões de novas cotas sendo distribuídas sob coordenação do ITAÚ BBA ASSESSORIA FINANCEIRA S.A., observada a possibilidade de participação de outras instituições intermediárias autorizadas.\n\n---\n\n**Conexão aos Indicadores:**\nO anúncio da 7ª emissão de cotas, apesar da queda no valor patrimonial por cota nos últimos 24 meses (VP/cota ajustado -2,92%), pode indicar estratégias do fundo para capturar novos investidores e potencialmente aumentar o patrimônio líquido."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Emissão de cotas com VP/cota em queda"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 999869,
+    "data_entrega": "26/09/2025 21:44",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do do Kinea High Yield CRI Fundo de Investimento Imobiliário Responsabilidade Limitada em 30 de junho de 202 5 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis ad"
   }
 }

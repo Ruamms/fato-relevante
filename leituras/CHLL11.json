@@ -1,10 +1,33 @@
 {
   "ticker": "CHLL11",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-19T03:44:31",
-  "fatos": {
-    "ids": [],
-    "datas": [],
-    "texto": null
+  "verificado_em": "2026-07-19T07:49:04",
+  "comunicados": {
+    "ids": [
+      955585,
+      1179387,
+      1179384
+    ],
+    "datas": [
+      "29/07/2025",
+      "04/05/2026",
+      "04/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Assembleia Geral Ordinária (AGO) de 04/05/2026\n\n**O que aconteceu:** A assembleia geral ordinária do Challenger FII foi realizada.\n\n**Resumo:** A AGO ocorreu em formato não presencial, com encerramento às 23:59h do dia 03.05.2026. Não houve presença de cotistas e as deliberações foram tomadas conforme o artigo 71 da Instrução CVM 175/2022. Foram aprovadas as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes referentes ao exercício social de 31.12.2025.\n\n**Trecho-chave:**\n\"Observado o art. 71 da Instrução CVM 175/2022, restam aprovadas: (i) As Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 31.12.2025 os quais estão disponíveis no website da CVM, através do endereço eletrônico https://www.gov.br/cvm/pt-br/assuntos/regulados/consultas-por-participante/fundos-de-investimento, seguindo a rota: Fundos Registrados > Inserir CNPJ do Fundo > Demonstrações contábeis.\"\n\n---\n\n### Comunicado ao Mercado de 29/07/2025\n\n**O que aconteceu:** O regulamento do Challenger FII foi adaptado à Resolução CVM nº 175.\n\n**Resumo:** A XP Corretora, administradora do fundo, informou a adaptação do regulamento do Challenger FII à Resolução da CVM nº 175 de 2022. As alterações não exigem deliberação dos cotistas e estão disponíveis no site da CVM.\n\n**Trecho-chave:**\n\"A XP CORRETORA DE CÂMBIO, TÍTULOS E VALORES MOBILIÁRIOS S.A., com sede na Praia De Botafogo, 501, BLC I SAL 501, Botafogo, na cidade e Estado do Rio de Janeiro, CEP 22.250-911, inscrita no CNPJ nº 02.332.886/0001 -04, na qualidade de instituição administradora (“ Administradora”) do CHALLENGER FUNDO DE INVESTIMENTO IMOBILIÁRIO - FII vem, por meio desta, informar os cotistas sobre a adaptação do regulamento do Fundo a Resolução da CVM nº 175, de 23 de dezembro de 2022, conforme alterada (“Resolução CVM 175”), realizada por meio de Instrumento Particular de Alteração.\""
+  },
+  "modelo": "qwen2.5:14b",
+  "parecer": {
+    "id": 1151998,
+    "data_entrega": "31/03/2026 23:03",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Challenger Fundo de Investimento Imobiliário - FII em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o período de 14 de abril de 2025 a 31 de dezembro de 2025, de acordo com as práticas contábeis adota"
   }
 }

@@ -1,15 +1,49 @@
 {
   "ticker": "KNRI11",
   "modelo": "qwen2.5:14b",
-  "gerada_em": "2026-07-19T00:20:15",
+  "gerada_em": "2026-07-19T07:14:43",
   "relatorio": {
     "id": 1238321,
     "data_entrega": "02/07/2026 17:42",
     "texto": "1. A vacância física do fundo foi reduzida de 4,09% no mês anterior para 3,90% em junho de 2026.\n2. A vacância financeira caiu de 5,39% para 4,93% entre maio e junho de 2026.\n3. O Fundo Kinea Renda Imobiliária teve a entrada da empresa Nomos Investimentos no edifício Botafogo Trade Center, ocupando uma área de 975 m².\n4. A Bain & Company assumiu o espaço anteriormente ocupado pelo escritório SVMFA em um contrato concluído dentro do próprio mês de desocupação.\n5. O Edifício Biosquare está em desenvolvimento com avanços recentes, já locado para uma companhia relevante no setor corporativo.\n6. A reavaliação anual da carteira imobiliária apontou valorização de aproximadamente 0,6% frente ao valor contábil registrado em maio de 2026.\n7. O Fundo distribuirá R$1,38 por cota no mês de julho de 2026, incluindo uma distribuição extraordinária de R$0,28 por cota.\n8. A taxa de administração do fundo é equivalente a 1,11% ao ano sobre o valor de mercado das cotas.\n\nO que observar em seguida:\n- Desenvolvimento e conclusão da obra no Edifício Biosquare.\n- Movimentações futuras na carteira imobiliária para manter ou melhorar os indicadores de vacância."
   },
-  "fatos": {
-    "ids": [],
-    "datas": [],
-    "texto": null
+  "comunicados": {
+    "ids": [
+      865148,
+      1075294,
+      1029050,
+      1049012,
+      1013092
+    ],
+    "datas": [
+      "26/03/2025",
+      "05/01/2026",
+      "06/11/2025",
+      "27/11/2025",
+      "14/10/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Fato Relevante entregue em 26/03/2025\n\n**O que aconteceu:** Contrato de locação celebrado com empresa multinacional para a Torre Corporativa do Edifício Biosquare.\n\n**Resumo:** O Fundo KINEA RENDA IMOBILIÁRIA (KNRI11) celebrou um contrato de locação com uma empresa multinacional para toda a torre corporativa do Edifício Biosquare, localizada em São Paulo. A torre está em construção e será concluída no 1º trimestre de 2026.\n\n**Trecho-chave:**\n\"foi celebrado Instrumento Particular de Locação de Bem Imóvel para Fins Não Residenciais (“Contrato”) com determinada empresa multinacional, tendo como objeto a locação da totalidade da Torre Corporativa do Edifício Biosquare, localizado na Rua Capitão Antônio Rosa, 422, no Bairro de Pinheiros, São Paulo/SP (\"Imóvel\"), composta pelas áreas situadas entre o 7º ao 25º pavimento totalizando uma área locável BOMA de aproximadamente 39.229,18m².\" (p. 1)\n\n---\n\n### Comunicado ao Mercado entregue em 05/01/2026\n\n**O que aconteceu:** Venda de 90% do imóvel localizado na cidade de Jundiaí por R$ 255 milhões.\n\n**Resumo:** O Fundo KNRI11 vendeu 90% de um imóvel em Jundiaí, gerando lucro de R$77 milhões e TIR de aproximadamente 11% a.a. Os recursos da venda serão usados para reforçar a estrutura de capital do Fundo.\n\n**Trecho-chave:**\n\"celebrou Instrumento Particular de Compromisso de Venda e Compra de Imóvel e Outras Avenças (“Compromisso de Compra e Venda”), tendo por objeto a venda pelo Fundo (“Venda”) de 90% (“Fração Ideal Kinea Renda”) do imóvel localizado na cidade de Jundiaí, estado de São Paulo, localizado na Rodovia Vice Prefeito Hermenegildo Tonoli, n° 2000, objeto da matrícula n° 124.973, do 1º Oficial de Registro de Imóveis, Títulos e Documentos e Civil de Pessoa Jurídica da Comarca de Jundiaí – SP (“Imóvel”) pelo valor de R$ 255.000.000,00 (duzentos e cinquenta e cinco milhões de reais) (“Valor”).\"\n\n---\n\n### Comunicado ao Mercado entregue em 06/11/2025\n\n**O que aconteceu:** Venda do Edifício Athenas por R$95 milhões.\n\n**Resumo:** O Fundo KNRI11 vendeu o Edifício Athenas, gerando lucro de R$44,1 milhões e TIR de 16% a.a. Os recursos da venda serão usados para reforçar a estrutura de capital do Fundo.\n\n**Trecho-chave:**\n\"celebrou Contrato de Compra e Venda (“Contrato”), tendo por objeto a venda pelo Fundo (“Venda”) do empreendimento Edifício Athenas, localizado à Rua Dr. Fernandes Coelho, 64, Pinheiros, CEP 05423-911, na Cidade de São Paulo, Estado de São Paulo (\"Imóvel\") pelo valor de R$ 95.000.000,00 (noventa e cinco milhões de reais) (“Valor”).\"\n\n---\n\n### Assembleia AGO entregue em 27/11/2025\n\n**O que aconteceu:** Aprovação das Demonstrações Contábeis do Fundo referentes ao exercício social findo em 30.06.2025.\n\n**Resumo:** Os cotistas aprovaram as demonstrações contábeis do Fundo KINEA RENDA IMOBILIÁRIA (KNRI11) relativas ao exercício social encerrado em 30 de junho de 2025, sem necessidade de resumo das decisões tomadas.\n\n**Trecho-chave:**\n\"aprovadas as Demonstrações Contábeis do Fundo, devidamente acompanhadas do relatório dos auditores independentes, documentos disponibilizados aos cotistas nos termos da regulamentação em vigor, relativos ao exercício social findo em 30.06.2025.\"\n\n---\n\n### Assembleia AGO entregue em 14/10/2025\n\n**O que aconteceu:** Consulta formal eletrônica aos cotistas para aprovação das demonstrações financeiras do Fundo.\n\n**Resumo:** A INTRAG DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA. solicitou a consulta formal eletrônica dos cotistas para aprovar as demonstrações financeiras, notas explicativas e parecer dos auditores independentes relativas ao exercício social encerrado em 30 de junho de 2025.\n\n**Trecho-chave:**\n\"submeter à consulta formal eletrônica de quotistas a seguinte matéria: (i) Aprovar as demonstrações financeiras, notas explicativas e parecer dos auditores independentes, relativas ao exercício social findo em 30 de junho de 2025.\""
+  },
+  "retrato": {
+    "selo": "Sem alertas",
+    "nivel": "sem_alertas",
+    "alertas": [],
+    "cota": 156.0
+  },
+  "parecer": {
+    "id": 998028,
+    "data_entrega": "24/09/2025 21:31",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Kinea Renda Imobiliária Fundo de Investimento Imobiliário - FII em 30 de junho de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil apli"
   }
 }

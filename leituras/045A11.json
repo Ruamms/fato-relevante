@@ -1,10 +1,37 @@
 {
   "ticker": "045A11",
-  "sem_relatorio": true,
-  "verificado_em": "2026-07-19T03:50:26",
-  "fatos": {
-    "ids": [],
-    "datas": [],
-    "texto": null
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-19T11:29:13",
+  "relatorio": {
+    "id": 567935,
+    "data_entrega": "11/12/2023 18:52",
+    "texto": "1. O FII BTOWERS atingiu um Dividend Yield (DY) anualizado de 6,73% em novembro/2023.\n   \"Assim, através do resultado auferido no mês de novembro de 2023, conseguimos realizar R$ 0,60 de proventos aos cotistas, implicando em um Dividend Yield (DY) anualizado de 6,73%.\" [página 2]\n\n2. A inadimplência do fundo foi de aproximadamente R$ 56.523,36 no mês de novembro/2023.\n   \"No mês de novembro/23 o FII BTOWERS apresentou uma inadimplência de, aproximadamente, R$ 56.523,36 (cinquenta e seis mil reais), considerando as quatro locações que deixaram o aluguel em aberto neste mês.\" [página 9]\n\n3. Não houve ingresso de novos locatários no mês de novembro.\n   \"Não tivemos ingresso de novos locatários no mês de novembro.\" [página 2]\n\n4. Houve reajustes contratuais em várias salas e lojas, como a Sala 1601 (de R$ 6.920,55 para R$ 7.254,12) e a Loja 12 (de R$ 8.154,30 para R$ 8.547,34).\n   \"Houve o reajuste contratual por IPCA no valor do contrato de sala 1601... Vigorava o valor de R$ 6.920,55 agora o valor reajustado é de R$ 7.254,12.\" [página 12]\n   \"Houve reajuste contratual por IPCA no valor do contrato da loja 12... Vigorava o valor de R$ 8.154,30 agora o valor reajustado é de R$ 8.547,34.\" [página 12]\n\n5. A locatária da Sala 1501 deixou de pagar seu aluguel no montante de R$ 9.000,00.\n   \"Neste mês o locatário da sala 1501, deixou de realizar o pagamento de seu aluguel no montante de R$ 9.000,00 referente ao vencimento de novembro.\" [página 12]\n\n6. A locatária da Sala 1801 está com inadimplência acumulada em R$ 22.451,04.\n   \"Neste mês o locatário da sala 1801, deixou de realizar o pagamento do seu aluguel no montante de R$ 7.483,68 referente ao vencimento de novembro. Estando portanto com a inadimplência acumulada em R$ 22.451,04.\" [página 12]\n\n7. A locatária da Loja 11 deixou de pagar seu aluguel no montante de R$ 3.310,54.\n   \"Neste mês o locatário da loja 11, deixou de realizar o pagamento do seu aluguel no montante de R$ 3.310,54 referente ao vencimento de novembro.\" [página 12]\n\n8. A locatária da garagem deixou de pagar seu aluguel no montante de R$ 36.729,14.\n   \"Neste mês, o locatário da garagem deixou de realizar o pagamento do seu aluguel, no montante de R$ 36.729,14 referente ao vencimento de novembro.\" [página 12]\n\nO que observar em seguida:\n- A evolução das inadimplências nos próximos meses.\n- O progresso na cobrança ativa dos valores em atraso mencionados no relatório."
+  },
+  "comunicados": {
+    "ids": [
+      846743,
+      1158613,
+      1130546
+    ],
+    "datas": [
+      "24/02/2025",
+      "10/04/2026",
+      "06/03/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 10/04/2026\n**A assembleia geral ordinária do fundo aprovou as contas e demonstrações contábeis relativas ao exercício social de 2025.**\n- A Consulta Formal realizada entre os cotistas deliberou pela aprovação das contas e demonstrações contábeis do Fundo, conforme disponível para consulta nos sites da Administradora (p. 1).\n\n### 06/03/2026\n**A administradora convocou uma assembleia geral extraordinária não presencial para a aprovação das contas e demonstrações contábeis relativas ao exercício social de 2025.**\n- A consulta formal foi enviada aos cotistas do Fundo, que deveriam deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, disponíveis para consulta nos sites da Administradora (p. 1).\n\n### 24/02/2025\n**O fundo comunicou uma reavaliação de investimento que resultou em um valor justo inferior ao atual valor contábil dos ativos, impactando negativamente o patrimônio líquido do fundo.**\n- A empresa especializada Cushman & Wakefield realizou a reavaliação a valor justo em dezembro de 2024, resultando em um valor 11,89% inferior ao atual valor contábil dos ativos e uma variação negativa de 14,55% no valor do patrimônio líquido do fundo (p. 1)."
+  },
+  "parecer": {
+    "id": 1122656,
+    "data_entrega": "26/02/2026 21:15",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário Northwest Investimentos Imobiliários em Saúde Fund I Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo "
   }
 }

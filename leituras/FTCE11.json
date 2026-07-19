@@ -1,10 +1,36 @@
 {
   "ticker": "FTCE11",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-19T03:43:26",
-  "fatos": {
-    "ids": [],
-    "datas": [],
-    "texto": null
+  "verificado_em": "2026-07-19T07:44:02",
+  "comunicados": {
+    "ids": [
+      1235176,
+      1207680,
+      1202693,
+      1181026
+    ],
+    "datas": [
+      "30/06/2026",
+      "29/05/2026",
+      "26/05/2026",
+      "06/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGE"
+    ],
+    "texto": "### COMUNICADO AO MERCADO — 30/06/2026\n**O QUE ACONTECEU:** O fundo OPPORTUNITY anunciou que não houve lucro no mês de junho, impedindo a distribuição de resultados.\n\n**RESUMO:** Não foram apurados lucros mensais suficientes para distribuir dividendos aos cotistas. A contabilidade será finalizada em 22 de julho de 2026 para verificar se há lucro disponível.\n\n**TRECHO-CHAVE:**\n\"informamos que não temos apurada existência de lucro no referido período, passível de distribuição de resultados.\" (p. 1)\n\n### COMUNICADO AO MERCADO — 29/05/2026\n**O QUE ACONTECEU:** O fundo OPPORTUNITY informou que não houve lucros mensais no mês de maio, impedindo a distribuição de dividendos.\n\n**RESUMO:** Não foram apurados lucros suficientes para distribuir dividendos aos cotistas. A contabilidade será finalizada em 22 de junho de 2026 para verificar se há lucro disponível.\n\n**TRECHO-CHAVE:**\n\"informamos que não temos apurada existência de lucro no referido período, passível de distribuição de resultados.\" (p. 1)\n\n### ASSEMBLEIA AGO — 26/05/2026\n**O QUE ACONTECEU:** Os cotistas do OPPORTUNITY aprovaram as Demonstrações Financeiras e o Relatório do Auditor Independente referentes ao exercício social de 2025.\n\n**RESUMO:** As demonstrações financeiras foram aprovadas por 60,03% dos cotistas. Não houve votos contrários ou abstenções.\n\n**TRECHO-CHAVE:**\n\"Após análises das repostas dos Cotistas do Fundo à Consulta Formal, foram apurados os seguintes resultados:\" (p. 1)\n\n### ASSEMBLEIA AGE — 06/05/2026\n**O QUE ACONTECEU:** Os cotistas aprovaram alterações no regulamento do OPPORTUNITY, incluindo aumento da taxa de consultoria e remoção de limitações de voto.\n\n**RESUMO:** As matérias foram aprovadas por 60,43% dos cotistas. A assembleia também autorizou contratações com partes relacionadas e aumentos de participação societária em empresas ligadas à consultoria especializada do fundo.\n\n**TRECHO-CHAVE:**\n\"O Administrador do Fundo realizou o procedimento de Consulta Formal aos Cotistas convocando os Cotistas a manifestarem-se a respeito das seguintes matérias:\" (p. 1)"
+  },
+  "modelo": "qwen2.5:14b",
+  "parecer": {
+    "id": 1152005,
+    "data_entrega": "31/03/2026 23:04",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Opportunity Fundo de Investimento Imobiliário - Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no"
   }
 }

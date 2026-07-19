@@ -31,3 +31,39 @@
 2026-07-19 06:15:38	XPML11	lido	1029s
 2026-07-19 06:16:51	PMRV11	sem-relatorio-fatos-lidos	73s
 2026-07-19 06:41:05	TRXF11	lido	1454s
+2026-07-19 07:02:54	XPLG11	lido	1308s
+2026-07-19 07:14:45	KNRI11	lido	712s
+2026-07-19 07:24:09	ANCR11	sem-relatorio-fatos-lidos	564s
+2026-07-19 07:38:37	MXRF11	lido	868s
+2026-07-19 07:44:04	FTCE11	sem-relatorio-fatos-lidos	327s
+2026-07-19 07:49:04	CHLL11	sem-relatorio-fatos-lidos	300s
+2026-07-19 07:50:16	JCDR11	lido	71s
+2026-07-19 07:58:29	VISC11	lido	494s
+2026-07-19 08:16:58	CPTS11	lido	1108s
+2026-07-19 08:21:50	KNHY11	lido	292s
+2026-07-19 08:43:59	HGRU11	lido	1328s
+2026-07-19 09:00:36	HGBS11	lido	997s
+2026-07-19 09:20:46	IRIM11	lido	1210s
+2026-07-19 09:32:24	PVBI11	lido	699s
+2026-07-19 09:36:20	0QCK11	sem-relatorio-fatos-lidos	235s
+2026-07-19 09:52:01	GARE11	lido	941s
+2026-07-19 09:56:17	0NFY11	sem-relatorio-fatos-lidos	255s
+2026-07-19 09:59:46	BRRI11	sem-relatorio-fatos-lidos	210s
+2026-07-19 10:15:52	TGAR11	lido	965s
+2026-07-19 10:34:28	0PI511	lido	1116s
+2026-07-19 11:00:44	GGRC11	lido	1576s
+2026-07-19 11:12:08	RECR11	lido	684s
+2026-07-19 11:29:14	045A11	lido	1026s
+2026-07-19 11:30:51	HCTR11	lido	97s
+2026-07-19 11:35:53	0EBI11	lido	302s
+2026-07-19 11:42:22	BRCR11	lido	389s
+2026-07-19 11:42:22	HSML11	erro	The read operation timed out
+2026-07-19 11:57:33	JSRE11	lido	911s
+2026-07-19 12:24:30	MALL11	lido	1617s
+2026-07-19 12:24:30	BRCO11	erro	The read operation timed out
+2026-07-19 12:25:26	--- lote interrompido pelo usuário em CSMC11
+2026-07-19 12:25:26	--- lote encerrado · 33 lidos, 2 em dia/sem relatório, 3 erros
+2026-07-19 12:26:39	--- lote iniciado · modelo qwen2.5:14b · 1031 fundos na fila
+2026-07-19 12:34:27	VISC11	erro	The read operation timed out
+2026-07-19 13:10:53	HSML11	lido	2117s
+2026-07-19 13:22:24	--- lote iniciado · modelo qwen2.5:14b · 1207 fundos na fila

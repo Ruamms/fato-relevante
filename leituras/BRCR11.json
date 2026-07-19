@@ -1,15 +1,51 @@
 {
   "ticker": "BRCR11",
   "modelo": "qwen2.5:14b",
-  "gerada_em": "2026-07-19T04:05:00",
+  "gerada_em": "2026-07-19T11:42:22",
   "relatorio": {
     "id": 1237729,
     "data_entrega": "01/07/2026 20:01",
     "texto": "1. **Revisão Positiva em Eldorado**: O fundo concluiu revisões positivas em mais de 5.000 m² do ABL, com aumentos superiores a 30% em contratos defasados e média geral de 22%. \"Com essas movimentações, o ativo segue 100% locado\", indicando qualidade do imóvel e gestão ativa (p. 2).\n\n2. **Negociação de Renovação no Sucupira**: O fundo conduz atualmente uma negociação relevante por prazo de 60 meses, com valores-alvo próximos a R$130/m², alinhados à valorização do empreendimento e ao dinamismo da região (p. 2).\n\n3. **Vacância Financeira**: A vacância financeira do portfólio representava 7,8% em termos de receita potencial de locação no mês de maio de 2026, enquanto a física encerrou o mês em 10,4%. \"A gestão segue em busca de novos locatários para ocupação das áreas vagas\" (p. 3).\n\n4. **Evolução do LTV**: Em março de 2026, foi concluída uma negociação relevante referente à dívida do Torre Almirante, garantindo um prazo de 12 meses de carência de amortização do saldo principal (p. 9).\n\n5. **Redução no Spread da Dívida**: A obrigação relacionada ao Diamond Tower foi rolada por mais 24 meses em abril/2025, com redução significativa no spread para CDI +1,90% (p. 9).\n\n6. **Distribuição aos Cotistas**: Em junho, o fundo distribuiu R$ 0,41/cota, equivalente a um dividend yield de 11,73%. \"A distribuição do Fundo segue o regime M-2\" (p. 10).\n\n7. **Reciclagem e Amortização**: Em março e abril de 2024, ocorreu a reciclagem do portfólio e a amortização do CENESP, impactando significativamente na variação do valor patrimonial da cota (p. 9).\n\n8. **Evolução Patrimonial**: O fundo realizou reavaliações do portfólio nos meses de maio e novembro, que impactam o valor patrimonial por cota (p. 10).\n\n**O que observar em seguida:**\n- Progresso nas negociações de renovação no Sucupira.\n- Mudanças na vacância física e financeira nos principais ativos do portfólio."
   },
-  "fatos": {
-    "ids": [],
-    "datas": [],
-    "texto": null
+  "comunicados": {
+    "ids": [
+      997150,
+      1198071,
+      1189716,
+      1198068,
+      1189713
+    ],
+    "datas": [
+      "23/09/2025",
+      "18/05/2026",
+      "13/05/2026",
+      "18/05/2026",
+      "13/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Fato Relevante (23/09/2025)\n**O que aconteceu:** A taxa de gestão do fundo foi reduzida novamente.\n\n**Resumo:** A Gestora decidiu manter a redução da taxa de gestão de 1,50% para 1,10%, aplicada sobre a base de cálculo prevista no Artigo 26 do Regulamento do Fundo. Essa redução representa um decréscimo aproximado de 27% e terá vigência adicional de três anos.\n\n**Trecho-chave:**\n\"decidiu voluntariamente manter a redução da taxa de gestão de 1,50% a.a. para 1,10% a.a., aplicada sobre a base de cálculo prevista no Artigo 26 do Regulamento do Fundo.\"\n\n### Comunicado ao Mercado (18/05/2026)\n**O que aconteceu:** As contas anuais do exercício encerrado em 31 de dezembro de 2025 foram aprovadas.\n\n**Resumo:** A assembleia geral dos cotistas realizada em 08 de maio de 2026 aprovou as contas anuais referentes ao exercício social de 2025.\n\n**Trecho-chave:**\n\"na assembleia geral de cotistas realizada em 08 de maio de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\"\n\n### Comunicado ao Mercado (13/05/2026)\n**O que aconteceu:** A forma de divulgação da remuneração dos prestadores de serviços essenciais foi atualizada.\n\n**Resumo:** O Fundo passará a divulgar a remuneração exclusivamente por meio da Ferramenta ANBIMA, em conformidade com as diretrizes do Ofício-Circular CVM nº 1/2025. Não haverá alteração nos valores pagos pelos cotistas.\n\n**Trecho-chave:**\n\"restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\"\n\n### Assembleia AGO (18/05/2026)\n**O que aconteceu:** A assembleia geral ordinária foi realizada.\n\n**Resumo:** A assembleia geral via manifestação de voto, realizada em 08 de maio de 2026, aprovou as demonstrações financeiras auditadas referentes ao exercício social encerrado em 31 de dezembro de 2025. \n\n**Trecho-chave:**\n\"Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n### Assembleia AGO (13/05/2026)\n**O que aconteceu:** A forma de divulgação da remuneração dos prestadores de serviços essenciais foi atualizada.\n\n**Resumo:** O Fundo aprovou a substituição do \"Sumário de Remuneração\" pela Ferramenta ANBIMA para divulgar a remuneração dos prestadores de serviços essenciais, conforme as diretrizes do Ofício-Circular CVM nº 1/2025. Não haverá alteração nos valores pagos pelos cotistas.\n\n**Trecho-chave:**\n\"Considerando as interpretações adicionais divulgadas pelo Ofício-Circular Conjunto nº 1/2025/CVM/SIN/SSE (\"Ofício-Circular CVM nº 1/2025\"), em especial quanto à substituição do \"Sumário de Remuneração\" pela Ferramenta ANBIMA como meio centralizado e adequado de divulgação da remuneração dos Prestadores de Serviços Essenciais.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 1152193,
+    "data_entrega": "01/04/2026 00:01",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do BTG Pactual Corporate Office Fund - Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas"
   }
 }

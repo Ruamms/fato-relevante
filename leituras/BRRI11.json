@@ -1,10 +1,36 @@
 {
   "ticker": "BRRI11",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-19T03:48:00",
-  "fatos": {
-    "ids": [],
-    "datas": [],
-    "texto": null
+  "verificado_em": "2026-07-19T09:59:45",
+  "comunicados": {
+    "ids": [
+      686197,
+      1188240,
+      1188239,
+      1153042
+    ],
+    "datas": [
+      "25/06/2024",
+      "13/05/2026",
+      "13/05/2026",
+      "01/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 13/05/2026 - Aprovação automática das contas anuais da assembleia geral de cotistas\n\nA assembleia geral de cotistas realizada em 4 de maio de 2026 para aprovar as contas anuais do exercício encerrado em 31 de dezembro de 2025 não foi instalada, pois nenhum cotista compareceu. Portanto, as demonstrações contábeis foram consideradas automaticamente aprovadas (p. 1).\n\n### 13/05/2026 - Comunicação da aprovação automática das contas anuais\n\nA BTG Pactual Serviços Financeiros S.A. DTVM, na qualidade de administradora do FII BRISA RENDA IMOBILIARIA, comunicou que as contas anuais referentes ao exercício encerrado em 31 de dezembro de 2025 foram automaticamente aprovadas por falta de comparecimento dos cotistas (p. 1).\n\n### 01/04/2026 - Convocação para aprovação das contas anuais\n\nA BTG Pactual Serviços Financeiros S.A. DTVM convocou os cotistas do FII BRISA RENDA IMOBILIARIA para a consulta formal até 4 de maio de 2026, com o objetivo de deliberar sobre a aprovação das contas e demonstrações contábeis relativas ao exercício social encerrado em 31 de dezembro de 2025 (p. 1).\n\n### 25/06/2024 - Venda do imóvel Prédio Industrial\n\nO Fundo BRISA RENDA IMOBILIARIA celebrou um Instrumento Particular de Promessa de Venda e Compra de Imóvel, visando a alienação do prédio industrial localizado na Avenida Nações Unidas em São Paulo, com área total de 4.406,48 m². O pagamento será no montante mínimo total de R$ 15.040.000,00 (p. 1)."
+  },
+  "modelo": "qwen2.5:14b",
+  "parecer": {
+    "id": 1151764,
+    "data_entrega": "31/03/2026 21:44",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
   }
 }

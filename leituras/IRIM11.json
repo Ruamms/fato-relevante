@@ -1,15 +1,58 @@
 {
   "ticker": "IRIM11",
   "modelo": "qwen2.5:14b",
-  "gerada_em": "2026-07-19T01:51:44",
+  "gerada_em": "2026-07-19T09:20:45",
   "relatorio": {
     "id": 1246365,
     "data_entrega": "13/07/2026 20:30",
     "texto": "- **Distribuição de Rendimento**: O fundo distribuiu um rendimento de R$ 1,18 por cota em junho, com resultado distribuível de R$ 0,97 por cota. [página 2]\n\n- **Reserva de Resultado**: Foi constituída uma reserva de resultado equivalente a 5% do resultado gerado, totalizando R$ 0,27 por cota ao final de junho. [página 2]\n\n- **Fatores para o Forte Resultado**: A correção monetária mais elevada e o pagamento de juros semestrais de alguns CRIs foram os principais fatores que impulsionaram o resultado do mês. [página 2]\n\n- **Alocação dos Recursos**: O fundo alocou recursos provenientes de pré-pagamentos em um novo FII de Geração Distribuída e outras alocações pontuais em CRIs. [página 2]\n\n- **Pipeline Futuro**: Para os próximos meses, o pipeline de novos CRIs supera o caixa disponível, potencialmente necessitando do uso de alavancagem via operações compromissadas reversas. [página 2]\n\n- **Evolução da Cota Patrimonial**: A cota patrimonial do fundo foi R$ 82,59 no final de junho, com um DY patrimonial de 14,93% nos últimos 12 meses. [página 3]\n\n- **Alerta Selo Atenção**: O selo \"Atenção\" indica que o rendimento do fundo está acima do resultado financeiro e há emissão de cotas com queda no valor patrimonial ajustado. [sem página específica, mas mencionado no contexto]\n\nO que observar em seguida:\n- **Desempenho futuro da alavancagem**: Monitorar o uso planejado de alavancagem para financiar novos investimentos.\n- **Distribuição futura de rendimentos**: Verificar se os próximos pagamentos seguirão a tendência recente de distribuições significativas."
   },
-  "fatos": {
-    "ids": [],
-    "datas": [],
-    "texto": null
+  "comunicados": {
+    "ids": [
+      1018246,
+      992129,
+      992068,
+      1125038,
+      1117091,
+      1072445,
+      1045019
+    ],
+    "datas": [
+      "21/10/2025",
+      "15/09/2025",
+      "15/09/2025",
+      "27/02/2026",
+      "15/02/2026",
+      "29/12/2025",
+      "21/11/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 21/10/2025 - Fato Relevante\n\n**O que aconteceu:** O IRIDIUM FII anunciou uma nova emissão de cotas.\n\n**Resumo:** A distribuição pública primária de cotas da terceira emissão do fundo será realizada no Brasil sob o regime de melhores esforços de colocação, com coordenação e distribuição do BTG PACTUAL SERVIÇOS FINANCEIROS S.A. DTVM.\n\n**Trecho-chave:**\n\"A distribuição primária das Novas Cotas será realizada no Brasil, sob o regime de melhores esforços de colocação, sob coordenação e distribuição do BTG PACTUAL SERVIÇOS FINANCEIROS S.A. DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS.\"\n\n---\n\n### 15/09/2025 - Fato Relevante\n\n**O que aconteceu:** O IRIDIUM FII atualizou as etapas da reorganização com o FUNDO DE INVESTIMENTO IMOBILIARIO IRIDIUM RECEBIVEIS IMOBILIARIOS RESPONSABILIDADE LIMITADA (IRDM11).\n\n**Resumo:** A reorganização visa consolidar as carteiras de investimento, ampliando a escala e diversificação da carteira do IRDM11. O encerramento da Oferta IRDM11 resultou na aquisição de cotas de um fundo imobiliário de tijolo.\n\n**Trecho-chave:**\n\"A Reorganização visa consolidar as carteiras de investimento do IRIM11 e do IRDM11, ampliando a escala, liquidez e diversificação da carteira do IRDM11.\"\n\n---\n\n### 27/02/2026 - Comunicado ao Mercado\n\n**O que aconteceu:** A BTG PACTUAL SERVIÇOS FINANCEIROS S.A. DTVM informou sobre a disponibilização digital dos Informes de Rendimentos referentes ao ano de 2025.\n\n**Resumo:** Os cotistas devem acessar o Portal do Investidor para receber os Informes de Rendimentos, que serão disponibilizados exclusivamente por meio digital conforme previsto na Instrução Normativa RFB nº 2.060/2021.\n\n**Trecho-chave:**\n\"Em complemento ao Comunicado ao Mercado de 2 de fevereiro de 2026, a Administradora informa que os Informes referentes ao ano de 2025 serão disponibilizados exclusivamente por meio digital.\"\n\n---\n\n### 15/02/2026 - Comunicado ao Mercado\n\n**O que aconteceu:** A BTG PACTUAL SERVIÇOS FINANCEIROS S.A. DTVM reiterou a disponibilização digital dos Informes de Rendimentos referentes ao ano de 2025.\n\n**Resumo:** Os cotistas devem acessar o Portal do Investidor para receber os Informes de Rendimentos, que serão disponibilizados exclusivamente por meio digital conforme previsto na Instrução Normativa RFB nº 2.060/2021.\n\n**Trecho-chave:**\n\"Em complemento ao Comunicado ao Mercado de 02 de fevereiro de 2026, a Administradora reitera que os Informes referentes ao ano de 2025 serão disponibilizados exclusivamente por meio digital.\"\n\n---\n\n### 29/12/2025 - Assembleia AGO\n\n**O que aconteceu:** A assembleia geral ordinária do IRIDIUM FII aprovou as contas e demonstrações contábeis relativas ao exercício social findo em 30 de junho de 2025.\n\n**Resumo:** O quórum de deliberação foi atingido com aproximadamente 73,304% dos votos favoráveis para aprovar as contas e demonstrações contábeis do Fundo.\n\n**Trecho-chave:**\n\"Aprovação das contas e demonstrações contábeis do Fundo, devidamente auditadas, relativas ao exercício social findo em 30 de junho de 2025.\"\n\n---\n\n### 21/11/2025 - Assembleia AGO\n\n**O que aconteceu:** A assembleia geral ordinária do IRIDIUM FII convocou os cotistas para deliberar sobre a aprovação das contas e demonstrações contábeis relativas ao exercício social findo em 30 de junho de 2025.\n\n**Resumo:** Os Cotistas foram convidados a participar da assembleia não presencial por meio do procedimento de consulta formal até o dia 22 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Aprovação das contas e demonstrações contábeis do Fundo, devidamente auditadas, relativas ao exercício social findo em 30 de junho de 2025.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Emissão de cotas com VP/cota em queda",
+      "Rendimentos irregulares"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 1001154,
+    "data_entrega": "29/09/2025 18:10",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Iridium Fundo de Investimento Imobiliário Responsabilidade Limitada em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil a"
   }
 }

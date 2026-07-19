@@ -1,10 +1,36 @@
 {
   "ticker": "0NFY11",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-19T03:48:00",
-  "fatos": {
-    "ids": [],
-    "datas": [],
-    "texto": null
+  "verificado_em": "2026-07-19T09:56:16",
+  "comunicados": {
+    "ids": [
+      961205,
+      871421,
+      1180227,
+      1180224
+    ],
+    "datas": [
+      "06/08/2025",
+      "01/04/2025",
+      "05/05/2026",
+      "05/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Fato Relevante - 06/08/2025\n\n**O que aconteceu:** A Gestora do Fundo de Investimento Imobiliário Oportunidades Imobiliárias I decidiu renunciar temporariamente ao recebimento integral da Taxa de Gestão.\n\n**Resumo:** A Capitania Alternatives S.A., na qualidade de gestora, não receberá a taxa completa pela gestão do fundo por três meses, a partir de julho de 2025. \n\n**Trecho-chave:**\n\"vêm, pelo presente, comunicar, aos cotistas do Fundo e ao mercado em geral, a renúncia temporária, por parte da Gestora, do recebimento integral da Taxa de Gestão, pelo período de 3 (três) meses, a partir do mês de julho de 2025.\"\n\n---\n\n### Fato Relevante - 01/04/2025\n\n**O que aconteceu:** A Gestora do Fundo de Investimento Imobiliário Oportunidades Imobiliárias I decidiu renunciar temporariamente ao recebimento integral da Taxa de Gestão.\n\n**Resumo:** A Capitania Alternatives S.A., na qualidade de gestora, não receberá a taxa completa pela gestão do fundo por três meses, a partir de março de 2025. \n\n**Trecho-chave:**\n\"vêm, pelo presente, comunicar, aos cotistas do Fundo e ao mercado em geral, a renúncia temporária, por parte da Gestora, do recebimento integral da Taxa de Gestão, pelo período de 3 (três) meses, a partir do mês de março de 2025.\"\n\n---\n\n### Assembleia Geral Ordinária - 04/05/2026\n\n**O que aconteceu:** A assembleia geral ordinária dos cotistas do Fundo Oportunidades Imobiliárias I foi realizada.\n\n**Resumo:** A assembleia ocorreu de forma não presencial, com encerramento às 23:59h do dia 1º de maio de 2026. Foi aprovado o parecer dos auditores independentes e as demonstrações financeiras referentes ao exercício social findo em 31/12/2025.\n\n**Trecho-chave:** \n\"Observado o art. 71 da Instrução CVM 175/2022, restam aprovadas: (i) As Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 31.12.2025.\""
+  },
+  "modelo": "qwen2.5:14b",
+  "parecer": {
+    "id": 1147506,
+    "data_entrega": "30/03/2026 10:40",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o período de 10 de março a 31 de dezembro de 2025, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento"
   }
 }

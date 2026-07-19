@@ -1,19 +1,58 @@
 {
   "ticker": "TGAR11",
   "modelo": "qwen2.5:14b",
-  "gerada_em": "2026-07-19T02:20:28",
+  "gerada_em": "2026-07-19T10:15:51",
   "relatorio": {
     "id": 1224927,
     "data_entrega": "19/06/2026 18:02",
     "texto": "1. **Venda do ativo Valle dos Ipês**: Em maio, o fundo realizou a venda do empreendimento Valle dos Ipês por R$ 15,63 milhões, com uma TIR de 25,16% ao ano (p. 7).\n   \n2. **Emissão do Termo de Verificação de Obras (TVO) para Esmeralda do Tapajós**: As obras deste empreendimento foram concluídas e ele teve a melhor performance de vendas desde o início, com 156 unidades comercializadas no mês (p. 7).\n\n3. **Aquisição e venda de operações financeiras**: O fundo realizou a compra de duas operações por R$ 6,80 milhões e vendeu outras duas por R$ 5,97 milhões (p. 8).\n\n4. **Investimento no FII TG Eurogarden Master**: O fundo investiu R$ 36,9 milhões na subclasse subordinada do FII TG Eurogarden Master para ampliar sua exposição ao crédito imobiliário estruturado (p. 8).\n\n5. **Swap de indexador**: A gestão realizou uma operação de swap para proteger o fundo contra riscos decorrentes do descasamento entre os indexadores dos ativos e do passivo, reduzindo o custo econômico das cotas seniores (p. 8).\n\n6. **Desempenho de vendas em maio**: No mês de maio, foram comercializadas 42 unidades no total, resultando em R$ 10,48 milhões de VGV vendido (p. 7).\n\n7. **Inadimplência do portfólio**: O relatório menciona a inadimplência média do portfólio de equity urbanismo e incorporação, com valores variando entre 3% e 19%, mas não fornece detalhes específicos sobre mudanças recentes (p. 7).\n\n**O que observar em seguida:**\n- Desempenho futuro das vendas do Esmeralda do Tapajós.\n- Impacto da swap de indexador na rentabilidade a longo prazo."
   },
-  "fatos": {
+  "comunicados": {
     "ids": [
-      1244348
+      1244348,
+      1119841,
+      1119802,
+      1228044,
+      1218276,
+      1247642,
+      1193188
     ],
     "datas": [
-      "10/07/2026"
+      "10/07/2026",
+      "24/02/2026",
+      "23/02/2026",
+      "25/06/2026",
+      "11/06/2026",
+      "14/07/2026",
+      "15/05/2026"
     ],
-    "texto": "### 10/07/2026\n**O que aconteceu:** O Fundo de Investimento Imobiliário TG Ativo Real anunciou uma alteração no seu regulamento para evitar sobreposição econômica de taxas de gestão.\n\n**Resumo:** A administração e a gestora do fundo decidiram incluir um item no regulamento que estabelece descontos na taxa de gestão quando o fundo investir em outros fundos sob sua própria gestão. Esta medida visa alinhar os interesses com os cotistas e promover maior transparência.\n\n**Trecho-chave:** \"Na hipótese de o Fundo realizar investimentos em fundos de investimentos sob a gestão da TG Core Asset, e que estejam sujeitos à cobrança de taxa de gestão própria, o Gestor deverá conceder desconto na taxa de gestão do Fundo correspondente à parcela incidente sobre o valor aloca\ndo em tais fundos, de modo a mitigar a sobreposição de taxas de gestão.\" (p. 1)"
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 10/07/2026 - FATO RELEVANTE\n\n**O QUE ACONTECEU:** O Fundo de Investimento Imobiliário TG Ativo Real alterou seu regulamento para mitigar a sobreposição econômica de taxas de gestão.\n\n**RESUMO:** A administração e a gestora do fundo decidiram divulgar formalmente uma prática já existente, que envolve conceder descontos na taxa de gestão quando o fundo investe em outros fundos sob sua própria gestão. Esta medida visa alinhar os interesses dos cotistas e promover maior transparência.\n\n**TRECHO-CHAVE:** \"A medida busca assegurar que, nas hipóteses previstas no item 1.2.1 do Regulamento, não haja sobreposição econômica de taxas de gestão sobre a mesma exposição, contribuindo para uma estrutura de remuneração mais transparente e alinhada ao interesse dos cotistas.\" (p. 2)\n\n---\n\n### 25/06/2026 - COMUNICADO AO MERCADO\n\n**O QUE ACONTECEU:** A TG Core Asset esclareceu aspectos relacionados à estratégia de investimento, gestão da carteira e monitoramento dos ativos do Fundo de Investimento Imobiliário TG Ativo Real.\n\n**RESUMO:** O comunicado destaca a integridade das demonstrações financeiras auditadas anualmente por firmas independentes. A gestora também explicou que o fundo adota uma estratégia híbrida, combinando investimentos em desenvolvimento imobiliário e ativos financeiros como CRIs e FIIs para gestão de liquidez.\n\n**TRECHO-CHAVE:** \"A venda desses ativos financiou a evolução das obras do portfólio, sendo que hoje mais de 95% das obras da carteira já se encontram concluídas.\" (p. 2)\n\n---\n\n### 11/06/2026 - COMUNICADO AO MERCADO\n\n**O QUE ACONTECEU:** A Vórtx Distribuidora respondeu à B3 sobre oscilações atípicas nas cotas do Fundo de Investimento Imobiliário TG Ativo Real.\n\n**RESUMO:** Não foram identificados fatos ou atos específicos que justifiquem as recentes variações nos preços das cotas no mercado secundário. A administradora reiterou que todas as informações relevantes já foram divulgadas conforme a regulamentação vigente.\n\n**TRECHO-CHAVE:** \"A Administradora esclarece que não tem conhecimento de nenhum ato ou fato relevante específico que possa justificar e/ou motivar o aumento do número de negócios e da quantidade negociada das cotas do Fundo no mercado secundário de Bolsa da B3 S.A.\" (p. 1)\n\n---\n\n### 24/02/2026 - FATO RELEVANTE\n\n**O QUE ACONTECEU:** O Fundo TG Ativo Real retificou um comunicado anteriormente publicado sobre uma suposta relação com outro fundo, corrigindo a informação de que não possui cotas no TG Real FIDC.\n\n**RESUMO:** A administração do fundo esclareceu que houve falha operacional na divulgação de informações e reiterou que o Fundo TG Ativo Real não tem investimentos no TG Real FIDC. \n\n**TRECHO-CHAVE:** \"A Administradora esclarece ainda que o FUNDO TG ATIVO REAL (“TGAR11”), não possui cotas de investimento no TG REAL FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS CNPJ/MF nº 24.852.946/0001-44, motivo pelo qual não possuem correlação entre as informações divulgadas.\" (p. 1)\n\n---\n\n### 23/02/2026 - FATO RELEVANTE\n\n**O QUE ACONTECEU:** O TG Real FIDC comunicou uma reavaliação de ativos que resultou em uma variação negativa de -49,15% na subclasse da cota subordinada junior.\n\n**RESUMO:** Este fato relevante foi retificado posteriormente (24/02/2026) para esclarecer que o TG Ativo Real não possui investimentos no TG Real FIDC e que a variação negativa mencionada não se aplica ao Fundo TG Ativo Real.\n\n**TRECHO-CHAVE:** \"O TG REAL FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS, inscrito no CNPJ/MF sob o nº 24.852.946/0001-44 (“Fundo”), representado por sua administradora VORTX DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA., vem a público, por meio deste fato relevante, em cumprimento ao disposto na Resolução CVM nº 175, de 23 de dezembro de 2022, comunicar aos cotistas e ao mercado que realizou a remarcação de determinados ativos, com base na revisão da metodologia de marcação a mercado da Administradora, resultando em uma variação negativa de -49,15 % na subclasse da cota subordinada junior em 20/02/2026.\" (p. 1)\n\n---\n\n### 14/07/2026 e 15/05/2026 - ASSEMBLEIA AGO\n\n**O QUE ACONTECEU:** O Fundo de Investimento Imobiliário TG Ativo Real realizou assembleias gerais ordinárias (AGO) para aprovar as contas e demonstrações contábeis do exercício social findo em 31/12/2025.\n\n**RESUMO:** As assembleias foram convocadas pela administradora Vórtx Distribuidora de Títulos e Valores Mobiliários LTDA. A aprovação das matérias foi realizada por meio de consulta formal, com a participação dos cotistas através do site da administradora.\n\n**TRECHO-CHAVE:** \"A Consulta Formal deliberou pela matéria constante na Ordem do Dia.\" (p. 1)\n\n---\n\nEsses documentos refletem as práticas regulatórias e operacionais do Fundo de Investimento Imobiliário TG Ativo Real, destacando esforços para transparência e alinhamento com os interesses dos cotistas."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Emissão de cotas com VP/cota em queda"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 1152236,
+    "data_entrega": "01/04/2026 00:24",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima refe ridas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe Única de Cotas do Fundo de Investimento Imobiliário TG Ativo Real – Re sponsabilidade Limitada em 31 de dezembro de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as pr"
   }
 }

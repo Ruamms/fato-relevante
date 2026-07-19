@@ -1,10 +1,45 @@
 {
   "ticker": "ANCR11",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-19T03:38:56",
-  "fatos": {
-    "ids": [],
-    "datas": [],
-    "texto": null
+  "verificado_em": "2026-07-19T07:24:07",
+  "comunicados": {
+    "ids": [
+      1041404,
+      994423,
+      993719,
+      1073610,
+      1050352,
+      1238724,
+      1177782
+    ],
+    "datas": [
+      "17/11/2025",
+      "19/09/2025",
+      "17/09/2025",
+      "30/12/2025",
+      "28/11/2025",
+      "03/07/2026",
+      "30/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGO"
+    ],
+    "texto": "### 17/11/2025 - Aprovação da 7ª Emissão de Cotas e Oferta Pública\n\nO Fundo ANCAR IC aprovou a emissão de até R$ 1.299.999.951,45 em novas cotas para integralização em moeda corrente nacional, sob o regime de melhores esforços de colocação. Além disso, foi estabelecido um direito de preferência aos cotistas que detinham cotas na data de divulgação do anúncio de início da oferta.\n\n\"Os demais termos e condições da 7ª Emissão e da Oferta serão descritos nos documentos da Oferta.\"\n\n### 19/09/2025 - Comunicado sobre Oscilações Atípicas no Mercado\n\nA administração do Fundo ANCAR IC comunicou que não há atos ou fatos relevantes não divulgados que justifiquem as oscilações recentes no preço e volume de negociação das cotas.\n\n\"Não há, até o momento, qualquer ato ou fato relevante não divulgado que possa justificar a oscilação atípica no preço e/ou volume de negociações das cotas do Fundo, conforme observado nas últimas semanas.\"\n\n### 17/09/2025 - Aquisição de Participação em Shopping Jardim Sul\n\nO Fundo ANCAR IC concluiu a aquisição de uma participação de 10% no shopping \"Jardim Sul\" localizado em São Paulo, pelo valor de R$ 63 milhões.\n\n\"(i) o Fundo concluiu a aquisição de parcela de participação de 10% (dez por cento) do empreendimento designado “Shopping Jardim Sul” localizado na cidade de São Paulo/SP pelo valor de R$ 63.000.000,00.\"\n\n### 30/12/2025 - Não Realização da Distribuição no Fundo\n\nO administrador do Fundo ANCAR IC informou que não será realizada a distribuição no fundo e que esta medida será reavaliada.\n\n\"A GENIAL INVESTIMENTOS CORRETORA DE VALORES MOBILIÁRIOS S.A. com sede na cidade do Rio de Janeiro, Estado do Rio de Janeiro, na Praia de Botafogo, nº 228, sala 913, inscrita no CNPJ/MF sob o nº 27.652.684/0001 -62 (“Administradora”), na qualidade de administradora e gestora do FUNDO DE INVESTIMENTO IMOBILIÁRIO - FII ANCAR IC, informa que não será realizada a distribuição no Fundo.\"\n\n### 28/11/2025 - Não Realização da Distribuição no Fundo\n\nA administração comunicou novamente que não será realizada a distribuição no fundo e que esta medida será reavaliada.\n\n\"A GENIAL INVESTIMENTOS CORRETORA DE VALORES MOBILIÁRIOS S.A. com sede na cidade do Rio de Janeiro, Estado do Rio de Janeiro, na Praia de Botafogo, nº 228, sala 913, inscrita no CNPJ/MF sob o nº 27.652.684/0001 -62 (“Administradora”), na qualidade de administradora e gestora do FUNDO DE INVESTIMENTO IMOBILIÁRIO - FII ANCAR IC, informa que não será realizada a distribuição no Fundo.\"\n\n### 30/04/2026 - Proposta para Assembleia Geral Ordinária\n\nA administração propôs a aprovação das demonstrações financeiras do exercício social de 2025 e informou que as deliberações dependerão da maioria dos votos dos cotistas.\n\n\"O Administrador propõe a aprovação das matérias da Ordem do Dia. Ademais, o Administrador informa que está à disposição para sanar eventuais dúvidas por meio dos canais de atendimento disponibilizados no Edital de Convocação da Consulta Formal.\""
+  },
+  "modelo": "qwen2.5:14b",
+  "parecer": {
+    "id": 1149267,
+    "data_entrega": "31/03/2026 01:37",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira d o Fundo de Investimento Imobiliário – FII Ancar IC – Responsabilidade Limitada em 31 de dezembro de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotad"
   }
 }

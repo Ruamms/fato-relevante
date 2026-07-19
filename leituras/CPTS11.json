@@ -1,21 +1,57 @@
 {
   "ticker": "CPTS11",
   "modelo": "qwen2.5:14b",
-  "gerada_em": "2026-07-19T01:02:06",
+  "gerada_em": "2026-07-19T08:16:57",
   "relatorio": {
     "id": 1237800,
     "data_entrega": "01/07/2026 22:11",
     "texto": "- **Rentabilidade e Dividendos**: O fundo apresentou rentabilidade a mercado de -2,52% em maio, enquanto o IFIX recuou -1,33%. A distribuição mensal foi de R$ 0,09 por cota (equivalente a 129,1% do CDI), com um DY anualizado de 15,09%.\n\n- **Mudanças na Carteira**: O fundo realizou compras definitivas no valor de R$ 456.530.079 em CRIs e vendas definitivas no valor de R$ 19 milhões também em CRIs.\n\n- **Perfil de Crédito**: A carteira de crédito do fundo é composta por 18 casos, representando 23,7% dos ativos totais, com todas as operações indexadas ao IPCA e sem nenhuma operação estressada ou inadimplente.\n\n- **Carteira de FIIs**: A carteira de FIIs do fundo é composta por 81 FIIs, representando 61,3% dos ativos totais. O segmento com maior percentual é o de Shoppings (20,7%).\n\n- **Potencial de Valorização**: Há um potencial de valorização em relação à cota patrimonial de +15,1%, e de +1,8% caso todos os FIIs fossem marcados a seu valor patrimonial.\n\n- **Desempenho dos CRIs**: A rentabilidade da carteira de CRIs foi positiva com uma marcação a mercado de IPCA+ 8,67%.\n\nO que observar em seguida:\n1. Evolução das taxas de juros e impacto na rentabilidade futura.\n2. Movimentações adicionais na carteira de FIIs e CRIs nos próximos meses."
   },
-  "fatos": {
+  "comunicados": {
     "ids": [
       1087834,
-      1087833
+      1087833,
+      1028940,
+      1213096,
+      1187136,
+      1064617,
+      1041352
     ],
     "datas": [
       "19/01/2026",
-      "19/01/2026"
+      "19/01/2026",
+      "05/11/2025",
+      "05/06/2026",
+      "12/05/2026",
+      "16/12/2025",
+      "17/11/2025"
     ],
-    "texto": "### 19/01/2026\n**O que aconteceu:** Aprovação da 15ª emissão de cotas do Capitânia Securities II Fundo de Investimento Imobiliário.\n\n**Resumo:** O BTG Pactual Serviços Financeiros S.A. aprovou, por meio do Instrumento Particular de Deliberação Conjunta, a realização da 15ª emissão de cotas com montante inicial de R$ 300 milhões e preço de emissão de R$ 8,96 por cota. A distribuição será feita sob o regime de melhores esforços de colocação e destinada a investidores profissionais.\n\n**Trecho-chave:** \"foi aprovado, na presente data, por meio do “Instrumento Particular de Deliberação Conjunta do Capitânia Securities II Fundo de Investimento Imobiliário Responsabilidade Limitada” (“Ato de Aprovação da Oferta”), a realização da 15ª (décima quinta) emissão de cotas da Classe (“Novas Cotas” e “Emissão”, respectivamente), as quais serão objeto de distribuição pública primária, sob o rito de registro automático junto à CVM e sob o regime de melhores esforços de colocação\" (p. 1).\n\n---\n\n**Conexão com indicadores:** Esta emissão pode contribuir para aumentar o número total de cotas do fundo, impactando diretamente os indicadores como Valor Patrimonial por Cota (VP/cota) e o número total de cotistas."
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 16/12/2025\n**Aprovação das contas e demonstrações contábeis do exercício social de 2025**\nA assembleia geral ordinária aprovou, por meio de consulta formal realizada entre 14 e 15 de novembro de 2025, as contas e demonstrações contábeis auditadas do Capitânia Securities II FII referentes ao exercício social encerrado em 30/06/2025. O quórum foi atingido com aproximadamente 82,55% dos cotistas votando a favor.\n\n*\"Foram recebidas respostas de Cotistas representando, aproximadamente, 3,97% das Cotas de emissão do Fundo, sendo que a matéria colocada em deliberação teve o quórum abaixo: Voto Aprovação: 82,55%; Voto Não Aprovação: 2,97%; Abstenção: 14,46%.\"*\n\n### 05/11/2025\n**Postergação da isenção de taxa de gestão**\nA Capitânia Securities II FII decidiu postergar a isenção total da cobrança da taxa de gestão incidente sobre os fundos geridos pelo grupo da Capitânia por mais 90 dias, contados a partir de 5/11/2025.\n\n*\"Em complemento à Carta do Gestor divulgada em 30/10/2024 e ao Fato Relevante de 03/02/2025, a Gestora decidiu postergar a isenção da cobrança integral da taxa de gestão incidente sobre os fundos nos quais a Classe investe e que pertencem ao grupo da Capitânia, por mais 90 dias contados a partir de 5 de novembro de 2025.\"*\n\n### 12/05/2026\n**Esclarecimento sobre oscilação atípica das cotas**\nA administradora do Capitânia Securities II FII informou à B3 que não há fatos relevantes conhecidos que justifiquem as recentes variações no valor de suas cotas negociadas na bolsa.\n\n*\"Em atenção ao Ofício, a Administradora esclarece que não tem conhecimento de ato ou fato relevante que possa justificar a variação do valor da cota do Fundo no mercado secundário de bolsa da B3 – Brasil, Bolsa e Balcão e que não tenha sido tempestivamente divulgado aos cotistas e ao mercado.\"*\n\n### 17/11/2025\n**Convocação para Assembleia Geral Ordinária**\nA assembleia geral ordinária foi convocada por meio de consulta formal, com o objetivo de deliberar sobre a aprovação das contas e demonstrações contábeis do exercício social encerrado em 30/06/2025.\n\n*\"A BTG PACTUAL SERVIÇOS FINANCEIROS S.A. DTVM, na qualidade de administradora do Capitânia Securities II FII, convoca os cotistas para participar da Assembleia Geral Ordinária não presencial, por meio de consulta formal, a qual tem por objeto deliberar sobre: 1) Aprovação das contas e demonstrações contábeis do Fundo, devidamente auditadas, relativas ao exercício social findo em 30/06/2025.\"*\n\n### 05/06/2026\n**Padronização do calendário de distribuição de rendimentos**\nA Capitânia Securities II FII padronizou o calendário de distribuição de rendimentos, com a data-base para recebimento dos rendimentos sendo o dia útil seguinte ao 10º dia útil após o mês de competência.\n\n*\"A partir da competência (maio/2026), o Fundo passará a observar o seguinte cronograma mensal de distribuição: (i) o Aviso aos Cotistas, contendo o valor do rendimento, será divulgado ao final do 10º dia útil do mês subsequente ao de competência; (ii) farão jus ao rendimento os cotistas detentores de cotas do Fundo ao final do 10º dia útil (data-base/data-com); e (iii) as cotas passarão a ser negociadas “ex-rendimento” a partir do 11º dia útil do mês subsequente ao de competência.\"*\n\n### 19/01/2026\n**Realização da 15ª emissão de cotas**\nFoi aprovada, por meio de um ato de deliberação conjunta, a realização da 15ª emissão de cotas do Capitânia Securities II FII, com montante inicial de R$300 milhões e preço de subscrição de R$8,99 por cota.\n\n*\"O montante inicial da Oferta é de R$ 300.000.001,28 (trezentos milhões, um real e vinte e oito centavos), sem considerar a Taxa de Distribuição Primária, correspondente a 33.482.143 (trinta e três milhões, quatrocentas e oitenta e duas, cento e quarenta e três) Novas Cotas.\"*"
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 999896,
+    "data_entrega": "26/09/2025 23:28",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
   }
 }

@@ -1,15 +1,37 @@
 {
   "ticker": "0EBI11",
   "modelo": "qwen2.5:14b",
-  "gerada_em": "2026-07-19T03:19:35",
+  "gerada_em": "2026-07-19T11:35:52",
   "relatorio": {
     "id": 1242377,
     "data_entrega": "08/07/2026 18:41",
     "texto": "1. **Novas Investidas na Carteira**: O fundo realizou investimentos no valor total de R$ 72,6 milhões em novas operações desde o último relatório.\n   - \"Desde nosso último relatório, realizamos investimentos em novas operações no valor total de R$ 72,6 milhões.\" (p. 2)\n\n2. **Alocação da Carteira**: A alocação do fundo é composta por 92,3% em ativos alvo e 8,3% em instrumentos de caixa.\n   - \"Na data deste relatório, o Kinea Unique apresentava alocação, em relação ao seu patrimônio, de 92,3% em ativos alvo e 8,3% em instrumentos de caixa.\" (p. 1)\n\n3. **Taxa Média do Fundo**: A taxa média do fundo (MTM) é CDI + 4,68% a.a.\n   - \"A remuneração média (MTM) de CDI + 4,68% a.a.\" (p. 1)\n\n4. **Dividendos Distribuídos**: O fundo distribuiu dividendos no valor de R$ 1,15 por cota em junho.\n   - \"Os dividendos referentes a junho, cuja distribuição ocorrerá no dia 10/07/2026, são de R$ 1,15 por cota.\" (p. 1)\n\n5. **Resultado do Fundo**: O resultado líquido do fundo em junho foi de R$ 28,8 milhões.\n   - \"O resultado líquido no mês de junho foi de R$ 28,8 milhões.\" (página não especificada)\n\n6. **Projeções da Selic**: A última reunião do Copom reduziu a taxa Selic em 0,25 ponto percentual para 14,25% ao ano.\n   - \"O comunicado do BACEN e a ata divulgada posteriormente trouxeram incertezas sobre os movimentos futuros, deixando em aberto a possibilidade de uma pausa no ritmo de cortes.\" (p. 4)\n\n7. **Progresso do Projeto Residencial Campinas**: O projeto está próximo da finalização e deve receber o Habite-se nos próximos dias.\n   - \"Durante o mês de junho, ocorreram marcos importantes na finalização do Projeto Residencial Campinas... Foram realizadas as vistorias e aprovações necessárias para a emissão do Habite-se do empreendimento.\" (p. 8)\n\nO que observar em seguida:\n- Novas atualizações sobre o progresso do projeto residencial Campinas.\n- Eventuais novos investimentos anunciados no próximo relatório mensal."
   },
-  "fatos": {
-    "ids": [],
-    "datas": [],
-    "texto": null
+  "comunicados": {
+    "ids": [
+      943798,
+      1048958,
+      1013249
+    ],
+    "datas": [
+      "10/07/2025",
+      "27/11/2025",
+      "14/10/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Fato Relevante - 10/07/2025\n\n**O QUE ACONTECEU:** O KINEA UNIQUE HY CDI Fundo de Investimento Imobiliário aprovou a oferta pública de distribuição das novas cotas da 4ª emissão.\n\n**RESUMO:** O administrador do fundo, INTRAG Distribuidora de Títulos e Valores Mobiliários LTDA., formalizou o ato para aprovar a oferta primária de cotas da 4ª emissão. A oferta será realizada no Brasil sob coordenação de ITAÚ BBA Assessoria Financeira S.A., com distribuição em até duas séries.\n\n**TRECHO-CHAVE:** \"Nesta data foi formalizado o Ato do Administrador para Aprovação da Oferta Primária de Cotas da 4ª (quarta) Emissão da Classe Única de Cotas do Kinea Unique HY CDI Fundo de Investimento Imobiliário Responsabilidade Limitada, por meio do qual o Administrador aprovou a oferta pública de distribuição de cotas da 4ª (quarta) emissão do Fundo.\"\n\n### Ata da Assembleia Geral Ordinária - 27/11/2025\n\n**O QUE ACONTECEU:** Foi realizada a assembleia geral ordinária para aprovar as demonstrações contábeis do KINEA UNIQUE HY CDI Fundo de Investimento Imobiliário referentes ao exercício social findo em 30.06.2025.\n\n**RESUMO:** A assembleia, convocada sem necessidade de prévia convocação, aprovou as demonstrações contábeis do fundo acompanhadas pelo relatório dos auditores independentes. Como todos os cotistas compareceram, não foi necessário enviar resumo das decisões tomadas.\n\n**TRECHO-CHAVE:** \"MATÉRIA DELIBERADA:  aprovadas as Demonstrações Contábeis do Fundo, devidamente acompanhadas do relatório dos auditores independentes, documentos disponibilizados aos cotistas nos termos da regulamentação em vigor, relativos ao exercício social findo em 30.06.2025\"\n\n### Consulta Formal Eletrônica - 14/10/2025\n\n**O QUE ACONTECEU:** O administrador do KINEA UNIQUE HY CDI Fundo de Investimento Imobiliário solicitou a aprovação das demonstrações financeiras e notas explicativas referentes ao exercício social findo em 30.06.2025.\n\n**RESUMO:** A INTRAG Distribuidora de Títulos e Valores Mobiliários LTDA., administradora do fundo, solicitou aos cotistas que aprovassem as demonstrações financeiras referentes ao exercício social findo em 30.06.2025 até o dia 27 de novembro de 2025.\n\n**TRECHO-CHAVE:** \"A INTRAG DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA., inscrita no CNPJ sob o nº 62.418.140/0001-31, com sede na Avenida Brigadeiro Faria Lima, 3500, 4º Andar – Itaim Bibi, São Paulo – SP, na qualidade de Administradora do KINEA UNIQUE HY CDI FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA , inscrito no CNPJ sob o nº 42.754.362/0001-18, vem submeter à consulta formal eletrônica quotistas a seguinte matéria: (i) Aprovar as demonstrações financeiras, notas explicativas e parecer dos auditores independentes, relativas ao exercício social findo em 30 de junho de 2025.\""
+  },
+  "parecer": {
+    "id": 994950,
+    "data_entrega": "22/09/2025 09:49",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
   }
 }

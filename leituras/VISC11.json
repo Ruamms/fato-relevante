@@ -1,19 +1,51 @@
 {
   "ticker": "VISC11",
   "modelo": "qwen2.5:14b",
-  "gerada_em": "2026-07-19T00:48:49",
+  "gerada_em": "2026-07-19T07:58:27",
   "relatorio": {
     "id": 1241558,
     "data_entrega": "07/07/2026 19:17",
     "texto": "- **Crescimento do NOI e Vendas**: O portfólio do fundo apresentou crescimento de 11,7% no NOI caixa por m² e 12,7% nas vendas por m² em comparação com o mesmo período do ano anterior. [página 5]\n\n- **Resultado Financeiro e Distribuição**: Em junho, o resultado total foi de R$ 0,88/cota e a distribuição realizada foi de R$ 0,84/cota. O fundo ainda possui um resultado acumulado não distribuído de R$ 1,24 por cota que poderá ser utilizado para futuras distribuições. [página 5]\n\n- **Inadimplência e Descontos**: A inadimplência líquida do mês foi de aproximadamente 1,2%, uma queda de 0,2 ponto percentual em relação ao mesmo período do ano anterior. Os descontos atingiram 1,8% do faturamento total, um aumento de 0,1 ponto percentual comparado ao mesmo período do ano anterior. [página 5]\n\n- **Taxa de Ocupação**: A taxa de ocupação do fundo encerrou o mês de maio em 94,0%. [página 5]\n\n- **Projeção de Consumo de Caixa**: O Fundo dispõe de R$ 157,9 milhões em caixa e apresenta uma projeção de despesas para 2026 de aproximadamente R$ 137,7 milhões. A gestão está focada em gerar liquidez por meio da venda de ativos e nova emissão de cotas, sem descartar a possibilidade de alavancagem. [página 11]\n\n- **Obrigações à Prazo**: O Fundo possui obrigações referentes a aquisições prévias no valor total de R$ 1,073 bilhão, incluindo parcelas do Shopping Paralela FII e do BH Shopping. [página 10]\n\n- **Cenário Macroeconômico**: O cenário macroeconômico apresentou melhora marginal em junho, principalmente devido à queda no preço do petróleo que reduziu parte da pressão inflacionária observada anteriormente. No entanto, incertezas relacionadas à inflação e política monetária americana continuam relevantes. [página 4]\n\n- **Volume de Negociação**: O volume médio diário de negociação das cotas na B3 foi de R$ 8,5 milhões, representando um giro equivalente a 6% das cotas do Fundo. [página 9]\n\n**O que observar em seguida:**\n1. Desempenho futuro da inadimplência e descontos.\n2. Progresso nas estratégias de gerenciamento de caixa e alavancagem."
   },
-  "fatos": {
+  "comunicados": {
     "ids": [
-      1227676
+      1227676,
+      1235370,
+      1208117,
+      1207522,
+      1173286
     ],
     "datas": [
-      "25/06/2026"
+      "25/06/2026",
+      "30/06/2026",
+      "29/05/2026",
+      "29/05/2026",
+      "29/04/2026"
     ],
-    "texto": "**Data:** 25/06/2026  \n**O que aconteceu:** Vinci Shopping Centers FII contratou um segundo formador de mercado para fomentar a liquidez de suas cotas na B3.  \n**Resumo:** A VINCI REAL ESTATE GESTORA DE RECURSOS LTDA., gestora do VISC11, e a BRL TRUST DISTRIBUIDORA, administradora do fundo, informaram que o Fundo contratou a SUNO DESENVOLVIMENTO LTDA. para exercer essa função na bolsa de valores.  \n**Trecho-chave:** \"O Fundo contratou a SUNO DESENVOLVIMENTO LTDA, inscrita no CNPJ sob o nº 42.390.456/0001-55, para exercer a função de segundo formador de mercado do fundo, no âmbito da B3 S.A. – Brasil, Bolsa, Balcão (“B3”), com a finalidade de fomentar a liquidez de suas cotas.\" (p. 1)  \n\n**Conexões:** Esta medida visa potencialmente melhorar a liquidez das cotas do fundo, o que pode ser relevante considerando os indicadores recentes do patrimônio líquido e valorização da cota que apresentaram quedas nos últimos 12 meses."
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 30/06/2026 - Distribuição de Rendimentos Referentes a Junho de 2026\n\nO Fundo VISC11 anunciou o pagamento de rendimentos no valor de R$ 0,84 por cota referente ao mês de junho de 2026. O pagamento será realizado em 14 de julho de 2026 aos detentores de cotas do Fundo no fechamento de 30 de junho de 2026.\n\n\"O valor dos rendimentos referentes a junho de 2026 corresponde a R$ 0,84 por cota.\"\n\n### 29/05/2026 - Assembleia Geral Ordinária\n\nA assembleia geral ordinária realizada em consulta formal no dia 29 de maio de 2026 aprovou as demonstrações financeiras do Fundo referentes ao exercício social findo em 31 de dezembro de 2025.\n\n\"Diante do exposto, a Administradora declara que as Demonstrações Financeiras do Fundo relativa ao exercício social findo em 31 de dezembro de 2025, foram aprovadas, sem quaisquer ressalvas e restrições pelos cotistas desimpedidos e aptos a deliberar.\"\n\n### 29/05/2026 - Distribuição de Rendimentos Referentes a Maio de 2026\n\nO Fundo VISC11 anunciou o pagamento de rendimentos no valor de R$ 0,84 por cota referente ao mês de maio de 2026. O pagamento será realizado em 15 de junho de 2026 aos detentores de cotas do Fundo no fechamento de 29 de maio de 2026.\n\n\"O valor dos rendimentos referentes a maio de 2026 corresponde a R$ 0,84 por cota.\"\n\n### 25/06/2026 - Contratação de Segundo Formador de Mercado\n\nO Fundo VISC11 contratou a SUNO DESENVOLVIMENTO LTDA para exercer a função de segundo formador de mercado do fundo na B3, com o objetivo de fomentar a liquidez das cotas.\n\n\"O Fundo contratou a SUNO DESENVOLVIMENTO LTDA, inscrita no CNPJ sob o nº 42.390.456/0001-55, para exercer a função de segundo formador de mercado do fundo, no âmbito da B3 S.A. – Brasil, Bolsa, Balcão (\"B3\"), com a finalidade de fomentar a liquidez de suas cotas.\"\n\n### 29/04/2026 - Convocação para Assembleia Geral Ordinária\n\nA administradora do Fundo VISC11 convocou os cotistas para participarem da assembleia geral ordinária por meio de consulta formal, a ser realizada no dia 29 de maio de 2026. A assembleia discutirá e aprovará as demonstrações financeiras referentes ao exercício social findo em 31 de dezembro de 2025.\n\n\"A BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., com sede na cidade de São Paulo, Estado de São Paulo, convoca os cotistas do Fundo a participar da Assembleia Geral Ordinária de Cotistas do Fundo (“AGO”), a ser realizada de forma não presencial, por meio de coleta de voto a distância, cuja formalização da apuração ocorrerá no dia 29 de maio de 2026.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 1152106,
+    "data_entrega": "31/03/2026 23:38",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Vinci Shopping Centers Fundo de Investimento Imobiliário - Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho das suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis"
   }
 }

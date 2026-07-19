@@ -1,15 +1,30 @@
 {
   "ticker": "0QCK11",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-19T03:47:59",
-  "fatos": {
+  "verificado_em": "2026-07-19T09:36:19",
+  "comunicados": {
     "ids": [
-      1065413
+      1065413,
+      1065399
     ],
     "datas": [
+      "17/12/2025",
       "17/12/2025"
     ],
-    "texto": "### 17/12/2025\n\n**O que aconteceu:** O XP CDI II Fundo de Investimento Imobiliário anunciou a criação de novas subclasses e uma nova emissão de cotas.\n\n**Resumo:** A administração do fundo criou as subclasses \"E\", \"F\" e \"G\" da Classe Única, além de aprovar a segunda emissão da Subclasse D. As novas subclasses terão montantes totais de colocação privada de R$ 300 milhões cada (Subclasses E, F e G), com preço unitário de R$ 100 por cota. A Colocação Privada é destinada a investidores profissionais conforme definido pela Resolução CVM nº 30.\n\n**Trechos-chave:**\n- \"foi aprovada (i) a criação das novas subclasses “E”, “F” e “G” da Classe (“Subclasse E”, “Subclasse F” e “Subclasse G”, respectivamente e, quando em conjunto com a Subclasse D (conforme definido no Regulamento), as “Subclasses”), as quais terão as características constantes dos Apêndices “E”, “F” e “G” à nova versão do Regulamento\" (p. 1).\n- \"O montante total da Colocação Privada Cotas E será de até R$ 300.000.000,00 (trezentos milhões de reais)\" (p. 2)."
+    "rotulos": [
+      "Fato Relevante",
+      "Assembleia AGE"
+    ],
+    "texto": "=== FATO RELEVANTE entregue em 17/12/2025 ===\n\n**O que aconteceu:** Aprovação da criação de novas subclasses e emissão de cotas no XP CDI II Fundo de Investimento Imobiliário.\n\n**Resumo:** Foram aprovadas as novas subclasses \"E\", \"F\" e \"G\" com características detalhadas nos apêndices do Regulamento. Além disso, foi autorizada a 2ª emissão da Subclasse D e a primeira emissão das subclasses E, F e G.\n\n**Trecho-chave:**\n\"Foram aprovadas (i) a criação das novas subclasses “E”, “F” e “G” da Classe (“Subclasse E”, “Subclasse F” e “Subclasse G”, respectivamente e, quando em conjunto com a Subclasse D (conforme definido no Regulamento), as “Subclasses”), as quais terão as características constantes dos Apêndices “E”, “F” e “G” à nova versão do Regulamento, bem como (ii) a 2ª (segunda) emissão da Subclasse D (conforme definida no Regulamento) e 1ª (primeira) emissão de cotas da Subclase E, Subclasse F e Subclasse G.\" (p. 1)\n\n=== ASSEMBLEIA AGE entregue em 17/12/2025 ===\n\n**O que aconteceu:** A assembleia geral dos cotistas do XP CDI II Fundo de Investimento Imobiliário aprovou alterações no prazo de duração da Subclasse D e na negociação das cota.\n\n**Resumo:** Os cotistas deliberaram por unanimidade pela mudança do prazo de duração da Subclasse D para um período indeterminado, além de aprovar as novas características de negociação das cota no mercado primário e secundário.\n\n**Trecho-chave:**\n\"Os cotistas da Classe deliberaram e aprovaram, por unanimidade e sem quaisquer ressalvas, reservas ou restrições: 1) A alteração do prazo de duração da Subclasse D (conforme definido no Regulamento) da Classe, de 1 (um) ano, contado da data da primeira integralização das cotas do Fundo, para prazo indeterminado;\" (p. 2)"
   },
-  "modelo": "qwen2.5:14b"
+  "modelo": "qwen2.5:14b",
+  "parecer": {
+    "id": 1152125,
+    "data_entrega": "31/03/2026 23:43",
+    "tipo": "nao_identificado",
+    "rotulo": "parecer não identificado no texto",
+    "grave": false,
+    "continuidade": false,
+    "trecho": ""
+  }
 }

@@ -1,15 +1,40 @@
 {
   "ticker": "JCDR11",
   "modelo": "qwen2.5:14b",
-  "gerada_em": "2026-07-19T00:38:26",
+  "gerada_em": "2026-07-19T07:50:15",
   "relatorio": {
     "id": 1093394,
     "data_entrega": "27/01/2026 09:21",
     "texto": "- **Reavaliação Patrimonial:** O valor da cota foi reajustado para R$ 11,09 em dezembro, representando uma valorização de 10,9% sobre o valor unitário da primeira emissão de cotas do Fundo. [página 4]\n\n- **Aquisições:** A conclusão das aquisições dos ativos Shopping Cidade Jardim, Catarina Fashion Outlet e Shops Jardins pelo Fundo Investido gerará um incremento nos rendimentos auferidos pelo Fundo. [página 4]\n\n- **Distribuição de Rendimentos:** Foi aprovada uma distribuição de R$ 0,10 por cota em janeiro de 2026, correspondendo a um dividend yield anualizado de 12% sobre o valor da cota da primeira emissão do Fundo. [página 4]\n\n- **Composição da Carteira:** O portfólio é composto principalmente pelo Shopping Cidade Jardim (72,6%), seguido pelo Catarina Fashion Outlet (25,3%) e Shops Jardins (2%). [página 7]\n\n- **Inaugurações no Mês:** Houve inaugurações de novas lojas como Levi’s, Paramount Alfaiataria, Ave Rara, Giorgio Armani, B/Yourself e Carmen Steffens em dezembro. [página 9]\n\n- **Indicadores Operacionais:** Os dados sobre NOI (Net Operating Income), vendas por m² e SSS (Same Store Sales) não foram fornecidos detalhadamente para os meses específicos, indicando que esses indicadores podem variar ao longo do tempo. [página 8]\n\n- **Principais Operações:** As principais operações nos shoppings incluem marcas como Hermès, Dior, Louis Vuitton, Tiffany, Cartier e Gucci. [páginas 10 a 12]\n\nO que observar em seguida:\n- Monitorar as variações no NOI (Net Operating Income) e vendas por m² nos próximos relatórios.\n- Verificar se há novas inaugurações ou renovações de contratos com lojistas."
   },
-  "fatos": {
-    "ids": [],
-    "datas": [],
-    "texto": null
+  "comunicados": {
+    "ids": [
+      1068120
+    ],
+    "datas": [
+      "23/12/2025"
+    ],
+    "rotulos": [
+      "Assembleia AGE"
+    ],
+    "texto": "### 23/12/2025\n**O que aconteceu:** A assembleia geral extraordinária do JHSF Capital Desenvolvimento Imobiliário FII aprovou diversas resoluções.\n\n**Resumo:** Entre as decisões, foram autorizadas pessoas ligadas à Administradora e Gestora a votar em assembleias; contratação de consultores especializados e construtoras vinculadas para projetos do Fundo; eleição dos membros do Comitê de Investimento com mandato de 10 anos; e aprovação de um contrato de prestação de serviços de movimentação de conta.\n\n*\"A assembleia geral extraordinária foi realizada no dia 10 de dezembro de 2025, com início às 10h, na sede da XP INVESTIMENTOS CORRETORA DE CÂMBIO...\"* (p. 1)"
+  },
+  "retrato": {
+    "selo": "Histórico insuficiente",
+    "nivel": "insuficiente",
+    "alertas": [
+      "Base de cotistas muito pequena",
+      "Fundo novo — histórico curto"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 1151816,
+    "data_entrega": "31/03/2026 21:57",
+    "tipo": "nao_identificado",
+    "rotulo": "parecer não identificado no texto",
+    "grave": false,
+    "continuidade": false,
+    "trecho": ""
   }
 }

@@ -1,0 +1,51 @@
+{
+  "ticker": "JSRE11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-19T11:57:31",
+  "relatorio": {
+    "id": 1252674,
+    "data_entrega": "17/07/2026 18:20",
+    "texto": "1. **Redução da Vacância no Edifício Tower Bridge**: A vacância do edifício foi reduzida de 13,3% para 7,9%, com a locação de novos espaços para empresas como StoneX e Voyix.\n2. **Novas Locações em Andamento**: No WT Morumbi, negociações avançadas para o 13º andar e estágio avançado para os 18º e 19º andares.\n3. **Aquisição de Novos Ativos**: A partir de julho, o fundo incorporará os Edifícios WT Nações Unidas I e II ao portfólio, localizados na Marginal Pinheiros com certificação LEED Platinum.\n4. **Resultado Financeiro do Mês**: O resultado financeiro foi de R$ 10.129.617, distribuindo dividendos de R$ 0,48 por cota.\n5. **Vacância Total do Portfólio**: A vacância física total do portfólio consolidado é de 5,9%, com uma redução significativa no Tower Bridge Corporate e WT Morumbi.\n6. **Aquisição pelo JSRI**: O fundo JS Renda Imobiliária concluiu a aquisição dos edifícios WT Nações Unidas I e II em julho, adicionando aproximadamente 38 mil m² de ABL ao portfólio.\n7. **Distribuição de Dividendos**: O dividendo anunciado foi de R$ 0,48 por cota, representando um dividend yield de 0,80% no mês e 9,55% anualizado.\n8. **Alavancagem Indireta**: A alavancagem indireta através da participação nas cotas subordinadas do JSRI foi mencionada como uma estratégia importante.\n\n**O que observar em seguida:**\n1. Progresso das negociações de locação no WT Morumbi.\n2. Impacto dos novos ativos na performance financeira e vacância do portfólio."
+  },
+  "comunicados": {
+    "ids": [
+      1245997,
+      1128137,
+      1065604,
+      1208209,
+      1170661
+    ],
+    "datas": [
+      "13/07/2026",
+      "04/03/2026",
+      "18/12/2025",
+      "29/05/2026",
+      "27/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 13/07/2026\n**O que aconteceu:** JSRE11 adquiriu parte do Edifício WTorre Nações Unidas.\n**Resumo:** O fundo adquiriu uma parcela do empreendimento imobiliário, localizado na Av. Dra. Ruth Cardoso (antiga Av. das Nações Unidas), Pinheiros - São Paulo – SP, mediante pagamento de parte à vista e o restante em 6 meses. A aquisição reforça a estratégia de diversificação do portfólio.\n**Trecho-chave:** \"O investimento está aderente à política e à estratégia de investimento do Fundo e reforça sua estratégia de diversificação de portfólio, com foco em ativos imobiliários de primeira linha.\"\n\n### 04/03/2026\n**O que aconteceu:** JSRE11 celebrou novo documento de subscrição de cotas do JS Renda Imobiliária FII.\n**Resumo:** O fundo realizou a integralização das Cotas Subclasse B da 2ª Emissão do JSRI, mediante a transferência de fração ideal de 27,5% de algumas unidades do ativo Tower Bridge. A operação faz parte da estratégia de diversificação via alavancagem.\n**Trecho-chave:** \"A integralização das Cotas Subclasse B da 2ª Emissão do JSRI pelo Fundo será realizada mediante a transferência de fração ideal de 27,5% de algumas unidades do ativo Tower Bridge.\"\n\n### 18/12/2025\n**O que aconteceu:** JSRE11 celebrou documento de subscrição e integralização de cotas subordinadas do JS Renda Imobiliária FII.\n**Resumo:** O fundo realizou a integralização das referidas cotas mediante a transferência de fração ideal de 46% de algumas unidades do ativo Tower Bridge. A operação está em linha com a estratégia de diversificação e exposição a outros ativos imobiliários.\n**Trecho-chave:** \"A integralização das referidas cotas foi realizada mediante a transferência pelo JSRE de fração ideal de 46% de algumas unidades do ativo Tower Bridge.\"\n\n### 29/05/2026\n**O que aconteceu:** Assembleia Geral Ordinária (AGO) não presencial.\n**Resumo:** A assembleia aprovou as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 31 de dezembro de 2025. \n**Trecho-chave:** \"Foi aprovado, conforme manifestações de votos válidas dos cotistas representando 4,19% do total das Cotas emitidas pelo Fundo, as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes, relativos ao exercício social findo em 31 de dezembro de 2025.\"\n\n### 27/04/2026\n**O que aconteceu:** Consulta Formal para Assembleia Geral Ordinária (AGO).\n**Resumo:** A consulta formal foi enviada aos cotistas do JSRE FII, com prazo final para resposta em 28 de maio de 2026. O principal item da ordem do dia era a aprovação das Demonstrações Financeiras e Notas Explicativas.\n**Trecho-chave:** \"ORDEM DO DIA: Apresentação e aprovação das Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes, relativos ao exercício social findo em 31 de dezembro de 2025.\"\n\n---\n\nEsses documentos mostram uma série de aquisições estratégicas que visam diversificar o portfólio do JSRE11 e melhorar sua posição no mercado imobiliário. A estratégia parece estar alinhada com os indicadores atuais, como a vacância baixa (5,51%) e o valor patrimonial em queda (-6,24% nos últimos 12 meses), sugerindo que as aquisições buscam compensar eventuais desafios financeiros."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 1151990,
+    "data_entrega": "31/03/2026 22:59",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do JS Real Estate Multigestão Fundo de Investimento Imobiliário – Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábei"
+  }
+}

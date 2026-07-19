@@ -1,21 +1,58 @@
 {
   "ticker": "XPLG11",
   "modelo": "qwen2.5:14b",
-  "gerada_em": "2026-07-19T00:13:27",
+  "gerada_em": "2026-07-19T07:02:52",
   "relatorio": {
     "id": 1241569,
     "data_entrega": "07/07/2026 19:21",
     "texto": "1. **Mudanças na carteira**: O fundo registrou expansão de 1.894 m² por uma locatária no Syslog Galeão e renovação contratual da Premier Pet, ocupando 6.087 m², além da saída definitiva da Memodoc que ocupava 3.886 m² no HGLG WL.\n   - \"Neste mês, ocorreram as seguintes movimentações de locatários: (i) expansão de 1.894 m² de ABL por uma locatária no empreendimento Syslog Galeão [...]\" [página 2]\n   \n2. **Vacância e inadimplência**: A vacância física foi de 8,0% e a financeira de 3,8%. A inadimplência representou 1,0% da Receita de Locação mensal do Fundo.\n   - \"Vacância física¹ 8,0%\" [página 5]\n   - \"A inadimplência observada em junho representou 1,0% da Receita de Locação mensal do Fundo e está relacionada a 6 locatários.\" [página 2]\n\n3. **Distribuição de rendimentos**: O fundo declarou distribuição de R$ 0,82/cota para os detentores de cotas em 30/06/26.\n   - \"No mês de junho de 2026, foi declarada a distribuição de R$ 0,82/cota para os detentores de cotas com ticker XPLG11 em 30/06/26 [...]\" [página 2]\n\n4. **Evolução do patrimônio líquido**: O patrimônio líquido do fundo foi de R$ 5,397 bilhões.\n   - \"Patrimônio Líquido: R$ 5.397.457.621,00\" [página 2]\n\n5. **Estratégia de distribuição**: A Gestora busca adotar uma estratégia de uniformização de distribuição de rendimentos em consonância com o fluxo de caixa do semestre.\n   - \"A Gestora e o Administrador buscam, observada a legislação aplicável, adotar uma estratégia de uniformização de distribuição de rendimentos em consonância com o fluxo de caixa do semestre.\" [página 2]\n\n6. **Riscos mencionados**: A gestão menciona que os rendimentos declarados superaram o resultado financeiro e há emissão de cotas com VP/cota em queda.\n   - \"Alertas disparados: Rendimentos acima do resultado financeiro: rendimentos declarados 4T R$ 484,9M vs resultado financeiro líquido 4T R$ 342,1M | Emissão de cotas com VP/cota em queda: cotas +73,54% em 24m; VP/cota ajustado -6,87% no período\" [Conexão com os indicadores]\n\nO que observar em seguida:\n- Movimentações futuras na carteira de locatários.\n- Atualizações sobre a inadimplência e negociações com as locatárias inadimplentes."
   },
-  "fatos": {
+  "comunicados": {
     "ids": [
       1196011,
-      1165621
+      1165621,
+      1107344,
+      1226898,
+      1151236,
+      1179466,
+      1179464
     ],
     "datas": [
       "15/05/2026",
-      "16/04/2026"
+      "16/04/2026",
+      "10/02/2026",
+      "23/06/2026",
+      "31/03/2026",
+      "04/05/2026",
+      "04/05/2026"
     ],
-    "texto": "### 15/05/2026\n**O XP Log FII retifica denominações de dois empreendimentos adquiridos.**\nO Fundo corrigiu as referências dos galpões logísticos GLP Jundiaí I e II, localizados no município de Jundiaí, SP, para CD Jundiaí I e II respectivamente. As características dos imóveis permanecem inalteradas.\n\n*\"Leia-se: (e) CD Jundiaí I: empreendimento logístico com aproximadamente 54.201,79 m² de área bruta locável 95% alugada, localizado no município de Jundiaí, Estado de São Paulo, às margens da Rodovia Anhanguera, no Sítio Correa, Bairro do Castanho, e registrado junto ao 2º cartório de registro de imóveis do município de Jundiaí, Estado de São Paulo sob a matrícula de nº 31.512 (“ CD Jundiaí I”); e (f) CD Jundiaí II : empreendimento logístico com aproximadamente 45.593,70 m² de área bruta locável alugada, localizado no município de Jundiaí, Estado de São Paulo, na Avenida Industrial, Bairro do Engordadouro, e registrado junto ao 1º cartório de registro de imóveis do município de Jundiaí, Estado de São Paulo sob a matrícula de nº 11.545 (“CD Jundiaí II”).”* (p. 1)\n\n### 16/04/2026\n**XP Log FII conclui aquisição de portfólio logístico no âmbito da 9ª Emissão de Cotas.**\nO Fundo adquiriu cinco galpões logísticos com área total de aproximadamente 257 mil m², localizados em Piracicaba e Jundiaí (SP). O preço da transação foi de R$ 919 milhões, sendo parte paga em moeda corrente nacional e outra por meio de subscrição de cotas.\n\n*\"O Preço da Transação (“Preço da Transação”) acordado entre as partes para a aquisição dos imóveis supra é de R$ 919.092.610,65 (novecentos e dezenove milhões, noventa e dois mil, seiscentos e dez reais e sessenta e cinco centavos), a ser pago da seguinte forma:\"* (p. 1)"
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 15/05/2026 - Rerratificação de Fato Relevante\n\n**O que aconteceu:** O XP LOG FUNDO DE INVESTIMENTO IMOBILIÁRIO – FII retificou as denominações de dois empreendimentos logísticos adquiridos.\n\n**Resumo:** A Fundo corrigiu a nomenclatura dos galpões GLP Jundiaí I e II para CD Jundiaí I e II, respectivamente. As demais informações permanecem inalteradas.\n\n**Trecho-chave:**\n\"(e) CD Jundiaí I: empreendimento logístico com aproximadamente 54.201,79 m² (cinquenta e quatro mil, duzentos e um vírgula setenta e nove metros quadrados) de área bruta locável 95% alugada, localizado no município de Jundiaí, Estado de São Paulo, às margens da Rodovia Anhanguera, no Sítio Correa, Bairro do Castanho, e registrado junto ao 2º cartório de registro de imóveis do município de Jundiaí, Estado de São Paulo sob a matrícula de nº 31.512 (“ CD Jundiaí I”); e (f) CD Jundiaí II : empreendimento logístico com aproximadamente 45.593,70 m² (quarenta e cinco mil, quinhentos e noventa e três vírgula setenta metros quadrados) de área bruta locável alugada, localizado no município de Jundiaí, Estado de São Paulo, na Avenida Industrial, Bairro do Engordadouro, e registrado junto ao 1º cartório de registro de imóveis do município de Jundiaí, Estado de São Paulo sob a matrícula de nº 11.545 (“CD Jundiaí II”).\"\n\n---\n\n### 16/04/2026 - Fato Relevante\n\n**O que aconteceu:** O XP LOG FUNDO DE INVESTIMENTO IMOBILIÁRIO – FII concluiu a aquisição de um portfólio de galpões logísticos.\n\n**Resumo:** A Fundo adquiriu vários empreendimentos, incluindo o Condomínio Modular Piracicaba II (CMP II), Condomínio Barão de Mauá – Módulos 5 a 9 (BM), Condomínio Brazilian Business Park – Gaia Ar e Gaia Terra Figueira.\n\n**Trecho-chave:**\n\"(a) Condomínio Modular Piracicaba II: empreendimento logístico com aproximadamente 161.904,71 m² de área bruta locável, localizado no perímetro urbano do município de Piracicaba Estado de São Paulo, na Estrada Nossa Senhora da Conceição, 1 .000, Conceição, CEP 13427 -235, e registrado junto ao 2º Cartório de Registro de Imóveis de Piracicaba sob a matrícula de nº 120.008 (“CMP II”).\"\n\n---\n\n### 23/06/2026 - Comunicado ao Mercado\n\n**O que aconteceu:** A XP Investimentos Corretora esclareceu sobre oscilações atípicas nas cotas do fundo.\n\n**Resumo:** Não foram identificados fatores sob controle da administradora que justifiquem as variações no volume de negócios. O comportamento é atribuído a rebalanceamentos periódicos por fundos de índice globais.\n\n**Trecho-chave:**\n\"O XP Log é um fundo com elevada capitalização e liquidez e, por isso, pode compor a carteira de fundos de índice, inclusive globais, que realizam rebalanceamentos periódicos.\"\n\n---\n\n### 10/02/2026 - Fato Relevante\n\n**O que aconteceu:** O XP LOG FUNDO DE INVESTIMENTO IMOBILIÁRIO – FII concluiu a última aquisição do imóvel CL Imigrantes V.\n\n**Resumo:** A Fundo finalizou a aquisição e o imóvel está disponível para locação. Os vendedores serão responsáveis por arcar com os encargos e pagar um prêmio de locação mensal durante 9 meses.\n\n**Trecho-chave:**\n\"Durante o Prazo do Prêmio de Locação, os vendedores serão responsáveis pela locação do Imóvel, em termos e condições a serem aprovados pelo Fundo, e serão obrigados a (i) arcar com os encargos relativos ao Imóvel (taxa condominial, IPTU, dentre outras despesas) e (ii) pagar um prêmio de locação mensal equivalente a R$ 2.123.538,00.\"\n\n---\n\n### 31/03/2026 - Comunicado ao Mercado\n\n**O que aconteceu:** O XP LOG FUNDO DE INVESTIMENTO IMOBILIÁRIO – FII declarou rendimentos para cotistas.\n\n**Resumo:** Foram declarados R$ 0,82/cota para XPLG11 e R$ 0,90/Recibo DP. Também foram anunciados rendimentos de R$ 0,32/Recibo 1ª Integralização.\n\n**Trecho-chave:**\n\"O pagamento dos rendimentos supra ocorrerá em 15/04/2026.\"\n\n---\n\n### 04/05/2026 - Assembleia Geral Ordinária\n\n**O que aconteceu:** A assembleia geral ordinária do XP LOG FUNDO DE INVESTIMENTO IMOBILIÁRIO – FII aprovou as Demonstrações Financeiras e Notas Explicativas relativos ao exercício social findo em 31.12.2025.\n\n**Resumo:** Os cotistas, representando 2.76% das cotas emitidas pelo Fundo, aprovaram sem restrições ou ressalvas as demonstrações financeiras e notas explicativas.\n\n**Trecho-chave:**\n\"Os votos proferidos pela aprovação representando representando 2.76 % (Dois inteiros e setenta e seis centésimos por cento) do total das cotas emitidas pelo Fundo.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Emissão de cotas com VP/cota em queda"
+    ],
+    "cota": 91.28
+  },
+  "parecer": {
+    "id": 1153128,
+    "data_entrega": "02/04/2026 09:25",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe em 31 de dezembro de 2025 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
   }
 }
