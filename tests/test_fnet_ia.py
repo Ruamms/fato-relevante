@@ -369,6 +369,48 @@ def test_cli_ia_lote_marca_fundo_sem_relatorio_e_le_quando_aparece(con, zip_cvm,
     assert "TSTE11\tlido" in historico
 
 
+def test_cli_ia_lote_sem_relatorio_le_fatos_relevantes(con, zip_cvm, tmp_path, monkeypatch):
+    from typer.testing import CliRunner
+
+    from scout import cli as modulo_cli
+    from scout import ia as modulo_ia
+    from scout.cli import app
+    from scout.coleta import cvm
+    from scout.coleta import fnet as modulo_fnet
+
+    cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
+    monkeypatch.setenv("SCOUT_DATA_DIR", str(tmp_path))
+    monkeypatch.setattr(modulo_cli, "_preparar_ia", lambda modelo: "teste:1b")
+    # sem relatório gerencial, mas COM fato relevante publicado
+    so_estruturados = [d for d in _DOCUMENTOS if d["tipo"] != "Relatório Gerencial"]
+    monkeypatch.setattr(modulo_fnet, "listar", lambda cnpj, quantidade=30: so_estruturados)
+    caminho_pdf = tmp_path / "doc.pdf"
+    caminho_pdf.write_bytes(_pdf_minimo("Fato relevante para o lote " * 30))
+    monkeypatch.setattr(
+        modulo_fnet, "_garantir_documento", lambda con_, cnpj, doc, destino: caminho_pdf
+    )
+    monkeypatch.setattr(
+        modulo_ia,
+        "analisar_fatos_relevantes",
+        lambda fatos, ctx, modelo=None, ao_progresso=None: "fatos lidos pela ia",
+    )
+    pasta = tmp_path / "leituras"
+
+    resultado = CliRunner().invoke(app, ["ia-lote", "--destino", str(pasta)])
+    assert resultado.exit_code == 0, resultado.output
+    assert "fatos relevantes lidos" in resultado.output
+    leitura = json.loads((pasta / "TSTE11.json").read_text(encoding="utf-8"))
+    assert leitura["sem_relatorio"] is True
+    assert leitura["fatos"]["texto"] == "fatos lidos pela ia"
+    assert leitura["fatos"]["ids"] == [120]
+    historico = (pasta / "_historico.txt").read_text(encoding="utf-8")
+    assert "sem-relatorio-fatos-lidos" in historico
+
+    # segunda rodada: mesmo fato -> nada a refazer
+    resultado2 = CliRunner().invoke(app, ["ia-lote", "--destino", str(pasta)])
+    assert "0 lidos, 1 já em dia" in resultado2.output
+
+
 def test_cli_ia_lote_registra_erros_e_reprocessa_so_eles(con, zip_cvm, tmp_path, monkeypatch):
     from typer.testing import CliRunner
 

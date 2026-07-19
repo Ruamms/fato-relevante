@@ -560,17 +560,65 @@ def ia_lote(
         for posicao, resumo in enumerate(fundos, start=1):
             prefixo = f"[{posicao}/{len(fundos)}] {resumo.ticker}"
             inicio_fundo = _time.monotonic()
+
+            def _ler_fatos(fatos_meta: list[dict], contexto: str) -> str | None:
+                fatos = []
+                for meta in fatos_meta:
+                    caminho_fato = fnet._garantir_documento(
+                        con, resumo.cnpj, meta, armazenamento.diretorio_dados() / "documentos"
+                    )
+                    texto_fato = modulo_ia.extrair_texto_pdf(caminho_fato, max_paginas=6)
+                    if len(texto_fato) >= 200:
+                        fatos.append((meta["data_entrega"][:10], texto_fato))
+                if not fatos:
+                    return None
+                with console.status(f"{prefixo}: lendo os fatos relevantes…") as estado:
+                    return modulo_ia.analisar_fatos_relevantes(
+                        fatos,
+                        contexto,
+                        modelo_final,
+                        ao_progresso=lambda n: estado.update(
+                            f"{prefixo}: lendo os fatos relevantes… {n} trechos recebidos"
+                        ),
+                    )
+
             try:
                 docs = fnet.listar(resumo.cnpj)
                 relatorio = fnet.ultimo_relatorio_gerencial(docs)
-                if relatorio is None:
-                    console.print(f"{prefixo}: [dim]sem relatório gerencial no FNET[/]")
-                    leituras.salvar(pasta, leituras.montar_sem_relatorio(resumo.ticker))
-                    _registrar(f"{resumo.ticker}\tsem-relatorio")
-                    pulados += 1
-                    continue
                 fatos_meta = [] if sem_fatos else fnet.fatos_relevantes(docs, 3)
                 existente = leituras.carregar(pasta, resumo.ticker)
+                if relatorio is None:
+                    # relatório gerencial é opcional no FNET; os fatos relevantes,
+                    # quando existem, são lidos mesmo assim
+                    if existente and existente.get("sem_relatorio") and set(
+                        existente.get("fatos", {}).get("ids", [])
+                    ) >= {meta["id"] for meta in fatos_meta}:
+                        pulados += 1
+                        continue  # já marcado e sem fato novo
+                    texto_fatos = None
+                    if fatos_meta:
+                        raiox = analise.montar_raio_x(con, resumo.ticker, varredura=base)
+                        contexto = modulo_ia.contexto_do_raiox(raiox) if raiox else ""
+                        texto_fatos = _ler_fatos(fatos_meta, contexto)
+                    leituras.salvar(
+                        pasta,
+                        leituras.montar_sem_relatorio(
+                            resumo.ticker, fatos_meta, texto_fatos, modelo=modelo_final
+                        ),
+                    )
+                    if texto_fatos:
+                        novos += 1
+                        _registrar(
+                            f"{resumo.ticker}\tsem-relatorio-fatos-lidos\t{_time.monotonic() - inicio_fundo:.0f}s"
+                        )
+                        console.print(
+                            f"{prefixo}: [green]fatos relevantes lidos[/] [dim](fundo sem relatório gerencial)[/]"
+                        )
+                    else:
+                        pulados += 1
+                        _registrar(f"{resumo.ticker}\tsem-relatorio")
+                        console.print(f"{prefixo}: [dim]sem relatório gerencial no FNET[/]")
+                    continue
                 if existente and existente.get("relatorio") and existente["relatorio"]["id"] == relatorio["id"] and set(
                     existente.get("fatos", {}).get("ids", [])
                 ) >= {meta["id"] for meta in fatos_meta}:
@@ -601,26 +649,7 @@ def ia_lote(
                         ),
                     )
 
-                texto_fatos = None
-                if fatos_meta:
-                    fatos = []
-                    for meta in fatos_meta:
-                        caminho_fato = fnet._garantir_documento(
-                            con, resumo.cnpj, meta, armazenamento.diretorio_dados() / "documentos"
-                        )
-                        texto_fato = modulo_ia.extrair_texto_pdf(caminho_fato, max_paginas=6)
-                        if len(texto_fato) >= 200:
-                            fatos.append((meta["data_entrega"][:10], texto_fato))
-                    if fatos:
-                        with console.status(f"{prefixo}: lendo os fatos relevantes…") as estado:
-                            texto_fatos = modulo_ia.analisar_fatos_relevantes(
-                                fatos,
-                                contexto,
-                                modelo_final,
-                                ao_progresso=lambda n: estado.update(
-                                    f"{prefixo}: lendo os fatos relevantes… {n} trechos recebidos"
-                                ),
-                            )
+                texto_fatos = _ler_fatos(fatos_meta, contexto) if fatos_meta else None
 
                 leituras.salvar(
                     pasta,

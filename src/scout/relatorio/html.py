@@ -685,16 +685,55 @@ def _texto_ia_para_html(texto: str) -> str:
     return padrao.sub(_marca, resultado)
 
 
+def _bloco_fatos_ia(leitura: dict) -> str:
+    """Bloco 'Fatos relevantes recentes' da leitura por IA, com links para os
+    documentos originais no FNET."""
+    from ..coleta.fnet import URL_DOWNLOAD
+
+    fatos = leitura.get("fatos", {})
+    if not fatos.get("texto"):
+        return ""
+    datas = fatos.get("datas", [])
+    ids = fatos.get("ids", [])
+    links_fatos = ""
+    if ids:
+        links_fatos = " · originais: " + ", ".join(
+            f'<a href="{URL_DOWNLOAD.format(id=id_doc)}" target="_blank" rel="noopener">'
+            f"{_e(data)}</a>"
+            for id_doc, data in zip(ids, datas if len(datas) == len(ids) else [f"doc {i}" for i in ids])
+        )
+    return (
+        f'<h3 style="font-size:15px;color:#aeb9c7;margin:16px 0 8px">Fatos relevantes recentes'
+        f' <span style="color:#8b98a9;font-weight:400">({_e(", ".join(datas))}{links_fatos})</span></h3>'
+        f'<div style="white-space:pre-wrap">{_texto_ia_para_html(fatos["texto"])}</div>'
+    )
+
+
 def _secao_ia(leitura: dict | None, agora: datetime) -> str:
     if leitura and leitura.get("sem_relatorio"):
         verificado = leitura.get("verificado_em", "")[:10]
+        bloco_fatos = _bloco_fatos_ia(leitura)
+        nota_fatos = (
+            " Os <b>fatos relevantes</b> publicados pelo fundo foram lidos pela IA e estão abaixo."
+            if bloco_fatos
+            else " Sem relatório, não há o que a IA ler."
+        )
+        rodape_fatos = (
+            '<div class="nota" style="margin-top:12px">Resumo gerado por IA a partir dos documentos '
+            "oficiais — pode conter erros de leitura; os links para os originais permitem conferir "
+            "tudo na fonte. Não é recomendação.</div>"
+            if bloco_fatos
+            else ""
+        )
         return f"""
   <h2>🤖 Leitura por IA{_ajuda("Leitura por IA")}</h2>
   <div class="grafico">
   <div class="nota" style="font-size:13px">Este fundo <b>não publicou relatório gerencial</b> no FNET
   (é um documento opcional — muitos fundos divulgam apenas os informes obrigatórios da CVM,
-  que já alimentam os indicadores e alertas desta página). Sem relatório, não há o que a IA ler.
+  que já alimentam os indicadores e alertas desta página).{nota_fatos}
   Verificado em {_e(verificado)}; a checagem se repete a cada rodada de leituras.</div>
+  {bloco_fatos}
+  {rodape_fatos}
   </div>
 """
     if not leitura or not leitura.get("relatorio", {}).get("texto"):
@@ -720,23 +759,7 @@ def _secao_ia(leitura: dict | None, agora: datetime) -> str:
             f' · <a href="{URL_DOWNLOAD.format(id=relatorio["id"])}" target="_blank" '
             'rel="noopener">📄 baixar o relatório original (FNET)</a>'
         )
-    fatos = leitura.get("fatos", {})
-    bloco_fatos = ""
-    if fatos.get("texto"):
-        datas = fatos.get("datas", [])
-        ids = fatos.get("ids", [])
-        links_fatos = ""
-        if ids:
-            links_fatos = " · originais: " + ", ".join(
-                f'<a href="{URL_DOWNLOAD.format(id=id_doc)}" target="_blank" rel="noopener">'
-                f"{_e(data)}</a>"
-                for id_doc, data in zip(ids, datas if len(datas) == len(ids) else [f"doc {i}" for i in ids])
-            )
-        bloco_fatos = (
-            f'<h3 style="font-size:15px;color:#aeb9c7;margin:16px 0 8px">Fatos relevantes recentes'
-            f' <span style="color:#8b98a9;font-weight:400">({_e(", ".join(datas))}{links_fatos})</span></h3>'
-            f'<div style="white-space:pre-wrap">{_texto_ia_para_html(fatos["texto"])}</div>'
-        )
+    bloco_fatos = _bloco_fatos_ia(leitura)
     gerada = leitura.get("gerada_em", "")[:10]
     return f"""
   <h2>🤖 Leitura por IA{_ajuda("Leitura por IA")}</h2>

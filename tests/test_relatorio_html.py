@@ -193,6 +193,20 @@ def test_secao_ia_explica_fundo_sem_relatorio_gerencial(con, zip_cvm):
     assert "não publicou relatório gerencial" in pagina
     assert "2026-07-18" in pagina
 
+    # com fatos relevantes lidos, eles aparecem mesmo sem relatório gerencial
+    com_fatos = leituras.montar_sem_relatorio(
+        "TSTE11",
+        fatos_meta=[{"id": 120, "data_entrega": "18/06/2026 18:58"}],
+        texto_fatos="resumo dos fatos",
+        modelo="teste:1b",
+        agora=datetime(2026, 7, 18, 23, 0),
+    )
+    pagina2 = relatorio_html.gerar(completo, leitura=com_fatos)
+    assert "não publicou relatório gerencial" in pagina2
+    assert "foram lidos pela IA" in pagina2
+    assert "resumo dos fatos" in pagina2
+    assert "downloadDocumento?id=120" in pagina2
+
 
 def test_sem_cotacao_nao_mostra_calculadoras(con, zip_cvm):
     cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
