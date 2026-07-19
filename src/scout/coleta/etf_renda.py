@@ -77,6 +77,7 @@ def atualizar_proventos(
         except Exception:
             continue  # FNET oscila; o fundo fica para a próxima rodada
         time.sleep(0.2)  # educação com a fonte
+        novos_no_etf = 0
         for documento in documentos:
             if documento["tipo"].lower() != TIPO_DOCUMENTO:
                 continue
@@ -104,6 +105,11 @@ def atualizar_proventos(
                     ),
                 )
                 novos += 1
+                novos_no_etf += 1
+        # grava a cada ETF que trouxe novidade: um Ctrl+C na varredura (que é
+        # longa, uma requisição FNET por fundo) não joga fora o que já baixou.
+        if novos_no_etf:
+            con.commit()
     con.execute(
         "INSERT OR REPLACE INTO cargas (arquivo, carregado_em) VALUES ('ETF_PROVENTOS', ?)",
         (hoje.isoformat(),),
