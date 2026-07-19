@@ -128,3 +128,24 @@ def montar(
         },
         "comunicados": _bloco_comunicados(docs_meta, texto_docs),
     }
+
+
+def anexar_snapshot(dados: dict, snapshot: dict | None, existente: dict | None) -> dict:
+    """Grava o retrato do fundo NO MOMENTO da leitura e preserva o retrato da
+    leitura anterior quando o relatório muda — a matéria-prima do "histórico
+    entre relatórios" (fato comparado, nunca validação de previsão)."""
+    if snapshot:
+        dados["retrato"] = snapshot
+    if not existente or not existente.get("retrato"):
+        return dados
+    relatorio_anterior = (existente.get("relatorio") or {}).get("id")
+    relatorio_novo = (dados.get("relatorio") or {}).get("id")
+    if relatorio_anterior and relatorio_novo and relatorio_anterior != relatorio_novo:
+        dados["anterior"] = {
+            "gerada_em": existente.get("gerada_em", ""),
+            "relatorio_data": (existente.get("relatorio") or {}).get("data_entrega", ""),
+            **existente["retrato"],
+        }
+    elif existente.get("anterior"):
+        dados["anterior"] = existente["anterior"]  # mantém o histórico já capturado
+    return dados

@@ -760,6 +760,15 @@ def ia_lote(
 
                 raiox = analise.montar_raio_x(con, resumo.ticker, varredura=base)
                 contexto = modulo_ia.contexto_do_raiox(raiox) if raiox else ""
+                meta_cotacao = armazenamento.cotacao_meta(con, resumo.ticker)
+                snapshot = None
+                if raiox is not None:
+                    snapshot = {
+                        "selo": raiox.selo.rotulo if raiox.selo else None,
+                        "nivel": raiox.selo.nivel if raiox.selo else None,
+                        "alertas": [flag.titulo for flag in raiox.red_flags],
+                        "cota": meta_cotacao["preco_atual"] if meta_cotacao else None,
+                    }
 
                 # relatório já lido nesta versão do documento: reaproveita a
                 # leitura e só processa os comunicados que faltam
@@ -798,6 +807,7 @@ def ia_lote(
                 dados = leituras.montar(
                     resumo.ticker, modelo_final, relatorio, leitura_relatorio, docs_meta, texto_docs
                 )
+                dados = leituras.anexar_snapshot(dados, snapshot, existente)
                 if reusar_docs:
                     dados["comunicados"] = bloco_lido
                 bloco_parecer = _processar_parecer(df, existente)

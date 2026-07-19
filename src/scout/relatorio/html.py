@@ -341,7 +341,7 @@ table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-a
 
   {_secao_oscilacoes(completo, leitura)}
 
-  {_secao_ia(leitura, agora)}
+  {_secao_ia(leitura, agora, completo)}
 
   <h2>Gráficos</h2>
   {"".join(secoes_graficos) or '<p class="na">sem séries suficientes para gráficos</p>'}
@@ -898,7 +898,46 @@ def _bloco_fatos_ia(leitura: dict) -> str:
     )
 
 
-def _secao_ia(leitura: dict | None, agora: datetime) -> str:
+def _bloco_evolucao(leitura: dict, completo: AnaliseCompleta | None) -> str:
+    """Fato comparado entre a leitura anterior e agora — NUNCA como acerto de
+    'previsão' (o selo não prevê, constata); é complemento de contexto."""
+    anterior = leitura.get("anterior")
+    if not anterior or completo is None:
+        return ""
+    quando = anterior.get("gerada_em", "")[:10]
+    partes = []
+    selo = anterior.get("selo")
+    alertas = anterior.get("alertas") or []
+    if selo:
+        rotulo_alertas = (
+            f"{len(alertas)} alerta{'s' if len(alertas) != 1 else ''}"
+            if alertas
+            else "nenhum alerta"
+        )
+        partes.append(f"o selo era <b>{_e(selo)}</b> ({rotulo_alertas})")
+    cota_antes = anterior.get("cota")
+    cota_agora = completo.graficos.cotacao[-1][1] if completo.graficos.cotacao else None
+    if cota_antes and cota_agora:
+        variacao = 100 * (cota_agora - cota_antes) / cota_antes
+        partes.append(
+            f"a cota foi de R$ {formato.decimal(cota_antes)} para R$ {formato.decimal(cota_agora)} "
+            f"({_e(formato.percentual(variacao, sinal=True))})"
+        )
+    if not partes:
+        return ""
+    detalhe_alertas = (
+        f' <span class="nota">— alertas da época: {_e("; ".join(alertas))}</span>' if alertas else ""
+    )
+    return (
+        f'<div class="nota" style="font-size:13px;margin-top:12px;border-top:1px solid #232D31;'
+        f'padding-top:10px"><b>Evolução desde a leitura anterior</b> ({_e(quando)}, relatório de '
+        f"{_e(anterior.get('relatorio_data', '')[:10])}): {'; '.join(partes)}.{detalhe_alertas}"
+        f"<br>Comparação factual entre duas fotos no tempo — o selo constata, não prevê; "
+        f"variação de cota não valida nem invalida alerta.</div>"
+    )
+
+
+def _secao_ia(leitura: dict | None, agora: datetime, completo: AnaliseCompleta | None = None) -> str:
     if leitura and leitura.get("sem_relatorio"):
         verificado = leitura.get("verificado_em", "")[:10]
         bloco_fatos = _bloco_fatos_ia(leitura)
@@ -957,6 +996,7 @@ def _secao_ia(leitura: dict | None, agora: datetime) -> str:
   · lida por IA local ({_e(leitura.get("modelo", "?"))}) em {_e(gerada)}{link_original}</div>
   <div style="white-space:pre-wrap">{_texto_ia_para_html(relatorio["texto"])}</div>
   {bloco_fatos}
+  {_bloco_evolucao(leitura, completo)}
   <div class="nota" style="margin-top:12px">Resumo gerado por IA a partir dos documentos oficiais —
   pode conter erros de leitura; os trechos citados (com página, quando identificada) e o link para o
   documento original permitem conferir tudo na fonte. Não é recomendação.</div>

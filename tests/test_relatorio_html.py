@@ -312,6 +312,42 @@ def test_secao_parecer_do_auditor(con, zip_cvm):
     assert "Parecer do auditor" not in relatorio_html.gerar(completo)
 
 
+def test_snapshot_e_evolucao_entre_leituras(con, zip_cvm):
+    from scout import leituras
+
+    # leitura antiga com retrato; chega relatório novo -> retrato vira "anterior"
+    existente = {
+        "ticker": "TSTE11",
+        "gerada_em": "2026-04-10T22:00:00",
+        "relatorio": {"id": 100, "data_entrega": "05/04/2026 18:00", "texto": "antiga"},
+        "retrato": {"selo": "Atenção", "nivel": "atencao", "alertas": ["Vacância alta"], "cota": 80.0},
+    }
+    dados = leituras.montar(
+        "TSTE11", "m", {"id": 200, "data_entrega": "05/07/2026 18:00"}, "nova", [], None
+    )
+    dados = leituras.anexar_snapshot(
+        dados, {"selo": "Sem alertas", "nivel": "sem_alertas", "alertas": [], "cota": 100.0}, existente
+    )
+    assert dados["anterior"]["selo"] == "Atenção"
+    assert dados["anterior"]["cota"] == 80.0
+    assert dados["retrato"]["selo"] == "Sem alertas"
+
+    # mesmo relatório -> NÃO promove (histórico já capturado é mantido)
+    mesmos = leituras.montar(
+        "TSTE11", "m", {"id": 200, "data_entrega": "05/07/2026 18:00"}, "nova", [], None
+    )
+    mesmos = leituras.anexar_snapshot(mesmos, dados["retrato"], dados)
+    assert mesmos["anterior"]["selo"] == "Atenção"
+
+    # página: fato comparado com a redação anti-"previsão"
+    completo = _completo(con, zip_cvm)  # cota atual = 100.0
+    pagina = relatorio_html.gerar(completo, leitura=dados)
+    assert "Evolução desde a leitura anterior" in pagina
+    assert "o selo era <b>Atenção</b> (1 alerta)" in pagina
+    assert "R$ 80,00 para R$ 100,00" in pagina and "+25" in pagina
+    assert "o selo constata, não prevê" in pagina
+
+
 def test_sem_cotacao_nao_mostra_calculadoras(con, zip_cvm):
     cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
     completo = analise.montar_completo(con, "tste11")
