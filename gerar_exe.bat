@@ -7,26 +7,34 @@ echo  Scout - gerador de executavel
 echo ============================================
 echo.
 
-rem garante o uv (ja vimos ele instalado so no escopo do usuario e invisivel ao duplo clique)
-python -m uv --version >nul 2>&1
-if errorlevel 1 (
-    echo [0/2] Instalando uv...
-    python -m pip install --quiet uv
-    if errorlevel 1 python -m pip install --quiet --user uv
-    python -m uv --version >nul 2>&1
-    if errorlevel 1 (
-        echo Nao foi possivel instalar o uv. Rode manualmente: python -m pip install uv
-        goto :erro
-    )
+rem localiza um uv utilizavel: PATH, modulo do python ou instalacao por usuario.
+rem A instalacao no Python do sistema pode ficar sem o uv.exe - antivirus ou
+rem falta de admin bloqueiam a gravacao em C:\Python311\Scripts - por isso a
+rem instalacao de fallback e sempre --user, que nao depende de permissao.
+set "UV="
+uv --version >nul 2>&1
+if not errorlevel 1 set "UV=uv"
+if not defined UV python -m uv --version >nul 2>&1
+if not defined UV if not errorlevel 1 set "UV=python -m uv"
+if not defined UV if exist "%APPDATA%\Python\Python311\Scripts\uv.exe" set "UV=%APPDATA%\Python\Python311\Scripts\uv.exe"
+if not defined UV (
+    echo [0/2] Instalando uv no perfil do usuario...
+    python -m pip install --quiet --user uv
+)
+if not defined UV if exist "%APPDATA%\Python\Python311\Scripts\uv.exe" set "UV=%APPDATA%\Python\Python311\Scripts\uv.exe"
+if not defined UV (
+    echo Nao foi possivel encontrar nem instalar o uv.
+    echo Rode manualmente num terminal:  python -m pip install --user uv
+    goto :erro
 )
 
 echo [1/2] Sincronizando dependencias (uv sync)...
-python -m uv sync --group dev
+%UV% sync --group dev
 if errorlevel 1 goto :erro
 
 echo.
 echo [2/2] Gerando executavel (PyInstaller)...
-python -m uv run pyinstaller --onefile --console --clean --noconfirm --name scout src\scout\__main__.py
+%UV% run pyinstaller --onefile --console --clean --noconfirm --name scout src\scout\__main__.py
 if errorlevel 1 goto :erro
 
 echo.
