@@ -72,6 +72,7 @@ CREATE TABLE IF NOT EXISTS resultados_trimestrais (
     resultado_financeiro   REAL,  -- R$ no trimestre
     rendimentos_declarados REAL,  -- R$ no trimestre
     lucro_contabil         REAL,
+    resultado_acumulado    REAL,  -- resultado financeiro líquido ACUMULADO (reserva)
     PRIMARY KEY (cnpj, competencia)
 );
 CREATE TABLE IF NOT EXISTS documentos (
@@ -164,6 +165,15 @@ def _migrar(con: sqlite3.Connection) -> None:
         # força a recarga dos informes mensais para preencher o administrador histórico
         con.execute("DELETE FROM cargas WHERE arquivo LIKE 'inf_mensal%'")
         con.commit()
+    if "resultados_trimestrais" in tabelas:
+        colunas_resultados = {
+            linha[1] for linha in con.execute("PRAGMA table_info(resultados_trimestrais)")
+        }
+        if "resultado_acumulado" not in colunas_resultados:
+            con.execute("ALTER TABLE resultados_trimestrais ADD COLUMN resultado_acumulado REAL")
+            # recarga dos trimestrais para preencher o acumulado histórico
+            con.execute("DELETE FROM cargas WHERE arquivo LIKE 'inf_trimestral%'")
+            con.commit()
 
 
 def base_vazia(con: sqlite3.Connection) -> bool:

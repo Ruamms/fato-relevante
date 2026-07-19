@@ -216,14 +216,16 @@ def _gravar_resultados(con: sqlite3.Connection, linhas: list[dict]) -> int:
         con.execute(
             """
             INSERT OR REPLACE INTO resultados_trimestrais
-                (cnpj, competencia, resultado_financeiro, rendimentos_declarados, lucro_contabil)
-            VALUES (?, ?, ?, ?, ?)
+                (cnpj, competencia, resultado_financeiro, rendimentos_declarados,
+                 lucro_contabil, resultado_acumulado)
+            VALUES (?, ?, ?, ?, ?, ?)
             """,
             (
                 *chave,
                 _numero(linha.get("Resultado_Trimestral_Liquido_Financeiro")),
                 _numero(linha.get("Rendimentos_Declarados")),
                 _numero(linha.get("Lucro_Contabil")),
+                _numero(linha.get("Resultado_Financeiro_Liquido_Acumulado")),
             ),
         )
         total += 1

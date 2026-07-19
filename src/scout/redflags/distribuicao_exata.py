@@ -31,6 +31,13 @@ def avaliar(ctx: Contexto) -> RedFlag | None:
     resultado = ctx.resultado_financeiro_4t()
     if resultado > 0 and rendimentos <= resultado * _TOLERANCIA:
         return None
+    # refinamento: o informe traz o resultado ACUMULADO (a "reserva") — se ele
+    # cobre o excesso, a distribuição é sobra retida de períodos anteriores
+    # (ex.: venda de imóvel), não consumo de patrimônio
+    acumulado = ctx.resultado_acumulado_atual()
+    excesso = rendimentos - max(resultado, 0)
+    if acumulado is not None and acumulado > 0 and excesso <= acumulado:
+        return None
     if resultado <= 0:
         fato = (
             f"O fundo declarou {formato.moeda_compacta(rendimentos)} em rendimentos nos "
@@ -51,13 +58,18 @@ def avaliar(ctx: Contexto) -> RedFlag | None:
         # acima do resultado com resultado positivo é ponto de investigação (MÉDIA);
         # ALTA fica para o caso indefensável: distribuir com resultado negativo
         severidade = Severidade.MEDIA
+    reserva = (
+        f"; resultado acumulado (reserva) {formato.moeda_compacta(acumulado)} não cobre o excesso"
+        if acumulado is not None
+        else "; resultado acumulado não informado"
+    )
     return RedFlag(
         severidade=severidade,
         titulo="Rendimentos acima do resultado financeiro",
         fato=fato,
         evidencia=(
             f"rendimentos declarados 4T {formato.moeda_compacta(rendimentos)} vs "
-            f"resultado financeiro líquido 4T {formato.moeda_compacta(resultado)}"
+            f"resultado financeiro líquido 4T {formato.moeda_compacta(resultado)}{reserva}"
         ),
         fonte="informe trimestral CVM (resultado contábil/financeiro)",
         codigo=CODIGO,

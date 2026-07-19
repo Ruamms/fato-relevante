@@ -111,6 +111,27 @@ def test_distribuicao_exata_dentro_do_resultado_aprova():
     assert distribuicao_exata.avaliar(ctx) is None
 
 
+def test_distribuicao_exata_reserva_cobre_o_excesso():
+    # rendimentos 4T = 20k vs resultado 4T = 4k; excesso 16k coberto pela
+    # reserva acumulada de 50k -> distribuição de sobras retidas, sem alerta
+    resultados = _resultados(1000.0, 5000.0)
+    resultados[-1]["resultado_acumulado"] = 50000.0
+    assert distribuicao_exata.avaliar(Contexto(serie=[], resultados=resultados)) is None
+    # vale até para resultado negativo: a reserva explica a distribuição
+    negativos = _resultados(-1000.0, 5000.0)
+    negativos[-1]["resultado_acumulado"] = 100000.0
+    assert distribuicao_exata.avaliar(Contexto(serie=[], resultados=negativos)) is None
+
+
+def test_distribuicao_exata_reserva_insuficiente_mantem_alerta():
+    resultados = _resultados(1000.0, 5000.0)
+    resultados[-1]["resultado_acumulado"] = 2000.0
+    flag = distribuicao_exata.avaliar(Contexto(serie=[], resultados=resultados))
+    assert flag is not None
+    assert flag.severidade.name == "MEDIA"
+    assert "não cobre o excesso" in flag.evidencia
+
+
 def test_distribuicao_exata_precisa_de_4_trimestres():
     ctx = Contexto(serie=[], resultados=_resultados(100000.0, 95000.0, trimestres=3))
     assert not distribuicao_exata.aplicavel(ctx)

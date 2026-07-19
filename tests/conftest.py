@@ -36,6 +36,7 @@ def montar_zip_trimestral(
     resultado_financeiro: str = "100000",
     rendimentos: str = "90000",
     vacancias: tuple[str, str] = ("0.10", "0.50"),
+    acumulado: str = "",
 ) -> bytes:
     cnpj_col = "CNPJ_Fundo_Classe" if novo_schema else "CNPJ_Fundo"
     imovel = (
@@ -47,8 +48,8 @@ def montar_zip_trimestral(
     )
     resultado = (
         f"{cnpj_col};Data_Referencia;Versao;Resultado_Trimestral_Liquido_Financeiro;"
-        "Rendimentos_Declarados;Lucro_Contabil\n"
-        f"11.111.111/0001-11;{ano}-03-01;1;{resultado_financeiro};{rendimentos};80000\n"
+        "Rendimentos_Declarados;Lucro_Contabil;Resultado_Financeiro_Liquido_Acumulado\n"
+        f"11.111.111/0001-11;{ano}-03-01;1;{resultado_financeiro};{rendimentos};80000;{acumulado}\n"
     )
     buffer = io.BytesIO()
     with zipfile.ZipFile(buffer, "w") as zf:

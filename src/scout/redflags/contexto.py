@@ -84,6 +84,17 @@ class Contexto:
     def rendimentos_declarados_4t(self) -> float | None:
         return self._soma_trimestres("rendimentos_declarados")
 
+    def resultado_acumulado_atual(self) -> float | None:
+        """Resultado financeiro líquido ACUMULADO do trimestre mais recente —
+        a 'reserva' que sustenta distribuição acima do resultado do período."""
+        if not self.resultados:
+            return None
+        ultimo = self.resultados[-1]
+        try:
+            return ultimo["resultado_acumulado"]
+        except (KeyError, IndexError):
+            return None
+
     def _soma_trimestres(self, campo: str) -> float | None:
         ultimos = [linha[campo] for linha in self.resultados[-4:]]
         if len(ultimos) < 4 or any(valor is None for valor in ultimos):
