@@ -88,6 +88,17 @@ def ultimo_relatorio_gerencial(documentos: list[dict]) -> dict | None:
     return None
 
 
+def ultimo_regulamento(documentos: list[dict]) -> dict | None:
+    """Regulamento mais recente do fundo (é onde mora a taxa de administração
+    do ETF). A adaptação à Resolução CVM 175 fez muitos fundos re-arquivarem o
+    regulamento em 2024/2025, então costuma estar entre os documentos recentes."""
+    for documento_ in documentos:
+        rotulo = f"{documento_['tipo']} {documento_['categoria']}".lower()
+        if "regulamento" in rotulo:
+            return documento_
+    return None
+
+
 def fatos_relevantes(documentos: list[dict], quantidade: int = 3) -> list[dict]:
     return [
         documento_

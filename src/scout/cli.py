@@ -320,6 +320,106 @@ def _mostrar_ranking(
         con.close()
 
 
+@app.command(name="etf-taxas-proposta")
+def etf_taxas_proposta(
+    limite: int = typer.Option(None, "--limite", help="Processa só os N primeiros ETFs (teste)."),
+    ticker: str = typer.Option(None, "--ticker", help="Processa um único ETF (ex.: BOVA11)."),
+    docs: int = typer.Option(
+        120, "--docs", help="Quantos documentos do FNET varrer por ETF em busca do regulamento."
+    ),
+    timeout: int = typer.Option(20, "--timeout", help="Timeout (s) por requisição ao FNET."),
+) -> None:
+    """Pré-preenche a taxa de administração dos ETFs lendo o REGULAMENTO no FNET.
+
+    Gera dados/taxas_etfs_proposta.csv (com trecho e confiança) para você
+    REVISAR; depois de conferir, mova as linhas boas para dados/taxas_etfs.csv.
+    Determinístico (regex sobre o texto oficial) — nunca IA. Retomável: pula os
+    ETFs que já estão na curadoria ou na proposta.
+    """
+    import csv as _csv
+    from datetime import date
+    from pathlib import Path
+
+    from . import armazenamento, ia
+    from .coleta import fnet, taxas_etf
+
+    con = armazenamento.conectar()
+    try:
+        curados = set(taxas_etf.carregar())
+        proposta = Path("dados") / "taxas_etfs_proposta.csv"
+        ja_propostos: set[str] = set()
+        if proposta.exists():
+            with proposta.open(encoding="utf-8-sig", newline="") as fh:
+                ja_propostos = {
+                    (linha.get("ticker") or "").strip().upper()
+                    for linha in _csv.DictReader(fh, delimiter=";")
+                }
+        etfs = list(armazenamento.etfs_listados(con))
+        if ticker:
+            etfs = [e for e in etfs if e["ticker"].upper() == ticker.upper()]
+        pendentes = [
+            e
+            for e in etfs
+            if e["ticker"].upper() not in curados and e["ticker"].upper() not in ja_propostos
+        ]
+        if limite:
+            pendentes = pendentes[:limite]
+        console.print(
+            f"[bold]{len(pendentes)}[/] ETFs a processar "
+            f"(já na curadoria: {len(curados)} · já propostos: {len(ja_propostos)})"
+        )
+
+        novo = not proposta.exists()
+        proposta.parent.mkdir(parents=True, exist_ok=True)
+        achados = sem_reg = falhas = 0
+        with proposta.open("a", encoding="utf-8-sig", newline="") as fh:
+            escritor = _csv.writer(fh, delimiter=";")
+            if novo:
+                escritor.writerow(
+                    ["ticker", "taxa_adm_aa", "fonte", "verificado_em", "confianca", "trecho"]
+                )
+            for i, etf in enumerate(pendentes, 1):
+                tk = etf["ticker"].upper()
+                prefixo = f"  [{i}/{len(pendentes)}] {tk}:"
+                try:
+                    documentos = fnet.listar(etf["cnpj"], quantidade=docs, timeout=timeout, tentativas=3)
+                    reg = fnet.ultimo_regulamento(documentos)
+                    if reg is None:
+                        sem_reg += 1
+                        console.print(f"{prefixo} [yellow]sem regulamento no FNET[/]")
+                        continue
+                    caminho = fnet._garantir_documento(
+                        con,
+                        etf["cnpj"],
+                        reg,
+                        armazenamento.diretorio_dados() / "documentos",
+                        timeout=max(timeout * 3, 60),
+                        tentativas=2,
+                    )
+                    achado = taxas_etf.extrair_taxa_regulamento(ia.extrair_texto_pdf(caminho, max_paginas=60))
+                    fonte = fnet.URL_DOWNLOAD.format(id=reg["id"])
+                    hoje = date.today().isoformat()
+                    if achado:
+                        achados += 1
+                        valor = f"{achado['taxa_adm_aa']:.2f}".replace(".", ",")
+                        escritor.writerow([tk, valor, fonte, hoje, achado["confianca"], achado["trecho"][:200]])
+                        console.print(f"{prefixo} [green]{achado['taxa_adm_aa']:.2f}% a.a.[/] ({achado['confianca']})")
+                    else:
+                        escritor.writerow([tk, "", fonte, hoje, "nao_achou", ""])
+                        console.print(f"{prefixo} [dim]regulamento lido, taxa não localizada[/]")
+                    fh.flush()
+                except Exception as erro:  # noqa: BLE001 — varredura resiliente: uma falha não derruba o lote
+                    falhas += 1
+                    console.print(f"{prefixo} [red]falha ({type(erro).__name__})[/]")
+        console.print(
+            f"[green]Proposta em {proposta}[/] — {achados} taxas achadas · "
+            f"{sem_reg} sem regulamento · {falhas} falhas. "
+            "REVISE antes de mover para taxas_etfs.csv."
+        )
+    finally:
+        con.close()
+
+
 @app.command()
 def site(
     destino: str = typer.Option(None, "--destino", help="Pasta de saída (padrão: dados/site)."),

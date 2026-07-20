@@ -72,6 +72,52 @@ def test_sem_taxa_nao_mostra_card(con):
     assert "Taxa de administração" not in pagina
 
 
+def test_extrai_taxa_do_regulamento_anual():
+    texto = (
+        "CAPÍTULO VII\nA taxa de administração é de 0,30% (trinta centésimos por cento) "
+        "ao ano, calculada sobre o patrimônio líquido do Fundo."
+    )
+    r = taxas_etf.extrair_taxa_regulamento(texto)
+    assert r["taxa_adm_aa"] == 0.30
+    assert r["confianca"] == "alta"
+
+
+def test_prefere_trecho_anual_e_pula_mensal():
+    # aparece primeiro uma taxa "ao mês" (armadilha) e depois a anual de verdade
+    texto = (
+        "A provisão da taxa de administração de 0,025% ao mês é feita diariamente. "
+        "A taxa de administração máxima é de 0,50% a.a."
+    )
+    r = taxas_etf.extrair_taxa_regulamento(texto)
+    assert r["taxa_adm_aa"] == 0.50
+    assert r["confianca"] == "alta"
+
+
+def test_extrai_com_ponto_decimal_e_sem_ano():
+    texto = "Taxa de Administração: 0.23% do patrimônio líquido."
+    r = taxas_etf.extrair_taxa_regulamento(texto)
+    assert r["taxa_adm_aa"] == 0.23
+    assert r["confianca"] == "media"
+
+
+def test_acha_regulamento_entre_os_documentos():
+    from scout.coleta import fnet
+
+    docs = [
+        {"id": 1, "tipo": "Relatório Gerencial", "categoria": "Relatório", "data_entrega": ""},
+        {"id": 2, "tipo": "Regulamento", "categoria": "Documentos do Fundo", "data_entrega": ""},
+    ]
+    assert fnet.ultimo_regulamento(docs)["id"] == 2
+    assert fnet.ultimo_regulamento(docs[:1]) is None
+
+
+def test_nao_extrai_de_texto_sem_taxa_ou_absurdo():
+    assert taxas_etf.extrair_taxa_regulamento("") is None
+    assert taxas_etf.extrair_taxa_regulamento("Documento sem menção a tarifas.") is None
+    # 20% não é taxa de administração de ETF (provavelmente taxa de performance)
+    assert taxas_etf.extrair_taxa_regulamento("taxa de administração de 20% ao ano") is None
+
+
 def test_indice_etfs_tem_coluna_taxa(con):
     _semear_etf(con)
     dados = etf_html.montar_dados_etf(con, "BOVA11", {"10406511000161": {"classificacao_scout": "Ações Brasil"}})

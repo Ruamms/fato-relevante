@@ -15,8 +15,49 @@ sempre revisado manualmente antes de entrar.
 from __future__ import annotations
 
 import csv
+import re
 import sys
 from pathlib import Path
+
+# "taxa de administração ... 0,30% ..." — captura o 1º percentual plausível
+# depois da expressão. DETERMINÍSTICO (regex), nunca IA: o número sai do texto
+# oficial do regulamento, e ainda assim entra como PROPOSTA para revisão humana.
+_RE_TAXA_ADM = re.compile(
+    r"taxa\s+de\s+administra[çc][ãa]o[^%]{0,180}?(\d{1,2}(?:[.,]\d{1,4})?)\s*%",
+    re.IGNORECASE,
+)
+
+
+def extrair_taxa_regulamento(texto: str) -> dict | None:
+    """Acha a taxa de administração (% a.a.) no texto de um regulamento.
+
+    Retorna {taxa_adm_aa, trecho, confianca} ou None. Prefere o trecho que fala
+    em "ano/a.a." (confiança alta); pula o que fala em "mês/mensal" (não vamos
+    reportar taxa mensal como anual). É sempre uma PROPOSTA — quem confirma é o
+    humano, olhando o trecho e a fonte."""
+    if not texto:
+        return None
+    plano = " ".join(texto.split())
+    candidatos: list[dict] = []
+    for casamento in _RE_TAXA_ADM.finditer(plano):
+        try:
+            valor = float(casamento.group(1).replace(",", "."))
+        except ValueError:
+            continue
+        if not 0 < valor <= 3:  # taxa de ETF fica bem abaixo de 3% a.a.
+            continue
+        cauda_curta = plano[casamento.end() : casamento.end() + 25].lower()
+        if "mês" in cauda_curta or "mes" in cauda_curta or "mensal" in cauda_curta:
+            continue  # taxa mensal (armadilha) — não confundir com a anual
+        # "ao ano/a.a." costuma vir após o valor por extenso entre parênteses,
+        # então a janela para confiança é mais larga que a de "mês"
+        cauda_longa = plano[casamento.end() : casamento.end() + 70].lower()
+        trecho = plano[casamento.start() : casamento.end() + 40].strip()
+        confianca = "alta" if ("ano" in cauda_longa or "a.a" in cauda_longa) else "media"
+        candidatos.append({"taxa_adm_aa": valor, "trecho": trecho, "confianca": confianca})
+    if not candidatos:
+        return None
+    return next((c for c in candidatos if c["confianca"] == "alta"), candidatos[0])
 
 
 def carregar(raiz: Path | None = None) -> dict[str, dict]:
