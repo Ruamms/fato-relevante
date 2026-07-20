@@ -119,6 +119,7 @@ def extrair_carteiras(conteudo: bytes, cnpjs: set[str]) -> tuple[dict, dict, str
                                 "cnpj_emissor": armazenamento.so_digitos(linha.get("CPF_CNPJ_EMISSOR")),
                                 "valor": valor,
                                 "quantidade": quantidade,
+                                "grupo": grupo,  # tipo do ativo (Ações/Renda Fixa/Exterior/Cotas de Fundos)
                             }
                         )
     composicao = {}
@@ -478,13 +479,14 @@ def atualizar_composicao(
         con.execute("DELETE FROM etf_posicoes WHERE cnpj = ?", (cnpj,))
         con.executemany(
             """
-            INSERT INTO etf_posicoes (cnpj, competencia, item, codigo, nome, cnpj_emissor, pct, quantidade)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+            INSERT INTO etf_posicoes
+                (cnpj, competencia, item, codigo, nome, cnpj_emissor, pct, quantidade, grupo)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
             """,
             [
                 (
                     cnpj, competencia, indice, item["codigo"], item["nome"],
-                    item["cnpj_emissor"], item["pct"], item.get("quantidade"),
+                    item["cnpj_emissor"], item["pct"], item.get("quantidade"), item.get("grupo"),
                 )
                 for indice, item in enumerate(top_posicoes.get(cnpj, []))
             ],

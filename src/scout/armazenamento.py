@@ -127,7 +127,8 @@ CREATE TABLE IF NOT EXISTS etf_posicoes (
     nome         TEXT,
     cnpj_emissor TEXT,              -- para casar cotas de fundos com a nossa base
     pct          REAL,
-    quantidade   REAL,              -- QT_POS_FINAL do CDA (para futuro cálculo a preço de hoje)
+    quantidade   REAL,              -- QT_POS_FINAL do CDA (para reprecificar a preço de hoje)
+    grupo        TEXT,              -- tipo do ativo (Ações/Renda Fixa/Exterior/Cotas de Fundos)
     PRIMARY KEY (cnpj, competencia, item)
 );
 CREATE TABLE IF NOT EXISTS etf_carteira (
@@ -299,10 +300,13 @@ def _migrar(con: sqlite3.Connection) -> None:
             con.commit()
     if "etf_posicoes" in tabelas:
         colunas_pos = {linha[1] for linha in con.execute("PRAGMA table_info(etf_posicoes)")}
-        if "quantidade" not in colunas_pos:
-            con.execute("ALTER TABLE etf_posicoes ADD COLUMN quantidade REAL")
-            # CDA v3: passamos a guardar a carteira COMPLETA (todas as posições)
-            # e a quantidade; reprocessa o CDA para preencher
+        # CDA v3: carteira COMPLETA (todas as posições) + quantidade + grupo (tipo
+        # do ativo, para reprecificar a preço de hoje). Reprocessa o CDA p/ preencher.
+        faltantes = {"quantidade": "REAL", "grupo": "TEXT"} .items()
+        novas = [(col, tipo) for col, tipo in faltantes if col not in colunas_pos]
+        if novas:
+            for col, tipo in novas:
+                con.execute(f"ALTER TABLE etf_posicoes ADD COLUMN {col} {tipo}")
             con.execute("DELETE FROM cargas WHERE arquivo LIKE 'cda_fi_%'")
             con.commit()
     if "cargas" in tabelas:

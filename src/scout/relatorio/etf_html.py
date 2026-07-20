@@ -135,6 +135,11 @@ def montar_dados_etf(con: sqlite3.Connection, ticker: str, classificacoes: dict 
     from ..coleta import taxas_etf
 
     dados["taxa_adm"] = taxas_etf.carregar().get((etf["ticker"] or "").upper())
+    # reprecifica a carteira a preço de hoje pelo resolvedor único (ação/FII/ETF
+    # já acendem; renda fixa/exterior ficam no valor do CDA até haver fonte)
+    from .. import precos
+
+    dados["posicoes"], dados["reprecificacao"] = precos.reprecificar_posicoes(con, dados["posicoes"])
     from .. import etf_flags, redflags
 
     resultado = etf_flags.avaliar(dados)
@@ -304,17 +309,31 @@ def gerar(
             )
             qtd = posicao.get("quantidade")
             qtd_txt = formato.compacto(qtd) if qtd else "—"
+            preco = posicao.get("preco_hoje")
+            preco_txt = f"R$ {formato.decimal(preco)}" if preco else "—"
             return (
                 f"<tr><td>{rotulo}{badge}</td><td>{nome_completo}</td>"
-                f"<td>{qtd_txt}</td><td>{formato.percentual(posicao['pct'])}</td></tr>"
+                f"<td>{qtd_txt}</td><td>{preco_txt}</td>"
+                f"<td>{formato.percentual(posicao['pct'])}</td></tr>"
             )
 
         competencia_pos = formato.competencia_br(posicoes[0]["competencia"]) if posicoes[0].get("competencia") else "—"
-        cabecalho = "<thead><tr><th>ativo</th><th>nome</th><th>quantidade</th><th>% da carteira</th></tr></thead>"
+        cabecalho = (
+            "<thead><tr><th>ativo</th><th>nome</th><th>quantidade</th>"
+            "<th>preço hoje</th><th>% da carteira</th></tr></thead>"
+        )
         topo = "".join(_linha_posicao(p) for p in posicoes[:10])
+        cobertura = (dados.get("reprecificacao") or {}).get("cobertura_pct") or 0
+        nota_cobertura = (
+            f" · <b>{formato.percentual(cobertura)}</b> da carteira já tem preço de hoje na nossa base "
+            "(ações/FII/ETF, fechamento oficial D-1); o restante (renda fixa/exterior) fica no valor do CDA"
+            if cobertura
+            else ""
+        )
         nota_datada = (
             f"posição informada à CVM na carteira de <b>{competencia_pos}</b> (CDA) — a carteira de hoje "
-            "pode estar diferente · quando o ativo é um fundo que o Scout também analisa, o link leva ao raio-x dele"
+            f"pode estar diferente{nota_cobertura} · quando o ativo é um fundo que o Scout também analisa, "
+            "o link leva ao raio-x dele"
         )
         completa = ""
         if len(posicoes) > 10:
