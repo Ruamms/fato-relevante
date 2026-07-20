@@ -2,7 +2,10 @@ name: site
 
 on:
   schedule:
-    - cron: "0 10 * * 1-5"  # ~07:00 BRT, dias úteis
+    # o site mostra o fechamento oficial D-1 (série de fim de dia, não ao vivo).
+    # Roda 2x em dias úteis (cron é UTC; BRT = UTC-3):
+    - cron: "0 14 * * 1-5"  # 11:00 BRT — refresh da manhã (fechamento de ontem, já publicado)
+    - cron: "0 23 * * 1-5"  # 20:00 BRT — após o fechamento, já pega o fechamento do próprio dia
   workflow_dispatch: {}
 
 permissions:
