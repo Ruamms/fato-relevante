@@ -606,6 +606,18 @@ def ia_lote(
                 f"(a página deles mostra a red flag): {', '.join(pulados[:10])}"
                 f"{'…' if len(pulados) > 10 else ''}[/]"
             )
+        # fundo cujo ticker (derivado do ISIN) não resolve para um fundo real —
+        # classe/não listado, ex.: 0NDO11 — NÃO gera página no site (é o mesmo
+        # filtro do `scout site`). Auditado: 0 desses têm cotação. Não vale
+        # gastar leitura de IA (o gargalo) com quem nunca vai aparecer.
+        publicaveis = [f for f in fundos if armazenamento.resolver_fundo(con, f.ticker) is not None]
+        nao_negociaveis = len(fundos) - len(publicaveis)
+        if nao_negociaveis:
+            fundos = publicaveis
+            console.print(
+                f"[dim]{nao_negociaveis} fundos não negociáveis fora da fila "
+                f"(ticker do ISIN sem listagem em bolsa; não geram página no site)[/]"
+            )
         vistos: set[str] = set()
         fundos = [f for f in fundos if not (f.ticker in vistos or vistos.add(f.ticker))]
         # E7: ETFs entram no fim da fila — sem relatório gerencial, o fluxo
