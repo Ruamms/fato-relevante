@@ -320,8 +320,9 @@ def _gravar_complementos(con: sqlite3.Connection, linhas: list[dict]) -> int:
             """
             INSERT OR REPLACE INTO informes_complemento
                 (cnpj, competencia, valor_ativo, patrimonio_liquido, cotas_emitidas,
-                 vp_cota, rentab_patrimonial_mes, dy_mes, amortizacao_mes, cotistas)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                 vp_cota, rentab_patrimonial_mes, dy_mes, amortizacao_mes, cotistas,
+                 taxa_adm_mes)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """,
             (
                 *chave,
@@ -333,6 +334,7 @@ def _gravar_complementos(con: sqlite3.Connection, linhas: list[dict]) -> int:
                 _numero(linha.get("Percentual_Dividend_Yield_Mes")),
                 _numero(linha.get("Percentual_Amortizacao_Cotas_Mes")),
                 _numero(linha.get("Total_Numero_Cotistas")),
+                _numero(linha.get("Percentual_Despesas_Taxa_Administracao")),
             ),
         )
         total += 1

@@ -95,6 +95,7 @@ CREATE TABLE IF NOT EXISTS informes_complemento (
     dy_mes                 REAL,
     amortizacao_mes        REAL,
     cotistas               REAL,
+    taxa_adm_mes           REAL,  -- % de despesa com taxa de administração no mês (fração do PL)
     PRIMARY KEY (cnpj, competencia)
 );
 CREATE TABLE IF NOT EXISTS etfs (
@@ -287,6 +288,13 @@ def _migrar(con: sqlite3.Connection) -> None:
         colunas_etfs = {linha[1] for linha in con.execute("PRAGMA table_info(etfs)")}
         if "listado" not in colunas_etfs:
             con.execute("ALTER TABLE etfs ADD COLUMN listado INTEGER DEFAULT 1")
+            con.commit()
+    if "informes_complemento" in tabelas:
+        colunas_compl = {linha[1] for linha in con.execute("PRAGMA table_info(informes_complemento)")}
+        if "taxa_adm_mes" not in colunas_compl:
+            con.execute("ALTER TABLE informes_complemento ADD COLUMN taxa_adm_mes REAL")
+            # recarrega os mensais para preencher a taxa de administração histórica
+            con.execute("DELETE FROM cargas WHERE arquivo LIKE 'inf_mensal%'")
             con.commit()
     if "cargas" in tabelas:
         marcador_cda = con.execute(

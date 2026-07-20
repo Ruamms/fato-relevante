@@ -788,11 +788,13 @@ def _tabela_relacionados(
             else _e(irmao.nome[:40])
         )
         idade = f"{irmao.anos:.0f} anos" if irmao.anos >= 1 else "&lt;1 ano"
+        taxa = f"{formato.percentual(irmao.taxa)} a.a." if irmao.taxa is not None else "—"
         oculta = f' class="{classe_extra}" hidden' if indice >= limite else ""
         linhas.append(
             f"<tr{oculta}><td>{rotulo}</td><td>{_e(irmao.nome[:44])}</td>"
             f'<td style="white-space:nowrap">{idade}</td>'
-            f"<td>{_e(irmao.segmento)}</td><td>{selo}</td></tr>"
+            f"<td>{_e(irmao.segmento)}</td>"
+            f'<td style="white-space:nowrap">{taxa}</td><td>{selo}</td></tr>'
         )
     botao = ""
     if len(relacionados) > limite:
@@ -806,11 +808,12 @@ def _tabela_relacionados(
   <div class="grafico" style="overflow-x:auto">
   <p class="desc" style="color:#aeb9c7;font-size:13.5px;margin-bottom:10px">{descricao_html}</p>
   <table class="imoveis">
-    <thead><tr><th>ticker</th><th>fundo</th><th>idade</th><th>segmento</th><th>selo</th></tr></thead>
+    <thead><tr><th>ticker</th><th>fundo</th><th>idade</th><th>segmento</th><th>taxa</th><th>selo</th></tr></thead>
     <tbody>{"".join(linhas)}</tbody>
   </table>
   {botao}
-  <div class="nota">selo calculado sem cotação de bolsa (P/VP fora) · passe o mouse no selo para
+  <div class="nota">taxa de administração efetiva (média dos últimos 12 meses, dado da CVM) ·
+  selo calculado sem cotação de bolsa (P/VP fora) · passe o mouse no selo para
   ver o motivo · o link abre o relatório do fundo se ele já tiver sido gerado · ticker derivado do ISIN</div>
   </div>
 """

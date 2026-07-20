@@ -510,6 +510,7 @@ def _montar_relacionados(con: sqlite3.Connection, linhas) -> list[FundoIrmao]:
                 anos=len(serie) / 12,
                 selo=redflags.selo(resultado),
                 motivos=tuple(flag.titulo for flag in resultado.flags),
+                taxa=series.taxa_adm_efetiva(serie),
             )
         )
     return irmaos
@@ -685,6 +686,17 @@ def _montar_indicadores(
                 formato.compacto(cotistas),
                 _variacao_12m(serie, "cotistas"),
                 "—",
+            )
+        )
+
+    taxa_adm = series.taxa_adm_efetiva(serie)
+    if taxa_adm is not None:
+        linhas.append(
+            IndicadorLinha(
+                "Taxa de administração",
+                f"{formato.percentual(taxa_adm)} a.a.",
+                "—",
+                "efetiva (média 12 meses)",
             )
         )
 

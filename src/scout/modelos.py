@@ -76,6 +76,7 @@ class FundoIrmao:
     anos: float
     selo: Selo | None
     motivos: tuple[str, ...] = ()  # títulos dos alertas que definiram o selo
+    taxa: float | None = None  # taxa de administração efetiva, % a.a.
 
 
 @dataclass(frozen=True)

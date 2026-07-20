@@ -52,6 +52,23 @@ def dy_acumulado(serie: list, meses: int = 12) -> float | None:
     return sum(validos)
 
 
+def taxa_adm_efetiva(serie: list, meses: int = 12) -> float | None:
+    """Taxa de administração EFETIVA anualizada, em % a.a. — a média das
+    despesas mensais com taxa de administração (fração do PL informada à CVM)
+    nas últimas `meses` competências, × 12. É o que o fundo REALMENTE cobrou,
+    não o headline do regulamento. None quando não há dado suficiente."""
+    validos = [
+        linha["taxa_adm_mes"]
+        for linha in serie[-meses:]
+        # 0 <= fração <= 3% ao mês descarta lixo auto-declarado (a taxa mensal
+        # real de um FII fica em ~0,02%–0,15% do PL)
+        if linha["taxa_adm_mes"] is not None and 0 <= linha["taxa_adm_mes"] <= 0.03
+    ]
+    if len(validos) < 3:  # alguns meses para não anualizar o ruído de 1 mês só
+        return None
+    return 100 * (sum(validos) / len(validos)) * 12
+
+
 def ajustada_por_evento_de_cotas(bruta: list[tuple[str, float]]) -> list[tuple[str, float]]:
     """Neutraliza desdobramento/grupamento em qualquer série de valores por
     cota (preço, VP): salto além de 2,5x para qualquer lado entre pontos
