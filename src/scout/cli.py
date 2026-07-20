@@ -656,6 +656,9 @@ def ia_lote(
     modelo: str = typer.Option(None, "--modelo", help="Modelo do Ollama (padrão: qwen2.5:14b — o mais confiável)."),
     destino: str = typer.Option("leituras", "--destino", help="Pasta dos JSONs de leitura (versionada no repo)."),
     limite: int = typer.Option(None, "--limite", help="Só os N maiores fundos (para teste)."),
+    so_ticker: str = typer.Option(
+        None, "--ticker", help="Lê só este ticker (ex.: BOVA11) — testa 1 fundo/ETF sem esperar a fila."
+    ),
     sem_fatos: bool = typer.Option(False, "--sem-fatos", help="Só relatórios gerenciais."),
     apenas_erros: bool = typer.Option(
         False, "--apenas-erros", help="Reprocessa somente os fundos listados no arquivo de erros da rodada anterior."
@@ -729,6 +732,15 @@ def ia_lote(
             for etf in armazenamento.etfs_listados(con)
             if etf["ticker"] not in vistos
         ]
+        if so_ticker:
+            alvo = so_ticker.strip().upper()
+            fundos = [f for f in fundos if f.ticker.upper() == alvo]
+            if not fundos:
+                console.print(
+                    f"[yellow]Ticker '{alvo}' não está na fila[/] — não é um FII/ETF "
+                    "negociável conhecido (confira o código ou rode 'scout atualizar')."
+                )
+                raise typer.Exit(1)
         if apenas_erros:
             if not arquivo_erros.exists():
                 console.print(f"[yellow]Nenhum arquivo de erros em {arquivo_erros} — nada a reprocessar.[/]")
