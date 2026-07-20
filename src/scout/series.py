@@ -69,6 +69,18 @@ def taxa_adm_efetiva(serie: list, meses: int = 12) -> float | None:
     return 100 * (sum(validos) / len(validos)) * 12
 
 
+def taxa_adm_ultimo_mes(serie: list) -> tuple[float, str] | None:
+    """(fração do PL, competência 'AAAA-MM') do mês mais recente com taxa de
+    administração válida informada à CVM. É o dado BRUTO, sem cálculo nenhum —
+    o que o fundo declarou ter descontado naquele mês. None quando não há mês
+    válido na série."""
+    for linha in reversed(serie):
+        valor = linha["taxa_adm_mes"]
+        if valor is not None and 0 <= valor <= 0.03:
+            return valor, linha["competencia"]
+    return None
+
+
 def ajustada_por_evento_de_cotas(bruta: list[tuple[str, float]]) -> list[tuple[str, float]]:
     """Neutraliza desdobramento/grupamento em qualquer série de valores por
     cota (preço, VP): salto além de 2,5x para qualquer lado entre pontos

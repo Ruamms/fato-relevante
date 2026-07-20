@@ -691,12 +691,21 @@ def _montar_indicadores(
 
     taxa_adm = series.taxa_adm_efetiva(serie)
     if taxa_adm is not None:
+        ultimo = series.taxa_adm_ultimo_mes(serie)
+        if ultimo is not None:
+            fracao_mes, competencia = ultimo
+            historico = (
+                f"{formato.decimal(fracao_mes * 100, 3)}% no mês de "
+                f"{formato.competencia_curta(competencia)}"
+            )
+        else:
+            historico = "efetiva (média 12 meses)"
         linhas.append(
             IndicadorLinha(
                 "Taxa de administração",
                 f"{formato.percentual(taxa_adm)} a.a.",
                 "—",
-                "efetiva (média 12 meses)",
+                historico,
             )
         )
 
