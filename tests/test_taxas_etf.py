@@ -177,6 +177,54 @@ def test_atualizar_incremental_grava_achado_e_nao_achado(con, tmp_path, monkeypa
     assert carregadas["AAA11"]["taxa_adm_aa"] == 0.30
 
 
+def test_atualizar_so_rele_quando_o_regulamento_muda(con, tmp_path, monkeypatch):
+    import csv
+
+    from scout import ia
+    from scout.coleta import fnet
+
+    monkeypatch.delenv("GITHUB_ACTIONS", raising=False)
+    monkeypatch.delenv("CI", raising=False)
+    con.execute("INSERT INTO etfs (cnpj, ticker, radical, tipo_b3) VALUES ('111','AAA11','AAA','ETF')")
+    con.execute("INSERT INTO etfs (cnpj, ticker, radical, tipo_b3) VALUES ('222','BBB11','BBB','ETF')")
+    con.commit()
+
+    caminho = tmp_path / "dados" / "taxas_etfs.csv"
+    caminho.parent.mkdir()
+    # ambos lidos há muito tempo (vencidos pelo frescor); id do regulamento na fonte
+    caminho.write_text(
+        "ticker;taxa_adm_aa;fonte;verificado_em;confianca\n"
+        "AAA11;0,30;https://f/downloadDocumento?id=100;2020-01-01;alta\n"
+        "BBB11;0,40;https://f/downloadDocumento?id=200;2020-01-01;alta\n",
+        encoding="utf-8-sig",
+    )
+    monkeypatch.setattr(taxas_etf, "_caminho_gravavel", lambda: caminho)
+    regs = {
+        "111": {"id": 101, "tipo": "Regulamento", "categoria": "Doc", "data_entrega": ""},  # NOVO
+        "222": {"id": 200, "tipo": "Regulamento", "categoria": "Doc", "data_entrega": ""},  # MESMO
+    }
+    monkeypatch.setattr(fnet, "listar", lambda cnpj, **k: [regs[cnpj]])
+    baixados = []
+
+    def _baixar(con, cnpj, doc, destino, **k):
+        baixados.append(cnpj)
+        return tmp_path / f"{cnpj}.pdf"
+
+    monkeypatch.setattr(fnet, "_garantir_documento", _baixar)
+    monkeypatch.setattr(ia, "extrair_texto_pdf", lambda c, **k: "taxa de administração de 0,55% ao ano")
+
+    taxas_etf.atualizar(con)
+    linhas = {l["ticker"]: l for l in csv.DictReader(caminho.open(encoding="utf-8-sig"), delimiter=";")}
+    # AAA11: regulamento mudou (id 100 -> 101) -> re-leu e atualizou a taxa
+    assert linhas["AAA11"]["taxa_adm_aa"] == "0,55"
+    assert linhas["AAA11"]["fonte"].endswith("id=101")
+    assert linhas["AAA11"]["verificado_em"] != "2020-01-01"
+    # BBB11: mesmo regulamento (id 200) -> NÃO re-baixou, manteve a taxa, só renovou a data
+    assert linhas["BBB11"]["taxa_adm_aa"] == "0,40"
+    assert linhas["BBB11"]["verificado_em"] != "2020-01-01"
+    assert baixados == ["111"]  # só o que mudou foi baixado
+
+
 def test_indice_etfs_tem_coluna_taxa(con):
     _semear_etf(con)
     dados = etf_html.montar_dados_etf(con, "BOVA11", {"10406511000161": {"classificacao_scout": "Ações Brasil"}})

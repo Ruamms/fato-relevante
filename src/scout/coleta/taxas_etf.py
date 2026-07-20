@@ -60,7 +60,9 @@ def extrair_taxa_regulamento(texto: str) -> dict | None:
     return next((c for c in candidatos if c["confianca"] == "alta"), candidatos[0])
 
 
-_CAP_POR_RODADA = 20  # lê no máximo N regulamentos NOVOS por atualizar (FNET é lento)
+_CAP_POR_RODADA = 20     # lê no máximo N regulamentos por rodada (FNET é lento)
+_FRESCOR_DIAS = 90       # re-confere o regulamento de cada ETF a cada N dias
+_CAMPOS = ["ticker", "taxa_adm_aa", "fonte", "verificado_em", "confianca"]
 
 
 def _caminho_gravavel() -> Path | None:
@@ -71,94 +73,150 @@ def _caminho_gravavel() -> Path | None:
     return caminho if caminho.parent.exists() else None
 
 
-def _tickers_no_arquivo(caminho: Path) -> set[str]:
-    """Todos os tickers já no arquivo (achados, manuais OU 'não achados') — é a
-    chave do incremental: quem já está aqui não é relido."""
+def _ler_linhas(caminho: Path) -> dict[str, dict]:
+    """{TICKER: linha} de tudo que já está no arquivo (achado, manual OU não achado)."""
     if not caminho.exists():
-        return set()
+        return {}
     with caminho.open(encoding="utf-8-sig", newline="") as fh:
         return {
-            (linha.get("ticker") or "").strip().upper()
+            (linha.get("ticker") or "").strip().upper(): linha
             for linha in csv.DictReader(fh, delimiter=";")
             if (linha.get("ticker") or "").strip()
         }
 
 
+def _id_regulamento(fonte: str | None) -> str:
+    """O id do regulamento fica embutido na fonte (…downloadDocumento?id=NNN).
+    É o PARÂMETRO que diz se o documento mudou desde a última leitura."""
+    achado = re.search(r"id=(\d+)", fonte or "")
+    return achado.group(1) if achado else ""
+
+
+def _dias_desde(iso: str | None) -> int:
+    from datetime import date
+
+    try:
+        return (date.today() - date.fromisoformat((iso or "")[:10])).days
+    except ValueError:
+        return 10**6  # sem data válida -> tratado como muito antigo (re-confere)
+
+
 def atualizar(con, ao_progredir=None) -> str | None:
-    """Passo do `scout atualizar`: lê o REGULAMENTO no FNET dos ETFs que ainda
-    não estão em dados/taxas_etfs.csv e ATUALIZA o arquivo — preenche a taxa
-    quando acha (com a confiança, entra direto no site) e deixa uma linha
-    'nao_achou'/'sem_regulamento' quando não acha (fica aguardando conferência
-    manual). Incremental: quem já está no arquivo NÃO é relido. Processa até
-    `_CAP_POR_RODADA` por rodada (FNET é lento); o resto vem na próxima.
-    Retorna None quando não há nada a fazer (grava só do código-fonte)."""
+    """Passo do `scout atualizar`: mantém dados/taxas_etfs.csv em dia lendo o
+    REGULAMENTO no FNET. DOIS parâmetros decidem o que fazer:
+
+    - QUANDO reconferir (frescor): só re-checa ETF cujo `verificado_em` tem mais
+      de `_FRESCOR_DIAS` dias — evita bater no FNET toda rodada.
+    - SE atualizar (mudança): o id do regulamento (embutido na `fonte`). Se o
+      regulamento mais recente no FNET tem id DIFERENTE do gravado, o documento
+      mudou -> re-lê e atualiza a taxa. Mesmo id -> só renova a data.
+
+    `confianca=manual` NUNCA é sobrescrita (humano vence). Se o novo regulamento
+    não declarar a taxa mas já tínhamos uma, mantém a última conhecida (o regex
+    pode ter falhado no PDF novo). Processa até `_CAP_POR_RODADA` por rodada;
+    falha de rede não “queima” o ETF (retenta). Retorna None quando não há nada a
+    fazer (e grava só do código-fonte)."""
+    import csv as _csv
     import os
     from datetime import date
 
     from .. import armazenamento, ia
     from . import fnet
 
-    # a curadoria de taxa roda LOCAL (o FNET pendura a partir do IP do CI, e o
-    # que o CI gravasse seria efêmero); no GitHub Actions o site usa o CSV que
-    # você commitou depois de rodar aqui
     if os.environ.get("GITHUB_ACTIONS") or os.environ.get("CI"):
-        return None
+        return None  # curadoria roda LOCAL; o CI usa o CSV commitado
     caminho = _caminho_gravavel()
     if caminho is None:
         return None
-    presentes = _tickers_no_arquivo(caminho)
-    pendentes = [
-        etf
-        for etf in armazenamento.etfs_listados(con)
-        if (etf["ticker"] or "").strip().upper()
-        and (etf["ticker"] or "").strip().upper() not in presentes
-    ]
-    if not pendentes:
-        return None  # todos já lidos — "se já foi, não chama de novo"
 
-    lote = pendentes[:_CAP_POR_RODADA]
+    linhas = _ler_linhas(caminho)
     hoje = date.today().isoformat()
-    novos: list[tuple] = []
-    achados = 0
-    for etf in lote:
-        ticker = etf["ticker"].strip().upper()
+
+    def _precisa(ticker: str) -> bool:
+        linha = linhas.get(ticker)
+        if linha is None:
+            return True  # ETF novo, nunca lido
+        if (linha.get("confianca") or "").strip().lower() == "manual":
+            return False  # humano vence — nunca re-lê
+        return _dias_desde(linha.get("verificado_em")) >= _FRESCOR_DIAS
+
+    tickers_etf = [
+        (etf["ticker"].strip().upper(), etf)
+        for etf in armazenamento.etfs_listados(con)
+        if (etf["ticker"] or "").strip()
+    ]
+    fila = [(tk, etf) for tk, etf in tickers_etf if _precisa(tk)]
+    restantes = max(0, len(fila) - _CAP_POR_RODADA)
+    fila = fila[:_CAP_POR_RODADA]
+    if not fila:
+        return None
+
+    achados = mudancas = 0
+    for ticker, etf in fila:
+        linha = linhas.get(ticker)
         try:
             documentos = fnet.listar(etf["cnpj"], quantidade=120, timeout=12, tentativas=2)
-        except Exception:  # noqa: BLE001 — falha de rede NÃO marca como lido (retenta depois)
+        except Exception:  # noqa: BLE001 — falha de rede não queima o ETF (retenta)
             continue
         regulamento = fnet.ultimo_regulamento(documentos)
         if regulamento is None:
-            novos.append((ticker, "", "", hoje, "sem_regulamento"))
+            base = dict(linha) if linha else {
+                "ticker": ticker, "taxa_adm_aa": "", "fonte": "", "confianca": "sem_regulamento"
+            }
+            base["verificado_em"] = hoje  # sem regulamento agora: mantém o que havia, renova a data
+            linhas[ticker] = base
             continue
+        id_atual = str(regulamento["id"])
+        resolvido = linha and (linha.get("confianca") or "").strip().lower() not in (
+            "", "nao_achou", "sem_regulamento"
+        )
+        # MESMO regulamento de antes e já resolvido -> não re-baixa, só renova a data
+        if resolvido and _id_regulamento(linha.get("fonte")) == id_atual:
+            linha["verificado_em"] = hoje
+            linhas[ticker] = linha
+            continue
+        # regulamento novo (ou 1ª leitura, ou antes não achado): lê e extrai
         try:
-            caminho_pdf = fnet._garantir_documento(
-                con,
-                etf["cnpj"],
-                regulamento,
+            pdf = fnet._garantir_documento(
+                con, etf["cnpj"], regulamento,
                 armazenamento.diretorio_dados() / "documentos",
-                timeout=45,
-                tentativas=2,
+                timeout=45, tentativas=2,
             )
-            achado = extrair_taxa_regulamento(ia.extrair_texto_pdf(caminho_pdf, max_paginas=60))
+            achado = extrair_taxa_regulamento(ia.extrair_texto_pdf(pdf, max_paginas=60))
         except Exception:  # noqa: BLE001 — download/parse falhou: não marca (retenta)
             continue
         fonte = fnet.URL_DOWNLOAD.format(id=regulamento["id"])
         if achado:
             achados += 1
-            taxa = f"{achado['taxa_adm_aa']:.2f}".replace(".", ",")
-            novos.append((ticker, taxa, fonte, hoje, achado["confianca"]))
+            if not linha or _numero(linha.get("taxa_adm_aa")) != achado["taxa_adm_aa"]:
+                mudancas += 1
+            linhas[ticker] = {
+                "ticker": ticker,
+                "taxa_adm_aa": f"{achado['taxa_adm_aa']:.2f}".replace(".", ","),
+                "fonte": fonte,
+                "verificado_em": hoje,
+                "confianca": achado["confianca"],
+            }
+        elif linha and _numero(linha.get("taxa_adm_aa")) is not None:
+            # novo regulamento não declarou a taxa, mas já tínhamos uma: mantém a
+            # última conhecida (regex pode falhar no PDF novo), só renova a data
+            linha["verificado_em"] = hoje
+            linhas[ticker] = linha
         else:
-            novos.append((ticker, "", fonte, hoje, "nao_achou"))
+            linhas[ticker] = {
+                "ticker": ticker, "taxa_adm_aa": "", "fonte": fonte,
+                "verificado_em": hoje, "confianca": "nao_achou",
+            }
 
-    if novos:
-        import csv as _csv
+    with caminho.open("w", encoding="utf-8-sig", newline="") as fh:
+        escritor = _csv.DictWriter(fh, fieldnames=_CAMPOS, delimiter=";", extrasaction="ignore")
+        escritor.writeheader()
+        for ticker in sorted(linhas):
+            escritor.writerow({campo: (linhas[ticker].get(campo) or "") for campo in _CAMPOS})
 
-        with caminho.open("a", encoding="utf-8-sig", newline="") as fh:
-            _csv.writer(fh, delimiter=";").writerows(novos)
-    restantes = len(pendentes) - len(lote)
     mensagem = (
-        f"taxas de ETF (regulamento): {achados} achada(s) de {len(novos)} lida(s)"
-        + (f" · {restantes} p/ próxima rodada" if restantes > 0 else " · fila completa")
+        f"taxas de ETF (regulamento): {achados} achada(s), {mudancas} mudança(s)"
+        + (f" · {restantes} p/ próxima rodada" if restantes else "")
     )
     if ao_progredir:
         ao_progredir(mensagem)
