@@ -70,6 +70,7 @@ Tese: FRE lido por IA (diretoria/processos/partes relacionadas), parecer do audi
 - [ ] **Renda fixa/CDB** — alerta de concentração acima do teto do FGC (R$ 250 mil) e saúde do emissor (IF.data/BCB)
 - [x] **Comparação entre ativos** — FEITO para FIIs (19/07/2026): `comparar.html` no site com 2-3 fundos lado a lado (mesmos fatos: selo com motivos, cotação, DY, P/VP, PL, cotistas, idade, alertas), links cruzados e `?f1=X&f2=Y` na URL; sem destaque de "vencedor" — comparação de fatos, não recomendação. Estende às outras classes quando existirem
 - [ ] **API/site dinâmico** — expor o núcleo via FastAPI quando o site estático não bastar
+  - **Preço mais fresco/ao vivo na abertura da página**: hoje o site é estático e mostra o fechamento oficial D-1 (série de fim de dia; tempo real é feed licenciado da B3, evitado de propósito). Atualizar o preço a cada acesso NÃO é possível no site estático — o navegador não pode chamar a B3 direto (CORS) e não há backend. O caminho certo é este item: um backend FastAPI que busca da B3 do lado do servidor (sem CORS, com cache) e decide deliberadamente o que fazer com a questão de tempo real/licenciamento
 
 ## Princípios que não mudam
 
