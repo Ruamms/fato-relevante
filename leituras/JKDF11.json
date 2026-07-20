@@ -1,0 +1,36 @@
+{
+  "ticker": "JKDF11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T16:57:15",
+  "comunicados": {
+    "ids": [
+      1118244,
+      835223,
+      1226792,
+      1110534
+    ],
+    "datas": [
+      "19/02/2026",
+      "10/02/2025",
+      "23/06/2026",
+      "12/02/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### Assembleia AGE (23/06/2026)\n**O que aconteceu:** Não distribuição semestral de rendimentos para reforço de caixa.\n\n- A assembleia aprovou a não distribuição de 95% dos rendimentos do período de janeiro a junho de 2026, com o objetivo de fortalecer o caixa do fundo.\n- \"Foi deliberado e aprovado pelos Cotistas representantes da totalidade das cotas em circulação da Classe, sem quaisquer ressalvas, a não distribuição semestral de 95% (noventa e cinco por cento) de rendimento da Classe...\"\n\n### Assembleia AGE (12/02/2026)\n**O que aconteceu:** Não distribuição semestral de rendimentos para reforço de caixa.\n\n- A assembleia aprovou a não distribuição de 95% dos rendimentos do período de julho a dezembro de 2025, com o objetivo de fortalecer o caixa do fundo.\n- \"Foi deliberado e aprovado pelos Cotistas representantes da totalidade das cotas em circulação da Classe, sem quaisquer ressalvas, a não distribuição semestral de 95% (noventa e cinco por cento) de rendimento da Classe...\"\n\n### Fato Relevante (19/02/2026)\n**O que aconteceu:** Reavaliação positiva dos ativos do fundo.\n\n- A reavaliação realizada pela Cushman & Wakefield resultou em uma variação positiva de 30,83% no valor do patrimônio líquido do Fundo.\n- \"os ativos do fundo foram reavaliados a valor justo em dezembro de 2025 pela empresa especializada Cushman & Wakefield, resultando em uma variação positiva de 30,83% no valor do patrimônio líquido do Fundo...\"\n\n### Fato Relevante (10/02/2025)\n**O que aconteceu:** Reavaliação positiva dos ativos do fundo.\n\n- A reavaliação realizada em dezembro de 2024 resultou em uma variação positiva de 14,23% no valor do patrimônio líquido.\n- \"os ativos do fundo foram reavaliados a valor justo em dezembro de 2024, resultando em valor 11,48% superior ao atual valor contábil dos ativos, o que representa uma variação positiva de 14,23% no valor do patrimônio líquido do fundo...\"\n\n**Conexão com os indicadores:**\n- A reavaliação em dezembro de 2025 resultou na alta significativa do patrimônio líquido (de +38,38% nos últimos 12 meses), refletindo a variação positiva de 30,83%."
+  },
+  "modelo": "qwen2.5:14b",
+  "parecer": {
+    "id": 1153952,
+    "data_entrega": "02/04/2026 21:56",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário JK D - FII em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos Fundo"
+  }
+}
