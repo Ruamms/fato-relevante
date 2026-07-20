@@ -381,6 +381,11 @@ def _indice_etfs(etfs: list[dict], agora) -> str:
             else "—"
         )
         pl = formato.moeda_compacta(dados["pl"]["pl"]) if dados["pl"] else "—"
+        taxa = (
+            f'{formato.percentual(dados["taxa_adm"]["taxa_adm_aa"])} a.a.'
+            if dados.get("taxa_adm")
+            else "—"
+        )
         selo_html = "—"
         if dados.get("selo"):
             cor = _COR_SELO.get(dados["selo"].nivel, "#94a3b8")
@@ -397,7 +402,7 @@ def _indice_etfs(etfs: list[dict], agora) -> str:
             f'<td><a href="{etf["ticker"]}.html">{etf["ticker"]}</a></td>'
             f'<td title="{_e(etf["denominacao"] or "")}">{_e(_trunca(etf["denominacao"] or "", 48))}</td>'
             f"<td>{_e(classe)}</td><td>{preco}</td><td>{variacao}</td><td>{pl}</td>"
-            f"<td>{selo_html}</td></tr>"
+            f"<td>{taxa}</td><td>{selo_html}</td></tr>"
         )
     return f"""<!doctype html>
 <html lang="pt-BR">
@@ -447,7 +452,7 @@ tbody tr:hover td {{ background:#182024; }}
    oninput="filtrar()">
   <div class="filtros"><button class="filtro ativo" onclick="filtraClasse(this, '')">Todas</button>{botoes}</div>
   <table id="etfs">
-    <thead><tr><th>ticker</th><th>fundo</th><th>classe</th><th>preço (D-1)</th><th>12 meses</th><th>PL</th><th>selo</th></tr></thead>
+    <thead><tr><th>ticker</th><th>fundo</th><th>classe</th><th>preço (D-1)</th><th>12 meses</th><th>PL</th><th>taxa</th><th>selo</th></tr></thead>
     <tbody>{"".join(linhas)}</tbody>
   </table>
   <div class="rodape">Não é recomendação de investimento. Fontes: B3 e CVM — critérios públicos:

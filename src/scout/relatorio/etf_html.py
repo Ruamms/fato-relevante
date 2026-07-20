@@ -132,6 +132,9 @@ def montar_dados_etf(con: sqlite3.Connection, ticker: str, classificacoes: dict 
         "proventos": armazenamento.proventos_do_etf(con, etf["cnpj"]),
         "posicoes": _posicoes_com_links(con, etf["cnpj"]),
     }
+    from ..coleta import taxas_etf
+
+    dados["taxa_adm"] = taxas_etf.carregar().get((etf["ticker"] or "").upper())
     from .. import etf_flags, redflags
 
     resultado = etf_flags.avaliar(dados)
@@ -236,6 +239,22 @@ def gerar(
     _card("Classe (Scout)", _e(classe), rodape_classe)
     if dados["gestor"]:
         _card("Gestora", f'<span class="compacto">{_e(_trunca(str(dados["gestor"]), 52))}</span>', "")
+    taxa_info = dados.get("taxa_adm")
+    if taxa_info:
+        fonte = taxa_info.get("fonte") or ""
+        conferido = taxa_info.get("verificado_em") or ""
+        if fonte:
+            extra = (
+                f'<a href="{_e(fonte)}" target="_blank" rel="noopener">regulamento</a>'
+                f'{f" · conf. {_e(conferido)}" if conferido else ""}'
+            )
+        else:
+            extra = f"regulamento do fundo{f' · conf. {_e(conferido)}' if conferido else ''}"
+        _card(
+            "Taxa de administração",
+            f'{formato.percentual(taxa_info["taxa_adm_aa"])} a.a.',
+            extra,
+        )
     proventos = dados.get("proventos") or []
     if proventos:
         ultimo = proventos[0]

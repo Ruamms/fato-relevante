@@ -127,10 +127,11 @@ TERMOS = {
         "Nos ETFs que reinvestem os proventos, essa variação JÁ É o retorno total."
     ),
     "Taxa de administração": (
-        "Quanto o fundo cobra para ser administrado e gerido. Mostramos a taxa "
-        "EFETIVA: a média do que ele REALMENTE descontou do patrimônio nos últimos "
-        "12 meses (dado mensal da CVM), anualizada (× 12) — o valor 'a.a.'. Logo "
-        "abaixo vem o percentual bruto do último mês informado, sem nenhum cálculo."
+        "Quanto o fundo cobra para ser administrado e gerido. Nos FIIs mostramos a "
+        "taxa EFETIVA: a média do que ele REALMENTE descontou do patrimônio nos "
+        "últimos 12 meses (dado mensal da CVM), anualizada — o valor 'a.a.'; abaixo, "
+        "o percentual bruto do último mês. Nos ETFs, que não publicam esse informe, "
+        "usamos a taxa do REGULAMENTO do fundo (curadoria com fonte)."
     ),
     "Classe (Scout)": (
         "Nossa classificação em linguagem simples (Ações Brasil, Renda Fixa, Cripto…), revisada "
