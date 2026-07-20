@@ -11,10 +11,17 @@ e nenhum dado sai da máquina.
 from __future__ import annotations
 
 import json
+import logging
 import os
 import urllib.error
 import urllib.request
 from pathlib import Path
+
+# pypdf é tagarela: PDFs malformados do FNET (xref quebrado, padding inválido)
+# geram avisos de RECUPERAÇÃO ("Ignoring wrong pointing object", "Invalid
+# padding bytes", "Adding missing padding") — o texto é extraído mesmo assim.
+# Silenciamos esse ruído no log do lote, mantendo erros de verdade (ERROR+).
+logging.getLogger("pypdf").setLevel(logging.ERROR)
 
 URL_OLLAMA = os.environ.get("SCOUT_OLLAMA_URL", "http://localhost:11434")
 MODELO_PADRAO = os.environ.get("SCOUT_MODELO_IA", "qwen2.5:14b")
