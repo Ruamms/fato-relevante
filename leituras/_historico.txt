@@ -294,3 +294,16 @@
 2026-07-20 16:57:17	BTHI11	erro	The read operation timed out
 2026-07-20 16:57:17	TRBL11	erro	The read operation timed out
 2026-07-20 17:23:13	CPLG11	lido	1557s
+2026-07-20 17:45:56	TJKB11	lido	1363s
+2026-07-20 17:46:02	--- lote interrompido pelo usuário em BTDI11
+2026-07-20 17:46:02	--- lote encerrado · 10 lidos, 95 em dia/sem relatório, 10 erros
+2026-07-20 18:08:11	--- lote iniciado · modelo qwen2.5:14b · 751 fundos na fila
+2026-07-20 18:23:25	BRCO11	lido	856s
+2026-07-20 18:23:25	ISSH11	erro	Stream has ended unexpectedly
+2026-07-20 18:23:26	RZAK11	erro	PDF sem texto extraível
+2026-07-20 18:23:26	RZDS11	erro	PDF sem texto extraível
+2026-07-20 18:23:26	NVHO11	erro	The read operation timed out
+2026-07-20 18:23:26	FATN11	erro	The read operation timed out
+2026-07-20 18:23:26	BTHI11	erro	The read operation timed out
+2026-07-20 18:37:12	TRBL11	lido	826s
+2026-07-20 18:56:32	BTDI11	lido	1160s

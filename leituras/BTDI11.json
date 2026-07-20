@@ -1,0 +1,53 @@
+{
+  "ticker": "BTDI11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T18:56:30",
+  "relatorio": {
+    "id": 1236353,
+    "data_entrega": "30/06/2026 21:05",
+    "texto": "1. **Compra de novos ativos**: O fundo adquiriu posições em mercado primário no CRI BTLC e Laranjeiras, totalizando R$ 56,867 milhões e R$ 4,653 milhões respectivamente [página 4].\n2. **Alocação de recursos**: A gestão realizou aquisições pontuais e alocações táticas para melhorar a rentabilidade da posição de caixa enquanto seleciona novos ativos estratégicos [página 4].\n3. **Vacância comentada**: Não há menção específica à vacância em nenhum dos segmentos mencionados no relatório.\n4. **Inadimplência comentada**: O fundo não reportou inadimplência ou problemas de crédito com os ativos na carteira [página 4].\n5. **Riscos citados pela gestão**: A inflação continua elevada e o cenário macroeconômico permanece desafiador, com incertezas sobre a trajetória dos juros de longo prazo [página 2-3].\n6. **Alavancagem/dívidas**: O fundo está substancialmente investido, mantendo apenas um nível de caixa compatível com suas necessidades operacionais e obrigações recorrentes [página 4].\n7. **Eventos societários**: Não foram mencionados eventos societários relevantes no relatório.\n8. **Distribuição de dividendos**: O fundo distribuiu R$ 0,1170 por cota aos cotistas em junho, representando uma rentabilidade mensal de 1,17% [página 5].\n\n**O que observar em seguida:**\n- Monitorar a alocação e performance dos novos ativos adquiridos (CRI BTLC e Laranjeiras).\n- Manter atenção às atualizações sobre o cenário macroeconômico e suas implicações para os CRIs na carteira."
+  },
+  "comunicados": {
+    "ids": [
+      981392,
+      1200820,
+      1188012,
+      1188004,
+      1180714
+    ],
+    "datas": [
+      "29/08/2025",
+      "21/05/2026",
+      "13/05/2026",
+      "13/05/2026",
+      "05/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE (29/08/2025)\n**O que aconteceu:** Aprovada a realização da segunda emissão e distribuição pública primária de cotas.\n**Resumo:** O administrador do BTG PACTUAL CRÉDITO IMOBILIÁRIO CDI – FII anunciou a aprovação para realizar uma nova emissão de 40 milhões de novas cotas, com preço de emissão de R$9,64 cada.\n**Trecho-chave:** \"O Administrador e a BTG PACTUAL GESTORA DE RECURSOS LTDA. aprovaram, em 28 de agosto de 2025, por meio do “Ato Conjunto do Administrador e do Gestor da Classe Única de Cotas”, a realização da 2ª (segunda) emissão e distribuição pública primária de, inicialmente, 40.000.000 (quarenta milhões) de novas cotas nominativas e escriturais.\"\n\n### COMUNICADO AO MERCADO (13/05/2026)\n**O que aconteceu:** Aprovada a atualização da forma de divulgação da remuneração dos prestadores de serviços essenciais.\n**Resumo:** O administrador do fundo anunciou a aprovação para substituir o \"Sumário de Remuneração\" pela Ferramenta ANBIMA, sem alterar os valores pagos pelos cotistas.\n**Trecho-chave:** \"Considerando as interpretações adicionais divulgadas pelo Ofício-Circular Conjunto nº 1/2025/CVM/SIN/SSE (\"Ofício-Circular CVM nº 1/2025\"), em especial quanto à substituição do \"Sumário de Remuneração\" pela Ferramenta ANBIMA (Plataforma de Transparência de Taxas) como meio centralizado e adequado de divulgação da remuneração dos Prestadores de Serviços Essenciais.\"\n\n### COMUNICADO AO MERCADO (21/05/2026)\n**O que aconteceu:** Aprovadas as contas anuais do fundo referentes ao exercício encerrado em 31 de dezembro de 2025.\n**Resumo:** O administrador comunicou a aprovação das contas anuais do BTG PACTUAL CRÉDITO IMOBILIÁRIO CDI – FII, realizada via assembleia geral de cotistas.\n**Trecho-chave:** \"A versão do Regulamento consolidada e anexa ao presente passará a ter efeitos no fechamento de 20 de maio de 2026.\"\n\n### ASSEMBLEIA AGO (13/05/2026)\n**O que aconteceu:** Aprovadas as demonstrações financeiras auditadas do exercício encerrado em 31 de dezembro de 2025.\n**Resumo:** A assembleia geral de cotistas aprovou as contas e demonstrações financeiras auditadas do BTG PACTUAL CRÉDITO IMOBILIÁRIO CDI – FII referentes ao exercício encerrado em 31/12/2025.\n**Trecho-chave:** \"4.1. Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n### ASSEMBLEIA AGO (05/05/2026)\n**O que aconteceu:** Convocação para consulta formal sobre a aprovação das contas e demonstrações financeiras do exercício findo em 31 de dezembro de 2025.\n**Resumo:** A administradora convoca os cotistas para uma consulta formal até o dia 11/05/2026, para deliberarem sobre a aprovação das contas e demonstrações financeiras do exercício encerrado em 31/12/2025.\n**Trecho-chave:** \"A BTG Pactual Serviços Financeiros S.A. Distribuidora de Títulos e Valores Mobiliários, sociedade anônima, com sede na Cidade e Estado do Rio de Janeiro, localizada à Praia de Botafogo, nº 501, Torre Corcovado, 5º Andar (Parte), Botafogo, e inscrita no CNPJ sob o nº 59.281.253/0001-23, na qualidade de administradora do BTG PACTUAL CREDITO IMOBILIARIO CDI - FII FI IMOBILIARIO RESPONSABILIDADE LIMITADA, inscrito no CNPJ sob o nº 60.027.987/0001-60 (“Fundo”), bem como de sua classe única, vem, pela presente, convocar os cotistas do Fundo (“Cotistas”) para a Consulta Formal, com prazo de recebimento de votos até 11 de maio de 2026.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Emissão de cotas com VP/cota em queda",
+      "Rendimentos irregulares",
+      "Fundo novo — histórico curto"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 1123943,
+    "data_entrega": "27/02/2026 15:35",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, e o desempenho de suas operações e os seus fluxos de caixa para o período de 29 de abril (data de início das atividades) a 31 de dezembro de 2025, de acordo com as práticas contábeis adotadas no Brasil, apli"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "ticker": "TRBL11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T18:37:10",
+  "relatorio": {
+    "id": 1252668,
+    "data_entrega": "17/07/2026 18:17",
+    "texto": "1. **Nova locação:** O Fundo locou a única área vaga do TRBL Guarulhos I para a Lab System, em contrato com prazo de 120 meses e vigência até 2036 (p. 4).\n   \n2. **Vacância zerada:** O Fundo encerrou junho com 100% de ocupação física e adimplência financeira após a locação da área vaga em Guarulhos I (p. 4).\n\n3. **Reforma concluída:** A reforma do galpão TRBL Contagem, locado para a Shopee, segue em fase final de formalização (p. 4).\n\n4. **Resultado financeiro negativo:** O Fundo registrou um resultado líquido negativo de R$ 1,10 milhão no mês de junho (R$ -0,14/cota) (p. 5).\n\n5. **Alavancagem:** A relação alavancagem / patrimônio líquido é de 15,49% com base em CRI da Opea (p. 15).\n\n6. **Vacância do mercado:** A vacância da região ABCD sofreu um grande aumento no último trimestre devido ao novo estoque entregue (p. 14).\n\n7. **Eventos societários:** Não foram mencionados eventos societários relevantes no relatório.\n\n8. **Risco de IPTU:** O Fundo recebeu notificação referente à cobrança de IPTU do empreendimento One Park abrangendo exercícios anteriores (p. 5).\n\n**O que observar em seguida:**\n1. Evolução da vacância no mercado ABCD e Guarulhos.\n2. Resultado financeiro nos próximos meses após a normalização dos fluxos de recebimento."
+  },
+  "comunicados": {
+    "ids": [
+      1224245,
+      1215762,
+      1117787,
+      1124560,
+      1183708,
+      1178439
+    ],
+    "datas": [
+      "18/06/2026",
+      "10/06/2026",
+      "19/02/2026",
+      "27/02/2026",
+      "08/05/2026",
+      "30/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 10/06/2026 - FATO RELEVANTE\n\n**O que aconteceu:** O Fundo TELLUS RIO BRAVO RENDA LOGÍSTICA assinou contrato de locação com a Lab System.\n\n**Resumo:** A locação foi firmada para uma área de 6.427 m² no imóvel TRBL Guarulhos I, com prazo de 10 anos e reajuste pelo IPCA. O Fundo reduziu sua vacância física para zero e o resultado mensal do Fundo será impactado positivamente em R$ 0,034/cota.\n\n**Trecho-chave:**\n\"O Fundo assinou, em 09 de junho de 2026 , contrato de locação com a Lab System para locação da única área vaga no imóvel TRBL Guarulhos I (“Imóvel”).\"\n\n---\n\n### 19/02/2026 - FATO RELEVANTE\n\n**O que aconteceu:** O Fundo TELLUS RIO BRAVO RENDA LOGÍSTICA firmou contrato de locação com a Shopee para o imóvel TRBL Contagem.\n\n**Resumo:** A locação é de 100% da área bruta locável (ABL) do imóvel, com prazo de 5 anos e impacto positivo estimado em R$ 0,26/cota por mês a partir de maio de 2026. O Fundo reduziu sua vacância física para 3,3%.\n\n**Trecho-chave:**\n\"O Fundo assinou contrato de locação não residencial com a Shopee (SHPX Logística Ltda.) para locação do imóvel TRBL Contagem, localizado em Contagem/MG.\"\n\n---\n\n### 27/02/2026 - COMUNICADO AO MERCADO\n\n**O que aconteceu:** O Fundo TELLUS RIO BRAVO RENDA LOGÍSTICA disponibilizou o Informe de Rendimentos do ano-calendário 2025.\n\n**Resumo:** Os cotistas podem acessar os informes de rendimento no Portal do Investidor da Rio Bravo, com orientações para login e acesso protegido por senha. O documento está disponível em formato digital apenas.\n\n**Trecho-chave:**\n\"Os informes de rendimentos (IR) dos fundos listados no Anexo I estão disponíveis aos investidores a partir desta data no Portal do Investidor da Rio Bravo.\"\n\n---\n\n### 30/04/2026 - ASSEMBLEIA AGO\n\n**O que aconteceu:** A Assembleia Geral Ordinária (AGO) do Fundo TELLUS RIO BRAVO RENDA LOGÍSTICA aprovou as Demonstrações Financeiras referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** Os cotistas que representam 1,16% das cotas emitidas pelo Fundo deliberaram por aprovar as demonstrações financeiras. A matéria foi aprovada com quórum suficiente.\n\n**Trecho-chave:**\n\"Os cotistas que representam 1,16% (um vírgula dezesseis por cento) do total de cotas emitidas pelo Fundo e aptos ao exercício do direito de voto, deliberaram por aprovar as Demonstrações Financeiras do Fundo referentes ao exercício encerrado em 31 de dezembro de 2025.\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Vacância física alta",
+      "VP/cota em queda relevante"
+    ],
+    "cota": 61.4
+  },
+  "parecer": {
+    "id": 1151682,
+    "data_entrega": "31/03/2026 21:17",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe Única do Tellus Rio Bravo Renda Logística Fundo de Investimento Imobiliário de Responsabilidade Limitada em 31 de dezembro de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo "
+  }
+}
