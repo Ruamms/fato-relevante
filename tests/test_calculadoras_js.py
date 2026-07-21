@@ -49,7 +49,15 @@ function el(id) {
   if (!els[id]) els[id] = { value: '', checked: false, textContent: '', innerHTML: '' };
   return els[id];
 }
-const document = { getElementById: el };
+// DOM mínimo: além do getElementById que as calculadoras usam, a página agora
+// inicializa o menu e o crosshair dos gráficos no load (querySelectorAll +
+// addEventListener). Devolver lista vazia/no-op deixa essa init passar sem
+// afetar a conta que este teste verifica.
+const document = {
+  getElementById: el,
+  querySelectorAll: () => [],
+  addEventListener: () => {},
+};
 const RETRO = { '12 meses': { com: { Fundo: 10, CDI: 8 }, sem: { Fundo: 5 } } };
 
 __SCRIPT__

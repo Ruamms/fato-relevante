@@ -13,6 +13,9 @@ data/
 *.sqlite
 *.db
 
+# Site gerado localmente (o CI publica a partir de um _site fresco)
+_site/
+
 # IDE / SO
 .vscode/
 .idea/

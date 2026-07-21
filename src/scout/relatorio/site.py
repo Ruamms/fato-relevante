@@ -122,6 +122,11 @@ def gerar(
     progresso(f"etfs: {len(etfs_publicados)} páginas")
 
     apoio.salvar(destino, analytics)
+    # fonte display auto-hospedada (sem CDN, sem fetch externo) — um único
+    # arquivo no destino, cacheado pelo navegador; @font-face aponta para ela
+    _fonte = Path(__file__).parent / "assets" / "scout-display.ttf"
+    if _fonte.exists() and not (destino / "scout-display.ttf").exists():
+        (destino / "scout-display.ttf").write_bytes(_fonte.read_bytes())
     momento = agora or datetime.now()
     import json as _json
 
@@ -212,46 +217,48 @@ def _home(fundos: list, etfs: list[dict], agora: datetime) -> str:
 <style>
 :root {{ color-scheme: dark; }}
 * {{ box-sizing:border-box; margin:0; }}
-body {{ background:#101415; color:#F4F5F6; font-family:system-ui,sans-serif; line-height:1.5; }}
+body {{ background:#0F1416; color:#EAEEF0; font-family:system-ui,sans-serif; line-height:1.5; }}
 .pagina {{ max-width:1020px; margin:0 auto; padding:28px 20px 40px; }}
-h1 {{ font-size:30px; margin:14px 0 6px; }}
-.meta {{ color:#8b98a9; font-size:14px; }}
-a {{ color:#8FCB9B; }}
+h1 {{ font-family:'Scout Display',system-ui,sans-serif; font-size:38px; font-weight:700; letter-spacing:-.02em; line-height:1.1; margin:14px 0 10px; }}
+.meta {{ color:#9AA7B2; font-size:14px; }}
+a {{ color:#8FCB9B; text-decoration:none; }} a:hover {{ color:#B9E2C1; }}
 .busca-caixa {{ position:relative; margin:22px 0 8px; }}
-input#busca {{ width:100%; background:#182024; color:#F4F5F6; border:1px solid #314045;
-  border-radius:12px; padding:14px 18px; font-size:17px; }}
-#resultados {{ position:absolute; top:100%; left:0; right:0; z-index:30; background:#182024;
-  border:1px solid #314045; border-radius:12px; margin-top:6px; overflow:hidden;
+input#busca {{ width:100%; background:#161D20; color:#EAEEF0; border:1px solid #33434A;
+  border-radius:14px; padding:15px 18px; font-size:17px; }}
+input#busca:focus {{ outline:2px solid #8FCB9B; outline-offset:1px; border-color:#8FCB9B; }}
+#resultados {{ position:absolute; top:100%; left:0; right:0; z-index:30; background:#161D20;
+  border:1px solid #263034; border-radius:12px; margin-top:6px; overflow:hidden;
   box-shadow:0 16px 44px rgba(0,0,0,.55); }}
 #resultados a {{ display:flex; align-items:center; gap:10px; padding:10px 14px;
-  color:#F4F5F6; text-decoration:none; border-bottom:1px solid #232D31; }}
+  color:#EAEEF0; text-decoration:none; border-bottom:1px solid #1B2225; }}
 #resultados a:last-child {{ border-bottom:none; }}
-#resultados a:hover, #resultados a.foco {{ background:#232D31; }}
+#resultados a:hover, #resultados a.foco {{ background:#1E272B; }}
 #resultados .tk {{ font-weight:800; min-width:74px; }}
-#resultados .nm {{ color:#8b98a9; font-size:13px; flex:1; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; }}
+#resultados .nm {{ color:#9AA7B2; font-size:13px; flex:1; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; }}
 #resultados .badge {{ font-size:10.5px; font-weight:700; letter-spacing:.05em; text-transform:uppercase;
-  background:#232D31; color:#8FCB9B; border:1px solid #314045; border-radius:99px; padding:2px 9px; white-space:nowrap; }}
+  background:#1E272B; color:#8FCB9B; border:1px solid #263034; border-radius:99px; padding:2px 9px; white-space:nowrap; }}
 #resultados .ponto {{ width:9px; height:9px; border-radius:50%; flex-shrink:0; }}
-.blocos {{ display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:14px; margin-top:22px; }}
-.bloco {{ background:#182024; border:1px solid #232D31; border-radius:12px; padding:18px; }}
-.bloco h2 {{ font-size:18px; margin-bottom:4px; }}
-.bloco .num {{ font-size:30px; font-weight:800; color:#8FCB9B; }}
-.bloco p {{ color:#8b98a9; font-size:13.5px; margin:6px 0 10px; }}
-.pill {{ display:inline-block; background:#232D31; border:1px solid #314045; color:#aeb9c7;
-  border-radius:99px; padding:3px 12px; font-size:12px; text-decoration:none; margin:2px 2px 2px 0; }}
+.blocos {{ display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:16px; margin-top:24px; }}
+.bloco {{ background:#161D20; border:1px solid #263034; border-radius:16px; padding:22px 24px; }}
+.bloco h2 {{ font-family:'Scout Display',system-ui,sans-serif; font-size:20px; font-weight:700; margin-bottom:4px; }}
+.bloco .num {{ font-family:'Scout Display',system-ui,sans-serif; font-size:40px; font-weight:700; letter-spacing:-.02em; color:#EAEEF0; font-variant-numeric:tabular-nums; }}
+.bloco p {{ color:#9AA7B2; font-size:13.5px; margin:6px 0 14px; line-height:1.55; }}
+.pill {{ display:inline-block; background:#161D20; border:1px solid #263034; color:#9AA7B2;
+  border-radius:99px; padding:5px 13px; font-size:12.5px; text-decoration:none; margin:2px 2px 2px 0; }}
 .pill:hover {{ border-color:#8FCB9B; color:#8FCB9B; }}
-.pill b {{ color:#8FCB9B; }}
-.btn {{ display:inline-block; background:#3E8E7E; color:#F4F5F6; border-radius:8px; padding:8px 18px;
+.pill b {{ color:#EAEEF0; }}
+.btn {{ display:inline-block; background:#8FCB9B; color:#0F1416; border-radius:9px; padding:9px 18px;
   font-size:13.5px; font-weight:700; text-decoration:none; }}
-.rodape {{ color:#8b98a9; font-size:12.5px; border-top:1px solid #232D31; margin-top:30px; padding-top:14px; }}
-#aviso-beta {{ position:fixed; inset:0; background:rgba(16,20,21,.75); z-index:50;
+.btn:hover {{ background:#B9E2C1; color:#0F1416; }}
+.rodape {{ color:#6B7681; font-size:12.5px; border-top:1px solid #1B2225; margin-top:30px; padding-top:16px; }}
+#aviso-beta {{ position:fixed; inset:0; background:rgba(11,15,16,.78); z-index:50;
   display:flex; align-items:center; justify-content:center; padding:20px; }}
 #aviso-beta[hidden] {{ display:none; }}
-.beta-caixa {{ background:#182024; border:1px solid #314045; border-radius:12px; padding:22px 24px;
+.beta-caixa {{ background:#161D20; border:1px solid #263034; border-radius:14px; padding:22px 24px;
   max-width:440px; font-size:14px; box-shadow:0 12px 40px rgba(0,0,0,.5); }}
-.beta-caixa p {{ color:#aeb9c7; margin:10px 0 14px; }}
-.beta-caixa button {{ background:#3E8E7E; color:#F4F5F6; border:none; border-radius:8px;
-  padding:8px 22px; font-size:13.5px; font-weight:700; cursor:pointer; }}
+.beta-caixa p {{ color:#9AA7B2; margin:10px 0 14px; }}
+.beta-caixa button {{ background:#8FCB9B; color:#0F1416; border:none; border-radius:9px;
+  padding:9px 22px; font-size:13.5px; font-weight:700; cursor:pointer; }}
 {CSS_MENU}
 {relatorio_html.CSS_MARCA}
 </style>
@@ -259,7 +266,7 @@ input#busca {{ width:100%; background:#182024; color:#F4F5F6; border:1px solid #
 <body>
 <div id="aviso-beta" hidden>
   <div class="beta-caixa">
-    <b>🧭 O Scout está em beta.</b>
+    <b>O Scout está em beta.</b>
     <p>Os dados vêm de fontes oficiais, mas o site é novo e pode conter falhas. Encontrou algo estranho?
     Reporte em <a href="https://github.com/Ruamms/scout/issues" target="_blank" rel="noopener">github.com/Ruamms/scout/issues</a>
     ou por e-mail: <a href="mailto:ruamms3@gmail.com">ruamms3@gmail.com</a>.</p>
@@ -269,9 +276,9 @@ input#busca {{ width:100%; background:#182024; color:#F4F5F6; border:1px solid #
 <div class="pagina">
   {relatorio_html.marca_html()}
   {menu_html()}
-  <h1>Lemos os documentos oficiais para que você não precise</h1>
-  <div class="meta">Raio-x com dados públicos oficiais (CVM, B3, Banco Central), alertas com a conta
-  e a fonte, e IA local lendo os relatórios — fatos, não dicas. A decisão é sua.</div>
+  <h1>Exploramos os relatórios oficiais para você não se perder neles</h1>
+  <div class="meta">Percorremos os dados públicos oficiais (CVM, B3, Banco Central), marcamos cada alerta
+  com a conta e a fonte, e uma IA local vasculha os relatórios — fatos, não dicas. A decisão é sua.</div>
 
   <div class="busca-caixa">
     <input id="busca" type="search" autocomplete="off"
@@ -283,16 +290,16 @@ input#busca {{ width:100%; background:#182024; color:#F4F5F6; border:1px solid #
 
   <div class="blocos">
     <div class="bloco">
-      <h2>🏢 Fundos Imobiliários</h2>
+      <h2>Fundos Imobiliários</h2>
       <div class="num">{len(fundos)}</div>
-      <p>Raio-x completo: red flags com evidência, parecer do auditor, imóveis com vacância,
-      gestora, leitura por IA dos relatórios e comunicados.</p>
+      <p>Reconhecimento completo: red flags com evidência, parecer do auditor, imóveis com vacância,
+      gestora, e a IA local vasculhando relatórios e comunicados.</p>
       <a class="btn" href="fiis.html">ver todos os FIIs</a>
       <a class="pill" href="fiis.html#rankings" style="margin-left:8px">rankings do dia</a>
-      <a class="pill" href="comparar.html">⚖ comparar</a>
+      <a class="pill" href="comparar.html">comparar</a>
     </div>
     <div class="bloco">
-      <h2>📊 ETFs</h2>
+      <h2>ETFs</h2>
       <div class="num">{len(etfs)}</div>
       <p>Cada página traz as REGRAS do tipo (distribuição, tributação) que quase ninguém conta,
       a carteira oficial e o selo com alertas próprios da classe.</p>
@@ -304,7 +311,7 @@ input#busca {{ width:100%; background:#182024; color:#F4F5F6; border:1px solid #
   <div class="rodape">Não é recomendação de investimento. Fontes: dados abertos da CVM, B3 (COTAHIST
   e fundos listados) e Banco Central. Critérios públicos e auditáveis:
   <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a> ·
-  <a href="apoie.html">☕ apoie o projeto</a> · atualizado em {agora.strftime("%d/%m/%Y %H:%M")}</div>
+  <a href="apoie.html">apoie o projeto</a> · atualizado em {agora.strftime("%d/%m/%Y %H:%M")}</div>
 </div>
 <script>
 const ATIVOS = {json_ativos};
@@ -327,7 +334,7 @@ function buscar() {{
   }}
   caixa.innerHTML = achados.map(a =>
     `<a href="${{a.t}}.html"><span class="tk">${{a.t}}</span><span class="nm">${{a.n}}</span>` +
-    (a.s ? `<span class="ponto" style="background:${{CORES_SELO[a.s] || '#94a3b8'}}" title="${{a.r}}"></span>` : '') +
+    (a.s ? `<span class="ponto" style="background:${{CORES_SELO[a.s] || '#7C8894'}}" title="${{a.r}}"></span>` : '') +
     `<span class="badge">${{a.c}}</span></a>`
   ).join('');
   caixa.hidden = false;
@@ -388,10 +395,10 @@ def _indice_etfs(etfs: list[dict], agora) -> str:
         )
         selo_html = "—"
         if dados.get("selo"):
-            cor = _COR_SELO.get(dados["selo"].nivel, "#94a3b8")
+            cor = _COR_SELO.get(dados["selo"].nivel, "#7C8894")
             motivos = "; ".join(flag.titulo for flag in dados["flags"].flags) or dados["selo"].descricao
             selo_html = (
-                f'<span class="selo" style="background:{cor}" title="{_e(motivos)}">'
+                f'<span class="selo-dot" style="color:{cor}" title="{_e(motivos)}"><span class="pt" style="background:{cor}"></span>'
                 f"{_e(dados['selo'].rotulo)}</span>"
             )
         from .etf_html import _trunca
@@ -402,8 +409,39 @@ def _indice_etfs(etfs: list[dict], agora) -> str:
             f'<td><a href="{etf["ticker"]}.html">{etf["ticker"]}</a></td>'
             f'<td title="{_e(etf["denominacao"] or "")}">{_e(_trunca(etf["denominacao"] or "", 48))}</td>'
             f"<td>{_e(classe)}</td><td>{preco}</td><td>{variacao}</td><td>{pl}</td>"
-            f"<td>{taxa}</td><td>{selo_html}</td></tr>"
+            f"<td>{taxa}</td>"
+            f'<td class="col-selo">{selo_html}</td></tr>'
         )
+
+    def _rk_etf(titulo, chave, rotulo, reverso=True):
+        cand = [d for d in etfs if chave(d) is not None]
+        cand.sort(key=chave, reverse=reverso)
+        itens = "".join(
+            f'<li><span class="pos">{i}</span>'
+            f'<a href="{d["etf"]["ticker"]}.html">{d["etf"]["ticker"]}</a>'
+            f'<span class="val">{rotulo(d)}</span></li>'
+            for i, d in enumerate(cand[:5], 1)
+        )
+        return f'<div class="bloco"><h3>{titulo}</h3><ol>{itens or "<li>—</li>"}</ol></div>'
+
+    rankings_etf = (
+        _rk_etf(
+            "Maior retorno 12 meses",
+            lambda d: d["variacao_12m"],
+            lambda d: formato.percentual(d["variacao_12m"], sinal=True),
+        )
+        + _rk_etf(
+            "Menor taxa de administração",
+            lambda d: d["taxa_adm"]["taxa_adm_aa"] if d.get("taxa_adm") else None,
+            lambda d: f'{formato.percentual(d["taxa_adm"]["taxa_adm_aa"])} a.a.',
+            reverso=False,
+        )
+        + _rk_etf(
+            "Maiores patrimônios",
+            lambda d: d["pl"]["pl"] if d.get("pl") else None,
+            lambda d: formato.moeda_compacta(d["pl"]["pl"]),
+        )
+    )
     return f"""<!doctype html>
 <html lang="pt-BR">
 <head>
@@ -414,28 +452,37 @@ def _indice_etfs(etfs: list[dict], agora) -> str:
 <style>
 :root {{ color-scheme: dark; }}
 * {{ box-sizing:border-box; margin:0; }}
-body {{ background:#101415; color:#F4F5F6; font-family:system-ui,sans-serif; line-height:1.5; }}
+body {{ background:#0F1416; color:#EAEEF0; font-family:system-ui,sans-serif; line-height:1.5; }}
 .pagina {{ max-width:1020px; margin:0 auto; padding:28px 20px 40px; }}
-h1 {{ font-size:24px; margin:8px 0 4px; }}
-.meta {{ color:#8b98a9; font-size:13px; margin-bottom:12px; }}
+h1 {{ font-family:'Scout Display',system-ui,sans-serif; font-size:30px; font-weight:700; letter-spacing:-.02em; margin:8px 0 4px; }}
+.meta {{ color:#9AA7B2; font-size:13px; margin-bottom:12px; }}
 a {{ color:#8FCB9B; }}
-input#busca {{ width:100%; background:#182024; color:#F4F5F6; border:1px solid #314045;
+input#busca {{ width:100%; background:#161D20; color:#EAEEF0; border:1px solid #263034;
   border-radius:10px; padding:11px 15px; font-size:15px; margin:8px 0 10px; }}
 .filtros {{ display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px; }}
-.filtro {{ background:#232D31; color:#8b98a9; border:1px solid #314045; border-radius:99px;
+.filtro {{ background:#1B2225; color:#9AA7B2; border:1px solid #263034; border-radius:99px;
   padding:4px 14px; font-size:12.5px; cursor:pointer; }}
-.filtro.ativo {{ background:#8FCB9B; color:#101415; border-color:#8FCB9B; font-weight:700; }}
-table {{ width:100%; border-collapse:collapse; font-size:13.5px; }}
-th {{ color:#8b98a9; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em;
+.filtro.ativo {{ background:#8FCB9B; color:#0F1416; border-color:#8FCB9B; font-weight:700; }}
+table {{ width:100%; border-collapse:collapse; font-size:13.5px; font-variant-numeric:tabular-nums; }}
+th {{ color:#9AA7B2; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em;
   text-align:left; padding:8px 10px;
-  position:sticky; top:0; z-index:2; background:#101415;
-  box-shadow:inset 0 -1px 0 #314045; }}
-td {{ padding:7px 10px; border-bottom:1px solid #232D31; }}
+  position:sticky; top:0; z-index:2; background:#0F1416;
+  box-shadow:inset 0 -1px 0 #263034; }}
+td {{ padding:7px 10px; border-bottom:1px solid #1B2225; }}
 td:nth-child(n+4), th:nth-child(n+4) {{ text-align:right; }}
-tbody tr:hover td {{ background:#182024; }}
+.rk-titulo {{ font-family:'Scout Display',system-ui,sans-serif; font-size:22px; font-weight:700; letter-spacing:-.01em; margin:34px 0 4px; }}
+.blocos {{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; margin-top:8px; }}
+.bloco {{ background:#161D20; border:1px solid #263034; border-radius:14px; padding:16px 18px; }}
+.bloco h3 {{ font-size:11px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:#9AA7B2; margin:0 0 12px; }}
+.bloco ol {{ margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:9px; }}
+.bloco li {{ display:flex; align-items:baseline; gap:10px; }}
+.bloco .pos {{ color:#6B7681; font-size:12px; width:16px; }}
+.bloco a {{ font-weight:700; min-width:66px; }}
+.bloco .val {{ margin-left:auto; color:#EAEEF0; font-weight:600; font-variant-numeric:tabular-nums; }}
+tbody tr:hover td {{ background:#161D20; }}
 .selo {{ display:inline-block; padding:2px 10px; border-radius:999px; font-weight:700;
-  font-size:11px; color:#101415; white-space:nowrap; }}
-.rodape {{ color:#8b98a9; font-size:12.5px; border-top:1px solid #232D31; margin-top:26px; padding-top:12px; }}
+  font-size:11px; color:#0F1416; white-space:nowrap; }}
+.rodape {{ color:#9AA7B2; font-size:12.5px; border-top:1px solid #1B2225; margin-top:26px; padding-top:12px; }}
 {CSS_MENU}
 {relatorio_html.CSS_MARCA}
 </style>
@@ -452,12 +499,15 @@ tbody tr:hover td {{ background:#182024; }}
    oninput="filtrar()">
   <div class="filtros"><button class="filtro ativo" onclick="filtraClasse(this, '')">Todas</button>{botoes}</div>
   <table id="etfs">
-    <thead><tr><th>ticker</th><th>fundo</th><th>classe</th><th>preço (D-1)</th><th>12 meses</th><th>PL</th><th>taxa</th><th>selo</th></tr></thead>
+    <thead><tr><th>ticker</th><th>fundo</th><th>classe</th><th>preço (D-1)</th><th>12 meses</th><th>PL</th><th>taxa</th><th class="col-selo">selo</th></tr></thead>
     <tbody>{"".join(linhas)}</tbody>
   </table>
+  <h2 class="rk-titulo">Rankings do dia</h2>
+  <div class="meta" style="margin:0 0 14px">fatos ordenados com critério explícito — não recomendação · retorno passado não garante futuro</div>
+  <div class="blocos">{rankings_etf}</div>
   <div class="rodape">Não é recomendação de investimento. Fontes: B3 e CVM — critérios públicos:
   <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a> ·
-  <a href="apoie.html">☕ apoie o projeto</a></div>
+  <a href="apoie.html">apoie o projeto</a></div>
 </div>
 <script>
 let classeAtiva = '';
@@ -502,7 +552,7 @@ def _pagina_comparar(fundos: list) -> str:
             "nome": resumo.nome[:60],
             "segmento": resumo.segmento,
             "selo": resumo.selo.rotulo,
-            "cor": _COR_SELO.get(resumo.selo.nivel, "#94a3b8"),
+            "cor": _COR_SELO.get(resumo.selo.nivel, "#7C8894"),
             "motivos": list(resumo.motivos),
             "cotacao": _ou_traco(resumo.cotacao, lambda v: f"R$ {formato.decimal(v)}"),
             "dy": _ou_traco(resumo.dy_12m, formato.percentual),
@@ -525,22 +575,22 @@ def _pagina_comparar(fundos: list) -> str:
 <style>
 :root {{ color-scheme: dark; }}
 * {{ box-sizing:border-box; margin:0; }}
-body {{ background:#101415; color:#F4F5F6; font-family:system-ui,sans-serif; line-height:1.5; }}
+body {{ background:#0F1416; color:#EAEEF0; font-family:system-ui,sans-serif; line-height:1.5; }}
 .pagina {{ max-width:960px; margin:0 auto; padding:28px 20px 40px; }}
-h1 {{ font-size:24px; margin:8px 0 4px; }}
-.meta {{ color:#8b98a9; font-size:13px; margin-bottom:16px; }}
+h1 {{ font-family:'Scout Display',system-ui,sans-serif; font-size:30px; font-weight:700; letter-spacing:-.02em; margin:8px 0 4px; }}
+.meta {{ color:#9AA7B2; font-size:13px; margin-bottom:16px; }}
 a {{ color:#8FCB9B; }}
-select {{ background:#182024; color:#F4F5F6; border:1px solid #314045; border-radius:8px;
+select {{ background:#161D20; color:#EAEEF0; border:1px solid #263034; border-radius:8px;
   padding:9px 12px; font-size:15px; min-width:130px; }}
 .seletores {{ display:flex; gap:10px; flex-wrap:wrap; margin-bottom:18px; }}
-table {{ width:100%; border-collapse:collapse; font-size:14px; }}
-th, td {{ padding:9px 10px; border-bottom:1px solid #232D31; text-align:left; }}
-th {{ color:#8b98a9; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; }}
-td:first-child {{ color:#8b98a9; font-size:12.5px; text-transform:uppercase; letter-spacing:.04em; white-space:nowrap; }}
-tbody tr:hover td {{ background:#182024; }}
+table {{ width:100%; border-collapse:collapse; font-size:14px; font-variant-numeric:tabular-nums; }}
+th, td {{ padding:9px 10px; border-bottom:1px solid #1B2225; text-align:left; }}
+th {{ color:#9AA7B2; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; }}
+td:first-child {{ color:#9AA7B2; font-size:12.5px; text-transform:uppercase; letter-spacing:.04em; white-space:nowrap; }}
+tbody tr:hover td {{ background:#161D20; }}
 .selo {{ display:inline-block; padding:2px 10px; border-radius:999px; font-weight:700;
-  font-size:11px; color:#101415; white-space:nowrap; }}
-.rodape {{ color:#8b98a9; font-size:12.5px; border-top:1px solid #232D31; margin-top:26px; padding-top:12px; }}
+  font-size:11px; color:#0F1416; white-space:nowrap; }}
+.rodape {{ color:#9AA7B2; font-size:12.5px; border-top:1px solid #1B2225; margin-top:26px; padding-top:12px; }}
 {CSS_MENU}
 {relatorio_html.CSS_MARCA}
 </style>
@@ -549,7 +599,7 @@ tbody tr:hover td {{ background:#182024; }}
 <div class="pagina">
   {relatorio_html.marca_html("index.html")}
   {menu_html()}
-  <h1>⚖ Comparar FIIs</h1>
+  <h1>Comparar FIIs</h1>
   <div class="meta">os mesmos fatos, lado a lado — sem "vencedor": a decisão é sua ·
   <a href="index.html">voltar para todos os fundos</a></div>
   <div class="seletores">
@@ -560,7 +610,7 @@ tbody tr:hover td {{ background:#182024; }}
   <div id="tabela"></div>
   <div class="rodape">Comparação factual com dados públicos oficiais — não é recomendação de investimento.
   Critérios e código: <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a> ·
-  <a href="apoie.html">☕ apoie o projeto</a></div>
+  <a href="apoie.html">apoie o projeto</a></div>
 </div>
 <script>
 const DADOS = {json_dados};
@@ -628,48 +678,48 @@ def _indice(fundos: list, base: list, agora: datetime) -> str:
 <style>
 :root {{ color-scheme: dark; }}
 * {{ box-sizing:border-box; margin:0; }}
-body {{ background:#101415; color:#F4F5F6; font-family:system-ui,sans-serif; line-height:1.5; }}
+body {{ background:#0F1416; color:#EAEEF0; font-family:system-ui,sans-serif; line-height:1.5; }}
 .pagina {{ max-width:1020px; margin:0 auto; padding:28px 20px 40px; }}
-.marca {{ color:#8b98a9; font-size:14px; letter-spacing:.14em; text-transform:uppercase; }}
-h1 {{ font-size:30px; margin:4px 0 6px; }}
-.meta {{ color:#8b98a9; font-size:13px; }}
+.marca {{ color:#9AA7B2; font-size:14px; letter-spacing:.14em; text-transform:uppercase; }}
+h1 {{ font-family:'Scout Display',system-ui,sans-serif; font-size:30px; font-weight:700; letter-spacing:-.02em; margin:4px 0 6px; }}
+.meta {{ color:#9AA7B2; font-size:13px; }}
 a {{ color:#8FCB9B; }}
-input#busca {{ width:100%; background:#182024; color:#F4F5F6; border:1px solid #314045;
+input#busca {{ width:100%; background:#161D20; color:#EAEEF0; border:1px solid #263034;
   border-radius:10px; padding:12px 16px; font-size:16px; margin:18px 0 10px; }}
 .atualizacao {{ display:flex; align-items:center; gap:12px; flex-wrap:wrap; margin-top:10px; }}
-.btn-atu {{ background:#232D31; border:1px solid #314045; color:#8FCB9B; text-decoration:none;
+.btn-atu {{ background:#1B2225; border:1px solid #263034; color:#8FCB9B; text-decoration:none;
   padding:5px 13px; border-radius:8px; font-size:12.5px; font-weight:600; }}
 .btn-atu:hover {{ border-color:#8FCB9B; }}
-.barra {{ width:180px; height:6px; background:#232D31; border-radius:99px; overflow:hidden; }}
+.barra {{ width:180px; height:6px; background:#1B2225; border-radius:99px; overflow:hidden; }}
 .barra .preencher {{ width:40%; height:100%; background:#8FCB9B; border-radius:99px;
   animation: desliza 1.2s ease-in-out infinite; }}
 @keyframes desliza {{ 0% {{ margin-left:-40%; }} 100% {{ margin-left:100%; }} }}
-table {{ width:100%; border-collapse:collapse; font-size:13.5px; }}
-th {{ color:#8b98a9; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em;
-  text-align:left; padding:8px 10px; position:sticky; top:0; z-index:2; background:#101415;
-  box-shadow:inset 0 -1px 0 #314045; }}
-td {{ padding:7px 10px; border-bottom:1px solid #232D31; }}
-tbody tr:hover td {{ background:#182024; }}
-.btn-todos {{ display:block; margin:12px auto 0; background:#232D31; border:1px solid #314045;
+table {{ width:100%; border-collapse:collapse; font-size:13.5px; font-variant-numeric:tabular-nums; }}
+th {{ color:#9AA7B2; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em;
+  text-align:left; padding:8px 10px; position:sticky; top:0; z-index:2; background:#0F1416;
+  box-shadow:inset 0 -1px 0 #263034; }}
+td {{ padding:7px 10px; border-bottom:1px solid #1B2225; }}
+tbody tr:hover td {{ background:#161D20; }}
+.btn-todos {{ display:block; margin:12px auto 0; background:#1B2225; border:1px solid #263034;
   color:#8FCB9B; padding:8px 22px; border-radius:8px; font-size:13.5px; font-weight:600; cursor:pointer; }}
 .btn-todos:hover {{ border-color:#8FCB9B; }}
 td:not(:first-child):not(:nth-child(2)):not(:nth-child(3)), th:not(:first-child):not(:nth-child(2)):not(:nth-child(3)) {{ text-align:right; }}
 .selo {{ display:inline-block; padding:2px 10px; border-radius:999px; font-weight:700;
-  font-size:11px; color:#101415; white-space:nowrap; }}
-h2 {{ font-size:18px; margin:28px 0 10px; }}
+  font-size:11px; color:#0F1416; white-space:nowrap; }}
+h2 {{ font-family:'Scout Display',system-ui,sans-serif; font-size:22px; font-weight:700; letter-spacing:-.01em; margin:28px 0 10px; }}
 .blocos {{ display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:14px; }}
-.bloco {{ background:#182024; border:1px solid #232D31; border-radius:10px; padding:14px 16px; }}
-.bloco h3 {{ font-size:14px; color:#aeb9c7; margin-bottom:8px; }}
+.bloco {{ background:#161D20; border:1px solid #1B2225; border-radius:10px; padding:14px 16px; }}
+.bloco h3 {{ font-size:14px; color:#9AA7B2; margin-bottom:8px; }}
 .bloco ol {{ padding-left:22px; font-size:13.5px; }}
 .bloco li {{ margin:4px 0; }}
-.rodape {{ color:#8b98a9; font-size:12.5px; border-top:1px solid #232D31; margin-top:30px; padding-top:14px; }}
+.rodape {{ color:#9AA7B2; font-size:12.5px; border-top:1px solid #1B2225; margin-top:30px; padding-top:14px; }}
 #aviso-beta {{ position:fixed; inset:0; background:rgba(16,20,21,.75); z-index:50;
   display:flex; align-items:center; justify-content:center; padding:20px; }}
 #aviso-beta[hidden] {{ display:none; }}
-.beta-caixa {{ background:#182024; border:1px solid #314045; border-radius:12px; padding:22px 24px;
+.beta-caixa {{ background:#161D20; border:1px solid #263034; border-radius:12px; padding:22px 24px;
   max-width:440px; font-size:14px; box-shadow:0 12px 40px rgba(0,0,0,.5); }}
-.beta-caixa p {{ color:#aeb9c7; margin:10px 0 14px; }}
-.beta-caixa button {{ background:#3E8E7E; color:#F4F5F6; border:none; border-radius:8px;
+.beta-caixa p {{ color:#9AA7B2; margin:10px 0 14px; }}
+.beta-caixa button {{ background:#8FCB9B; color:#0F1416; border:none; border-radius:9px;
   padding:8px 22px; font-size:13.5px; font-weight:700; cursor:pointer; }}
 {CSS_MENU}
 {relatorio_html.CSS_MARCA}
@@ -678,7 +728,7 @@ h2 {{ font-size:18px; margin:28px 0 10px; }}
 <body>
 <div id="aviso-beta" hidden>
   <div class="beta-caixa">
-    <b>🧭 O Scout está em beta.</b>
+    <b>O Scout está em beta.</b>
     <p>Os dados vêm de fontes oficiais, mas o site é novo e pode conter falhas de exibição ou
     leitura. Encontrou algo estranho? Ajude reportando em
     <a href="https://github.com/Ruamms/scout/issues" target="_blank" rel="noopener">github.com/Ruamms/scout/issues</a>
@@ -692,12 +742,12 @@ h2 {{ font-size:18px; margin:28px 0 10px; }}
   <h1>Fundos Imobiliários</h1>
   <div class="meta" style="font-size:14.5px;margin-bottom:4px">"Será que tem algum problema
   escondido naquele relatório?" — essa dúvida vira uma lista de alertas com a conta e a
-  fonte de cada um. Informes da CVM, relatório gerencial e cotações, num raio-x por fundo.</div>
+  fonte de cada um. Informes da CVM, relatório gerencial e cotações, no reconhecimento de cada fundo.</div>
   <div class="meta">{len(fundos)} fundos negociáveis analisados com dados públicos oficiais ·
   atualizado em {agora.strftime("%d/%m/%Y %H:%M")} ·
-  <a href="etfs.html">📊 ETFs</a> ·
-  <a href="comparar.html">⚖ comparar fundos</a> ·
-  <a href="apoie.html">☕ apoie o projeto</a></div>
+  <a href="etfs.html">ETFs</a> ·
+  <a href="comparar.html">comparar fundos</a> ·
+  <a href="apoie.html">apoie o projeto</a></div>
 
   <div class="atualizacao">
     <span id="atu-texto" class="meta">verificando status da atualização…</span>
@@ -711,7 +761,7 @@ h2 {{ font-size:18px; margin:28px 0 10px; }}
    oninput="filtrar(this.value)">
 
   <table id="fundos">
-    <thead><tr><th>ticker</th><th>fundo</th><th>segmento</th><th>DY 12m</th><th>P/VP</th><th>PL</th><th>selo</th></tr></thead>
+    <thead><tr><th>ticker</th><th>fundo</th><th>segmento</th><th>DY 12m</th><th>P/VP</th><th>PL</th><th class="col-selo">selo</th></tr></thead>
     <tbody>{linhas}</tbody>
   </table>
   <button id="ver-todos" class="btn-todos" onclick="mostrarTodos()"
@@ -726,7 +776,7 @@ h2 {{ font-size:18px; margin:28px 0 10px; }}
   <div class="rodape">Isto não é recomendação de investimento. Fontes: dados abertos da CVM,
   Banco Central (SGS) e cotações oficiais da B3 (COTAHIST). Critérios de todos os alertas são públicos:
   <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a> ·
-  <a href="apoie.html">☕ apoie o projeto</a></div>
+  <a href="apoie.html">apoie o projeto</a></div>
 </div>
 <script>
 // aviso de beta: aparece só na primeira visita (dispensado fica em localStorage)
@@ -797,7 +847,7 @@ def _linha_fundo(resumo, extra: bool = False) -> str:
     def _ou_traco(valor, formatador):
         return formatador(valor) if valor is not None else "—"
 
-    cor = _COR_SELO.get(resumo.selo.nivel, "#94a3b8")
+    cor = _COR_SELO.get(resumo.selo.nivel, "#7C8894")
     dica = "Alertas: " + "; ".join(resumo.motivos) if resumo.motivos else resumo.selo.descricao
     busca = f"{resumo.ticker} {resumo.nome} {resumo.segmento}".lower().replace('"', "")
     oculta = ' class="fundo-extra" hidden' if extra else ""
@@ -808,7 +858,7 @@ def _linha_fundo(resumo, extra: bool = False) -> str:
         f"<td>{_ou_traco(resumo.dy_12m, formato.percentual)}</td>"
         f"<td>{_ou_traco(resumo.pvp, formato.decimal)}</td>"
         f"<td>{_ou_traco(resumo.pl, formato.moeda_compacta)}</td>"
-        f'<td><span class="selo" style="background:{cor}" title="{dica}">{resumo.selo.rotulo}</span></td></tr>'
+        f'<td class="col-selo"><span class="selo-dot" style="color:{cor}" title="{dica}"><span class="pt" style="background:{cor}"></span>{resumo.selo.rotulo}</span></td></tr>'
     )
 
 
