@@ -1,0 +1,51 @@
+{
+  "ticker": "GRUL11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T23:10:02",
+  "relatorio": {
+    "id": 1242387,
+    "data_entrega": "08/07/2026 18:50",
+    "texto": "### Fatos Extraídos:\n\n1. **Vacância e Inadimplência:**\n   - \"A operação do fundo continua sólida, com ocupação plena e sem inadimplência.\" (p. 3)\n\n2. **Cotas e Cotistas:**\n   - \"Quantidade de Cotas: 24.700.000\" (p. 1)\n   - \"Número de Cotistas: 5.117\" (p. 1)\n\n3. **Vacância:**\n   - \"Vacância: 0%\" (p. 1)\n\n4. **Cotação e Dividendos:**\n   - \"A cota do fundo estava precificada em R$ 8,27.\" (p. 3)\n   - \"Distribuição será de R$ 0,08 por cota.\" (p. 3)\n\n5. **Valor Patrimonial e Mercado:**\n   - \"Valor Patrimonial: R$ 239.704.426\" (p. 1)\n   - \"Valor a Mercado: Data Base: 30/06/2026, R$ 204.269.000\" (p. 1)\n\n6. **Rendimentos e Resultados Financeiros:**\n   - \"Total de Receitas: R$ 12.958.118\" (p. 5)\n   - \"Resultado: R$ 11.936.603\" (p. 5)\n\n7. **Concessão e Alavancagem:**\n   - \"O fundo adquiriu em 31 de julho de 2024 o direito de exploração do condomínio logístico do Aeroporto Internacional de Guarulhos válido até fevereiro de 2062.\" (p. 8)\n   - \"Atualmente não há nenhuma operação de alavancagem na carteira do MANA11.\" (p. 7)\n\n### O que observar em seguida:\n- Monitorar a distribuição de rendimentos e se ela permanecerá estável.\n- Observar o comportamento da vacância, mesmo que atualmente seja zero."
+  },
+  "comunicados": {
+    "ids": [
+      1140427,
+      1132491,
+      1015989,
+      1221661,
+      1175726
+    ],
+    "datas": [
+      "18/03/2026",
+      "10/03/2026",
+      "16/10/2025",
+      "15/06/2026",
+      "30/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Ocorrências Relacionadas ao Fundo GRUL11 — ICATU VAN GRU LOG FII\n\n**18/03/2026 - Novo Contrato de Subcessão**\nO Fundo assinou um novo contrato de subcessão para área de 1.988 m² (Módulo 17 do Galpão G200) no empreendimento Parque Logístico Aero I, a ser desocupada pela Tex Courier S.A. até 06 de abril de 2026. A vacância do Fundo permanece em 0%.\n\n*\"O Fundo assinou um novo contrato de subcessão para área de 1.988 m² (Módulo 17 do Galpão G200) do empreendimento Parque Logístico Aero I, a ser desocupada pela Tex Courier S.A. até 06 de abril de 2026, conforme divulgado em Fato Relevante de 16 de outubro de 2025.\"* (p. 1)\n\n**10/03/2026 - Encerramento do Contrato de Formação de Mercado**\nO Fundo encerrou o contrato de prestação de serviços de fomento de mercado com XP Investimentos, responsável pelas atividades de formação de mercado das cotas do Fundo negociadas na B3.\n\n*\"O Fundo encerrou, na presente data, o contrato de prestação de serviços de fomento de mercado celebrado com XP INVESTIMENTOS CORRETORA DE CÂMBIO, TÍTULOS E VALORES MOBILIÁRIOS S.A., insituição responsável pelas atividades de formação de mercado das cotas do Fundo negociadas na B3 S.A. – Brasil, Bolsa, Balcão.\"* (p. 1)\n\n**16/10/2025 - Rescisão Antecipada do Contrato de Subcessão**\nA Tex Courier S.A., subcessionária do Módulo 17 do Galpão G200, comunicou a decisão de rescindir antecipadamente o contrato. A área objeto da subcessão representa aproximadamente 4,6% da área total locável do empreendimento.\n\n*\"A Tex Courier S.A., subcessionária do Módulo 17 do Galpão G200, localizado no empreendimento Parque Logístico Aero I, situado no Aeroporto Internacional de São Paulo/Guarulhos, comunicou, formalmente a decisão de rescindir antecipadamente o Contrato de Subcessão Oneros a de Direito de Uso de Imóvel Não Residencial.\"* (p. 1)\n\n**29/05/2026 - Assembleia Geral Ordinária**\nA assembleia geral ordinária do Fundo foi realizada em 29 de maio de 2026, com aprovação das contas e demonstrações contábeis referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n*\"A maioria dos Cotistas presentes aprovaram as contas e demonstrações contábeis do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\"* (p. 6)\n\n**29/04/2026 - Edital de Convocação para Assembleia Geral Ordinária**\nO edital convoca os cotistas para a assembleia geral ordinária, a ser realizada em 29 de maio de 2026, com a finalidade de aprovar as contas e demonstrações contábeis do exercício social encerrado em 31 de dezembro de 2025.\n\n*\"O BANCO DAYCOVAL S.A. , sociedade com sede na Cidade de São Paulo, Estado de São Paulo, convocou V.Ss. para a Assembleia Geral Ordinária, a ser realizada no dia 29 de maio de 2026, às 09:45, para que seja deliberada a seguinte matéria, conforme ordem do dia:\"* (p. 1)"
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 8.87
+  },
+  "parecer": {
+    "id": 1153450,
+    "data_entrega": "02/04/2026 15:03",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspec- tos relevantes, a posição patrimonial e financeira Icatu Vanguarda GRU Logístico Fundo de Investimento Imobiliário - Responsabilidade Limitada em 31 de dezembro de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contá"
+  }
+}

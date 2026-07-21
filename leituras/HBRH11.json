@@ -1,0 +1,59 @@
+{
+  "ticker": "HBRH11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T23:12:06",
+  "relatorio": {
+    "id": 1216607,
+    "data_entrega": "10/06/2026 19:26",
+    "texto": "### Fatos Extraídos:\n\n1. **Mudança no Patrimônio Líquido:**\n   - O patrimônio líquido do VVMR11 encerrou o mês em R$ 240,82 milhões, com um aumento de R$ 0,40 milhão (0,17%) em relação ao mês anterior.\n   - \"O patrimônio líquido avançou de R$ 240,42 milhões para R$ 240,82 milhões (+R$ 0,40 milhão; +0,17%), como valor patrimonial por cota passando de R$ 85,16 para R$ 85,30 (+0,17%)\", (p. 3)\n\n2. **Vacância Física:**\n   - A vacância física consolidada permaneceu em 33,12%, com concentração nos imóveis Barra Private (100% vago) e Neolink Office (89,16% vago).\n   - \"A vacância física consolidada permaneceu em 33,12%, concentrada nos imóveis Barra Private (100% vago) e Neolink Office (89,16% vago)\", (p. 3)\n\n3. **Cotas de Fundos Imobiliários:**\n   - A posição em cotas de fundos imobiliários encerrou o mês em R$ 7,3 milhões, em leve redução frente a março.\n   - \"A carteira de imóveis permaneceu estável em R$ 231,1 milhões, com os cinco empreendimentos da carteira inalterados\", (p. 4)\n\n4. **Liquidez:**\n   - A liquidez totalizou R$ 1,93 milhão, abaixo do limite de R$ 2 milhões estabelecido como gatilho para novas amortizações.\n   - \"A liquidez disponível em ativos financeiros totalizou R$ 1,93 milhão — abaixo do limite de R$ 2 milhões estabelecido comogatilho para novas amortizações\", (p. 4)\n\n5. **Dividend Yield:**\n   - O dividend yield patrimonial foi de 1,93%.\n   - \"Dividend Yield Patrimonial 1,93\", (p. 4)\n\n6. **Composição da Carteira:**\n   - Os imóveis estão distribuídos em diferentes locatários e segmentos, com áreas brutas locáveis variando entre 10.542,66 m² a 4.832,34 m².\n   - \"TRILOGY: 10.542,66 m² (100% ocupado), NEOLINK OFFICE: 4.988,42 m² (89,16% vago), BARRA PRIVATE: 3.909,58 m² (100% vago), ONE ELEVEN: 3.831,37 m² (100% ocupado), THE CITTYPLEX: 4.832,34 m² (81,14% ocupado)\", (p. 5-6)\n\n### O que observar em seguida:\n1. **Vacância Física:** A vacância física permanece alta e concentrada nos imóveis Barra Private e Neolink Office.\n2. **Liquidez:** A liquidez está abaixo do limite estabelecido, o que pode limitar novas amortizações futuras."
+  },
+  "comunicados": {
+    "ids": [
+      1237732,
+      1182383,
+      1141614,
+      1235489,
+      1207652,
+      1214290,
+      1180614
+    ],
+    "datas": [
+      "01/07/2026",
+      "08/05/2026",
+      "20/03/2026",
+      "30/06/2026",
+      "29/05/2026",
+      "08/06/2026",
+      "05/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### O QUE aconteceu em 08/06/2026\n\n**Título:** Venda do imóvel \"Condomínio Helbor Trilogy Home & Offices\"\n\n**Resumo:** O fundo realizou a venda de um imóvel para outro fundo imobiliário, gerando receita líquida.\n\n**Trecho-chave:**\n\"O Imóvel foi adquirido pelo V2 MULTI RENDA FII por meio da Escritura Pública de Venda e Compra lavrada em 10 de março de 2020, pelo valor de R$ 44.050.329,02.\" (p. 1)\n\n---\n\n### O QUE aconteceu em 08/05/2026\n\n**Título:** Amortização parcial de cotas\n\n**Resumo:** O fundo anunciou a amortização parcial de cotas e solicitou informações dos cotistas para cálculo de tributos.\n\n**Trecho-chave:**\n\"O Gestor recomendou ao Administrador a amortização das cotas no montante de R$ 3.020.802,60 (Três milhões, vinte mil, oitocentos e dois reais e sessenta centavos), equivalente ao valor de R$ 1,07 por cota.\" (p. 1)\n\n---\n\n### O QUE aconteceu em 20/03/2026\n\n**Título:** Amortização parcial de cotas\n\n**Resumo:** O fundo anunciou a amortização parcial de cotas e solicitou informações dos cotistas para cálculo de tributos.\n\n**Trecho-chave:**\n\"O Gestor recomendou ao Administrador a amortização das cotas no montante de R$ 13.000.000,00 (treze milhões de reais), equivalente ao valor de R$ 4,60 por cota.\" (p. 1)\n\n---\n\n### O QUE aconteceu em 30/06/2026\n\n**Título:** Não distribuição de resultados\n\n**Resumo:** O fundo informou que não haverá distribuição de resultados para o mês de junho.\n\n**Trecho-chave:**\n\"Em relação ao mês de junho/2026, não haverá distribuição de resultados.\" (p. 1)\n\n---\n\n### O QUE aconteceu em 29/05/2026\n\n**Título:** Não distribuição de resultados\n\n**Resumo:** O fundo informou que não haverá distribuição de resultados para o mês de maio.\n\n**Trecho-chave:**\n\"Em relação ao mês de maio/2026, não haverá distribuição de resultados.\" (p. 1)\n\n---\n\n### O QUE aconteceu em 08/06/2026\n\n**Título:** Assembleia Geral Ordinária\n\n**Resumo:** A assembleia aprovou as demonstrações financeiras do exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Foi aprovada as Demonstrações Financeiras do Fundo, sem qualquer ressalva ou restrição, pelos Cotistas representando aproximadamente 0,021% das cotas emitidas do Fundo.\" (p. 1)"
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "VP/cota em queda relevante",
+      "Rendimentos irregulares"
+    ],
+    "cota": 90.8
+  },
+  "parecer": {
+    "id": 1148714,
+    "data_entrega": "30/03/2026 18:51",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do V2 Multi Renda Fundo de Investimento Imobiliário - Responsabilidade Limitada em 31 de dezembro de 202 5, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo naquela data, de acordo com as práticas contábeis adota"
+  }
+}

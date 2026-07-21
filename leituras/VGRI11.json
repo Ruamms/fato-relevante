@@ -1,0 +1,53 @@
+{
+  "ticker": "VGRI11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T22:32:52",
+  "relatorio": {
+    "id": 1231017,
+    "data_entrega": "26/06/2026 19:01",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Vacância e Inadimplência:**\n   - \"Não existem inadimplências nesse momento\" (p. 20).\n\n2. **Carteira de Ativos:**\n   - Todos os ativos estão com vacância física zero, mas há vacância financeira de 0% em cada imóvel (p. 19-20).\n\n3. **Distribuição de Rendimentos:**\n   - O Fundo distribuiu R$0,075 por cota no mês de maio de 2026, equivalente a uma rentabilidade líquida de 11,4% ao ano sobre o valor patrimonial da cota (p. 3).\n\n4. **Patrimônio Líquido:**\n   - O Fundo encerrou o mês com um Patrimônio Líquido de R$ 304.616 mil, representando 37,32% do ativo total (p. 5).\n\n5. **Obrigações e Projeção de Dividendos:**\n   - O Fundo tem obrigações a vencer no próximo ano, projetando uma redução gradual do dividend yield até atingir a média estimada de 9% ao ano (p. 3-4).\n\n6. **Cota Patrimonial e Distribuição:**\n   - A cota patrimonial distribuída foi R$0,075 no mês de maio de 2026, com um valor médio de negociação por cota de R$ 6,60 (p. 8).\n\n7. **Cotistas:**\n   - O número de cotistas aumentou para 26.071 no mês de maio de 2026, comparado a 26.070 em abril (p. 8).\n\n### O que observar em seguida:\n- Monitorar o comportamento do preço da cota no mercado secundário.\n- Observar as próximas distribuições de rendimentos e como elas se alinham com as projeções atuais."
+  },
+  "comunicados": {
+    "ids": [
+      1087798,
+      1077601,
+      1075436,
+      1213181,
+      1170854
+    ],
+    "datas": [
+      "19/01/2026",
+      "08/01/2026",
+      "05/01/2026",
+      "05/06/2026",
+      "27/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### O que aconteceu em 19/01/2026\n\n**Título:** Contrato de locação do imóvel Burity concluído.\n\n**Resumo:** O Fundo VALORA RENDA IMOBILIÁRIA FII assinou um contrato de locação no modelo Built To Suit (BTS) para 10.550m², representando 22 anos de ocupação total do imóvel Burity. O investimento necessário será feito em obras de reforma ao longo de 2026.\n\n**Trecho-chave:** \"Em 15 de janeiro de 2026 o Fundo concluiu as assinaturas de um novo contrato de locação correspondente a 100% do imóvel Burity. A locação foi feita no modelo Built To Suit (BTS) pelo prazo de 22 anos, e representa 10.550m² da área bruta locável do Fundo.\"\n\n### O que aconteceu em 08/01/2026\n\n**Título:** Venda do edifício Cidade Jardim.\n\n**Resumo:** O Fundo VALORA RENDA IMOBILIÁRIA FII vendeu 100% de sua participação no edifício Cidade Jardim por R$ 345.000.000,00 (R$ 46.259,05/m²). A venda foi feita em duas parcelas: a primeira já paga e a segunda a ser paga em até seis meses.\n\n**Trecho-chave:** \"Em 08 de janeiro de 2026 o Fundo assinou a escritura para a venda de 100% da sua participação no edifício Cidade Jardim, localizado na Avenida Cidade Jardim, 803 – São Paulo/SP, que representa 7.458m² da ABL do fundo.\"\n\n### O que aconteceu em 05/01/2026\n\n**Título:** Compromisso de venda do edifício Cidade Jardim.\n\n**Resumo:** O Fundo VALORA RENDA IMOBILIÁRIA FII firmou um compromisso de venda para a transferência de 100% de sua participação no edifício Cidade Jardim, localizado na Avenida Cidade Jardim, 803 – São Paulo/SP. O valor total da transação foi de R$ 345.000.000,00 (R$ 46.259,05/m²), com pagamentos em duas parcelas.\n\n**Trecho-chave:** \"Em 30 de dezembro de 2025 o Fundo assinou o compromisso de Venda e Compra para a venda de 100% da sua participação no edifício Cidade Jardim, localizado na Avenida Cidade Jardim, 803 – São Paulo/SP.\"\n\n### Assembleia Geral Ordinária realizada em 27/04/2026\n\n**Título:** Deliberação sobre aprovação das contas e demonstrações contábeis do exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A Assembleia Geral Ordinária do Fundo VALORA RENDA IMOBILIÁRIA FII, realizada em 27 de maio de 2026, aprovou as contas e demonstrações contábeis referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:** \"A maioria dos Cotista(s) presente(s) aprovou(aram), sem quaisquer ressalvas ou restrições, as contas e demonstrações contábeis do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n### Assembleia Geral Ordinária realizada em 27/06/2026\n\n**Título:** Deliberação sobre aprovação das contas e demonstrações contábeis do exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A Assembleia Geral Ordinária do Fundo VALORA RENDA IMOBILIÁRIA FII, realizada em 27 de maio de 2026, aprovou as contas e demonstrações contábeis referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:** \"A maioria dos Cotista(s) presente(s) aprovou(aram), sem quaisquer ressalvas ou restrições, as contas e demonstrações contábeis do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "VP/cota em queda relevante",
+      "Vacância física alta"
+    ],
+    "cota": 5.52
+  },
+  "parecer": {
+    "id": 1153775,
+    "data_entrega": "02/04/2026 18:38",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira Valora Renda Imobiliária Fundo de Investimento Imobiliário - Responsabilidade Limitada em 31 de dezembro de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nesta data, de acordo com as práticas contábeis ad"
+  }
+}

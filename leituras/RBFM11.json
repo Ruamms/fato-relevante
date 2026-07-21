@@ -1,0 +1,58 @@
+{
+  "ticker": "RBFM11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T23:14:47",
+  "relatorio": {
+    "id": 1246540,
+    "data_entrega": "14/07/2026 09:53",
+    "texto": "### Fatos Extraídos do Relatório Gerencial\n\n1. **Cotação e Valor de Mercado:**\n   - Cota patrimonial ajustada aos dividendos do RBFM11 apresentou uma queda de 1,95% no mês de junho (p. 10).\n   - O valor de mercado da cota foi de R$ 12,49 (p. 3).\n\n2. **Performance do Fundo:**\n   - O fundo registrou um retorno negativo de -0,30% no mês de junho, considerando a valorização da cota mercado ajustada aos dividendos (p. 10).\n   - A performance acumulada para o ano foi de 1,31% (p. 10).\n\n3. **Movimentações e Alocações:**\n   - Em junho, a gestão do RBFM11 realizou uma alocação no valor de R$907 mil no FII BTG Crédito Imobiliário (BTCI11), aumentando a exposição para 3,3%PL. A alocação foi motivada pela alta qualidade da carteira e pelo desconto que o fundo passou a negociar ao longo do mês (p. 10).\n\n4. **Desenvolvimento:**\n   - A queda de -0,06% no segmento de desenvolvimento foi impactada principalmente pelo retorno negativo do FII TGAR11 (p. 10).\n\n5. **Resultados e Distribuição:**\n   - O resultado do fundo para o mês de junho foi de R$0,110/cota, com uma distribuição anunciada de R$0,108/cota, correspondendo a um dividend yield de 12,34% (p. 10).\n\n6. **Reserva de Resultado:**\n   - O fundo possui uma reserva de resultado de R$0,17/cota no semestre e R$0,23/cota desde o início da gestão Rio Bravo, proporcionando conforto para as distribuições futuras (p. 10).\n\n7. **Guidance de Distribuição:**\n   - O guidance de rendimentos para o segundo semestre de 2026 foi mantido com uma banda superior e inferior, mas não configura promessa ou garantia de rentabilidade futura (p. 12).\n\n8. **Duplo Desconto no Mercado Secundário:**\n   - Atualmente, o RBFM11 negocia com um \"duplo desconto\" no mercado secundário, refletindo a valorização das cotas de FIIs do portfólio e a própria cota mercado (p. 12).\n\n### O que Observar em Seguida:\n- Monitorar o comportamento das cotas de FIIs negociadas no mercado secundário.\n- Verificar as distribuições futuras, considerando a reserva de resultado atual."
+  },
+  "comunicados": {
+    "ids": [
+      1083068,
+      1078757,
+      1064814,
+      1124512,
+      1099797,
+      1182246,
+      1177660
+    ],
+    "datas": [
+      "15/01/2026",
+      "12/01/2026",
+      "17/12/2025",
+      "27/02/2026",
+      "03/02/2026",
+      "07/05/2026",
+      "30/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### O QUE aconteceu em 30/04/2026\n\n**Título:** Resultado da Consulta Formal nº 01/2026.\n\n**Resumo:**\nA Rio Bravo Investimentos, como administradora do RIO BRAVO MULTIESTRATÉGIA FUNDO DE INVESTIMENTO IMOBILIÁRIO DE RESPONSABILIDADE LIMITADA, informou sobre o resultado da Consulta Formal realizada em 30 de abril de 2026.\n\n**Trecho-chave:**\n\"Em pauta ordinária:\n(i) Os cotistas que representam 1,83% (um vírgula oitenta e três por cento) do total de cotas emitidas pelo Fundo e aptos ao exercício do direito de voto, deliberaram por aprovar as Demonstrações Financeiras do Fundo referentes ao exercício encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### O QUE aconteceu em 07/05/2026\n\n**Título:** ATA DE ASSEMBLEIA GERAL ORDINÁRIA DE COTISTAS.\n\n**Resumo:**\nA assembleia geral ordinária realizada por meio de Consulta Formal nº 01/2026, encerrada em 30 de abril de 2026, aprovou as Demonstrações Financeiras do Fundo referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Em pauta ordinária:\n(i) Os cotistas que representam 1,83% (um vírgula oitenta e três por cento) do total de cotas emitidas pelo Fundo e aptos ao exercício do direito de voto, deliberaram por aprovar as Demonstrações Financeiras do Fundo referentes ao exercício encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### O QUE aconteceu em 17/12/2025\n\n**Título:** APROVAÇÃO DA CONSULTA FORMAL E ALTERAÇÕES SIGNIFICATIVAS PARA O FUNDO.\n\n**Resumo:**\nOs cotistas aprovaram, em quórum qualificado, a alteração da Política de Investimento e Objeto do Fundo para se tornar um fundo de multiestratégia imobiliária. Além disso, foi aprovado o desdobramento de cotas na proporção de 5 para 1.\n\n**Trecho-chave:**\n\"Conforme Termo de Apuração divulgado e disponível aqui, os cotistas aprovaram , em quórum qualificado , i) a alteração da Política de Investimento e Objeto do Fundo, que passa a se tornar um fundo de multiestratéiga imobiliária e deve ter sua denominação alterada para RIO BRAVO MULTIESTRATÉGIA FUNDO DE INVESTIMENTO IMOBILIÁRIO DE RESPONSABILIDADE LIMITADA (o novo ticker, RBFM11, deve ser alterado em breve, com uma comunicação subsequente aos cotistas ); ii) a nova metodologia de cálculo da Taxa de Performance do Fundo , com a consequente renúncia da Taxa de Performance atualmente provisionada na carteira do Fundo até o encerramento da Consulta Formal , o que deve, por ato contínuo da gestão, gerar um pagamento extraordinário aos cotistas estimado em R$ 0,51/cota , a ser anunciado em 30 de dezembro de 2025, junto ao pagamento ordinário de dezembro; além de outros itens da matéria.\"\n\n---\n\n### O QUE aconteceu em 12/01/2026\n\n**Título:** FATO RELEVANTE - DESDOBRAMENTO DE COTAS 1:5.\n\n**Resumo:**\nO Fundo realizou um desdobramento de cotas na proporção de 1:5, com efeitos a partir do dia 16 de janeiro de 2026. O número total de cotas passou de 3.749.215 para 18.746.075.\n\n**Trecho-chave:**\n\"Conforme aprovação de cotistas, via Consulta Formal (“Consulta Formal nº 02/2025”), do desdobramento das cotas de emissão do Fundo, comunicamos que tal desdobramento será realizado de acordo com as condições abaixo:\n1. Fator de proporção: proporção de 1:5, ou seja, cada cota atual será desdobrada em 5 novas cotas.\n2. Data de corte: a data de corte para o desdobramento será o encerramento do pregão do dia 15 de janeiro de 2026.\"\n\n---\n\n### O QUE aconteceu em 15/01/2026\n\n**Título:** FATO RELEVANTE - TROCA DE TICKER E NOME DE PREGÃO.\n\n**Resumo:**\nO Fundo passou a ser negociado sob o novo código de negociação (ticker) “RBFM11” e nome de pregão “FII RIOB MT”, em substituição ao antigo código “RBFF11” e nome de pregão “FII RIOB FF”.\n\n**Trecho-chave:**\n\"Em decorrência da alteração da Política de Investimento e Objeto do Fundo, que passa a ser um fundo de multiestratégia imobiliária, e com a mudança da denominação para  RIO BRAVO MULTIESTRATÉGIA FUNDO DE INVESTIMENTO IMOBILIÁRIO DE RESPONSABILIDADE LIMITADA , as cotas do Fundo passarão a ser negociadas no mercado de bolsa de valores administrado pela B3 – Brasil, Bolsa, Balcão sob o novo código de negociação (ticker) “RBFM11” e nome de pregão “FII RIOB MT” a partir de 23 de janeiro de 2026.\"\n\n---\n\n### O QUE aconteceu em 27/02/2026\n\n**Título:** COMUNICADO AO MERCADO - DISPONIBILIDADE INFORME DE RENDIMENTOS ANO-CALENDÁRIO 2025.\n\n**Resumo:**\nOs informes de rendimentos dos fundos listados no Anexo I estão disponíveis aos investidores a partir desta data no Portal do Investidor da Rio Bravo.\n\n**Trecho-chave:**\n\"Os informes de rendimentos (IR) dos fundos listados no Anexo I estão disponíveis aos investidores a partir desta data no Portal do Investidor da Rio Bravo. O investidor deve acessar o Portal do Investidor e seguir os passos de identificação para login.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Emissão de cotas com VP/cota em queda"
+    ],
+    "cota": 10.43
+  },
+  "parecer": {
+    "id": 1150766,
+    "data_entrega": "31/03/2026 17:56",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Rio Bravo Multiestratégia Fundo de Investimento Imobiliário de Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o para o exercício findo nessa data, de acordo com as práticas"
+  }
+}

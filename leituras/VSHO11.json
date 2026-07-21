@@ -1,0 +1,58 @@
+{
+  "ticker": "VSHO11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T23:03:19",
+  "relatorio": {
+    "id": 1241332,
+    "data_entrega": "07/07/2026 18:15",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Inadimplência e Vacância:**\n   - Em maio, a inadimplência no Bay Market atingiu ~25% das receitas totais.\n   - No Hortolândia, a inadimplência foi de ~24% das receitas totais.\n   - No Valinhos, a inadimplência foi de ~16% das receitas totais.\n\n   *Trecho do relatório (p. 5): \"A inadimplência dos shoppings registrada em maio apresentou um aumento pontual, em razão do processo de transição operacional da administradora. As medidas necessárias já foram implementadas e a expectativa é de que a situação seja gradualmente normalizada ao longo das próximas semanas.\"*\n\n2. **Desempenho dos Shoppings:**\n   - O Bay Market registrou crescimento de 19,2% nas receitas de aluguel mínimo e 38,2% no aluguel complementar.\n   - O Hortolândia teve um aumento de 40,9% na receita de estacionamento.\n\n   *Trecho do relatório (p. 7): \"O destaque positivo ficou com os shoppings Bay e Hortolândia, que registraram crescimento de 19,2% e 38,2% nas receitas de aluguel mínimo e aluguel complementar, respectivamente.\"*\n\n3. **Vacância:**\n   - A vacância do portfólio no geral foi de 9,7%.\n\n4. **Rendimento e Distribuição:**\n   - O resultado gerado pelo fundo em maio foi de R$ 0,73/cota.\n   - No mês, a distribuição foi de R$ 0,70/cota.\n\n5. **Patrimônio Líquido:**\n   - O patrimônio líquido do fundo encerrou o mês de maio em R$250,6 milhões.\n\n### O que observar em seguida:\n- Monitorar a normalização da inadimplência nos shoppings.\n- Observar os efeitos positivos no desempenho dos shoppings Bay e Hortolândia."
+  },
+  "comunicados": {
+    "ids": [
+      1165604,
+      1099798,
+      937686,
+      1239599,
+      1143467,
+      1049959,
+      1049841
+    ],
+    "datas": [
+      "16/04/2026",
+      "03/02/2026",
+      "01/07/2025",
+      "03/07/2026",
+      "24/03/2026",
+      "28/11/2025",
+      "28/11/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 03/07/2026 - COMUNICADO AO MERCADO\n\n**O que aconteceu:** A cota patrimonial do Fundo Votorantim Shopping aumentou em 4,02% na data de 30 de junho de 2026.\n\n**Resumo:** O valor contábil dos imóveis do fundo foi reavaliado e resultou em uma variação positiva na cota patrimonial.\n\n**Trecho-chave:**\n\"Em cumprimento ao disposto na Instrução CVM 516, de 29 de dezembro de 2011, conforme alterada, os imóveis do Fundo foram reavaliados por avaliador independente, resultando em um valor 4,02% (quatro inteiros e dois centésimos por cento) superior ao último valor contábil dos referidos imóveis, e resultando em uma variação positiva de 3,91% (três inteiros e noventa e um centésimos por cento) na cota patrimonial do Fundo, na data de 30 de junho de 2026.\"\n\n---\n\n### 28/11/2025 - ASSEMBLEIA GERAL ORDINÁRIA\n\n**O que aconteceu:** A assembleia geral ordinária aprovou as demonstrações contábeis auditadas do exercício social encerrado em 30 de junho de 2025.\n\n**Resumo:** Os cotistas presentes aprovaram sem ressalvas as demonstrações contábeis do fundo, conforme parecer dos auditores independentes.\n\n**Trecho-chave:**\n\"Foi aprovado pelos Cotistas presentes, as demonstrações contábeis auditadas do Fundo, referentes ao exercício social encerrado em 30 de junho de 2025, que foram apresentadas sem ressalvas, em consonância com o parecer apresentado pelos auditores independentes.\"\n\n---\n\n### 16/04/2026 - FATO RELEVANTE\n\n**O que aconteceu:** O Fundo contratou a AD Shopping para assumir a administração e comercialização dos shoppings do portfólio a partir de 1º de maio de 2026.\n\n**Resumo:** A transição da administração será conduzida de forma planejada, assegurando a continuidade operacional dos ativos.\n\n**Trecho-chave:**\n\"O Fundo contratou a AD SHOPPING - AGENCIA DE DESENVOLVIMENTO DE SHOPPING CENTERS LTDA., para assumir a administração e comercialização dos shopping centers que compõem o portfólio do Fundo, a partir de 1º de maio de 2026.\"\n\n---\n\n### 03/02/2026 - FATO RELEVANTE\n\n**O que aconteceu:** Tratativas para alteração do prestador de serviços administrativo dos shoppings do portfólio estão em curso.\n\n**Resumo:** A Tivio Capital informa que está conduzindo tratativas para a mudança da administração, mantendo o mercado informado sobre eventuais desdobramentos.\n\n**Trecho-chave:**\n\"A conclusão da referida alteração depende da formalização da rescisão dos contratos firmados com a atual Administradora dos Shoppings e da conclusão das negociações com o novo prestador de serviço especializado a ser contratado pelo Fundo.\"\n\n---\n\n### 01/07/2025 - FATO RELEVANTE\n\n**O que aconteceu:** O valor contábil dos imóveis do fundo foi reavaliado, resultando em uma variação positiva na cota patrimonial.\n\n**Resumo:** Os imóveis foram avaliados por um avaliador independente, levando a um aumento de 10,89% no valor contábil dos imóveis e uma variação positiva de 9,27% na cota patrimonial do fundo.\n\n**Trecho-chave:**\n\"Nesta data, em cumprimento ao disposto na Instrução CVM 516 , de 29 de dezembro de 2011, conforme alterada, os imóveis do Fundo foram reavaliados por avaliador independente, resultando em um valor 10,89% (dez inteiros e oitenta e nove) superior ao último valor contábil dos referidos imóveis, e resultando em uma variação positiva de 9,27% (nove inteiros e vinte e sete centésimos por cento) na cota patrimonial do Fundo, na data de 30 de junho de 2025.\"\n\n---\n\n### 24/03/2026 - COMUNICADO AO MERCADO\n\n**O que aconteceu:** Retificação da data de referência no informe de rendimentos e esclarecimento sobre o informe publicado em março.\n\n**Resumo:** A Tivio Capital retificou a data de referência no informe de rendimentos, corrigindo um erro manual e esclareceu que os valores divulgados estão corretos.\n\n**Trecho-chave:**\n\"Em complemento às informações anteriormente divulgadas, a Tivio Capital informa que se encontra disponível o informe de rendimentos do Fundo referente ao mês de fevereiro do presente ano, conforme divulgado em 27 de fevereiro de 2026. Além disso, ressaltamos que os valores divulgados no referido informe de rendimentos estão corretos, tendo o evento sido concluído de forma bem-sucedida, não havendo qualquer impacto financeiro aos cotistas do Fundo.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares"
+    ],
+    "cota": 74.14
+  },
+  "parecer": {
+    "id": 1001163,
+    "data_entrega": "29/09/2025 18:11",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliários."
+  }
+}

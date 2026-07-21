@@ -1,0 +1,33 @@
+{
+  "ticker": "RBCA11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T22:43:15",
+  "comunicados": {
+    "ids": [
+      1189751,
+      1189747,
+      1178007
+    ],
+    "datas": [
+      "13/05/2026",
+      "13/05/2026",
+      "30/04/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGE"
+    ],
+    "texto": "### Assembleia Geral de Cotistas realizada em 08/05/2026\n\n**O que aconteceu:** A assembleia geral de cotistas para aprovação das contas anuais do exercício encerrado em 31 de dezembro de 2025 não ocorreu, pois nenhum cotista compareceu.\n\n**Resumo:** A assembleia foi convocada mas não se instalou por falta de presença de cotistas.\n\n**Trecho-chave:**\n\"não sendo, portanto, possível sua instalação.  \nDessa forma, e considerando que as demonstrações contábeis não contêm ressalvas, ficam as mesmas consideradas automaticamente aprovadas.\"\n\n---\n\n### Assembleia Especial de Cotistas realizada em 28/04/2026\n\n**O que aconteceu:** A assembleia especial de cotistas aprovou a deliberação para a alienação do imóvel galpão logístico localizado na Avenida Cardoso Martim, Belford Roxo.\n\n**Resumo:** O imóvel será vendido por R$ 50.000.000,00 em duas fases, sendo que uma comissão de intermediação será paga à CBRE CONSULTORIA DO BRASIL LTDA.\n\n**Trecho-chave:**\n\"1. Aprovar que a gestora da Classe prossiga com os trâmites para a alienação de imóvel integrante da carteira da Classe, qual seja, galpão logístico com área bruta locável (ABL) de 23.543 m² e terreno de 51.419,95 m², localizado na Avenida Cardoso Martim, nº 1.001, município de Belford Roxo, Estado do Rio de Janeiro, CEP: 26113 -000, devidamente registrado sob a matrícula nº 5.460 perante o Registro de Imóveis de Belford Roxo/RJ (\"Imóvel\"), a ser alienado para Fraterna Empreendimentos e Participações LTDA, no valor bruto de R$ 50.000.000,00 (cinquenta milhões de reais), a ser pagos nos seguintes termos:\"\n\n---\n\n### Comunicado ao Mercado entregue em 13/05/2026\n\n**O que aconteceu:** A administradora BTG Pactual Serviços Financeiros S.A. informou que as contas anuais do exercício encerrado em 31 de dezembro de 2025 foram aprovadas na assembleia geral realizada em 08/05/2026.\n\n**Resumo:** As contas anuais do Fundo foram automaticamente aprovadas pela ausência de cotistas na assembleia.\n\n**Trecho-chave:**\n\"A assembleia geral de cotistas realizada em 08 de maio de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1144772,
+    "data_entrega": "26/03/2026 13:38",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe Única de Cotas do Petros Fundo de Investimento Imobiliário Responsabilidade Limita da em 31 de dezembro de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas c"
+  }
+}

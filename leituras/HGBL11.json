@@ -1,0 +1,52 @@
+{
+  "ticker": "HGBL11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T22:59:04",
+  "relatorio": {
+    "id": 1252475,
+    "data_entrega": "17/07/2026 17:02",
+    "texto": "### Fatos Extraídos do Relatório Gerencial\n\n1. **Venda de Imóvel e Lucro**: O fundo vendeu o Condomínio Logístico e Industrial Salto por R$ 62,5 milhões, gerando um múltiplo sobre o capital investido de 1,26x e uma taxa interna de retorno (TIR) nominal estimada em cerca de 13,2% ao ano. (p.4)\n   \n2. **Distribuição de Rendimentos**: A política de distribuição de rendimentos do fundo está em linha com a regulamentação vigente, prevendo a distribuição de no mínimo 95% do resultado semestral a regime de caixa. O rendimento mensal para os dois semestres de 2026 será R$ 0,72 por cota. (p.4)\n\n3. **Carteira de Investimentos**: A carteira do fundo está composta principalmente por FIIs Estratégicos (91% dos ativos), com a maior participação em PQAG11. Além disso, há investimentos em renda fixa (9%). (p.7-8)\n\n4. **Parque Anhanguera**: O imóvel situado no Parque Anhanguera, São Paulo, possui uma área construída de 65 mil m² e é classificado com a nota AAA, sendo estratégico para a logística da Natura. (p.8)\n\n5. **Eventos Societários**: A assembleia geral ordinária de cotistas do fundo foi realizada por meio de consulta formal em maio de 2026, onde os cotistas deliberaram pela aprovação das contas e demonstrações financeiras referentes ao exercício social encerrado em 31 de dezembro de 2025. (p.10)\n\n### O que observar em seguida:\n- Monitorar a evolução da carteira de FIIs Estratégicos, especialmente PQAG11.\n- Observar os resultados financeiros e distribuição de rendimentos no próximo relatório."
+  },
+  "comunicados": {
+    "ids": [
+      1133558,
+      1078430,
+      1052555,
+      1183543,
+      1183542
+    ],
+    "datas": [
+      "11/03/2026",
+      "09/01/2026",
+      "02/12/2025",
+      "08/05/2026",
+      "08/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 11/03/2026\n\n**O QUE aconteceu:** Venda do Condomínio Logístico e Industrial Salto.\n\n**Resumo:** O Fundo vendeu o imóvel por R$ 62,5 milhões, com pagamento parcelado. A venda está alinhada com a estratégia de gestão ativa dos investimentos.\n\n**Trecho-chave:**\n\"A venda foi celebrada pelo valor de R$ 62.500.000,00 (sessenta e dois milhões e quinhentos mil reais) (\"Preço\"), a ser pago conforme o seguinte fluxo:\" (p. 1)\n\n### FATO RELEVANTE entregue em 09/01/2026\n\n**O QUE aconteceu:** Comunicação da intenção de vender o Condomínio Logístico e Industrial Salto.\n\n**Resumo:** O Fundo planeja vender o imóvel por R$ 62,5 milhões, com pagamento parcelado. A venda está condicionada a condições precedentes.\n\n**Trecho-chave:**\n\"A HEDGE BRASIL LOGISTICO INDUSTRIAL FUNDO DE INVESTIMENTO IMOBILIARIO DE RESPONSABILIDADE LIMITADA formalizou um instrumento particular de condições para a venda da totalidade do Condomínio Logístico e Industrial Salto, localizado na Rodovia SP-073, nº 1800, KM 37,1, Salto/SP, CEP 13.329 -420, de propriedade do Fundo (\"Imóvel\"), pelo valor de R$ 62.500.000,00 (sessenta e dois milhões e quinhentos mil reais) (\"Preço\")\" (p. 1)\n\n### FATO RELEVANTE entregue em 02/12/2025\n\n**O QUE aconteceu:** Avaliação do imóvel do Fundo.\n\n**Resumo:** O imóvel do Fundo foi avaliado a mercado, resultando em valor 1,20% superior ao valor contábil atual. Isso representa uma variação positiva de aproximadamente 0,27% no valor patrimonial da cota.\n\n**Trecho-chave:**\n\"A HEDGE BRASIL LOGÍSTICO INDUSTRIAL FUNDO DE INVESTIMENTO IMOBILIÁRIO DE RESPONSABILIDADE LIMITADA foi avaliado a mercado (valor justo) pela empresa Capright Brasil LTDA., resultando em valor 1,20% (um inteiro e vinte centésimos por cento) superior ao valor contábil atual de referido imóvel, o que representa uma variação positiva de aproximadamente 0,27% (vinte e sete centésimos por cento) no valor patrimonial da cota do Fundo nesta data.\" (p. 1)\n\n### COMUNICADO ASSEMBLEIA AGO entregue em 08/05/2026\n\n**O QUE aconteceu:** Assembleia Geral Ordinária de Cotistas.\n\n**Resumo:** A maioria dos cotistas aprovou as contas e demonstrações financeiras do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Os votos proferidos representaram os seguintes percentuais em relação ao total da base votante do Fundo: 0,016% (dezesseis milésimos por cento) de votos favoráveis; 0,006% (seis milésimos por cento) de abstenções; e 0,001% (um milésimo por cento) de votos contrários.\" (p. 1)\n\n### ATA DE ASSEMBLEIA AGO entregue em 08/05/2026\n\n**O QUE aconteceu:** Assembleia Geral Ordinária de Cotistas.\n\n**Resumo:** A maioria dos cotistas aprovou as contas e demonstrações financeiras do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Em relação à Ordem do Dia, a maioria dos Cotistas deliberou pela aprovação das contas e das demonstrações financeiras do Fundo, referentes ao exercício social encerrado em 31 de dezembro de 2025. Os votos proferidos representaram os seguintes percentuais em relação ao total da base votante do Fundo: 0,016% (dezesseis milésimos por cento) de votos favoráveis; 0,006% (seis milésimos por cento) de abstenções; e 0,001% (um milésimo por cento) de votos contrários.\" (p. 5)"
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Emissão de cotas com VP/cota em queda"
+    ],
+    "cota": 8.86
+  },
+  "parecer": {
+    "id": 1147074,
+    "data_entrega": "27/03/2026 18:02",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Hedge Brasil Logístico Industrial Fundo de Investimento Imobiliário de Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as prática"
+  }
+}

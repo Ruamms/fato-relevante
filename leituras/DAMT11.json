@@ -1,0 +1,49 @@
+{
+  "ticker": "DAMT11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T22:57:01",
+  "relatorio": {
+    "id": 1242339,
+    "data_entrega": "08/07/2026 18:22",
+    "texto": "### Fatos do Relatório:\n\n1. **Vacância do Shopping Ventura:** A vacância do Ventura Shopping permanece em 6,61% e não apresentou alterações nos últimos meses.\n2. **Evolução das Inadimplências:** O Shopping Ventura registrou uma inadimplência líquida total de 24,2%, com variações mensais que indicam um comportamento irregular.\n3. **Programação Especial no Shopping Estação:** O empreendimento promoveu eventos como o \"Outono das Mães\" e a Copa do Mundo 2026, oferecendo atividades para famílias e fãs de futebol.\n4. **Premiação do Ventura Shopping:** O Ventura Shopping conquistou um prêmio na categoria “Campanhas Institucionais” no Prêmio Abrasce 2024.\n\n### O que observar em seguida:\n- Monitorar as inadimplências do Shopping Ventura, pois variações significativas podem afetar o desempenho financeiro.\n- Observar a evolução das programações especiais e seus impactos no fluxo de clientes dos shoppings."
+  },
+  "comunicados": {
+    "ids": [
+      1182245,
+      970970,
+      1182244,
+      1173620
+    ],
+    "datas": [
+      "07/05/2026",
+      "14/08/2025",
+      "07/05/2026",
+      "29/04/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 07/05/2026\n\n**O QUE aconteceu:** As contas anuais do DIAMANTE FUNDO DE INVESTIMENTO IMOBILIÁRIO foram aprovadas.\n\n**Resumo:** A assembleia geral de cotistas realizada em 4 de maio de 2026 aprovou as contas anuais do fundo referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Na assembleia geral de cotistas realizada em 04 de maio de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 14/08/2025\n\n**O QUE aconteceu:** O prazo para manifestação no âmbito da consulta formal foi prorrogado.\n\n**Resumo:** A administradora prorrogou o prazo para manifestação dos cotistas do fundo, que agora termina em 29 de agosto de 2025.\n\n**Trecho-chave:**\n\"O prazo para manifestação no âmbito da Consulta Formal foi prorrogado para o dia 29 de agosto de 2025.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 07/05/2026\n\n**O QUE aconteceu:** A assembleia geral de cotistas aprovou as contas anuais do fundo.\n\n**Resumo:** A assembleia realizada via manifestação de voto aprovou as contas e demonstrações contábeis do DIAMANTE FUNDO DE INVESTIMENTO IMOBILIÁRIO referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\" (p. 4)\n\n---\n\n### ASSEMBLEIA AGO entregue em 29/04/2026\n\n**O QUE aconteceu:** Convocação para a assembleia geral de cotistas.\n\n**Resumo:** A administradora convocou os cotistas do DIAMANTE FUNDO DE INVESTIMENTO IMOBILIÁRIO para deliberarem sobre a aprovação das contas e demonstrações contábeis referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Aos Cotistas do DIAMANTE FUNDO DE INVESTIMENTO IMOBILIÁRIO, inscrito no CNPJ sob o nº 26.642.727/0001-66, vem, pela presente, convocar para a Consulta Formal, com prazo de recebimento de votos até 04 de maio de 2026.\" (p. 1)\n\n---\n\n**Conexão ao contexto:** A aprovação das contas anuais e o processo de consulta formal são relevantes para entender as operações financeiras do fundo, que impactam diretamente os indicadores fornecidos no contexto."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "P/VP muito acima da média histórica"
+    ],
+    "cota": 18.0
+  },
+  "parecer": {
+    "id": 1147938,
+    "data_entrega": "30/03/2026 14:58",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Diamante Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 202 5, o desempenho de suas operações e seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil"
+  }
+}

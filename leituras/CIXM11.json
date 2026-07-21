@@ -1,0 +1,39 @@
+{
+  "ticker": "CIXM11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T22:48:29",
+  "comunicados": {
+    "ids": [
+      984611,
+      1240317,
+      1211272,
+      1252418,
+      1121162
+    ],
+    "datas": [
+      "05/09/2025",
+      "06/07/2026",
+      "02/06/2026",
+      "17/07/2026",
+      "25/02/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 05/09/2025\n\n**O QUE aconteceu:** A ID Corretora de Títulos e Valores Mobiliários S.A. comunicou aos cotistas do CIX MUIRAQUITAN FUNDO DE INVESTIMENTO IMOBILIÁRIO a aplicação de desconto de 30% na taxa de administração e gestão.\n\n**Resumo:** A administradora e gestora decidiram reduzir as taxas de administração e gestão em 30%, retroativamente ao exercício de 2025, ajustando os valores já pagos para refletir a nova alíquota.\n\n**Trecho-chave:**\n\"III. O pagamento das remunerações devidas ocorrerá até o 5º (quinto) Dia Útil do mês subsequente àquele em que se der a prestação dos serviços.\nIV. A Administradora e a Gestora, de comum acordo, decidiram aplicar desconto de 30% (trinta por cento) sobre a taxa de administração e sobre a taxa de gestão referentes ao exercício de 2025;\nV. Os valores já pagos à Gestora e à Administradora anteriormente ao referido acordo foram, ou serão, ajustados de forma a assegurar que a remuneração total do ano reflita integralmente o desconto mencionado.\"\n\n### COMUNICADO AO MERCADO entregue em 06/07/2026\n\n**O QUE aconteceu:** O CIX MUIRAQUITAN FUNDO DE INVESTIMENTO IMOBILIÁRIO realizou o pagamento de rendimentos antecipados do 1º semestre de 2026.\n\n**Resumo:** O Fundo pagou R$ 0,17 por cota em rendimentos, totalizando R$ 1.041.620,60, com incidência de IR para parte dos cotistas.\n\n**Trecho-chave:**\n\"O Fundo em epígrafe, vem por meio desta, COMUNICAR ao Mercado, o pagamento de Rendimentos, a título de antecipação de dividendos do resultado caixa do 1º semestre de 2026, no valor de R$ 0,17 (dezessete centavos) por cota, perfazendo o total a ser pago de R$ 1.041.620,60 (Um milhão, quarenta e um mil, seiscentos e vinte reais e sessenta centavos), sendo que o pagamento será feito de forma escritural.\"\n\n### COMUNICADO AO MERCADO entregue em 02/06/2026\n\n**O QUE aconteceu:** O CIX MUIRAQUITAN FUNDO DE INVESTIMENTO IMOBILIÁRIO realizou o pagamento de rendimentos antecipados do 1º semestre de 2026.\n\n**Resumo:** O Fundo pagou R$ 0,34 por cota em rendimentos, totalizando R$ 2.083.241,20, com incidência de IR para parte dos cotistas.\n\n**Trecho-chave:**\n\"O Fundo em epígrafe, vem por meio desta, COMUNICAR ao Mercado, o pagamento de Rendimentos, a título de antecipação de dividendos do resultado caixa do 2º semestre de 2026, no valor de  R$ 0,34 (trinta e quatro centavos) por cota , perfazendo o total a ser pago de  R$ 2.083.241,20 (dois milhões e oitenta e três mil e duzentos e quarenta e um reais e vinte centavos ), sendo que o pagamento será feito de forma escritural.\"\n\n### ASSEMBLEIA AGE entregue em 25/02/2026\n\n**O QUE aconteceu:** A ID Corretora de Títulos e Valores Mobiliários S.A. realizou uma assembleia geral de cotistas para aprovar a retenção de rendimentos superior a 95% do semestre.\n\n**Resumo:** A assembleia aprovou a retenção de rendimentos superior a 95% do semestre, com 34,41% das cotas emitidas a favor e 9,78% contra. A administradora seguirá com as medidas necessárias caso haja necessidade.\n\n**Trecho-chave:**\n\"5. CÔMPUTO: Após análises das respostas dos Cotistas do Fundo ao Edital de Convocação via Consulta Formal, foi apurado o seguinte resultado:\n(i) APROVAÇÃO de 34,41% (trinta e quatro virgula quarenta e um por cento) das Cotas emitidas pelo Fundo e REPROVAÇÃO de 9,78% (nove virgula setenta e oito por cento) das Cotas emitidas pelo Fundo, totalizando 100% dos cotistas presentes, sendo suficiente para aprovação das deliberações, nos termos do art. 24 do atual Regulamento do Fundo.\"\n\n### ASSEMBLEIA AGE entregue em 17/07/2026\n\n**O QUE aconteceu:** A ID Corretora de Títulos e Valores Mobiliários S.A. convocou a assembleia geral de cotistas para deliberar sobre a substituição da administradora.\n\n**Resumo:** A assembleia foi convocada para deliberar sobre a substituição da atual administradora pela BRL Trust Distribuidora de Títulos e Valores Mobiliários S.A., com a transferência efetiva prevista para 11 de agosto de 2026.\n\n**Trecho-chave:**\n\"Matérias objeto da Consulta Formal:\n(i) A substituição da Administradora, da ID CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., inscrita no CNPJ/ME sob o nº 16.695.922/0001-09, com sede na Avenida Presidente Juscelino Kubitschek, nº 1726, 19º andar, conjunto 194, Vila Nova Conceição, Cidade e Estado de São Paulo, pela BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., inscrita no CNPJ sob o nº 13.486.793/0001-42, com sede na Rua Alves Guimarães, nº 1.212, Pinheiros, Cidade e Estado de São Paulo, CEP 05410-002 (“Nova Administradora”). A Atual Administradora ficará responsável pelos serviços de administração ATÉ O FECHAMENTO DO DIA 10 DE AGOSTO DE 2026, passando a ser administrado pela Nova Administradora A PARTIR DA ABERTURA DO DIA 11 DE AGOSTO DE 2026.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1000287,
+    "data_entrega": "29/09/2025 10:44",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas representam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do CIX MUIRAQUITAN FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA em 30 de junho de 2025, o desempenho de suas operações, as mutações do patrimônio líquido e os seus fluxos de caixa para o exercício findo naquela data, de acordo co"
+  }
+}

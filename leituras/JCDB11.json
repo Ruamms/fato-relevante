@@ -1,0 +1,39 @@
+{
+  "ticker": "JCDB11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T23:01:03",
+  "comunicados": {
+    "ids": [
+      1088602,
+      1241287,
+      1218962,
+      1247401,
+      1247398
+    ],
+    "datas": [
+      "20/01/2026",
+      "07/07/2026",
+      "12/06/2026",
+      "14/07/2026",
+      "14/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 20/01/2026\n\n**O QUE aconteceu:** A Gestora e a Sociedade Investida celebraram um memorando de entendimentos com uma incorporadora para alienar 85% dos Ativos Imobiliários.\n\n**Resumo:** A JACARANDÁ II FII entrou em um acordo com incorporadoras para vender parte de seus ativos imobiliários, mas não há garantia de que o acordo será efetivamente implementado.\n\n**Trecho-chave:**\n\"Não há garantia de que o Acordo e a Permuta Física e Financeira serão efetivamente implementados, uma vez que restam pendentes outras condições precedentes a serem satisfeitas.\"\n\n### COMUNICADO AO MERCADO entregue em 07/07/2026\n\n**O QUE aconteceu:** Não haverá distribuição de resultados no mês de junho/2026.\n\n**Resumo:** O FII informou que não realizará a distribuição de resultados para o mês de junho, conforme comunicado ao mercado.\n\n**Trecho-chave:**\n\"Comunicamos que, em relação ao mês de JUNHO/2026, não haverá distribuição de resultados.\"\n\n### COMUNICADO AO MERCADO entregue em 12/06/2026\n\n**O QUE aconteceu:** A Assembleia Especial de Cotistas foi cancelada.\n\n**Resumo:** A JACARANDÁ II FII cancelou a assembleia convocada anteriormente, sem especificar uma nova data para a realização.\n\n**Trecho-chave:**\n\"A Gestora requereu o cancelamento da Assembleia Especial de Cotistas a realizar-se por meio de consulta formal, anteriormente convocada no dia 08 de junho de 2026.\"\n\n### ASSEMBLEIA AGE entregue em 14/07/2026\n\n**O QUE aconteceu:** Foi proposta uma segunda emissão de cotas.\n\n**Resumo:** A JACARANDÁ 02 FII propôs a realização da 2ª Emissão, com até R$ 2.500.000,00 em novas cotas, destinada a investidores profissionais.\n\n**Trecho-chave:**\n\"A 2ª Emissão será destinada a investidores profissionais, nos termos da Resolução CVM nº 30, de 11 de maio de 2021.\"\n\n### ASSEMBLEIA AGE entregue em 14/07/2026\n\n**O QUE aconteceu:** Foi emitido um edital para a realização de uma Assembleia Especial de Cotistas.\n\n**Resumo:** A JACARANDÁ 02 FII convocou os cotistas para deliberar sobre a segunda emissão de cotas, com detalhes sobre as condições e limitações da oferta.\n\n**Trecho-chave:**\n\"1. A realização da 2ª (segunda) emissão de cotas da Classe (“2ª Emissão”), no montante total de até R$ 2.500.000,00 (dois milhões e quinhentos mil reais), a serem distribuídas por meio de oferta pública.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1145939,
+    "data_entrega": "26/03/2026 21:10",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

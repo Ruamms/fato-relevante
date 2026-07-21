@@ -1,0 +1,50 @@
+{
+  "ticker": "BETW11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T22:44:57",
+  "relatorio": {
+    "id": 1259808,
+    "data_entrega": "20/07/2026 11:50",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Vacância:** A taxa de vacância física do imóvel em junho foi de 4,67%, com 418,01 m² de área vagas (p. 3).\n2. **Distribuição de Rendimentos:** O rendimento mensal distribuído no período foi de R$ 1,576.800,00 (R$ 0,730/cota sênior), mas o gestor optou por manter um caixa mínimo em reservas gerenciais para cobrir eventuais necessidades (p. 3).\n3. **Patrimônio Líquido:** O valor patrimonial do fundo ao final de junho era R$ 276,14 milhões, ou R$ 110,26 por cota (p. 7).\n4. **Cotas Seniores e Subordinadas:** O número total de cotas é de 2.504.500, distribuídas entre 2.160.000 Cotas Seniores (86,24% do Fundo) e 344.500 Cotas Subordinadas (13,76%) (p. 4).\n5. **Taxa de Administração:** A taxa de administração será equivalente à soma dos seguintes montantes: (A) 0,15% a.a. aplicado sobre o valor contábil do patrimônio líquido do Fundo; ou (II) caso as cotas do Fundo tenham integrado ou passado a integrar, no período, índices de mercado, sobre o valor de mercado do Fundo (p. 3).\n6. **Cenário Operacional:** O imóvel manteve uma ocupação de 95,33% em junho (p. 5).\n\n### O que Observar Em Seguida:\n1. Monitorar a vacância e as tratativas com potenciais locatários para as áreas vagas.\n2. Verificar o uso das reservas gerenciais e como elas serão utilizadas no futuro."
+  },
+  "comunicados": {
+    "ids": [
+      910196,
+      1188158,
+      1188131,
+      1169280
+    ],
+    "datas": [
+      "22/05/2025",
+      "13/05/2026",
+      "13/05/2026",
+      "24/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 22/05/2025\n\n**O QUE aconteceu:** A administradora BTG Pactual informou sobre a isenção voluntária da taxa de gestão.\n\n**Resumo:** A BGR, como gestora do fundo, decidiu isentar a Classe do pagamento da Taxa de Gestão mensalmente, a partir de 1º de abril de 2025, enquanto permanecer como gestora tanto do BRPR E-TOWER quanto do BROF11.\n\n**Trecho-chave:** \"A BGR, na qualidade de gestora da Classe, isentará, de forma voluntária, a Classe do pagamento da Taxa de Gestão mensalmente devida, a partir de 1º de abril de 2025, sendo que a referida isenção permanecerá vigente enquanto a BGR também for gestora do BROF11, e desde que o BROF11 continue detendo a totalidade das cotas seniores emitidas pela Classe.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 13/05/2026\n\n**O QUE aconteceu:** A assembleia geral de cotistas aprovou as contas anuais do Fundo referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia foi realizada em 7 de maio de 2026, mas não teve presença de cotistas. As contas foram consideradas automaticamente aprovadas por não haver ressalvas.\n\n**Trecho-chave:** \"A assembleia de cotistas para aprovação de contas, referente ao exercício social encerrado em 31 de dezembro de 2025, foi devidamente convocada em 7 de abril de 2026 e ocorrida em 7 de maio de 2026 sendo certo que nenhum cotista compareceu, não sendo, portanto, possível sua instalação.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 13/05/2026\n\n**O QUE aconteceu:** A assembleia geral de cotistas foi realizada para aprovar as contas anuais do Fundo referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia ocorreu em 7 de maio de 2026, mas não teve presença de cotistas. As contas foram consideradas automaticamente aprovadas por não haver ressalvas.\n\n**Trecho-chave:** \"A assembleia de cotistas para aprovação de contas, referente ao exercício social encerrado em 31 de dezembro de 2025, foi devidamente convocada em 7 de abril de 2026 e ocorrida em 7 de maio de 2026 sendo certo que nenhum cotista compareceu, não sendo, portanto, possível sua instalação.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 24/04/2026\n\n**O QUE aconteceu:** A administradora convocou os cotistas para a consulta formal sobre a aprovação das contas anuais do Fundo referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A consulta foi realizada até 7 de maio de 2026, e os cotistas poderiam votar via plataforma eletrônica. O documento informa que somente cotistas inscritos no registro de cotistas na data da convocação podem votar.\n\n**Trecho-chave:** \"A B TG Pactual Serviços Financeiros S.A. Distribuidora de Títulos e Valores Mobiliários, sociedade anônima, com sede na Cidade e Estado do Rio de Janeiro, localizada à Praia de Botafogo, nº 501, Torre Corcovado, 5º Andar (Parte), Botafogo, e inscrita no CNPJ sob o nº 59.281.253/0001-23, devidamente autorizada pela Comissão de Valores Mobiliários (“CVM”) para a atividade de administração de carteiras de valores mobiliários, de acordo com o Ato Declaratório CVM nº 8.695, de 20 de março de 2006 (\"Administradora\"), na qualidade de administradora do BRPR E-TOWER FUNDO DE INVESTIMENTO IMOBILIARIO, inscrito no CNPJ sob o nº 51.666.294/0001-26 (“Fundo”), bem como de sua classe única, vem, pela presente, convocar os cotistas do Fundo (\"Cotistas\") para a Consulta Formal, com prazo de recebimento de votos até 07 de maio de 2026, para deliberarem sobre: (i) A aprovação das contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de dezembro de 2025.\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Menos cotistas que o mínimo para isenção de IR",
+      "Rendimentos acima do resultado financeiro",
+      "Vacância física alta"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 1140044,
+    "data_entrega": "18/03/2026 13:54",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do BRPR E-Tower Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no "
+  }
+}

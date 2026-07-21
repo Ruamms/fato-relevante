@@ -1,0 +1,55 @@
+{
+  "ticker": "INOI11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T22:35:02",
+  "relatorio": {
+    "id": 1251301,
+    "data_entrega": "16/07/2026 17:28",
+    "texto": "### Fatos Extraídos do Relatório Gerencial\n\n1. **Vacância Financeira Zero**: O parque logístico Hortolândia possui apenas um módulo vago, com vacância financeira zero.\n2. **Inadimplência**: A inadimplência no mês foi de 3,3%, coberta pelo fundo de reserva.\n3. **Distribuição de Renda**: Em junho, a cota subordinada distribuiu R$ 2,10 por cota, representando um yield anualizado de 21,08%.\n4. **Contrato de Renda Mínima Garantida**: O parque logístico Hortolândia possui um contrato com a vendedora garantindo uma renda mínima garantida até 100% da locação.\n5. **Cota Patrimonial e Valor do Ativo**: O patrimônio líquido do fundo é de R$ 299,5M e o valor do ativo é de R$ 329,4M.\n\n### O que observar em seguida:\n1. Monitorar a inadimplência e verificação se ela permanece estável ou diminui.\n2. Observar as distribuições de renda e como elas variam ao longo do tempo."
+  },
+  "comunicados": {
+    "ids": [
+      1074689,
+      929064,
+      1139028,
+      1120568,
+      1207762,
+      1207746
+    ],
+    "datas": [
+      "02/01/2026",
+      "20/06/2025",
+      "16/03/2026",
+      "24/02/2026",
+      "29/05/2026",
+      "29/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 02/01/2026\n\n**O que aconteceu:** O patrimônio líquido do fundo foi reavaliado, com um impacto positivo de 5,01%, resultando em um aumento de R$ 14.186.000,00 no valor justo dos ativos.\n\n**Resumo:** A reavaliação dos ativos imobiliários do fundo levou a uma melhora significativa no patrimônio líquido.\n\n**Trecho-chave:**\n\"Os ativos imobiliários do FUNDO foram reavaliados, sendo veriﬁcado um impacto positivo de 5,01% (cinco inteiros e um centésimo por cento) no patrimônio líquido do FUNDO, com aumento de R$ 14.186.000,00 (quatorze milhões e cento e oitenta e seis mil reais) no valor justo dos ativos.\"\n\n---\n\n### FATO RELEVANTE entregue em 20/06/2025\n\n**O que aconteceu:** O fundo realizou a compra de dois parques logísticos: Log S. J. Pinhais II e Log Hortolândia, no valor total de R$261.000.000,00.\n\n**Resumo:** Aquisição de ativos imobiliários para expandir o portfólio do fundo.\n\n**Trecho-chave:**\n\"O Fundo, na qualidade de promissário comprador, a LOG SÃO JOSÉ DOS PINHAIS II SPE LTDA., sociedade empresária limitada, com sede na Cidade de São José dos Pinhais, Estado do Paraná, a HORTOLÂNDIA INCORPORAÇÃO SPE LTDA., sociedade empresária limitada, com sede na Cidade de Hortolândia, Estado de São Paulo, celebraram o “Instrumento Particular de Compromisso de Venda e Compra de Bens Imóveis Sob Condições Precedentes e Outras Avenças” (“Compromisso de Venda e Compra”), tendo por objeto a compra pelo Fundo dos seguintes ativos detidos pelas Promitentes Vendedoras: • Parque Logístico Log S. J. Pinhais II, com área total construída de 41.117,87m², situado na Cidade de São José dos Pinhais, Estado do Paraná, e • Parque Logístico Log Hortolândia, com área total construída de 53.697,96m², situado na Cidade de Hortolândia, Estado de São Paulo.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 16/03/2026\n\n**O que aconteceu:** O fundo assinou um novo contrato de locação para o imóvel Log Hortolândia, com área total de 4.110,89 m².\n\n**Resumo:** Alocação de novos recursos no imóvel Log Hortolândia, aumentando a ocupação física do fundo.\n\n**Trecho-chave:**\n\"Assinou um novo “Instrumento Particular de Contrato de Locação de Imóvel para Finalidade Comercial” para locação de 4.110,89 m² (\"Contrato\") do ativo “LOG HORTOLÂNDIA”, localizado na Rua Pérola, nº 200, Bairro Jardim Santa Esmeralda, na cidade de Hortolândia, estado de São Paulo.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 24/02/2026\n\n**O que aconteceu:** O fundo realizou o pagamento antecipado da segunda e última parcela referente à aquisição dos ativos Parque Logístico Log S. J. Pinhais II e Parque Logístico Log Hortolândia.\n\n**Resumo:** Pagamento antecipado das últimas parcelas para a conclusão da aquisição de dois parques logísticos.\n\n**Trecho-chave:**\n\"No dia 13 de fevereiro de 2026, o Fundo realizou o pagamento antecipado da: - segunda parcela referente à aquisição do ativo Parque Logístico Log S. J. Pinhais II, com área total construída de 41.117,87m², situado na Cidade de São José dos Pinhais, Estado do Paraná, no valor de R$ 27.022.701,09; e - da segunda e última parcela do ativo Parque Logístico Log Hortolândia, com área total construída de 53.697,96m², situado na Cidade de Hortolândia, Estado de São Paulo, no valor de R$ 62.202.781,14.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 29/05/2026\n\n**O que aconteceu:** A assembleia geral ordinária não foi instalada por falta de votos dos cotistas.\n\n**Resumo:** Ausência de participação dos cotistas na assembleia, resultando na aprovação automática das demonstrações contábeis.\n\n**Trecho-chave:**\n\"Findo o prazo para recebimento dos votos, foi verificada a ausência de votos e, considerando que as demonstrações contábeis foram disponibilizadas e não contém ressalvas, ficam automaticamente APROVADAS, conforme previsto no Artigo 71, §3º da Resolução CVM 175/22 e disposto na Convocação.\""
+  },
+  "retrato": {
+    "selo": "Histórico insuficiente",
+    "nivel": "insuficiente",
+    "alertas": [
+      "Base de cotistas muito pequena",
+      "Fundo novo — histórico curto"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 1151926,
+    "data_entrega": "31/03/2026 22:39",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Inter Oportunidade Imobiliária Fundo de Investimento Imobiliário - Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o período de 19 de agosto de 2025 (início das atividades d"
+  }
+}

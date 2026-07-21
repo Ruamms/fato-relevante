@@ -1,0 +1,36 @@
+{
+  "ticker": "PCAS11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T22:49:28",
+  "comunicados": {
+    "ids": [
+      1058229,
+      1042867,
+      1198882,
+      1165302
+    ],
+    "datas": [
+      "10/12/2025",
+      "17/11/2025",
+      "19/05/2026",
+      "16/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 17/11/2025\n\n**O QUE aconteceu:** A distribuição de rendimentos prevista para 18/11/2025 foi cancelada.\n\n**Resumo:** A decisão foi tomada por ajustes operacionais supervenientes, e uma nova data será definida em conformidade com as normas aplicáveis.\n\n**Trecho-chave:**\n\"A decisão decorre de ajustes operacionais supervenientes, que impedem a realização da distribuição na data inicialmente estabelecida. A Administradora esclarece que uma nova data será oportunamente definida e comunicada, em conformidade com as normas aplicáveis e com os padrões de transparência e governança adotados pelo Fundo.\" (p. 1)\n\n### FATO RELEVANTE entregue em 10/12/2025\n\n**O QUE aconteceu:** A distribuição de rendimentos prevista para 12/12/2025 foi cancelada.\n\n**Resumo:** A decisão decorre de ajustes operacionais supervenientes, e uma nova data será definida em conformidade com as normas aplicáveis.\n\n**Trecho-chave:**\n\"A decisão decorre de ajustes operacionais supervenientes, que impedem a realização da distribuição na data inicialmente estabelecida. A Administradora esclarece que uma nova data será oportunamente definida e comunicada, em conformidade com as normas aplicáveis e com os padrões de transparência e governança adotados pelo Fundo.\" (p. 1)\n\n### ASSEMBLEIA AGO entregue em 19/05/2026\n\n**O QUE aconteceu:** A assembleia aprovou as demonstrações financeiras do exercício social findo em 31 de dezembro de 2025 e autorizou a Administradora a adotar medidas necessárias ao fiel cumprimento das determinações da Consulta Formal.\n\n**Resumo:** As matérias foram aprovadas com 100% dos votos favoráveis, conforme o Regulamento do Fundo.\n\n**Trecho-chave:**\n\"Conforme o Edital de convocação, as seguintes matérias indicadas foram deliberadas com o respectivo resultado:\n(i) Daqueles presentes, APROVADO, por 100% de votos favoráveis as demonstrações financeiras, que incluem o balanço patrimonial, a demonstração de resultados, a demonstração de fluxos de caixa e as notas explicativas correspondentes, relativas ao último exercício social findo em 31 de dezembro de 2025, qual está disponível no website da CVM;\n(ii) Daqueles presentes, restou APROVADO, por 100% de votos favoráveis a autorização à Administradora para que adote todas as medidas necessárias ao fiel cumprimento das determinações da Consulta Formal.\" (p. 2)\n\n### ASSEMBLEIA AGO entregue em 16/04/2026\n\n**O QUE aconteceu:** A assembleia propôs a aprovação das demonstrações financeiras do exercício social findo em 31 de dezembro de 2025 e autorização à Administradora para adotar medidas necessárias ao fiel cumprimento das determinações da Consulta Formal.\n\n**Resumo:** As matérias serão submetidas aos cotistas para votação até o dia 18/05/2026, com resultado divulgado no Fundos Net até o dia 21 de maio de 2026.\n\n**Trecho-chave:**\n\"A PLANNER CORRETORA DE VALORES S.A. , instituição financeira com sede na Avenida Brigadeiro Faria Lima, nº 3.900, 10º andar, Itaim Bibi, na cidade e estado de São Paulo, inscrita no CNPJ/MF sob o nº 00.806.535/0001-54, na qualidade de instituição administradora do PRAIA DO CASTELO FUNDO DE INVESTIMENTO IMOBILIÁRIO  inscrito no CNPJ/MF sob o nº 24.514.406/0001-50 (\"Administradora\" e \" Fundo\", respectivamente), vem, por meio desta, submeter aos cotistas as seguintes matérias: a) A aprovação das demonstrações financeiras, que incluem o balanço patrimonial, a demonstração de resultados, a demonstração de fluxos de caixa e as notas explicativas correspondentes, relativas ao último exercício social findo em 31 de dezembro de 2025, qual está disponível no website da CVM; b) A autorização para que a Administradora adote todas as medidas necessárias ao fiel cumprimento das determinações da Consulta Formal.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1152814,
+    "data_entrega": "01/04/2026 17:23",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acim a referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Praia do Castelo Fundo de Investimento Imobiliário , em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo ness a data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis "
+  }
+}

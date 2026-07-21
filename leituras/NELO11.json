@@ -1,0 +1,33 @@
+{
+  "ticker": "NELO11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T22:37:39",
+  "comunicados": {
+    "ids": [
+      955595,
+      1179201,
+      1179200
+    ],
+    "datas": [
+      "29/07/2025",
+      "04/05/2026",
+      "04/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 10 de julho de 2025\n\n**O QUE aconteceu:** Adaptação do regulamento do Fundo a Resolução da CVM nº 175, de 23 de dezembro de 2022.\n\n**Resumo:** A XP Corretora adaptou o regulamento do NE Logistic FII para se alinhar com as novas regras estabelecidas pela Comissão de Valores Mobiliários (CVM).\n\n**Trecho-chave:**\n\"O Fundo não sofreu qualquer alteração que dependa de deliberação dos cotistas, sendo certo que as alterações promovidas refletem apenas a adequação a Resolução CVM 175.\"\n\n---\n\n### ASSEMBLEIA GERAL ORDINÁRIA DE COTISTAS do NE LOGISTIC FII entregue em 04/05/2026\n\n**O QUE aconteceu:** Realização de uma Assembleia Geral Ordinária (AGO) não presencial.\n\n**Resumo:** A AGO foi realizada de forma eletrônica, aprovando as Demonstrações Financeiras do exercício social findo em 31.12.2025 e autorizando a Administradora a praticar atos necessários para a efetivação das deliberações.\n\n**Trecho-chave:**\n\"Observado o art. 71 da Instrução CVM 175/2022, restam aprovadas: (i) As Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 31.12.2025.\"\n\n---\n\n### ASSEMBLEIA GERAL ORDINÁRIA DE COTISTAS do NE LOGISTIC FII entregue em 04/05/2026\n\n**O QUE aconteceu:** Realização de uma Assembleia Geral Ordinária (AGO) não presencial.\n\n**Resumo:** A AGO foi realizada de forma eletrônica, aprovando as Demonstrações Financeiras do exercício social findo em 31.12.2025 e autorizando a Administradora a praticar atos necessários para a efetivação das deliberações.\n\n**Trecho-chave:**\n\"Observado o art. 71 da Instrução CVM 175/2022, restam aprovadas: (i) As Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 31.12.2025.\"\n\n---\n\n**Conexão com o contexto:** A aprovação das Demonstrações Financeiras no documento de AGO reflete a situação financeira do fundo, que apresenta um patrimônio líquido reduzido e uma vacância baixa, conforme indicadores fornecidos."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1147637,
+    "data_entrega": "30/03/2026 12:06",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nesta data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

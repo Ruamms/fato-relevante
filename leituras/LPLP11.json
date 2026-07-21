@@ -1,0 +1,39 @@
+{
+  "ticker": "LPLP11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T23:05:35",
+  "comunicados": {
+    "ids": [
+      1141105,
+      975297,
+      987989,
+      1244297,
+      1227425
+    ],
+    "datas": [
+      "20/03/2026",
+      "20/08/2025",
+      "10/09/2025",
+      "10/07/2026",
+      "24/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### O QUE aconteceu em 24/06/2026: CARTA CONSULTA FORMAL AOS COTISTAS LAGO DA PEDRA – FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA\n\n**Resumo:** A administradora do fundo, Oliveira Trust DTVM S.A., convocou os cotistas para uma consulta formal sobre a alteração dos critérios de elegibilidade para novas aquisições de empreendimentos imobiliários no estado do Rio de Janeiro.\n\n**Trecho-chave:**\n> 1. Alteração a descrição de “Critério de Elegibilidade”, previsto no Regulamento do Fundo, de forma a possibilitar novas aquisições de empreendimentos imobiliários, desenvolvidos e/ou incorporados pelas SPE ou novas sociedades de propósito específico, que desenvolvam empreendimentos no estado do Rio de Janeiro.\n\n### O QUE aconteceu em 10/07/2026: TERMO DE APURAÇÃO DE RESULTADO DA CONSULTA FORMAL AOS COTISTAS\n\n**Resumo:** Após a consulta formal realizada, os cotistas representando 86,16% das cotas emitidas aprovaram a alteração dos critérios de elegibilidade para permitir novas aquisições empreendimentos imobiliários no estado do Rio de Janeiro.\n\n**Trecho-chave:**\n> Em relação ao item 1 da ordem do dia, foi apurado que os Cotistas representando 86,16% das cotas emitidas do Fundo , excluindo-se do cômputo as cotas dos Cotistas declaradamente conflitados e impedido de votar , aprovaram a al teração a descrição de “Critério de Elegibilidade”, previsto no Regulamento do Fundo, de forma a possibilitar novas aquisições de empreendimentos imobiliários, desenvolvidos e/ou incorporados pelas SPE ou novas sociedades de propósito específico, que desenvolvam empreendimentos no estado do Rio de Janeiro.\n\n### O QUE aconteceu em 10/09/2025: COMUNICADO AO MERCADO\n\n**Resumo:** Foi encerrado o período de exercício do direito de preferência para a segunda emissão de cotas da subclasse B da classe I do fundo, com 61.911 cota(s) sendo subscritas.\n\n**Trecho-chave:**\n> De acordo com as informações recebidas do Coordenador Líder e da B3 S.A., até o momento, foram subscritas, no âmbito do Direito de Preferência, 61.911 (sessenta e uma mil, novecentas e onze) Cotas, equivalente a R$ 50.012.324,91 (cinquenta milhões, doze mil, trezentos e vinte e quatro reais e noventa e um centavos).\n\n### O QUE aconteceu em 20/08/2025: FATO RELEVANTE\n\n**Resumo:** A administradora do fundo aprovou a realização da segunda emissão de cotas da subclasse B da classe I, com o objetivo de aumentar o capital social.\n\n**Trecho-chave:**\n> 1) Número da Emissão: a Emissão representa a 2ª (segunda) emissão da Subclasse B da Classe I do Fundo;\n>\n> 5) Montante Total da Oferta: o valor total da emissão será de até R$ 150.000.623,28 (cento e cinquenta milhões, seiscentos e vinte e três reais e vinte e oito centavos).\n\n### O QUE aconteceu em 20/03/2026: FATO RELEVANTE\n\n**Resumo:** A administradora do fundo aprovou a realização da terceira emissão de cotas da subclasse B da classe I, com o objetivo de aumentar o capital social.\n\n**Trecho-chave:**\n> 1) Número da Emissão: a Emissão representa a 3ª (terceira) emissão da Subclasse B da Classe I do Fundo;\n>\n> 5) Montante Total da Oferta: o valor total da emissão será de até R$ 45.000.235,80 (quarenta e cinco milhões, duzentos e trinta e cinco reais e oitenta centavos)."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1150851,
+    "data_entrega": "31/03/2026 18:13",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Lago da Pedra - Fundo de Investimento Imobiliário Responsabilidade Limitadaem 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas n"
+  }
+}

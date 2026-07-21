@@ -408,3 +408,36 @@
 2026-07-20 22:25:16	ATRN11	sem-relatorio-fatos-lidos	49s
 2026-07-20 22:27:38	BTYU11	lido	142s
 2026-07-20 22:28:12	NMKS11	sem-relatorio-fatos-lidos	34s
+2026-07-20 22:30:54	VPPR11	lido	162s
+2026-07-20 22:32:52	VGRI11	lido	118s
+2026-07-20 22:35:03	INOI11	lido	131s
+2026-07-20 22:37:02	WHGR11	lido	118s
+2026-07-20 22:37:39	NELO11	sem-relatorio-fatos-lidos	37s
+2026-07-20 22:40:24	SAPI11	lido	165s
+2026-07-20 22:40:24	BBFO11	erro	The read operation timed out
+2026-07-20 22:42:38	XPHB11	lido	134s
+2026-07-20 22:43:15	RBCA11	sem-relatorio-fatos-lidos	37s
+2026-07-20 22:44:57	BETW11	lido	102s
+2026-07-20 22:45:38	VPSI11	sem-relatorio-fatos-lidos	41s
+2026-07-20 22:46:57	FPAB11	lido	79s
+2026-07-20 22:48:31	CIXM11	sem-relatorio-fatos-lidos	94s
+2026-07-20 22:49:30	PCAS11	sem-relatorio-fatos-lidos	59s
+2026-07-20 22:51:24	GAME11	lido	114s
+2026-07-20 22:53:13	RDCI11	lido	110s
+2026-07-20 22:53:13	LGVT11	erro	The read operation timed out
+2026-07-20 22:55:38	FVPQ11	lido	144s
+2026-07-20 22:57:02	DAMT11	lido	85s
+2026-07-20 22:59:05	HGBL11	lido	123s
+2026-07-20 22:59:37	CDUP11	sem-relatorio-fatos-lidos	32s
+2026-07-20 23:00:07	PCIV11	sem-relatorio-fatos-lidos	30s
+2026-07-20 23:00:07	CARE11	erro	The read operation timed out
+2026-07-20 23:01:03	JCDB11	sem-relatorio-fatos-lidos	57s
+2026-07-20 23:03:21	VSHO11	lido	137s
+2026-07-20 23:04:08	STRX11	sem-relatorio-fatos-lidos	47s
+2026-07-20 23:05:36	LPLP11	sem-relatorio-fatos-lidos	88s
+2026-07-20 23:07:22	KRES11	lido	106s
+2026-07-20 23:08:08	QNTS11	sem-relatorio-fatos-lidos	47s
+2026-07-20 23:10:03	GRUL11	lido	114s
+2026-07-20 23:12:08	HBRH11	lido	125s
+2026-07-20 23:14:48	RBFM11	lido	161s
+2026-07-20 23:14:48	XPGC11	erro	The read operation timed out

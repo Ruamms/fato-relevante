@@ -1,0 +1,45 @@
+{
+  "ticker": "WHGR11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T22:37:01",
+  "relatorio": {
+    "id": 1225001,
+    "data_entrega": "19/06/2026 18:57",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Alocação da Carteira**: O fundo encerrou o mês de maio com 100,9% do seu patrimônio líquido alocado em ativos-alvo, sendo 74,4% em CRIs, 17,5% em FIIs e ações listadas, 7,3% em imóveis e permutas e 2,1% em instrumentos de caixa. (p. 3)\n\n2. **Distribuição de Rendimentos**: O fundo distribuiu aos cotistas R$ 0,10 por cota no mês de maio, representando uma rentabilidade de 1,06% ao mês. Nos últimos 12 meses, a distribuição total foi de R$ 1,235 por cota, equivalente a 13,14% ao ano sobre a cota de fechamento. (p. 3)\n\n3. **Movimentação no Portfólio**: No mês de maio, o fundo realizou giro de R$ 1,3 milhão em FIIs e ações, com R$ 479 mil em compras e R$ 856 mil em vendas. A decisão foi motivada pela maior volatilidade do mercado, mas após a correção observada até o início de junho, preços mais atrativos foram identificados, especialmente em FIIs de tijolo. (p. 3)\n\n4. **Aquisições de CRIs**: Foram realizadas duas aquisições de CRIs indexados ao IPCA+. O CRI Genesis Iguatemi foi adquirido à taxa de IPCA+8,83% a.a., representando uma nova posição na carteira com alocação de R$ 4,9 milhões. (p. 3)\n\n5. **Revisão de Assembleia**: A assembleia dos CRIs AIZ 301ª e 302ª séries aprovou a prorrogação da data limite para venda do galpão até 28 de agosto de 2026, mantendo as novas condições de pagamento. (p. 4)\n\n6. **Composição do Resultado Operacional**: As receitas do mês de maio incluíram R$ 3.846.580 em receitas totais, com destaque para R$ 3.233.125 em receitas de CRIs e R$ 1.751.402 em juros remuneratórios. (p. 5)\n\n7. **Alocação por Segmento**: A carteira do fundo está distribuída majoritariamente em CRIs, com exposição significativa a shopping centers (38,1%), hedge funds (29,6%) e residencial (13,5%). (p. 9)\n\n8. **Descrição de Ativos**: Menciona diversos ativos como loteamentos, varejo, escritórios, residenciais e logísticos, com detalhes sobre garantias e prazos de aquisição. Por exemplo, o CRI Alínea Urbanismo possui avaliação dos sócios e afiança das SPEs. (p. 10-13)\n\n### O que observar em seguida:\n1. **Acompanhar as movimentações no portfólio**: Verificar se haverá novas aquisições ou vendas significativas.\n2. **Monitorar as condições de pagamento dos CRIs AIZ**: Observar se há mudanças nas condições que possam afetar o fluxo de caixa do fundo."
+  },
+  "comunicados": {
+    "ids": [
+      955607,
+      1030405,
+      1030396
+    ],
+    "datas": [
+      "29/07/2025",
+      "07/11/2025",
+      "07/11/2025"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 29/07/2025\n\n**O QUE aconteceu:** A XP Corretora de Câmbio, Títulos e Valores Mobiliários S.A., administradora do WHG Real Estate Fundo de Investimento Imobiliário - FII, informou a adaptação do regulamento do fundo à Resolução da CVM nº 175.\n\n**Resumo:** A administração realizou ajustes no regulamento do fundo para se alinhar com as novas regras estabelecidas pela Comissão de Valores Mobiliários (CVM).\n\n**Trecho-chave:**\n\"O Fundo não sofreu qualquer alteração que dependa de deliberação dos cotistas, sendo certo que as alterações promovidas refletem apenas a adequação à Resolução CVM 175.\"\n\n---\n\n### ASSEMBLEIA GERAL ORDINÁRIA DE COTISTAS entregue em 07/11/2025\n\n**O QUE aconteceu:** A assembleia geral ordinária de cotistas do WHG Real Estate Fundo de Investimento Imobiliário - FII aprovou as demonstrações financeiras, notas explicativas e parecer dos auditores independentes referentes ao exercício social findo em 30.06.2025.\n\n**Resumo:** A assembleia foi realizada de forma não presencial e aprovou os documentos contábeis do fundo para o período mencionado, sem restrições ou ressalvas.\n\n**Trecho-chave:**\n\"Os cotistas aprovaram, sem quaisquer restrições ou ressalvas: (i) As Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 30.06.2025.\"\n\n---\n\n**Conexão com o contexto:** A aprovação das demonstrações financeiras na assembleia geral ordinária é um passo importante para a transparência do fundo, refletindo no histórico contábil e nas informações disponibilizadas aos cotistas."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 9.08
+  },
+  "parecer": {
+    "id": 1001776,
+    "data_entrega": "29/09/2025 23:58",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do WHG Real Estate Fundo de Investimento Imobiliário – FII Responsabilidade Limitada em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotad"
+  }
+}

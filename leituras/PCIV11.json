@@ -1,0 +1,30 @@
+{
+  "ticker": "PCIV11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T23:00:05",
+  "comunicados": {
+    "ids": [
+      1187231,
+      1074620
+    ],
+    "datas": [
+      "12/05/2026",
+      "02/01/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGE",
+      "Assembleia AGO"
+    ],
+    "texto": "### Assembleia Geral Extraordinária de Cotistas realizada em 12/05/2026\n\n**O que aconteceu:** Aprovou a 7ª emissão de cotas do Fundo, restrita aos atuais cotistas.\n\n**Resumo:** A assembleia aprovou a emissão de novas cotas para os atuais cotistas do fundo sem necessidade de regulamentação adicional. As condições da emissão foram estabelecidas e detalhadas na ata.\n\n**Trecho-chave:**\n\"Os Cotistas do Fundo aprovaram, por unanimidade, sem qualquer ressalva ou restrição os seguintes itens:\nI- Aprovação da 7ª emissão de cotas do Fundo, que será restrita aos atuais cotistas do \nFundo, não estando sujeita a regulamentação, nos termos do artigo 8º, II da Resolução CVM nº \n160, de 13 de julho de 2022, passando a viger o suplemento nos seguintes termos abaixo:\"\n\n---\n\n### Assembleia Geral Ordinária de Cotistas realizada em 02/01/2026\n\n**O que aconteceu:** Aprovou as Demonstrações Financeiras do Fundo referentes ao exercício social findo em 31 de dezembro de 2023.\n\n**Resumo:** Durante a assembleia, os cotistas aprovaram as demonstrações financeiras do fundo para o ano de 2023.\n\n**Trecho-chave:**\n\"Os Cotistas do Fundo aprova m, por unanimidade, sem qualquer ressalva ou restrição os seguintes itens:\nI- Deliberar sobre a aprovação das Demonstrações Financeiras do Fundo, referentes ao exercício \nsocial findo em 31 de dezembro de 2023;\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1067495,
+    "data_entrega": "22/12/2025 12:45",
+    "tipo": "ressalva",
+    "rotulo": "opinião com ressalva",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Pescara Fundo de Investimento Imobiliário - FII em 31 de dezembro de 2023, o desempenho das suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos f"
+  }
+}

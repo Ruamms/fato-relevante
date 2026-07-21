@@ -1,0 +1,33 @@
+{
+  "ticker": "QNTS11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T23:08:07",
+  "comunicados": {
+    "ids": [
+      1026982,
+      1210756,
+      1210754
+    ],
+    "datas": [
+      "03/11/2025",
+      "02/06/2026",
+      "02/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 03/11/2025\n\n**O QUE aconteceu:** A destituição da atual Gestora do Fundo, REAG HIERON INVESTIMENTOS LTDA., e a substituição pela ELEMENTUM ASSET MANAGEMENT LTDA.\n\n**Resumo:** A Vórtx Distribuidora de Títulos e Valores Mobiliários anunciou a mudança na gestão do Fundo Quintas, passando da atual Gestora para uma nova.\n\n**Trecho-chave:**\n\"b) a destituição da atual Gestora do Fundo, REAG HIERON INVESTIMENTOS LTDA., sociedade limitada autorizada pela CVM para o exercício profissional de administração de carteiras de valores mobiliários, por meio do Ato Declaratório nº 16.172, de 23 de março de 2018, e substituição pela ELEMENTUM ASSET MANAGEMENT LTDA., sociedade limitada autorizada pela CVM para o exercício profissional de administração de carteiras de valores mobiliários, por meio do Ato Declaratório nº 17.445, de 14 de outubro de 2019.\"\n\n### ASSEMBLEIA AGO entregue em 02/06/2026\n\n**O QUE aconteceu:** Proposta para a Assembleia Geral Extraordinária do Fundo.\n\n**Resumo:** A Vórtx Distribuidora de Títulos e Valores Mobiliários propôs a aprovação das contas e demonstrações contábeis do Fundo Quintas, relativas ao exercício social findo em 31/12/2025.\n\n**Trecho-chave:**\n\"i. Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31/12/2025, devidamente auditadas, conforme disponíveis para consulta nos sites da Administradora e nos demais canais exigidos pela regulamentação em vigor.\"\n\n### ASSEMBLEIA AGO entregue em 02/06/2026\n\n**O QUE aconteceu:** Consulta Formal para a Assembleia Geral Extraordinária do Fundo.\n\n**Resumo:** A Vórtx Distribuidora de Títulos e Valores Mobiliários consultou os cotistas sobre a aprovação das contas e demonstrações contábeis do Fundo Quintas, relativas ao exercício social findo em 31/12/2025.\n\n**Trecho-chave:**\n\"i. Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31/12/2025, devidamente auditadas, conforme disponíveis para consulta nos sites da Administradora e nos demais canais exigidos pela regulamentação em vigor.\"\n\n**Conexão com o contexto:** A aprovação das contas e demonstrações contábeis do Fundo é um indicador relevante para a saúde financeira do fundo."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1152256,
+    "data_entrega": "01/04/2026 00:34",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário Quintas Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil,"
+  }
+}

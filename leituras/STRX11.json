@@ -1,0 +1,33 @@
+{
+  "ticker": "STRX11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T23:04:07",
+  "comunicados": {
+    "ids": [
+      1073781,
+      1211295,
+      1211291
+    ],
+    "datas": [
+      "30/12/2025",
+      "02/06/2026",
+      "02/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 30/12/2025\n\n**O que aconteceu:** O patrimônio líquido do fundo foi reavaliado, resultando em um impacto positivo de 7,79%.\n\n**Resumo:** A reavaliação dos ativos imobiliários do fundo levou a uma valorização no patrimônio líquido.\n\n**Trecho-chave:**\n\"Os ativos imobiliários do FUNDO foram reavaliados, sendo veriﬁcado um impacto positivo de 7,79% (sete inteiros e setenta e nove centésimos por cento) no patrimônio líquido do FUNDO, com aumento de R$ 17.837.600,00 (dezessete milhões, oitocentos e trinta e sete mil e seiscentos reais) no valor justo dos ativos.\"\n\n### ASSEMBLEIA GERAL EXTRAORDINÁRIA DE COTISTAS entregue em 02/06/2026\n\n**O que aconteceu:** A assembleia aprovou a orientação de voto para aprovar o relatório de auditoria externa do Ativo do Fundo referente ao exercício de 2025.\n\n**Resumo:** Durante a assembleia, os cotistas votaram favoravelmente sobre a aprovação do relatório de auditoria do ativo do fundo.\n\n**Trecho-chave:**\n\"1. Considerando a realização da Assembleia Geral Ordinária e Extraordinária (AGOE) de Condôminos do Condomínio Empreendimento Comercial Center Minas – Bloco 1 Power (“Ativo do Fundo”), a ser realizada em 02 de junho de 2026 às 14:00 (“AGOE Centerminas”), deliberar sobre a orientação de voto para (Aprovar/Reprovar) o relatório de auditoria externa do Ativo do Fundo referente ao exercício de 2025, conforme material de apoio que será endereçado diretamente aos Cotistas por meio de plataforma específica.\"\n\n### ASSEMBLEIA GERAL EXTRAORDINÁRIA DE COTISTAS entregue em 02/06/2026\n\n**O que aconteceu:** A assembleia não aprovou a alteração do \"Quadro 11 – Política de Investimento\" para incluir a vedação à aplicação de percentual superior a 5% (cinco por cento) do patrimônio líquido da Classe em valores mobiliários.\n\n**Resumo:** A proposta de alterar o quadro de política de investimento não obteve o quórum necessário para aprovação.\n\n**Trecho-chave:**\n\"2. Alterar o “Quadro 11 – Política de Investimento” do Anexo da CLASSE ÚNICA DO STARX FUNDO DE INVESTIMENTO IMOBILIÁRIO FII RESPONSABILIDADE LIMITADA para inclusão da vedação à aplicação de percentual superior a 5% (cinco por cento) do patrimônio líquido da Classe em valores mobiliários, nos termos do artigo 5º do Anexo Normativo III à RCVM 175. Caso aprovado o item acima, alterar o Regulamento e o seu respectivo Anexo, de forma que passará a vigorar conforme redação constante no material de apoio o qual será disponibilizado junto com esta convocação.\"\n\n**Conexão com contexto:** A reavaliação dos ativos imobiliários resultou em um aumento significativo no patrimônio líquido do fundo, refletindo positivamente nos indicadores financeiros."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1149249,
+    "data_entrega": "30/03/2026 23:22",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Starx Fundo de Investimento Imobiliário FII Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Bra"
+  }
+}

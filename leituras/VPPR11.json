@@ -1,0 +1,55 @@
+{
+  "ticker": "VPPR11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T22:30:52",
+  "relatorio": {
+    "id": 1246001,
+    "data_entrega": "13/07/2026 18:06",
+    "texto": "### Fatos Extraídos:\n\n1. **Vacância Física Alta**: A vacância física do portfólio do VPPR11 foi de 11,25% no mês de maio, com o iTower Alphaville em 96,08% e Corporate Evolution em 84,5%. (p. 3)\n   \n2. **Contratos em Vigor**: Três contratos firmados em abril estão em vigor e encontram-se em período de carência, prevendo início dos pagamentos entre outubro e novembro de 2026. (p. 3)\n\n3. **Receita de Locação**: A receita de locação do portfólio evoluiu para R$ 2,36 milhões em maio, ante R$ 2,10 milhões em abril, refletindo ajustes contratuais e a progressiva incorporação dos contratos em vigor. (p. 3)\n\n4. **Dívida Líquida**: A dívida líquida do CRI Evolution encerrou o mês com saldo devedor de R$ 186,28 milhões, refletindo atualização monetária pelo IPCA de 0,58% no mês. (p. 3)\n\n5. **Patrimônio Líquido**: O patrimônio líquido do VPPR11 atingiu R$ 303,21 milhões em maio, correspondendo a um valor patrimonial por cota de R$ 41,44. (p. 3)\n\n6. **Caixa Disponível**: O caixa disponível totalizou R$ 4,08 milhões no mês de maio. (p. 3)\n\n7. **Vacância Total do Portfólio**: A vacância física total do portfólio foi de 11,25%, com 5.962,96 m² vagos. (p. 7)\n\n8. **Cotas e Cotistas**: O número de cotistas do VPPR11 foi de 30.154 no mês de maio, um decréscimo de 21,66% em relação ao ano anterior. (p. 2)\n\n### O que observar em seguida:\n- Monitorar a ocupação dos imóveis, especialmente o Corporate Evolution e o iTower Alphaville.\n- Observar os pagamentos previstos para outubro e novembro de 2026 dos contratos firmados em abril."
+  },
+  "comunicados": {
+    "ids": [
+      1139676,
+      1121693,
+      1121690,
+      1015996,
+      1214591,
+      1193198
+    ],
+    "datas": [
+      "17/03/2026",
+      "25/02/2026",
+      "25/02/2026",
+      "16/10/2025",
+      "09/06/2026",
+      "15/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Ocorrências Relacionadas ao V2 PRIME PROPERTIES\n\n**17/03/2026**\n- **Título:** Contrato de locação com empresa do setor de serviços financeiros\n- **Resumo:** A ocupação física do Edifício Evolution aumentou para 78,0% e a ocupação total do Fundo para 84,60%.\n- **Trecho-chave:**\n    > Em 16/03/2026 foi celebrado o contrato de locação (“Contrato 1”) com uma empresa do setor de serviços financeiros para as salas 3001 e 3002 do 30º (trigésimo) andar, 1.145,14 m², do condomínio Evolution.\n    > O Contrato 1 tem duração de 36 meses, e após o período de carência e desconto, terá o valor mensal de R$ 59.215,19 (cinquenta e nove mil, duzentos e quinze reais e dezenove centavos), aproximadamente R$ 52,00/m².\n\n**25/02/2026**\n- **Título:** Contratos de locação com empresas do setor de pesquisa de mercado e cursos/treinamentos\n- **Resumo:** A ocupação física do Edifício Evolution aumentou para 74,6% e a vacância total do Fundo reduziu para 17,56%.\n- **Trecho-chave:**\n    > Em 12/02/2026 foi celebrado o contrato de locação (“Contrato 1”) com uma empresa multinacional do setor de pesquisa de mercado para as salas 2801, 2802 e 2803 do 28º (vigésimo oitavo) andar, 1.763,97 m².\n    > O Contrato 1 tem duração de 36 meses, e após o período de carência, terá o valor mensal de R$ 70.558,80 (setenta mil, quinhentos e cinquenta e oito reais e oitenta centavos), aproximadamente R$ 40,00/m².\n    > Em 02/01/2026 foi celebrado o contrato de locação (“Contrato 1”) com uma empresa do setor de cursos e treinamentos para as salas 2701, 2702 do 27º (vigésimo sétimo) andar, 1.121,50 m².\n    > O Contrato 2 tem duração de 60 meses, e após o período de carência, terá o valor mensal de R$ 56.075,00 (cinquenta e seis mil, setenta e cinco reais), aproximadamente R$ 50,00/m².\n\n**25/02/2025**\n- **Título:** Contratos de locação com empresas do setor de pesquisa de mercado e cursos/treinamentos\n- **Resumo:** A ocupação física do Edifício Evolution aumentou para 74,6% e a vacância total do Fundo reduziu para 17,56%.\n- **Trecho-chave:**\n    > Em 12/02/2026 foi celebrado o contrato de locação (“Contrato 1”) com uma empresa multinacional do setor de pesquisa de mercado para as salas 2801, 2802 e 2803 do 28º (vigésimo oitavo) andar, 1.763,97 m².\n    > O Contrato 1 tem duração de 36 meses, e após o período de carência, terá o valor mensal de R$ 70.558,80 (setenta mil, quinhentos e cinquenta e oito reais e oitenta centavos), aproximadamente R$ 40,00/m².\n    > Em 02/01/2026 foi celebrado o contrato de locação (“Contrato 1”) com uma empresa do setor de cursos e treinamentos para as salas 2701, 2702 do 27º (vigésimo sétimo) andar, 1.121,50 m².\n    > O Contrato 2 tem duração de 60 meses, e após o período de carência, terá o valor mensal de R$ 56.075,00 (cinquenta e seis mil, setenta e cinco reais), aproximadamente R$ 50,00/m².\n\n**16/10/2025**\n- **Título:** Resposta ao Ofício da B3 S.A.\n- **Resumo:** A administradora informou que não tem conhecimento de nenhum fato relevante específico que possa justificar as oscilações das cotas do fundo no mercado secundário.\n- **Trecho-chave:**\n    > A Administradora esclarece que não tem conhecimento de nenhum ato ou fato relevante específico que possa justificar e/ou motivar a variação do valor da cota do Fundo no mercado secundário de Bolsa da B3 S.A. – Brasil, Bolsa e Balcão.\n\n**09/06/2026**\n- **Título:** Deliberação sobre aprovação das contas e demonstrações contábeis\n- **Resumo:** A assembleia geral deliberou pela aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31/12/2025.\n- **Trecho-chave:**\n    > A Consulta Formal convocou os Cotistas a manifestarem-se a respeito da seguinte matéria:\n        - Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31/12/2025, devidamente auditadas.\n\n**15/05/2026**\n- **Título:** Deliberação sobre aprovação das contas e demonstrações contábeis\n- **Resumo:** A assembleia geral deliberou pela aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31/12/2025.\n- **Trecho-chave:**\n    > Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31/12/2025, devidamente auditadas."
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Vacância física alta",
+      "Rendimentos irregulares"
+    ],
+    "cota": 20.39
+  },
+  "parecer": {
+    "id": 1152289,
+    "data_entrega": "01/04/2026 02:03",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe em 31 de dezembro de 2025 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário ."
+  }
+}

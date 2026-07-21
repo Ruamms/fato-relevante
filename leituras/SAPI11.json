@@ -1,0 +1,55 @@
+{
+  "ticker": "SAPI11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T22:40:23",
+  "relatorio": {
+    "id": 1247719,
+    "data_entrega": "14/07/2026 18:16",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Alocação dos Ativos:**\n   - Em junho de 2026, o fundo SAPI11 possuía exposição a 24 CRIs (Certificados de Recebíveis Imobiliários).\n   - A alocação por segmento foi majoritariamente em logístico (85%), seguido por residencial (7%) e shopping (6%).\n   - A alocação por indexador mostrou que 59% estavam indexados ao IPCA, com taxa média de aquisição de IPCA + 9,9%, e 40% ao CDI, com taxa média de CDI + 2,8%.\n\n2. **Distribuição de Rendimentos:**\n   - O SAPI11 distribuiu R$ 0,1185 por cota no mês de junho, o que representa um dividend yield anualizado de 16,7%.\n   - A distribuição mensal superou a guidance originalmente divulgada em 2026.\n\n3. **Carteira e Operações:**\n   - O fundo possui exposição majoritária (87%) a ativos imobiliários.\n   - As principais operações incluem CRIs lastreados em galpões logísticos, shoppings, residenciais, usinas solares, entre outros.\n\n4. **Adimplência:**\n   - Todos os créditos da carteira estão 100% adimplentes.\n   - Detalhes específicos de algumas operações foram mencionados, como garantias e vencimentos.\n\n5. **Rendimentos e Valor Patrimonial:**\n   - O SAPI11 acumulou retorno total de 8,2% em 2026 e de 24,5% nos últimos 12 meses.\n   - A distribuição mensal supera o IFIX (Índice de Fundos Imobiliários) em ambos os períodos analisados.\n\n### O que observar em seguida:\n- **Amortizações Antecipadas e Vendas:** Eventos subsequentes mencionados incluem a liquidação primária de uma operação estruturada, venda total do CRI SuperFrio e liquidação financeira integral da posição no CRI Casa Uvva.\n- **Monitoramento de Novas Oportunidades:** A equipe de gestão continua monitorando novas oportunidades para realocar recursos ao longo do segundo semestre de 2026."
+  },
+  "comunicados": {
+    "ids": [
+      1101943,
+      1062982,
+      1026111,
+      1133463,
+      1045650,
+      1199515,
+      1164497
+    ],
+    "datas": [
+      "04/02/2026",
+      "15/12/2025",
+      "31/10/2025",
+      "11/03/2026",
+      "24/11/2025",
+      "19/05/2026",
+      "15/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 04/02/2026\n\n**O QUE aconteceu:** Encerramento do Leilão das Frações de Cotas Liquidadas do SADI11.\n**Resumo:** A Administradora informou que o leilão para a liquidação do Santander Papéis Imobiliários CDI Fundo encerrou com um valor aproximado de R$ 9,363966 por cota. O reembolso será pago aos cotistas em 2 dias úteis.\n**Trecho-chave:** \"O Leilão apurou o valor aproximado de R$ 9,363966 por cota, totalizando o montante financeiro de R$ 49.730,02 (quarenta e nove mil e setecentos e trinta reais e dois centavos).\"\n\n### FATO RELEVANTE entregue em 15/12/2025\n\n**O QUE aconteceu:** Início dos Procedimentos de Liquidação do SADI11.\n**Resumo:** A Administradora iniciou os procedimentos para a liquidação do Santander Papéis Imobiliários CDI Fundo, resultando em frações de cotas que serão oferecidas por meio de leilão na B3.\n**Trecho-chave:** \"A Administradora iniciou os procedimentos de liquidação do SADI11, pelo qual os cotistas do SADI11 receberam, em 08 de dezembro de 2025, recibos de cotas do Fundo.\"\n\n### FATO RELEVANTE entregue em 31/10/2025\n\n**O QUE aconteceu:** Distribuição Pública Primária de Cotas da SAPI11.\n**Resumo:** A Administradora aprovou a distribuição pública primária de cotas da segunda emissão do Santander Papéis Imobiliários Fundo, com o preço de R$ 9,93 por cota.\n**Trecho-chave:** \"A oferta terá as seguintes características: Regime de Distribuição das Novas Cotas será realizada no Brasil, em regime de melhores esforços de colocação.\"\n\n### COMUNICADO AO MERCADO entregue em 11/03/2026\n\n**O QUE aconteceu:** Disponibilização dos Informes de Rendimentos para o Ano de 2025.\n**Resumo:** A Administradora informou que os Informes de Rendimentos do ano de 2025 estão disponíveis exclusivamente por meio digital através do portal eletrônico do investidor.\n**Trecho-chave:** \"Os cotistas do Fundo que fizeram jus aos pagamentos de proventos durante o ano de 2025 e que ainda não possuem acesso ao Portal do Investidor devem realizar o seu cadastro.\"\n\n### COMUNICADO AO MERCADO entregue em 24/11/2025\n\n**O QUE aconteceu:** Encerramento do Período para Exercer o Direito de Preferência.\n**Resumo:** O período para exercer o direito de preferência encerrou, com a colocação de 1.191 Novas Cotas no valor de R$ 9,93 por cota.\n**Trecho-chave:** \"No Período do Direito de Preferência, houve a colocação de 1.191 (mil, cento e noventa e uma) Novas Cotas.\"\n\n### ASSEMBLEIA AGO entregue em 15/04/2026\n\n**O QUE aconteceu:** Convocação da Assembleia Geral Ordinária.\n**Resumo:** A assembleia geral ordinária do Santander Papéis Imobiliários Fundo será realizada por meio de consulta formal dos cotistas, com a ordem do dia para aprovar as contas e demonstrações contábeis referentes ao exercício social findo em 31 de dezembro de 2025.\n**Trecho-chave:** \"A Assembleia Geral Ordinária do Fundo será realizada de forma não presencial, por meio de Consulta Formal.\"\n\n### ASSEMBLEIA AGO entregue em 19/05/2026\n\n**O QUE aconteceu:** Não Instalação da Assembleia Geral.\n**Resumo:** A assembleia geral ordinária do Santander Papéis Imobiliários Fundo não foi instalada devido ao não comparecimento de cotistas, mas as demonstrações financeiras foram consideradas automaticamente aprovadas.\n**Trecho-chave:** \"A assembleia geral ordinária de cotistas, convocada para 18 de maio de 2026, não foi instalada em razão do não comparecimento de qualquer cotista.\""
+  },
+  "retrato": {
+    "selo": "Sem alertas",
+    "nivel": "sem_alertas",
+    "alertas": [],
+    "cota": 9.07
+  },
+  "parecer": {
+    "id": 1152067,
+    "data_entrega": "31/03/2026 23:32",
+    "tipo": "ressalva",
+    "rotulo": "opinião com ressalva",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Santander Papéis Imobiliários Fundo de Investimento Imobiliário em 31 de dezembro de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, "
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "ticker": "RDCI11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T22:53:11",
+  "relatorio": {
+    "id": 1239615,
+    "data_entrega": "03/07/2026 18:55",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Taxa de Gestão e Administração:**\n   \"Taxa de Gestão 1,5% a.a. sobre Patrimônio Líquido / Taxa de Administração 0,2% a.a. sobre Patrimônio Líquido\" (p. 1)\n\n2. **Projeção de Investimento:**\n   \"Fluxo de Investimento Projetado R$ 338 mi / Capital Comprometido 90,47%\" (p. 1)\n\n3. **Patrimônio Líquido e Valor do Ativo:**\n   \"Patrimônio Líquido (junho/2026) R$ 267.061.887,27 / Valor do ativo R$ 284,0M\" (p. 1)\n\n4. **Projeção de Lucro:**\n   \"Lucro Líquido Esperado R$ 210 MM\" (p. 1)\n\n5. **Segmentação do Portfólio por Região e Segmento:**\n   \"Brigadeiro 11,6% / Joaquim Floriano 9,9% / Rebouças Teçaindá 27,8%\" (p. 2)\n\n6. **Status dos Ativos em Obra:**\n   \"Em Obra 14,2% / Em Finalização 25,1% / Vendido 36,6%\" (p. 2)\n\n7. **Expectativa de VGV Total e Yield On Cost:**\n   \"Expectativa de VGV Total R$ 1.589 MM / Projeto Yield On Cost 1.130,0\" (p. 2)\n\n### O que observar em seguida:\n- Monitorar a evolução do número de cotistas e se há mudanças significativas.\n- Observar o progresso das obras e vendas dos ativos em obra."
+  },
+  "comunicados": {
+    "ids": [
+      1170791,
+      761448,
+      1216567,
+      1160341,
+      1048851,
+      1021586
+    ],
+    "datas": [
+      "27/04/2026",
+      "18/10/2024",
+      "10/06/2026",
+      "13/04/2026",
+      "27/11/2025",
+      "27/10/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO/E"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 27/04/2026\n\n**O QUE aconteceu:** Desinvestimento do imóvel LAC Corporate Boutique.\n\n**Resumo:** O Fundo RBR DESENVOLVIMENTO COMERCIAL I vendeu o imóvel LAC Corporate Boutique por R$ 82.235.671,34, obtendo uma Taxa Interna de Retorno de 14,13% ao ano e uma margem de lucro de 22,96%.\n\n**Trecho-chave:**\n\"De acordo com a escritura pública de compra e venda lavrada em 24 de abril de 2026 (“Escritura”), o Fundo e os coproprietários do Imóvel (conforme definido a seguir) (“Vendedores”), realizaram a venda do Edifício denominado LAC Corporate Boutique (“Imóvel” e “Transação”, respectivamente) pelo preço, devidamente atualizado nos termos da Escritura de R$ 82.235.671,34 (oitenta e dois milhões, duzentos e trinta e cinco mil, seiscentos e setenta e um reais e trinta e quatro centavos) (\"Preço\"), pago da seguinte forma:\"\n\n---\n\n### FATO RELEVANTE entregue em 18/10/2024\n\n**O QUE aconteceu:** Venda total das cotas de Malta Participações Ltda.\n\n**Resumo:** O Fundo vendeu a totalidade das cotas de Malta Participações Ltda., que detinha 99,99% da participação societária da M.A.R. Fátima Desenvolvimento Imobiliário SPE Ltda., resultando em uma cota patrimonial aumentada e distribuição de rendimentos.\n\n**Trecho-chave:**\n\"Em setembro/2024, o Fundo conclui a venda da totalidade das cotas da Malta Participações Ltda., inscrita no CNPJ/MF sob o nº 50.249.871/0001-33 (“Malta”), que, por sua vez, detinha 99,99% (noventa e nove vírgula noventa e nove por cento) da participação societária da M.A.R. Fátima Desenvolvimento Imobiliário SPE Ltda., inscrita no CNPJ/MF sob o nº 33.981.901/0001 - 60 (“M.A.R. Fátima”), proprietária do ativo localizado na Rua Iaiá, 55, Itaim Bibi, na cidade de São Paulo, Estado de São Paulo (“Transação”).\n\n---\n\n### COMUNICADO AO MERCADO entregue em 10/06/2026\n\n**O QUE aconteceu:** Não haverá distribuição de resultados no mês de maio/2026.\n\n**Resumo:** O Fundo RBR DESENVOLVIMENTO COMERCIAL I não distribuirá resultados no mês de maio/2026, pois não houve lucro auferido.\n\n**Trecho-chave:**\n\"Em relação ao mês de MAIO/2026, não haverá distribuição de resultados em razão da ausência de lucro auferido.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 13/04/2026\n\n**O QUE aconteceu:** Não haverá distribuição de resultados no mês de março/2026.\n\n**Resumo:** O Fundo RBR DESENVOLVIMENTO COMERCIAL I não distribuirá resultados no mês de março/2026, pois não houve lucro auferido.\n\n**Trecho-chave:**\n\"Em relação ao mês de MARÇO/2026, não haverá distribuição de resultados em razão da ausência de lucro auferido.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 27/11/2025\n\n**O QUE aconteceu:** Aprovação das demonstrações contábeis do Fundo.\n\n**Resumo:** A assembleia geral ordinária aprovou as demonstrações contábeis do Fundo, acompanhadas do relatório do auditor independente, referentes aos exercícios sociais findos em 30 de junho de 2025 e 2024.\n\n**Trecho-chave:**\n\"Assim, pela obtenção de votos suficientes para aprovação da matéria acima, o Administrador informa aprovação das demonstrações contábeis do Fundo, acompanhada do relatório do auditor independente, referente ao exercício social findo em 30 de junho de 2025 e 2024.\"\n\n---\n\n### ASSEMBLEIA AGO/E entregue em 27/10/2025\n\n**O QUE aconteceu:** Convocação da assembleia geral ordinária para aprovação das demonstrações contábeis.\n\n**Resumo:** O Fundo RBR DESENVOLVIMENTO COMERCIAL I convocou a assembleia geral ordinária de cotistas para aprovar as demonstrações contábeis do exercício social findo em 30 de junho de 2025 e 2024.\n\n**Trecho-chave:**\n\"1. Aprovação das demonstrações contábeis do Fundo, acompanhada do relatório do auditor independente, referente ao exercício social findo em 30 de junho de 2025 e 2024.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos irregulares",
+      "Base de cotistas muito pequena"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 1001341,
+    "data_entrega": "29/09/2025 18:51",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do RBR Desenvolvimento Comercial I - Fundo de Investimento Imobiliário Responsabilidade Limitada (anteriormente denominado RBR Desenvolvimento Comercial I – Fundo de Investimento Imobiliário) em 3 0 de junho de 202 5, o desempenho de suas oper"
+  }
+}

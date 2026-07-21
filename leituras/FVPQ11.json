@@ -1,0 +1,58 @@
+{
+  "ticker": "FVPQ11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T22:55:37",
+  "relatorio": {
+    "id": 1249950,
+    "data_entrega": "15/07/2026 18:47",
+    "texto": "### Fatos Extraídos do Relatório Gerencial\n\n1. **Vacância do Shopping:** A vacância do Via Parque Shopping caiu de 13,5% em abril para 13,3% em maio, após as entradas das lojas Calebito (116 m²), Casa do Celular (67 m²) e Bio Mundo (31 m²), saída da loja Físico e Forma (101 m²) e troca da Exposição Chaves pela Exposição Titanic. (p. 5)\n2. **Resultado Operacional:** O resultado operacional do shopping em maio de 2026 foi de R$ 1,1 milhão, uma retração de 20,5% em relação a maio de 2025. No acumulado de 2026, o resultado operacional apresenta retração de 18,2% em relação ao mesmo período do ano anterior. (p. 5)\n3. **Vacância do Setor:** A vacância médiana do setor de shoppings no Brasil foi de 4,7% em maio/2026, com variações regionais entre 3,8% e 6,1%. (p. 4)\n4. **Cota Patrimonial e Mercado:** A cota patrimonial do fundo é R$ 92,28, enquanto a cota de mercado é R$ 58,30, com um valor de mercado total de R$ 163 milhões. (p. 3)\n5. **Taxa de Administração:** A taxa de administração do fundo foi reduzida em agosto/2025: 50% a partir de 1º/8/2025 até 31/7/2026, 30% a partir de 1º/8/2026 até 31/7/2027 e 20% a partir de 1º/8/2027 até 31/7/2028. (p. 10)\n6. **Distribuição de Rendimentos:** O fundo distribuiu R$ 0,40 por cota em junho/2026, considerando as cotas no fechamento do mês e o pagamento previsto para 14 de julho/2026. (p. 5)\n7. **Indicadores Operacionais:** As vendas do shopping caíram 3,3% em 2026 vs. 2025, enquanto o fluxo de veículos aumentou 4,4%. A inadimplência líquida foi de -0,1% em maio/2026. (p. 9)\n8. **Desempenho do Fundo:** O valor de mercado da cota do fundo foi de R$ 58,30 no fechamento do mês, com uma rentabilidade global negativa nos últimos 12 meses. (p. 6)\n\n### O que observar em seguida:\n- Monitorar as vendas e vacância do shopping, pois esses indicadores são cruciais para o desempenho futuro.\n- Observar a evolução da inadimplência líquida, que permanece baixa mas negativa."
+  },
+  "comunicados": {
+    "ids": [
+      1067134,
+      1066278,
+      960494,
+      1081346,
+      950525,
+      1182211,
+      1182208
+    ],
+    "datas": [
+      "19/12/2025",
+      "18/12/2025",
+      "06/08/2025",
+      "13/01/2026",
+      "22/07/2025",
+      "07/05/2026",
+      "07/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 19/12/2025\n\n**O QUE aconteceu:** O imóvel do Fundo foi avaliado a mercado (valor justo) pela empresa CBRE, resultando em um valor 42,16% inferior ao valor contábil atual.\n\n**Resumo:** A avaliação realizada pelo CBRE indicou uma queda significativa no valor patrimonial da cota do Fundo.\n\n**Trecho-chave:**\n\"imóvel do Fundo foi avaliado a mercado (valor justo) pela empresa CBRE, resultando em valor 42,16% (quarenta e dois inteiros e dezesseis centésimos por cento ) inferior ao valor contábil atual de referido imóvel, o que representa uma variação negativa de 40,69% (quarenta inteiros e sessenta e nove centésimos por cento ) no valor patrimonial da cota do Fundo nesta data.\"\n\n### FATO RELEVANTE entregue em 18/12/2025\n\n**O QUE aconteceu:** O Fundo realizou o pagamento de R$ 4.830.242,37 (quatro milhões, oitocentos e trinta mil, duzentos e quarenta e dois reais e trinta e sete centavos) referente a uma decisão judicial, encerrando as obrigações pecuniárias decorrentes da referida decisão.\n\n**Resumo:** O pagamento consumiu os recursos retidos no caixa do shopping, resultando em um impacto negativo na distribuição de rendimento e no valor patrimonial das cotas.\n\n**Trecho-chave:**\n\"o Fundo realizou o pagamento dos valores devidos,  no montante de R$ 4.830.242,37 (quatro milhões, oitocentos e trinta mil, duzentos e quarenta e dois reais e trinta e sete centavos), o que representa R$ 1,42/cota (um real e quarenta e dois centavos) , encerrando as obrigações pecuniárias decorrentes da referida decisão judicial.\"\n\n### FATO RELEVANTE entregue em 06/08/2025\n\n**O QUE aconteceu:** A taxa de administração do Fundo foi reduzida a partir de agosto de 2025.\n\n**Resumo:** A taxa de administração será reduzida gradualmente ao longo dos próximos anos, com descontos variando entre 50% e 20%.\n\n**Trecho-chave:**\n\"de 1º de agosto de 2025 até 31 de julho de 2026, será concedido um desconto de 50% (cinquenta por cento) na Taxa Global da Classe Única, de modo que a Taxa Global corresponderá a 0,06% (seis centésimos por cento) ao ano incidente sobre o valor do patrimônio líquido da Classe Única;\"\n\n### COMUNICADO AO MERCADO entregue em 13/01/2026\n\n**O QUE aconteceu:** Foi disponibilizado um laudo de avaliação do ativo em que o Fundo detém participação direta.\n\n**Resumo:** O laudo visa proporcionar maior grau de informação aos investidores, reforçando o compromisso da Hedge com a transparência.\n\n**Trecho-chave:**\n\"foi disponibilizado nesta data o laudo de avaliação do ativo em que o Fundo detém participação direta na data base de novembro de 2025 , utilizado para a marcação a valor justo do patrimônio do Fundo.\"\n\n### COMUNICADO AO MERCADO entregue em 22/07/2025\n\n**O QUE aconteceu:** A HEDGE INVESTMENTS passou a ser a nova escrituradora do Fundo, substituindo a Rio Bravo.\n\n**Resumo:** A mudança na escrituração não interrompe a negociação das cotas e os cotistas devem se comunicar diretamente com a HEDGE para qualquer assunto relacionado aos serviços de escrituração.\n\n### ASSEMBLEIA AGO entregue em 07/05/2026\n\n**O QUE aconteceu:** A Assembleia Geral Ordinária dos Cotistas aprovou as contas e demonstrações financeiras do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A maioria dos cotistas deliberou pela aprovação das contas, com os votos favoráveis representando 1,092% da base votante.\n\n### ASSEMBLEIA AGO entregue em 07/05/2026\n\n**O QUE aconteceu:** Foi lavrada a ata da Assembleia Geral Ordinária dos Cotistas do Fundo, aprovando as contas e demonstrações financeiras referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A maioria dos cotistas deliberou pela aprovação das contas, com os votos favoráveis representando 1,092% da base votante."
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "VP/cota em queda relevante",
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 55.28
+  },
+  "parecer": {
+    "id": 1153100,
+    "data_entrega": "01/04/2026 22:53",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário Via Parque Shopping – Responsabilidade Limitada em 31 de dezembro de 20 25 e o desempenho de suas operações e os seus fluxos de caixa para o período de 1 de agosto a 31 de dezembro de 2025, de acordo com as"
+  }
+}

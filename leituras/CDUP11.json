@@ -1,0 +1,30 @@
+{
+  "ticker": "CDUP11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T22:59:36",
+  "comunicados": {
+    "ids": [
+      1223509,
+      1207918
+    ],
+    "datas": [
+      "17/06/2026",
+      "29/05/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGE",
+      "Assembleia AGO"
+    ],
+    "texto": "### Assembleia Geral Extraordinária entregue em 17/06/2026\n\n**O QUE aconteceu:** A Companhia Carioca de Parcerias e Investimentos (CCPAR) autorizou a Administradora do Fundo CCPAR a receber um terreno no Rio de Janeiro.\n\n**Resumo:** A CCPAR aprovou a integralização de 219.057 cotas para adquirir um terreno na Avenida Venezuela, no Rio de Janeiro, por R$ 345.999,68, sendo R$ 219.057 em cotas e o restante em caixa.\n\n**Trecho-chave:**\n\"O imóvel será recebido pelo valor de R$ 345.999,68 (trezentos e quarenta e cinco mil, novecentos e noventa e nove reais e sessenta e oito centavos), sendo R$ 219.057,00 (duzentos e dezenove mil e cinquenta e sete reais) em integralização de cotas emitidas pelo Fundo CCPAR integralizando assim 219.057 (duzentos e dezenove mil e cinquenta e sete) cotas, no valor de R$ 1,00 (um real) cada uma.\"\n\n### Assembleia Geral Ordinária entregue em 29/05/2026\n\n**O QUE aconteceu:** A Companhia Carioca de Parcerias e Investimentos (CCPAR) aprovou as Demonstrações Financeiras referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A CCPAR aprovou sem restrição as Demonstrações Financeiras do Fundo CCPAR para o ano de 2025, incluindo o relatório dos Auditores Independentes.\n\n**Trecho-chave:**\n\"Após a análise, a proposta foi aprovada sem nenhuma restrição, pelo único quotista do Fundo.\"\n\n---\n\nEstes documentos não apresentam conexão direta aos indicadores do contexto fornecido."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1144660,
+    "data_entrega": "26/03/2026 11:19",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em to- dos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário CCPAR – Responsabilidade Limitada em 31 de dezembro de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo ne sta data, de acordo com as práticas contábeis ado- tadas no"
+  }
+}
