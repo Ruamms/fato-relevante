@@ -290,6 +290,34 @@ def analytics_script(codigo: str | None) -> str:
     )
 
 
+def botao_reportar_html(url: str | None) -> str:
+    """Botão flutuante 'Reportar' para injetar antes de </body> em toda página.
+
+    `url` é o link do formulário hospedado (Google Forms/Tally etc.), com os
+    tokens {URL} e {TICKER} onde a página e o ticker devem ser pré-preenchidos —
+    substituídos no clique. Nada é carregado de terceiros até o usuário clicar
+    (abre em nova aba); vazio = sem botão (build local/testes ficam limpos)."""
+    url = (url or "").strip()
+    if not url:
+        return ""
+    return (
+        f'<button id="scout-reportar" data-url="{_e(url)}" type="button" '
+        'onclick="scoutReportar(this)" title="Reportar um problema nesta página">'
+        "🐞 Reportar</button>"
+        "<style>#scout-reportar{position:fixed;right:16px;bottom:16px;z-index:60;"
+        "background:#1B2225;color:#8FCB9B;border:1px solid #33434A;border-radius:99px;"
+        "padding:9px 15px;font:600 13px system-ui,sans-serif;cursor:pointer;"
+        "box-shadow:0 6px 20px rgba(0,0,0,.4)}"
+        "#scout-reportar:hover{border-color:#8FCB9B;background:#232D31}"
+        "@media print{#scout-reportar{display:none}}</style>"
+        "<script>function scoutReportar(b){"
+        "var tk=((document.querySelector('h1')||{}).textContent||'').trim().split(/\\s+/)[0];"
+        "var u=b.dataset.url.replace('{URL}',encodeURIComponent(location.href))"
+        ".replace('{TICKER}',encodeURIComponent(tk));"
+        "window.open(u,'_blank','noopener');}</script>"
+    )
+
+
 def marca_html(inicio_href: str | None = None, com_busca_ticker: bool = False) -> str:
     """Cabeçalho de marca (bússola + SCOUT + tagline), como manda a vitrine."""
     conteudo = (

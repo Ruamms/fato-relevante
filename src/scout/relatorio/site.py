@@ -34,6 +34,7 @@ def gerar(
     agora: datetime | None = None,
     leituras_dir: Path | None = None,
     analytics: str = "",
+    reportar: str = "",
 ) -> dict:
     """`ao_progredir(msg)` = log textual esporádico; `ao_item(fase, atual, total)`
     = callback por item, para barras de progresso. `analytics` = código
@@ -148,7 +149,27 @@ def gerar(
     total_analytics = _injetar_analytics(destino, analytics)
     if total_analytics:
         progresso(f"analytics sem cookie (GoatCounter) em {total_analytics} páginas")
+    total_reportar = _injetar_reportar(destino, reportar)
+    if total_reportar:
+        progresso(f"botão de reportar em {total_reportar} páginas")
     return {"paginas": len(publicados), "etfs": len(etfs_publicados), "destino": str(destino)}
+
+
+def _injetar_reportar(destino: Path, url: str) -> int:
+    """Injeta o botão flutuante de reportar antes de `</body>` em TODAS as
+    páginas — um ponto só cobre home, listagens e páginas de ativo. Vazio
+    quando não há URL do formulário (build local/testes ficam limpos)."""
+    snippet = relatorio_html.botao_reportar_html(url)
+    if not snippet:
+        return 0
+    total = 0
+    for caminho in destino.glob("*.html"):
+        conteudo = caminho.read_text(encoding="utf-8")
+        if 'id="scout-reportar"' in conteudo or "</body>" not in conteudo:
+            continue  # idempotente; página sem <body> (não deve acontecer) é pulada
+        caminho.write_text(conteudo.replace("</body>", snippet + "\n</body>", 1), encoding="utf-8")
+        total += 1
+    return total
 
 
 def _injetar_analytics(destino: Path, codigo: str) -> int:

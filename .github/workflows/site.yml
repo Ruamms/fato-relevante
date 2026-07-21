@@ -53,6 +53,10 @@ jobs:
       - name: Gerar site
         env:
           SCOUT_ANALYTICS: ${{ vars.SCOUT_ANALYTICS }}
+          # URL do formulário de reportar bug (com tokens {URL}/{TICKER}); defina
+          # em Settings → Secrets and variables → Actions → Variables.
+          # Vazia = nenhum botão (padrão).
+          SCOUT_REPORT_URL: ${{ vars.SCOUT_REPORT_URL }}
         run: uv run scout site --destino _site --leituras leituras
 
       - name: Publicar artefato do Pages

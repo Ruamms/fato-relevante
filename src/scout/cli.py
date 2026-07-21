@@ -358,6 +358,11 @@ def site(
         "--analytics",
         help="Código GoatCounter (analytics sem cookie). Padrão: variável SCOUT_ANALYTICS.",
     ),
+    reportar: str = typer.Option(
+        None,
+        "--reportar",
+        help="URL do formulário de reportar bug (tokens {URL}/{TICKER}). Padrão: variável SCOUT_REPORT_URL.",
+    ),
 ) -> None:
     """Gera o site estático completo: índice buscável + página de cada FII."""
     import os
@@ -367,6 +372,7 @@ def site(
     from .relatorio import site as modulo_site
 
     codigo_analytics = analytics if analytics is not None else os.environ.get("SCOUT_ANALYTICS", "")
+    url_reportar = reportar if reportar is not None else os.environ.get("SCOUT_REPORT_URL", "")
 
     con = armazenamento.conectar()
     try:
@@ -385,6 +391,7 @@ def site(
                 ao_progredir=lambda msg: console.print(f"  [dim]{msg}[/]"),
                 leituras_dir=pasta_leituras,
                 analytics=codigo_analytics,
+                reportar=url_reportar,
             )
         else:
             from rich.progress import BarColumn, Progress, TaskProgressColumn, TextColumn
@@ -410,6 +417,7 @@ def site(
                     ao_item=_item,
                     leituras_dir=pasta_leituras,
                     analytics=codigo_analytics,
+                    reportar=url_reportar,
                 )
         console.print(f"[green]{resumo['paginas']} páginas geradas em {resumo['destino']}[/]")
     finally:
