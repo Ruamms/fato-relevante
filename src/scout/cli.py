@@ -345,6 +345,16 @@ def etf_taxas_proposta() -> None:
         con.close()
 
 
+# Formulário de "Reportar bug" (Google Forms): a página e o ticker entram no
+# campo do relato via {URL}/{TICKER} (o botão substitui no clique). Padrão do
+# projeto; a variável de ambiente SCOUT_REPORT_URL sobrescreve, e "" desliga.
+_URL_REPORTAR_PADRAO = (
+    "https://docs.google.com/forms/d/e/"
+    "1FAIpQLSftvZBa_cP1h6JUReAVytwsc89LfIX9nzy0qUM86VXX1QU2ZA/viewform?usp=pp_url"
+    "&entry.1054971382=Pagina%3A%20{URL}%0AFundo%3A%20{TICKER}%0A%0AO%20que%20aconteceu%3A%0A"
+)
+
+
 @app.command()
 def site(
     destino: str = typer.Option(None, "--destino", help="Pasta de saída (padrão: dados/site)."),
@@ -361,7 +371,8 @@ def site(
     reportar: str = typer.Option(
         None,
         "--reportar",
-        help="URL do formulário de reportar bug (tokens {URL}/{TICKER}). Padrão: variável SCOUT_REPORT_URL.",
+        help="URL do formulário de reportar bug (tokens {URL}/{TICKER}). "
+        'Padrão: form do projeto (ou SCOUT_REPORT_URL; "" desliga).',
     ),
 ) -> None:
     """Gera o site estático completo: índice buscável + página de cada FII."""
@@ -372,7 +383,10 @@ def site(
     from .relatorio import site as modulo_site
 
     codigo_analytics = analytics if analytics is not None else os.environ.get("SCOUT_ANALYTICS", "")
-    url_reportar = reportar if reportar is not None else os.environ.get("SCOUT_REPORT_URL", "")
+    url_reportar = (
+        reportar if reportar is not None
+        else os.environ.get("SCOUT_REPORT_URL", _URL_REPORTAR_PADRAO)
+    )
 
     con = armazenamento.conectar()
     try:
