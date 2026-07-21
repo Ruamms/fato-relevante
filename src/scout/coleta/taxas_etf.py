@@ -57,15 +57,41 @@ def extrair_taxa_regulamento(texto: str) -> dict | None:
         cauda_longa = plano[casamento.end() : casamento.end() + 70].lower()
         trecho = plano[casamento.start() : casamento.end() + 40].strip()
         confianca = "alta" if ("ano" in cauda_longa or "a.a" in cauda_longa) else "media"
-        candidatos.append({"taxa_adm_aa": valor, "trecho": trecho, "confianca": confianca})
+        # página onde a taxa foi achada = último marcador [página N] antes do match
+        paginas = re.findall(r"\[página (\d+)\]", plano[: casamento.start()])
+        pagina = int(paginas[-1]) if paginas else None
+        candidatos.append(
+            {"taxa_adm_aa": valor, "trecho": trecho, "confianca": confianca, "pagina": pagina}
+        )
     if not candidatos:
         return None
     return next((c for c in candidatos if c["confianca"] == "alta"), candidatos[0])
 
 
+def _texto_regulamento(caminho) -> str:
+    """Texto do PDF com marcadores [página N]. Usa PyMuPDF (fitz), que lê as
+    TABELAS onde a "Taxa Global" costuma estar — muito melhor que o pypdf (que
+    embaralha tabela). Cai no pypdf se o fitz falhar."""
+    try:
+        import fitz
+
+        doc = fitz.open(str(caminho))
+        n_paginas = min(60, doc.page_count)
+        partes = [f"[página {i + 1}] {doc[i].get_text('text')}" for i in range(n_paginas)]
+        doc.close()
+        texto = "\n".join(partes).strip()
+        if len(texto) > 200:
+            return texto
+    except Exception:  # noqa: BLE001 — fitz indisponível/PDF ruim: cai no pypdf
+        pass
+    from .. import ia
+
+    return ia.extrair_texto_pdf(caminho, max_paginas=60)
+
+
 _CAP_POR_RODADA = 20     # lê no máximo N regulamentos por rodada (FNET é lento)
 _FRESCOR_DIAS = 90       # re-confere o regulamento de cada ETF a cada N dias
-_CAMPOS = ["ticker", "taxa_adm_aa", "fonte", "verificado_em", "confianca"]
+_CAMPOS = ["ticker", "taxa_adm_aa", "fonte", "verificado_em", "confianca", "observacao"]
 
 
 def _caminho_gravavel() -> Path | None:
@@ -124,7 +150,7 @@ def atualizar(con, ao_progredir=None) -> str | None:
     import os
     from datetime import date
 
-    from .. import armazenamento, ia
+    from .. import armazenamento
     from . import fnet
 
     if os.environ.get("GITHUB_ACTIONS") or os.environ.get("CI"):
@@ -190,7 +216,7 @@ def atualizar(con, ao_progredir=None) -> str | None:
                     armazenamento.diretorio_dados() / "documentos",
                     timeout=45, tentativas=2,
                 )
-                extraido = extrair_taxa_regulamento(ia.extrair_texto_pdf(pdf, max_paginas=60))
+                extraido = extrair_taxa_regulamento(_texto_regulamento(pdf))
             except Exception:  # noqa: BLE001 — falhou nesse doc: tenta o próximo candidato
                 continue
             usado = candidato
@@ -204,12 +230,16 @@ def atualizar(con, ao_progredir=None) -> str | None:
             achados += 1
             if not linha or _numero(linha.get("taxa_adm_aa")) != achado["taxa_adm_aa"]:
                 mudancas += 1
+            trecho = achado.get("trecho") or ""
+            pagina = achado.get("pagina")
             linhas[ticker] = {
                 "ticker": ticker,
                 "taxa_adm_aa": f"{achado['taxa_adm_aa']:.2f}".replace(".", ","),
                 "fonte": fonte,
                 "verificado_em": hoje,
                 "confianca": achado["confianca"],
+                # arquivo (o id do doc está na fonte) + página + trecho, para conferir
+                "observacao": (f"p.{pagina}: {trecho[:110]}" if pagina else trecho[:110]),
             }
         elif linha and _numero(linha.get("taxa_adm_aa")) is not None:
             # novo regulamento não declarou a taxa, mas já tínhamos uma: mantém a

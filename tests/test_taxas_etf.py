@@ -129,6 +129,13 @@ def test_extrai_taxa_global_do_regime_175():
     assert r2["taxa_adm_aa"] == 0.12
 
 
+def test_extrai_taxa_registra_a_pagina():
+    # a taxa mora em tabela numa página específica; guardamos qual (marcador [página N])
+    texto = "[página 3] prestadores de serviços [página 14] Quadro: Taxa Global 0,10% ao ano"
+    r = taxas_etf.extrair_taxa_regulamento(texto)
+    assert r["taxa_adm_aa"] == 0.10 and r["pagina"] == 14
+
+
 def test_documentos_de_regulamento_prioriza_alteracao():
     from scout.coleta import fnet
 
