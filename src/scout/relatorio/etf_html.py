@@ -198,6 +198,7 @@ def gerar(
         CSS_MENU,
         JS_BUSCA_TOPO,
         JS_MENU,
+        JS_GRAFICO_HOVER,
         _secao_ia,
         _secao_parecer,
         menu_html,
@@ -384,7 +385,7 @@ def gerar(
 
     selo_html = ""
     if dados.get("selo"):
-        cor = _COR_SELO.get(dados["selo"].nivel, "#94a3b8")
+        cor = _COR_SELO.get(dados["selo"].nivel, "#7C8894")
         selo_html = (
             f'<span class="selo" style="background:{cor}" title="{_e(dados["selo"].descricao)}">'
             f"{_e(dados['selo'].rotulo)}</span>"
@@ -440,59 +441,59 @@ def gerar(
 <style>
 :root {{ color-scheme: dark; }}
 * {{ box-sizing:border-box; margin:0; }}
-body {{ background:#101415; color:#F4F5F6; font-family:system-ui,sans-serif; line-height:1.5; }}
+body {{ background:#0F1416; color:#EAEEF0; font-family:system-ui,sans-serif; line-height:1.5; }}
 .pagina {{ max-width:960px; margin:0 auto; padding:28px 20px 40px; }}
-h1 {{ font-size:26px; margin:6px 0 2px; }} h1 small {{ color:#8b98a9; font-size:15px; font-weight:400; }}
-h2 {{ font-size:18px; margin:26px 0 10px; }}
+h1 {{ font-family:'Scout Display',system-ui,sans-serif; font-size:28px; font-weight:700; letter-spacing:-.02em; margin:6px 0 2px; }} h1 small {{ color:#9AA7B2; font-size:15px; font-weight:400; }}
+h2 {{ font-family:'Scout Display',system-ui,sans-serif; font-size:22px; font-weight:700; letter-spacing:-.01em; margin:26px 0 10px; }}
 a {{ color:#8FCB9B; }}
-.meta {{ color:#8b98a9; font-size:13px; }}
+.meta {{ color:#9AA7B2; font-size:13px; }}
 .cards {{ display:grid; grid-template-columns:repeat(auto-fill,minmax(170px,1fr)); gap:10px; margin:20px 0; }}
-.card {{ background:#182024; border:1px solid #232D31; border-radius:10px; padding:12px 14px; }}
-.card .nome {{ color:#8b98a9; font-size:12px; text-transform:uppercase; letter-spacing:.06em; }}
-.card .valor {{ font-size:21px; font-weight:700; margin-top:2px; }}
+.card {{ background:#161D20; border:1px solid #1B2225; border-radius:10px; padding:12px 14px; }}
+.card .nome {{ color:#9AA7B2; font-size:12px; text-transform:uppercase; letter-spacing:.06em; }}
+.card .valor {{ font-family:'Scout Display',system-ui,sans-serif; font-size:23px; font-weight:700; letter-spacing:-.01em; margin-top:4px; font-variant-numeric:tabular-nums; }}
 .card .valor .compacto {{ font-size:15px; line-height:1.35; display:block; }}
 .badge-posicao {{ font-size:9.5px; font-weight:700; letter-spacing:.05em; text-transform:uppercase;
-  background:#232D31; color:#8FCB9B; border:1px solid #314045; border-radius:99px; padding:1px 7px; }}
-.card .extra {{ color:#8b98a9; font-size:12px; margin-top:2px; }}
+  background:#1B2225; color:#8FCB9B; border:1px solid #263034; border-radius:99px; padding:1px 7px; }}
+.card .extra {{ color:#9AA7B2; font-size:12px; margin-top:2px; }}
 .selo {{ display:inline-block; padding:3px 12px; border-radius:999px; font-weight:700;
-  font-size:12px; color:#101415; white-space:nowrap; vertical-align:middle; }}
+  font-size:12px; color:#0F1416; white-space:nowrap; vertical-align:middle; }}
 .ajuda {{ display:inline-flex; align-items:center; justify-content:center; width:15px; height:15px;
-  border-radius:50%; background:#314045; color:#8b98a9; font-size:10px; font-weight:700;
+  border-radius:50%; background:#263034; color:#9AA7B2; font-size:10px; font-weight:700;
   cursor:help; position:relative; vertical-align:middle; margin-left:5px; }}
 .ajuda .dica {{ visibility:hidden; opacity:0; transition:opacity .15s; position:absolute; z-index:10;
-  bottom:135%; left:50%; transform:translateX(-50%); width:270px; background:#232D31;
-  border:1px solid #314045; border-radius:9px; padding:10px 12px; color:#F4F5F6;
+  bottom:135%; left:50%; transform:translateX(-50%); width:270px; background:#1B2225;
+  border:1px solid #263034; border-radius:9px; padding:10px 12px; color:#EAEEF0;
   font-size:12.5px; font-weight:400; line-height:1.45; text-transform:none; letter-spacing:0;
   text-align:left; box-shadow:0 6px 20px rgba(0,0,0,.45); white-space:normal; }}
 .ajuda:hover .dica, .ajuda:focus .dica {{ visibility:visible; opacity:1; }}
-.termo {{ border-bottom:1px dotted #8b98a9; cursor:help; position:relative; }}
+.termo {{ border-bottom:1px dotted #9AA7B2; cursor:help; position:relative; }}
 .termo .dica {{ visibility:hidden; opacity:0; transition:opacity .15s; position:absolute; z-index:10;
-  bottom:135%; left:50%; transform:translateX(-50%); width:270px; background:#232D31;
-  border:1px solid #314045; border-radius:9px; padding:10px 12px; color:#F4F5F6;
+  bottom:135%; left:50%; transform:translateX(-50%); width:270px; background:#1B2225;
+  border:1px solid #263034; border-radius:9px; padding:10px 12px; color:#EAEEF0;
   font-size:12.5px; font-weight:400; line-height:1.45; text-align:left;
   box-shadow:0 6px 20px rgba(0,0,0,.45); white-space:normal; }}
 .termo:hover .dica, .termo:focus .dica {{ visibility:visible; opacity:1; }}
-.flag {{ background:#182024; border:1px solid #232D31; border-left:4px solid; border-radius:10px; padding:14px 16px; margin-bottom:10px; }}
+.flag {{ background:#161D20; border:1px solid #1B2225; border-left:4px solid; border-radius:10px; padding:14px 16px; margin-bottom:10px; }}
 .flag .sev {{ font-size:12px; font-weight:800; letter-spacing:.08em; }}
 .flag h3 {{ font-size:16px; margin:2px 0 6px; }}
-.flag .evid {{ background:#101415; border:1px solid #232D31; border-radius:7px; padding:6px 10px;
-  font-family:ui-monospace,Consolas,monospace; font-size:12.5px; color:#aeb9c7; margin-top:8px; }}
-.flag .fonte {{ color:#66707d; font-size:12px; margin-top:5px; }}
-.ok {{ color:#4ade80; font-size:14px; }} .na {{ color:#8b98a9; font-size:13px; }}
+.flag .evid {{ background:#0F1416; border:1px solid #1B2225; border-radius:7px; padding:6px 10px;
+  font-family:ui-monospace,Consolas,monospace; font-size:12.5px; color:#9AA7B2; margin-top:8px; }}
+.flag .fonte {{ color:#6B7681; font-size:12px; margin-top:5px; }}
+.ok {{ color:#7BD69A; font-size:14px; }} .na {{ color:#9AA7B2; font-size:13px; }}
 ul.ok {{ list-style:none; padding-left:6px; }}
-ul.ok li {{ color:#8b98a9; margin:3px 0; }}
-ul.ok li::before {{ content:'✓  '; color:#4ade80; font-weight:700; }}
-.regras {{ background:#182024; border:1px solid #3E8E7E; border-radius:10px; padding:16px 18px; }}
+ul.ok li {{ color:#9AA7B2; margin:3px 0; }}
+ul.ok li::before {{ content:'✓  '; color:#7BD69A; font-weight:700; }}
+.regras {{ background:#161D20; border:1px solid #8FCB9B; border-radius:10px; padding:16px 18px; }}
 .regras h2 {{ margin:0 0 8px; font-size:16px; color:#8FCB9B; }}
 .regras li {{ margin:6px 0 6px 18px; font-size:14px; }}
-.grafico {{ background:#182024; border:1px solid #232D31; border-radius:10px; padding:14px 16px 10px; margin-bottom:14px; }}
-.grafico h3 {{ font-size:15px; color:#aeb9c7; margin-bottom:8px; }}
-.grafico .nota, .nota {{ color:#66707d; font-size:11.5px; }}
-table.imoveis {{ width:100%; border-collapse:collapse; font-size:13.5px; }}
-table.imoveis th {{ color:#8b98a9; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; text-align:left; padding:6px 10px; border-bottom:1px solid #314045; }}
-table.imoveis td {{ padding:7px 10px; border-bottom:1px solid #232D31; }}
+.grafico {{ background:#161D20; border:1px solid #1B2225; border-radius:10px; padding:14px 16px 10px; margin-bottom:14px; }}
+.grafico h3 {{ font-size:15px; color:#9AA7B2; margin-bottom:8px; }}
+.grafico .nota, .nota {{ color:#6B7681; font-size:11.5px; }}
+table.imoveis {{ width:100%; border-collapse:collapse; font-size:13.5px; font-variant-numeric:tabular-nums; }}
+table.imoveis th {{ color:#9AA7B2; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; text-align:left; padding:6px 10px; border-bottom:1px solid #263034; }}
+table.imoveis td {{ padding:7px 10px; border-bottom:1px solid #1B2225; }}
 table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-align:right; }}
-.rodape {{ color:#8b98a9; font-size:12.5px; border-top:1px solid #232D31; margin-top:30px; padding-top:14px; }}
+.rodape {{ color:#9AA7B2; font-size:12.5px; border-top:1px solid #1B2225; margin-top:30px; padding-top:14px; }}
 {css_menu}
 {CSS_MARCA}
 </style>
@@ -513,7 +514,7 @@ table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-a
   {_secao_ia(leitura, agora)}
 
   <div class="regras">
-  <h2>🧭 As regras deste tipo de ETF ({_e(classe)})</h2>
+  <h2>As regras deste tipo de ETF ({_e(classe)})</h2>
   <ul>{itens_regras or "<li>classe ainda não classificada pela curadoria.</li>"}</ul>
   {observacao}
   </div>
@@ -527,10 +528,11 @@ table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-a
 
   <div class="rodape">{_RODAPE}<br>
   Projeto open source: <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a>
-  · <a href="apoie.html">☕ apoie o projeto</a>
+  · <a href="apoie.html">apoie o projeto</a>
   · <a href="etfs.html">todos os ETFs</a> · <a href="index.html">FIIs</a></div>
 </div>
 <script>
+{JS_GRAFICO_HOVER}
 {js_menu}
 </script>
 </body>

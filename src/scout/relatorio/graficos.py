@@ -18,12 +18,16 @@ MARGEM_DIR = 16
 MARGEM_TOPO = 14
 MARGEM_BAIXO = 34
 
-CORES = ("#8FCB9B", "#f59e0b", "#a78bfa", "#38bdf8")  # Fundo, CDI, IPCA, IFIX
-COR_GRADE = "#314045"
-COR_TEXTO = "#8b98a9"
-COR_MEDIA = "#f472b6"
+CORES = ("#8FCB9B", "#6FB6D8", "#E3C25C", "#A78BFA")  # Fundo, CDI, IPCA, IFIX
+COR_GRADE = "#263034"
+COR_TEXTO = "#9AA7B2"
+COR_MEDIA = "#9AA7B2"
 
 Formatador = Callable[[float], str]
+
+
+def _e_attr(texto: str) -> str:
+    return str(texto).replace('"', '&quot;')
 Ponto = tuple[str, float]
 
 
@@ -74,7 +78,9 @@ def grafico_linhas(
             x = _escala_x(posicao[competencia], len(dominio))
             y = _escala_y(v, minimo, maximo)
             partes.append(
-                f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{raio}" fill="{cor}" opacity="{opacidade}">'
+                f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{raio}" fill="{cor}" opacity="{opacidade}" '
+                f'data-val="{formatador(v)}" data-lbl="{formato.competencia_curta(competencia)}" '
+                f'data-nome="{_e_attr(nome)}" data-cor="{cor}">'
                 f"<title>{nome} · {formato.competencia_curta(competencia)}: {formatador(v)}</title></circle>"
             )
             if valores_nos_pontos and len(pontos) <= 13:
@@ -139,7 +145,7 @@ def grafico_barras(
             if extra:
                 partes.append(
                     f'<text x="{centro:.1f}" y="{y - 6:.1f}" text-anchor="middle" '
-                    f'fill="#66707d" font-size="10">{extra}</text>'
+                    f'fill="#6B7681" font-size="10">{extra}</text>'
                 )
         else:
             # valor em texto vertical acima da barra

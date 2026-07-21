@@ -13,17 +13,17 @@ from . import graficos
 from .glossario import TERMOS
 
 _COR_SELO = {
-    "sem_alertas": "#22c55e",
-    "leves": "#D9B44A",
-    "atencao": "#f97316",
-    "grave": "#D66A6A",
-    "insuficiente": "#94a3b8",
+    "sem_alertas": "#7BD69A",
+    "leves": "#E3C25C",
+    "atencao": "#E39A55",
+    "grave": "#DB7A7A",
+    "insuficiente": "#7C8894",
 }
 
 _COR_SEVERIDADE = {
-    Severidade.ALTA: "#D66A6A",
-    Severidade.MEDIA: "#f97316",
-    Severidade.BAIXA: "#38bdf8",
+    Severidade.ALTA: "#DB7A7A",
+    Severidade.MEDIA: "#E39A55",
+    Severidade.BAIXA: "#6FB6D8",
 }
 
 _RODAPE = (
@@ -37,9 +37,10 @@ _RODAPE = (
 # qualquer tamanho, embutido na página — sem arquivo externo.
 _SVG_FAVICON = (
     "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'>"
-    "<circle cx='32' cy='32' r='24' fill='none' stroke='#8FCB9B' stroke-width='5'/>"
-    "<polygon points='55,9 40,40 9,55 24,24' fill='#B9E2C1'/>"
-    "<circle cx='32' cy='32' r='4' fill='#101415'/>"
+    "<circle cx='32' cy='32' r='25' fill='none' stroke='#8FCB9B' stroke-width='5'/>"
+    "<polygon points='47.56,16.44 36.95,36.95 16.44,47.56' fill='#CDEBD3'/>"
+    "<polygon points='47.56,16.44 27.05,27.05 16.44,47.56' fill='#6FA87C'/>"
+    "<circle cx='32' cy='32' r='3.6' fill='#0F1416'/>"
     "</svg>"
 )
 import base64 as _base64  # noqa: E402
@@ -51,14 +52,22 @@ _SVG_MARCA = _SVG_FAVICON.replace("<svg ", "<svg width='34' height='34' ")
 
 # CSS do cabeçalho de marca, compartilhado por todas as páginas (site, relatório, apoio)
 CSS_MARCA = """
-.topo-site { display:flex; align-items:center; gap:14px; flex-wrap:wrap;
-  padding-bottom:14px; border-bottom:1px solid #232D31; margin-bottom:20px; }
+@font-face { font-family:'Scout Display'; src:url('scout-display.ttf') format('truetype');
+  font-weight:400 700; font-display:swap; }
+.topo-site { position:sticky; top:0; z-index:20; display:flex; align-items:center; gap:16px;
+  flex-wrap:wrap; padding:12px 0; border-bottom:1px solid #263034; margin-bottom:22px;
+  background:rgba(15,20,22,.92); backdrop-filter:blur(10px); }
 .brand { display:inline-flex; align-items:center; gap:10px; text-decoration:none; }
-.wordmark { font-size:25px; font-weight:800; letter-spacing:.20em; color:#F4F5F6; }
+.wordmark { font-family:'Scout Display',system-ui,sans-serif; font-size:20px; font-weight:700;
+  letter-spacing:.08em; color:#EAEEF0; }
 .brand-o { color:#8FCB9B; }
-.brand-tag { color:#8b98a9; font-size:11.5px; letter-spacing:.10em; text-transform:uppercase; }
-.topo-site input { margin-left:auto; background:#182024; color:#F4F5F6;
-  border:1px solid #314045; border-radius:8px; padding:7px 12px; font-size:13.5px; width:250px; }
+.brand-tag { color:#6B7681; font-size:11px; letter-spacing:.08em; text-transform:uppercase; }
+.topo-site input { margin-left:auto; background:#161D20; color:#EAEEF0;
+  border:1px solid #263034; border-radius:9px; padding:8px 13px; font-size:13.5px; width:270px; }
+.topo-site input:focus { outline:2px solid #8FCB9B; outline-offset:1px; border-color:#8FCB9B; }
+.selo-dot { display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:600; white-space:nowrap; }
+.selo-dot .pt { width:7px; height:7px; border-radius:50%; flex-shrink:0; }
+td.col-selo, th.col-selo { text-align:left; }
 """
 
 
@@ -66,23 +75,23 @@ CSS_MARCA = """
 # páginas de navegação (home, fiis, etfs, comparar). HTML/CSS/JS puro — o
 # GitHub Pages não impõe limitação nenhuma a menu interativo.
 CSS_MENU = """
-.nav { display:flex; align-items:center; gap:4px; margin:14px 0 6px; flex-wrap:wrap; }
+.nav { display:flex; align-items:center; gap:2px; margin:0 0 6px; flex-wrap:wrap; }
 .nav .item { position:relative; }
-.nav .topo-btn { background:none; border:none; color:#aeb9c7; font-size:14.5px; font-weight:600;
-  padding:8px 14px; border-radius:8px; cursor:pointer; }
-.nav .topo-btn:hover, .nav .item.aberto .topo-btn { background:#182024; color:#8FCB9B; }
+.nav .topo-btn { background:none; border:none; color:#9AA7B2; font-size:14px; font-weight:600;
+  padding:7px 13px; border-radius:8px; cursor:pointer; }
+.nav .topo-btn:hover, .nav .item.aberto .topo-btn { background:#1E272B; color:#EAEEF0; }
 .nav .painel { display:none; position:absolute; top:100%; left:0; z-index:40; min-width:230px;
-  background:#182024; border:1px solid #314045; border-radius:12px; padding:10px;
+  background:#161D20; border:1px solid #263034; border-radius:12px; padding:10px;
   box-shadow:0 14px 40px rgba(0,0,0,.5); }
 .nav .item.aberto .painel { display:block; }
-.nav .painel a { display:block; color:#F4F5F6; text-decoration:none; font-size:13.5px;
+.nav .painel a { display:block; color:#EAEEF0; text-decoration:none; font-size:13.5px;
   padding:8px 10px; border-radius:8px; }
-.nav .painel a:hover { background:#232D31; color:#8FCB9B; }
-.nav .painel .grupo { color:#66707d; font-size:11px; text-transform:uppercase;
+.nav .painel a:hover { background:#1E272B; color:#8FCB9B; }
+.nav .painel .grupo { color:#6B7681; font-size:11px; text-transform:uppercase;
   letter-spacing:.06em; padding:6px 10px 2px; }
-.nav > a { color:#aeb9c7; font-size:14.5px; font-weight:600; text-decoration:none;
-  padding:8px 14px; border-radius:8px; }
-.nav > a:hover { background:#182024; color:#8FCB9B; }
+.nav > a { color:#9AA7B2; font-size:14px; font-weight:600; text-decoration:none;
+  padding:7px 13px; border-radius:8px; }
+.nav > a:hover { background:#1E272B; color:#EAEEF0; }
 """
 
 JS_MENU = """
@@ -100,6 +109,61 @@ document.addEventListener('click', () => {
 });
 """
 
+# Crosshair + tooltip flutuante nos gráficos de linha (estilo terminal de
+# mercado): os eixos ficam, o valor interno some, e ao passar o mouse aparece
+# a linha-guia com o valor de cada série no ponto. Lê os círculos que o
+# graficos.py já desenha (data-val/data-lbl/data-nome/data-cor) — JS puro.
+JS_GRAFICO_HOVER = '''
+(function(){
+  var NS='http://www.w3.org/2000/svg';
+  function wire(svg){
+    var pts=[].slice.call(svg.querySelectorAll('circle[data-val]'));
+    if(pts.length<2) return;
+    var wrap=svg.closest('.grafico'); if(!wrap) return;
+    if(getComputedStyle(wrap).position==='static') wrap.style.position='relative';
+    var groups={}, order=[];
+    pts.forEach(function(c){
+      c.setAttribute('data-r0', c.getAttribute('r')||'3');
+      c.setAttribute('data-op0', c.getAttribute('opacity')||'1');
+      var lbl=c.getAttribute('data-lbl'), x=parseFloat(c.getAttribute('cx'));
+      if(!groups[lbl]){ groups[lbl]={x:x,lbl:lbl,items:[]}; order.push(lbl); }
+      groups[lbl].items.push({nome:c.getAttribute('data-nome'),val:c.getAttribute('data-val'),
+        cor:c.getAttribute('data-cor'),cy:parseFloat(c.getAttribute('cy')),el:c});
+    });
+    var cols=order.map(function(l){return groups[l];}).sort(function(a,b){return a.x-b.x;});
+    var guide=document.createElementNS(NS,'line');
+    guide.setAttribute('y1',14); guide.setAttribute('y2',266);
+    guide.setAttribute('stroke','#8FCB9B'); guide.setAttribute('stroke-width','1');
+    guide.setAttribute('stroke-dasharray','3 3'); guide.setAttribute('opacity','0');
+    guide.setAttribute('pointer-events','none'); svg.appendChild(guide);
+    var tip=document.createElement('div');
+    tip.style.cssText='position:absolute;pointer-events:none;z-index:6;background:#1E272B;border:1px solid #33434A;border-radius:9px;padding:8px 11px;font-size:12px;color:#EAEEF0;box-shadow:0 8px 24px rgba(0,0,0,.5);opacity:0;transition:opacity .08s;white-space:nowrap;font-variant-numeric:tabular-nums;';
+    wrap.appendChild(tip);
+    function reset(){ pts.forEach(function(c){ c.setAttribute('r',c.getAttribute('data-r0')); c.setAttribute('opacity',c.getAttribute('data-op0')); }); }
+    svg.addEventListener('pointermove', function(e){
+      var rect=svg.getBoundingClientRect(); if(!rect.width) return;
+      var sx=rect.width/860, sy=rect.height/300;
+      var vbx=(e.clientX-rect.left)/sx, best=null, bd=1e9;
+      cols.forEach(function(g){ var d=Math.abs(g.x-vbx); if(d<bd){bd=d;best=g;} });
+      if(!best) return;
+      reset();
+      guide.setAttribute('x1',best.x); guide.setAttribute('x2',best.x); guide.setAttribute('opacity','1');
+      var top=1e9;
+      best.items.forEach(function(it){ it.el.setAttribute('r','5'); it.el.setAttribute('opacity','1'); if(it.cy<top) top=it.cy; });
+      tip.innerHTML='<div style="color:#6B7681;font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px;">'+best.lbl+'</div>'+
+        best.items.map(function(it){ return '<div style="display:flex;align-items:center;gap:7px;margin-top:2px;"><span style="width:8px;height:8px;border-radius:50%;background:'+it.cor+';"></span><span style="color:#9AA7B2;">'+it.nome+'</span><b style="margin-left:auto;padding-left:12px;">'+it.val+'</b></div>'; }).join('');
+      var leftPx=best.x*sx, topPx=top*sy, flip=leftPx>rect.width-160;
+      tip.style.left=leftPx+'px'; tip.style.top=(topPx-12)+'px';
+      tip.style.transform='translate('+(flip?'calc(-100% - 14px)':'14px')+',-100%)';
+      tip.style.opacity='1';
+    });
+    svg.addEventListener('pointerleave', function(){ guide.setAttribute('opacity','0'); tip.style.opacity='0'; reset(); });
+  }
+  var svgs=document.querySelectorAll('.grafico svg');
+  for(var i=0;i<svgs.length;i++){ try{ wire(svgs[i]); }catch(e){} }
+})();
+'''
+
 
 def menu_html() -> str:
     return """
@@ -109,7 +173,7 @@ def menu_html() -> str:
       <div class="painel">
         <a href="fiis.html">Todos os FIIs</a>
         <a href="fiis.html#rankings">Rankings do dia</a>
-        <a href="comparar.html">⚖ Comparar FIIs</a>
+        <a href="comparar.html">Comparar FIIs</a>
       </div>
     </div>
     <div class="item">
@@ -123,7 +187,7 @@ def menu_html() -> str:
         <a href="etfs.html?classe=Cripto">Cripto</a>
       </div>
     </div>
-    <a href="apoie.html">☕ Apoie</a>
+    <a href="apoie.html">Apoiar</a>
   </nav>
 """
 
@@ -135,26 +199,27 @@ def menu_html() -> str:
 # pelo site) — baixado uma vez e cacheado pelo navegador.
 CSS_BUSCA_TOPO = """
 .busca-topo { position:relative; margin-left:auto; }
-.busca-topo input { background:#182024; color:#F4F5F6; border:1px solid #314045;
-  border-radius:8px; padding:7px 12px; font-size:13.5px; width:280px; }
+.busca-topo input { background:#161D20; color:#EAEEF0; border:1px solid #263034;
+  border-radius:9px; padding:8px 13px; font-size:13.5px; width:280px; }
+.busca-topo input:focus { outline:2px solid #8FCB9B; outline-offset:1px; border-color:#8FCB9B; }
 #resultados-topo { position:absolute; top:100%; right:0; z-index:45; width:380px; max-width:86vw;
-  background:#182024; border:1px solid #314045; border-radius:12px; margin-top:6px;
+  background:#161D20; border:1px solid #263034; border-radius:12px; margin-top:6px;
   overflow:hidden; box-shadow:0 16px 44px rgba(0,0,0,.55); }
 #resultados-topo a { display:flex; align-items:center; gap:9px; padding:9px 12px;
-  color:#F4F5F6; text-decoration:none; border-bottom:1px solid #232D31; font-size:13.5px; }
+  color:#EAEEF0; text-decoration:none; border-bottom:1px solid #1B2225; font-size:13.5px; }
 #resultados-topo a:last-child { border-bottom:none; }
-#resultados-topo a:hover, #resultados-topo a.foco { background:#232D31; }
+#resultados-topo a:hover, #resultados-topo a.foco { background:#1E272B; }
 #resultados-topo .tk { font-weight:800; min-width:64px; }
-#resultados-topo .nm { color:#8b98a9; font-size:12px; flex:1; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; }
+#resultados-topo .nm { color:#9AA7B2; font-size:12px; flex:1; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; }
 #resultados-topo .badge { font-size:9.5px; font-weight:700; letter-spacing:.05em; text-transform:uppercase;
-  background:#232D31; color:#8FCB9B; border:1px solid #314045; border-radius:99px; padding:2px 8px; white-space:nowrap; }
+  background:#1E272B; color:#8FCB9B; border:1px solid #263034; border-radius:99px; padding:2px 8px; white-space:nowrap; }
 #resultados-topo .ponto { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
 """
 
 JS_BUSCA_TOPO = """
 let _ativosTopo = null;
 let _focoTopo = -1;
-const CORES_SELO_TOPO = {"sem_alertas": "#22c55e", "leves": "#D9B44A", "atencao": "#f97316", "grave": "#D66A6A", "insuficiente": "#94a3b8"};
+const CORES_SELO_TOPO = {"sem_alertas": "#7BD69A", "leves": "#E3C25C", "atencao": "#E39A55", "grave": "#DB7A7A", "insuficiente": "#7C8894"};
 
 async function buscaTopo() {
   const campo = document.getElementById('ir-ticker');
@@ -174,7 +239,7 @@ async function buscaTopo() {
   if (!achados.length) { caixa.hidden = true; caixa.innerHTML = ''; return; }
   caixa.innerHTML = achados.map(a =>
     `<a href="${a.t}.html"><span class="tk">${a.t}</span><span class="nm">${a.n}</span>` +
-    (a.s ? `<span class="ponto" style="background:${CORES_SELO_TOPO[a.s] || '#94a3b8'}" title="${a.r}"></span>` : '') +
+    (a.s ? `<span class="ponto" style="background:${CORES_SELO_TOPO[a.s] || '#7C8894'}" title="${a.r}"></span>` : '') +
     `<span class="badge">${a.c}</span></a>`
   ).join('');
   caixa.hidden = false;
@@ -258,6 +323,9 @@ def salvar(
     leitura: dict | None = None,
 ) -> Path:
     destino.mkdir(parents=True, exist_ok=True)
+    _fonte = Path(__file__).parent / "assets" / "scout-display.ttf"
+    if _fonte.exists() and not (destino / "scout-display.ttf").exists():
+        (destino / "scout-display.ttf").write_bytes(_fonte.read_bytes())
     caminho = destino / f"{completo.raiox.ticker}.html"
     caminho.write_text(gerar(completo, agora, publicados, leitura), encoding="utf-8")
     return caminho
@@ -402,82 +470,86 @@ def gerar(
 :root {{ color-scheme: dark; }}
 html {{ scroll-behavior: smooth; }}
 * {{ box-sizing: border-box; margin: 0; }}
-body {{ background:#101415; color:#F4F5F6; font-family:system-ui,-apple-system,sans-serif; line-height:1.5; }}
+body {{ background:#0F1416; color:#EAEEF0; font-family:system-ui,-apple-system,sans-serif; line-height:1.5; }}
 .pagina {{ max-width:960px; margin:0 auto; padding:28px 20px 40px; }}
-a {{ color:#8FCB9B; }}
+a {{ color:#8FCB9B; text-decoration:none; }} a:hover {{ color:#B9E2C1; }}
 .topo {{ display:flex; flex-wrap:wrap; align-items:baseline; gap:10px 14px; }}
-.marca {{ color:#8b98a9; font-size:14px; letter-spacing:.14em; text-transform:uppercase; }}
-h1 {{ font-size:34px; }} h1 small {{ color:#8b98a9; font-size:17px; font-weight:400; }}
-.selo {{ display:inline-block; padding:4px 14px; border-radius:999px; font-weight:700; font-size:14px; color:#101415; white-space:nowrap; }}
-.btn-topo {{ margin-left:auto; background:#232D31; border:1px solid #314045; color:#8FCB9B; text-decoration:none; padding:6px 14px; border-radius:8px; font-size:13px; font-weight:600; }}
+.marca {{ color:#9AA7B2; font-size:14px; letter-spacing:.14em; text-transform:uppercase; }}
+h1 {{ font-family:'Scout Display',system-ui,sans-serif; font-size:34px; font-weight:700; letter-spacing:-.02em; }} h1 small {{ font-family:system-ui,sans-serif; color:#9AA7B2; font-size:17px; font-weight:400; letter-spacing:0; }}
+.selo {{ display:inline-flex; align-items:center; gap:8px; padding:6px 14px; border-radius:99px; font-weight:700; font-size:13.5px; color:#0F1416; white-space:nowrap; }}
+.selo-dot {{ display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:600; white-space:nowrap; }}
+.selo-dot .pt {{ width:7px; height:7px; border-radius:50%; flex-shrink:0; }}
+.btn-topo {{ margin-left:auto; background:#161D20; border:1px solid #263034; color:#8FCB9B; text-decoration:none; padding:6px 14px; border-radius:8px; font-size:13px; font-weight:600; }}
 .btn-topo:hover {{ border-color:#8FCB9B; }}
 .nav-site {{ display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-top:12px; }}
 .nav-site a {{ color:#8FCB9B; text-decoration:none; font-size:13.5px; font-weight:600; }}
-.nav-site input {{ background:#182024; color:#F4F5F6; border:1px solid #314045; border-radius:8px;
-  padding:7px 12px; font-size:13.5px; width:280px; }}
-.meta {{ color:#8b98a9; font-size:13px; margin-top:6px; }}
-.cards {{ display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:10px; margin:22px 0; }}
-.card {{ background:#182024; border:1px solid #232D31; border-radius:10px; padding:12px 14px; }}
-.card .nome {{ color:#8b98a9; font-size:12px; text-transform:uppercase; letter-spacing:.06em; }}
-.card .valor {{ font-size:21px; font-weight:700; margin-top:2px; }}
-.card .extra {{ color:#8b98a9; font-size:12px; margin-top:2px; }}
-.card.alerta {{ border-color:#D9B44A; }}
-h2 {{ font-size:18px; margin:26px 0 10px; }}
-.flag {{ background:#182024; border:1px solid #232D31; border-left:4px solid; border-radius:10px; padding:14px 16px; margin-bottom:10px; }}
+.nav-site input {{ background:#161D20; color:#EAEEF0; border:1px solid #263034; border-radius:9px;
+  padding:8px 13px; font-size:13.5px; width:280px; }}
+.meta {{ color:#9AA7B2; font-size:13px; margin-top:6px; }}
+.cards {{ display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:12px; margin:22px 0; }}
+.card {{ background:#161D20; border:1px solid #263034; border-radius:12px; padding:14px 16px; }}
+.card .nome {{ color:#9AA7B2; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; }}
+.card .valor {{ font-family:'Scout Display',system-ui,sans-serif; font-size:23px; font-weight:700; letter-spacing:-.01em; margin-top:4px; font-variant-numeric:tabular-nums; }}
+.card .extra {{ color:#6B7681; font-size:11.5px; margin-top:3px; }}
+.card.alerta {{ border-color:#4a3f24; }}
+h2 {{ font-family:'Scout Display',system-ui,sans-serif; font-size:22px; font-weight:700; letter-spacing:-.01em; margin:34px 0 10px; }}
+.flag {{ background:#161D20; border:1px solid #263034; border-left:3px solid; border-radius:12px; padding:14px 18px; margin-bottom:10px; }}
 .flag .sev {{ font-size:12px; font-weight:800; letter-spacing:.08em; }}
 .flag h3 {{ font-size:16px; margin:2px 0 6px; }}
-.flag .evid {{ background:#101415; border:1px solid #232D31; border-radius:7px; padding:6px 10px;
-  font-family:ui-monospace,Consolas,monospace; font-size:12.5px; color:#aeb9c7; margin-top:8px; }}
-.flag .fonte {{ color:#66707d; font-size:12px; margin-top:5px; }}
-.ok {{ color:#4ade80; font-size:14px; }} .na {{ color:#8b98a9; font-size:13px; }}
+.flag .evid {{ background:#0F1416; border:1px solid #263034; border-radius:8px; padding:8px 11px;
+  font-family:ui-monospace,Consolas,monospace; font-size:12.5px; color:#9AA7B2; margin-top:8px; }}
+.flag .fonte {{ color:#6B7681; font-size:12px; margin-top:5px; }}
+.ok {{ color:#7BD69A; font-size:14px; }} .na {{ color:#9AA7B2; font-size:13px; }}
 ul {{ padding-left:20px; }} li {{ margin:3px 0; }}
 ul.ok {{ list-style:none; padding-left:6px; }}
-ul.ok li {{ color:#8b98a9; }}
-ul.ok li::before {{ content:'✓  '; color:#4ade80; font-weight:700; }}
-.grafico {{ background:#182024; border:1px solid #232D31; border-radius:10px; padding:14px 16px 8px; margin-bottom:14px; }}
-.grafico h3 {{ font-size:15px; color:#aeb9c7; margin-bottom:8px; }}
-.grafico .nota {{ color:#66707d; font-size:11px; }}
+ul.ok li {{ color:#9AA7B2; }}
+ul.ok li::before {{ content:'✓  '; color:#7BD69A; font-weight:700; }}
+.grafico {{ background:#161D20; border:1px solid #263034; border-radius:14px; padding:16px 18px 10px; margin-bottom:14px; }}
+.grafico h3 {{ font-size:15px; color:#9AA7B2; margin-bottom:8px; }}
+.grafico .nota {{ color:#6B7681; font-size:11px; }}
 .grafico .cab {{ display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap; }}
-.abas button {{ background:#232D31; color:#8b98a9; border:1px solid #314045; border-radius:7px; padding:3px 12px; font-size:12px; cursor:pointer; }}
-.abas button.ativo {{ background:#8FCB9B; color:#101415; border-color:#8FCB9B; font-weight:700; }}
+.abas button {{ background:#1E272B; color:#9AA7B2; border:1px solid #263034; border-radius:7px; padding:4px 12px; font-size:12px; cursor:pointer; }}
+.abas button.ativo {{ background:#8FCB9B; color:#0F1416; border-color:#8FCB9B; font-weight:700; }}
 .ajuda {{ display:inline-flex; align-items:center; justify-content:center; width:15px; height:15px;
-  border-radius:50%; background:#314045; color:#8b98a9; font-size:10px; font-weight:700;
+  border-radius:50%; background:#1E272B; color:#6B7681; font-size:10px; font-weight:700;
   cursor:help; position:relative; vertical-align:middle; margin-left:5px; }}
 .ajuda .dica, .termo .dica {{ visibility:hidden; opacity:0; transition:opacity .15s; position:absolute; z-index:10;
-  bottom:135%; left:50%; transform:translateX(-50%); width:270px; background:#232D31;
-  border:1px solid #314045; border-radius:9px; padding:10px 12px; color:#F4F5F6;
+  bottom:135%; left:50%; transform:translateX(-50%); width:270px; background:#1E272B;
+  border:1px solid #33434A; border-radius:9px; padding:10px 12px; color:#EAEEF0;
   font-size:12.5px; font-weight:400; line-height:1.45; text-transform:none; letter-spacing:0;
   text-align:left; box-shadow:0 6px 20px rgba(0,0,0,.45); white-space:normal; }}
 .ajuda:hover .dica, .ajuda:focus .dica, .termo:hover .dica, .termo:focus .dica {{ visibility:visible; opacity:1; }}
-.termo {{ border-bottom:1px dotted #8b98a9; cursor:help; position:relative; }}
-.calc {{ background:#182024; border:1px solid #232D31; border-radius:10px; padding:16px; margin-bottom:14px; }}
-.calc h3 {{ font-size:15px; color:#aeb9c7; margin-bottom:4px; }}
-.calc .desc {{ color:#8b98a9; font-size:13px; margin-bottom:12px; }}
+.termo {{ border-bottom:1px dotted #6B7681; cursor:help; position:relative; }}
+.calc {{ background:#161D20; border:1px solid #263034; border-radius:14px; padding:16px; margin-bottom:14px; }}
+.calc h3 {{ font-family:'Scout Display',system-ui,sans-serif; font-size:16px; font-weight:700; color:#EAEEF0; margin-bottom:4px; }}
+.calc .desc {{ color:#9AA7B2; font-size:13px; margin-bottom:12px; }}
 .calc .campos {{ display:flex; flex-wrap:wrap; gap:10px; align-items:end; }}
-.calc label {{ display:block; color:#8b98a9; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; margin-bottom:3px; }}
-.calc input[type=number] {{ background:#101415; color:#F4F5F6; border:1px solid #314045; border-radius:8px; padding:8px 10px; width:130px; font-size:15px; }}
-.calc select {{ background:#101415; color:#F4F5F6; border:1px solid #314045; border-radius:8px; padding:8px 10px; font-size:15px; }}
-.calc .check {{ display:flex; align-items:center; gap:6px; color:#aeb9c7; font-size:13px; padding-bottom:8px; }}
+.calc label {{ display:block; color:#9AA7B2; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; margin-bottom:4px; }}
+.calc input[type=number] {{ background:#0F1416; color:#EAEEF0; border:1px solid #33434A; border-radius:9px; padding:9px 11px; width:130px; font-size:15px; font-variant-numeric:tabular-nums; }}
+.calc input[type=number]:focus, .calc select:focus {{ outline:2px solid #8FCB9B; outline-offset:1px; border-color:#8FCB9B; }}
+.calc select {{ background:#0F1416; color:#EAEEF0; border:1px solid #33434A; border-radius:9px; padding:9px 11px; font-size:15px; }}
+.calc .check {{ display:flex; align-items:center; gap:6px; color:#9AA7B2; font-size:13px; padding-bottom:8px; }}
 .calc .resultado {{ display:grid; grid-template-columns:repeat(auto-fill,minmax(170px,1fr)); gap:10px; margin-top:14px; }}
-.calc .res {{ background:#101415; border:1px solid #232D31; border-radius:9px; padding:10px 12px; }}
-.calc .res .rotulo {{ color:#8b98a9; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; }}
-.calc .res .num {{ font-size:19px; font-weight:700; margin-top:2px; color:#8FCB9B; }}
-.calc .aviso {{ color:#66707d; font-size:11.5px; margin-top:10px; }}
-.calc .gd-base {{ display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin:0 0 12px; color:#8b98a9; font-size:12px; }}
-.calc .gd-base button {{ background:#232D31; color:#8b98a9; border:1px solid #314045; border-radius:7px; padding:4px 12px; font-size:12px; cursor:pointer; }}
+.calc .res {{ background:#0F1416; border:1px solid #263034; border-radius:10px; padding:11px 13px; }}
+.calc .res .rotulo {{ color:#9AA7B2; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; }}
+.calc .res .num {{ font-family:'Scout Display',system-ui,sans-serif; font-size:19px; font-weight:700; margin-top:3px; color:#8FCB9B; font-variant-numeric:tabular-nums; }}
+.calc .aviso {{ color:#6B7681; font-size:11.5px; margin-top:10px; }}
+.calc .gd-base {{ display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin:0 0 12px; color:#9AA7B2; font-size:12px; }}
+.calc .gd-base button {{ background:#1E272B; color:#9AA7B2; border:1px solid #263034; border-radius:7px; padding:4px 12px; font-size:12px; cursor:pointer; }}
 .calc .gd-base button:hover {{ border-color:#8FCB9B; }}
-.calc .gd-base button.ativo {{ background:#8FCB9B; color:#101415; border-color:#8FCB9B; font-weight:700; }}
+.calc .gd-base button.ativo {{ background:#8FCB9B; color:#0F1416; border-color:#8FCB9B; font-weight:700; }}
 .calc .campos.gordon {{ align-items:flex-start; }}
-.calc .gd-cap {{ margin-top:5px; max-width:150px; font-size:11px; color:#8b98a9; line-height:1.5; }}
-table.imoveis {{ width:100%; border-collapse:collapse; font-size:13.5px; }}
-table.imoveis th {{ color:#8b98a9; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; text-align:left; padding:6px 10px; border-bottom:1px solid #314045; }}
-table.imoveis td {{ padding:7px 10px; border-bottom:1px solid #232D31; }}
-table.imoveis tbody tr:hover td {{ background:#1d262b; }}
+.calc .gd-cap {{ margin-top:5px; max-width:150px; font-size:11px; color:#9AA7B2; line-height:1.5; }}
+table.imoveis {{ width:100%; border-collapse:collapse; font-size:13.5px; font-variant-numeric:tabular-nums; }}
+table.imoveis th {{ color:#9AA7B2; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; text-align:left; padding:9px 10px; border-bottom:1px solid #33434A; }}
+table.imoveis td {{ padding:9px 10px; border-bottom:1px solid #1B2225; }}
+table.imoveis tbody tr:hover td {{ background:#12171A; }}
 table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-align:right; }}
-.ver-mais {{ background:#232D31; color:#8FCB9B; border:1px solid #314045; border-radius:8px;
-  padding:6px 16px; font-size:13px; font-weight:600; cursor:pointer; margin-top:10px; }}
+table.imoveis td.col-selo, table.imoveis th.col-selo {{ text-align:left; }}
+.ver-mais {{ background:#161D20; color:#8FCB9B; border:1px solid #263034; border-radius:9px;
+  padding:8px 18px; font-size:13px; font-weight:600; cursor:pointer; margin-top:12px; }}
 .ver-mais:hover {{ border-color:#8FCB9B; }}
-.rodape {{ color:#8b98a9; font-size:12.5px; border-top:1px solid #232D31; margin-top:30px; padding-top:14px; }}
+.rodape {{ color:#6B7681; font-size:12.5px; border-top:1px solid #1B2225; margin-top:30px; padding-top:16px; }}
 {CSS_MENU if publicados is not None else ""}
 {CSS_MARCA}
 {CSS_BUSCA_TOPO if publicados is not None else ""}
@@ -641,6 +713,7 @@ function calcRetro() {{
 
 if (document.getElementById('uc-preco')) {{ calcUmaCota(); calcAportes(); }}
 if (document.getElementById('rt-valor')) {{ calcRetro(); }}
+{JS_GRAFICO_HOVER}
 {(JS_MENU + JS_BUSCA_TOPO) if publicados is not None else ""}
 </script>
 </body>
@@ -662,7 +735,7 @@ def _link_se_publicado(ticker: str, publicados: set[str] | None) -> str:
 def _selo_html(raiox: RaioX) -> str:
     if raiox.selo is None:
         return ""
-    cor = _COR_SELO.get(raiox.selo.nivel, "#94a3b8")
+    cor = _COR_SELO.get(raiox.selo.nivel, "#7C8894")
     return (
         f'<span class="selo" style="background:{cor}" title="{_e(raiox.selo.descricao)}">'
         f"{_e(raiox.selo.rotulo)}</span>"
@@ -676,7 +749,7 @@ def _cotacao_em(raiox: RaioX, agora: datetime) -> str:
     if not idade:
         return f" · cotação de <b>{_e(raiox.cotacao_em)}</b>"
     defasada = "dia" in idade  # mais de 48h: fim de semana/feriado/cache antigo
-    cor = "#D9B44A" if defasada else "#8b98a9"
+    cor = "#E3C25C" if defasada else "#9AA7B2"
     aviso = " ⚠" if defasada else ""
     return (
         f" · cotação de <b>{_e(raiox.cotacao_em)}</b> "
@@ -834,7 +907,7 @@ def _tabela_relacionados(
             f"<tr{oculta}><td>{rotulo}</td><td>{_e(irmao.nome[:44])}</td>"
             f'<td style="white-space:nowrap">{idade}</td>'
             f"<td>{_e(irmao.segmento)}</td>"
-            f'<td style="white-space:nowrap">{taxa}</td><td>{selo}</td></tr>'
+            f'<td style="white-space:nowrap">{taxa}</td><td class="col-selo">{selo}</td></tr>'
         )
     botao = ""
     if len(relacionados) > limite:
@@ -846,9 +919,9 @@ def _tabela_relacionados(
     return f"""
   <h2>{titulo_html}</h2>
   <div class="grafico" style="overflow-x:auto">
-  <p class="desc" style="color:#aeb9c7;font-size:13.5px;margin-bottom:10px">{descricao_html}</p>
+  <p class="desc" style="color:#9AA7B2;font-size:13.5px;margin-bottom:10px">{descricao_html}</p>
   <table class="imoveis">
-    <thead><tr><th>ticker</th><th>fundo</th><th>idade</th><th>segmento</th><th>taxa</th><th>selo</th></tr></thead>
+    <thead><tr><th>ticker</th><th>fundo</th><th>idade</th><th>segmento</th><th>taxa</th><th class="col-selo">selo</th></tr></thead>
     <tbody>{"".join(linhas)}</tbody>
   </table>
   {botao}
@@ -905,11 +978,11 @@ def _selo_tabela(selo, motivos: tuple[str, ...]) -> str:
     """Selo compacto para tabelas, com o MOTIVO no tooltip."""
     if selo is None:
         return "—"
-    cor = _COR_SELO.get(selo.nivel, "#94a3b8")
+    cor = _COR_SELO.get(selo.nivel, "#7C8894")
     dica = "Alertas: " + "; ".join(motivos) if motivos else selo.descricao
     return (
-        f'<span class="selo" style="background:{cor};font-size:11px;padding:2px 10px" '
-        f'title="{_e(dica)}">{_e(selo.rotulo)}</span>'
+        f'<span class="selo-dot" style="color:{cor}" title="{_e(dica)}">'
+        f'<span class="pt" style="background:{cor}"></span>{_e(selo.rotulo)}</span>'
     )
 
 
@@ -930,21 +1003,21 @@ def _secao_pares(raiox: RaioX, publicados: set[str] | None = None) -> str:
             f"<td>{_celula(par.dy_12m, formato.percentual)}</td>"
             f"<td>{_celula(par.pvp, formato.decimal)}</td>"
             f"<td>{_celula(par.pl, formato.moeda_compacta)}</td>"
-            f"<td>{_selo_tabela(par.selo, par.motivos)}</td></tr>"
+            f'<td class="col-selo">{_selo_tabela(par.selo, par.motivos)}</td></tr>'
         )
     media = raiox.pares_media
     linhas.append(
-        f'<tr style="border-top:2px solid #314045"><td colspan="2"><b>média do segmento '
+        f'<tr style="border-top:2px solid #263034"><td colspan="2"><b>média do segmento '
         f"({media.get('n', 0)} fundos)</b></td>"
         f"<td><b>{_celula(media.get('dy'), formato.percentual)}</b></td>"
         f"<td><b>{_celula(media.get('pvp'), formato.decimal)}</b></td>"
-        f"<td><b>{_celula(media.get('pl'), formato.moeda_compacta)}</b></td><td></td></tr>"
+        f"<td><b>{_celula(media.get('pl'), formato.moeda_compacta)}</b></td><td class=\"col-selo\"></td></tr>"
     )
     return f"""
   <h2>Pares do segmento — {_e(raiox.classificacao)}{_ajuda("Pares do segmento")}</h2>
   <div class="grafico" style="overflow-x:auto">
   <table class="imoveis">
-    <thead><tr><th>ticker</th><th>fundo</th><th>DY 12m</th><th>P/VP</th><th>PL</th><th>selo</th></tr></thead>
+    <thead><tr><th>ticker</th><th>fundo</th><th>DY 12m</th><th>P/VP</th><th>PL</th><th class="col-selo">selo</th></tr></thead>
     <tbody>{"".join(linhas)}</tbody>
   </table>
   <div class="nota">os {len(raiox.pares)} maiores fundos do mesmo segmento (por PL) ·
@@ -1019,7 +1092,7 @@ def _secao_oscilacoes(completo: AnaliseCompleta, leitura: dict | None, visiveis:
     linhas = []
     for indice, osc in enumerate(oscilacoes):
         eventos = list(osc.eventos) + fatos_por_mes.get(osc.mes, [])
-        cor = "#8FCB9B" if osc.variacao >= 0 else "#D66A6A"
+        cor = "#8FCB9B" if osc.variacao >= 0 else "#DB7A7A"
         oculta = ' class="osc-extra" hidden' if indice >= visiveis else ""
         linhas.append(
             f"<tr{oculta}><td style='white-space:nowrap'>{_e(formato.competencia_curta(osc.mes))}</td>"
@@ -1061,24 +1134,24 @@ def _secao_parecer(leitura: dict | None) -> str:
     grave = parecer.get("grave", False)
     continuidade = parecer.get("continuidade", False)
     if grave:
-        cor, icone = "#D66A6A", "⚠"
+        cor, icone = "#DB7A7A", "⚠"
     elif continuidade:
-        cor, icone = "#D9B44A", "⚠"
+        cor, icone = "#E3C25C", "⚠"
     elif tipo == "sem_ressalva":
-        cor, icone = "#4ade80", "✓"
+        cor, icone = "#7BD69A", "✓"
     else:
-        cor, icone = "#8b98a9", "—"
+        cor, icone = "#9AA7B2", "—"
     data = parecer.get("data_entrega", "")[:10]
     aviso_continuidade = (
-        '<p style="color:#D9B44A;font-size:13.5px;margin-top:6px">⚠ o auditor apontou '
+        '<p style="color:#E3C25C;font-size:13.5px;margin-top:6px">⚠ o auditor apontou '
         "<b>incerteza relevante quanto à continuidade operacional</b> do fundo.</p>"
         if continuidade
         else ""
     )
     trecho = (
-        f'<p class="evid" style="background:#101415;border:1px solid #232D31;border-radius:7px;'
+        f'<p class="evid" style="background:#0F1416;border:1px solid #1B2225;border-radius:7px;'
         f'padding:6px 10px;font-family:ui-monospace,Consolas,monospace;font-size:12.5px;'
-        f'color:#aeb9c7;margin-top:8px">“{_e(parecer["trecho"])}”</p>'
+        f'color:#9AA7B2;margin-top:8px">“{_e(parecer["trecho"])}”</p>'
         if parecer.get("trecho")
         else ""
     )
@@ -1131,8 +1204,8 @@ def _bloco_fatos_ia(leitura: dict) -> str:
         for id_doc, data, rotulo in documentos
     )
     return (
-        f'<h3 style="font-size:15px;color:#aeb9c7;margin:16px 0 8px">{titulo}'
-        f' <span style="color:#8b98a9;font-weight:400">({links})</span></h3>'
+        f'<h3 style="font-size:15px;color:#9AA7B2;margin:16px 0 8px">{titulo}'
+        f' <span style="color:#9AA7B2;font-weight:400">({links})</span></h3>'
         f'<div style="white-space:pre-wrap">{_texto_ia_para_html(bloco["texto"])}</div>'
     )
 
@@ -1168,7 +1241,7 @@ def _bloco_evolucao(leitura: dict, completo: AnaliseCompleta | None) -> str:
         f' <span class="nota">— alertas da época: {_e("; ".join(alertas))}</span>' if alertas else ""
     )
     return (
-        f'<div class="nota" style="font-size:13px;margin-top:12px;border-top:1px solid #232D31;'
+        f'<div class="nota" style="font-size:13px;margin-top:12px;border-top:1px solid #1B2225;'
         f'padding-top:10px"><b>Evolução desde a leitura anterior</b> ({_e(quando)}, relatório de '
         f"{_e(anterior.get('relatorio_data', '')[:10])}): {'; '.join(partes)}.{detalhe_alertas}"
         f"<br>Comparação factual entre duas fotos no tempo — o selo constata, não prevê; "
@@ -1213,7 +1286,7 @@ def _secao_ia(leitura: dict | None, agora: datetime, completo: AnaliseCompleta |
         idade_dias = (agora - datetime(int(ano), int(mes), int(dia))).days
         if idade_dias > 40:
             aviso_idade = (
-                f' <span style="color:#D9B44A">⚠ documento de {idade_dias} dias atrás — '
+                f' <span style="color:#E3C25C">⚠ documento de {idade_dias} dias atrás — '
                 "pode existir relatório mais recente ainda não lido</span>"
             )
     except ValueError:
@@ -1433,7 +1506,7 @@ def _card_rentabilidade(dados) -> str:
     <div class="abas">{botoes}</div></div>
     {corpo}
     <div class="check" style="margin-top:6px"><input type="checkbox" id="rent-reinvestir" checked onchange="atualizaRent()">
-    <label for="rent-reinvestir" style="all:unset;cursor:pointer;color:#aeb9c7;font-size:13px">
+    <label for="rent-reinvestir" style="all:unset;cursor:pointer;color:#9AA7B2;font-size:13px">
     reinvestir os rendimentos *</label></div>
     <div class="nota">* marcado: rentabilidade com proventos reinvestidos (retorno total estimado
     a partir do fechamento oficial B3 + rendimentos informados à CVM);
