@@ -117,6 +117,7 @@ LVOL11;0,50;https://fnet.bmfbovespa.com.br/fnet/publico/downloadDocumento?id=120
 MARG11;0,50;https://fnet.bmfbovespa.com.br/fnet/publico/downloadDocumento?id=1208584;2026-07-20;media;p.17: taxa global paga pela Classe é equivalente a um percentual anual de 0,50%, apropriada diariamente e paga mensa
 MATB11;0,04;https://fnet.bmfbovespa.com.br/fnet/publico/downloadDocumento?id=1209697;2026-07-20;alta;p.18: Taxa de administração - é de 0,04% ao ano, sobre o patrimônio da Classe Ún
 META11;2,00;https://fnet.bmfbovespa.com.br/fnet/publico/downloadDocumento?id=1194043;2026-07-20;alta;p.8: Taxa Global, sobre o patrimônio líquido da Classe Única, nos seguintes parâmetros: (i) Valor da Taxa Global Má
+MIDB11;0,19;https://www.btgpactual.com/asset-management/etf/MIDB11;2026-07-20;manual;taxa total do produto (pagina do emissor)
 MILL11;0,04;https://fnet.bmfbovespa.com.br/fnet/publico/downloadDocumento?id=1209673;2026-07-20;alta;p.20: Taxa de administração - é de 0,04% ao ano, sobre o patrimônio da Classe Ún
 NASD11;0,30;https://fnet.bmfbovespa.com.br/fnet/publico/downloadDocumento?id=1204349;2026-07-20;alta;p.13: taxa global de 0,30% ao ano, calculada diariamente, por dia
 NB0211;0,19;https://fnet.bmfbovespa.com.br/fnet/publico/downloadDocumento?id=1237327;2026-07-20;alta;p.18: TAXA GLOBAL Valor da Taxa: 0,19% (dezenove centésimos por cento) ao ano
@@ -145,8 +146,13 @@ PKIN11;0,03;https://fnet.bmfbovespa.com.br/fnet/publico/downloadDocumento?id=120
 POSB11;0,15;https://fnet.bmfbovespa.com.br/fnet/publico/downloadDocumento?id=1140627;2026-07-20;alta;p.18: Taxa Global correspondente a 0,15% (quinze centésimos por cento) ao ano, a
 PRAF11;0,20;https://fnet.bmfbovespa.com.br/fnet/publico/downloadDocumento?id=1215336;2026-07-20;alta;p.1: Taxa Global 0,20% (vinte centésimos por cento) ao ano, ap
 PREX11;0,15;https://www.xpasset.com.br/fundos/PREX11/;2026-07-20;manual;taxa total do produto (pagina do emissor)
+QBTC11;0,70;https://qrasset.com.br/qbtc11/;2026-07-20;manual;taxa total do produto (pagina do emissor)
+QDFI11;0,90;https://qrasset.com.br/qdfi11;2026-07-20;manual;taxa total do produto (pagina do emissor)
+QETH11;0,70;https://qrasset.com.br/qeth11;2026-07-20;manual;taxa total do produto (pagina do emissor)
 QLBR11;0,50;https://fnet.bmfbovespa.com.br/fnet/publico/downloadDocumento?id=1208561;2026-07-20;media;p.19: taxa global paga pela Classe é equivalente a um percentual anual de 0,50%, apropriada diariamente e paga mensa
 QQQI11;0,83;https://buenavista.capital/qqqi11/;2026-07-20;manual;taxa total do produto (pagina do emissor)
+QQQQ11;0,55;https://buenavista.capital/qqqq11/;2026-07-20;manual;taxa total do produto (pagina do emissor)
+QSOL11;0,70;https://qrasset.com.br/qsol11;2026-07-20;manual;taxa total do produto (pagina do emissor)
 RARA11;0,50;https://fnet.bmfbovespa.com.br/fnet/publico/downloadDocumento?id=1212155;2026-07-20;alta;p.18: Taxa Global 0,50% (cinquenta centésimos por cento) ao ano
 REVE11;0,04;https://fnet.bmfbovespa.com.br/fnet/publico/downloadDocumento?id=1209674;2026-07-20;alta;p.21: Taxa de administração - é de 0,04% ao ano, sobre o patrimônio da Classe Ún
 RICO11;0,55;https://fnet.bmfbovespa.com.br/fnet/publico/downloadDocumento?id=1236189;2026-07-20;alta;p.18: taxa global equivalente a 0,55% (cinquenta e cinco centésimos por cento
