@@ -119,3 +119,42 @@ def test_atualizar_grava_serie_e_e_incremental(con, monkeypatch):
     baixados.clear()
     fundamentos.atualizar(con, hoje=date(2026, 7, 19))
     assert baixados == [2025]  # só o ano recente é rebaixado
+
+
+def test_multiplos_pl_pvp_dy():
+    # 1000 ações, lucro 200 -> LPA 0,20; PL 1000 -> VPA 1,00; preço 2,00; div 0,10/ação
+    r = fundamentos.multiplos(
+        preco=2.0, dividendos_12m=0.10, lucro=200.0, patrimonio_liquido=1000.0, acoes_total=1000.0
+    )
+    assert r["pl"] == pytest.approx(10.0)   # 2,00 / 0,20
+    assert r["pvp"] == pytest.approx(2.0)   # 2,00 / 1,00
+    assert r["dy"] == pytest.approx(5.0)    # 100 * 0,10 / 2,00
+
+
+def test_multiplos_none_quando_falta_ou_prejuizo():
+    # sem ações: P/L e P/VP None (precisam do LPA/VPA); DY independe de ações
+    r0 = fundamentos.multiplos(2.0, 0.1, 200.0, 1000.0, None)
+    assert r0["pl"] is None and r0["pvp"] is None and r0["dy"] == pytest.approx(5.0)
+    # prejuízo -> P/L None (não faz sentido), mas P/VP e DY seguem
+    r = fundamentos.multiplos(2.0, 0.0, -50.0, 1000.0, 1000.0)
+    assert r["pl"] is None and r["pvp"] == pytest.approx(2.0) and r["dy"] == pytest.approx(0.0)
+    # sem preço -> P/VP e DY None
+    r2 = fundamentos.multiplos(None, 0.1, 200.0, 1000.0, 1000.0)
+    assert r2["pvp"] is None and r2["dy"] is None
+
+
+def test_multiplos_do_papel_junta_as_fontes(con):
+    con.execute("INSERT INTO empresas (cod_cvm, radical, acoes_total) VALUES ('9512','PETR',1000)")
+    con.execute("INSERT INTO papeis (ticker, cod_cvm, isin, tipo) VALUES ('PETR4','9512','x','PN')")
+    con.execute(
+        "INSERT INTO fundamentos (cod_cvm, ano, lucro_liquido, patrimonio_liquido) VALUES ('9512',2024,200,1000)"
+    )
+    armazenamento.gravar_cotacoes(con, "PETR4", [("2026-06", 2.0, 2.0)], 2.0, "2026-07-17", "2026-07-17T20:00")
+    con.execute("INSERT INTO acao_proventos (ticker, data_com, label, valor) VALUES ('PETR4','2026-05-01','DIV',0.10)")
+    # provento fora da janela de 12 meses não conta
+    con.execute("INSERT INTO acao_proventos (ticker, data_com, label, valor) VALUES ('PETR4','2020-01-01','DIV',9.99)")
+    con.commit()
+    r = fundamentos.multiplos_do_papel(con, "petr4", hoje=date(2026, 7, 20))
+    assert r["pl"] == pytest.approx(10.0)
+    assert r["pvp"] == pytest.approx(2.0)
+    assert r["dy"] == pytest.approx(5.0)  # só os 0,10 recentes

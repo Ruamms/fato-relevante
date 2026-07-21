@@ -188,6 +188,9 @@ CREATE TABLE IF NOT EXISTS empresas (
     auditor           TEXT,              -- AUDITOR no cadastro CVM
     segmento_listagem TEXT,              -- Novo Mercado, N2, N1...
     no_ibrx100        INTEGER,           -- 1 = escopo v1
+    acoes_on          REAL,              -- ações ordinárias em circulação (B3)
+    acoes_pn          REAL,              -- ações preferenciais em circulação (B3)
+    acoes_total       REAL,              -- total de ações (base do market cap / LPA / VPA)
     atualizado_em     TEXT
 );
 CREATE TABLE IF NOT EXISTS papeis (
@@ -308,6 +311,15 @@ def _migrar(con: sqlite3.Connection) -> None:
             for col, tipo in novas:
                 con.execute(f"ALTER TABLE etf_posicoes ADD COLUMN {col} {tipo}")
             con.execute("DELETE FROM cargas WHERE arquivo LIKE 'cda_fi_%'")
+            con.commit()
+    if "empresas" in tabelas:
+        colunas_emp = {linha[1] for linha in con.execute("PRAGMA table_info(empresas)")}
+        faltantes_emp = [c for c in ("acoes_on", "acoes_pn", "acoes_total") if c not in colunas_emp]
+        if faltantes_emp:
+            for col in faltantes_emp:
+                con.execute(f"ALTER TABLE empresas ADD COLUMN {col} REAL")
+            # re-sincroniza as empresas na B3 para preencher as ações em circulação
+            con.execute("DELETE FROM cargas WHERE arquivo = 'EMPRESAS_B3'")
             con.commit()
     if "cargas" in tabelas:
         marcador_cda = con.execute(
@@ -638,6 +650,19 @@ def fundamentos_da_empresa(con: sqlite3.Connection, cod_cvm: str) -> list[sqlite
     return con.execute(
         "SELECT * FROM fundamentos WHERE cod_cvm = ? ORDER BY ano", (cod_cvm,)
     ).fetchall()
+
+
+def proventos_12m(con: sqlite3.Connection, ticker: str, hoje) -> float:
+    """Soma dos proventos (R$/ação) com data-com nos últimos 365 dias — base do
+    dividend yield. Zero (não None) quando o papel não pagou nada no período."""
+    from datetime import timedelta
+
+    corte = (hoje - timedelta(days=365)).isoformat()
+    linha = con.execute(
+        "SELECT COALESCE(SUM(valor), 0) FROM acao_proventos WHERE ticker = ? AND data_com >= ?",
+        (ticker.strip().upper(), corte),
+    ).fetchone()
+    return float(linha[0]) if linha else 0.0
 
 
 def liquidez_recente(con: sqlite3.Connection, ticker: str, meses: int = 3) -> float | None:

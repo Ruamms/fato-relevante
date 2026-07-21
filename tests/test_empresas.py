@@ -90,7 +90,7 @@ def _mock_fontes(monkeypatch):
 
     monkeypatch.setattr(empresas, "_chamar", _chamar)
     monkeypatch.setattr(empresas, "carregar_cadastro_cvm", lambda: CADASTRO_CVM)
-    monkeypatch.setattr(empresas, "eventos_do_emissor", lambda radical: ([], []))
+    monkeypatch.setattr(empresas, "eventos_do_emissor", lambda radical: ([], [], {}))
     monkeypatch.setattr(empresas, "proventos_do_emissor", lambda nome: [])
     return chamadas
 
@@ -189,9 +189,10 @@ def test_eventos_e_proventos_gravados_por_papel(con, monkeypatch):
                 },
             ],
             [],
+            {"on": 7442231382.0, "pn": 5446501379.0, "total": 12888732761.0},
         )
         if radical == "PETR"
-        else ([], []),
+        else ([], [], {}),
     )
     monkeypatch.setattr(
         empresas,

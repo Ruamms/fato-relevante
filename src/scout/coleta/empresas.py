@@ -113,12 +113,16 @@ def _data_iso(texto: str | None) -> str:
     return f"{partes[2]}-{partes[1]}-{partes[0]}"
 
 
-def eventos_do_emissor(radical: str) -> tuple[list[dict], list[dict]]:
-    """(stockDividends, cashDividends) do bloco 'eventos corporativos' da B3.
+def eventos_do_emissor(radical: str) -> tuple[list[dict], list[dict], dict]:
+    """(stockDividends, cashDividends, acoes) do bloco 'eventos corporativos' da B3.
 
     Semântica do factor, validada com casos reais (PETR/VALE/IRBR/AMER):
     DESDOBRAMENTO e BONIFICACAO = PERCENTUAL de ações novas (100 = dobrou);
     GRUPAMENTO = razão direta da quantidade (<1; AMER 100:1 = 0,01).
+
+    `acoes` = ações em circulação (ON, PN e total) — a mesma resposta traz
+    `numberCommonShares`/`numberPreferredShares`/`totalNumberShares`, base do
+    market cap para P/L e P/VP.
     """
     dados = _chamar(
         URL_EMPRESAS,
@@ -126,7 +130,12 @@ def eventos_do_emissor(radical: str) -> tuple[list[dict], list[dict]]:
         {"issuingCompany": radical, "language": "pt-br"},
     )
     item = dados[0] if isinstance(dados, list) and dados else {}
-    return (item.get("stockDividends") or [], item.get("cashDividends") or [])
+    acoes = {
+        "on": _numero_ptbr(item.get("numberCommonShares")) or None,
+        "pn": _numero_ptbr(item.get("numberPreferredShares")) or None,
+        "total": _numero_ptbr(item.get("totalNumberShares")) or None,
+    }
+    return (item.get("stockDividends") or [], item.get("cashDividends") or [], acoes)
 
 
 def proventos_do_emissor(nome_pregao: str) -> list[dict]:
@@ -172,8 +181,12 @@ def _gravar_eventos_e_proventos(con: sqlite3.Connection, empresa: sqlite3.Row) -
     por_isin = {p["isin"]: p["ticker"] for p in papeis if p["isin"]}
     por_tipo = {p["tipo"]: p["ticker"] for p in papeis}
 
-    eventos, _dividendos_recentes = eventos_do_emissor(empresa["radical"])
+    eventos, _dividendos_recentes, acoes = eventos_do_emissor(empresa["radical"])
     time.sleep(0.25)
+    con.execute(
+        "UPDATE empresas SET acoes_on = ?, acoes_pn = ?, acoes_total = ? WHERE cod_cvm = ?",
+        (acoes.get("on"), acoes.get("pn"), acoes.get("total"), empresa["cod_cvm"]),
+    )
     for evento in eventos:
         ticker = por_isin.get((evento.get("isinCode") or "").strip())
         data = _data_iso(evento.get("lastDatePrior"))

@@ -80,10 +80,13 @@ def test_card_de_taxa_aparece_na_pagina_do_etf(con):
     assert 'href="https://fnet.example/reg.pdf"' in pagina
 
 
-def test_sem_taxa_nao_mostra_card(con):
+def test_sem_taxa_nao_mostra_card(con, monkeypatch):
+    from scout.coleta import taxas_etf as _te
+
+    monkeypatch.setattr(_te, "carregar", lambda *a, **k: {})  # isola do CSV curado do repo
     _semear_etf(con)
     dados = etf_html.montar_dados_etf(con, "BOVA11", {})
-    assert dados["taxa_adm"] is None  # CSV do repo vazio
+    assert dados["taxa_adm"] is None
     pagina = etf_html.gerar(dados, agora=datetime(2026, 7, 20, 11, 0))
     assert "Taxa de administração" not in pagina
 

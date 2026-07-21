@@ -216,3 +216,41 @@ def indicadores(linha: sqlite3.Row | dict) -> dict:
         "divida_liquida_pl": (divida_liquida / pl) if (divida_liquida is not None and pl) else None,
         "setor_financeiro": financeiro,
     }
+
+
+def multiplos(preco, dividendos_12m, lucro, patrimonio_liquido, acoes_total) -> dict:
+    """P/L, P/VP e DY (%) de um PAPEL, a partir do preço + ações em circulação
+    (B3) + último balanço. LPA = lucro/ações, VPA = PL/ações. Cada um é None
+    quando falta o dado ou não faz sentido — P/L só com lucro POSITIVO (empresa
+    no prejuízo não tem P/L útil); nunca um número inventado."""
+    lpa = (lucro / acoes_total) if (lucro is not None and acoes_total) else None
+    vpa = (patrimonio_liquido / acoes_total) if (patrimonio_liquido is not None and acoes_total) else None
+    return {
+        "pl": (preco / lpa) if (preco and lpa and lpa > 0) else None,
+        "pvp": (preco / vpa) if (preco and vpa and vpa > 0) else None,
+        "dy": (100 * dividendos_12m / preco) if (preco and dividendos_12m is not None) else None,
+    }
+
+
+def multiplos_do_papel(con: sqlite3.Connection, ticker: str, hoje: date | None = None) -> dict:
+    """Junta preço (fechamento D-1), ações em circulação, último balanço e os
+    proventos dos últimos 12 meses para calcular P/L, P/VP e DY do ticker."""
+    hoje = hoje or date.today()
+    ticker = ticker.strip().upper()
+    papel = con.execute("SELECT cod_cvm FROM papeis WHERE ticker = ?", (ticker,)).fetchone()
+    if papel is None:
+        return {"pl": None, "pvp": None, "dy": None}
+    cod_cvm = papel["cod_cvm"]
+    empresa = con.execute("SELECT acoes_total FROM empresas WHERE cod_cvm = ?", (cod_cvm,)).fetchone()
+    balanco = con.execute(
+        "SELECT lucro_liquido, patrimonio_liquido FROM fundamentos WHERE cod_cvm = ? ORDER BY ano DESC LIMIT 1",
+        (cod_cvm,),
+    ).fetchone()
+    meta = armazenamento.cotacao_meta(con, ticker)
+    return multiplos(
+        preco=meta["preco_atual"] if meta else None,
+        dividendos_12m=armazenamento.proventos_12m(con, ticker, hoje),
+        lucro=balanco["lucro_liquido"] if balanco else None,
+        patrimonio_liquido=balanco["patrimonio_liquido"] if balanco else None,
+        acoes_total=empresa["acoes_total"] if empresa else None,
+    )
