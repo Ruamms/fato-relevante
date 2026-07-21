@@ -210,6 +210,7 @@ CREATE TABLE IF NOT EXISTS fundamentos (
     patrimonio_liquido REAL,
     caixa              REAL,   -- caixa + aplicações financeiras
     divida_bruta       REAL,   -- empréstimos e financiamentos (circ + não circ)
+    da                 REAL,   -- depreciação/amortização (DFC) — base do EBITDA
     setor_financeiro   INTEGER DEFAULT 0,  -- 1 = DRE de intermediação (banco/seguradora)
     PRIMARY KEY (cod_cvm, ano)
 );
@@ -320,6 +321,13 @@ def _migrar(con: sqlite3.Connection) -> None:
                 con.execute(f"ALTER TABLE empresas ADD COLUMN {col} REAL")
             # re-sincroniza as empresas na B3 para preencher as ações em circulação
             con.execute("DELETE FROM cargas WHERE arquivo = 'EMPRESAS_B3'")
+            con.commit()
+    if "fundamentos" in tabelas:
+        colunas_fund = {linha[1] for linha in con.execute("PRAGMA table_info(fundamentos)")}
+        if "da" not in colunas_fund:
+            con.execute("ALTER TABLE fundamentos ADD COLUMN da REAL")
+            # re-baixa a DFP para preencher o D&A (base do EBITDA)
+            con.execute("DELETE FROM cargas WHERE arquivo LIKE 'DFP_%'")
             con.commit()
     if "cargas" in tabelas:
         marcador_cda = con.execute(

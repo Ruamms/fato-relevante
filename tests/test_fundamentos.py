@@ -50,11 +50,17 @@ def _zip_dfp() -> bytes:
         _linha("009512", "2.02.01", "Empréstimos e Financiamentos", "60"),
         _linha("019348", "2.08", "Patrimônio Líquido Consolidado", "100"),
     ]
+    dfc = [
+        _linha("009512", "6.01.01.04", "Depreciação, depleção e amortização", "10"),
+        # amortização de financiamento (6.03.xx) NÃO é D&A: deve ser ignorada
+        _linha("009512", "6.03.03", "Amortizações de principal - financiamentos", "-5"),
+    ]
     buffer = io.BytesIO()
     with zipfile.ZipFile(buffer, "w") as zf:
         zf.writestr("dfp_cia_aberta_DRE_con_2024.csv", (_COLS + "\n" + "\n".join(dre)).encode("latin-1"))
         zf.writestr("dfp_cia_aberta_BPA_con_2024.csv", (_COLS + "\n" + "\n".join(bpa)).encode("latin-1"))
         zf.writestr("dfp_cia_aberta_BPP_con_2024.csv", (_COLS + "\n" + "\n".join(bpp)).encode("latin-1"))
+        zf.writestr("dfp_cia_aberta_DFC_MI_con_2024.csv", (_COLS + "\n" + "\n".join(dfc)).encode("latin-1"))
     return buffer.getvalue()
 
 
@@ -70,6 +76,7 @@ def test_extrai_comercial_e_banco_com_escala():
     assert com["caixa"] == 50_000  # 1.01.01 + 1.01.02
     assert com["patrimonio_liquido"] == 200_000
     assert com["divida_bruta"] == 80_000  # 2.01.04 + 2.02.01
+    assert com["da"] == 10_000  # só a linha 6.01.01 (a amortização de financiamento 6.03 fica de fora)
     assert com["setor_financeiro"] == 0
 
     banco = dados[19348]
@@ -88,12 +95,15 @@ def test_indicadores_derivados():
     assert com["roe"] == pytest.approx(7.5)
     assert com["divida_liquida"] == pytest.approx(30_000)  # 80k - 50k caixa
     assert com["divida_liquida_pl"] == pytest.approx(0.15)
+    assert com["ebitda"] == pytest.approx(35_000)  # EBIT 25k + D&A 10k
+    assert com["margem_ebitda"] == pytest.approx(35.0)
 
     banco = fundamentos.indicadores(dados[19348])
     assert banco["margem_bruta"] is None  # não se aplica a banco
     assert banco["margem_liquida"] == pytest.approx(15.0)
     assert banco["roe"] == pytest.approx(12.0)
     assert banco["divida_liquida"] is None
+    assert banco["ebitda"] is None  # banco não tem EBIT -> sem EBITDA
 
 
 def test_atualizar_grava_serie_e_e_incremental(con, monkeypatch):

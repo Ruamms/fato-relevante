@@ -118,6 +118,20 @@ def extrair_ano(conteudo: bytes, cod_cvms: set[int]) -> dict[int, dict]:
         elif conta in ("2.01.04", "2.02.01"):  # dívida onerosa (circ + não circ)
             alvo["divida_bruta"] = alvo.get("divida_bruta", 0.0) + val
 
+    # --- DFC (fluxo de caixa, método indireto): D&A para o EBITDA ---
+    # O código não é padronizado (varia entre 6.01.01.02/03/04/05/06…), então
+    # casamos por TEXTO dentro dos ajustes operacionais (6.01.01.xx): a
+    # depreciação/amortização/exaustão que é somada de volta ao lucro. As
+    # "amortizações" de 6.02/6.03 (empréstimos, debêntures, arrendamentos) NÃO
+    # entram — são fluxo de financiamento, não D&A.
+    for cd, linha in _rows("DFC_MI_con"):
+        conta = linha["CD_CONTA"]
+        ds = (linha.get("DS_CONTA") or "").lower()
+        if conta.startswith("6.01.01.") and ("deprecia" in ds or "amortiza" in ds or "exaust" in ds):
+            val = _num(linha["VL_CONTA"]) * _escala(linha.get("ESCALA_MOEDA"))
+            alvo = dados.setdefault(cd, {})
+            alvo["da"] = alvo.get("da", 0.0) + val
+
     return dados
 
 
@@ -153,8 +167,8 @@ def atualizar(
                 """
                 INSERT OR REPLACE INTO fundamentos
                     (cod_cvm, ano, receita, resultado_bruto, ebit, lucro_liquido,
-                     ativo_total, patrimonio_liquido, caixa, divida_bruta, setor_financeiro)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                     ativo_total, patrimonio_liquido, caixa, divida_bruta, da, setor_financeiro)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """,
                 (
                     str(cod_cvm), ano,
@@ -162,6 +176,7 @@ def atualizar(
                     campos.get("ebit"), campos.get("lucro_liquido"),
                     campos.get("ativo_total"), campos.get("patrimonio_liquido"),
                     campos.get("caixa"), campos.get("divida_bruta"),
+                    campos.get("da"),
                     campos.get("setor_financeiro", 0),
                 ),
             )
@@ -197,6 +212,8 @@ def indicadores(linha: sqlite3.Row | dict) -> dict:
     bruto = v("resultado_bruto")
     divida = v("divida_bruta")
     caixa = v("caixa")
+    ebit = v("ebit")
+    da = v("da")
     financeiro = bool(v("setor_financeiro"))
 
     def pct(numerador, denominador):
@@ -208,10 +225,15 @@ def indicadores(linha: sqlite3.Row | dict) -> dict:
     if not financeiro and divida is not None:
         divida_liquida = divida - (caixa or 0.0)
 
+    # EBITDA = EBIT + D&A (não se aplica a banco/seguradora, que não têm EBIT)
+    ebitda = (ebit + da) if (ebit is not None and da is not None and not financeiro) else None
+
     return {
         "margem_bruta": None if financeiro else pct(bruto, receita),
         "margem_liquida": pct(lucro, receita),
         "roe": pct(lucro, pl),
+        "ebitda": ebitda,
+        "margem_ebitda": pct(ebitda, receita),
         "divida_liquida": divida_liquida,
         "divida_liquida_pl": (divida_liquida / pl) if (divida_liquida is not None and pl) else None,
         "setor_financeiro": financeiro,
