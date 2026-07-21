@@ -1,0 +1,36 @@
+{
+  "ticker": "IBOB11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:39:41",
+  "comunicados": {
+    "ids": [
+      1247718,
+      1247713,
+      1247716,
+      1223950
+    ],
+    "datas": [
+      "14/07/2026",
+      "14/07/2026",
+      "14/07/2026",
+      "18/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### O QUE ACONTECEU: Assembleia Geral de Cotistas Aprova Contas Anuais do Fundo\n\n**Resumo:** A assembleia geral de cotistas realizada em 6 de julho de 2026 aprovou as contas anuais do BTG PACTUAL B3 IBOVESPA FUNDO DE INDICE referente ao exercício encerrado em 31 de março de 2026.\n\n**Trecho-chave:** \"4.1. Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de março de 2026.\" (p. 1)\n\n### O QUE ACONTECEU: Convocação para Assembleia Geral\n\n**Resumo:** A administradora BTG Pactual Serviços Financeiros S.A. DTVM convocou os cotistas do BTG PACTUAL B3 IBOVESPA FUNDO DE INDICE para uma assembleia geral com o objetivo de aprovar as contas anuais referentes ao exercício encerrado em 31 de março de 2026.\n\n**Trecho-chave:** \"Aprovamos a convocação da assembleia geral para deliberarem sobre: (i) A aprovação das contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de março de 2026.\" (p. 2)\n\n### O QUE ACONTECEU: Resposta à Consulta Formal\n\n**Resumo:** Um cotista respondeu à consulta formal enviada pela administradora BTG Pactual Serviços Financeiros S.A. DTVM, votando a favor da aprovação das contas e demonstrações contábeis do Fundo referentes ao exercício encerrado em 31 de março de 2026.\n\n**Trecho-chave:** \"Voto: [ ] SIM, aprovo as contas e demonstrações contábeis do Fundo.\" (p. 3)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208575,
+    "data_entrega": "30/05/2026 02:04",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do BTG Pactual Ibovespa B3 Fundo de Índice em 31 de março de 2026 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos Fundos de Investimento Financeiros."
+  }
+}

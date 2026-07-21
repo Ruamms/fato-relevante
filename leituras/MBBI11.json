@@ -1,0 +1,20 @@
+{
+  "ticker": "MBBI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T04:09:52",
+  "comunicados": {
+    "ids": [],
+    "datas": [],
+    "rotulos": [],
+    "texto": null
+  },
+  "parecer": {
+    "id": 869781,
+    "data_entrega": "31/03/2025 19:54",
+    "tipo": "nao_identificado",
+    "rotulo": "parecer não identificado no texto",
+    "grave": false,
+    "continuidade": false,
+    "trecho": ""
+  }
+}

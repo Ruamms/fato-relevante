@@ -1,0 +1,27 @@
+{
+  "ticker": "BGRJ11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T01:01:47",
+  "comunicados": {
+    "ids": [
+      1243100,
+      1170717,
+      1169319,
+      1164893
+    ],
+    "datas": [
+      "09/07/2026",
+      "27/04/2026",
+      "24/04/2026",
+      "15/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 09/07/2026\n\n**O que aconteceu:** Reavaliação dos investimentos do Fundo, resultando em um impacto positivo de 19,57% na cota.\n\n**Resumo:** A XP INVESTIMENTOS e a BGR ASSET MANAGEMENT informaram sobre a reavaliação dos ativos do fundo, que levou a uma valorização significativa das cotas.\n\n**Trecho-chave:**\n\"os investimentos do Fundo foram reavaliados, em conformidade com o quanto atestado em laudo de avaliação referente à data base de 30 de junho de 2026, qual, por sua vez, foi elaborado com o fim de reconhecer os impactos de eventos recentes sobre o valor justo do ativo do Fundo.\"\n\n---\n\n### FATO RELEVANTE entregue em 27/04/2026\n\n**O que aconteceu:** Alteração no mercado organizado das cotas do fundo, passando para o balcão organizado.\n\n**Resumo:** A BGR ASSET MANAGEMENT e a XP INVESTIMENTOS informaram sobre a mudança de mercado das cotas do fundo, de bolsa de valores para balcão organizado.\n\n**Trecho-chave:**\n\"foi formalizado o ‘Instrumento Particular de Alteração do Regulamento do BGR Cidade Jardim Fundo de Investimento Imobiliário – Responsabilidade Limitada’ (‘Instrumento de Alteração’), por meio do qual a Gestora, em conjunto com a Administradora, aprovaram a alteração do mercado organizado em que as cotas do Fundo estão admitidas à negociação.\"\n\n---\n\n### FATO RELEVANTE entregue em 24/04/2026\n\n**O que aconteceu:** Alteração no mercado organizado das cotas do fundo, passando para o balcão organizado.\n\n**Resumo:** A BGR ASSET MANAGEMENT e a XP INVESTIMENTOS informaram sobre a mudança de mercado das cotas do fundo, de bolsa de valores para balcão organizado.\n\n**Trecho-chave:**\n\"foi formalizado o ‘Instrumento Particular de Alteração do Regulamento do BGR Cidade Jardim Fundo de Investimento Imobiliário – Responsabilidade Limitada’ (‘Instrumento de Alteração’), por meio do qual a Gestora, em conjunto com a Administradora, aprovaram a alteração do mercado organizado em que as cotas do Fundo estão admitidas à negociação.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 15/04/2026\n\n**O que aconteceu:** Modificação da oferta pública de distribuição primária, incluindo alteração no ambiente de negociação das cotas e aumento do investimento mínimo.\n\n**Resumo:** A BGR ASSET MANAGEMENT, a XP INVESTIMENTOS e o Coordenador Líder informaram sobre a modificação da oferta, que incluiu a migração para o mercado de balcão organizado e aumento do investimento mínimo.\n\n**Trecho-chave:**\n\"foi protocolado nesta data, junto à B3 S.A. – Brasil, Bolsa, Balcão (‘B3’), a solicitação de migração do ambiente de negociação das Cotas, que deixarão de ser distribuídas por meio do Sistema de Distribuição de Ativos - DDA, administrado e operacionalizado pela B3 e após o deferimento da B3, passarão a ser negociadas exclusivamente no mercado de balcão organizado, por meio do Módulo de Distribuição de Ativos – MDA, nos termos da regulamentação aplicável.\"\n\n---\n\n**Conexões com indicadores:** As alterações no ambiente de negociação das cotas e o aumento do investimento mínimo podem afetar a liquidez e a acessibilidade dos investidores ao fundo."
+  },
+  "modelo": "qwen2.5:7b"
+}

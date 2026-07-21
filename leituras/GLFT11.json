@@ -1,0 +1,27 @@
+{
+  "ticker": "GLFT11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:33:41",
+  "comunicados": {
+    "ids": [
+      1187227
+    ],
+    "datas": [
+      "12/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado"
+    ],
+    "texto": "**12/05/2026 - A atualização da forma de divulgação da remuneração dos Prestadores de Serviços Essenciais**\n\nA BTG Pactual Serviços Financeiros S.A. DTVM informou que, por meio do Ofício-Circular CVM nº 1/2025, a atualização da forma de divulgação da remuneração foi aprovada, substituindo o \"Sumário de Remuneração\" pelo link de acesso à Ferramenta ANBIMA (Plataforma de Transparência de Taxas). Não haverá alteração nos valores pagos pelos cotistas.\n\n*\"Considerando as interpretações adicionais divulgadas pelo Ofício-Circular Conjunto nº 1/2025/CVM/SIN/SSE, restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\" (p. 1)*"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208577,
+    "data_entrega": "30/05/2026 02:07",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Galapagos Teva Tesouro Selic Fundo de Índice em 31 de março de 2026 e o desempenho de suas operações para o período de 08 de outubro de 2025 a 31 de março de 2026, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos Fundos"
+  }
+}

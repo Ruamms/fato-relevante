@@ -1,0 +1,49 @@
+{
+  "ticker": "ASRF11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T04:24:45",
+  "relatorio": {
+    "id": 1242565,
+    "data_entrega": "08/07/2026 21:19",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Obras e Reformas:**\n   - O Condomínio Mosaico está em fase final de construção, com as unidades privativas já entregues para vistoria.\n   - As áreas comuns estão sendo finalizadas, incluindo a instalação de fachadas, brise, paisagismo e equipamentos como academia.\n\n2. **Atrasos na Obra:**\n   - Houve atraso no cronograma da obra, motivado por dificuldades na aprovação do projeto da torre A junto à concessionária de energia elétrica e alterações no projeto de SPDA.\n   - A nova previsão de conclusão é agosto.\n\n3. **Vendas:**\n   - As vendas das unidades estão sendo coordenadas pela RE/MAX, com 70 agências e mais de 1.100 corretores na cidade de São Paulo.\n   - Não há divulgação do andamento nem dos preços das vendas neste relatório.\n\n4. **Chamada de Capital:**\n   - A depender do ritmo das próximas vendas, poderá haver uma chamada de capital da ordem de 5% do fundo para cobrir custos mensais.\n   - A medida não é definitiva e pode não ser necessária caso as entradas de caixa avancem mais rapidamente.\n\n### O que observar em seguida:\n- Monitorar o andamento das vendas e a data de conclusão da obra.\n- Verificar se haverá uma chamada de capital adicional."
+  },
+  "comunicados": {
+    "ids": [
+      811361,
+      1183324,
+      1183320,
+      1169270
+    ],
+    "datas": [
+      "30/12/2024",
+      "08/05/2026",
+      "08/05/2026",
+      "24/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 30/12/2024\n\nO Fundo DAYCOVAL RETROFITS I realizou a 3ª Chamada de Capital para integralização das cotas não integralizadas.\n\nA Administradora (BTG PACTUAL) informa que serão integralizadas 1.058 cotações, cada uma no valor de R$ 11.023,49, totalizando R$ 11.662.852,42. A liquidação está prevista para ocorrer em 20 de janeiro de 2025.\n\n\"Por meio da 3ª Chamada de Capital deverão ser integralizadas 1.058 (mil e cinquenta e oito) cotas, no valor de R$ 11.023,49 (onze mil, vinte e tres reais e quarenta e nove centavos ) por cota, perfazendo o valor total de R$ 11.662.852,42 (onze milhões, seicentos e sessenta e dois mil, oitocentos e cinquenta e dois reais e quarenta e dois centavos ), os quais correspondem a cotas subscritas e não integralizadas do Fundo.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 08/05/2026\n\nA assembleia geral de cotistas do ASA RETROFITS I aprovou as contas anuais do Fundo referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n\"Na assembleia geral de cotistas realizada em 04 de maio de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 08/05/2026\n\nA assembleia geral de cotistas do ASA RETROFITS I aprovou as contas e demonstrações contábeis do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n\"4.1. Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 24/04/2026\n\nA administradora (BTG PACTUAL) convocou os cotistas do ASA RETROFITS I para a Consulta Formal, com prazo até 04 de maio de 2026, para deliberarem sobre a aprovação das contas e demonstrações contábeis do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n\"A BTG Pactual Serviços Financeiros S.A. Distribuidora de Títulos e Valores Mobiliários, sociedade anônima, com sede na Cidade e Estado do Rio de Janeiro, localizada à Praia de Botafogo, nº 501, Torre Corcovado, 5º Andar (Parte), Botafogo, e inscrita no CNPJ sob o nº 59.281.253/0001-23, devidamente autorizada pela Comissão de Valores Mobiliários (“CVM”) para a atividade de administração de carteiras de valores mobiliários, de acordo com o Ato Declaratório CVM nº 8 .695, de 20 de março de 2006 (\"Administradora\"), na qualidade de administradora do ASA RETROFITS I FUNDO DE INVESTIMENTO IMOBILIARIO FII, inscrito no CNPJ sob o nº 45.188.033/0001-45 (‘Fundo'), bem como de sua classe única, vem, pela presente, convocar os cotistas do Fundo (\"Cotistas\") para a Consulta Formal, com prazo de recebimento de votos até 04 de maio de 2026, para deliberarem sobre: (i) A aprovação das contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de dezembro de 2025.\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Menos cotistas que o mínimo para isenção de IR",
+      "Rendimentos irregulares"
+    ],
+    "cota": 10974.0
+  },
+  "parecer": {
+    "id": 1146972,
+    "data_entrega": "27/03/2026 16:23",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

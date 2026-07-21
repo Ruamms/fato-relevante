@@ -1,0 +1,55 @@
+{
+  "ticker": "SMRE11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T02:06:45",
+  "relatorio": {
+    "id": 1245466,
+    "data_entrega": "13/07/2026 13:31",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Comercialização de Unidades**: O Jardim Independência registrou 98,30% das unidades comercializadas, enquanto o Golden Sul I teve 89,20%. Em junho, foram registrados 3 vendas e 1 distrato no Jardim Independência, resultando em vendas líquidas de 2 unidades. No Golden Sul I, ocorreram 5 vendas e 5 distratos, com estoque mantido em 54 unidades.\n\n2. **Inadimplência**: O índice de inadimplência do Jardim Independência reduziu para 0,80% sobre o saldo devedor no mês de junho, enquanto o Golden Sul I teve um índice de 0,76%. A gestão monitora continuamente as tratativas de cobrança.\n\n3. **Rendimentos aos Cotistas**: Em junho, a distribuição de rendimentos foi de R$ 1,00 por cota, totalizando R$ 998.341,75 para o mês, com um dividend yield mensal de 1,89%. Desde o início das operações, o fundo distribuiu R$ 26,87 por cota.\n\n4. **Programa de Recompra de Cotas**: A Gestão aprovou uma segunda rodada do Programa de Recompra de Cotas para os cotistas, visando aproveitar o desconto com que as cotas negociam em relação ao valor patrimonial.\n\n5. **Carteira Operacional da HOD Holding**: A carteira operacional encerrou junho com 72,22% das unidades comercializadas e 27,78% em estoque. O índice médio de inadimplência foi de 4,02%, influenciado pela SPE Smart House Amazonas.\n\n6. **Obras e Reformas**: Não há menção específica a obras ou reformas em andamento no relatório.\n\n### Observações para Acompanhar:\n- Monitorar o progresso do Programa de Recompra de Cotas.\n- Verificar as tratativas de cobrança e regularização dos clientes inadimplentes."
+  },
+  "comunicados": {
+    "ids": [
+      1075448,
+      1040219,
+      1225532,
+      1214570,
+      1245495,
+      1225191
+    ],
+    "datas": [
+      "05/01/2026",
+      "14/11/2025",
+      "22/06/2026",
+      "09/06/2026",
+      "13/07/2026",
+      "22/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 05/01/2026\n\n**O QUE aconteceu:** Preço Unitário de dividendos por cota atualizado.\n\n**Resumo:** O PU de dividendos por cota do Fundo SMART REAL ESTATE foi ajustado para R$ 1,05854129 a partir da distribuição em 09/01/2026, devido à recompra de cotas iniciada em dezembro.\n\n**Trecho-chave:** \"Em razão do movimento de recompra de cotas pelo Fundo, iniciado em dezembro, o PU de dividendos por cota passará de 1,02424612 para 1,05854129.\" (p. 1)\n\n---\n\n### FATO RELEVANTE entregue em 14/11/2025\n\n**O QUE aconteceu:** Programa de recompra de cotas aprovado.\n\n**Resumo:** O Fundo SMART REAL ESTATE aprovou um programa de recompra de suas próprias cotas, com limites e condições específicas estabelecidas no regulamento do fundo.\n\n**Trecho-chave:** \"O Fundo, mediante deliberação da SH ASSET CAPITAL GESTAO DE RECURSOS LTDA, realizará a recompra de suas próprias cotas utilizando recursos disponíveis em caixa, desde que tal recompra não prejudique a liquidez, os objetivos ou a política de investimento do Fundo.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 22/06/2026\n\n**O QUE aconteceu:** Prorrogação da consulta formal para aprovação do programa de recompra.\n\n**Resumo:** A Administradora prorrogou o prazo de manifestação dos cotistas na consulta formal, que agora encerra no dia 10 de julho de 2026.\n\n**Trecho-chave:** \"A Consulta Formal será realizada por meio da Plataforma Digital Cuore, com prazo para manifestação dos cotistas até às 18h00 do dia 23 de junho de 2026. O resultado deverá ser apurado e divulgado no Fundos.NET até o dia 25 de junho de 2026.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 09/06/2026\n\n**O QUE aconteceu:** Edital de consulta formal para aprovação do programa de recompra.\n\n**Resumo:** A Gestora informou que a Administradora divulgou um edital de consulta formal para submeter aos cotistas a deliberação acerca da aprovação de novo programa de recompra de cotas, com prazo até 23 de junho de 2026.\n\n**Trecho-chave:** \"Em 08 de junho de 2026, a Administradora divulgou edital de consulta formal destinado a submeter aos cotistas a deliberação acerca da aprovação de novo programa de recompra de cotas do Fundo.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGE entregue em 13/07/2026\n\n**O QUE aconteceu:** Deliberação sobre o programa de recompra aprovada.\n\n**Resumo:** A assembleia aprovou o programa de recompra de cotas do Fundo SMART REAL ESTATE, conforme as condições estabelecidas no regulamento.\n\n**Trecho-chave:** \"Finalizada em 10 de julho de 2026, às 18:00 horas, a assembleia deliberou sobre o programa de recompra de cotas da Classe, nos termos e condições definidos.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGE entregue em 22/06/2026\n\n**O QUE aconteceu:** Convocação para prorrogação da consulta formal.\n\n**Resumo:** A Administradora convocou os cotistas para uma assembleia especial, a ser realizada por meio de consulta formal, com prazo prorrogado até 10 de julho de 2026.\n\n**Trecho-chave:** \"A Consulta Formal será realizada por meio da Plataforma Digital Cuore, com prazo para manifestação dos cotistas até às 18h00 do dia 23 de junho de 2026.\" (p. 1)"
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares"
+    ],
+    "cota": 59.94
+  },
+  "parecer": {
+    "id": 1078276,
+    "data_entrega": "09/01/2026 17:33",
+    "tipo": "ressalva",
+    "rotulo": "opinião com ressalva",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, exceto pelos possíveis efeitos do assunto descrito na seção a seguir intitulada “Base para opinião com ressalva” , as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário Smart Real Estate - FII Responsabilidade Limitada em 30 de junho de 2025 e o desempenho de "
+  }
+}

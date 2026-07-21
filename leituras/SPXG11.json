@@ -1,0 +1,18 @@
+{
+  "ticker": "SPXG11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:12:47",
+  "comunicados": {
+    "ids": [
+      1233078
+    ],
+    "datas": [
+      "29/06/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGE"
+    ],
+    "texto": "**25 de junho de 2026 - Assembleia Especial de Cotistas Autoriza Operações com Conflito de Interesses**\n\nA assembleia especial realizada em 25 de junho de 2026 autorizou a Classe do Sorocaba Fundo de Investimento Imobiliário a realizar operações que caracterizam potenciais conflitos de interesses, conforme regulamentação da CVM. As deliberações passarão a ter efeito no fechamento do dia 25 de junho de 2026.\n\n*\"Os Cotistas deliberaram, por unanimidade, sem quaisquer reservas ou restrições, autorizar que a Classe, exclusivamente para fins de gestão de caixa e liquidez da Classe e sem prejuízo do disposto na regulamentação aplicável: (a) adquira cotas de fundos de investimento classificados como \"renda fixa\", nos termos da regulamentação aplicável, administrados e/ou geridos pela Administradora; (b) realize operações compromissadas, lastreadas em títulos públicos federais, que tenham como contraparte parte relacionada à Administradora; (c) ativos financeiros de renda fixa de emissão de partes relacionadas ao Administrador; situações essas que caracterizam potencial conflito de interesses entre a Classe e a Administradora, nos termos do artigo 31, do Anexo III, da resolução da CVM nº 175, de 23 de dezembro de 2022 (\"Resolução CVM 175\").\"* (p. 1)\n\n**Conexão com o contexto:** Esta assembleia autorizou operações que podem gerar conflitos de interesses entre o fundo e a administradora, o que pode afetar a transparência e a gestão do fundo."
+  },
+  "modelo": "qwen2.5:7b"
+}

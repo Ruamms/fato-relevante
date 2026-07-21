@@ -1,0 +1,36 @@
+{
+  "ticker": "GBIT11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:30:41",
+  "comunicados": {
+    "ids": [
+      1248306,
+      1230712,
+      1248304,
+      1230689
+    ],
+    "datas": [
+      "15/07/2026",
+      "26/06/2026",
+      "15/07/2026",
+      "26/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGE"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 15/07/2026\n\n**O QUE aconteceu:** As contas anuais do Fundo GALAPAGOS BITCOIN CME CF foram aprovadas.\n\n**Resumo:** A assembleia geral de cotistas realizada em 6 de julho de 2026 aprovou as contas anuais do Fundo referente ao exercício encerrado em 31 de março de 2026.\n\n**Trecho-chave:**\n\"Na assembleia geral de cotistas realizada em 6 de julho de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de março de 2026.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 26/06/2026\n\n**O QUE aconteceu:** As deliberações da assembleia geral de cotistas foram aprovadas.\n\n**Resumo:** A assembleia geral realizada em 18 de junho de 2026 aprovou alterações no Regulamento do Fundo, incluindo a exclusão de termos específicos e a modificação da definição de \"Dia Útil Local e no Exterior\".\n\n**Trecho-chave:**\n\"4.1. Aprovar a exclusão da definição de “Fundo de"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208576,
+    "data_entrega": "30/05/2026 02:05",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Galapagos Bitcoin CME CF Fundo de Índice em 31 de março de 2026 e o desempenho de suas operações para o período de 09 de dezembro de 2025 (data de início das operações) a 31 de março de 2026, de acordo com as práticas contábeis adotadas no "
+  }
+}

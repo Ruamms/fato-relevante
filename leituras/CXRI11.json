@@ -1,0 +1,42 @@
+{
+  "ticker": "CXRI11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T01:32:45",
+  "relatorio": {
+    "id": 1225484,
+    "data_entrega": "22/06/2026 17:07",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Patrimônio Líquido e Cotação:**\n   - O patrimônio líquido do fundo CXRI11 é de R$ 134,096,301,65 (p. 3).\n   - A cotação da cota é de R$ 64,69 (p. 4).\n\n2. **Performance e Distribuição:**\n   - O retorno do fundo no mês foi de -0,60% considerando a valorização da cota mercado ajustada aos dividendos (p. 8).\n   - A distribuição anunciada foi de R$0,63/cota, correspondendo a um dividend yield de 11,7% a.a. (p. 9).\n\n3. **Cenário Econômico e Financeiro:**\n   - O IPCA para 2026 foi revisado para 5,09%, com o resultado primário do governo superando as expectativas em abril (p. 4).\n   - A inflação de abril registrou alta de 0,67% (p. 4).\n\n4. **Cenário do Mercado de Fundos Imobiliários:**\n   - O IFIX recuou 1,33% no mês, com os segmentos corporativos e shopping impactando a performance negativamente (p. 5).\n   - A abertura da curva de juros real reduziu o prêmio de risco para investir em FIIs (p. 6).\n\n5. **Carteira do Fundo:**\n   - A alocação por setor de FII é composta principalmente por CRI (15,6%), seguido por shopping (17,2%) e varejo (14,8%) (p. 13).\n   - A alocação por classe de ativo inclui Renda Fixa em 6,6% do montante investido (p. 13).\n\n### O que observar em seguida:\n- Monitorar a evolução da inflação e suas implicações no cenário econômico.\n- Observar as movimentações na carteira do fundo e quais ativos estão sendo comprados ou vendidos."
+  },
+  "comunicados": {
+    "ids": [
+      1180084,
+      1173532
+    ],
+    "datas": [
+      "05/05/2026",
+      "29/04/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Assembleia Geral Ordinária de Cotistas — 29/04/2026\n\n**O que aconteceu:** A assembleia geral ordinária de cotistas do CAIXA Rio Bravo Fundo de Fundos de Investimento Imobiliário foi realizada no escritório da Administradora, a Caixa Econômica Federal.\n\n**Resumo:** A assembleia deliberou sobre as demonstrações financeiras do fundo referentes ao exercício social findo em 31 de dezembro de 2025 e aprovou a matéria por maioria das cotas subscritas presentes.\n\n**Trecho-chave:**\n\"Após promover as diligências necessárias e realizar o cômputo dos votos, a Administradora apurou que a matéria constante da Ordem do Dia foi aprovada pela maioria das Cotas Subscritas presentes.\" (p. 1)\n\n**Conexão com indicadores:** A aprovação das demonstrações financeiras é um passo importante para o acompanhamento dos resultados do fundo, que podem ser observados nos indicadores como cotação, patrimônio líquido e valor do ativo."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 65.72
+  },
+  "parecer": {
+    "id": 1147328,
+    "data_entrega": "30/03/2026 07:14",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nesta data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

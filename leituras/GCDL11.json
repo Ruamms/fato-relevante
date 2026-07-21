@@ -1,0 +1,33 @@
+{
+  "ticker": "GCDL11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T04:09:52",
+  "comunicados": {
+    "ids": [
+      938547,
+      1242959,
+      1095995
+    ],
+    "datas": [
+      "03/07/2025",
+      "09/07/2026",
+      "29/01/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Assembleia AGE",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 03/07/2025\n\n**O que aconteceu:** A VÓRTX DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA., administradora do GALÁPAGOS DESENVOLVIMENTO LOGÍSTICO FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA, informou a conclusão da alienação de participação no capital social da sociedade Imigrantes Miracema Empreendimento Imobiliário – SPE Ltda.\n\n**Resumo:** A operação visa à monetização estratégica do portfólio e resultará em recebimentos totais de R$ 49.212.629,37.\n\n**Trecho-chave:**\n\"Em 01 de julho de 2025, foi concluída a alienação da participação detida pelo Fundo na sociedade investida, a Imigrantes Miracema Empreendimento Imobiliário – SPE Ltda., representativa de 32,0881% do capital social da Sociedade. Como resultado da operação, o Fundo recebeu o valor, de R$ 8.202.104,86 (oito milhões e duzentos e dois mil e cento e quatro reais e oitenta e seis centavos), líquido de encargos e tributos incidentes, bem como receberá outras 4 (quatro) parcelas mensais consecutivas de igual valor, que totalizam R$ 41.010.524,31 (quarenta e um milhões e dez mil e quinhentos e vinte e quatro reais e trinta e um centavos).\"\n\n### ASSEMBLEIA AGO entregue em 29/01/2026\n\n**O que aconteceu:** A assembleia especial extraordinária aprovou a não distribuição semestral de 95% do rendimento da Classe, conforme exigido pela Lei 8.668 de julho de 1993.\n\n**Resumo:** A deliberação tem validade regulamentar em decorrência do disposto no Ofício-Circular/CVM/SIN/SNC/Nº 1/2014 e visa honrar os pagamentos de dívidas da Classe.\n\n**Trecho-chave:**\n\"Foi deliberado e aprovado pelos Cotistas representantes da totalidade das cotas em circulação da Classe, sem quaisquer ressalvas, a não distribuição semestral de 95% (noventa e cinco por cento) de rendimento da Classe, conforme exigido pela Lei 8.668 de ju nho de 1993, referente ao período de 01/01/2026 até 30/06/2026 para fins de reforço de caixa da Classe, com objetivo de honrar os pagamentos de dívidas da Classe.\"\n\n### ASSEMBLEIA AGE entregue em 09/07/2026\n\n**O que aconteceu:** A assembleia especial extraordinária aprovou a não distribuição semestral de 95% do rendimento da Classe, conforme exigido pela Lei 8.668 de julho de 1993.\n\n**Resumo:** A deliberação tem validade regulamentar em decorrência do disposto no Ofício-Circular/CVM/SIN/SNC/Nº 1/2014 e visa honrar os pagamentos de dívidas da Classe.\n\n**Trecho-chave:**\n\"Foi deliberado e aprovado pelos Cotistas representantes da totalidade das cotas em circulação da Classe, sem quaisquer ressalvas, a não distribuição semestral de 95% (noventa e cinco por cento) de rendimento da Classe, conforme exigido pela Lei 8.668 de ju nho de 1993, referente ao período de 01/01/2026 até 30/06/2026 para fins de reforço de caixa da Classe, com objetivo de honrar os pagamentos de dívidas da Classe.\"\n\n**Conexão com o contexto:** A deliberação sobre a não distribuição do rendimento reflete a necessidade de manter um fluxo positivo de caixa para atender aos compromissos financeiros do fundo, conforme indicado pelo aumento do patrimônio líquido e da cotação."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1001730,
+    "data_entrega": "29/09/2025 23:12",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente,emtodososaspectosrelevantes,aposiçãopatrimonialefinanceira do Galapagos Desenvolvimento Logístico Fundo de Investimento Imobiliário Responsabilidade Limitada em 30 de junho de 2025 e o desempenho de suas operações para o período de 19 de agosto de 2024 (início das atividades) a 30 de junho de 2025, de acordo co"
+  }
+}

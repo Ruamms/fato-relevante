@@ -1,0 +1,54 @@
+{
+  "ticker": "ZAVI11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T00:53:44",
+  "relatorio": {
+    "id": 1237519,
+    "data_entrega": "01/07/2026 18:13",
+    "texto": "### Fatos Extraídos do Relatório Gerencial\n\n1. **Desinvestimento de Ativos:**\n   - O fundo realizou a venda dos ativos SJC1669 e SJC1679, localizados em São José dos Campos/SP.\n   - A venda foi feita por meio de um Instrumento Particular de Promessa de Compra e Venda de Bens Imóveis.\n   - O preço da venda representa uma valorização de 43,8% (versus IPCA/IBGE de 23,3%) nos 43 meses no qual o ativo permaneceu na carteira do fundo.\n\n2. **Vacância:**\n   - A vacância física e financeira dos imóveis é de 0%, indicando que todos os imóveis estão ocupados.\n\n3. **Composição do Patrimônio Líquido:**\n   - O fundo possui um portfólio de R$ 245 milhões em ativos, com 96% dos recursos alocados em imóveis.\n   - A alavancagem é de R$ 78 milhões, sendo 31% referente à operação de securitização do ativo Medabil, 15% à operação de securitização do ativo Serra e 54% referente à operação de securitização dos recebíveis do fundo.\n\n4. **Dividendos:**\n   - O fundo comunicou a distribuição de rendimentos equivalentes a R$ 0,12/cota no dia 29/05, representando um dividend yield de 1,23% a.m. sobre o preço de fechamento das cotas no mercado secundário.\n\n5. **Evolução da Alavancagem:**\n   - A alavancagem do fundo está projetada para evoluir ao longo dos próximos anos, com uma projeção de 10,8% em 2031.\n\n6. **Rendimentos e Distribuições:**\n   - O resultado financeiro líquido no primeiro semestre de 2026 foi de R$ (491) mil, enquanto o lucro líquido foi de R$ 1.320 mil.\n   - A distribuição do resultado financeiro líquido para os cotistas foi de R$ 1.408 mil.\n\n7. **Composição do Patrimônio Líquido:**\n   - O fundo possui R$ 7,8 milhões em liquidez, com 16% alocado em LCIs e 55% em aplicações de liquidez imediata.\n   - A provisão para baixa dos ativos SJC1669 & 1679 será realizada quando houver a escritura dos imóveis.\n\n8. **Desinvestimentos Futuros:**\n   - O fundo planeja desinvestir do ativo Souza Cruz, que foi vendido no primeiro trimestre de 2025.\n\n### O que observar em seguida:\n1. **Evolução da Alavancagem:** Observar a evolução projetada da alavancagem ao longo dos próximos anos.\n2. **Desinvestimentos Futuros:** Monitorar os desinvestimentos planejados, como o ativo Souza Cruz, e seu impacto no patrimônio líquido do fundo."
+  },
+  "comunicados": {
+    "ids": [
+      1046417,
+      988957,
+      939353,
+      1053527,
+      1052563,
+      1035885
+    ],
+    "datas": [
+      "25/11/2025",
+      "12/09/2025",
+      "03/07/2025",
+      "03/12/2025",
+      "02/12/2025",
+      "13/11/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 25/11/2025\n\n**O QUE aconteceu:** Acordo com a locatária Medabil para encerrar litígios e retomar pagamentos de aluguéis.\n\n**Resumo:** O Fundo ZAVIT REAL ESTATE FUND chegou a um acordo com a locatária Medabil, reconhecendo a validade dos contratos assinados entre as partes. Houve também o ajuste do pagamento de indenização residual e encerramento do sinistro por parte da seguradora.\n\n**Trecho-chave:** \"Foi celebrado acordo com a Medabil, locatária de imóvel do Fundo, com objetivo de encerrar os litígios existentes, através do qual houve o reconhecimento da validade e eficácia de todos os contratos assinados entre as partes e a retomada do pagamento dos aluguéis vincendos com aplicação de tabela de desconto regressivo.\" (p. 1)\n\n### FATO RELEVANTE entregue em 12/09/2025\n\n**O QUE aconteceu:** Renovação de contrato de locação no Ed. Tabapuã, com aumento de 20,3% no preço de locação.\n\n**Resumo:** O Fundo renovou o contrato de locação do Ed. Tabapuã, localizado na Rua Tabapuã nº 41 no Itaim Bibi, São Paulo, com um aumento de 20,3% no preço de locação. A vacância do edifício permaneceu em zero.\n\n**Trecho-chave:** \"O Fundo renovou contrato de locação, correspondente à 1.326,74 m², do Ed. Tabapuã, localizado na Rua Tabapuã nº 41 no Itaim Bibi, São Paulo , estado de São Paulo , pelo prazo de 36 (trinta e seis) meses. A renovação contou com aumento de 20,3% no preço de locação pactuado.\" (p. 1)\n\n### FATO RELEVANTE entregue em 03/07/2025\n\n**O QUE aconteceu:** Reavaliação dos ativos do Fundo a valor justo, resultando em valorização de 3,19%.\n\n**Resumo:** Os ativos do Fundo foram reavaliados pela empresa BINSWANGER BRASIL e houve uma valorização de 3,19% em comparação com o último exercício social.\n\n**Trecho-chave:** \"Os ativos do Fundo foram reavaliados a valor justo em junho/2025 pela empresa especializada independente BINSWANGER BRASIL, inscrita no CNPJ: 02.164.894/0001-80, resultando em uma valorização dos ativos de 3,19% em comparação à marcação do último exercício social.\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 03/12/2025\n\n**O QUE aconteceu:** Convocação para realização de split das cotas.\n\n**Resumo:** Os cotistas do Fundo foram convocados para deliberar sobre o desdobramento (split) das cotas, com a finalidade de alterar o valor unitário das cotas integralizadas de R$ 100,00 para R$ 10,00.\n\n**Trecho-chave:** \"Em 10 de novembro de 2025, os Cotistas do Fundo foram convocados para deliberar, através do procedimento de Consulta Formal (“Consulta Formal”) acerca do desdobramento (split) das cotas do Fundo, com a finalidade de alterar o valor unitário das cotas integralizadas que, atualmente, é de R$ 100,00 (cem reais) e, após o movimento, passariam a ser de R$ 10,00 (dez reais), na proporção de 10 novas cotas para cada cota atual.\" (p. 1)\n\n### ASSEMBLEIA AGE entregue em 02/12/2025\n\n**O QUE aconteceu:** Deliberação aprovada sobre desdobramento das cotas.\n\n**Resumo:** A assembleia aprovou o desdobramento das cotas do Fundo, com a finalidade de alterar o valor unitário das cotas integralizadas de R$ 100,00 para R$ 10,00.\n\n**Trecho-chave:** \"Deliberar sobre a aprovação do desdobramento (split) das cotas do ZAVIT REAL ESTATE FUND - FUNDO DE INVESTIMENTO IMOBILIÁRIO, com a finalidade de alterar o valor unitário das cotas integralizadas do Fundo, que atualmente, conforme o item 6 do Anexo Descritivo da Classe previsto no Regulamento, é de R$ 100,00 (cem reais), para R$ 10,00 (dez reais), na proporção de 10 novas cotas para cada cota atual.\" (p. 2)\n\n### ASSEMBLEIA AGO entregue em 13/11/2025\n\n**O QUE aconteceu:** Deliberação aprovada sobre aprovação das contas e demonstrações contábeis do Fundo.\n\n**Resumo:** A assembleia aprovou as contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 30/10/2025, devidamente auditadas.\n\n**Trecho-chave:** \"A Consulta Formal convocou os Cotistas a manifestarem-se a respeito da seguinte matéria: i. Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 30/10/2025, devidamente auditadas.\" (p. 1)"
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 9.72
+  },
+  "parecer": {
+    "id": 1001428,
+    "data_entrega": "29/09/2025 19:27",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Zavit Real Estate Fund - Fundo de Investimento Imobiliário - Responsabilidade Limitada em 30 de junho de 2025 e o desempenho de suas operações e seus fluxos de caixa para o exercício findo nesta data, de ac ordo com as práticas contábeis adot"
+  }
+}

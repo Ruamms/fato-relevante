@@ -1,0 +1,58 @@
+{
+  "ticker": "QTZD11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T05:53:07",
+  "relatorio": {
+    "id": 1231089,
+    "data_entrega": "26/06/2026 19:35",
+    "texto": "### Fatos Extraídos do Relatório Gerencial\n\n1. **Movimentação no Portfólio**: O Fundo realizou o primeiro aporte de capital no projeto B41 (Altma Incorporadora), no montante de R$ 500.000,00.\n   > \"No mês de maio não houve eventos corporativos no âmbito do QTZD. A principal movimentação foi o primeiro aporte de capital no projeto B41 (Altma Incorporadora), no montante de R$ 500.000,00, marcando o início da participação efetiva do Fundo no capital da SPE.\" (p. 4)\n\n2. **Cenário Imobiliário e Macroeconômico**: O mercado de fundos imobiliários apresentou comportamento misto em maio, com os fundos de papel liderando e os de tijolo apresentando maior volatilidade.\n   > \"O mercado de fundos imobiliários apresentou comportamento misto em maio, após a performance positiva de abril. Os fundos de papel continuaram liderando, beneficiados pelo patamar ainda elevado da Selic e pela indexação ao IPCA.\" (p. 4)\n\n3. **Projeção do B41**: O projeto B41, desenvolvido pela Altma Incorporadora, tem um TIR previsto anual nominal de 20% sobre o que exceder 100% da variação positiva do IPCA + 6%. Até julho de 2027, as obras devem estar concluídas.\n   > \"O B41 é um empreendimento residencial compacto, desenvolvido pela Altma Incorporadora, localizado no Prado Velho, em Curitiba e anexo à Pontifícia Universidade Católica do Paraná (PUCPR). O projeto é dedicado a moradia estudantil, sendo uma extensão da universidade. O B41 conta com 183 unidades, área total construída de 7.682 m² e apartamentos de 12 a 54 m², distribuídos entre estúdios Standard, Premium e Plus e unidades de 2 a 4 quartos.\" (p. 7)\n\n4. **Projeção do Tauá**: O projeto Tauá, desenvolvido pela Dreamis Incorporadora, tem um TIR previsto anual nominal de 15% sobre o que exceder 100% da variação positiva do IPCA + 6%. Até abril de 2028, as obras devem estar concluídas.\n   > \"O Tauá é um empreendimento residencial de alto padrão localizado no Ahú, em Curitiba, e desenvolvido pela Dreamis Incorporadora. O projeto conta com duas torres verticais de 29 apartamentos cada, área total construída de 15.860 m² e apartamentos de 150 a 300 m², distribuídos entre as tipologias Apartamento Tipo, Apartamento Tipo Living e Coberturas Penthouse.\" (p. 8)\n\n5. **Projeção do Vista São Lourenço**: O projeto Vista São Lourenço, desenvolvido pela Capoani Empreendimentos, tem um TIR previsto anual nominal de 12% sobre o que exceder 100% da variação positiva do IPCA + 6%. Até outubro de 2027, as obras devem estar concluídas.\n   > \"O Vista São Lourenço é um empreendimento residencial de alto padrão, desenvolvido pela Capoani Empreendimentos e localizado no bairro São Francisco, em Curitiba. O empreendimento conta com 30 unidades, área total construída de 5.670 m² e apartamentos de 91 a 189 m², distribuídos entre unidades Garden, 2 e 3 quartos e Penthouse.\" (p. 9)\n\n### O que observar em seguida:\n- **Progresso das obras**: Verificar o progresso real das obras nos projetos B41, Tauá e Vista São Lourenço.\n- **Vendas de unidades**: Monitorar as vendas de unidades nos projetos para avaliar a demanda no mercado."
+  },
+  "comunicados": {
+    "ids": [
+      1250235,
+      1202556,
+      911966,
+      1153140,
+      1033245,
+      1183190,
+      1167631
+    ],
+    "datas": [
+      "15/07/2026",
+      "26/05/2026",
+      "27/05/2025",
+      "02/04/2026",
+      "11/11/2025",
+      "08/05/2026",
+      "22/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### O QUE aconteceu: FATO RELEVANTE entregue em 15/07/2026\n\n**Resumo:** A Vórtx Distribuidora de Títulos e Valores Mobiliários Ltda. anunciou a realização da terceira emissão de cotas do Fundo, com oferta pública de distribuição.\n\n**Trecho-chave:**\n\"Em 14 de julho de 2026, os Prestadores de Serviços Essenciais celebraram o “Instrumento Particular dos Prestadores de Serviços Essenciais do Quartzo Real Estate Development Multiestratégia Fundo de Investimento Imobiliário Responsabilidade Limitada – Classe Única de Cotas do Quartzo Real Estate Development Multiestratégia Fundo de Investimento Imobiliário Responsabilidade Limitada” (“Instrumento Particular”), por meio do qual os Prestadores de Serviços Essenciais aprovaram, com base no artigo 8 do anexo descritivo da Classe (“Anexo”) ao regulamento do Fundo, uma vez que dentro do Capital Autorizado, a 3ª (terceira) emissão de cotas da Classe do Fundo, todas nominativas e escriturais, em série única (“Novas Cotas”), a ser realizada mediante oferta pública de distribuição...\"\n\n### O QUE aconteceu: FATO RELEVANTE entregue em 26/05/2026\n\n**Resumo:** O patrimônio líquido do Fundo foi reavaliado e remarcado, resultando em uma variação positiva de 6,81% no valor do patrimônio líquido.\n\n**Trecho-chave:**\n\"O ativo do Fundo foi reavaliado pelo método de equivalência patrimonial, e remarcado a valor justo em 31 de dezembro de 2025, resultando em uma variação positiva de 6,81% no valor do patrimônio líquido do Fundo na Data-Base.\"\n\n### O QUE aconteceu: FATO RELEVANTE entregue em 27/05/2025\n\n**Resumo:** A Vórtx Distribuidora de Títulos e Valores Mobiliários Ltda. anunciou a realização da segunda emissão de cotas do Fundo, com oferta pública de distribuição.\n\n**Trecho-chave:**\n\"Em 26 de maio de 2025, os Prestadores de Serviços Essenciais celebraram o “Instrumento Particular dos Prestadores de Serviços Essenciais do Quartzo Real Estate Development Multietratégia Fundo de Investimento Imobiliário Responsabilidade Limitada – Classe Única de Cotas do Quartzo Real Estate Development Multietratégia Fundo de Investimento Imobiliário Responsabilidade Limitada” (“Instrumento Particular”), por meio do qual os Prestadores de Serviços Essenciais aprovaram, com base no artigo 8 do anexo descritivo da Classe (“Anexo”) ao regulamento do Fundo, uma vez que dentro do Capital Autorizado, a 2ª (segunda) emissão de cotas da Classe do Fundo, todas nominativas e escriturais, em série única (“Novas Cotas”), a ser realizada mediante oferta pública de distribuição...\"\n\n### O QUE aconteceu: COMUNICADO AO MERCADO entregue em 02/04/2026\n\n**Resumo:** A Administradora do Fundo comunicou a divulgação das demonstrações financeiras qualificadas referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"A abstenção de opinião se refere a não obtenção de acesso as demonstrações financeiras auditadas e demais documentações necessárias da Dreams Quartzo Participações S.A. (“Companhia Investida”), pela Administradora e pelos auditores.\"\n\n### O QUE aconteceu: COMUNICADO AO MERCADO entregue em 11/11/2025\n\n**Resumo:** A Oferta de distribuição primária da segunda emissão de cotas do Fundo foi revogada.\n\n**Trecho-chave:**\n\"O registro da Oferta foi concedido automaticamente pela CVM em 27 de maio de 2025, sob o nº CVM/SRE/AUT/FII/PRI/2025/127. Considerando que até a presente data não foram realizados quaisquer pagamentos pelos Investidores, não há valores a serem restituídos aos Investidores no âmbito da Oferta.\"\n\n### O QUE aconteceu: ASSEMBLEIA AGE entregue em 08/05/2026\n\n**Resumo:** A Assembleia Geral Extraordinária de Cotistas aprovou alterações no Regulamento do Fundo, incluindo a possibilidade de recompras e ofertas públicas voluntárias de aquisição de suas próprias Cotas.\n\n**Trecho-chave:**\n\"APROVAR REPROVAR ABSTENÇÃO\n50.29% 0% 0 %  \n(c) aprovar a alteração do Regulamento, de modo a compatibilizar a redação do Artigo 35 do Anexo I com o artigo 73-A da parte geral da Resolução CVM nº 175, de 23 de dezembro de 2022, conforme alterada, que, devidamente compatibilizada, passará a vigorar com a redação destacada na versão marcada do Regulamento constante do Anexo III à presente Consulta Formal.\"\n\n### O QUE aconteceu: ASSEMBLEIA AGE entregue em 22/04/2026\n\n**Resumo:** A Assembleia Geral Extraordinária de Cotistas convocou a consulta formal para aprovar alterações no Regulamento do Fundo, incluindo a possibilidade de recompras e ofertas públicas voluntárias de aquisição de suas próprias Cotas.\n\n**Trecho-chave:**\n\"ORDEM DO DIA:\n(a) aprovar a alteração do Regulamento , de modo a incluir a possibilidade de a Classe realizar programas de recompras de suas próprias Cotas (“Recompra”), bem como ofertas públicas voluntárias de aquisição de suas próprias Cotas (\"OPAC\"); com a consequente inclusão dos seguintes dispositivos ao Regulamento: (i) a definição do termo “Recompra” no Artigo 2º da parte geral do Regulamento, (ii) o inciso LXIII ao Artigo 23 do Anexo I , e (iii) o Capítulo X do Anexo I, composto pelos Artigos 57 a 61; que, devidamente incluídos, passarão a vigorar com as redações destacadas na versão marcada do Regulamento constante do Anexo III à presente Consulta Formal.\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Menos cotistas que o mínimo para isenção de IR",
+      "Rendimentos irregulares"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 1151946,
+    "data_entrega": "31/03/2026 22:44",
+    "tipo": "abstencao",
+    "rotulo": "abstenção de opinião",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Não expressamos uma opinião sobre as demonstrações contábeis do Quartzo Real Estate Development Multiestratégia Fundo de Investimento I mobiliário Responsabilidade Limitada pois, devido à relevância dos assuntos descritos na seção a seguir intitulada “Base para abstenção de opinião”, não foi possível obter evidência de audit oria apropriada e suficiente para fundamentar nossa opinião de auditoria "
+  }
+}

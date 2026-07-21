@@ -1,0 +1,36 @@
+{
+  "ticker": "SPXB11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T07:11:00",
+  "comunicados": {
+    "ids": [
+      1247743,
+      1198517,
+      1247737,
+      1223166
+    ],
+    "datas": [
+      "14/07/2026",
+      "18/05/2026",
+      "14/07/2026",
+      "17/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 18/05/2026\n\n**O QUE aconteceu:** A administradora do BTG PACTUAL S&P; 500 FUNDO DE ÍNDICE atualizou a forma de divulgação da remuneração dos Prestadores de Serviços Essenciais.\n\n**Resumo:** A administração do fundo alterou o formato de divulgação da remuneração dos prestadores de serviços essenciais, passando a utilizar a Ferramenta ANBIMA (Plataforma de Transparência de Taxas).\n\n**Trecho-chave:**\n\"1. Considerando as interpretações adicionais divulgadas pelo Ofício-Circular Conjunto nº 1/2025/CVM/SIN/SSE (\"Ofício-Circular CVM nº 1/2025\"), em especial quanto à substituição do 'Sumário de Remuneração' pela Ferramenta ANBIMA (Plataforma de Transparência de Taxas) como meio centralizado e adequado de divulgação da remuneração dos Prestadores de Serviços Essenciais da Classe, restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 14/07/2026\n\n**O QUE aconteceu:** As contas anuais do BTG PACTUAL SEP 500 FUNDO DE ÍNDICE referentes ao exercício encerrado em 31 de março de 2026 foram aprovadas na assembleia geral.\n\n**Resumo:** A assembleia geral de cotistas realizada em 3 de julho de 2026 aprovou as contas anuais do fundo.\n\n**Trecho-chave:**\n\"4.1. Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de março de 2026.\"\n\n---\n\n### ASSEMBLEIA GERAL DE COTISTAS DO BTG PACTUAL SEP 500 FUNDO DE ÍNDICE entregue em 17/06/2026\n\n**O QUE aconteceu:** A assembleia geral convocada para deliberar sobre a aprovação das contas e demonstrações contábeis do fundo referentes ao exercício encerrado em 31 de março de 2026 foi realizada.\n\n**Resumo:** A assembleia geral de cotistas, realizada via manifestação de voto enviada pelos cotistas em 3 de julho de 2026, aprovou as contas e demonstrações contábeis do fundo referentes ao exercício encerrado em 31 de março de 2026.\n\n**Trecho-chave:**\n\"4.1. Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de março de 2026.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208589,
+    "data_entrega": "30/05/2026 02:25",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do BTG Pactual S&P 500 Fundo de Índice em 31 de março de 2026 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos Fundos de Investimento Financeiros."
+  }
+}

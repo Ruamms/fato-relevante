@@ -1,0 +1,46 @@
+{
+  "ticker": "CVFL11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T23:47:05",
+  "relatorio": {
+    "id": 1250202,
+    "data_entrega": "15/07/2026 19:15",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Locação de Áreas Vagas:** O Fundo está em negociações para locar o 15º e 12º pavimentos, com expectativas positivas.\n   > \"A tratativa em estágio mais avançado refere-se à locação integral do 15º pavimento, sendo que o potencial locatário já tem analisando alternativas de layout junto a escritórios especializados em ambientes corporativos. A outra negociação em andamento se refere à locação integral do 12º pavimento, com expectativa de envio de uma proposta pelo interessado na primeira quinzena de julho.\"\n   > (p. 3)\n\n2. **Vacância:** A taxa de vacância é de 16,6%, distribuída entre os 12º e 15º pavimentos.\n   > \"A ABL disponível para locação é de 1.933,8m², representando uma taxa de vacância de 16,6%.\"\n   > (p. 4)\n\n3. **Revisionais de Contratos:** 49,9% da ABL do Fundo entrará em período de revisional entre 2027-28.\n   > \"Do lado das revisionais e vencimentos de contratos, 49,9% da ABL do Fundo entrará em período de revisional entre 2027-28.\"\n   > (p. 5)\n\n4. **Receita Imobiliária:** A receita imobiliária totalizou R$ 7,6 milhões no acumulado do período, com um crescimento de 34% comparado ao primeiro trimestre.\n   > \"A linha de receita imobiliária totalizou R$ 7,6 milhões no acumulado do período, crescendo 34% comparado com o primeiro trimestre em função do término de carências e descontos contratuais que ainda estavam vigentes no início do ano.\"\n   > (p. 3)\n\n5. **Distribuição de Cotas:** O Fundo possui 154,572 cotas emitidas.\n   > \"Cotas Emitidas: 154.572\"\n   > (p. 2)\n\n6. **Patrimônio Líquido:** O patrimônio líquido do Fundo é de R$ 208,987,647,60.\n   > \"Patrimônio Líquido: R$ 208.987.647,60\"\n   > (p. 3)\n\n### O que Observar em Seguida:\n1. **Locação dos Pavimentos Vagos:** A locação do 15º e 12º pavimentos é crucial para a redução da vacância.\n2. **Revisionais de Contratos:** As revisionais entre 2027-28 podem impactar positivamente o resultado operacional do Fundo."
+  },
+  "comunicados": {
+    "ids": [
+      1043271,
+      1213173,
+      1164876
+    ],
+    "datas": [
+      "17/11/2025",
+      "05/06/2026",
+      "15/04/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Comunicado ao Mercado entregue em 17/11/2025\n\n**O QUE aconteceu:** Alteração do cronograma da oferta pública de distribuição de cotas.\n\n**Resumo:** O cronograma para a oferta pública de distribuição de cotas foi alterado, com novas datas previstas para protocolo de registro, subscrição e alocação de cotas.\n\n**Trecho-chave:**\n\"Ordem dos Eventos Eventos Data Prevista (1)  \n1 Protocolo de pedido de registro automático da Oferta junto à CVM 07/11/2025  \n2 Registro da Oferta Divulgação do Anúncio de Início 07/11/2025  \n3 Início do Primeiro e do Segundo Períodos de Subscrição 07/11/2025\" (p. 1)\n\n### Assembleia Geral Ordinária entregue em 05/06/2026\n\n**O QUE aconteceu:** Aprovou as demonstrações contábeis do exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia aprovou sem quaisquer ressalvas as contas e demonstrações contábeis do fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"6) DELIBERAÇÕES: O(s) Cotista(s) presente(s) aprovou(aram), sem quaisquer ressalvas ou restrições, as contas e demonstrações contábeis do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\" (p. 3)\n\n### Assembleia Geral Ordinária entregue em 15/04/2026\n\n**O QUE aconteceu:** Convocação para a assembleia geral ordinária.\n\n**Resumo:** A administradora convocou os cotistas para uma assembleia geral ordinária no dia 15 de maio de 2026, às 08:00, com o objetivo de aprovar as contas e demonstrações contábeis do exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"1. Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\" (p. 1)\n\n---\n\n**Conexão com o contexto:** O documento relativo à convocação da assembleia (15/04/2026) se conecta aos indicadores do fundo, especificamente ao número de cotistas e ao processo contábil anual a ser deliberado."
+  },
+  "retrato": {
+    "selo": "Histórico insuficiente",
+    "nivel": "insuficiente",
+    "alertas": [
+      "Base de cotistas muito pequena",
+      "Fundo novo — histórico curto"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 1117104,
+    "data_entrega": "15/02/2026 16:36",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a p osição patrimonial e financeira do Catuaí Vista FL Fundo de Investimento Imobiliário d e Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o período compreendido entre 26 de novembro (início das atividades) e 31"
+  }
+}

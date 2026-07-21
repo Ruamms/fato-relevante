@@ -1,0 +1,18 @@
+{
+  "ticker": "TOPY11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T07:16:11",
+  "comunicados": {
+    "ids": [
+      1210061
+    ],
+    "datas": [
+      "01/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### O QUE aconteceu em 01/06/2026\n\n**Período de subscrição e integralização de cotas do Fundo iniciado.**\n\nO Fundo BUENA VISTA DEX VETTAFI NEOS MULTIESTRATEGIA HIGH INCOME, administrado pela Hedge Investments Distribuidora de Títulos e Valores Mobiliários Ltda., iniciará o período de subscrição e integralização de cotas no mercado primário sob o nome de pregão \"ETF BV TOPY\" a partir do dia 9 de junho de 2026, com valor inicial de R$ 100,00. A negociação no mercado secundário também será iniciada no mesmo dia.\n\n**Trecho-chave:**\n\"A HEDGE INVESTMENTS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA., inscrita no CNPJ sob o nº 07.253.654/0001-76, com sede na cidade de São Paulo, Estado de São Paulo, na Avenida Brigadeiro Faria Lima, 3.600, 11º andar, cjto 112 (parte), Itaim Bibi, vem comunicar aos cotistas e ao mercado em geral que em 9 de junho de 2026 será iniciado o período de subscrição e integralização de cotas do Fundo, no mercado primário, sob o nome de pregão 'ETF BV TOPY' e código ISIN BRTOPYCTF007, pelo valor inicial de R$ 100,00 (cem reais).\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b"
+}

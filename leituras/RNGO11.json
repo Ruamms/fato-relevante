@@ -1,0 +1,57 @@
+{
+  "ticker": "RNGO11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T23:25:29",
+  "relatorio": {
+    "id": 1236698,
+    "data_entrega": "01/07/2026 09:53",
+    "texto": "### Fatos Extraídos:\n\n1. **Novas Locações:** No mês de maio, o Fundo celebrou novos contratos de locação com a Autron Automação Indústria e Comércio Ltda., Familhão Engajamento e Intermediação S.A., Yellow Participações S.A., e LCL Investimentos e Produtos Digitais. Essas locações reduziram a vacância do Fundo, passando de 19,58% para 15,21%.\n\n   > \"No mês de maio, o Fundo celebrou contrato de locação com a empresa Autron Automação Indústria e Comércio Ltda., referente à ocupação do conjunto 91 da Torre Padauiri, no empreendimento C.A. Rio Negro.\" (p. 5)\n\n2. **Redução de Vacância:** A vacância foi reduzida de 19,58% para 15,21%, com a conclusão de novas locações.\n\n   > \"Como resultado dessas iniciativas, a vacância do Fundo foi reduzida de 19,58% para 15,21%.\" (p. 5)\n\n3. **Inadimplência:** Uma das duas inadimplências foi regularizada integralmente, gerando um impacto positivo estimado de R$ 0,04 por cota.\n\n   > \"Como resultado das tratativas, um dos locatários regularizou integralmente seus débitos, gerando um impacto positivo estimado de R$ 0,04 por cota.\" (p. 6)\n\n4. **Mensalidade do Rendimento:** O rendimento mensal foi de R$ 0,51/cota.\n\n   > \"O rendimento anunciado em maio foi de R$0,51/cota.\" (p. 5)\n\n### O que observar em seguida:\n- A continuidade das negociações com o segundo locatário inadimplente e a expectativa de recuperação dos valores.\n- As novas locações celebradas no mês de junho, conforme anunciado pelo gestor."
+  },
+  "comunicados": {
+    "ids": [
+      1221556,
+      1217218,
+      1214281,
+      1126385,
+      1124407,
+      1170595,
+      1170578
+    ],
+    "datas": [
+      "15/06/2026",
+      "11/06/2026",
+      "08/06/2026",
+      "03/03/2026",
+      "27/02/2026",
+      "27/04/2026",
+      "27/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO/E",
+      "Assembleia AGO/E"
+    ],
+    "texto": "### O QUE aconteceu em 27/04/2026\n\n**Título:** Resultado da Consulta Formal nº 01/2026\n\n**Resumo:**\nA administradora Rio Bravo informou sobre o resultado de uma consulta formal realizada entre 23 de março e 27 de abril de 2026, onde os cotistas aprovaram as demonstrações financeiras do exercício encerrado em 31 de dezembro de 2025. Além disso, foram aprovadas alterações no regulamento do fundo, incluindo a possibilidade de alocação dos recursos não aplicados nos ativos imobiliários em ativos de renda fixa administrados pela própria administradora.\n\n**Trecho-chave:**\n\"Em pauta extraordinária:\n(ii) Os cotistas que representam 38,43% (trinta e oito vírgula quarenta e três por cento) do total de cotas emitidas pelo Fundo e aptos ao exercício do direito de voto, deliberaram por aprovar a alteração do Regulamento do Fundo para (a) excluir o Artigo 2.2.1 do anexo da Classe do Fundo ; e (b) alterar o Artigo 2.2 do anexo da Classe do Fundo, a vigorar com a seguinte nova redação:  \n‘2.2. A parcela do patrimônio da Classe não aplicada nos Ativos Imobiliários poderá ser aplicada em ativos de renda fixa, públicos ou privados, incluindo, sem limitação: (i) títulos públicos federais; (ii) operações compromissadas lastreadas nesses títulos; (iii) títulos de emissão ou de coobrigação de instituições financeiras, incluindo certificados de depósito bancário (CDB) e letras de crédito imobiliário (LCI); e (iv) classes de cotas de fundos de investimento tipificadas como renda fixa, inclusive aquelas administradas e/ou geridas pela Administradora ou por qualquer empresa integrante do mesmo grupo econômico da Administradora (“Ativos de Renda Fixa” e Ativos Imobiliários, quando em conjunto denominados “Ativos”).'\"\n\n**Conexão com o contexto:**\nEsta alteração no regulamento permite que os recursos não aplicados nos ativos imobiliários sejam alocados em ativos de renda fixa administrados pela própria administradora, reforçando a eficiência operacional do fundo.\n\n---\n\n### O QUE aconteceu em 15/06/2026\n\n**Título:** Nova locação com YELLOW PARTICIPAÇÕES S/A\n\n**Resumo:**\nO Fundo Rio Negro assinou um contrato de locação com a empresa YELLOW PARTICIPAÇÕES S/A, para ocupar o CA Rio Negro. A área locada é de 339,09 m² e a locação típica tem prazo de 3 anos. Esta nova locação reduz a vacância física do fundo de 16,08% para 15,21%, impactando positivamente o resultado mensal em R$ 0,01/cota.\n\n**Trecho-chave:**\n\"O Fundo assinou, em 12 de junho de 2026 , um contrato de locação com a YELLOW PARTICIPAÇÕES S/A para \nlocação do CA Rio Negro. • Área de 339,09 m². • Locação típica com prazo de 3 anos. • Nova locação no formato plug and play. • Fundo reduz a vacância física de 16,08% para 15,21%. • Impacto positivo no resultado do fundo de R$ 0,01/cota.\"\n\n**Conexão com o contexto:**\nEsta nova locação contribui para reduzir a vacância e melhorar os resultados financeiros do fundo.\n\n---\n\n### O QUE aconteceu em 11/06/2026\n\n**Título:** Nova locação com LCL INVESTIMENTOS E PRODUTOS DIGITAIS LTDA\n\n**Resumo:**\nO Fundo Rio Negro firmou um contrato de locação com a empresa LCL INVESTIMENTOS E PRODUTOS DIGITAIS LTDA, para ocupar o conjunto 21A - 2° Andar da Torre Demini. A área locada é de 339,09 m² e a locação típica tem prazo de 3 anos. Esta nova locação reduz a vacância física do fundo de 16,96% para 16,08%, impactando positivamente o resultado mensal em R$ 0,01/cota.\n\n**Trecho-chave:**\n\"A locação foi firmada com a LCL INVESTIMENTOS E PRODUTOS DIGITAIS LTDA , empresa atuante no segmento de assessoria para leilões de imóveis e veículos. A locatária buscava um espaço que oferecesse praticidade e condições imediatas de ocupação para atender à sua rotina operacional e às demandas de crescimento.\"\n\n**Conexão com o contexto:**\nEsta nova locação contribui para reduzir a vacância e melhorar os resultados financeiros do fundo.\n\n---\n\n### O QUE aconteceu em 08/06/2026\n\n**Título:** Nova expansão com FAMILHÃO ENGAJAMENTO E INTERMEIDAÇÃO S.A.\n\n**Resumo:**\nO Fundo Rio Negro assinou um contrato de expansão com a empresa FAMILHÃO ENGAJAMENTO E INTERMEIDAÇÃO S.A., para ampliar o CJ 22 na Torre Demini. A área locada é de 339,09 m² e a locação típica tem prazo de 36 meses. Esta nova expansão reduz a vacância física do fundo de 17,83% para 16,96%, impactando positivamente o resultado mensal em R$ 0,01/cota.\n\n**Trecho-chave:**\n\"A expansão foi firmada com a empresa FAMILHÃO ENGAJAMENTO E INTERMEIDAÇÃO S.A. reforçando o relacionamento próximo com o locatário. A operação reafirma a capacidade do Fundo em atender à demanda de crescimento do ocupante, acomodando sua expansão no empreendimento.\"\n\n**Conexão com o contexto:**\nEsta nova expansão contribui para reduzir a vacância e melhorar os resultados financeiros do fundo.\n\n---\n\n### O QUE aconteceu em 03/03/2026\n\n**Título:** Solicitação de candidatura para representante de cotistas\n\n**Resumo:**\nA administradora Rio Bravo informou sobre a solicitação de candidaturas para o cargo de representante de cotistas do fundo. Os interessados devem enviar seus dados até 9 de março de 2026, para análise e inclusão na pauta de eleição.\n\n**Trecho-chave:**\n\"Para garantir a equidade perante os demais cotistas e em conformidade com Assembleia de Cotistas realizada em 28 de abril de 2025, a Administradora informa que os cotistas interessados em se candidatar como Representante de Cotista deve m encaminhar à Rio Bravo os seus dados, contendo profissão e qualificação completa, impreterivelmente até as 18 horas do dia 09 de março de 2026 a fim de análise de Compliance, pelo e-mail ri@riobravo.com.br, para que sejam incluídos na pauta de eleição.\"\n\n**Conexão com o contexto:**\nEsta solicitação é parte do processo de governança do fundo, garantindo a representatividade dos cotistas."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 52.92
+  },
+  "parecer": {
+    "id": 1142580,
+    "data_entrega": "23/03/2026 18:04",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Rio Negro Fundo de Investimento Imobiliário de Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Br"
+  }
+}

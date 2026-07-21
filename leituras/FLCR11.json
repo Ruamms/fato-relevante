@@ -1,0 +1,42 @@
+{
+  "ticker": "FLCR11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T03:10:35",
+  "relatorio": {
+    "id": 1235900,
+    "data_entrega": "30/06/2026 18:44",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Investimento Adicional:**\n   - No mês de jun/26, o fundo fez um investimento adicional de R$1,9 milhão no CRI Morada do Lago (IPCA+13,75%), financiando a construção de casas em Aracajú/SE. As obras estão quase finalizadas e têm vencimento previsto para janeiro/28.\n\n2. **Composição da Carteira:**\n   - A carteira do FLCR11 encerrou o mês de maio com 90,1% de alocação em CRI (vs. 90,5% em abril), sendo R$57,8 milhões em CRI (79,7% dos ativos) e R$7,5 milhões em cotas de FII (10,3% dos ativos).\n\n3. **Taxa Média Ponderada:**\n   - Os CRI do fundo possuem uma taxa média ponderada de IPCA+10,7% a.a., sendo 75,7% dos ativos indexados ao IPCA e 4,0% aos CDI.\n\n4. **Distribuição de Proventos:**\n   - No mês de jun/26, foi distribuído rendimento de R$1,15 por cota do FLCR11, equivalente a um dividend yield (DY) de 1,20% a.m., ou 15,4% anualizado.\n\n5. **Histórico de Distribuição:**\n   - No período de 12 meses, o fundo distribuiu R$13,35 por cota, representando um dividend yield acumulado de 13,9%.\n\n6. **Rendimento e Comparação com CDI:**\n   - O rendimento do FLCR11 foi de 110,9% sobre uma aplicação em CDI tributada em 15,0%, comparado a um retorno de 12,5% nos últimos 12 meses.\n\n7. **Liquidez:**\n   - O fundo tem majoritariamente investidores com perfil de longo prazo, e o volume médio diário nos últimos três meses foi de R$106,6 mil.\n\n8. **Ativos Características Gerais:**\n   - A Tabela 5 detalha as características gerais dos ativos que compõem a carteira, incluindo emissores, emitentes, valores investidos, porcentagem do PL, taxas de investimento e amortização.\n\n### O que observar em seguida:\n1. **Investimentos Adicionais:** Acompanhar os avanços das obras do CRI Morada do Lago.\n2. **Distribuição de Proventos:** Observar se a distribuição mensal segue o planejado, considerando as expectativas de inflação e rendimentos futuros."
+  },
+  "comunicados": {
+    "ids": [
+      1209914,
+      1173288
+    ],
+    "datas": [
+      "01/06/2026",
+      "29/04/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Assembleia Geral Ordinária (AGO) Realizada em 01/06/2026\n\n**O QUE aconteceu:** A BRL Trust Distribuidora de Títulos e Valores Mobiliários S.A. realizou uma Consulta Formal para aprovar as Demonstrações Contábeis do Fundo Faria Lima Capital Recebíveis Imobiliários I - FI (FLCR11) relativas ao exercício social findo em 31 de dezembro de 2025.\n\n**Resumo:** A consulta foi realizada por meio de uma plataforma online e teve aprovação unânime dos cotistas desimpedidos, com quórum representando aproximadamente 2,06% das cotas emitidas do Fundo.\n\n**Trecho-chave:**\n\"Após análises das repostas dos Cotistas do Fundo à Consulta Formal, foram apurados os seguintes resultados:\nAPROVADO REPROVADO ABSTENÇÃO CONFLITADO\n1,47% 0,02 % 0,57 % 0 %\" (p. 2)\n\n### Convocação da Assembleia Geral Ordinária (AGO) Realizada em 29/04/2026\n\n**O QUE aconteceu:** A BRL Trust Distribuidora de Títulos e Valores Mobiliários S.A. convocou os cotistas do Fundo Faria Lima Capital Recebíveis Imobiliários I - FI (FLCR11) para uma Assembleia Geral Ordinária, a ser realizada por meio de coleta de voto a distância, com o objetivo de aprovar as Demonstrações Contábeis relativas ao exercício social findo em 31 de dezembro de 2025.\n\n**Resumo:** A convocação foi enviada aos cotistas inscritos no registro de cotistas na data da convocação e os votos poderiam ser realizados até o dia 29 de maio de 2026, por meio da plataforma Cuore para Voto à Distância.\n\n**Trecho-chave:**\n\"A BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., com sede na cidade de São Paulo, Estado de São Paulo, na Rua Alves Guimarães, 1212, Pinheiros, inscrita no Cadastro Nacional de Pessoas Jurídicas do Ministério da Fazenda (“CNPJ/MF”) sob o nº 13.486.793/0001-42, habilitada para administração de fundos de investimento conforme ato declaratório expedido pela Comissão de Valores Mobiliários (\"CVM\") nº 11.784, de 30 de junho de 2011 (“Administradora”), na qualidade de instituição administradora do FARIA LIMA CAPITAL RECEBÍVEIS IMOBILIÁRIOS I - FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA, fundo de investimento imobiliário, inscrito no CNPJ sob o nº 33.884.145/0001-51 (“Fundo”), convida os cotistas do Fundo (\"Cotistas\"), por meio desta, a participar da Assembleia Geral Ordinária de Cotistas do Fundo (\"AGO\"), a ser realizada de forma não presencial, por meio de coleta de voto a distância, cuja formalização da apuração ocorrerá no dia 01 de junho de 2026, utilizando-se da plataforma Cuore para Voto à Distância para deliberar sobre a seguinte matéria da ordem do dia:\" (p. 1)"
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 93.35
+  },
+  "parecer": {
+    "id": 1141777,
+    "data_entrega": "20/03/2026 20:52",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas representam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Faria Lima Capital Recebíveis Imobiliários I - Fundo de Investimento Imobiliário Responsabilidade Limitada (anteriormente denominado Faria Lima Capital Recebíveis Imobiliários I - Fundo de Investimento Imobiliário), em 31 de dezembro de 20"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "ticker": "HCST11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T03:48:05",
+  "relatorio": {
+    "id": 1228436,
+    "data_entrega": "25/06/2026 18:04",
+    "texto": "### Fatos Extraídos:\n\n1. **Carteira do Fundo:**\n   \"O Fundo conta com uma carteira composta por um empreendimento em operação, dois em desenvolvimento e um em fase de projeto.\" (p. 3)\n\n2. **Status dos Ativos:**\n   - **Piragibe:** Em operação, com 80% de ocupação e baixo índice de inadimplência.\n   - **HI Pinheiros:** Em desenvolvimento, serviços na fase final de montagem da marcenaria.\n   - **Monte Caseros:** Em fase de projeto, com 73,2% de evolução acumulada.\n   - **Pedro de Toledo:** Em projeto, em processo de revisão do orçamento. (p. 6-8)\n\n3. **Obras e Reformas:**\n   - O HI Pinheiros está na fase final da montagem da marcenaria das unidades no 1° pavimento.\n   - O Monte Caseros avança conforme cronograma estabelecido pela Incorporadora MetroCasa, com 73,2% de evolução acumulada. (p. 4-5)\n\n### O que observar em seguida:\n- Monitorar o progresso das obras do HI Pinheiros e Monte Caseros.\n- Observar as estratégias da operadora para a ocupação do Piragibe."
+  },
+  "comunicados": {
+    "ids": [
+      1119212,
+      1088695,
+      1232012,
+      1219387,
+      1232485,
+      1232480
+    ],
+    "datas": [
+      "23/02/2026",
+      "20/01/2026",
+      "29/06/2026",
+      "12/06/2026",
+      "29/06/2026",
+      "29/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 23/02/2026\n\n**O que aconteceu:** Reavaliação do investimento no HCST11.\n\n**Resumo:** A reavaliação realizada pela empresa especializada Ipê Avaliações resultou em uma variação positiva de 8,73% no valor do patrimônio líquido do Fundo em sua Data Base (31 de dezembro de 2025).\n\n**Trecho-chave:** \"Os ativos do fundo foram reavaliados a valor justo pela empresa especializada Ipê Avaliações, em 31 de dezembro de 2025 ('Data Base'), resultando em uma variação positiva de 8,73% no valor do patrimônio líquido do Fundo em sua Data Base.\"\n\n### FATO RELEVANTE entregue em 20/01/2026\n\n**O que aconteceu:** Emissão de novas cotas.\n\n**Resumo:** A administradora aprovou a 5ª emissão de cotas, no valor total de até R$7.999.979,04, sem a necessidade de aprovação em Assembleia Geral de Cotistas e/ou alteração no Regulamento.\n\n**Trecho-chave:** \"Aprovou a 5ª emissão ('5ª Emissão') de cotas do Fundo ('Novas Cotas' e, quando referidas em conjunto com as cotas já emitidas pelo Fundo, 'Cotas'), nos termos do artigo 43 do Regulamento do Fundo, conforme alterado ('Regulamento') que autorizou a emissão das Novas Cotas pelo Administrador, sem a necessidade de aprovação em Assembleia Geral de Cotistas e/ou alteração no Regulamento.\"\n\n### COMUNICADO AO MERCADO entregue em 29/06/2026\n\n**O que aconteceu:** Resposta ao Ofício da B3 sobre a qualificação das demonstrações financeiras.\n\n**Resumo:** A administradora informa as medidas tomadas para endereçar a ressalva apresentada pela Grant Thornton, bem como o cronograma de implantação dessas medidas.\n\n**Trecho-chave:** \"Informamos que os procedimentos da investida permanecem em processo e, assim que finalizados, seguiremos com a reemissão.\"\n\n### COMUNICADO AO MERCADO entregue em 12/06/2026\n\n**O que aconteceu:** Divulgação das demonstrações financeiras qualificadas.\n\n**Resumo:** As demonstrações financeiras do exercício encerrado em 31 de dezembro de 2025 foram emitidas com ressalvas, devido à não obtenção de acesso às demonstrações financeiras auditadas das SPEs.\n\n**Trecho-chave:** \"Em decorrência disso, a auditoria não obteve evidência de auditoria apropriada e suficiente acerca dos saldos, caracterizando limitação de escopo nos trabalhos de auditoria das demonstrações financeiras referentes à data-base de 31 de dezembro de 2025.\"\n\n### ASSEMBLEIA AGO entregue em 29/06/2026\n\n**O que aconteceu:** Proposta para a aprovação das contas e demonstrações contábeis do Fundo.\n\n**Resumo:** A administradora propôs a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31 de dezembro de 2025, devidamente auditadas.\n\n**Trecho-chave:** \"Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31 de dezembro de 2025, devidamente auditadas, conforme disponíveis para consulta nos sites da Administradora e nos demais canais exigidos pela regulamentação em vigor.\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Menos cotistas que o mínimo para isenção de IR",
+      "Emissão de cotas com VP/cota em queda",
+      "Rendimentos irregulares"
+    ],
+    "cota": 35.1
+  },
+  "parecer": {
+    "id": 1219380,
+    "data_entrega": "12/06/2026 18:22",
+    "tipo": "ressalva",
+    "rotulo": "opinião com ressalva",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, exceto pelos possíveis efeitos do assunto descrito na seção intitulada “Base para opinião com ressalva”, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Hectare Desenvolvimento Student Housing – Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025, o desemp"
+  }
+}

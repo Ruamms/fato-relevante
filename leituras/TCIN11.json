@@ -1,0 +1,45 @@
+{
+  "ticker": "TCIN11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T04:26:06",
+  "comunicados": {
+    "ids": [
+      1076837,
+      1045430,
+      1045176,
+      1185668,
+      1056141,
+      1211289,
+      1176729
+    ],
+    "datas": [
+      "07/01/2026",
+      "24/11/2025",
+      "21/11/2025",
+      "11/05/2026",
+      "08/12/2025",
+      "02/06/2026",
+      "30/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### O QUE ACONTECEU: FATO RELEVANTE ENTREGUE EM 07/01/2026\n\n**Título:** Remarcação a Valor Justo do Ativo Imobiliário\n\n**Resumo:** A administradora realizou uma remarcação a valor justo do ativo imobiliário, resultando em uma variação negativa de -33,25% no PL/Cota do Fundo.\n\n**Trecho-chave:**\n\"Em decorrência da referida remarcação, apurou-se uma variação negativa equivalente a -33,25% no PL/Cota do Fundo – Subclasse Sênior.\"\n\n---\n\n### O QUE ACONTECEU: FATO RELEVANTE ENTREGUE EM 24/11/2025\n\n**Título:** Cancelamento da Listagem das Cotas das Classes Subordinada e Mezanino\n\n**Resumo:** As cotas das classes subordinada e mezanino foram canceladas, transferindo-se todas as cotas dessas classes para o ambiente escritural do Administrador.\n\n**Trecho-chave:**\n\"Em razão disso, todas as cotas dessas classes foram transferidas para o ambiente escritural do Administrador a partir de 12 de novembro de 2025.\"\n\n---\n\n### O QUE ACONTECEU: COMUNICADO AO MERCADO ENTREGUE EM 11/05/2026\n\n**Título:** Resposta ao Ofício da CVM Sobre Ressalva na Demonstrações Financeiras do Fundo\n\n**Resumo:** A administradora respondeu a um ofício da CVM sobre uma ressalva emitida nas demonstrações financeiras do Fundo, informando medidas para endereçar a ressalva e o cronograma de implantação dessas medidas.\n\n**Trecho-chave:**\n\"A ressalva emitida pela MGI Assurance Auditores Independentes nas Demonstrações Financeiras do Fundo referentes ao exercício social de 2025 representam um avanço material em relação às abstenções de opiniões registradas nos exercícios de 2023 e 2024.\"\n\n---\n\n### O QUE ACONTECEU: COMUNICADO AO MERCADO ENTREGUE EM 08/12/2025\n\n**Título:** Transferência das Cotas das Classes Subordinada e Mezanino para o Ambiente Escritural do Administrador\n\n**Resumo:** As cotas das classes subordinada e mezanino foram transferidas para o ambiente escritural do Administrador a partir de 12 de novembro de 2025.\n\n**Trecho-chave:**\n\"Em razão disso, todas as cotas dessas classes foram transferidas para o ambiente escritural do Administrador a partir de 12 de novembro de 2025.\"\n\n---\n\n### O QUE ACONTECEU: ASSEMBLEIA GERAL ORDINÁRIA DE COTISTAS ENTREGUE EM 30/04/2026\n\n**Título:** Prorrogação da Consulta Formal para a Assembleia Geral Ordinária de Cotistas\n\n**Resumo:** A administradora prorrogou o prazo de manifestação de voto dos cotistas na Assembleia Geral Ordinária de Cotistas, originalmente convocada no dia 01 de abril de 2026.\n\n**Trecho-chave:**\n\"A QI CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., sociedade anônima, com sede na Cidade de São Paulo, estado de São Paulo, na Avenida Rebouças, nº 2.942, 7º ao 12º andar, Parte I, CEP 05402-500, na qualidade de administradora do Fundo, inscrita no CNPJ/MF sob o nº 62.285.390/0001 -40, prorrogou o prazo de manifestação de voto dos cotistas.\"\n\n---\n\n### O QUE ACONTECEU: ASSEMBLEIA GERAL ORDINÁRIA DE COTISTAS ENTREGUE EM 02/06/2026\n\n**Título:** Termo de Apuração da Consulta Formal para a Assembleia Geral Ordinária de Cotistas\n\n**Resumo:** A administradora apurou os votos proferidos pelos cotistas em uma consulta formal realizada sobre as demonstrações financeiras do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Após análise da resposta dos Cotistas a Consulta Formal, foi apurado o seguinte resultado: APROVO NÃO APROVO ABSTENCÃO 0% 0% 0,17%\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1151927,
+    "data_entrega": "31/03/2026 22:39",
+    "tipo": "abstencao",
+    "rotulo": "abstenção de opinião",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, exceto pelo assunto descrito na seção “Base para opnião com ressalva”, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do G5 Cidade Nova Fundo de Investimento Imobiliário em 31 de dezembro de 202 5 e o desempenho de suas operações para o exercício findo na mesma data, de acordo com as prática"
+  }
+}

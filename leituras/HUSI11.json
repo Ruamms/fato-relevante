@@ -1,0 +1,30 @@
+{
+  "ticker": "HUSI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T01:02:57",
+  "comunicados": {
+    "ids": [
+      1245983,
+      1245982
+    ],
+    "datas": [
+      "13/07/2026",
+      "13/07/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "**13/07/2026 - Regulamento do HUSI Fundo de Investimento Imobiliário**\n\nO fundo foi regulamentado com detalhes sobre sua estrutura e operações. O documento define o fundo como um investimento imobiliário com objetivo de valorização e rentabilidade através da construção e locação atípica de um empreendimento hospitalar.\n\n*\"Artigo 1º. HUSI FUNDO DE INVESTIMENTO IMOBILIÁRIO, inscrito no CNPJ sob o nº 30.017.492/0001-99, doravante designado de forma abreviada “Fundo”, constituído por deliberação conjunta de uma administradora fiduciária e um gestor de recursos, conforme adiante qualificados, assim definidos como Prestadores de Serviços Essenciais, com prazo indeterminado de duração, é  um Fundo de Investimento regido pelo presente Regulamento e pelas disposições legais e regulamentares que lhe forem aplicáveis, em especial a Resolução CVM n.º 175/22 e suas alterações posteriores (“Resolução CVM 175/22”).\"*"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1193848,
+    "data_entrega": "15/05/2026 11:34",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Husi Fundo de Investimento Imobiliário em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo naquela data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos fundos de "
+  }
+}

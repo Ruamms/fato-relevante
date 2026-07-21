@@ -1,0 +1,59 @@
+{
+  "ticker": "BIPD11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T02:08:28",
+  "relatorio": {
+    "id": 939856,
+    "data_entrega": "04/07/2025 18:15",
+    "texto": "### Fatos do Relatório:\n\n1. **Portfólio Atualizado**: O fundo detém atualmente um ativo em processo de desinvestimento, tendo devolvido cerca de 5,7% do capital investido (R$ 6,3 milhões) até junho.\n2. **Ativos em Desinvestimento**: Os ativos já desinvestidos incluem Axis, Lindenberg Guarará e Simão 717 Pinheiros.\n3. **Novos Ativos no Portfólio**: Novos ativos foram adquiridos recentemente, como Guaramomis, Jardim Paulista, Maracatins e Franca 615.\n4. **Taxa de Administração**: A taxa de administração é de 2,0% a.a., sem alterações mencionadas no relatório.\n5. **Cotas Integralizadas**: O fundo integralizou R$ 110,4 milhões em cotas até junho, com amortização e rendimentos acumulados.\n\n### Observações para Acompanhar:\n\n- **Desinvestimento Continuado**: Verificar a evolução do desinvestimento dos ativos restantes.\n- **Novos Lançamentos**: Monitorar o progresso das obras nos novos empreendimentos adquiridos recentemente."
+  },
+  "comunicados": {
+    "ids": [
+      1033013,
+      797172,
+      795239,
+      1240603,
+      1213051,
+      1047321,
+      1021630
+    ],
+    "datas": [
+      "10/11/2025",
+      "10/12/2024",
+      "05/12/2024",
+      "06/07/2026",
+      "05/06/2026",
+      "26/11/2025",
+      "27/10/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 10/11/2025\n\n**O que aconteceu:** A BRIO REAL ESTATE IV anunciou a possibilidade de desapropriação do terreno Pamplona por parte do governo do Estado de São Paulo, com o objetivo de desenvolver a estação Nove de Julho da futura Linha 16 do Metrô.\n\n**Resumo:** O Fundo enfrenta incertezas relacionadas à desapropriação do terreno Pamplona, que pode afetar os planos de desenvolvimento do projeto residencial no local.\n\n**Trecho-chave:**\n\"O projeto da Linha 16 ainda não é definitivo, de modo que, em que pese a DUP emitida, não há confirmação de que a estação Nove de Julho será de fato no Terreno Pamplona e, portanto, não há confirmação que haverá um processo expropriatório do Terreno Pamplona.\"\n\n---\n\n### FATO RELEVANTE entregue em 10/12/2024\n\n**O que aconteceu:** A BRIO REAL ESTATE IV aprovou a aquisição de dois novos terrenos para projetos residenciais de alto padrão em São Paulo.\n\n**Resumo:** O Fundo expandiu sua carteira com investimentos em dois novos projetos imobiliários, totalizando 100% do capital comprometido em oito projetos residenciais na cidade.\n\n**Trecho-chave:**\n\"(i) aquisição de terreno para desenvolvimento de projeto residencial vertical de alto padrão denominado “Franca 615 ”... (ii) aquisição de terreno para desenvolvimento de projeto residencial vertical de alto padrão denominado \"Maracatins\"...\"\n\n---\n\n### FATO RELEVANTE entregue em 05/12/2024\n\n**O que aconteceu:** A BRIO REAL ESTATE IV aprovou a aquisição de dois novos terrenos para projetos residenciais de alto padrão em São Paulo.\n\n**Resumo:** O Fundo expandiu sua carteira com investimentos em dois novos projetos imobiliários, totalizando 100% do capital comprometido em oito projetos residenciais na cidade.\n\n**Trecho-chave:**\n\"(i) aquisição de terreno para desenvolvimento de projeto residencial vertical de alto padrão denominado \"Franca 615\" ... (ii) aquisição de terreno para desenvolvimento de projeto residencial vertical de alto padrão denominado \"Maracatins\"...\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 06/07/2026\n\n**O que aconteceu:** O BRIO REAL ESTATE IV não distribuirá resultados no mês de junho/2026.\n\n**Resumo:** O Fundo decidiu não realizar a distribuição de resultados financeiros para o período de junho, mantendo os cotistas informados sobre a situação atual.\n\n**Trecho-chave:**\n\"Em relação ao mês de junho/2026, não haverá distribuição de resultados.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 26/11/2025\n\n**O que aconteceu:** A assembleia geral ordinária do BRIO REAL ESTATE IV aprovou as demonstrações financeiras do Fundo.\n\n**Resumo:** Os cotistas votaram e aprovaram as demonstrações financeiras do Fundo, acompanhadas pelo relatório do auditor independente referentes aos exercícios sociais findos em 30 de junho de 2025 e 2024.\n\n**Trecho-chave:**\n\"Após análise das repostas dos Cotistas à Consulta Formal, foram apurados os seguintes resultados para os itens da ordem do dia: Item 1 APROVADO REPROVADO ABSTENCÃO CONFLITADO 0,39% 0,00% 0,00% 0,00%\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Emissão de cotas com VP/cota em queda",
+      "Base de cotistas muito pequena"
+    ],
+    "cota": 989.33
+  },
+  "parecer": {
+    "id": 999701,
+    "data_entrega": "26/09/2025 18:09",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Brio Real Estate IV - Fundo De Investimento Imobiliário - Responsabilidade Limitada (anteriormente denominado Brio Real Estate IV – Fundo de Investimento Imobiliário) em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos d"
+  }
+}

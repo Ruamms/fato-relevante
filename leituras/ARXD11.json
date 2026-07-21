@@ -1,0 +1,46 @@
+{
+  "ticker": "ARXD11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T02:47:56",
+  "relatorio": {
+    "id": 1225491,
+    "data_entrega": "22/06/2026 17:25",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Recompra de Cotas**: Durante o mês de abril, o Fundo recomprou e cancelou 30.314 cotas com preço médio de R$7,907/cota e desconto médio de 13,4% em relação à cota patrimonial do fechamento de maio/2026 (R$ 9,13/cota). Foram utilizados R$ 239.705,35 do caixa do Fundo para a recompra dessas cotas.\n\n2. **Programa de Recompra**: O Programa de Recompra de cotas do ARXD11 foi iniciado em novembro de 2025 e até maio/2026, 310.402 cotas já foram recompradas, representando 3,44% da quantidade inicial de cotas.\n\n3. **Distribuição de Rendimentos**: O Fundo distribuirá como rendimentos o equivalente a R$ 0,090/cota no dia 15/06/2026, o que representa um dividend yield anualizado, líquido de impostos, de 14,48% a.a., observado o valor a mercado da cota no fechamento do mês (R$ 7,94).\n\n4. **Carteira de CRIs**: No fechamento do mês, o portfólio do ARXD11 estava 100,08% alocado em CRIs, com vinte e duas operações, chegando em um resultado líquido de R$ 877.491,29 (R$ 0,101/cota).\n\n5. **Estrutura da Carteira**: A carteira de CRIs encontra-se com 17,58% em operações com taxa média de aquisição de CDI+2,39%, 76,27% em operações com taxa média de aquisição de Inflação+8,89% e 3,84% em operações com taxa média de aquisição pré-fixada de 16,18% a.a.\n\n6. **Rendimentos**: O resultado líquido do mês foi de R$ 870.765,33 (R$ 0,101/cota), distribuindo-se R$ 786.017,34 como rendimentos efetivos.\n\n7. **Vacância e Inadimplência**: Não há menção específica sobre vacância ou inadimplência no relatório.\n\n8. **Risco de Mercado**: A guerra no Oriente Médio segue como principal vetor de risco global, mantendo pressão sobre commodities energéticas e elevando a incerteza sobre inflação global, especialmente via canais de custos (energia e frete).\n\n### O que observar em seguida:\n1. **Distribuição de Rendimentos**: Verificar se o próximo pagamento de rendimentos será maior do que o previsto.\n2. **Cotas Recompradas**: Monitorar a quantidade total de cotas recompradas no programa, pois pode indicar interesse da gestão na valorização das cotações."
+  },
+  "comunicados": {
+    "ids": [
+      1009988,
+      1020198,
+      1020196
+    ],
+    "datas": [
+      "09/10/2025",
+      "24/10/2025",
+      "24/10/2025"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 09/10/2025\n\n**O QUE aconteceu:** Implementação de um programa de recompra de cotas.\n\n**Resumo:** A ARX DOVER RECEBÍLEIS decidiu implementar um programa de recompra de cotas, visando maximizar o valor para os cotistas. O programa será executado até 3 de novembro de 2026 e permitirá a adquirição de até 10% do total de cotas.\n\n**Trecho-chave:** \"A Gestora e a Administradora deliberaram pela implementação de um programa de recompra de cotas de emissão da classe única do Fundo (\"Programa de Recompra\"), nos seguintes termos:\" (p. 1)\n\n---\n\n### ASSEMBLEIA GERAL ORDINÁRIA DOS COTISTAS entregue em 24/10/2025\n\n**O QUE aconteceu:** Aprovação das contas e demonstrações financeiras do exercício social.\n\n**Resumo:** A assembleia geral ordinária dos cotistas aprovou as contas e demonstrações financeiras do Fundo referentes ao exercício encerrado em 30 de junho de 2025, com uma participação mínima representativa de 0,09% das cotas emitidas.\n\n**Trecho-chave:** \"Os votos proferidos representaram os seguintes percentuais em relação ao total da base votante do Fundo: 0,082% (oitenta e dois milésimos por cento ) de votos favoráveis e 0,004% (quatro milésimos por cento) de abstenções.\" (p. 6)\n\n---\n\n### ASSEMBLEIA GERAL ORDINÁRIA DOS COTISTAS entregue em 24/10/2025\n\n**O QUE aconteceu:** Aprovação das contas e demonstrações financeiras do exercício social.\n\n**Resumo:** A assembleia geral ordinária dos cotistas aprovou as contas e demonstrações financeiras do Fundo referentes ao exercício encerrado em 30 de junho de 2025, com uma participação mínima representativa de 0,09% das cotas emitidas.\n\n**Trecho-chave:** \"Os votos proferidos representaram os seguintes percentuais em relação ao total da base votante do Fundo: 0,082% (oitenta e dois milésimos por cento ) de votos favoráveis e 0,004% (quatro milésimos por cento) de abstenções.\" (p. 6)\n\n---\n\n**Conexão com o contexto:** O programa de recompra de cotas pode ser visto como uma estratégia para melhorar a cotação do fundo, considerando que a cotação atual é R$ 7,86 e há um desempenho negativo em vários indicadores."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Emissão de cotas com VP/cota em queda"
+    ],
+    "cota": 7.86
+  },
+  "parecer": {
+    "id": 994770,
+    "data_entrega": "19/09/2025 18:10",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do ARX Dover Recebíveis Fundo de Investimento Imobiliário de Responsabilidade Limitada em 30 de junho de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis ado"
+  }
+}

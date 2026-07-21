@@ -1,0 +1,30 @@
+{
+  "ticker": "TECX11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T07:15:14",
+  "comunicados": {
+    "ids": [
+      1249884,
+      1249876
+    ],
+    "datas": [
+      "15/07/2026",
+      "15/07/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "**15 de julho de 2026 - Assembleia Geral de Cotistas Não Instalada**\n\nA assembleia geral de cotistas do ETF B-INDEX ETF CONNECT CHINA AMC CHINEXT FUNDO DE ÍNDICE R LTDA não foi instalada em razão do não comparecimento dos cotistas. No entanto, as demonstrações contábeis relativas ao exercício social findo em 31 de março de 2026 foram consideradas automaticamente aprovadas, conforme o disposto no Artigo 71, §3°, da Instrução CVM nº 175, de 23.12.2022.\n\n*\"Em razão do não comparecimento de Cotistas, a Assembleia não foi instalada, contudo, considerando que as Demonstrações Contábeis relativas ao exercício social findo em 31 de março de 2026, foram emitidas sem opinião modificada, será aplicado o dispositivo previsto no Parágrafo Terceiro, do Artigo 71, da Resolução CVM nº 175/22 , de forma que as referidas Demonstrações Contábeis estão, por este ato, automaticamente aprovadas.\"* (p. 1)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208486,
+    "data_entrega": "29/05/2026 21:08",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe em 31 de março de 2026 e o desempenho de suas operações para o período de 26 de maio de 2025 (início das atividades) a 31 de março de 2026, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento e"
+  }
+}

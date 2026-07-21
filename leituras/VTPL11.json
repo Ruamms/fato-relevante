@@ -1,0 +1,45 @@
+{
+  "ticker": "VTPL11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T00:36:05",
+  "comunicados": {
+    "ids": [
+      1082788,
+      1082774,
+      1082762,
+      1182248,
+      1124917,
+      1182247,
+      1169253
+    ],
+    "datas": [
+      "14/01/2026",
+      "14/01/2026",
+      "14/01/2026",
+      "07/05/2026",
+      "27/02/2026",
+      "07/05/2026",
+      "24/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 14/01/2026\n\n**O que aconteceu:** O Fundo recebeu valores referentes ao aluguel de dezembro de 2025 e cadastrou uma distribuição extraordinária de rendimentos.\n\n**Resumo:** A administradora informa a realização de uma distribuição extraordinária de rendimentos baseada no recebimento do aluguel do locatário SHPX LOGIISTICA LTDA.\n\n**Trecho-chave:**\n\"O Fundo recebeu os valores provenientes do locatário SHPX LOGIISTICA LTDA  referentes ao aluguel da competência de dezembro de 2025. Em razão desse recebimento, o Fundo cadastrou uma distribuição extraordinária de rendimentos, valor de R$ 0,751603854 por cota, que será destinada aos investidores detentores de cotas na data de 13/01/2025 e pago no dia 20/01/2026.\"\n\n### COMUNICADO AO MERCADO entregue em 07/05/2026\n\n**O que aconteceu:** As contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025 foram aprovadas na assembleia geral.\n\n**Resumo:** A administradora informa que as contas anuais do Fundo foram aprovadas durante uma assembleia realizada em 4 de maio de 2026.\n\n**Trecho-chave:**\n\"A assembleia geral de cotistas realizada em 04 de maio de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\"\n\n### COMUNICADO AO MERCADO entregue em 27/02/2026\n\n**O que aconteceu:** A administradora informa sobre a disponibilização dos Informes de Rendimentos referentes ao ano de 2025 exclusivamente por meio digital.\n\n**Resumo:** A administradora comunica que os Informes de Rendimentos do ano de 2025 estão disponíveis digitalmente no Portal do Investidor.\n\n**Trecho-chave:**\n\"Com o intuito de reduzir os custos de impressão e correios para os Fundos, bem como minimizar o uso de papel e seus impactos para o meio ambiente, os Informes de Rendimentos (“Informes”) referentes ao ano de 2025, já estão disponíveis aos investidores, conforme previsto na Instrução Normativa RFB nº 2.060/2021, exclusivamente por meio digital, por meio do Portal do Investidor.”\n\n### ASSEMBLEIA AGO entregue em 07/05/2026\n\n**O que aconteceu:** A assembleia geral de cotistas aprovou as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia realizada via manifestação de voto aprovou as contas e demonstrações contábeis do Fundo para o exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1147317,
+    "data_entrega": "28/03/2026 22:28",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário Plus Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho das suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil,"
+  }
+}

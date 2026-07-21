@@ -1,0 +1,20 @@
+{
+  "ticker": "QQQI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T07:04:58",
+  "comunicados": {
+    "ids": [],
+    "datas": [],
+    "rotulos": [],
+    "texto": null
+  },
+  "parecer": {
+    "id": 1233433,
+    "data_entrega": "29/06/2026 23:03",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Buena Vista Nasdaq-100 Neos High Income ETF Index (NDXHIEN) Fundo de Índice - Responsabilidade Limitada em 31 de março de 2026 e o desempenho de suas operaçõesparaoexercíciofindonamesmadata,deacordocomaspráticascontábeis adotadas no Brasil "
+  }
+}

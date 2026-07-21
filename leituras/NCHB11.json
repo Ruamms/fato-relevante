@@ -1,0 +1,49 @@
+{
+  "ticker": "NCHB11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T01:06:08",
+  "relatorio": {
+    "id": 1240745,
+    "data_entrega": "06/07/2026 21:21",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Resultado do Mês**: O resultado do fundo no mês de junho de 2026 foi de R$ 0,120 por cota, com um total distribuível de R$ 0,154 por cota (considerando reservas acumuladas). A gestão optou por aumentar as reservas e distribuir R$ 0,102 por cota.\n\n2. **Cota Patrimonial**: O valor da cota patrimonial no final de junho foi de R$ 9,90, com uma redução de 0,80% em relação ao mês anterior, devido à marcação à mercado (MtM) dos ativos.\n\n3. **Adimplência do Portfólio**: O portfólio encerrou o mês com 99,72% adimplente e 52% do patrimônio líquido alocado em obras concluídas ou em fase final.\n\n4. **Composição dos Ativos**: A maioria do patrimônio (90,19%) está alocada em ativos indexados ao IPCA com uma taxa média de aquisição de 9,82% a.a., e a taxa média de MtM é de 12,99% a.a.\n\n5. **Operações em Pipeline**: A gestão está desenvolvendo novas operações com lastro pulverizado combinado a um fluxo de recebíveis e garantias reais em excesso frente ao saldo devedor dos CRIs.\n\n6. **Assembleias Gerais**: Houve assembleias gerais para diversos CRI's no mês, incluindo Ativo Mude, Porto Marina, Cânions, Enseada Palms, Over 24K3211802 e Basesul.\n\n7. **Rentabilidade Histórica**: A rentabilidade histórica do fundo desde o início foi de 356% acumulado em 12 meses, com um dividend yield médio de 1,24%.\n\n8. **Risco de Obras**: O fundo apresenta uma exposição reduzida a obras não concluídas (7,97% do patrimônio líquido), com 69,59% em obras concluídas e 22,43% em obras em fase final.\n\n### O que observar em seguida:\n1. **Acompanhar as novas operações** em pipeline para entender como elas podem impactar a composição do portfólio.\n2. **Monitorar a adimplência** dos ativos, especialmente com 99,72% de adimplentes no mês atual."
+  },
+  "comunicados": {
+    "ids": [
+      854757,
+      1185500,
+      1185498,
+      1173619
+    ],
+    "datas": [
+      "10/03/2025",
+      "11/05/2026",
+      "11/05/2026",
+      "29/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 10/03/2025\n\n**O QUE aconteceu:** A Administradora ajustou o nome do Fundo e solicitou a alteração do código de negociação.\n\n**Resumo:** A administradora BTG Pactual reorganizou o nome do fundo e solicitou mudanças no código de negociação, que passará a ser negociado sob um novo ticker a partir de 17 de março de 2025.\n\n**Trecho-chave:**\n\"Ademais, em decorrência da mudança supracitada no item “I”, a Administradora solicitou à B3 a alteração do código de negociação (“Ticker”) do Fundo de “NCHB11” para “FYTO11” e o nome do Pregão de “FII NCH BR” para “FII FYTO”. Dessa forma, as cotas passarão a ser negociadas sob o novo Ticker a partir de 17 de março de 2025.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 11/05/2026\n\n**O QUE aconteceu:** As contas anuais do Fundo foram aprovadas na assembleia geral.\n\n**Resumo:** A assembleia geral de cotistas aprovou as contas anuais do Fundo referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Na assembleia geral de cotistas realizada em 04 de maio de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 11/05/2026\n\n**O QUE aconteceu:** As contas anuais do Fundo foram aprovadas.\n\n**Resumo:** A assembleia geral de cotistas aprovou as contas e demonstrações contábeis do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"4.1. Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 29/04/2026\n\n**O QUE aconteceu:** Convocação para a assembleia geral de cotistas.\n\n**Resumo:** A administradora convocou os cotistas do Fundo para uma assembleia geral com o objetivo de aprovar as contas e demonstrações contábeis referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"A BTG Pactual Serviços Financeiros S.A. Distribuidora de Títulos e Valores Mobiliários, sociedade anônima, com sede na Cidade e Estado do Rio de Janeiro, localizada à Praia de Botafogo, nº 501, Torre Corcovado, 5º Andar (Parte), Botafogo, e inscrita no CNPJ sob o nº 59.281.253/0001-23, devidamente autorizada pela Comissão de Valores Mobiliários (“CVM”) para a atividade de administração de carteiras de valores mobiliários, de acordo com o Ato Declaratório CVM nº 8 .695, de 20 de março de 2006 (\"Administradora\"), na qualidade de administradora do FUNDO DE INVESTIMENTO IMOBILIARIO- FII FYTO RECEBIVEIS IMOBILIARIOS RESPONSABILIDADE LIMITADA, inscrito no CNPJ sob o nº 18.085.673/0001-57 (\"Fundo\"), bem como de sua classe única, vem, pela presente, convocar os cotistas do Fundo (“Cotistas”) para a Consulta Formal, com prazo de recebimento de votos até 04 de maio de 2026, para deliberarem sobre: (i) A aprovação das contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de dezembro de 2025.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares"
+    ],
+    "cota": 7.97
+  },
+  "parecer": {
+    "id": 1141945,
+    "data_entrega": "23/03/2026 10:30",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "ticker": "BBOI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:11:25",
+  "comunicados": {
+    "ids": [
+      1240166,
+      1238250
+    ],
+    "datas": [
+      "06/07/2026",
+      "02/07/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA AGO entregue em 06/07/2026\n\n**Data:** 06/07/2026  \n**Título:** Assembleia Geral Ordinária do BB ETF Índice Futuro de Boi Gordo B3 Fundo de Índice Responsabilidade Limitada foi convocada.  \n**Resumo:** A assembleia foi realizada para deliberar sobre as demonstrações contábeis do fundo relativas ao exercício social findo em 31/03/2026, que foram consideradas aprovadas devido à ausência de quórum.  \n**Trecho-chave:** \"consideram-se aprovadas as demonstrações contábeis do FUNDO relativas ao exercício social findo em 31/03/2026, devidamente auditada pela Deloitte Touche Tohmatsu Auditores Independentes.\" (p. 1)\n\n### ASSEMBLEIA AGO entregue em 02/07/2026\n\n**Data:** 29/06/2026  \n**Título:** Assembleia Geral Ordinária do BB ETF Índice Futuro de Boi Gordo B3 Fundo de Índice Responsabilidade Limitada realizada.  \n**Resumo:** A assembleia foi realizada no dia 29/06/2026, às 11h00min na sede da BB Asset, e as demonstrações contábeis do exercício social findo em 31/03/2026 foram consideradas aprovadas por ausência de quórum.  \n**Trecho-chave:** \"as Demonstrações Contábeis relativas ao exercício social findo em 31/03/2026 foram consideradas automaticamente aprovadas, por não apresentarem opinião modificada.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1205990,
+    "data_entrega": "28/05/2026 12:26",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do BB ETF Índice Futuro de Boi Gordo B3 Fundo de Índice Responsabilidade Limitada em 31 de março de 2026 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos F"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "ticker": "MTOF11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T02:46:05",
+  "comunicados": {
+    "ids": [
+      810964,
+      1240820
+    ],
+    "datas": [
+      "30/12/2024",
+      "07/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 30/12/2024\n\n**O QUE aconteceu:** O Fundo Multioffices 1 (MTOF11) passará a ser classificado como \"Multiestratégia\".\n\n**Resumo:** A Administradora do fundo informou que o MTOF11 será reclassificado para uma categoria de gestão mais ampla, mantendo as características atuais.\n\n**Trecho-chave:**\n\"passará a ser classificado como  “Multiestratégia”, com a subclassificação  \n“Multiestratégia”, tipo de gestão “Gestão Ativa ” e critério de classificação  \n“Multicategoria” de acordo com o previsto no art. 27 da referida norma.\"\n\n---\n\n### ATA DA ASSEMBLEIA GERAL ORDINÁRIA DE COTISTAS REALIZADA EM 27 DE MAIO DE 2025\n\n**O QUE aconteceu:** A assembleia geral ordinária de cotistas aprovou as contas e demonstrações financeiras auditadas do exercício social findo em 31 de dezembro de 2024.\n\n**Resumo:** Todos os cotistas presentes na assembleia votaram favoravelmente para aprovar as demonstrações financeiras do fundo, sem quaisquer ressalvas ou restrições.\n\n**Trecho-chave:**\n\"Instalada a Assembleia, depois da análise das demonstrações financeiras auditadas apresentadas, os cotistas do Fundo, deliberaram, sem quaisquer ressalvas ou restrições, pela aprovação das contas e das demonstrações financeiras auditadas do Fundo (Anexo I), referentes ao exercício social findo em 31 de dezembro de 2024.\"\n\n---\n\n**Conexão com o contexto:** A reclassificação do fundo para a categoria \"Multiestratégia\" pode impactar as estratégias de investimento e, consequentemente, os resultados financeiros apresentados na assembleia."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1244445,
+    "data_entrega": "10/07/2026 19:14",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Alianza Multioffices - Fundo de Investimento Imobiliário –Responsabilidade Limitada em 31 de dezembro de 202 5, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis "
+  }
+}

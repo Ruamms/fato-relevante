@@ -1,0 +1,43 @@
+{
+  "ticker": "RTEL11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T04:13:06",
+  "relatorio": {
+    "id": 1178741,
+    "data_entrega": "03/05/2026 23:30",
+    "texto": "### Fatos Extraídos do Relatório Gerencial\n\n1. **Vacância**: O fundo encerrou o primeiro trimestre de 2026 com uma taxa de ocupação de 75,25%, ficando aproximadamente 5 pontos percentuais acima do mesmo período do exercício anterior (p. 3).\n2. **Receita de Locação**: Em janeiro de 2026, a receita de locação foi de R$ 433,6 mil, registrando o valor mais alto desde janeiro de 2022 (p. 3).\n3. **Despesas Operacionais**: As despesas operacionais em janeiro de 2026 apresentaram redução de aproximadamente 5,4% em relação a dezembro, principalmente em decorrência da redução de despesas com assessorias de terceiros (p. 3).\n4. **Desocupação**: No período, houve a desocupação de três quiosques e da loja 109-10, que possui área de 35,80m² (p. 3).\n5. **Contrato Renovado**: O contrato da loja 62-18 foi renovado para vigorar até novembro de 2027 (p. 3).\n6. **Distribuição de Resultados**: Em janeiro de 2026, houve distribuição de R$ 0,18 por cota, relacionada às contas de receitas e despesas do exercício de 2025 (p. 4).\n7. **Resultado Operacional Disponível (RODi)**: O RODi no período foi deficitário em fevereiro e março de 2026 (p. 4).\n\n### O que observar em seguida:\n1. A taxa de ocupação continua alta, mas a vacância ainda é significativa.\n2. O aumento na receita de locação pode indicar uma melhora nas condições do mercado ou na gestão do fundo."
+  },
+  "comunicados": {
+    "ids": [
+      1180510,
+      1152830
+    ],
+    "datas": [
+      "05/05/2026",
+      "01/04/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Assembleia Agora entregue em 05/05/2026\n\n**O QUE aconteceu:** A assembleia formal dos cotistas do SCP - FUNDO DE INVESTIMENTO IMOBILIÁRIO foi realizada, deliberando sobre as Demonstrações Financeiras referentes ao exercício encerrado em 31 de dezembro de 2025 e o relatório dos Auditores Independentes.\n\n**Resumo:** A assembleia aprovou o item com 95,614% das cotas votantes, reprovou com 0,321% e 4,064% se abstiveram. \n\n**Trecho-chave:**\n\"O item “Análise e deliberação acerca das Demonstrações Financeiras referentes ao exercício encerrado em 31 de dezembro de 2025, bem como do relatório dos Auditores Independentes” foi aprovado pelo voto de quotistas representantes de 175.268 cotas, ou seja 95,614% das cotas votantes; reprovado pelo voto de quotistas representantes de 588 quotas, ou seja 0,321% das cotas votantes; 7.450 cotas, ou seja 4,064% das cotas votantes se abstiveram.\"\n\n---\n\n### Assembleia Agora entregue em 01/04/2026\n\n**O QUE aconteceu:** A administradora do SCP - FUNDO DE INVESTIMENTO IMOBILIÁRIO enviou uma consulta formal aos cotistas para que se manifestem sobre as Demonstrações Financeiras referentes ao exercício encerrado em 31 de dezembro de 2025 e o relatório dos Auditores Independentes.\n\n**Resumo:** A consulta foi publicada no site do fundo e os cotistas têm até 04 de maio para responderem. \n\n**Trecho-chave:**\n\"Análise e deliberação acerca das Demonstrações Financeiras referentes ao exercício encerrado em 31 de dezembro de 2025, bem como do relatório dos Auditores Independentes. Este documento se encontra, para conhecimento e análise, no site do fundo [link].\"\n\n**Conexão com o contexto:** Esta consulta formal aos cotistas é um procedimento regular para aprovar as demonstrações financeiras anuais, que são importantes para a avaliação do desempenho do fundo."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Vacância física alta",
+      "Rendimentos irregulares"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 1148384,
+    "data_entrega": "30/03/2026 17:37",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acim a referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do SCP Fundo de Investimento Imobiliário – Responsabilidade Limitada em 31 de de zembro de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercíci o findo nesta data, de acordo com as práticas contábeis adotadas no Bra"
+  }
+}

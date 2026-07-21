@@ -1,0 +1,18 @@
+{
+  "ticker": "BPDR11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T11:38:33",
+  "comunicados": {
+    "ids": [
+      1075307
+    ],
+    "datas": [
+      "05/01/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado"
+    ],
+    "texto": "**05/01/2026 - A Basílica Partners GDR FII aprovou seu primeiro projeto residencial enquadrado no programa Minha Casa Minha Vida.**\n\nO fundo atingiu um marco relevante em sua estratégia de investimentos com a aprovação, pelo Comitê de Investimentos, do seu primeiro projeto residencial enquadrado no programa Minha Casa Minha Vida – Faixas 3 e 4, a ser desenvolvido em parceria com a Direcional S.A.\n\nO terreno para o empreendimento está localizado na Rua Comendador Francisco Pini Baroni, nº 777, Centro, Nova Iguaçu – RJ. O projeto residencial será desenvolvido no âmbito do programa Minha Casa Minha Vida – Faixas 3 e 4, contando com participação societária de 60% da Direcional S.A. e 40% do Basílica Partners GDR FII.\n\n\"O projeto residencial será desenvolvido no âmbito do programa Minha Casa Minha Vida – Faixas 3 e 4, contando com participação societária de 60% da Direcional S.A. e 40% do Basílica Partners GDR FII.\"\n\n**Conexão com o contexto:** Este avanço reflete a disciplina da Basílica Partners na originação e estruturação de investimentos imobiliários com perfil de risco controlado, resiliência operacional e elevado potencial de geração de valor ao longo do ciclo de desenvolvimento."
+  },
+  "modelo": "qwen2.5:7b"
+}

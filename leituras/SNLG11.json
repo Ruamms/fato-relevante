@@ -1,0 +1,52 @@
+{
+  "ticker": "SNLG11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T05:50:04",
+  "relatorio": {
+    "id": 1128470,
+    "data_entrega": "04/03/2026 19:38",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Nova data de abertura do prazo para manifestação sobre o custo médio de aquisição de cotas**: A nova data é de 04 de março de 2026 até 19 de março de 2026, devido a um erro operacional no envio da comunicação.\n   > \"A dilação do referido prazo se faz necessária considerando um erro operacional do escriturador no envio da comunicação\" (p. 1)\n\n2. **Prazo para preenchimento do formulário**: O prazo para o preenchimento do formulário será disponibilizado e encaminhado apenas aos cotistas que não receberam os links e documentos no envio realizado em 05 de fevereiro de 2026.\n   > \"Para envio do referido link, foi utilizado o e-mail do cotista cadastrado junto à B3 pelo respectivo agente de custódia\" (p. 1)\n\n3. **Data de liquidação do Fundo**: A data de liquidação será informada posteriormente em momento oportuno.\n   > \"Por fim, segue abaixo novamente as instruções de manifestação:\" (p. 1)\n\n4. **Instruções para preenchimento do formulário**: Em 03 de março de 2026, cada cotista receberá um e-mail com o link de acesso à plataforma Cuore.\n   > \"Em 03 de março de 2026 será encaminhado para cada cotista um e-mail com o link de acesso à plataforma Cuore\" (p. 1)\n\n5. **Responsabilidade pelo envio do formulário**: Cotistas que não receberam os links devem entrar em contato com a Administradora até dia 13 de março de 2026.\n   > \"Caso o cotista não tenha recebido por e-mail o link individual para prestar as informações pela plataforma Cuore, deverá entrar em contato com a Administraadora até dia 13de março de 2026\" (p. 1)\n\n### O que observar em seguida:\n- Verificar se os cotistas receberam corretamente o formulário e preencherem as informações necessárias.\n- Estar atento à data da liquidação do Fundo, que será informada posteriormente."
+  },
+  "comunicados": {
+    "ids": [
+      1159357,
+      1084855,
+      866633,
+      1103016,
+      1096479
+    ],
+    "datas": [
+      "10/04/2026",
+      "15/01/2026",
+      "27/03/2025",
+      "05/02/2026",
+      "29/01/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 10/04/2026\n\n**O QUE aconteceu:** Decisão favorável no processo que dispensa o pagamento do ITBI, resultando em benefício para o Fundo.\n\n**Resumo:** A XP Investimentos e a Suno Gestora informaram que a decisão favorável no processo de dispensa do ITBI resultará em um benefício líquido estimado de R$ 1.574.916,72, equivalente a cerca de R$ 0,62 por cota.\n\n**Trecho-chave:** \"Foi transitada em julgado a decisão favorável ao Fundo no âmbito do processo nº 0804563-24.2024.8.19.0045, referente a dispensa do pagamento do Imposto sobre Transmissão de Bens Imóveis (\"ITBI\") em decorrência da transferência do imóvel localizado na cidade de Resende-RJ.\"\n\n### FATO RELEVANTE entregue em 15/01/2026\n\n**O QUE aconteceu:** Decisão favorável no processo que dispensa o pagamento do ITBI, resultando em benefício para o Fundo.\n\n**Resumo:** A XP Investimentos e a Suno Gestora informaram que a decisão favorável no processo de dispensa do ITBI resultará em um benefício líquido estimado de R$ 896.000,00, equivalente a cerca de R$ 0,35 por cota.\n\n**Trecho-chave:** \"Houve o trânsito em julgado no processo que trata da dispensa do pagamento do Imposto sobre Transmissão de Bens Imóveis (\"ITBI\") em decorrência da transferência do imóvel localizado na cidade de São Paulo/SP.\"\n\n### COMUNICADO AO MERCADO entregue em 05/02/2026\n\n**O QUE aconteceu:** Prazo para manifestação sobre o custo médio de aquisação de cotas foi estendido até 19/02/2026.\n\n**Resumo:** A XP Investimentos informou que encaminhou e-mails com link de acesso à plataforma Cuore para cada cotista com posição no Fundo na data de fechamento do dia 03/02/2026. O prazo para envio das informações foi estendido até 19/02/2026.\n\n**Trecho-chave:** \"Em 05 de fevereiro de 2026 foi encaminhado para cada cotista com posição no Fundo na data de fechamento do dia 03 de fevereiro de 2026 um e-mail com o link de acesso à plataforma Cuore, por meio da qual será possível encaminhar as informações.\"\n\n### COMUNICADO AO MERCADO entregue em 29/01/2026\n\n**O QUE aconteceu:** Comunicação sobre os próximos passos para a liquidação e encerramento do Fundo.\n\n**Resumo:** A XP Investimentos e a Suno Gestora informaram que o último dia de negociação das cotas do Fundo será em 03/02/2026, e que os Cotistas deverão informar seus respectivos custos médios de aquisição de cotas até 19/02/2026.\n\n**Trecho-chave:** \"Para fins de apuração de ganho de capital e retenção de Imposto de Renda (“IR”) na fonte, os Cotistas deverão informar seus respectivos custos médios de aquisição de cotas (‘Custo Médio’). O período para envio dessas informações será de 05/02/2026 até 19/02/2026 (\"Período de Envio\").\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares"
+    ],
+    "cota": 1.24
+  },
+  "parecer": {
+    "id": 1159338,
+    "data_entrega": "10/04/2026 20:05",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referi das apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2024, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

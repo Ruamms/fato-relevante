@@ -1,0 +1,21 @@
+{
+  "ticker": "OROF11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:58:19",
+  "comunicados": {
+    "ids": [
+      1213853,
+      1213851
+    ],
+    "datas": [
+      "08/06/2026",
+      "08/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### O QUE aconteceu em 08/06/2026\n\n**Título:** Início do Período de Negociação das Cotas da Classe Única\n\n**Resumo:** O fundo Galapagos Ouro Físico iniciou o período de negociação das cotas no mercado secundário a partir do dia 10 de junho de 2026.\n\n**Trecho-chave:**\n\"Em 10 de junho de 2026, será iniciado o período de negociação das cotas subscritas e integralizadas da Classe, no mercado secundário, (i) sob o código de negociação “OROF11”, (ii) nome de pregão GLPG OURO e (iii) código ISIN BROROFCFT003, considerando-se o preço de emissão de R$ 100,00 por cota da Classe (“Cota”).\" (p. 1)\n\n---\n\n### O QUE aconteceu em 08/06/2026\n\n**Título:** Início do Período de Subscrição e Integralização das Cotas\n\n**Resumo:** O fundo Galapagos Ouro Físico iniciou o período de subscrição e integralização da Classe no mercado primário a partir do dia 9 de junho de 2026.\n\n**Trecho-chave:**\n\"Em 09 de junho de 2026, será iniciado o período de subscrição e integralização da Classe, no mercado primário, (i) sob o código de negociação “OROF11”, (ii) nome de pregão GLPG OURO e (iii) código ISIN BROROFCFT003, considerando-se o preço de emissão de R$ 100,00 por cota da Classe (“Cota”).\" (p. 1)\n\n---\n\n**Conexão com o contexto:** Ambos os comunicados informam sobre a data de início das operações do fundo Galapagos Ouro Físico, detalhando as condições e procedimentos para investidores interessados em adquirir ou negociar suas cotas no mercado primário e secundário."
+  },
+  "modelo": "qwen2.5:7b"
+}

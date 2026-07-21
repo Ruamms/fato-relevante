@@ -1,0 +1,30 @@
+{
+  "ticker": "EDGE11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:28:56",
+  "comunicados": {
+    "ids": [
+      1056521,
+      1019239
+    ],
+    "datas": [
+      "08/12/2025",
+      "23/10/2025"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA AGO entregue em 23/10/2025\n\n**O QUE aconteceu:** Convocação de Assembleia Geral Ordinária.\n\n**Resumo:** A administradora do Edge Fundo de Investimento Imobiliário convocou os cotistas para uma Assembleia Geral Ordinária no dia 24 de novembro de 2025, às 10:00. A assembleia terá como principal item a aprovação das contas e demonstrações contábeis do exercício social encerrado em 30 de junho de 2025.\n\n**Trecho-chave:** \"A Administradora ressalta que os votos por meio de comunicação eletrônica deverão ser realizados por meio da plataforma eletrônica, referidas manifestações de voto serão válidas e computadas desde que sejam recebidas pela Administradora antes do início da Assembleia.\"\n\n### ASSEMBLEIA AGO entregue em 08/12/2025\n\n**O QUE aconteceu:** Aprovação das Demonstrações Contábeis.\n\n**Resumo:** A assembleia geral ordinária realizada no dia 24 de novembro de 2025 aprovou as contas e demonstrações contábeis do exercício social encerrado em 30 de junho de 2025, sem quaisquer ressalvas ou restrições.\n\n**Trecho-chave:** \"O(s) Cotista(s) presente(s) aprovou(aram), sem quaisquer ressalvas ou restrições, as contas e demonstrações contábeis do Fundo referentes ao exercício social encerrado em 30 de junho de 2025.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 999525,
+    "data_entrega": "26/09/2025 16:14",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Edge Fundo de Investimento Imobiliário de Responsabilidade Limitada em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, ap"
+  }
+}

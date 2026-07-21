@@ -1,0 +1,50 @@
+{
+  "ticker": "PATC11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T01:41:42",
+  "relatorio": {
+    "id": 1246172,
+    "data_entrega": "13/07/2026 19:32",
+    "texto": "### Fatos Extraídos do Relatório Gerencial\n\n1. **Vacância e Inadimplência:**\n   - A vacância física do fundo foi de 17,3%, com uma vacância financeira de 39,8%. O aumento na vacância financeira é atribuído a ajustes na metodologia de cálculo para incluir carências concedidas aos inquilinos. (p. 4)\n\n2. **Movimentações Locatárias:**\n   - Não houve movimentações de locatários no mês, mantendo-se a vacância física em 17,3%. O time de gestão continua buscando oportunidades para ocupar os espaços vazios. (p. 4)\n\n3. **Resultados Financeiros:**\n   - Em junho, o Fundo apresentou uma receita total de R$ 0,15/cota, resultando em um resultado distribuível de R$ 0,06/cota. O rendimento anunciado foi de R$ 0,05/cota, com a próxima distribuição prevista para R$ 0,09/cota. (p. 4)\n\n4. **Alavancagem:**\n   - Em 30/06, o Fundo não possuía alavancagem ou obrigações por aquisição de ativos. (p. 7)\n\n5. **Carteira de Ativos:**\n   - A carteira do fundo possui quatro imóveis localizados em regiões centrais da cidade de São Paulo, com um total de 7.756 m² de área bruta locável (ABL). O ativo Sky Corporate representa 11% dos imóveis e está com uma vacância física de 50%. (p. 9-12)\n\n6. **Despesas Imobiliárias:**\n   - As despesas imobiliárias no mês foram de R$ 65,116 mil, enquanto as operacionais foram de R$ 253,440 mil. (p. 7)\n\n7. **Dividend Yield:**\n   - O dividend yield do mercado é de 1,5% a.a., e o patrimonial é de 1,7%. (p. 6)\n\n8. **Cotas e Cotistas:**\n   - O número de cotas emitidas foi de 3.477.434, com um público alvo de investidores em geral. (p. 2-3)\n\n### O que Observar Em Seguida:\n1. A vacância física do ativo Sky Corporate é alta e deve ser monitorada.\n2. As negociações comerciais para reduzir a vacância devem ser acompanhadas, especialmente no ativo Sky Corporate."
+  },
+  "comunicados": {
+    "ids": [
+      1082626,
+      863139,
+      1208184,
+      1206834
+    ],
+    "datas": [
+      "14/01/2026",
+      "21/03/2025",
+      "29/05/2026",
+      "28/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 14/01/2026\n\n**O que aconteceu:** O patrimônio líquido do Fundo foi impactado pela reavaliação dos ativos imobiliários, resultando em uma diminuição de 16,47% em relação aos valores contábeis.\n\n**Resumo:** A empresa especializada Binswanger avaliou os ativos imobiliários do Fundo a mercado e constatou um valor inferior ao contabilizado, impactando negativamente o patrimônio líquido.\n\n**Trecho-chave:**\n\"Os ativos imobiliários do Fundo foram avaliados a mercado (valor justo), em cumprimento ao disposto na Instrução da Comissão de Valores Mobiliários nº 516, de 29 de dezembro de 2011, em 31 de dezembro de 2025 pela empresa especializada independente Binswanger, resultando em valor 16,47% (dezesseis vírgula quarenta e sete) inferior aos valores contábeis de fechamento de novembro de 2025 dos referidos imóveis.\"\n\n### ASSEMBLEIA AGO entregue em 29/05/2026\n\n**O que aconteceu:** A assembleia geral ordinária do Fundo ratificou o CNPJ constante no documento, corrigindo um erro formal.\n\n**Resumo:** Houve uma correção de um erro formal na informação do CNPJ/MF do Fundo, aprovada pelos cotistas em assembleia.\n\n**Trecho-chave:**\n\"O Administrador RESOLVE: (1) Rerratificar anumeração do CNPJ/MF, constante na AGE de na forma do Anexo I, ratificando os demais termos da AGO.\"\n\n### ASSEMBLEIA AGO entregue em 28/05/2026\n\n**O que aconteceu:** A assembleia geral ordinária do Fundo aprovou as demonstrações financeiras referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** Os cotistas, representando aproximadamente 0,14% das cotas emitidas, aprovaram sem ressalvas as demonstrações financeiras do Fundo.\n\n**Trecho-chave:**\n\"A Administradora informa que as Demonstrações Financeiras objeto desta Consulta Formal foi aprovada, sem quaisquer ressalvas, pelos cotistas desimpedidos e aptos a deliberar.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "VP/cota em queda relevante",
+      "Vacância física alta"
+    ],
+    "cota": 39.99
+  },
+  "parecer": {
+    "id": 1142774,
+    "data_entrega": "23/03/2026 21:07",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas representam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Pátria Edifícios Corporativos - Fundo de Investimento Imobiliário - Responsabilidade Limitada (anteriormente denominado Pátria Edifícios Corporativos Fundo de Investimento Imobiliário), em 31 de dezembro de 2025, o desempenho das suas oper"
+  }
+}

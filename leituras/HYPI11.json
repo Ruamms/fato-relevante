@@ -1,0 +1,39 @@
+{
+  "ticker": "HYPI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:57:58",
+  "comunicados": {
+    "ids": [
+      1011152,
+      1081163,
+      1062998,
+      1068640,
+      1014167
+    ],
+    "datas": [
+      "13/10/2025",
+      "13/01/2026",
+      "15/12/2025",
+      "23/12/2025",
+      "15/10/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 13/10/2025\n\n**O QUE aconteceu:** O Fundo celebrou a Escritura Definitiva de Compra e Venda do edifício HY Pinheiros.\n\n**Resumo:** A transação foi efetivada pelo valor total de R$300.000.000,00, gerando um lucro relevante para o fundo, que poderá afetar positivamente a distribuição dos rendimentos durante o semestre.\n\n**Trecho-chave:** \"O Fundo celebrou, em 10/10/2025, a Escritura Definitiva de Compra e Venda do edifício HY Pinheiros, localizado na Avenida Rebouças, n.º 2492, bairro Pinheiros, na Cidade e Estado de São Paulo.\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 15/12/2025\n\n**O QUE aconteceu:** O Fundo divulgou a amortização parcial das cotas no montante de R$ 500.000,00.\n\n**Resumo:** Os investidores terão até as 23h59 do dia 17/12/2025 para enviar os custos de aquisição de suas cotas do Fundo.\n\n**Trecho-chave:** \"Conforme previsto no regulamento do fundo, divulgamos nesta data, 15 de dezembro de 2025, no sistema Fundos.Net o evento de amortização parcial das cotas no montante de R$ 500.000,00 (quinhentos mil) com pagamento previsto para o dia 22 de dezembro de 2025.\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 13/01/2026\n\n**O QUE aconteceu:** O Fundo divulgou a amortização parcial das cotas no montante de R$ 900.000,00.\n\n**Resumo:** Os investidores terão até as 23h59 do dia 15/01/2026 para enviar os custos de aquisição de suas cotas do Fundo.\n\n**Trecho-chave:** \"Conforme previsto no regulamento do fundo, divulgamos nesta data, 13 de janeiro de 2026, no sistema Fundos.Net o evento de amortização parcial das cotas no montante de R$ 900.000,00 (novecentos mil) com pagamento previsto para o dia 20 de janeiro de 2026.\" (p. 1)\n\n### ASSEMBLEIA AGO entregue em 23/12/2025\n\n**O QUE aconteceu:** A assembleia deliberou sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 30/06/2025.\n\n**Resumo:** A deliberação foi aprovada por 0% dos cotistas presentes.\n\n**Trecho-chave:** \"Após análise e contabilização das Manifestações de Voto recebidas informamos que: Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 30/06/2025, devidamente auditadas, conforme disponíveis para consulta nos sites da Administradora e nos demais canais exigidos pela regulamentação em vigor.\" (p. 1)\n\n### ASSEMBLEIA AGO entregue em 15/10/2025\n\n**O QUE aconteceu:** A assembleia convocou a deliberação sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 30/06/2025.\n\n**Resumo:** A proposta foi enviada aos cotistas para ser deliberada na assembleia.\n\n**Trecho-chave:** \"Em 15/10/2025, foi enviada aos Cotistas do Fundo a Convocação da Consulta Formal para a Assembleia Geral, que contará com as seguintes matérias na Ordem do Dia: Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 30/06/2025, devidamente auditadas, conforme disponíveis para consulta nos sites da Administradora e nos demais canais exigidos pela regulamentação em vigor.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1004747,
+    "data_entrega": "02/10/2025 10:24",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo em 30 de junho de 2025, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos fundos de investimento imobiliário."
+  }
+}

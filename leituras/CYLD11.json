@@ -1,0 +1,45 @@
+{
+  "ticker": "CYLD11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T00:57:50",
+  "comunicados": {
+    "ids": [
+      1181495,
+      1152976,
+      1049042,
+      1186040,
+      1125044,
+      1186039,
+      1169262
+    ],
+    "datas": [
+      "06/05/2026",
+      "01/04/2026",
+      "28/11/2025",
+      "11/05/2026",
+      "28/02/2026",
+      "11/05/2026",
+      "24/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### O que aconteceu em 11/05/2026\n\n**Título:** Assembleia Geral de Cotistas Aprova Contas Anuais\n\n**Resumo:** A assembleia geral de cotistas aprovou as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Na assembleia geral de cotistas realizada em 04 de maio de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### O que aconteceu em 28/11/2025\n\n**Título:** Venda Parcial dos Ativos do Fundo\n\n**Resumo:** A Classe vendeu participações societárias em imóveis logísticos para o fundo HGLG11, recebendo cotas do HGLG11 como contrapartida. O impacto financeiro estimado foi de R$ 37,18 por cota patrimonial.\n\n**Trecho-chave:**\n\"O preço total ajustado para a transação é de R$ 263.732.779,07 (duzentos e sessenta e três milhões e setecentos e trinta e dois mil e setecentos e setenta e nove reais e sete centavos), sujeito a ajustes por endividamento, e será pago da seguinte forma:\"\n\n---\n\n### O que aconteceu em 06/05/2026\n\n**Título:** Cancelamento de Amortização\n\n**Resumo:** A administradora informou que após reavaliação, decidiu suspender a amortização prevista e realizar uma distribuição de rendimentos.\n\n**Trecho-chave:**\n\"Em complemento ao Fato Relevante publicado no dia 1º de abril de 2026, comunicamos que após a reavaliação da Gestora, esta decidiu suspender a amortização anteriormente prevista e que pretende, previamente à amortização, realizar uma distribuição de rendimentos.\"\n\n---\n\n### O que aconteceu em 01/04/2026\n\n**Título:** Amortização Parcial de Cotas\n\n**Resumo:** A administradora informou sobre a amortização parcial de cotas, detalhando o cronograma e os procedimentos para envio do custo médio de aquisição das cotas.\n\n**Trecho-chave:**\n\"Nos termos do capítulo 8 do regulamento do Fundo, será efetuada uma amortização parcial de cotas em favor dos cotistas conforme indicado no cronograma abaixo.\"\n\n---\n\n### O que aconteceu em 24/04/2026\n\n**Título:** Convocação para Assembleia Geral de Cotistas\n\n**Resumo:** A administradora convocou os cotistas para a assembleia geral com prazo até 04 de maio de 2026, para deliberarem sobre a aprovação das contas e demonstrações contábeis do exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"A BTG Pactual Serviços Financeiros S.A. Distribuidora de Títulos e Valores Mobiliários, sociedade anônima, com sede na Cidade e Estado do Rio de Janeiro, localizada à Praia de Botafogo, nº 501, Torre Corcovado, 5º Andar (Parte), Botafogo, e inscrita no CNPJ sob o nº 59.281.253/0001-23, devidamente autorizada pela Comissão de Valores Mobiliários (\"CVM\") para a atividade de administração de carteiras de valores mobiliários, de acordo com o Ato Declaratório CVM nº 8 .695, de 20 de março de 2006 (\"Administradora\"), na qualidade de administradora do CYRELA DESENVOLVIMENTO LOGISTICO FUNDO DE INVESTIMENTO IMOBILIARIO, inscrito no CNPJ sob o nº 43.010.601/0001-98 (\"Fundo\"), bem como de sua classe única, vem, pela presente, convocar os cotistas do Fundo (\"Cotistas\") para a Consulta Formal, com prazo de recebimento de votos até 04 de maio de 2026, para deliberarem sobre:\"\n\n---\n\n### O que aconteceu em 11/05/2026\n\n**Título:** Comunicação da Assembleia Geral de Cotistas\n\n**Resumo:** A assembleia geral de cotistas aprovou as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Realizada via manifestação de voto enviada pelos Cotistas em 04 de maio de 2026.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1150223,
+    "data_entrega": "31/03/2026 16:31",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Cyrela Desenvolvimento Logístico Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas co"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "ticker": "PIPE11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T07:03:17",
+  "comunicados": {
+    "ids": [
+      1260173
+    ],
+    "datas": [
+      "20/07/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO"
+    ],
+    "texto": "**Data:** 20/07/2026\n\n**Título:** Convocação para Assembleia Geral Ordinária de Cotistas\n\n**Resumo:** A Hedge Investments Distribuidora de Títulos e Valores Mobiliários Ltda. convoca os cotistas do Buena Vista DEX Vettafi Neos Energy Infrastructure High Income Fundo de Índice para uma assembleia virtual no dia 19 de agosto de 2026, com o objetivo de aprovar as contas e demonstrações financeiras referentes ao exercício social encerrado em 31 de março de 2026.\n\n**Trecho-chave:**\n\"A Consulta Formal ocorrerá de forma não presencial, de modo que as deliberações serão tomadas única e exclusivamente por manifestação de voto dos cotistas, a qual poderá ser formulada por meio das seguintes alternativas:\" (p. 1)\n\n**Conexão com contexto:** Este documento convoca os cotistas para uma assembleia virtual, o que pode afetar diretamente os indicadores relacionados à governança corporativa e participação de cotistas do fundo."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1233234,
+    "data_entrega": "29/06/2026 19:33",
+    "tipo": "nao_identificado",
+    "rotulo": "parecer não identificado no texto",
+    "grave": false,
+    "continuidade": false,
+    "trecho": ""
+  }
+}

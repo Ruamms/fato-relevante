@@ -1,0 +1,46 @@
+{
+  "ticker": "BLMO11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T02:14:50",
+  "relatorio": {
+    "id": 1246170,
+    "data_entrega": "13/07/2026 19:30",
+    "texto": "### Fatos Extraídos do Relatório Gerencial:\n\n1. **Resultado Distribuível e Distribuição de Rendimentos:**\n   - Em junho, o Fundo apresentou uma receita total de R$ 0,54/cota, resultando em um resultado distribuível de R$ 0,40/cota.\n   - A distribuição de rendimentos permaneceu em R$ 0,53/cota, a ser paga em 14 de julho de 2026.\n\n2. **Movimentações de Locatários:**\n   - Não houve movimentações de locatários no mês de junho.\n   - Com a disponibilização de um conjunto para locação, o fundo registrou um aumento no volume de visitas e na prospecção de potenciais novos locatários.\n\n3. **Vacância:**\n   - A vacância física do portfólio foi de 7,7%, mantendo-se estável em relação ao mês anterior.\n   - A vacância financeira também permaneceu em 7,7%.\n\n4. **Alavancagem e Dívidas:**\n   - Em 30/06, o Fundo não possuía alavancagem ou obrigações por aquisição de ativos.\n\n5. **Cenário do Mercado Imobiliário:**\n   - O IFIX (Índice Nacional de Fundos Imobiliários) registrou uma queda de 1,21% em junho.\n   - O setor office foi o que mais sofreu com as quedas, apresentando uma perda de 2,3%.\n\n6. **Cotação e Indicadores:**\n   - A cotação do Fundo (BLMO11) foi de R$ 88,78.\n   - O P/VP (Preço sobre Valor Patrimonial) foi de 0,90x.\n\n### O que observar em seguida:\n- **Vacância e Inadimplência:** Manter-se atento à vacância física e financeira do portfólio, bem como aos possíveis movimentos de locatários.\n- **Distribuição de Rendimentos:** Verificar se as projeções para a próxima distribuição de rendimentos são mantidas ou revisadas."
+  },
+  "comunicados": {
+    "ids": [
+      1082571,
+      1206742,
+      1171669
+    ],
+    "datas": [
+      "14/01/2026",
+      "28/05/2026",
+      "28/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 14/01/2026\n\n**O que aconteceu:** A BRL TRUST e o PATRIA VBI realizaram a avaliação dos ativos imobiliários do Fundo, resultando em um valor inferior ao contábil.\n\n**Resumo:** A BRL TRUST e o PATRIA VBI realizaram a avaliação dos ativos imobiliários do Fundo, resultando em um valor 5,79% inferior aos valores contábeis de fechamento de novembro de 2025. O impacto no patrimônio líquido será divulgado até o dia 15 de janeiro de 2026.\n\n**Trecho-chave:** \"Os ativos imobiliários do Fundo foram avaliados a mercado (valor justo), em cumprimento ao disposto na Instrução da Comissão de Valores Mobiliários nº 516, de 29 de dezembro de 2011, em 31 de dezembro de 2025 pela empresa especializada independente Binswanger, resultando em valor 5,79% (cinco vírgula setenta e nove por cento) inferior aos valores contábeis de fechamento de novembro de 2025 dos referidos imóveis.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 28/04/2026\n\n**O que aconteceu:** A BRL TRUST convocou a Assembleia Geral Ordinária do Fundo para aprovar as Demonstrações Financeiras e o Relatório dos Auditores Independentes referente ao exercício social findo em 31 de dezembro de 2025.\n\n**Resumo:** A BRL TRUST convocou a Assembleia Geral Ordinária do Fundo para aprovar as Demonstrações Financeiras e o Relatório dos Auditores Independentes referente ao exercício social findo em 31 de dezembro de 2025. A consulta formal será realizada por meio da plataforma Cuore.\n\n**Trecho-chave:** \"A BRL TRUST convocar os cotistas do Fundo (“Cotistas”), por meio desta, a participar da Assembleia Geral Ordinária do Fundo (“AGO”), a ser realizada de forma não presencial, sob consulta formal, cuja apuração e divulgação dos resultados ocorrerá no dia 28 de maio de 2026, para deliberar sobre a seguinte matéria: 1. Aprovação das Demonstrações Financeiras e o Relatório dos Auditores Independentes do Fundo relativos ao Exercício Social Findo em 31 de dezembro de 2025 (“Demonstrações Financeiras”).\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 28/05/2026\n\n**O que aconteceu:** A Assembleia Geral Ordinária do Fundo aprovou as Demonstrações Financeiras e o Relatório dos Auditores Independentes referente ao exercício social findo em 31 de dezembro de 2025.\n\n**Resumo:** A Assembleia Geral Ordinária do Fundo, realizada por meio de consulta formal, aprovou sem ressalvas as Demonstrações Financeiras e o Relatório dos Auditores Independentes referente ao exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:** \"As Demonstrações Financeiras objeto desta Consulta Formal foi aprovada, sem quaisquer ressalvas, pelos cotistas desimpedidos e aptos a deliberar.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Base de cotistas muito pequena"
+    ],
+    "cota": 88.87
+  },
+  "parecer": {
+    "id": 1145926,
+    "data_entrega": "26/03/2026 20:44",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do VBI Office Fund II - Fundo de Investimento Imobiliário - Responsabilidade Limitada (anteriormente denominado VBI Office Fund II - Fundo de Investimento Imobiliário) em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos "
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "ticker": "HCHG11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T02:23:20",
+  "relatorio": {
+    "id": 1098122,
+    "data_entrega": "30/01/2026 18:12",
+    "texto": "### Fatos Importantes:\n\n1. **Distribuição de Dividendos**: Em dezembro, foi anunciada a distribuição de R$ 0,70 por cota, correspondente a um dividend yield de 0,87% a.m., considerando a cotação de mercado no fechamento do período.\n   > \"Em dezembro, foi anunciada a distribuição de R$ 0,70 por cota, correspondente a um dividend yield de 0,87% a.m., considerando a cotação de mercado no fechamento do período e tendo como base o resultado em caixa.\" (p. 4)\n\n2. **Patrimônio Líquido**: O patrimônio líquido do fundo diminuiu de R$ 115,089,930,77 para R$ 114,114,941,02 no último ano.\n   > \"Patrimônio Líquido (12 meses): R$ 114.114.941,02\" (p. 6)\n\n3. **Cota Patrimonial**: A cota patrimonial diminuiu de R$ 95,87 para R$ 94,29 no último ano.\n   > \"Cota Patrimonial R$ 94,29 R$ 93,89 R$ 93,68 R$ 94,45 R$ 94,57 R$ 95,87\" (p. 5)\n\n4. **Vacância do Shopping Metrô Itaquera**: O shopping possui uma vacância de 100%, mas está em operação há mais de 6 anos e é considerado um ativo consolidado.\n   > \"A inadimplência acumulada é de 3,8%.\" (p. 9)\n\n5. **Ativos com Inadimplência**: Ativos como CRI Araguaína Park e CRI Recanto dos Pássaros apresentam inadimplências acumuladas de 3,8% e 4,9%, respectivamente.\n   > \"A inadimplência acumulada é de 3,8%.\" (p. 10)\n\n6. **Operações com Risco**: A operação do CRI Shopping Metrô Itaquera possui riscos relacionados à quitação de um plano empresário junto ao Bradesco.\n   > \"A operação apresenta risco no Shopping Metrô Itaquera, um ativo com mais de 68 mil m², em operação desde 2007, localizado próximo à Arena Corinthians, em Itaquera, e consolidado como o principal empreendimento da região. O CRI conta com Alienação Fiduciária (AF) e Cessão Fiduciária (CF) correspondentes a aproximadamente 43,8% do imóvel na data de desembolso, com aditamento programado para alcançar 90,5% do imóvel em dezembro de 2030, condicionado à quitação de um plano empresário junto ao Bradesco, que financiou a expansão do shopping em 2017.\" (p. 14)\n\n### O que observar em seguida:\n- Monitorar o desempenho do Shopping Metrô Itaquera e as condições para a quitação do plano empresarial com o Bradesco.\n- Observar as inadimplências nos ativos CRI Araguaína Park e CRI Recanto dos Pássaros."
+  },
+  "comunicados": {
+    "ids": [
+      1243078,
+      1037231,
+      1026159,
+      1232382,
+      1232380
+    ],
+    "datas": [
+      "09/07/2026",
+      "13/11/2025",
+      "31/10/2025",
+      "29/06/2026",
+      "29/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 09/07/2026\n\n**O que aconteceu:** Início do período de liquidação do Fundo HCHG11.\n\n**Resumo:** A Vórtx Distribuidora de Títulos e Valores Mobiliários Ltda. informou sobre o início do processo de liquidação do Fundo, após a aprovação da alienação dos ativos e dissolução do Fundo pela Consulta Formal realizada em 27/11/2025.\n\n**Trecho-chave:**\n\"Ante o exposto, serve o presente para informar acerca do início do período de liquidação do Fundo, nos termos do Cronograma de Liquidação constante do Anexo I ao presente.\"\n\n---\n\n### FATO RELEVANTE entregue em 13/11/2025\n\n**O que aconteceu:** Proposta de aquisição dos ativos do Fundo pelo VVCR.\n\n**Resumo:** A Administradora e a Gestora informaram sobre uma nova proposta de aquisição dos ativos do Fundo HCHG11 por parte da V2 Recebíveis Imobiliários, com valor ajustado para R$ 107.640.000,00.\n\n**Trecho-chave:**\n\"Aquisição de 100% (cem por cento) dos ativos de titularidade do Fundo, compreendendo todos os certificados de recebíveis imobiliários (CRIs), cotas de fundos imobiliários e demais ativos financeiros integrantes do seu portfólio ('Ativos'), representativos do total do patrimônio do Fundo.\"\n\n---\n\n### FATO RELEVANTE entregue em 31/10/2025\n\n**O que aconteceu:** Proposta de aquisição dos ativos do Fundo pelo VVCR.\n\n**Resumo:** A Administradora e a Gestora informaram sobre uma proposta de aquisição dos ativos do Fundo HCHG11 por parte da V2 Recebíveis Imobiliários, com valor inicial para R$ 106.560.000,00.\n\n**Trecho-chave:**\n\"Aquisição de 100% (cem por cento) dos ativos de titularidade do Fundo, compreendendo todos os certificados de recebíveis imobiliários (CRIs), cotas de fundos imobiliários e demais ativos financeiros integrantes do seu portfólio ('Ativos'), representativos do total do patrimônio do Fundo.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 29/06/2026\n\n**O que aconteceu:** Convocação da Assembleia Geral Extraordinária para aprovar as contas e demonstrações contábeis do Fundo.\n\n**Resumo:** A Vórtx Distribuidora de Títulos e Valores Mobiliários Ltda. convocou a Assembleia Geral Extraordinária para deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo HCHG11, relativas ao exercício social findo em 31/12/2025.\n\n**Trecho-chave:**\n\"Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31/12/2025, devidamente auditadas.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 29/06/2026\n\n**O que aconteceu:** Consulta Formal para aprovar as contas e demonstrações contábeis do Fundo.\n\n**Resumo:** A Vórtx Distribuidora de Títulos e Valores Mobiliários Ltda. realizou uma Consulta Formal para aprovar as contas e demonstrações contábeis do Fundo HCHG11, relativas ao exercício social findo em 31/12/2025.\n\n**Trecho-chave:**\n\"Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31/12/2025, devidamente auditadas.\"\n\n---\n\n### Conexão com o contexto:\n\n- **Cotação R$ 61,98 (12m: -21,44%)**: A proposta de aquisição dos ativos do Fundo pelo VVCR em 31/10/2025 e 13/11/2025 pode ter impactado negativamente a cotação.\n- **P/VP 0,78 (12m: —)**: A proposta de aquisição dos ativos do Fundo pelo VVCR pode estar relacionada à baixa P/VP.\n- **Patrimônio líquido R$ 95,2M (12m: -15,87%)**: O valor do patrimônio líquido diminuiu devido ao processo de liquidação e possível alienação dos ativos.\n- **VP/cota 79,32 (12m: -15,87%)**: A proposta de aquisição dos ativos pode ter impactado negativamente o valor do patrimônio líquido por cota.\n- **Nº de cotas 1,2M (12m: 0,00%)**: O número de cotas permaneceu estável.\n- **Valor do ativo R$ 96,1M (12m: -15,89%)**: O valor do ativo diminuiu com a proposta de alienação dos ativos.\n- **DY mensal 0,86% (12m: 7,97% acumulado)**: Não há conexão direta com os documentos fornecidos.\n- **Cotistas 514 (12m: -13,32%)**: O número de cotistas diminuiu, possivelmente em função da proposta de aquisição dos ativos."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "VP/cota em queda relevante"
+    ],
+    "cota": 61.98
+  },
+  "parecer": {
+    "id": 1204164,
+    "data_entrega": "26/05/2026 18:36",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Hectare Recebíveis High Grade Fundo de Investimento Imobiliário – FII – Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas"
+  }
+}

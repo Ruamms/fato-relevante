@@ -1,0 +1,36 @@
+{
+  "ticker": "SPBZ11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T07:10:21",
+  "comunicados": {
+    "ids": [
+      1248283,
+      1187383,
+      1248282,
+      1224634
+    ],
+    "datas": [
+      "15/07/2026",
+      "12/05/2026",
+      "15/07/2026",
+      "19/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 15/07/2026\n\n**O QUE aconteceu:** As contas anuais do Fundo foram aprovadas.\n\n**Resumo:** A assembleia geral de cotistas realizada em 6 de julho de 2026 aprovou as contas anuais do BTG PACTUAL SP 500 FUTURES QUANTO BRL FUNDO DE ÍNDICE referente ao exercício encerrado em 31 de março de 2026.\n\n**Trecho-chave:** \"foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de março de 2026.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 12/05/2026\n\n**O QUE aconteceu:** A forma de divulgação da remuneração foi atualizada.\n\n**Resumo:** A BTG Pactual Serviços Financeiros S.A. DTVM aprovou a atualização da forma de divulgação da remuneração dos Prestadores de Serviços Essenciais, substituindo o \"Sumário de Remuneração\" pela Ferramenta ANBIMA (Plataforma de Transparência de Taxas).\n\n**Trecho-chave:** \"restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\"\n\n---\n\n### ASSEMBLEIA GERAL DE COTISTAS entregue em 15/07/2026\n\n**O QUE aconteceu:** As contas anuais do Fundo foram aprovadas.\n\n**Resumo:** A assembleia geral de cotistas realizada via manifestação de voto em 6 de julho de 2026 aprovou as contas e demonstrações contábeis do BTG PACTUAL SP 500 FUTURES QUANTO BRL FUNDO DE ÍNDICE referente ao exercício social encerrado em 31 de março de 2026.\n\n**Trecho-chave:** \"Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de março de 2026.\"\n\n---\n\n### ASSEMBLEIA GERAL DE COTISTAS entregue em 19/06/2026\n\n**O QUE aconteceu:** Convocação para a assembleia geral de cotistas.\n\n**Resumo:** A BTG Pactual Serviços Financeiros S.A. DTVM convocou os cotistas do BTG PACTUAL SP 500 FUTURES QUANTO BRL FUNDO DE ÍNDICE para deliberarem sobre a aprovação das contas e demonstrações contábeis do Fundo referente ao exercício social encerrado em 31 de março de 2026.\n\n**Trecho-chave:** \"A convocar os cotistas do Fundo (“Cotistas”) para a Consulta Formal, com prazo de recebimento de votos até 6 de julho de 2026, para deliberarem sobre: (i) A aprovação das contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de março de 2026.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208591,
+    "data_entrega": "30/05/2026 02:28",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do BTG Pactual S&P 500 Futures Quanto BRL Fundo de Índice em 31 de março de 2026 e o desempenho de suas operações para o período de 04 de novembro de 2025 a 31 de março de 2026, de acordo com as práticas contábeis adotadas no Brasil aplicáveis"
+  }
+}

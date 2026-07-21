@@ -1,0 +1,61 @@
+{
+  "ticker": "VVRI11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T00:55:44",
+  "relatorio": {
+    "id": 1216533,
+    "data_entrega": "10/06/2026 18:23",
+    "texto": "### Fatos Extraídos:\n\n1. **Desinvestimentos:** O VVRI11 vendeu dois imóveis em abril de 2026: o Estácio Santa Cruz (Rio de Janeiro) e a Loja nº 02 do Condomínio HY Pinheiros (São Paulo). As vendas resultaram na zeragem da dívida financeira do fundo.\n   > \"O VVRI11 concluiu a venda de dois imóveis do portfólio para o Rio Bravo Renda Varejo FII (RBVA 11), operação estruturada originalmente em 14 de janeiro de 2026 e formalizada ao longo do mês com a superação de todas as condições precedentes.\" (p. 3)\n\n2. **Vacância:** A vacância física do fundo permaneceu estável em 73,97% no trimestre mais recente.\n   > \"Vacância Física: 73,97%\" (p. 8)\n\n3. **Cotas e Captação:** O VVRI11 realizou a terceira emissão de cotas, captando R$ 88,65 milhões em uma oferta exclusiva para investidores profissionais.\n   > \"A oferta, destinada exclusivamente a investidores profissionais, foi distribuída parcialmente, atingindo o montante mínimo da oferta: foram integralizadas 954.460 novas cotas ao preço unitário de R$ 92,47, totalizando uma captação de R$ 88,65 milhões.\" (p. 3)\n\n4. **Patrimônio Líquido:** O patrimônio líquido do VVRI11 aumentou significativamente em 12 meses.\n   > \"Patrimônio Líquido: R$ 158,6M (12m: +110,74%)\" (contexto)\n\n### O que observar em seguida:\n- **Redução da Vacância:** A gestão do fundo está focada na redução da vacância e na maximização do retorno para os cotistas.\n- **Evolução das Cotas:** Observar a evolução do preço das cotas no mercado secundário, já que houve uma emissão recente."
+  },
+  "comunicados": {
+    "ids": [
+      1244312,
+      1218062,
+      1088717,
+      1186529,
+      1034061,
+      1186527,
+      1169277
+    ],
+    "datas": [
+      "10/07/2026",
+      "11/06/2026",
+      "20/01/2026",
+      "12/05/2026",
+      "11/11/2025",
+      "12/05/2026",
+      "24/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### O QUE aconteceu em 10/07/2026\n\n**Título:** Desdobramento das cotas da Classe VVRI11\n\n**Resumo:** A administradora e a gestora aprovaram o desdobramento das cotas da Classe VVRI11, resultando no aumento do número de cotas.\n\n**Trecho-chave:**\n\"Em 10 de julho de 2026, foi aprovado, nos termos do Ato do Administrador publicado nesta data, o desdobramento das cotas da Classe, segundo a razão de 1:10 (um para dez), a realizar-se no fechamento dos mercados de 15 de julho de 2026.\"\n\n### O QUE aconteceu em 11/06/2026\n\n**Título:** Venda do Imóvel PB KIDS e do Imóvel Estácio\n\n**Resumo:** A Classe concluiu a venda de dois imóveis para o Rio Bravo Renda Varejo Fundo de Investimento Imobiliário, gerando liquidez para o fundo.\n\n**Trecho-chave:**\n\"i. O valor total da transação foi de R$ 8.075.617,89 (oito milhões, setenta e cinco mil, seiscentos e dezessete reais e oitenta e nove centavos), tendo a maior parte sido liquidada mediante compensação financeira relacionada à subscrição de cotas do fundo com prador, e o saldo remanescente sido quitado em moeda corrente na data da assinatura.\"\n\n### O QUE aconteceu em 20/01/2026\n\n**Título:** Venda dos Imóveis PB KIDS e Estácio\n\n**Resumo:** A Classe celebrou instrumento de compromisso para a venda de dois imóveis, com previsão de conclusão da transação até 28 de fevereiro de 2026.\n\n**Trecho-chave:**\n\"O preço global acordado para a transação é de R$ 86.382.402,89, sendo R$ 78.306.785,00 relativos ao ativo do Rio de Janeiro e R$ 8.075.617,89 relativos ao ativo de São Paulo, com pagamento composto por parcela em dinheiro, assunção do saldo devedor do CRI vinculado ao imóvel do Rio de Janeiro e parcelas a serem liquidadas por meio de integralização de cotas do fundo comprador, conforme previsto no mecanismo de compensação estipulado no contrato.\"\n\n### O QUE aconteceu em 12/05/2026\n\n**Título:** Aprovação das contas anuais do Fundo\n\n**Resumo:** A assembleia geral de cotistas aprovou as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Na assembleia geral de cotistas realizada em 04 de maio de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\"\n\n### O QUE aconteceu em 11/11/2025\n\n**Título:** Encerramento do prazo para o exercício do direito de preferência\n\n**Resumo:** Foi encerrado o prazo para o exercício do direito de preferência dos cotistas, com a subscrição e integralização de 3 novas cota.\n\n**Trecho-chave:**\n\"Durante o prazo para o exercício do Direito de Preferência, foram subscritas e integralizadas 3 (três) Novas Cotas, equivalente a R$ 277,41 (duzentos e setenta e sete reais e quarenta e um centavos), sem considerar a Taxa de Distribuição Primária.\"\n\n### O QUE aconteceu em 12/05/2026\n\n**Título:** Assembleia Geral de Cotistas\n\n**Resumo:** A assembleia geral de cotistas aprovou as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Realizada via manifestação de voto enviada pelos Cotistas em 04 de maio de 2026. As deliberações aprovaram as Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Vacância física alta",
+      "Rendimentos acima do resultado financeiro",
+      "Emissão de cotas com VP/cota em queda",
+      "Base de cotistas muito pequena",
+      "Rendimentos irregulares"
+    ],
+    "cota": 9.0
+  },
+  "parecer": {
+    "id": 1141967,
+    "data_entrega": "23/03/2026 10:47",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

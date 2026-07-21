@@ -1,0 +1,21 @@
+{
+  "ticker": "GSRF11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:58:38",
+  "comunicados": {
+    "ids": [
+      1198170,
+      1123981
+    ],
+    "datas": [
+      "18/05/2026",
+      "27/02/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### Assembleia Age realizada em 15 de maio de 2026\n\n**O QUE aconteceu:** A assembleia aprovou a amortização extraordinária de cotações subordinadas no valor líquido máximo de R$5.000.000,00.\n\n**Resumo:** A assembleia especial extraordinária aprovou uma amortização extraordinária para as cotações subordinadas do fundo, com um limite máximo de R$5.000.000,00.\n\n**Trecho-chave:**\n\"b) a amortização extraordinária de Cotas da Subclasse Subordinada (“Amortização Extraordinária) no montante líquido de  até R$5.000.000,00 (cinco milhões de reais), a ser efetivada dentro de 180 (cento e oitenta) dias corridos contados a partir desta data.\"\n\n---\n\n### Assembleia Age realizada em 25 de fevereiro de 2026\n\n**O QUE aconteceu:** A assembleia aprovou alterações no Regulamento do fundo, incluindo a mudança da denominação para \"GALAPAGOS DESENVOLVIMENTO RESIDENCIAL FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA\" e as respectivas alterações nas denominações das classes e subclasses.\n\n**Resumo:** A assembleia geral extraordinária aprovou mudanças significativas no Regulamento do fundo, incluindo uma mudança na denominação do fundo e das classes/subclasses.\n\n**Trecho-chave:**\n\"a) aprovar as seguintes alterações no Regulamento do Fundo: (i) a alteração da denominacão do fundo para “GALAPAGOS DESENVOLVIMENTO RESIDENCIAL FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA” com as consequentes alterações das denominações da Classe e das Subclasses do Fundo, que passarão a ser “UNICA CLASSE DE COTAS DO GALAPAGOS DESENVOLVIMENTO RESIDENCIAL FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA” no Anexo I e  “SUBCLASSE SENIOR DA UNICA CLASSE DE COTAS DO GALAPAGOS DESENVOLVIMENTO RESIDENCIAL FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA” e “SUBCLASSE SUBORDINADA DA UNICA CLASSE DE COTAS DO GALAPAGOS DESENVOLVIMENTO RESIDENCIAL FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA” em seus respectivos apêndices.\"\n\n---\n\n**Conexão com indicadores:** As alterações no Regulamento podem afetar a estrutura de capital e os direitos dos cotistas, o que pode ter implicações para os indicadores financeiros do fundo."
+  },
+  "modelo": "qwen2.5:7b"
+}

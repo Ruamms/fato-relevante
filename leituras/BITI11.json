@@ -1,0 +1,30 @@
+{
+  "ticker": "BITI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:15:44",
+  "comunicados": {
+    "ids": [
+      1228509,
+      1221406
+    ],
+    "datas": [
+      "25/06/2026",
+      "15/06/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA AGO entregue em 25/06/2026\n\n**O que aconteceu:** Edital de Convocação da Assembleia Geral de Cotistas retificado e ratificado.\n\n**Resumo:** O Itaú Unibanco S.A. retificou o edital original, corrigindo a ordem do dia e alterando a data para manifestação à consulta formal eletrônica.\n\n**Trecho-chave:**\n\"Rerratificação Edital de Convocação da Assembleia Geral de Cotistas a realizar-se por meio de consulta formal enviado em 12 de junho de 2026, de modo a corrigir a ordem do dia e alterar a data de manifestação à consulta f ormal eletrônica.\"\n\n### ASSEMBLEIA AGO entregue em 15/06/2026\n\n**O que aconteceu:** Edital de Convocação da Assembleia Geral de Cotistas enviado.\n\n**Resumo:** O Itaú Unibanco S.A. convocou os cotistas para deliberar sobre as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes referentes ao exercício social encerrado em 28/02/2026.\n\n**Trecho-chave:**\n\"Deliberar sobre as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes, relativos ao exercício social encerrado em 28/02/2026.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1209717,
+    "data_entrega": "01/06/2026 17:39",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do It Now Bloomberg Galaxy Bitcoin Fundo de Índice Responsabilidade Limitada em 31 de março de 2026 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos Fundo"
+  }
+}

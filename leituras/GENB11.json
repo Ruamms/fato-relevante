@@ -1,0 +1,36 @@
+{
+  "ticker": "GENB11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:31:41",
+  "comunicados": {
+    "ids": [
+      1248035,
+      1202491,
+      1248034,
+      1223161
+    ],
+    "datas": [
+      "14/07/2026",
+      "25/05/2026",
+      "14/07/2026",
+      "17/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### O que aconteceu em 17/06/2026\n\nA **BTG Pactual Serviços Financeiros S.A. Distribuidora de Títulos e Valores Mobiliários** convocou a assembleia geral de cotistas do **BTG PACTUAL FUNDO DE ÍNDICE I**, inscrito no CNPJ sob o nº 42.134.357/0001-02, para deliberarem sobre a aprovação das contas e demonstrações contábeis do Fundo relativas ao exercício social encerrado em 31 de março de 2026.\n\n**Resumo:** A assembleia foi convocada com prazo até 3 de julho de 2026 para votação via plataforma eletrônica.\n\n**Citação-chave:**\n\"i) A aprovação das contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de março de 2026.\"\n\n---\n\n### O que aconteceu em 25/05/2026\n\nA **BTG Pactual Serviços Financeiros S.A. DTVM** informou a atualização da forma de divulgação da remuneração dos Prestadores de Serviços Essenciais, substituindo o \"Sumário de Remuneração\" pela Ferramenta ANBIMA (Plataforma de Transparência de Taxas).\n\n**Resumo:** A forma de divulgação foi atualizada para incluir a Ferramenta ANBIMA, sem alteração nos valores pagos aos cotistas.\n\n**Citação-chave:**\n\"1. Considerando as interpretações adicionais divulgadas pelo Ofício-Circular Conjunto nº 1/2025/CVM/SIN/SSE (\"Ofício-Circular CVM nº 1/2025\"), em especial quanto à substituição do \"Sumário de Remuneração\" pela Ferramenta ANBIMA (Plataforma de Transparência de Taxas) como meio centralizado e adequado de divulgação da remuneração dos Prestadores de Serviços Essenciais da Classe, restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\"\n\n---\n\n### O que aconteceu em 14/07/2026\n\nA **BTG Pactual Serviços Financeiros S.A. DTVM** informou que na assembleia geral de cotistas realizada em 3 de julho de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de março de 2026.\n\n**Resumo:** As contas anuais do Fundo foram aprovadas na assembleia geral realizada em 3 de julho de 2026.\n\n**Citação-chave:**\n\"4.1. Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de março de 2026.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208571,
+    "data_entrega": "30/05/2026 01:57",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do BTG Pactual S&P/B3 Ingenius Fundo de Índice em 31 de março de 2026 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos Fundos de Investimento Financeiros."
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "ticker": "GRAV11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T02:55:33",
+  "comunicados": {
+    "ids": [
+      1224551,
+      1077615,
+      1050728,
+      1124564,
+      1117803,
+      1223464,
+      1223420
+    ],
+    "datas": [
+      "19/06/2026",
+      "08/01/2026",
+      "28/11/2025",
+      "27/02/2026",
+      "19/02/2026",
+      "17/06/2026",
+      "17/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 19/06/2026\n\n**Data:** 19 de junho de 2026  \n**Título:** Fundo altera denominação social e código de negociação  \n**Resumo:** O MULTI SHOPPINGS FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA passou a se chamar GRAVATAÍ SHOPPING FUNDO DE INVESTIMENTO IMOBILIÁRIO DE RESPONSABILIDADE LIMITADA, com novo código de negociação \"GRAV11\" e nome de pregão \"GRAVSHOP FII\".  \n**Trecho-chave:** \"Conforme aprovado pelos cotistas em Assembleia Geral Extraordinária realizada em 17 de junho de 2026, a denominação social do Fundo alterou para GRAVATAÍ SHOPPING FUNDO DE INVESTIMENTO IMOBILIÁRIO DE RESPONSABILIDADE LIMITADA.\"\n\n### FATO RELEVANTE entregue em 08/01/2026\n\n**Data:** 8 de janeiro de 2026  \n**Título:** Fundo realiza 8ª emissão de cotas  \n**Resumo:** O fundo realizou a 8ª emissão de 264.901 novas cotas, com preço unitário de R$ 30,47 e taxa de distribuição primária no valor de R$ 0,27. As cotas serão negociadas na bolsa administrada pela B3 sob o novo código \"GRAV11\".  \n**Trecho-chave:** \"Aprovada a realização da 8ª emissão de 264.901 (duzentas e sessenta e quatro mil e novecentas e uma) novas cotas, todas nominativas e escriturais, com preço de emissão de R$ 30,20 (trinta reais e vinte centavos), considerando o valor patrimonial das cotas no fechamento do mercado do dia 30 de novembro de 2025, aplicado um deságio de R$ 0,27 (vinte e sete centavos); as quais serão acrescidas de uma taxa de distribuição primária no valor de R$ 0,27.\"\n\n### COMUNICADO AO MERCADO entregue em 19/02/2026\n\n**Data:** 19 de fevereiro de 2026  \n**Título:** Fundo realiza a 1ª chamada de capital da 8ª emissão  \n**Resumo:** O fundo realizou a 1ª chamada de capital na 8ª emissão, integralizando 64.892 cotas com valor total de R$ 1.977.259,24 já considerando a taxa de distribuição primária.  \n**Trecho-chave:** \"Por meio da 1ª (primeira) chamada de capital, deverão ser integralizadas 64.892 (sessenta e quatro mil, oitocentas e noventa e duas) Cotas, perfazendo o valor total de R$ 1.977.259,24 (um milhão, novecentos e setenta e sete mil, duzentos e cinquenta e nove reais e vinte e quatro centavos) já considerando a Taxa de Distribuição Primária das Cotas subscritas no âmbito da Emissão.\"\n\n### COMUNICADO AO MERCADO entregue em 27/02/2026\n\n**Data:** 27 de fevereiro de 2026  \n**Título:** Disponibilidade do Informe de Rendimentos Ano-CALENDÁRIO 2025  \n**Resumo:** O informe de rendimentos dos fundos listados no anexo I está disponível para acesso online.  \n**Trecho-chave:** \"Os informes de rendimentos (IR) dos fundos listados no Anexo I estão disponíveis aos investidores a partir desta data no Portal do Investidor da Rio Bravo.\"\n\n### ASSEMBLEIA AGE entregue em 17/06/2026\n\n**Data:** 17 de junho de 2026  \n**Título:** Assembleia aprova alteração do Regulamento e criação de Comitê Consultivo  \n**Resumo:** A assembleia aprovou a alteração da denominação social para GRAVATAÍ SHOPPING FUNDO DE INVESTIMENTO IMOBILIÁRIO DE RESPONSABILIDADE LIMITADA, bem como a criação de um novo comitê consultivo.  \n**Trecho-chave:** \"Por maioria de votos dos cotistas considerados presentes, os cotistas que representam 57,47% (cinquenta e sete vírgula quarenta e sete por cento) do total de cotas emitidas pelo Fundo e aptos ao exercício do direito de voto, deliberaram por aprovar a matéria da ordem do dia.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1095250,
+    "data_entrega": "29/01/2026 10:44",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe em 29 de setembro de 2025, e o desempenho de suas operações e os seus fluxos de caixa para o período de 1o de julho de 2025 a 29 de setembro de 2025 (data de transferência de Administradora da Classe), de acordo com as práticas contá"
+  }
+}

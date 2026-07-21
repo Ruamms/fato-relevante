@@ -1,0 +1,48 @@
+{
+  "ticker": "ITIT11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T03:15:08",
+  "relatorio": {
+    "id": 1251400,
+    "data_entrega": "16/07/2026 18:12",
+    "texto": "### Fatos do Relatório Gerencial ITIT11\n\n1. **Desempenho do Fundo**: O ITIT11 teve um desempenho patrimonial negativo de -1,98% em junho, com uma cotação de mercado de R$ 64,99 e um deságio de 14,8% sobre o valor patrimonial.\n2. **Cotistas**: Houve uma redução no número de cotistas do fundo, passando de 10,3 mil em maio para 8,9 mil em junho.\n3. **Distribuição de Rendimentos**: O fundo distribuiu R$ 0,64 por cota em junho, representando um yield mensal de 0,98% e 103,41% do CDI líquido (considerando a alíquota mínima de 15% sobre o retorno).\n4. **Reorganização Proposta**: Foi convocada uma Assembleia Geral Extraordinária para discutir a possibilidade de reorganização do fundo através de outro veículo gerido pela Inter Asset.\n5. **Cenário Macroeconômico**: O cenário econômico foi marcado por incertezas internas e externas, com redução da expectativa de cortes na taxa Selic e aumento da percepção de risco global.\n6. **Resultado Distribuído vs Resultado Financeiro**: Houve um excesso de rendimentos declarados em relação ao resultado financeiro líquido no 4º trimestre, com R$ 10,0M distribuídos contra R$ 6,7M do resultado financeiro.\n\n### O que observar em seguida:\n- **Desempenho Futuro**: Observar o desempenho do fundo nos próximos meses, especialmente após a convocação da Assembleia Geral Extraordinária.\n- **Cenário Macroeconômico**: Monitorar as mudanças no cenário econômico e suas implicações para os ativos do fundo."
+  },
+  "comunicados": {
+    "ids": [
+      1231353,
+      1231148,
+      1233571,
+      1231355
+    ],
+    "datas": [
+      "26/06/2026",
+      "26/06/2026",
+      "30/06/2026",
+      "26/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 26/06/2026\n\n**O QUE aconteceu:** A INTER DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA. e a INTER ASSET GESTÃO DE RECURSOS LTDA., respectivamente, na qualidade de administradora e gestora do FII ITIT11, informaram sobre a Reorganização dos Fundos.\n\n**Resumo:** A Reorganização visa consolidar as carteiras de investimento dos Fundos (INHF, INRD, ITIP, e ITIT) no INHF, com o objetivo de capturar sinergias, ampliar escala, liquidez e diversificação. O processo envolve a oferta pública de distribuição de cotas do INHF.\n\n**Trecho-chave:** \"A Reorganização tem por objetivo consolidar as carteiras de investimento dos Fundos no INHF, de modo a capturar sinergias das diferentes estratégias imobiliárias, além de ampliar sua escala, liquidez e diversificação.\" (p. 2)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 26/06/2026\n\n**O QUE aconteceu:** A INTER DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA., administradora do FII ITIT11, respondeu a um Ofício da B3 sobre oscilações atípicas nas cotas de emissão.\n\n**Resumo:** A administradora informou desconhecer qualquer fato relevante que justifique as recentes oscilações e negociações intensivas das cotas do FII ITIT11.\n\n**Trecho-chave:** \"A Administradora do Fundo desconhece qualquer informação ou fato relevante que possa justificar o aumento do número de negócios e da quantidade negociada observada no respectivo ativo.\" (p. 2)\n\n---\n\n### ASSEMBLEIA AGE entregue em 30/06/2026\n\n**O QUE aconteceu:** A INTER DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA., administradora do FII ITIT11, apresentou uma proposta para a Assembleia Geral Extraordinária de Cotistas.\n\n**Resumo:** A proposta envolve a dissolução e liquidação do Fundo ITIT11 mediante a prévia alienação dos ativos e posterior subscrição de cotas do INHF. A Gestora comparecerá e votará favoravelmente, em nome do Fundo, na qualidade de cotista do INHF.\n\n**Trecho-chave:** \"A Assembleia terá como ordem do dia a seguinte matéria: (i) a dissolução e liquidação do Fundo, a ser operacionalizada mediante a prévia alienação da totalidade dos ativos integrantes da carteira do Fundo e posterior subscrição e integralização, pelo Fundo, em moeda corrente nacional e/ou mediante compensação de créditos detidos, de cotas de emissão do INTER HEDGE FUNDO DE INVESTIMENTO IMOBILIÁRIO – RESPONSABILIDADE LIMITADA.\" (p. 2)"
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 59.11
+  },
+  "parecer": {
+    "id": 1001034,
+    "data_entrega": "29/09/2025 17:37",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Inter Teva Índice de Tijolos Fundo de Investimento Imobiliário FII Responsabilidade Limitada em 30 de junho de 2025, o desempenho de suas operações e aos seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas cont"
+  }
+}

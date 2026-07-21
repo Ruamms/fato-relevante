@@ -1,0 +1,30 @@
+{
+  "ticker": "ETPP11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T04:49:11",
+  "comunicados": {
+    "ids": [
+      1072444,
+      1044738
+    ],
+    "datas": [
+      "29/12/2025",
+      "19/11/2025"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA AGO entregue em 29/12/2025\n\n**Data:** 29/12/2025  \n**Título:** Aprovação das contas e demonstrações contábeis do Fundo.  \n**Resumo:** Os cotistas não manifestaram opinião, resultando na aprovação automática das contas pelo administrador.  \n**Trecho-chave:**\n\"Não foram recebidas manifestações dos Cotistas à Consulta Formal. Assim, nos termos do Art. 71, § 3º da Resolução CVM 175, a matéria foi considerada aprovada pelos Cotistas, uma vez que as demonstrações contábeis do Fundo não apresentaram opinião modificada.\"\n\n### ASSEMBLEIA AGO entregue em 19/11/2025\n\n**Data:** 19/11/2025  \n**Título:** Convocação para Assembleia Geral Ordinária do Fundo por meio de consulta formal.  \n**Resumo:** A administradora convoca os cotistas para deliberar sobre a aprovação das contas e demonstrações contábeis do exercício social findo em 30/06/2025, com prazo até 22/12/2025.  \n**Trecho-chave:**\n\"A \nBTG PACTUAL SERVIÇOS FINANCEIROS S.A. DTVM\n, instituição financeira com sede na Cidade do Rio de Janeiro, Estado do Rio de Janeiro, na Praia de Botafogo, nº 501, 5º andar, parte, Torre Corcovado, Botafogo, CEP 22250-040, inscrita no Cadastro Nacional de Pessoa Jurídica (“CNPJ”) sob o nº 59.281.253/0001-23, devidamente autorizada pela Comissão de Valores Mobiliários (“CVM”) para a atividade de administração de carteiras de valores mobiliários, de acordo com o Ato Declaratório nº 8.695, de 20 de março de 2006, neste ato representada na forma do seu Estatuto Social (\"Administradora\"), na qualidade de instituição administradora do \nETR PROPERTIES FUNDO DE INVESTIMENTO IMOBILIARIO FII – FII RESPONSABILIDADE LIMITADA\n, inscrito no CNPJ sob o nº 18.259.637/0001-62 (“Fundo”), vem, por meio da presente, convocar os titulares das cotas de emissão do Fundo (“Cotistas”) para participar da Assembleia Geral Ordinária do Fundo, a ser realizada de forma não presencial, por meio do procedimento de consulta formal (‘Consulta Formal’, respectivamente), a qual tem por objeto deliberar sobre: 1. Aprovação das contas e demonstrações contábeis do Fundo, devidamente auditadas, relativas ao exercício social findo em 30 de junho de 2025.\"\n\n**Conexão com o contexto:** Este documento convoca os cotistas para a assembleia que resultou na aprovação das contas e demonstrações contábeis do Fundo no termo de apuração posterior."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 998798,
+    "data_entrega": "25/09/2025 18:47",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do ETR Properties Fundo de Investimento Imobiliário - FII em 30 de junho de 2025, o desempenho de suas operações e de seus fluxos de caixa para o exercício findo nes sa data , de acordo com as práticas contábeis adotadas no Brasil, aplicáveis "
+  }
+}

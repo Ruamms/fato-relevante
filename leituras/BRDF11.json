@@ -1,0 +1,33 @@
+{
+  "ticker": "BRDF11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T02:15:17",
+  "comunicados": {
+    "ids": [
+      802422,
+      1214334,
+      1214332
+    ],
+    "datas": [
+      "16/12/2024",
+      "08/06/2026",
+      "08/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 16/12/2024\n\n**O QUE aconteceu:** A BEM DTVM informou que o ativo composto pela carteira do FUNDO foi reavaliado, impactando positivamente o patrimônio líquido do FUNDO.\n\n**Resumo:** O valor justo do ativo da carteira do fundo aumentou em R$ 8.070.000,00, resultando em um aumento de 10,086% no patrimônio líquido do fundo.\n\n**Trecho-chave:**\n\"O ativo que compõe a carteira do FUNDO foi reavaliado, impactando positivamente o patrimônio líquido do FUNDO em 10,086%, com aumento de R$ 8.070 .000,00 no valor justo do ativo.\" (p. 1)\n\n**Conexão com indicadores:** Este reavaliamento positivo contribuiu para o aumento do patrimônio líquido do fundo em 10,47% nos últimos 12 meses.\n\n---\n\n### ASSEMBLEIA AGE entregue em 08/06/2026\n\n**O QUE aconteceu:** A assembleia formal do Fundo aprovou a concessão de desconto temporário ao locatário AGROFEL AGRO COMERCIAL S.A., pelo prazo de 6 meses, com o objetivo de manter a locação do imóvel integrante da carteira do fundo.\n\n**Resumo:** A assembleia foi concluída antecipadamente após receber os votos dos cotistas detentores da totalidade das cotas emitidas, aprovando a concessão do desconto temporário ao locatário.\n\n**Trecho-chave:**\n\"Em razão do recebimento dos votos dos cotistas detentores da totalidade das cotas emitidas, a consulta formal convocada em 28 de maio de 2026 foi concluída com a APROVAÇÃO da matéria submetida à deliberação.\" (p. 1)\n\n**Conexão com indicadores:** Esta decisão pode afetar o fluxo de caixa do fundo, mas não há informações específicas sobre impactos financeiros diretos nos indicadores fornecidos."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1151178,
+    "data_entrega": "31/03/2026 19:14",
+    "tipo": "nao_identificado",
+    "rotulo": "parecer não identificado no texto",
+    "grave": false,
+    "continuidade": false,
+    "trecho": ""
+  }
+}

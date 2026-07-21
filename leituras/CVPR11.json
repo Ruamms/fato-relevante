@@ -1,0 +1,55 @@
+{
+  "ticker": "CVPR11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T03:23:47",
+  "relatorio": {
+    "id": 1230985,
+    "data_entrega": "26/06/2026 18:49",
+    "texto": "### Fatos do Relatório Gerencial:\n\n1. **Número de Cotistas**: O número de cotistas permanece em 3, abaixo do mínimo legal de 100.\n   > \"Número de cotistas: 3\" (p. 2)\n\n2. **Patrimônio Líquido e Valor da Cota**: O patrimônio líquido é de R$ 64,992.077, com valor de cota de R$ 100,64.\n   > \"Patrimônio Líquido R$ 64.922.077\" (p. 3)\n\n3. **Resultado do Mês**: Houve um retorno acumulado no ano de 10,62%, com rendimentos irregulares em apenas 1/12 meses.\n   > \"RESULTADOS\\nde retorno acumulado no ano10,62%\" (p. 4)\n\n4. **Ativos da Carteira**: A carteira é composta principalmente por CRIs e FIIs, com destaque para o CRI Bit e o FII CVHO11.\n   > \"CRI Bit - 3ª série Habitasec 5,50% CDI 23/11/2026 2.747.232 4,23%\" (p. 9)\n   > \"CVHO11 CVPAR 3,6% 1,00 0,45 9.231.398 14,20%\" (p. 9)\n\n5. **Obras e Reformas**: O encerramento das integralizações previstas no CRI BIT foi destacado.\n   > \"Em maio, destacamos o encerramento das integralizações previstas no CRI BIT, lastreado no empreendimento BIT, localizado em Barueri (SP).\" (p. 7)\n\n6. **Riscos e Desafios**: O processo judicial do CRI YbY segue sua tramitação regular, com pleitos parcialmente apreciados.\n   > \"Para os demais ativos da carteira, seguimos mantendo interlocução próxima com os devedores e demais partes envolvidas, dentro de nossa estratégia de gestão ativa, com o objetivo de acompanhar a evolução dos empreendimentos e identificar oportunidades de preservação e geração de valor para os cotistas do fundo.\" (p. 8)\n\n7. **Vacância e Inadimplência**: Não há menção específica sobre vacância ou inadimplência.\n   > \"Nenhuma informação específica sobre vacância ou inadimplência\" (p. 4-13)\n\n### O que observar em seguida:\n1. Monitorar o número de cotistas, já que está abaixo do mínimo legal.\n2. Observar os resultados financeiros e a evolução da carteira ao longo dos próximos meses."
+  },
+  "comunicados": {
+    "ids": [
+      894419,
+      864400,
+      1187463,
+      1125033,
+      1187461,
+      1180711
+    ],
+    "datas": [
+      "05/05/2025",
+      "25/03/2025",
+      "12/05/2026",
+      "27/02/2026",
+      "12/05/2026",
+      "05/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 05/05/2025\n\n**Data:** 05/05/2025  \n**Título:** Novo preço de emissão das cotas do CVPAR Fundo de Investimento Imobiliário de Cri foi ratificado.  \n**Resumo:** A administradora BTG Pactual Serviços Financeiros S.A. ratificou o novo preço de emissão das cotas do fundo, que será R$ 90,97 para a oferta pública.  \n**Trecho-chave:**\n\"Passarão a ser distribuídas, no âmbito da Oferta, no mínimo, 200.000 (duzentas mil) cotas e, no máximo, 1.000.000 (um milhão) cotas, todas com valor nominal unitário de emissão de R$100,00 (cem reais); e Para todos os fins, o preço da integralização das cotas no âmbito da Oferta será de R$ 90,97 (noventa reais e noventa e sete centavos) considerando o valor da cota patrimonial de abril/25.\"\n\n### FATO RELEVANTE entregue em 25/03/2025\n\n**Data:** 25/03/2025  \n**Título:** Oferta pública para emissão de cotas do CVPAR Fundo de Investimento Imobiliário de Cri foi aprovada.  \n**Resumo:** A administradora BTG Pactual Serviços Financeiros S.A. aprovou a oferta pública para emissão de até 1 milhão de cotas, com valor nominal unitário de R$100,00 e preço de emissão de R$90,97.  \n**Trecho-chave:**\n\"Em 18 de março de 2025, foi formalizado, pela Administradora , o “INSTRUMENTO PARTICULAR DO ADMINISTRADOR DO CVPAR FUNDO DE INVESTIMENTO IMOBILIÁRIO DE CRI ” (“Ato de Aprovação da Oferta ”), aprovando, nos termos do regulamento do Fundo (\"Regulamento\"), a 2ª ( segunda) emissão de cotas do Fundo (\"Emissão\"), de, no mínimo, 200.000 ( duzentos mil) cotas e, no máximo, 1.000.000 (um milhão) cotas, em série única, todas nominativas e escriturais...\"\n\n### COMUNICADO AO MERCADO entregue em 12/05/2026\n\n**Data:** 12/05/2026  \n**Título:** Assembleia geral de cotistas aprovou as contas anuais do CVPAR Fundo de Investimento Imobiliário de Cri.  \n**Resumo:** A assembleia geral de cotistas realizada em 8 de maio de 2026 aprovou as contas anuais do fundo referente ao exercício encerrado em 31 de dezembro de 2025, mesmo sem presença de cotistas.  \n**Trecho-chave:**\n\"Na assembleia geral de cotistas realizada em 8 de maio de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\"\n\n### COMUNICADO AO MERCADO entregue em 27/02/2026\n\n**Data:** 27/02/2026  \n**Título:** Informes de rendimentos do CVPAR Fundo de Investimento Imobiliário de Cri passaram a ser disponibilizados exclusivamente por meio digital.  \n**Resumo:** Os informes de rendimentos referentes ao ano de 2025 dos fundos indicados estão disponíveis exclusivamente por meio digital, através do Portal do Investidor.  \n**Trecho-chave:**\n\"Com o intuito de reduzir os custos de impressão e correios para os Fundos, bem como minimizar o uso de papel e seus impactos para o meio ambiente, os Informes de Rendimentos (\"Informes\") referentes ao ano de 2025, já estão disponíveis aos investidores, conforme previsto na Instrução Normativa RFB nº 2.060/2021, exclusivamente por meio digital, por meio do Portal do Investidor.\"\n\n### ASSEMBLEIA AGO entregue em 12/05/2026\n\n**Data:** 12/05/2026  \n**Título:** Assembleia de cotistas não foi instalada devido à falta de presença.  \n**Resumo:** A assembleia geral de cotistas para aprovação das contas do exercício social encerrado em 31 de dezembro de 2025 não foi instalada, pois nenhum cotista compareceu. As contas foram consideradas automaticamente aprovadas.  \n**Trecho-chave:**\n\"Dessa forma, e considerando que as demonstrações contábeis não contêm ressalvas, ficam as mesmas consideradas automaticamente aprovadas.\"\n\n### ASSEMBLEIA AGO entregue em 05/05/2026\n\n**Data:** 05/05/2026  \n**Título:** Convocação para assembleia de cotistas para aprovação das contas do exercício social encerrado em 31 de dezembro de 2025.  \n**Resumo:** A administradora convoca os cotistas para a assembleia de votos sobre a aprovação das contas e demonstrações contábeis do fundo referente ao exercício social findo em 31 de dezembro de 2025, com prazo até 8 de maio de 2026.  \n**Trecho-chave:**\n\"A administradora convoca os cotistas para a Consulta Formal, com prazo de recebimento de votos até 08 de maio de 2026, para deliberarem sobre: (i) A aprovação das contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de dezembro de 2025.\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Menos cotistas que o mínimo para isenção de IR",
+      "Rendimentos irregulares"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 1152276,
+    "data_entrega": "01/04/2026 00:59",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do CVPAR Fundo de Investimento Imobiliário de CRI Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasi"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "ticker": "IVCI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T03:52:45",
+  "comunicados": {
+    "ids": [
+      1221697,
+      1206929
+    ],
+    "datas": [
+      "15/06/2026",
+      "29/05/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGE"
+    ],
+    "texto": "### Assembleia AGO entregue em 15/06/2026\n\n**O QUE aconteceu:** Não houve quórum para instalação da Assembleia Geral Ordinária.\n\n**Resumo:** A assembleia programada para o dia 29 de maio de 2026 não teve presença mínima necessária, resultando na aprovação automática das demonstrações contábeis do exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:** \"Em virtude do não comparecimento de quaisquer cotistas e, diante da ausência de opinião modificada nas Demonstrações Contábeis devidamente auditadas do exercício social findo em 31 de dezembro de 2025, consideram-se automaticamente aprovadas as referidas Demonstrações Contábeis, nos termos do artigo 71 da Resolução CVM n.º 175, de 23 de dezembro de 2022.\" (p. 2)\n\n---\n\n### Assembleia AGE entregue em 29/05/2026\n\n**O QUE aconteceu:** A assembleia deliberou sobre a alteração da política de investimento do fundo.\n\n**Resumo:** Os cotistas, representando 100% das cotas, aprovaram a inclusão de Certificados de Recebíveis Imobiliários (CRI) estruturados e ativos relacionados na política de investimento do fundo. A alteração foi consolida no regulamento do fundo.\n\n**Trecho-chave:** \"Instalada a Assembleia, com a presença da totalidade dos Cotistas do Fundo, e após a análise e discussão das matérias constantes da Ordem do Dia, os Cotistas deliberaram, por unanimidade de votos e sem quaisquer ressalvas ou restrições, aprovar as seguintes matérias:\" (p. 5)\n\n**Conexão com o contexto:** A alteração na política de investimento pode impactar a diversificação do portfólio do fundo, potencialmente aumentando exposição a ativos específicos e relacionados à administradora."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1152073,
+    "data_entrega": "31/03/2026 23:33",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, o balanço patrimonial do Icatu Vanguarda Crédito Imobiliário Fundo de Investimento Imobiliário - Responsabilidade Limitada em 31 de dezembro de 2025 as respectivas demonstrações do resultado, das mutações do patrimônio líquido e dos ﬂuxos de caixa para o exercício ﬁndo nesta data "
+  }
+}

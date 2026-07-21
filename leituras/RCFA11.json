@@ -1,0 +1,39 @@
+{
+  "ticker": "RCFA11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T11:33:49",
+  "comunicados": {
+    "ids": [
+      949375,
+      929011,
+      1189108,
+      1234032,
+      1209488
+    ],
+    "datas": [
+      "18/07/2025",
+      "20/06/2025",
+      "13/05/2026",
+      "30/06/2026",
+      "01/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO/E"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 18/07/2025\n\n**O que aconteceu:** A administradora do Fundo de Investimento Imobiliário (FII) GRUPO RCFA solicitou a deslistagem das cotas do ambiente de bolsa.\n\n**Resumo:** A TERRA INVESTIMENTOS, como administradora, está promovendo a deslistagem das cotas do FII GRUPO RCFA do mercado de bolsa da B3. Isso ocorre em virtude de esforços infrutíferos para realizar assembleias gerais de cotistas e enfrentar desafios com as demonstrações financeiras das sociedades investidas.\n\n**Trecho-chave:**\n\"Nos termos do artigo 34, inciso VII, do regulamento do Fundo, combinado com o artigo 52, inciso I, da Resolução CVM nº 175, e em conformidade com a autorização formal da B3 S.A. – Brasil, Bolsa, Balcão, recebida em 21 de maio de 2025, a Administradora está atuando junto a  B3 visando promover a deslistagem das cotas do Fundo do ambiente de bolsa.\"\n\n### FATO RELEVANTE entregue em 20/06/2025\n\n**O que aconteceu:** A administradora do FII GRUFOCA realizou a deslistagem das cotas do mercado de bolsa.\n\n**Resumo:** A TERRA INVESTIMENTOS, como administradora, promoveu a deslistagem das cotas do FII GRUPO RCFA do ambiente de bolsa administrado pela B3. Isso ocorreu em razão dos esforços infrutíferos para realizar assembleias gerais e problemas com as demonstrações financeiras das sociedades investidas.\n\n**Trecho-chave:**\n\"A deslistagem decorre de diversos esforços infrutíferos da Administradora no sentido de realizar assembleias gerais de cotistas para deliberar sobre o grupamento de cotas e eleição de novo prestador de serviços, conforme termo de renúncia à administração enviado aos cotistas em 22 de dezembro de 2023.\"\n\n### COMUNICADO AO MERCADO entregue em 13/05/2026\n\n**O que aconteceu:** A administradora do FII GRUFOCA prestou esclarecimentos sobre a abstenção de opinião dos auditores independentes.\n\n**Resumo:** A TERRA INVESTIMENTOS, como administradora, esclareceu que a abstenção de opinião dos auditores independente (UHY Moreira – Auditores Independentes / UHY Bendoraytes) em relação às demonstrações financeiras do FII GRUFOCA se deve à ausência de auditoria nas sociedades investidas e à baixa liquidez da carteira.\n\n**Trecho-chave:**\n\"A ausência de auditoria nas investidas impossibilitou que os auditores do Fundo obtivessem evidências apropriadas e suficientes para fundamentar a aferição a valor justo da carteira.\"\n\n### ASSEMBLEIA AGO entregue em 30/06/2026\n\n**O que aconteceu:** A administradora convocou uma assembleia geral ordinária (AGO) do FII GRUFOCA.\n\n**Resumo:** A TERRA INVESTIMENTOS, como administradora, convocou a AGO para aprovar as demonstrações financeiras do Fundo referentes ao exercício social findo em 31 de dezembro de 2025. A assembleia será realizada virtualmente e de forma remota.\n\n**Trecho-chave:**\n\"A AGO terá como ordem do dia a apresentação para aprovação dos(as) Srs.(as) Cotistas, das demonstrações financeiras do Fundo, relativas ao exercício social findo em 31 de dezembro de 2025, devidamente auditadas.\"\n\n### ASSEMBLEIA AGO/E entregue em 01/06/2026\n\n**O que aconteceu:** A assembleia geral extraordinária (AGE) não foi instalada.\n\n**Resumo:** A AGE do FII GRUFOCA, convocada para deliberar sobre a deslistagem do Fundo do mercado de bolsa administrado pela B3, não foi instalada em razão da ausência de cotistas ou representantes da totalidade das cotas em circulação.\n\n**Trecho-chave:**\n\"A Assembleia Geral Extraordinária (AGE) não foi instalada em razão da ausência de cotistas, representantes da totalidade das cotas em circulação do Fundo, ou de seu cotista majoritário.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1135281,
+    "data_entrega": "13/03/2026 09:10",
+    "tipo": "abstencao",
+    "rotulo": "abstenção de opinião",
+    "grave": true,
+    "continuidade": true,
+    "trecho": "Não expressamos uma opinião sobre as demonstrações financeiras do Fundo pois, devido à relevância do assunto descrito na seção a seguir intitulada “Base para abstenção de opinião”, não nos foi possível obter evidência de auditoria apropriada e suficiente para fundamentar nossa opinião de auditoria sobre essas demonstrações financeiras."
+  }
+}

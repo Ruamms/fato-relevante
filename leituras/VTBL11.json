@@ -1,0 +1,33 @@
+{
+  "ticker": "VTBL11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:16:13",
+  "comunicados": {
+    "ids": [
+      1153960,
+      1200381,
+      1200380
+    ],
+    "datas": [
+      "02/04/2026",
+      "21/05/2026",
+      "21/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 02/04/2026\n\n**O QUE aconteceu:** A Administradora do Fundo de Investimento Imobiliário Hieron Berlim divulgou as demonstrações financeiras qualificadas referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** As demonstrações foram emitidas com abstenção de opinião, devido à não obtenção de acesso aos laudos de avaliação dos ativos. A administração adotou medidas para gerenciar os impactos desta qualificação e buscar a resolução dos problemas identificados.\n\n**Trecho-chave:** \"A abstenção de opinião se refere a não obtenção de acesso aos Laudos de Avaliação, não sendo possível determinar a adequação do ajuste ao valor justo desses ativos, pela Administradora e pelos auditores.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 21/05/2026\n\n**O QUE aconteceu:** A Vórtx Distribuidora de Títulos e Valores Mobiliários Ltda., administradora do Fundo Hieron Berlim, convocou uma Assembleia Geral Extraordinária para deliberar sobre a aprovação das contas e demonstrações contábeis do exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia será realizada por meio de consulta formal, com prazo até 22/06/2026. A aprovação das contas e demonstrações contábeis do Fundo será submetida à deliberação dos cotistas.\n\n**Trecho-chave:** \"Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31/12/2025, devidamente auditadas.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 21/05/2026\n\n**O QUE aconteceu:** A Vórtx Distribuidora de Títulos e Valores Mobiliários Ltda., administradora do Fundo Hieron Berlim, enviou uma Consulta Formal para a Assembleia Geral Extraordinária.\n\n**Resumo:** A consulta formal visa aprovar as contas e demonstrações contábeis do Fundo referentes ao exercício encerrado em 31 de dezembro de 2025. O prazo para resposta é até 22/06/2026, com apuração do resultado no dia seguinte.\n\n**Trecho-chave:** \"Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31/12/2025, devidamente auditadas.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1152271,
+    "data_entrega": "01/04/2026 00:52",
+    "tipo": "abstencao",
+    "rotulo": "abstenção de opinião",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Não expressamos uma opinião sobre as demonstrações financeiras do Fundo pois, devido à relevância do assunto descrito na seção a seguir intitulada “Base para abstenção de opinião”, não nos foi possível obter evidência de auditoria apropriada e suficiente para fundamentar nossa opinião de auditoria sobre essas demonstrações financeiras."
+  }
+}

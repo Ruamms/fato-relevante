@@ -1,0 +1,59 @@
+{
+  "ticker": "SHIP11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T00:34:01",
+  "relatorio": {
+    "id": 1238494,
+    "data_entrega": "02/07/2026 18:55",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Patrimônio Líquido**: O patrimônio líquido do fundo SHIP11 foi de R$ 167,363,625,18 em maio/2026 (p. 1).\n   \n2. **Portfólio Core**: O portfólio core inclui investimentos em Itaim Bibi III, Vila Nova Conceição II, Guapira, Pedroso, Leblon e Bela Vista, entre outros (p. 2).\n\n3. **Estágio do Fundo**: O fundo está no período de investimento (p. 1).\n\n4. **Taxas de Gestão e Performance**: As taxas de gestão variam de 0,2% a.a. à 2,00% a.a., com uma taxa de administração de 1,54% a.a. (p. 1).\n\n5. **Projeções de Retorno**: A projeção de retorno esperado é de 1,8x MOIC e TIR estimada de 22,5% a.a. (p. 1).\n\n6. **Estágio dos Projetos**: Alguns projetos estão em estágio de aprovação ou investimento, enquanto outros já foram alocados (p. 2).\n\n7. **Vacância e Inadimplência**: Não há menção específica sobre vacância ou inadimplência no relatório.\n\n8. **Eventos Societários**: Não há informações específicas sobre eventos societários recentes.\n\n### O que observar em seguida:\n- Monitorar as próximas chamadas de capital e a evolução dos projetos em andamento.\n- Observar o comportamento do patrimônio líquido e do valor do ativo."
+  },
+  "comunicados": {
+    "ids": [
+      1155004,
+      1048952,
+      1024862,
+      1125067,
+      1117122,
+      1069140,
+      1044161
+    ],
+    "datas": [
+      "06/04/2026",
+      "27/11/2025",
+      "30/10/2025",
+      "28/02/2026",
+      "15/02/2026",
+      "23/12/2025",
+      "18/11/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### O que aconteceu em 23/12/2025\n\n**Título:** Aprovação das contas e demonstrações contábeis do Fundo.\n\n**Resumo:** A assembleia geral ordinária aprovou as contas e demonstrações contábeis do Fundo, devidamente auditadas, relativas ao exercício social findo em 30 de junho de 2025. O quórum necessário foi atingido com aproximadamente 96,8% das cotas representadas.\n\n**Trecho-chave:**\n\"Matéria I - Aprovar as contas e demonstrações contábeis do Fundo, devidamente auditadas, relativas ao exercício social findo em 30 de junho de 2025. Resultado: Aprovada com 96,8% das Cotas representadas.\"\n\n---\n\n### O que aconteceu em 18/11/2025\n\n**Título:** Convocação para Assembleia Geral Ordinária do Fundo.\n\n**Resumo:** A administradora convocou os cotistas para participar da assembleia geral ordinária, a ser realizada por meio de consulta formal. A matéria a ser deliberada é a aprovação das contas e demonstrações contábeis do Fundo relativas ao exercício social findo em 30 de junho de 2025.\n\n**Trecho-chave:**\n\"Prezado(a)s Cotistas, A administradora convoca os titulares das cotas de emissão do Fundo para participar da Assembleia Geral Ordinária do Fundo, a ser realizada de forma não presencial, por meio do procedimento de consulta formal (Consulta Formal), qual tem por objeto deliberar sobre: 1. Aprovação das contas e demonstrações contábeis do Fundo, devidamente auditadas, relativas ao exercício social findo em 30 de junho de 2025.\"\n\n---\n\n### O que aconteceu em 27/11/2025\n\n**Título:** Nova Chamada de Capital.\n\n**Resumo:** A administradora informou sobre a nova chamada de capital do Fundo, destinada aos investidores com compromisso de investimento. Serão integralizadas 465.493 cotas na Subclasse A e 34.507 cotas na Subclasse B, totalizando 500.000 cotas no Fundo.\n\n**Trecho-chave:**\n\"Por meio da Nova Chamada de Capital deverão ser integralizadas 465.493 (quatrocentos e sessenta e cinco mil, quatrocentos e noventa e três) cotas na Subclasse A e 34.507 (trinta e quatro mil, quinhentas e sete) cotas na Subclasse B, totalizando o montante de 500.000 (quinhentas mil) cotas no Fundo.\"\n\n---\n\n### O que aconteceu em 30/10/2025\n\n**Título:** Nova Chamada de Capital.\n\n**Resumo:** A administradora informou sobre a nova chamada de capital do Fundo, destinada aos investidores com compromisso de investimento. Serão integralizadas 88.439 cotas na Subclasse A e 6.561 cotas na Subclasse B, totalizando 95.000 cotas no Fundo.\n\n**Trecho-chave:**\n\"Por meio da Nova Chamada de Capital deverão ser integralizadas 88.439 (oitenta e oito mil, quatrocentas e trinta e nove) cotas na Subclasse A e 6.561 (seis mil, quinhentas e sessenta e uma) cotas na Subclasse B, totalizando o montante de 95.000 (noventa e cinco mil) cotas no Fundo.\"\n\n---\n\n### O que aconteceu em 28/02/2026\n\n**Título:** Comunicação sobre Informes de Rendimentos.\n\n**Resumo:** A administradora informou que os informes de rendimentos referentes ao ano de 2025 estarão disponíveis exclusivamente por meio digital, no Portal do Investidor. Os investidores podem realizar o cadastro no Portal para acessar esses documentos.\n\n**Trecho-chave:**\n\"Em complemento ao Comunicado ao Mercado de 2 de fevereiro de 2026 e ao Comunicado ao Mercado de 13 de fevereiro de 2026, a Administradora informa que, com o intuito de reduzir os custos de impressão e correios para os Fundos, bem como minimizar o uso de papel e seus impactos para o meio ambiente, os Informes de Rendimentos (Informes) referentes ao ano de 2025, já estão disponíveis aos investidores, conforme previsto na Instrução Normativa RFB nº 2.060/2021, exclusivamente por meio digital, por meio do Portal do Investidor.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos irregulares",
+      "Base de cotistas muito pequena",
+      "Fundo novo — histórico curto"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 999811,
+    "data_entrega": "26/09/2025 19:03",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do RBR Flagship I Fundo de Investimento Imobiliário Responsabilidade Limitada em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o período de 18 de novembro de 2024 (data de início das atividades do Fundo) a "
+  }
+}

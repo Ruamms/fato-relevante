@@ -1,0 +1,30 @@
+{
+  "ticker": "MIST11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T00:43:16",
+  "comunicados": {
+    "ids": [
+      1176508,
+      966316
+    ],
+    "datas": [
+      "30/04/2026",
+      "12/08/2025"
+    ],
+    "rotulos": [
+      "Assembleia AGO/E",
+      "Assembleia AGE"
+    ],
+    "texto": "### O QUE aconteceu: Assembleia Geral Ordinária e Extraordinária de Cotistas do MIST11\n\n**Resumo:** A assembleia discutiu e aprovou as contas da administradora, os rendimentos dos lucros auferidos no exercício de 2025, o laudo de avaliação dos imóveis, entre outros itens.\n\n**Trecho-chave:**\n\"Após análise dos lucros auferidos, os cotistas de forma unânime aprovaram que o valor do saldo líquido dos rendimentos (após o pagamento dos tributos) será pago conforme a disponibilidade financeira do Fundo.\"\n\n### Conexão com indicadores:\nA aprovação dos rendimentos e a destinação dos lucros reflete diretamente no desempenho financeiro do fundo, que tem um VP/cota de 18,84 e uma taxa de administração de 0,20% a.a., conforme os indicadores fornecidos."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1151047,
+    "data_entrega": "31/03/2026 18:51",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do FUNDO DE INVESTIMENTO IMOBILIÁRIO MISTRAL em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos Fundos de I"
+  }
+}

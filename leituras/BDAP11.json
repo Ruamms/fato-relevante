@@ -1,0 +1,30 @@
+{
+  "ticker": "BDAP11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:12:43",
+  "comunicados": {
+    "ids": [
+      1240170,
+      1238251
+    ],
+    "datas": [
+      "06/07/2026",
+      "02/07/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Assembleia Geral Ordinária em 29/06/2026\n\n**O que aconteceu:** A assembleia geral ordinária do fundo BB ETF ÍNDICE DAP5 B3 foi realizada, mas não obteve quórum suficiente para deliberar.\n\n**Resumo:** As demonstrações contábeis relativas ao exercício social findo em 31/03/2026 foram consideradas aprovadas por ausência de opinião modificada e falta de manifestação dos cotistas.\n\n*\"Em razão da ausência de quórum na Assembleia, consideram-se aprovadas as demonstrações contábeis do FUNDO relativas ao exercício social findo em 31/03/2026, devidamente auditada pela Deloitte Touche Tohmatsu Auditores Independentes.\"* (p. 1)\n\n### Assembleia Geral Ordinária em 29/06/2026\n\n**O que aconteceu:** A assembleia geral ordinária do fundo BB ETF ÍNDICE DAP5 B3 foi realizada, mas não obteve quórum suficiente para deliberar.\n\n**Resumo:** As demonstrações contábeis relativas ao exercício social findo em 31/03/2026 foram consideradas aprovadas por ausência de opinião modificada e falta de manifestação dos cotistas.\n\n*\"Tendo em vista a ausência de manifestação de cotistas no processo de Assembleia Geral Ordinária do fundo, as Demonstrações Contábeis relativas ao exercício social findo em 31/03/2026 foram consideradas automaticamente aprovadas, por não apresentarem opinião modificada.\"* (p. 1)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1205994,
+    "data_entrega": "28/05/2026 12:32",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do BB ETF Índice DAP5 B3 Fundo de Índice Responsabilidade Limitada em 31 de março de 2026 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos Fundos de Invest"
+  }
+}

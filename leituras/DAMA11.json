@@ -1,0 +1,57 @@
+{
+  "ticker": "DAMA11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T04:16:08",
+  "relatorio": {
+    "id": 1252780,
+    "data_entrega": "17/07/2026 19:27",
+    "texto": "### Fatos Extraídos do Relatório Gerencial:\n\n1. **Alienação de Ativos**: O fundo realizou a alienação de três posições (TRXF11, FYTO11 e MANA11) em junho, visando a reciclagem de portfólio com efeito residual no resultado real, sem maiores impactos sobre a capacidade de distribuição do Fundo.\n2. **Distribuição de Rendimentos**: O fundo realizou a distribuição semestral de 95% dos lucros obtidos, calculados pelo regime de caixa, conforme determina a legislação vigente.\n3. **Carteira Atualizada**: A carteira do fundo mantém a correção monetária dos CRIs indexados ao IPCA como motor de distribuição, enquanto o patamar ainda elevado do CDI preserva o carrego das posições pós-fixadas.\n4. **Posições na Carteira**:\n   - ARRI11: 14,48%\n   - VVRI11: 12,81%\n   - RECM11: 9,90%\n   - ZAGH11: 8,80%\n   - HIGH FII SR: 8,47%\n5. **Desempenho Financeiro**:\n   - Resultado na Venda (junho): - R$ 18.588,67\n   - Rendimentos, Dividendos e JCP (junho): R$ 372.135,47\n6. **Rendimento Apurado**:\n   - Total Rendimento Apurado no Período: R$ 311.461,94\n   - Distribuído pelo gestor por cota (junho): 0,05%\n7. **Taxa de Administração**: A taxa de administração é de 0,20% a.a.\n8. **Risco e Gestão**:\n   - O fundo segue posicionado para capturar a reprecificação dos ativos imobiliários neste ciclo de cortes, buscando movimentos oportunísticos.\n\n### O que observar em seguida:\n1. **Evolução da Carteira**: Observar as mudanças na carteira e como elas impactam o desempenho do fundo.\n2. **Distribuição de Rendimentos**: Verificar se a distribuição de rendimentos segue a mesma tendência nos próximos relatórios."
+  },
+  "comunicados": {
+    "ids": [
+      923658,
+      863822,
+      1199646,
+      1125056,
+      1199645,
+      1181462
+    ],
+    "datas": [
+      "12/06/2025",
+      "25/03/2025",
+      "19/05/2026",
+      "28/02/2026",
+      "19/05/2026",
+      "06/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 12/06/2025\n\n**O QUE aconteceu:** Alteração da gestão do Fundo.\n**Resumo:** A administração do DAMA FII passou para a nova gestora HIGH GESTÃO EINVESTIMENTOS LTDA, e essa mudança entrará em vigor no dia 23 de junho de 2025.\n**Trecho-chave:**\n> I. Foi aprovada, em Assembleia Geral de Cotistas realizada por meio de Consulta Formal iniciada em 27 de maio de 2025, a alteração da gestão do Fundo, da OPEN CAPITAL GESTÃO DE ATIVOS LTDA para a HIGH GESTÃO EINVESTIMENTOS LTDA. A alteração supracitada entrará em vigor a partir da abertura dos mercados do dia 23/06/2025.\n\n### FATO RELEVANTE entregue em 25/03/2025\n\n**O QUE aconteceu:** Convocação de Assembleia Geral Extraordinária.\n**Resumo:** Uma cotista que representa 6% das cotas do Fundo solicitou a convocação de uma assembleia para debater a possível mudança na gestão do fundo.\n**Trecho-chave:**\n> A Administradora esclarece (i) verificou os poderes dos representantes de cotistas solicitantes no Pedido de Convocação e que ambos estão adequadamente representados e (ii) apurará o teor da solicitação e, se entender pertinente, atenderá ao Pedido de Convocação no prazo máximo de 30 dias contados desta data.\n\n### COMUNICADO AO MERCADO entregue em 19/05/2026\n\n**O QUE aconteceu:** Aprovadas as contas anuais do Fundo.\n**Resumo:** Na assembleia geral realizada em 18 de maio de 2026, foram aprovadas as contas anuais do DAMA FII referentes ao exercício encerrado em 31 de dezembro de 2025.\n**Trecho-chave:**\n> A Administradora serve-se da presente, na qualidade de administradora do DAMA FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA, para comunicar que na assembleia geral de cotistas realizada em 18 de maio de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\n\n### COMUNICADO AO MERCADO entregue em 28/02/2026\n\n**O QUE aconteceu:** Informes de Rendimentos disponíveis digitalmente.\n**Resumo:** Os informes de rendimentos referentes ao ano de 2025 dos fundos administrados pela BTG Pactual estão disponíveis exclusivamente por meio digital, através do Portal do Investidor.\n**Trecho-chave:**\n> Em complemento ao Comunicado ao Mercado de 2 de fevereiro de 2026 e ao Comunicado ao Mercado de 13 de fevereiro de 2026, a Administradora informa que, com o intuito de reduzir os custos de impressão e correios para os Fundos, bem como minimizar o uso de papel e seus impactos para o meio ambiente, os Informes de Rendimentos referentes ao ano de 2025, já estão disponíveis aos investidores, conforme previsto na Instrução Normativa RFB nº 2.060/2021, exclusivamente por meio digital, por meio do Portal do Investidor.\n\n### ASSEMBLEIA AGO entregue em 19/05/2026\n\n**O QUE aconteceu:** Aprovação das contas anuais.\n**Resumo:** Na assembleia geral realizada via manifestação de voto enviada pelos cotistas, foram aprovadas as demonstrações financeiras auditadas do exercício social encerrado em 31 de dezembro de 2025.\n**Trecho-chave:**\n> 4.1. Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\n\n### ASSEMBLEIA AGO entregue em 06/05/2026\n\n**O QUE aconteceu:** Convocação para a assembleia geral.\n**Resumo:** A administradora convocou os cotistas do DAMA FII para deliberarem sobre a aprovação das contas e demonstrações contábeis do exercício social encerrado em 31 de dezembro de 2025, por meio de uma consulta formal com prazo até 18 de maio de 2026.\n**Trecho-chave:**\n> A administradora convocou os cotistas do DAMA FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA para a Consulta Formal, com prazo de recebimento de votos até 18 de maio de 2026, para deliberarem sobre: (i) A aprovação das contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de dezembro de 2025."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Emissão de cotas com VP/cota em queda",
+      "VP/cota em queda relevante",
+      "Rendimentos irregulares"
+    ],
+    "cota": 6.11
+  },
+  "parecer": {
+    "id": 1147315,
+    "data_entrega": "28/03/2026 20:55",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Dama Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil a"
+  }
+}

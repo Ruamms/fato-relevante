@@ -1,0 +1,33 @@
+{
+  "ticker": "FIIT11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T11:31:56",
+  "comunicados": {
+    "ids": [
+      1076838,
+      1004819,
+      1154445
+    ],
+    "datas": [
+      "07/01/2026",
+      "02/10/2025",
+      "06/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 07/01/2026\n\n**O QUE aconteceu:** A administradora do TRANCOSO - FUNDO DE INVESTIMENTO IMOBILIÁRIO realizou a remarcação dos ativos imobiliários, resultando em uma variação positiva de 5,00% no Patrimônio Líquido por Cota (PL/Cota) do Fundo.\n\n**Resumo:** A administradora do fundo realizou a remarcagem dos ativos imobiliários e notificou os cotistas sobre o aumento no PL/Cota do fundo em 5,00%.\n\n**Trecho-chave:**\n\"Em decorrência da referida remarcação, apurou-se uma variação positiva equivalente a 5,00% no PL/Cota do Fundo.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 02/10/2025\n\n**O QUE aconteceu:** A administradora do TRANCOSO - FUNDO DE INVESTIMENTO IMOBILIÁRIO alterou seu endereço eletrônico institucional.\n\n**Resumo:** A administradora informou que seus novos e-mails para contato institucional são fii.adm@qitech.com.br.\n\n**Trecho-chave:**\n\"A partir de agora, nossos novos e-mails para contato institucional são: \n• fii.adm@qitech.com.br\"\n\n---\n\n### ASSEMBLEIA GERAL ORDINÁRIA DE COTISTAS realizada em 06/04/2026\n\n**O QUE aconteceu:** A assembleia geral ordinária de cotistas do TRANCOSO - FUNDO DE INVESTIMENTO IMOBILIÁRIO aprovou as demonstrações financeiras relativas ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia aprovou sem ressalvas ou restrições as demonstrações financeiras do fundo para o exercício social de 2025.\n\n**Trecho-chave:**\n\"Após o exame, discussão e votação das contas do Fundo e das Demonstrações Financeiras relativas ao exercício social encerrado em 31 dezembro de 2025, o Cotista aprovou sem quaisquer ressalvas ou restrições.\"\n\n---\n\n**Conexões com o contexto:**\n- A aprovação das demonstrações financeiras pode impactar os indicadores do fundo, como o Patrimônio Líquido e o Valor do Ativo."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1151055,
+    "data_entrega": "31/03/2026 18:52",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Trancoso – Fundo de Investimento Imobiliário – FII – Responsabilidade Limitada (anteriormente denominado Trancoso Fundo de Investimento Imobiliário) em 31 de dezembro de 2025, e o desempenho das suas operações e os seus fluxos de caixa para"
+  }
+}

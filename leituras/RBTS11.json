@@ -1,0 +1,57 @@
+{
+  "ticker": "RBTS11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T05:27:52",
+  "relatorio": {
+    "id": 1224541,
+    "data_entrega": "19/06/2026 10:43",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Histórico de Chamadas de Capital:**\n   - O fundo realizou seis chamadas de capital entre julho de 2018 e dezembro de 2019, totalizando R$ 59.353.934,90.\n   - A última chamada ocorreu em dezembro de 2019.\n\n2. **Composição do Patrimônio Líquido:**\n   - O valor patrimonial projetado do fundo é de R$ 102.667.676,00.\n   - As despesas projetadas totalizam R$ 7.120.348,00.\n   - A projeção de patrimônio líquido gerencial atualizado é de R$ 95.547.328,00.\n\n3. **Projeções de Distribuição:**\n   - A distribuição projetada de rendimentos e amortizações totaliza R$ 76.381.920,64.\n   - O número de cotas do fundo é de 56.525.\n\n4. **Projeção Valor Cota:**\n   - A projeção do valor da cota (R$) é de R$ 339,06.\n\n5. **Atualização do Mercado Imobiliário:**\n   - Em abril/2026, as vendas totalizaram 9.588 unidades, com um volume 11,7% inferior em comparação a março.\n   - As vendas acumuladas nos últimos 12 meses foram de 43,3 mil unidades.\n\n6. **Atualização dos Projetos:**\n   - O fundo encontra-se 100% alocado e não possui novos projetos para inclusão.\n   - Os principais projetos incluem Oxy Alto da Lapa (R$ 69,3 milhões), Domum Kallas (R$ 94,2 milhões) e Veritas Kallas (R$ 105,7 milhões).\n\n### Observações a Acompanhar:\n\n- **Projeção de Patrimônio Líquido:** O valor projetado do patrimônio líquido é significativamente maior que o atual (R$ 95.547.328,00 vs R$ 14.000.000).\n- **Distribuição de Rendimentos:** A distribuição projetada de rendimentos e amortizações é alta, sugerindo potencial para retorno aos cotistas.\n\nO que observar em seguida:\n- Monitorar a evolução das vendas dos projetos existentes.\n- Verificar se as projeções de valor patrimonial são consistentes com o desempenho real dos imóveis."
+  },
+  "comunicados": {
+    "ids": [
+      1152311,
+      1073484,
+      1050435,
+      1238405,
+      1230865,
+      1218251
+    ],
+    "datas": [
+      "01/04/2026",
+      "30/12/2025",
+      "28/11/2025",
+      "02/07/2026",
+      "26/06/2026",
+      "11/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 01/04/2026\n\n**O QUE aconteceu:** A OLIVEIRA TRUST não recebeu as Demonstrações Financeiras Auditadas de 31 de dezembro de 2025.\n\n**Resumo:** A Instituição Administradora informa que, até a data do comunicado, não recebeu as Demonstrações Financeiras Auditadas do exercício social findo em 31 de dezembro de 2025. Isso resultou na impossibilidade de determinar eventual necessidade de ajustes sobre o valor dos investimentos e suas respectivas impactos nas Demonstrações Financeiras.\n\n**Trecho-chave:** \"OLIVEIRA TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., inscrita no CNPJ/MF sob o nº 36.113.876/0001-91, com sede à Av. das Américas nº 3434, bloco 07, sala 201, Barra da Tijuca, Rio de Janeiro /RJ, CEP 22.640 -102, na qualidade de instituição administradora (‘Instituição Administradora’) do Fundo, em atenção às orientações da B3 S.A. – Brasil, Bolsa, Balcão no que diz respeito ao cumprimento do dever previsto no artigo 64 da Resolução CVM nº 175, de 23 de dezembro de 2022, vem informar aos cotistas do Fundo e ao mercado que até o momento não recebeu as Demonstrações Financeiras Auditadas de 31 de dezembro de 2025, pela RSM Brasil Auditores Independentes Ltda., inscrita no CNPJ/MF sob o nº 16.549.480/0001-84.\"\n\n---\n\n### FATO RELEVANTE entregue em 30/12/2025\n\n**O QUE aconteceu:** A Gestora decidiu proceder com a Amortização Extraordinária de capital aos cotistas.\n\n**Resumo:** A RB ASSET MANAGEMENT decidiu realizar uma Amortização Extraordinária no valor total de R$ 2.250.000,00 (dois milhões, duzentos e cinquenta mil reais) por cota, correspondente a R$ 39,80539584 por cota, para os cotistas que sejam titulares de cotas do Fundo em 31/10/2025.\n\n**Trecho-chave:** \"A Gestora, nos termos dos artigos 9.9, 9.10 e 10.3 do Regulamento do Fundo, decidiu proceder com o pagamento de amortização parcial de capital aos cotistas (\"Amortização Extraordinária\"), no montante total de R$ 2.250.000,00 (dois milhões, duzentos e cinquenta mil reais), correspondente ao valor de R$ 39,80539584 por cota, sendo certo que farão jus os Cotistas que sejam titulares de cotas do Fundo em 31/10/2025 (\"Data-Com\"), conforme Aviso aos Cotistas (disponível para consulta aqui).\"\n\n---\n\n### FATO RELEVANTE entregue em 28/11/2025\n\n**O QUE aconteceu:** O prazo para informar o Custo Médio foi postergado.\n\n**Resumo:** O prazo para os cotistas informarem seu respectivo custo médio unitário de aquisição de cotas do RBTS11 (\"Custo Médio\") à Administradora foi postergado por mais 30 dias, seguindo o cronograma abaixo: Prazo de envio de Custo Médio à Administradora (4/11/2025 - 29/12/2025), Apuração pela Administradora do Custo Médio (2/1/2026 - 12/1/2026) e Data de Pagamento da Amortização Extraordinária (26/1/2026).\n\n**Trecho-chave:** \"Com o objetivo de assegurar o correto tratamento fiscal da amortização e em linha com o disposto no artigo 18.4 do Regulamento do Fundo, a Administradora informa que para realizar o pagamento do saldo referente à amortização de principal do Fundo e viabilizar o tratamento fiscal adequado, o prazo para os cotistas informarem seu respectivo custo médio unitário de aquisição de cotas do RBTS11 (\"Custo Médio\") à Administradora, foi postergado por mais 30 (trinta) dias, conforme metodologia anexa ao presente, seguindo o cronograma abaixo:\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 02/07/2026\n\n**O QUE aconteceu:** A Gestora decidiu proceder com a Amortização Extraordinária de capital aos cotistas.\n\n**Resumo:** A RB ASSET MANAGEMENT decidiu realizar uma Amortização Extraordinária no valor total de R$ 2.097.000,00 (dois milhões e noventa e sete mil reais) por cota, correspondente a R$ 37,09862893 por cota, para os cotistas que sejam titulares de cotas do Fundo em 30/06/2026.\n\n**Trecho-chave:** \"A Gestora, nos termos dos artigos Cláusula 7 do Anexo Descritivo do Regulamento do Fundo, decidiu proceder com o pagamento de amortização parcial de capital aos cotistas (\"Amortização Extraordinária\"), no montante total de R$ 2.097.000,00 (dois milhões e noventa e sete mil reais), correspondente ao valor de R$ 37,09862893 por cota, sendo certo que farão jus os Cotistas que sejam titulares de cotas do Fundo em 30/06/2026 (\"Data-Com\"), conforme Aviso aos Cotistas (disponível para consulta aqui).\"\n\n---\n\n### ASSEMBLEIA AGE entregue em 26/06/2026\n\n**O QUE aconteceu:** A Assembleia Geral Extraordinária aprovou a prorrogação do prazo de duração do Fundo e alteração da composição do Comitê de Investimento.\n\n**Resumo:** A Assembleia Geral Extraordinária aprovou, por maioria dos votos proferidos, a prorrogação do prazo de duração do Fundo pelo prazo adicional de até 1 (um) ano, contados a partir de 30 de junho de 2026. Também foi aprovada a alteração da composição do Comitê de Investimento do Fundo.\n\n**Trecho-chave:** \"Os Cotistas, representando 7,9778% das cotas em circulação, manifestaram-se sobre as matérias constantes da ordem do dia, conforme segue: (i) Aprovar a prorrogação do prazo de duração do Fundo, pelo prazo adicional de até 1 (um) ano, contados a partir de 30 de junho de 2026. Resultado: Matéria aprovada, por maioria dos votos proferidos.\"\n\n---\n\n### ASSEMBLEIA AGE entregue em 11/06/2026\n\n**O QUE aconteceu:** A Assembleia Geral Extraordinária foi convocada para deliberar sobre a prorrogação do prazo de duração do Fundo e alteração da composição do Comitê de Investimento.\n\n**Resumo:** A OLIVEIRA TRUST DTVM S.A. convocou a Assembleia Geral Extraordinária para deliberar sobre a prorrogação do prazo de duração do Fundo pelo prazo adicional de até 1 (um) ano, contados a partir de 30 de junho de 2026, e alteração da composição do Comitê de Investimento.\n\n**Trecho-chave:** \"A OLIVEIRA TRUST DTVM S.A., sociedade devidamente autorizada pela Comissão de Valores Mobiliários - CVM para o exercício profissional de administração de carteira de títulos e valores mobiliários, por meio do Ato Declaratório n.º 6.696, de 21 de fevereiro de 2002, na qualidade de administradora do Fundo (\"Administradora\"), nos termos do art. 13, Anexo Normativo III da Resolução CVM nº 175, de 23 de dezembro de 2022 , conforme alterada (“RCVM 175”), serve-se da presente para consultá-lo(a) a respeito das matérias abaixo descritas, que serão deliberadas mediante Consulta Formal, sem a necessidade de realização de reunião presencial dos cotistas, sendo a apuração realizada com a presença de qualquer número de cotistas, nos termos do Art. 74 da parte geral da RCVM nº 175: (i) Aprovar a prorrogação do prazo de duração do Fundo, pelo prazo adicional de até 1 (um) ano, contados a partir de 30 de junho de 2026.\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "VP/cota em queda relevante",
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares",
+      "Base de cotistas muito pequena"
+    ],
+    "cota": 285.05
+  },
+  "parecer": {
+    "id": 1152982,
+    "data_entrega": "01/04/2026 19:40",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acim a referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do RB Capital TFO Situs Fundo de Investimento Imobiliário – FII – Responsabilidade L imitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas cont"
+  }
+}

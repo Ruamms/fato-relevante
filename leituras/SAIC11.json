@@ -1,0 +1,45 @@
+{
+  "ticker": "SAIC11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T03:39:10",
+  "comunicados": {
+    "ids": [
+      1149282,
+      1149262,
+      1149198,
+      1185343,
+      1073637,
+      1250414,
+      1250399
+    ],
+    "datas": [
+      "31/03/2026",
+      "31/03/2026",
+      "30/03/2026",
+      "11/05/2026",
+      "30/12/2025",
+      "15/07/2026",
+      "15/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 31/03/2026\n\n**O QUE aconteceu:** A cota do Fundo teve seu valor patrimonial impactado pela reavaliação dos ativos.\n\n**Resumo:** Houve uma redução no valor dos ativos do fundo, resultando em impacto negativo no valor patrimonial da cota.\n\n**Trecho-chave:**\n\"em decorrência de Laudo de Avaliação apresentado pela empresa especializada Newmark, houve a reavaliação do preço justo estimado para o s Ativos do Imobiliários resultando em redução no valor desses ativos, com impacto no valor patrimonial da cota do Fundo na data.\"\n\n---\n\n### FATO RELEVANTE entregue em 30/03/2026\n\n**O QUE aconteceu:** A cota do Fundo teve seu valor patrimonial impactado pela reavaliação dos ativos.\n\n**Resumo:** Houve uma redução de 20,99% no valor dos ativos do fundo, resultando em impacto negativo no valor patrimonial da cota.\n\n**Trecho-chave:**\n\"em decorrência de Laudo de Avaliação anual apresentado pela empresa especializada Newmark, houve a reavaliação dos ativos do Fundo, resultando em redução de 20,99% no valor desses ativos, com impacto no valor patrimonial da cota do Fundo na data.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 11/05/2026\n\n**O QUE aconteceu:** A administradora informou sobre as medidas tomadas para endereçar a ressalva apontada pela auditoria independente.\n\n**Resumo:** A administradora solicitou uma revisão técnica do laudo de avaliação, implementou medidas corretivas e preventivas, e fortaleceu os controles internos e a governança do Fundo.\n\n**Trecho-chave:**\n\"A Administradora recebeu o laudo revisado em fevereiro de 2026; submeteu a metodologia e premissas utilizadas pelo avaliador independente ao Comitê de Precificação em março de 2026; registrou o novo valor justo na carteira do Fundo em 31 de março de 2026; e divulgou Fato Relevante ao mercado na mesma data.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 30/12/2025\n\n**O QUE aconteceu:** A cota do Fundo teve seu valor patrimonial impactado pela reavaliação dos ativos.\n\n**Resumo:** Houve uma redução de 8,06% no valor dos ativos do fundo, resultando em impacto negativo no valor patrimonial da cota.\n\n**Trecho-chave:**\n\"em decorrência de Laudo de Avaliação anual apresentado pela empresa especializada Newmark, houve a reavaliação dos ativos do Fundo, resultando em redução de 8,06% no valor desses ativos, com impacto no valor patrimonial da cota do Fundo na data.\"\n\n---\n\n### ASSEMBLEIA AGE entregue em 15/07/2026\n\n**O QUE aconteceu:** A assembleia reprovou a proposta de destituição de prestadores de serviços e o plano de ação apresentado pelo gestor.\n\n**Resumo:** Dos itens da pauta, apenas 22,79% dos cotistas aprovaram o item i (apresentação do plano de ação) e 27,64% aprovaram o item ii (destituição de prestadores de serviços).\n\n**Trecho-chave:**\n\"Resultado da votação:\nITEM I: APROVAÇÃO: 22,7900%; REPROVAÇÃO: 28,5690%; ABSTENÇÃO: 48,6409%\nITEM II: APROVAÇÃO: 27,6425%; REPROVAÇÃO: 57,4583%; ABSTENÇÃO: 14,8992%\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1150698,
+    "data_entrega": "31/03/2026 17:47",
+    "tipo": "ressalva",
+    "rotulo": "opinião com ressalva",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, exceto pelos efeitos do assunto descrito no primeiro parágrafo e dos possíveis efeitos do assunto descrito no segundo parágrafo da seção “Base para opinião com ressalvas”, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira Fundo de Investimento Imobiliário Sia Corporate Responsabilidade Limita"
+  }
+}

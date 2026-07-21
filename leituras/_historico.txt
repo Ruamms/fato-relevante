@@ -441,3 +441,614 @@
 2026-07-20 23:12:08	HBRH11	lido	125s
 2026-07-20 23:14:48	RBFM11	lido	161s
 2026-07-20 23:14:48	XPGC11	erro	The read operation timed out
+2026-07-20 23:16:42	CJCT11	lido	113s
+2026-07-20 23:18:34	CXAG11	lido	112s
+2026-07-20 23:19:22	OBAL11	sem-relatorio-fatos-lidos	48s
+2026-07-20 23:20:36	ALMI11	lido	74s
+2026-07-20 23:22:53	NSLU11	lido	137s
+2026-07-20 23:25:30	RNGO11	lido	157s
+2026-07-20 23:27:29	HSAF11	lido	119s
+2026-07-20 23:30:02	HAAA11	lido	153s
+2026-07-20 23:31:17	RZZV11	lido	76s
+2026-07-20 23:32:59	CNES11	lido	102s
+2026-07-20 23:35:50	BLMG11	lido	171s
+2026-07-20 23:38:20	ZAGH11	lido	151s
+2026-07-20 23:40:34	TORD11	lido	134s
+2026-07-20 23:43:13	HOFC11	lido	159s
+2026-07-20 23:45:35	CLSM11	lido	142s
+2026-07-20 23:47:11	CVFL11	lido	96s
+2026-07-20 23:48:50	JSCR11	lido	99s
+2026-07-20 23:50:58	HBCR11	lido	128s
+2026-07-20 23:54:10	VCRR11	lido	192s
+2026-07-20 23:56:13	CYHF11	lido	123s
+2026-07-20 23:58:09	VXXV11	sem-relatorio-fatos-lidos	116s
+2026-07-21 00:00:05	RBRK11	lido	116s
+2026-07-21 00:01:55	BLCA11	lido	110s
+2026-07-21 00:01:55	FIGS11	erro	The read operation timed out
+2026-07-21 00:02:45	INCP11	sem-relatorio-fatos-lidos	50s
+2026-07-21 00:04:32	VCRI11	lido	107s
+2026-07-21 00:05:54	EAGL11	sem-relatorio-fatos-lidos	83s
+2026-07-21 00:06:52	PMEP11	sem-relatorio-fatos-lidos	57s
+2026-07-21 00:08:56	SPXS11	lido	124s
+2026-07-21 00:10:35	FISC11	lido	99s
+2026-07-21 00:12:16	SOFF11	lido	102s
+2026-07-21 00:14:56	VVCR11	lido	160s
+2026-07-21 00:17:47	RBHG11	lido	170s
+2026-07-21 00:19:46	KIVO11	lido	119s
+2026-07-21 00:21:41	HUSC11	lido	116s
+2026-07-21 00:22:50	MIDW11	sem-relatorio-fatos-lidos	68s
+2026-07-21 00:23:31	FMOB11	sem-relatorio-fatos-lidos	42s
+2026-07-21 00:26:15	SIGR11	lido	164s
+2026-07-21 00:28:10	RBHY11	lido	115s
+2026-07-21 00:29:58	ARRI11	lido	108s
+2026-07-21 00:32:08	ASMT11	lido	130s
+2026-07-21 00:34:02	SHIP11	lido	113s
+2026-07-21 00:35:10	BTML11	sem-relatorio-fatos-lidos	68s
+2026-07-21 00:36:05	VTPL11	sem-relatorio-fatos-lidos	55s
+2026-07-21 00:37:56	BBRC11	lido	111s
+2026-07-21 00:38:18	VDCD11	sem-relatorio-fatos-lidos	22s
+2026-07-21 00:39:14	GRRO11	sem-relatorio-fatos-lidos	57s
+2026-07-21 00:40:26	CXCI11	lido	72s
+2026-07-21 00:43:00	KFEN11	lido	154s
+2026-07-21 00:43:16	MIST11	sem-relatorio-fatos-lidos	17s
+2026-07-21 00:44:55	EDGA11	lido	98s
+2026-07-21 00:46:59	FLRP11	lido	124s
+2026-07-21 00:49:07	SEQR11	lido	127s
+2026-07-21 00:51:21	EURO11	lido	134s
+2026-07-21 00:51:22	RZLC11	erro	PDF sem texto extraível
+2026-07-21 00:53:45	ZAVI11	lido	143s
+2026-07-21 00:55:46	VVRI11	lido	120s
+2026-07-21 00:56:32	AROA11	sem-relatorio-fatos-lidos	46s
+2026-07-21 00:57:51	CYLD11	sem-relatorio-fatos-lidos	80s
+2026-07-21 00:58:17	GLPF11	sem-relatorio-fatos-lidos	25s
+2026-07-21 00:59:35	JFLL11	lido	78s
+2026-07-21 01:00:55	FAED11	lido	80s
+2026-07-21 01:01:47	BGRJ11	sem-relatorio-fatos-lidos	53s
+2026-07-21 01:02:34	SPVJ11	sem-relatorio-fatos-lidos	46s
+2026-07-21 01:02:58	HUSI11	sem-relatorio-fatos-lidos	24s
+2026-07-21 01:04:02	JPPD11	sem-relatorio-fatos-lidos	64s
+2026-07-21 01:06:09	NCHB11	lido	127s
+2026-07-21 01:07:18	SEED11	lido	69s
+2026-07-21 01:09:03	XTED11	lido	106s
+2026-07-21 01:09:04	RZZI11	erro	Stream has ended unexpectedly
+2026-07-21 01:10:29	AZPR11	lido	85s
+2026-07-21 01:12:33	HUCG11	lido	125s
+2026-07-21 01:13:14	CDHY11	sem-relatorio-fatos-lidos	40s
+2026-07-21 01:16:02	TSER11	lido	168s
+2026-07-21 01:17:20	BRIX11	sem-relatorio-fatos-lidos	78s
+2026-07-21 01:18:26	SPDE11	sem-relatorio-fatos-lidos	66s
+2026-07-21 01:20:19	PMIS11	lido	113s
+2026-07-21 01:22:49	EXES11	lido	150s
+2026-07-21 01:23:56	HJCT11	lido	67s
+2026-07-21 01:26:46	INRD11	lido	170s
+2026-07-21 01:28:15	AUGM11	lido	89s
+2026-07-21 01:29:56	GCRI11	lido	102s
+2026-07-21 01:31:37	RBRD11	lido	100s
+2026-07-21 01:32:47	CXRI11	lido	70s
+2026-07-21 01:33:51	HILG11	sem-relatorio-fatos-lidos	64s
+2026-07-21 01:34:38	AZPE11	sem-relatorio-fatos-lidos	47s
+2026-07-21 01:35:38	CEOC11	lido	60s
+2026-07-21 01:38:33	RBIR11	lido	175s
+2026-07-21 01:39:25	NVIF11	sem-relatorio-fatos-lidos	52s
+2026-07-21 01:39:50	HERM11	sem-relatorio-fatos-lidos	25s
+2026-07-21 01:40:13	BTSG11	sem-relatorio-fatos-lidos	23s
+2026-07-21 01:41:43	PATC11	lido	90s
+2026-07-21 01:43:03	WTSP11	lido	80s
+2026-07-21 01:44:30	FAMB11	lido	87s
+2026-07-21 01:47:49	RSPD11	lido	199s
+2026-07-21 01:50:00	RDLI11	lido	131s
+2026-07-21 01:51:48	CENU11	lido	108s
+2026-07-21 01:52:58	EGDB11	lido	69s
+2026-07-21 01:54:42	BMLC11	lido	104s
+2026-07-21 01:55:23	MVFI11	sem-relatorio-fatos-lidos	41s
+2026-07-21 01:57:07	CXCE11	lido	104s
+2026-07-21 01:58:15	BRHT11	sem-relatorio-fatos-lidos	68s
+2026-07-21 01:59:42	BICE11	sem-relatorio-fatos-lidos	88s
+2026-07-21 02:00:39	JPAU11	sem-relatorio-fatos-lidos	56s
+2026-07-21 02:02:37	MAXR11	lido	118s
+2026-07-21 02:04:33	EQIR11	lido	117s
+2026-07-21 02:06:47	SMRE11	lido	134s
+2026-07-21 02:08:30	BIPD11	lido	103s
+2026-07-21 02:09:08	DVLP11	sem-relatorio-fatos-lidos	39s
+2026-07-21 02:10:41	BTWR11	lido	93s
+2026-07-21 02:12:20	CBOP11	lido	99s
+2026-07-21 02:12:35	DUTR11	sem-relatorio-fatos-lidos	15s
+2026-07-21 02:13:22	BRSS11	sem-relatorio-fatos-lidos	47s
+2026-07-21 02:14:51	BLMO11	lido	89s
+2026-07-21 02:15:18	BRDF11	sem-relatorio-fatos-lidos	27s
+2026-07-21 02:16:46	ARTE11	sem-relatorio-fatos-lidos	88s
+2026-07-21 02:19:17	VIUR11	lido	150s
+2026-07-21 02:20:33	CTXT11	lido	76s
+2026-07-21 02:23:21	HCHG11	lido	168s
+2026-07-21 02:24:50	MCEM11	lido	89s
+2026-07-21 02:24:54	RWYM11	sem-relatorio
+2026-07-21 02:25:45	FINF11	sem-relatorio-fatos-lidos	51s
+2026-07-21 02:27:41	BIPE11	sem-relatorio-fatos-lidos	116s
+2026-07-21 02:31:23	ONDV11	lido	222s
+2026-07-21 02:34:08	BRIP11	lido	165s
+2026-07-21 02:34:30	BRTY11	sem-relatorio-fatos-lidos	22s
+2026-07-21 02:36:12	AURB11	sem-relatorio-fatos-lidos	102s
+2026-07-21 02:37:36	RBFY11	lido	83s
+2026-07-21 02:39:04	DVFF11	lido	89s
+2026-07-21 02:40:09	KPMR11	lido	64s
+2026-07-21 02:42:21	JPPA11	lido	133s
+2026-07-21 02:42:55	PMFO11	sem-relatorio-fatos-lidos	34s
+2026-07-21 02:43:33	TSNC11	sem-relatorio-fatos-lidos	38s
+2026-07-21 02:44:23	STYI11	sem-relatorio-fatos-lidos	50s
+2026-07-21 02:45:25	ERPA11	sem-relatorio-fatos-lidos	62s
+2026-07-21 02:45:42	RGCC11	sem-relatorio-fatos-lidos	18s
+2026-07-21 02:46:05	MTOF11	sem-relatorio-fatos-lidos	23s
+2026-07-21 02:47:57	ARXD11	lido	111s
+2026-07-21 02:49:28	MMVE11	sem-relatorio-fatos-lidos	92s
+2026-07-21 02:50:53	TMPS11	lido	85s
+2026-07-21 02:52:06	VOTS11	lido	73s
+2026-07-21 02:52:06	RECM11	erro	HTTP Error 520: <none>
+2026-07-21 02:54:13	RBOP11	lido	126s
+2026-07-21 02:55:33	GRAV11	sem-relatorio-fatos-lidos	81s
+2026-07-21 02:56:32	LKDV11	sem-relatorio-fatos-lidos	58s
+2026-07-21 02:56:46	CXSP11	sem-relatorio-fatos-lidos	14s
+2026-07-21 02:58:51	RBRS11	lido	125s
+2026-07-21 02:59:46	ZIFI11	lido	55s
+2026-07-21 03:02:27	NEWU11	lido	161s
+2026-07-21 03:04:05	SNME11	lido	98s
+2026-07-21 03:05:04	LSOI11	sem-relatorio-fatos-lidos	59s
+2026-07-21 03:06:51	RBRI11	lido	107s
+2026-07-21 03:08:36	OULG11	lido	105s
+2026-07-21 03:10:36	FLCR11	lido	120s
+2026-07-21 03:11:22	ILOG11	sem-relatorio-fatos-lidos	46s
+2026-07-21 03:11:52	VTPA11	sem-relatorio-fatos-lidos	30s
+2026-07-21 03:13:31	HOSI11	lido	99s
+2026-07-21 03:15:09	ITIT11	lido	98s
+2026-07-21 03:17:09	VCTH11	lido	120s
+2026-07-21 03:19:04	DRIM11	lido	115s
+2026-07-21 03:21:13	OCRE11	sem-relatorio-fatos-lidos	129s
+2026-07-21 03:23:48	CVPR11	lido	155s
+2026-07-21 03:26:01	WPLZ11	lido	133s
+2026-07-21 03:27:34	CCVA11	sem-relatorio-fatos-lidos	93s
+2026-07-21 03:29:07	ICNE11	sem-relatorio-fatos-lidos	93s
+2026-07-21 03:29:29	VIDS11	sem-relatorio-fatos-lidos	22s
+2026-07-21 03:30:17	ORCE11	sem-relatorio-fatos-lidos	47s
+2026-07-21 03:31:19	AERO11	sem-relatorio-fatos-lidos	63s
+2026-07-21 03:31:56	SOLR11	sem-relatorio-fatos-lidos	36s
+2026-07-21 03:33:20	REME11	lido	85s
+2026-07-21 03:35:10	HCRI11	lido	110s
+2026-07-21 03:37:02	EDFO11	lido	112s
+2026-07-21 03:38:13	CRFF11	lido	71s
+2026-07-21 03:39:11	SAIC11	sem-relatorio-fatos-lidos	58s
+2026-07-21 03:40:10	FIVN11	sem-relatorio-fatos-lidos	59s
+2026-07-21 03:41:41	KEVE11	lido	91s
+2026-07-21 03:43:09	NAVF11	lido	88s
+2026-07-21 03:43:09	VNSS11	sem-relatorio
+2026-07-21 03:44:33	KNPR11	lido	84s
+2026-07-21 03:46:41	HGIC11	lido	128s
+2026-07-21 03:48:06	HCST11	lido	85s
+2026-07-21 03:50:01	ITIP11	lido	115s
+2026-07-21 03:52:15	INDE11	lido	134s
+2026-07-21 03:52:46	IVCI11	sem-relatorio-fatos-lidos	31s
+2026-07-21 03:53:36	JCAT11	lido	51s
+2026-07-21 03:54:07	TWNI11	sem-relatorio-fatos-lidos	30s
+2026-07-21 03:57:41	XPCM11	lido	214s
+2026-07-21 03:58:15	GLCR11	sem-relatorio-fatos-lidos	34s
+2026-07-21 04:00:27	BNFS11	lido	132s
+2026-07-21 04:03:08	EMET11	lido	161s
+2026-07-21 04:03:31	FTLZ11	sem-relatorio-fatos-lidos	23s
+2026-07-21 04:03:50	HOMS11	sem-relatorio-fatos-lidos	19s
+2026-07-21 04:05:47	DPRO11	lido	117s
+2026-07-21 04:07:16	MCFA11	lido	89s
+2026-07-21 04:09:01	APTO11	lido	105s
+2026-07-21 04:09:52	GCDL11	sem-relatorio-fatos-lidos	52s
+2026-07-21 04:09:52	HRES11	erro	The read operation timed out
+2026-07-21 04:09:56	MBBI11	sem-relatorio
+2026-07-21 04:11:35	RCRI11	lido	99s
+2026-07-21 04:12:06	DVLT11	sem-relatorio-fatos-lidos	31s
+2026-07-21 04:13:07	RTEL11	lido	61s
+2026-07-21 04:13:32	XPCE11	sem-relatorio-fatos-lidos	25s
+2026-07-21 04:13:49	VRCD11	sem-relatorio-fatos-lidos	17s
+2026-07-21 04:14:12	ORPD11	sem-relatorio-fatos-lidos	23s
+2026-07-21 04:16:09	DAMA11	lido	116s
+2026-07-21 04:17:22	KPRP11	lido	73s
+2026-07-21 04:18:00	NCRI11	sem-relatorio-fatos-lidos	38s
+2026-07-21 04:20:23	RRCI11	lido	143s
+2026-07-21 04:21:16	VTVI11	sem-relatorio-fatos-lidos	53s
+2026-07-21 04:21:16	DOVL11	erro	The read operation timed out
+2026-07-21 04:22:46	SPXL11	sem-relatorio-fatos-lidos	90s
+2026-07-21 04:23:30	VIMO11	sem-relatorio-fatos-lidos	43s
+2026-07-21 04:24:46	ASRF11	lido	76s
+2026-07-21 04:26:07	TCIN11	sem-relatorio-fatos-lidos	81s
+2026-07-21 04:26:07	CFII11	erro	The read operation timed out
+2026-07-21 04:27:25	ZAVC11	lido	78s
+2026-07-21 04:30:04	EIRA11	lido	160s
+2026-07-21 04:30:29	CEBB11	sem-relatorio-fatos-lidos	25s
+2026-07-21 04:31:41	MMPD11	sem-relatorio-fatos-lidos	71s
+2026-07-21 04:32:44	PNPR11	sem-relatorio-fatos-lidos	63s
+2026-07-21 04:33:56	TRCO11	lido	73s
+2026-07-21 04:34:40	VGII11	sem-relatorio-fatos-lidos	43s
+2026-07-21 04:34:40	VDSV11	erro	The read operation timed out
+2026-07-21 04:35:37	LSOP11	sem-relatorio-fatos-lidos	57s
+2026-07-21 04:36:30	MOFF11	sem-relatorio-fatos-lidos	53s
+2026-07-21 04:38:22	RELG11	lido	112s
+2026-07-21 04:40:14	RCFF11	lido	112s
+2026-07-21 04:41:57	PEMA11	lido	104s
+2026-07-21 04:44:48	TELM11	lido	170s
+2026-07-21 04:46:01	YEES11	lido	73s
+2026-07-21 04:48:32	PRSV11	lido	151s
+2026-07-21 04:49:13	ETPP11	sem-relatorio-fatos-lidos	41s
+2026-07-21 04:51:14	KGUJ11	lido	121s
+2026-07-21 04:51:51	BLSC11	sem-relatorio-fatos-lidos	37s
+2026-07-21 04:52:56	OLMP11	sem-relatorio-fatos-lidos	65s
+2026-07-21 04:54:41	LRDI11	lido	105s
+2026-07-21 04:55:33	TCPF11	sem-relatorio-fatos-lidos	52s
+2026-07-21 04:57:36	MGHT11	lido	123s
+2026-07-21 05:00:24	KNGR11	lido	167s
+2026-07-21 05:01:12	XBXO11	sem-relatorio-fatos-lidos	48s
+2026-07-21 05:01:12	VVDI11	erro	The read operation timed out
+2026-07-21 05:02:15	MCMV11	sem-relatorio-fatos-lidos	63s
+2026-07-21 05:02:46	GFDL11	sem-relatorio-fatos-lidos	31s
+2026-07-21 05:04:30	FMOF11	lido	104s
+2026-07-21 05:06:43	RMBS11	lido	133s
+2026-07-21 05:07:17	AVUR11	sem-relatorio-fatos-lidos	34s
+2026-07-21 05:08:10	NAUI11	sem-relatorio-fatos-lidos	53s
+2026-07-21 05:08:54	SCOO11	sem-relatorio-fatos-lidos	44s
+2026-07-21 05:10:16	CXTL11	lido	82s
+2026-07-21 05:11:28	ROOF11	lido	72s
+2026-07-21 05:12:26	PNLN11	lido	58s
+2026-07-21 05:12:47	SPXG11	sem-relatorio-fatos-lidos	21s
+2026-07-21 05:13:27	YUFI11	sem-relatorio-fatos-lidos	40s
+2026-07-21 05:15:34	LLAO11	sem-relatorio-fatos-lidos	127s
+2026-07-21 05:16:14	VTBL11	sem-relatorio-fatos-lidos	40s
+2026-07-21 05:16:14	VGRD11	sem-relatorio
+2026-07-21 05:18:10	LFTT11	sem-relatorio-fatos-lidos	116s
+2026-07-21 05:18:45	PATA11	sem-relatorio-fatos-lidos	35s
+2026-07-21 05:20:05	MGRI11	lido	80s
+2026-07-21 05:20:05	FIIT11	erro	The read operation timed out
+2026-07-21 05:21:11	SRVD11	sem-relatorio-fatos-lidos	66s
+2026-07-21 05:21:11	ICTU11	erro	The read operation timed out
+2026-07-21 05:21:35	LRED11	sem-relatorio-fatos-lidos	24s
+2026-07-21 05:22:02	TAGI11	sem-relatorio-fatos-lidos	28s
+2026-07-21 05:22:36	LTMT11	sem-relatorio-fatos-lidos	34s
+2026-07-21 05:24:00	RENV11	lido	84s
+2026-07-21 05:24:24	IMMV11	sem-relatorio-fatos-lidos	24s
+2026-07-21 05:27:53	RBTS11	lido	209s
+2026-07-21 05:28:34	SPXD11	sem-relatorio-fatos-lidos	41s
+2026-07-21 05:28:57	EDGE11	sem-relatorio-fatos-lidos	24s
+2026-07-21 05:30:26	PNDL11	lido	88s
+2026-07-21 05:31:24	PLRI11	sem-relatorio-fatos-lidos	58s
+2026-07-21 05:32:17	STRY11	sem-relatorio-fatos-lidos	53s
+2026-07-21 05:33:09	SPAF11	sem-relatorio-fatos-lidos	53s
+2026-07-21 05:34:51	HRDF11	lido	101s
+2026-07-21 05:36:03	KNRE11	lido	72s
+2026-07-21 05:37:18	SJAU11	sem-relatorio-fatos-lidos	75s
+2026-07-21 05:37:34	TELD11	sem-relatorio-fatos-lidos	17s
+2026-07-21 05:38:10	FSOF11	sem-relatorio-fatos-lidos	36s
+2026-07-21 05:39:46	URHF11	lido	96s
+2026-07-21 05:39:46	RCFA11	erro	The read operation timed out
+2026-07-21 05:39:47	DLMT11	sem-relatorio
+2026-07-21 05:40:56	VIOL11	sem-relatorio-fatos-lidos	69s
+2026-07-21 05:41:41	FIGV11	sem-relatorio-fatos-lidos	44s
+2026-07-21 05:42:51	SPXM11	sem-relatorio-fatos-lidos	70s
+2026-07-21 05:44:06	APXR11	lido	75s
+2026-07-21 05:44:06	PRSN11	erro	The read operation timed out
+2026-07-21 05:44:38	TREV11	sem-relatorio-fatos-lidos	32s
+2026-07-21 05:45:39	GCOI11	sem-relatorio-fatos-lidos	61s
+2026-07-21 05:45:39	REIT11	erro	The read operation timed out
+2026-07-21 05:46:59	APXU11	sem-relatorio-fatos-lidos	80s
+2026-07-21 05:46:59	FRAM11	erro	The read operation timed out
+2026-07-21 05:47:19	SALI11	sem-relatorio-fatos-lidos	20s
+2026-07-21 05:47:19	FVRE11	erro	The read operation timed out
+2026-07-21 05:48:36	VREF11	lido	76s
+2026-07-21 05:50:04	SNLG11	lido	89s
+2026-07-21 05:53:08	QTZD11	lido	183s
+2026-07-21 05:53:49	TRPL11	sem-relatorio-fatos-lidos	41s
+2026-07-21 05:56:00	PNRC11	lido	131s
+2026-07-21 05:56:00	HDEL11	erro	The read operation timed out
+2026-07-21 05:56:58	FRHY11	sem-relatorio-fatos-lidos	58s
+2026-07-21 05:57:59	HYPI11	sem-relatorio-fatos-lidos	61s
+2026-07-21 05:57:59	BPDR11	erro	The read operation timed out
+2026-07-21 05:57:59	GEOG11	erro	The read operation timed out
+2026-07-21 05:58:38	GSRF11	sem-relatorio-fatos-lidos	39s
+2026-07-21 05:58:38	PATL11	erro	The read operation timed out
+2026-07-21 05:59:29	PRZO11	sem-relatorio-fatos-lidos	51s
+2026-07-21 05:59:42	ESTQ11	sem-relatorio-fatos-lidos	13s
+2026-07-21 05:59:42	RFOF11	erro	The read operation timed out
+2026-07-21 06:00:25	FIIC11	sem-relatorio-fatos-lidos	43s
+2026-07-21 06:03:08	IBCR11	lido	162s
+2026-07-21 06:04:46	GBXR11	sem-relatorio-fatos-lidos	98s
+2026-07-21 06:05:16	AZSG11	sem-relatorio-fatos-lidos	30s
+2026-07-21 06:05:16	CXDS11	erro	HTTP Error 520: <none>
+2026-07-21 06:05:16	PABY11	erro	HTTP Error 520: <none>
+2026-07-21 06:05:54	YAGO11	sem-relatorio-fatos-lidos	39s
+2026-07-21 06:06:25	3PRE11	sem-relatorio-fatos-lidos	30s
+2026-07-21 06:06:42	5PRE11	sem-relatorio-fatos-lidos	18s
+2026-07-21 06:07:05	ABTC11	sem-relatorio-fatos-lidos	22s
+2026-07-21 06:07:47	ACWI11	sem-relatorio-fatos-lidos	42s
+2026-07-21 06:07:47	AGRI11	erro	The read operation timed out
+2026-07-21 06:08:33	ALUG11	sem-relatorio-fatos-lidos	46s
+2026-07-21 06:08:45	AREA11	sem-relatorio-fatos-lidos	12s
+2026-07-21 06:09:24	ARGE11	sem-relatorio-fatos-lidos	39s
+2026-07-21 06:09:24	AUPO11	sem-relatorio
+2026-07-21 06:09:47	AURO11	sem-relatorio-fatos-lidos	22s
+2026-07-21 06:10:27	AUVP11	sem-relatorio-fatos-lidos	40s
+2026-07-21 06:10:27	B3BR11	erro	The read operation timed out
+2026-07-21 06:10:44	B5MB11	sem-relatorio-fatos-lidos	17s
+2026-07-21 06:11:06	B5P211	sem-relatorio-fatos-lidos	22s
+2026-07-21 06:11:26	BBOI11	sem-relatorio-fatos-lidos	20s
+2026-07-21 06:11:45	BBOV11	sem-relatorio-fatos-lidos	19s
+2026-07-21 06:12:08	BBSD11	sem-relatorio-fatos-lidos	23s
+2026-07-21 06:12:25	BCIC11	sem-relatorio-fatos-lidos	17s
+2026-07-21 06:12:44	BDAP11	sem-relatorio-fatos-lidos	18s
+2026-07-21 06:13:01	BDEF11	sem-relatorio-fatos-lidos	17s
+2026-07-21 06:13:42	BDOM11	sem-relatorio-fatos-lidos	42s
+2026-07-21 06:14:33	BEST11	sem-relatorio-fatos-lidos	51s
+2026-07-21 06:15:15	BITC11	sem-relatorio-fatos-lidos	42s
+2026-07-21 06:15:28	BITH11	sem-relatorio-fatos-lidos	13s
+2026-07-21 06:15:45	BITI11	sem-relatorio-fatos-lidos	18s
+2026-07-21 06:16:22	BIZD11	sem-relatorio-fatos-lidos	37s
+2026-07-21 06:16:39	BLFT11	sem-relatorio-fatos-lidos	16s
+2026-07-21 06:16:56	BMMT11	sem-relatorio-fatos-lidos	17s
+2026-07-21 06:17:18	BNKS11	sem-relatorio-fatos-lidos	23s
+2026-07-21 06:17:34	BOL511	sem-relatorio-fatos-lidos	16s
+2026-07-21 06:17:34	BOVA11	erro	The read operation timed out
+2026-07-21 06:17:52	BOVB11	sem-relatorio-fatos-lidos	18s
+2026-07-21 06:17:54	BOVS11	sem-relatorio
+2026-07-21 06:18:17	BOVV11	sem-relatorio-fatos-lidos	23s
+2026-07-21 06:19:02	BOVX11	sem-relatorio-fatos-lidos	45s
+2026-07-21 06:19:18	BPRE11	sem-relatorio-fatos-lidos	16s
+2026-07-21 06:19:18	BRAX11	erro	The read operation timed out
+2026-07-21 06:19:18	BRAZ11	erro	The read operation timed out
+2026-07-21 06:19:36	BREW11	sem-relatorio-fatos-lidos	18s
+2026-07-21 06:19:58	BRXC11	sem-relatorio-fatos-lidos	22s
+2026-07-21 06:20:27	BTER11	sem-relatorio-fatos-lidos	28s
+2026-07-21 06:21:16	BULZ11	sem-relatorio-fatos-lidos	49s
+2026-07-21 06:21:47	BVBR11	sem-relatorio-fatos-lidos	31s
+2026-07-21 06:22:22	BXPO11	sem-relatorio-fatos-lidos	35s
+2026-07-21 06:23:03	CAPE11	sem-relatorio-fatos-lidos	41s
+2026-07-21 06:23:04	CASA11	sem-relatorio
+2026-07-21 06:23:44	CDIB11	sem-relatorio-fatos-lidos	40s
+2026-07-21 06:24:20	CHIP11	sem-relatorio-fatos-lidos	36s
+2026-07-21 06:24:44	CMDB11	sem-relatorio-fatos-lidos	24s
+2026-07-21 06:24:45	COIN11	sem-relatorio
+2026-07-21 06:25:03	CORN11	sem-relatorio-fatos-lidos	18s
+2026-07-21 06:25:04	CRPT11	sem-relatorio
+2026-07-21 06:25:32	DEBB11	sem-relatorio-fatos-lidos	28s
+2026-07-21 06:25:32	DEFI11	erro	The read operation timed out
+2026-07-21 06:25:32	DIVD11	erro	The read operation timed out
+2026-07-21 06:25:32	DIVO11	erro	The read operation timed out
+2026-07-21 06:25:51	DOLA11	sem-relatorio-fatos-lidos	19s
+2026-07-21 06:26:32	DOLB11	sem-relatorio-fatos-lidos	41s
+2026-07-21 06:27:19	DOLX11	sem-relatorio-fatos-lidos	47s
+2026-07-21 06:27:19	DVER11	erro	The read operation timed out
+2026-07-21 06:27:58	EBIT11	sem-relatorio-fatos-lidos	38s
+2026-07-21 06:28:35	ECOO11	sem-relatorio-fatos-lidos	37s
+2026-07-21 06:29:05	EETH11	sem-relatorio-fatos-lidos	29s
+2026-07-21 06:29:06	ELAS11	sem-relatorio
+2026-07-21 06:29:06	ESGB11	erro	The read operation timed out
+2026-07-21 06:29:06	ETHE11	erro	HTTP Error 520: <none>
+2026-07-21 06:29:06	ETHY11	erro	The read operation timed out
+2026-07-21 06:29:06	EWBZ11	erro	The read operation timed out
+2026-07-21 06:29:23	FIND11	sem-relatorio-fatos-lidos	17s
+2026-07-21 06:29:43	FIXA11	sem-relatorio-fatos-lidos	20s
+2026-07-21 06:29:43	FIXX11	erro	The read operation timed out
+2026-07-21 06:30:19	FOMO11	sem-relatorio-fatos-lidos	36s
+2026-07-21 06:30:41	GBIT11	sem-relatorio-fatos-lidos	22s
+2026-07-21 06:30:42	GBTC11	sem-relatorio
+2026-07-21 06:31:03	GDIV11	sem-relatorio-fatos-lidos	21s
+2026-07-21 06:31:41	GENB11	sem-relatorio-fatos-lidos	38s
+2026-07-21 06:32:26	GICP11	sem-relatorio-fatos-lidos	45s
+2026-07-21 06:32:51	GLDI11	sem-relatorio-fatos-lidos	25s
+2026-07-21 06:33:29	GLDX11	sem-relatorio-fatos-lidos	38s
+2026-07-21 06:33:41	GLFT11	sem-relatorio-fatos-lidos	12s
+2026-07-21 06:34:23	GOLB11	sem-relatorio-fatos-lidos	42s
+2026-07-21 06:35:02	GOLD11	sem-relatorio-fatos-lidos	40s
+2026-07-21 06:35:47	GOLX11	sem-relatorio-fatos-lidos	44s
+2026-07-21 06:36:07	GOVE11	sem-relatorio-fatos-lidos	20s
+2026-07-21 06:36:07	GPCA11	erro	The read operation timed out
+2026-07-21 06:36:07	GPUS11	erro	The read operation timed out
+2026-07-21 06:36:49	GXUS11	sem-relatorio-fatos-lidos	42s
+2026-07-21 06:36:59	HASH11	sem-relatorio-fatos-lidos	11s
+2026-07-21 06:37:30	HGBR11	sem-relatorio-fatos-lidos	30s
+2026-07-21 06:38:05	HIGH11	sem-relatorio-fatos-lidos	36s
+2026-07-21 06:38:05	HODL11	sem-relatorio
+2026-07-21 06:38:30	HTEK11	sem-relatorio-fatos-lidos	25s
+2026-07-21 06:38:54	HYBR11	sem-relatorio-fatos-lidos	23s
+2026-07-21 06:39:13	IB5M11	sem-relatorio-fatos-lidos	20s
+2026-07-21 06:39:41	IBOB11	sem-relatorio-fatos-lidos	27s
+2026-07-21 06:40:02	IDKA11	sem-relatorio-fatos-lidos	21s
+2026-07-21 06:40:21	IMAB11	sem-relatorio-fatos-lidos	18s
+2026-07-21 06:40:38	IMBB11	sem-relatorio-fatos-lidos	18s
+2026-07-21 06:41:02	IRFM11	sem-relatorio-fatos-lidos	24s
+2026-07-21 06:41:22	ISUS11	sem-relatorio-fatos-lidos	20s
+2026-07-21 06:42:01	IVVB11	sem-relatorio-fatos-lidos	38s
+2026-07-21 06:42:15	IVWO11	sem-relatorio-fatos-lidos	15s
+2026-07-21 06:42:16	IWMI11	sem-relatorio
+2026-07-21 06:42:54	JOGO11	sem-relatorio-fatos-lidos	38s
+2026-07-21 06:43:35	LFIN11	sem-relatorio-fatos-lidos	41s
+2026-07-21 06:44:20	LFIX11	sem-relatorio-fatos-lidos	45s
+2026-07-21 06:44:56	LFTB11	sem-relatorio-fatos-lidos	36s
+2026-07-21 06:45:22	LFTI11	sem-relatorio-fatos-lidos	26s
+2026-07-21 06:45:57	LFTS11	sem-relatorio-fatos-lidos	35s
+2026-07-21 06:46:32	LFTX11	sem-relatorio-fatos-lidos	34s
+2026-07-21 06:46:59	LIQB11	sem-relatorio-fatos-lidos	27s
+2026-07-21 06:47:29	LLFT11	sem-relatorio-fatos-lidos	30s
+2026-07-21 06:48:10	LTBX11	sem-relatorio-fatos-lidos	41s
+2026-07-21 06:48:50	LTNB11	sem-relatorio-fatos-lidos	39s
+2026-07-21 06:49:28	LVOL11	sem-relatorio-fatos-lidos	38s
+2026-07-21 06:50:05	MARG11	sem-relatorio-fatos-lidos	37s
+2026-07-21 06:50:20	MATB11	sem-relatorio-fatos-lidos	16s
+2026-07-21 06:50:49	META11	sem-relatorio-fatos-lidos	29s
+2026-07-21 06:50:49	MIDB11	sem-relatorio
+2026-07-21 06:51:10	MILL11	sem-relatorio-fatos-lidos	21s
+2026-07-21 06:51:51	NASD11	sem-relatorio-fatos-lidos	41s
+2026-07-21 06:52:05	NB0211	sem-relatorio-fatos-lidos	13s
+2026-07-21 06:52:16	NB0511	sem-relatorio-fatos-lidos	11s
+2026-07-21 06:52:56	NBIT11	sem-relatorio-fatos-lidos	41s
+2026-07-21 06:53:30	NBOV11	sem-relatorio-fatos-lidos	34s
+2026-07-21 06:54:15	NCDI11	sem-relatorio-fatos-lidos	45s
+2026-07-21 06:54:53	NDIV11	sem-relatorio-fatos-lidos	38s
+2026-07-21 06:55:33	NLFA11	sem-relatorio-fatos-lidos	40s
+2026-07-21 06:56:11	NSDV11	sem-relatorio-fatos-lidos	39s
+2026-07-21 06:56:39	NTNF11	sem-relatorio-fatos-lidos	28s
+2026-07-21 06:57:16	NTNS11	sem-relatorio-fatos-lidos	36s
+2026-07-21 06:57:52	NUCL11	sem-relatorio-fatos-lidos	36s
+2026-07-21 06:57:52	OLEO11	sem-relatorio
+2026-07-21 06:58:19	OROF11	sem-relatorio-fatos-lidos	27s
+2026-07-21 06:58:31	OURO11	sem-relatorio-fatos-lidos	12s
+2026-07-21 06:59:13	PACB11	sem-relatorio-fatos-lidos	42s
+2026-07-21 06:59:45	PACC11	sem-relatorio-fatos-lidos	31s
+2026-07-21 07:00:23	PACG11	sem-relatorio-fatos-lidos	38s
+2026-07-21 07:00:54	PACL11	sem-relatorio-fatos-lidos	32s
+2026-07-21 07:01:37	PEVC11	sem-relatorio-fatos-lidos	43s
+2026-07-21 07:02:08	PFJR11	sem-relatorio-fatos-lidos	30s
+2026-07-21 07:02:40	PHIP11	sem-relatorio-fatos-lidos	33s
+2026-07-21 07:03:02	PIBB11	sem-relatorio-fatos-lidos	21s
+2026-07-21 07:03:17	PIPE11	sem-relatorio-fatos-lidos	16s
+2026-07-21 07:03:34	PKIN11	sem-relatorio-fatos-lidos	17s
+2026-07-21 07:03:34	POSB11	sem-relatorio
+2026-07-21 07:04:08	PRAF11	sem-relatorio-fatos-lidos	33s
+2026-07-21 07:04:20	PREX11	sem-relatorio-fatos-lidos	12s
+2026-07-21 07:04:20	QBTC11	sem-relatorio
+2026-07-21 07:04:20	QDFI11	sem-relatorio
+2026-07-21 07:04:20	QETH11	sem-relatorio
+2026-07-21 07:04:58	QLBR11	sem-relatorio-fatos-lidos	38s
+2026-07-21 07:04:58	QQQI11	sem-relatorio
+2026-07-21 07:04:58	QQQQ11	sem-relatorio
+2026-07-21 07:04:58	QSOL11	sem-relatorio
+2026-07-21 07:05:32	RARA11	sem-relatorio-fatos-lidos	33s
+2026-07-21 07:06:00	REVE11	sem-relatorio-fatos-lidos	29s
+2026-07-21 07:06:01	RICO11	sem-relatorio
+2026-07-21 07:06:47	SCVB11	sem-relatorio-fatos-lidos	45s
+2026-07-21 07:07:28	SFIX11	sem-relatorio-fatos-lidos	41s
+2026-07-21 07:07:46	SILK11	sem-relatorio-fatos-lidos	19s
+2026-07-21 07:07:46	SLVR11	erro	The read operation timed out
+2026-07-21 07:08:24	SMAB11	sem-relatorio-fatos-lidos	38s
+2026-07-21 07:08:47	SMAC11	sem-relatorio-fatos-lidos	22s
+2026-07-21 07:09:26	SMAL11	sem-relatorio-fatos-lidos	39s
+2026-07-21 07:09:41	SOLH11	sem-relatorio-fatos-lidos	14s
+2026-07-21 07:10:21	SPBZ11	sem-relatorio-fatos-lidos	41s
+2026-07-21 07:10:22	SPUB11	sem-relatorio
+2026-07-21 07:10:24	SPVT11	sem-relatorio
+2026-07-21 07:11:01	SPXB11	sem-relatorio-fatos-lidos	37s
+2026-07-21 07:11:45	SPXH11	sem-relatorio-fatos-lidos	44s
+2026-07-21 07:12:17	SPXI11	sem-relatorio-fatos-lidos	32s
+2026-07-21 07:12:37	SPXR11	sem-relatorio-fatos-lidos	20s
+2026-07-21 07:13:23	SPXU11	sem-relatorio-fatos-lidos	47s
+2026-07-21 07:13:24	SPYI11	sem-relatorio
+2026-07-21 07:13:39	SPYR11	sem-relatorio-fatos-lidos	15s
+2026-07-21 07:14:17	SVAL11	sem-relatorio-fatos-lidos	38s
+2026-07-21 07:14:38	T10R0	sem-relatorio-fatos-lidos	21s
+2026-07-21 07:14:58	TECK11	sem-relatorio-fatos-lidos	21s
+2026-07-21 07:15:14	TECX11	sem-relatorio-fatos-lidos	15s
+2026-07-21 07:15:52	TIRB11	sem-relatorio-fatos-lidos	38s
+2026-07-21 07:16:11	TOPY11	sem-relatorio-fatos-lidos	19s
+2026-07-21 07:16:49	TRIG11	sem-relatorio-fatos-lidos	38s
+2026-07-21 07:17:26	USTK11	sem-relatorio-fatos-lidos	37s
+2026-07-21 07:18:04	UTEC11	sem-relatorio-fatos-lidos	38s
+2026-07-21 07:18:53	UTLL11	sem-relatorio-fatos-lidos	49s
+2026-07-21 07:19:42	VWRA11	sem-relatorio-fatos-lidos	49s
+2026-07-21 07:20:08	WEB311	sem-relatorio-fatos-lidos	26s
+2026-07-21 07:20:39	WEJR11	sem-relatorio-fatos-lidos	31s
+2026-07-21 07:21:14	WRLD11	sem-relatorio-fatos-lidos	35s
+2026-07-21 07:21:48	XB3011	sem-relatorio-fatos-lidos	35s
+2026-07-21 07:22:25	XB3511	sem-relatorio-fatos-lidos	37s
+2026-07-21 07:23:04	XB4511	sem-relatorio-fatos-lidos	39s
+2026-07-21 07:23:39	XB5011	sem-relatorio-fatos-lidos	35s
+2026-07-21 07:24:17	XB6011	sem-relatorio-fatos-lidos	38s
+2026-07-21 07:24:46	XBCI11	sem-relatorio-fatos-lidos	29s
+2026-07-21 07:25:24	XBIT11	sem-relatorio-fatos-lidos	38s
+2026-07-21 07:25:45	XBOV11	sem-relatorio-fatos-lidos	22s
+2026-07-21 07:25:45	XETH11	erro	The read operation timed out
+2026-07-21 07:25:45	XIFR11	sem-relatorio
+2026-07-21 07:26:32	XINA11	sem-relatorio-fatos-lidos	47s
+2026-07-21 07:26:56	XRPH11	sem-relatorio-fatos-lidos	24s
+2026-07-21 07:27:15	XSPI11	sem-relatorio-fatos-lidos	18s
+2026-07-21 07:27:15	--- lote encerrado · 568 lidos, 129 em dia/sem relatório, 54 erros
+2026-07-21 11:10:05	--- lote iniciado · modelo qwen2.5:7b · 751 fundos na fila
+2026-07-21 11:12:31	TRXF11	lido	126s
+2026-07-21 11:14:31	MXRF11	lido	119s
+2026-07-21 11:14:31	KNHY11	erro	The read operation timed out
+2026-07-21 11:15:37	BRCO11	lido	67s
+2026-07-21 11:15:38	ISSH11	erro	Stream has ended unexpectedly
+2026-07-21 11:16:51	BROF11	lido	73s
+2026-07-21 11:16:51	PQAG11	erro	The read operation timed out
+2026-07-21 11:16:52	RZAK11	erro	PDF sem texto extraível
+2026-07-21 11:16:52	RZDS11	erro	PDF sem texto extraível
+2026-07-21 11:16:52	PQDP11	erro	The read operation timed out
+2026-07-21 11:16:52	HPDP11	erro	The read operation timed out
+2026-07-21 11:16:52	CPUR11	erro	The read operation timed out
+2026-07-21 11:16:52	SHPP11	erro	The read operation timed out
+2026-07-21 11:16:52	CACR11	erro	The read operation timed out
+2026-07-21 11:16:52	VRTM11	erro	The read operation timed out
+2026-07-21 11:16:52	JASC11	erro	The read operation timed out
+2026-07-21 11:16:52	RDLS11	erro	The read operation timed out
+2026-07-21 11:16:52	EZTB11	erro	The read operation timed out
+2026-07-21 11:16:52	KISU11	erro	The read operation timed out
+2026-07-21 11:16:52	NEWL11	erro	The read operation timed out
+2026-07-21 11:16:52	SHPG11	erro	The read operation timed out
+2026-07-21 11:18:20	NMKS11	sem-relatorio-fatos-lidos	88s
+2026-07-21 11:19:35	BBFO11	lido	74s
+2026-07-21 11:20:02	LGVT11	sem-relatorio-fatos-lidos	27s
+2026-07-21 11:22:06	CARE11	lido	124s
+2026-07-21 11:23:13	XPGC11	sem-relatorio-fatos-lidos	67s
+2026-07-21 11:24:43	FIGS11	lido	90s
+2026-07-21 11:24:44	RZLC11	erro	PDF sem texto extraível
+2026-07-21 11:25:42	XTED11	lido	58s
+2026-07-21 11:25:42	RZZI11	erro	Stream has ended unexpectedly
+2026-07-21 11:25:42	BICE11	erro	The read operation timed out
+2026-07-21 11:25:42	BRIP11	erro	The read operation timed out
+2026-07-21 11:25:42	AURB11	erro	The read operation timed out
+2026-07-21 11:25:42	ARXD11	erro	The read operation timed out
+2026-07-21 11:27:38	RECM11	lido	116s
+2026-07-21 11:27:38	CXSP11	erro	The read operation timed out
+2026-07-21 11:27:38	NEWU11	erro	The read operation timed out
+2026-07-21 11:27:38	TWNI11	erro	The read operation timed out
+2026-07-21 11:28:41	HRES11	sem-relatorio-fatos-lidos	63s
+2026-07-21 11:29:44	DOVL11	sem-relatorio-fatos-lidos	62s
+2026-07-21 11:30:41	CFII11	sem-relatorio-fatos-lidos	58s
+2026-07-21 11:31:20	VDSV11	sem-relatorio-fatos-lidos	38s
+2026-07-21 11:31:20	TCPF11	erro	The read operation timed out
+2026-07-21 11:31:20	VVDI11	sem-relatorio
+2026-07-21 11:31:20	MCMV11	erro	The read operation timed out
+2026-07-21 11:31:20	NAUI11	erro	The read operation timed out
+2026-07-21 11:31:20	SCOO11	erro	The read operation timed out
+2026-07-21 11:31:20	LLAO11	erro	The read operation timed out
+2026-07-21 11:31:20	VTBL11	erro	The read operation timed out
+2026-07-21 11:31:58	FIIT11	sem-relatorio-fatos-lidos	39s
+2026-07-21 11:32:39	ICTU11	sem-relatorio-fatos-lidos	41s
+2026-07-21 11:33:51	RCFA11	sem-relatorio-fatos-lidos	72s
+2026-07-21 11:35:13	PRSN11	sem-relatorio-fatos-lidos	82s
+2026-07-21 11:36:06	REIT11	sem-relatorio-fatos-lidos	53s
+2026-07-21 11:36:52	FRAM11	sem-relatorio-fatos-lidos	46s
+2026-07-21 11:38:12	FVRE11	lido	80s
+2026-07-21 11:38:12	HDEL11	erro	The read operation timed out
+2026-07-21 11:38:33	BPDR11	sem-relatorio-fatos-lidos	21s
+2026-07-21 11:38:34	GEOG11	sem-relatorio
+2026-07-21 11:40:59	PATL11	lido	145s
+2026-07-21 11:44:04	RFOF11	lido	185s
+2026-07-21 11:44:24	CXDS11	sem-relatorio-fatos-lidos	21s
+2026-07-21 11:45:02	PABY11	sem-relatorio-fatos-lidos	38s
+2026-07-21 11:45:20	AGRI11	sem-relatorio-fatos-lidos	18s
+2026-07-21 11:45:20	AREA11	erro	The read operation timed out
+2026-07-21 11:45:44	B3BR11	sem-relatorio-fatos-lidos	24s
+2026-07-21 11:45:44	B5P211	erro	The read operation timed out
+2026-07-21 11:45:44	BDAP11	erro	The read operation timed out
+2026-07-21 11:45:44	BNKS11	erro	The read operation timed out
+2026-07-21 11:46:28	BOVA11	sem-relatorio-fatos-lidos	44s
+2026-07-21 11:47:02	BRAX11	sem-relatorio-fatos-lidos	34s
+2026-07-21 11:47:27	BRAZ11	sem-relatorio-fatos-lidos	25s
+2026-07-21 11:47:52	DEFI11	sem-relatorio-fatos-lidos	25s
+2026-07-21 11:48:13	DIVD11	sem-relatorio-fatos-lidos	21s
+2026-07-21 11:48:37	DIVO11	sem-relatorio-fatos-lidos	24s
+2026-07-21 11:48:55	DVER11	sem-relatorio-fatos-lidos	18s
+2026-07-21 11:49:09	ESGB11	sem-relatorio-fatos-lidos	14s
+2026-07-21 11:49:09	ETHE11	erro	The read operation timed out
+2026-07-21 11:49:27	ETHY11	sem-relatorio-fatos-lidos	17s
+2026-07-21 11:49:59	EWBZ11	sem-relatorio-fatos-lidos	32s
+2026-07-21 11:49:59	FIXX11	sem-relatorio
+2026-07-21 11:49:59	GPCA11	sem-relatorio
+2026-07-21 11:50:36	GPUS11	sem-relatorio-fatos-lidos	36s
+2026-07-21 11:50:36	LFTI11	erro	The read operation timed out
+2026-07-21 11:50:36	LFTS11	erro	The read operation timed out
+2026-07-21 11:50:36	MATB11	erro	The read operation timed out
+2026-07-21 11:51:04	PFJR11	sem-relatorio-fatos-lidos	29s
+2026-07-21 11:51:26	SLVR11	sem-relatorio-fatos-lidos	22s
+2026-07-21 11:52:02	XETH11	sem-relatorio-fatos-lidos	36s
+2026-07-21 11:52:02	--- lote encerrado · 44 lidos, 666 em dia/sem relatório, 41 erros

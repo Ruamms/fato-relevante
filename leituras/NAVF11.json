@@ -1,0 +1,49 @@
+{
+  "ticker": "NAVF11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T03:43:07",
+  "relatorio": {
+    "id": 1259803,
+    "data_entrega": "20/07/2026 11:48",
+    "texto": "### Fatos Extraídos:\n\n1. **Distribuição de Renda:** O fundo distribuiu R$1,10/cota no mês de abril. (p. 6)\n2. **Composição da Carteira:** A carteira está composta principalmente por FIIs de CRI e fundos de lajes corporativas, com um dividend yield anualizado de 11,8%. (p. 6)\n3. **Resultado Financeiro:** O resultado financeiro líquido do mês foi R$5,6M, enquanto os rendimentos declarados foram de R$9,3M, resultando em uma diferença de R$3,7M. (p. 7)\n4. **Patrimônio Líquido:** O patrimônio líquido do fundo é de R$55,095,598. (p. 2)\n5. **Taxa de Administração e Gestão:** A taxa de administração e gestão é de 1% a.a., com uma taxa de performance de 20% sobre IPCA + Yield [IMA-B 5]. (p. 2)\n\n### O que observar em seguida:\n- Monitorar o desempenho da carteira, especialmente as posições em FIIs de CRI e fundos de lajes corporativas.\n- Observar a distribuição de rendimentos e como ela se alinha com os resultados financeiros do fundo."
+  },
+  "comunicados": {
+    "ids": [
+      1125071,
+      1116780,
+      1072446,
+      1045023
+    ],
+    "datas": [
+      "28/02/2026",
+      "13/02/2026",
+      "29/12/2025",
+      "21/11/2025"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### O que aconteceu em 29/12/2025\n\n**Título:** Aprovação das contas e demonstrações contábeis do Fundo.\n\n**Resumo:** A assembleia geral ordinária aprovou as contas e demonstrações contábeis do fundo referentes ao exercício social findo em 30 de junho de 2025, com quórum suficiente.\n\n**Trecho-chave:**\n\"Matéria I - Aprovar as contas e demonstrações contábeis do Fundo, devidamente auditadas, relativas ao exercício social findo em 30 de junho de 2025. Resultado: Aprovada com 64,988% dos votos.\"\n\n---\n\n### O que aconteceu em 21/11/2025\n\n**Título:** Convocação para a assembleia geral ordinária do fundo.\n\n**Resumo:** A administradora convocou os cotistas para uma assembleia geral ordinária por meio de consulta formal, com o objetivo de aprovar as contas e demonstrações contábeis do exercício social findo em 30 de junho de 2025.\n\n**Trecho-chave:**\n\"1. Aprovação das contas e demonstrações contábeis do Fundo, devidamente auditadas, relativas ao exercício social findo em 30 de junho de 2025.\"\n\n---\n\n### O que aconteceu em 13/02/2026\n\n**Título:** Informes de rendimentos referentes a 2025 serão disponibilizados digitalmente.\n\n**Resumo:** A administradora informou que os informes de rendimentos dos fundos referentes ao ano de 2025 serão disponibilizados exclusivamente por meio digital, através do Portal do Investidor.\n\n**Trecho-chave:**\n\"Em complemento ao Comunicado ao Mercado de 02 de fevereiro de 2026 , a Administradora reitera que, com o intuito de reduzir os custos de impressão e correios para os Fundos, bem como minimizar o uso de papel e seus impactos para o meio ambiente, os Informes de Rendimentos (“Informes”) referentes ao ano de 2025 serão disponibilizados aos investidores até o dia 27 de fevereiro de 2026, conforme previsto na Instrução Normativa RFB nº 2.060/2021, exclusivamente por meio digital , por meio do Portal do Investidor (“Portal”).\"\n\n---\n\n### O que aconteceu em 28/02/2026\n\n**Título:** Informes de rendimentos e material complementar para investidores.\n\n**Resumo:** A administradora informou que os informes de rendimentos referentes ao ano de 2025 já estão disponíveis exclusivamente por meio digital, através do Portal do Investidor. Além disso, foi elaborado um material complementar com eventos ocorridos nos fundos e dúvidas frequentes dos cotistas.\n\n**Trecho-chave:**\n\"Em complemento ao Comunicado ao Mercado de 2 de fevereiro de 2026 e ao Comunicado ao Mercado de 13 de fevereiro de 2026, a Administradora informa que, com o intuito de reduzir os custos de impressão e correios para os Fundos, bem como minimizar o uso de papel e seus impactos para o meio ambiente, os Informes de Rendimentos (“Informes”) referentes ao ano de 2025, já estão disponíveis aos investidores, conforme previsto na Instrução Normativa RFB nº 2.060/2021, exclusivamente por meio digital, por meio do Portal do Investidor.\"\n\n---\n\n**Conexão com o contexto:**\n- A aprovação das contas e demonstrações contábeis (29/12/2025) está relacionada aos indicadores financeiros do fundo, como patrimônio líquido e valor do ativo."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 1000816,
+    "data_entrega": "29/09/2025 16:02",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Navi Imobiliário Total Return Fundo de Investimento Imobiliário Responsabilidade Limitada em 30 de junho de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábe"
+  }
+}

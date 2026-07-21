@@ -1,0 +1,21 @@
+{
+  "ticker": "PFJR11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T11:51:04",
+  "comunicados": {
+    "ids": [
+      1260690,
+      1218862
+    ],
+    "datas": [
+      "20/07/2026",
+      "12/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 20/07/2026\n\n**O QUE aconteceu:** Início de negociação das cotas da Classe Única do BTG PACTUAL REFERENCE MSCI BRAZIL 25/50 FUNDO DE ÍNDICE.\n\n**Resumo:** O fundo iniciará a negociação das suas cotas no mercado secundário em 28 de julho de 2026, com o código de negociação \"BZEQ11\", nome de pregão BTGPEZEQB11 e código ISIN BRBZEQCTF001.\n\n**Trecho-chave:** \"Em 28 de julho de 2026, será iniciado o período de negociação das cotas subscritas e integralizadas da Classe, no mercado secundário, (i) sob o código de negociação “ BZEQ11”, (ii) nome de pregão BTGPEZEQB11 e (iii) código ISIN BRBZEQCTF001, considerando-se o preço de emissão de R$ 100,00 (cem reais) por cota da Classe (“Cota”)\". (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 12/06/2026\n\n**O QUE aconteceu:** Início de negociação das cotas da Classe Única do BTG PACTUAL PF TEVA ITBR TESOURO IPCA FUNDO DE ÍNDICE.\n\n**Resumo:** O fundo iniciará a negociação das suas cotas no mercado secundário em 15 de junho de 2026, com o código de negociação \"PFJR11\", nome de pregão BTGP PFJR e código ISIN BRPFJRCTF000.\n\n**Trecho-chave:** \"Em 15 de junho de 2026, será iniciado o período negociação da Classe, no mercado secundário, sob o código de negociação ““PFJR11”, nome de pregão BTGP PFJR; e código ISIN BRPFJRCTF000, pelo valor inicial de R$ 100,00 (cem reais)\". (p. 1)"
+  },
+  "modelo": "qwen2.5:7b"
+}

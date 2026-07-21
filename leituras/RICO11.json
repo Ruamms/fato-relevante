@@ -1,0 +1,20 @@
+{
+  "ticker": "RICO11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T07:06:00",
+  "comunicados": {
+    "ids": [],
+    "datas": [],
+    "rotulos": [],
+    "texto": null
+  },
+  "parecer": {
+    "id": 1236189,
+    "data_entrega": "30/06/2026 19:30",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Buena Vista Bloomberg Us Billionaires Investment Select Index Fundo de Índice - Resp Limitada em 31 de março de 2026 e o desempenho de suas operações para o período de 02 de julho de 2025 (início das atividades) a 31 de março de 2026 , de a"
+  }
+}

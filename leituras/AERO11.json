@@ -1,0 +1,39 @@
+{
+  "ticker": "AERO11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T03:31:19",
+  "comunicados": {
+    "ids": [
+      916844,
+      847657,
+      1185429,
+      1185424,
+      1173613
+    ],
+    "datas": [
+      "03/06/2025",
+      "25/02/2025",
+      "11/05/2026",
+      "11/05/2026",
+      "29/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 03/06/2025\n\n**O QUE aconteceu:** A Classe Única adquiriu o controle da AIR HUB’s FOR FASE 1 SPE S.A. e iniciou a Operação autorizada pelo Ministério de Portos e Aeroportos.\n\n**Resumo:** O fundo comprou um controle em uma empresa que detém direitos de cessão de uso de um empreendimento logístico no Aeroporto Internacional de Fortaleza, Pinto Martins.\n\n**Trecho-chave:**\n\"Conforme previsto no item 1.1. do regulamento do Fundo (“Regulamento”), a HCO GROUP S.A., sociedade anônima, com sede na cidade de São Paulo, estado de São Paulo, na Rua Pedroso Alvarenga, nº 1.046, 11º Andar, Conjunto 111 e 112, Itaim Bibi, inscrita no CNPJ sob o nº 54.173.528/0001-91 (“HCO”), nos termos do Ato Declaratório nº 22.826, expedido em 12 de dezembro de 2024, foi autorizada pela CVM para o exercício da atividade de administração de carteira de valores mobiliários, passando a exercer, a partir desta data, as atividades de gestão da carteira do Fundo e da Classe, conforme “Instrumento Particular de Alteração do Regulamento do HCO Opps Aero I Fundo de Investimento Imobiliário de Responsabilidade Limitada”, celebrado na presente data.\"\n\n---\n\n### FATO RELEVANTE entregue em 25/02/2025\n\n**O QUE aconteceu:** A HCO foi autorizada pela CVM para exercer a gestão do fundo.\n\n**Resumo:** A HCO passou a administrar o fundo, substituindo a anterior administração.\n\n**Trecho-chave:**\n\"Conforme previsto no item 1.1. do regulamento do Fundo (“Regulamento”), a HCO GROUP S.A., sociedade anônima, com sede na cidade de São Paulo, estado de São Paulo, na Rua Pedroso Alvarenga, nº 1.046, 11º Andar, Conjunto 111 e 112, Itaim Bibi, inscrita no CNPJ sob o nº 54.173.528/0001-91 (“HCO”), nos termos do Ato Declaratório nº 22.826, expedido em 12 de dezembro de 2024, foi autorizada pela CVM para o exercício da atividade de administração de carteira de valores mobiliários, passando a exercer, a partir desta data, as atividades de gestão da carteira do Fundo e da Classe, conforme “Instrumento Particular de Alteração do Regulamento do HCO Opps Aero I Fundo de Investimento Imobiliário de Responsabilidade Limitada”, celebrado na presente data.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 11/05/2026\n\n**O QUE aconteceu:** As contas anuais do fundo referentes ao exercício encerrado em 31 de dezembro de 2025 foram aprovadas na assembleia geral.\n\n**Resumo:** A assembleia geral dos cotistas aprovou as contas anuais do fundo para o ano de 2025.\n\n**Trecho-chave:**\n\"Realizada via manifestação de voto enviada pelos Cotistas em 04 de maio de 2026. As deliberações foram publicadas na ata da assembleia.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 11/05/2026\n\n**O QUE aconteceu:** A assembleia geral aprovou as contas anuais do fundo referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** Os cotistas aprovaram as contas e demonstrações contábeis do fundo para o ano de 2025.\n\n**Trecho-chave:**\n\"4.1. Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 29/04/2026\n\n**O QUE aconteceu:** Uma assembleia geral foi convocada para aprovar as contas anuais do fundo referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia geral será realizada via manifestação de voto até o dia 4 de maio de 2026, com a finalidade de aprovar as contas anuais do fundo para o ano de 2025.\n\n**Trecho-chave:**\n\"i) A aprovação das contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de dezembro de 2025.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1142123,
+    "data_entrega": "23/03/2026 11:34",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, e o desempenho de suas operações e os seus fluxos de caixa para o período de 8 de maio de 2025 (data de início das atividades) a 31 de dezembro de 2025, de acordo com as práticas contábeis adotadas no Brasil"
+  }
+}

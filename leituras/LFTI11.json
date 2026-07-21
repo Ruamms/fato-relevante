@@ -1,0 +1,30 @@
+{
+  "ticker": "LFTI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:45:21",
+  "comunicados": {
+    "ids": [
+      1228523,
+      1221530
+    ],
+    "datas": [
+      "25/06/2026",
+      "15/06/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA AGO entregue em 25/06/2026\n\n**O que aconteceu:** Rerratificação e alteração da data de manifestação para a consulta formal eletrônica.\n\n**Resumo:** O Itaú Unibanco S.A. retificou o Edital de Convocação da Assembleia Geral de Cotistas, corrigindo a ordem do dia e alterando a data de manifestação à consulta fórmula eletrônica para 07 de julho de 2026.\n\n**Trecho-chave:** \"Nesse sentido, submete à consulta formal eletrônica de cotistas a seguinte matéria: (i) Deliberar sobre as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes referentes ao Fundo, relativos ao exercício social encerrado em 31 de março de 2026.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 15/06/2026\n\n**O que aconteceu:** Convocação para a Assembleia Geral de Cotistas.\n\n**Resumo:** O Itaú Unibanco S.A. convocou os cotistas para deliberar sobre as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes referentes ao exercício social encerrado em 28/02/2026.\n\n**Trecho-chave:** \"O Itaú Unibanco S.A., Praça Alfredo Egydio de Souza Aranha, nº 100, Torre Olavo Setubal, São Paulo – SP, CNPJ nº 60.701.190/0001-04, ato declaratório CVM nº 990 de 06/07/1989., na qualidade de Administradora do IT NOW TEVA TESOURO SELIC FUNDO DE ÍNDICE RESPONSABILIDADE LIMITADA, inscrito no CNPJ sob o nº 63.702.230/0001-12, vem submeter à consulta formal eletrônica de quotistas a seguinte matéria: (i) Deliberar sobre as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes, relativos ao exercício social encerrado em 28/02/2026.\"\n\n**Conexão com o contexto:** Este edital de convocação se refere a uma assembleia que discute as demonstrações financeiras do exercício anterior, que é um indicador relevante para os investidores."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1209686,
+    "data_entrega": "01/06/2026 17:20",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de março de 2026, e o desempenho de suas operações para o período de 22 de dezembro de 2025 (início das atividades) a 31 de março de 2026, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de índice."
+  }
+}

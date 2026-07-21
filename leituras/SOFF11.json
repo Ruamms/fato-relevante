@@ -1,0 +1,47 @@
+{
+  "ticker": "SOFF11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T00:12:15",
+  "relatorio": {
+    "id": 1032083,
+    "data_entrega": "10/11/2025 11:16",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Estrutura do Fundo**: O FII SOFIA opera como um veículo de investimento em geração distribuída fotovoltaica, garantindo previsibilidade de receita com contratos de longo prazo e eficiência tributária.\n2. **Portfólio Atualizado**: Em outubro, foram integralizadas as SPEs Bambuí, Inhaúma e Vigésima Sétima UFV, ampliando significativamente a base de ativos do fundo.\n3. **Patrimônio Líquido**: O PL do FII Sofia evoluiu de aproximadamente R$33 milhões para R$188 milhões com a operação, refletindo a incorporação dos novos ativos e sua remarcação a valor de mercado.\n4. **Previsibilidade de Receita**: A inclusão de ativos com contratos de longo prazo reforça a estabilidade do fluxo de caixa e a capacidade de geração de dividendos consistentes.\n5. **Impacto ESG**: A operação consolida o posicionamento do fundo como veículo estratégico para investimentos sustentáveis em geração distribuída fotovoltaica, fortalecendo sua tese ESG.\n6. **Eficiência Operacional**: O fundo está implementando melhorias na eficiência operacional, incluindo a utilização de baterias e otimização do uso da área solar.\n7. **Segmentação da Indústria**: A geração distribuída supera a centralizada em termos de potência instalada no Brasil, com o mercado nacional ganhando mais de 132 mil consumidores até 2025.\n\n### O que Observar Em Seguida:\n- Monitorar as obras e reformas nas usinas solares em desenvolvimento (UFVs) para garantir a conclusão dentro do prazo.\n- Verificar o desempenho das novas SPEs integralizadas, especialmente no que diz respeito à geração de receita."
+  },
+  "comunicados": {
+    "ids": [
+      975430,
+      1102535,
+      1065253
+    ],
+    "datas": [
+      "20/08/2025",
+      "05/02/2026",
+      "17/12/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 20/08/2025\n\n**O QUE aconteceu:** A Administradora e Gestora aprovaram a realização da 3ª emissão de novas cotas do Fundo.\n\n**Resumo:** O fundo Sofia anunciou a terceira emissão de cotas, com um montante inicial de R$250.000.097,76 e preço unitário de R$103,32 por cota.\n\n**Trecho-chave:**\n\"por meio de instrumento particular de alteração do regulamento do Fundo (Ato de Aprovação da Oferta), a realização da 3ª emissão de novas cotas do Fundo (3ª Emissão)...\" (p. 1)\n\n### ASSEMBLEIA GERAL ORDINÁRIA DE COTISTAS entregue em 05/02/2026\n\n**O QUE aconteceu:** A Assembleia Geral Ordinária de Cotistas aprovou as contas e demonstrações financeiras do exercício social findo em 30 de junho de 2025.\n\n**Resumo:** A assembleia foi realizada virtualmente no dia 4 de fevereiro de 2026, com aprovação das contas e deliberações necessárias.\n\n**Trecho-chave:**\n\"Findo o prazo para recebimento das manifestações de votos, e constatada a ausência de quórum mínimo para instalação da presente Assembleia, em virtude de não comparecimento dos cotistas do Fundo, as demonstrações contábeis, as quais foram disponibilizadas e não possuem ressalvas, ficam automaticamente APROVADAS...\" (p. 2)\n\n### ASSEMBLEIA GERAL ORDINÁRIA DE COTISTAS entregue em 17/12/2025\n\n**O QUE aconteceu:** Foi convocada a Assembleia Geral Ordinária de Cotistas para o dia 4 de fevereiro de 2026, com ordem do dia para aprovar as contas e demonstrações financeiras do exercício social findo em 30 de junho de 2025.\n\n**Resumo:** A convocação foi realizada virtualmente, com a necessidade de representação dos cotistas conforme seus documentos societários ou pessoais.\n\n**Trecho-chave:**\n\"A SEFER INVESTIMENTOS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA., inscrita no CNPJ/MF sob o n º 00.329.598/0001-67, na qualidade de Administradora (Sefer DTVM ou Administradora) do FUNDO DE INVESTIMENTO IMOBILIÁRIO SOFIA (Fundo), fundo de investimento devidamente registrado na Comissão de Valores Mobiliários (CVM) e inscrito no CNPJ/MF sob o nº 57.811.221/0001-67, vem, por meio d a presente comunicação, convocar os senhores cotistas do Fundo a se reunirem em Assembleia Geral de Cotistas...\" (p. 1)"
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos irregulares",
+      "Base de cotistas muito pequena",
+      "Fundo novo — histórico curto"
+    ],
+    "cota": 94.2
+  },
+  "parecer": {
+    "id": 1001778,
+    "data_entrega": "30/09/2025 00:02",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário Sofia em 30 de junho de 2025, e o desempenho de suas operações para o período de 25 de novembro de 2024 (Início das atividades do Fundo) a 30 de junho de 2025, de acordo com as práticas contábeis adotadas no "
+  }
+}

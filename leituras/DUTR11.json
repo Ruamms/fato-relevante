@@ -1,0 +1,27 @@
+{
+  "ticker": "DUTR11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T02:12:34",
+  "comunicados": {
+    "ids": [
+      1177646
+    ],
+    "datas": [
+      "30/04/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO"
+    ],
+    "texto": "**Data:** 29 de abril de 2026  \n**O QUE aconteceu:** Aprovou a Demonstração Financeira do Fundo referente ao exercício social findo em 31 de dezembro de 2025.  \n**Resumo:** A assembleia ordinária aprovou sem restrições a demonstração financeira do fundo, encerrando o processo de avaliação do desempenho do ano anterior.  \n**Trecho-chave:**\n\"O Cotista do Fundo aprovou, sem qualquer restrição ou ressalva,  a Demonstração Financeira do Fundo, referente ao exercício social findo em 31 de dezembro de 2025 (\"Demonstração Financeira\").\" (p. 4)\n\n**Conexão com o contexto:** Esta aprovação reflete positivamente sobre os indicadores financeiros do fundo, como o patrimônio líquido e o valor do ativo, que apresentaram crescimento nos últimos 12 meses."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1147271,
+    "data_entrega": "27/03/2026 22:07",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas representam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do VGS Fundo de Investimento Imobiliário – Responsabilidade Limitada, em 31 de dezembro de 2025, o desempenho das suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Bras"
+  }
+}

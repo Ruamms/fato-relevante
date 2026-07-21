@@ -1,0 +1,49 @@
+{
+  "ticker": "JFLL11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T00:59:34",
+  "relatorio": {
+    "id": 1225522,
+    "data_entrega": "22/06/2026 18:09",
+    "texto": "### Fatos Extraídos:\n\n1. **Vacância Concentrada em Unidades em Reforma:** A vacância está concentrada nas unidades 2801 (266m²) e 2808 (156m²), totalizando 422m², ou cerca de 6% da área locável. As reformas dessas unidades devem ser concluídas em julho/26.\n   > \"A vacância está concentrada em duas unidades grandes que estavam em reforma durante o primeiro semestre de 2026: a 2801 (266m², a maior do edifício) e a 2808 (156m²). Juntas somam 422 m², cerca de 6% da área locável e aproximadamente 14% da vacância atual. As reformas finalizarão no mês de julho/26.\" (p. 230)\n\n2. **Sazonalidade Favorável para o Segundo Semestre:** A ocupação tem padrão sazonal claro, com subida consistente no segundo semestre de 2025 e atingindo o pico em novembro. Para o segundo semestre de 2026, a expectativa é de retomada na trajetória de ocupação.\n   > \"Sazonalidade favorável no 2º semestre\" (p. 234)\n\n3. **Mudança na Qualificação das Vendas:** O processo comercial migrou de volume para qualidade, com uma redução significativa do número de leads e aumento da conversão em visitas.\n   > \"O processo comercial migrou de volume para qualidade de leads (de 162 em jan para 37 em abr), elevando a conversão em visitas de 5% para 19%.\" (p. 234)\n\n### O que observar em seguida:\n- Monitorar a conclusão das reformas nas unidades 2801 e 2808.\n- Observar a evolução da ocupação no segundo semestre, especialmente após julho/26."
+  },
+  "comunicados": {
+    "ids": [
+      1003828,
+      1003640,
+      1058232,
+      1036200
+    ],
+    "datas": [
+      "01/10/2025",
+      "30/09/2025",
+      "10/12/2025",
+      "13/11/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 01/10/2025\n\n**O QUE aconteceu:** JFL LIVING FUNDO DE INVESTIMENTO IMOBILIÁRIO vendeu 7,5% das matrículas residenciais do edifício VO699.\n\n**Resumo:** A venda foi realizada no âmbito de um plano de vendas aprovado pelas assembleias gerais de cotistas e visa monetizar o portfólio em favor dos cotistas, gerando um ganho de capital estimado.\n\n**Trecho-chave:**\n\"O Fundo vendeu fração ideal correspondente a 7,5% (sete inteiros e cinco décimos por cento) de cada uma e todas as 140 (cento e quarenta) matrículas residenciais do edifício VO699 de sua propriedade.\"\n\n### FATO RELEVANTE entregue em 30/09/2025\n\n**O QUE aconteceu:** JFL LIVING FUNDO DE INVESTIMENTO IMOBILIÁRIO vendeu 7,5% das matrículas residenciais do edifício VO699.\n\n**Resumo:** A venda foi realizada no âmbito de um plano de vendas aprovado pelas assembleias gerais de cotistas e visa monetizar o portfólio em favor dos cotistas, gerando um ganho de capital estimado.\n\n**Trecho-chave:**\n\"O Fundo vendeu fração ideal correspondente a 7,5% (sete inteiros e cinco décimos por cento) de cada uma e todas as 140 (cento e quarenta) matrículas residenciais do edifício VO699 de sua propriedade.\"\n\n### COMUNICADO AO MERCADO entregue em 13/11/2025\n\n**O QUE aconteceu:** JFL LIVING FUNDO DE INVESTIMENTO IMOBILIÁRIO anunciou a amortização parcial de cotas no valor de R$ 7.200.000,00.\n\n**Resumo:** A amortização será realizada com base na data-base de corte em 13 de novembro de 2025 e os cotistas terão até o dia 21 de novembro para informar seus custos de aquisição.\n\n**Trecho-chave:**\n\"O valor de R$ 7.200.000,00 (sete milhões e duzentos mil reais) será objeto de amortização parcial de cotas, correspondente a R$ 4,79808716 por cota.\"\n\n### COMUNICADO AO MERCADO entregue em 10/12/2025\n\n**O QUE aconteceu:** JFL LIVING FUNDO DE INVESTIMENTO IMOBILIÁRIO anunciou a amortização parcial de cotas no valor de R$ 8.750.000,00.\n\n**Resumo:** A amortização será realizada com base na data-base de corte em 10 de dezembro de 2025 e os cotistas terão até o dia 17 de dezembro para informar seus custos de aquisição.\n\n**Trecho-chave:**\n\"O valor de R$ 8.750.000 (oito milhões e setecentos e cinquenta mil reais) será objeto de amortização parcial de cotas, correspondente a R$ 5,83100870 por cota.\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Vacância física alta",
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 55.51
+  },
+  "parecer": {
+    "id": 1085511,
+    "data_entrega": "15/01/2026 20:41",
+    "tipo": "abstencao",
+    "rotulo": "abstenção de opinião",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Devido à relevância do assunto descrito na seção a seguir intitulada “Base para abstenção de opinião” , não nos foi possível obter evidência de auditoria apropriada e suficiente para fundamentar nossa opinião de auditoria sobre essas demonstrações financeiras do Fundo."
+  }
+}

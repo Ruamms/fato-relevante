@@ -1,0 +1,33 @@
+{
+  "ticker": "HYBR11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:38:53",
+  "comunicados": {
+    "ids": [
+      1224093,
+      1226321,
+      1226317
+    ],
+    "datas": [
+      "18/06/2026",
+      "23/06/2026",
+      "23/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 18/06/2026\n\n**O QUE aconteceu:** Regulamento do FUNDO foi alterado para incluir a \"Taxa Máxima de Custódia\".\n\n**Resumo:** A inclusão desse item não gera impacto financeiro ou custo adicional.\n\n*\"I. Inclusão do item “Taxa Máxima de Custódia” previsto no item “5. REMUNERAÇÃO DOS PRESTADORES DE SERVIÇOS” do regulamento do Fundo, a fim de garantir transparência e aderência à norma.\"* (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 23/06/2026\n\n**O QUE aconteceu:** Assembleia Geral Ordinária não se realizou.\n\n**Resumo:** A assembleia foi cancelada devido à falta de orientação de voto digitalizada por correio eletrônico, e as demonstrações financeiras foram consideradas automaticamente aprovadas.\n\n*\"Assim, conforme faculta a legislação como as demonstrações financeiras acima mencionadas não contêm opinião modificada e a assembleia não foi instalada, as supracitadas demonstrações foram consideradas automaticamente aprovadas.\"* (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 23/06/2026\n\n**O QUE aconteceu:** Assembleia Geral Ordinária não se realizou.\n\n**Resumo:** A assembleia foi cancelada devido à falta de orientação de voto digitalizada por correio eletrônico, e as demonstrações financeiras foram consideradas automaticamente aprovadas.\n\n*\"Assim, conforme faculta a legislação como as demonstrações financeiras acima mencionadas não contêm opinião modificada e a assembleia não foi instalada, as supracitadas demonstrações foram consideradas automaticamente aprovadas.\"* (p. 1)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208473,
+    "data_entrega": "29/05/2026 20:58",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe em 31 de março de 2026 e o desempenho de suas operações para o período de 17 de setembro de 2025 (início das atividades) a 31 de março de 2026, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de índice."
+  }
+}

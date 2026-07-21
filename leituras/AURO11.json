@@ -1,0 +1,27 @@
+{
+  "ticker": "AURO11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:09:46",
+  "comunicados": {
+    "ids": [
+      1260167
+    ],
+    "datas": [
+      "20/07/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO"
+    ],
+    "texto": "### O QUE ACONTECEU:\nA Hedge Investments Distribuidora de Títulos e Valores Mobiliários Ltda. convocou uma Assembleia Geral Ordinária para 19 de agosto de 2026, por meio de consulta formal, para aprovar as contas e demonstrações financeiras do exercício social encerrado em 31 de março de 2026.\n\n### RESUMO:\nA assembleia será realizada de forma não presencial, permitindo que os cotistas expressem seus votos através da B3, agentes de custódia ou carta resposta enviada à administradora. A manifestação de voto deve ser recebida até às 17h00 do dia da consulta.\n\n### TRECHO-CHAVE:\n\"A manifestação de voto somente será considerada como válida se recebida pela Administradora até as 17h00 do dia da Consulta Formal.\" (p. 2)\n\n---\n\n### O QUE ACONTECEU:\nA Hedge Investments Distribuidora de Títulos e Valores Mobiliários Ltda. convocou uma Assembleia Geral Ordinária para 19 de agosto de 2026, por meio de consulta formal, para aprovar as contas e demonstrações financeiras do exercício social encerrado em 31 de março de 2026.\n\n### RESUMO:\nA assembleia será realizada de forma não presencial, permitindo que os cotistas expressem seus votos através da B3, agentes de custódia ou carta resposta enviada à administradora. A manifestação de voto deve ser recebida até às 17h00 do dia da consulta.\n\n### TRECHO-CHAVE:\n\"Em todos os casos, a manifestação de voto somente será considerada como válida se recebida pela Administradora até as 17h00 do dia da Consulta Formal.\" (p. 2)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1232814,
+    "data_entrega": "29/06/2026 17:47",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião , as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Buena Vista Neos Gold High Income Index Fundo d e Índice de Responsabilidade Limitada em 31 de março de 2026 e o desempenho das suas operações para o período de 26 de agosto de 2025 a 31 de março de 2026 , de acordo com as práticas contábe"
+  }
+}

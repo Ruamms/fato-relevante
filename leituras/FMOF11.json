@@ -1,0 +1,61 @@
+{
+  "ticker": "FMOF11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T05:04:29",
+  "relatorio": {
+    "id": 1043064,
+    "data_entrega": "17/11/2025 18:54",
+    "texto": "### Fatos Extraídos:\n\n1. **Alienação do Imóvel:**\n   \"O Fundo concluiu em 10 de outubro de 2025 a alienação da totalidade do Edifício Memorial Office Building, por meio da assinatura da Escritura de Compra e Venda, pelo valor total de R$ 44.500.000,00.\" (p. 4)\n\n2. **Amortização Parcial de Cotas:**\n   \"A Hedge deu sequência no processo de venda da totalidade do Edifício Memorial Office Building e aprovou, entre outras matérias, a transferência da administração e gestão do Fundo para a Hedge Investments com efeitos a partir da abertura dos mercados do dia 01° de agosto 2025.\" (p. 4)\n   \"O montante amortizado considera a retenção de aproximadamente R$ 3.500.000,00 no caixa do Fundo, compostos pelos valores correspondentes às despesas que previstas ao longo dos próximos doze meses, até o pagamento da segunda parcela, bem como provisão para possíveis contingências identificadas no âmbito das auditorias realizadas pelo comprador do imóvel e que deverão ser resolvidas até o pagamento da última parcela.\" (p. 4)\n\n3. **Rendimento:**\n   \"O Fundo divulgou o rendimento de R$ 8,30 por cota como rendimento com pagamento em 23 de outubro de 2025, aos detentores de cotas em 16 de outubro de 2025.\" (p. 4)\n\n4. **Vacância:**\n   \"Vacância 4,17% (12m: —)\" (não há trecho específico no relatório, mas é mencionado)\n\n### O que observar em seguida:\n- Monitorar o fluxo financeiro das parcelas da venda do imóvel.\n- Observar a evolução da vacância e inadimplência nos próximos relatórios."
+  },
+  "comunicados": {
+    "ids": [
+      1016924,
+      1010834,
+      906361,
+      1026824,
+      954499,
+      1214215,
+      1214214
+    ],
+    "datas": [
+      "17/10/2025",
+      "10/10/2025",
+      "15/05/2025",
+      "03/11/2025",
+      "28/07/2025",
+      "08/06/2026",
+      "08/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 17/10/2025\n\n**O QUE aconteceu:** A Hedge Investments Distribuidora de Títulos e Valores Mobiliários Ltda. (Administradora) procederá a uma amortização parcial de cotas no valor bruto de R$ 32,70 por cota em 11 de novembro de 2025.\n\n**Resumo:** O Fundo realizará uma amortização parcial para quitar parte do valor das cotas, considerando despesas futuras e contingências.\n\n**Trecho-chave:**\n\"encerrada em 11 de junho de 2025, a Administradora procederá a uma amortização parcial de cotas em 11 de novembro de 2025, no montante de R$ 16.611.861,60 (dezesseis milhões, seiscentos e onze mil, oitocentos e sessenta e um reais e sessenta centavos), equivalente ao valor bruto de R$ 32,70 (trinta e dois reais e setenta centavos) por cota.\"\n\n### COMUNICADO AO MERCADO entregue em 28/07/2025\n\n**O QUE aconteceu:** O Fundo passará a ser administrado pela Nova Administradora a partir do fechamento dos mercados de 31 de julho de 2025.\n\n**Resumo:** A mudança na administração não afetará os direitos das cotas, mas as comunicações relacionadas ao serviço de escrituração passarão a ser direcionadas à nova administradora.\n\n**Trecho-chave:**\n\"a partir do fechamento dos mercados do dia 31 de julho de 2025, o serviço de escrituração das cotas do Fundo passará a ser prestado pela Nova Administradora.\"\n\n### ASSEMBLEIA GERAL ORDINÁRIA (AGO) entregue em 08/06/2026\n\n**O QUE aconteceu:** A Assembleia Geral Ordinária dos Cotistas do Fundo aprovou as contas e demonstrações financeiras referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** Os cotistas votaram unânime para aprovar as contas do Fundo, representando 65,38% da base votante.\n\n**Trecho-chave:**\n\"Em relação à Ordem do Dia, a unanimidade dos Cotistas, representando 65,38% (sessenta e cinco inteiros e trinta e oito centésimos por cento) da base votante, deliberou pela aprovação das contas e das demonstrações financeiras do Fundo, referentes ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n### ASSEMBLEIA GERAL ORDINÁRIA (AGO) entregue em 08/06/2026\n\n**O QUE aconteceu:** A Assembleia Geral Ordinária dos Cotistas do Fundo aprovou as contas e demonstrações financeiras referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** Os cotistas votaram unânime para aprovar as contas do Fundo, representando 65,38% da base votante.\n\n**Trecho-chave:**\n\"Em relação à Ordem do Dia, a unanimidade dos Cotistas, representando 65,38% (sessenta e cinco inteiros e trinta e oito centésimos por cento) da base votante, deliberou pela aprovação das contas e das demonstrações financeiras do Fundo, referentes ao exercício social encerrado em 31 de dezembro de 2025.\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "VP/cota em queda relevante",
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares",
+      "Base de cotistas muito pequena",
+      "P/VP muito acima da média histórica"
+    ],
+    "cota": 47.78
+  },
+  "parecer": {
+    "id": 1200122,
+    "data_entrega": "20/05/2026 17:00",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário Memorial Office – Responsabilidade Limitada em 31 de dezembro de 2025 e o desempenho de suas operações e fluxos de caixa para o Período de 01 de agosto de 2025 (Data posterior à transferência do Fundo) a 31"
+  }
+}

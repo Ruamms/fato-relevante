@@ -1,0 +1,30 @@
+{
+  "ticker": "ISUS11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:41:21",
+  "comunicados": {
+    "ids": [
+      1228454,
+      1221393
+    ],
+    "datas": [
+      "25/06/2026",
+      "15/06/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA AGO entregue em 25/06/2026\n\n**O que aconteceu:** Rerratificação de Edital de Convocação da Assembleia Geral de Cotistas.\n\n**Resumo:** O Itaú Unibanco S.A. retificou e ratificou o edital de convocação para a assembleia geral, alterando a ordem do dia e a data de manifestação.\n\n**Trecho-chave:**\n\"Submete à consulta formal eletrônica de cotistas a seguinte matéria:\n(i) Deliberar sobre as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes referentes ao Fundo, relativos ao exercício social encerrado em 31 de março de 2025 e 31 de março de 2026.\"\n\n### ASSEMBLEIA AGO entregue em 15/06/2026\n\n**O que aconteceu:** Convocação para Assembleia Geral de Cotistas.\n\n**Resumo:** O Itaú Unibanco S.A. convocou os cotistas para deliberar sobre as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativas ao exercício social encerrado em 28/02/2026.\n\n**Trecho-chave:**\n\"(i) Deliberar sobre as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes, relativos ao exercício social encerrado em 28/02/2026.\"\n\n---\n\n**Conexão com o contexto:** Ambos os documentos se referem a assembleias gerais de cotistas do IT NOW ISE FUNDO DE ÍNDICE INVESTIMENTO SUSTENTÁVEL RESPONSABILIDADE LIMITADA, onde são deliberadas questões financeiras e auditoriais."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1209694,
+    "data_entrega": "01/06/2026 17:27",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do It Now ISE Fundo de Índice Investimento Sustentável Responsabilidade Limitada em 31 de março de 2026 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos F"
+  }
+}

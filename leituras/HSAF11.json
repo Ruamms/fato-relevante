@@ -1,0 +1,45 @@
+{
+  "ticker": "HSAF11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T23:27:28",
+  "relatorio": {
+    "id": 1241510,
+    "data_entrega": "07/07/2026 19:02",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Distribuição de Dividendos**: A distribuição de dividendos foi mantida em R$ 0,95 por cota durante 18 meses consecutivos. O resultado contábil acumulado no mês foi de R$ 0,76 por cota.\n\n2. **Alta Liquidez do Mercado Secundário**: A liquidez diária média no mercado secundário foi de aproximadamente R$ 1 milhão, alta em comparação com os níveis anteriores.\n\n3. **Alocação da Carteira**: \n   - 71,6% do total dos ativos está alocado em Certificados de Recebíveis Imobiliários (CRIs) indexados ao IPCA.\n   - 39,84% dos CRIs são indexados ao IPCA e 31,81% aos CDI.\n\n4. **Resultados Operacionais**: O resultado caixa foi mais elevado nos últimos meses devido à pressão do IPCA, que afeta diretamente a remuneração da parcela dos CRIs, que representam 40% da carteira.\n\n5. **Movimentações na Carteira**: Foram realizadas novas vendas de cotas de outros fundos imobiliários (FIIs), totalizando R$ 8.182.836,00, recursos que foram liberados para o caixa do Fundo e destinados à aquisição de CRIs oriundos do pipeline proprietário da gestora.\n\n6. **Spread Implícito**: A alocação consolidada da carteira de CRIs indexados ao IPCA teve um spread implícito de 8,73% a.a., com projeções para o IPCA em 5,50% e crescimento do PIB em 2,20%.\n\n7. **Vacância e Inadimplência**: Não foram mencionadas mudanças significativas na vacância ou inadimplência dos ativos.\n\n8. **Riscos Mencionados pela Gestão**: A gestão levantou riscos associados a uma possível aceleração mais intensa da atividade após o ciclo eleitoral, que poderia reabrir espaço para flexibilização ainda em 2026.\n\n### O que observar em seguida:\n1. **Distribuição de Dividendos**: Verificar se a distribuição continua no mesmo patamar nos próximos meses.\n2. **Liquidez do Mercado Secundário**: Monitorar as mudanças na liquidez diária média, que pode indicar alterações no comportamento dos investidores."
+  },
+  "comunicados": {
+    "ids": [
+      805240,
+      1031313,
+      1008316
+    ],
+    "datas": [
+      "20/12/2024",
+      "07/11/2025",
+      "07/10/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 20/12/2024\n\n**O QUE aconteceu:** O Fundo HSAF11 recebeu R$ 42.045.554,54 de uma recompra facultativa total dos créditos cedidos pela True Securitizadora S.A.\n\n**Resumo:** A operação resultou em um lucro para o fundo e impactará a distribuição de dividendos do mês de dezembro.\n\n**Trecho-chave:**\n\"Conforme aprovado em Assembleia Especial de Investidores dos Certificados de Recebíveis Imobiliários, o Fundo recebeu nesta data o montante de R$ 42.045.554,54 (quarenta e dois milhões, quarenta e cinco mil, quinhentos e cinquenta e quatro reais e cinquenta e quatro centavos) da True Securitizadora S.A. (“Securitizadora”).\"\n\n### ASSEMBLEIA AGO entregue em 07/11/2025\n\n**O QUE aconteceu:** A assembleia geral ordinária do Fundo HSAF11 aprovou as demonstrações financeiras referentes ao exercício social findo em 30 de junho de 2025.\n\n**Resumo:** Os cotistas votaram e aprovaram as demonstrações financeiras, sem ressalvas ou restrições.\n\n**Trecho-chave:**\n\"Após análise das repostas dos Cotistas à Consulta Formal, foram apurados os seguintes resultados para o único item da ordem do dia:\nAPROVO NÃO APROVO ABSTENCÃO\n1,31% 0,04 % 0,34%\nDiante do exposto, a matéria foi APROVADA, sem qualquer ressalva ou restrição, por cotistas desimpedidos e aptos a deliberar.\"\n\n### ASSEMBLEIA AGO entregue em 07/10/2025\n\n**O QUE aconteceu:** Foi convocada uma assembleia geral ordinária do Fundo HSAF11 para aprovar as demonstrações financeiras referentes ao exercício social findo em 30 de junho de 2025.\n\n**Resumo:** A assembleia será realizada por meio de consulta formal e os cotistas terão até o dia 6 de novembro de 2025 para votar.\n\n**Trecho-chave:**\n\"1. ORDEM DO DIA\n1.1. A deliberação e aprovação das demonstrações financeiras do Fundo, referentes ao exercício social findo em 30 de junho de 2025.\"\n\n---\n\n**Conexão com o contexto:** As ações recentes da assembleia (07/10/2025) se conectam à aprovação das demonstrações financeiras do último exercício, que será discutida e votada na assembleia convocada para 07 de novembro de 2025."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 77.25
+  },
+  "parecer": {
+    "id": 999654,
+    "data_entrega": "26/09/2025 17:49",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos fundos de investimento imobiliário."
+  }
+}

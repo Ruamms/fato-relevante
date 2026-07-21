@@ -1,0 +1,30 @@
+{
+  "ticker": "BRAZ11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T11:47:26",
+  "comunicados": {
+    "ids": [
+      1240144,
+      1238245
+    ],
+    "datas": [
+      "06/07/2026",
+      "02/07/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA AGO entregue em 06/07/2026\n\n**O QUE aconteceu:** Convocação para Assembleia Geral Ordinária.\n\n**Resumo:** A assembleia foi realizada, mas não atingiu o quórum necessário. As demonstrações contábeis do exercício social findo em 31/03/2026 foram aprovadas pela administração.\n\n*\"Informamos que, de acordo com o disposto na Resolução CVM 175/22, foi efetuada convocação para realização de Assembleia Geral Ordinária do fundo BB ETF ÍNDICE BOVESPA B3 BR+ FUNDO DE ÍNDICE RESPONSABILIDADE LIMITADA, inscrito no CNPJ sob o nº 57.848.980/0001-02 na data de 29/06/2026, para deliberar sobre as demonstrações contábeis do fundo.\"* (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 02/07/2026\n\n**O QUE aconteceu:** Realização da Assembleia Geral Ordinária.\n\n**Resumo:** A assembleia foi realizada no dia 29/06/2026, e os cotistas aprovaram as demonstrações contábeis relativas ao exercício social findo em 31/03/2026.\n\n*\"A Assembleia Geral Ordinária do fundo BB ETF ÍNDICE BOVESPA B3 BR+ FUNDO DE ÍNDICE RESPONSABILIDADE LIMITADA - CNPJ: 57.848.980/0001-02, realizada no dia 29/06/2026, às 11h00min na sede da BB Asset, situada na Avenida República do Chile 330 - 8º andar - Torre Oeste, Centro, Rio de Janeiro - RJ, que foi presidida pela Srª. Adriana Monteiro, representando a Administradora do Fundo, e convidou a Sr. Fabrício Rangel para Secretário, ficando assim constituída a Mesa Diretora dos Trabalhos, comunica que, os cotistas aprovaram as Demonstrações Contábeis relativas ao exercício social findo em 31/03/2026 no processo de Assembleia Geral Ordinária do fundo.\"* (p. 1)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1206968,
+    "data_entrega": "29/05/2026 09:47",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe em 31 de março de 2026, o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento financeiro."
+  }
+}

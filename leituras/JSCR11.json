@@ -1,0 +1,45 @@
+{
+  "ticker": "JSCR11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T23:48:48",
+  "relatorio": {
+    "id": 1247688,
+    "data_entrega": "14/07/2026 18:01",
+    "texto": "### Fatos do Relatório Gerencial\n\n1. **Compras e Vendas na Carteira:**\n   - O fundo adquiriu R$ 20 milhões do CRI Genesis (IPCA+ 8,91%) lastreado em contratos de locação típicos dos shoppings Market Place, Market Place Towers e Galleria Shopping.\n   - Também adquiriu R$ 20 milhões do CRI Lotisa (CDI+ 2,05%), operação de incorporadora lastreada em sobejo de dois empreendimentos residenciais.\n   - Vendeu integralmente a posição no CRI Alfa Realty (R$ 15 milhões), que vinha apresentando dificuldades operacionais.\n\n2. **Segmento de Incorporação:**\n   - O segmento de incorporação segue pressionado, com a escalada dos juros aumentando as dificuldades para incorporadoras em obter fluxos de caixa após a entrega das chaves.\n   - As vendas recuaram 24,5% e os lançamentos 22,3% no primeiro trimestre de 2026 (vs. 1T25), segundo a Abrainc/Fipe.\n\n3. **Distribuição de Rendimentos:**\n   - O fundo distribuiu R$ 0,102 por cota no mês, correspondendo a um dividend yield mensal de 1,23% (14,71% a.a.).\n   - O resultado por cota foi de R$ 0,099, com saldo acumulado para distribuição de R$ 0,065/cota.\n\n4. **Alavancagem e Composição da Carteira:**\n   - A alocação por tipo de ativo é predominantemente em CRI IPCA+ (58,4%), seguido por CRI CDI+ (12,3%) e FIIs de CRI (9%).\n   - O fundo prioriza novas alocações em IPCA+, especialmente nos segmentos logístico e shopping centers.\n\n5. **Rendimentos e Liquidez:**\n   - A rentabilidade do fundo desde o início é de 26,13%, com dividend yield de 1,23%.\n   - O volume médio negociado mensalmente é de R$ 473.611.\n\n### O que observar em seguida:\n- Monitorar a evolução da carteira após as recentes compras e vendas.\n- Observar o impacto do ambiente de juros elevados no segmento de incorporação."
+  },
+  "comunicados": {
+    "ids": [
+      998680,
+      1208146,
+      1170671
+    ],
+    "datas": [
+      "25/09/2025",
+      "29/05/2026",
+      "27/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 25/09/2025\n\n**O que aconteceu:** O distrato do contrato de formador de mercado com a XP INVESTIMENTOS e a contratação do SAFRA PRÓPRIO Formador de Mercado.\n\n**Resumo:** O Fundo JS RECEBÍVEIS IMOBILIÁRIOS distatou o contrato com a XP INVESTIMENTOS e passará a contar com os serviços do SAFRA PRÓPRIO Formador de Mercado a partir de 26 de setembro de 2025.\n\n**Trecho-chave:** \"ocorreu o distrato ao Contrato para prestação de Serviços de Formador de Mercado celebrado com a XP INVESTIMENTOS CORRETORA DE CÂMBIO, TÍTULOS E VALORES MOBILIÁRIOS S.A. (“XP”), inscrita no CNPJ sob o nº 02.332.886/0011-78, cuja prestação de serviços se encerra em 25 de setembro de 2025; e (ii) conforme matéria previamente aprovada em assembleia de cotistas, foi realizada a contratação do SAFRA PRÓPRIO FORMADOR DE MERCADO FUNDO DE INVESTIMENTO FINANCEIRO, inscrito no CNPJ sob o nº 54.407.607/0001 -01 (“Safra Próprio Formador de Mercado”), para prestar os serviços de Formador de Mercado, na forma e conforme as disposições da Resolução CVM 133 e do Regulamento de Negociação da B3 S.A. – Brasil, Bolsa, Balcão (\"B3\"), do Manual de Procedimentos Operacionais de Negociação da B3 e dos demais regulamentos, manuais e ofícios divulgados pela B3 qu e disciplinem a atividade de formador de mercado (“Normativos Aplicáveis à Atuação de Formador de Mercado”) , sendo que os custos dos serviços serão pagos pelo Fundo, conforme disposto na Resolução CVM 175. A prestação dos serviços pelo Safra Próprio Formador de Mercado terá início em 26 de setembro de 2025.\"\n\n---\n\n### ASSEMBLEIA GERAL ORDINÁRIA NÃO PRESENCIAL realizada em 29/05/2026\n\n**O que aconteceu:** A assembleia aprovou as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes do exercício social findo em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia geral ordinária não presencial realizada em 29 de maio de 2026 aprovou as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes do exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:** \"Foi aprovado, conforme manifestações de votos válidas dos cotistas representando 0,10% do total das Cotas emitidas pelo Fundo, as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes, relativos ao exercício social findo em 31 de dezembro de 2025.\"\n\n---\n\n### CONSULTA FORMAL 01/2026\n\n**O que aconteceu:** Consulta formal sobre a aprovação das Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes do exercício social findo em 31 de dezembro de 2025.\n\n**Resumo:** A consulta formal realizada entre os cotistas do Fundo JS RECEBÍVEIS IMOBILIÁRIOS FII para aprovar as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes do exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:** Não há trechos específicos destacados no documento que contenham a resposta aos votos."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 7.96
+  },
+  "parecer": {
+    "id": 1151976,
+    "data_entrega": "31/03/2026 22:55",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do JS Recebíveis Imobiliários Fundo de Investimento Imobiliário em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicá"
+  }
+}

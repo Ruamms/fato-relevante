@@ -1,0 +1,30 @@
+{
+  "ticker": "VDCD11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T00:38:17",
+  "comunicados": {
+    "ids": [
+      1171034,
+      1171025
+    ],
+    "datas": [
+      "28/04/2026",
+      "28/04/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### O QUE aconteceu:\n**ASSEMBLEIA GERAL ORDINÁRIA DE COTISTAS DO VERDE A&I CEDRO FII**\n- **Data, hora e local:** Realizada em 27 de abril de 2026, na sede da XP INVESTIMENTOS CORRETORA DE CÂMBIO, TÍTULOS E VALORES MOBILIÁRIOS S.A., no Rio de Janeiro.\n- **Deliberações:** Aprovadas as Demonstrações Financeiras, Notas Explicaças e Parecer dos Auditores Independentes relativas ao exercício social findo em 31.12.2025.\n\n**Trecho-chave:**\n\"Observado o art. 71 da Instrução CVM 175/2022, restam aprovadas: (i) As Demonstrações Financeiras, Notas Explicaças e Parecer dos Auditores Independentes relativos ao exercício social findo em 31.12.2025, os quais estão disponíveis no website da CVM, através do endereço eletrônico https://www.gov.br/cvm/pt-br/assuntos/regulados/consultas-por-participante/fundos-de-investimento, seguindo a rota: Fundos Registrados > Inserir CNPJ do Fundo > Demonstrações contábeis.\" (p. 1)\n\n### Conexão com o contexto:\nAs deliberações da assembleia envolvem a aprovação das demonstrações financeiras, que são indicadores relevantes para o fundo VDCD11."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1145889,
+    "data_entrega": "26/03/2026 18:58",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o período de 6 de maio a 31 de dezembro de 2025, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento i"
+  }
+}

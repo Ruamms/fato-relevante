@@ -1,0 +1,36 @@
+{
+  "ticker": "ORCE11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T03:30:16",
+  "comunicados": {
+    "ids": [
+      906967,
+      799946,
+      1171213,
+      1171210
+    ],
+    "datas": [
+      "15/05/2025",
+      "12/12/2024",
+      "28/04/2026",
+      "28/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 15/05/2025\n\n**O QUE aconteceu:** A Administradora do ORIZ RE CRÉDITO ESTRUTURADO FII rerratificou um fato relevante publicado anteriormente, alterando detalhes da oferta de novas cotas.\n\n**Resumo:** A administradora ajustou o montante inicial, quantidade e preço das novas cotas a serem emitidas na 2ª emissão do fundo.\n\n**Trecho-chave:**\n\"Em 31 de outubro de 2024, foi formalizado o ato da Administradora, rerratificado em 12 de dezembro de 2024 (‘Ato do Administrador ’), por meio do qual a Administradora, conforme recomendação da ORIZ ASSET MANAGEMENT LTDA., aprovou a realização da distribuição pública de Novas Cotas...\"\n\n---\n\n### FATO RELEVANTE entregue em 12/12/2024\n\n**O QUE aconteceu:** A administradora do ORIZ RE CRÉDITO ESTRUTURADO FII rerratificou um fato relevante publicado anteriormente, alterando detalhes da oferta de novas cotas.\n\n**Resumo:** A administradora ajustou o fator de proporção para a distribuição preferencial e outros termos da oferta.\n\n**Trecho-chave:**\n\"Em 31 de outubro de 2024, foi formalizado o ato da Administradora (‘Ato do Administrador ’), por meio do qual a Administradora, conforme recomendação da ORIZ ASSET MANAGEMENT LTDA., aprovou a realização da distribuição pública de Novas Cotas...\"\n\n---\n\n### ASSEMBLEIA GERAL ORDINÁRIA DE COTISTAS ENTREGUE EM 28/04/2026\n\n**O QUE aconteceu:** A assembleia geral ordinária dos cotistas do ORIZ RE CRÉDITO FII aprovou as demonstrações financeiras e outras matérias.\n\n**Resumo:** A assembleia aprovou as demonstrações financeiras, notas explicativas e pareceres dos auditores para o exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Observado o art. 71 da Instrução CVM 175/2022, restam aprovadas: (i) As Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 31.12.2025...\"\n\n---\n\n**Conexão com o contexto:** Estes documentos informam sobre as operações de emissão de novas cotas do fundo ORIZ RE CRÉDITO ESTRUTURADO FII, que impacta diretamente a estrutura e composição das cotações disponíveis para investidores."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1147237,
+    "data_entrega": "27/03/2026 20:34",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião , as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Oriz RE Crédito Estruturado Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contá"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "ticker": "FIVN11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T03:40:10",
+  "comunicados": {
+    "ids": [
+      958078,
+      811088,
+      958637,
+      1182088,
+      1154686
+    ],
+    "datas": [
+      "01/08/2025",
+      "30/12/2024",
+      "01/08/2025",
+      "07/05/2026",
+      "06/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### O que aconteceu em 07/05/2026\n\n**Título:** Assembleia Geral Ordinária Aprova Demonstrações Financeiras do Fundo\n\n**Resumo:** A assembleia geral ordinária aprovou as demonstrações financeiras do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025, com 49,01% dos cotistas votando a favor e 0,55% contra.\n\n**Trecho-chave:**\n\"após análises das respostas dos Cotistas do Fundo à Consulta Formal, foi apurado que (a) Cotistas representando 49,01% das cotas em circulação aprovaram, sem quaisquer ressalvas ou restrições, as Demonstrações Financeiras do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025; e (b) Cotistas representando 0,55% das cotas em circulação votaram contra a deliberação.\"\n\n---\n\n### O que aconteceu em 30/12/2024\n\n**Título:** Fundo Classificado como “Tijolo - Renda”\n\n**Resumo:** O Fundo de Investimento Imobiliário Vida Nova foi reclassificado como “Tijolo - Renda”, com a subclassificação “Tijolo - Renda” e tipo de gestão “Gestão Definida”.\n\n**Trecho-chave:**\n\"passará a ser classificado como “Tijolo”, com a subclassificação “Tijolo - Renda”, tipo de gestão “Gestão Definida” e critério de classificação “Shoppings” de acordo com o previsto no art. 27 da referida norma.\"\n\n---\n\n### O que aconteceu em 01/08/2025\n\n**Título:** Não Houve Cumprimento das Condicionantes do Compromisso de Venda e Compra\n\n**Resumo:** A Administradora informou que não houve cumprimento das condicionantes estabelecidas no Compromisso de Venda e Compra, resultando na extinção da relação jurídica negocial.\n\n**Trecho-chave:**\n\"Essas condições, a teor do art. 125 do Código Civil, subordinavam a eficácia do contrato a diversos eventos, que não foram implementados pela contraparte.\"\n\n---\n\n### O que aconteceu em 01/08/2025\n\n**Título:** Reapresentação das Demonstrações Financeiras\n\n**Resumo:** A Instituição Administradora informou que as demonstrações financeiras do Fundo, relativas ao exercício social findo em 31 de dezembro de 2024 foram reapresentadas e aprovadas.\n\n**Trecho-chave:**\n\"Na opinião da BDO RCS AUDITORES INDEPENDENTES - SOCIEDADE SIMPLES LIMITADA (“Auditor Independente”), as Demonstrações Financeiras relativas ao exercício findo em 31 de dezembro e 2024, apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo naquela data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário.\"\n\n---\n\n### O que aconteceu em 06/04/2026\n\n**Título:** Consulta Formal Aprovação das Demonstrações Financeiras\n\n**Resumo:** A administradora convocou a assembleia geral ordinária para aprovar as demonstrações financeiras do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"A Consulta Formal será apurada com a presença de qualquer número de cotistas, nos termos do Art. 74 da parte geral da RCVM nº 175, e a matéria descrita no item acima dependerá da aprovação de quórum simples, ou seja, por maioria de votos dos cotistas presentes, nos termos do Artigo 15 do Anexo Normativo III da RCVM 175.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1148467,
+    "data_entrega": "30/03/2026 18:11",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário Vida Nova - FII em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos "
+  }
+}

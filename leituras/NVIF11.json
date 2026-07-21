@@ -1,0 +1,33 @@
+{
+  "ticker": "NVIF11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T01:39:25",
+  "comunicados": {
+    "ids": [
+      796070,
+      1207591,
+      1173358
+    ],
+    "datas": [
+      "06/12/2024",
+      "29/05/2026",
+      "29/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO/E"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 06/12/2024\n\n**O QUE aconteceu:** A MAF Distribuidora de Títulos e Valores Mobiliários S.A., administradora do NOVA I - Fundo de Investimento Imobiliário, comunicou a cisão parcial da VBI Real Estate Gestão de Carteiras S.A. com a incorporação de parte do patrimônio da VBI por sua subsidiária Pátria - VBI Securities Ltda., que passou a suceder a VBI como gestora do Fundo.\n\n**Resumo:** A VBI foi absorvida pela Pátria, mantendo os times de gestão liderados pelos sócios fundadores Rodrigo Abbud e Ken Wainer.\n\n**Trecho-chave:**\n\"Em 05 de dezembro de 2024, foi realizada a cisão parcial da VBI RE com a incorporação de parcela do patrimônio da VBI RE por sua subsidiária , PÁTRIA - VBI SECURITIES LTDA. (nova denominação da VBI SECURITIES LTDA.), incluindo a posição contratual no contrato de gestão do Fundo.\"\n\n### ASSEMBLEIA GERAL ORDINÁRIA AGO entregue em 29/05/2026\n\n**O QUE aconteceu:** A MAF Distribuidora de Títulos e Valores Mobiliários S.A., administradora do NOVA I - Fundo de Investimento Imobiliário, realizou uma assembleia geral ordinária por meio de consulta formal. Os cotistas aprovaram as demonstrações financeiras e o relatório dos auditores independentes do exercício social findo em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia foi bem-sucedida, com aprovação unânime das matérias propostas.\n\n**Trecho-chave:**\n\"Após análises das repostas dos Cotistas do Fundo à Consulta Formal, foram apurados os seguintes resultados:\nItem i) APROVAR REPROVAR ABSTENÇÃO ABSTENÇÃO POR CONFLITO 49,92% 0% 0% 0%\nItem ii) APROVAR REPROVAR ABSTENÇÃO ABSTENÇÃO POR CONFLITO 49,92% 0% 0% 0%\"\n\"O Administrador do Fundo realizou o procedimento de Consulta Formal aos Cotistas convocando-os a manifestarem-se a respeito da seguinte matéria: 1. Aprovação das Demonstrações Financeiras e o Relatório dos Auditores Independentes do Fundo relativos ao Exercício Social Findo em 31 de dezembro de 2025 (\"Demonstrações Financeiras\").\"\n\n### ASSEMBLEIA GERAL ORDINÁRIA AGO/E entregue em 29/04/2026\n\n**O QUE aconteceu:** A MAF Distribuidora de Títulos e Valores Mobiliários S.A., administradora do NOVA I - Fundo de Investimento Imobiliário, convocou uma assembleia geral ordinária por meio de consulta formal para deliberar sobre a aprovação das demonstrações financeiras e o relatório dos auditores independentes do exercício social findo em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia foi convocada com as informações necessárias aos cotistas, incluindo instruções para votação via plataforma Cuore.\n\n**Trecho-chave:**\n\"A MAF DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., com sede na cidade de São Paulo, Estado de São Paulo, convocar os cotistas do Fundo (\"Cotistas\"), por meio desta, a participar da Assembleia Geral Ordinária do Fundo (\"AGO\"), a ser realizada de forma não presencial, sob consulta formal, cuja apuração e divulgação dos resultados ocorrerá no dia 29 de maio de 2026, para deliberar sobre a seguinte matéria: 1. Aprovação das Demonstrações Financeiras e o Relatório dos Auditores Independentes do Fundo relativos ao Exercício Social Findo em 31 de dezembro de 2025 (\"Demonstrações Financeiras\").\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1147273,
+    "data_entrega": "27/03/2026 22:10",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Nova I- Fundo de Investimento Imobiliário - FII - Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus respectivos fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábe"
+  }
+}

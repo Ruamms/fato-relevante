@@ -1,0 +1,51 @@
+{
+  "ticker": "EURO11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T00:51:20",
+  "relatorio": {
+    "id": 1234190,
+    "data_entrega": "30/06/2026 14:17",
+    "texto": "### Fatos Extraídos:\n\n1. **Aumento de Capital e Início das Obras:**\n   \"Conforme Ata de Apuração publicada em 21 de janeiro de 2026, foi aprovada, por maioria dos votos, o Aumento de Capital no montante de R$ 8.556.282,72 com a emissão de 25.947 novas cotas ao preço unitário de R$ 329,76.\" (p. 3)\n\n2. **Obras em Andamento:**\n   \"A oferta pública, realizada através do Rito Automático e destinada a investidores profissionais, foi encerrada com sucesso por meio da captação do montante total nos termos do Anúncio de Encerramento da oferta publicado em 26 de fevereiro de 2026, desta forma, a administradora já iniciou a mobilização para construção dos dois galpões dentro CDA com área total de 3.400m² cujo período de construção poderá variar de 14 a 16 meses.\" (p. 3)\n\n3. **Vacância:**\n   \"A ocupação do CDA 1 é de 73,64%, CDRJ 1 de 11,98% e Torre Atlas de 8,96%.\" (p. 5)\n\n4. **Inadimplência:**\n   \"Considerando que a antiga locatária que ocupava o galpão 3 do CDA não pagou as parcelas do acordo, o jurídico do Fundo foi acionado e retomou a ação de execução da dívida.\" (p. 12)\n\n5. **Cotação e Valor Patrimonial:**\n   \"O valor patrimonial da cota do mês de nov/25 é R$ 394,1145.\" (p. 8)\n   \n6. **Distribuição de Rendimentos:**\n   \"A distribuição de rendimentos no último mês foi de R$ 2,45 por cota.\" (p. 9)\n\n7. **Alavancagem e Dívidas:**\n   \"O saldo de caixa em 31 de maio de 2026 é de R$ 10.909.501,65.\" (p. 11)\n   \n8. **Valor de Mercado dos Ativos:**\n   \"De acordo com a avaliação técnica realizada pela empresa Cushman & Wakefield Negócios Imobiliários Ltda., o valor de mercado do empreendimento incluindo terreno, construções e benfeitorias realizadas no presente exercício totalizam R$ 150.955.000,00.\" (p. 13)\n\n### O que observar em seguida:\n- Monitorar o andamento das obras e a conclusão do cronograma.\n- Atentar para as negociações judiciais relacionadas à inadimplência."
+  },
+  "comunicados": {
+    "ids": [
+      1100637,
+      1071297,
+      1018230,
+      1179890,
+      1148360
+    ],
+    "datas": [
+      "03/02/2026",
+      "26/12/2025",
+      "21/10/2025",
+      "05/05/2026",
+      "30/03/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 03/02/2026\n\n**O QUE aconteceu:** A administração do Fundo de Investimento Imobiliário Europar anunciou a realização da 3ª emissão de cotas, com previsão para distribuição pública primária.\n\n**Resumo:** O fundo planeja emitir novas cotações em uma série única, destinadas a investidores profissionais, sob o rito de registro automático de distribuição. As características principais da oferta foram detalhadas no comunicado.\n\n**Trecho-chave:**\n\"Em 21 de janeiro de 2026, foi realizada a Assembleia Especial Extraordinária da Classe Única do Fundo, que aprovou, dentre outras matérias, a realização da 3ª (terceira) emissão de cotas da Classe Única do Fundo, em série única ('Novas Cotas' e '3ª Emissão', respectivamente).\"\n\n### FATO RELEVANTE entregue em 26/12/2025\n\n**O QUE aconteceu:** A administração do fundo informou sobre a renovação de contrato de locação do Módulo IV do Galpão 1, com aumento significativo na receita.\n\n**Resumo:** O novo contrato de locação do Módulo IV do Galpão 1 foi renovado por cinco anos, resultando em um aumento de 31,41% no valor da locação. A administração detalhou os impactos financeiros mensais e consolidou as informações.\n\n**Trecho-chave:**\n\"O novo contrato possui vigência de 5 (cinco) anos com início em 01/11/25 data a partir da qual passou a vigorar as novas bases comerciais. As bases comerciais foram repactuadas e, considerando o preço médio do novo contrato, o valor da locação representa um aumento de 31,41% em relação ao preço anterior.\"\n\n### FATO RELEVANTE entregue em 21/10/2025\n\n**O QUE aconteceu:** A administração do fundo comunicou a renovação do contrato de locação dos Módulos I e II do Galpão 1, com aumento significativo na receita.\n\n**Resumo:** O novo contrato de locação dos Módulos I e II do Galpão 1 foi renovado por um ano, resultando em um aumento de 53% no valor da locação. A administração detalhou os impactos financeiros mensais e consolidou as informações.\n\n**Trecho-chave:**\n\"O novo Contrato possui vigência de 1 (um) ano com início em 1° de julho de 2025 data a partir da qual passou a vigorar as novas bases comerciais. Conforme observado, houve morosidade na conclusão das bases comerciais, por esta razão, a diferença entre o novo valor do aluguel em relação ao valor antigo foi cobrada em outubro de 2025 de forma retroativa a contar da data de 01 de julho de 2025.\"\n\n### ASSEMBLEIA AGO entregue em 30/03/2026\n\n**O QUE aconteceu:** A administração do fundo convocou os cotistas para participar da Assembleia Geral Ordinária por meio de consulta formal.\n\n**Resumo:** A assembleia será realizada para apreciação e votação das contas relativas ao Fundo e das demonstrações contábeis e suas notas explicativas, referentes ao exercício encerrado em 31 de dezembro de 2025. O resultado da consulta será apurado no dia 4 de maio de 2026.\n\n**Trecho-chave:**\n\"Os Cotistas foram cientificados de que o quórum para a aprovação da matéria constante no item 3.1.(i) acima, nos termos do artigo 15 do Anexo Normativo III da Resolução CVM 175/22 republicada em 30 de março de 2023 (texto consolidado conforme alterações), é de maioria de votos dos Cotistas cabendo a cada cota um voto.\"\n\n### ASSEMBLEIA AGO entregue em 05/05/2026\n\n**O QUE aconteceu:** A administração do fundo divulgou os resultados da Assembleia Geral Ordinária realizada por meio de consulta formal.\n\n**Resumo:** A assembleia foi realizada para apreciação e votação das contas relativas ao Fundo e das demonstrações contábeis e suas notas explicativas, referentes ao exercício encerrado em 31 de dezembro de 2025. O resultado foi apurado e divulgado.\n\n**Trecho-chave:**\n\"A apuração dos votos foi realizada pelo representante da Administradora Sr. Fernando Ferreira.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 315.99
+  },
+  "parecer": {
+    "id": 1148301,
+    "data_entrega": "30/03/2026 17:00",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário Europar – Responsabilidade Limitada em 31 de dezembro de 2025, e o desempenho das suas operações e os seus fluxos de caixa para o exercício findo nessa data , de acordo com as práticas contábeis adotadas no"
+  }
+}

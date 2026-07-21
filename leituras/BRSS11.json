@@ -1,0 +1,30 @@
+{
+  "ticker": "BRSS11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T02:13:17",
+  "comunicados": {
+    "ids": [
+      1220065,
+      1126877
+    ],
+    "datas": [
+      "15/06/2026",
+      "03/03/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### Assembleia Geral Extraordinária de Cotistas realizada em 11 de junho de 2026\n\n**O QUE aconteceu:** A assembleia aprovou uma série de alterações no Regulamento do Fundo, incluindo a reforma integral do Regulamento e Anexo Descritivo da Classe Única, novas emissões de capital, mudança na taxa de administração, amortização, entre outros.\n\n**Resumo:** A AGE aprovou diversas alterações estruturais no fundo, incluindo mudanças administrativas e financeiras.\n\n**Trecho-chave:**\n\"Considerando a transferência da administração fiduciária do Fundo para a Administradora, aprovar a reforma integral do Regulamento e Anexo Descritivo da Classe Única do Fundo, a fim de adequá-los ao padrão da Administradora, que irá vigorar na forma do Anexo I à presente ata;\"\n\n---\n\n### Assembleia Geral Extraordinária de Cotistas realizada em 26 de fevereiro de 2026\n\n**O QUE aconteceu:** A assembleia aprovou a destituição da atual administradora e gestora, bem como a eleição de uma nova administradora e gestora.\n\n**Resumo:** Os cotistas aprovaram a substituição das atuais administração e gestão pelo Planner Corretora e Tag Investimentos.\n\n**Trecho-chave:**\n\"Compareceram à Assembleia cotistas representando 100% (cem por cento) das cotas emitidas e integralizadas do Fundo, conforme lista de presença que integra esta ata como Anexo I. Presentes, ainda, na qualidade de convidados, os representantes da PLANNER CORRETORA DE VALORES S.A., inscrita no CNPJ sob o nº 00.806.535/0001-54, instituição financeira devidamente autorizada pela CVM para o exercício profissional de administração de carteiras de valores mobiliários, na categoria de administrador fiduciário, nos termos do Ato Declaratório CVM nº 3.585, de 2 de outubro de 1995, com sede na cidade de São Paulo, Estado de São Paulo, na Avenida Brigadeiro Faria Lima, nº 3.900, 10º andar, Itaim Bibi, CEP 04538-132 (“Nova Administradora”), bem como representantes da TAG INVESTIMENTOS LTDA., com sede na Cidade e Estado de São Paulo, à Avenida Brigadeiro Faria Lima, 3311, 12º Andar, Itaim Bibi, CEP 04.438-133, inscrita no CNPJ/MF sob o número 01.591.499/0001-11, e autorizada à prestação de serviço de administração de carteira de títulos e valores mobiliários através do Ato Declaratório CVM nº 8.479, de 22 de setembro de 2005 (“Nova Gestora”).\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1247379,
+    "data_entrega": "14/07/2026 16:15",
+    "tipo": "abstencao",
+    "rotulo": "abstenção de opinião",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Não expressamos uma opinião sobre as demonstrações financeiras do Success Fundo de Investimento Imobiliário pois, devido à relevância dos assuntos descritos na seção a seguir intitulada “Base para abstenção de opinião”, não nos foi possível obter evidência de auditoria apropriada e suficiente para fundamentar nossa opinião de auditoria sobre essas demonstrações financeiras."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "ticker": "CASA11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:23:03",
+  "comunicados": {
+    "ids": [],
+    "datas": [],
+    "rotulos": [],
+    "texto": null
+  },
+  "parecer": {
+    "id": 1235908,
+    "data_entrega": "30/06/2026 18:48",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Buena Vista Neos Real Estate High Income BR Index Fundo de Índice - Responsabilidade Limitada em 31 de março de 2026 e o desempenho de suas operações para o período de 29 de maio de 2025 (início das atividades) a 31 de março de 2026 , de ac"
+  }
+}

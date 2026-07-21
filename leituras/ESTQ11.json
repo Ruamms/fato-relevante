@@ -1,0 +1,30 @@
+{
+  "ticker": "ESTQ11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:59:41",
+  "comunicados": {
+    "ids": [
+      811188,
+      1207525
+    ],
+    "datas": [
+      "30/12/2024",
+      "29/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Assembleia AGO"
+    ],
+    "texto": "**30/12/2024 - O Fundo passa a ser classificado como \"Multiestratégia\"**\n\nO Fundo de Investimento Imobiliário POLO ESTOQUE II - FII passará a ser classificado como “Multiestratégia”, com a subclassificação “Multiestratégia”, tipo de gestão “Gestão Ativa” e critério de classificação “Residencial”. Essa mudança foi feita em conformidade com o art. 27 do Anexo Complementar VI - Regras e Procedimentos para Fundos de Investimento Imobiliário do Manual de Regras e Procedimentos de Administração e Gestão de Recursos de Terceiros.\n\n*\"Passará a ser classificado como 'Multiestratégia', com a subclassificação 'Multiestratégia', tipo de gestão 'Gestão Ativa' e critério de classificação 'Residencial' de acordo com o previsto no art. 27 da referida norma.\"* (p. 1)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1143468,
+    "data_entrega": "24/03/2026 18:28",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário Polo Estoque II - FII em 31 de dezembro de 2025 e o desempenho de suas operações e fluxos de caixa para o exercício findo nesta data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos Fu"
+  }
+}

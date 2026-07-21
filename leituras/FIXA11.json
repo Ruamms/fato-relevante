@@ -1,0 +1,30 @@
+{
+  "ticker": "FIXA11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:29:43",
+  "comunicados": {
+    "ids": [
+      1240079,
+      1238239
+    ],
+    "datas": [
+      "06/07/2026",
+      "02/07/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA AGO entregue em 06/07/2026\n\n**O QUE ACONTECEU:** Convocação para realização de Assembleia Geral Ordinária.\n\n**RESUMO:** A assembleia foi convocada conforme a Resolução CVM 175/22, mas não alcançou o quórum necessário. Como resultado, as demonstrações contábeis do exercício social findo em 31/03/2026 foram consideradas automaticamente aprovadas.\n\n**CITAÇÃO CHAVE:** \"Consideram-se aprovadas as demonstrações contábeis do FUNDO relativas ao exercício social findo em 31/03/2026, devidamente auditada pela Deloitte Touche Tohmatsu Auditores Independentes.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 02/07/2026\n\n**O QUE ACONTECEU:** Realização da Assembleia Geral Ordinária.\n\n**RESUMO:** A assembleia foi realizada no dia 29/06/2026, presidida pela Srª. Adriana Monteiro e com o Sr. Fabricio Rangel como Secretário. Como não houve manifestação de cotistas, as demonstrações contábeis do exercício social findo em 31/03/2026 foram consideradas automaticamente aprovadas.\n\n**CITAÇÃO CHAVE:** \"As Demonstrações Contábeis relativas ao exercício social findo em 31/03/2026 foram consideradas automaticamente aprovadas, por não apresentarem opinião modificada.\" (p. 1)\n\n---\n\n**CONEXÃO COM O CONTEXTO:** As demonstrações contábeis aprovadas na assembleia se referem ao exercício social findo em 31/03/2026, que pode estar relacionado aos indicadores financeiros do contexto fornecido."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1205993,
+    "data_entrega": "28/05/2026 12:29",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do BB ETF Renda Fixa Pré Índice Futuro de Taxas de Juros S&P/B3 Fundo de Índice Responsabilidade Limitada em 31 de março de 2026 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no "
+  }
+}

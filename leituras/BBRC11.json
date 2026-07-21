@@ -1,0 +1,52 @@
+{
+  "ticker": "BBRC11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T00:37:55",
+  "relatorio": {
+    "id": 1241368,
+    "data_entrega": "07/07/2026 18:25",
+    "texto": "### Fatos do Relatório Gerencial:\n\n1. **Venda de Agência Indianópolis**: Em 12 de dezembro de 2023, a agência foi vendida por R$ 24,0M (com detalhes específicos sobre as parcelas e formas de pagamento). (p. 6)\n\n2. **Vacância do Portfólio**: O portfólio encerrou o mês com 95% de ocupação e aluguel médio faturado de R$ 109,0/m². (p. 15)\n\n3. **Comentários do Gestor sobre Resultados Financeiros**: Em maio, o resultado caixa foi de R$ 0,91/cota, com R$ 0,89/cota de resultado recorrente e R$ 0,03/cota de resultado não recorrente. (p. 5)\n\n4. **Composição da Carteira**: O patrimônio líquido do fundo encerrou o mês em R$ 165,9 milhões, com R$ 151,4 milhões em imóveis, R$ 11,3 milhões em caixa aplicado e R$ 6,0 milhões a receber. (p. 13)\n\n5. **Contratos de Locação**: A partir de 2024, os contratos estão sendo migrados para o modelo típico com prazo de 5 anos e reajuste pelo IPCA. Atualmente, 95% da receita está atrelada a contratos típicos. (p. 16)\n\n### O que observar em seguida:\n- Monitorar as entregas dos imóveis em construção (Loja Moema e Loja Pinheiros).\n- Observar o impacto das renegociações de contrato no fluxo de caixa do fundo."
+  },
+  "comunicados": {
+    "ids": [
+      1045720,
+      1043060,
+      948782,
+      1207976,
+      1207974
+    ],
+    "datas": [
+      "24/11/2025",
+      "17/11/2025",
+      "16/07/2025",
+      "29/05/2026",
+      "29/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Fato Relevante entregue em 24/11/2025\n\n**O que aconteceu:** A administradora do fundo transferiu os serviços de administração, custódia, tesouraria e controladoria para outras instituições a partir de janeiro de 2026.\n\n**Resumo:** A Tivio Capital informou sobre a transferência dos serviços administrativos do BB Renda Corporativa FII para a BEM Distribuidora de Títulos e Valores Mobiliários Ltda. e o Banco Bradesco S.A., com efeitos a partir de 2026.\n\n**Trecho-chave:**\n\"Os serviços de administração fiduciária do Fundo serão transferidos para a BEM DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA., instituição financeira com sede na cidade de Osasco, Estado de São Paulo, no Núcleo Cidade de Deus – S/N, Ed. Prata – 4º andar, Vila Yara, CEP 06029-900, inscrita no CNPJ sob o nº 00.066.670/0001 -00.\"\n\n### Fato Relevante entregue em 17/11/2025\n\n**O que aconteceu:** O contrato de locação do imóvel Ag. Varejo Paes de Barros foi renovado, com impacto negativo no resultado do fundo a partir de maio de 2026.\n\n**Resumo:** A Tivio Capital informou sobre a renovação do contrato de locação do imóvel Ag. Varejo Paes de Barros, resultando em um impacto negativo de R$0,001 por cota no resultado do fundo a partir de maio de 2026.\n\n**Trecho-chave:**\n\"Foi concluída a renovação do contrato de locação do imóvel de propriedade do Fundo, localizado na Av. Paes de Barros , 2621, São Paulo/SP (\"Ag. Varejo Paes de Barros \"). Tendo em vista as condições das renovações, haverá um impacto negativo de R$0,001 por cota no resultado do fundo a partir de maio de 2026.\"\n\n### Fato Relevante entregue em 16/07/2025\n\n**O que aconteceu:** Os contratos de locação dos imóveis Ag. Varejo Pq. Da Aclimação e Ag. Varejo Maria Servidei foram renovados, com impacto negativo no resultado do fundo a partir de novembro de 2025 e janeiro de 2026.\n\n**Resumo:** A Tivio Capital informou sobre as renovações dos contratos de locação dos imóveis Ag. Varejo Pq. Da Aclimação e Ag. Varejo Maria Servidei, resultando em um impacto negativo de R$0,02 por cota no resultado do fundo a partir de novembro de 2025 e janeiro de 2026.\n\n**Trecho-chave:**\n\"Os valores negociados foram suportados por laudos de avaliação elaborados pelo consultor imobiliário do Fundo. Tendo em vista as condições das renovações, haverá um impacto negativo de R$ 0,02 (dois centavos) por cota no resultado do fundo, sendo R$ 0,01 (um centavo) por cota no resultado do fundo a partir de novembro de 2025, em virtude da renovação da Ag. Varejo Pq. Da Aclimação, e de R$ 0,01 (um centavo) por cota no resultado do fundo a partir de janeiro de 2026, em virtude da renovação da Ag. Varejo Maria Servidei.\"\n\n### Assembleia AGO entregue em 29/05/2026\n\n**O que aconteceu:** A assembleia geral de cotistas aprovou as demonstrações contábeis do exercício social findo em 31 de dezembro de 2025.\n\n**Resumo:** A BEM Distribuidora de Títulos e Valores Mobiliários Ltda. informou que a Assembleia Geral de Cotistas do BB Renda Corporativa FII aprovou as demonstrações contábeis do exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Encerrado o prazo para envio das manifestações de voto referentes à Consulta Formal convocada em 31 de março de 2026, incialmente previsto para concluir em 30 de abril de 2026 e prorrogado até às 10h do desta data, e após a apuração dos votos recebidos, verificou-se a APROVAÇÃO da das demonstrações contábeis do Fundo, relativamente ao exercício social findo em 31 de dezembro de 2025.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares"
+    ],
+    "cota": 105.0
+  },
+  "parecer": {
+    "id": 1170547,
+    "data_entrega": "27/04/2026 16:49",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento financeiro imobiliário."
+  }
+}

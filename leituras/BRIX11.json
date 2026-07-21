@@ -1,0 +1,39 @@
+{
+  "ticker": "BRIX11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T01:17:18",
+  "comunicados": {
+    "ids": [
+      907998,
+      1235158,
+      1207675,
+      1202309,
+      1169219
+    ],
+    "datas": [
+      "16/05/2025",
+      "30/06/2026",
+      "29/05/2026",
+      "25/05/2026",
+      "24/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO/E"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 16/05/2025\n\n**O QUE aconteceu:** O Fundo BRIX11 passará a se chamar \"FII BINR\" e suas cotas serão negociadas sob o novo código de negociação \"BINR11\".\n\n**Resumo:** A BRL TRUST, administradora do fundo, informa que a Assembleia Geral Ordinária e Extraordinária aprovou um novo nome para o fundo.\n\n**Trecho-chave:**\n\"em razão da aprovação pelos Cotistas da deliberação constante no Item II do edital de convocação da Assembleia Geral Ordinária e Extraordinária do Fundo enviado pelo Administrador em 15 de abril de 2025, a partir da abertura do mercado do dia 23 de maio de 2025, o Fundo passará a ter novo nome de pregão “FII BINR”, e as cotas do Fundo passarão a ser negociadas sob o novo código de negociação “BINR11”, em substituição ao atual código “BRIX11”.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 30/06/2026\n\n**O QUE aconteceu:** Não houve distribuição de lucros no mês de junho/2026.\n\n**Resumo:** A administradora informou que não foi possível apurar a existência de lucro para o mês de junho/2026, e a contabilidade final será concluída em 22 de julho de 2026.\n\n**Trecho-chave:**\n\"considerando que a contabilidade do fundo não pôde ser finalizada até o presente momento, informamos que não temos apurada existência de lucro no referido período, passível de distribuição de resultados.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 29/05/2026\n\n**O QUE aconteceu:** Não houve distribuição de lucros no mês de maio/2026.\n\n**Resumo:** A administradora informou que não foi possível apurar a existência de lucro para o mês de maio/2026, e a contabilidade final será concluída em 22 de junho de 2026.\n\n**Trecho-chave:**\n\"considerando que a contabilidade do fundo não pôde ser finalizada até o presente momento, informamos que não temos apurada existência de lucro no referido período, passível de distribuição de resultados.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 25/05/2026\n\n**O QUE aconteceu:** A Assembleia Geral Ordinária e Extraordinária aprovou as Demonstrações Financeiras do Fundo e alterações no Regulamento do Fundo.\n\n**Resumo:** Os Cotistas aprovaram sem ressalvas as matérias da ordem do dia, incluindo a aprovação das Demonstrações Financeiras e a alteração dos artigos 7.6.2 e 7.6.3 do Regulamento do Fundo.\n\n**Trecho-chave:**\n\"Após análises das repostas dos Cotistas do Fundo à Consulta Formal, foram apurados os seguintes resultados:\nAprovo Não Aprovo Abstenção Conflito\nItem 1 85.0432893141 % 0% 0% 0%\nItem 2 85.0432893141 % 0% 0% 0%\"\n\"Diante o exposto, foram APROVADAS, sem qualquer ressalva ou restrição, as matérias da ordem do dia, por cotistas desimpedidos e aptos a deliberar.\"\n\n---\n\n### ASSEMBLEIA AGO/E entregue em 24/04/2026\n\n**O QUE aconteceu:** Foi convocada uma Assembleia Geral Ordinária e Extraordinária para aprovar as Demonstrações Financeiras do Fundo e alterações no Regulamento do Fundo.\n\n**Resumo:** A BRL TRUST, administradora do fundo, convoca os cotistas a participarem da Assembleia Geral que ocorrerá em 25 de maio de 2026 para deliberar sobre as Demonstrações Financeiras e alterações no Regulamento do Fundo.\n\n**Trecho-chave:**\n\"A BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., com sede na cidade de São Paulo, Estado de São Paulo, na Rua Alves Guimarães, nº 1.212, Pinheiros, CEP: 05.410-002, inscrita no Cadastro Nacional de Pessoas Jurídicas do Ministério da Fazenda (“ CNPJ/MF”) sob o nº 13.486.793/0001 -42, habilitada para administração de fundos de investimento conforme ato declaratório expedido pela Comissão de Valores Mobiliários (“CVM”) nº 11.784, de 30 de junho de 2011 (\"Administradora\"), na qualidade de instituição administradora do BE IN RIO FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA, inscrito no CNPJ/MF sob o nº 35.360.651/0001-77 (\"Fundo\"), convida os cotistas do Fundo (‘Cotistas’), por meio desta, a participar da Assembleia Geral Ordinária e Extraordinária de Cotistas do Fundo ('AGOE'), a ser realizada de forma não presencial, sob consulta formal, cuja apuração e divulgação dos resultados ocorrerá no dia 25 de maio de 2026, para deliberar sobre a seguinte matéria:\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1150166,
+    "data_entrega": "31/03/2026 16:13",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Be In Rio Fundo de Investimento Imobiliário - Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no B"
+  }
+}

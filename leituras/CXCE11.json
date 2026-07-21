@@ -1,0 +1,51 @@
+{
+  "ticker": "CXCE11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T01:57:06",
+  "relatorio": {
+    "id": 1249998,
+    "data_entrega": "15/07/2026 18:55",
+    "texto": "### Fatos Relevantes:\n\n1. **Contrato de Locação**: O contrato com a CEDAE foi renovado em setembro de 2021, com vigência até setembro de 2031, prevendo um aluguel mensal corrigido pelo IPCA.\n   > \"Conforme comunicado ao mercado em 29 SET 2021 , foi firmado em 28 de setembro de 2021 um novo contrato de locação com a CEDAE (contrato típico com vigência de 120 meses, valor de locação de R$ 690 mil/mês, corrigido anualmente pelo IPCA, com seguro fiança locatícia), o qual reflete os termos e condições dispostos na Proposta da Administradora, material que foi parte integrante da Consulta Formal encerrada em 24 de setembro de 2021. O novo período de locação do imóvel teve início em 28 de setembro de 2021 e se encerrará em 28 de setembro de 2031.\"\n   > (p. 1)\n\n2. **Vacância**: A vacância física do imóvel é zero, indicando que o edifício está integralmente ocupado.\n   > \"Características Imóvel comercial com área total de 19.938,07 m² assim constituída: (i) 1 pavimento de acesso, lojas e dependências do prédio;  (ii) 1 pavimento de dependências do prédio e estacionamento com 20 vagas cobertas; (iii) 1 pavimento de garagem elevado com 82 vagas cobertas; (i v) 5 pavimentos de salas comerciais; e (v) 1 pavimento destinado a dependências de uso comum do prédio. Participação 100% Vacância física 0%\"\n   > (p. 3)\n\n3. **Distribuição de Rendimentos**: A distribuição média por cota no mês foi de R$ 0,46.\n   > \"Distribuição média por cota 0,46\"\n   > (p. 2)\n\n4. **Patrimônio Líquido e Valor Patrimonial da Cota**: O patrimônio líquido do fundo é de R$ 108,1 milhões e o valor patrimonial da cota é de R$ 63,13.\n   > \"Patrimônio líquido | Valor patrimonial da cota \nR$ 108.142.835,91 | R$ 63,13251169 cota\"\n   > (p. 1)\n\n### O que observar em seguida:\n- **Monitorar a evolução do valor de mercado da cota**: A variação negativa recente (-2,88%) pode indicar algum risco.\n- **Atenção à renegociação do contrato de locação**: Embora o contrato esteja renovado por 10 anos, qualquer alteração no valor ou termos do aluguel pode afetar a rentabilidade."
+  },
+  "comunicados": {
+    "ids": [
+      1074573,
+      1074485,
+      952704,
+      1180162,
+      1173504
+    ],
+    "datas": [
+      "02/01/2026",
+      "02/01/2026",
+      "25/07/2025",
+      "05/05/2026",
+      "29/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 02/01/2026 - Variação Negativa no Patrimônio Líquido\n\n**Resumo:** O patrimônio líquido do Fundo de Investimento Imobiliário CAIXA CEDAE sofreu uma variação negativa de -1,67% após a reavaliação patrimonial com data-base em novembro de 2025.\n\n**Trecho-chave:**\n\"A Caixa Econômica Federal (“Administradora”), na qualidade de administradora do Fundo de Investimento Imobiliário CAIXA CEDAE (“Fundo”), nos termos do Anexo III da Resolução CVM n° 175, vem comunicar aos seus cotistas e ao mercado a ocorrência de variação de valor do patrimônio líquido do Fundo em decorrência da reavaliação patrimonial realizada com data-base de novembro de 2025, passando o valor do patrimônio líquido de R$ 109.689.579,70 (cento e nove milhões, seiscentos e oitenta e nove mil, quinhentos e setenta e nove reais, setenta centavos) na posição de 30/12/2025 para R$ 107.856.922,62 (cento e sete milhões, oitocentos e cinquenta e seis mil, novecentos e vinte e dois reais, sessenta e dois centavos) na posição de 31/12/2025, o que representa uma variação negativa de -1,67% (menos um vírgula sessenta e sete por cento).\"\n\n### 29/04/2026 - Assembleia Geral Ordinária\n\n**Resumo:** A assembleia geral ordinária de cotistas do Fundo de Investimento Imobiliário CAIXA CEDAE foi realizada em 29 de abril de 2026, aprovando as demonstrações financeiras referentes ao exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Após promover as diligências necessárias e realizar o cômputo dos votos, a Administradora apurou que a matéria constante da Ordem do Dia foi aprovada pela maioria das Cotas Subscritas presentes.\"\n\n### 25/07/2025 - Reversão da Garantia\n\n**Resumo:** A garantia originalmente prevista no contrato de locação entre o Fundo e a Companhia Estadual de Águas e Esgotos – CEDAE foi revertida à condição original, com a apresentação do seguro fiança pela CEDAE.\n\n**Trecho-chave:**\n\"A Caixa Econômica Federal (“Administradora”), na qualidade de administradora do Fundo de Investimento Imobiliário CAIXA CEDAE  (“Fundo”), vem comunicar aos seus cotistas e ao mercado a reversão à condição original da garantia do contrato de locação celebrado entre o Fundo com a Companhia Estadual de Águas e Esgotos – CEDAE (“CED AE”), conforme Comunicado ao Mercado divulgado em 21/01/2022, por meio do qual foi informado que a garantia originalmente prevista havia sido substituída temporariamente por uma cessão fiduciária de cotas de fundo de investimento e direitos sobre contas bancárias da CEDAE até que fosse constituído pela CEDAE seguro fiança. Assim, serve o presente comunicado para informar que o seguro fiança foi efetivamente constituído, de forma que a CEDAE apresentou a apólice do referido seguro, o qual deve vigorar durante toda a vigência do contrato de locação em garantia do fiel cumprimento de todas as obrigações assumidas no contrato de locação.\"\n\n### 05/05/2026 - Assembleia Geral Ordinária\n\n**Resumo:** A assembleia geral ordinária de cotistas do Fundo de Investimento Imobiliário CAIXA CEDAE foi realizada em 29 de abril de 2026, aprovando as demonstrações financeiras referentes ao exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Após promover as diligências necessárias e realizar o cômputo dos votos, a Administradora apurou que a matéria constante da Ordem do Dia foi aprovada pela maioria das Cotas Subscritas presentes.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 40.5
+  },
+  "parecer": {
+    "id": 1147345,
+    "data_entrega": "30/03/2026 08:49",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nesta data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

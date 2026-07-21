@@ -1,0 +1,30 @@
+{
+  "ticker": "XBOV11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T07:25:44",
+  "comunicados": {
+    "ids": [
+      1222730,
+      1213812
+    ],
+    "datas": [
+      "16/06/2026",
+      "08/06/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA AGO entregue em 16/06/2026\n\n**O QUE aconteceu:** A Assembleia Ordinária de Cotistas não foi instalada.\n\n**Resumo:** Não houve manifestação de voto, e as Demonstrações Contábeis do FUNDO foram consideradas aprovadas.\n\n**Trecho-chave:**\n\"Em razão do não recebimento de votos ou de votos válidos por parte dos cotistas a Assembleia Ordinária de Cotistas, prevista para ocorrer em 08/06/2026, por meio de consulta formal, não foi instalada.\" (p. 1)\n\n**Conexão com contexto:** A não realização da assembleia pode indicar uma baixa aderência dos cotistas, o que pode afetar a governança do fundo.\n\n---\n\n### ASSEMBLEIA AGO entregue em 08/06/2026\n\n**O QUE aconteceu:** A Assembleia Ordinária de Cotistas não foi instalada.\n\n**Resumo:** Não houve manifestação de voto, e as Demonstrações Contábeis do FUNDO foram consideradas aprovadas.\n\n**Trecho-chave:**\n\"Em razão do não recebimento de voto(s), ou de voto(s) válido(s), até a data estipulada na convocação, a Assembleia não pôde ser instalada. Todavia, as Demonstrações Contábeis do FUNDO, relativas ao exercício social encerrado em 31 de março de 2026, foram consideradas aprovadas, por não apresentarem opinião modificada, nos termos da legislação aplicável.\" (p. 1)\n\n**Conexão com contexto:** A não realização da assembleia pode indicar uma baixa aderência dos cotistas, o que pode afetar a governança do fundo."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1188404,
+    "data_entrega": "13/05/2026 14:05",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Caixa ETF Ibovespa Classe de Fundo de Índice – Responsabilidade Limitada em 31 de março de 2026 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos Fundo"
+  }
+}

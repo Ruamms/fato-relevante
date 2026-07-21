@@ -1,0 +1,27 @@
+{
+  "ticker": "VIMO11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T04:23:30",
+  "comunicados": {
+    "ids": [
+      1196238,
+      977661,
+      1235346,
+      1218350
+    ],
+    "datas": [
+      "15/05/2026",
+      "25/08/2025",
+      "30/06/2026",
+      "11/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 15/05/2026\n\n**O QUE aconteceu:** Aquisição do terreno para o projeto Paradis.\n\n**Resumo:** O fundo concluiu a aquisição de um terreno no Leblon, Rio de Janeiro, que será desenvolvido como o empreendimento Paradis. Este é o primeiro investimento do fundo.\n\n**Trecho-chave:**\n\"Na presente data, o Fundo concluiu seu primeiro investimento, por meio da aquisição das unidades que compõem o prédio existente no terreno da Rua Almirante Guilhem nº 234, Leblon onde será desenvolvido o empreendimento Paradis.\"\n\n---\n\n### FATO RELEVANTE entregue em 25/08/2025\n\n**O QUE aconteceu:** Emissão de novas cotas.\n\n**Resumo:** O fundo aprovou uma nova emissão de cotas, tanto da Subclasse A quanto da Subclasse B. A oferta será realizada sob o regime de melhores esforços e destinada exclusivamente a investidores qualificados.\n\n**Trecho-chave:**\n\"A distribuição primária das Novas Cotas (conforme abaixo definidas) será realizada no Brasil, sob o regime de melhores esforços de colocação, sob coordenação e distribuição da BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A. , acima qualificada (“ Coordenador Líder ”), bem como de outras instituições que vierem a aderir à Oferta, e será submetida ao rito de registro automático perante a CVM.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 11/06/2026\n\n**O QUE aconteceu:** Alteração da data de pagamento dos rendimentos.\n\n**Resumo:** A data de pagamento do rendimento referente a maio de 2026 para a Subclasse A foi alterada de 15/06/2026 para 18/06/2026. A data de pagamento para a Subclasse B permanece inalterada.\n\n**Trecho-chave:**\n\"Em função de questões operacionais, o pagamento dos rendimentos da Subclasse A (negociada em bolsa de valores) referentes a maio de 2026 do Fundo, anteriormente previsto para 15/06/2026, teve sua data de pagamento alterada para 18/06/2026.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 30/06/2026\n\n**O QUE aconteceu:** Distribuição de rendimentos.\n\n**Resumo:** O fundo distribuiu R$ 3,00 por cota para ambas as subclasse A e B. O pagamento será realizado no dia 14/07/2026 aos detentores de cotas.\n\n**Trecho-chave:**\n\"O valor dos rendimentos referentes a junho de 2026 corresponde a: • Subclasse A: R$ 3,00 por cota. • Subclasse B: R$ 3,00 por cota.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

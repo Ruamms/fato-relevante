@@ -1,0 +1,58 @@
+{
+  "ticker": "INDE11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T03:52:14",
+  "relatorio": {
+    "id": 1247648,
+    "data_entrega": "14/07/2026 17:48",
+    "texto": "### Fatos Extraídos do Relatório Gerencial\n\n1. **Projetos em Andamento:**\n   - O projeto Jamaris está sob aprovação e sofreu um pequeno atraso devido a mudanças no escopo.\n   - O projeto JML já assinou a Escritura e Confissão de Dívida, com obras em fase final.\n\n2. **Vacância:**\n   - Não há informações específicas sobre vacância nos projetos mencionados.\n\n3. **Inadimplência:**\n   - Não há menção à inadimplência no relatório.\n\n4. **Obras e Reformas:**\n   - O projeto JML tem obras em fase final, incluindo o estande de vendas.\n   - O projeto Jamaris possui detalhes sobre a tipologia das unidades e áreas privativas.\n\n5. **Cotistas:**\n   - O número de cotistas do fundo é 181, com um aumento de 2,26% em relação ao último informe mensal.\n\n6. **Rendimentos:**\n   - Não há rendimentos declarados acima de zero nos últimos 12 meses.\n\n7. **Cenário Macroeconômico:**\n   - O IFIX encerrou junho com uma desvalorização de 1,21%, refletindo incertezas econômicas e altas expectativas de inflação.\n   - A taxa Selic foi reduzida em 0,25 ponto percentual no final do mês.\n\n8. **Riscos:**\n   - O fundo está exposto a riscos macroeconômicos, incluindo incertezas geopolíticas e pressões inflacionárias.\n   - Não há garantias de resgate ou liquidez para as cotas do fundo.\n\n### O que observar em seguida:\n- Monitorar o andamento dos projetos Jamaris e JML.\n- Observar a evolução da vacância nos futuros lançamentos."
+  },
+  "comunicados": {
+    "ids": [
+      1073783,
+      1061271,
+      981114,
+      1237573,
+      1205397,
+      1208006,
+      1208004
+    ],
+    "datas": [
+      "30/12/2025",
+      "12/12/2025",
+      "29/08/2025",
+      "01/07/2026",
+      "27/05/2026",
+      "29/05/2026",
+      "29/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 30/12/2025\n\n**O QUE aconteceu:** O patrimônio líquido do FUNDO foi reavaliado com um impacto positivo de 24,70%, resultando no aumento de R$ 10.126.080,21 no valor justo dos ativos.\n\n**Resumo:** A distribuidora e administradora do fundo informaram sobre a reavaliação dos ativos imobiliários, levando ao aumento significativo no patrimônio líquido.\n\n**Trecho-chave:**\n\"Os ativos imobiliários do FUNDO foram reavaliados, sendo verificado um impacto positivo de 24,70% (vinte e quatro inteiros e setenta centésimos por cento) no patrimônio líquido do FUNDO, com aumento de R$ 10.126.080,21 (dez milhões, cento e vinte e seis mil, oitenta reais e vinte e um centavos) no valor justo dos ativos.\"\n\n---\n\n### FATO RELEVANTE entregue em 12/12/2025\n\n**O QUE aconteceu:** O Alvará de Aprovação de Edificação Nova foi deferido para o Projeto JML, localizado nas Ruas José Maria Lisboa e Saint Hilaire, no município de São Paulo/SP.\n\n**Resumo:** O fundo recebeu aprovação para uma nova edificação em São Paulo, com previsão de lançamento no primeiro trimestre de 2026.\n\n**Trecho-chave:**\n\"Foi deferido o Alvará de Aprovação de Edificação Nova (“Alvará de Construção”) sob o número 60200-25-SP-ALV do Projeto JML, referente aos imóveis situados nas Ruas José Maria Lisboa e Saint Hilaire, no município de São Paulo/SP.\"\n\n---\n\n### FATO RELEVANTE entregue em 29/08/2025\n\n**O QUE aconteceu:** A Gestora e a Consultora Imobiliária renunciaram às Taxas de Gestão e de Consultoria Imobiliária referentes aos períodos de agosto a novembro de 2025, e o Fundo concedeu um desconto na Taxa de Administração para esses mesmos períodos.\n\n**Resumo:** As taxas administrativas foram reduzidas em virtude da postergação dos lançamentos imobiliários do fundo.\n\n**Trecho-chave:**\n\"O Fundo não pagará: (i) Taxa de Gestão referente aos períodos (competência) de agosto a novembro (regime caixa de setembro a dezembro de 2025); e (ii) Taxa de Consultoria Imobiliária referente aos períodos (competência) de setembro a novembro de 2025 (regime caixa de outubro a dezembro de 2025).\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 01/07/2026\n\n**O QUE aconteceu:** A Gestora e a Administradora renunciaram às Taxas de Gestão e de Consultoria Imobiliária referentes ao período de maio de 2026, concedendo um desconto na Taxa de Administração para o mesmo período.\n\n**Resumo:** As taxas administrativas foram reduzidas em resposta à postergação dos lançamentos imobiliários do fundo.\n\n**Trecho-chave:**\n\"Em razão da postergação do lançamento dos projetos do Fundo, a Gestora, a Administradora, anteriormente qualificadas, e a JALGP EMPREENDIMENTOS E PARTICIPACOES LTDA., decidiram por: \n• Renunciar as Taxas de Gestão e de Consultoria Imobiliária referentes ao período de competência de maio de 2026 (regime de caixa de junho de 2026), e; • Conceder um desconto em relação a Taxa de Administração, referente ao período de competência de maio de 2026 (regime de caixa de junho de 2026), sendo cobrado o valor de R$ 3.000,00 (três mil reais) pela prestação dos serviços de administração.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 27/05/2026\n\n**O QUE aconteceu:** A Gestora e a Administradora renunciaram às Taxas de Gestão e de Consultoria Imobiliária referentes ao período de abril de 2026, concedendo um desconto na Taxa de Administração para o mesmo período.\n\n**Resumo:** As taxas administrativas foram reduzidas em resposta à postergação dos lançamentos imobiliários do fundo.\n\n**Trecho-chave:**\n\"Em razão da postergação do lançamento dos projetos do Fundo, a Gestora, a Administradora, anteriormente qualificadas, e a JALGP EMPREENDIMENTOS E PARTICIPACOES LTDA., decidiram por:\n• Renunciar as Taxas de Gestão e de Consultoria Imobiliária referentes ao período de competência de abril 2026 (regime de caixa de maio de 2026), e; • Conceder um desconto em relação a Taxa de Administração, referente ao período de competência de abril 2026 (regime de caixa de maio de 2026), sendo cobrado o valor de R$ 3.000,00 (três mil reais) pela prestação dos serviços de administração.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 29/05/2026\n\n**O QUE aconteceu:** A assembleia geral ordinária aprovou as demonstrações contábeis do exercício social que se findou em 31 de dezembro de 2025.\n\n**Resumo:** Os cotistas do fundo aprovaram as demonstrações contábeis apresentadas pelo fundo.\n\n**Trecho-chave:**\n\"Findo o prazo e após a apuração dos votos recebidos, excluídas as participações das pessoas conflitadas, referidas nos incisos I a III do artigo 78 da Parte Geral da Resolução CVM 175/2022 (“Votos Computáveis”), foi verificada a APROVAÇÃO da matéria elencada na ordem do dia.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 29/05/2026\n\n**O QUE aconteceu:** O sumário da consulta formal confirmou a aprovação das matérias discutidas durante a assembleia geral ordinária de cotistas.\n\n**Resumo:** A administradora informou sobre a aprovação das matérias discutidas na assembleia geral ordinária de cotistas.\n\n**Trecho-chave:**\n\"A INTER DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA., inscrita no CNPJ sob o nº 18.945.670/0001-46 (“Administradora”), na qualidade de instituição administradora do INTER DESENVOLVIMENTO FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA, inscrito no CNPJ sob o nº. 52.635.194/0001-03 (“Fundo”), vem, por meio deste instrumento, nos termos da regulamentação em vigor, no âmbito da Consulta Formal convocada em 29 de abril de 2026, com prazo para manifestação até às 12h do dia 29 de maio de 2026 (“Consulta Formal”), informar que, findo o prazo para recebimento e apurados os votos recebidos, verificou-se a APROVAÇÃO da matéria elencada na ordem do dia.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos irregulares",
+      "Base de cotistas muito pequena"
+    ],
+    "cota": 80.0
+  },
+  "parecer": {
+    "id": 1151779,
+    "data_entrega": "31/03/2026 21:48",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Inter Desenvolvimento Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis ado"
+  }
+}

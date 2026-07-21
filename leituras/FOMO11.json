@@ -1,0 +1,36 @@
+{
+  "ticker": "FOMO11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:30:18",
+  "comunicados": {
+    "ids": [
+      1204211,
+      1201621,
+      1213612,
+      1194041
+    ],
+    "datas": [
+      "26/05/2026",
+      "22/05/2026",
+      "08/06/2026",
+      "15/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 26/05/2026\n\n**O QUE aconteceu:** Alteração do regulamento do fundo para disponibilização de taxas devidas aos prestadores de serviços.\n\n**Resumo:** O Administrador aprovou a alteração do regulamento do fundo para que as segregações das taxas devidas aos prestadores de serviço sejam publicadas na Plataforma de Transparência de Taxas.\n\n**Trecho-chave:**\n\"O Administrador aprovou, por Instrumento Particular do Administrador, a alteração do regulamento do Fundo para incluir que a segregação das taxas devidas aos prestadores de serviço s do Fundo passa a ser disponibilizada na Plataforma de Transparência de Taxas no endereço: https://data.anbima.com.br/busca/transparencia-de-taxas-de-fundos.\"\n\n### COMUNICADO AO MERCADO entregue em 22/05/2026\n\n**O QUE aconteceu:** Alteração do regulamento do fundo para disponibilização de taxas devidas aos prestadores de serviços.\n\n**Resumo:** O Administrador aprovou a alteração do regulamento do fundo para que as segregações das taxas devidas aos prestadores de serviço sejam publicadas na Plataforma de Transparência de Taxas.\n\n**Trecho-chave:**\n\"O Administrador aprovou, por Instrumento Particular do Administrador, a alteração do regulamento do Fundo para incluir que a segregação das taxas devidas aos prestadores de serviço s do Fundo passa a ser disponibilizada na Plataforma de Transparência de Taxas no endereço: https://data.anbima.com.br/busca/transparencia-de-taxas-de-fundos.\"\n\n### ASSEMBLEIA GERAL EXTRAORDINÁRIA DE COTISTAS entregue em 15/05/2026\n\n**O QUE aconteceu:** Prorrogação da data de realização da Assembleia Geral Extraordinária (AGE) do fundo.\n\n**Resumo:** O Administrador prorrogou a AGE, que estava prevista para 30 de abril de 2026, para 22 de maio de 2026. A data anterior foi alterada em virtude da solicitação dos cotistas.\n\n**Trecho-chave:**\n\"1) Prorrogar a data de realização da AGE, de modo que os votos deverão ser proferidos até às 23:59 do dia 22 de maio de 2026, conforme solicitado pelos Cotistas, considerada, para todos os fins, como a data da realização da AGE.\"\n\n**Conexão com o contexto:** A prorrogação da AGE pode ser relacionada à necessidade de aprovação de incorporações entre fundos, uma vez que as matérias do ordem do dia não foram detalhadas no comunicado."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208603,
+    "data_entrega": "30/05/2026 12:28",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Hashdex Momentum Fundo de Índice - Responsabilidade Limitada em 31 de março de 2026 e o desempenho de suas operações para o período de 15 de abril de 2025 a 31 de março de 2026, de acordo com as práticas contábeis adotadas no Brasil, aplicá"
+  }
+}

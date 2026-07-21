@@ -1,0 +1,50 @@
+{
+  "ticker": "KFEN11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T00:42:58",
+  "relatorio": {
+    "id": 1242364,
+    "data_entrega": "08/07/2026 18:35",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Alocação da Carteira**: Ao final de junho, o KFEN11 apresentava uma alocação de 103,6% em ativos alvo (CRI) e 0,4% em instrumentos de caixa.\n2. **Taxa Média do Fundo**: A taxa média do fundo era de 8,39%, com um duration de 4,3 anos.\n3. **Dividendos**: Os dividendos referentes a junho foram de R$ 12,50 por cota, representando uma rentabilidade isenta do imposto de renda para pessoas físicas de 1,25%.\n4. **Patrimônio Líquido e Cotas**: O patrimônio líquido do fundo era de R$ 164,34 milhões, com 129 cotistas no último informe mensal.\n5. **Ativos na Carteira**:\n   - CRI 23L1773235 (BLOG - CDs Nordeste OPEA): IPCA + 8,75%, 20,2% da carteira\n   - CRI 24I2115255 (VILG - CD Castelo Branco I OPEA): IPCA + 8,31%, 14,7% da carteira\n   - CRI 24E3191694 (Fibra Experts II OPEA): IPCA + 9,00%, 13,4% da carteira\n   - CRI 24B1669810 (Extrema Business Park OPEA): IPCA + 8,00%, 11,3% da carteira\n   - CRI 24H2231336 (HSLG - BTS Meli RIZA): IPCA + 7,85%, 9,6% da carteira\n   - CRI 24E1128021 (Ed. Eldorado OPEA): IPCA + 7,36%, 8,3% da carteira\n   - CRI 25L3141226 (Creditas – 154 – Sênior A VERT): IPCA + 9,18%, 5,2% da carteira\n   - CRI 24J2299666 (Galleria – 78 – Sênior PROV): IPCA + 8,20%, 5,0% da carteira\n   - CRI 24K2435141 (Creditas – 143 – Sênior A VERT): IPCA + 7,75%, 3,9% da carteira\n   - CRI 25A1532621 (MALL - Rio Anil Shopping RIZA): IPCA + 8,45%, 2,8% da carteira\n   - CRI 24K2435142 (Creditas – 143 – Sênior B VERT): IPCA + 9,00%, 2,8% da carteira\n   - CRI 26C4372538 (VISC - BH Shopping RIZA): IPCA + 8,92%, 2,4% da carteira\n\n### O que observar em seguida:\n1. **Distribuição de Dividendos**: Verificar a distribuição dos dividendos no mês de julho.\n2. **Cronograma de Amortizações**: Monitorar o cronograma de amortizações programadas, pois pode haver variações com amortizações extraordinárias ou outros adiantamentos."
+  },
+  "comunicados": {
+    "ids": [
+      891072,
+      828859,
+      1049004,
+      1013140
+    ],
+    "datas": [
+      "30/04/2025",
+      "30/01/2025",
+      "27/11/2025",
+      "14/10/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 30/04/2025\n\n**O que aconteceu:** Intrag Distribuidora de Títulos e Valores Mobiliários Ltda. informou o encerramento do Contrato de Formador de Mercado.\n\n**Resumo:** A administradora do fundo informou a conclusão do contrato com XP Investimentos, formador de mercado, que terminará em 1º de maio de 2025.\n\n**Trecho-chave:**\n\"INTRAG DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA. , inscrita no CNPJ sob o nº 62.418.140/0001-31, na qualidade de instituição administradora (“Administrador”) do KINEA FÊNIX FUNDO DE INVESTIMENTO IMOBILIÁRIO – RESPONSABILIDADE LIMITADA, inscrito no CNPJ sob o nº 55.753.193/0001-43 (“Fundo”), vem, por meio do presente, informar aos cotistas e ao mercado em geral, em atenção ao art. 64, § 3º, II, da Resolução CVM 175, o encerramento do Contrato de Prestação de Serviços de formador de mercado (‘Contrato’) firmado em 23 de janeiro de 2025 com a XP INVESTIMENTOS CORRETORA DE CÂMBIO, TÍTULOS E VALORES MOBILIÁRIOS S.A. , instituição financeira com escritório na cidade e estado de São Paulo, na Avenida Presidente Juscelino Kubitschek, nº 1909, 29º e 30º andares, inscrita no CNPJ sob o nº 02.332.886/0011-78 (“XP Investimentos”), de forma que, respeitando o aviso prévio, o Contrato vigorará até o dia 01 de maio de 2025.\"\n\n---\n\n### FATO RELEVANTE entregue em 30/01/2025\n\n**O que aconteceu:** Intrag Distribuidora de Títulos e Valores Mobiliários Ltda. contratou a XP Investimentos para ser formador de mercado.\n\n**Resumo:** A administradora do fundo anunciou a contratação da XP Investimentos para exercer a função de formador de mercado das cotas negociadas na plataforma PUMA Trading System, com início em 31 de janeiro de 2025.\n\n**Trecho-chave:**\n\"A INTRAG DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA. , inscrita no CNPJ sob o nº 62.418.140/0001-31, na qualidade de instituição administradora (“Administrador”) do KINEA FÊNIX FUNDO DE INVESTIMENTO IMOBILIÁRIO – RESPONSABILIDADE LIMITADA, inscrito no CNPJ sob o nº 55.753.193/0001-43 (“Fundo”), em observância às disposições constantes da Resolução da CVM nº 175, de 23 de dezembro de 2022, conforme alterada (“Resolução CVM nº 175”), comunica aos seus cotistas e ao mercado em geral a contratação da XP INVESTIMENTOS CORRETORA DE CÂMBIO, TÍTULOS E VALORES MOBILIÁRIOS S.A. (‘XP’), inscrita no CNPJ sob o nº 02.332.886/0011-78, para exercer a função de formador de mercado das suas cotas negociadas na plataforma de negociação PUMA Trading System administrada pela B3 (“Plataforma B3”), na forma e conforme as disposições da Instrução CVM 384 e do Regulamento de Negociação da B3 S.A. – Brasil, Bolsa, Balcão (\"B3\"), do Manual de Procedimentos Operacionais de Negociação da B3 e dos demais regulamentos, manuais e ofícios divulgados pela B3 que disciplinem a atividade de formador de mercado (‘Normativos Aplicáveis à Atuação de Formador de Mercado’). A prestação dos serviços pela XP terá início em 31 de janeiro de 2025 e os custos dos serviços serão pagos pelo Fundo.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 27/11/2025\n\n**O que aconteceu:** A assembleia geral extraordinária do fundo aprovou as demonstrações contábeis do exercício social findo em 30 de junho de 2025.\n\n**Resumo:** A assembleia, realizada em 27 de novembro de 2025, aprovou as demonstrações financeiras e o relatório dos auditores independentes referentes ao exercício social findo em 30 de junho de 2025.\n\n**Trecho-chave:**\n\"MATÉRIA DELIBERADA: aprovadas as Demonstrações Contábeis do Fundo, devidamente acompanhadas do relatório dos auditores independentes, documentos disponibilizados aos cotistas nos termos da regulamentação em vigor, relativos ao exercício social findo em 30.06.2025.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 14/10/2025\n\n**O que aconteceu:** A administradora do fundo submeteu a consulta formal eletrônica de cotistas sobre as demonstrações financeiras e o relatório dos auditores independentes.\n\n**Resumo:** Intrag Distribuidora de Títulos e Valores Mobiliários Ltda. solicitou a aprovação das demonstrações financeiras, notas explicativas e parecer dos auditores independentes referentes ao exercício social findo em 30 de junho de 2025.\n\n**Trecho-chave:**\n\"KINEA FÊNIX FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA\nCNPJ 55.753.193/0001-43\n\nCorporativo | Interno\n\nA INTRAG DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA., inscrita no CNPJ sob o nº 62.418.140/0001-31, com sede na Avenida Brigadeiro Faria Lima, 3500, 4º Andar – Itaim Bibi, São Paulo – SP, na qualidade de Administradora do KINEA FÊNIX FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA, inscrito no CNPJ sob o nº 55.753.193/0001-43, vem submeter à consulta formal eletrônica de quotistas a seguinte matéria: (i) Aprovar as demonstrações financeiras, notas explicativas e parecer dos auditores independentes, relativas ao exercício social findo em 30 de junho de 2025. Os respectivos documentos encontram-se disponíveis para consulta no site: https://www.intrag.com.br/pt-br/fundos/KINEAFENIXFII/CLASSE\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Base de cotistas muito pequena",
+      "Fundo novo — histórico curto"
+    ],
+    "cota": 1100.0
+  },
+  "parecer": {
+    "id": 1001611,
+    "data_entrega": "29/09/2025 21:26",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o período de 19 de agosto de 2024 (início das atividades) a 30 de junho de 2025, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis "
+  }
+}

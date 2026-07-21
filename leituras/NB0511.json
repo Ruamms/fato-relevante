@@ -1,0 +1,18 @@
+{
+  "ticker": "NB0511",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:52:16",
+  "comunicados": {
+    "ids": [
+      1246080
+    ],
+    "datas": [
+      "13/07/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado"
+    ],
+    "texto": "**Data:** 13/07/2026\n\n**Título:** Início dos Negócios com Cotas do Fundo\n\n**Resumo:** O Fundo NU TESOURO IPCA B3 PRAZO 5 ANOS CLASSE DE ÍNDICE – RESPONSABILIDADE LIMITADA iniciará suas operações no mercado primário em 16 de julho de 2026 e no secundário em 17 de julho de 2026, com valor inicial de R$ 50,00.\n\n**Trecho-chave:** \"Serão iniciados os negócios com suas cotas subscritas e integralizadas em 16 de julho de 2026 no mercado primário e em 17 de julho de 2026 no mercado secundário da B3, pelo valor inicial de R$ 50,00.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b"
+}

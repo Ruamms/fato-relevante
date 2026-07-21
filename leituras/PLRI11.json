@@ -1,0 +1,36 @@
+{
+  "ticker": "PLRI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:31:23",
+  "comunicados": {
+    "ids": [
+      811147,
+      703363,
+      1026027,
+      1003920
+    ],
+    "datas": [
+      "30/12/2024",
+      "23/07/2024",
+      "31/10/2025",
+      "01/10/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 30/12/2024\n\n**O QUE aconteceu:** O Fundo passará a ser classificado como \"Papel\", com a subclassificação “Multiestratégia”, tipo de gestão “Gestão Ativa” e critério de classificação “Multicategoria”.\n\n**Resumo:** O Fundo PLRI11 será reclassificado, impactando sua categorização no mercado.\n\n**Trecho-chave:**\n\"passará a ser classificado como  “Papel”, com a subclassificação  \n“Multiestratégia”, tipo de gestão “Gestão Ativa ” e critério de classificação  \n“Multicategoria” de acordo com o previsto no art. 27 da referida norma.\"\n\n---\n\n### FATO RELEVANTE entregue em 23/07/2024\n\n**O QUE aconteceu:** O Fundo alcançou uma recuperação significativa de aproximadamente 86,81% do valor devido por meio de uma transação judicial.\n\n**Resumo:** A Polo Securitizadora S.A. obteve sucesso em processos judiciais contra coobrigadas, resultando em uma alta recuperação para o Fundo.\n\n**Trecho-chave:**\n\"foi alcançada uma composição amigável (“Transação”) no âmbito do s processos \njudiciais movido s pela Polo Securitizadora S.A. contra a s coobrigadas de parte das Cédulas de \nCrédito Imobiliário  lastro dos CRIs das 35ª, 38ª, 45º, 48º e 5 5ª Séries  da 1ª Emissão da Polo \nSecuritizadora S.A. (“ CRIs”), detidos pelo Fundo . Como resultado d a Transação o Fundo alcançará \numa recuperação de aproximadamente 86,81% (oitenta e seis inteiros e oitenta e um centésimos \npor cento) do valor devido em razão da titularidade dos CRIs , por força da superação da condição \nsuspensiva da Transação ocorrida na presente data.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 31/10/2025\n\n**O QUE aconteceu:** A assembleia aprovou as demonstrações financeiras do Fundo referentes ao exercício social encerrado em 30 de junho de 2025.\n\n**Resumo:** Os cotistas aprovaram, sem ressalvas, as demonstrações financeiras do Fundo para o período mencionado.\n\n**Trecho-chave:**\n\"após análises das respostas dos Cotistas do \nFundo à Consulta Formal, foi apurado que (i) Cotistas representando 31,68% das cotas em circulação aprovaram, sem quaisquer ressalvas ou restrições, as Demonstrações Financeiras do Fundo referentes ao exercício social encerrado em 30 de junho de 2025.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 01/10/2025\n\n**O QUE aconteceu:** A assembleia convocada para aprovar as demonstrações financeiras do Fundo foi realizada por meio de consulta formal.\n\n**Resumo:** O edital convoca os cotistas para a Assembleia Especial Ordinária, que será realizada de forma não presencial e abrangerá a aprovação das contas e demonstrações contábeis do Fundo referentes ao exercício social encerrado em 30 de junho de 2025.\n\n**Trecho-chave:**\n\"A OLIVEIRA TRUST DTVM S.A. , sociedade devidamente autorizada pela Comissão de Valores Mobiliários - CVM \npara o exercício profissional de administração de carteira de títulos e valores mobiliários, por meio do Ato \nDeclaratório n.º 6.696, de 21 de fevereiro de 2002, na qualidade de adm inistradora do Fundo (“Administrador”) do \nFundo, vem, por meio do presente edital de convocação (“Edital de Convocação”), convidar os senhores cotistas para \na Assembleia Especial Ordinária, a ser realizada de forma não presencial (“Consulta Formal”).\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 999849,
+    "data_entrega": "26/09/2025 20:12",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Polo Fundo de Investimento Imobiliário – FII Recebíveis Imobiliários I - Responsabilidade Limitada em 30 de junho de 2025 e o desempenho de suas operações e fluxos de caixa para o exercício findo nesta data, de acordo com as práticas contáb"
+  }
+}

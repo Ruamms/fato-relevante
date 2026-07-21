@@ -1,0 +1,36 @@
+{
+  "ticker": "SMAB11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T07:08:24",
+  "comunicados": {
+    "ids": [
+      1248360,
+      1200668,
+      1248359,
+      1224387
+    ],
+    "datas": [
+      "15/07/2026",
+      "21/05/2026",
+      "15/07/2026",
+      "18/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 15/07/2026\n\n**O que aconteceu:** As contas anuais do BTG PACTUAL SMALL CAP FUNDO DE ÍNDICE foram aprovadas.\n\n**Resumo:** A assembleia geral de cotistas realizada em 6 de julho de 2026 aprovou as contas anuais do fundo referente ao exercício encerrado em 31 de março de 2026.\n\n**Trecho-chave:**\n\"foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de março de 2026.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 21/05/2026\n\n**O que aconteceu:** A forma de divulgação da remuneração dos Prestadores de Serviços Essenciais foi atualizada.\n\n**Resumo:** A administradora do BTG PACTUAL SMALL CAP FUNDO DE ÍNDICE, por meio de ato do administrador, atualizou a forma de divulgação da remuneração dos Prestadores de Serviços Essenciais para o formato da Ferramenta ANBIMA.\n\n**Trecho-chave:**\n\"restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\"\n\n---\n\n### ASSEMBLEIA GERAL DE COTISTAS entregue em 15/07/2026\n\n**O que aconteceu:** As contas anuais do BTG PACTUAL SMALL CAP FUNDO DE ÍNDICE foram aprovadas.\n\n**Resumo:** A assembleia geral de cotistas realizada via manifestação de voto em 6 de julho de 2026 aprovou as contas e demonstrações contábeis do fundo referente ao exercício social encerrado em 31 de março de 2026.\n\n**Trecho-chave:**\n\"Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de março de 2026.\"\n\n---\n\n### ASSEMBLEIA GERAL DE COTISTAS entregue em 18/06/2026\n\n**O que aconteceu:** A assembleia geral de cotistas foi convocada para aprovar as contas anuais do BTG PACTUAL SMALL CAP FUNDO DE ÍNDICE.\n\n**Resumo:** A administradora do fundo convocou os cotistas para a assembleia geral, com prazo de recebimento de votos até 6 de julho de 2026, para deliberarem sobre a aprovação das contas e demonstrações contábeis relativas ao exercício social encerrado em 31 de março de 2026.\n\n**Trecho-chave:**\n\"Aprovam-se as contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de março de 2026.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208593,
+    "data_entrega": "30/05/2026 02:30",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do BTG Pactual SMLL B3 Fundo de Índice em 31 de março de 2026 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos Fundos de Investimento Financeiros."
+  }
+}

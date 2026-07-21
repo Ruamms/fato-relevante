@@ -1,0 +1,36 @@
+{
+  "ticker": "MARG11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:50:04",
+  "comunicados": {
+    "ids": [
+      1248120,
+      1187164,
+      1248119,
+      1223636
+    ],
+    "datas": [
+      "14/07/2026",
+      "12/05/2026",
+      "14/07/2026",
+      "17/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 14/07/2026\n\n**O QUE aconteceu:** As contas anuais do Fundo foram aprovadas.\n\n**Resumo:** A assembleia geral de cotistas realizada em 6 de julho de 2026 aprovou as contas anuais do BTG PACTUAL MARGEM DEBENTURES ULTRA QUALIDADE DI B3 FUNDO DE ÍNDICE referente ao exercício encerrado em 31 de março de 2026.\n\n**Trecho-chave:** \"foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de março de 2026.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 12/05/2026\n\n**O QUE aconteceu:** A forma de divulgação da remuneração foi atualizada.\n\n**Resumo:** A BTG Pactual Serviços Financeiros S.A. DTVM, como administradora do Fundo, informou que a forma de divulgação da remuneração dos Prestadores de Serviços Essenciais foi atualizada para incluir o link da Ferramenta ANBIMA.\n\n**Trecho-chave:** \"restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\"\n\n---\n\n### ASSEMBLEIA GERAL DE COTISTAS entregue em 14/07/2026\n\n**O QUE aconteceu:** As contas anuais do Fundo foram aprovadas.\n\n**Resumo:** A assembleia geral de cotistas realizada via manifestação de voto em 6 de julho de 2026 aprovou as contas e demonstrações contábeis do Fundo referentes ao exercício social encerrado em 31 de março de 2026.\n\n**Trecho-chave:** \"Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de março de 2026.\"\n\n---\n\n### ASSEMBLEIA GERAL DE COTISTAS entregue em 17/06/2026\n\n**O QUE aconteceu:** A assembleia geral foi convocada para aprovar as contas anuais do Fundo.\n\n**Resumo:** A BTG Pactual Serviços Financeiros S.A. Distribuidora de Títulos e Valores Mobiliários convocou os cotistas para a assembleia geral com o objetivo de aprovar as contas e demonstrações contábeis do Fundo referentes ao exercício social encerrado em 31 de março de 2026.\n\n**Trecho-chave:** \"Aprovção das contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de março de 2026.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208584,
+    "data_entrega": "30/05/2026 02:18",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do BTG Pactual Margem Debêntures Ultra Qualidade DI B3 Fundo de Índice em 31 de março de 2026 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos Fundos de I"
+  }
+}

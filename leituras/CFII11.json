@@ -1,0 +1,39 @@
+{
+  "ticker": "CFII11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T11:30:35",
+  "comunicados": {
+    "ids": [
+      900750,
+      809102,
+      1007455,
+      1179320,
+      1150764
+    ],
+    "datas": [
+      "13/05/2025",
+      "26/12/2024",
+      "06/10/2025",
+      "04/05/2026",
+      "31/03/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 13/05/2025\n\n**O QUE aconteceu:** Período de Desinvestimento antecipado.\n\n**Resumo:** A Gestora decidiu antecipar o período de desinvestimento para o dia 14 de maio de 2025, conforme previsto no Regulamento do Fundo.\n\n**Trecho-chave:**\n\"Em conformidade com a faculdade prevista no Regulamento do Fundo, a Gestora, decidiu pela antecipação do Período de Desinvestimento para o dia 14 de maio de 2025.\"\n\n---\n\n### FATO RELEVANTE entregue em 26/12/2024\n\n**O QUE aconteceu:** Alteração na classificação do Fundo.\n\n**Resumo:** O Fundo foi reclassificado como \"Multiestratégia – Gestão ativa – Multicategoria\" de acordo com as novas regras estabelecidas pela ANBIMA.\n\n**Trecho-chave:**\n\"A Administradora, em cumprimento à Carta de prevenção – Lembrete sobre alteração na classificação dos fundos de investimento imobiliários encaminhada pela ANBIMA em 30 de outubro de 2024, comunicar aos cotistas e ao mercado que concluiu nesta data, a alteração da classificação do Fundo para: “Multiestratégia – Gestão ativa – Multicategoria”, de acordo com as novas regras.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 06/10/2025\n\n**O QUE aconteceu:** Alteração no endereço eletrônico institucional.\n\n**Resumo:** O Fundo informou que seu novo endereço eletrônico para contato institucional é fii.adm@qitech.com.br.\n\n**Trecho-chave:**\n\"A partir de agora, nossos novos e-mails para contato institucional são: • fii.adm@qitech.com.br\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 04/05/2026\n\n**O QUE aconteceu:** Apuração da Consulta Formal sobre as Demonstrações Financeiras do Fundo.\n\n**Resumo:** A assembleia virtual realizada por meio de consulta formal aprovou as Demonstrações Financeiras do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025, com aprovação unânime dos cotistas desimpedidos e aptos a deliberar.\n\n**Trecho-chave:**\n\"Após análise da resposta dos Cotistas a Consulta Formal, foi apurado o seguinte resultado:\nAPROVO NÃO APROVO ABSTENCÃO\n0,01% 0% 0%\"\n\"Diante do exposto, a Administradora declara que a matéria constante da Ordem do Dia foi aprovada, por cotistas desimpedidos e aptos a deliberar, conforme os percentuais acima descritos.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1148864,
+    "data_entrega": "30/03/2026 19:32",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento financeiro."
+  }
+}

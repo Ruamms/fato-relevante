@@ -1,0 +1,46 @@
+{
+  "ticker": "KNGR11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T05:00:24",
+  "relatorio": {
+    "id": 1252789,
+    "data_entrega": "17/07/2026 19:32",
+    "texto": "### Fatos Extraídos:\n\n1. **Patrimônio Líquido:** R$ 26,518,813 (p. 1)\n2. **Valor Patr. da Cota:** R$ 9,59 (p. 1)\n3. **Porcentagem Vendida do Projeto:** 43% (p. 2)\n4. **Previsão de Retorno para o Projeto:** IPCA + 11,4% a.a. (p. 2)\n5. **Expectativa para a Próxima Chamada de Capital:** 4T/2026 (p. 2)\n6. **Taxa de Administração:** 3,19% a.a. (não citado diretamente no relatório, mas inferido do contexto)\n7. **Localização do Projeto:** Jardins, São Paulo, A 1 km do Parque Ibirapuera (p. 5-6)\n8. **Descrição do Projeto:** Arquitetura, paisagismo e interiores com nomes de destaque; áreas de lazer como salão de festas, espaço wellness e academia (p. 7-10)\n\n### O que observar em seguida:\n1. A evolução da venda das unidades do projeto.\n2. As obras e preparativos para o início da construção."
+  },
+  "comunicados": {
+    "ids": [
+      1181497,
+      1019232,
+      1201172,
+      983478,
+      1016408,
+      993690
+    ],
+    "datas": [
+      "06/05/2026",
+      "23/10/2025",
+      "22/05/2026",
+      "03/09/2025",
+      "16/10/2025",
+      "17/09/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 06/05/2026\n\n**O QUE aconteceu:** A KINEA DESENVOLVIMENTO GUARARÁ FII decidiu realizar a 2ª chamada de capital de Cotas da 1ª emissão.\n\n**Resumo:** A administradora do fundo comunicou aos cotistas e ao mercado sobre a decisão de realizar uma nova chamada de capital para integralizar mais cotações.\n\n**Trecho-chave:**\n\"Na 2ª Chamada de Capital, haverá a integralização de 754.589 (setecentas e cinquenta e quatro mil, quinhentas e oitenta e nove ) Cotas da 1ª Emissão, a ocorrer por meio do Sistema de Distribuição de Ativos - DDA, operacionalizado e administrado pela B3 S.A. - Brasil, Bolsa, Balcão (“B3”), tendo como base o Valor da Cota da 1ª Emissão (conforme definido nos Boletins de Subscrição), calculado nos termos dos compromissos de investimento, equivalente a R$ 10,22 (dez reais e vinte e dois centavos) por Cota da 1ª Emissão para a 2ª Chamada de Capital, totalizando o montante de R$ 7.711.899,58 (sete milhões, setecentos e onze mil, oitocentos e noventa e nove reais e cinquenta e oito centavos), com liquidação prevista para 20 de maio de 2026 (“Data de Liquidação”).\"\n\n---\n\n### FATO RELEVANTE entregue em 23/10/2025\n\n**O QUE aconteceu:** A KINEA DESENVOLVIMENTO GUARARÁ FII realizou a 1ª chamada de capital de Cotas da 1ª emissão.\n\n**Resumo:** O fundo comunicou aos cotistas sobre a decisão de realizar uma chamada de capital para integralizar cotações, com valor total equivalente a R$ 20.100.930,00.\n\n**Trecho-chave:**\n\"Na 1ª Chamada de Capital, haverá a integralização de 2.010.093 (dois milhões, dez mil e noventa e três) Cotas da 1ª Emissão, a ocorrer por meio do Sistema de Distribuição de Ativos - DDA, operacionalizado e administrado pela B3 S.A. - Brasil, Bolsa, Balcão (“B3”), tendo como base o Valor da Cota da 1ª Emissão (conforme definido nos Boletins de Subscrição), calculado nos termos dos compromissos de investimento, equivalente a R$ 10,00 (dez reais) por Cota da 1ª Emissão para a 1ª Chamada de Capital, totalizando o montante de R$ 20.100.930,00 (vinte milhões, cem mil, novecentos e trinta reais), com liquidação prevista para 06 de novembro de 2025 (“Data de Liquidação”).\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 22/05/2026\n\n**O QUE aconteceu:** A KINEA DESENVOLVIMENTO GUARARÁ FII atualizou a forma de divulgação da remuneração dos prestadores de serviços essenciais.\n\n**Resumo:** A administradora do fundo informou que, conforme as interpretações adicionais divulgadas pelo Ofício-Circular Conjunto nº 1/2025/CVM/SIN/SSE, a atualização da forma de divulgação passará a ser realizada exclusivamente por meio da Ferramenta ANBIMA.\n\n**Trecho-chave:**\n\"Considerando as interpretações adicionais divulgadas pelo Ofício-Circular Conjunto nº 1/2025/CVM/SIN/SSE, em especial quanto à substituição do \"Sumário de Remuneração\" pela Ferramenta ANBIMA (Plataforma de Transparência de Taxas) como meio centralizado e adequado de divulgação da remuneração dos Prestadores de Serviços Essenciais da Classe, restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 03/09/2025\n\n**O QUE aconteceu:** A KINEA DESENVOLVIMENTO GUARARÁ FII antecipou o encerramento do período de coleta de intenções de investimento e a realização do procedimento de alocação da oferta.\n\n**Resumo:** O fundo comunicou que, tendo em vista o atingimento do Volume Mínimo da Oferta, os ofertantes decidiram antecipar as datas para encerramento do período de coleta de intenções e realização do procedimento de alocação.\n\n**Trecho-chave:**\n\"Os Ofertantes, em comum acordo com o Coordenador Líder, decidiram antecipar o encerramento do Período de Coleta de Intenções de Investimento e a realização do Procedimento de Alocação da Oferta, cujas novas datas estão indicadas no cronograma abaixo.\"\n\n---\n\n### ASSEMBLEIA AGE entregue em 16/10/2025\n\n**O QUE aconteceu:** A KINEA DESENVOLVIMENTO GUARARÁ FII realizou uma Assembleia Geral de Cotistas para aprovar a aquisição de quotas representativas do capital social da COINVESTIDORES PARTICIPACOES XI LTDA. e a posterior aquisição, pela Sociedade Investida, de quotas representativas do capital social da M.A.R. CRETA DESENVOLVIMENTO IMOBILIARIO SPE LTDA.\n\n**Resumo:** A assembleia foi realizada por meio de consulta formal e aprovou ambas as matérias colocadas para votação.\n\n**Trecho-chave:**\n\"Foram recebidas respostas de cotistas representando, aproximadamente, 27.108% das Cotas de emissão do Fundo, conforme os percentuais detalhados abaixo:\nQuórum qualificado : 25% das Cotas emitidas pelo Fundo\nAprovação Não Aprovação Abstenção Resultado\nMatéria 1 27.108% 0.000% 0.000% Aprovada\nMatéria 2 27.108% 0.000% 0.000% Aprovada\"\n\n---\n\n### ASSEMBLEIA AGE entregue em 17/09/2025\n\n**O QUE aconteceu:** A KINEA DESENVOLVIMENTO GUARARÁ FII convocou os cotistas para participar de uma Assembleia Geral Extraordinária para deliberar sobre a aprovação para eventual realização, pelo Fundo, das operações de aquisição de ativos potencialmente conflitados.\n\n**Resumo:** A administradora do fundo propôs a aquisição de quotas representativas do capital social da COINVESTIDORES PARTICIPACOES XI LTDA. e a posterior aquisição, pela Sociedade Investida, de quotas representativas do capital social da M.A.R. CRETA DESENVOLVIMENTO IMOBILIARIO SPE LTDA.\n\n**Trecho-chave:**\n\"1. Aquisição de quotas representativas do capital social da COINVESTIDORES PARTICIPACOES XI LTDA., sociedade de propósito específico, inscrita no CNPJ sob o nº 54.708.851/0001-12 (‘‘Sociedade Investida’'), tendo como contraparte vendedora determinados veículos de investimento geridos ou controlados pela KINEA INVESTIMENTOS LTDA., sociedade limitada, com sede cidade de São Paulo, estado de São Paulo, na Rua Minas de Prata, nº 30, 4º andar, inscrita no CNPJ sob o nº 08.604.187/0001-44 (‘‘Gestor’') e/ou administrados pelo BTG PACTUAL SERVIÇOS FINANCEIROS S.A. DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS, sociedade anônima, com sede na cidade do Rio de Janeiro, estado do Rio de Janeiro, na Praia de Botafogo, nº 501, 5º andar, parte, Botafogo, inscrita no CNPJ sob o nº 59.281.253/0001 -23 (‘‘Administrador’'), ou por partes que sejam consideradas pessoas ligadas, nos termos do parágrafo 2º do artigo 31 do Anexo III da Resolução da CVM Nº 175, de 13 de dezembro de 2022, conforme alterada (‘‘Resolução CVM nº 175’'), sendo elas (i) a sociedade controladora ou sob controle do Administrador, do Gestor, de seus administradores e acionistas, conforme o caso; (ii) a sociedade cujos administradores, no todo ou em parte, sejam os mesmos do Administrador ou do Gestor, com exceção dos cargos exercidos em órgãos colegiados previstos no estatuto ou regimento interno do Administrador ou Gestor, desde que seus titulares não exerçam funções executivas, ouvida previamente a CVM; e (iii) parentes até segundo grau das pessoas naturais referidas nos itens “(i)” e “(ii)” acima (‘‘Pessoas Ligadas’'), bem como a posterior aquisição, pela Sociedade Investida, de quotas representativas do capital social da M.A.R. CRETA DESENVOLVIMENTO IMOBILIARIO SPE LTDA ., inscrita no CNPJ sob o nº 36.199.689/0001-72 (‘‘Sociedade Desenvolvedora’'), tendo como contraparte vendedora determinados veículos de investimento geridos pelo Gestor e/ou administrados pelo Administrador, ou por partes que sejam Pessoas Ligadas.\""
+  },
+  "retrato": {
+    "selo": "Histórico insuficiente",
+    "nivel": "insuficiente",
+    "alertas": [
+      "Base de cotistas muito pequena",
+      "Fundo novo — histórico curto"
+    ],
+    "cota": null
+  }
+}

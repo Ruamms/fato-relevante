@@ -1,0 +1,33 @@
+{
+  "ticker": "META11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:50:48",
+  "comunicados": {
+    "ids": [
+      1246389,
+      1213619,
+      1194043
+    ],
+    "datas": [
+      "13/07/2026",
+      "08/06/2026",
+      "15/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 13/07/2026\n\n**O Fundo permanece com erro de aderência.**\nO Fundo Hashdex Crypto Metaverse Fundo de Índice – Responsabilidade Limitada apresenta um erro de aderência, calculado como o desvio-padrão populacional das diferenças entre a variação percentual diária da cota e a variação percentual do valor de fechamento do índice de referência nos últimos 60 pregões superior a 2 pontos percentuais. Este erro não foi reenquadrado ao limite estabelecido até o 15º dia útil consecutivo subsequente à data de sua verificação.\n\n*\"Na presente data, 13 de julho de 2026, o Fundo permanece com erro de aderência, calculado como o desvio-padrão populacional das diferenças entre a variação percentual diária da cota e a variação percentual do valor de fechamento do índice de referência nos últimos sessenta pregões superior a 2 (dois) pontos percentuais, sem que tal erro de aderência tenha sido reenquadrado ao referido limite até o 15º dia útil consecutivo subsequente à data de sua verificação.\"* (p. 1)\n\n### ASSEMBLEIA AGE entregue em 15/05/2026\n\n**A assembleia geral extraordinária foi prorrogada para 22 de maio de 2026.**\nO Fundo Hashdex Crypto MetaVerse, através do Banco Genial S.A., instituição administradora, prorrogou a data da assembleia geral extraordinária (AGE) dos cotistas para o dia 22 de maio de 2026.\n\n*\"Prorrogar a data de realização da AGE, de modo que os votos deverão ser proferidos até às 23:59 do dia 22 de maio de 2026, conforme solicitado pelos Cotistas, considerada, para todos os fins, como a data da realização da AGE.\"* (p. 1)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208601,
+    "data_entrega": "30/05/2026 12:12",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Hashdex Crypto Metaverse Fundo de Índice - Responsabilidade Limitada em 31 de março de 2026 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de"
+  }
+}

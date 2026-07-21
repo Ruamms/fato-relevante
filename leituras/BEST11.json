@@ -1,0 +1,36 @@
+{
+  "ticker": "BEST11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:14:33",
+  "comunicados": {
+    "ids": [
+      1248301,
+      1187312,
+      1248298,
+      1224640
+    ],
+    "datas": [
+      "15/07/2026",
+      "12/05/2026",
+      "15/07/2026",
+      "19/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 15/07/2026\n\n**O QUE aconteceu:** As contas anuais do Fundo foram aprovadas.\n\n**Resumo:** A assembleia geral de cotistas realizada em 6 de julho de 2026 aprovou as contas anuais do RIO BRAVO INVESTO MARKVECTOR BRAZIL MULTIFACTOR QUALITY FUNDO DE ÍNDICE referentes ao exercício encerrado em 31 de março de 2026.\n\n**Trecho-chave:** \"na assembleia geral de cotistas realizada em 6 de julho de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de março de 2026.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 12/05/2026\n\n**O QUE aconteceu:** A forma de divulgação da remuneração dos Prestadores de Serviços Essenciais foi atualizada.\n\n**Resumo:** A administradora do INVESTO BRAZIL BESST QUALITY FUNDO DE ÍNDICE, por meio de ato do administrador, aprovou a atualização da forma de divulgação da remuneração dos Prestadores de Serviços Essenciais, substituindo o \"Sumário de Remuneração\" pela Ferramenta ANBIMA.\n\n**Trecho-chave:** \"restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\" (p. 1)\n\n---\n\n### ASSEMBLEIA GERAL DE COTISTAS AGO entregue em 19/06/2026\n\n**O QUE aconteceu:** Convocação para assembleia geral de cotistas.\n\n**Resumo:** A administradora do INVESTO BRAZIL BESST QUALITY FUNDO DE ÍNDICE convocou os cotistas para a assembleia geral com prazo de recebimento de votos até 6 de julho de 2026, para deliberarem sobre a aprovação das contas e demonstrações contábeis do Fundo referentes ao exercício social encerrado em 31 de março de 2026.\n\n**Trecho-chave:** \"A BTG Pactual Serviços Financeiros S.A. Distribuidora de Títulos e Valores Mobiliários, sociedade anônima, com sede na Cidade e Estado do Rio de Janeiro, localizada à Praia de Botafogo, nº 501, Torre Corcovado, 5º Andar (Parte), Botafogo, e inscrita no CNPJ sob o nº 59.281.253/0001-23, devidamente autorizada pela Comissão de Valores Mobiliários (\"CVM\") para a atividade de administração de carteiras de valores mobiliários, de acordo com o Ato Declaratório CVM nº 8.695, de 20 de março de 2006 (\"Administradora\"), na qualidade de administradora do INVESTO BRAZIL BESST QUALITY FUNDO DE INDICE, inscrito no CNPJ sob o nº 61.950.414/0001-76 (\"Fundo\"), vem, pela presente, convocar os cotistas do Fundo (Cotistas) para a Consulta Formal, com prazo de recebimento de votos até 6 de julho de 2026.\" (p. 1)\n\n---\n\n### ASSEMBLEIA GERAL DE COTISTAS AGO entregue em 15/07/2026\n\n**O QUE aconteceu:** Deliberação sobre aprovação das contas anuais.\n\n**Resumo:** A assembleia geral de cotistas realizada via manifestação de voto em 6 de julho de 2026 aprovou as contas e demonstrações contábeis do INVESTO BRAZIL BESST QUALITY FUNDO DE ÍNDICE referentes ao exercício social encerrado em 31 de março de 2026.\n\n**Trecho-chave:** \"Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de março de 2026.\" (p. 4)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208565,
+    "data_entrega": "30/05/2026 01:51",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Investo Brazil Besst Quality Fundo de Índice em 31 de março de 2026 e o desempenho de suas operações para o período de 08 de setembro de 2025 a 31 de março de 2026, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos Fundo"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "ticker": "TIRB11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T07:15:52",
+  "comunicados": {
+    "ids": [
+      1223337,
+      1216616,
+      1248110,
+      1216615,
+      1248127,
+      1248108
+    ],
+    "datas": [
+      "17/06/2026",
+      "10/06/2026",
+      "14/07/2026",
+      "10/06/2026",
+      "14/07/2026",
+      "14/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGE"
+    ],
+    "texto": "### O QUE ACONTECEU EM 17/06/2026\n\n**Título:** Liquidação do Fundo BTG PACTUAL TEVA Dividendos Ativos Reais Listados\n\n**Resumo:** O Fundo realizará sua liquidação por meio do resgate total de seu patrimônio líquido, com prazos específicos para envio do custo médio e pagamento aos cotistas.\n\n**Trecho-chave:**\n\"Conforme aprovado na Assembleia Geral e Especial , o Fundo realizará sua liquidação por meio do resgate total do seu patrimônio líquido.\"\n\n### O QUE ACONTECEU EM 10/06/2026\n\n**Título:** Liquidação do Fundo BTG PACTUAL TEVA Dividendos Ativos Reais Listados\n\n**Resumo:** O Fundo realizará sua liquidação por meio do resgate total de seu patrimônio líquido, com prazos específicos para envio do custo médio e pagamento aos cotistas.\n\n**Trecho-chave:**\n\"Conforme aprovado na Assembleia Geral e Especial , o Fundo realizará sua liquidação por meio do resgate total do seu patrimônio líquido.\"\n\n### O QUE ACONTECEU EM 14/07/2026\n\n**Título:** Contas Anuais Aprovadas do Fundo BTG PACTUAL TEVA Dividendos Ativos Reais Listados\n\n**Resumo:** As contas anuais do Fundo referente ao exercício encerrado em 31 de março de 2026 foram aprovadas na assembleia geral realizada em 6 de julho de 2026.\n\n**Trecho-chave:**\n\"Na assembleia geral de cotistas realizada em 6 de julho de 2026, restou aprovada as contas anuais do Fundo referente ao exercício encerrado em 31 de março de 2026.\"\n\n### O QUE ACONTECEU EM 14/07/2026\n\n**Título:** Assembleia Geral de Cotistas\n\n**Resumo:** A assembleia geral realizada em 6 de julho de 2026 aprovou as contas anuais do Fundo referente ao exercício encerrado em 31 de março de 2026.\n\n**Trecho-chave:**\n\"Realizada via manifestação de voto enviada pelos Cotistas em 6 de julho de 2026. As deliberações aprovadas foram as contas anuais do Fundo referente ao exercício encerrado em 31 de março de 2026.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208586,
+    "data_entrega": "30/05/2026 02:20",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do BTG Pactual Teva Dividendos Ativos Reais Listados Fundo de Índice em 31 de março de 2026 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos Fundos de Inv"
+  }
+}

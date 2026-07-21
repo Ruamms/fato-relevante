@@ -1,0 +1,43 @@
+{
+  "ticker": "VOTS11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T02:52:05",
+  "relatorio": {
+    "id": 1241324,
+    "data_entrega": "07/07/2026 18:11",
+    "texto": "### Fatos Relevantes:\n\n1. **Resultado do Mês:**\n   - O resultado caixa do fundo em junho foi de R$ 1,17/cota.\n   - A distribuição foi R$ 1,20/cota, resultando em um dividend yield anualizado de 16,18%.\n\n2. **Movimentos na Carteira:**\n   - Realização de giros pontuais na carteira de CRIs com foco na inflação acruada.\n   - Compra tática de fundo imobiliário (PATL11) para ganho de capital.\n\n3. **Composição da Carteira:**\n   - R$ 48,9 milhões em CRIs.\n   - R$ 23,9 milhões em fundos listados.\n   - R$ 3,5 milhões em fundos de liquidez.\n   - Não há alavancagem ou obrigações futuras.\n\n4. **Patrimônio Líquido:**\n   - O patrimônio líquido do fundo encerrou o mês de junho em R$ 75,2 milhões.\n   - O valor de mercado ajustado da cota foi de R$ 89,01.\n\n5. **Rendimento e Desempenho:**\n   - A rentabilidade do fundo em junho foi de 3,1% considerando as cotas de mercado ajustadas por rendimentos.\n   - O desempenho do fundo foi superior ao IFIX no mês (3,10% vs. -1,2%).\n\n6. **Dividend Yield:**\n   - O dividend yield mensal cota patrimonial foi de 1,35%.\n\n7. **Cotas e Cotistas:**\n   - O número total de cotas emitidas é de 827,9 mil.\n   - O número de cotistas reduziu para 537 no último ano (-14,90%).\n\n### O que observar em seguida:\n- Monitorar a composição da carteira e as operações realizadas.\n- Observar o desempenho do fundo em relação ao IFIX nos próximos meses."
+  },
+  "comunicados": {
+    "ids": [
+      1175395,
+      1175390
+    ],
+    "datas": [
+      "30/04/2026",
+      "30/04/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "**30/04/2026 - Aprovada a Demonstração Contábil do exercício social findo em 31 de dezembro de 2025**\n\nA aprovação ocorreu após a realização de uma consulta formal não presencial, onde todos os cotistas manifestaram seu voto. O resultado foi a aprovação da Demonstração Contábil relativa ao exercício social findo em 31 de dezembro de 2025.\n\n*\"Em razão do recebimento do (s) voto(s) formalizado(s) pelo(s) cotista(s) do Fundo, a presente consulta foi concluída, conforme previsto na convocação e, após apuração da (s) resposta(s) recebida(s), verificou-se a APROVAÇÃO da Demonstração Contábil relativamente ao exercício social findo em 31 de dezembro de 2025.\"* (p. 1)\n\nEsta aprovação se conecta aos indicadores do contexto, pois reflete o desempenho contábil do fundo no último exercício social."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares"
+    ],
+    "cota": 84.12
+  },
+  "parecer": {
+    "id": 1151239,
+    "data_entrega": "31/03/2026 19:19",
+    "tipo": "nao_identificado",
+    "rotulo": "parecer não identificado no texto",
+    "grave": false,
+    "continuidade": false,
+    "trecho": ""
+  }
+}

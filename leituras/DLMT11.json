@@ -1,0 +1,20 @@
+{
+  "ticker": "DLMT11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:39:46",
+  "comunicados": {
+    "ids": [],
+    "datas": [],
+    "rotulos": [],
+    "texto": null
+  },
+  "parecer": {
+    "id": 869079,
+    "data_entrega": "31/03/2025 17:12",
+    "tipo": "abstencao",
+    "rotulo": "abstenção de opinião",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Del Monte Ajax Fundo de Investimento Imobiliário em 31 de dezembro de 2024, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo naquela data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "ticker": "RARA11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T07:05:32",
+  "comunicados": {
+    "ids": [
+      1226593,
+      1226592
+    ],
+    "datas": [
+      "23/06/2026",
+      "23/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### COMUNICADO AO MERCADO ENTREGUE EM 23/06/2026\n\n**O QUE aconteceu:** Início de negociação das cotas da Classe Única do INVESTO RARE EARTH/STRATEGIC METALS FUNDO DE ÍNDICE.\n\n**Resumo:** O fundo iniciará a negociação das suas cotas no mercado secundário em 29 de junho de 2026, com o código de negociação \"RARA11\", nome de pregão INVESTORARA e código ISIN BRRARACTF006.\n\n**Trecho-chave:** \"Em 29 de junho de 2026, será iniciado o período de negociação das cotas subscritas e integralizadas da Classe, no mercado secundário, (i) sob o código de negociação “RARA11”, (ii) nome de pregão INVESTORARA e (iii) código ISIN BRRARACTF006, considerando-se o preço de emissão de R$ 20,00 (vinte reais) por cota da Classe (“Cota”).\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO ENTREGUE EM 23/06/2026\n\n**O QUE aconteceu:** Início de subscrição e integralização das cotas da Classe Única do INVESTO RARE EARTH/STRATEGIC METALS FUNDO DE ÍNDICE.\n\n**Resumo:** O fundo iniciará a subscrição e integralização das suas cotas no mercado primário em 26 de junho de 2026, com o código de negociação \"RARA11\", nome de pregão INVESTORARA e código ISIN BRRARACTF006, considerando-se o preço de emissão de R$ 20,00 por cota.\n\n**Trecho-chave:** \"Em 26 de junho de 2026, será iniciado o período de subscrição e integralização da Classe, no mercado primário, (i) sob o código de negociação “RARA11”, (ii) nome de pregão INVESTORARA e (iii) código ISIN BRRARACTF006, considerando-se o preço de emissão de R$ 20,00 (vinte reais) por cota da Classe (\"Cota\").\" (p. 1)\n\n**Conexão com contexto:** Este comunicado marca o início do processo de subscrição e integralização das cotas, preparando o terreno para a negociação no mercado secundário prevista para 25 de junho de 2026."
+  },
+  "modelo": "qwen2.5:7b"
+}

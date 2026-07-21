@@ -1,0 +1,49 @@
+{
+  "ticker": "SNME11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T03:04:04",
+  "relatorio": {
+    "id": 1230893,
+    "data_entrega": "26/06/2026 18:06",
+    "texto": "### Fatos Extraídos do Relatório Gerencial\n\n1. **Distribuição de Renda**: O SNME11 distribuiu R$ 0,15/cota em maio, resultando em um Dividend Yield anualizado de 13,39%. (p. 3)\n2. **Resultado Financeiro**: O fundo encerrou o mês com resultado distribuível de R$ 0,0883 por cota e provisionamento de R$ 0,1500 por cota distribuídos em 25/06/2026, restando R$ 0,0429 em reserva acumulada distribuível total. (p. 4)\n3. **Movimentações no Mês**: O SNME11 adquiriu cerca de R$ 3 milhões em cotas de RELG11, em vista da cisão e amortização do fundo aprovada em assembleia geral extraordinária. (p. 4)\n4. **Alfa vs Benchmark**: A carteira finalizou o mês com Alfa acumulado de 3,63% vs IPCA+Yield IMA-B e +19,78% vs IFIX desde set/2023. (p. 4)\n5. **Cenário Macroeconômico**: A Selic está prevista para corte de 0,25 p.p. em jun/26, com a inflação ainda fora da meta e o IPCA projetado em 4,9% para 2026. (p. 5)\n6. **Carteira de Ativos**: A carteira do SNME11 possui 31 ativos, sendo 5 CRIs e 26 FIIs/Ações, com uma exposição de 68% em FIIs, 19% em caixa e 12% em CRIs. (p. 7)\n7. **Operações Estruturadas**: A estratégia de long and short com o ativo RBVA11 contribuiu com R$ 50 mil a título de ganho de capital, resultando em aproximadamente R$ 650 mil de ganho de capital no semestre. (p. 4)\n8. **Rendimentos Irregulares**: Houve rendimentos declarados acima do resultado financeiro nos últimos 12 meses, com a distribuição de rendimentos em 6/12 meses acima de zero. (p. 3)\n\n### O que observar em seguida:\n- A evolução da carteira após a fusão com o SNFF11/KISU11.\n- O impacto das obras e reformas nos ativos do fundo, especialmente no CRI MZM Incorporação."
+  },
+  "comunicados": {
+    "ids": [
+      1199659,
+      1198443,
+      1199652,
+      1181467
+    ],
+    "datas": [
+      "19/05/2026",
+      "18/05/2026",
+      "19/05/2026",
+      "06/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 19/05/2026\n\n**O QUE aconteceu:** As contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025 foram aprovadas na assembleia geral de cotistas realizada em 18 de maio de 2026.\n\n**Resumo:** A assembleia geral de cotistas aprovou as contas anuais do Fundo SNME11 para o exercício encerrado no final de 2025.\n\n**Trecho-chave:**\n\"Na assembleia geral de cotistas realizada em 18 de maio de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 18/05/2026\n\n**O QUE aconteceu:** A administradora atualizou a forma de divulgação da remuneração dos Prestadores de Serviços Essenciais da Classe, passando a utilizar a Ferramenta ANBIMA como meio centralizado e adequado.\n\n**Resumo:** A administradora do Fundo SNME11 atualizou a forma de divulgação da remuneração dos prestadores de serviços essenciais para atender às diretrizes estabelecidas no Ofício-Circular CVM nº 1/2025, utilizando a Ferramenta ANBIMA.\n\n**Trecho-chave:**\n\"Considerando as interpretações adicionais divulgadas pelo Ofício-Circular Conjunto nº 1/2025/CVM/SIN/SSE (\"Ofício-Circular CVM nº 1/2025\"), em especial quanto à substituição do 'Sumário de Remuneração' pela Ferramenta ANBIMA (Plataforma de Transparência de Taxas) como meio centralizado e adequado de divulgação da remuneração dos Prestadores de Serviços Essenciais da Classe, restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 19/05/2026\n\n**O QUE aconteceu:** A assembleia geral de cotistas aprovou as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia geral de cotistas do Fundo SNME11 aprovou as contas e demonstrações contábeis do exercício social findo no final de 2025.\n\n**Trecho-chave:**\n\"4.1. Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\" (p. 4)\n\n---\n\n### ASSEMBLEIA AGO entregue em 06/05/2026\n\n**O QUE aconteceu:** A administradora convocou os cotistas para uma assembleia geral com prazo de recebimento de votos até 18 de maio de 2026, para deliberarem sobre a aprovação das contas e demonstrações contábeis do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A administradora convocou os cotistas do Fundo SNME11 para uma assembleia geral com o objetivo de aprovar as contas e demonstrações contábeis do exercício social findo no final de 2025.\n\n**Trecho-chave:**\n\"i) A aprovação das contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de dezembro de 2025.\" (p. 2)"
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares"
+    ],
+    "cota": 9.3
+  },
+  "parecer": {
+    "id": 1142140,
+    "data_entrega": "23/03/2026 11:46",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

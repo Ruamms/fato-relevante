@@ -1,0 +1,30 @@
+{
+  "ticker": "BRTY11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T02:34:29",
+  "comunicados": {
+    "ids": [
+      1230975,
+      1230972
+    ],
+    "datas": [
+      "26/06/2026",
+      "26/06/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### O QUE aconteceu: Assembleia Geral Extraordinária de Cotistas do OSASCO PROPERTIES FII\n\n**Resumo:** A administradora convocou uma assembleia para deliberar sobre a contratação de um laudo de avaliação econômico-financeira, aportes de recursos pelos cotistas e autorização para adotar medidas necessárias. \n\n**Trecho-chave:**\n\"Considerando que: A Administradora, após tratativas realizadas junto à sociedade investida pelo Fundo, obteve acesso aos balancetes referentes aos exercícios de 2020, 2021, 2022, 2023, 2024 e 2025. Com isso, será possível prosseguir com a contratação do laudo de avaliação econômico-financeira da Estação Osasco Desenvolvimento Imobiliário, companhia investida (\"Laudo de Avaliação\"), visando à apuração e registro do valor justo do ativo detido pelo Fundo.\" (p. 1)\n\n### Conexão com o contexto:\nA realização desta assembleia se conecta diretamente ao encerramento do fundo, já que a avaliação econômico-financeira é um passo crucial para determinar o valor justo dos ativos e preparar a entrega aos cotistas."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1001504,
+    "data_entrega": "29/09/2025 20:27",
+    "tipo": "abstencao",
+    "rotulo": "abstenção de opinião",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Não expressamos uma opinião sobre as demonstrações financeiras do Osasco Properties Fundo de Investimento Imobiliário - FII pois, devido à relevância dos assuntos descrito na seção a seguir, intitulada “Base para abstenção de opinião”, não nos foi possível obter evidências de auditoria apropriada e suficiente para fundamentar nossa opinião de auditoria sobre essas demonstrações financeiras."
+  }
+}

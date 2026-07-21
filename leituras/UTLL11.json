@@ -1,0 +1,39 @@
+{
+  "ticker": "UTLL11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T07:18:53",
+  "comunicados": {
+    "ids": [
+      1201773,
+      1248378,
+      1187271,
+      1248377,
+      1224953
+    ],
+    "datas": [
+      "22/05/2026",
+      "15/07/2026",
+      "12/05/2026",
+      "15/07/2026",
+      "19/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 15/07/2026 - Assembleia Geral de Cotistas Aprovou Contas Anuais\n\nA assembleia geral de cotistas do **INVESTO B3 UTILIDADE PÚBLICA FUNDO DE ÍNDICE** realizada em 6 de julho de 2026 aprovou as contas anuais referentes ao exercício encerrado em 31 de março de 2026.\n\n*\"Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de março de 2026.\" (p. 1)*\n\n### 19/06/2026 - Convocação para Assembleia Geral de Cotistas\n\nA **BTG Pactual Serviços Financeiros S.A. DTVM** convocou os cotistas do **INVESTO B3 UTILIDADE PÚBLICA FUNDO DE ÍNDICE** para uma assembleia geral com prazo de recebimento de votos até 6 de julho de 2026, para deliberarem sobre a aprovação das contas e demonstrações contábeis do Fundo relativas ao exercício social encerrado em 31 de março de 2026.\n\n*\"Aprovamos as contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de março de 2026.\" (p. 2)*\n\n### 15/07/2026 - Comunicado ao Mercado sobre Assembleia Geral Aprovada\n\nA **BTG Pactual Serviços Financeiros S.A. DTVM** comunicou que na assembleia geral de cotistas realizada em 6 de julho de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de março de 2026.\n\n*\"Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de março de 2026.\" (p. 1)*\n\n### 12/05/2026 - Fato Relevante sobre Distribuição de Rendimentos\n\nA **BTG Pactual Serviços Financeiros S.A. DTVM** informou que a Classe Única do **INVESTO B3 UTILIDADE PÚBLICA FUNDO DE ÍNDICE** deixará de realizar distribuições mensais de rendimentos, com os cotistas que detiverem cotas na data-base de 04 de maio de 2026 (inclusive) fazendo jus ao último pagamento de rendimentos em 11 de maio de 2026. A partir de 5 de maio de 2026, os rendimentos auferidos pela Classe passaram a ser integralmente reinvestidos com o objetivo de otimizar a eficiência tributária e potencializar o efeito de capitalização dos retornos no longo prazo.\n\n*\"Deixará de realizar distribuições mensais de rendimentos. Os cotistas que detiverem cotas da Classe na data-base de 04 de maio de 2026 (inclusive) fizeram jus ao último pagamento de rendimentos, realizado em 11 de maio de 2026.\" (p. 1)*\n\n### 13/07/2026 - Comunicado ao Mercado sobre Assembleia Geral Aprovada\n\nA **BTG Pactual Serviços Financeiros S.A. DTVM** comunicou que na assembleia geral de cotistas realizada em 6 de julho de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de março de 2026.\n\n*\"Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de março de 2026.\" (p. 1)*"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208569,
+    "data_entrega": "30/05/2026 01:54",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Investo B3 Utilidade Pública Fundo de Índice em 31 de março de 2026 e o desempenho de suas operações para o período de 18 de setembro de 2025 a 31 de março de 2026, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos Fundo"
+  }
+}

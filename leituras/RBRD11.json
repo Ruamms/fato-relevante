@@ -1,0 +1,52 @@
+{
+  "ticker": "RBRD11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T01:31:35",
+  "relatorio": {
+    "id": 1223705,
+    "data_entrega": "17/06/2026 19:32",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Distribuição de Rendimentos:** Em maio, foram distribuídos lucros no valor total de R$ 1,02 milhão, ou R$ 0,55 por cota (p.3).\n2. **Vacância e Inadimplência:** O portfólio está 84% ocupado, com R$ 3,75 milhões de caixa líquido frente às obrigações (p.3).\n3. **Processos Judiciais:** Negociações estão sendo conduzidas para a prospecção de um novo ocupante no imóvel localizado em Natal, e processos judiciais envolvendo a antiga locatária Leader seguem sob acompanhamento (p.3).\n4. **Cota Patrimonial e Mercado:** A cota negociada no mercado secundário apresentou uma variação de -10,53% ao longo do mês de maio, com um volume financeiro negociado de R$ 4,3 milhões (p.3).\n5. **Dividend Yield Anualizado:** O Dividend Yield anualizado da cota patrimônial é de 9,20%, e o da cota mercado é de 17,98% (p.3).\n6. **Carteira e Imóveis:** A carteira do fundo está composta por 4 imóveis com um total de 23,7 mil m² de Área Bruta Locável, localizados nas cidades do Rio de Janeiro, São Gonçalo, Uberlândia, e Natal (p.5).\n7. **Distribuição de Rendimentos:** A distribuição de rendimentos aos cotistas é calculada de acordo com o resultado apurado sob regime de caixa do FII em cada mês (p.4).\n\n### O que observar em seguida:\n1. **Processos Judiciais:** Eventuais desdobramentos relevantes nos processos envolvendo a antiga locatária Leader.\n2. **Ocupação dos Imóveis:** Monitoramento da ocupação dos imóveis, especialmente do imóvel localizado em Natal."
+  },
+  "comunicados": {
+    "ids": [
+      1118294,
+      866564,
+      1185783,
+      1221664,
+      1175755
+    ],
+    "datas": [
+      "19/02/2026",
+      "27/03/2025",
+      "11/05/2026",
+      "15/06/2026",
+      "30/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 19/02/2026\n\n**Data:** 19 de fevereiro de 2026  \n**O que aconteceu:** Remarcação do ativo do Fundo  \n**Resumo:** O valor da cota do Fundo foi recalculado para refletir o valor justo em conformidade com a Instrução CVM nº 516, de 29 de dezembro de 2011.  \n**Trecho-chave:** \"O Administrador, na qualidade de representante legal do Fundo, contratou a empresa de BINSWANGER BRAZIL para que, de acordo com seus critérios, metodologias e premissas, realizasse a avaliação do valor justo do ativo integrante da carteira do Fundo.\"\n\n---\n\n### FATO RELEVANTE entregue em 27/03/2025\n\n**Data:** 27 de março de 2025  \n**O que aconteceu:** Renovação de contrato de locação  \n**Resumo:** O Fundo celebrou um aditamento ao contrato de locação do imóvel em Uberlândia/MG, estendendo o prazo até fevereiro/2030 e reduzindo a receita imobiliária mensal.  \n**Trecho-chave:** \"O Fundo celebrou  o sexto aditamento ao contrato de locação (“Aditivo”) do imóvel localizado em Uberlândia/MG, com a CRBS S/A, estabelecendo um novo prazo de vigência da locação na modalidade típica, até fevereiro/2030.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 11/05/2026\n\n**Data:** 11 de maio de 2026  \n**O que aconteceu:** Solicitação de esclarecimentos sobre ressalva nas Demonstrações Financeiras do Fundo  \n**Resumo:** A Administradora informou que adotou medidas para obter documentação suporte relacionada ao saldo de disponibilidade financeira, e espera concluir o processo nas próximas semanas.  \n**Trecho-chave:** \"A expectativa da Administradora é concluir referido processo nas próximas semanas e, uma vez finalizada a análise pelos auditores independentes, promover a reemissão das Demonstrações Financeiras do Fundo.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 15/06/2026\n\n**Data:** 15 de junho de 2026  \n**O que aconteceu:** Aprovação das contas e demonstrações contábeis do exercício social encerrado em 31 de dezembro de 2025  \n**Resumo:** A maioria dos cotistas aprovou as contas e demonstrações contábeis do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.  \n**Trecho-chave:** \"A maioria dos Cotista(s) presente(s) aprovaram as contas e demonstrações contábeis do Fundo referentes ao exercício social, encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 30/04/2026\n\n**Data:** 30 de abril de 2026  \n**O que aconteceu:** Convocação da Assembleia Geral Ordinária para aprovar as contas e demonstrações contábeis do exercício social encerrado em 31 de dezembro de 2025  \n**Resumo:** A Administradora convocou a Assembleia Geral Ordinária para deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.  \n**Trecho-chave:** \"O BANCO DAYCOVAL S.A., sociedade com sede na Cidade de São Paulo, Estado de São Paulo, na Avenida Paulista, 1.793, 9º andar, Bela Vista, São Paulo - SP, inscrita no CNPJ/ME sob o nº 62.232.889/0001-90, convocou V. Sas. para a Assembleia Geral Ordinária.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "P/VP muito abaixo da média histórica"
+    ],
+    "cota": 37.1
+  },
+  "parecer": {
+    "id": 1152035,
+    "data_entrega": "31/03/2026 23:13",
+    "tipo": "ressalva",
+    "rotulo": "opinião com ressalva",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, exceto pelos possíveis efeitos do assunto descrito na seção a seguir, intitulada “Base para opinião com ressalva”, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do RB Capital Renda II FII de Resp Limitada em 31 de dezembro de 2025 , o desempenho de suas operações e os seus fluxos de caixa p"
+  }
+}

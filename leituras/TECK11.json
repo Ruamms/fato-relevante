@@ -1,0 +1,30 @@
+{
+  "ticker": "TECK11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T07:14:57",
+  "comunicados": {
+    "ids": [
+      1228496,
+      1221469
+    ],
+    "datas": [
+      "25/06/2026",
+      "15/06/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA AGO entregue em 25/06/2026\n\n**O que aconteceu:** A Itaú Unibanco S.A., como administradora do IT NOW NYSE FANG+™ FUNDO DE ÍNDICE, retificou e ratificou o Edital de Convocação da Assembleia Geral de Cotistas.\n\n**Resumo:** A assembleia foi convocada para deliberar sobre as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes referentes ao exercício social encerrado em 31 de março de 2026. As manifestações podem ser realizadas até o dia 7 de julho de 2026.\n\n**Trecho-chave:** \"Deliberar sobre as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes referentes ao exercício social encerrado em 31 de março de 2026.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 15/06/2026\n\n**O que aconteceu:** A Itaú Unibanco S.A., como administradora do IT NOW NYSE FANG+™ FUNDO DE ÍNDICE, convocou a Assembleia Geral de Cotistas.\n\n**Resumo:** A assembleia foi convocada para deliberar sobre as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes referentes ao exercício social encerrado em 28/02/2026. As manifestações podem ser realizadas até o dia 30 de junho de 2026.\n\n**Trecho-chave:** \"Deliberar sobre as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social encerrado em 28/02/2026.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1209713,
+    "data_entrega": "01/06/2026 17:37",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do It Now Nyse Fang+™Fundo de Índice- Responsabilidade Limitada em 31 de março de 2026 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos Fundos de Investi"
+  }
+}

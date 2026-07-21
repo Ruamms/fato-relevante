@@ -1,0 +1,33 @@
+{
+  "ticker": "XBXO11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:01:11",
+  "comunicados": {
+    "ids": [
+      828983,
+      950451,
+      1074853
+    ],
+    "datas": [
+      "30/01/2025",
+      "22/07/2025",
+      "05/01/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 30/01/2025\n\n**O QUE aconteceu:** A administradora do RCAP 1810 FII realizou um reprocessamento da carteira do fundo para refletir a reprecificação de um ativo do TALISMÃ FIP.\n\n**Resumo:** A MONETAR, como administradora do RCAP 1810 FII, reprocessou a carteira do fundo após uma reprecificação de um ativo do TALISMÃ FIP. No entanto, não foi possível obter o documento que lastreia essa reprecificação.\n\n**Trecho-chave:** \"Neste sentido, a MONETAR irá eivar todos os esforços, na qualidade de Administradora do R CAP 1810 FII, para obtenção dos documentos pertinentes em relação à reprecificação da carteira.\" (p. 2)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 22/07/2025\n\n**O QUE aconteceu:** A MONETAR informou sobre as medidas tomadas para endereçar a abstenção de opinião apontada pelo auditor nas Demonstrações Financeiras do Fundo.\n\n**Resumo:** A MONETAR iniciou o processo de reemissão das Demonstrações Financeiras (DF) do RCAP 1810 FII, com data de referência de 30/06/2024, após alinhamento com a Gestora e contratação da auditoria. O cronograma estimado para conclusão é de 45 dias.\n\n**Trecho-chave:** \"Em 14/07/2025, tomamos ciência do ofício e iniciamos tratativas com o gestor do Fundo, com o objetivo de avaliar a necessidade de reemissão das Demonstrações Financeiras (“DF”) com data de referência de 30/06/2024.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 05/01/2026\n\n**O QUE aconteceu:** A assembleia geral dos cotistas do RCAP 1810 FII aprovou a substituição da atual administradora, custodiante, escrituradora e distribuidora pela Nova Administradora.\n\n**Resumo:** Os cotistas aprovaram sem quaisquer restrições as matérias relacionadas à substituição da Atual Administradora (MONETAR) pela Nova Administradora (Qore), incluindo a transferência de responsabilidades e serviços.\n\n**Trecho-chave:** \"Os cotistas detentores da totalidade das cotas do Fundo, APROVAM, sem quaisquer restrições e/ou ressalvas, as seguintes matérias: I) SUBSTITUIÇÃO DO ATUAL ADMINISTRADORA, CUSTODIANTE, ESCRITURADORA E DISTRIBUIDOR DA CLASSE ÚNICA DO FUNDO.\" (p. 2)\n\n---\n\n**Conexão com o contexto:** As alterações na administração do fundo podem afetar a gestão e os indicadores financeiros do RCAP 1810 FII, como visto no reprocessamento da carteira e nas medidas para endereçar a abstenção de opinião apontada pelo auditor."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1001208,
+    "data_entrega": "29/09/2025 18:24",
+    "tipo": "ressalva",
+    "rotulo": "opinião com ressalva",
+    "grave": true,
+    "continuidade": true,
+    "trecho": "Em nossa opinião, exceto pelos efeitos do assunto descrito na seção a seguir intitulada “Base para Opinião com ressalvas” as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo, para a posição de 30 de junho de 2025 e o desempenho de suas operações para o exercício findo naquela data, de acordo com as prát"
+  }
+}

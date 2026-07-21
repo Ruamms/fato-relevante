@@ -1,0 +1,27 @@
+{
+  "ticker": "SPVJ11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T01:02:34",
+  "comunicados": {
+    "ids": [
+      1077721,
+      981214,
+      881782,
+      1245604
+    ],
+    "datas": [
+      "08/01/2026",
+      "29/08/2025",
+      "15/04/2025",
+      "13/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 08/01/2026\n\n**O QUE aconteceu:** A administração do fundo reavaliou o ativo do fundo a valor justo, resultando em um aumento de 5,01% no valor contábil dos ativos.\n\n**Resumo:** O ativo do fundo foi reavaliado pela Colliers Brasil em dezembro de 2025, levando a uma valorização de 5,01%.\n\n**Trecho-chave:**\n\"O ativo do fundo foi reavaliado a valor justo em dezembro de 2025 pela empresa especializada Colliers Brasil, resultando em valor 5,01% superior ao atual valor contábil das investidas.\"\n\n### FATO RELEVANTE entregue em 29/08/2025\n\n**O QUE aconteceu:** A administração do fundo reavaliou o ativo a valor justo, resultando em uma variação positiva de 27,05% no valor do imóvel e 17,32% no patrimônio líquido.\n\n**Resumo:** O ativo do fundo foi reavaliado pela Colliers Technical Services LTDA. em julho de 2025, com uma valorização de 27,05%.\n\n**Trecho-chave:**\n\"O ativo do fundo foi reavaliado a valor justo em Julho de 2025 pela empresa especializada Colliers Technical Services LTDA, resultando em uma variação positiva de 27,05% no valor do imóvel, o que representa uma variação positiva de 17,32% no valor do patrimônio líquido do fundo.\"\n\n### FATO RELEVANTE entregue em 15/04/2025\n\n**O QUE aconteceu:** A administração do fundo retificou um fato relevante publicado anteriormente, informando que a reavaliação resultou em uma redução de 45,85% no valor contábil dos ativos e 44,08% no patrimônio líquido.\n\n**Resumo:** A administração do fundo retificou um fato relevante, informando que a reavaliação resultou em uma redução significativa de 45,85% no valor contábil dos ativos e 44,08% no patrimônio líquido.\n\n**Trecho-chave:**\n\"Com a reavaliação a valor justo realizada, o valor contábil dos ativos do fundo sofreu um impacto negativo de 45,85%, o que representa uma redução de 44,08% no valor do patrimônio líquido do Fundo.\"\n\n### ASSEMBLEIA GERAL EXTRAORDINÁRIA DE COTISTAS (AGE) entregue em 13/07/2026\n\n**O QUE aconteceu:** A assembleia geral extraordinária deliberou sobre várias matérias, incluindo a alteração da denominação social do fundo, autorização para emissão de novas cotas, e mudanças nas taxas administrativas.\n\n**Resumo:** A AGE deliberou sobre diversas matérias importantes, como a mudança na denominação do fundo, nova emissão de cotas, alterações nas taxas administrativas, entre outros itens.\n\n**Trecho-chave:**\n\"A Administradora convoca os Cotistas para deliberar sobre as seguintes matérias da Ordem do Dia:\"\n- Alteração da denominação social do Fundo.\n- Autorização para emissão de novas cotas.\n- Mudanças nas taxas administrativas e gestão."
+  },
+  "modelo": "qwen2.5:7b"
+}

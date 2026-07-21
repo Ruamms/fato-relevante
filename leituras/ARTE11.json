@@ -1,0 +1,39 @@
+{
+  "ticker": "ARTE11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T02:16:45",
+  "comunicados": {
+    "ids": [
+      1013465,
+      1199807,
+      1139140,
+      1199803,
+      1169284
+    ],
+    "datas": [
+      "14/10/2025",
+      "20/05/2026",
+      "16/03/2026",
+      "20/05/2026",
+      "24/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 14/10/2025\n\n**O que aconteceu:** Aprovou-se a terceira emissão de cotas da Classe Única.\n\n**Resumo:** O BTG Pactual, como administrador do Ártemis Fundo de Investimento Imobiliário Responsabilidade Limitada, aprovou a realização da terceira emissão de cotas por meio de oferta pública sob o regime de melhores esforços.\n\n**Trecho-chave:**\n\"O Administrador, bem como de sua classe única, a CLASSE ÚNICA DE COTAS DO ÁRTEMIS FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA , inscrita no CNPJ sob o nº 53.193.237/0001-00 (“Classe Única”), conforme recomendação da gestora do Fundo, a ÁRTEMIS GESTÃO DE RECURSOS LTDA., vem comunicar aos cotistas do Fundo (‘Cotistas’) e ao mercado em geral que aprovou na presente data, por meio do ‘Ato Conjunto do Administrador e do Gestor da Classe Única de Cotas do Ártemis Fundo de Investimento Imobiliário Responsabilidade Limitada’ (“Ato de Aprovação”), nos termos do regulamento do Fundo (‘Regulamento’), a realização da terceira emissão de cotas da Classe Única, a qual será realizada por meio de oferta pública, a ser distribuída sob o regime de melhores esforços de colocação (“3ª Emissão” e “Oferta”, respectivamente).\"\n\n### COMUNICADO AO MERCADO entregue em 20/05/2026\n\n**O que aconteceu:** A assembleia geral de cotistas aprovou as contas anuais do exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia geral de cotistas do Ártemis Fundo de Investimento Imobiliário aprovou as contas anuais referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Colocamo-nos à disposição para prestar quaisquer esclarecimentos que se façam necessários.\"\n\n### COMUNICADO AO MERCADO entregue em 16/03/2026\n\n**O que aconteceu:** Realizou-se a retratação das cotas subscritas da oferta pública de distribuição primária de cotas da terceira emissão.\n\n**Resumo:** A classe única do Ártemis Fundo de Investimento Imobiliário realizou a retratação das cotas subscritas, cancelando 1.261 cotas e integralizando 1.002.694 cotas.\n\n**Trecho-chave:**\n\"Em razão da distribuição parcial das cotas, a operacionalização e o pagamento da retratação das cotas ocorrerão no dia 19 de março de 2026 ('Retratação'), de acordo com o quadro abaixo:\nQuantidade de cotas retratadas Valor unitário (R$)* Valor financeiro total (R$)\n1.261 10,35 13.051,35\n*sem considerar a T axa de Distribuição Primária.\"\n\n### ASSEMBLEIA AGO entregue em 20/05/2026\n\n**O que aconteceu:** Aprovou-se as contas anuais do exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia geral de cotistas aprovou as contas e demonstrações contábeis do Ártemis Fundo de Investimento Imobiliário referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"4.1. Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n### ASSEMBLEIA AGO entregue em 24/04/2026\n\n**O que aconteceu:** Convocação para a assembleia geral de cotistas para deliberar sobre as contas e demonstrações contábeis do exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A administradora convocou os cotistas do Ártemis Fundo de Investimento Imobiliário para a assembleia geral com o objetivo de aprovar as contas e demonstrações contábeis referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Aos Cotistas do ARTEMIS FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA\nA BTG Pactual Serviços Financeiros S.A. Distribuidora de Títulos e Valores Mobiliários, sociedade anônima, com sede na Cidade e Estado do Rio de Janeiro, localizada à Praia de Botafogo, nº 501, Torre Corcovado, 5º Andar (Parte), Botafogo, e inscrita no CNPJ sob o nº 59.281.253/0001-23, devidamente autorizada pela Comissão de Valores Mobiliários ('CVM') para a atividade de administração de carteiras de valores mobiliários, de acordo com o Ato Declaratório CVM nº 8 .695, de 20 de março de 2006 ('Administradora'), na qualidade de administradora do ARTEMIS FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA, inscrito no CNPJ sob o nº 53.193.237/0001-00 ('Fundo'), bem como de sua classe única, vem, pela presente, convocar os cotistas do Fundo ('Cotistas') para a Consulta Formal, com prazo de recebimento de votos até 18 de maio de 2026, para deliberarem sobre:\n(i) A aprovação das contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de dezembro de 2025.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1142088,
+    "data_entrega": "23/03/2026 11:15",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, e o desempenho de suas operações e os seus fluxos de caixa para o período de 1o de julho a 31 de dezembro de 2025, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investiment"
+  }
+}

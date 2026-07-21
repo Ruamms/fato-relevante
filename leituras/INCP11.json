@@ -1,0 +1,36 @@
+{
+  "ticker": "INCP11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T00:02:43",
+  "comunicados": {
+    "ids": [
+      1042784,
+      610118,
+      1185102,
+      999529
+    ],
+    "datas": [
+      "17/11/2025",
+      "28/02/2024",
+      "11/05/2026",
+      "26/09/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO/E",
+      "Assembleia AGE"
+    ],
+    "texto": "### 17/11/2025 - Substituição da Gestora de Fundos\n\n**O que aconteceu:** A Caixa Econômica Federal substituiu a Reag Gestão de Fundos Imobiliários Ltda. pela própria instituição para gerir o fundo.\n\n**Resumo:** A Caixa assumiu a gestão do fundo em substituição à Reag Gestão, conforme deliberação da assembleia geral de cotistas.\n\n**Trecho-chave:**\n\"A partir desta data, os serviços de gestão da carteira de investimento do Fundo passam a ser realizados pela CAIXA ECONÔMICA FEDERAL, CNPJ nº 00.360.305/0001-04, em substituição à Reag Gestão de Fundos Imobiliários Ltda., inscrita no CNPJ sob o nº 43.757.787/0001-43.\"\n\n---\n\n### 28/02/2024 - Substituição da Gestora de Fundos\n\n**O que aconteceu:** A Caixa Econômica Federal substituiu a MAUÁ Capital Investimentos Alternativos Ltda. pela Reag Asset Management Ltda. para gerir o fundo.\n\n**Resumo:** A gestão do fundo foi transferida para a Reag Asset Management, em substituição à MAUÁ Capital, conforme deliberação da assembleia geral de cotistas.\n\n**Trecho-chave:**\n\"A Gestora permanecerá no exercício de suas funções até sua efetiva substituição pela Nova Gestora em 1º de março de 2024, conforme consignado em ata.\"\n\n---\n\n### 11/05/2026 - Assembleia Geral Extraordinária\n\n**O que aconteceu:** Realizada uma assembleia geral extraordinária para deliberar sobre a não constituição da Reserva de Reinvestimento.\n\n**Resumo:** A assembleia discutiu e votou sobre a não constituição da Reserva de Reinvestimento em três períodos diferentes (2º semestre de 2024, 1º semestre de 2025, e 2º semestre de 2025), com a distribuição de rendimentos sendo efetuada nos casos de aprovação.\n\n**Trecho-chave:**\n\"Deliberar, extraordinariamente, nos termos do art. 11, ‘xvi’, da Parte Geral do Regulamento, c/c arts. 32 e 33, do Anexo do Regulamento, sobre a não constituição da Reserva de Reinvestimento, considerando-se os resultados apurados pelo Fundo no 2º semestre de 2025, sendo certo que, em caso de aprovação da matéria, a distribuição de rendimentos será efetuada.\"\n\n---\n\n### 26/09/2025 - Assembleia Geral Extraordinária\n\n**O que aconteceu:** Realizada uma assembleia geral extraordinária para deliberar sobre a substituição da gestora do fundo.\n\n**Resumo:** A Caixa Econômica Federal foi eleita como nova gestora do fundo, em substituição à Reag Gestão de Fundos Imobiliários Ltda., conforme deliberação da assembleia geral de cotistas.\n\n**Trecho-chave:**\n\"A matéria constante da Ordem do Dia foi aprovada pela totalidade das Cotas emitidas sendo eleita para a prestação dos serviços a CAIXA ECONÔMICA FEDERAL, CNPJ nº 00.360.305/0001-04 (“Nova Gestora”).\"\n\n---\n\n**Conexão com o contexto:** Essas mudanças na gestão do fundo podem afetar diretamente os cotistas e a performance financeira do FII, considerando as alterações recentes no patrimônio líquido e no valor da cota."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1184613,
+    "data_entrega": "11/05/2026 09:52",
+    "tipo": "ressalva",
+    "rotulo": "opinião com ressalva",
+    "grave": true,
+    "continuidade": true,
+    "trecho": "Em nossa opinião, exceto pelos possíveis efeitos dos assuntos descritos na seção a seguir intitulada “Base para opinião com ressalvas”, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário Caixa Incorporação em 31 de dezembro de 2024 e o desempenho de suas operações e os seus fl"
+  }
+}

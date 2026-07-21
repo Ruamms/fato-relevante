@@ -1,0 +1,42 @@
+{
+  "ticker": "PNPR11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T04:32:43",
+  "comunicados": {
+    "ids": [
+      1158155,
+      982033,
+      1241301,
+      1214294,
+      1204555,
+      1170358
+    ],
+    "datas": [
+      "09/04/2026",
+      "01/09/2025",
+      "07/07/2026",
+      "08/06/2026",
+      "27/05/2026",
+      "27/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Ocorrências Relacionadas ao PNPR11\n\n**09/04/2026 - FATO RELEVANTE**\n- **Título:** Amortização Parcial das Cotas do PNPR11\n- **Resumo:** O Gestor recomendou ao Administrador a amortização parcial de R$ 1.804.611,67 em cotas, equivalente a R$ 2,01 por cota, a ser realizada no dia 29 de abril de 2026.\n- **Trecho-chave:** \"o Gestor recomendou ao Administrador a amortização das cotas no montante de R$1.804.611,67 (um milhão oitoscentos e quatro mil seiscentos e onze reais e sessenta e sete centavos), equivalente ao valor de R$ 2,01 por cota.\"\n\n**01/09/2025 - FATO RELEVANTE**\n- **Título:** Substituição da Administradora do PNPR11\n- **Resumo:** A Assembleia Geral Extraordinária decidiu pela substituição da atual Administradora pela Trustee Distribuidora de Títulos e Valores Mobiliários Ltda., a partir do fechamento do dia 04 de setembro de 2025.\n- **Trecho-chave:** \"foi deliberado na Assembleia Geral Extraordinária Extraordinária de Cotistas do Fundo, realizada por meio de Edital de Convocação de Consulta Formal, a substituição da atual Administradora pela TRUSTEE DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.\"\n\n**07/07/2026 - COMUNICADO AO MERCADO**\n- **Título:** Não Distribuição de Resultados em Junho/2026\n- **Resumo:** O Administrador informou que não haverá distribuição de resultados do mês de junho/2026, pois o Fundo não auferiu lucro.\n- **Trecho-chave:** \"em relação ao mês de JUNHO/2026, não haverá distri buição de resultados  em razão da ausência de lucro auferido.\"\n\n**08/06/2026 - COMUNICADO AO MERCADO**\n- **Título:** Não Distribuição de Resultados em Maio/2026\n- **Resumo:** O Administrador informou que não haverá distribuição de resultados do mês de maio/2026, pois o Fundo não auferiu lucro.\n- **Trecho-chave:** \"em relação ao mês de MAIO/2026, não haverá distri buição de resultados  em razão da ausência de lucro auferido.\"\n\n**27/05/2026 - TERMO DE APURAÇÃO DA CONSULTA FORMAL**\n- **Título:** Assembleia Geral Ordinária Não Instalada\n- **Resumo:** A Assembleia Geral Ordinária do Fundo não foi instalada devido à ausência de manifestação dos cotistas, e a Demonstração Financeira do exercício social findo em 31/12/2025 foi aprovada por falta de participação.\n- **Trecho-chave:** \"Ante a ausência de manifestação dos Cotistas do Fundo, não foi instalada a presente AGO, razão pela qual com fulcro no §3º do art. 71 do RCVM 175, resta aprovada a Demonstração Financeira do Fundo.\"\n\n**27/04/2026 - EDITAL DE CONVOCAÇÃO DE ASSEMBLEIA GERAL ORDINÁRIA**\n- **Título:** Convocação da Assembleia Geral Ordinária\n- **Resumo:** A Administradora convocou os cotistas para a Assembleia Geral Ordinária, que será realizada por meio de consulta formal em 25 de maio de 2026.\n- **Trecho-chave:** \"A BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., na qualidade de instituição administradora do PANORAMA PROPERTIES FUNDO DE INVESTIMENTO IMOBILIÁRIO, convocou V.Sas. a participar da Assembleia Geral Ordinária do Fundo, a ser realizada de forma não presencial, por meio de consulta formal.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1167301,
+    "data_entrega": "22/04/2026 16:09",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Panorama Properties Fundo De Investimento Imobiliário em 31 de dezembro de 2025 e o desempenho de suas operações e fluxos de caixa para o período de 04 de setembro de 2025 (“Data da transferência do Fundo”) a 31 de dezembro de 2025 , de aco"
+  }
+}

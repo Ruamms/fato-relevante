@@ -1,0 +1,30 @@
+{
+  "ticker": "FSOF11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:38:09",
+  "comunicados": {
+    "ids": [
+      1259830,
+      1233122
+    ],
+    "datas": [
+      "20/07/2026",
+      "29/06/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### ASSEMBLEIA GERAL EXTRAORDINÁRIA DE COTISTAS REALIZADA EM 15 DE JULHO DE 2026\n\n**O QUE aconteceu:** A assembleia geral extraordinária de cotistas do Fundo de Investimento Imobiliário SOFI aprovou a contratação de um laudo de avaliação econômico-financeira da Estação Osasco Desenvolvimento Imobiliário e realizou um aporte de recursos dos cotistas no valor de R$ 1.203.140,06 para custear despesas do fundo.\n\n**Resumo:** A assembleia deliberou sobre a contratação de um laudo de avaliação e a emissão de novas cotas para financiar despesas do fundo.\n\n**Trecho-chave:**\n\"i. Os Cotistas Representantes de 45,65% votaram favoráveis a matéria, e 33,02% votaram contrários à matéria; \nii. Realização de aporte de recursos pelos Cotistas, no valor de R$ 1.203.140,06 (um milhão, duzentos e três mil, cento e quarenta reais e seis centavos) , na proporção de suas respectivas participações no Fundo, destinado ao custeio das despesas obrigatórias do Fundo (em aberto desde julho de 2017) e despesas e taxas previstas para os próximos meses até o efetivo encerramento do Fundo, incluindo, mas não se limitando, as taxas CVM e Anbima, Auditoria, Laudo de Avaliação, além das Taxas de Administração, Gestão e Custódia, com a efetiva emissão de tantas cotas que se fizerem necessárias, a serem emitidas por meio de oferta privada (“Safe Harbour”);\"\n\n---\n\n### PROPOSTA DO ADMINISTRADOR REFERENTE À ASSEMBLEIA GERAL EXTRAORDINÁRIA DE COTISTAS REALIZADA EM 29 DE JUNHO DE 2026\n\n**O QUE aconteceu:** A administradora do Fundo de Investimento Imobiliário SOFI enviou uma proposta para a realização da assembleia geral extraordinária, convocando os cotistas para deliberar sobre a contratação de um laudo de avaliação econômico-financeira e o aporte de recursos dos cotistas.\n\n**Resumo:** A administradora propôs a realização de uma assembleia para discutir e votar sobre a contratação de um laudo de avaliação e a emissão de novas cotas para financiar despesas do fundo, sem fazer recomendações específicas.\n\n**Trecho-chave:**\n\"A Administradora entende que a deliberação da s matérias constantes da Ordem do Dia deve ser abertamente discutida e deliberada no melhor interesse do Fundo e de seus cotistas. Ademais, esclarece que se abstém de uma recomendação formal quanto à aceitação ou rejeição das matérias constantes da Ordem do Dia.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1000370,
+    "data_entrega": "29/09/2025 11:48",
+    "tipo": "abstencao",
+    "rotulo": "abstenção de opinião",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Não expressamos uma opinião sobre as demonstrações financeiras do Fundo pois, devido à relevância do assunto descrito na seção a seguir intitulada “Base para abstenção de opinião”, não nos foi possível obter evidência de auditoria apropriada e suficiente p ara fundamentar nossa opinião de auditoria sobre essas demonstrações financeiras."
+  }
+}

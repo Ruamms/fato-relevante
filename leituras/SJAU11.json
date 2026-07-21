@@ -1,0 +1,45 @@
+{
+  "ticker": "SJAU11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:37:17",
+  "comunicados": {
+    "ids": [
+      1120485,
+      1119742,
+      1119117,
+      1100646,
+      1100640,
+      1214401,
+      1166032
+    ],
+    "datas": [
+      "24/02/2026",
+      "23/02/2026",
+      "20/02/2026",
+      "03/02/2026",
+      "03/02/2026",
+      "08/06/2026",
+      "17/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 24/02/2026\n\n**O que aconteceu:** Realização de grupamento das cotas do SJ AU Logística FII.\n\n**Resumo:** O fundo realizará um grupamento da totalidade das cotas, na proporção de 10:1, a partir de 24 de março de 2026. Após o grupamento, cada 10 cotas existentes serão agrupadas para gerar somente 1 cota.\n\n**Trecho-chave:** \"o Fundo realizará, junto à B3, o grupamento da totalidade das cotas do Fundo, utilizando como base a posição de fechamento do Fundo em 23 de março de 2026, na proporção de 10:1.\"\n\n### FATO RELEVANTE entregue em 23/02/2026\n\n**O que aconteceu:** Realização de grupamento das cotas do SJ AU Logística FII.\n\n**Resumo:** O fundo realizará um grupamento da totalidade das cotas, na proporção de 10:1, a partir de 24 de março de 2026. Após o grupamento, cada 10 cotas existentes serão agrupadas para gerar somente 1 cota.\n\n**Trecho-chave:** \"o Fundo realizará, junto à B3, o grupamento da totalidade das cotas do Fundo, utilizando como base a posição de fechamento do Fundo em 23 de março de 2026, na proporção de 10:1.\"\n\n### FATO RELEVANTE entregue em 20/02/2026\n\n**O que aconteceu:** Realização de grupamento das cotas do SJ AU Logística FII.\n\n**Resumo:** O fundo realizará um grupamento da totalidade das cotas, na proporção de 10:1, a partir de 23 de março de 2026. Após o grupamento, cada 10 cotas existentes serão agrupadas para gerar somente 1 cota.\n\n**Trecho-chave:** \"o Fundo realizará, junto à B3, o grupamento da totalidade das cotas do Fundo, utilizando como base a posição de fechamento do Fundo em 20 de março de 2026, na proporção de 10:1.\"\n\n### COMUNICADO AO MERCADO entregue em 03/02/2026\n\n**O que aconteceu:** Comunicação sobre o processo de grupamento das cotas do SJ AU Logística FII.\n\n**Resumo:** A administradora informou que o processo de grupamento será conduzido por meio de um Ato do Administrador a ser publicado até 27/02/2026, com detalhes sobre o cronograma e tratamento das frações de cotas resultantes.\n\n**Trecho-chave:** \"o processo de grupamento de cotas do Fundo para enquadramento da cotação em valor igual ou superior a R$ 1,00 por unidade, será conduzido por meio de Ato do Administrador a ser publicado até 27/02/2026.\"\n\n### COMUNICADO AO MERCADO entregue em 03/02/2026\n\n**O que aconteceu:** Comunicação sobre o processo de grupamento das cotas do SJ AU Logística FII.\n\n**Resumo:** A administradora informou que o processo de grupamento será conduzido por meio de um Ato do Administrador a ser publicado até 27/02/2026, com detalhes sobre o cronograma e tratamento das frações de cotas resultantes.\n\n**Trecho-chave:** \"o processo de grupamento de cotas do Fundo para enquadramento da cotação em valor igual ou superior a R$ 1,00 por unidade, será conduzido por meio de Ato do Administrador a ser publicado até 27/02/2026.\"\n\n### ASSEMBLEIA AGO entregue em 08/06/2026\n\n**O que aconteceu:** Deliberação sobre aprovação das contas e demonstrações contábeis do SJ AU Logística FII.\n\n**Resumo:** A assembleia deliberou pela aprovação das contas e demonstrações contábeis do fundo, relativas ao exercício social findo em 31/12/2025, devidamente auditadas.\n\n**Trecho-chave:** \"Deliberou pela matéria constante na Ordem do Dia.\"\n\n### ASSEMBLEIA AGO entregue em 17/04/2026\n\n**O que aconteceu:** Proposta para a aprovação das contas e demonstrações contábeis do SJ AU Logística FII.\n\n**Resumo:** A administradora propôs a aprovação das contas e demonstrações contábeis do fundo, relativas ao exercício social findo em 31/12/2025, devidamente auditadas.\n\n**Trecho-chave:** \"Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31/12/2025, devidamente auditadas.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1152204,
+    "data_entrega": "01/04/2026 00:09",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e fin anceira do SJ AU Logística Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de deze mbro de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercíci o findo nesta data, de acordo com as práticas contábeis adotada"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "ticker": "CCVA11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T03:27:33",
+  "comunicados": {
+    "ids": [
+      1178235,
+      1168318,
+      1186515,
+      1125054,
+      1186511,
+      1173647
+    ],
+    "datas": [
+      "30/04/2026",
+      "23/04/2026",
+      "12/05/2026",
+      "28/02/2026",
+      "12/05/2026",
+      "29/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 30/04/2026\n\n**O que aconteceu:** O Fundo decidiu não exercer o direito de preferência nem o direito de venda conjunta previstos na Convenção de Condomínio do Shopping Jardim Sul.\n\n**Resumo:** Após análise, o Fundo optou por não participar da transação proposta envolvendo o Shopping Jardim Sul.\n\n**Trecho-chave:**\n\"Em complemento ao Fato Relevante divulgado em 23 de abril de 2026, após análise da transação proposta envolvendo o Shopping Jardim Sul, o Fundo decidiu não exercer o direito de preferência nem o direito de venda conjunta previstos na Convenção de Condomínio do referido empreendimento.\"\n\n### FATO RELEVANTE entregue em 23/04/2026\n\n**O que aconteceu:** O Fundo recebeu notificação sobre a intenção de alienação do HGBS (coproprietário majoritário) no Shopping Jardim Sul.\n\n**Resumo:** O HGBS pretende vender 19% do Shopping Jardim Sul por R$ 128 milhões, e o Fundo tem direito de preferência ou venda conjunta.\n\n**Trecho-chave:**\n\"Em 17 de abril de 2026, o Fundo recebeu notificação do Hedge Brasil Shopping Fundo de Investimento Imobiliário – Responsabilidade Limitada (“HGBS”), seu coproprietário majoritário no Shopping Jardim Sul, acerca da celebração, em 31 de março de 2026, de Memorando de Entendimentos entre o HGBS e o Pátria Malls Fundo de Investimento Imobiliário – Responsabilidade Limitada, por meio do qual o HGBS manifestou sua intenção de alienar a fração ideal correspondente a 19% (dezenove por cento) do referido empreendimento, localizado na cidade de São Paulo/SP, pelo valor total de R$ 128.000.000,00 (cento e vinte e oito milhões de reais), nos termos e condições ali descritos.\"\n\n### COMUNICADO AO MERCADO entregue em 12/05/2026\n\n**O que aconteceu:** As contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025 foram aprovadas na assembleia geral.\n\n**Resumo:** A assembleia geral de cotistas aprovou as contas anuais do Fundo para o ano de 2025.\n\n**Trecho-chave:**\n\"Na assembleia geral de cotistas realizada em 04 de maio de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\"\n\n### COMUNICADO AO MERCADO entregue em 28/02/2026\n\n**O que aconteceu:** A Administradora informou sobre a mudança no formato dos Informes de Rendimentos para o ano de 2025.\n\n**Resumo:** Os Informes de Rendimentos do Fundo para o ano de 2025 serão disponibilizados exclusivamente por meio digital, através do Portal do Investidor.\n\n**Trecho-chave:**\n\"Em complemento ao Comunicado ao Mercado de 2 de fevereiro de 2026 e ao Comunicado ao Mercado de 13 de fevereiro de 2026, a Administradora informa que, com o intuito de reduzir os custos de impressão e correios para os Fundos, bem como minimizar o uso de papel e seus impactos para o meio ambiente, os Informes de Rendimentos (“Informes”) referentes ao ano de 2025, já estão disponíveis aos investidores, conforme previsto na Instrução Normativa RFB nº 2.060/2021, exclusivamente por meio digital, por meio do Portal do Investidor (“Portal”).\n\n### ASSEMBLEIA AGO entregue em 12/05/2026\n\n**O que aconteceu:** As contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025 foram aprovadas.\n\n**Resumo:** A assembleia geral de cotistas aprovou as contas e demonstrações contábeis do Fundo para o ano de 2025.\n\n**Trecho-chave:**\n\"4.1. Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n### ASSEMBLEIA AGO entregue em 29/04/2026\n\n**O que aconteceu:** Convocação para a assembleia geral de cotistas com prazo até 04 de maio de 2026.\n\n**Resumo:** A administradora convoca os cotistas do Fundo para deliberarem sobre a aprovação das contas e demonstrações contábeis do exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"A BTG Pactual Serviços Financeiros S.A. Distribuidora de Títulos e Valores Mobiliários, sociedade anônima, com sede na Cidade e Estado do Rio de Janeiro, localizada à Praia de Botafogo, nº 501, Torre Corcovado, 5º Andar (Parte), Botafogo, e inscrita no CNPJ sob o nº 59.281.253/0001-23, devidamente autorizada pela Comissão de Valores Mobiliários (“CVM”) para a atividade de administração de carteiras de valores mobiliários, de acordo com o Ato Declaratório CVM nº 8 .695, de 20 de março de 2006 (\"Administradora\"), na qualidade de administradora do CANUMA CAPITAL RENDA VAREJO FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA, inscrito no CNPJ sob o nº 52.713.882/0001-36 (\"Fundo\"), bem como de sua classe única, vem, pela presente, convocar os cotistas do Fundo (“Cotistas”) para a Consulta Formal, com prazo de recebimento de votos até 04 de maio de 2026, para deliberarem sobre: (i) A aprovação das contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de dezembro de 2025.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1149642,
+    "data_entrega": "31/03/2026 11:56",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

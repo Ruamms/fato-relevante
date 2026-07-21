@@ -1,0 +1,36 @@
+{
+  "ticker": "OBAL11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T23:19:21",
+  "comunicados": {
+    "ids": [
+      1235200,
+      1207671,
+      1202338,
+      1169216
+    ],
+    "datas": [
+      "30/06/2026",
+      "29/05/2026",
+      "25/05/2026",
+      "24/04/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO/E"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 30/06/2026\n\n**O QUE aconteceu:** A distribuição de lucros do mês de junho/2026 não foi possível.\n\n**Resumo:** O fundo não conseguiu apurar a existência de lucro no mês de junho/2026, e a contabilidade final será concluída em 22 de julho de 2026.\n\n**Trecho-chave:**\n\"considerando que a contabilidade do fundo não pôde ser finalizada até o presente momento, informamos que não temos apurada existência de lucro no referido período, passível de distribuição de resultados.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 29/05/2026\n\n**O QUE aconteceu:** A distribuição de lucros do mês de maio/2026 não foi possível.\n\n**Resumo:** O fundo não conseguiu apurar a existência de lucro no mês de maio/2026, e a contabilidade final será concluída em 22 de junho de 2026.\n\n**Trecho-chave:**\n\"considerando que a contabilidade do fundo não pôde ser finalizada até o presente momento, informamos que não temos apurada existência de lucro no referido período, passível de distribuição de resultados.\"\n\n---\n\n### ASSEMBLEIA AGO/E entregue em 24/04/2026\n\n**O QUE aconteceu:** A assembleia aprovou as Demonstrações Financeiras do exercício social findo em 31 de dezembro de 2025 e alterou os artigos 7.6.2 e 7.6.3 do Regulamento do Fundo.\n\n**Resumo:** Os cotistas aprovaram sem ressalvas as matérias da ordem do dia, incluindo a aprovação das Demonstrações Financeiras e a alteração dos artigos 7.6.2 e 7.6.3 do Regulamento do Fundo.\n\n**Trecho-chave:**\n\"Diante o exposto, foram APROVADAS, sem qualquer ressalva ou restrição, as matérias da ordem do dia, por cotistas desimpedidos e aptos a deliberar.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 25/05/2026\n\n**O QUE aconteceu:** A assembleia formalizou os resultados da aprovação das Demonstrações Financeiras do exercício social findo em 31 de dezembro de 2025 e dos artigos 7.6.2 e 7.6.3 do Regulamento do Fundo.\n\n**Resumo:** Os cotistas aprovaram sem ressalvas as matérias da ordem do dia, incluindo a aprovação das Demonstrações Financeiras e a alteração dos artigos 7.6.2 e 7.6.3 do Regulamento do Fundo.\n\n**Trecho-chave:**\n\"Diante o exposto, foram APROVADAS, sem qualquer ressalva ou restrição, as matérias da ordem do dia, por cotistas desimpedidos e aptos a deliberar.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1150159,
+    "data_entrega": "31/03/2026 16:12",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Opportunity Balassiano Fundo de Investimento Imobiliário - Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis "
+  }
+}

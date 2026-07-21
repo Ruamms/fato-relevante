@@ -1,0 +1,52 @@
+{
+  "ticker": "IBCR11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T06:03:06",
+  "relatorio": {
+    "id": 1237809,
+    "data_entrega": "01/07/2026 22:18",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Variação Negativa no Valor Patrimonial:**\n   - O IBCR11 apresentou uma variação negativa em seu valor patrimonial de R$ 89,22 para R$ 89,07 no mês de maio.\n   - \"No mês de Maio, o Fundo apresentou uma variação negativa em seu valor patrimonial de R$ 89,22 para R$ 89,07. O IBCR11 encerrou o mês com um (des)ágio de (41,42%) na relação ao valor patrimonial (VM/VP).\" (p. 7)\n\n2. **Dividendos Distribuídos:**\n   - Desde seu início, o fundo distribuiu R$ 56,97 em dividendos.\n   - \"O fundo distribuiu, desde de seu início, R$ 56,97 em dividendos, equivalente a um dividend yield anualizado de 15,49% desde o início.\" (p. 8)\n\n3. **Reserva de Lucro:**\n   - O fundo ainda possui R$ 0,197 / cota de reserva de lucro.\n   - \"O Fundo ainda possui R$ 0,197 / cota de reserva de lucro.\" (p. 8)\n\n4. **Operações Ativas e em Desenvolvimento:**\n   - O fundo possui várias operações ativas e em desenvolvimento, incluindo terminação de obras, reestruturação de contratos, e novos projetos.\n   - \"A obra está 100% concluída, com o 'habite-se' já emitido. O CRI encontra-se em processo de reestruturação, com previsão de nova taxa + prêmio, além de prazo de amortização reduzido.\" (p. 10)\n   - \"Os recebimentos mensais das carteiras do Armona e do Villa seguem regulares. Ambos os empreendimentos estão 100% vendidos...\" (p. 10)\n\n5. **Riscos e Eventos Societários:**\n   - Há um risco de inadimplência associado a uma operação, pois o devedor não efetuou o pagamento da amortização bullet final.\n   - \"O devedor não efetuou o pagamento da amortização bullet final. Os titulares do CRI seguem em negociação com a companhia.\" (p. 13)\n\n6. **Condições Macroeconômicas:**\n   - O cenário macroeconômico é volátil, com pressões inflacionárias e juros elevados.\n   - \"Em relação ao Brasil, os desdobramentos desse cenário externo e as discussões fiscais permaneceram como as principais forças condutoras da política monetária.\" (p. 3)\n\n7. **Estrutura de Capital:**\n   - O fundo possui uma estrutura diversificada com diferentes taxas, prazos e garantias.\n   - \"CRI CRVO Virgo Securitizadora\" tem vencimento em 20/06/2036, taxa IPCA + 7,00%, fluxo mensal, garantia de alienação fiduciária do terreno e das cotas da SPE.\n   - \"CRI VIVATTI Virgo Securitizadora\" tem vencimento em 22/01/2025, taxa IPCA + 11,00%, fluxo mensal, garantia de alienação fiduciária do imóvel e das cotas da SPE.\n\n8. **Liquidez:**\n   - A liquidez do fundo é baixa, com apenas 1,92% do volume total negociado.\n   - \"As cotas do IBCR11 são negociadas no mercado de bolsa da B3 desde 06/08/2021. Liquidez: 1,92%.\" (p. 9)\n\n### O que observar em seguida:\n- Monitorar a evolução das obras e negociações em andamento.\n- Observar as negociações com o devedor inadimplente para evitar impactos no valor patrimonial do fundo.\n- Avaliar como os juros elevados afetam a rentabilidade dos ativos."
+  },
+  "comunicados": {
+    "ids": [
+      1210503,
+      1168345,
+      984455,
+      1202522,
+      1202521
+    ],
+    "datas": [
+      "02/06/2026",
+      "23/04/2026",
+      "04/09/2025",
+      "25/05/2026",
+      "25/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 02/06/2026\n\n**Data:** 02/06/2026  \n**Título:** Assembleia Geral Extraordinária Cancelada  \n**Resumo:** A administradora do fundo cancelou a assembleia previamente convocada, devido à desistência do cotista solicitante e aos votos já proferidos.  \n**Trecho-chave:**\n\"A Administradora esclarece que: (i) verificou os poderes dos representantes de cotistas solicitantes no Pedido de Convocação e que ambos estão adequadamente representados e (ii) conforme solicitado, será cancelada a assembleia atualmente em circulação, em razão (a) do pedido de desistência da pauta requerida  e (b) que os votos até então proferidos indicavam a reprovação das matérias.\"\n\n### FATO RELEVANTE entregue em 23/04/2026\n\n**Data:** 23/04/2026  \n**Título:** Convocação de Assembleia Geral Extraordinária  \n**Resumo:** A administradora do fundo recebeu um pedido de convocação para uma assembleia geral extraordinária, representando aproximadamente 17,9% das cotas emitidas. A administradora informou que verificará os poderes dos representantes e decidirá sobre a convocação no prazo máximo de 30 dias.  \n**Trecho-chave:**\n\"A Administradora esclarece que: (i) verificou os poderes dos representantes de cotistas solicitantes no Pedido de Convocação e que ambos estão adequadamente representados e (ii) apurará o teor da solicitação e, se entender pertinente, atenderá ao Pedido de  Convocação no prazo máximo de 30 (trinta) dias contados desta data, conforme regulamentação aplicável.\"\n\n### FATO RELEVANTE entregue em 04/09/2025\n\n**Data:** 04/09/2025  \n**Título:** Esclarecimentos sobre Notícias Relativas à BFABBRANI INCORPORADORA LTDA.  \n**Resumo:** O fundo esclareceu que possíveis irregularidades na empresa BFABBRANI INCORPORADORA LTDA. não afetam diretamente os projetos Villa e Armona, que compõem a carteira do fundo.  \n**Trecho-chave:**\n\"As possíveis irregularidades relatadas estão restritas a outros empreendimentos da incorporadora, sem relação com os projetos Villa e Armona, que compõem a carteira do Fundo, portanto, não produz em impactos diretos.\"\n\n### ASSEMBLEIA AGE entregue em 25/05/2026\n\n**Data:** 25/05/2026  \n**Título:** Procedimento de Consulta Formal para Deliberação dos Cotistas  \n**Resumo:** A administradora do fundo convocou os cotistas para uma assembleia geral, onde serão deliberadas questões relacionadas à transferência da gestão, alteração na taxa de gestão e performance, e mudança no objetivo do fundo.  \n**Trecho-chave:**\n\"A Assembleia Geral tem por objeto: 1. Aprovar a transferência da gestão da carteira do Fundo... para a IGUANA INVESTIMENTOS LTDA., sociedade limitada com sede na Cidade e Estado de São Paulo, ... autorizada pela CVM a exercer a atividade de administração de carteira de valores mobiliários. 2. A alteração do item 9.23, Capítulo 1, do Anexo I do Regulamento do Fundo... para remover a previsão de valor mínimo mensal da Taxa de Gestão e, respectivamente, reduzir o percentual atualmente vigente. 3. A alteração do item 9.23 e 9.23, Capítulo 1, do Anexo I do Regulamento do Fundo... para remover a cobrança da Taxa de Performance da Classe.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares"
+    ],
+    "cota": 44.95
+  },
+  "parecer": {
+    "id": 986769,
+    "data_entrega": "08/09/2025 21:06",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

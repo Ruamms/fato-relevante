@@ -1,0 +1,58 @@
+{
+  "ticker": "NEWU11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T03:02:26",
+  "relatorio": {
+    "id": 1250445,
+    "data_entrega": "15/07/2026 20:49",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Desinvestimento e Venda de Ativos**:\n   - Em abril de 2026, o Fundo anunciou a venda da Loja e Sobreloja anexas ao Center I em Recife por R$ 16 milhões (R$ 6.671/m²), gerando um lucro de aproximadamente R$ 6,25/cota.\n   - O valor investido no imóvel era de R$ 9 milhões e o valor de laudo de 2025 era de R$ 4,3 milhões.\n\n2. **Vacância**:\n   - A vacância do Fundo concentrava-se exclusivamente na Loja e Sobreloja do Edifício Center I.\n   - Após a venda desses imóveis, o Fundo zerou sua vacância física.\n\n3. **Distribuição de Rendimentos**:\n   - Em junho de 2026, a distribuição de rendimentos foi de R$ 0,60 por cota, em linha com a política do Fundo e regulamentação vigente.\n   - Todos os locatários estão adimplentes com seus aluguéis.\n\n4. **Obras e Reformas**:\n   - Não há menção explícita de obras ou reformas no relatório atual.\n\n5. **Alavancagem/Dívidas**:\n   - Não há informações específicas sobre dívidas ou alavancagem no relatório.\n\n6. **Eventos Societários**:\n   - A NewPort Real Estate assumiu a gestão do Fundo em 2020.\n   - O Fundo anunciou a segunda emissão de cotas para aquisição de novos imóveis com elevado potencial de rentabilidade.\n\n7. **Riscos Cientificados**:\n   - A vacância física alta (45,36%) é um risco mencionado.\n   - O P/VP muito acima da média histórica também é um alerta relevante.\n\n8. **Conexão com Indicadores**:\n   - As vendas recentes contribuíram para a valorização dos ativos do Fundo, resultando em uma valorização de 80,1% em relação ao valor de laudo de dezembro de 2020.\n   - A distribuição de rendimentos foi ajustada conforme o desempenho operacional.\n\n### O que observar em seguida:\n- **Monitorar a Vacância**: Verificar se há novas mudanças na vacância nos próximos relatórios, pois isso pode indicar a eficácia das estratégias de reestruturação.\n- **Distribuição de Rendimentos**: Observar se houver alterações significativas na distribuição de rendimentos, que podem refletir o desempenho operacional do Fundo."
+  },
+  "comunicados": {
+    "ids": [
+      1168461,
+      1098350,
+      1092346,
+      1235953,
+      1208501,
+      1178858,
+      1177813
+    ],
+    "datas": [
+      "23/04/2026",
+      "30/01/2026",
+      "26/01/2026",
+      "30/06/2026",
+      "29/05/2026",
+      "04/05/2026",
+      "30/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 26/01/2026\n\n**O QUE aconteceu:** Nova emissão de cotas da Classe Única do Fundo.\n\n**Resumo:** O NewPort Renda Urbana FII anunciou a segunda emissão de cotas, com oferta inicial até 3.265.699 cota(s), totalizando potencialmente R$ 272.000.069,71.\n\n**Trecho-chave:** \"A Oferta será de, inicialmente, até 3.265.699 (três milhões, duzentas e sessenta e cinco mil, seiscent as e noventa e nove) Cotas da 2ª Emissão, perfazendo o montante total de até R$  272.000.069,71 (duzentos e setenta e dois milhões, sessenta e nove reais e setenta e um centavos), sem considerar o Custo Unitário de Distribuição.\"\n\n### FATO RELEVANTE entregue em 30/01/2026\n\n**O QUE aconteceu:** Definição da data base para a preferência na oferta pública.\n\n**Resumo:** A data base foi definida como 29 de janeiro de 2026, para verificar os cotistas que poderão exercer o direito de preferência em relação à segunda emissão de cotas do fundo.\n\n**Trecho-chave:** \"A data base na qual será verificada a relação de Cotistas que poderão exercer o Direito de Preferência é o dia 29 de janeiro de 2026.\"\n\n### FATO RELEVANTE entregue em 23/04/2026\n\n**O QUE aconteceu:** Venda de imóveis no Edifício Center I.\n\n**Resumo:** O NewPort Renda Urbana FII vendeu um conjunto de lojas e sobrelojas, totalizando 2.398,56 m², por R$ 16.000.000,00, gerando aproximadamente R$ 6,25 por cota em lucro.\n\n**Trecho-chave:** \"O valor a ser recebido pela classe única do Fundo em decorrência da venda dos Imóveis é de R$ 16.000.000,00 (dezesseis milhões de reais), correspondente a R$ 6.671/m² (seis mil, seiscentos e setenta e um reais por metro quadrado).\"\n\n### COMUNICADO AO MERCADO entregue em 29/05/2026\n\n**O QUE aconteceu:** Distribuição de rendimentos para maio.\n\n**Resumo:** O NewPort Renda Urbana FII distribuiu R$ 0,40 por cota em rendimento para o mês de maio.\n\n**Trecho-chave:** \"Anunciamos, neste mês de maio, o rendimento de R$ 0,40 por cota.\"\n\n### COMUNICADO AO MERCADO entregue em 30/06/2026\n\n**O QUE aconteceu:** Distribuição de rendimentos para junho.\n\n**Resumo:** O NewPort Renda Urbana FII distribuiu R$ 0,60 por cota em rendimento para o mês de junho.\n\n**Trecho-chave:** \"Anunciamos, no mês de junho, o rendimento de R$ 0,60 por cota.\"\n\n### ASSEMBLEIA AGO entregue em 30/04/2026\n\n**O QUE aconteceu:** Convocação da Assembleia Geral Ordinária.\n\n**Resumo:** O NewPort Renda Urbana FII convocou a assembleia geral ordinária para deliberar sobre as demonstrações financeiras do exercício social findo em 31 de dezembro de 2025, com data final de consulta formal marcada para 2 de junho de 2026.\n\n**Trecho-chave:** \"Prezado cotista, O BANCO GENIAL S.A., instituição financeira... vem, por meio desta, nos termos do Artigo 37, I, da Instrução CVM nº 175, apresentar aos cotistas a seguinte proposta para as matérias constantes da ordem do dia da Assembleia Geral Ordinária de Cotistas do Fundo.\"\n\n### ASSEMBLEIA AGO entregue em 04/05/2026\n\n**O QUE aconteceu:** Convocação da Assembleia Geral Ordinária.\n\n**Resumo:** O FII ANCAR IC - RL convocou a assembleia geral ordinária para deliberar sobre as demonstrações financeiras do exercício social findo em 31 de dezembro de 2025, com data final de consulta formal marcada para 2 de junho de 2026.\n\n**Trecho-chave:** \"Prezado cotista, O BANCO GENIAL S.A., instituição financeira... vem, por meio desta, nos termos do Artigo 37, I, da Instrução CVM nº 175, apresentar aos cotistas a seguinte proposta para as matérias constantes da ordem do dia da Assembleia Geral Ordinária de Cotistas do Fundo.\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Vacância física alta",
+      "P/VP muito acima da média histórica"
+    ],
+    "cota": 117.94
+  },
+  "parecer": {
+    "id": 1152287,
+    "data_entrega": "01/04/2026 01:42",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Newport Renda Urbana Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus respectivos fluxos de caixa para o exercício findo nessa data, de acordo com as práticas co"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "ticker": "JPPA11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T02:42:19",
+  "relatorio": {
+    "id": 1225166,
+    "data_entrega": "22/06/2026 08:36",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Reorganização dos Fundos**: O JPPA11 está envolvido em uma reorganização que inclui a aquisição de 50% dos ativos do OUJP11 e 100% dos ativos do RBHG11, com a consequente liquidação desses fundos. A nova estrutura visa elevar o patamar do JPPA11, reunindo escala, liquidez e uma carteira mais diversificada.\n\n2. **Distribuição de Rendimentos**: No final do mês, o resultado do Fundo foi de R$ 1,23/cota e a distribuição de rendimentos foi de R$ 1,35/cota. A reserva de lucros acumulados fechou em R$ 0,32 ao final do mês.\n\n3. **Carteira de Ativos**: O fundo chegou ao final do mês com 99% da carteira alocada em operações de CRI e 1% em instrumentos de caixa. A distribuição dos ativos está majoritariamente indexada ao IPCA (72%), seguido por CDI (25%) e IGPM (3%).\n\n4. **Concentração Geográfica**: A carteira do fundo encontra-se concentrada principalmente em São Paulo, com 43% dos ativos, seguidos por Rio de Janeiro (9%), Minas Gerais (8%), Bahia (6%), entre outros estados.\n\n5. **Risco dos Ativos**: A maior parte dos ativos não conta com classificação de risco emitida por agências de rating e utiliza uma metodologia proprietária para avaliar a qualidade creditória, resultando em uma distribuição que inclui classes de risco variadas, desde \"Aa1\" até \"C\".\n\n6. **LTV da Carteira**: O LTV médio da carteira é de 45,5%, indicando um patamar moderado de segurança nos ativos.\n\n7. **Taxa de Administração**: A taxa de administração do fundo é de 0,17% a.a., com uma performance acima do benchmark quando o resultado financeiro líquido é maior que os rendimentos declarados.\n\n8. **Cotação e Dividend Yield**: A cotação atual do JPPA11 é R$ 86,40, com um dividend yield anualizado de 13,2% sobre a cota patrimonial e 18,2% sobre o mercado.\n\n### O que observar em seguida:\n- Monitorar os resultados da reorganização dos fundos JPPA11, OUJP11 e RBHG11.\n- Observar as variações na distribuição de rendimentos e a reserva de lucros acumulados."
+  },
+  "comunicados": {
+    "ids": [
+      1210052,
+      1021563,
+      999824,
+      1223546,
+      1223541
+    ],
+    "datas": [
+      "01/06/2026",
+      "27/10/2025",
+      "26/09/2025",
+      "17/06/2026",
+      "17/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### O QUE aconteceu: FATO RELEVANTE entregue em 01/06/2026\n\n**Resumo:** Os administradores do JPPA anunciaram a retomada da transação de aquisição parcial dos ativos do Ourinvest JPP, com novas condições e procedimentos.\n\n**Trecho-chave:**\n\"Os Prestadores de Serviços Essenciais decidiram retomar a Transação OUJP , para implementá-la conforme a estrutura a seguir, mediante aprovação dos respectivos cotistas.\"\n\n### O QUE aconteceu: FATO RELEVANTE entregue em 27/10/2025\n\n**Resumo:** Os administradores do JPPA informaram que estão reconfigurando a transação de aquisição parcial dos ativos do Ourinvest JPP, mantendo as condições indicativas inalteradas.\n\n**Trecho-chave:**\n\"Conforme informado aos cotistas do Fundo e ao mercado em geral , em 19 de setembro de 2025, os Prestadores de Serviços Essenciais enviaram ao Ourinvest JPP proposta de aquisição de parcela equivalente a 50% (cinquenta por cento) dos ativos do OUJP.\"\n\n### O QUE aconteceu: FATO RELEVANTE entregue em 26/09/2025\n\n**Resumo:** Os administradores do JPPA anunciaram a proposta de união da totalidade dos ativos do Rio Bravo Crédito Imobiliário High Grade com o JPPA.\n\n**Trecho-chave:**\n\"Em complemento ao Fato Relevante divulgado em 19 de setembro de 2025, o Administrador e o Gestor pretendem propor a união, por meio do JPPA, da totalidade dos ativos do RIO BRAVO CRÉDITO IMOBILIÁRIO HIGH GRADE FUNDO DE INVESTIMENTO IMOBILIÁRIO – FII RESPONSABILIDADE LIMITADA.\"\n\n### O QUE aconteceu: ASSEMBLEIA AGE entregue em 17/06/2026\n\n**Resumo:** A assembleia geral extraordinária de cotistas do JPPA deliberou sobre a transferência da administração fiduciária, substituição do custodiante, alteração da denominação e do ticker das cotas, aumento do capital autorizado para novas emissões de cotas, supressão da outorga obrigatória do direito de preferência, e alterações no regime de remuneração dos prestadores de serviço.\n\n**Trecho-chave:**\n\"Os Cotistas são convocados para, em AGE: Deliberar sobre as seguintes matérias, em pauta única:\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 81.5
+  },
+  "parecer": {
+    "id": 1001303,
+    "data_entrega": "29/09/2025 18:38",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do JPP Capital Recebíveis Imobiliários Fundo de Investimento Imobiliário de Responsabilidade Limitada em 30 de junho de 2025 e o desempenho de suas operações para o exercício findo na mesma data , de acordo com as práticas contábeis adotadas n"
+  }
+}

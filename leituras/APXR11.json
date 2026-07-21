@@ -1,0 +1,58 @@
+{
+  "ticker": "APXR11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T05:44:05",
+  "relatorio": {
+    "id": 858623,
+    "data_entrega": "14/03/2025 18:30",
+    "texto": "### Fatos Relevantes:\n\n1. **Renúncia Voluntária da Taxa de Consultoria:**\n   \"A Gestora resolveu, de forma voluntária, renunciar a Taxa de Consultoria referente ao ano de 2025.\" (p. 1)\n\n2. **Retorno da Taxa de Consultoria em 2026:**\n   \"Nesses termos, a Taxa de Consultoria voltará a ser cobrada a partir de janeiro de 2026, conforme Anexo I – 9.3 do Regulamento da Classe.\" (p. 1)\n\n### O que observar em seguida:\n- Monitorar as mudanças na estrutura financeira do fundo após o retorno da taxa de consultoria.\n- Verificar quaisquer novos esclarecimentos ou impactos financeiros relacionados a essa renúncia e retomada."
+  },
+  "comunicados": {
+    "ids": [
+      1115627,
+      1003155,
+      848163,
+      1190485,
+      1125053,
+      1190480,
+      1179485
+    ],
+    "datas": [
+      "13/02/2026",
+      "30/09/2025",
+      "26/02/2025",
+      "14/05/2026",
+      "28/02/2026",
+      "14/05/2026",
+      "04/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### O QUE aconteceu em 14/05/2026\n\n**Título:** Assembleia Geral de Cotistas Aprova Contas Anuais\n\n**Resumo:** A assembleia geral de cotistas aprovou as contas anuais do Fundo Apex Realty FII referentes ao exercício encerrado em 30 de junho de 2025.\n\n**Trecho-chave:**\n\"4.1. Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 30 de junho de 2025.\"\n\n---\n\n### O QUE aconteceu em 28/02/2026\n\n**Título:** Administradora Informa Sobre Informes de Rendimentos Digitais\n\n**Resumo:** A administradora informou que os Informes de Rendimentos referentes ao ano de 2025 estão disponíveis exclusivamente por meio digital, através do Portal do Investidor.\n\n**Trecho-chave:**\n\"Em complemento ao Comunicado ao Mercado de 2 de fevereiro de 2026 e ao Comunicado ao Mercado de 13 de fevereiro de 2026, a Administradora informa que, com o intuito de reduzir os custos de impressão e correios para os Fundos, bem como minimizar o uso de papel e seus impactos para o meio ambiente, os Informes de Rendimentos referentes ao ano de 2025, já estão disponíveis aos investidores, conforme previsto na Instrução Normativa RFB nº 2.060/2021, exclusivamente por meio digital, por meio do Portal do Investidor.\"\n\n---\n\n### O QUE aconteceu em 30/09/2025\n\n**Título:** Gestora Renuncia à Taxa de Consultoria\n\n**Resumo:** A gestora decidiu renunciar voluntariamente à Taxa de Consultoria referente ao ano de 2025, retornando a cobrança a partir de janeiro de 2026.\n\n**Trecho-chave:**\n\"I. A Gestora resolveu, de forma voluntária, renunciar a Taxa de Consultoria referente ao ano de 2025. Nesses termos, a Taxa de Consultoria voltará a ser cobrada a partir de janeiro de 2026, conforme Anexo I – 9.3 do Regulamento da Classe.\"\n\n---\n\n### O QUE aconteceu em 13/02/2026\n\n**Título:** Gestora Renuncia à Taxa de Gestão e Consultoria\n\n**Resumo:** A gestora decidiu renunciar voluntariamente tanto à Taxa de Gestão quanto à Taxa de Consultoria referentes ao ano de 2026, retornando ambas a serem cobradas a partir de janeiro de 2027.\n\n**Trecho-chave:**\n\"I. A Gestora resolveu , de forma voluntária, renunciar tanto à Taxa de Gestão quanto à Taxa de Consultoria referentes ao ano de 2026, retornando ambas a serem cobradas a partir de janeiro de 2027, nos termos do Anexo I – item 9.3 do Regulamento da Classe.\"\n\n---\n\n### O QUE aconteceu em 26/02/2025\n\n**Título:** Gestora Renuncia à Taxa de Gestão\n\n**Resumo:** A gestora decidiu renunciar voluntariamente à Taxa de Gestão referente ao ano de 2025, retornando a cobrança a partir de janeiro de 2026.\n\n**Trecho-chave:**\n\"I. A Gestora resolveu, de forma voluntária, renunciar a Taxa de Gestão referente ao ano de 2025. Nesses termos, a Taxa de Gestão voltará a ser cobrada a partir de janeiro de 2026, conforme Anexo I – 9.3 do Regulamento da Classe.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos irregulares",
+      "Base de cotistas muito pequena"
+    ],
+    "cota": 99.99
+  },
+  "parecer": {
+    "id": 1138293,
+    "data_entrega": "13/03/2026 22:13",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Apex Realty Fundo de Investimento Imobiliário Responsabilidade Limitada em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Bras"
+  }
+}

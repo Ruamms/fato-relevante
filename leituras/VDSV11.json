@@ -1,0 +1,30 @@
+{
+  "ticker": "VDSV11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T11:31:18",
+  "comunicados": {
+    "ids": [
+      1093709,
+      1066971
+    ],
+    "datas": [
+      "27/01/2026",
+      "19/12/2025"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA AGO entregue em 19/12/2025\n\n**O QUE aconteceu:** Não houve instalação da Assembleia Geral Ordinária de Cotistas.\n\n**Resumo:** A assembleia não foi instalada por falta de comparecimento dos cotistas, mesmo com o envio regular da consulta formal pela administradora. As demonstrações financeiras do exercício social findo em 30 de junho de 2025 foram consideradas automaticamente aprovadas.\n\n**Trecho-chave:**\n\"Prezado cotista,\nO BANCO GENIAL S.A., instituição financeira devidamente autorizada pela CVM através do Ato Declaratório n° 15.455 de 13 de janeiro de 2017 para exercer a atividade de administração de carteira de valores mobiliários, com sede na Cidade e Estado do Rio de Janeiro, na Praia de Botafogo, n° 228, sala 907 – Parte, Botafogo, CEP 22.250 -906, inscrita no CNPJ/ME sob o nº 45.246.410/0001-55, na qualidade de administrador (\"Administrador\") do VIC DESENVOLVIMENTO VINTAGE 22/23 FUNDO DE INVESTIMENTO IMOBILIÁRIO, inscrito no CNPJ sob o nº 43.951.875/0001-81 (\"Fundo\"), vem, por meio desta, nos termos da resolução CVM 175 \"Resolução CVM 175\", apresentar aos cotistas a seguinte proposta para as matérias constantes da ordem do dia da Assembleia Geral Ordinária de Cotistas do Fundo, nos termos do Edital de Convocação da Consulta Formal de 19 de dezembro de 2025 (\"Assembleia\").\"\n\n### ASSEMBLEIA AGO entregue em 27/01/2026\n\n**O QUE aconteceu:** Não houve instalação da Assembleia Geral Ordinária de Cotistas.\n\n**Resumo:** A assembleia não foi instalada por falta de comparecimento dos cotistas, mesmo com o envio regular da consulta formal pela administradora. As demonstrações financeiras do exercício social findo em 30 de junho de 2025 foram consideradas automaticamente aprovadas.\n\n**Trecho-chave:**\n\"Rio de Janeiro, 19 de janeiro de 2026.\nMesa:\nRodrigo Godoy\nPresidente\nCintia Sant’ana\nSecretária\n\nDocusign Envelope ID: 7C239D51-13E9-4EB1-B2D3-DFFF3F709E2E\"\n\n**Conexão com o contexto:** A não instalação da assembleia reflete a tendência de diminuição no número de cotistas, que está abaixo do mínimo legal para isenção de IR."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1000830,
+    "data_entrega": "29/09/2025 16:07",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira, do VIC Desenvolvimento – Vintage 22/23 Fundo de Investimento Imobiliario em 30 de junho de 2025, o desempenho de suas operações e os seus respectivos fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adota"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "ticker": "SPYI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T07:13:23",
+  "comunicados": {
+    "ids": [],
+    "datas": [],
+    "rotulos": [],
+    "texto": null
+  },
+  "parecer": {
+    "id": 1237758,
+    "data_entrega": "01/07/2026 20:31",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Buena Vista US High Income ETF Fundo de Índice NEOS U."
+  }
+}

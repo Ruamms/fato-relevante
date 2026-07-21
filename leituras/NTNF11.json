@@ -1,0 +1,21 @@
+{
+  "ticker": "NTNF11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:56:39",
+  "comunicados": {
+    "ids": [
+      1246710,
+      1246709
+    ],
+    "datas": [
+      "14/07/2026",
+      "14/07/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### O QUE ACONTECEU: INÍCIO DE PERÍODO DE SUBSCRIÇÃO E INTEGRALIZAÇÃO DAS COTAS\n\n**Resumo:** O fundo INVESTO V8 B3 Tesouro Prefixado Juros iniciou o período de subscrição e integralização das cotas no mercado primário em 20 de julho de 2026, com o código de negociação \"NTNF11\", nome de pregão INVESTOV8PRE e código ISIN BRNTNFCTF003.\n\n**Trecho-chave:**\n\"Em 20 de julho de 2026, será iniciado o período de subscrição e integralização da Classe, no mercado primário, (i) sob o código de negociação “NTNF11”, (ii) nome de pregão INVESTOV8PRE e (iii) código ISIN BRNTNFCTF003, considerando-se o preço de emissão de R$ 50,00 (vinte reais) por cota da Classe (“Cota”).\"\n\n### O QUE ACONTECEU: INÍCIO DE PERÍODO DE NEGOCIAÇÃO DAS COTAS NO MERCADO SECUNDÁRIO\n\n**Resumo:** O fundo INVESTO V8 B3 Tesouro Prefixado Juros iniciou o período de negociação das cotas no mercado secundário em 21 de julho de 2026.\n\n**Trecho-chave:**\n\"Em 21 de julho de 2026, será iniciado o período de negociação das cotas subscritas e integralizadas da Classe, no mercado secundário, (i) sob o código de negociação “NTNF11”, (ii) nome de pregão INVESTOV8PRE e (iii) código ISIN BRNTNFCTF003.\"\n\n**Conexão com Indicadores do Contexto:** Este comunicado informa os detalhes sobre a subscrição, integralização e negociação das cotas no mercado secundário, que são aspectos cruciais para o investidor entender como o fundo opera."
+  },
+  "modelo": "qwen2.5:7b"
+}

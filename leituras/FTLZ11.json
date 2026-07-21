@@ -1,0 +1,33 @@
+{
+  "ticker": "FTLZ11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T04:03:30",
+  "comunicados": {
+    "ids": [
+      1124504,
+      1179225,
+      1170818
+    ],
+    "datas": [
+      "27/02/2026",
+      "04/05/2026",
+      "27/04/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 27/02/2026\n\n**O QUE aconteceu:** Disponibilização do Informe de Rendimentos Ano-Calendário 2025.\n\n**Resumo:** O Informe de Rendimentos (IR) dos fundos listados no Anexo I está disponível para acesso no Portal do Investidor da Rio Bravo a partir desta data.\n\n**Trecho-chave:**\n\"Os informes de rendimentos (IR) dos fundos listados no Anexo I estão disponíveis aos investidores a partir desta data no Portal do Investidor da Rio Bravo.\"\n\n### ASSEMBLEIA AGO entregue em 27/04/2026\n\n**O QUE aconteceu:** Realização da Assembleia Geral Ordinária.\n\n**Resumo:** A assembleia ordinária realizada em 27 de abril de 2026 aprovou as Demonstrações Financeiras do Fundo Fortaleza, referentes ao exercício encerrado em 31 de dezembro de 2025, sem necessidade de votação.\n\n**Trecho-chave:**\n\"Considerando que a assembleia não foi instalada por ausência de comparecimento de cotistas, e que as demonstrações contábeis do Fundo estão acompanhadas de relatório de auditoria independente sem opinião modificada, nos termos da Resolução CVM nº 175, tais demonstrações contábeis consideram-se automaticamente aprovadas.\"\n\n**Conexão com o contexto:** A aprovação das Demonstrações Financeiras do Fundo Fortaleza reflete diretamente no patrimônio líquido e outros indicadores financeiros do fundo."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1145956,
+    "data_entrega": "26/03/2026 21:34",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo Fortaleza de Investimento Imobiliário de Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o para o exercício findo nessa data, de acordo com as práticas contábeis adotada"
+  }
+}

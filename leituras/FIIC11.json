@@ -1,0 +1,30 @@
+{
+  "ticker": "FIIC11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:00:25",
+  "comunicados": {
+    "ids": [
+      1046326,
+      1016952
+    ],
+    "datas": [
+      "25/11/2025",
+      "17/10/2025"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA AGO entregue em 25/11/2025\n\n**Data:** 24 de novembro de 2025  \n**Título:** Aprovação das contas do exercício social findo em 30 de junho de 2025  \n**Resumo:** Os Cotistas não responderam à Consulta Formal, resultando na aprovação automática das contas e demonstrações contábeis do Fundo.  \n**Trecho-chave:**\n\"Não foram recebidas respostas à Consulta Formal representando Cotas de emissão do FUNDO DE INVESTIMENTOS IMOBILIARIO DO CAMPREV PARA SUSTENTABILIDADE PREVIDENCIARIA DO MUNICIPIO, sendo que as matérias colocadas em deliberação, conforme descritas acima, restaram automaticamente aprovadas, conforme §3º do artigo 71 da Resolução CVM nº 175, de 23 de dezembro de 2022.\"\n\n### ASSEMBLEIA AGO entregue em 17/10/2025\n\n**Data:** 17 de outubro de 2025  \n**Título:** Convocação para Assembleia Geral Ordinária e Consulta Formal sobre aprovação das contas do exercício social findo em 30 de junho de 2025  \n**Resumo:** A administradora convoca os Cotistas para participar da Assembleia Geral Ordinária, que será realizada por meio do procedimento de consulta formal. Os Cotistas têm até o dia 17 de novembro de 2025 (inclusive) para manifestarem seus votos.  \n**Trecho-chave:**\n\"A \nBTG PACTUAL SERVIÇOS FINANCEIROS S.A. DTVM\n, instituição financeira com sede na Cidade do Rio\nde Janeiro, Estado do Rio de Janeiro, na Praia de Botafogo, nº 501, 5º andar, parte, Torre Corcovado,\nBotafogo, CEP 22250-040, inscrita no Cadastro Nacional de Pessoa Jurídica (“CNPJ”) sob o nº\n59.281.253/0001-23, devidamente autorizada pela Comissão de Valores Mobiliários (“CVM”) para a\natividade de administração de carteiras de valores mobiliários, de acordo com o Ato Declaratório nº\n8.695, de 20 de março de 2006, neste ato representada na forma do seu Estatuto Social\n(\"Administradora\"), na qualidade de instituição administradora do \n, inscrito no\nCNPJ sob o nº \n (“\nFundo\n”) vem, por meio da presente, convocar os titulares das cotas\nde emissão do Fundo (“Cotistas”) para participar da Assembleia Geral Ordinária do Fundo, a ser\nrealizada de forma não presencial, por meio do procedimento de consulta formal (‘Consulta Formal’,\na qual tem por objeto deliberar sobre:\n1. Aprovação das contas e demonstrações contábeis do Fundo, devidamente auditadas, relativas ao\nexercício social findo em 30 de junho de 2025.\n\nAs matérias objeto de deliberação apenas serão aprovadas pelo voto da maioria dos Cotistas presentes.\nOs Cotistas poderão exercer o direito de voto na forma do questionário via plataforma Portal de\nAssembleias, conforme link enviado aos Cotistas por correio eletrônico, no endereço de e-mails\ncadastrado junto ao respectivo custodiante de suas Cotas.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 976915,
+    "data_entrega": "22/08/2025 19:25",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário do Camprev para Sustentabilidade Previdenciária do Município de Responsabilidade Limitada em 30 junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o período de 06 de dezembro de 20"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "ticker": "KNPR11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T03:44:32",
+  "relatorio": {
+    "id": 1238319,
+    "data_entrega": "02/07/2026 17:40",
+    "texto": "### Fatos Extraídos:\n\n1. **Fase de Desinvestimento**: O fundo entrará em fase de desinvestimento, com seu encerramento previsto para 16 de dezembro de 2026.\n   > \"O Fundo entrará em fase de desinvestimento, com seu encerramento em 16 de dezembro de 2026.\" (p. 1)\n\n2. **Distribuições Futuras**: As distribuições nos próximos meses poderão incluir tanto rendimentos quanto devolução de capital.\n   > \"Nesse contexto, as distribuições nos próximos meses poderão incluir tanto rendimentos quanto devolução de capital e, portanto, não devem ser consideradas para fins de cálculo de yield ou como referência para definição de preço na aquisição de cotas no mercado secundário.\" (p. 1)\n\n3. **Venda de Ativos**: Iniciou-se em junho o desinvestimento de posições do fundo, vendendo 24,5% do patrimônio.\n   > \"Iniciamos em junho o desinvestimento de posições do fundo, vendendo 24,5% do patrimônio.\" (p. 1)\n\n4. **Cota Patrimonial**: A cota patrimonial do KNPR teve queda de 2,78%, resultado 1,57% inferior à queda de 1,21% do IFIX.\n   > \"A cota patrimonial do KNPR variou de R$ 93,88 ao final de maio para R$ 90,52 ao final de junho.\" (p. 1)\n\n5. **Taxa de Administração**: A taxa de administração do fundo é equivalente a 0,65% ao ano sobre o valor patrimonial das cotas.\n   > \"A taxa de administração do Fundo é equivalente a 0,65% ao ano sobre o valor patrimonial das cotas e engloba não somente a remuneração do administrador, mas também do gestor e banco escriturador.\" (p. 1)\n\n6. **Rendimentos Mensais**: Anunciam-se rendimentos mensais de R$ 0,75 por cota com data base 30/jun e amortizações de R$ 22,00 por cota com data base 01/jul.\n   > \"Anunciamos um rendimento de R$ 0,75 por cota (com data base 30/jun) e uma amortização de R$ 22,00 por cota (com data base 01/jul), ambas com pagamento em 10 de julho.\" (p. 1)\n\n7. **Lock-Up**: O período de lock-up compreende o prazo de quarenta e dois meses contados a partir da data de encerramento da oferta pública de distribuição das cotas da 1ª emissão.\n   > \"O período de lock-up compreende o prazo de quarenta e dois meses contados a partir da data de encerramento da oferta pública de distribuição das cotas da 1ª emissão em que são vedadas as negociações de cotas no mercado secundário.\" (p. 1)\n\n8. **Patrimônio Líquido**: O patrimônio líquido do fundo foi de R$ 52,495.282,95.\n   > \"R$ 52.495.282,95\" (p. 1)\n\n### O que observar em seguida:\n- A evolução das distribuições mensais e suas composições.\n- As mudanças na alocação de ativos do fundo ao longo do tempo."
+  },
+  "comunicados": {
+    "ids": [
+      1049007,
+      1013246
+    ],
+    "datas": [
+      "27/11/2025",
+      "14/10/2025"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA GERAL EXTRAORDINÁRIA — 27/11/2025\n\n**O QUE aconteceu:** A assembleia geral extraordinária do KINEA PREMIUM PROPERTIES foi realizada em 27 de novembro de 2025, aprovando as demonstrações contábeis do fundo.\n\n**Resumo:** A assembleia deliberou aprovar as Demonstrações Contábeis do Fundo, acompanhadas pelo relatório dos auditores independentes, referentes ao exercício social findo em 30 de junho de 2025.\n\n**Trecho-chave:**\n\"MATÉRIA DELIBERADA: aprovadas as Demonstrações Contábeis do Fundo, devidamente acompanhadas do relatório dos auditores independentes, documentos disponibilizados aos cotistas nos termos da regulamentação em vigor, relativos ao exercício social findo em 30.06.2025.\"\n\n---\n\n### CONSULTA FORMAL ELETRÔNICA — 14/10/2025\n\n**O QUE aconteceu:** A administradora do KINEA PREMIUM PROPERTIES enviou uma consulta formal eletrônica aos cotistas para aprovar as demonstrações financeiras e parecer dos auditores independentes referentes ao exercício social findo em 30 de junho de 2025.\n\n**Resumo:** A administradora solicitou a aprovação das demonstrações contábeis, notas explicativas e parecer dos auditores independente para o exercício social findo em 30 de junho de 2025. Os documentos estavam disponíveis no site da administradora.\n\n**Trecho-chave:**\n\"(i) Aprovar as demonstrações financeiras, notas explicativas e parecer dos auditores independentes, relativas ao exercício social findo em 30 de junho de 2025.\"\n\n---\n\n**Conexão com o contexto:** Essas assembleias e consultas formalizam a aprovação das demonstrações contábeis do fundo, que são importantes para entender o desempenho financeiro do KINEA PREMIUM PROPERTIES."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos irregulares"
+    ],
+    "cota": 64.43
+  },
+  "parecer": {
+    "id": 994946,
+    "data_entrega": "22/09/2025 09:44",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

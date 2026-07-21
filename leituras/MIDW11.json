@@ -1,0 +1,42 @@
+{
+  "ticker": "MIDW11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T00:22:49",
+  "comunicados": {
+    "ids": [
+      1066364,
+      1066206,
+      1224266,
+      1224244,
+      1199539,
+      1166369
+    ],
+    "datas": [
+      "19/12/2025",
+      "18/12/2025",
+      "18/06/2026",
+      "18/06/2026",
+      "19/05/2026",
+      "17/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 19/12/2025\n\n**O QUE aconteceu:** Nova Aquisição\n**Resumo:** A Capitânia Investimentos concluiu o aporte de capital necessário para o pagamento do preço referente à aquisição das quotas representativas de 87.3% do capital social das sociedades Midway Shopping Center Ltda. e MidWest Estação Ltda., anteriormente detidas pela Lojas Riachuelo S.A.\n**Trecho-chave:** \"A conclusão da transação reforça a estratégia de investir em empreendimentos consolidados, com potencial de valorização no longo prazo, geração recorrente de resultados e contribuição positiva para a diversificação e robustez do portfólio.\"\n\n### FATO RELEVANTE entregue em 18/12/2025\n\n**O QUE aconteceu:** Nova Aquisição\n**Resumo:** A Capitânia Investimentos concluiu o aporte de capital necessário para o pagamento do preço referente à aquisição das quotas representativas de 87.3% do capital social das sociedades Midway Shopping Center Ltda. e MidWest Estação Ltda., anteriormente detidas pela Lojas Riachuelo S.A.\n**Trecho-chave:** \"O Midway Mall, localizado em Natal (RN), é um dos principais shoppings da região Nordeste, destacando-se pelo forte fluxo de visitantes, excelente localização e sólida geração de caixa, características que o posicionam como um ativo de alta qualidade e elevada relevância estratégica para o portfólio da Capitânia.\"\n\n### COMUNICADO AO MERCADO entregue em 18/06/2026\n\n**O QUE aconteceu:** Data de Corte para Distribuição de Rendimentos\n**Resumo:** A Oliveira Trust Distribuidora de Títulos e Valores Mobiliários S.A. informa que a data de corte (\"Data-Com\") para a distribuição de rendimentos referente ao mês de junho/2026 será o fechamento do dia 23/06/2026.\n**Trecho-chave:** \"Caso seja apurado resultado a ser distribuído, a título de rendimentos, para junho/2026, fica estabelecido que a data de corte (\"Data-Com\") para essa distribuição será o fechamento do dia 23/06/2026.\"\n\n### ASSEMBLEIA GERAL ORDINÁRIA entregue em 19/05/2026\n\n**O QUE aconteceu:** Apuração de Resultado da Consulta Formal aos Cotistas\n**Resumo:** A Oliveira Trust DTVM S.A. apurou que os cotistas aprovaram, sem quaisquer ressalvas ou restrições, as Demonstrações Financeiras do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\n**Trecho-chave:** \"Após análises das respostas dos Cotistas do Fundo à Consulta Formal, foi apurado que (a) Cotistas representando 0,00001% das cotas em circulação aprovaram, sem quaisquer ressalvas ou restrições, as Demonstrações Financeiras do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n### ASSEMBLEIA GERAL ORDINÁRIA entregue em 17/04/2026\n\n**O QUE aconteceu:** Convocação para Consulta Formal aos Cotistas\n**Resumo:** A Oliveira Trust DTVM S.A. convoca os cotistas para a consulta formal sobre a aprovação das Demonstrações Financeiras do Fundo referentes ao período encerrado em 31 de dezembro de 2025.\n**Trecho-chave:** \"A Consulta Formal será apurada com a presença de qualquer número de cotistas, nos termos do Art. 74 da parte geral da RCVM nº 175, e a matéria descrita no item acima dependerá da aprovação de quórum simples, ou seja, por maioria de votos dos cotistas presentes.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1151726,
+    "data_entrega": "31/03/2026 21:35",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas representam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Midway Mall Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho das suas operações e os seus fluxos de caixa para o período de 17 de dezembro de 2025 (início das atividades) a 31 de dezembro "
+  }
+}

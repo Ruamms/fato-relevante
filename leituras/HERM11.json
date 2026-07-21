@@ -1,0 +1,33 @@
+{
+  "ticker": "HERM11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T01:39:49",
+  "comunicados": {
+    "ids": [
+      1124569,
+      1237178,
+      1236513
+    ],
+    "datas": [
+      "27/02/2026",
+      "01/07/2026",
+      "30/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 27/02/2026\n\n**O QUE aconteceu:** Disponibilização de Informe de Rendimentos Ano-Calendário 2025.\n\n**Resumo:** O Rio Bravo Investimentos disponibilizou o informe de rendimentos dos fundos listados no Portal do Investidor, incluindo o HERMES FII. Os investidores podem acessar o documento através do portal ou atendimento digital da empresa.\n\n**Trecho-chave:**\n\"Os informes de rendimentos (IR) dos fundos listados no Anexo I estão disponíveis aos investidores a partir desta data no Portal do Investidor da Rio Bravo.\"\n\n---\n\n### ASSEMBLEIA AGE entregue em 30/06/2026\n\n**O QUE aconteceu:** Alteração no Regulamento do HERMES FII.\n\n**Resumo:** A assembleia geral extraordinária aprovou várias alterações no regulamento do fundo, incluindo a antecipação do pagamento de rendimentos, atualização da taxa de administração e gestão, reclassificação da política de investimento, entre outros itens.\n\n**Trecho-chave:**\n\"Os cotistas que representam 86,64% (oitenta e seis vírgula sessenta e quatro por cento) do total de cotas emitidas pelo Fundo e aptos ao exercício do direito de voto, deliberaram por aprovar a alteração do Regulamento do Fundo.\"\n\n**Conexão com o contexto:** As alterações no regulamento podem afetar diretamente os rendimentos dos cotistas e a estratégia de investimento do fundo."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1151677,
+    "data_entrega": "31/03/2026 21:16",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe Única do Hermes Fundo de Investimento Imobiliário de Responsabilidade Limitada em 31 de dezembro de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data , de acordo com as práticas contábeis"
+  }
+}

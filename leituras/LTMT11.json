@@ -1,0 +1,30 @@
+{
+  "ticker": "LTMT11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:22:35",
+  "comunicados": {
+    "ids": [
+      1217262,
+      1171896
+    ],
+    "datas": [
+      "11/06/2026",
+      "28/04/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA GERAL ORDINÁRIA REALIZADA EM 28 DE MAIO DE 2026\n\n**Data e Local:** Realizada no dia 28 de maio de 2026, às 10:45, por meio de correspondência eletrônica.\n\n**Presença:** O Administrador recebeu as manifestações de voto dos cotistas do Fundo. A Assembleia foi presidida pela Sra. Celina Sodré Lopes Franca e secretariada pelo Sr. Karine Ralheonco Amorim De Sa.\n\n**Deliberações:** Os cotistas presentes aprovaram, sem quaisquer ressalvas ou restrições, as contas e demonstrações contábeis do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Citação Chave:**\n\"O(s) Cotista(s) presente(s) aprovou(aram), sem quaisquer ressalvas ou restrições, as contas e demonstrações contábeis do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\" (p. 3)\n\n**Conexão com Indicadores:** A aprovação das contas e demonstrações contábeis confirma a saúde financeira do fundo, refletindo no indicador de patrimônio líquido que aumentou em 24,98% nos últimos 12 meses.\n\n---\n\n### EDITAL DE CONVOCAÇÃO DE ASSEMBLEIA GERAL ORDINÁRIA\n\n**Data e Local:** Convocada para o dia 28 de maio de 2026, às 10:45.\n\n**Convocação:** O Banco Daycoval S.A. convoca os cotistas do Fundo para deliberar sobre a aprovação das contas e demonstrações contábeis do exercício social encerrado em 31 de dezembro de 2025.\n\n**Requisitos para Voto:** Os votos por comunicação eletrônica devem ser realizados via plataforma eletrônica, sendo válidos desde que recebidos antes do início da Assembleia. A Administradora analisará os votos enviados e não computará aqueles que não atendam aos requisitos.\n\n**Citação Chave:**\n\"A Administradora ressalta que os votos por meio de comunicação eletrônica deverão ser realizados por meio da plataforma eletrônica, referidas manifestações de voto serão válidas e computadas desde que sejam recebidas pela Administradora antes do início da Assembleia.\" (p. 1)\n\n**Conexão com Indicadores:** Este edital não diretamente conecta aos indicadores financeiros, mas destaca o processo de votação, que é crucial para a tomada de decisões no fundo."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1151083,
+    "data_entrega": "31/03/2026 18:55",
+    "tipo": "abstencao",
+    "rotulo": "abstenção de opinião",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Não expressamos uma opinião sobre as demonstrações contábeis do Speciale Blue Real Fundo de Investimento Imobiliário de Responsabilidade Limitada (anteriormente denominado Speciale Blue Real Asset Fundo de Investimento Imobiliário) pois, devido à relevância do assunto descrito na seção a seguir intitulada “Bases para abstenção de opinião”, não nos foi possível obter evidência de auditoria apropria"
+  }
+}

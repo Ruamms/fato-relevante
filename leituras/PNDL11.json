@@ -1,0 +1,60 @@
+{
+  "ticker": "PNDL11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T05:30:25",
+  "relatorio": {
+    "id": 1171690,
+    "data_entrega": "28/04/2026 18:34",
+    "texto": "### Fatos Extraídos:\n\n1. **Alienação do Ativo Urdi Castello Branco:** \"Em 05/03, foi concluída a alienação do ativo Urdi Castello Branco.\" (p. 1)\n2. **Previsto para Alienação do Ativo Urdi Barueri:** \"o time de gestão espera concluir a alienação do ativo Urdi Barueri durante o mês de Abril.\" (p. 1)\n3. **Amortização Parcial de Cotistas:** \"Evento subsequente: em 02/04/2026, será realizada a amortização parcial de cotas do Fundo, no montante total de R$ 68.681.680,76 (sessenta e oito milhões, seiscentos e oitenta e um mil, seiscentos e oitenta reais e setenta e seis centavos), correspondente a R$ 475,85899703 por cota.\" (p. 1)\n4. **Status de Locação do Urdi Barueri:** \"Locado, 100,0%\" (p. 3)\n5. **Status de Locação do Urdi Castello Branco:** \"Galpão 100% locado.\" (p. 5)\n\n### O que observar em seguida:\n- A conclusão da alienação do ativo Urdi Barueri.\n- As consequências financeiras para os cotistas com a amortização parcial de cotas."
+  },
+  "comunicados": {
+    "ids": [
+      1184594,
+      1166236,
+      1140927,
+      1233874,
+      1207290,
+      1211465,
+      1177803
+    ],
+    "datas": [
+      "11/05/2026",
+      "17/04/2026",
+      "19/03/2026",
+      "30/06/2026",
+      "29/05/2026",
+      "02/06/2026",
+      "30/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 19/03/2026\n\n**O que aconteceu:** Distribuição parcial de capital por amortização de cotas.\n\n**Resumo:** A AZ QUEST PANORAMA Ltda. recomendou ao Administrador a distribuição de R$ 68,681,680,76 em forma de amortização parcial de cotas do PNDL11, equivalente a R$ 475,85899703 por cota.\n\n**Trecho-chave:** \"O pagamento será realizado no dia 02/04/2026, e os cotistas deverão se ater às condições e procedimentos a seguir expostos.\"\n\n### FATO RELEVANTE entregue em 11/05/2026\n\n**O que aconteceu:** Distribuição parcial de capital por amortização de cotas.\n\n**Resumo:** A AZ QUEST PANORAMA Ltda. recomendou ao Administrador a distribuição de R$ 63,000,000,00 em forma de amortização parcial de cotas do PNDL11, equivalente a R$ 436,49363966 por cota.\n\n**Trecho-chave:** \"O pagamento será realizado no dia 22/05/2026.\"\n\n### COMUNICADO AO MERCADO entregue em 29/05/2026\n\n**O que aconteceu:** Não haverá distribuição de resultados em maio/2026.\n\n**Resumo:** O Fundo não auferiu lucro no mês de maio/2026, portanto, não haverá distribuição de resultados.\n\n**Trecho-chave:** \"Em relação ao mês de MAIO/2026, não haverá distribuição de resultados em razão da ausência de lucro auferido.\"\n\n### COMUNICADO AO MERCADO entregue em 30/06/2026\n\n**O que aconteceu:** Não haverá distribuição de resultados em junho/2026.\n\n**Resumo:** O Fundo não auferiu lucro no mês de junho/2026, portanto, não haverá distribuição de resultados.\n\n**Trecho-chave:** \"Em relação ao mês de JUNHO/2026, não haverá distribuição de resultados em razão da ausência de lucro auferido.\"\n\n### ASSEMBLEIA AGO entregue em 30/04/2026\n\n**O que aconteceu:** Convocação para Assembleia Geral Ordinária.\n\n**Resumo:** A BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A. convoca os cotistas do Fundo para participar de uma Assembleia Geral Ordinária, a ser realizada por meio de coleta de voto a distância.\n\n**Trecho-chave:** \"A AGO, a ser realizada de forma não presencial, por meio de coleta de voto a distância, cuja formalização da apuração ocorrerá no dia 01 de junho de 2026.\"\n\n### ASSEMBLEIA AGO entregue em 02/06/2026\n\n**O que aconteceu:** Apuração da Consulta Formal aos Cotistas.\n\n**Resumo:** A Assembleia Geral Ordinária realizada por meio de consulta formal foi encerrada, com aprovação unânime das Demonstrações Financeiras do Fundo relativas ao exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:** \"Diante o exposto, foi APROVADO, sem qualquer ressalva ou restrição, o único item da ordem do dia, por cotistas desimpedidos e aptos a deliberar.\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "VP/cota em queda relevante",
+      "Menos cotistas que o mínimo para isenção de IR",
+      "Rendimentos irregulares",
+      "P/VP muito acima da média histórica"
+    ],
+    "cota": 160.0
+  },
+  "parecer": {
+    "id": 1147279,
+    "data_entrega": "27/03/2026 22:17",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo Panorama Desenvolvimento Logístico - Fundo de Investimento Imobiliário - Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o para o exercício findo nessa data, de acordo"
+  }
+}

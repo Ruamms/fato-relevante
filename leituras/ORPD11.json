@@ -1,0 +1,30 @@
+{
+  "ticker": "ORPD11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T04:14:11",
+  "comunicados": {
+    "ids": [
+      1022086,
+      1011042
+    ],
+    "datas": [
+      "28/10/2025",
+      "10/10/2025"
+    ],
+    "rotulos": [
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### O QUE aconteceu em 28/10/2025\n\n**O Fundo ORPD11 decidiu pela implementação do Plano de Liquidação Antecipada.**\n\n*Resumo:* A assembleia geral extraordinária (AGE) aprovou o plano de liquidação antecipada do fundo, com 79,31% dos cotistas votando a favor.\n\n*\"Foi realizada a apuração dos votos proferidos pelos Cotistas no âmbito da Consulta Formal. Após análise das Manifestações de Voto encaminhadas pelos Cotistas Manifestantes, foram apurados os seguintes resultados: TOTALIDADE DAS COTAS: APROVAÇÃO REJEIÇÃO ABSTENÇÃO 79,31% 0% 0%\"* (p. 2)\n\n### O QUE aconteceu em 10/10/2025\n\n**A prorrogação da consulta formal foi anunciada para o dia 27 de outubro de 2025.**\n\n*Resumo:* A administradora prorrogou a consulta formal para permitir mais tempo aos cotistas para manifestarem seus votos.\n\n*\"Fica prorrogado, por meio deste ato, o prazo da consulta formal até o dia 27 de outubro de 2025, para deliberação sobre o assunto descrito a seguir.\"* (p. 1)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 869741,
+    "data_entrega": "31/03/2025 19:42",
+    "tipo": "abstencao",
+    "rotulo": "abstenção de opinião",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Não expressamos uma opinião sobre as demonstrações financeiras do Ouro Verde Desenvolvimento Imobiliário I Fundo de Investimento Imobiliário – FII, pois, devido à relevância dos assuntos descritos na seção a seguir intitulada “Base para abstenção de opinião”, não nos foi possível obter evidência de auditoria apropriada e suficiente para fundamentar nossa opinião de auditoria sobre essas demonstraç"
+  }
+}

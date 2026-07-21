@@ -1,0 +1,30 @@
+{
+  "ticker": "PMFO11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T02:42:54",
+  "comunicados": {
+    "ids": [
+      1221816,
+      1171897
+    ],
+    "datas": [
+      "15/06/2026",
+      "28/04/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA AGO entregue em 15/06/2026\n\n**O QUE aconteceu:** A assembleia geral ordinária do Fundo Speciale Real Estate foi realizada virtualmente no dia 28 de maio de 2026, aprovando as demonstrações contábeis do exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia foi realizada por correspondência eletrônica e todos os cotistas presentes aprovaram as contas sem quaisquer ressalvas ou restrições.\n\n**Trecho-chave:**\n\"O(s) Cotista(s) presente(s) aprovou(aram), sem quaisquer ressalvas ou restrições, as contas e demonstrações contábeis do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\" (p. 2)\n\n### ASSEMBLEIA AGO entregue em 28/04/2026\n\n**O QUE aconteceu:** O Banco Daycoval S.A., administrador do Fundo Speciale Real Estate, convocou a assembleia geral ordinária para o dia 28 de maio de 2026, com objetivo de aprovar as contas e demonstrações contábeis referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A convocação foi feita por meio de correspondência eletrônica e os cotistas precisavam se inscrever no registro de cotistas na data da convocação para poder votar. A assembleia seria realizada virtualmente.\n\n**Trecho-chave:**\n\"O BANCO DAYCOVAL S.A., sociedade com sede na Cidade de São Paulo, Estado de São Paulo, na Avenida Paulista, 1.793, 9º andar, Bela Vista, São Paulo - SP, inscrita no CNPJ/ME sob o nº 62.232.889/0001-90, na qualidade de instituição administradora do Speciale Real Estate Fund of Funds Fundo de Investimento Imobiliário de Responsabilidade Limitada, inscrito no CNPJ/ME sob o nº 50.135.849/0001-40 (“Administradora” e “Fundo”, respectivamente), nos termos do regulamento do Fundo, vem por meio desta, convocar V. Sas. (“Cotistas”) para a Assembleia Geral Ordinária (“Assembleia”), a ser realizada no dia 28 de maio de 2026, às 11:15, para que seja deliberada a seguinte matéria, conforme ordem do dia:\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1151104,
+    "data_entrega": "31/03/2026 18:59",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Speciale Real Estate Fund of Funds Fundo de Investimento Imobiliário de Responsabilidade Limitada (anteriormente denominado Speciale Real Estate Fund of Funds Fundo de Investimento Imobiliário) em 31 de dezembro de 2025, o desempenho de suas "
+  }
+}

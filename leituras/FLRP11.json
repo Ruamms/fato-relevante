@@ -1,0 +1,58 @@
+{
+  "ticker": "FLRP11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T00:46:58",
+  "relatorio": {
+    "id": 1249941,
+    "data_entrega": "15/07/2026 18:44",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Vacância e Inadimplência:** A vacância permaneceu em 1,4% no mês de maio/2026, sem movimentações comerciais (p. 5).\n2. **Vendas e Resultado Operacional:** As vendas do shopping apresentaram um crescimento de 9,5% vs. maio/2025, mas caíram 19,6% em relação ao mesmo período de 2025 no acumulado do ano (p. 5). O resultado operacional cresceu 11,4% vs. maio/2025, mas apresentou uma queda de 4,5% no acumulado de 2026 em comparação com o mesmo período do ano anterior (p. 6).\n3. **Reforma Interna:** As obras de reforma interna do shopping estão em fase final e devem ser concluídas brevemente (p. 11).\n4. **Cotas e Valor de Mercado:** O valor de mercado do fundo é R$ 160 milhões, com 7.732.987 cotas no mercado (p. 3).\n\n### O que observar em seguida:\n- Monitorar as vendas e o resultado operacional do shopping, especialmente a recuperação das vendas após o impacto do turismo estrangeiro.\n- Verificar os avanços nas obras de reforma interna para confirmar a conclusão da revitalização."
+  },
+  "comunicados": {
+    "ids": [
+      1057327,
+      951344,
+      897981,
+      1081367,
+      968569,
+      1183323,
+      1183321
+    ],
+    "datas": [
+      "09/12/2025",
+      "23/07/2025",
+      "09/05/2025",
+      "13/01/2026",
+      "13/08/2025",
+      "08/05/2026",
+      "08/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 09/12/2025\n\n**O QUE aconteceu:** O imóvel do Fundo foi avaliado a mercado (valor justo) e resultou em um valor superior ao valor contábil atual, representando uma variação positiva no valor patrimonial da cota.\n\n**Resumo:** A avaliação realizada pelo CBRE mostrou que o imóvel do Hedge Floripa Shopping FII está avaliado 3,98% acima do valor contábil atual, impactando positivamente o valor patrimonial das cotas.\n\n**Trecho-chave:**\n\"o imóvel do Fundo foi avaliado a mercado (valor justo) pela empresa CBRE, resultando em valor 3,98% superior ao valor contábil atual de referido imóvel, o que representa uma variação positiva de 3,97% no valor patrimonial da cota do Fundo nesta data.\"\n\n---\n\n### FATO RELEVANTE entregue em 23/07/2025\n\n**O QUE aconteceu:** Aprovada a 7ª Emissão de cotas do Fundo.\n\n**Resumo:** A AGE deliberou pela aprovação da 7ª Emissão de cotas, que será realizada nos termos da Resolução CVM nº 160. As cotações serão admitidas à negociação no mercado secundário por meio do mercado de bolsa ou de balcão.\n\n**Trecho-chave:**\n\"As Cotas da 7ª Emissão assegurarão aos seus titulares direitos idênticos aos das Cotas já existentes. A Oferta será destinada a investidores profissionais, nos termos do artigo 11 da Resolução CVM 30, e de acordo com os critérios mencionados abaixo.\"\n\n---\n\n### FATO RELEVANTE entregue em 09/05/2025\n\n**O QUE aconteceu:** Aprovado o desdobramento de cotas do Fundo.\n\n**Resumo:** O Fundo realizou um desdobramento de cotas, criando 100 novas cotações para cada cota existente. As novas cotas passarão a ser negociadas a partir de 12 de maio de 2025 e serão da mesma espécie e classe.\n\n**Trecho-chave:**\n\"foi aprovado o desdobramento de cotas do Fundo, utilizando por base a posição de fechamento do Fundo em 9 de maio de 2025, na proporção de 100 (cem) novas cotações para cada cota existente.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 13/08/2025\n\n**O QUE aconteceu:** Encerramento do período de exercício do direito de preferência da 7ª Emissão.\n\n**Resumo:** O período de exercício do direito de preferência na subscrição de cotações da 7ª Emissão foi encerrado. Até o momento, foram subscritas 9.664 novas cotações, com R$ 196.372,48 em valor.\n\n**Trecho-chave:**\n\"De acordo com as informações recebidas da B3 e da Administradora, na qualidade de Escriturador das cotas do Fundo, até o momento foram subscritas 9.664 (nove mil e seiscentas e sessenta e quatro) Novas Cotas no âmbito do Período de Exercício de Direito de Preferência.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 13/01/2026\n\n**O QUE aconteceu:** Disponibilizado o laudo de avaliação do ativo do Fundo.\n\n**Resumo:** O laudo de avaliação do ativo em que o Fundo detém participação direta na data base de novembro de 2025 foi disponibilizado, reforçando a transparência com os investidores.\n\n**Trecho-chave:**\n\"A divulgação do laudo visa proporcionar maior grau de informação aos investidores, reforçando o compromisso da Hedge com a transparência. O laudo está disponível na página do Fundo e através deste link direto.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 08/05/2026\n\n**O QUE aconteceu:** Aprovadas as contas e demonstrações financeiras do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A maioria dos cotistas deliberou pela aprovação das contas e das demonstrações financeiras do Fundo, referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Os votos proferidos representaram os seguintes percentuais em relação ao total da base votante do Fundo: 0,475% (quatrocentos e setenta e cinco milésimos por cento) de votos favoráveis; e 0,061% (sessenta e um milésimos por cento) de abstenções.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Emissão de cotas com VP/cota em queda"
+    ],
+    "cota": 20.38
+  },
+  "parecer": {
+    "id": 1143612,
+    "data_entrega": "24/03/2026 19:52",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

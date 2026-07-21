@@ -1,0 +1,58 @@
+{
+  "ticker": "LRDI11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T04:54:40",
+  "relatorio": {
+    "id": 1125943,
+    "data_entrega": "02/03/2026 18:59",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Projetos em andamento e lançamentos**:\n   - O projeto **Iconyc by Yoo**, em parceria com a Cyrela, está em obras e 84% das unidades foram vendidas.\n   - O projeto **Only by Living Del Castilho** teve 93,5% das unidades vendidas.\n   - O **Teixeira de Melo Residencial Ipanema** foi lançado no 4º trimestre de 2025 e 93% das unidades foram vendidas.\n\n2. **Vacância e inadimplência**:\n   - Não há menção a vacância ou inadimplência no relatório, com a vacância sendo reportada como 0%.\n\n3. **Aportes e distribuições de capital**:\n   - 55% do capital investido já foi devolvido.\n\n4. **Projetos adquiridos recentemente**:\n   - Projetos adquiridos em fevereiro/2022, março/2022 e março/2022 por R$4,75M, R$12,6M e R$3,9M respectivamente.\n\n5. **Despesas com juros**:\n   - Aumento das despesas com juros devido ao aumento das taxas de financiamento imobiliário.\n\n### O que observar em seguida:\n\n- Monitorar as vendas dos projetos em andamento, especialmente o **Iconyc by Yoo**, que tem 16% das unidades ainda não vendidas.\n- Observar a evolução do projeto **Teixeira de Melo Residencial Ipanema** e se haverá novos lançamentos."
+  },
+  "comunicados": {
+    "ids": [
+      1010982,
+      923649,
+      914122,
+      1200975,
+      1185436,
+      1185433,
+      1171919
+    ],
+    "datas": [
+      "10/10/2025",
+      "12/06/2025",
+      "29/05/2025",
+      "21/05/2026",
+      "11/05/2026",
+      "11/05/2026",
+      "28/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 10/10/2025\n\n**O QUE aconteceu:** Amortização parcial de capital em favor dos cotistas.\n\n**Resumo:** A administradora e a gestora do Fundo LEBLON REALTY divulgaram um plano para amortizar R$ 1.200.000,00 em cotações, equivalente a aproximadamente R$ 3,2411 por cota.\n\n**Trecho-chave:** \"I. Nos termos do Art. 61 do regulamento do Fundo, será efetuada uma amortização parcial de capital em favor dos cotistas, no montante total de R$  1.200.000,00 correspondente a aproximadamente R$ 3,2411 por cota (\" Amortização Extraordinária\"), conforme indicado no cronograma abaixo:\"\n\n### FATO RELEVANTE entregue em 29/05/2025\n\n**O QUE aconteceu:** Amortização parcial de capital em favor dos cotistas.\n\n**Resumo:** A administradora divulgou um plano para amortizar R$ 2.200.000,00 em cotações, equivalente a aproximadamente R$ 5,9495 por cota.\n\n**Trecho-chave:** \"I. Nos termos do Art. 61 do regulamento do Fundo, será efetuada uma amortização parcial de capital em favor dos cotistas, no montante total de R$  2.200.000,00, correspondente a aproximadamente R$ 5,9495 por cota (\"Amortização Extraordinária\"), conforme indicado no cronograma abaixo:\"\n\n### FATO RELEVANTE entregue em 12/06/2025\n\n**O QUE aconteceu:** Início do prazo para informe do custo médio.\n\n**Resumo:** A administradora estabeleceu um prazo de 10 a 25 de junho de 2025 para os cotistas informarem seu respectivo custo médio unitário de aquisição (Custo Médio) por meio da plataforma do Portal do Investidor.\n\n**Trecho-chave:** \"II. O prazo para a declaração do Custo Médio por meio do Portal teve início no dia 10/06/2025 e estará disponível até o dia 25/06/2024.\"\n\n### COMUNICADO AO MERCADO entregue em 21/05/2026\n\n**O QUE aconteceu:** Atualização da forma de divulgação da remuneração dos prestadores de serviços essenciais.\n\n**Resumo:** A administradora informou que a atualização da forma de divulgação, com a inclusão do link para a Ferramenta ANBIMA, passará a ter efeitos no fechamento de 19 de maio de 2026.\n\n**Trecho-chave:** \"1. Considerando as interpretações adicionais divulgadas pelo Ofício-Circular Conjunto nº 1/2025/CVM/SIN/SSE (\"Ofício-Circular CVM nº 1/2025\"), em especial quanto à substituição do 'Sumário de Remuneração' pela Ferramenta ANBIMA (Plataforma de Transparência de Taxas) como meio centralizado e adequado de divulgação da remuneração dos Prestadores de Serviços Essenciais da Classe, restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\"\n\n### COMUNICADO AO MERCADO entregue em 11/05/2026\n\n**O QUE aconteceu:** Aprovação das contas anuais do Fundo.\n\n**Resumo:** A assembleia geral de cotistas aprovou as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\n\n### ASSEMBLEIA AGO entregue em 11/05/2026\n\n**O QUE aconteceu:** Deliberação sobre aprovação das contas e demonstrações contábeis do Fundo.\n\n**Resumo:** A assembleia geral deliberou a aprovação das contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n### ASSEMBLEIA AGO entregue em 28/04/2026\n\n**O QUE aconteceu:** Convocação para a assembleia geral de cotistas.\n\n**Resumo:** A administradora convocou os cotistas para uma assembleia geral com prazo de recebimento de votos até 04 de maio de 2026, para deliberarem sobre a aprovação das contas e demonstrações contábeis do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:** \"i) A aprovação das contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de dezembro de 2025.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos irregulares",
+      "Base de cotistas muito pequena"
+    ],
+    "cota": 114.09
+  },
+  "parecer": {
+    "id": 1142023,
+    "data_entrega": "23/03/2026 10:57",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

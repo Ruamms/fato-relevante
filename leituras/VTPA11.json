@@ -1,0 +1,33 @@
+{
+  "ticker": "VTPA11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T03:11:51",
+  "comunicados": {
+    "ids": [
+      811129,
+      481533,
+      1213749
+    ],
+    "datas": [
+      "30/12/2024",
+      "22/06/2023",
+      "08/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 30/12/2024\n\n**O QUE aconteceu:** O Fundo de Investimento Imobiliário Patrimonial V passará a ser classificado como \"Multiestratégia\".\n\n**Resumo:** A Administradora do fundo informou que o Fundo será reclassificado para uma nova categoria, especificamente como \"Multiestratégia\", com gestão ativa e multicategoria.\n\n**Trecho-chave:**\n\"passará a ser classificado como  “Multiestratégia”, com a subclassificação  \n“Multiestratégia”, tipo de gestão “Gestão Ativa ” e critério de classificação  \n“Multicategoria” de acordo com o previsto no art. 27 da referida norma.\"\n\n---\n\n### FATO RELEVANTE entregue em 22/06/2023\n\n**O QUE aconteceu:** A BV Asset anunciou a contratação do Chief Executive Officer (CEO) Christian George Egan e a alteração da denominação social para Tivio Capital DTVM S.A.\n\n**Resumo:** A distribuidora de títulos e valores mobiliários anunciou uma parceria estratégica com o Banco Bradesco, a contratação do CEO Christian Egan e a mudança de nome para Tivio Capital.\n\n**Trecho-chave:**\n\"Christian Egan possui mais de 25 anos de experiência nos mercados financeiros \nnacional e internacional, com trajetória nas áreas de Mercado de Capitais, Sales & \nTrading de Equities e Renda Fixa, com passagem também por Tesouraria, Produtos, \nCorporate e Investment Banking.\"\n\n---\n\n### ASSEMBLEIA GERAL ORDINÁRIA DE COTISTAS REALIZADA EM 08/06/2026\n\n**O QUE aconteceu:** A assembleia geral aprovou as contas do exercício social findo em 31 de dezembro de 2025.\n\n**Resumo:** Todos os cotistas presentes na assembleia aprovaram as Demonstrações Financeiras apresentadas pela Administradora, referentes ao ano de 2025.\n\n**Trecho-chave:**\n\"A totalidade de quotistas do Fundo decidiu, sem quaisquer ressalvas ou restrições, conforme orientados pelos membros do Comitê de Investimento, por aprovar as contas e as Demonstrações Financeiras do Fundo, apresentadas pelo Administrador, relativas ao exercício social findo de 31 de dezembro de 2025.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1090180,
+    "data_entrega": "22/01/2026 18:02",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião as demonstrações ﬁnanceiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a demonstração da posição ﬁnanceira do Fundo de Investimento Imobiliário Patrimonial V Responsabilidade Limitada em 31 de dezembro de 2025 e as respectivas demonstrações do resultado, das mutações do patrimônio líquido e dos ﬂuxos de caixa para exercício ﬁndo na mesma data, de ac"
+  }
+}

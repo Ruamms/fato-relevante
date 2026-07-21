@@ -1,0 +1,55 @@
+{
+  "ticker": "MGRI11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T05:20:03",
+  "relatorio": {
+    "id": 1182307,
+    "data_entrega": "08/05/2026 07:21",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Patrimônio Líquido:** O patrimônio líquido do fundo é de R$ 16,056,745,67 (p. 3).\n2. **Cotas Emitidas e Valor da Cota Patrimonial:** Foram emitidas 319.500 cotas com valor patrimonial de R$ 50,25 cada (p. 3).\n3. **Dividendos Distribuídos:** O fundo distribuiu R$ 0,83 por cota no mês de março (p. 4 e p. 11).\n4. **Resultado Financeiro:** Os resultados financeiros do fundo mostram receitas totais de R$ 5,625,556 e despesas operacionais de R$ 764,261, resultando em um resultado líquido de R$ 2,143,478 (p. 5).\n5. **Vacância:** Não há vacância no imóvel (p. 7 e p. 9).\n6. **Imóveis na Carteira:** O único imóvel na carteira é a Torre D do Hospital da Bahia em Salvador, com área bruta locável de 7.090 m² (p. 10).\n7. **Financiamento:** O fundo possui uma dívida no valor de R$ 85 milhões referente à compra do imóvel, com vencimento previsto para 2036 (p. 6).\n8. **Cotistas:** Atualmente há apenas 1 cotista (p. 3).\n\n### O que observar em seguida:\n- A baixa quantidade de cotistas pode ser um sinal preocupante.\n- A distribuição irregular de dividendos deve ser monitorada, pois pode indicar problemas financeiros."
+  },
+  "comunicados": {
+    "ids": [
+      1076851,
+      809091,
+      1007479,
+      1252398,
+      1155520
+    ],
+    "datas": [
+      "07/01/2026",
+      "26/12/2024",
+      "06/10/2025",
+      "17/07/2026",
+      "07/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 07/01/2026\n\n**O que aconteceu:** Remarcação a valor justo do ativo imobiliário integrante da carteira do Fundo.\n\n**Resumo:** A administradora realizou uma remarcação a valor justo, resultando numa variação negativa de -12,69% no patrimônio líquido por cota (PL/Cota) do Fundo.\n\n**Trecho-chave:**\n\"Em decorrência da referida remarcação, apurou-se uma variação negativa equivalente a  -12,69% no PL/Cota do Fundo.\"\n\n### FATO RELEVANTE entregue em 26/12/2024\n\n**O que aconteceu:** Alteração na classificação do Fundo.\n\n**Resumo:** O Fundo foi reclassificado para \"Multiestratégia – Gestão Ativa – Multicategoria\".\n\n**Trecho-chave:**\n\"concluiu nesta data, a alteração da classificação do Fundo para: 'Multiestratégia – Gestão Ativa – Multicategoria'.\"\n\n### COMUNICADO AO MERCADO entregue em 06/10/2025\n\n**O que aconteceu:** Alteração no endereço eletrônico institucional.\n\n**Resumo:** A administradora do Fundo informou a mudança de e-mail para contato institucional.\n\n**Trecho-chave:**\n\"A partir de agora, nossos novos e-mails para contato institucional são: fii.adm@qitech.com.br\"\n\n### ASSEMBLEIA GERAL ORDINÁRIA (AGE) entregue em 07/04/2026\n\n**O que aconteceu:** Aprovação das demonstrações contábeis do Fundo.\n\n**Resumo:** Os cotistas aprovaram as demonstrações financeiras relativas ao exercício social encerrado em 31 de dezembro de 2025, sem quaisquer ressalvas ou restrições.\n\n**Trecho-chave:**\n\"Os cotistas, representando a totalidade das cotas emitidas, neste ato: (i) declaram-se cientes da deliberação acima aprovada e (ii) dispensam a Administradora do envio do resumo da deliberação da presente ata.\"\n\n### ASSEMBLEIA GERAL EXTRAORDINÁRIA (AGE) entregue em 17/07/2026\n\n**O que aconteceu:** Não distribuição dos rendimentos auferidos pelo Fundo no primeiro semestre de 2026.\n\n**Resumo:** Os cotistas aprovaram a não distribuição dos rendimentos do primeiro semestre de 2026, correspondente ao percentual mínimo obrigatório de 95% (noventa e cinco por cento) do resultado auferido no semestre.\n\n**Trecho-chave:**\n\"O Cotista, neste ato: (i) declara-se ciente da deliberação acima aprovada; (ii) teve acesso e tempo disponível para ler e entender o conteúdo desta ata e não possui quaisquer dúvidas sobre a deliberação acima aprovada.\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Menos cotistas que o mínimo para isenção de IR",
+      "Rendimentos acima do resultado financeiro",
+      "Emissão de cotas com VP/cota em queda",
+      "VP/cota em queda relevante",
+      "Rendimentos irregulares"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 1153900,
+    "data_entrega": "02/04/2026 20:12",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Mogno Properties Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 202 5 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "ticker": "PHIP11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T07:02:40",
+  "comunicados": {
+    "ids": [
+      1248336,
+      1248323,
+      1224280
+    ],
+    "datas": [
+      "15/07/2026",
+      "15/07/2026",
+      "18/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 15/07/2026\n\n**O QUE aconteceu:** As contas anuais do PHRONESIS TEVA IPCA DYNAMIC SELECTION YIELD FUNDO DE INDICE foram aprovadas.\n\n**Resumo:** A assembleia geral de cotistas realizada em 6 de julho de 2026 aprovou as contas anuais do Fundo referente ao exercício encerrado em 31 de março de 2026.\n\n**Trecho-chave:**\n\"Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de março de 2026.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 18/06/2026\n\n**O QUE aconteceu:** A assembleia geral de cotistas do PHRONESIS TEVA IPCA DYNAMIC SELECTION YIELD FUNDO DE INDICE foi convocada para aprovar as contas e demonstrações contábeis do Fundo referente ao exercício encerrado em 31 de março de 2026.\n\n**Resumo:** A assembleia geral de cotistas foi convocada para deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, acompanhadas pelo relatório do auditor independente, referentes ao exercício social findo em 31 de março de 2026.\n\n**Trecho-chave:**\n\"Aprovam-se as contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de março de 2026.\" (p. 2)\n\n---\n\n### ASSEMBLEIA AGO entregue em 18/06/2026\n\n**O QUE aconteceu:** Os cotistas foram convocados para votar sobre a aprovação das contas e demonstrações contábeis do Fundo referente ao exercício encerrado em 31 de março de 2026.\n\n**Resumo:** A administradora do PHRONESIS TEVA IPCA DYNAMIC SELECTION YIELD FUNDO DE INDICE convocou os cotistas para votar sobre a aprovação das contas e demonstrações contábeis do Fundo, acompanhadas pelo relatório do auditor independente, referentes ao exercício social findo em 31 de março de 2026.\n\n**Trecho-chave:**\n\"Aprovam-se as contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de março de 2026.\" (p. 2)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208555,
+    "data_entrega": "30/05/2026 01:26",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Phronesis Teva IPCA Dynamic Yield Selection Fundo de Índice em 31 de março de 2026 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos Fundos de Investime"
+  }
+}

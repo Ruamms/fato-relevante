@@ -1,0 +1,39 @@
+{
+  "ticker": "PRZO11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:59:27",
+  "comunicados": {
+    "ids": [
+      866403,
+      1004797,
+      977350,
+      1182603,
+      1155512
+    ],
+    "datas": [
+      "27/03/2025",
+      "02/10/2025",
+      "25/08/2025",
+      "08/05/2026",
+      "07/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 27/03/2025\n\n**O QUE aconteceu:** O valor do patrimônio líquido do fundo apresentou uma variação positiva, equivalente a 16,24%, devido à precificação de determinados ativos que compõem a carteira.\n\n**Resumo:** Houve um aumento no valor do patrimônio líquido do fundo em março de 2025.\n\n**Citação do trecho-chave:**\n\"Devido à precificação de determinados ativos que compõem a carteira do FUNDO, em 26 de março de 2025 o valor do patrimônio líquido apresentou variação positiva, equivalente a 16,24%.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 07/04/2026\n\n**O QUE aconteceu:** A administradora convocou uma assembleia geral ordinária de cotistas para aprovar as demonstrações financeiras do exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** Uma assembleia foi convocada para aprovar as demonstrações contábeis do fundo referentes ao ano de 2025.\n\n**Citação do trecho-chave:**\n\"Aprovacao das demonstracoes contabeis do Fundo, acompanhada do Relatorio dos Auditores Independentes, referentes ao exercicio social encerrado em 31 de dezembro de 2025, devidamente auditadas e disponiveis para consulta no site da Administradora.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 08/05/2026\n\n**O QUE aconteceu:** A assembleia geral ordinária de cotistas aprovou as demonstrações financeiras do exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** Os cotistas aprovaram as demonstrações contábeis do fundo referentes ao ano de 2025.\n\n**Citação do trecho-chave:**\n\"Diante do exposto, a Administradora declara que a matéria constante da Ordem do Dia foi aprovada, por cotistas desimpedidos e aptos a deliberar, conforme os percentuais acima descritos.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 02/10/2025\n\n**O QUE aconteceu:** A administradora informou que houve uma alteração no endereço eletrônico institucional.\n\n**Resumo:** O endereço eletrônico da administradora foi atualizado para um novo e-mail institucional.\n\n**Citação do trecho-chave:**\n\"A partir de agora, nossos novos e-mails para contato institucional são: • fii.adm@qitech.com.br\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 25/08/2025\n\n**O QUE aconteceu:** A administradora prorrogou o prazo da coleta de voto a distância para formalização dos votos e do Termo de Apuração.\n\n**Resumo:** O prazo para formalização dos votos foi prorrogado até 10 de setembro de 2025, com disponibilização do Termo de Apuração no mesmo dia.\n\n**Citação do trecho-chave:**\n\"A prorrogação do prazo da Coleta de Voto a Distância por novo período adicional de 5 (cinco) dias, até 09 de setembro de 2025 (terça-feira) para formalização dos votos e das procurações e 10 de setembro de 2025 (quarta-feira) para disponibilização do Termo de Apuração dos votos.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1154988,
+    "data_entrega": "06/04/2026 20:31",
+    "tipo": "abstencao",
+    "rotulo": "abstenção de opinião",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, exceto pelos efeitos dos assuntos descritos na seção a seguir intitulada “Base para opinião com ressalvas”, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Prazo Educacional - Fundo de Investimento Imobiliário – FII – Responsabilidade Limitada (anteriormente denominado Prazo Educacional "
+  }
+}

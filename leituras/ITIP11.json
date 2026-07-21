@@ -1,0 +1,48 @@
+{
+  "ticker": "ITIP11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T03:50:00",
+  "relatorio": {
+    "id": 1251407,
+    "data_entrega": "16/07/2026 18:14",
+    "texto": "### Fatos do Relatório Gerencial ITIP11:\n\n1. **Desempenho do Fundo:**\n   - O IFIX apresentou retorno de -1,21% em junho.\n   - O ITIP11 teve desempenho patrimonial de -1,02%, com um deságio de 3,0% sobre o valor patrimonial no fechamento do mês.\n\n2. **Comentários Macroeconômicos:**\n   - Houve uma desvalorização de 1,21% no IFIX em junho.\n   - A inflação acumulada em 12 meses avançou para 4,72%, permanecendo acima do limite superior da meta estabelecida pelo Conselho Monetário Nacional.\n\n3. **Distribuição de Cotas:**\n   - O Fundo apurou no mês um resultado distribuível de R$0,77 por cota.\n   - Foi anunciada uma distribuição de R$0,73 por cota, representando um yield mensal de 1,12% em relação à cota de fechamento do mês.\n\n4. **Reorganização do Fundo:**\n   - Uma Assembleia Geral Extraordinária foi convocada no dia 26 de junho para discutir a possibilidade de reorganização do Fundo através de outro veículo gerido pela Inter Asset.\n\n5. **Carteira do Fundo:**\n   - A carteira do ITIP11 está composta por diversas cotas de FII e CRI, incluindo Kinea Rendimentos Imobiliários FII, Maxi Renda, XP Vista, entre outros.\n   - O valor patrimonial da cota é de R$65,08.\n\n### O que observar em seguida:\n1. **Desempenho do Fundo:** Monitorar o desempenho futuro do ITIP11 e como ele se compara com o IFIX.\n2. **Reorganização do Fundo:** Ficar atento às decisões tomadas na Assembleia Geral Extraordinária convocada, que pode afetar a estrutura atual do fundo."
+  },
+  "comunicados": {
+    "ids": [
+      1231351,
+      1226611,
+      1233574,
+      1231357
+    ],
+    "datas": [
+      "26/06/2026",
+      "23/06/2026",
+      "30/06/2026",
+      "26/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 26/06/2026\n\n**O que aconteceu:** A INTER DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA. e a INTER ASSET GESTÃO DE RECURSOS LTDA., respectivamente, administradora e gestora do FII ITIP11, informaram sobre uma reorganização que resultará na consolidação do patrimônio dos Fundos (INHF, INRD, ITIP) pelo INHF.\n\n**Resumo:** A reorganização visa consolidar as carteiras de investimento dos Fundos no INHF para capturar sinergias e ampliar a escala, liquidez e diversificação. O INHF passará a deter imóveis, CRIs e cotas de outros fundos com o objetivo de potencializar a geração de valor aos Cotistas.\n\n**Trecho-chave:** \"A Reorganização tem por objetivo consolidar as carteiras de investimento dos Fundos no INHF, de modo a capturar sinergias das diferentes estratégias imobiliárias, além de ampliar sua escala, liquidez e diversificação.\" (p. 2)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 23/06/2026\n\n**O que aconteceu:** A INTER DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA., administradora do FII ITIP11, respondeu a um ofício da B3 sobre oscilações atípicas nas cotas de emissão do fundo.\n\n**Resumo:** A administradora informou desconhecer qualquer informação ou fato relevante que possa justificar o aumento do número de negócios e da quantidade negociada observada no respectivo ativo.\n\n**Trecho-chave:** \"Informamos que a Administradora do Fundo desconhece qualquer informação ou fato relevante que possa justificar o aumento do número de negócios e da quantidade negociada observada no respectivo ativo.\" (p. 2)\n\n---\n\n### ASSEMBLEIA AGE entregue em 30/06/2026\n\n**O que aconteceu:** A Gestora preparou um material auxiliar para a Assembleia Geral Extraordinária de Cotistas do FII ITIP11, explicando os detalhes da reorganização proposta.\n\n**Resumo:** O material auxiliar explica que a dissolução e liquidação do Fundo ITIP11 ocorrerão mediante a prévia alienação dos ativos e posterior subscrição de cotas do INHF. A Gestora comparecerá e votará favoravelmente na qualidade de cotista do INHF, em eventual assembleia geral de cotistas.\n\n**Trecho-chave:** \"A Assembleia terá como ordem do dia a seguinte matéria: (i) a dissolução e liquidação do Fundo, a ser operacionalizada mediante a prévia alienação da totalidade dos ativos integrantes da carteira do Fundo e posterior subscrição e integralização, pelo Fundo, em moeda corrente nacional e/ou mediante compensação de créditos detidos, de cotas de emissão do INTER HEDGE FUNDO DE INVESTIMENTO IMOBILIÁRIO – RESPONSABILIDADE LIMITADA, inscrito no CNPJ/MF nº 58.501.860/0001-99 (“INHF”).\" (p. 2)\n\n---\n\n### ASSEMBLEIA AGE entregue em 26/06/2026\n\n**O que aconteceu:** A Administradora apresentou a proposta para a Assembleia Geral Extraordinária de Cotistas do FII ITIP11, que inclui a dissolução e liquidação do Fundo.\n\n**Resumo:** A proposta visa a dissolução e liquidação do Fundo ITIP11 mediante a prévia alienação dos ativos e posterior subscrição de cotas do INHF. A Gestora comparecerá e votará favoravelmente na qualidade de cotista do INHF, em eventual assembleia geral de cotistas.\n\n**Trecho-chave:** \"A Assembleia terá como ordem do dia a seguinte matéria: (i) a dissolução e liquidação do Fundo, a ser operacionalizada mediante a prévia alienação da totalidade dos ativos integrantes da carteira do Fundo e posterior subscrição e integralização, pelo Fundo, em moeda corrente nacional e/ou mediante compensação de créditos detidos, de cotas de emissão do INTER HEDGE FUNDO DE INVESTIMENTO IMOBILIÁRIO – RESPONSABILIDADE LIMITADA, inscrito no CNPJ/MF nº 58.501.860/0001-99 (“INHF”).\" (p. 2)"
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 57.5
+  },
+  "parecer": {
+    "id": 1001191,
+    "data_entrega": "29/09/2025 18:19",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Inter Teva Índice de Papel Fundo de Investimento Imobiliário – FII em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nesta data, de acordo com as práticas contábeis adotadas no Brasil, a"
+  }
+}

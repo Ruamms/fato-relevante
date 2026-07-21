@@ -1,0 +1,27 @@
+{
+  "ticker": "STYI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T02:44:23",
+  "comunicados": {
+    "ids": [
+      1164774,
+      1160741,
+      1164777,
+      1132070
+    ],
+    "datas": [
+      "15/04/2026",
+      "13/04/2026",
+      "15/04/2026",
+      "10/03/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### O QUE aconteceu em 15/04/2026\n\n**Título:** Transferência da Administradora e Divergência na Data de Disponibilização no Sistema CVM\n\n**Resumo:**\nA Assembleia Geral Extraordinária de Cotistas do Fundo decidiu pela destituição da Master S/A e eleição da Qore DTVM como nova administradora. A data inicial para a transferência foi alterada, mas a Administradora Anterior não disponibilizou o Fundo conforme determinado.\n\n**Trecho-chave:**\n\"Em 20 de março de 2026, foi realizada uma Assembleia Geral Extraordinária de Cotistas do Fundo, onde os cotistas representando 94,30% das cotas subscritas e integralizadas deliberaram por aprovar a destituição da Master S/A e eleição da Qore DTVM como nova administradora.\"\n\n---\n\n### O QUE aconteceu em 13/04/2026\n\n**Título:** Deliberação Assembleia e Divergência na Data de Disponibilização no Sistema CVM\n\n**Resumo:**\nA Assembleia Geral Extraordinária decidiu pela destituição da Master S/A e eleição da Qore DTVM como nova administradora. A Administradora Anterior não disponibilizou o Fundo conforme determinado, causando divergência.\n\n**Trecho-chave:**\n\"Em 20 de março de 2026, foi realizada uma Assembleia Geral Extraordinária de Cotistas do Fundo, onde os cotistas representando 94,30% das cotas subscritas e integralizadas deliberaram por aprovar a destituição da Master S/A e eleição da Qore DTVM como nova administradora.\"\n\n---\n\n### O QUE aconteceu em 10/03/2026\n\n**Título:** Convocação de Assembleia Geral Extraordinária para Destituir Administradora\n\n**Resumo:**\nA Gestora convocou a Assembleia Geral Extraordinária para destituir a Master S/A e eleger a Qore DTVM como nova administradora, devido à liquidação extrajudicial da Master S/A.\n\n**Trecho-chave:**\n\"Em 18 de novembro de 2025, o Banco Central do Brasil, por meio do Ato nº 1.373, publicado na mesma data, decretou a liquidação extrajudicial da Master S/A.\"\n\n---\n\n**Conexão com Indicadores:**\nA mudança no administrador e a divergência na data de disponibilização podem afetar o funcionamento regular do fundo, potencialmente impactando os cotistas."
+  },
+  "modelo": "qwen2.5:7b"
+}

@@ -1,0 +1,34 @@
+{
+  "ticker": "REME11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T03:33:20",
+  "relatorio": {
+    "id": 1239605,
+    "data_entrega": "03/07/2026 18:42",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Reestruturação e Transição de Mandato:**\n   - A reestruturação foi aprovada pelos cotistas em 18 de agosto de 2025, resultando na cisão do RFOF11 para formar o FRBC11 e o REME11.\n   - O REME11 passou por uma reestruturação que permitiu a alocação em novas classes de ativos, como CRI, LCI, LIG, imóveis diretos e demais valores mobiliários com lastro imobiliário.\n\n2. **Cota Patrimonial e Mercado:**\n   - A cota patrimonial do REME11 é R$ 78,50.\n   - O preço de mercado das cotas está em R$ 61,56.\n   - A cotação da cota patrimonial foi R$ 93,98.\n\n3. **Panorama Macroeconômico:**\n   - O mês de maio foi marcado por uma manutenção do ambiente favorável aos ativos de risco, com destaque para os mercados desenvolvidos.\n   - No cenário doméstico, houve forte saída de capital estrangeiro e preocupações fiscais internas.\n   - A inflação no Brasil foi acima das expectativas, levando a um aumento nas taxas de juros.\n\n4. **Panorama dos FIIs:**\n   - O IFIX registrou uma desvalorização de 1,33% em maio, mas ainda acumula ganhos de 2,71% no ano.\n   - Os setores de escritórios e shoppings tiveram o pior desempenho, enquanto os híbridos e ativos financeiros foram os destaques positivos.\n\n5. **Vacância em Lajes Corporativas:**\n   - A vacância do CBD (Centro de São Paulo) recuou para 13,7%, com uma absorção líquida de 55,4 mil m² no trimestre.\n   - Regiões nobres como Faria Lima e Itaim apresentaram preços médios pedidos superiores a R$ 300/m².\n\n### O que Observar em Seguida:\n1. **Monitoramento da Vacância:** A recuperação da vacância nas regiões nobres de São Paulo é um indicador importante para o desempenho dos FIIs.\n2. **Desenvolvimentos Macroeconômicos:** A continuidade das incertezas econômicas e a evolução das taxas de juros são fatores cruciais que podem impactar o desempenho do fundo."
+  },
+  "comunicados": {
+    "ids": [
+      1242556,
+      1170787
+    ],
+    "datas": [
+      "08/07/2026",
+      "27/04/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### Comunicado ao Mercado entregue em 08/07/2026\n\n**O que aconteceu:** O Fundo RB Multiestratégia Imobiliária distribuirá uma distribuição extraordinária de rendimentos.\n\n**Resumo:** O Fundo distribuiu aproximadamente 94,93% do resultado apurado no semestre encerrado em 30 de junho de 2026, ligeiramente abaixo do mínimo exigido. Para se enquadrar na regulamentação, será realizada uma distribuição extraordinária.\n\n**Trecho-chave:** \"No semestre encerrado em 30 de junho de 2026, o Fundo distribuiu aproximadamente 94,93% do resultado apurado no período, percentual ligeiramente inferior ao mínimo de 95% previsto na regulamentação aplicável para distribuição dos resultados auferidos segundo o regime de caixa. Dessa forma, visando o enquadramento do percentual mínimo exigido, o Fundo realizará uma distribuição extraordinária de rendimentos...\"\n\n---\n\n### Comunicado ao Mercado entregue em 27/04/2026\n\n**O que aconteceu:** O Fundo RB Multiestratégia Imobiliária realizou a distribuição de rendimentos.\n\n**Resumo:** A Gestora recomendou e o Administrador concordou com a distribuição de R$ 504.029,55 em rendimentos referentes aos recibos de integralização, com data-base em 2/04/2026. O pagamento foi realizado no dia 29/04/2026.\n\n**Trecho-chave:** \"O Gestor recomendou ao Administrador a distribuição de rendimentos no montante total de R$ 504.029,55 (quinhentos e quatro mil, vinte e nove reais e cinquenta e cinco centavos), com data -base em 2/04/2026, em referência aos recibos de integralização conforme detalhado abaixo.\"\n\n---\n\n**Conexão com o contexto:** Este comunicado se conecta ao indicador de distribuição de rendimentos, que é um dos principais aspectos do desempenho do fundo."
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Menos cotistas que o mínimo para isenção de IR",
+      "Fundo novo — histórico curto"
+    ],
+    "cota": 75.78
+  }
+}

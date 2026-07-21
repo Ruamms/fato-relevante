@@ -1,0 +1,39 @@
+{
+  "ticker": "TRPL11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:53:47",
+  "comunicados": {
+    "ids": [
+      1093211,
+      1068131,
+      1068095,
+      1235561,
+      1208112
+    ],
+    "datas": [
+      "26/01/2026",
+      "23/12/2025",
+      "22/12/2025",
+      "30/06/2026",
+      "29/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 23/12/2025\n\n**Data:** 23/12/2025  \n**Título:** Realização da 1ª emissão de cotas da subclasse sênior B  \n**Resumo:** O fundo anunciou a realização da primeira emissão de cotas da subclasse sênior B, com oferta pública e distribuição sob rito de registro automático.  \n**Trecho-chave:**\n\"A distribuição primária das Cotas Seniores B será realizada no Brasil, sob coordenação e distribuição da PATAGÔNIA CAPITAL GESTORA DE RECURSOS L TDA., sociedade limitada com sede na cidade de Ribeirão Preto, estado de São Paulo.\"\n\n### FATO RELEVANTE entregue em 22/12/2025\n\n**Data:** 22/12/2025  \n**Título:** Realização da 1ª emissão de cotas da subclasse júnior  \n**Resumo:** O fundo anunciou a realização da primeira emissão de cotas da subclasse júnior, com oferta pública e distribuição sob rito de registro automático.  \n**Trecho-chave:**\n\"A Oferta é destinada exclusivamente a investidores profissionais, assim definidos nos termos do artigo 11 da Resolução da CVM nº 30, de 11 de maio de 2021, conforme alterada.\"\n\n### COMUNICADO AO MERCADO entregue em 30/06/2026\n\n**Data:** 30/06/2026  \n**Título:** Não pagamento de proventos  \n**Resumo:** O fundo comunicou que não pagará proventos aos cotistas.  \n**Trecho-chave:**\n\"O Fundo em epígrafe, vem por meio desta, comunicar ao Mercado o não pagamento de Proventos.\"\n\n### COMUNICADO AO MERCADO entregue em 29/05/2026\n\n**Data:** 29/05/2026  \n**Título:** Não pagamento de proventos  \n**Resumo:** O fundo comunicou que não pagará proventos aos cotistas.  \n**Trecho-chave:**\n\"O Fundo em epígrafe, vem por meio desta, comunicar ao Mercado o não pagamento de Proventos.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1148206,
+    "data_entrega": "30/03/2026 16:22",
+    "tipo": "nao_identificado",
+    "rotulo": "parecer não identificado no texto",
+    "grave": false,
+    "continuidade": false,
+    "trecho": ""
+  }
+}

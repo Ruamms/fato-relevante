@@ -1,0 +1,48 @@
+{
+  "ticker": "VCRI11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T00:04:29",
+  "relatorio": {
+    "id": 1241564,
+    "data_entrega": "07/07/2026 19:18",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Movimentações da Carteira:**\n   - Venda de R$ 188 mil do CRI Solfácil e compra de R$ 1,0 milhão do CRI AXS Energia.\n   - Venda de R$ 722 mil do KNUQ11 e compra de R$ 872 mil do NCRI11.\n\n2. **CRI Ekko:**\n   - Vencimento antecipado aprovado em assembleia para 06/09/2024.\n   - Contratação de nova construtora, incorporadora e assessor jurídico para retomar obras do projeto.\n   - Tratativas com potenciais investidores para financiamento do saldo do projeto.\n\n3. **CRI Serpasa:**\n   - Declaração do vencimento antecipado da operação.\n   - Início de processo de execução das garantias, incluindo alienação fiduciária de imóveis não-operacionais e aval dos acionistas.\n\n4. **CRI Casa e Vídeo:**\n   - Pedido de Recuperação Judicial da Companhia em 29/04/2026.\n   - Continuação das tratativas com o restante dos credores para executar as respectivas garantias.\n\n5. **Distribuição de Rendimentos:**\n   - Distribuição de rendimentos anunciada no valor de R$ 0,095/cota, representando um dividend yield anualizado de 15,84%.\n   - Estimativa de distribuição entre R$ 0,08 e R$ 0,11/cota até setembro de 2026.\n\n6. **Cenário Macroeconômico:**\n   - Melhora marginal no cenário macroeconômico, principalmente devido à queda do petróleo.\n   - Comunicação do Banco Central reforça a leitura de política monetária contracionista.\n   - Risco fiscal e ciclo eleitoral seguem como pontos de atenção.\n\n7. **Patrimônio Líquido:**\n   - Patrimônio líquido do Fundo ao final de junho era de R$ 194,2 milhões.\n   - Alocado 94,4% em CRIs, 5,1% em FIIs e 0,2% em aplicações financeiras.\n\n8. **Carteira por Segmentos:**\n   - Exposição de cerca de 22% em geração distribuída, 19% em imobiliário residencial, 14% em logística, 13% em varejo e 11% em agronegócio.\n\n### O que observar em seguida:\n- Monitorar o progresso das obras do CRI Ekko.\n- Atentar para os processos de execução das garantias no CRI Serpasa.\n- Observar a evolução da situação jurídica e financeira do CRI Casa e Vídeo."
+  },
+  "comunicados": {
+    "ids": [
+      1235452,
+      1208140,
+      1207437,
+      1173332
+    ],
+    "datas": [
+      "30/06/2026",
+      "29/05/2026",
+      "29/05/2026",
+      "29/04/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 30/06/2026 - Distribuição de Rendimentos Referentes a Junho de 2026\n\n**O que aconteceu:** A VINCI CREDIT SECURITIES FII distribuiu rendimentos referentes a junho de 2026.\n\n**Resumo:** O Fundo distribuiu R$ 0,095 por cota em junho de 2026.\n\n**Trecho-chave:**\n\"O valor dos rendimentos referentes a junho de 2026 corresponde a R$ 0,095 por cota.\" (p. 1)\n\n---\n\n### 29/05/2026 - Distribuição de Rendimentos Referentes a Maio de 2026\n\n**O que aconteceu:** A VINCI CREDIT SECURITIES FII distribuiu rendimentos referentes a maio de 2026.\n\n**Resumo:** O Fundo distribuiu R$ 0,095 por cota em maio de 2026.\n\n**Trecho-chave:**\n\"O valor dos rendimentos referentes a maio de 2026 corresponde a R$ 0,095 por cota.\" (p. 1)\n\n---\n\n### 29/04/2026 - Assembleia Geral Ordinária\n\n**O que aconteceu:** A BRL TRUST realizou uma assembleia geral ordinária para aprovar as demonstrações financeiras do exercício social findo em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia aprovou as demonstrações financeiras sem ressalvas.\n\n**Trecho-chave:**\n\"A Administradora declara que as Demonstrações Financeiras do Fundo foram aprovadas, sem quaisquer ressalvas e restrições pelos cotistas desimpedidos e aptos a deliberar.\" (p. 1)\n\n---\n\n### Conexão com o Contexto:\n- A distribuição de rendimentos em maio e junho de 2026 reflete os valores mensais de R$ 0,095 por cota, que são consistentes com as informações do contexto sobre a taxa de distribuição mensal."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 7.19
+  },
+  "parecer": {
+    "id": 1147265,
+    "data_entrega": "27/03/2026 21:53",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

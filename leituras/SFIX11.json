@@ -1,0 +1,36 @@
+{
+  "ticker": "SFIX11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T07:07:27",
+  "comunicados": {
+    "ids": [
+      1248317,
+      1187184,
+      1248314,
+      1224283
+    ],
+    "datas": [
+      "15/07/2026",
+      "12/05/2026",
+      "15/07/2026",
+      "18/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 15/07/2026\n\n**O que aconteceu:** As contas anuais do Fundo foram aprovadas na assembleia geral de cotistas.\n\n**Resumo:** A assembleia geral realizada em 6 de julho de 2026 aprovou as contas anuais do BTG PACTUAL TEVA ITBR IPCA 95-5 FUNDO DE ÍNDICE referentes ao exercício encerrado em 31 de março de 2026.\n\n**Trecho-chave:** \"foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de março de 2026.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 12/05/2026\n\n**O que aconteceu:** A forma de divulgação da remuneração dos Prestadores de Serviços Essenciais foi atualizada.\n\n**Resumo:** A BTG Pactual Serviços Financeiros S.A. DTVM, como administradora do Fundo, informou a aprovação da atualização da forma de divulgação da remuneração dos Prestadores de Serviços Essenciais, passando a ser realizada exclusivamente por meio da Ferramenta ANBIMA.\n\n**Trecho-chave:** \"restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\"\n\n---\n\n### ASSEMBLEIA GERAL DE COTISTAS AGO entregue em 15/07/2026\n\n**O que aconteceu:** As contas anuais do Fundo foram aprovadas.\n\n**Resumo:** A assembleia geral realizada via manifestação de voto em 6 de julho de 2026 aprovou as contas e demonstrações contábeis do BTG PACTUAL TEVA ITBR IPCA 95-5 FUNDO DE ÍNDICE referentes ao exercício social encerrado em 31 de março de 2026.\n\n**Trecho-chave:** \"Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de março de 2026.\"\n\n---\n\n### ASSEMBLEIA GERAL DE COTISTAS AGO entregue em 18/06/2026\n\n**O que aconteceu:** Convocação para a assembleia geral de cotistas.\n\n**Resumo:** A administradora BTG Pactual Serviços Financeiros S.A. DTVM convocou os cotistas do Fundo para deliberarem sobre a aprovação das contas e demonstrações contábeis relativas ao exercício social encerrado em 31 de março de 2026.\n\n**Trecho-chave:** \"A BTG Pactual Serviços Financeiros S.A. Distribuidora de Títulos e Valores Mobiliários, sociedade anônima, convocou os cotistas do Fundo para deliberarem sobre: (i) A aprovação das contas e demonstrações contábeis do Fundo.\"\n\n---\n\n**Conexão com o contexto:** As decisões tomadas nas assembleias de cotistas e nos comunicados ao mercado refletem as atividades regulares de administração e transparência do fundo, conforme estabelecido pelo regulamento da CVM."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208592,
+    "data_entrega": "30/05/2026 02:29",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do BTG Pactual Teva ITBR IPCA 95-5 Fundo de Índice em 31 de março de 2026 e o desempenho de suas operações para o período de 03 de setembro de 2025 a 31 de março de 2026, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos Fu"
+  }
+}

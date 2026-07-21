@@ -1,0 +1,30 @@
+{
+  "ticker": "DVLT11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T04:12:05",
+  "comunicados": {
+    "ids": [
+      1160646,
+      1137458
+    ],
+    "datas": [
+      "13/04/2026",
+      "13/03/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA AGO entregue em 13/04/2026\n\n**O QUE aconteceu:** Não houve quórum para a Assembleia Geral Ordinária do Speciale Real Estate Development II.\n\n**Resumo:** A assembleia foi convocada, mas não ocorreu devido à ausência de cotistas. As demonstrações contábeis foram automaticamente aprovadas.\n\n**Trecho-chave:**\n\"Em virtude do não comparecimento de quaisquer cotistas fora lavrado o Termo de Não Instalação da Assembleia Geral Ordinária e, diante da ausência de opinião modificada nas Demonstrações Contábeis devidamente auditadas do exercício social findo em 30 de junho de 2025, estas foram automaticamente aprovadas, nos termos do artigo 71 da Resolução CVM n.º 175, de 23 de dezembro de 2022.\"\n\n### ASSEMBLEIA AGO entregue em 13/03/2026\n\n**O QUE aconteceu:** Foi convocada a Assembleia Geral Ordinária para deliberar sobre as contas e demonstrações contábeis do exercício social encerrado em 30 de junho de 2025.\n\n**Resumo:** A assembleia foi convocada, mas não ocorreu devido à ausência de cotistas. As demonstrações contábeis serão automaticamente aprovadas se não houver quórum.\n\n**Trecho-chave:**\n\"Na impossibilidade de instalação da Assembleia em virtude do não comparecimento de Cotistas, a Administradora aplicará o disposto no artigo 71 da Resolução CVM n.º 175, de 23 de dezembro de 2022, para aprovação das Demonstrações Financeiras objeto de deliberação.\"\n\n**Conexão com indicadores:** A ausência de quórum e a automática aprovação das demonstrações contábeis podem afetar o patrimônio líquido do fundo, que no contexto atual está em R$ 42,4M (12m: +37,41%)."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1115160,
+    "data_entrega": "13/02/2026 17:39",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Speciale Real Estate Development II Fundo de Investimento Imobiliário de Responsabilidade Limitada em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas c"
+  }
+}

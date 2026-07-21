@@ -1,0 +1,30 @@
+{
+  "ticker": "BLFT11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:16:38",
+  "comunicados": {
+    "ids": [
+      1249978,
+      1249959
+    ],
+    "datas": [
+      "15/07/2026",
+      "15/07/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### O QUE ACONTECEU: Assembleia Geral de Cotistas Não Instalada em 15/07/2026\n\nA assembleia geral de cotistas do B-INDEX ETF TEVA ITBR SELIC CP FUNDO DE INDÍCIE RESP LTDA não foi instalada, devido ao não comparecimento dos cotistas. As demonstrações contábeis relativas ao exercício social findo em 31 de março de 2026 foram consideradas automaticamente aprovadas.\n\n*\"Em razão do não comparecimento de Cotistas, a Assembleia não foi instalada, contudo, considerando que as Demonstrações Contábeis relativas ao exercício social findo em 31 de março de 2026, foram emitidas sem opinião modificada, será aplicado o dispositivo previsto no Parágrafo Terceiro, do Artigo 71, da Resolução CVM nº 175/22 , de forma que as referidas Demonstrações Contábeis estão, por este ato, automaticamente aprovadas.\"* (p. 1)\n\n### CONEXÃO COM O CONTEXTUALIZAÇÃO:\nA aprovação automática das demonstrações contábeis está alinhada com o contexto fornecido, que indica a necessidade de atualização do cadastro dos cotistas conforme a Resolução CVM nº 50/21."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208497,
+    "data_entrega": "29/05/2026 21:33",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe em 31 de março de 2026 e o desempenho de suas operações para o período de 17 de outubro de 2025 (início das atividades) a 31 de março de 2026, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investiment"
+  }
+}

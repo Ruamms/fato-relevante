@@ -1,0 +1,53 @@
+{
+  "ticker": "MCEM11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T02:24:49",
+  "relatorio": {
+    "id": 1198995,
+    "data_entrega": "19/05/2026 10:21",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Obras em Andamento:**\n   - O cemitério Santo Amaro já concluiu suas obras e a SPE Consórcio Cortel SP está aguardando o termo de conclusão para iniciar a cobrança da taxa de manutenção.\n   - As obras do cemitério Araçá estão em andamento, com 20% executadas.\n   - Obras de jazigos verticais no Dom Bosco e Vila Nova Cachoeirinha estão em andamento.\n\n2. **Dividendos:**\n   - A distribuição de dividendos foi interrompida para o MCEM11 devido ao atraso na liberação da cobrança da taxa de manutenção.\n   - Cada cota possui direito ao dividendo cumulativo fixo de R$ 8,04 por ano.\n\n3. **Obras Emergenciais:**\n   - Jazigos verticais foram construídos emergencialmente em Dom Bosco e Vila Nova Cachoeirinha para evitar sepultamento direto no solo, conforme a lei.\n\n4. **Cenário de Receita Futuro:**\n   - A cobrança da taxa de manutenção é esperada para 2027, com potencial para gerar R$ 30 a R$ 40 milhões na receita anual.\n   - As obras dos cemitérios Araçá, São Paulo e Santo Amaro estão em andamento.\n\n5. **Cotistas:**\n   - O número de cotistas do fundo aumentou para 228 no último informe mensal.\n\n6. **Carteira Atual:**\n   - A carteira do MCEM11 é composta integralmente pelo Bloco 2 da concessão dos cemitérios municipais de São Paulo, incluindo os cemitérios Araçá, São Paulo, Santo Amaro, Dom Bosco e Vila Nova Cachoeirinha.\n\n7. **Serviços Funerários:**\n   - Os serviços funerários e cemiteriais são divididos em Serviços Concedidos (sepultamento, cremação) e Serviços Complementares (jazigos, ossuário).\n\n8. **Taxa de Administração:**\n   - A taxa de administração do fundo é 1,3% a.a. sobre o Patrimônio Líquido.\n\n### O que Observar em Seguida:\n- Monitorar o andamento das obras no cemitério Araçá e as obras emergenciais.\n- Verificar quando será iniciada a cobrança da taxa de manutenção dos cemitérios."
+  },
+  "comunicados": {
+    "ids": [
+      1234317,
+      1223761,
+      1230657,
+      1230549
+    ],
+    "datas": [
+      "30/06/2026",
+      "17/06/2026",
+      "26/06/2026",
+      "26/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO/E"
+    ],
+    "texto": "### COMUNICADO AO MERCADO ENTREGUE EM 30/06/2026\n\n**O QUE aconteceu:** Não haverá distribuição de rendimentos pelo Fundo para sua Classe Única de Cotas Subclasses P e O.\n\n**Resumo:** O fundo não realizará a distribuição de rendimentos referente ao mês de junho de 2026, o que pode indicar dificuldades financeiras ou estratégias de gestão do capital.\n\n**Trecho-chave:**\n\"Não haverá distribuição de rendimentos pelo Fundo para sua Classe Única de Cotas Subclasses P e O, sob o código 5026026SNR e 5026026SUB, ISIN BRMCEMCTF006 e BRMCEMCTF014 respectivamente, referente ao mês de junho de 2026.\"\n\n---\n\n### COMUNICADO AO MERCADO ENTREGUE EM 17/06/2026\n\n**O QUE aconteceu:** O Fundo passará por um processo de tombamento do segmento Listado para Balcão.\n\n**Resumo:** O fundo está sendo transferido para o segmento de Balcão, com a liberação das cotas para negociação a partir do dia 26/06/2026. Isso pode indicar mudanças na estratégia de negociação ou ajustes no mercado.\n\n**Trecho-chave:**\n\"O referido Tombamento do Fundo (a) será realizado de maneira compulsória, ou seja, será aplicado ao saldo total de cotas do Fundo; (b) as contas dos titulares de cotas deverão estar atualizadas em ambos os segmentos.\"\n\n---\n\n### ASSEMBLEIA GERAL DE COTISTAS ENTREGUE EM 26/06/2026\n\n**O QUE aconteceu:** A assembleia aprovou as demonstrações financeiras do exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** Os cotistas aprovaram, por 97,39% dos votos favoráveis, as contas e demonstrações financeiras do fundo referentes ao exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Aprovada com 97,39% dos votos favoráveis, a Assembleia Geral Ordinária do Fundo aprovou as demonstrações financeiras do exercício social encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### ASSEMBLEIA GERAL DE COTISTAS ENTREGUE EM 26/06/2026\n\n**O QUE aconteceu:** A assembleia aprovou as demonstrações financeiras do exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** Os cotistas aprovaram, por 97,39% dos votos favoráveis, as contas e demonstrações financeiras do fundo referentes ao exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Aprovada com 97,39% dos votos favoráveis, a Assembleia Geral Ordinária do Fundo aprovou as demonstrações financeiras do exercício social encerrado em 31 de dezembro de 2025.\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Emissão de cotas com VP/cota em queda",
+      "VP/cota em queda relevante",
+      "Base de cotistas muito pequena",
+      "P/VP muito abaixo da média histórica",
+      "Rendimentos irregulares"
+    ],
+    "cota": 26.97
+  },
+  "parecer": {
+    "id": 1167550,
+    "data_entrega": "22/04/2026 19:07",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Mérito Cemitérios FII – Fundo de Investimento Imobiliário em 31 de dezembro de 2025, o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos fundos de investiment"
+  }
+}

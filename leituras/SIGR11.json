@@ -1,0 +1,56 @@
+{
+  "ticker": "SIGR11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T00:26:15",
+  "relatorio": {
+    "id": 1225548,
+    "data_entrega": "22/06/2026 18:24",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Movimentações Estratégicas na Carteira:**\n   \"Durante o mês de maio, realizamos movimentações estratégicas visando o fortalecimento da carteira no longo prazo, promovendo reduções em posições de FIIs e ajustes na carteira de CRIs.\" (p. 3)\n\n2. **Dividend Yield:**\n   \"Em maio mantivemos a distribuição de R$ 0,10/cota, resultando em um dividend yield de 16,0% a.a., equivalente a um ativo tributado rendendo 132,0% do CDI.\" (p. 3)\n\n3. **Reservas e Distribuição:**\n   \"Assim, o fundo manteve a distribuição de R$ 0,10/cota, com pagamento em 23/06 para cotistas posicionados em 16/06, encerrando o período com reserva de R$ 0,0871/cota.\" (p. 4)\n\n4. **Composição da Carteira:**\n   \"A participação de CRIs na carteira do Fundo é de 75,5%, mantendo carrego próximo a IPCA+ 12% a.a. A carteira de FIIs representava 22% do PL ao final do mês.\" (p. 3)\n\n5. **Programa de Recompra de Cotas:**\n   \"Durante o mês, não foram realizadas recompradas de cotas.\" (p. 4)\n\n6. **Rendimentos e Distribuição:**\n   \"Conforme mencionado anteriormente, durante o mês de maio, realizamos movimentações estratégicas visando o fortalecimento da carteira no longo prazo, promovendo reduções em posições de FIIs e ajustes na carteira de CRIs. Essas movimentações geraram impactos pontuais na receita do mês — seja por resultados negativos nas vendas ou pela ausência do ativo na data de pagamento de rendimentos.\" (p. 4)\n\n7. **Rendimentos Acima do Resultado Financeiro:**\n   \"Rendimentos declarados 4T R$ 41,3M vs resultado financeiro líquido 4T R$ 27,5M; resultado acumulado (reserva) R$ 8,7M não cobre o excesso.\" (p. 1)\n\n8. **Emissão de Cotas com VP/Cota em Queda:**\n   \"Cotas +4.911,28% em 24m; VP/cota ajustado -7,72% no período.\" (p. 2)\n\n### O que observar em seguida:\n- **Monitorar a Reserva de Lucros Extraordinários:** Verificar se as reservas estão suficientes para absorver futuras movimentações estratégicas.\n- **Atenção ao VP/Cota:** Observar o comportamento da cota patrimonial, especialmente após a queda registrada."
+  },
+  "comunicados": {
+    "ids": [
+      1226790,
+      1223785,
+      1226788,
+      1214464,
+      1072427,
+      1068066
+    ],
+    "datas": [
+      "23/06/2026",
+      "18/06/2026",
+      "23/06/2026",
+      "08/06/2026",
+      "29/12/2025",
+      "22/12/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 23/06/2026\n\n**O QUE aconteceu:** Aprovou a realização da 4ª emissão e oferta pública de distribuição primária de novas cotas.\n\n**Resumo:** O fundo ALIANZA CRÉDITO IMOBILIÁRIO FII anunciou a aprovação da 4ª emissão, com oferta inicial de até 10.736.938 novas cotações.\n\n**Trecho-chave:**\n\"Oferta pública de distribuição primária, a ser realizada nos termos do artigo 26, inciso VII, da Resolução da CVM nº 160, de 13 de julho de 2022, conforme alterada (\"Resolução CVM 160\") e da Resolução CVM 175 e demais leis e regulamentações aplicáveis (“ Oferta”), de, inicialmente, até 10.736.938 (dez mil, setecentas e trinta e seis, novecentas e trinta e oito) Novas Cotas nominativas e escriturais, em série e subclasse únicas, da 4ª Emissão (“Novas Cotas”).\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 18/06/2026\n\n**O QUE aconteceu:** Contratou formadores de mercado para negociar cotas do fundo.\n\n**Resumo:** O fundo ALIANZA CRÉDITO IMOBILIÁRIO FII contratou a Suno Desenvolvimento de Índices e Tecnologia e XP Investimentos para atuar como formadores de mercado, iniciando no dia 22/06/2026.\n\n**Trecho-chave:**\n\"A XP e a Suno denominadas individualmente “Formador de Mercado” exercerão a partir do dia 22 de junho de 2026 a negociação de Cotas da classe do Fundo (\"Cotas)\" negociadas no mercado organizado de bolsa da B3 S.A. – Brasil, Bolsa, Balcão (“B3”), por meio de ofertas de compra e de venda das Cotas.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 23/06/2026\n\n**O QUE aconteceu:** Modificou o cronograma da oferta pública.\n\n**Resumo:** O fundo ALIANZA CRÉDITO IMOBILIÁRIO FII atualizou o cronograma da oferta, alterando as datas limite para encerramento do período de subscrição e liquidação da oferta.\n\n**Trecho-chave:**\n\"Dessa forma, o cronograma indicativo da Oferta passa a vigorar conforme abaixo:\n(1) As datas previstas acima são meramente indicativas e estão sujeitas a alterações, atrasos e antecipações sem aviso prévio, a critério do Coordenador Líder.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 08/06/2026\n\n**O QUE aconteceu:** Encerrou o período de exercício do direito de preferência.\n\n**Resumo:** O fundo ALIANZA CRÉDITO IMOBILIÁRIO FII encerrou o prazo para os cotistas exercerem seu direito de preferência, resultando na subscrição e integralização de 3.881 novas cotações.\n\n**Trecho-chave:**\n\"Encerrou-se o prazo para exercício, pelos Cotistas, do Direito de Preferência para subscrição de Cotas na B3 em 03 de junho de 2026 e junto ao Escriturador do Fundo, em 05 de junho de 2026.\"\n\n---\n\n### ASSEMBLEIA AGE entregue em 29/12/2025\n\n**O QUE aconteceu:** Aprovou alterações na política de investimentos.\n\n**Resumo:** Os cotistas aprovaram duas alterações na política de investimentos do fundo, reduzindo a exposição mínima do patrimônio líquido a CRIs e permitindo investimentos em fundos financeiros para investidores profissionais.\n\n**Trecho-chave:**\n\"Por meio da Consulta Formal, os Cotistas foram convocados a deliberar sobre as seguintes matérias:\n(i) Aprovar a alteração do caput do item 3.7, do Capítulo 3 – Da Política de Investimentos, prevista no Anexo I do Regulamento da Classe, para reduzir a exposição mínima do patrimônio líquido a CRIs, de 80% para 75%. Assim, o item 3.7. referido passa a vigorar doravante com a seguinte nova redação: '3.7. Adicionalmente ao previsto no item 3.6 acima, a classe deverá manter, no mínimo, 75% (setenta e cinco por cento) e, no máximo, 130% (cento e trinta por cento) do seu patrimônio líquido investido em CRI.'\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 22/12/2025\n\n**O QUE aconteceu:** Aprovou as contas do exercício social.\n\n**Resumo:** Os cotistas aprovaram as contas e demonstrações contábeis do fundo referentes ao exercício social findo em 30 de junho de 2025.\n\n**Trecho-chave:**\n\"Aprovar as contas e demonstrações contábeis do Fundo, devidamente auditadas, relativas ao exercício social findo em 30 de junho de 2025.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Emissão de cotas com VP/cota em queda",
+      "Rendimentos irregulares"
+    ],
+    "cota": 99.9
+  },
+  "parecer": {
+    "id": 999600,
+    "data_entrega": "26/09/2025 17:14",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Alianza Crédito Imobiliário Fundo de Investimento Imobiliário Responsabilidade Limitada em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis "
+  }
+}

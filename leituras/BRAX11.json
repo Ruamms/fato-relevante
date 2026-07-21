@@ -1,0 +1,33 @@
+{
+  "ticker": "BRAX11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T11:47:01",
+  "comunicados": {
+    "ids": [
+      1224079,
+      1226222,
+      1214077
+    ],
+    "datas": [
+      "18/06/2026",
+      "23/06/2026",
+      "08/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 18/06/2026\n\n**O QUE aconteceu:** Inclusão de \"Taxa Máxima de Custódia\" no regulamento do FUNDO.\n\n**Resumo:** A inclusão desse item não gera impacto financeiro ou custo adicional ao investidor e visa garantir transparência.\n\n**Trecho-chave:**\n\"A inclusão desse item não gera impacto financeiro ou custo adicional ao custodiante ou ao investidor.\" (p. 1)\n\n### ASSEMBLEIA AGO entregue em 23/06/2026\n\n**O QUE aconteceu:** A Assembleia Geral Ordinária de Cotistas não se realizou.\n\n**Resumo:** Não houve recebimento de orientação de voto digitalizada por correio eletrônico, resultando na aprovação automática das demonstrações financeiras auditadas do FUNDO referentes ao exercício social encerrado em 31 de março de 2026.\n\n**Trecho-chave:**\n\"Assim, conforme faculta a legislação como as demonstrações financeiras acima mencionadas não contêm opinião modificada e a assembleia não foi instalada, as supracitadas demonstrações foram consideradas automaticamente aprovadas.\" (p. 1)\n\n### ASSEMBLEIA AGO entregue em 08/06/2026\n\n**O QUE aconteceu:** Convocação para Assembleia Geral Ordinária de Cotistas.\n\n**Resumo:** A assembleia será realizada excepcionalmente por meio eletrônico e envio de orientação de voto digitalizada por correio eletrônico em 23 de junho de 2026, às 9h05. As demonstrações financeiras auditadas do FUNDO referentes ao exercício social encerrado em 31 de março de 2026 serão deliberadas.\n\n**Trecho-chave:**\n\"O BANCO BNP PARIBAS BRASIL S.A.  (“Administrador”), localizada na Avenida Presidente Juscelino Kubitscheck, n.º 1909, 9º andar, Torre Sul, São Paulo/SP, vem por meio da presente, nos termos dos Artigos 70, 72 e 75 da Resolução CVM nº 175, de 23 de dezembro de 2022 (“RCVM 175”) , bem como nos termos do Regulamento do FUNDO (“Regulamento”), convocá -lo para participar da Assembleia Geral de cotistas do FUNDO.\" (p. 1)\n\n**Conexão com o contexto:** A convocação para a assembleia foi feita conforme as normas estabelecidas, e a não realização da assembleia resultou na aprovação automática das demonstrações financeiras auditadas, como mencionado no comunicado subsequente."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1204343,
+    "data_entrega": "27/05/2026 08:02",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe em 31 de março de 2026 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de índice."
+  }
+}

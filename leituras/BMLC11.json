@@ -1,0 +1,55 @@
+{
+  "ticker": "BMLC11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T01:54:42",
+  "relatorio": {
+    "id": 1239773,
+    "data_entrega": "03/07/2026 21:11",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Vacância e Inadimplência:** \"A ocupação dos imóveis do Fundo na Torre Rio Sul permanece em 100%.\" (p. 2)\n   \n2. **Distribuição de Rendimentos:** A distribuição de rendimentos em junho/2026 foi de R$ 0,75 por cota. (p. 3)\n\n3. **Composição da Taxa de Administração e Remunerações:** \n   - Administração: 0,20% a.a.\n   - Gestão: 0,20% a.a.\n   - Consultor Especializado: 0,95% a.m. sobre a receita de aluguel (R$ 3.000,00 / mês). (p. 1)\n\n4. **Revisão de Aluguéis:** \"Nos termos da Lei de Locações, é facultado a qualquer das partes solicitar a revisão do valor pago a título de aluguel após 3 anos contatos da celebração do contrato ou início da vigência do valor atual de locação.\" (p. 2)\n\n5. **Patrimônio Líquido:** O patrimônio líquido do fundo é R$ 107,715,546,33. (p. 1)\n\n6. **Cotas e Cotistas:** O número de cotas é 998,4 mil e o número de cotistas é 1.210. (p. 1)\n\n7. **Rendimentos Potenciais Mensais Esperados:** A formação dos rendimentos potenciais esperados em doze meses está representada no gráfico. (p. 2)\n\n8. **Indicadores Operacionais:** As receitas operacionais e financeiras, assim como as despesas, são detalhadas no demonstrativo de resultados consolidado. (p. 2)\n\n### O que observar em seguida:\n- Monitorar a revisão de aluguéis nos contratos.\n- Observar o comportamento dos rendimentos potenciais mensais esperados e sua formação ao longo do tempo."
+  },
+  "comunicados": {
+    "ids": [
+      1213098,
+      1173352,
+      1183546,
+      1019269,
+      1183540,
+      1169239
+    ],
+    "datas": [
+      "05/06/2026",
+      "29/04/2026",
+      "08/05/2026",
+      "23/10/2025",
+      "08/05/2026",
+      "24/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### O QUE aconteceu em 08/05/2026\n\n**Título:** Assembleia Geral Aprova Contas Anuais\n\n**Resumo:** A assembleia geral de cotistas aprovou as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"4.1. Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### O QUE aconteceu em 29/04/2026\n\n**Título:** Inadimplência da Locatária Organic Life\n\n**Resumo:** A administradora e a gestora informaram que o Fundo recebeu um pagamento referente à inadimplência de uma locatária, impactando positivamente a receita/distribuição.\n\n**Trecho-chave:**\n\"II. A Administradora e a Gestora esclarecem que o referido recebimento  impacta \npositivamente a receita/distribuição da Classe em R$ 0,15 por cota  e será considerado \nnos ﬂuxos ﬁnanceiros da Classe, observadas as regras aplicáveis e a política de distribuição \nde resultados.\"\n\n---\n\n### O QUE aconteceu em 23/10/2025\n\n**Título:** Convocação para Eleição de Representante de Cotistas\n\n**Resumo:** A administradora convocou os cotistas para eleger representantes de cotistas, com prazo até 30/10/2025.\n\n**Trecho-chave:**\n\"O cotista interessado no exercício da função de Representante somente poderá se candidatar caso atenda cumulativamente \nàs seguintes restrições...\"\n\n---\n\n### O QUE aconteceu em 04/05/2026\n\n**Título:** Assembleia Geral para Aprovação das Contas Anuais\n\n**Resumo:** Realizada via manifestação de voto, a assembleia geral aprovou as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"4.1. Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social \nencerrado em 31 de dezembro de 2025.\"\n\n---\n\n### O QUE aconteceu em 24/04/2026\n\n**Título:** Convocação para Assembleia Geral de Cotistas\n\n**Resumo:** A administradora convocou os cotistas para a assembleia geral, com prazo até 04 de maio de 2026, para aprovar as contas e demonstrações contábeis do exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Aos  \nCotistas do BM BRASCAN LAJES CORPORATIVAS FUNDO DE INVESTIMENTO \nIMOBILIARIO RESPONSABILIDADE LIMITADA\n\nA BTG Pactual Serviços Financeiros S.A. Distribuidora de Títulos e Valores Mobiliários, sociedade anônima, com sede na Cidade e Estado do Rio de Janeiro, localizada à Praia de Botafogo, nº 501, Torre Corcovado, 5º Andar (Parte), Botafogo, e inscrita no CNPJ sob o nº 59.281.253/0001-23, devidamente autorizada pela Comissão de Valores Mobiliários (“CVM”) para a atividade de administração de carteiras de valores mobiliários, de acordo com o Ato Declaratório CVM nº 8 .695, de 20 de março de 2006 (\"Administradora\"), na qualidade de administradora do BM BRASCAN LAJES CORPORATIVAS FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA, inscrito no CNPJ sob o nº 14.376.247/0001-11 (\"Fundo\"), bem como de sua classe única , vem, pela presente, convocar os cotistas do Fundo (\"Cotistas\") para a Consulta Formal, com prazo de recebimento de votos até 04 de maio de 2026, para deliberarem sobre:\"\n\n---\n\n### Conexão aos Indicadores\n\n- **Assembleia Geral Aprova Contas Anuais (08/05/2026)**: A aprovação das contas anuais pode impactar positivamente o patrimônio líquido e a distribuição de dividendos do Fundo.\n- **Inadimplência da Locatária Organic Life (29/04/2026)**: O recebimento do pagamento impactou positivamente a receita/distribuição, mas não há evidências diretas de impacto no indicador de distribuição de dividendos acumulada.\n- **Convocação para Eleição de Representante de Cotistas (23/10/2025)**: Não há conexão direta com os indicadores financeiros apresentados."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares"
+    ],
+    "cota": 100.2
+  },
+  "parecer": {
+    "id": 1145932,
+    "data_entrega": "26/03/2026 21:04",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do BM Brascan Lajes Corporativas Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contá"
+  }
+}

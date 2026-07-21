@@ -1,0 +1,46 @@
+{
+  "ticker": "BBFO11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T11:19:32",
+  "relatorio": {
+    "id": 1260133,
+    "data_entrega": "20/07/2026 17:51",
+    "texto": "### Fatos Extraídos do Relatório Gerencial:\n\n1. **Compras e Vendas de Ativos:**\n   \"Retornamos com SNEL11 para a carteira (ativo que saiu do portfólio em abril de 2025), com peso aproximado de 1,2% do PL, por entendermos estar com um preço atrativo.\" (p. 3)\n\n2. **Cotas e Distribuição de Dividendos:**\n   \"Os rendimentos recebidos pelo Fundo apurados no mês de junho, totalizaram R$ 0,803 por cota e o resultado líquido (descontando as despesas) totalizou R$ 0,7648 por cota. Em 14/07/2026, foi realizada a distribuição de R$ 0,95, já considerando o ganho de capital acumulado no semestre, o que corresponde a um retorno de 1,32% sobre a cota patrimonial.\" (p. 4)\n\n3. **Dividend Yield e Cotas Patrimoniais:**\n   \"Nos últimos 12 meses, os dividendos distribuídos pelo fundo somam R$9,84/cota, o que equivale a um dividend yield de 13,71% a.a.\" (p. 6)\n   \"No mês de junho o dividend yield do fundo foi de 1,37% a.m. Anualizando este número temos um dividend yield de 17,74% a.a., comparando com o preço de fechamento do mês.\" (p. 7)\n\n4. **Evolução da Cota Patrimonial:**\n   \"O descasamento em relação à cota patrimonial foi de 3,14% no mês de junho, contribuindo para a margem de atratividade de negociação do fundo no mercado e para o nível de dividend yield distribuído aos investidores. Adicionalmente, considerando o 'duplo desconto', temos uma margem de atratividade de 10,41%.\" (p. 6)\n\n5. **Alavancagem:**\n   \"Por fim, destacamos que o Fundo não possui qualquer tipo de alavancagem.\" (p. 4)\n\n### O que observar em seguida:\n- Monitorar a distribuição de dividendos e seu impacto na cota patrimonial.\n- Observar as mudanças no portfólio e os motivos pelas quais ativos são adicionados ou removidos."
+  },
+  "comunicados": {
+    "ids": [
+      1222895,
+      1000929,
+      1205923,
+      1205451
+    ],
+    "datas": [
+      "16/06/2026",
+      "29/09/2025",
+      "28/05/2026",
+      "27/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Comunicado ao Mercado entregue em 16/06/2026\n\n**O QUE aconteceu:** A administradora BB Asset informou que não há fato relevante justificando as oscilações nas cotas de emissão do fundo e o aumento no número de negócios.\n\n**Resumo:** A BB Asset não identificou eventos específicos que possam explicar as variações observadas, atribuindo-as a fatores conjunturais do mercado.\n\n**Trecho-chave:**\n\"Após análise dos eventos e informações disponíveis, esta administradora informa que não tem conhecimento de qualquer fato relevante ou evento específico, de natureza operacional, financeira ou estratégica, relacionado ao fundo ou aos seus ativos, que justifique, isoladamente, as oscilações observadas nas cotas ou o aumento de liquidez no período mencionado.\"\n\n### Comunicado ao Mercado entregue em 29/09/2025\n\n**O QUE aconteceu:** A administradora BB Asset alterou a Taxa de Administração e de Gestão do fundo, mantendo a Taxa Global inalterada.\n\n**Resumo:** As novas taxas foram revisadas para 0,20% a.a. (Administração) e 0,30% a.a. (Gestão), totalizando 0,50% a.a. (Taxa Global).\n\n**Trecho-chave:**\n\"1. Revisão do quadro constante no Artigo 1º do Apêndice do Regulamento, com a alteração dos percentuais referentes às Taxas de Administração e de Gestão, mantendo-se inalterada a Taxa Global.\"\n\n### Assembleia Geral Ordinária entregue em 28/05/2026\n\n**O QUE aconteceu:** A assembleia geral ordinária aprovou as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes do exercício social findo em 31/12/2025.\n\n**Resumo:** Os cotistas representando 3,45% das cotas emitidas aprovaram as demonstrações financeiras referentes ao exercício de 2025.\n\n### Assembleia Geral Ordinária entregue em 27/05/2026\n\n**O QUE aconteceu:** A assembleia geral ordinária aprovou as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes do exercício social findo em 31/12/2025.\n\n**Resumo:** As demonstrações financeiras referentes ao exercício de 2025 foram aprovadas pelos cotistas."
+  },
+  "retrato": {
+    "selo": "Sem alertas",
+    "nivel": "sem_alertas",
+    "alertas": [],
+    "cota": 69.77
+  },
+  "parecer": {
+    "id": 1150832,
+    "data_entrega": "31/03/2026 18:08",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "- BB Asset Management (“Administradora”), que compreendem o balanço patrimonial em 31 de dezembro de 2025 e as respectivas demonstrações do resultado, das mutações do patrimônio líquido e dos fluxos de caixa para o exercício findo nessa data, bem como as correspondentes notas explicativas, incluindo as políticas contábeis materiais Em nossa opinião, as demonstrações financeiras acima referidas apr"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "ticker": "APTO11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T04:08:59",
+  "relatorio": {
+    "id": 1247906,
+    "data_entrega": "14/07/2026 19:15",
+    "texto": "### Fatos Extraídos do Relatório Gerencial\n\n1. **Resultados Gerados e Distribuídos:**\n   - O Fundo gerou R$ 0,045/cota no mês.\n   - A distribuição de rendimento foi de R$ 0,060/cota em junho (referente ao resultado obtido em maio), com um Dividend Yield anualizado de 13,8% a.a. sobre o valor de mercado e 9,1% a.a. sobre o valor patrimonial.\n\n2. **Carteira de CRI:**\n   - A carteira de CRI é composta principalmente por ativos indexados ao IPCA+ (85%), com uma duração média de 1,2 anos.\n   - Os principais ativos são os CRIs Selenza, Jacarezinho, Conx Evo e C290.\n\n3. **Carteira de FII:**\n   - A carteira de cotas de FII é composta principalmente por:\n     - Brio Multifamily (52% do PL)\n     - TRX Multiestratégia (19% do PL)\n     - Maua Capital Real Estate (6% do PL)\n     - RBR Rendimento High Grade (6% do PL)\n   - A estratégia de investimento em Permutas consiste na compra de terrenos e troca por participação nas receitas dos empreendimentos.\n\n4. **Ativos em Desinvestimento:**\n   - Os fundos Brio Real Estate III, IV e V já estão em período de desinvestimento.\n   \n5. **Movimentações na Carteira:**\n   - Não houve movimentações relevantes na carteira do Fundo no mês.\n\n6. **Rendimentos Acima do Resultado Financeiro:**\n   - O rendimento declarado no 4T foi de R$ 8,4M, enquanto o resultado financeiro líquido foi de R$ 5,5M.\n   - O excesso de R$ 2,9M não foi coberto pelo resultado acumulado (reserva) de R$ 1,2M.\n\n7. **Cotas e Cotistas:**\n   - O número total de cotas permaneceu estável em 5,8 milhões.\n   - O número de cotistas diminuiu ligeiramente para 7,7 mil (redução de 10%).\n\n### O que Observar Em Seguida:\n- Monitorar a evolução do resultado financeiro e a reserva de resultados.\n- Atentar-se à distribuição de rendimentos e ao Dividend Yield anualizado."
+  },
+  "comunicados": {
+    "ids": [
+      1240662,
+      1213059,
+      1047341,
+      1021578
+    ],
+    "datas": [
+      "06/07/2026",
+      "05/06/2026",
+      "26/11/2025",
+      "27/10/2025"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Comunicado ao Mercado entregue em 06/07/2026\n\n**O QUE aconteceu:** Distribuição de rendimentos.\n**Resumo:** O Gestor recomendou a distribuição de capital no valor de R$350.736,12 (R$ 0,06 por cota), que será pago em 14 de julho de 2026.\n**Trecho-chave:**\n\"o Gestor recomendou ao Administrador a distribuição de capital em forma de rendimentos no montante de R$350.736,12 (trezentos e cinquenta mil e setecentos e trinta e seis reais e doze centavos), equivalente ao valor de R$ 0,06 por cota.\"\n\n### Comunicado ao Mercado entregue em 05/06/2026\n\n**O QUE aconteceu:** Distribuição de rendimentos.\n**Resumo:** O Gestor recomendou a distribuição de capital no valor de R$350.736,12 (R$ 0,06 por cota), que será pago em 15 de junho de 2026.\n**Trecho-chave:**\n\"o Gestor recomendou ao Administrador a distribuição de capital em forma de rendimentos no montante de R$350.736,12 (trezentos e cinquenta mil e setecentos e trinta e seis reais e doze centavos), equivalente ao valor de R$ 0,06 por cota.\"\n\n### Assembleia AGO entregue em 26/11/2025\n\n**O QUE aconteceu:** Apuração da assembleia geral ordinária.\n**Resumo:** A assembleia foi realizada por meio de consulta formal e aprovou as Demonstrações Contábeis do Fundo acompanhadas do Relatório do Auditor Independente referentes aos exercícios findos em 30 de junho de 2025 e 2024.\n**Trecho-chave:**\n\"A matéria acima foi APROVADA sem qualquer ressalva ou restrição por cotistas desimpedidos e aptos a deliberar.\"\n\n### Assembleia AGO entregue em 27/10/2025\n\n**O QUE aconteceu:** Convocação da assembleia geral ordinária.\n**Resumo:** A BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A. convocou os cotistas para participarem de uma assembleia geral ordinária por meio de consulta formal, a ser realizada em 26 de novembro de 2025.\n**Trecho-chave:**\n\"A BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A. , instituição financeira com sede na cidade de São Paulo, Estado de São Paulo, convocou V.Sas. a participar da Assembleia Geral Ordinária, a ser realizada de forma não presencial, sob consulta formal.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 8.29
+  },
+  "parecer": {
+    "id": 999689,
+    "data_entrega": "26/09/2025 18:04",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Brio Multiestratégia - Fundo de Investimento Imobiliário Responsabilidade Limitada (anteriormente denominado Brio Multiestratégia Fundo de Investimento Imobiliário) em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de "
+  }
+}

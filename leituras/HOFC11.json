@@ -1,0 +1,57 @@
+{
+  "ticker": "HOFC11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T23:43:12",
+  "relatorio": {
+    "id": 1252481,
+    "data_entrega": "17/07/2026 17:03",
+    "texto": "### Fatos Relevantes do Relatório Gerencial\n\n1. **Alienação de Ativos:**\n   - O fundo assinou um Memorando de Entendimentos (MOU) para alienar todas as unidades autônomas do Edifício Birmann 20, com valor total de R$ 72.000.000,00, a ser pago em parcelas.\n   - \"Conforme Fato Relevante publicado em 16 de abril de 2026, o Fundo, em continuidade ao Fato Relevante publicado em 27 de março de 2026, comunicou aos cotistas e ao mercado em geral que assinou um Memorando de Entendimentos (MOU) para a alienação da totalidade das unidades autônomas que compõem o Edifício Birmann 20, localizado na Avenida das Nações Unidas, nº 17.891, na Cidade de São Paulo (\"Imóvel\" e \"Transação\"). O preço total da Transação é de R$ 72.000.000,00, a ser pago pela compradora (''Compradora'') ao Fundo da seguinte forma: (i) R$ 7.200.000,00, em parcela única, no prazo de até 5 dias contados da outorga da Escritura Definitiva de Venda e Compra; e (ii) R$ 64.800.000,00, em 42 parcelas mensais e sucessivas, corrigidas monetariamente pela variação do IPCA (N-2), sendo a primeira parcela no valor de R$ 1.542.857,26 e as demais no valor de R$ 1.542.857,14 cada.\" (p. 4)\n\n2. **Recompra de Cotas:**\n   - O fundo aprovou a possibilidade da recompra de suas próprias cotas.\n   - \"Tão logo aprovado por nossos cotistas, anunciamos ao mercado os termos do 1º programa de recompra que faremos. (link)\" (p. 4)\n\n3. **Vacância:**\n   - A vacância física do fundo é alta, com 51,84%.\n   - \"Vacância 51,84% no trimestre mais recente; limiar de alerta: 15,00%\" (p. 2)\n\n4. **Operação e Manutenção dos Imóveis:**\n   - O fundo está realizando manutenções e investimentos nos imóveis para otimizar a utilização.\n   - \"O Edifício Morumbi requer atenção quanto ao sistema de ar-condicionado. As ações de manutenção têm conseguido suprir as necessidades imediatas para atendimento aos usuários, mas estuda-se um possível investimento no curto a médio prazo.\" (p. 6)\n\n5. **Disponibilidade de Caixa:**\n   - A disponibilidade de caixa do fundo tem variado, com uma tendência negativa.\n   - \"Disponibilidade de Caixa abril-26 maio-26 junho-26\n     Disponibilidade Inicial 1.094.377 593.034 568.398\n     Amortização CRI (295.399) (297.225) (299.081)\n     Benfeitorias (19.198) (11.254) -\n     Aquisição LCI (694.897) - -\n     Amortização LCI 103.351 - 3.253.378\n     Fundo de Reserva CRI - - -\n     Resultado Operacional (323.263) (350.467) (329.124)\n     Venda de Imóveis 1.140.492 1.140.492 1.140.492\n     Lucro Operações (412.428) (506.182) (544.090)\n     Caixa + Fundo RF 593.034 568.398 548.870\n     Posição LCIs 19.561.664 19.754.810 16.577.573\n     Pagamento de Rendimento - - -\n     Disponibilidade Final 20.154.698 20.323.209 17.126.443\" (p. 6)\n\n### O que Observar em Seguida:\n- Monitorar a evolução da vacância e os resultados das negociações para o Edifício Birmann 20.\n- Observar as ações de manutenção e investimentos nos imóveis, especialmente no sistema de ar-condicionado do Morumbi."
+  },
+  "comunicados": {
+    "ids": [
+      1171768,
+      1165622,
+      1147207,
+      1204380,
+      1202404,
+      1202403
+    ],
+    "datas": [
+      "28/04/2026",
+      "16/04/2026",
+      "27/03/2026",
+      "27/05/2026",
+      "25/05/2026",
+      "25/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### O que aconteceu: Fato Relevante entregue em 28/04/2026\n\n**Resumo:** O Fundo recebeu notificação de rescisão do contrato de locação com a Locatária, resultando na desocupação de aproximadamente 11,7% da área locável e 16,1% da receita imobiliária.\n\n**Trecho-chave:**\n\"A área a ser desocupada pela Locatária representa, aproximadamente, 11,7% (onze inteiros e sete décimos por cento) da área locável do Fundo e 16,1% (dezesseis inteiros e um décimo por cento) da receita imobiliária contratada pelo Fundo, com base na receita auferida em abril de 2026. A Locatária cumprirá aviso prévio de 6 (seis) meses e a desocupação do Imóvel está prevista para 31 outubro de 2026.\"\n\n### O que aconteceu: Fato Relevante entregue em 16/04/2026\n\n**Resumo:** O Fundo assinou um Memorando de Entendimentos (MOU) para a alienação da totalidade das unidades autônomas do Edifício Birmann 20, com preço total de R$ 72.000.000,00.\n\n**Trecho-chave:**\n\"O preço total da Transação é de R$ 72.000.000,00 (setenta e dois milhões de reais), a ser pago pela compradora ao Fundo da seguinte forma:\n(i) R$ 7.200.000,00 (sete milhões e duzentos mil reais), em parcela única, no prazo de até 5 (cinco) dias contados da outorga da Escritura Definitiva de Venda e Compra; e\n(ii) R$ 64.800.000,00 (sessenta e quatro milhões e oitocentos mil reais), em 42 (quarenta e duas) parcelas mensais e sucessivas, corrigidas monetariamente pela variação do IPCA.\"\n\n### O que aconteceu: Fato Relevante entregue em 27/03/2026\n\n**Resumo:** O Fundo recebeu uma proposta de aquisição do Edifício Birmann 20, representando 25% do total de ativos do Fundo.\n\n**Trecho-chave:**\n\"O Imóvel representa 25% (vinte e cinco por cento) do total de ativos do Fundo, com base na carteira de fechamento do mês de fevereiro de 2026.\"\n\n### O que aconteceu: Comunicado ao Mercado entregue em 27/05/2026\n\n**Resumo:** A Gestora e a Administradora deliberaram pela implementação de um programa de recompra de cotas do Fundo, com início previsto para 11 de junho de 2026.\n\n**Trecho-chave:**\n\"O Programa de Recompra destina-se à alocação de recursos disponíveis do Fundo na maximização de geração de valor para os cotistas. O Fundo deverá proceder ao imediato cancelamento da totalidade das cotas que vier a adquirir.\"\n\n### O que aconteceu: Assembleia AGE entregue em 25/05/2026\n\n**Resumo:** A Assembleia Geral Extraordinária dos Cotistas aprovou a possibilidade de instauração de programa de recompra de cotas da Classe Única do Fundo.\n\n**Trecho-chave:**\n\"Os votos proferidos representaram os seguintes percentuais em relação ao total da base votante do Fundo, já excluídos do cômputo os cotistas declarados conflitados: 41,944% (quarenta e um inteiros e novecentos e quarenta e quatro milésimos por cento) de votos favoráveis; 0,040% (quarenta milésimos por cento) de votos contrários; e 0,003% (três milésimos por cento) de abstenções.\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Vacância física alta",
+      "VP/cota em queda relevante",
+      "Rendimentos irregulares",
+      "P/VP muito acima da média histórica"
+    ],
+    "cota": 33.62
+  },
+  "parecer": {
+    "id": 1143510,
+    "data_entrega": "24/03/2026 19:04",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Hedge Office Income Fundo de Investimento Imobiliário de Responsabilidade Limitada em 31 de dezembro de 2025 , o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nesta data, de acordo com as práticas contábeis a"
+  }
+}

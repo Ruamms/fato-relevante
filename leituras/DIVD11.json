@@ -1,0 +1,30 @@
+{
+  "ticker": "DIVD11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T11:48:11",
+  "comunicados": {
+    "ids": [
+      1228406,
+      1221490
+    ],
+    "datas": [
+      "25/06/2026",
+      "15/06/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA AGO entregue em 25/06/2026\n\n**O que aconteceu:** O Itaú Unibanco S.A., como administrador do IT NOW IDIV RENDA DIVIDENDOS FUNDO DE ÍNDICE, retificou e ratificou o Edital de Convocação da Assembleia Geral de Cotistas.\n\n**Resumo:** A assembleia foi convocada para deliberar sobre as Demonstrações Financeiras do exercício encerrado em 31 de março de 2026. Os cotistas têm até 7 de julho de 2026 para manifestarem-se.\n\n**Trecho-chave:**\n\"Submete à consulta formal eletrônica de cotistas a seguinte matéria:\n(i) Deliberar sobre as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes referentes ao Fundo, relativos ao exercício social encerrado em 31 de março de 2026.\"\n\n### ASSEMBLEIA AGO entregue em 15/06/2026\n\n**O que aconteceu:** O Itaú Unibanco S.A., como administrador do IT NOW IDIV RENDA DIVIDENDOS FUNDO DE ÍNDICE, convocou a Assembleia Geral de Cotistas.\n\n**Resumo:** A assembleia foi convocada para deliberar sobre as Demonstrações Financeiras do exercício encerrado em 28/02/2026. Os cotistas têm até 30 de junho de 2026 para manifestarem-se.\n\n**Trecho-chave:**\n\"Submete à consulta formal eletrônica de quotistas a seguinte matéria:\n(i) Deliberar sobre as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes, relativos ao exercício social encerrado em 28/02/2026.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1209675,
+    "data_entrega": "01/06/2026 17:13",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de março de 2026, e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de índice."
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "ticker": "FIGS11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T11:24:42",
+  "relatorio": {
+    "id": 1249566,
+    "data_entrega": "15/07/2026 17:38",
+    "texto": "### Fatos Relevantes do Relatório Gerencial:\n\n1. **Vacância e Movimentação de Lojas**:\n   - A vacância do Fundo saiu de 7,0% em abril para 6,9% em maio.\n   - Movimentações relevantes incluem a entrada da Sorvetes Bambino’s (34 m²) no Shopping Bonsucesso e as saídas de Brilho de Cristal (20 m²), Carmen Steffens (60 m²) e Caroline Cenatti (44 m²) do Parque Shopping Maia.\n   - A UPA Pimentas-Bonsucesso, com área de 800 m², foi assinado contrato para entrada na área anteriormente ocupada pelo Atlanta Auto Peças.\n\n2. **Obras e Reformas**:\n   - O retrofit da praça de alimentação do Shopping Bonsucesso foi finalizado.\n   - Inaugurou-se o primeiro restaurante com serviço do shopping, o Montana Grill, em uma área de 145 m².\n\n3. **Resultados Operacionais**:\n   - A vacância consolidada do Fundo ficou em 6,9% no mês de maio.\n   - As vendas do Shopping Bonsucesso cresceram 1,9% versus o mesmo período do ano anterior (maio/2025).\n   - O resultado operacional (NOI) do Shopping Bonsucesso aumentou 8% em comparação com o mesmo mês de 2025.\n\n4. **Vacância e Inadimplência**:\n   - A vacância consolidada do Fundo foi de 6,9%, enquanto a inadimplência líquida ficou em 3,0%.\n\n### O que observar em seguida:\n\n1. **Monitoramento da Vacância**: Observar como a UPA Pimentas-Bonsucesso e as obras de retrofit afetam a vacância no longo prazo.\n2. **Desempenho das Vendas**: Verificar se o aumento nas vendas do Shopping Bonsucesso se mantém em outros meses, refletindo positivamente nos resultados operacionais."
+  },
+  "comunicados": {
+    "ids": [
+      1069109,
+      1111496,
+      1182201,
+      1182197
+    ],
+    "datas": [
+      "23/12/2025",
+      "12/02/2026",
+      "07/05/2026",
+      "07/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 23/12/2025\n\n**O QUE aconteceu:** O valor contábil dos imóveis do Fundo foi avaliado a mercado, resultando em uma variação negativa de 7,48% no valor patrimonial da cota.\n\n**Resumo:** A avaliação realizada pela Cushman & Wakefield mostrou que o valor dos imóveis do fundo é inferior ao valor contábil atual, reduzindo o valor patrimonial das cotas em 7,83%.\n\n**Trecho-chave:**\n\"imóveis do Fundo foram avaliados a mercado (valor justo) pela empresa Cushman & Wakefield, resultando em valor 7,83% inferior ao valor contábil atual dos referidos imóveis, o que representa uma variação negativa de 7,48% no valor patrimonial da cota do Fundo nesta data.\"\n\n### COMUNICADO AO MERCADO entregue em 12/02/2026\n\n**O QUE aconteceu:** Foram disponibilizados os laudos de avaliação dos ativos do fundo na data base de novembro de 2025.\n\n**Resumo:** A Hedge Investments Distribuidora de Títulos e Valores Mobiliários LTDA. e a Hedge Investments Real Estate Gestão de Recursos LTDA. comunicaram a disponibilização dos laudos de avaliação dos ativos do fundo, visando maior transparência para os investidores.\n\n**Trecho-chave:**\n\"fo ram disponibilizados nesta data os laudos de avaliação dos ativos em que o Fundo detém participação direta na data base de novembro de 2025, utilizado para a marcação a valor justo do patrimônio do Fundo.\"\n\n### ASSEMBLEIA AGO entregue em 07/05/2026\n\n**O QUE aconteceu:** A assembleia geral ordinária dos cotistas deliberou pela aprovação das contas e demonstrações financeiras do exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** Os votos favoráveis representaram 1,618% do total da base votante, enquanto as abstenções foram de 0,317%.\n\n**Trecho-chave:**\n\"Os votos proferidos representaram os seguintes percentuais e m relação ao total da base votante do Fundo: 1,618% (um inteiro e seiscentos e dezoito milésimos por cento) de votos favoráveis e 0,317% (trezentos e dezessete milésimos por cento) de abstenções.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 50.0
+  },
+  "parecer": {
+    "id": 1148330,
+    "data_entrega": "30/03/2026 17:09",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do General Shopping Ativo e Renda Fundo de Investimento Imobiliário de Responsabilidade Limitada (anteriormente denominado General Shopping Ativo e Renda Fundo de Investimento Imobiliário) em 31 de dezembro de 2025, o desempenho de suas operaç"
+  }
+}

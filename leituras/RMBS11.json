@@ -1,0 +1,52 @@
+{
+  "ticker": "RMBS11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T05:06:41",
+  "relatorio": {
+    "id": 1241570,
+    "data_entrega": "07/07/2026 19:21",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Dividend Yield**: O dividend yield mensal é de 1,328%, representando um rendimento anualizado líquido e isento de Imposto de Renda de 15,93%. Este valor equivale a 153% do CDI líquido.\n   > \"O Fundo distribuirá o valor de R$ 0,1139 por cota, referente ao resultado do mês de junho. Com base na cota de fechamento do período, de R$ 8,58, o dividend yield mensal é de 1,328%, o que representa um dividend yield anualizado de 15,93%, líquido e isento de Imposto de Renda.\" (p. 2)\n\n2. **Alocação dos Ativos**: Ao final do mês de junho de 2026, 85% dos ativos detidos pelo Fundo estavam investidos em CRIs.\n   > \"Ao final do mês de junho de 2026, 85% dos ativos detidos pelo Fundo estavam investidos em CRIs:\" (p. 3)\n\n3. **Patrimônio Líquido**: O patrimônio líquido do Fundo totalizou R$ 24.012.778 no final de junho.\n   > \"Ao final de junho, o patrimônio líquido do Fundo totalizou R$ 24.012.778.\" (p. 2)\n\n4. **Distribuição dos Ativos**: Os CRIs representam 85% do portfólio, enquanto cotas de fundos de investimentos e outros ativos representam 15%.\n   > \"Valores por ativo: - CRIs: R$ 20.722.600 - Cotas de Fundos de Investimentos: R$ 3.601.212 - Outros ativos: R$11.734 Total do Ativo: R$ 24.335.545\" (p. 3)\n\n5. **Renda Distribuída**: O Fundo distribuirá R$ 0,1139 por cota no mês de junho.\n   > \"O Fundo distribuirá o valor de R$ 0,1139 por cota, referente ao resultado do mês de junho.\" (p. 2)\n\n6. **Taxa de Administração**: A taxa de administração é de 5,99% a.a.\n   > \"TAXAS - Administração1: 0,15% a.a. Gestão: 1,00% a.a./PL Performance: Não há.\" (p. 2)\n\n7. **Renda Isenta**: Os rendimentos decorrentes dos CRIs são isentos de imposto de renda para cotistas PF do Fundo.\n   > \"Os rendimentos decorrentes dos CRIs, quando distribuídos aos cotistas PF do Fundo, são isentos de imposto de renda, sujeito ao cumprimento de determinadas exigências legais.\" (p. 3)\n\n8. **Risco Pulverizado**: O portfólio contém 68% de risco corporativo e 32% de risco pulverizado.\n   > \"Segmento do devedor/cedente: Corporativo 68% Pulverizado 32%\" (p. 7)\n\n### O que observar em seguida:\n1. **Vacância e Inadimplência**: Não foram mencionados níveis específicos de vacância ou inadimplência, mas esses são fatores importantes a serem monitorados.\n2. **Rendimentos Futuros**: Com o histórico curto do fundo, é importante acompanhar os rendimentos futuros para verificar se eles continuam consistentes com as expectativas."
+  },
+  "comunicados": {
+    "ids": [
+      984453,
+      1242116,
+      1056534,
+      1211477,
+      1173381
+    ],
+    "datas": [
+      "04/09/2025",
+      "08/07/2026",
+      "08/12/2025",
+      "02/06/2026",
+      "29/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 08/07/2026\n\n**O QUE aconteceu:** Amortização parcial das cotas do Fundo RMBS11.\n\n**Resumo:** O Gestor recomendou ao Administrador a amortização de R$ 3.271.700,58 em cotas, equivalente a R$ 1,29 por cota. O pagamento será realizado no dia 23 de julho de 2026.\n\n**Trecho-chave:**\n\"o Gestor recomendou ao Administrador a amortização das cotas no montante de R$ 3.271.700,58 (três milhões, duzentos e setenta e um mil, setecentos reais e cinquenta e oito centavos), equivalente ao valor de  R$ 1,29 (um real e vinte e nove centavos) por cota. O pagamento será realizado no dia 23 de julho de 2026.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 08/12/2025\n\n**O QUE aconteceu:** Encerramento do período de exercício do direito de subscrição de sobras e de montante adicional.\n\n**Resumo:** Foram subscritas e integralizadas 1.347.868 Cotas, equivalente a R$ 13.478.680,00, durante o período de exercício do direito de subscrição de sobras e de montante adicional.\n\n**Trecho-chave:**\n\"De acordo com as informações recebidas da BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., acima qualificada, na qualidade de escriturador do Fundo (“ Escriturador”), durante o Período de Subscrição de Sobras e de Montante Adicional foram subscritas e integralizadas 1.347.868 (um milhão e trezentos e quarenta e sete mil e oitocentos e sessenta e oito) Cotas, equivalente a R$ 13.478.680,00 (treze milhões e quatrocentos e setenta e oito mil e seiscentos e oitenta reais), considerando o Preço por Cota.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 02/06/2026\n\n**O QUE aconteceu:** Apuração da consulta formal aos cotistas.\n\n**Resumo:** A assembleia foi realizada por meio de consulta formal, e a aprovação das demonstrações financeiras do exercício social findo em 31 de dezembro de 2025 foi aprovada sem ressalvas ou restrições.\n\n**Trecho-chave:**\n\"Diante o exposto, foi APROVADO, sem qualquer ressalva ou restrição, o único item da ordem do dia, por cotistas desimpedidos e aptos a deliberar.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 29/04/2026\n\n**O QUE aconteceu:** Convocação de assembleia geral ordinária.\n\n**Resumo:** A assembleia será realizada por meio de consulta formal para aprovar as demonstrações financeiras do exercício social findo em 31 de dezembro de 2025, acompanhadas do relatório do auditor independente.\n\n**Trecho-chave:**\n\"A BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., com sede na cidade de São Paulo, Estado de São Paulo, na Rua Alves Guimarães, 1212, Pinheiros, CEP: 05410-002, inscrita no Cadastro Nacional de Pessoas Jurídicas do Ministério da Fazenda (“ CNPJ”) sob o n. º 13.486.793/0001-42, habilitada para administração de fundos de investimento conforme ato declaratório expedido pela Comissão de Valores Mobiliários (\"CVM\") nº 11.784, de 30 de junho de 2011 (“ Administradora”), na qualidade de instituição administradora do REC MASTER FUNDO DE CRI COTAS AMORTIZÁVEIS FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA, inscrito no CNPJ sob o n. º 58.366.499/0001-35 (\"Fundo\"), vem, por meio desta, convocar V.Sas. a participar da Assembleia Geral Ordinária do Fundo (“AGO”), a ser realizada de forma não presencial, por meio de consulta formal.\"\n\n---\n\n**Conexão com indicadores:** O comunicado sobre a amortização parcial das cotas pode afetar o número total de cotas em circulação e potencialmente a cotação do fundo."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos irregulares",
+      "Fundo novo — histórico curto"
+    ],
+    "cota": 8.04
+  },
+  "parecer": {
+    "id": 1143844,
+    "data_entrega": "25/03/2026 11:43",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do REC Master Fundo de CRI Cotas Amortizáveis FII - Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e de seus fluxos de caixa para o período de 31 de julho de 2025 (data de início das atividades do Fundo) a "
+  }
+}

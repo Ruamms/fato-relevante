@@ -1,0 +1,33 @@
+{
+  "ticker": "LTBX11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:48:10",
+  "comunicados": {
+    "ids": [
+      1229188,
+      1226371,
+      1214117
+    ],
+    "datas": [
+      "26/06/2026",
+      "23/06/2026",
+      "08/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 26/06/2026\n\n**O QUE aconteceu:** A taxa máxima global do FUNDO foi reduzida.\n\n**Resumo:** A partir de 26 de junho de 2026, a taxa máxima global do FUNDO passou de 0,16% a.a. para 0,141% a.a.\n\n**Trecho-chave:**\n\"Taxa Máxima Global: de 0,16% a.a. para 0,141% a.a.\"\n\n---\n\n### ASSEMBLEIA GERAL ORDINÁRIA DE COTISTAS entregue em 23/06/2026\n\n**O QUE aconteceu:** A assembleia geral ordinária de cotistas não se realizou.\n\n**Resumo:** A assembleia foi convocada para deliberar sobre a aprovação das demonstrações financeiras auditadas do FUNDO, mas não ocorreu em razão da falta de orientação de voto digitalizada por correio eletrônico. As demonstrações financeiras foram consideradas automaticamente aprovadas.\n\n**Trecho-chave:**\n\"O BANCO BNP PARIBAS BRASIL S.A. na qualidade de (Administrador) do FUNDO vem, por meio deste, informar que a Assembleia Geral de Cotistas, que seria realizada excepcionalmente por meio eletrônico em 23 de junho de 2026, às 13h25, a fim de deliberar sobre a aprovação das demonstrações financeiras auditadas do FUNDO referentes ao exercício social encerrado em de 31 de março de 2026 (“Ordem do Dia”), não se realizou em razão do na não recebimento de orientação de voto digitalizada por correio eletrônico.\"\n\n---\n\n### CONVOCAÇÃO PARA A ASSEMBLEIA GERAL ORDINÁRIA entregue em 08/06/2026\n\n**O QUE aconteceu:** Foi convocada uma assembleia geral ordinária de cotistas.\n\n**Resumo:** O BANCO BNP PARIBAS BRASIL S.A. convocou os cotistas para participar da assembleia, que seria realizada excepcionalmente por meio eletrônico em 23 de junho de 2026, às 13h25, com o objetivo de deliberar sobre a aprovação das demonstrações financeiras auditadas do FUNDO referentes ao exercício social encerrado em 31 de março de 2026.\n\n**Trecho-chave:**\n\"O BANCO BNP PARIBAS BRASIL S.A.  (“Administrador”), localizada na Avenida Presidente Juscelino Kubitscheck, n.º 1909, 9º andar, Torre Sul, São Paulo/SP, vem por meio da presente, nos termos dos Artigos 70, 72 e 75 da Resolução CVM nº 175, de 23 de dezembro de 2022 (“RCVM 175”) , bem como nos termos do Regulamento do FUNDO (“Regulamento”), convocá-lo para participar da Assembleia Geral de cotistas do FUNDO, que será realizada excepcionalmente por meio eletrônico e (envio de orientação de voto digitalizada por correio eletrônico) em 23 de junho de 2026 , 13h25, a fim de deliberar sobre a aprovação das demonstrações financeiras auditadas do FUNDO referentes ao exercício social encerrado em de 31 de março de 2026 (“Ordem do Dia”).\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1204374,
+    "data_entrega": "27/05/2026 09:39",
+    "tipo": "nao_identificado",
+    "rotulo": "parecer não identificado no texto",
+    "grave": false,
+    "continuidade": false,
+    "trecho": ""
+  }
+}

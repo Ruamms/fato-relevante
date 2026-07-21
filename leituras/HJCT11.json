@@ -1,0 +1,37 @@
+{
+  "ticker": "HJCT11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T01:23:56",
+  "relatorio": {
+    "id": 1260248,
+    "data_entrega": "20/07/2026 19:00",
+    "texto": "### Fatos Extraídos do Relatório Gerencial:\n\n1. **Emissão de Cotas:**\n   - Foram distribuídas 3.050.000 cota no início da emissão, com 42,5% integralizadas até maio de 2026.\n   - A primeira chamada foi realizada em novembro de 2025 e a segunda em março de 2026.\n\n2. **Locações:**\n   - O fundo firmou contrato para locação do 14º andar, com área locável de 1.852,67 m², que foi integralizado em fevereiro de 2026.\n   - O fundo encerrou o mês de junho com 100% de ocupação.\n\n3. **Reavaliação do Ativo:**\n   - O imóvel do fundo foi avaliado a mercado, resultando em um valor 7,85% superior ao valor contábil atual.\n   - Este aumento representa uma variação positiva de 24,80% no valor patrimonial da cota.\n\n4. **Operação e Manutenção:**\n   - Vistorias foram realizadas para identificar necessidades de melhorias e manutenções.\n   - Prioridades de investimentos e melhorias foram definidas e aprovadas em assembleia, incluindo retrofit do piso de circulação no térreo e atualização da automação do sistema de ar-condicionado.\n\n5. **Troca de Administração:**\n   - A administração do empreendimento foi trocada para implementar novas prioridades, como revisão completa do orçamento condominial e busca por otimização de recursos.\n\n6. **Desempenho Financeiro:**\n   - O rendimento distribuído no mês de junho foi R$ 1,60 por cota.\n   - A receita imobiliária totalizou R$ 1.997.365, com destaque para aluguéis e áreas comuns.\n\n### O que observar em seguida:\n- Monitorar a integralização das chamadas de capital até novembro de 2026.\n- Observar as melhorias e investimentos programados no imóvel, especialmente o retrofit do piso de circulação."
+  },
+  "comunicados": {
+    "ids": [
+      1233056,
+      1037166,
+      1037121
+    ],
+    "datas": [
+      "29/06/2026",
+      "13/11/2025",
+      "13/11/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante"
+    ],
+    "texto": "**29/06/2026 - O imóvel do Fundo foi avaliado a mercado, resultando em valor 7,85% superior ao valor contábil atual.**\n\nO imóvel do Fundo HJCT11 foi avaliado pela Newmark Brasil – Valuation & Advisory e apresentou um valor 7,85% superior ao valor contábil atual, o que representa uma variação positiva de 24,80% no valor patrimonial da cota do Fundo nesta data.\n\n\"O imóvel do Fundo foi avaliado a mercado (valor justo) pela empresa Newmark Brasil – Valuation & Advisory, resultando em valor 7,85% (sete inteiros e oitenta e cinco centésimos por cento) superior ao valor contábil atual do referido imóvel, o que representa uma variação positiva de 24,80% (vinte e quatro inteiros e oitenta centésimos por cento) no valor patrimonial da cota do Fundo nesta data.\" (p. 1)\n\nEsta avaliação reflete diretamente no valor patrimonial das cotas do Fundo HJCT11, incrementando seu valor contábil."
+  },
+  "retrato": {
+    "selo": "Histórico insuficiente",
+    "nivel": "insuficiente",
+    "alertas": [
+      "Base de cotistas muito pequena",
+      "Fundo novo — histórico curto"
+    ],
+    "cota": 120.0
+  }
+}

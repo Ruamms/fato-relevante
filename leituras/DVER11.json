@@ -1,0 +1,30 @@
+{
+  "ticker": "DVER11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T11:48:54",
+  "comunicados": {
+    "ids": [
+      1240153,
+      1238248
+    ],
+    "datas": [
+      "06/07/2026",
+      "02/07/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA GERAL ORDINÁRIA DE 29/06/2026\n\n**O QUE aconteceu:** A assembleia geral ordinária do fundo BB ETF ÍNDICE DIVERSIDADE B3 INVESTIMENTO SUSTENTÁVEL foi realizada e os cotistas aprovaram as demonstrações contábeis relativas ao exercício social findo em 31/03/2026.\n\n**Resumo:** A assembleia deliberou sobre as demonstrações contábeis do fundo, que foram auditadas pela Deloitte Touche Tohmatsu.\n\n*\"Comunicamos que os cotistas aprovaram as Demonstrações Contábeis do FUNDO na Assembleia, relativas ao exercício social findo em 31/03/2026, devidamente auditada pela Deloitte Touche Tohmatsu Auditores Independentes.\"* (p. 1)\n\n---\n\n### ASSEMBLEIA GERAL ORDINÁRIA DE 29/06/2026\n\n**O QUE aconteceu:** A assembleia geral ordinária do fundo BB ETF ÍNDICE DIVERSIDADE B3 INVESTIMENTO SUSTENTÁVEL foi realizada e os cotistas aprovaram as demonstrações contábeis relativas ao exercício social findo em 31/03/2026.\n\n**Resumo:** A assembleia deliberou sobre as demonstrações contábeis do fundo, que foram auditadas pela Deloitte Touche Tohmatsu Auditores Independentes.\n\n*\"Comunicamos que os cotistas aprovaram as Demonstrações Contábeis relativas ao exercício social findo em 31/03/2026 no processo de Assembleia Geral Ordinária do fundo.\"* (p. 1)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1205995,
+    "data_entrega": "28/05/2026 12:35",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do BB ETF Índice Diversidade B3 Investimento Sustentável Fundo de Índice Responsabilidade Limitada em 31 de março de 2026 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil,"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "ticker": "RCFF11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T04:40:11",
+  "relatorio": {
+    "id": 1225003,
+    "data_entrega": "19/06/2026 18:57",
+    "texto": "### Fatos Extraídos do Relatório Gerencial:\n\n1. **Patrimônio Líquido e Distribuição de Ativos:**\n   \"O fundo encerrou maio com Patrimônio Líquido de R$ 33,3 milhões, distribuídos entre três estratégias: 69% alocados no RBR Desenvolvimento Comercial I, 20% em uma carteira de FIIs líquidos composta por 20 fundos e 11% em caixa, totalizando 89% em ativos alvo.\" (p. 5)\n\n2. **Alocação na Carteira de FIIs:**\n   \"A alocação estratégica em fundo imobiliários composta de 20 FIIs é focada em ativos líquidos, passíveis de movimentações rápidas para atender eventuais demandas de caixa.\" (p. 7)\n\n3. **Direcionamento Estratégico:**\n   \"Nossa intenção para os próximos meses é reduzir gradualmente a posição em FIIs táticos da carteira, elevando o nível de caixa do fundo.\" (p. 5)\n\n4. **RBR Desenvolvimento Comercial I:**\n   \"O FII RBR Desenvolvimento Comercial I tem como estratégia principal o desenvolvimento, valorização e posterior venda de edifícios corporativos de alto padrão em regiões nobres de São Paulo.\" (p. 6)\n\n5. **Cenário do Mercado de FIIs:**\n   \"Após a recuperação observada em abril, os Fundos Imobiliários voltaram a recuar em maio. O IFIX registrou variação de -1,3% no mês, embora ainda acumule alta de 2,7% no ano.\" (p. 3)\n\n6. **Cotação e Desempenho do Fundo:**\n   \"O RCFF11 encerrou maio com uma cota patrimonial ajustada de R$ 103,01/cota, acumulando um retorno de 4,5% desde o início do ano.\" (p. 4)\n\n7. **Rendimentos e Distribuições:**\n   \"O fundo distribuiu rendimentos no valor de R$ 1,4 milhão no quarto trimestre, enquanto o resultado financeiro líquido foi de R$ 535,1 mil.\" (p. 4)\n\n8. **Risco e Liquidez:**\n   \"A carteira de FIIs é focada em ativos líquidos, passíveis de movimentações rápidas para atender eventuais demandas de caixa.\" (p. 7)\n\n### O que observar em seguida:\n1. A redução gradual da posição em FIIs táticos e a elevação do nível de caixa.\n2. O desempenho do RBR Desenvolvimento Comercial I, que pode influenciar significativamente o patrimônio líquido do fundo."
+  },
+  "comunicados": {
+    "ids": [
+      1124722,
+      1058415,
+      1040417,
+      1199843,
+      1059565,
+      1199842,
+      1181470
+    ],
+    "datas": [
+      "27/02/2026",
+      "11/12/2025",
+      "14/11/2025",
+      "20/05/2026",
+      "11/12/2025",
+      "20/05/2026",
+      "06/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 27/02/2026\n\n**O QUE aconteceu:** A administração do RBR DESENVOLVIMENTO COMERCIAL FEEDER FOF - FII foi transferida para o BTG PACTUAL SERVIÇOS FINANCEIROS S.A. a partir da Data de Transferência, que é 27 de fevereiro de 2026.\n\n**Resumo:** A administração do fundo passa para um novo administrador em 27/02/2026.\n\n**Trecho-chave:**\n\"considerar-se-á como Data de Transferência o dia 27 de fevereiro de 2026 (\"Data de Transferência\").\"\n\n---\n\n### FATO RELEVANTE entregue em 14/11/2025\n\n**O QUE aconteceu:** A transferência da administração do RBR DESENVOLVIMENTO COMERCIAL FEEDER FOF - FII foi aprovada e retificada para 26 de fevereiro de 2026.\n\n**Resumo:** A administração será transferida para um novo administrador em 26/02/2026, após tratativas comerciais entre as instituições envolvidas.\n\n**Trecho-chave:**\n\"decidiu-se retificar a Data de Transferência para 26 de fevereiro de 2026.\"\n\n---\n\n### FATO RELEVANTE entregue em 11/12/2025\n\n**O QUE aconteceu:** A sociedade PATRIA INVESTIMENTOS LTDA. celebrou um contrato para aquisição da totalidade das quotas do Gestor, que passará a ser gerida pelo time de Real Estate do Pátria.\n\n**Resumo:** O gestor será adquirido pela PATRIA INVESTIMENTOS e passará a ser gerido por profissionais liderados por Rodrigo Abbud.\n\n**Trecho-chave:**\n\"celebrou o Contrato de Venda e Compra de Quotas e Outras Avenças referente à aquisição da totalidade das quotas do Gestor.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 20/05/2026\n\n**O QUE aconteceu:** As contas anuais do RBR DESENVOLVIMENTO COMERCIAL FEEDER FOF - FII referentes ao exercício encerrado em 31 de dezembro de 2025 foram aprovadas na assembleia geral realizada em 18 de maio de 2026.\n\n**Resumo:** As contas anuais do fundo foram aprovadas pela assembleia geral dos cotistas.\n\n**Trecho-chave:**\n\"foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### ASSEMBLEIA GERAL DE COTISTAS entregue em 20/05/2026\n\n**O QUE aconteceu:** A assembleia geral dos cotistas aprovou as contas anuais do RBR DESENVOLVIMENTO COMERCIAL FEEDER FOF - FII referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** As contas anuais foram aprovadas na assembleia geral dos cotistas.\n\n---\n\n### ASSEMBLEIA GERAL DE COTISTAS entregue em 06/05/2026\n\n**O QUE aconteceu:** A administradora convocou os cotistas para uma assembleia geral com prazo de recebimento de votos até 18 de maio de 2026, para deliberarem sobre a aprovação das contas e demonstrações contábeis do exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia geral será realizada para aprovar as contas anuais do fundo.\n\n---\n\n### COMUNICADO AO MERCADO entregue em 11/12/2025\n\n**O QUE aconteceu:** Não haverá distribuição de resultados referentes ao mês de novembro/2025.\n\n**Resumo:** Não será realizada a distribuição de resultados para o mês de novembro/2025.\n\n---\n\n### ASSEMBLEIA GERAL DE COTISTAS entregue em 18/05/2026\n\n**O QUE aconteceu:** A assembleia geral dos cotistas aprovou as contas anuais do RBR DESENVOLVIMENTO COMERCIAL FEEDER FOF - FII referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** As contas anuais foram aprovadas na assembleia geral dos cotistas."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares",
+      "Base de cotistas muito pequena"
+    ],
+    "cota": 71.52
+  },
+  "parecer": {
+    "id": 1155364,
+    "data_entrega": "07/04/2026 14:16",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira d a Classe Única de Cotas do RBR Desenvolvimento Comercial Feeder FOF - Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nes"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "ticker": "XSPI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T07:27:15",
+  "comunicados": {
+    "ids": [
+      1171706,
+      1171705
+    ],
+    "datas": [
+      "28/04/2026",
+      "28/04/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### O QUE aconteceu: Alteração na política de distribuição de resultados do fundo\n\nO Fundo Buena Vista DEX VETTAFI Neos Boosted S&P 500 High Income, por meio da Assembleia Geral Extraordinária realizada em 28 de abril de 2026, alterou a data de pagamento das distribuições. \n\n**Resumo:** A assembleia decidiu mudar o calendário de pagamentos das distribuições do fundo para o 13º dia útil do mês vigente.\n\n**Trecho-chave:**\n\"4.1. A Classe poderá distribuir aos Cotistas, mensalmente, em todo 13º (décimo terceiro) Dia Útil do mês vigente da apuração, os lucros auferidos pelo Fundo, se houver, observado o disposto no item 4.5 abaixo, conforme divulgação ao mercado, sem prejuízo da manutenção de Investimentos Permitidos, nos termos deste Anexo, para manutenção da aderência da rentabilidade da Classe ao Índice.\" (p. 1)\n\n### Conexão com indicadores do contexto:\nEsta alteração na política de distribuição pode afetar os fluxos de caixa dos cotistas e a rentabilidade mensal percebida, o que é relevante para os investidores monitorarem seus retornos mensais."
+  },
+  "modelo": "qwen2.5:7b"
+}

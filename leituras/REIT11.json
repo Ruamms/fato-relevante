@@ -1,0 +1,36 @@
+{
+  "ticker": "REIT11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T11:36:05",
+  "comunicados": {
+    "ids": [
+      1251108,
+      1045039,
+      1251110,
+      1182570
+    ],
+    "datas": [
+      "16/07/2026",
+      "21/11/2025",
+      "16/07/2026",
+      "08/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### O QUE aconteceu: Assembleia Geral Ordinária de Cotistas cancelada e nova convocação realizada em 16/07/2026\n\n**Resumo:** A administradora do fundo, QI Corretora de Títulos e Valores Mobiliários S.A., cancelou a assembleia prevista para 8 de maio de 2026 e convocou uma nova assembleia com novos prazos.\n\n**Trecho-chave:**\n\"A fim de assegurar a estrita observância dos procedimentos aplicáveis ao processo de deliberação, o Administrador procedeu ao cancelamento da convocação da Consulta Formal para Deliberação dos Cotistas divulgada em 08 de maio de 2026, referente à aprovação das contas do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.  \nCom o objetivo de assegurar aos cotistas prazo hábil e adequado para o exercício do direito de voto, o Administrador, em alinhamento com a Gestora, realizará nova convocação nesta data, observados os prazos e procedimentos aplicáveis, nos termos da Resolução CVM n° 175/22 e do Regulamento do Fundo.\"\n\n### O QUE aconteceu: Prorrogação da Assembleia Geral Extraordinária de Cotistas em 21/11/2025\n\n**Resumo:** A administradora prorrogou a assembleia para um novo período adicional, até o dia 6 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Por solicitação da GV Atacama Capital Ltda., sociedade limitada com sede na Cidade e Estado de São Paulo, na Avenida Brigadeiro Faria Lima, nº 1.355, 5º andar, Jardim Paulistano, inscrita no CNPJ/MF sob o nº 40.888.143/0001-04 (\"Gestor\") e da SINGULARE Corretora de Títulos e Valores Mobiliários S.A., instituição financeira com sede na Cidade e Estado de São Paulo, na Avenida Rebouças, nº 2.942, 7º ao 12º andar, Parte I, Pinheiros, CEP 05.402-500, inscrita no CNPJ/MF sob o nº 62.285.390/0001-40 (\"Administradora\"), na qualidade de instituição administradora do SINGULARE Fundo de Investimento Imobiliário, inscrita no CNPJ/MF sob o nº 16.841.067/0001-99, vem pelo presente informar aos cotistas do Fundo e ao mercado a prorrogação do prazo da Coleta de Voto à Distância por novo período adicional de 15 (quinze) dias, até dia 6 de dezembro de 2025, com apuração dos votos em 8 de dezembro de 2025.\"\n\n### Conexão aos indicadores:\n- A prorrogação da assembleia e o cancelamento da convocação anterior podem estar relacionados a problemas na organização ou no processo de deliberação do fundo, que levaram à necessidade de ajustes."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1152045,
+    "data_entrega": "31/03/2026 23:21",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião as demonstrações ﬁnanceiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, o balanço patrimonial do Singulare Fundo de Investimento Imobiliário em 31 de dezembro de 2025 e as respectivas demonstrações do resultado, das mutações do patrimônio líquido e dos ﬂuxos de caixa o exercício ﬁndo nesta data, de acordo com as práticas contábeis adotadas no Brasil "
+  }
+}

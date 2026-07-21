@@ -1,0 +1,30 @@
+{
+  "ticker": "FRAM11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T11:36:51",
+  "comunicados": {
+    "ids": [
+      1247267,
+      1123166
+    ],
+    "datas": [
+      "14/07/2026",
+      "27/02/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### Assembleia Geral Extraordinária realizada em 13 de julho de 2026\n\n**O QUE aconteceu:** A assembleia geral extraordinária dos cotistas do FRAM11 - Oportunidade I Fundo de Investimento Imobiliário aprovou alterações na taxa de administração e consolidação do regulamento.\n\n**Resumo:** A assembleia aprovou a redução da taxa de administração para 0,15% ao ano, com um valor mínimo mensal de R$ 17.000,00, além de aprovar a consolidação do regulamento para refletir as alterações.\n\n**Trecho-chave:**\n\"V  DAS TAXAS\n5.1. Taxa de Administração. Pelos serviços de administração fiduciária será devida à ADMINISTRADORA pela Classe uma remuneração equivalente a 0,15% (zero vírgula quinze por cento) a. a. (ao ano) sobre o Patrimônio Líquido da Classe, observado o valor mínimo mensal equivalente a R$ 17.000,00 (dezessete mil reais), valor este que será atualizado anualmente a contar da data da primeira integralização de cotas do FUNDO, pela variação positiva do Índice de Preços ao Consumidor que é medido mês a mês pelo IBGE- IPCA, no período.\"\n\n---\n\n### Assembleia Geral Extraordinária realizada em 24 de fevereiro de 2026\n\n**O QUE aconteceu:** A assembleia geral extraordinária dos cotistas do FRAM11 - Oportunidade I Fundo de Investimento Imobiliário aprovou a destituição da administradora e gestora atuais, bem como a eleição das novas entidades.\n\n**Resumo:** Os cotistas deliberaram por unanimidade a destituição da CBSF (Administradora Liquidada Extrajudicialmente) e da Atual Gestora. A assembleia também aprovou a contratação de uma nova administradora (Planner Corretora) e uma nova gestora (Arandu Gestão de Fundos Imobiliários).\n\n**Trecho-chave:**\n\"1. DESTITUIÇÃO DA ATUAL ADMINISTRADORA E DA ATUAL GESTORA\n1.1. Os cotistas do Fundo, no exercício de sua competência privativa prevista na Resolução CVM nº 175, deliberam, por unanimidade e sem quaisquer ressalvas, destituir a CBSF, neste ato representada pelo seu Liquidante, e a Atual Gestora do exercício das funções de administração fiduciária, distribuição, controladoria, tesouraria, escrituração, custódia e gestão da carteira de ativos do Fundo.\"\n\n---\n\n**Conexão com o contexto:** A alteração na taxa de administração aprovada em 2026 pode impactar diretamente no custo operacional do fundo, refletindo nos indicadores financeiros futuros."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 865178,
+    "data_entrega": "26/03/2025 19:02",
+    "tipo": "ressalva",
+    "rotulo": "opinião com ressalva",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Oportunidade I Fundo de Investimento Imobiliário em 31 de dezembro de 2024, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos Fun"
+  }
+}

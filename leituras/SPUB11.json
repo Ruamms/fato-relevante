@@ -1,0 +1,20 @@
+{
+  "ticker": "SPUB11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T07:10:21",
+  "comunicados": {
+    "ids": [],
+    "datas": [],
+    "rotulos": [],
+    "texto": null
+  },
+  "parecer": {
+    "id": 1207020,
+    "data_entrega": "29/05/2026 10:09",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de março de 2026, o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento financeiro."
+  }
+}

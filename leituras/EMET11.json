@@ -1,0 +1,59 @@
+{
+  "ticker": "EMET11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T04:03:06",
+  "relatorio": {
+    "id": 1198832,
+    "data_entrega": "18/05/2026 20:49",
+    "texto": "### Fatos Extraídos:\n\n1. **Cotação e Desempenho do Fundo:**\n   - O preço de mercado da cota recuou 6,7% em abril (R$ 10,16 para R$ 9,48), resultando em um retorno total de -6,69%, com desempenho 8,22 p.p. abaixo do IFIX no mês.\n   - O P/VP voltou a 0,97 no final de abril, retornando ao padrão de leve desconto frente ao valor patrimonial.\n\n2. **Movimentações na Carteira:**\n   - Redução da posição em ALZC11 (-127.288 cotas, 28,7% da posição).\n   - Aumento da posição em SCAR3 (+17.500 cotas, 41,7% da posição), HOFC11 (+1.000 cotas, 0,21% da posição) e VCRR11 (+1.744 cotas, 0,77% da posição).\n   - Entrada em nova posição: IBCR11 (4.156 cotas).\n\n3. **Liquidez do Mercado:**\n   - O giro financeiro foi de 29,27% no mês.\n   - A presença em pregões permaneceu alta com 100% de participação.\n\n4. **Cotistas e Distribuição:**\n   - A base de cotistas seguiu em forte expansão, encerrando abril com 245 investidores (+37 versus março; +17,8% no mês).\n   - A distribuição referente ao mês de março foi R$ 0,04/cota.\n\n### O que observar em seguida:\n- Monitorar as movimentações na carteira e a evolução da composição por ativos.\n- Observar o comportamento do número de cotistas e a distribuição de dividendos."
+  },
+  "comunicados": {
+    "ids": [
+      1045174,
+      932183,
+      926702,
+      1211444,
+      1111557,
+      1209738,
+      1178094
+    ],
+    "datas": [
+      "21/11/2025",
+      "25/06/2025",
+      "16/06/2025",
+      "02/06/2026",
+      "12/02/2026",
+      "01/06/2026",
+      "30/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO/E",
+      "Assembleia AGO/E"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 21/11/2025\n\n**O QUE aconteceu:** A BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A. informou a contratação da V2 INVESTIMENTOS LTDA. como novo gestor do EMET MULTIESTRATÉGIA FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA, substituindo a SI ADVISORS EMPREENDIMENTOS IMOBILIÁRIOS LTDA., e aprovou a redução da Taxa de Gestão.\n\n**Resumo:** A nova gestão será iniciada em 24 de novembro de 2025.\n\n**Trecho-chave:**\n\"Os Cotistas também aprovaram: (a) a destituição da SI ADVISORS EMPREENDIMENTOS IMOBILIÁRIOS LTDA., inscrita no CNPJ sob o nº 33.222.193/0001 -84, como consultor imobiliário do Fundo; (b) a redução da Taxa de Gestão (conforme definida no Regulamento), passando de 1,05% (um por cento e cinco centésimos por cento) ao ano para 0,50% (cinquenta centésimos por cento) ao ano, sobre a Base de Cálculo da Taxa de Gestão (conforme definida no Regulamento); e (c) a exclusão da Taxa de Performance (conforme definida no Regulamento).\"\n\n### FATO RELEVANTE entregue em 25/06/2025\n\n**O QUE aconteceu:** A BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A. informou que passará a prestar o serviço de escrituração das cotas do Fundo, substituindo a BTG Pactual.\n\n**Resumo:** A nova administradora assumirá as responsabilidades de escrituração a partir do fechamento de 26/06/2025.\n\n**Trecho-chave:**\n\"A partir do fechamento de 26/06/2025, o serviço de escrituração das cotas do Fundo passará a ser prestado pela Nova Administradora, em substituição à Antiga Administradora.\"\n\n### FATO RELEVANTE entregue em 16/06/2025\n\n**O QUE aconteceu:** A BTG Pactual informou que a administração do EMET MULTIESTRATÉGIA FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA será alterada para a BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.\n\n**Resumo:** A mudança de administração entrará em vigor no dia 27/06/2025.\n\n**Trecho-chave:**\n\"A partir do fechamento de 27/06/2025, a administração do Fundo passará para a BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.\"\n\n### COMUNICADO AO MERCADO entregue em 02/06/2026\n\n**O QUE aconteceu:** O EMET MULTIESTRATÉGIA FUNDO deu início a um programa de recompra de suas próprias cotas.\n\n**Resumo:** O programa permitirá que o Fundo adquira até 500.000 cota(s) durante um período de 12 meses, desde que o valor da recompra seja inferior ao valor patrimonial da cota do dia imediatamente anterior à recompra.\n\n**Trecho-chave:**\n\"O Fundo tem a intenção de iniciar um programa de recompra de suas próprias cotas (“Cotas”), no mercado de bolsa administrado pela B3 S.A. – Brasil, Bolsa, Balcão (‘B3’), observados os seguintes parâmetros e características, estabelecidos no Regulamento do Fundo.\"\n\n### COMUNICADO AO MERCADO entregue em 12/02/2026\n\n**O QUE aconteceu:** A BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A. informou que os cotistas do Fundo que detinham cotas no dia 11 de fevereiro de 2026 farão jus ao pagamento dos dividendos de competência do mês de janeiro de 2026.\n\n**Resumo:** A data de efetivação do pagamento será em 20 de fevereiro de 2026.\n\n**Trecho-chave:**\n\"Em razão de ajustes operacionais no processamento de apuração das informações de distribuição de rendimentos, farão jus ao pagamento dos dividendos de competência do mês de janeiro de 2026, os cotistas do Fundo que detinham cotas no dia 11 de fevereiro de 2026.\"\n\n### ASSEMBLEIA AGO/E entregue em 01/06/2026\n\n**O QUE aconteceu:** A assembleia aprovou a alteração do Regulamento do Fundo para permitir a recompra de cotas.\n\n**Resumo:** Os cotistas aprovaram a inclusão no Regulamento do Fundo da previsão de recompra de cotas, com limitações específicas sobre o valor e volume das recompras.\n\n**Trecho-chave:**\n\"Item (i). Aprovo 91,95% Não Aprovo 0,00% Abstenção 0,00% Conflitado 0,00%\"\n\"Parágrafo 10 A Classe poderá adquirir as suas próprias cotas, seja através de programa de recompra ou Oferta Pública Voluntária de Aquisição (“OPAC”), via mercado organizado em que as cotas estejam admitidas à negociação, sem que seja enquadrada na vedação constante do artigo 12, inciso IV da Lei nº 8.668/93 e do artigo 110, da parte geral da Resolução CVM 175, ou outras vedações legais existentes, respeitados os critérios estipulados pela CVM e pela legislação vigente.\"\n\n### ASSEMBLEIA AGO/E entregue em 30/04/2026\n\n**O QUE aconteceu:** A assembleia convocou a aprovação da alteração do Regulamento do Fundo para permitir a recompra de cotas.\n\n**Resumo:** A assembleia convocada para 1º de junho de 2026 discutirá e votará sobre a inclusão no Regulamento do Fundo da previsão de recompra de cotas, com limitações específicas.\n\n**Trecho-chave:**\n\"Prezados Cotistas, A BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A. , instituição financeira com sede na cidade de São Paulo, Estado de São Paulo, na Rua Alves Guimarães, nº 1.212, Pinheiros, CEP 05410 -002, inscrita no CNPJ sob o nº 13.486.793/0001 -42, devidamente credenciada pela Comissão de Valores Mobiliários (‘CVM’) para o exercício da atividade de administração de carteiras de títulos e valores mobiliários, conforme Ato Declaratório nº 11.784, de 30 de junho de 2011, na qualidade de instituição administradora (‘Administradora’) do EMET MULTIESTRATÉGIA FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA, inscrito no CNPJ sob o n° 53.523.736/0001-00 (‘Fundo’), artigo 13, §1º do Anexo Normativo III da Resolução CVM nº 175, de 23 de dezembro de 2022, conforme alterada (‘Resolução CVM 175’), vem, por meio desta, convocar V.Sas. a participar da Assembleia Geral Ordinária e Extraordinária (‘AGOE’), a ser realizada de forma não presencial, por meio de consulta formal, cuja formalização da apuração ocorrerá no dia 01 de junho de 2026, utilizando-se de plataformas eletrônicas de votação, para deliberar sobre as seguintes matérias da ordem do dia:\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Emissão de cotas com VP/cota em queda",
+      "Base de cotistas muito pequena"
+    ],
+    "cota": 9.51
+  },
+  "parecer": {
+    "id": 1140987,
+    "data_entrega": "19/03/2026 18:52",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Emet Multiestratégia Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e de seus fluxos de caixa para o períodos de 26 de junho de 2025 (Data da transferência de administra"
+  }
+}

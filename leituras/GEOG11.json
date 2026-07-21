@@ -1,0 +1,20 @@
+{
+  "ticker": "GEOG11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T11:38:33",
+  "comunicados": {
+    "ids": [],
+    "datas": [],
+    "rotulos": [],
+    "texto": null
+  },
+  "parecer": {
+    "id": 533467,
+    "data_entrega": "09/10/2023 15:25",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do FUNDO DE INVESTIMENTO IMOBILIÁRIO – FII GEO GUARARAPES em 31 de dezembro de 2022, e o desempenho de suas operações para o período findo nessa data, de acordo c om as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimen"
+  }
+}

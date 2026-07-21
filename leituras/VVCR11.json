@@ -1,0 +1,53 @@
+{
+  "ticker": "VVCR11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T00:14:56",
+  "relatorio": {
+    "id": 1246367,
+    "data_entrega": "13/07/2026 20:32",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Movimentação na Carteira:**\n   - No mês de maio, houve um aporte mensal no CRI Scene Vila Mariana (25I0175369) no valor de R$ 451.254,51, conforme mencionado no relatório (p. 4).\n\n2. **Resultados do Fundo:**\n   - O Resultado Líquido do VVCR11 foi de R$ 2.013.037,70 no mês, com destaque para a contribuição da carteira de CRIs (R$ 1.022.020,66) e FIIs (R$ 216.177,20). A distribuição foi de R$ 0,10/cota aos investidores (p. 3).\n\n3. **Composição do Patrimônio Líquido:**\n   - O volume financeiro do fundo é de R$ 189,11 milhões e o giro médio em pregões é de 1,17% (p. 3).\n\n4. **Portfólio de CRIs:**\n   - A carteira de CRIs representa 81,81% do Patrimônio Líquido do fundo, com uma duração média de 3,15 anos e um yield a.a. (IPCA+) de 10,65% (p. 7).\n\n5. **Movimentações no Mercado Secundário:**\n   - A cota patrimonial está avaliada em R$ 10,35, com um ágio sobre o Patrimônio Líquido de 7,50% e um yield a.a. (IPCA+) de 13,03% (p. 8).\n\n6. **Segmentação da Carteira:**\n   - A carteira está distribuída por segmentos como Home Equity (36,94%), Hotéis (22,22%), e Logística (15,57%) (p. 9).\n\n7. **Detalhes de Operações Específicas:**\n   - O CRI Scene Vila Mariana (25I0175369) possui uma taxa MtM de CDI+4,03% e um vencimento previsto para 29/08/2028. A garantia inclui a alienação fiduciária do terreno e cessão fiduciária dos recebíveis (p. 10).\n\n8. **Riscos e Garantias:**\n   - O CRI HAAA Thera Corporate (21G0063256) possui uma garantia de 7,40% do LTV inicial, com um prazo médio remanescente dos contratos de 49 meses. A operação está 100% locada e possui uma razão de NOI x PMT em 1,6x (p. 13).\n\n### O que observar em seguida:\n- Monitorar a evolução do projeto Scene Vila Mariana, pois há um financiamento significativo no mês.\n- Observar o desempenho da carteira de CRIs e como ela contribui para os resultados do fundo."
+  },
+  "comunicados": {
+    "ids": [
+      1035534,
+      1199567,
+      1125069,
+      1199566,
+      1180718
+    ],
+    "datas": [
+      "12/11/2025",
+      "19/05/2026",
+      "28/02/2026",
+      "19/05/2026",
+      "05/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 12/11/2025\n\n**O que aconteceu:** A administradora BTG PACTUAL SERVIÇOS FINANCEIROS S.A. anunciou a realização da 4ª emissão de cotas do V2 RECEBÍVEIS IMOBILIÁRIOS FUNDO DE INVESTIMENTO IMOBILIÁRIO.\n\n**Resumo:** A emissão será de 14,822,140 novas cotas nominativas e escriturais, com preço unitário de R$ 10,12 cada. O montante total estimado é de R$ 150.000.056,80.\n\n**Trecho-chave:**\n\"realização da 4ª emissão (“Emissão”) de 14.822.140 (quatorze milhões oitocentas e vinte e duas mil cento e quarenta) novas cotas (“Novas Cotas”) com Preço de Emissão (conforme abaixo definido) de R$ 10,12 (dez reais e doze centavos ) cada...\"\n\n### COMUNICADO AO MERCADO entregue em 19/05/2026\n\n**O que aconteceu:** As contas anuais do V2 RECEBÍVEIS IMOBILIÁRIOS FUNDO DE INVESTIMENTO IMOBILIÁRIO referentes ao exercício encerrado em 31 de dezembro de 2025 foram aprovadas na assembleia geral de cotistas.\n\n**Resumo:** A assembleia geral realizada em 18 de maio de 2026 aprovou as contas anuais do fundo para o ano de 2025.\n\n**Trecho-chave:**\n\"foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\"\n\n### COMUNICADO AO MERCADO entregue em 28/02/2026\n\n**O que aconteceu:** A administradora BTG PACTUAL SERVIÇOS FINANCEIROS S.A. informou sobre a disponibilização dos Informes de Rendimentos referentes ao ano de 2025 exclusivamente por meio digital.\n\n**Resumo:** Os Informes de Rendimentos do ano de 2025 estão disponíveis apenas por meio do Portal do Investidor, sem uso de papel físico.\n\n**Trecho-chave:**\n\"os Informes de Rendimentos (“Informes”) referentes ao ano de 2025, já estão disponíveis aos investidores, conforme previsto na Instrução Normativa RFB nº 2.060/2021, exclusivamente por meio digital, por meio do Portal do Investidor.”\n\n### ASSEMBLEIA AGO entregue em 19/05/2026\n\n**O que aconteceu:** A assembleia geral de cotistas aprovou as contas anuais do V2 RECEBÍVEIS IMOBILIÁRIOS FUNDO DE INVESTIMENTO IMOBILIÁRIO referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia geral realizada via manifestação de voto em 18 de maio de 2026 aprovou as contas anuais do fundo para o ano de 2025.\n\n**Trecho-chave:**\n\"Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n### ASSEMBLEIA AGO entregue em 05/05/2026\n\n**O que aconteceu:** A administradora BTG PACTUAL SERVIÇOS FINANCEIROS S.A. convocou os cotistas para a assembleia geral com o objetivo de aprovar as contas e demonstrações contábeis do V2 RECEBÍVEIS IMOBILIÁRIOS FUNDO DE INVESTIMENTO IMOBILIÁRIO referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia geral, com prazo de recebimento de votos até 18 de maio de 2026, foi convocada para aprovar as contas e demonstrações contábeis do fundo referentes ao exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Aprovam as contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de dezembro de 2025.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Emissão de cotas com VP/cota em queda",
+      "Rendimentos irregulares"
+    ],
+    "cota": 8.04
+  },
+  "parecer": {
+    "id": 1144180,
+    "data_entrega": "25/03/2026 16:36",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do V2 Recebíveis Imobiliários Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa o exercício findo nessa data, de acordo com as práticas contábeis ado"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "ticker": "KPRP11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T04:17:22",
+  "relatorio": {
+    "id": 1249591,
+    "data_entrega": "15/07/2026 17:45",
+    "texto": "### Fatos Extraídos:\n\n1. **Vendas de Unidades:** No mês de junho, foram vendidas 27 unidades na modalidade studio, totalizando 71,9% das unidades studio já comercializadas.\n   > \"Destacamos no mês de junho a comercialização de mais 27 unidades na modalidade studio para além das 42 unidades vendidas em maio, atingindo a expressiva marca de 71,9% vendido dessa tipologia.\" (p. 2)\n\n2. **Obtenção do Alvará e Início das Obras:** Obteve-se o Alvará de Execução durante o mês de junho e foi mobilizado o canteiro para início das obras.\n   > \"Destacamos a obtenção do Alvará de Execução durante o mês de junho, e a mobilização do canteiro para início das obras.\" (p. 2)\n\n3. **Venda de Apartamentos:** O projeto permanece com 43,4% dos apartamentos vendidos.\n   > \"O projeto permanece com a excelente marca de 43,4% vendido nas unidades maiores, resultado acima do previsto originalmente.\" (p. 2)\n\n4. **Taxa de Administração:** A taxa de administração é de 1,99% ao ano.\n   > \"Taxa de Administração3: 20% do que exceder IPCA+ 6% aa\" (p. 2)\n\n5. **Patrimônio Líquido e Valor Patr. da Cota:** O patrimônio líquido é de R$ 38,988 milhão e o valor patrimonial da cota é R$ 1,03.\n   > \"PATRIMÔNIO LÍQUIDO1: 38.988.189\" (p. 2)\n\n6. **Taxa de Performance:** A taxa de performance será cobrada após o retorno total do capital aportado pelos participantes.\n   > \"Taxa de Perfomance Kinea Investimentos gestor 6 anos\" (p. 2)\n\n7. **Projeção de Chamadas de Capital:** As chamadas de capital estão programadas para os próximos trimestres, com expectativas variáveis.\n   > \"CHAMADAS DE CAPITAL\n   Data Valor (R$)\n   Mai/2025 29.767.500\n   Nov/2025 2.250.000\n   Mai/2026 7.202.951\n   Total 39.220.451\" (p. 3)\n\n8. **Rendimentos Irregulares:** Houve rendimentos declarados em um mês com dividend yield acima de zero.\n   > \"rendimentos irregulares: 1/12 meses com dividend yield declarado acima de zero\" (p. 1)\n\n### O que observar em seguida:\n- Monitorar a evolução das vendas, especialmente dos apartamentos e studios.\n- Observar o início das obras e sua progressão.\n- Verificar as chamadas de capital programadas para os próximos trimestres."
+  },
+  "comunicados": {
+    "ids": [
+      794024,
+      1030693
+    ],
+    "datas": [
+      "03/12/2024",
+      "07/11/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### Fato Relevante entregue em 03/12/2024\n\n**O QUE aconteceu:** A KINEA PRIME RESIDENCIAL I PVT FII realizou a sua primeira emissão de cotas.\n\n**Resumo:** O fundo foi constituído e iniciou a oferta pública primária das suas primeiras cotas, com características detalhadas na documentação.\n\n**Trecho-chave:**\n\"Em 13 de novembro de 2024 foi formalizado o Instrumento Particular de Deliberação Conjunta de Constituição do Fundo, por meio do qual, dentre outras coisas, o Administrador e a KINEA INVESTIMENTOS LTDA. aprovaram (i) a constituição do Fundo e o seu regulamento; e (ii) a oferta pública de distribuição de cotas da 1ª emissão do Fundo.\"\n\n### Comunicado ao Mercado entregue em 07/11/2025\n\n**O QUE aconteceu:** A KINEA PRIME RESIDENCIAL I PVT FII realizou uma retificação na 2ª chamada de capital das cotas da 1ª emissão.\n\n**Resumo:** Houve um ajuste no valor da cota, resultando em uma mudança na quantidade de cotas a serem integralizadas.\n\n**Trecho-chave:**\n\"A Retificação deste Comunicado refere-se à 2ª Chamada de Capital, está ocorrendo, por uma questão sistêmica de parametrização nas casas decimais do valor da cota no sistema da B3. Onde haverá o ajuste no valor da cota, no qual passará de R$ 1,01343130 (um real, um milhão trezentos e quarenta e três mil cento e trinta centésimos de milionésimo) para R$ 1,01 (um real e um centavo). Com isso a quantidade de cotas a serem integralizadas sofrerá uma alteração passando de 2.220.078 (dois milhões, duzentos e vinte mil e setenta e oito) para 2.227.653 (dois milhões, duzentos e vinte sete mil e seiscentos e cinquenta e três).\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares",
+      "Base de cotistas muito pequena",
+      "Fundo novo — histórico curto"
+    ],
+    "cota": null
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "ticker": "ABTC11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:07:05",
+  "comunicados": {
+    "ids": [
+      1241682,
+      1241667
+    ],
+    "datas": [
+      "07/07/2026",
+      "07/07/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### O QUE aconteceu: Início do Período de Negociação das Cotas da Classe Única\n\n**Resumo:** O BTG Pactual iniciou o período de negociação das cotas da classe única do fundo de índice Bitcoin Fear Arbitrage em 14 de julho de 2026.\n\n**Trecho-chave:**\n\"Em 14 de julho de 2026, será iniciado o período negociação da Classe, no mercado secundário, sob o código de negociação 'ABTC11', nome de pregão BTGP ABTC; e código ISIN BRABTCCTF002, pelo valor inicial de R$ 100,00 (cem reais).\"\n\n---\n\n### O QUE aconteceu: Início do Período de Negociação das Cotas da Classe Única\n\n**Resumo:** O BTG Pactual iniciou o período de negociação das cotas da classe única do fundo de índice Bitcoin Fear Arbitrage em 15 de julho de 2026.\n\n**Trecho-chave:**\n\"Em 15 de julho de 2026, será iniciado o período negociação da Classe, no mercado secundário, sob o código de negociação 'ABTC11', nome de pregão BTGP ABTC; e código ISIN BRABTCCTF002, pelo valor inicial de R$ 100,00 (cem reais).\"\n\n---\n\n**Conexão com Indicadores do Contexto:** Ambos os comunicados informam sobre o início da negociação das cotas do fundo de índice Bitcoin Fear Arbitrage, que reflete as variações e rentabilidade do Índice Teva Bitcoin Fear Arbitrage."
+  },
+  "modelo": "qwen2.5:7b"
+}

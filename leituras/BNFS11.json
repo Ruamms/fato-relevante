@@ -1,0 +1,53 @@
+{
+  "ticker": "BNFS11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T04:00:27",
+  "relatorio": {
+    "id": 1246734,
+    "data_entrega": "14/07/2026 11:36",
+    "texto": "### Tópicos Factuais\n\n1. **Alienação de Imóveis:**\n   \"Em 15 de maio de 2026, foi divulgado o Termo de Apuração de Resultado da Consulta Formal aos Cotistas, informando que os Cotistas aprovaram: (i) a alienação do imóvel comercial localizado na Avenida João Pereira de Vargas, nº 1.460, Camboim, Sapucaia do Sul/RS, objeto da matrícula nº 18.647 do 1º Registro de Imóveis de Sapucaia do Sul (\"Imóvel Sapucaia do Sul\");\" (p. 3)\n\n2. **Contratos de Locação:**\n   \"Em 03 de Março de 2026, foi divulgado o Fato Relevante informando aos cotistas do Fundo e ao mercado que foram celebrados os novos Contratos de Locação Comercial com o BANRISUL, referente aos imóveis abaixo descritos:\" (p. 3)\n\n   - **Agência Belém Novo:** \"O novo Contrato foi celebrado em 08 de dezembro de 2025, possui prazo de vigência de 60 (sessenta) meses, com início em 14 de março de 2026 e término em 13 de março de 2031. O valor mensal do aluguel foi fixado em R$ 23.600,00 (vinte e três mil e seiscentos reais), com reajuste anual pelo IPCA.\" (p. 3)\n   \n   - **Agência General Câmara:** \"O novo Contrato foi celebrado em 03 de março de 2026, possui prazo de vigência de 60 (sessenta) meses, com início em 27 de abril de 2026 e término em 26 de abril de 2031. O valor mensal do aluguel foi fixado em R$ 13.150,00 (treze mil, cento e cinquenta reais), com reajuste anual pelo IPCA.\" (p. 3)\n   \n   - **Agência Quaraí:** \"O contrato firmado possui prazo de vigência de 60 (sessenta) meses, com início em 17 de maio de 2026 e término em 16 de maio de 2031, contemplando a continuidade da relação locatícia mantida entre as partes. O valor mensal do aluguel foi fixado em R$ 13.470,00 (treze mil, quatrocentos e setenta reais), com reajuste anual pelo IPCA.\" (p. 3)\n\n3. **Venda a Prazo de Imóvel:**\n   \"O imóvel comercial localizado em Camboim, Sapucaia do Sul/RS, foi vendido a prazo, tendo sido constituída alienação fiduciária em favor do Fundo como garantia do pagamento do saldo remanescente do preço (conforme Fato Relevante divulgado em 11/06/2026).\" (p. 3)\n\n4. **Vacância:**\n   \"A vacância da carteira de imóveis é de 1,48%.\" (p. 1)\n\n### O que observar em seguida:\n\n- Monitorar a comercialização dos imóveis vagos e os resultados financeiros do fundo.\n- Observar as condições das novas locações celebradas e seu impacto no fluxo de caixa futuro."
+  },
+  "comunicados": {
+    "ids": [
+      1252620,
+      1251353,
+      1218048,
+      1199537,
+      1195977
+    ],
+    "datas": [
+      "17/07/2026",
+      "16/07/2026",
+      "11/06/2026",
+      "19/05/2026",
+      "15/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 17/07/2026\n\n**O QUE aconteceu:** Contrato de locação comercial celebrado entre o Fundo e o Banco do Estado do Rio Grande do Sul S.A. - BANRISUL para a Agência Cruz Alta.\n\n**Resumo:** O Fundo firmou um contrato de locação com o BANRISUL, que começará em outubro de 2026, prevendo aluguel mensal e reajustes anuais.\n\n**Trecho-chave:**\n\"O Contrato possui prazo de vigência de 60 (sessenta) meses, com início em 14 de outubro de 2026 e término em 13 de outubro de 2031, contemplando a continuidade da relação locatícia mantida entre as partes. O valor mensal do aluguel foi fixado em R$ 51.300,00 (cinquenta e um mil e trezentos reais), a ser pago até o décimo dia do mês subsequente ao vencido, com reajuste anual pelo Índice de Preços ao Consumidor Amplo – IPCA.\"\n\n### FATO RELEVANTE entregue em 16/07/2026\n\n**O QUE aconteceu:** Contrato de locação comercial celebrado entre o Fundo e o Banco do Estado do Rio Grande do Sul S.A. - BANRISUL para a Agência Cruz Alta.\n\n**Resumo:** O Fundo firmou um contrato de locação com o BANRISUL, que começará em outubro de 2026, prevendo aluguel mensal e reajustes anuais.\n\n**Trecho-chave:**\n\"O Contrato possui prazo de vigência de 60 (sessenta) meses, com início em 14 de outubro de 2026 e término em 13 de outubro de 2031, contemplando a continuidade da relação locatícia mantida entre as partes. O valor mensal do aluguel foi fixado em R$ 51.300,00 (cinquenta e um mil e trezentos reais), a ser pago até o décimo dia do mês subsequente ao vencido, com reajuste anual pelo Índice de Preços ao Consumidor Amplo – IPCA.\"\n\n### ASSEMBLEIA AGE entregue em 15/05/2026\n\n**O QUE aconteceu:** Assembleia Geral Extraordinária aprovou a alienação do imóvel comercial localizado na Avenida João Pereira de Vargas, nº 1.460, Camboim, Município de Sapucaia do Sul, RS.\n\n**Resumo:** Os cotistas aprovaram a venda do imóvel por R$ 1.166.000,00, com pagamento em 12 parcelas mensais e sinal à vista.\n\n**Trecho-chave:**\n\"Com relação ao item (i) da ordem do dia, os Cotistas detentores de 32,11% das cotas emitidas do Fundo, excluindo-se do cômputo as cotas dos Cotistas declaradamente conflitados e impedidos de votar, resolveram APROVAR a alienação do imóvel comercial localizado na Avenida João Pereira de Vargas, nº 1.460, Camboim, Município de Sapucaia do Sul, Estado do Rio Grande do Sul, objeto da matrícula nº 18.647 do 1º Registro de Imóveis de Sapucaia do Sul (“Imóvel Sapucaia do Sul”), pelo preço total de R$ 1.166.000,00 (um milhão, cento e sessenta e seis mil reais), a ser pago pelo comprador mediante: (a) pagamento de sinal no valor de R$ 500.000,00 (quinhentos mil reais); (b) 12 (doze) parcelas mensais, fixas e sucessivas, no valor de R$ 50.000,00 (cinquenta mil reais) cada; e (c) comissão de intermediação/corretagem no valor de R$ 66.000,00 (sessenta e seis mil reais), a qual será integralmente suportada pelo comprador, não implicando quaisquer ônus ao Fundo.\"\n\n### ASSEMBLEIA AGE entregue em 19/05/2026\n\n**O QUE aconteceu:** Assembleia Geral Ordinária aprovou as Demonstrações Financeiras do Fundo referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** Os cotistas aprovaram as demonstrações financeiras do Fundo para o ano de 2025, com quórum representando 14,26% das cotas em circulação.\n\n**Trecho-chave:**\n\"Após análises das respostas dos Cotistas à Consulta Formal, foi apurado que (a) Cotistas representando 8.86% das cotas em circulação aprovaram, sem quaisquer ressalvas ou restrições, as Demonstrações Financeiras do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "VP/cota em queda relevante",
+      "P/VP muito abaixo da média histórica"
+    ],
+    "cota": 39.95
+  },
+  "parecer": {
+    "id": 1148464,
+    "data_entrega": "30/03/2026 18:09",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Banrisul Novas Fronteiras Fundo de Investimento Imobiliário- Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábei"
+  }
+}

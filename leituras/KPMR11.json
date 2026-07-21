@@ -1,0 +1,44 @@
+{
+  "ticker": "KPMR11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T02:40:07",
+  "relatorio": {
+    "id": 1249588,
+    "data_entrega": "15/07/2026 17:43",
+    "texto": "### Fatos Extraídos:\n\n1. **Vendas de Unidades:** No mês de junho, foram vendidas 27 unidades studio, totalizando 71,9% das unidades studio já comercializadas.\n   > \"Destacamos no mês de junho a comercialização de mais 27 unidades na modalidade studio para além das 42 unidades vendidas em maio, atingindo a expressiva marca de 71,9% vendido dessa tipologia.\" (p. 3)\n\n2. **Obtenção do Alvará e Início das Obras:** Obteve-se o Alvará de Execução durante o mês de junho e foi mobilizado o canteiro para início das obras.\n   > \"Destacamos a obtenção do Alvará de Execução durante o mês de junho e a mobilização do canteiro para início das obras.\" (p. 2)\n\n3. **Taxa de Administração:** A taxa de administração é de 1,15% ao ano.\n   > \"1,15%\" Taxa de Administração3 (p. 2)\n\n4. **Taxa de Performance:** A taxa de performance será cobrada após o retorno total do capital aportado pelos participantes.\n   > \"20% do que exceder IPCA+ 6% aa\" Taxa de Perfomance (p. 2)\n\n5. **Previsão de Retorno:** O projeto prevê um retorno de IPCA + 9,0% ao ano.\n   > \"Por fim, a expectativa de retorno para o projeto se mantém em IPCA + 9,0% a.a.\" (p. 2)\n\n6. **Vendas de Apartamentos:** As vendas de apartamentos permanecem estáveis com 43,0% das unidades já comercializadas.\n   > \"% VENDAS Apartamento 43,0%\" (p. 3)\n\n7. **Patrimônio Líquido e Valor Patr. da Cota:** O patrimônio líquido do fundo é de R$ 90,3 milhões e o valor patrimonial da cota é de R$ 10.331,00.\n   > \"PATRIMÔNIO LÍQUIDO1: R$ 90,3M\" (p. 1)  \n   > \"VALOR PATR. DA COTA1: R$ 10.331,00\" (p. 2)\n\n8. **Comercialização de Alto Padrão:** O lançamento do projeto de alto padrão está em andamento com ações de marketing para divulgação.\n   > \"O projeto permanece com a excelente marca de 43,4% vendido nas unidades maiores, resultado acima do previsto originalmente.\" (p. 2)\n\n### O que observar em seguida:\n- Monitorar as vendas de apartamentos e studio no próximo relatório.\n- Observar o andamento das obras e a obtenção dos alvarás necessários para o projeto."
+  },
+  "comunicados": {
+    "ids": [
+      1048998,
+      1013269
+    ],
+    "datas": [
+      "27/11/2025",
+      "14/10/2025"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA GERAL EXTRAORDINÁRIA — 27/11/2025\n\n**O QUE aconteceu:** A assembleia geral extraordinária do KINEA PRIME RESIDENCIAL I FII aprovou as demonstrações contábeis do fundo, acompanhadas pelo relatório dos auditores independentes.\n\n**Resumo:** A reunião foi realizada em 27 de novembro de 2025 e confirmou os resultados financeiros do exercício social findo em 30 de junho de 2025.\n\n**Trecho-chave:**\n\"APROVADAS AS DEMONSTRAÇÕES CONTÁBEIS DO FUNDO, DEVIDAMENTE ACOMPANHADAS DO RELATÓRIO DOS AUDITORES INDEPENDENTES, DOCUMENTOS DISPOSBILIZADOS AOS COTISTAS NOS TERMOS DA REGULAMENTAÇÃO EM VIGOR, RELATIVOS AO EXERCÍCIO SOCIAL FINDO EM 30.06.2025\" (p. 1)\n\n### CONSULTA FORMAL ELETRÔNICA — 14/10/2025\n\n**O QUE aconteceu:** A Intrag Distribuidora de Títulos e Valores Mobiliários Ltda., administradora do KINEA PRIME RESIDENCIAL I FII, submeteu a consulta formal eletrônica aos cotistas para aprovar as demonstrações financeiras, notas explicativas e parecer dos auditores independentes referentes ao exercício social findo em 30 de junho de 2025.\n\n**Resumo:** A administradora solicitou a aprovação das demonstrações contábeis do fundo no site oficial da empresa até o dia 27 de novembro de 2025.\n\n**Trecho-chave:**\n\"APROVAR AS DEMONSTRAÇÕES FINANCEIRAS, NOTAS EXPLICATIVAS E PARECER DOS AUDITORES INDEPENDENTES, RELATIVAS AO EXERCÍCIO SOCIAL FINDO EM 30 DE JUNHO DE 2025\" (p. 1)"
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares",
+      "Fundo novo — histórico curto"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 1001612,
+    "data_entrega": "29/09/2025 21:27",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o período de 18 de dezembro de 2024 (início das atividades) a 30 de junho de 2025, de acordo com as práticas contábeis adotadas no Brasil, aplicávei"
+  }
+}

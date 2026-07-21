@@ -1,0 +1,33 @@
+{
+  "ticker": "FIGV11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:41:40",
+  "comunicados": {
+    "ids": [
+      1153145,
+      1251016,
+      1210736
+    ],
+    "datas": [
+      "02/04/2026",
+      "16/07/2026",
+      "02/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGO"
+    ],
+    "texto": "### Comunicado ao Mercado entregue em 02/04/2026\n\n**O QUE aconteceu:** A Administradora do Fundo de Investimento Imobiliário GV Blue Chip informou a divulgação das Demonstrações Financeiras referentes ao exercício encerrado em 31 de dezembro de 2025, com qualificação por parte dos auditores independentes.\n\n**Resumo:** A Administração adotou medidas rigorosas para gerenciar os impactos da qualificação e buscar a resolução dos problemas identificados.\n\n**Trecho-chave:**\n\"Em linha com as melhores práticas de governança corporativa e com o compromisso de transparência para com os cotistas do Fundo e o mercado, foram adotadas uma série de medidas rigorosas para gerenciar os impactos desta qualificação e buscar a resolução dos problemas identificados.\"\n\n---\n\n### Assembleia AGE entregue em 16/07/2026\n\n**O QUE aconteceu:** A Assembleia Geral Extraordinária (AGE) do Fundo de Investimento Imobiliário GV Blue Chip deliberou sobre a retificação do prazo de liquidação do Fundo e o plano definitivo de encerramento.\n\n**Resumo:** Os cotistas aprovaram a retificação do prazo de liquidação, autorizando a Administração a proceder com o encerramento do Fundo, incluindo a contratação de um auditor independente para emitir parecer sobre as demonstrações contábeis.\n\n**Trecho-chave:**\n\"Os cotistas do Fundo, conforme assinatura na lista de presença, por unanimidade, sem ressalvas, aprovam: 1) A retificação do prazo de liquidação do Fundo, estipulando-se que o referido procedimento deverá ser integralmente concluído até o dia 15 de julho de 2026.\"\n\n---\n\n### Assembleia AGO entregue em 02/06/2026\n\n**O QUE aconteceu:** A Assembleia Geral Ordinária (AGO) do Fundo de Investimento Imobiliário GV Blue Chip aprovou as contas e demonstrações contábeis referentes aos exercícios sociais findos em 31/12/2024 e 31/12/2025.\n\n**Resumo:** Os cotistas autorizaram a Administração a tomar todas as providências para implementar as deliberações aprovadas, declarando-se cientes das deliberações e dispensando o envio do resumo das deliberações da presente ata.\n\n**Trecho-chave:**\n\"Os Cotistas autorizam a Administradora e a Gestora a tomar todas as providências para a implementação das deliberações aqui aprovadas.\"\n\n---\n\n### Conexão com Indicadores\n\n- **Demonstrações Financeiras Qualificadas:** As demonstrações financeiras qualificadas referentes ao exercício encerrado em 31 de dezembro de 2025 foram divulgadas, indicando possíveis problemas na contabilidade da Companhia Investida.\n- **Plano de Liquidação Definitivo:** A AGE deliberou sobre o plano definitivo de encerramento do Fundo, incluindo a apuração de haveres e amortização integral das cotas dos cotistas."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1151520,
+    "data_entrega": "31/03/2026 20:15",
+    "tipo": "abstencao",
+    "rotulo": "abstenção de opinião",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Não expressamos uma opinião sobre as demonstrações contábeis do FUNDO DE INVESTIMENTO IMOBILIÁRIO GV BLUE CHIP RESPONSABILIDADE LIMITADA pois, devido à relevância do assunto descrito na seção a seguir intitulada “Base para ab stenção de opinião”, não nos foi possível obter evidências de auditoria apropriadas e suficientes p ara fundamentar nossa opinião de auditoria sobre essas demonstrações contá"
+  }
+}

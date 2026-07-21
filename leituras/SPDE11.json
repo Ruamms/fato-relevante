@@ -1,0 +1,42 @@
+{
+  "ticker": "SPDE11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T01:18:26",
+  "comunicados": {
+    "ids": [
+      1071168,
+      907995,
+      811369,
+      955611,
+      1179197,
+      1179196
+    ],
+    "datas": [
+      "26/12/2025",
+      "16/05/2025",
+      "30/12/2024",
+      "29/07/2025",
+      "04/05/2026",
+      "04/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### O que aconteceu em 26/12/2025\n\n**Título:** Reavaliação Patrimonial Positiva de 34,31%\n\n**Resumo:** A reavaliação patrimonial do Fundo SPDE11 resultou em um aumento de 34,31% na cota de fechamento do dia 24/12/2025 em relação ao dia anterior.\n\n**Trecho-chave:**\n\"Esta Reavaliação ocasionou um impacto positivo de 34,31% (trinta e quatro vírgula trinta e um por cento) no valor da cota de fechamento do dia 24/12/2025 em relação a cota do dia 23/12/2025.\"\n\n---\n\n### O que aconteceu em 16/05/2025\n\n**Título:** Reavaliação Patrimonial Positiva de 10,49%\n\n**Resumo:** A reavaliação patrimonial do Fundo SPDE11 resultou em um aumento de 10,49% na cota de fechamento do dia 30/12/2024 em relação ao dia anterior.\n\n**Trecho-chave:**\n\"Esta Reavaliação ocasionou um impacto positivo de 10,49% (dez vírgula quarenta e nove por cento) no valor da cota de fechamento do dia 30/12/2024 em relação a cota do dia 31/12/2024.\"\n\n---\n\n### O que aconteceu em 30/12/2024\n\n**Título:** Reavaliação Patrimonial Positiva de 32,87%\n\n**Resumo:** A reavaliação patrimonial do Fundo SPDE11 resultou em um aumento de 32,87% na cota de fechamento do dia 27/12/2024 em relação ao dia anterior.\n\n**Trecho-chave:**\n\"Esta Reavaliação ocasionou um impacto positivo de 32,87% (trinta e dois vírgula oitenta e sete por cento) no valor da cota de fechamento do dia 27/12/2024 em relação a cota do dia 26/12/2024.\"\n\n---\n\n### O que aconteceu em 29/07/2025\n\n**Título:** Adaptação ao Regulamento de Resolução CVM nº 175\n\n**Resumo:** A administradora do Fundo SPDE11 informou sobre a adaptação do regulamento do Fundo à Resolução CVM nº 175, sem alterações que dependam de deliberação dos cotistas.\n\n**Trecho-chave:**\n\"A XP CORRETORA DE CÂMBIO, TÍTULOS E VALORES MOBILIÁRIOS S.A., com sede na Praia De Botafogo, 501, BLC I SAL 501, Botafogo, na cidade e Estado do Rio de Janeiro, CEP 22.250-911, inscrita no CNPJ nº 02.332.886/0001 -04, na qualidade de instituição administradora ('' Administradora') do WHG FINVEST SP REALTY FUNDO DE INVESTIMENTO IMOBILIÁRIO vem, por meio desta, informar os cotistas sobre a adaptação do regulamento do Fundo a Resolução da CVM nº 175, de 23 de dezembro de 2022, conforme alterada ('' Resolução CVM 175 '').\"\n\n---\n\n### O que aconteceu em 04/05/2026\n\n**Título:** Assembleia Geral Ordinária de Cotistas\n\n**Resumo:** A assembleia geral ordinária realizada em 04 de maio de 2026 aprovou as demonstrações financeiras, notas explicativas e parecer dos auditores independentes do exercício social findo em 31.12.2025.\n\n**Trecho-chave:**\n\"Observado o art. 71 da Instrução CVM 175/2022, restam aprovadas: (i) As Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 31.12.2025, os quais estão disponíveis no website da CVM, através do endereço eletrônico https://www.gov.br/cvm/pt-br/assuntos/regulados/consultas-por-participante/fundos-de-investimento, seguindo a rota: Fundos Registrados > Inserir CNPJ do Fundo > Demonstrações contábeis.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1151972,
+    "data_entrega": "31/03/2026 22:54",
+    "tipo": "nao_identificado",
+    "rotulo": "parecer não identificado no texto",
+    "grave": false,
+    "continuidade": false,
+    "trecho": ""
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "ticker": "SMAC11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T07:08:45",
+  "comunicados": {
+    "ids": [
+      1228512,
+      1221515
+    ],
+    "datas": [
+      "25/06/2026",
+      "15/06/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA AGO entregue em 15/06/2026\n\n**O que aconteceu:** A Itaú Unibanco S.A., como administradora do IT NOW SMALL CAPS FUNDO DE ÍNDICE, convocou a assembleia geral de cotistas para deliberar sobre as demonstrações financeiras e notas explicativas relativas ao exercício social encerrado em 28/02/2026.\n\n**Resumo:** A assembleia foi convocada para discutir os resultados financeiros do último exercício social.\n\n**Trecho-chave:**\n\"Deliberar sobre as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes, relativos ao exercício social encerrado em 28/02/2026.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 25/06/2026\n\n**O que aconteceu:** A Itaú Unibanco S.A., como administradora do IT NOW SMALL CAPS FUNDO DE ÍNDICE, retificou e ratificou o edital de convocação da assembleia geral de cotistas para deliberar sobre as demonstrações financeiras e notas explicativas relativas ao exercício social encerrado em 31/03/2025 e 31/03/2026.\n\n**Resumo:** A assembleia foi retificada com a alteração da ordem do dia e da data de manifestação, mantendo o objetivo de discutir os resultados financeiros dos dois últimos exercícios sociais.\n\n**Trecho-chave:**\n\"Deliberar sobre as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes referentes ao Fundo, relativos ao exercício social encerrado em 31 de março de 2025 e 31 de março de 2026.\"\n\n**Conexão com o contexto:** Ambos os documentos se conectam aos indicadores financeiros do fundo, sendo essenciais para a avaliação dos desempenhos nos últimos exercícios."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1209710,
+    "data_entrega": "01/06/2026 17:36",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do It Now Small Caps Fundo de Índice Responsabilidade Limitada em 31 de março de 2026 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos Fundos de Investime"
+  }
+}

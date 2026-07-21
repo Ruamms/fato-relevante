@@ -1,0 +1,59 @@
+{
+  "ticker": "RBIR11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T01:38:32",
+  "relatorio": {
+    "id": 1235907,
+    "data_entrega": "30/06/2026 18:46",
+    "texto": "### Fatos Extraídos:\n\n1. **Entregas de Projetos:**\n   - O relatório destaca a entrega dos empreendimentos Brooklin 90, LED Vila Madalena e Astéri. (p. 2)\n\n2. **Cenário do Mercado Imobiliário Residencial:**\n   - Em abril/2026, as vendas totalizaram 9.588 unidades, com uma queda de 11,7% em comparação a março, mas um aumento de 2,9% em relação a abril/2025.\n   - Os lançamentos foram de 11.620 unidades, uma diminuição de 20,9% em relação a março, mas um aumento de 45,7% em comparação a abril/2025. (p. 3)\n\n3. **Evolução do Portfólio:**\n   - Cerca de 82% das unidades foram comercializadas.\n   - Três projetos seguem em fase de obras com 97,8% de avanço físico médio.\n   - Dois projetos já foram concluídos e entregues. (p. 3)\n\n4. **Evolução Física de Obras:**\n   - Houve um avanço de 0,40% em relação ao mês anterior, chegando a 97,84% do acumulado. (p. 3)\n\n5. **Vendas sobre Estoque Lançado:**\n   - Foram vendidas 50 unidades residenciais no portfólio, representando 81,8% do estoque lançado. (p. 3)\n\n6. **Valor Patrimonial do Fundo:**\n   - O valor patrimonial atualizado do fundo é de R$ 120,4 milhões.\n   - A cota patrimonial de fechamento é de R$ 78,77. (p. 5)\n\n### Observações a Seguir:\n- Monitorar o progresso das obras dos projetos em andamento e as vendas futuras.\n- Verificar como os aumentos nos custos de construção afetam a rentabilidade dos projetos."
+  },
+  "comunicados": {
+    "ids": [
+      1200757,
+      1180456,
+      1133443,
+      1238371,
+      1152853,
+      1062956,
+      1051127
+    ],
+    "datas": [
+      "21/05/2026",
+      "05/05/2026",
+      "11/03/2026",
+      "02/07/2026",
+      "01/04/2026",
+      "15/12/2025",
+      "01/12/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 21/05/2026\n\n**O QUE aconteceu:** Postergação do prazo para envio do custo médio unitário de aquisição das cotas.\n\n**Resumo:** A Administradora postergou o prazo para os cotistas informarem seu respectivo custo médio unitário de aquisição de cotas do RBIR11, que agora termina em 21/05/2026. \n\n**Trecho-chave:**\n```\nPrazo de envio de Custo Médio à Administradora 02/04/2026 05/06/2026\nApuração pela Administradora do Custo Médio 08/06/2026 12/06/2026\nData de Pagamento da Amortização Extraordinária 19/06/2026\n```\n\n### FATO RELEVANTE entregue em 05/05/2026\n\n**O QUE aconteceu:** Postergação do prazo para envio do custo médio unitário de aquisição das cotas.\n\n**Resumo:** A Administradora postergou o prazo para os cotistas informarem seu respectivo custo médio unitário de aquisição de cotas do RBIR11, que agora termina em 21/05/2026. \n\n**Trecho-chave:**\n```\nPrazo de envio de Custo Médio à Administradora 02/04/2026 21/05/2026\nApuração pela Administradora do Custo Médio 22/05/2026 27/05/2026\nData de Pagamento da Amortização Extraordinária 29/05/2026\n```\n\n### FATO RELEVANTE entregue em 11/03/2026\n\n**O QUE aconteceu:** Postergação do prazo para envio do custo médio unitário de aquisição das cotas.\n\n**Resumo:** A Administradora postergou o prazo para os cotistas informarem seu respectivo custo médio unitário de aquisição de cotas do RBIR11, que agora termina em 20/03/2026. \n\n**Trecho-chave:**\n```\nPrazo de envio de Custo Médio à Administradora 04/02/2026 20/03/2026\nApuração pela Administradora do Custo Médio 23/03/2026 30/03/2026\nData de Pagamento da Amortização Extraordinária 31/03/2026\n```\n\n### COMUNICADO AO MERCADO entregue em 02/07/2026\n\n**O QUE aconteceu:** Postergação do prazo para envio do custo médio unitário de aquisição das cotas.\n\n**Resumo:** A Administradora postergou o prazo para os cotistas informarem seu respectivo custo médio unitário de aquisição de cotas do RBIR11, que agora termina em 31/07/2026. \n\n**Trecho-chave:**\n```\nPrazo de envio de Custo Médio à Administradora 02/07/2026 31/07/2026\nApuração pela Administradora do Custo Médio 03/08/2026 05/08/2026\nPrazo para correção das informações \ndisponibilizadas pelos Cotistas que tiveram os \nformulários de Custo Médio devolvidos pela \nAdministradora \n05/08/2026 11/08/2026\nData de Pagamento da Amortização Extraordinária 14/08/2026\n```\n\n### ASSEMBLEIA AGE entregue em 15/12/2025\n\n**O QUE aconteceu:** Prorrogação do prazo de duração do Fundo.\n\n**Resumo:** A Assembleia Geral Extraordinária dos cotistas aprovou a prorrogação do prazo de duração do Fundo pelo período adicional de até 18 meses, contados a partir de 20 de fevereiro de 2026. \n\n**Trecho-chave:**\n```\nDiante do exposto, a Administradora e a Gestora ficam, desde já, autorizadas a adotar todas as\nmedidas necessárias à implementação das deliberações ora aprovadas, incluindo a prática de\nquaisquer atos e a assinatura de todos os documentos ou instrumentos pertinentes, em estrita\nobservância às disposições aplicáveis do Regulamento.\n```\n\n### ASSEMBLEIA AGE entregue em 01/12/2025\n\n**O QUE aconteceu:** Convocação da Assembleia Geral Extraordinária para prorrogação do prazo de duração do Fundo.\n\n**Resumo:** A Administração convocou a Assembleia Geral Extraordinária dos cotistas para deliberar sobre a prorrogação do prazo de duração do Fundo pelo período adicional de até 18 meses, contados a partir de 20 de fevereiro de 2026.\n\n**Trecho-chave:**\n```\nFicam convidados os Srs. Cotistas do RB CAPITAL DESENVOLVIMENTO RESIDENCIAL IV FUNDO DE\nINVESTIMENTO IMOBILIÁRIO – FII – RESP. LTDA. (“Fundo”),  vem, por meio da presente,\nconvocar V.Sas. a participar da Assembleia Geral Extraordinária do Fundo (AGE), nos termos do artigo 70, inciso V, da Resolução CVM nº 175, de 23 de dezembro de\n2022 (“CVM 175”) e do item 12.3 e seguintes do Regulamento vigente do Fundo a se reunirem\nna AGE, de forma exclusivamente eletrônica, conforme definido abaixo, a realizar-se no dia 15\nde dezembro de 2025, às 15:00h , para deliberar sobre a prorrogação do prazo de duração do\nFundo, pelo prazo adicional de até 18 (dezoito) meses, contados a partir de 20 de fevereiro de\n2026.\n```"
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "VP/cota em queda relevante",
+      "Rendimentos irregulares"
+    ],
+    "cota": 74.0
+  },
+  "parecer": {
+    "id": 998217,
+    "data_entrega": "25/09/2025 10:37",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do RB Capital Desenvolvimento Residencial IV Fundo de Investimento Imobiliário - FII - Responsabilidade Limitada em 30 de junho de 2025 e o desempenho de suas operações e fluxos de caixa para o exercício findo nesta data, de acordo com as prát"
+  }
+}

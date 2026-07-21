@@ -1,0 +1,36 @@
+{
+  "ticker": "LFIN11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:43:35",
+  "comunicados": {
+    "ids": [
+      1248289,
+      1187153,
+      1248287,
+      1224654
+    ],
+    "datas": [
+      "15/07/2026",
+      "12/05/2026",
+      "15/07/2026",
+      "19/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 15/07/2026\n\n**O QUE aconteceu:** As contas anuais do Fundo foram aprovadas.\n\n**Resumo:** A assembleia geral de cotistas realizada em 6 de julho de 2026 aprovou as contas anuais do BTG Pactual Teva Letras Financeiras Di Qualidade Fundo de Índice referente ao exercício encerrado em 31 de março de 2026.\n\n**Trecho-chave:** \"foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de março de 2026.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 12/05/2026\n\n**O QUE aconteceu:** A forma de divulgação da remuneração dos Prestadores de Serviços Essenciais foi atualizada.\n\n**Resumo:** A BTG Pactual Serviços Financeiros S.A. DTVM informou que a forma de divulgação da remuneração dos Prestadores de Serviços Essenciais foi atualizada, passando a ser realizada exclusivamente por meio da Ferramenta ANBIMA, conforme as diretrizes estabelecidas pelo Ofício-Circular CVM nº 1/2025.\n\n**Trecho-chave:** \"restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\" (p. 1)\n\n---\n\n### ASSEMBLEIA GERAL DE COTISTAS AGO entregue em 15/07/2026\n\n**O QUE aconteceu:** As contas anuais do Fundo foram aprovadas.\n\n**Resumo:** A assembleia geral de cotistas realizada via manifestação de voto em 6 de julho de 2026 aprovou as contas e demonstrações contábeis do BTG Pactual Teva Letras Financeiras Di Qualidade Fundo de Índice referente ao exercício social encerrado em 31 de março de 2026.\n\n**Trecho-chave:** \"Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de março de 2026.\" (p. 4)\n\n---\n\n### ASSEMBLEIA GERAL DE COTISTAS AGO entregue em 19/06/2026\n\n**O QUE aconteceu:** Convocação para a assembleia geral de cotistas.\n\n**Resumo:** A BTG Pactual Serviços Financeiros S.A. Distribuidora de Títulos e Valores Mobiliários convocou os cotistas do BTG Pactual Teva Letras Financeiras Di Qualidade Fundo de Índice para deliberarem sobre a aprovação das contas anuais do exercício social encerrado em 31 de março de 2026.\n\n**Trecho-chave:** \"A convocar os cotistas do Fundo (“Cotistas”) para a Consulta Formal, com prazo de recebimento de votos até 6 de julho de 2026, para deliberarem sobre: (i) A aprovação das contas e demonstrações contábeis do Fundo.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208578,
+    "data_entrega": "30/05/2026 02:07",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do BTG Pactual Teva Letras Financeiras DI Qualidade Fundo de Índice em 31 de março de 2026 e o desempenho de suas operações para o período de 29 de setembro de 202 a 31 de março de 2026, de acordo com as práticas contábeis adotadas no Brasil a"
+  }
+}

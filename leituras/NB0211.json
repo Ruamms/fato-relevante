@@ -1,0 +1,18 @@
+{
+  "ticker": "NB0211",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:52:05",
+  "comunicados": {
+    "ids": [
+      1246057
+    ],
+    "datas": [
+      "13/07/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado"
+    ],
+    "texto": "**Data:** 13/07/2026\n\n**Título:** Início das Negociações da Cota do Fundo NU TESOURO IPCA B3 PRAZO 2 ANOS CLASSE DE ÍNDICE – RESPONSABILIDADE LIMITADA\n\n**Resumo:** O fundo iniciará suas operações no mercado primário em 16 de julho de 2026 e no secundário em 17 de julho de 2026, com valor inicial de R$ 50,00.\n\n**Trecho-chave:**\n\"Serão iniciados os negócios com suas cotas subscritas e integralizadas em 16 de julho de 2026 no mercado primário e em 17 de julho de 2026 no mercado secundário da B3, pelo valor inicial de R$ 50,00.\" (p. 1)\n\n**Conexão com o Contexto:** Este comunicado indica a data exata para o início das negociações do fundo, que é crucial para os investidores interessados em participar dessas operações no mercado secundário."
+  },
+  "modelo": "qwen2.5:7b"
+}

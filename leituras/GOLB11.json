@@ -1,0 +1,36 @@
+{
+  "ticker": "GOLB11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:34:23",
+  "comunicados": {
+    "ids": [
+      1248321,
+      1187146,
+      1248320,
+      1224397
+    ],
+    "datas": [
+      "15/07/2026",
+      "12/05/2026",
+      "15/07/2026",
+      "18/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 15/07/2026\n\n**O QUE aconteceu:** As contas anuais do BTG PACTUAL FUTURO DE OURO B3 FUNDO DE ÍNDICE foram aprovadas.\n\n**Resumo:** A assembleia geral de cotistas realizada em 6 de julho de 2026 aprovou as contas anuais do Fundo referente ao exercício encerrado em 31 de março de 2026.\n\n**Trecho-chave:**\n\"Na assembleia geral de cotistas realizada em 6 de julho de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de março de 2026.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 12/05/2026\n\n**O QUE aconteceu:** A forma de divulgação da remuneração dos Prestadores de Serviços Essenciais foi atualizada.\n\n**Resumo:** A BTG Pactual atualizou a forma de divulgação da remuneração dos Prestadores de Serviços Essenciais, substituindo o \"Sumário de Remuneração\" pela Ferramenta ANBIMA (Plataforma de Transparência de Taxas).\n\n**Trecho-chave:**\n\"Considerando as interpretações adicionais divulgadas pelo Ofício-Circular Conjunto nº 1/2025/CVM/SIN/SSE, restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\"\n\n---\n\n### ASSEMBLEIA GERAL DE COTISTAS entregue em 18/06/2026\n\n**O QUE aconteceu:** A assembleia geral foi convocada para aprovar as contas anuais do Fundo.\n\n**Resumo:** A BTG Pactual Serviços Financeiros S.A. Distribuidora de Títulos e Valores Mobiliários convocou os cotistas para a assembleia geral com o objetivo de aprovar as contas e demonstrações contábeis do Fundo referente ao exercício encerrado em 31 de março de 2026.\n\n**Trecho-chave:**\n\"A BTG Pactual Serviços Financeiros S.A. Distribuidora de Títulos e Valores Mobiliários, na qualidade de administradora do BTG PACTUAL FUTURO DE OURO B3 FUNDO DE INDICE, convocou os cotistas para a assembleia geral com o objetivo de aprovar as contas e demonstrações contábeis do Fundo referente ao exercício encerrado em 31 de março de 2026.\"\n\n---\n\n### ASSEMBLEIA GERAL DE COTISTAS entregue em 15/07/2026\n\n**O QUE aconteceu:** As contas anuais do BTG PACTUAL FUTURO DE OURO B3 FUNDO DE ÍNDICE foram aprovadas.\n\n**Resumo:** A assembleia geral de cotistas realizada via manifestação de voto em 6 de julho de 2026 aprovou as contas anuais do Fundo referente ao exercício encerrado em 31 de março de 2026.\n\n**Trecho-chave:**\n\"Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de março de 2026.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208595,
+    "data_entrega": "30/05/2026 10:58",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do BTG Pactual Futuro de Ouro B3 Fundo de Índice em 31 de março de 2026 e o desempenho de suas operações para o período de 23 de outubro de 2025 a 31 de março de 2026, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos Fundo"
+  }
+}

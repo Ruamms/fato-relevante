@@ -1,0 +1,29 @@
+{
+  "ticker": "RWYM11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T02:24:53",
+  "comunicados": {
+    "ids": [
+      1074694,
+      1181689
+    ],
+    "datas": [
+      "02/01/2026",
+      "07/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Assembleia AGO"
+    ],
+    "texto": null
+  },
+  "parecer": {
+    "id": 1151696,
+    "data_entrega": "31/03/2026 21:23",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário Railway Mall I - FII em 31 de dezembro de 2025 e o desempenho de suas operações para o exercício findo na mesma data , de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos Fundos de Investi"
+  }
+}

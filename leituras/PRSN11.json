@@ -1,0 +1,42 @@
+{
+  "ticker": "PRSN11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T11:35:12",
+  "comunicados": {
+    "ids": [
+      1028879,
+      811165,
+      1099471,
+      1094930,
+      1139763,
+      1122574
+    ],
+    "datas": [
+      "05/11/2025",
+      "30/12/2024",
+      "02/02/2026",
+      "28/01/2026",
+      "17/03/2026",
+      "26/02/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### Ocorrência em 26/02/2026: Consulta Formal sobre Transferência da Gestão do Fundo\n\n**O que aconteceu:** A OLIVEIRA TRUST DTVM S.A., na qualidade de administradora, convocou os cotistas para uma Assembleia Especial Extraordinária por meio de consulta formal.\n\n**Resumo:** A consulta foi realizada para aprovar a transferência da gestão do Fundo PERSONALE I FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA, atualmente exercida pela KYMAS GESTÃO DE RECURSOS LTDA., para a NIKOS GESTÃO DE RECURSOS LTDA.\n\n**Trecho-chave:**\n\"b) A transferência da gestão do Fundo, atualmente exercida pela KYMAS GESTÃO DE RECURSOS LTDA. (CNPJ/MF nº 44.062.415/0001 -65), para a NIKOS GESTÃO DE RECURSOS LTDA. (CNPJ/MF nº 52.906.220/0001 -82), autorizada a gerir a carteira de valores mobiliários, nos termos da legislação em vigor, conforme Ato Declaratório CVM nº 21.769, de 09 de fevereiro de 2024, com a respectiva alteração sendo refletida no Regulamento do Fundo.\"\n\n---\n\n### Ocorrência em 17/03/2026: Apuração da Consulta Formal\n\n**O que aconteceu:** A OLIVEIRA TRUST DTVM S.A., na qualidade de administradora, apurou os votos proferidos pelos cotistas no âmbito de uma Assembleia Especial Extraordinária realizada por meio de consulta formal.\n\n**Resumo:** A transferência da gestão do Fundo foi aprovada com 34,23% dos votos favoráveis e 0,02% abstendo-se. A alteração no Regulamento do Fundo para refletir essa mudança foi aprovada.\n\n**Trecho-chave:**\n\"i) Cotistas representando 34,23% das cotas em circulação aprovaram, sem quaisquer ressalvas ou restrições, as matérias constantes do item A.\nii) Cotistas representando 0,02% das cotas em circulação abstiveram-se da votação.\"\n\n---\n\n### Ocorrência em 30/12/2024: Classificação do Fundo\n\n**O que aconteceu:** A OLIVEIRA TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., na qualidade de administradora, informou a classificação do PERSONALE I FUNDO DE INVESTIMENTO IMOBILIÁRIO como \"Tijolo - Desenvolvimento\", com subclassificação \"Tijolo - Desenvolvimento\".\n\n**Resumo:** O Fundo passará a ser classificado como \"Tijolo\" com a subclassificação \"Tijolo - Desenvolvimento\", tipo de gestão \"Gestão Ativa\" e critério de classificação \"Multicategoria\".\n\n**Trecho-chave:**\n\"O Fundo, em atendimento ao previsto no artigo 29 do ‘Anexo Complementar VI - Regras e Procedimentos para Fundos de Investimento Imobiliário do Manual de Regras e Procedimentos de Administração e Gestão de Recursos de Terceiros (Anexo VI)’, passará a ser classificado como “Tijolo”, com a subclassificação “Tijolo - Desenvolvimento”.\n\n---\n\n### Ocorrência em 05/11/2025: Agrupamento de Cotas\n\n**O que aconteceu:** A OLIVEIRA TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., na qualidade de administradora, comunicou a aprovação do agrupamento de cotas do Fundo.\n\n**Resumo:** Cotistas representando 1,21% das cotas emitidas aprovaram o agrupamento de cotas no novo grupo de proporção 10/1. As cotas serão negociadas grupadas a partir de 08/12/2025 e as cotas não ajustadas serão vendidas em leilão.\n\n**Trecho-chave:**\n\"Em Consulta Formal realizada pelo Fundo em 20 de outubro de 2025, cujo Termo de Apuração foi divulgado nesta data, cotistas representando 1,21% do total das cotas emitidas pelo Fundo aprovaram o novo grupamento de cotas do Fundo, na proporção de 10/1.\"\n\n---\n\n### Ocorrência em 02/02/2026: Leilão das Frações de Cotas\n\n**O que aconteceu:** A OLIVEIRA TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., na qualidade de administradora, divulgou o resultado do leilão das frações de cotas remanescentes.\n\n**Resumo:** O leilão foi realizado em 29/01/2026 e a totalidade das cotas escriturais remanescentes foram vendidas. O valor total arrecadado foi R$ 2.634,08, com um preço unitário de R$ 8,08 por cota.\n\n**Trecho-chave:**\n\"O leilão foi realizado em 29 de janeiro de 2026, conforme Edital publicado na B3 em 28 de janeiro de 2026. O valor total arrecadado foi R$ 2.634,08 (dois mil, seiscentos e trinta e quatro reais e oito centavos), com um preço unitário de R$ 8,08 por cota.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 999809,
+    "data_entrega": "26/09/2025 19:01",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações ﬁnanceiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e ﬁnanceira do Fundo, para a posição de 30 de junho de 2025 e o desempenho de suas operações para o exercício ﬁndo naquela data, de acordo com as prá�cas contábeis adotadas no Brasil, aplicáveis aos fundos de inves�mento imobiliário regulamentados pela Comi"
+  }
+}

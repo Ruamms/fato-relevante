@@ -1,0 +1,30 @@
+{
+  "ticker": "AGRI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T11:45:19",
+  "comunicados": {
+    "ids": [
+      1240082,
+      1238243
+    ],
+    "datas": [
+      "06/07/2026",
+      "02/07/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Assembleia Geral Ordinária - 06/07/2026\n\n**O QUE aconteceu:** A assembleia foi realizada, mas não houve quórum.\n\n**Resumo:** A assembleia deliberou sobre as demonstrações contábeis do fundo relativas ao exercício social findo em 31/03/2026, que foram consideradas aprovadas sem opinião modificada pela Deloitte Touche Tohmatsu Auditores Independentes.\n\n**Trecho-chave:** \"consideram-se aprovadas as demonstrações contábeis do FUNDO relativas ao exercício social findo em 31/03/2026, devidamente auditada pela Deloitte Touche Tohmatsu Auditores Independentes.\" (p. 1)\n\n---\n\n### Assembleia Geral Ordinária - 29/06/2026\n\n**O QUE aconteceu:** A assembleia foi realizada sem quórum.\n\n**Resumo:** A assembleia deliberou sobre as demonstrações contábeis do fundo relativas ao exercício social findo em 31/03/2026, que foram consideradas aprovadas automaticamente por não apresentarem opinião modificada.\n\n**Trecho-chave:** \"as Demonstrações Contábeis relativas ao exercício social findo em 31/03/2026 foram consideradas automaticamente aprovadas, por não apresentarem opinião modificada.\" (p. 1)\n\n---\n\nAmbos os documentos informam que as demonstrações contábeis do fundo foram aprovadas sem opinião modificada, mas devido à ausência de quórum na assembleia."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1205960,
+    "data_entrega": "28/05/2026 11:37",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do BB ETF IAGRO-FFS B3 Fundo de Índice Responsabilidade Limitada em 31 de março de 2026 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos aos Fundos de Inve"
+  }
+}

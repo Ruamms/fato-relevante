@@ -1,0 +1,59 @@
+{
+  "ticker": "RBOP11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T02:54:12",
+  "relatorio": {
+    "id": 1235350,
+    "data_entrega": "30/06/2026 17:15",
+    "texto": "### Fatos Extraídos:\n\n1. **Obras no Edifício Bravo BH**: O fundo está acompanhando o processo de revitalização do 5º andar, com expectativa de início das obras até o final do próximo mês.\n   > \"O Fundo segue acompanhando o processo de desenvolvimento e validação dos projetos executivos necessários para a execução das obras de revitalização do 5º andar do Edifício Bravo BH.\" (p. 5)\n\n2. **Comercialização**: A gestão está atuando na prospecção de novos locatários, mantendo agendas recorrentes com consultorias imobiliárias e players relevantes da região.\n   > \"A Gestão permanece atuando de forma ativa na prospecção de novos locatários para o Edifício Bravo BH.\" (p. 5)\n\n3. **Evento com Corretores**: Após a conclusão das obras do 5º andar, será promovido um evento exclusivo voltado a corretores e parceiros do mercado imobiliário.\n   > \"Após a conclusão das obras do 5º andar, a Gestão promoverá um evento exclusivo voltado a corretores e parceiros do mercado imobiliário.\" (p. 6)\n\n4. **Guidance de Rendimentos**: A gestão optou por manter o guidance com uma faixa de distribuição, projetando um aumento de até 60% nos rendimentos.\n   > \"Para os próximos meses, a gestão projeta um aumento de até 60% nos rendimentos.\" (p. 6)\n\n5. **Vacância do Edifício Bravo BH**: A vacância do edifício é de 69,55%, sem alteração em relação ao último relatório.\n   > \"A ocupação do ativo é de 27,62% e a vacância do ativo é de 69,55%.\" (p. 10)\n\n6. **Receita Imobiliária**: A receita imobiliária no mês de maio foi de R$ 319 mil.\n   > \"Em maio o Fundo totalizou R$ 319 mil em receitas imobiliárias.\" (p. 5)\n\n7. **Despesas Operacionais**: As despesas operacionais no mês de maio foram de R$ 328 mil.\n   > \"Considerando que as despesas operacionais totalizaram R$ 328 mil, ou R$ 3,23/cota.\" (p. 5)\n\n8. **Resultado do Fundo**: O resultado positivo do fundo foi de R$ 0,03/cota.\n   > \"O Fundo apresentou o resultado positivo de R$ 0,03/cota.\" (p. 5)\n\n### O que observar em seguida:\n1. **Progresso das obras no Edifício Bravo BH**: Verificar se as obras do 5º andar estão avançando conforme planejado.\n2. **Comercialização de novos locatários**: Monitorar a eficácia das ações de prospecção e comercialização para reduzir a vacância."
+  },
+  "comunicados": {
+    "ids": [
+      1118092,
+      1068101,
+      1059619,
+      1176840,
+      1124403,
+      1171650,
+      1171594
+    ],
+    "datas": [
+      "19/02/2026",
+      "23/12/2025",
+      "12/12/2025",
+      "30/04/2026",
+      "27/02/2026",
+      "28/04/2026",
+      "28/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO/E",
+      "Assembleia AGO/E"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 19/02/2026\n\n**Data:** 19 de fevereiro de 2026  \n**Título:** Expansão da área locada com a Fundação Sagres  \n**Resumo:** O Fundo assinou uma expansão do contrato de locação com a Fundação Sagres, aumentando o espaço locado em 389 m².  \n**Trecho-chave:**\n\"Expansão da área de 389 m² para mais 389 m², totalizando 778 m² de área total. Fundo reduz a vacância física de 72,33% para 69,62%. Impacto positivo no resultado do fundo de R$ 0,15/cota.\"\n\n### FATO RELEVANTE entregue em 23/12/2025\n\n**Data:** 23 de dezembro de 2025  \n**Título:** Distribuição Extraordinária  \n**Resumo:** O Fundo realizou a venda do imóvel Bravo! BH, gerando uma distribuição extraordinária de rendimentos.  \n**Trecho-chave:**\n\"O Fundo assinou Escritura Pública de Compra e Venda para a venda da loja térrea do imóvel Bravo! BH, localizado em Belo Horizonte/MG, pelo valor total de R$ 7,8 milhões.\"\n\n### FATO RELEVANTE entregue em 12/12/2025\n\n**Data:** 12 de dezembro de 2025  \n**Título:** Venda da Loja do Edifício Bravo! BH  \n**Resumo:** O Fundo vendeu a loja térrea do imóvel Bravo! BH, localizado em Belo Horizonte/MG. A venda gerou um lucro de R$ 4,7 milhões e uma liquidez de aproximadamente R$ 3,1 milhões para o Fundo.  \n**Trecho-chave:**\n\"O Fundo assinou Escritura Pública de Compra e Venda com Constituição de Alienação Fiduciária para alienação do conjunto 11 (loja) do Bravo! BH.\"\n\n### COMUNICADO AO MERCADO entregue em 30/04/2026\n\n**Data:** 30 de abril de 2026  \n**Título:** Alteração na Data de Divulgação dos Rendimentos  \n**Resumo:** A data de anúncio da distribuição dos lucros auferidos mensalmente pelo Fundo foi alterada para o último Dia Útil do mês.  \n**Trecho-chave:**\n\"Em complemento ao Sumário das deliberações da AGO/E divulgado em 28/04, foi aprovado a alteração da data de anúncio da distribuição dos lucros auferidos mensalmente pelo Fundo para o último Dia Útil do mês.\"\n\n### COMUNICADO AO MERCADO entregue em 27/02/2026\n\n**Data:** 27 de fevereiro de 2026  \n**Título:** Disponibilidade Informe de Rendimentos Ano-CALENDÁRIO 2025  \n**Resumo:** O informe de rendimentos dos fundos listados no Anexo I está disponível aos investidores a partir desta data.  \n**Trecho-chave:**\n\"Os informes de rendimentos (IR) dos fundos listados no Anexo I estão disponíveis aos investidores a partir desta data no Portal do Investidor da Rio Bravo.\"\n\n### ASSEMBLEIA AGO/E entregue em 28/04/2026\n\n**Data:** 28 de abril de 2026  \n**Título:** Deliberações da Assembleia Geral Ordinária e Extraordinária de Cotistas  \n**Resumo:** A assembleia aprovou as Demonstrações Financeiras do Fundo referentes ao exercício encerrado em 31 de dezembro de 2025, alteração do Regulamento para aplicar temporariamente disponibilidades financeiras em ativos de renda fixa e mudança na data de anúncio da distribuição dos lucros.  \n**Trecho-chave:**\n\"Os cotistas que representam 24,49% (vinte e quatro vírgula vinte e seis por cento) do total de cotas emitidas pelo Fundo e aptos ao exercício do direito de voto, deliberaram por aprovar a alteração do Regulamento do Fundo para alterar o Artigo 2.2 do anexo da Classe do Fundo.\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Vacância física alta",
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares"
+    ],
+    "cota": 230.0
+  },
+  "parecer": {
+    "id": 1143454,
+    "data_entrega": "24/03/2026 18:06",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário Rio Bravo Oportunidades Imobiliárias de Responsabilidade Limitada (anteriormente denominado Fundo de Investimento Imobiliário Rio Bravo Oportunidades Imobiliários) em 31 de dezembro de 2025, o desempenho de s"
+  }
+}

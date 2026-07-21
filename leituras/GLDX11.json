@@ -1,0 +1,30 @@
+{
+  "ticker": "GLDX11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:33:28",
+  "comunicados": {
+    "ids": [
+      1225951,
+      1213954
+    ],
+    "datas": [
+      "23/06/2026",
+      "08/06/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Assembleia Geral Ordinária de Cotistas — 23/06/2026\n\n**O que aconteceu:** A assembleia geral ordinária de cotistas do Fundo GLDX11 não se realizou em razão do não recebimento de orientação de voto digitalizada por correio eletrônico.\n\n**Resumo:** A assembleia foi convocada para deliberar sobre a aprovação das demonstrações financeiras auditadas, mas não ocorreu devido à falta de orientação de voto dos cotistas. As demonstrações foram consideradas automaticamente aprovadas.\n\n**Trecho-chave:**\n\"O BANCO BNP PARIBAS BRASIL S.A. na qualidade de (Administrador) do FUNDO vem, por meio deste, informar que a Assembleia Geral de Cotistas, que seria realizada excepcionalmente por meio eletrônico em 23 de junho de 2026, às 10h40, a fim de deliberar sobre a aprovação das demonstrações financeiras auditadas do FUNDO referentes ao exercício social encerrado em de 31 de março de 2026 (“Ordem do Dia”), não se realizou em razão do na não recebimento de orientação de voto digitalizada por correio eletrônico.\"\n\n---\n\n### Convocação para Assembleia Geral Ordinária — 08/06/2026\n\n**O que aconteceu:** A assembleia geral ordinária de cotistas do Fundo GLDX11 foi convocada para deliberar sobre a aprovação das demonstrações financeiras auditadas, mas não ocorreu em razão da falta de orientação de voto dos cotistas.\n\n**Resumo:** O Administrador convocou os cotistas para participarem de uma assembleia virtual no dia 23 de junho de 2026, às 10h40. No entanto, a assembleia não ocorreu devido ao não envio de orientação de voto digitalizada por correio eletrônico.\n\n**Trecho-chave:**\n\"O BANCO BNP PARIBAS BRASIL S.A.  (“Administrador”), localizada na Avenida Presidente Juscelino Kubitscheck, n.º 1909, 9º andar, Torre Sul, São Paulo/SP, vem por meio da presente, nos termos dos Artigos 70, 72 e 75 da Resolução CVM nº 175, de 23 de dezembro de 2022 (“RCVM 175”) , bem como nos termos do Regulamento do FUNDO (“Regulamento”), convocá -lo para participar da Assembleia Geral de cotistas do FUNDO, que será realizada excepcionalmente por meio eletrônico e (envio de orientação de voto digitalizada por correio eletrônico) em 23 de junho de 2026 , 10h40, a fim de deliberar sobre a aprovação das demonstrações financeiras auditadas do FUNDO referentes ao exercício social encerrado em de 31 de março de 2026 (“Ordem do Dia”).\"\n\n**Conexão com o contexto:** A não realização da assembleia e a aprovação automática das demonstrações financeiras podem impactar negativamente o fundo, especialmente considerando seu histórico curto e situação atual."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1204355,
+    "data_entrega": "27/05/2026 08:27",
+    "tipo": "ressalva",
+    "rotulo": "opinião com ressalva",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe em 31 de março de 2026 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de índice."
+  }
+}

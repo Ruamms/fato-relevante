@@ -1,0 +1,43 @@
+{
+  "ticker": "VREF11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T05:48:34",
+  "relatorio": {
+    "id": 916394,
+    "data_entrega": "02/06/2025 20:07",
+    "texto": "### Fatos do Relatório:\n\n1. **Patrimônio Líquido e Cota:** O patrimônio líquido do fundo é de R$ 9,103 milhões, com a cota precificada em R$ 0,10824606 (p. 5).\n2. **Cotistas:** O número de cotistas é de 56, abaixo do mínimo legal para isenção de imposto de renda (p. 7).\n3. **Projetos Desinvestidos:** Projetos como Piazza Itália, Start Jardim Sul, You Conceição, entre outros, foram desinvestidos e suas informações não são mais reportadas (p. 5).\n4. **Status dos Projetos:** O empreendimento Sabiá Conect SP está próximo de conclusão das obras e aguarda a obtenção do \"Habite-se\" para iniciar a comercialização (p. 2).\n5. **Evolução das Vendas:** Todos os projetos com exceção de You Íbis São Caetano, que tem 88,1% das unidades vendidas, estão 100% vendidos (p. 3).\n6. **Desinvestimentos e Distribuição de Rendimentos:** Houve desinvestimentos no valor total de R$ 117,4 milhões, com distribuições de rendimento aos cotistas no valor de R$ 78,6 milhões (p. 4).\n7. **Riscos do Negócio Imobiliário:** O fundo enfrenta riscos macroeconômicos, comerciais, de execução, relacionados ao incorporador e construtora, repasse, sinistro, estrutura do negócio, despesas extraordinárias e regulatórios (p. 6).\n\n### O que observar em seguida:\n1. **Status do Projeto Sabiá Conect SP:** Verificar a obtenção do \"Habite-se\" e o início da comercialização.\n2. **Evolução das Vendas:** Monitorar as vendas dos projetos restantes, especialmente You Íbis São Caetano."
+  },
+  "comunicados": {
+    "ids": [
+      1020207,
+      988908
+    ],
+    "datas": [
+      "24/10/2025",
+      "11/09/2025"
+    ],
+    "rotulos": [
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "**11/09/2025 - Alteração do Prazo de Duração do Fundo e Consolidação do Regulamento**\n\nO Banco Genial S.A., administrador do VREF11, propôs a alteração do item 3.1.1. do Regulamento do Fundo para prorrogar o prazo de duração do Fundo até julho de 2027. A proposta também incluiu a consolidação da nova versão do Regulamento do Fundo, que passará a vigorar com as alterações descritas.\n\n*\"O prazo de duração do Fundo foi prorrogado por 12 (doze) meses, a contar de 05/06/2020, na Assembleia Geral Extraordinária realizada em 03/07/2020. A Assembleia Geral Extraordinária realizada em 28/06/2021 prorrogou o prazo de duração do Fundo por 24 (vinte e quatro) meses contados a partir de 05/06/2021. A Assembleia Geral Extraordinária realizada em 04/07/2023 prorrogou o prazo de duração do Fundo por mais 24 (vinte e quatro) meses contados a partir de 05/06/2023. Por fim, a Assembleia Geral Extraordinária realizada em 26/09/2025 prorrogou o prazo de duração do Fundo por mais 25 (vinte e cinco) meses contados a partir de 05/06/2025.\"* (p. 1)\n\nA aprovação dos itens da matéria constante da ordem do dia dependerá da manifestação favorável da maioria de votos dos Cotistas presentes e que representem cotistas detentores de 50% das cotas subscritas, conforme o item 7.9. do Regulamento.\n\n---\n\n**Observações:**\n- O contexto indica que o fundo tem um selo de alerta grave.\n- A proposta de prorrogação do prazo de duração do Fundo pode ser vista como uma medida para manter a operação do fundo, mas considerando os indicadores financeiros negativos, essa decisão pode refletir preocupações sobre o desempenho atual."
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Menos cotistas que o mínimo para isenção de IR",
+      "Rendimentos irregulares"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 995825,
+    "data_entrega": "23/09/2025 15:34",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira, do Vista Real Estate Fundo de Investimento Fundo de Investimento Imobiliario em 30 de junho de 2025, o desempenho de suas operações e os seus respectivos fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis a"
+  }
+}

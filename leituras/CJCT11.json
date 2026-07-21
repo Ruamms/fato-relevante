@@ -1,0 +1,49 @@
+{
+  "ticker": "CJCT11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T23:16:41",
+  "relatorio": {
+    "id": 1252479,
+    "data_entrega": "17/07/2026 17:02",
+    "texto": "### Fatos Relevantes do Relatório Gerencial CJCT11\n\n1. **Reestruturação de Andares:** Os seis andares do edifício Continental Tower foram reconfigurados, resultando em 38 conjuntos locados, totalizando 88% da área locável dos pavimentos reconfigurados.\n2. **Vacância Reduzida:** A expectativa é que a vacância do empreendimento seja reduzida para aproximadamente 23% ao longo do mês de julho de 2026, com a expansão contratada e negociações em andamento.\n3. **Nova Administração:** A administração do condomínio foi trocada no segundo trimestre de 2026, com foco na revisão completa do orçamento condominial para maior eficiência operacional.\n4. **Receita Imobiliária:** A receita imobiliária do mês de junho-26 foi de R$ 1.305.296 por cota, com a maioria proveniente dos aluguéis contratados e carências.\n\n### O que Observar em Seguida:\n1. **Progresso das Negociações Locatícias:** Acompanhe as negociações em andamento para locação de áreas vagas.\n2. **Evolução da Vacância:** Monitore a redução da vacância conforme planejado pela gestão."
+  },
+  "comunicados": {
+    "ids": [
+      1224170,
+      1066179,
+      1215351,
+      1215349
+    ],
+    "datas": [
+      "18/06/2026",
+      "18/12/2025",
+      "09/06/2026",
+      "09/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 18/06/2026\n\n**O QUE aconteceu:** A HEDGE INVESTMENTS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA. aprovou a 4ª Emissão de cotas do CIDADE JARDIM CONTINENTAL TOWER FUNDO DE INVESTIMENTO IMOBILIÁRIO DE RESPONSABILIDADE LIMITADA.\n\n**Resumo:** A assembleia geral extraordinária aprovou a emissão de novas cotas, com características e público-alvo definidos. O preço por cota foi estabelecido em R$ 63,88, com custo unitário de distribuição de 2,00%.\n\n**Trecho-chave:**\n\"O preço de cada Cota do Fundo, objeto da 4ª Emissão, será equivalente a R$ 63,88 (sessenta e três reais e oitenta e oito centavos), observado que tal valor não inclui o Custo Unitário de Distribuição (conforme abaixo definido) (\"Preço por Cota\").\"\n\n---\n\n### FATO RELEVANTE entregue em 18/12/2025\n\n**O QUE aconteceu:** A HEDGE INVESTMENTS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA. informou que o imóvel do fundo foi avaliado a mercado, resultando em um valor 0,84% superior ao valor contábil atual.\n\n**Resumo:** O imóvel do fundo teve seu valor justo reavaliado e aumentou em 0,84%, impactando positivamente o valor patrimonial das cotas.\n\n**Trecho-chave:**\n\"O imóvel do Fundo foi avaliado a mercado (valor justo) pela empresa Newmark Brasil – Valuation & Advisory, resultando em valor 0,84% (oitenta e quatro centésimos por cento) superior ao valor contábil atual do referido imóvel, o que representa uma variação positiva de 0,84% (oitenta e quatro centésimos por cento) no valor patrimonial da cota do Fundo nesta data.\"\n\n---\n\n### ASSEMBLEIA AGE entregue em 09/06/2026\n\n**O QUE aconteceu:** A HEDGE INVESTMENTS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA. realizou uma assembleia geral extraordinária por meio de consulta formal, aprovando a 4ª emissão de cotas do fundo.\n\n**Resumo:** A assembleia aprovou a 4ª emissão de cotas com características e condições definidas, incluindo o preço por cota em R$ 63,88.\n\n**Trecho-chave:**\n\"Os votos proferidos representaram 61,93% (sessenta e um inteiros e noventa e três centésimos por cento) de votos favoráveis à 4ª Emissão, com Preço por Cota equivalente a R$ 63,88 (sessenta e três reais e oitenta e oito centavos), correspondente ao valor médio de negociação das cotas no mercado secundário da B3 apurado entre 1º de março de 2026 e 30 de abril de 2026.\"\n\n---\n\n### ASSEMBLEIA AGE entregue em 09/06/2026\n\n**O QUE aconteceu:** A HEDGE INVESTMENTS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA. realizou a ata da assembleia geral extraordinária por meio de consulta formal, detalhando as decisões tomadas.\n\n**Resumo:** A ata detalha os termos e condições da 4ª emissão de cotas do fundo, incluindo o preço por cota em R$ 63,88.\n\n**Trecho-chave:**\n\"O Preço por Cota será equivalente a (i) R$ 73,88 (setenta e três reais e oitenta e oito centavos), equivalente ao valor patrimonial das cotas do Fundo no fechamento do mês anterior à data de publicação do Fato Relevante de anúncio de início da Oferta Restrita, observado que tal valor não inclui o Custo Unitário de Distribuição (conforme definido abaixo), ou (ii) R$ 63,88 (sessenta e três reais e oitenta e oito centavos), equivalente ao o valor médio de negociação das cotas no mercado secundário da B3 apurado entre 01/03/2026 e 30/04/2026, conforme alternativa deliberada pelos Cotistas, observado que tal valor não inclui o Custo Unitário de Distribuição (conforme abaixo definido) (\"Preço por Nova Cota\").\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Vacância física alta"
+    ],
+    "cota": 67.0
+  },
+  "parecer": {
+    "id": 1143500,
+    "data_entrega": "24/03/2026 18:55",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Cidade Jardim Continental Tower Fundo de Investimento Imobiliário de Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas "
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "ticker": "WPLZ11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T03:26:01",
+  "relatorio": {
+    "id": 1249954,
+    "data_entrega": "15/07/2026 18:48",
+    "texto": "### Fatos Extraídos do Relatório Gerencial\n\n1. **Vacância do Shopping:** A vacância do Shopping West Plaza caiu de 9,0% em abril para 8,8% em maio, após a entrada da Skyler Lifewear (44 m²). (\"A vacância saiu de 9,0% em abril para 8,8% em maio, após a entrada da Skyler Lifewear (44 m²).\" p.5)\n2. **Resultados Operacionais:** As vendas totais do shopping apresentaram resultado 12,9% superior ao realizado em maio de 2025 e o resultado operacional ficou 14,2% acima do resultado apresentado em maio de 2025. (\"Em maio, as vendas totais do Shopping West Plaza apresentaram resultado 12,9% superior ao realizado em maio de 2025. No acumulado do ano, as vendas apresentam crescimento de 10,2% em relação ao mesmo período de 2025.\" p.5)\n3. **Vacância do Setor:** A vacância média no Brasil foi de 4,7%, com variações regionais entre 3,8% (Sul) e 6,1% (Centro-Oeste). (\"Vacância (Mediana) Brasil Norte/Nordeste Centro-Oeste Sudeste Sul mai/26 4,7% 5,6% 6,1% 4,2% 4,7%\" p.4)\n4. **Cota Patrimonial e de Mercado:** A cota patrimonial do fundo é R$ 54,65, enquanto a cota de mercado está em R$ 49,24. (\"COTA PATRIMONIAL R$ 54,65 COTA DE MERCADO R$ 49,24\" p.3)\n5. **Resultados Financeiros do Fundo:** O fundo distribuiu R$ 0,37 por cota como rendimento referente ao mês de junho de 2026. (\"O Fundo anunciou a distribuição de  R$ 0,37 / cota como rendimento referente ao mês de junho  de 2026\" p.5)\n6. **Indicadores Operacionais:** O fluxo de caixa total do shopping foi de R$ 485.624 em maio de 2026, com um aumento de 108% em comparação ao mesmo período de 2025. (\"Fluxo de caixa total 485.624 233.790 108%\" p.9)\n7. **Vacância do Shopping:** A vacância do shopping caiu para 8,8% em maio de 2026 após a entrada da Skyler Lifewear (44 m²). (\"A vacância saiu de 9,0% em abril para 8,8% em maio, após a entrada da Skyler Lifewear (44 m²).\" p.9)\n8. **Cotação do Fundo:** A cotação do fundo está em R$ 49,24 no fechamento de junho de 2026. (\"WPLZ11 jun/26 2026 12 meses Início* Cota Aquisição (R$) 48,76\" p.7)\n\n### O que observar em seguida:\n- Monitorar a vacância do shopping e as vendas no futuro.\n- Observar os resultados financeiros mensais para verificar se há tendência de melhora ou estabilidade."
+  },
+  "comunicados": {
+    "ids": [
+      1055572,
+      1003204,
+      1111672,
+      1018167,
+      1182134,
+      1182133
+    ],
+    "datas": [
+      "05/12/2025",
+      "30/09/2025",
+      "12/02/2026",
+      "21/10/2025",
+      "07/05/2026",
+      "07/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 05/12/2025\n\n**O QUE aconteceu:** O imóvel do Fundo foi avaliado a mercado (valor justo) e resultou em uma variação negativa de 18,43% no valor patrimonial da cota.\n\n**Resumo:** A avaliação realizada pelo Cushman & Wakefield reduziu o valor contábil do imóvel do fundo, impactando negativamente o valor patrimonial das cotas.\n\n**Trecho-chave:**\n```\no imóvel do Fundo foi avaliado a mercado (valor justo) pela empresa Cushman & Wakefield, resultando  em valor 18,43% (dezoito inteiros e quarenta e três centésimos por cento) inferior ao valor contábil atual de referido imóvel, o que representa uma variação negativa de 18,27% (dezoito inteiros e vinte e sete centésimos por cento) no valor patrimonial da cota do Fundo no fechamento de novembro de 2025.\n```\n\n### FATO RELEVANTE entregue em 30/09/2025\n\n**O QUE aconteceu:** Aprovada a 13ª Emissão de cotas do Fundo.\n\n**Resumo:** A assembleia geral extraordinária aprovou a emissão de novas cotas, que serão distribuídas aos investidores profissionais.\n\n**Trecho-chave:**\n```\nencerrada em 22 de setembro de 2025, foi aprovada a 13ª Emissão de cotas do Fundo (\" 13ª Emissão\" e \" Cotas\", respectivamente), submetida ao rito de registro automático de distribuição, a ser realizada nos termos da Resolução CVM nº 160, de 13 de julho de 2022, conforme em vigor (\"Oferta\" e \"Resolução CVM 160\", respectivamente).\n```\n\n### COMUNICADO AO MERCADO entregue em 12/02/2026\n\n**O QUE aconteceu:** Foi disponibilizado o laudo de avaliação do ativo do Fundo.\n\n**Resumo:** O laudo foi divulgado para maior transparência, detalhando a avaliação do ativo no valor justo.\n\n**Trecho-chave:**\n```\nA divulgação do laudo visa proporcionar maior grau de informação aos investidores, reforçando o compromisso da Hedge com a transparência. O laudo está disponível na página do Fundo e através deste link direto.\n```\n\n### COMUNICADO AO MERCADO entregue em 21/10/2025\n\n**O QUE aconteceu:** Encerramento do período de exercício do direito de preferência para a 13ª Emissão.\n\n**Resumo:** O período para exercer o direito de preferência foi encerrado, com 17 novas cotas subscritas e 120.483 restantes disponíveis para investidores no mercado secundário.\n\n**Trecho-chave:**\n```\nDe acordo com as informações recebidas da B3 e da Administradora, na qualidade de Escriturador a das cotas do Fundo, até o momento foram subscritas 17 (dezessete) Novas Cotas no âmbito do Período de Exercício de Direito de Preferência , equivalentes a  R$ 1.133,22 (mil cento e trinta e três reais e vinte e dois centavos ), restando, portanto , 120.483 (cento e vinte mil quatrocentos e oitenta e três ) cotas da 13ª Emissão não subscritas.\n```\n\n### ASSEMBLEIA GERAL ORDINÁRIA entregue em 07/05/2026\n\n**O QUE aconteceu:** A assembleia geral ordinária aprovou as contas do exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** Os cotistas deliberaram pela aprovação das contas e demonstrações financeiras, representando 0,189% dos votos favoráveis.\n\n**Trecho-chave:**\n```\nEm relação à Ordem do Dia, a maioria dos Cotistas deliberou pela aprovação das contas e das demonstrações financeiras do Fundo, referentes ao exercício social encerrado em 31 de dezembro de 2025. Os votos proferidos representaram os seguintes percentuais em relação ao total da base votante do Fundo: 0,189% (cento e oitenta e nove milésimos por cento) de votos favoráveis e (cinco milésimos por cento) de abstenções.\n```"
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Emissão de cotas com VP/cota em queda",
+      "VP/cota em queda relevante"
+    ],
+    "cota": 49.79
+  },
+  "parecer": {
+    "id": 1143614,
+    "data_entrega": "24/03/2026 19:54",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "E m nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

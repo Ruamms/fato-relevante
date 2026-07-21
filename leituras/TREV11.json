@@ -1,0 +1,30 @@
+{
+  "ticker": "TREV11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:44:36",
+  "comunicados": {
+    "ids": [
+      1251004,
+      1205476
+    ],
+    "datas": [
+      "16/07/2026",
+      "27/05/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### Assembleia AGE entregue em 27/05/2026\n\n**O QUE aconteceu:** Aprovou a venda de ações e encerramento antecipado do fundo.\n\n**Resumo:** A assembleia aprovou a venda das ações da Reserva das Goiabeiras Imobiliária e Construções S/A por R$ 5.000.000,00 para a LIFT LLC e deliberou encerrar as atividades do fundo em até 15 dias úteis.\n\n**Trecho-chave:**\n\"b) Em ato contínuo à aprovação do item anterior, deliberar acerca da liquidação antecipada e encerramento total das atividades do Fundo em até 15 dias úteis da data de assinatura desta assembleia; sendo que a liquidação será realizada mediante a cessão e transferência aos cotistas dos créditos decorrentes da alienação da empresa Reserva das Goiabeiras (pagável em 5 parcelas anuais corrigidas pelo IPCA), bem como pela transferência de recursos financeiros remanescentes, observada a proporção de suas participações.\"\n\n---\n\n### Assembleia AGE entregue em 16/07/2026\n\n**O QUE aconteceu:** Aprovou o encerramento definitivo do fundo.\n\n**Resumo:** A assembleia aprovou o plano de liquidação e encerramento definitivo do fundo, com a apuração de haveres e amortização integral das cotas dos cotistas.\n\n**Trecho-chave:**\n\"2) Considerando a liquidação do Fundo deliberada em 19 de maio de 2026 e retificada na forma do item (1) da presente, os cotistas aprovam, por unanimidade de votos e sem quaisquer ressalvas, o plano de liquidação e encerramento definitivo do Fundo, mediante a apuração de haveres e amortização integral de suas respectivas cotas, em estrita observância às seguintes condições:\"\n\n**Conexão com indicadores:** O encerramento do fundo afetará diretamente o patrimônio líquido e o valor das cotas do fundo TREV11."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 507216,
+    "data_entrega": "14/08/2023 17:43",
+    "tipo": "abstencao",
+    "rotulo": "abstenção de opinião",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Não expressamos uma opinião sobre as demonstrações financeiras do Fundo pois, devido à relevância do s assunto s descrito s na seção a seguir intitulada “Base para abstenção de opinião”, não nos foi possível obter evidência de auditoria apropriada e suficiente para fundamentar nossa opinião de auditoria sobre essas demonstrações financeiras."
+  }
+}

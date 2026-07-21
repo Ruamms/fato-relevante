@@ -1,0 +1,42 @@
+{
+  "ticker": "CRFF11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T03:38:11",
+  "relatorio": {
+    "id": 1225486,
+    "data_entrega": "22/06/2026 17:12",
+    "texto": "### Fatos do Relatório Gerencial CRFF11 - Maio 2026\n\n1. **Movimentações na Carteira:** Em maio, o fundo adquiriu parcialmente RBR Rendimentos High Grade FII (RBRR11), aumentando a exposição para 2,60% do patrimônio líquido e elevando a exposição ao setor de FIIs de CRI para 35,7% do PL. Além disso, foram vendidas parcialmente posições em RBR Logística (RBRL11) e XP Malls (XPML11), gerando um ganho de capital.\n2. **Resultado Financeiro:** O resultado financeiro líquido do fundo no mês foi de R$ 0,65/cota, com distribuição semelhante, resultando em um dividend yield anualizado de 10,2%. A reserva de resultados é de R$ 0,16/cota.\n3. **Desempenho do Fundo:** O fundo apresentou uma queda de -0,60% no mês considerando a valorização da cota mercado ajustada aos dividendos. A performance da cota patrimonial ajustada foi de -1,38%, enquanto o IFIX teve uma queda de -1,33%. No ano, acumulou 1,89%.\n4. **Cotas e Cotistas:** O número total de cotas permaneceu constante em 690.040, mas a quantidade de cotistas diminuiu para 1.144 (redução de -8,52%). A cotação atual é R$ 76,19.\n5. **Deságio do Portfólio:** O CRFF11 reflete o deságio dos FIIs que compõem seu portfólio e a cota de mercado do fundo, oferecendo potencial de valorização de até 27,5%.\n6. **Riscos Cenários:** A gestão aponta riscos relacionados à inflação, ao cenário eleitoral brasileiro e às tensões geopolíticas no Oriente Médio.\n\n### O que observar em seguida:\n1. Monitorar as movimentações na carteira para entender melhor a estratégia de alocação.\n2. Observar o comportamento do deságio do portfólio, pois pode indicar oportunidades de investimento."
+  },
+  "comunicados": {
+    "ids": [
+      1180100,
+      1173536
+    ],
+    "datas": [
+      "05/05/2026",
+      "29/04/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "**05/05/2026 - Assembleia Geral Ordinária de Cotistas**\n\n*O que aconteceu:* A assembleia geral ordinária de cotistas do CRFF11 foi realizada em 29 de abril de 2026, com aprovação das demonstrações financeiras referentes ao exercício social findo em 31 de dezembro de 2025.\n\n*\"Após promover as diligências necessárias e realizar o cômputo dos votos, a Administradora apurou que a matéria constante da Ordem do Dia foi aprovada pela maioria das Cotas Subscritas presentes.\"* (p. 1)\n\nEsta assembleia não apresenta conexão direta com os indicadores fornecidos no contexto."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 67.46
+  },
+  "parecer": {
+    "id": 1147329,
+    "data_entrega": "30/03/2026 07:17",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nesta data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "ticker": "VIUR11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T02:19:15",
+  "relatorio": {
+    "id": 1241337,
+    "data_entrega": "07/07/2026 18:18",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Vacância e Inadimplência:**\n   - \"Em junho, a receita líquida de impostos do Fundo foi de R$ 1,06 milhão, considerando as receitas de aluguel, proventos e rendimentos de aplicações financeiras.\" (p.3)\n\n2. **Cotas e Cotistas:**\n   - \"O Fundo encerrou o mês de junho com 43.783 cotistas e um valor de mercado de R$ 62,8 milhões.\" (p.8)\n   - \"A cota ajustada do Fundo encerrou o mês de junho avaliada na B3 a R$ 2,33, o que equivale a uma variação de -7,5%.\" (p.7)\n\n3. **Carteira e Ativos:**\n   - \"O patrimônio líquido do Fundo ao final de junho era R$ 95,5 milhões e as participações em ativos imobiliários totalizavam R$ 37,3 milhões.\" (p.9)\n   - \"As aplicações financeiras totalizam R$ 61,0 milhões, investidos em fundos referenciados DI com liquidez imediata.\" (p.9)\n\n4. **Obrigações Imobiliárias a Prazo:**\n   - \"A obrigatoriedade de aquisição de imóveis a prazo (FACAMP) no valor de R$ 2,264 milhões vence em fevereiro de 2022.\" (p.9)\n\n5. **Aluguel e Ocupação:**\n   - \"A taxa de ocupação média foi de 100%.\" (p.11)\n   - \"O WAULT (Weighted Average of Unexpired Lease Term) é de 7,0 anos, com cerca de 100% da receita de aluguel do Fundo está atrelada a contratos com vencimento após 2033.\" (p.11)\n\n6. **Rendimentos e Distribuição:**\n   - \"O resultado do Fundo em junho foi de R$ -364 mil, o equivalente a R$ -0,014/cota, impactado pelo reconhecimento do prejuízo não recorrente.\" (p.5)\n   - \"Não houve distribuição de rendimentos referente ao mês de junho e o Fundo encerrou o mês sem reserva de resultado acumulado.\" (p.6)\n\n7. **Riscos:**\n   - \"Em atualização à situação do inquilino FACAMP, no mês de junho, o Fundo recebeu o pagamento equivalente a um mês de aluguel. Assim, o contrato permanece com dois meses de inadimplência locatícia.\" (p.4)\n\n8. **Cenário Macroeconômico:**\n   - \"O cenário macroeconômico apresentou melhora marginal ao longo do mês, principalmente em função da queda do petróleo, que reduziu parte do estresse inflacionário observado nas semanas anteriores.\" (p.4)\n\n### O que observar em seguida:\n- Monitorar a situação do inquilino FACAMP e os pagamentos futuros.\n- Observar as distribuições de rendimentos no próximo relatório, já que não houve distribuição neste mês."
+  },
+  "comunicados": {
+    "ids": [
+      1200300,
+      1195891,
+      1186736,
+      1073741,
+      1073430,
+      1213193,
+      1170855
+    ],
+    "datas": [
+      "20/05/2026",
+      "15/05/2026",
+      "12/05/2026",
+      "30/12/2025",
+      "30/12/2025",
+      "05/06/2026",
+      "27/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 20/05/2026\n\n**Título:** Pagamento do Reembolso das Frações de Cotas\n**Resumo:** O Fundo VIUR11 informou que encerrou o leilão das frações de cotas resultantes da liquidação do TRX REAL ESTATE FII e que os reembolsos serão pagos aos cotistas no dia 28 de maio de 2026.\n**Trecho-chave:** \"O Leilão apurou o valor aproximado de R$ 90,57 (noventa reais e cinquenta e sete centavo) por cota, totalizando R$ 1.366.023,56 (um milhão, trezentos e sessenta e seis mil e vinte e três reais e cinquenta e seis centavos).\"\n\n### FATO RELEVANTE entregue em 15/05/2026\n\n**Título:** Leilão de Frações de Cotas\n**Resumo:** O Fundo VIUR11 informou que iniciou os trâmites para um leilão das frações de cotas resultantes da relação de troca com o TRX REAL ESTATE FII, e que este será realizado em 19 de maio de 2026.\n**Trecho-chave:** \"Em razão desse evento, houve frações de cotas decorrentes da relação de troca, sendo tais frações agrupadas, totalizando uma quantidade de 15.102 (quinze mil, cento e duas) cotas inteiras, que serão ofertadas à venda por meio de leilão.\"\n\n### FATO RELEVANTE entregue em 12/05/2026\n\n**Título:** Prorrogação do Prazo para Manifestação de Custo Médio\n**Resumo:** O Fundo VIUR11 prorrogou o prazo para que os cotistas informem ao Administrador o custo médio de aquisição de suas cotas, passando a se encerrar em 14 de maio de 2026.\n**Trecho-chave:** \"O prazo para envio das informações, passa a se encerrar em 14 de maio de 2026. É importante destacar essa prorrogação não altera a data de 28 de maio de 2026 para pagamento da parcela em dinheiro da Amortização em Caixa.\"\n\n### COMUNICADO AO MERCADO entregue em 30/12/2025\n\n**Título:** Reavaliação dos Ativos do VINCI IMÓVEIS URBANOS FII\n**Resumo:** A gestora e administradora do Fundo VIUR11 informaram que os imóveis do Fundo foram avaliados a mercado, resultando em uma variação negativa de aproximadamente 3,18% no valor patrimonial da cota.\n**Trecho-chave:** \"Nesta data, em cumprimento ao disposto na Instrução CVM nº 516 de 29 de dezembro de 2011, os imóveis do Fundo foram avaliados a mercado (valor justo) pela empresa COLLIERS INTERNATIONAL DO BRASIL CONSULTORIA LTDA. (“Colliers”), resultando em valor 2,30% inferior ao valor contábil atual dos referidos imóveis.\"\n\n### COMUNICADO AO MERCADO entregue em 30/12/2025\n\n**Título:** Distribuição de Rendimentos Referentes a Dezembro de 2025\n**Resumo:** O Fundo VIUR11 informou que o valor dos rendimentos referentes a dezembro de 2025 corresponde a R$ 0,089 por cota e que o pagamento será realizado no dia 15 de janeiro de 2026.\n**Trecho-chave:** \"O valor dos rendimentos referentes a dezembro de 2025 corresponde a R$ 0,089 por cota. O pagamento será realizado no dia 15 de janeiro de 2026 aos detentores de cotas do Fundo no fechamento de 30 de dezembro de 2025.\"\n\n### ASSEMBLEIA AGO entregue em 05/06/2026\n\n**Título:** Resumo das Decisões da Assembleia Geral Ordinária\n**Resumo:** A assembleia aprovou as contas e demonstrações contábeis do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\n**Trecho-chave:** \"O(s) Cotista(s) presente(s) aprovou(aram), sem quaisquer ressalvas ou restrições, as contas e demonstrações contábeis do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n### ASSEMBLEIA AGO entregue em 27/04/2026\n\n**Título:** Edital de Convocação de Assembleia Geral Ordinária\n**Resumo:** O Fundo VIUR11 convocou a assembleia para o dia 27 de maio de 2026, às 10:00, com a finalidade de aprovar as contas e demonstrações contábeis do exercício social encerrado em 31 de dezembro de 2025.\n**Trecho-chave:** \"O BANCO DAYCOVAL S.A. , sociedade com sede na Cidade de São Paulo, Estado de São Paulo, na Avenida Paulista, 1.793, 9º andar, Bela Vista, São Paulo - SP, CEP: 01311 -200, inscrita no CNPJ/ME sob o nº 62.232.889/0001-90, na qualidade de instituição administradora do VINCI IMÓVEIS URBANOS FII, inscrito no CNPJ/ME sob o nº 36.445.587/0001-90 (Administradora e Fundo, respectivamente), nos termos do regulamento do Fundo, vem por meio desta, convocar V. Sas.\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "VP/cota em queda relevante",
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares"
+    ],
+    "cota": 2.28
+  },
+  "parecer": {
+    "id": 1152061,
+    "data_entrega": "31/03/2026 23:30",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Vinci Imóveis Urbanos Fundo de Investimento Imobiliário – Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho das suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis ad"
+  }
+}

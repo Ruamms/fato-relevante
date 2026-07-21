@@ -1,0 +1,60 @@
+{
+  "ticker": "OULG11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T03:08:35",
+  "relatorio": {
+    "id": 1200201,
+    "data_entrega": "20/05/2026 18:03",
+    "texto": "### Fatos Extraídos:\n\n1. **Movimentações na Carteira:**\n   - Aumento de posição em VCRR11 (+38.159 cotas, 20,61% da posição), HOFC11 (+29.448 cotas, 2,93% da posição), IBCR11 (+12.918 cotas, incremento de 1,351%), e MGHT11 (+2.111 cotas, 0,32% da posição).\n   - Entrada em nova posição: RBIR11 (1.146 cotas).\n\n2. **Desempenho do Fundo:**\n   - Correção na cota no mês (-7,62%), com o preço de mercado recuando de R$ 26,00 para R$ 24,02.\n   - Retorno do patrimônio foi positivo (+0,39%).\n\n3. **Dividend Yield:**\n   - Dividend Yield Mercado e Patrimonial foram zero em todos os meses analisados.\n\n4. **Liquidez:**\n   - O volume financeiro foi de R$ 289.737,58.\n   - Giro do mês foi de 0,49%.\n\n### Observações a Acompanhar:\n\n- **Aumento das posições em ativos específicos:** Verificar se as decisões estratégicas para aumentar a posição em VCRR11 e outros ativos são consistentes com o perfil do fundo.\n- **Dividend Yield zero:** Monitorar se há expectativas de mudança nesse indicador, já que é um fator importante para os investidores."
+  },
+  "comunicados": {
+    "ids": [
+      1088692,
+      1066082,
+      1008188,
+      1208069,
+      1019113,
+      1202311,
+      1182059
+    ],
+    "datas": [
+      "20/01/2026",
+      "18/12/2025",
+      "07/10/2025",
+      "29/05/2026",
+      "23/10/2025",
+      "25/05/2026",
+      "07/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 25/05/2026\n\n**Data:** 25/05/2026  \n**Título:** Aprovação do Programa de Recompra de Cotas  \n**Resumo:** O Fundo True Multiestratégia aprovou o programa de recompra de cotas, com condições específicas.  \n**Trecho-chave:**\n\"O Administrador continuará fazendo jus à Taxa de Administração calculada exclusivamente com base nos percentuais nele previstos, conforme aplicável, sem a observância de valor mínimo mensal , passando tal sistemática a ser aplicada a partir da competência do mês de fevereiro de 2026, inclusive.\"\n\n### FATO RELEVANTE entregue em 18/12/2025\n\n**Data:** 18/12/2025  \n**Título:** Alterações no Fundo Ourinvest Logística  \n**Resumo:** O Fundo Ourinvest Logística passou a se chamar True Multiestratégia, com alterações na política de investimentos e gestão.  \n**Trecho-chave:**\n\"1. Conforme Termo de Apuração divulgado em 16.12.2025, com relação à Consulta Formal direcionada aos cotistas do Fundo em 28.11.2025, foi aprovada, entre outras matérias, a substituição do gestor do Fundo, passando a função de gestão a ser exercida por V2 INVESTIMENTOS LTDA., inscrito no CNPJ sob o nº 13.601.663/0001-03, devidamente autorizada pela Comissão de Valores Mobiliários para o exercício da atividade de administração de carteiras de valores mobiliários, nos termos da regulamentação vigente.\"\n\n### FATO RELEVANTE entregue em 07/10/2025\n\n**Data:** 07/10/2025  \n**Título:** Venda do Imóvel Astorial  \n**Resumo:** O Fundo Ourinvest Logística vendeu um imóvel localizado em Juiz de Fora/MG por R$35.000.000,00.  \n**Trecho-chave:**\n\"A Transação foi concluída pelo valor líquido total  de R$35.000.000,00 (trinta e cinco milhões reais), em consonância com a deliberação dos Cotistas do Fundo, tomada por meio do procedimento de Consulta Formal e conforme Termo de Apuração divulgado em 22.07.2025.\"\n\n### COMUNICADO AO MERCADO entregue em 29/05/2026\n\n**Data:** 29/05/2026  \n**Título:** Programa de Recompra de Cotas  \n**Resumo:** O Fundo True Multiestratégia planeja realizar a recompra de cotas quando o preço de mercado estiver descontado em relação ao valor patrimonial.  \n**Trecho-chave:**\n\"O Programa de Recompra tem por objetivo a aquisição de cotas de emissão do Fundo quando o preço de mercado das cotas estiver descontado em relação ao respectivo valor patrimonial, visando geração de valor aos Cotistas e eficiência na alocação de recursos do Fundo, observados os deveres fiduciários do Administrador e do Gestor.\"\n\n### COMUNICADO AO MERCADO entregue em 23/10/2025\n\n**Data:** 23/10/2025  \n**Título:** Amortização Parcial das Cotas  \n**Resumo:** O Fundo Ourinvest Logística planeja amortizar parcialmente as cotas a partir de 29/10/2025.  \n**Trecho-chave:**\n\"Conforme previsto no Cronograma acima, será considerada como data de corte para fins de definição dos cotistas que farão jus à amortização das cotas do Fundo o dia 28 de outubro de 2025, inclusive. Assim, terão direito à amortização apenas os investidores que constarem na base de cotistas do Fundo na referida data.\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "VP/cota em queda relevante",
+      "Rendimentos irregulares",
+      "P/VP muito acima da média histórica"
+    ],
+    "cota": 24.04
+  },
+  "parecer": {
+    "id": 1127175,
+    "data_entrega": "04/03/2026 09:41",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas representam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário True Multiestratégia - Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho das suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis "
+  }
+}

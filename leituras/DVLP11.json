@@ -1,0 +1,33 @@
+{
+  "ticker": "DVLP11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T02:09:06",
+  "comunicados": {
+    "ids": [
+      742331,
+      1160645,
+      1137435
+    ],
+    "datas": [
+      "20/09/2024",
+      "13/04/2026",
+      "13/03/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Fato Relevante entregue em 20/09/2024\n\n**O QUE aconteceu:** Remarcação dos ativos do Fundo.\n\n**Resumo:** O valor da cota do fundo foi impactado para refletir o valor justo, conforme a Instrução CVM nº 516, de 2011.\n\n**Trecho-chave:**\n\"O valor da cota do fundo em 30 de junho de 2024 foi impactado de forma a refletir o valor justo em razão do atendimento ao dispositivo de que trata a Instrução CVM nº 516, de 29 de dezembro de 2011, artigo 7º.\"\n\n---\n\n### Assembleia AGO entregue em 13/04/2026\n\n**O QUE aconteceu:** Aprovou as contas e demonstrações contábeis do exercício social encerrado em 30 de junho de 2025.\n\n**Resumo:** A assembleia geral ordinária aprovou sem quaisquer ressalvas as contas e demonstrações contábeis do fundo referentes ao exercício social encerrado em 30 de junho de 2025.\n\n**Trecho-chave:**\n\"O(s) Cotista(s) presente(s) aprovou(aram), sem quaisquer ressalvas ou restrições, as contas e demonstrações contábeis do Fundo referentes ao exercício social encerrado em 30 de junho de 2025.\"\n\n---\n\n### Assembleia AGO entregue em 13/03/2026\n\n**O QUE aconteceu:** Convocação da assembleia geral ordinária para o dia 13 de abril de 2026.\n\n**Resumo:** A administradora convocou os cotistas para a assembleia geral ordinária, onde será deliberada sobre a aprovação das contas e demonstrações contábeis do exercício social encerrado em 30 de junho de 2025.\n\n**Trecho-chave:**\n\"O BANCO DAYCOVAL S.A., sociedade com sede na Cidade de São Paulo, Estado de São Paulo, convocar[ou] V. Sas. para a Assembleia Geral Ordinária, a ser realizada no dia 13 de abril de 2026, às 13:00, para que seja deliberada a seguinte matéria, conforme ordem do dia.\"\n\n---\n\n**Conexão com o contexto:** A aprovação das contas e demonstrações contábeis na assembleia de 13/04/2026 confirma os resultados financeiros apresentados no relatório das demonstrações contábeis anexo ao edital de convocação da assembleia de 13/03/2026."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1119831,
+    "data_entrega": "24/02/2026 09:29",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a demonstração da posição ﬁnanceira do Speciale Real Estate Development Fundo de Investimento Imobiliário Responsabilidade Limitada em 30 de junho 2025 as respectivas demonstrações do resultado, das mutações do patrimônio líquido e dos ﬂuxos de caixa para o exercício ﬁndo nesta da"
+  }
+}

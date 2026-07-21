@@ -1,0 +1,30 @@
+{
+  "ticker": "BPRE11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:19:18",
+  "comunicados": {
+    "ids": [
+      1249951,
+      1249946
+    ],
+    "datas": [
+      "15/07/2026",
+      "15/07/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "**15 de julho de 2026 - Assembleia Geral de Cotistas não instalada**\n\nA assembleia geral de cotistas do B-INDEX ETF IRF-M P2 FUNDO DE ÍNDICE RESP LTDA, realizada no dia 15 de julho de 2026, às 16h00, no Núcleo Cidade de Deus, não foi instalada em virtude do não comparecimento dos cotistas. As Demonstrações Contábeis relativas ao exercício social findo em 31 de março de 2026 foram consideradas automaticamente aprovadas, conforme o Artigo 71, §3°, da Instrução CVM nº 175, de 23.12.2022.\n\n*\"Em razão do não comparecimento de Cotistas, a Assembleia não foi instalada, contudo, considerando que as Demonstrações Contábeis relativas ao exercício social findo em 31 de março de 2026, foram emitidas sem opinião modificada, será aplicado o dispositivo previsto no Parágrafo Terceiro, do Artigo 71, da Resolução CVM nº 175/22 , de forma que as referidas Demonstrações Contábeis estão, por este ato, automaticamente aprovadas.\" (p. 1)*"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208496,
+    "data_entrega": "29/05/2026 21:31",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe em 31 de março de 2026 e o desempenho de suas operações para o período de 17 de outubro de 2025 (início das atividades) a 31 de março de 2026, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investiment"
+  }
+}

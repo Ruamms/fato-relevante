@@ -1,0 +1,33 @@
+{
+  "ticker": "PATA11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:18:43",
+  "comunicados": {
+    "ids": [
+      1028870,
+      1093899,
+      1067195
+    ],
+    "datas": [
+      "05/11/2025",
+      "27/01/2026",
+      "19/12/2025"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 05/11/2025\n\n**O QUE aconteceu:** Erro operacional na divulgação do preço unitário das cotas (P.U.) do Fundo.\n\n**Resumo:** Em 31 de outubro de 2025, o valor inicialmente divulgado do P.U. foi superior ao correto. Após a identificação do equívoco, a Gestora solicitou à B3 a retificação da informação, que foi corrigida em 4 de novembro de 2025.\n\n**Trecho-chave:** \"Em 31 de outubro de 2025, por conta de um erro operacional da Gestora, foram divulgados no Fundos.net os rendimentos do Fundo, incluindo o preço unitário das cotas ('P.U.'), de forma incorreta. O valor inicialmente divulgado de 0,923700000 foi superior ao valor correto.\"\n\n---\n\n### ASSEMBLEIA GERAL ORDINÁRIA DE COTISTAS entregue em 19/12/2025\n\n**O QUE aconteceu:** Não houve instalação da assembleia geral ordinária de cotistas.\n\n**Resumo:** A assembleia prevista para 19 de janeiro de 2026 não foi instalada por falta de manifestações de voto necessárias. O quórum mínimo não foi atingido, e a Administração informou que os cotistas serão novamente contatados.\n\n**Trecho-chave:** \"Foi constatada a insuficiência de manifestações de voto recebidas pelo Administrador, a presente consulta formal de voto para a assembleia geral ordinária de cotistas não foi instalada e, por consequência, não houve deliberação sobre as ordens do dia.\"\n\n---\n\n### ASSEMBLEIA GERAL ORDINÁRIA DE COTISTAS entregue em 27/01/2026\n\n**O QUE aconteceu:** Não houve instalação da assembleia geral ordinária de cotistas.\n\n**Resumo:** A assembleia prevista para 19 de janeiro de 2026 não foi instalada, e a Administração informou que os cotistas serão novamente contatados.\n\n**Trecho-chave:** \"Considerando a insuficiência de manifestações de voto recebidas pelo Administrador, a presente consulta formal de voto para a assembleia geral ordinária de cotistas não foi instalada e, por consequência, não houve deliberação sobre as ordens do dia.\"\n\n---\n\n**Conexão com o contexto:** O documento informa que a assembleia não foi instalada devido à falta de quórum, o que pode impactar a tomada de decisões importantes para os cotistas."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1001751,
+    "data_entrega": "29/09/2025 23:36",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Patagônia Capital Multiestratégia Fundo de Investimento Imobiliário em 30 de junho de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas financeiras adotadas no Brasi"
+  }
+}

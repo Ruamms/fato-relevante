@@ -1,0 +1,36 @@
+{
+  "ticker": "SPXD11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:28:32",
+  "comunicados": {
+    "ids": [
+      1200574,
+      1188520,
+      1188505,
+      1179474
+    ],
+    "datas": [
+      "21/05/2026",
+      "13/05/2026",
+      "13/05/2026",
+      "04/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 13/05/2026\n\n**O QUE aconteceu:** As contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025 foram aprovadas na assembleia geral realizada em 8 de maio de 2026.\n\n**Resumo:** A assembleia foi realizada sem a presença de cotistas, mas as contas anuais foram consideradas automaticamente aprovadas.\n\n**Trecho-chave:**\n\"considerando que as demonstrações contábeis não contêm ressalvas, ficam as mesmas consideradas automaticamente aprovadas.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 04/05/2026\n\n**O QUE aconteceu:** A assembleia de cotistas para aprovação das contas do exercício social encerrado em 31 de dezembro de 2025 foi realizada em 8 de maio de 2026, mas nenhum cotista compareceu.\n\n**Resumo:** A assembleia não pôde ser instalada e as contas foram consideradas automaticamente aprovadas.\n\n**Trecho-chave:**\n\"não sendo, portanto, possível sua instalação. Dessa forma, e considerando que as demonstrações contábeis não contêm ressalvas, ficam as mesmas consideradas automaticamente aprovadas.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 21/05/2026\n\n**O QUE aconteceu:** A atualização da forma de divulgação da remuneração dos Prestadores de Serviços Essenciais foi aprovada, passando a ser realizada exclusivamente por meio da Ferramenta ANBIMA.\n\n**Resumo:** A Administradora adotou as novas diretrizes de transparência estabelecidas pelo Ofício-Circular CVM nº 1/2025.\n\n**Trecho-chave:**\n\"restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 13/05/2026\n\n**O QUE aconteceu:** A assembleia de cotistas para aprovação das contas do exercício social encerrado em 31 de dezembro de 2025 foi realizada em 8 de maio de 2026, mas nenhum cotista compareceu.\n\n**Resumo:** A assembleia não pôde ser instalada e as contas foram consideradas automaticamente aprovadas.\n\n**Trecho-chave:**\n\"não sendo, portanto, possível sua instalação. Dessa forma, e considerando que as demonstrações contábeis não contêm ressalvas, ficam as mesmas consideradas automaticamente aprovadas.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1149854,
+    "data_entrega": "31/03/2026 14:06",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do SPX Desenvolvimento de Galpões Logísticos Feeder Galapagos Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o período de 21 de março de 2025"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "ticker": "JPPD11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T01:04:01",
+  "comunicados": {
+    "ids": [
+      1074061,
+      1057223,
+      1119617,
+      1074062,
+      1175066,
+      1175063
+    ],
+    "datas": [
+      "31/12/2025",
+      "09/12/2025",
+      "23/02/2026",
+      "31/12/2025",
+      "30/04/2026",
+      "30/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 31/12/2025\n\n**O QUE aconteceu:** Remarcação dos ativos da carteira do fundo.\n\n**Resumo:** A administradora informa que a remarcação dos ativos está em fase de conclusão, o que resultará no valor provisório das cotas até a finalização da avaliação.\n\n**Trecho-chave:**\n\"A BEM DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA. , na qualidade de administradora do JPP FII – FUNDO DE INVESTIMENTO IMOBILIÁRIO - FII, inscrito no CNPJ/MF sob o  n.º 11.268.335/0001-01 (\"FUNDO\"), COMUNICA que, a remarcação dos ativos que compõem a carteira do FUNDO está em fase de conclusão, razão pela qual o valor da cota divulgado a partir de 31 de dezembro de 2025 terá caráter provisório até a finalização da avaliação dos ativos, para posterior reprocessamento da carteira do FUNDO, a fim de refletir o valor dos ativos, fazendo a devida comunicação ao cotista.\"\n\n**Conexão com indicadores:** Este fato pode afetar temporariamente os valores das cotas e o patrimônio líquido do fundo.\n\n---\n\n### FATO RELEVANTE entregue em 09/12/2025\n\n**O QUE aconteceu:** Impacto positivo na carteira devido à alienação parcial do imóvel Santo Izidro.\n\n**Resumo:** Houve um impacto positivo no patrimônio líquido do fundo, correspondente a 15,008% do valor total, resultante da venda parcial do imóvel Santo Izidro.\n\n**Trecho-chave:**\n\"A BEM DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA. , na qualidade de administradora do JPP FII – FUNDO DE INVESTIMENTO IMOBILIÁRIO - FII, inscrito no CNPJ/MF sob o  n.º 11.268.335/0001-01 (\"FUNDO\"), INFORMA aos cotistas e ao mercado em geral que, em decorrência da alienação parcial do imóvel Santo Izidro, detido pelo FUNDO, houve o impacto positivo no montante de R$ 25.960.000,55 (vinte e cinco milhões, novecentos e sessenta mil reais e cinquenta e cinco centavos), correspondente a 15,008% sobre o patrimônio líquido do FUNDO.\"\n\n**Conexão com indicadores:** Este fato pode afetar positivamente os indicadores de patrimônio líquido e valor dos ativos.\n\n---\n\n### COMUNICADO AO MERCADO entregue em 23/02/2026\n\n**O QUE aconteceu:** Conclusão da remarcação dos ativos sem impactos relevantes no patrimônio líquido.\n\n**Resumo:** A administradora informa que a remarcação dos ativos foi concluída e não houve impactos relevantes no patrimônio líquido do fundo para o exercício social de 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"A BEM DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA. , inscrita no CNPJ/MF nº 00.066.670/0001 -00, na qualidade de administradora do JPP FII – FUNDO DE INVESTIMENTO IMOBILIÁRIO, inscrito no CNPJ/MF sob o n.º 11.268.335/0001-01, INFORMA que, em consonância ao comunicado encaminhado em 31 de dezembro de 2025, foi concluída a remarcação dos ativos que compõem a carteira do FUNDO e não houve impactos relevantes no patrimônio líquido e no valor dos ativos integrantes da carteira do FUNDO, para o exercício social base 31 de dezembro de 2025.\"\n\n**Conexão com indicadores:** Este fato confirma que a remarcação não teve impactos significativos nos indicadores financeiros.\n\n---\n\n### ASSEMBLEIA AGO entregue em 30/04/2026\n\n**O QUE aconteceu:** Conclusão da consulta formal e aprovação das demonstrações contábeis do exercício social de 2025.\n\n**Resumo:** A assembleia foi concluída com a aprovação das demonstrações contábeis do fundo para o exercício social findo em 31 de dezembro de 2025, após receber o voto do único cotista.\n\n**Trecho-chave:**\n\"A BEM DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA., inscrita no CNPJ/MF sob o n.º 00.066.670/0001-00, com sede no Núcleo Cidade de Deus, s/nº, Prédio Prata, 4º Andar, Osasco/SP, na qualidade de Administradora Fiduciária do Fundo, vem, pelo presente, informar que, em razão do recebimento do voto do cotista detentor da totalidade das cotas emitidas, a Consulta Formal convocada em 31 de março de 2026, foi concluída, sendo verificada a APROVAÇÃO da matéria submetida à deliberação.\"\n\n**Conexão com indicadores:** Esta aprovação é um passo importante para o processo contábil e administrativo do fundo."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1151642,
+    "data_entrega": "31/03/2026 21:02",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do JPP FII - Fundo de Investimento Imobiliário em 31 de dezembro de 2025 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos Fundos de Investimento Imobiliário"
+  }
+}

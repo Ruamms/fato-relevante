@@ -1,0 +1,27 @@
+{
+  "ticker": "TAGI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:22:01",
+  "comunicados": {
+    "ids": [
+      1124551
+    ],
+    "datas": [
+      "27/02/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGE"
+    ],
+    "texto": "### ASSEMBLEIA GERAL EXTRAORDINÁRIA (AGE) ENTREGUE EM 27/02/2026\n\n**O QUE ACONTECEU:** Realizada a AGE para tratar de assuntos relevantes do fundo.\n\n**RESUMO:** A AGE discutiu e deliberou sobre questões financeiras e administrativas, sem anúncios de mudanças significativas no atual quadro operacional.\n\n**TRECHO-CHAVE:**\n\"Em reunião realizada nesta data, foram debatidos diversos assuntos relacionados à gestão do fundo, mas não houve decisões que alterem a estrutura atual.\"\n\n### CONEXÃO COM O CONTEXTUALIZAÇÃO:\nA AGE não trouxe novas mudanças significativas que afetariam os indicadores financeiros já apresentados."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1243622,
+    "data_entrega": "10/07/2026 12:03",
+    "tipo": "abstencao",
+    "rotulo": "abstenção de opinião",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Não expressamos uma opinião sobre as demonstrações financeiras do OAR - Fundo de Investimento Imobiliário pois, devido à relevância dos assuntos descritos n a seção a seguir, intitulada “Base para abstenção de opinião”, não nos foi possível obter evidências de auditoria apropriadas e suficientes para fundamentar nossa opinião de auditoria sobre essas demonstrações financeiras."
+  }
+}

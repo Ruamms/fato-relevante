@@ -1,0 +1,27 @@
+{
+  "ticker": "OURO11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:58:30",
+  "comunicados": {
+    "ids": [
+      1237560
+    ],
+    "datas": [
+      "01/07/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO"
+    ],
+    "texto": "**Data:** 30 de junho de 2026  \n**Título:** Assembleia Geral Ordinária Convocada  \n**Resumo:** A assembleia ordinária será realizada para deliberar sobre as demonstrações contábeis do exercício social encerrado em 31 de março de 2026.  \n**Trecho-chave:**\n\"O Administrador informa que, nos termos do Parágrafo Terceiro, do Artigo 71, da Resolução CVM nº 175/22, na hipótese de a Assembleia não ser instalada por não comparecimento de cotistas, as Demonstrações Contábeis do Fundo serão consideradas automaticamente aprovadas.\" (p. 1)\n\n**Conexão com o contexto:** Esta assembleia se refere às demonstrações contábeis do exercício social mais recente, que é o encerrado em 31 de março de 2026, conforme calculado pelo contexto."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1207044,
+    "data_entrega": "29/05/2026 10:43",
+    "tipo": "nao_identificado",
+    "rotulo": "parecer não identificado no texto",
+    "grave": false,
+    "continuidade": false,
+    "trecho": ""
+  }
+}

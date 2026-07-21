@@ -1,0 +1,47 @@
+{
+  "ticker": "AUGM11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T01:28:13",
+  "relatorio": {
+    "id": 822803,
+    "data_entrega": "20/01/2025 15:07",
+    "texto": "### Fatos do Relatório Gerencial:\n\n1. **Aquisição de Novo Ativo**: O fundo realizou a compra do CRI Citas Ipiranga, com taxa de aquisição de IPCA + 11,75% a.a., totalizando R$ 9,4 milhões.\n2. **Diversificação da Carteira**: A alocação em CRIs representou aproximadamente 65% do patrimônio líquido no mês de dezembro, com a expectativa de chegar a 80% nos próximos 60 dias.\n3. **Dividendos**: Distribuição de dividendos no valor de R$ 0,188/cota (Dividend Yield: 1,90% a.m.), totalizando R$ 9,573,688 em 2024.\n4. **Risco no Mercado**: Encerramento do ano com aumento significativo de risco no mercado local e queda nos preços do mercado de crédito privado e ativos de risco.\n5. **Inflação**: O IPCA acumulou alta de 4,83% em 2024, acima do teto da meta estabelecido de 4,50%.\n6. **Curvas de Juros**: As curvas de juros futuros continuam elevadas, com alguns vértices superando 15,00% a.a., impactando negativamente o hedge dos ativos do fundo.\n\n### O que observar em seguida:\n- Monitorar as novas operações em processo de estruturação e liquidação previstas para janeiro e fevereiro de 2025.\n- Observar a evolução da carteira com foco no hedge dos ativos contra movimentos de curvas de juros."
+  },
+  "comunicados": {
+    "ids": [
+      1043101,
+      1030641,
+      1028998
+    ],
+    "datas": [
+      "17/11/2025",
+      "07/11/2025",
+      "05/11/2025"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 17/11/2025\n\n**O QUE aconteceu:** Período de Investimento do Fundo encerra e começa a amortização de cotas.\n\n**Resumo:** A AUGME CAPITAL GESTÃO DE RECURSOS LTDA. optou por finalizar o Período de Investimento com o consequente início da amortização de Cotas, conforme previsto no Regulamento do Fundo.\n\n**Trecho-chave:**\n\"AUGME CAPITAL GESTÃO DE RECURSOS LTDA., na qualidade de Gestora, optou por finalizar o Período de Investimento com o consequente início da amortização de Cotas, conforme previsto no Regulamento do Fundo.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 07/11/2025\n\n**O QUE aconteceu:** Assembleia Geral Ordinária de Cotistas aprovou as Demonstrações Financeiras e Notas Explicativas do exercício social findo em 30.06.2024.\n\n**Resumo:** A assembleia, realizada não presencialmente, aprovou as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 30.06.2024.\n\n**Trecho-chave:**\n\"Observado o art. 71 da Instrução CVM 175/2022, restam aprovadas: (i) As Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 30.06.2024.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 05/11/2025\n\n**O QUE aconteceu:** Assembleia Geral Ordinária de Cotistas aprovou as Demonstrações Financeiras e Notas Explicativas do exercício social findo em 30.06.2025.\n\n**Resumo:** A assembleia, realizada não presencialmente, aprovou as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 30.06.2025.\n\n**Trecho-chave:**\n\"Observado o art. 71 da Instrução CVM 175/2022, restam aprovadas: (i) As Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 30.06.2025.\" (p. 1)\n\n---\n\n**Conexão com o contexto:** A aprovação das Demonstrações Financeiras no documento de assembleia está relacionada aos indicadores financeiros do fundo, como o Patrimônio Líquido e o Valor do Ativo, que apresentaram quedas significativas nos últimos 12 meses."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "VP/cota em queda relevante",
+      "Fundo novo — histórico curto"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 1001718,
+    "data_entrega": "29/09/2025 22:57",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o período de 05 de agosto de 2024 a 30 de junho de 2025, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos fundos de investiment"
+  }
+}

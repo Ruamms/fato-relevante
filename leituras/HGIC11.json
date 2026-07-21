@@ -1,0 +1,55 @@
+{
+  "ticker": "HGIC11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T03:46:41",
+  "relatorio": {
+    "id": 1228432,
+    "data_entrega": "25/06/2026 18:02",
+    "texto": "### Fatos Extraídos:\n\n1. **Resultados Financeiros:**\n   - O fundo obteve receitas de R$ 0,36 por cota provenientes de dividendos de outros fundos imobiliários e receitas financeiras.\n   - Realizou a venda de duas unidades da Torre Bella Aurora, gerando R$ 0,11 por cota no mês de maio/26.\n\n2. **Distribuição de Cotas:**\n   - A distribuição de dividendos foi de R$ 0,60 por cota, correspondendo a um dividend yield de 1,04% no período.\n   - O resultado caixa acumulado no mês de maio/26 foi de R$ 0,89/cota.\n\n3. **Carteira de Crédito Privado:**\n   - A carteira de crédito privado não teve alterações no referido mês.\n   - Mantinha sua duration média da carteira de crédito em 1,90 ano e a taxa média da carteira a 11,94% a.a. + IPCA.\n\n4. **Cenário Econômico:**\n   - O IPCA registrou alta de 0,58%, impulsionado principalmente pelo grupo de alimentos e bebidas.\n   - O setor imobiliário físico manteve forte atividade e resiliência, com o volume de financiamentos com recursos da poupança (SBPE) somando R$ 16,98 bilhões no período.\n\n5. **Vacância:**\n   - A vacância do Residencial Bella Aurora foi de 21%.\n   - O Residencial Belvedere não tinha unidades em carteira e estava com estoque total de 2 unidades.\n\n### O que observar em seguida:\n- Monitorar a evolução da vacância no Residencial Bella Aurora, já que está acima do normal.\n- Observar as vendas futuras dos imóveis listados para monitorar o desempenho do portfólio de imóveis."
+  },
+  "comunicados": {
+    "ids": [
+      1085464,
+      936585,
+      932224,
+      1027759,
+      1035844,
+      1002475
+    ],
+    "datas": [
+      "15/01/2026",
+      "30/06/2025",
+      "25/06/2025",
+      "04/11/2025",
+      "13/11/2025",
+      "30/09/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 15/01/2026\n\n**O Fundo adquiriu Certificados de Recebíveis Imobiliários (CRIs).**\nO Fundo adquiriu CRIs emitidos em 18 de novembro de 2020, com vencimento programado para 24 de novembro de 2025. Até a data do comunicado, o saldo devedor pendente perante o Fundo é de aproximadamente 1,69% do patrimônio líquido.\n\n> \"Não obstante o vencimento da operação na data supracitada, o Fundo não recebeu, até a presente data, a quitação da totalidade do montante investido, acrescido da remuneração total definida no Termo de Securitização dos CRIs. O saldo devedor aproximado, pendente perante o Fundo, é de, aproximadamente, 1,69% do patrimônio líquido;\"\n\n### FATO RELEVANTE entregue em 30/06/2025\n\n**Nova administradora assumiu as responsabilidades.**\nA partir do fechamento do dia 30/06/2025, o serviço de escrituração das cotas passou a ser prestado pela Nova Administradora (Vórtx Distribuidora), em substituição à Antiga Administradora (BTG Pactual).\n\n> \"A partir do fechamento do dia 30/06/2025, o serviço de escrituração das cotas do Fundo passará a ser prestado pela Nova Administradora, em substituição à Antiga Administradora.\"\n\n### FATO RELEVANTE entregue em 25/06/2025\n\n**Alteração da administração do Fundo.**\nFoi aprovada, em Assembleia Geral de Cotistas realizada por meio de Consulta Formal iniciada em 12 de maio de 2025, a alteração da administração do Fundo, da BTG Pactual (Antiga Administradora) para a Vórtx Distribuidora (Nova Administradora). A alteração entrará em vigor a partir da abertura dos mercados do dia 1º de julho de 2025.\n\n> \"I. Foi aprovada, em Assembleia Geral de Cotistas realizada por meio de Consulta Formal iniciada em 12 de maio de 2025, a alteração da administração do Fundo, da BTG Pactual (Antiga Administradora), para a Vórtx Distribuidora (Nova Administradora). A alteração supracitada entrará em vigor a partir da abertura dos mercados do dia 1º de julho de 2025.\"\n\n### COMUNICADO AO MERCADO entregue em 04/11/2025\n\n**Resposta ao Ofício da B3 sobre ressalvas nas Demonstrações Financeiras.**\nA Vórtx Distribuidora, na qualidade de administradora do Fundo, apresentou esclarecimentos aos motivos das ressalvas nas Demonstrações Financeiras do Fundo referentes a 2025.\n\n> \"As demonstrações financeiras do Fundo, referente ao exercício social de 2025, foram ressalvadas pelos seguintes motivos: High Fundo de Investimento Imobiliário (High) – Fundo Investido: os auditores emitiram parecer com abstenção de opinião decorrente da não obtenção das demonstrações financeiras da High Desenvolvimento Ltda., companhia investida do High. Atualmente, o gestor monitora o processo de auditoria, conduzido pela Grant Thornton, que está em fase final dos trabalhos, com expectativa de emissão para as próximas semanas.\"\n\n### ASSEMBLEIA AGO entregue em 13/11/2025\n\n**Aprovação das contas e demonstrações contábeis do Fundo.**\nA Consulta Formal realizada aos Cotistas resultou na aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31 de outubro de 2025.\n\n> \"Sendo o que nos cumpria para o momento, permanecemos à disposição para esclarecer eventuais dúvidas adicionais que se façam necessárias.\"\n\n### ASSEMBLEIA AGO entregue em 30/09/2025\n\n**Proposta de aprovação das contas e demonstrações contábeis do Fundo.**\nA Vórtx Distribuidora, na qualidade de administradora do Fundo, propôs a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31 de outubro de 2025.\n\n> \"Em 30/09/2025, foi enviada aos Cotistas do Fundo a Convocação da Consulta Formal para a Assembleia Geral, que contará com as seguintes matérias na Ordem do Dia: Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31 de outubro de 2025.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "P/VP muito abaixo da média histórica"
+    ],
+    "cota": 52.65
+  },
+  "parecer": {
+    "id": 1068621,
+    "data_entrega": "23/12/2025 15:06",
+    "tipo": "abstencao",
+    "rotulo": "abstenção de opinião",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, exceto pelos possíveis efeitos dos assuntos descritos na seção a seguir intitulada “Bases para opinião com ressalvas”, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do HGI Créditos Imobiliários Fundo de Investimento Imobiliário em 30 de junho de 2025, o desempenho de suas operações e os s"
+  }
+}

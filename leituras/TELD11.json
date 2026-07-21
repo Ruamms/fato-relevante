@@ -1,0 +1,30 @@
+{
+  "ticker": "TELD11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:37:34",
+  "comunicados": {
+    "ids": [
+      1241109,
+      1183682
+    ],
+    "datas": [
+      "07/07/2026",
+      "08/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 07/07/2026\n\n**O QUE aconteceu:** Não haverá distribuição de resultados para o mês de julho/2026.\n\n**Resumo:** O fundo informou que não realizará a distribuição de resultados referente ao mês de julho, mantendo-se alinhado com uma série semelhante de comunicados recentes.\n\n**Trecho-chave:**\n\"em relação ao mês de JULHO/2026, não haverá distribuição de resultados.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 08/05/2026\n\n**O QUE aconteceu:** Não haverá distribuição de resultados para o mês de maio/2026.\n\n**Resumo:** O fundo informou que não realizará a distribuição de resultados referente ao mês de maio, mantendo-se alinhado com uma série semelhante de comunicados recentes.\n\n**Trecho-chave:**\n\"em relação ao mês de MAIO/2026, não haverá distribuição de resultados.\"\n\n---\n\n**Conexão com o contexto:** Esses comunicados se conectam à informação do contexto sobre rendimentos irregulares, pois indicam que há meses sem distribuição de resultados."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 858618,
+    "data_entrega": "14/03/2025 18:21",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Tellus Desenvolvimento Logístico Fundo de Investimento Imobiliário em 31 de dezembro de 2024, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil"
+  }
+}

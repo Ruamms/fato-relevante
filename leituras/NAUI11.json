@@ -1,0 +1,36 @@
+{
+  "ticker": "NAUI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:08:09",
+  "comunicados": {
+    "ids": [
+      826005,
+      1252743,
+      1252736,
+      1251794
+    ],
+    "datas": [
+      "28/01/2025",
+      "17/07/2026",
+      "17/07/2026",
+      "17/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 28/01/2025\n\n**O QUE aconteceu:** Venda de quotas das Sociedades detentoras dos imóveis Assaí no Rio de Janeiro e Guarujá.\n\n**Resumo:** O NAUI11 vendeu as quotas das Sociedades TLMC12 e TLMC19, que detinham os imóveis Assaí em Rio de Janeiro e Guarujá, respectivamente. As vendas foram condicionadas a certos termos.\n\n**Trecho-chave:**\n\"foram assinados os Compromissos de Compra e Venda de Quotas Definitivos entre as partes para a venda da totalidade das quotas das Sociedades (TLMC12 e TLMC19)  detentoras dos imóveis e dos direitos sobre as duas lojas locadas para o Assaí localizadas no Rio de Janeiro - RJ e Guarujá – SP, para o Comprador ALIANZA TRUST RENDA IMOBILIÁRIA – FUNDO DE INVESTIMENTO IMOBILIÁRIO.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 17/07/2026\n\n**O QUE aconteceu:** Amortização parcial das cotas no montante bruto de R$ 2.000.000,00.\n\n**Resumo:** O NAUI11 aprovou uma amortização parcial das cotas no valor de R$ 2.000.000,00, com pagamento previsto até o dia 31 de julho de 2026.\n\n**Trecho-chave:**\n\"Conforme ata da Assembleia Especial Extraordinária de Cotistas realizada via consulta formal e posterior Instrumento de Reratificação, divulgado nesta data no sistema Fundos.Net, foi aprovado o evento de amortização parcial das cotas no montante bruto de R$2.000.000,00 (dois milhões de reais) com pagamento previsto para ser efetivado até o dia 31 de julho de 2026.\"\n\n---\n\n### ASSEMBLEIA AGE entregue em 17/07/2026\n\n**O QUE aconteceu:** Rerratificação da ata da assembleia para alterar o prazo do pagamento da amortização.\n\n**Resumo:** A administradora rerratificou a ata da assembleia, alterando o prazo de pagamento da amortização extraordinária parcial das cotas do Fundo, que passou a ser até 31 de julho de 2026.\n\n**Trecho-chave:**\n\"Fica rerratificado o último parágrafo da Ata da Consulta Formal, que passa a vigorar com a seguinte redação: 'O pagamento da amortização prevista na matéria aprovada ocorrerá até o dia 31 de julho de 2026.'\"\n\n---\n\n### ASSEMBLEIA AGE entregue em 17/07/2026\n\n**O QUE aconteceu:** Aprovação da amortização parcial das cotas.\n\n**Resumo:** Os cotistas do NAUI11 aprovaram a amortização extraordinária parcial de cotas no valor bruto equivalente a R$ 2.000.000,00, distribuídos na proporcionalidade da participação de cada cotista.\n\n**Trecho-chave:**\n\"A matéria da Ordem do Dia abaixo foi APROVADA pela maioria dos Cotistas presentes, conforme quórum detalhado a seguir: (i) aprovar a amortização extraordinária parcial de cotas do Fundo (\"Amortização Extraordinária\"), no valor bruto equivalente a R$ 2.000.000,00 (dois milhões de reais), a serem distribuídos na proporcionalidade da participação de cada cotista.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1152279,
+    "data_entrega": "01/04/2026 01:09",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe em 31 de dezembro de 2025 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

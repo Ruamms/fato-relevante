@@ -1,0 +1,45 @@
+{
+  "ticker": "AZPR11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T01:10:27",
+  "relatorio": {
+    "id": 1245554,
+    "data_entrega": "13/07/2026 14:26",
+    "texto": "### Fatos do Relatório Gerencial\n\n1. **Investimento em Novos Ativos**: O Fundo AZPR11 realizou a aquisição de estoques de unidades residenciais no empreendimento Collage, da Helbor, localizado na região central de São Paulo, bairro da Bela Vista.\n2. **Alocação Elevada**: 4% do patrimônio líquido do Fundo está disponível para novas oportunidades de investimento.\n3. **Portfólio Estável**: A carteira do Fundo permanece estável sem alterações relevantes no período, com acompanhamento próximo da gestão.\n4. **Dividendos e Retorno**: O Fundo distribuiu R$ 0,125/cota em junho/2026, correspondendo a uma rentabilidade de 1,29% ao mês (CDI+2,00%a.a.), mantendo a estratégia de manutenção da boa alocação e reinvestimento.\n5. **Patrimônio Líquido**: O patrimônio líquido do Fundo é de R$ 145,4 milhões, com uma cota patrimonial de R$ 9,71.\n6. **Cotas Distribuídas**: Desde o início (out/2023), o Fundo distribuiu R$ 3,878/cota em dividendos, equivalente a um retorno de 124,4% do CDI ou 155,5% considerando o gross up do imposto de renda.\n7. **Operações Ativas**: O Fundo manteve-se ativo com novas operações como aquisição de estoques e financiamento para construção de empreendimentos residenciais.\n\n### O que observar em seguida:\n1. **Acompanhamento das Novas Operações**: Observar o desempenho do empreendimento Collage Bela Vista.\n2. **Evolução dos Empréstimos e Financiamentos**: Monitorar a evolução das operações de financiamento, como o projeto Netcorp Tower - Jardins, para garantir que as previsões sejam cumpridas."
+  },
+  "comunicados": {
+    "ids": [
+      955613,
+      1030633,
+      1028996
+    ],
+    "datas": [
+      "29/07/2025",
+      "07/11/2025",
+      "05/11/2025"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Comunicado ao Mercado entregue em 10 de julho de 2025\n\n**O QUE aconteceu:** A XP Corretora de Câmbio, Títulos e Valores Mobiliários S.A., administradora do AZ Quest Panorama Crédito Imobiliário FII, informou a adaptação do regulamento do Fundo à Resolução da CVM nº 175.\n\n**Resumo:** A administração realizou alterações no regulamento do fundo para adequá-lo às novas regras estabelecidas pela Comissão de Valores Mobiliários (CVM).\n\n**Trecho-chave:**\n\"O Fundo não sofreu qualquer alteração que dependa de deliberação dos cotistas, sendo certo que as alterações promovidas refletem apenas a adequação a Resolução CVM 175.\"\n\n### Assembleia Geral Ordinária de Cotistas entregue em 07/11/2025\n\n**O QUE aconteceu:** A assembleia geral ordinária de cotistas do AZ Quest Panorama Crédito Imobiliário FII aprovou as demonstrações financeiras, notas explicativas e parecer dos auditores independentes referentes ao exercício social findo em 30.06.2024.\n\n**Resumo:** A assembleia foi realizada de forma não presencial e aprovou os documentos contábeis do fundo para o período mencionado.\n\n**Trecho-chave:**\n\"Observado o art. 71 da Instrução CVM 175/2022, restam aprovadas: As Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 30.06.2024.\"\n\n### Assembleia Geral Ordinária de Cotistas entregue em 05/11/2025\n\n**O QUE aconteceu:** A assembleia geral ordinária de cotistas do AZ Quest Panorama Crédito Imobiliário FII aprovou as demonstrações financeiras, notas explicativas e parecer dos auditores independentes referentes ao exercício social findo em 30.06.2025.\n\n**Resumo:** A assembleia foi realizada de forma não presencial e aprovou os documentos contábeis do fundo para o período mencionado.\n\n**Trecho-chave:**\n\"Observado o art. 71 da Instrução CVM 175/2022, restam aprovadas: As Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 30.06.2025.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 1001720,
+    "data_entrega": "29/09/2025 22:59",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nesta data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos fundos de investimento imobiliários."
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "ticker": "NCRI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T04:17:59",
+  "comunicados": {
+    "ids": [
+      1045249,
+      1018399
+    ],
+    "datas": [
+      "21/11/2025",
+      "22/10/2025"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA AGO entregue em 21/11/2025\n\n**Data:** 21/11/2025  \n**Título:** Aprovação das Demonstrações Financeiras do Fundo aprovada  \n**Resumo:** A assembleia geral ordinária aprovou as demonstrações financeiras do fundo acompanhadas do relatório do auditor independente referente ao exercício social findo em 30 de junho de 2025.  \n**Trecho-chave:**\n\"Após análise das repostas dos Cotistas à Consulta Formal, foram apurados os seguintes resultados para os itens da ordem do dia:\nAPROVO NÃO APROVO ABSTENCÃO CONFLITADO\nItem 1. 0.07 % 0 % 0.01 % 0 %\" (p. 2)\n\n### ASSEMBLEIA AGO entregue em 22/10/2025\n\n**Data:** 22/10/2025  \n**Título:** Convocação de Assembleia Geral Ordinária – Consulta Formal  \n**Resumo:** A administradora do fundo convocou os cotistas para uma assembleia geral ordinária por meio de consulta formal, onde serão deliberadas as demonstrações financeiras do exercício social findo em 30 de junho de 2025.  \n**Trecho-chave:**\n\"A BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., instituição financeira com sede na cidade de São Paulo, Estado de São Paulo, na Rua Alves Guimarães, 1212, Pinheiros, CEP 05410-002, inscrita no CNPJ sob o nº 13.486.793/0001-42, devidamente credenciada pela Comissão de Valores Mobiliários (\"CVM\") para o exercício da atividade de administração de carteiras de títulos e valores mobiliários, conforme Ato Declaratório nº 11.784, de 30 de junho de 2011 (\"Administrador\"), na qualidade de instituição administradora do NAVI CRÉDITO IMOBILIÁRIO FUNDO DE INVESTIMENTO IMOBILIÁRIO – RESPONSABILIDADE LIMITADA, inscrito no CNPJ sob o nº 40.041.603/0001-56 (\"Fundo\"), convida os cotistas do Fundo (\"Cotistas\"), por meio desta, a participar da Assembleia Geral Ordinária de Cotistas do Fundo (AGO), a ser realizada de forma não presencial, por meio de coleta de voto a distância, cuja formalização da apuração ocorrerá no dia 21 de novembro de 2025, utilizando-se da plataforma Cuore para Voto à Distância para deliberar sobre a seguinte matéria da Ordem do Dia:\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 999695,
+    "data_entrega": "26/09/2025 18:07",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Navi Crédito Imobiliário Fundo de Investimento Imobiliário – Responsabilidade Limitada (anteriormente denominado Navi Crédito Imobiliário Fundo de Investimento Imobiliário) em 30 de junho de 2025, o desempenho de suas operações e os seus fl"
+  }
+}

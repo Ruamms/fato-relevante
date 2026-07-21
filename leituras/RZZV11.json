@@ -1,0 +1,47 @@
+{
+  "ticker": "RZZV11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T23:31:17",
+  "relatorio": {
+    "id": 1236335,
+    "data_entrega": "30/06/2026 20:52",
+    "texto": "### Fatos do Relatório Gerencial\n\n1. **Vacância e Ocupação**: A ocupação do empreendimento logístico é de 96,5%, com uma vacância de apenas 3,5%. (p. 3)\n2. **Cotas Distribuídas e Rendimentos**: O rendimento mensal por cota é de R$ 8,30, distribuindo um total de R$ 1.194,84 por cota no mês. (p. 3)\n3. **Indicadores Financeiros**: O patrimônio líquido do fundo aumentou para R$ 207,352.351,72, um aumento de 43,52% em relação ao ano anterior. (p. 2)\n4. **Taxa de Administração**: A taxa de administração é de 1,23% a.a., sendo 0,23% destinado à escrituração das cotas e 1% para consultoria imobiliária. (p. 2)\n5. **Cotas e Cotistas**: O número total de cotas é de 173.540, com um aumento de 43,74% em relação ao ano anterior. A base de cotistas é composta por apenas 131 pessoas. (p. 2)\n6. **Reajuste dos Rendimentos**: Os reajustes do rendimento mensal são indexados pelo IPCA, com variações mensais entre 7% e 15%. (p. 4)\n7. **Distribuição de Lucros**: O fundo deverá distribuir mais de 95% dos lucros apurados no semestre para conformar-se com a legislação vigente. (p. 6)\n\n### Observações\n- A base de cotistas é muito pequena, o que pode impactar na liquidez e volatilidade da cota.\n- Os rendimentos são irregulares, com 8 meses no ano passado apresentando dividend yield declarado acima de zero.\n\nO que observar em seguida:\n1. O comportamento dos rendimentos mensais e sua variação indexada pelo IPCA.\n2. A evolução da base de cotistas e a dinâmica de novas emissões de cotas."
+  },
+  "comunicados": {
+    "ids": [
+      822572,
+      1065376,
+      1054856
+    ],
+    "datas": [
+      "17/01/2025",
+      "17/12/2025",
+      "04/12/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 17/01/2025\n\n**O QUE aconteceu:** Aprovada a distribuição de novas cotas da 3ª emissão do Fundo RAIZZ DESENVOLVIMENTO I.\n\n**Resumo:** O fundo decidiu emitir novas cotas, com o objetivo de financiar a construção da segunda fase de um empreendimento localizado no Espírito Santo. A distribuição será realizada para investidores profissionais e o montante inicial previsto é de R$ 80 milhões.\n\n**Trecho-chave:**\n\"Conforme orientação prévia da RAIZZ PROPERTIES DESENVOLVIMENTO IMOBILIÁRIO S.A., foi aprovada, mediante procedimento de consulta formal (‘Consulta Formal’), encaminhado aos Cotistas no dia 26 de dezembro de 2024 e consolidado no âmbito de Assembleia Geral Extraordinária de Cotistas, realizada em 16 de janeiro de 2025, a distribuição de novas cotas da 3ª emissão do Fundo (‘Novas Cotas’), no montante de, inicialmente, R$ 80.000.000,00 (oitenta milhões de reais).\"\n\n### ASSEMBLEIA AGO entregue em 17/12/2025\n\n**O QUE aconteceu:** Aprovada a quarta emissão de cotas pelo Fundo RAIZZ DESENVOLVIMENTO I.\n\n**Resumo:** O fundo decidiu emitir novas cotas, com o objetivo de financiar os custos necessários à conclusão da segunda fase de um empreendimento localizado no Espírito Santo. A distribuição será realizada para investidores profissionais e o montante inicial previsto é de R$ 30 milhões.\n\n**Trecho-chave:**\n\"1. Aprovar a quarta emissão de Cotas pelo Fundo, no montante total de emissão de até R$ 30.000.000,00 (trinta milhões de reais), conforme as características constantes do Regulamento ('Novas Cotas' e 'Quarta Emissão', respectivamente).\"\n\n### ASSEMBLEIA AGE entregue em 04/12/2025\n\n**O QUE aconteceu:** Aprovada a apuração das contas do exercício social findo em 30 de junho de 2025.\n\n**Resumo:** A assembleia geral ordinária de cotistas aprovou as contas e demonstrações contábeis do fundo, relativas ao exercício social findo em 30 de junho de 2025. O quórum necessário foi atingido com aproximadamente 14,73% das cotas representadas.\n\n**Trecho-chave:**\n\"Matéria I - Aprovar as contas e demonstrações contábeis do Fundo, devidamente auditadas, relativas ao exercício social findo em 30 de junho de 2025. Resultado: Aprovada com 100% dos votos.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Base de cotistas muito pequena",
+      "Rendimentos irregulares"
+    ],
+    "cota": 1050.0
+  },
+  "parecer": {
+    "id": 994966,
+    "data_entrega": "22/09/2025 10:15",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Raizz Desenvolvimento I Fundo de Investimento Imobiliário - FII Responsabilidade Limitada em 30 de junho de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data , de acordo com as práticas contáb"
+  }
+}

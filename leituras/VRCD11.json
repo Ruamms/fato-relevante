@@ -1,0 +1,27 @@
+{
+  "ticker": "VRCD11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T04:13:48",
+  "comunicados": {
+    "ids": [
+      1179155
+    ],
+    "datas": [
+      "04/05/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGE"
+    ],
+    "texto": "**04/05/2026 - Deliberação sobre destituição da CBSF e eleição de novas administradoras**\n\nA assembleia geral de cotistas do Fundo Viracondo decidiu, por unanimidade, destituir a CBSF Trust Distribuidora de Títulos e Valores Mobiliários S.A. (atual REAG) do exercício das funções de administradora fiduciária, distribuição, controladoria, tesouraria, escrituradora e custodiante do fundo.\n\n*\"Os cotistas do Fundo, no exercício de sua competência privativa e soberana prevista na Resolução CVM nº 175, deliberam, por unanimidade e sem quaisquer ressalvas, destituir a CBSF, Administradora em Liquidação Extrajudicial, do exercício da função de administradora fiduciária distribuição, controladoria, tesouraria, escrituradora e custodiante do Fundo.\"* (p. 2)\n\nEsta deliberação reflete mudanças na estrutura administrativa do fundo, impactando diretamente a gestão e operações do mesmo."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1001458,
+    "data_entrega": "29/09/2025 19:48",
+    "tipo": "abstencao",
+    "rotulo": "abstenção de opinião",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Não expressamos uma opinião sobre as demonstrações contábeis acima referidas do Viracondo Fundo de Investimento Imobiliário, pois, devido à relevância dos assuntos descritos na seção a seguir intitulada “Base para abstenção de opinião”, não nos foi possível obter evidência de auditoria apropriada e suficiente para fundamentar nossa opinião de auditoria sobre essas demonstraçõe s contábeis do Fundo"
+  }
+}

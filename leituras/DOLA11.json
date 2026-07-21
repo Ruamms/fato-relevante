@@ -1,0 +1,30 @@
+{
+  "ticker": "DOLA11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:25:50",
+  "comunicados": {
+    "ids": [
+      1240171,
+      1238253
+    ],
+    "datas": [
+      "06/07/2026",
+      "02/07/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA AGO entregue em 06/07/2026\n\n**O QUE ACONTECEU:** Convocação para Assembleia Geral Ordinária.\n\n**RESUMO:** A assembleia foi convocada de acordo com a Resolução CVM 175/22, e as demonstrações contábeis do exercício social findo em 31/03/2026 foram aprovadas por falta de quórum.\n\n**CITAÇÃO CHAVE:** \"Consideram-se aprovadas as demonstrações contábeis do FUNDO relativas ao exercício social findo em 31/03/2026, devidamente auditada pela PricewaterhouseCoopers Auditores Independentes Ltda.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 02/07/2026\n\n**O QUE ACONTECEU:** Realização da Assembleia Geral Ordinária.\n\n**RESUMO:** A assembleia foi realizada no dia 29/06/2026, e os cotistas aprovaram as demonstrações contábeis relativas ao exercício social findo em 31/03/2026.\n\n**CITAÇÃO CHAVE:** \"Os cotistas aprovaram as Demonstrações Contábeis relativas ao exercício social findo em 31/03/2026 no processo de Assembleia Geral Ordinária do fundo.\" (p. 1)\n\n---\n\n**CONEXÃO COM O CONTEXTO:** Ambos os documentos se referem às demonstrações contábeis do exercício social findo em 31/03/2026, que foram aprovadas após a realização da Assembleia Geral Ordinária."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1206959,
+    "data_entrega": "29/05/2026 09:42",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe em 31 de março de 2026, o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento financeiro."
+  }
+}

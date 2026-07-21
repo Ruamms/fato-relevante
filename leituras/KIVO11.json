@@ -1,0 +1,48 @@
+{
+  "ticker": "KIVO11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T00:19:44",
+  "relatorio": {
+    "id": 1241623,
+    "data_entrega": "07/07/2026 19:25",
+    "texto": "### Fatos Extraídos:\n\n1. **Operações em Processo de Reestruturação:**\n   - **CRI Starbucks:** Inadimplente desde dezembro/2023, com valor atualizado a apenas 6% do seu valor face.\n   - **CRI Ekko Séries 1 e 2:** Inadimplência há meses, alto nível de alavancagem, decisão pelo vencimento antecipado da operação. Assembleia especial para deliberar sobre contratação de nova construtora e assessoria jurídica.\n   - **CRI Olimpo:** Vencimento antecipado do pagamento, mediação com credores autorizada até junho/2025.\n   - **CRI Arquiplan:** Aprovação de proposta para dação em pagamento das unidades e fundos de reserva.\n\n2. **Vacância e Inadimplência:**\n   - CRI Starbucks inadimplente desde dezembro/2023.\n   - CRI Ekko Séries 1 e 2 enfrentam atraso no custo de obra, alto nível de alavancagem.\n   - CRI Olimpo vencimento antecipado do pagamento.\n\n3. **Reestruturações e Novos Contratos:**\n   - Aprovação de proposta para dação em pagamento das unidades do CRI Arquiplan.\n\n4. **Cota a Mercado vs Cota Patrimonial:**\n   - No final de maio, o deságio entre cota a mercado e cota patrimonial era de 27,6%.\n\n5. **Dividendos Distribuídos:**\n   - Dividendo mensal distribuído em junho/2026 de R$ 0,80/cota.\n\n### O que observar em seguida:\n1. Monitorar as reestruturações e decisões tomadas para os CRI inadimplentes.\n2. Observar o progresso da mediação com credores do CRI Olimpo."
+  },
+  "comunicados": {
+    "ids": [
+      1183688,
+      984672,
+      1224934,
+      1223621
+    ],
+    "datas": [
+      "08/05/2026",
+      "05/09/2025",
+      "19/06/2026",
+      "17/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Comunicado ao Mercado entregue em 08/05/2026\n\n**O QUE aconteceu:** Administradora respondeu a um ofício da CVM sobre uma ressalva nas demonstrações financeiras do fundo.\n\n**Resumo:** A administradora esclareceu que está tomando medidas para mitigar uma ressalva apresentada pela auditoria em relação ao ativo Invista Brazilian Business Park II FII, e informou um cronograma de ações.\n\n**Trecho-chave:**\n\"Considerando as responsabilidades do gestor do Fundo e, com vistas à devida mitigação da ressalva apontada, a Administradora apresenta abaixo o cronograma de medidas adotadas:\" (p. 2)\n\n---\n\n### Comunicado ao Mercado entregue em 05/09/2025\n\n**O QUE aconteceu:** Fundo alterou sua métrica de distribuição de rendimentos.\n\n**Resumo:** A equipe de gestão do fundo decidiu mudar a forma como os dividendos são distribuídos aos cotistas, incluindo receitas de CRI's (Certificados de Recebíveis Imobiliários) em uma data anterior ao último dia útil do mês.\n\n**Trecho-chave:**\n\"Através da nova métrica adotada, os dividendos mensais anunciados sempre no último dia útil de cada mês incluirão, dentre outras fontes de receita, a receita auferida com CRI's que tenha sido apurada até 02 (dois) dias úteis antes do último dia útil do mês corrente.\" (p. 1)\n\n---\n\n### Assembleia Agora entregue em 19/06/2026\n\n**O QUE aconteceu:** Consulta formal aos cotistas sobre as demonstrações financeiras do exercício social findo em 31 de dezembro de 2025 foi aprovada.\n\n**Resumo:** A assembleia geral ordinária aprovou sem ressalvas as demonstrações financeiras do fundo para o ano de 2025, com um quórum representativo de aproximadamente 0,601% das cotas emitidas.\n\n**Trecho-chave:**\n\"Diante o exposto, foi APROVADO, sem qualquer ressalva ou restrição, por cotistas representando aproximadamente 0,601 das cotas emitidas do Fundo, o item posto para deliberação por meio da Consulta Formal.\" (p. 2)\n\n---\n\n### Assembleia Agora entregue em 17/06/2026\n\n**O QUE aconteceu:** Consulta formal aos cotistas sobre as demonstrações financeiras do exercício social findo em 31 de dezembro de 2024 foi aprovada.\n\n**Resumo:** A assembleia geral ordinária aprovou sem ressalvas as demonstrações financeiras do fundo para o ano de 2024, com um quórum representativo de aproximadamente 0,601% das cotas emitidas.\n\n**Trecho-chave:**\n\"Diante o exposto, foi APROVADO, sem qualquer ressalva ou restrição, por cotistas representando aproximadamente 0,601 das cotas emitidas do Fundo, o item posto para deliberação por meio da Consulta Formal.\" (p. 2)"
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 58.9
+  },
+  "parecer": {
+    "id": 1151037,
+    "data_entrega": "31/03/2026 18:49",
+    "tipo": "ressalva",
+    "rotulo": "opinião com ressalva",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, exceto pelos possíveis efeitos do assunto descrito na seção a seguir intitulada \"Base para opinião com ressalva\", as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, d"
+  }
+}

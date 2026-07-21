@@ -1,0 +1,53 @@
+{
+  "ticker": "HRDF11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T05:34:50",
+  "relatorio": {
+    "id": 1166892,
+    "data_entrega": "20/04/2026 17:59",
+    "texto": "### Fatos Relevantes:\n\n1. **Compravenda de Ações:**\n   \"Em 26 de setembro/24 e 06 de março/25, conforme publicado em Fato Relevante, o Fundo aumentou sua participação sucessivamente até deter 48,341% das ações ordinárias da Pátio Itaim Paulista Empreendimentos e Participações S.A., que por sua vez representam 70% do capital social.\" (p. 5)\n\n2. **Aprovação de Projeto:**\n   \"A aprovação estadual ocorreu em 17/03/2026 mediante a emissão do Certificado de Aprovação de Projeto Habitacional Nº 067/2026 pelo GRAPROHAB (Grupo de Análise e Aprovação de Projetos Habitacionais).\" (p. 5)\n\n3. **Licenciamento Suspenso:**\n   \"O licenciamento municipal, que tramitava em paralelo, foi suspenso em razão da paralisação na análise e emissão de alvarás para novos empreendimentos pela Prefeitura de São Paulo. Essa medida decorre de liminar concedida em 24/02/2026, no âmbito da ADI n. 2257600-87.2025.8.26.0000, e impactará o cronograma inicialmente previsto, que está em revisão.\" (p. 5)\n\n4. **Cronograma de Lançamentos:**\n   O cronograma detalha os lançamentos do projeto imobiliário com datas iniciais e finais variando de janeiro/27 a janeiro/35. (p. 6)\n\n5. **Alteração do Prazo de Duração do Fundo:**\n   \"A maioria dos Cotistas deliberou pela aprovação da alteração do prazo de duração do Fundo para o dia 2 de dezembro de 2026.\" (p. 6)\n\n### O que observar em seguida:\n- **Progresso no Licenciamento:** Verificar a resolução do impasse com a Prefeitura de São Paulo, pois isso impactará o cronograma inicial.\n- **Lançamentos Futuros:** Monitorar os lançamentos programados conforme o cronograma."
+  },
+  "comunicados": {
+    "ids": [
+      1064631,
+      993596,
+      852633,
+      1183606,
+      1183603
+    ],
+    "datas": [
+      "16/12/2025",
+      "17/09/2025",
+      "06/03/2025",
+      "08/05/2026",
+      "08/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 16/12/2025\n\n**O QUE aconteceu:** Avaliação do ativo detido pelo Fundo a mercado resultou em valor superior ao contábil.\n\n**Resumo:** A CBRE Consultoria avaliou o imóvel com um valor 7,57% superior ao valor contábil atual, resultando em uma variação positiva de 24,13% no valor patrimonial da cota do Fundo.\n\n**Trecho-chave:**\n\"CBRE Consultoria do Brasil LTDA, avaliou o imóvel com um valor 7,57 % (sete inteiros e cinquenta e sete por cento) superior ao valor contábil atual, resultando em um valor 27,79% (vinte e sete inteiros e setenta e nove centésimos  por cento) superior ao valor contábil do referido ativo, o que representa uma variação positiva de 24,13% (vinte e quatro inteiros e treze centésimos por cento) no valor patrimonial da cota do Fundo nesta data.\"\n\n---\n\n### FATO RELEVANTE entregue em 17/09/2025\n\n**O QUE aconteceu:** Conclusão de contrato para venda das ações da PÁTIO ITAIM PAULISTA.\n\n**Resumo:** O Fundo se comprometeu a vender suas ações na PÁTIO ITAIM PAULISTA, com um valor mínimo fixo e irreajustável. A venda está condicionada à aprovação do projeto pelo Comitê de Investimentos do Fundo e pelos órgãos competentes.\n\n**Trecho-chave:**\n\"O promitente comprador do Saldo de Ações é uma incorporadora e construtora com foco em empreendimentos residenciais de baixa renda (“Incorporadora”) e tem interesse implantar um projeto imobiliário deste perfil no Imóvel (“Empreendimento”). O valor da venda da totalidade da Sociedade é equivalente ao percentual de 13,50% sobre o valor bruto da venda da totalidade das unidades do Empreendimento, conforme fluxo de vendas, o que corresponde a 4,064% para a participação do Fundo, sendo garantido o preço mínimo de R$ 37.630.250,00 (trinta e sete milhões, seiscentos e trinta mil, duzentos e cinquenta reais), fixo e irreajustável.\"\n\n---\n\n### FATO RELEVANTE entregue em 06/03/2025\n\n**O QUE aconteceu:** Reorganização societária na PÁTIO ITAIM PAULISTA.\n\n**Resumo:** A PÁTIO ITAIM PAULISTA realizou uma reorganização societária, resultando no Fundo detendo 48,341% do capital votante da sociedade, sem aporte adicional de capital.\n\n**Trecho-chave:**\n\"A reorganização objetivou equalizar a participação do capital efetivamente integralizado pelos acionistas, cancelando ações dos acionistas remissos, não resultando, portanto, em nenhum aporte adicional pelo Fundo.\"\n\n---\n\n### ASSEMBLEIA GERAL ORDINÁRIA DE COTISTAS ENTREGUE EM 08/05/2026\n\n**O QUE aconteceu:** Aprovação das contas e demonstrações financeiras do exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A Assembleia Geral Ordinária dos Cotistas aprovou as contas e demonstrações financeiras do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025, com um quórum representativo de 0,009% das cotas emitidas.\n\n**Trecho-chave:**\n\"Em relação à Ordem do Dia, a unanimidade dos Cotistas, representando 0,009% (nove milésimos por cento) da base votante, deliberou pela aprovação das contas e das demonstrações financeiras do Fundo, referentes ao exercício social encerrado em 31 de dezembro de 2025.\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares",
+      "P/VP muito abaixo da média histórica"
+    ],
+    "cota": 4.44
+  },
+  "parecer": {
+    "id": 1147272,
+    "data_entrega": "27/03/2026 22:08",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": true,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Hedge Realty Development Fundo de Investimento Imobiliário de Responsabilidade Limitada (anteriormente denominado Hedge Realty Development Fundo de Investimento) em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de "
+  }
+}

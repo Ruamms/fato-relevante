@@ -1,0 +1,39 @@
+{
+  "ticker": "JPAU11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T02:00:38",
+  "comunicados": {
+    "ids": [
+      1216582,
+      1122680,
+      785403,
+      1199706,
+      1199705
+    ],
+    "datas": [
+      "10/06/2026",
+      "27/02/2026",
+      "22/11/2024",
+      "20/05/2026",
+      "20/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### O que aconteceu em 20/05/2026\n\n**Título:** Assembleia Geral Extraordinária do Jardim Paulistano FII\n\n**Resumo:** A Vórtx Distribuidora de Títulos e Valores Mobiliários LTDA., administradora do Jardim Paulistano FII, convocou uma assembleia geral extraordinária para deliberar sobre a aprovação das contas e demonstrações contábeis do exercício social findo em 1º de dezembro de 2025.\n\n**Trecho-chave:**\n\"Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 1º de dezembro de 2025, devidamente auditadas, conforme disponíveis para consulta nos sites da Administradora e nos demais canais exigidos pela regulamentação em vigor.\"\n\n---\n\n### O que aconteceu em 27/02/2026\n\n**Título:** Reavaliação do Ativo pelo Jardim Paulistano FII\n\n**Resumo:** O Jardim Paulistano FII, administrado pela Vórtx Distribuidora de Títulos e Valores Mobiliários LTDA., teve seu ativo reavalorado pela Colliers International Do Brasil em 31 de dezembro de 2025. A reavaliação resultou em uma variação positiva de 53,32% no valor contábil do ativo e 50,16% no valor do patrimônio líquido.\n\n**Trecho-chave:**\n\"A transação foi estruturada na modalidade de forward sale do imóvel performado (obra concluída), com o pagamento de 50% de sinal nesta data (signing) e o pagamento do saldo em 12 meses, quando ocorrerá a efetiva transferência da participação sociária ao comprador (closing).\"\n\n---\n\n### O que aconteceu em 22/11/2024\n\n**Título:** Mudança de Gestora no Jardim Paulistano FII\n\n**Resumo:** A Capitânia Capital S.A., gestora anterior do Jardim Paulistano FII, renunciou à gestão. Em consequência, a Assembleia Geral de Cotistas aprovou a contratação da Central Capital Gestão de Recursos S.A. como nova gestora.\n\n**Trecho-chave:**\n\"Em decorrência dessa mudança, a Assembleia Geral de Cotistas, realizada em 14 de novembro de 2024, foi aprovada a contratação da Central Capital Gestão de Recursos S.A., para atuar na qualidade de Gestora do Fundo.\"\n\n---\n\n### O que aconteceu em 10/06/2026\n\n**Título:** Desinvestimento Parcial no Imóvel Alvo pelo Jardim Paulistano FII\n\n**Resumo:** O Jardim Paulistano FII, administrado pela Vórtx Distribuidora de Títulos e Valores Mobiliários LTDA. e Central Capital Gestão de Recursos S.A., assinou um contrato para alienar 21,84% de sua participação societária na PAISA SPE VIII, correspondente a aproximadamente 9,93% do imóvel alvo.\n\n**Trecho-chave:**\n\"O Fundo é detentor atualmente de 45,50% das quotas sociais de emissão da PAISA SPE VIII, sociedade limitada com sede na cidade de São Paulo, estado de São Paulo, na Rua Pedroso Alvarenga, nº 900, conjunto 81, Itaim Bibi, CEP 04531-003, inscrita no CNPJ sob o nº 53.304.908/0001-55 (Sociedade Alvo), detentora de um edifício corporativo na cidade de São Paulo (Imóvel Alvo).\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1155036,
+    "data_entrega": "06/04/2026 22:02",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Jardim Paulistano Fundo de Investimento Imobiliário - FII em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicávei"
+  }
+}

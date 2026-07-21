@@ -1,0 +1,50 @@
+{
+  "ticker": "ROOF11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T05:11:27",
+  "relatorio": {
+    "id": 908658,
+    "data_entrega": "19/05/2025 18:10",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Portfólio em Desembaraço:** O relatório menciona que há ativos em desembaraço, com R$ 4,7 milhões de ativos ainda pendentes (19% do total). Isso indica que a gestão está trabalhando na liquidação de alguns ativos.\n   > \"Esteira de Desembaraço(Em R$ ‘000s @ Custo) / Carta de Sentença 7 Ativos R$4,7m\" (p. 3)\n\n2. **Vendas do Mês:** Houve vendas no mês atual, totalizando R$ 24,2 milhões em ativos.\n   > \"Vendidos 41 |R$24,2m\" (p. 3)\n\n3. **Portfólio Atualizado:** O portfólio atual contém R$ 19,8 milhões de ativos desembaraçados e R$ 4,7 milhões em processo.\n   > \"Desembaraçado31Ativos R$19,8m / Esteira de Desembaraço(Em R$ ‘000s @ Custo) / Carta de Sentença 7 Ativos R$4,7m\" (p. 3)\n\n4. **Propostas Formalizadas:** Existem propostas formalizadas para aquisição de ativos no valor de R$ 4,1 milhões.\n   > \"Propostas formalizadas3 Ativos R$4,1m\" (p. 3)\n\n5. **Concentração do Portfólio:** A análise de concentração mostra que os maiores ativos representam 68% do valor total do portfólio.\n   > \"VGV top 10 = 68%\" (p. 7)\n\n### O que observar em seguida:\n- Monitorar o andamento das vendas e desembaraços dos ativos pendentes.\n- Verificar a evolução das propostas formalizadas para aquisição de novos ativos."
+  },
+  "comunicados": {
+    "ids": [
+      1185306,
+      1153143,
+      1233054,
+      1201486
+    ],
+    "datas": [
+      "11/05/2026",
+      "02/04/2026",
+      "29/06/2026",
+      "22/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 11/05/2026\n\n**O QUE aconteceu:** A administradora do ROOFTOP I FII informou sobre a ressalva apresentada pelos auditores independentes nas demonstrações financeiras de 2025.\n\n**Resumo:** A Vórtx Distribuidora de Títulos e Valores Mobiliários Ltda. solicitou esclarecimentos à B3 S.A. sobre as medidas a serem tomadas para endereçar a ressalva apontada pelos auditores independentes, relacionada à regularização da titularidade dos imóveis do fundo.\n\n**Trecho-chave:**\n\"A Administradora atuou de forma ativa e realizou cobranças ao Gestor e Consultor Imobiliário do Fundo para que a averbação da titularidade dos imóveis do Fundo nas matrículas objetos da ressalva fosse regularizada.\"\n\n### COMUNICADO AO MERCADO entregue em 02/04/2026\n\n**O QUE aconteceu:** A administradora do ROOFTOP I FII divulgou as demonstrações financeiras qualificadas referentes ao exercício de 2025.\n\n**Resumo:** As demonstrações financeiras foram emitidas com qualificação por parte dos auditores independentes, ECOVIS WFA Auditores Independentes SS., devido à ausência de matrículas atualizadas e impossibilidade de obter evidências apropriadas sobre a regularidade jurídica de parte dos ativos imobiliários.\n\n**Trecho-chave:**\n\"A ressalva se refere a ausência de matrículas atualizadas e a impossibilidade de se obter evidência apropriada e suficiente quanto à regularidade jurídica de parte dos ativos imobiliários, pela Administradora e pelos auditores.\"\n\n### ASSEMBLEIA AGE entregue em 29/06/2026\n\n**O QUE aconteceu:** A administradora do ROOFTOP I FII convocou uma assembleia geral extraordinária para deliberar sobre a prorrogação do prazo de duração do fundo.\n\n**Resumo:** A assembleia foi realizada via consulta formal e os cotistas foram convidados a aprovar o prazo de duração do fundo até 31 de dezembro de 2026, bem como a regularização do período entre o término do prazo anteriormente aprovado e a eventual aprovação de novo prazo.\n\n**Trecho-chave:**\n\"A Administradora convoca os Cotistas para deliberar sobre a continuidade das atividades do Fundo, com o objetivo de viabilizar a execução do plano de desinvestimento dos ativos integrantes da carteira da Classe, elaborado pela Gestora, mediante a prorrogação do prazo de duração da Classe e, consequentemente, do Fundo, até 31 de dezembro de 2026.\"\n\n### ASSEMBLEIA AGO entregue em 22/05/2026\n\n**O QUE aconteceu:** A administradora do ROOFTOP I FII divulgou o resultado da consulta formal sobre a aprovação das contas e demonstrações contábeis do fundo.\n\n**Resumo:** A Consulta Formal resultou na aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"restou aprovada a Consulta Formal, que deliberou pela matéria constante na Ordem do Dia.\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "VP/cota em queda relevante",
+      "Menos cotistas que o mínimo para isenção de IR",
+      "Rendimentos irregulares"
+    ],
+    "cota": 323.31
+  },
+  "parecer": {
+    "id": 1152228,
+    "data_entrega": "01/04/2026 00:21",
+    "tipo": "ressalva",
+    "rotulo": "opinião com ressalva",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, exceto pelos possíveis efeitos do assunto descrito na seção a seguir intitulada “Base para opinião com ressalva”."
+  }
+}

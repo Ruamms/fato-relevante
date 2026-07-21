@@ -1,0 +1,36 @@
+{
+  "ticker": "SOLR11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T03:31:54",
+  "comunicados": {
+    "ids": [
+      1124390,
+      1098093,
+      1178057,
+      1178052
+    ],
+    "datas": [
+      "27/02/2026",
+      "30/01/2026",
+      "30/04/2026",
+      "30/04/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 30/04/2026 - Assembleia Geral Ordinária de Cotistas\n\n**O que aconteceu:** A administração do SOLR11 convocou a Assembleia Geral Ordinária de Cotistas para deliberar sobre as demonstrações financeiras do exercício social findo em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia será realizada no dia 02 de junho de 2026, e os cotistas poderão votar eletronicamente por meio da plataforma Cuore ou enviando um e-mail com a manifestação de voto.\n\n**Trecho-chave:**\n\"O Cotista poderá declarar seu voto por meio de plataforma de voto eletrônico específica (“Cuore”). Na data de 04 de maio de 2026 será encaminhado um e-mail para cada Cotista, conforme e-mail previamente cadastrado, com o link de acesso à plataforma, por meio da qual será possível anexar documentos e votar as matérias da Ordem do Dia.\"\n\n---\n\n### 30/01/2026 - Comunicado ao Mercado\n\n**O que aconteceu:** A administração do SOLR11 informou que não haverá distribuição mensal de dividendos no fundo, e esta medida será reavaliada mensalmente.\n\n**Resumo:** A administração decidiu não realizar a distribuição mensal de dividendos, mantendo a situação sob revisão constante.\n\n**Trecho-chave:**\n\"Esta medida será reavaliada mensalmente e tanto os cotistas quanto o mercado , serão informados acerca de qualquer alteração na situação supramencionada.\"\n\n---\n\n### 27/02/2026 - Comunicado ao Mercado\n\n**O que aconteceu:** A administração do SOLR11 confirmou a decisão de não realizar distribuição mensal de dividendos, reiterando que esta medida será reavaliada mensalmente.\n\n**Resumo:** A administração informou novamente que não haverá distribuição mensal de dividendos no fundo, e essa situação será monitorada regularmente.\n\n**Trecho-chave:**\n\"Esta medida será reavaliada mensalmente e tanto os cotistas quanto o mercado , serão informados acerca de qualquer alteração na situação supramencionada.\"\n\n---\n\n### Conexão com indicadores:\n- **Distribuição de dividendos:** A decisão de não realizar distribuição mensal de dividendos está alinhada com a redução do rendimento mensal para 0,00%, conforme os indicadores do contexto."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1150847,
+    "data_entrega": "31/03/2026 18:12",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira, do Solarium FII – Fundo de Investimento Imobiliário em 31 de dezembro de 2024, o desempenho de suas operações e os seus respectivos fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil apli"
+  }
+}

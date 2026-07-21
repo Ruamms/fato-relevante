@@ -1,0 +1,30 @@
+{
+  "ticker": "WEJR11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T07:20:38",
+  "comunicados": {
+    "ids": [
+      1187189,
+      1223727
+    ],
+    "datas": [
+      "12/05/2026",
+      "17/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 12/05/2026\n\n**O QUE aconteceu:** A BTG Pactual Serviços Financeiros S.A. DTVM informou sobre a atualização da forma de divulgação da remuneração dos Prestadores de Serviços Essenciais.\n\n**Resumo:** A BTG Pactual atualizou sua forma de divulgar a remuneração dos prestadores de serviços essenciais, passando a utilizar a Ferramenta ANBIMA (Plataforma de Transparência de Taxas) como meio centralizado e adequado. Não houve alteração nos valores pagos aos cotistas.\n\n**Trecho-chave:** \"restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 17/06/2026\n\n**O QUE aconteceu:** A BTG Pactual Serviços Financeiros S.A. Distribuidora de Títulos e Valores Mobiliários convocou os cotistas para uma Consulta Formal sobre a aprovação das contas do Fundo.\n\n**Resumo:** A assembleia foi convocada para deliberar sobre a aprovação das contas e demonstrações contábeis do BTG PACTUAL TEVA ITBR IPCA FUNDO DE INDICE, referentes ao exercício social findo em 31 de março de 2026.\n\n**Trecho-chave:** \"solicitamos a manifestação de V.Sa. até 6 de julho de 2026.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 17/06/2026\n\n**O QUE aconteceu:** Os cotistas do BTG PACTUAL TEVA ITBR IPCA FUNDO DE INDICE responderam à Consulta Formal sobre a aprovação das contas e demonstrações contábeis.\n\n**Resumo:** Um cotista respondeu à consulta formal enviada pela administradora, manifestando seu voto em relação à aprovação das contas e demonstrações contábeis do Fundo.\n\n**Trecho-chave:** \"Voto: [ ] SIM, aprovo as contas e demonstrações contábeis do Fundo; [ ] NÃO, não aprovo as contas e demonstrações contábeis do Fundo; [ ] Abstenho-me de votar.\" (p. 3)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208583,
+    "data_entrega": "30/05/2026 02:17",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do BTG Pactual TEVA ITBR IPCA Fundo de Índice em 31 de março de 2026 e o desempenho de suas operações para o período de 17 de outubro de 2025 a 31 de março de 2026, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos Fundos d"
+  }
+}

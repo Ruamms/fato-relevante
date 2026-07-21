@@ -1,0 +1,57 @@
+{
+  "ticker": "RRCI11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T04:20:21",
+  "relatorio": {
+    "id": 1139066,
+    "data_entrega": "16/03/2026 18:52",
+    "texto": "### Fatos Extraídos:\n\n1. **Reestruturação de Ativos:**\n   \"O tema principal do mês segue sendo a reestruturação dos papeis You Inc, Over e Convisa.\" (p. 3)\n\n2. **Situação Financeira dos Papéis:**\n   - **You Inc:** \"A holding, garantidora do CRI, encontra-se em processo de reestruturação financeira. Diante desse contexto, avaliamos que o papel permanece em situação de risco relevante, sendo marcado a 65% (sessenta e cinco por cento) do PU Par.\" (p. 3)\n   - **Over:** \"Os pagamentos periódicos (PMTs) foram regularizados. Contudo, permanecem pendentes a recomposição do fundo de despesas, do fundo de reserva e da razão de garantia, a qual atingiu o nível mínimo contratual.\" (p. 3)\n   - **Convisa:** \"O papel segue em situação delicada pois ainda está pendente a apresentação das novas garantias. A amortização da dívida para o mínimo de R$10 milhões também está pendente, assim como o envio de documentações e o cumprimento de outras obrigações acessórias.\" (p. 3)\n\n3. **Movimentações na Carteira:**\n   - \"No mês de janeiro, liquidamos as posições nos CRIs de GPA, ONM e Moura Debeux, mantendo a estratégia de redução de risco e aumento de liquidez.\" (p. 4)\n   - \"Continuamos apostando na estratégia de investir em ativos negociados a preços significativamente descontados em relação aos seus fundamentos, com foco na captura de assimetrias de valor e na redução do risco aos cotistas.\" (p. 4)\n\n4. **Ajustes na Carteira:**\n   - \"Seguimos ampliando a exposição em OULG11, agora chamado TRUE11, e CXRI11.\" (p. 4)\n   - \"TRUE11 FII: 33,2%, VCRR11 FII: 14,2%, CXRI11 FII: 10,6%.\" (p. 4)\n\n5. **Distribuição de Dividendos:**\n   - \"Em Janeiro, tivemos R$ 264.003 (R$ 0,55 por cota do fundo) em resultados passíveis de distribuição.\" (p. 5)\n   - \"Deliberamos a distribuição dos dividendos no montante de R$ 0,52 por cota, seguindo a diretriz de a distribuição somente fruto do lucro gerado pelo Fundo.\" (p. 5)\n\n6. **Desempenho Financeiro:**\n   - \"A receita do fundo cresceu 7,64% em janeiro. A linha de despesas totais aumentaram 25% em relação a dezembro, no entanto, mantém tendência de queda observada desde o início de 2025.\" (p. 6)\n   - \"Este acúmulo de despesas se deve a taxas e comissões associadas às vendas de CRIs.\" (p. 6)\n\n7. **Patrimônio Líquido:**\n   - \"O Patrimônio Líquido do Fundo encerrou o mês passado em R$ 38.777.783,12 praticamente sem alteração em relação ao mês de dezembro.\" (p. 7)\n\n### O que observar em seguida:\n- A situação financeira dos papéis You Inc, Over e Convisa continua preocupante.\n- As vendas de CRIs como GPA, ONM e Moura Debeux indicam uma estratégia de redução de risco no portfólio."
+  },
+  "comunicados": {
+    "ids": [
+      1068309,
+      1067980,
+      1065391,
+      1227302,
+      1222997,
+      1221826,
+      1216603
+    ],
+    "datas": [
+      "23/12/2025",
+      "22/12/2025",
+      "17/12/2025",
+      "24/06/2026",
+      "16/06/2026",
+      "15/06/2026",
+      "10/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGE"
+    ],
+    "texto": "### O que aconteceu: Novo nome e código de negociação do fundo\n**Data:** 23/12/2025  \n**Título:** Fundo passa a ter novo nome de pregão e código de negociação  \n**Resumo:** O RB CAPITAL RECEBÍVEIS IMOBILIÁRIOS FII passará a ser negociado sob o novo nome \"FII XLPR RI\" e com o código \"XLPR11\".  \n**Trecho-chave:**\n> a partir da abertura do mercado do dia 30 de dezembro de 2025, o Fundo passará a ter novo nome de pregão “ FII XLPR RI”, e as cotas do Fundo passarão a ser negociadas sob o novo código de negociação “XLPR11”.\n\n---\n\n### O que aconteceu: Novo nome e código de negociação do fundo\n**Data:** 22/12/2025  \n**Título:** Fundo passa a ter novo nome de pregão e código de negociação  \n**Resumo:** O BRIX FII passará a ser negociado sob o novo nome \"FII XLPR RI\" e com o código \"XLPR11\".  \n**Trecho-chave:**\n> a partir da abertura do mercado do dia 30 de dezembro de 2025, o Fundo passará a ter novo nome de pregão “ FII XLPR RI”, e as cotas do Fundo passarão a ser negociadas sob o novo código de negociação “XLPR11”.\n\n---\n\n### O que aconteceu: Impacto na cota do fundo\n**Data:** 17/12/2025  \n**Título:** Remarcações impactam cota do fundo  \n**Resumo:** A cota do RB CAPITAL RECEBÍVEIS IMOBILIÁRIOS FII foi impactada em -7,8054% devido a remarcações nos ativos identificados pelos códigos 2210879235 e 22D0847835.  \n**Trecho-chave:**\n> A Administradora informa que, no fechamento do dia 11 de dezembro de 2025, o Fundo FII BRL1988 - RB CAPITAL RECEBÍVEIS IMOBILIÁRIOS foi impactado em -7,8054% devido a remarcações de dois ativos ocorridas.\n\n---\n\n### O que aconteceu: Programa de recompra de cotas\n**Data:** 24/06/2026  \n**Título:** Fundo planeja programa de recompra de suas próprias cotas  \n**Resumo:** O fundo tem a intenção de iniciar um programa de recompra de suas próprias cotas no mercado de bolsa administrado pela B3, com volume máximo de 48.175 cota e valor inferior ao patrimonial da cota do dia anterior à recompra.  \n**Trecho-chave:**\n> O Fundo tem a intenção de iniciar um programa de recompra de suas próprias cotas (“Cotas”), no mercado de bolsa administrado pela B3 S.A. – Brasil, Bolsa, Balcão (“B3”).\n\n---\n\n### O que aconteceu: Consulta formal aos cotistas\n**Data:** 15/06/2026  \n**Título:** Assembleia Geral Ordinária aprovou as demonstrações financeiras do fundo  \n**Resumo:** A assembleia geral ordinária aprovou as demonstrações financeiras do exercício social findo em 31 de dezembro de 2025, com aproximadamente 0,30% das cotas emitidas votando a favor.  \n**Trecho-chave:**\n> Foi aprovada as Demonstrações Financeiras do Fundo, sem qualquer ressalva ou restrição, pelos Cotistas representando aproximadamente 0,30% das cotas emitidas do Fundo por meio da Consulta Formal aos Cotistas encerrada nesta data.\n\n---\n\n### O que aconteceu: Programa de recompra de cotas\n**Data:** 16/06/2026  \n**Título:** Fundo planeja programa de recompra de suas próprias cotas  \n**Resumo:** O fundo tem a intenção de iniciar um programa de recompra de suas próprias cotas no mercado de bolsa administrado pela B3, com volume máximo de 48.175 cota e valor inferior ao patrimonial da cota do dia anterior à recompra.  \n**Trecho-chave:**\n> O Fundo tem a intenção de iniciar um programa de recompra de suas próprias cotas (“Cotas”), no mercado de bolsa administrado pela B3 S.A. – Brasil, Bolsa, Balcão (“B3”).\n\n---\n\n### O que aconteceu: Alteração do regulamento para permitir recompra de cotas\n**Data:** 10/06/2026  \n**Título:** Regulamento do fundo será alterado para permitir recompra de cotas  \n**Resumo:** A assembleia geral extraordinária aprovou a alteração do regulamento para permitir a recompra de cotas ou oferta pública voluntária de aquisição (OPAC) pelo fundo.  \n**Trecho-chave:**\n> O Administrador do Fundo realizou o procedimento de Consulta Formal aos C otistas convocando os Cotistas a manifestarem -se a respeito da seguinte matéria: APROVAR a alteração do Regulamento para prever a possibilidade de recompra de cotas ou Oferta Pública Voluntária de Aquisição (“OPAC”)."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 80.25
+  },
+  "parecer": {
+    "id": 1148794,
+    "data_entrega": "30/03/2026 18:59",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do XLPR Fundo de Investimento Imobiliário - FII - Responsabilidade Limitada (anteriormente denominado RB Capital Recebíveis Imobiliários Fundo de Investimento Imobiliário) em 31 de dezembro de 202 5, o desempenho de suas operações e os seus fl"
+  }
+}

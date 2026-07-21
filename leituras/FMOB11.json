@@ -1,0 +1,36 @@
+{
+  "ticker": "FMOB11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T00:23:30",
+  "comunicados": {
+    "ids": [
+      812270,
+      812243,
+      1155470,
+      1058968
+    ],
+    "datas": [
+      "02/01/2025",
+      "02/01/2025",
+      "07/04/2026",
+      "11/12/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 02/01/2025\n\n**O QUE aconteceu:** Impairment no valor dos imóveis investidos pelo FUNDO.\n\n**Resumo:** A administradora do FUNDO informou que foram reavaliados os imóveis e reconhecido um impairment de R$ 11.866.796,59, impactando positivamente o Patrimônio Líquido do FUNDO em 5,60%.\n\n**Trecho-chave:** \"reconhecido, nesta data, o impairment no valor de R$ 11.866.796,59 (Onze milhões, oitocentos e sessenta e seis mil, setecentos e noventa e seis reais e cinquenta e nove centavos), impactando positivamente o Patrimônio Líquido do FUNDO na ordem de  5,60%, para o exercício social do FUNDO base 31 de dezembro de 2024.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGE entregue em 11/12/2025\n\n**O QUE aconteceu:** Venda do empreendimento Gradiente e inclusão de prestadores de serviços.\n\n**Resumo:** A assembleia aprovou a venda do empreendimento Gradiente pelo valor mínimo de R$ 110.000.000,00 e a inclusão de novos prestadores de serviços.\n\n**Trecho-chave:** \"2. (Aprovar/Reprovar) a venda do empreendimento Gradiente pelo valor mínimo de R$ 110.000.000,00 (cento e dez milhões de reais), conforme Anexo III;\"\n\n\"4. (Aprovar/Reprovar) a inclusão dos seguintes prestadores de serviços:\" (p. 2)\n\n---\n\n### ASSEMBLEIA AGE entregue em 07/04/2026\n\n**O QUE aconteceu:** Aprovação das demonstrações contábeis e inclusão de prestadores de serviços.\n\n**Resumo:** A assembleia aprovou as demonstrações contábeis do exercício social findo em 31.12.2025 e incluiu novos prestadores de serviços.\n\n**Trecho-chave:** \"1. (Aprovar/Reprovar) as demonstrações contábeis do Fundo relativamente ao \nexercício social findo em 31.12.2025;\" \n\n\"4. (Aprovar/Reprovar) a inclusão dos seguintes prestadores de serviços:\" (p. 2)\n\n---\n\n**Conexão com o contexto:** O impairment reconhecido no Fato Relevante de janeiro de 2025 pode afetar negativamente os indicadores financeiros do FUNDO, como o Patrimônio Líquido e a VP/cota, que já estão em queda relevante. A aprovação das demonstrações contábeis na assembleia de abril de 2026 confirma a situação atual do FUNDO."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1149970,
+    "data_entrega": "31/03/2026 15:04",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

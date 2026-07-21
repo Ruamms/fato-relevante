@@ -1,0 +1,55 @@
+{
+  "ticker": "VCRR11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T23:54:09",
+  "relatorio": {
+    "id": 1246169,
+    "data_entrega": "13/07/2026 19:30",
+    "texto": "### Fatos do Relatório Gerencial\n\n1. **Mudança na Gestão**: O Fundo VCRR11 teve uma assembleia geral extraordinária onde um cotista relevante (mais de 5%) solicitou alterações no regulamento, que foram aprovadas com 34,5% dos votos. Isso encerra o mandato do atual gestor, Patria – VBI Securities Ltda., e abrirá caminho para uma nova gestão.\n   > \"O que aconteceu? Um cotista com posição relevante no Fundo (superior a 5%) solicitou convocação de assembleia geral extraordinária, o qual solicitou alteração de diversos pontos do regulamento existente do Fundo. Por se tratar de mudanças do regulamento, esta assembleia necessitava quórum qualificado de mais de 25%.\" (p. 6)\n\n2. **Desempenho Operacional**: O portfólio do fundo apresentou retração no RevPAR e NOI/m² em 2026, com crescimento positivo apenas nos empreendimentos Iconyc e Cyrela For You.\n   > \"No acumulado de 2026, o portfólio apresenta retração de 3% no RevPAR e de 6% no NOI/m², que atingiu R$ 67/m². Os empreendimentos Iconyc e Cyrela For You continuam demonstrando desempenho positivo ao longo de 2026, com crescimento de 14% no NOI/m² YTD.\" (p. 5)\n\n3. **Vendas de Unidades**: As vendas do empreendimento Atmosfera estão em andamento, mas enfrentam desafios como a menor liquidez das unidades NR e processos demorados com bancos.\n   > \"Durante o mês de junho, continuamos observando um mercado com menor atividade comercial, refletindo na redução do volume de visitas em comparação ao fluxo registrado no início do ano. Ainda assim, as estratégias de vendas implementadas anteriormente resultaram na comercialização de duas novas unidades NR, produto que tradicionalmente apresenta menor liquidez.\" (p. 7)\n\n4. **Vacância e Inadimplência**: O relatório não menciona mudanças significativas em relação à vacância ou inadimplência.\n   > \"Vacância 0,00% (12m: —)\" (p. 3)\n\n5. **Distribuição de Rendimentos**: A distribuição de rendimentos foi de R$ 0,40/cota no mês, em linha com o guidance informado pela gestão.\n   > \"Neste mês, a distribuição de rendimentos foi de R$ 0,40/cota, em linha com o guidance para o semestre informado pela gestão no relatório de dezembro/25 (clique aqui).\" (p. 4)\n\n6. **Cotas e Valor do Ativo**: O número de cotas permanece estável, mas o valor do ativo diminuiu.\n   > \"Nº de cotas 2,0M (12m: 0,00%)\" (p. 3)\n   > \"Valor do ativo R$ 215,0M (12m: -15,84%)\" (p. 3)\n\n7. **Risco de Governança**: A aprovação das mudanças no regulamento pode criar um conflito estrutural de governança, prejudicando os cotistas minoritários.\n   > \"Os resultados entregues desde agosto de 2025 demonstram a relevância desse mandato para o Patria: 41 unidades do Atmosfera foram vendidas, ritmo de desinvestimentos acelerado e contribuição equivalente a 13,2% do resultado do Fundo no período. As restrições a esse processo gerariam fricções com compradores, reduziriam a velocidade das transações e fragilizariam a execução da estratégia em curso, desalinhando os interesses do conjunto dos cotistas - em especial os minoritários, que seriam os mais expostos às consequências de uma estrutura de governança desequilibrada.\" (p. 6)\n\n8. **Indicadores Financeiros**: O P/VP caiu significativamente e a distribuição de rendimentos foi linearizada para aumentar a previsibilidade.\n   > \"P/VP 0,54 (12m: —)\" (p. 3)\n   > \"A gestão mantém a estratégia de linearizar as distribuições para aumentar a previsibilidade e mitigar a sazonalidade natural da operação.\" (p. 4)\n\n### O que observar em seguida:\n- A nomeação do novo gestor do fundo.\n- O progresso nas vendas das unidades do Atmosfera, especialmente as NR, e os desafios associados ao processo de repasse com bancos."
+  },
+  "comunicados": {
+    "ids": [
+      1251436,
+      1082629,
+      975305,
+      1119613,
+      1236067,
+      1222630
+    ],
+    "datas": [
+      "16/07/2026",
+      "14/01/2026",
+      "20/08/2025",
+      "23/02/2026",
+      "30/06/2026",
+      "16/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 16/07/2026\n\n**O QUE aconteceu:** A Gestora do fundo VECTIS RENDA RESIDENCIAL (VCRR11) notificou a renúncia de suas funções.\n\n**Resumo:** A Gestora informou que renunciou às funções, e a Administradora convocará uma Assembleia Geral para eleger um novo gestor no prazo de 15 dias. \n\n**Trecho-chave:**\n\"A PATRIA VBI SECURITIES LTDA (“Gestora”), inscrita no Cadastro Nacional de Pessoas Jurídicas do Ministério da Fazenda (“CNPJ/MF”) sob o nº 17.054.901/0001-69, devidamente credenciada pela Comissão de Valores Mobiliários (“CVM”) para o exercício da atividade de gestão de carteiras de títulos e valores mobiliários, na qualidade de instituição gestora do PATRIA RENDA RESIDENCIAL FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA I FII, no dia 15 de julho de 2026 notificou a Administradora com o objetivo de formalizar a sua renúncia às funções de gestão do Fundo (\"Notificação de Renúncia\").\"\n\n### FATO RELEVANTE entregue em 14/01/2026\n\n**O QUE aconteceu:** O patrimônio líquido do fundo foi reavaliado, resultando em uma diminuição de 16,67% dos valores contábeis.\n\n**Resumo:** A avaliação realizada pela empresa Colliers mostrou que os ativos imobiliários do fundo tiveram um valor justo 16,67% inferior ao valor contábil. O impacto no patrimônio líquido será divulgado até o dia 15 de janeiro de 2026.\n\n**Trecho-chave:**\n\"Os ativos imobiliários do Fundo foram avaliados a mercado (valor justo), em cumprimento ao disposto na Instrução da Comissão de Valores Mobiliários nº 516, de 29 de dezembro de 2011, em 31 de dezembro de 2025 pela empresa especializada independente Colliers, resultando em valor 16,67% (dezesseis vírgula sessenta e sete por cento) inferior aos valores contábeis de fechamento de novembro de 2025 dos referidos imóveis.\"\n\n### FATO RELEVANTE entregue em 20/08/2025\n\n**O QUE aconteceu:** O Gestor do fundo foi incorporado pelo Patria, substituindo a gestão.\n\n**Resumo:** A partir de 31 de julho de 2025, a gestão do fundo passou para o Patria. O ticker do fundo permaneceu inalterado.\n\n**Trecho-chave:**\n\"Em continuidade ao Fato Relevante divulgado em 03 de julho de 2025 (clique aqui), na data de 31 de julho de 2025, foi realizada a incorporação integral, pelo Patria, do Gestor com a sua consequente extinção. Dessa forma, com a extinção do Gestor e a substituição necessária do prestador de serviço essencial do Fundo, a partir desta data, a gestão passará para o Patria.\"\n\n### COMUNICADO AO MERCADO entregue em 23/02/2026\n\n**O QUE aconteceu:** A BRL Trust respondeu ao Ofício da CVM sobre multa por destituição do gestor.\n\n**Resumo:** A Administradora excluiu a cláusula de multa no regulamento do fundo e informou que fará as alterações necessárias em outros fundos administrados pela BRL Trust.\n\n**Trecho-chave:**\n\"Em atendimento as determinações realizadas por esta i. Gerência, nos termos do item 3, alínea “a”, do referido Ofício, informamos que a Administradora promoveu: (i) a exclusão da redação prevista nos artigos 6.19., 6.19.1., 6.19.2 do Regulamento do Fundo; e ainda (ii) ajustou a redação do Artigo 7.1., item xii, art.15.1., item i e art 15.2.1,\"\n\n### ASSEMBLEIA AGE entregue em 30/06/2026\n\n**O QUE aconteceu:** A assembleia aprovou diversas alterações no regulamento do fundo.\n\n**Resumo:** As alterações incluíram restrições na política de investimento, como vedação de investimentos indiretos e inclusão de matérias de deliberação obrigatórias em assembleias.\n\n**Trecho-chave:**\n\"Promover diversas alterações no Regulamento de modo a restringir a política de investimento do Fundo, que passarão a vigorar conforme redação abaixo:\" \n\n- Alteração do art. 1.4, item “i” e “ii”.\n- Alteração da definição dos termos “Capital Autorizado”, “Carteira”, “Imóveis” e “SPE”.\n- Exclusão da redação de definição do termo “outros Ativos”.\n- Inclusão de matérias de deliberação obrigatórias em assembleias.\n\n### ASSEMBLEIA AGE entregue em 16/06/2026\n\n**O QUE aconteceu:** A assembleia propôs alterações no regulamento do fundo, incluindo restrições na política de investimento e matérias de deliberação obrigatórias.\n\n**Resumo:** As propostas incluíram a restringir a política de investimento do fundo, como vedação de investimentos indiretos e inclusão de matérias de deliberação obrigatórias em assembleias.\n\n**Trecho-chave:**\n\"Promover diversas alterações no Regulamento de modo a restringir a política de \ninvestimento do Fundo, que passarão a vigorar conforme redação abaixo:\" \n\n- Alteração do art. 1.4, item “i” e “ii”.\n- Alteração da definição dos termos “Capital Autorizado”, “Carteira”, “Imóveis” e \n“SPE”.\n- Exclusão da redação de definição do termo “outros Ativos”.\n- Inclusão de matérias de deliberação obrigatórias em assembleias."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "VP/cota em queda relevante"
+    ],
+    "cota": 56.32
+  },
+  "parecer": {
+    "id": 1149135,
+    "data_entrega": "30/03/2026 20:40",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Patria Renda Residencial Fundo de Investimento Imobiliário - Responsabilidade Limitada I FII em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas co"
+  }
+}

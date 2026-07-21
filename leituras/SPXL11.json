@@ -1,0 +1,42 @@
+{
+  "ticker": "SPXL11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T04:22:45",
+  "comunicados": {
+    "ids": [
+      1099524,
+      1004704,
+      1198274,
+      1187456,
+      1242543,
+      1242542
+    ],
+    "datas": [
+      "02/02/2026",
+      "02/10/2025",
+      "18/05/2026",
+      "12/05/2026",
+      "08/07/2026",
+      "08/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 02/02/2026\n\n**O QUE aconteceu:** A administradora do Fundo SPX DESENVOLVIMENTO DE GALPOES LOGISTICOS FEEDER INSTITUCIONAL FII informou sobre a integralização de cotas subscritas e não integralizadas.\n\n**Resumo:** A administradora comunicou que serão integralizadas 694,775 cotas na 3ª Chamada de Capital da 1ª Emissão e 404,555 cotas na 2ª Chamada de Capital da 2ª Emissão. As liquidações dessas chamadas estão previstas para o dia 13 de fevereiro de 2026.\n\n**Trecho-chave:**\n\"Por meio  da 3ª Chamada de Capital da 1ª Emissão , deverão ser integralizadas 694,775 (seiscentos e noventa e quatro mil setecentos e setenta e cinco ) cotas, no valor de R$ 10,00 (dez reais) por cota, perfazendo o valor total de R$ 6,947,750.00 (seis milhões, novecentos e quarenta e sete mil, setecentos e cinquenta reais), os quais correspondem a cotas subscritas e não integralizadas do Fundo.\"\n\n### FATO RELEVANTE entregue em 02/10/2025\n\n**O QUE aconteceu:** A administradora do Fundo SPX SYN DESENVOLVIMENTO DE GALPÕES LOGÍSTICOS FEEDER INSTITUCIONAL FII informou sobre a integralização de cotas subscritas e não integralizadas.\n\n**Resumo:** A administradora comunicou que serão integralizadas 694,775 cotas na 2ª Chamada de Capital da 1ª Emissão e 1.213,688 cotas na 1ª Chamada de Capital da 2ª Emissão. As liquidações dessas chamadas estão previstas para o dia 10 de outubro de 2025.\n\n**Trecho-chave:**\n\"A Administradora enviará no dia 01 de outubro de 2025 a 2ª Chamada de Capital da 1ª Emissão e a 1ª Chamada de Capital da 2ª Emissão de Cotas do Fundo para os investidores que possuem Compromisso de Investimento (\"2ª Chamada de Capital\" e \"1ª Chamada de Capital\"). Por meio da 2ª Chamada de Capital deverão ser integralizadas 694.775 (seiscentos e noventa e quatro mil, setecentos e setenta e cinco ) cotas, no valor de R$ 10,00 (dez reais) por cota, perfazendo o valor total de R$ 6.947.750,00 (Seis milhões, novecentos e quarenta e sete mil, setecentos e cinquenta reais), por meio da 1ª Chamada de Capital deverão ser integralizadas 1.213.688 (um milhão, duzentos e treze mil, seiscentos e oitenta e oito) cotas, no valor de R$ 10,31 (dez reais e trinta e um centavos) por cota, perfazendo o valor total de R$ 12,513,123.28 (Doze milhões, quinhentos e treze mil, cento e vinte e três reais e vinte e oito centavos ), os quais correspondem a cotas subscritas e não integralizadas do Fundo.\"\n\n### COMUNICADO AO MERCADO entregue em 18/05/2026\n\n**O QUE aconteceu:** A administradora informou sobre a atualização da forma de divulgação da remuneração dos prestadores de serviços essenciais.\n\n**Resumo:** A administradora comunicou que, por meio do Ofício-Circular CVM nº 1/2025, foi aprovada a atualização da forma de divulgação da remuneração dos prestadores de serviços essenciais, passando a ser realizada exclusivamente pela Ferramenta ANBIMA.\n\n**Trecho-chave:**\n\"Considerando as interpretações adicionais divulgadas pelo Ofício-Circular Conjunto nº 1/2025/CVM/SIN/SSE (\"Ofício-Circular CVM nº 1/2025\"), em especial quanto à substituição do \"Sumário de Remuneração\" pela Ferramenta ANBIMA (Plataforma de Transparência de Taxas) como meio centralizado e adequado de divulgação da remuneração dos Prestadores de Serviços Essenciais da Classe, restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\"\n\n### COMUNICADO AO MERCADO entregue em 12/05/2026\n\n**O QUE aconteceu:** A administradora informou sobre a aprovação das contas anuais do Fundo.\n\n**Resumo:** A assembleia geral de cotistas realizada em 8 de maio de 2026 aprovou as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"A Assembleia Geral Extraordinária (\"Assembleia\"), realizada em 8 de maio de 2026, aprovou as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\"\n\n### ASSEMBLEIA AGE entregue em 08/07/2026\n\n**O QUE aconteceu:** A administradora convocou a assembleia para deliberar sobre a subscrição de cotas em um fundo investido.\n\n**Resumo:** A assembleia foi convocada para aprovar a orientação ao gestor para que vote, em nome do Fundo, favoravelmente na Assembleia Especial de Cotistas do Fundo Investido, que visa a subscrição de cotas em um novo fundo imobiliário.\n\n**Trecho-chave:**\n\"Aprovar a orientação ao Gestor (conforme definido no regulamento do Fundo) para que este vote, em nome do Fundo, favoravelmente, na Assembleia Especial de Cotistas da CLASSE ÚNICA DO SPX REAL ESTATE MASTER DESENVOLVIMENTO DE GALPÕES LOGÍSTICOS I INSTITUCIONAL FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA, a ser realizada em 08 de julho de 2026.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1152278,
+    "data_entrega": "01/04/2026 01:05",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do SPX Real Estate Desenvolvimento de Galpões Logísticos Feeder Institucional Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa o exercício findo nes"
+  }
+}

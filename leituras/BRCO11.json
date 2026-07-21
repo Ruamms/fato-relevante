@@ -1,11 +1,11 @@
 {
   "ticker": "BRCO11",
-  "modelo": "qwen2.5:14b",
-  "gerada_em": "2026-07-20T18:23:23",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T11:15:37",
   "relatorio": {
-    "id": 1223783,
-    "data_entrega": "18/06/2026 08:42",
-    "texto": "- **Mudança na carteira**: O Fundo BRCO11 adquiriu o imóvel Bresco Simões Filho em 26 de março de 2026, mediante ao resgate de cotas da SPE. [página 9]\n\n- **Vacância comentada**: A propriedade Bresco Canoas possui uma vacância física de 53%, com cerca de 14.000 m² (0,8x a área vaga) em negociação para ocupação. [página 2]\n\n- **Vacância comentada**: O imóvel Bresco Resende foi entregue ao Fundo em março de 2026 após o término do contrato anterior e possui conversas avançadas para locação total (1,0x a área atualmente vaga). [página 2]\n\n- **Vacância comentada**: O imóvel Bresco Embu tem uma vacância física de 0%, com um contrato remanescente de 3 anos. [página 7]\n\n- **Rendimentos acima do resultado financeiro**: Os rendimentos declarados no 4T foram R$ 287,8M, enquanto o resultado financeiro líquido foi R$ 191,5M, resultando em um déficit não coberto pela reserva de R$ 60,2M. [página 1]\n\n- **Emissão de cotas com VP/cota em queda**: Houve uma emissão de cotas desde dezembro/25, contribuindo para o aumento do número total de cotas (+13,30% em 24 meses), enquanto o valor patrimonial por cota ajustado diminuiu (-3,42% no período). [página 5]\n\n- **Contratos de locação renegociados**: O contrato com a Fedex para o imóvel Bresco Viracopos foi aditivado em fevereiro/26. [página 10]\n\n- **Eventos societários**: A sexta emissão de cotas ocorreu em dezembro/25, aumentando o número total de cotistas e a liquidez do fundo. [página 10]\n\n**O que observar em seguida:**\n- Desenvolvimento das negociações para ocupação dos espaços vagos no Bresco Canoas.\n- Progresso na locação total do imóvel Bresco Resende."
+    "id": 1260703,
+    "data_entrega": "20/07/2026 21:03",
+    "texto": "### Fatos Extraídos do Relatório Gerencial:\n\n1. **Vacância dos Imóveis:**\n   - O imóvel Bresco Canoas possui 53% de vacância, enquanto o Bresco Resende está totalmente vago (100%). (p. 2)\n\n2. **Contratos Atípicos e Vacância Física:**\n   - Os contratos atípicos representam 36% do prazo médio remanescente de locação, proporcionando maior previsibilidade de receita. A vacância física dos empreendimentos é de 7,4%. (p. 2)\n\n3. **Receita Imobiliária:**\n   - Em jun/26, a Receita Imobiliária do Fundo foi de R$ 21,4 MM, com redução de R$ 0,2 MM em comparação ao mês anterior, devido à variação no aluguel variável do Ramada Viracopos. (p. 3)\n\n4. **Distribuição de Rendimentos:**\n   - O Fundo distribuiu R$ 1,05/cota aos seus investidores em jun/26, equivalente a um dividend yield de 11,0% a.a., com base na cota de fechamento do mês. (p. 3)\n\n5. **Patrimônio Líquido:**\n   - O patrimônio líquido do Fundo é de R$ 2,073B, correspondendo a R$ 115,1/cota. (p. 6)\n\n6. **Composição da Receita de Locação:**\n   - A receita anual estabilizada dos contratos de locação existentes ultrapassa R$ 218 milhões, com 71% proveniente de ativos last mile e ~23% da ABL proveniente de ativos localizados em um raio de até 25 km da cidade de São Paulo. (p. 2)\n\n7. **Contratos Atípicos:**\n   - 36% dos contratos são classificados como atípicos, proporcionando maior previsibilidade de receita. (p. 2)\n\n8. **Cotas e VP/cota:**\n   - O número total de cotas do Fundo é de 18,0M, com a cota ajustada pelo valor patrimonial (VP) em R$ 115,05 (12m: -2,39%). (p. 6)\n\n### O que observar em seguida:\n- Monitorar as conversas para preenchimento dos imóveis Bresco Canoas e Bresco Resende.\n- Observar a evolução da vacância física nos imóveis do Fundo."
   },
   "comunicados": {
     "ids": [
@@ -38,6 +38,17 @@
     "texto": "### 28/05/2026\n**Contrato de Formador de Mercado com Suno Desenvolvimento Ltda.**\nO Fundo BRESCO LOGÍSTICA celebrou um contrato para prestação de serviços de formador de mercado com a SUNO DESENVOLVIMENTO LTDA., que entrará em vigor na data da assinatura e vigerá por 6 meses, renovável automaticamente por períodos iguais e sucessivos.\n\n### 26/05/2026\n**Contrato de Locação com Expresso 3300**\nO Fundo celebrou um contrato de locação com a EXPRESSO 3300 TRANSPORTE LOGÍSTICA E ARMAZENAGEM LTDA. para uma área de 7.629 m² de galpão e 14.084 m² de pátio operacional, equivalente a 100% da ABL do IMÓVEL BRESCO EMBU. O contrato terá vigência de 3 anos com início na data da assinatura.\n\n### 07/04/2026\n**Aditivo ao Contrato de Locação Pague Menos**\nO Fundo celebrou o oitavo aditivo do contrato de locação com a EMPREENDIMENTOS PAGUE MENOS S.A. para o IMÓVEL BRESCO SIMÕES FILHO, prorrogando o contrato por mais 10 anos e reajustando positivamente o valor da remuneração mensal em 9,1%.\n\n### 04/03/2026\n**Disponibilização de Informes de Rendimentos**\nOs informes de rendimentos referentes ao ano-calendário de 2025 foram disponibilizados exclusivamente na modalidade digital através do Portal do Investidor ou aplicativo da Oliveira Trust.\n\n### 30/12/2025\n**Reavaliação dos Ativos pelo Cushman & Wakefield**\nO valor de mercado dos imóveis do Fundo foi reavaliado pela empresa CUSHMAN & WAKEFIELD SERVIÇOS GERAIS LTDA., resultando em um aumento de 0,05% sobre o valor de mercado da última avaliação.\n\n### 07/05/2026\n**Resultado da Consulta Formal aos Cotistas**\nA consulta formal realizada para aprovar as Demonstrações Financeiras do Fundo referentes ao período encerrado em 31 de dezembro de 2025 foi aprovada por cotistas representando 5,87% das cotas em circulação.\n\n### 06/04/2026\n**Convocação para Consulta Formal**\nA Oliveira Trust DTVM S.A. convoca os cotistas do Fundo BRESCO LOGÍSTICA para aprovar as demonstrações financeiras referentes ao período encerrado em 31 de dezembro de 2025, através de uma consulta formal via plataforma eletrônica até o dia 6 de maio de 2026."
   },
   "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Emissão de cotas com VP/cota em queda"
+    ],
+    "cota": 113.49
+  },
+  "anterior": {
+    "gerada_em": "2026-07-20T18:23:23",
+    "relatorio_data": "18/06/2026 08:42",
     "selo": "Atenção",
     "nivel": "atencao",
     "alertas": [

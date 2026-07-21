@@ -1,0 +1,45 @@
+{
+  "ticker": "RBHY11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T00:28:08",
+  "relatorio": {
+    "id": 1235914,
+    "data_entrega": "30/06/2026 18:51",
+    "texto": "### Fatos do Relatório Gerencial\n\n1. **Comentário sobre a Carteira de Ativos:**\n   - A carteira do fundo está composta principalmente por Certificados de Recebíveis Imobiliários (CRI) e Fundos Imobiliários (FII), com uma alocação de 98,2% em CRI+FII.\n   - A distribuição entre os setores é predominante no residencial (68,6%), seguido pelo corporativo (31,4%).\n\n2. **Atualizações da Carteira:**\n   - Até o momento, a operação de venda do ativo NEW VILLAGE não foi concluída e está sendo negociada com um novo comprador.\n   - As tratativas para obter crédito sênior para EKKO estão em fase avançada.\n\n3. **Operações e Pagamentos:**\n   - Ficou acordado com a empresa BRK o pagamento de parcelas fixas durante os próximos quatro meses, com uma waiver fee equivalente a 0,5% do saldo devedor.\n   - Houve alguns entraves burocráticos na obtenção do habite-se para o ativo PORTO 5.\n\n4. **Valor Patrimonial:**\n   - O valor patrimonial do fundo registrou uma variação positiva de 0,14% no período, refletindo a avaliação dos ativos pela administradora fiduciária.\n   \n5. **Cenário Macroeconômico:**\n   - Observou-se abertura modesta na curva de juros nos prazos intermediários (1-3 anos).\n   - A inflação segue com piora em sua composição, especialmente no componente administrado.\n\n6. **Rendimentos e Distribuição:**\n   - O dividend yield anualizado foi de 15,5% na cota a mercado.\n   - Para o primeiro semestre de 2026, a distribuição segue um guidance entre R$ 1,00 e R$ 1,20 por cota.\n\n7. **Reserva do Lucro:**\n   - Ao final do mês, a reserva do fundo era de R$ 0,10/cota.\n\n8. **Liquidez:**\n   - O volume negociado no mês foi de aproximadamente R$ 4,26 milhões.\n   - O número de cotistas permaneceu estável em 3.499.\n\n### O que observar em seguida:\n- A situação da operação de venda do ativo NEW VILLAGE e as tratativas para obter crédito sênior para EKKO.\n- O impacto dos entraves burocráticos na obtenção do habite-se para o ativo PORTO 5."
+  },
+  "comunicados": {
+    "ids": [
+      950219,
+      1204169,
+      1168252
+    ],
+    "datas": [
+      "21/07/2025",
+      "26/05/2026",
+      "23/04/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 21/07/2025\n\n**O QUE aconteceu:** Webcast com a equipe de gestão do fundo agendado.\n**Resumo:** A administradora e gestora do fundo RIO BRAVO CRÉDITO IMOBILIÁRIO HIGH YIELD FII informaram que realizarão um webcast para apresentar informações sobre o fundo, com sessão de perguntas e respostas. O evento ocorrerá na terça-feira, 28 de julho de 2025, às 17h.\n**Trecho-chave:** \"Para acessar o evento cadastre-se direto no clique aqui. Haverá sessão de perguntas e respostas e as perguntas poderão ser enviadas pelos espectadores durante o evento.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 23/04/2026\n\n**O QUE aconteceu:** Convocação para Assembleia Geral Ordinária.\n**Resumo:** A administradora do fundo RIO BRAVO CRÉDITO IMOBILIÁRIO HIGH YIELD FII convocou os cotistas para uma Assembleia Geral Ordinária, a ser realizada de forma não presencial por meio de coleta de voto eletrônico. O objetivo é aprovar as demonstrações financeiras do fundo relativas ao exercício social findo em 31 de dezembro de 2025.\n**Trecho-chave:** \"A BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., na qualidade de instituição administradora do RIO BRAVO CRÉDITO IMOBILIÁRIO HIGH YIELD FII, convida os cotistas do Fundo a participar da Assembleia Geral Ordinária de Cotistas para deliberar sobre a aprovação das demonstrações financeiras do Fundo relativas ao exercício social findo em 31 de dezembro de 2025.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 26/05/2026\n\n**O QUE aconteceu:** Apuração da Assembleia Geral Ordinária.\n**Resumo:** A administradora do fundo RIO BRAVO CRÉDITO IMOBILIÁRIO HIGH YIELD FII realizou a apuração dos votos na Assembleia Geral Ordinária, onde os cotistas aprovaram as demonstrações financeiras do fundo relativas ao exercício social findo em 31 de dezembro de 2025.\n**Trecho-chave:** \"Diante o exposto, foi APROVADO, sem qualquer ressalva ou restrição, o único item da ordem do dia, por cotistas desimpedidos e aptos a deliberar.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 71.11
+  },
+  "parecer": {
+    "id": 1142764,
+    "data_entrega": "23/03/2026 20:46",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Rio Bravo Crédito Imobiliário High Yield Fundo de Investimento Imobiliário – FII – Resp Limitada (anteriormente denominado Rio Bravo Crédito Imobiliário High Yield Fundo de Investimento Imobiliário – FII) em 31 de dezembro de 202 5, o desem"
+  }
+}

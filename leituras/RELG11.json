@@ -1,0 +1,51 @@
+{
+  "ticker": "RELG11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T04:38:20",
+  "relatorio": {
+    "id": 1241633,
+    "data_entrega": "07/07/2026 19:31",
+    "texto": "### Fatos Extraídos:\n\n1. **Alienação Ativa**: O fundo realizou a alienação parcial de seus ativos pelo valor contabilizado no patrimônio do fundo, recebendo 2.924.388 cotas da Oferta Pública de Distribuição da 2ª Emissão de Cotas do RECM11.\n   > \"Alienação Ativos RELG11 No mês de julho de 2026, conforme previsto no item “b” do [Edital de Convocação da Assembleia Geral Extraordinária] e da [Proposta do Administrador], publicados em 16 de abril de 2026, e aprovado pelos cotistas, conforme [Termo de Apuração] publicado em 04 de maio de 2026, o Fundo realizou a alienação parcial de seus ativos pelo valor contabilizado no patrimônio do Fundo de R$ 26.494.955,28.\" (p. 3)\n\n2. **Vacância**: A vacância do fundo permaneceu em 8,47%.\n   > \"Vacância 8,47%\" (p. 1)\n\n3. **Cota Patrimonial e Mercado**: A cota patrimonial é de R$ 92,52 e a cota no mercado está avaliada em R$ 63,00.\n   > \"COTA PATRIMONIAL R$ 92,52 COTA MERCADO R$ 63,00\" (p. 2)\n\n4. **Distribuição de Rendimentos**: O fundo distribuiu R$ 286.703,20 em rendimentos no mês de junho.\n   > \"Em 14 de julho de 2026, referente ao resultado do mês de junho de 2026, o Fundo distribuirá o montante de R$ 286.703,20.\" (p. 2)\n\n5. **Resultado do Mês**: O resultado líquido do fundo no mês foi de -1,9333 cota.\n   > \"Resultado líquido - Competência / Cota -1,9333\" (p. 4)\n\n6. **Portfólio do Fundo**: Ao final do mês de junho de 2026, o portfólio do fundo estava composto principalmente por cotas de fundos imobiliários (76%), renda fixa (6%) e outros ativos (18%).\n   > \"Cotas de Fundos Imobiliários 76,0% Renda Fixa 6,0% Outros Ativos 18,0%\" (p. 5)\n\n### O que observar em seguida:\n- A alavancagem do fundo através da alienação parcial dos ativos.\n- A evolução da vacância e das distribuições de rendimentos no próximo relatório."
+  },
+  "comunicados": {
+    "ids": [
+      898165,
+      1205647,
+      1192677,
+      1211470,
+      1179556
+    ],
+    "datas": [
+      "09/05/2025",
+      "27/05/2026",
+      "14/05/2026",
+      "02/06/2026",
+      "04/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGE"
+    ],
+    "texto": "### O que aconteceu em 09/05/2025\n\n**Título:** Fundo vende imóveis para outro fundo.\n\n**Resumo:** O Fundo de Investimento Imobiliário REC Logística (RELG11) vendeu vários imóveis para o GGR COVEPI Renda, um fundo imobiliário. A transação resultou no recebimento de R$ 133.456.200,44.\n\n**Trecho-chave:** \"Os Imóveis foram vendidos pelo valor de R$133.456.200,44 (cento e trinta e três milhões, quatrocentos e cinquenta e seis mil e duzentos reais e quarenta e quatro centavos) ('Preço').\" (p. 2)\n\n### O que aconteceu em 14/05/2026\n\n**Título:** Comunicado sobre a migração para um novo fundo.\n\n**Resumo:** A administradora do RELG11 informou aos cotistas sobre o período de manifestação de interesse na migração para o FUNDO DE INVESTIMENTO IMOBILIÁRIO REC LOGÍSTICA II (RELG 2).\n\n**Trecho-chave:** \"Portanto, efetivada a Cisão Parcial, a situação patrimonial do RELG11 e RLGX11 será a seguinte:\" (p. 1)\n\n### O que aconteceu em 27/05/2026\n\n**Título:** Comunicado sobre a cisão parcial.\n\n**Resumo:** A administradora confirmou a cisão parcial do RELG11, resultando na criação de um novo fundo (RELGX11), que receberá parte dos ativos do RELG11. O cotista que deseja migrar para o RLGX11 deve manifestar interesse até 22/05/2026.\n\n**Trecho-chave:** \"Portanto, efetivada a Cisão Parcial, a situação patrimonial do RELG11 e RLGX11 será a seguinte:\" (p. 1)\n\n### O que aconteceu em 04/05/2026\n\n**Título:** Apuração da consulta formal sobre cisão parcial.\n\n**Resumo:** A administradora apurou os votos dos cotistas sobre a cisão parcial do RELG11 e a liquidação subsequente. Os itens foram aprovados com 52,09%, 52,07% e 52,11% de aprovação respectivamente.\n\n**Trecho-chave:** \"Após análises das repostas dos Cotistas do Fundo à Consulta Formal, foram apurados os seguintes resultados:\" (p. 2)\n\n### O que aconteceu em 02/06/2026\n\n**Título:** Apuração da assembleia geral ordinária.\n\n**Resumo:** A assembleia geral ordinária do RELG11 aprovou sem ressalvas as demonstrações financeiras do exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:** \"Diante o exposto, foi APROVADO, sem qualquer ressalva ou restrição, o único item da ordem do dia, por cotistas desimpedidos e aptos a deliberar.\" (p. 1)"
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 65.62
+  },
+  "parecer": {
+    "id": 1147266,
+    "data_entrega": "27/03/2026 21:55",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário Rec Logística - Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no "
+  }
+}

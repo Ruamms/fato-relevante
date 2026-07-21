@@ -1,0 +1,33 @@
+{
+  "ticker": "BTSG11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T01:40:12",
+  "comunicados": {
+    "ids": [
+      1118119,
+      1207702,
+      1207699
+    ],
+    "datas": [
+      "19/02/2026",
+      "29/05/2026",
+      "29/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 19/02/2026\n\n**O que aconteceu:** Migração das Cotas do BTSP I para o mercado de balcão organizado.\n\n**Resumo:** O fundo está sendo transferido de um mercado de bolsa para um mercado de balcão administrado pela B3. A migração será realizada de forma compulsória, afetando todas as cotas integralizadas no Fundo.\n\n**Trecho-chave:**\n\"O tombamento do Fundo será realizado de forma compulsória, aplicando-se ao saldo total de cotas integralizadas no Fundo.\" (p. 1)\n\n### ASSEMBLEIA GERAL ORDINÁRIA DE COTISTAS entregue em 29/05/2026\n\n**O que aconteceu:** Assembleia não instalada por falta de votos.\n\n**Resumo:** A assembleia foi convocada para aprovar as demonstrações contábeis do exercício social, mas não se realizou devido à ausência de votos dos cotistas. Como resultado, as demonstrações contábeis foram automaticamente aprovadas.\n\n**Trecho-chave:**\n\"Findo o prazo para recebimento dos votos, foi verificada a ausência de votos e, considerando que as demonstrações contábeis foram disponibilizadas e não contêm ressalvas, ficam automaticamente APROVADAS, conforme previsto no Artigo 71, §3º da Resolução CVM 175/22 e disposto na Convocação.\" (p. 2)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1149253,
+    "data_entrega": "30/03/2026 23:31",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do BTSP I Fundo de Investimento Imobiliário FII Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Br"
+  }
+}

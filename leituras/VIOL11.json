@@ -1,0 +1,30 @@
+{
+  "ticker": "VIOL11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:40:56",
+  "comunicados": {
+    "ids": [
+      1072348,
+      1243080,
+      1044734,
+      1231042,
+      1215322
+    ],
+    "datas": [
+      "29/12/2025",
+      "09/07/2026",
+      "19/11/2025",
+      "26/06/2026",
+      "09/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE ENTREGUE EM 29/12/2025\n\n**O QUE ACONTECEU:** O VINCI OPORTUNIDADE LOGÍSTICA FII anunciou a aquisição de participação em um ativo logístico localizado no município de Caieiras-SP.\n\n**RESUMO:** O fundo celebrou um compromisso para adquirir até 96% de um galpão logístico por R$ 48 milhões, com condições de pagamento parceladas e previsão de retorno estimado superior a 20% ao ano.\n\n**CITAÇÃO CHAVE:**\n> \"Na presente data, o Fundo celebrou compromisso de aquisição de participação de até 96% em ativo logístico localizado no município de Caieiras-SP, polo logístico industrial de Cajamar (“Ativo”), pelo preço de aquisição equivalente a R$ 48 milhões. A conclusão da aquisição está condicionada ao cumprimento de condições precedentes por parte do vendedor.\"\n\n---\n\n### COMUNICADO AO MERCADO ENTREGUE EM 09/07/2026\n\n**O QUE ACONTECEU:** O VINCI OPORTUNIDADE LOGÍSTICA FII realizou a distribuição de rendimentos referentes a junho de 2026.\n\n**RESUMO:** A distribuição foi no montante de R$ 8,20 por cota, totalizando R$ 832.300.\n\n**CITAÇÃO CHAVE:**\n> \"No dia 16/07/2026 será realizada a distribuição de resultados do Fundo, considerando a data-base 09/07/2026, no montante de R$ 8,20 por cota, perfazendo o montante total a ser distribuído de R$ 832.300.\"\n\n---\n\n### COMUNICADO AO MERCADO ENTREGUE EM 19/11/2025\n\n**O QUE ACONTECEU:** O VINCI OPORTUNIDADE LOGÍSTICA FII realizou a modificação da oferta de distribuição pública primária de cotas.\n\n**RESUMO:** A oferta foi alterada para destinar recursos, atualizar o Estudo de Viabilidade e alterar critérios de elegibilidade. Um período de desistência foi aberto para investidores que já aderiram à oferta.\n\n**CITAÇÃO CHAVE:**\n> \"Em virtude da modificação da Oferta, nos termos do §1º, do artigo 69, da Resolução CVM nº 160/22, será aberto o período de desistência para os Investidores que já tenham aderido à Oferta, pelo prazo de 5 (cinco) dias úteis contados da data de divulgação deste Comunicado de Modificação da Oferta.\"\n\n---\n\n### ASSEMBLEIA AGE ENTREGUE EM 26/06/2026\n\n**O QUE ACONTECEU:** A assembleia aprovou várias alterações no Regulamento do Fundo, incluindo a criação de duas subclasses de cotas.\n\n**RESUMO:** As deliberações foram aprovadas por aproximadamente 68,594% dos cotistas e passaram a ter efeito imediato.\n\n**CITAÇÃO CHAVE:**\n> \"As deliberações aprovadas nesta Consulta Formal passarão a ter efeito no fechamento do dia 26 de junho de 2026, sendo assim, efetivadas antecipadamente, considerando a viabilidade operacional para implementação do evento.\"\n\n---\n\n### ASSEMBLEIA AGE ENTREGUE EM 09/06/2026\n\n**O QUE ACONTECEU:** A administradora convocou uma assembleia extraordinária para discutir e aprovar alterações no Regulamento do Fundo.\n\n**RESUMO:** A proposta incluía a criação de duas subclasses de cotas, alterações na definição de objetivo e prazos de investimento, entre outros itens.\n\n**CITAÇÃO CHAVE:**\n> \"A proposta da Administradora – Assembleia Geral Extraordinária tem por objeto: 1. A alteração e reforma integral do Regulamento do Fundo, compreendendo sua parte geral, anexos e apêndices, nos termos do Anexo II à presente Consulta Formal.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

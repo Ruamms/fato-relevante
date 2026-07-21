@@ -1,0 +1,21 @@
+{
+  "ticker": "BTER11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:20:27",
+  "comunicados": {
+    "ids": [
+      1213960,
+      1213958
+    ],
+    "datas": [
+      "08/06/2026",
+      "08/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### O QUE aconteceu: Início do Período de Subscrição e Integralização das Cotas da Classe\n\n**Resumo:** O BTG Pactual anunciou o início do período de subscrição e integralização das cotas da classe única do INVESTO BRAZIL BESST QUALITY Acumulação Fundo de Índice, no mercado primário.\n\n**Trecho-chave:**\n\"Em 09 de junho de 2026, será iniciado o período de subscrição e integralização da Classe, no mercado primário, (i) sob o código de negociação “BTER11”, (ii) nome de pregão INVESTOBTER e (iii) código ISIN BRBTERCTF002, considerando-se o preço de emissão de R$ 20,00 (vinte reais) por cota da Classe (\"Cota\").\"\n\n### O QUE aconteceu: Início do Período de Negociação das Cotas na B3\n\n**Resumo:** O BTG Pactual informou que o período de negociação das cotas subscritas e integralizadas da classe única do INVESTO BRAZIL BESST QUALITY Acumulação Fundo de Índice no mercado secundário será iniciado em 10 de junho de 2026.\n\n**Trecho-chave:**\n\"Em 10 de junho de 2026, será iniciado o período de negociação das cotas subscritas e integralizadas da Classe, no mercado secundário, (i) sob o código de negociação “BTER11”, (ii) nome de pregão INVESTOBTER e (iii) código ISIN BRBTERCTF002, considerando-se o preço de emissão de R$ 20,00 (vinte reais) por cota da Classe (\"Cota\").\"\n\n### Conexão com Indicadores do Contexto\n- O início do período de subscrição e integralização das cotas no mercado primário e a subsequente negociação nas bolsas são passos cruciais para o lançamento oficial do fundo, que reflete o desempenho do Índice MARKETVECTORTM BRAZIL BESST QUALITY (BRL) INDEX."
+  },
+  "modelo": "qwen2.5:7b"
+}

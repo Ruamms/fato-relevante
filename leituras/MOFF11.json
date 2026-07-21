@@ -1,0 +1,36 @@
+{
+  "ticker": "MOFF11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T04:36:29",
+  "comunicados": {
+    "ids": [
+      810904,
+      1241051,
+      1240815,
+      1240799
+    ],
+    "datas": [
+      "30/12/2024",
+      "07/07/2026",
+      "07/07/2026",
+      "07/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 30/12/2024\n\n**O QUE aconteceu:** O Fundo Multoffices 2 foi reclassificado como \"Multiestratégia\" com a subclassificação \"Multiestratégia\", tipo de gestão \"Gestão Ativa\" e critério de classificação \"Multicategoria\".\n\n**Resumo:** A Administradora do fundo informou que o FII passará a ser classificado como Multiestratégia, alterando sua natureza.\n\n**Trecho-chave:**\n```\nO Fundo, em atendimento ao previsto no artigo 29 do “Anexo Complementar VI - Regras e Procedimentos para Fundos de Investimento Imobiliário do Manual de Regras e Procedimentos de Administração e Gestão de Recursos de Terceiros (Anexo VI)” , passará a ser classificado como  “Multiestratégia”, com a subclassificação  \n“Multiestratégia”, tipo de gestão “Gestão Ativa ” e critério de classificação  \n“Multicategoria” de acordo com o previsto no art. 27 da referida norma.\n```\n\n---\n\n### COMUNICADO AO MERCADO entregue em 07/07/2026\n\n**O QUE aconteceu:** A Administradora do FII Multoffices 2 respondeu a uma notificação da B3 sobre o não envio de informações periódicas, especificamente as Demonstrações Financeiras e a ata da AGO.\n\n**Resumo:** A Administradora esclareceu que a pendência já foi regularizada e solicitou que não fossem aplicadas sanções à empresa.\n\n**Trecho-chave:**\n```\nA Notificação em epígrafe informa que  esta Administradora deixou de encaminhar  à B3 os \ndocumentos comprobatórios da realização da assembleia geral ordinária (“AGO”) para deliberar sobre as \ndemonstrações financeiras do exercício social findo em 31/12/2025.  \n\nA esse respeito, esclarecemos que a pendência referente ao FII MULT OF2  já foi  integralmente \nregularizada.\n```\n\n---\n\n### ASSEMBLEIA AGO entregue em 07/07/2026\n\n**O QUE aconteceu:** A assembleia geral ordinária do FII Multoffices 2 aprovou as demonstrações financeiras auditadas referentes ao exercício social findo em 31 de dezembro de 2025.\n\n**Resumo:** Os cotistas aprovaram sem quaisquer ressalvas ou restrições, as contas e as demonstrações financeiras do Fundo para o exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n```\nOs cotistas, por unanimidade e sem quaisquer ressalvas ou restrições, resolveram por aprovar:\n(i) As contas e as demonstrações financeiras auditadas do Fundo, referentes ao exercício social encerrado em 31 de dezembro de 2025, as quais encontram-se disponíveis no website da B3 (aqui).\n```\n\n---\n\n### ASSEMBLEIA AGO entregue em 27/05/2025\n\n**O QUE aconteceu:** A assembleia geral ordinária do FII Multoffices 2 aprovou as demonstrações financeiras auditadas referentes ao exercício social findo em 31 de dezembro de 2024.\n\n**Resumo:** Os cotistas deliberaram pela aprovação das contas e das demonstrações financeiras auditadas do Fundo para o exercício social encerrado em 31 de dezembro de 2024.\n\n**Trecho-chave:**\n```\nInstalada a Assembleia, depois da análise das demonstrações financeiras auditadas apresentadas, os cotistas do Fundo, deliberaram, sem quaisquer ressalvas ou restrições, pela aprovação das contas e das demonstrações financeiras auditadas do Fundo (Anexo I), referentes ao exercício social findo em 31 de dezembro de 2024.\n```"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1169321,
+    "data_entrega": "24/04/2026 22:22",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Multioffices 2 - Fundo de Investimento Imobiliário – Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotad"
+  }
+}

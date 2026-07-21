@@ -1,0 +1,52 @@
+{
+  "ticker": "XTED11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T11:25:42",
+  "relatorio": {
+    "id": 1149322,
+    "data_entrega": "31/03/2026 09:26",
+    "texto": "### Fatos Relevantes:\n\n1. **Redução na Base de Investidores:** O número de cotistas do VVCO11 diminuiu de 2.453 em janeiro para 2.426 em fevereiro, representando uma redução de 27 investidores (-1,10%).\n\n2. **Variação no Valor Patrimonial e Ativo Total:** O valor patrimônio líquido do fundo recuou de R$ 150,9 milhões para R$ 148,9 milhões (–R$ 2,0 milhão; –1,33%). O ativo total também diminuiu de R$ 151,1 milhões para R$ 149,1 milhões (–R$ 2,0 milhão; –1,32%).\n\n3. **Composição da Carteira:** A carteira de imóveis para renda totalizou R$ 93,4 milhões em fevereiro, representando a maior parcela do portfólio, com leve ajuste em relação ao mês anterior.\n\n4. **Exposição a Fundos Imobiliários:** A exposição a cotas de fundos imobiliários permaneceu relevante, em R$ 57,2 milhões, com pequena variação negativa.\n\n5. **Liquidez Reduzida:** A posição de liquidez encerrou o período em R$ 0,9 milhão, mantendo-se em patamar reduzido, consistente com a estratégia de alocação integral dos recursos em ativos geradores de renda ou com possibilidade de ganho de capital.\n\n6. **Vacância Física:** A vacância física do fundo permaneceu em 0,33%.\n\n7. **Dividend Yield e Retorno Mensal:** O dividend yield mensal foi de 0,00%, enquanto o retorno mensal foi negativo (-R$ 406.915,30).\n\n8. **Comentário do Gestor:** O mercado de fundos imobiliários manteve trajetória positiva em fevereiro, com valorização do IFIX e recuperação após correção no início do mês.\n\n### O que observar em seguida:\n1. Monitorar a base de investidores para identificar se há tendência de redução.\n2. Observar as variações nos valores patrimoniais e ativos totais, bem como o impacto na rentabilidade mensal."
+  },
+  "comunicados": {
+    "ids": [
+      1233213,
+      1089693,
+      1199017,
+      1260657,
+      1260656
+    ],
+    "datas": [
+      "29/06/2026",
+      "22/01/2026",
+      "19/05/2026",
+      "20/07/2026",
+      "20/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### O que aconteceu: FATO RELEVANTE entregue em 29/06/2026\n\n**Resumo:** O V2 Edifícios Corporativos FII vendeu todos os seus ativos imobiliários para o ZAGROS Multiestratégia FII.\n\n**Citação do trecho-chave:**\n> A operação tem por objeto a alienação dos seguintes imóveis integrantes da carteira do Fundo, em conjunto denominados “Imóveis”:\n>\n> - Unidades autônomas integrantes do Edifício Atlântico Office – Macaé\n> - Domínio útil dos escritórios nºs 101, 102, 103, 104, 1201 e 1202, integrantes do Condomínio Iguatemi Alphaville\n> - Conjuntos nºs 81, 82, 83 e 84, integrantes do Condomínio Edifício Box 298\n> - Escritórios nºs 803, 804, 805 e 806, integrantes do Condomínio Módulo Rebouças\n\n---\n\n### O que aconteceu: FATO RELEVANTE entregue em 22/01/2026\n\n**Resumo:** Um cotista solicitou a convocação de uma Assembleia Geral Extraordinária para discutir redução da taxa de gestão, alteração na taxa de performance e pré-aprovada amortização.\n\n**Citação do trecho-chave:**\n> A Administradora esclarece que:  \n>\n> (i) verificou os poderes dos representantes de cotistas solicitantes no Pedido de Convocação e\n> que ambos estão adequadamente representados e  \n> (ii) apurará o teor da solicitação e, se entender pertinente, atenderá ao Pedido de Convocação no prazo máximo de 30 (trinta) dias contados desta data.\n\n---\n\n### O que aconteceu: COMUNICADO AO MERCADO entregue em 19/05/2026\n\n**Resumo:** A assembleia geral de cotistas aprovou as contas anuais do V2 Edifícios Corporativos FII referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Citação do trecho-chave:**\n> Na assembleia geral de cotistas realizada em 13 de maio de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\n\n---\n\n### O que aconteceu: ASSEMBLEIA AGE entregue em 20/07/2026\n\n**Resumo:** A administradora convocou os cotistas para uma Assembleia Especial para deliberar sobre a aplicação de recursos da Classe para realizar a subscrição de cotas do VVRI11.\n\n**Citação do trecho-chave:**\n> 1. Deliberar sobre a aplicação de recursos da Classe para realizar a subscrição de cotas de classe única de fundo de investimento administrado e gerido pelo Administrador e pela Gestora, respectivamente, qual seja, CLASSE ÚNICA DO V2 RENDA IMOBILIÁRIA FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA."
+  },
+  "retrato": {
+    "selo": "Alertas leves",
+    "nivel": "leves",
+    "alertas": [
+      "P/VP muito acima da média histórica",
+      "Rendimentos irregulares"
+    ],
+    "cota": 8.82
+  },
+  "parecer": {
+    "id": 1152221,
+    "data_entrega": "01/04/2026 00:15",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "ticker": "ICTU11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T11:32:38",
+  "comunicados": {
+    "ids": [
+      811119,
+      1026100,
+      1003899
+    ],
+    "datas": [
+      "30/12/2024",
+      "31/10/2025",
+      "01/10/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 30/12/2024\n\n**O QUE aconteceu:** O LA DEFENSE FUNDO DE INVESTIMENTO IMOBILIÁRIO - FII passará a ser classificado como \"Tijolo\", com a subclassificação \"Tijolo - Híbrido\", tipo de gestão \"Gestão Definida\" e critério de classificação \"Multicategoria\".\n\n**Resumo:** O fundo foi reclassificado para o tipo de investimento \"Tijolo\" com características específicas.\n\n**Trecho-chave:**\n\"passará a ser classificado como “Tijolo”, com a subclassificação “Tijolo - Híbrido”, tipo de gestão “Gestão Definida” e critério de classificação “Multicategoria” de acordo com o previsto no art. 27 da referida norma.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 31/10/2025\n\n**O QUE aconteceu:** A assembleia especial ordinária do LA DEFENSE FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA aprovou as demonstrações financeiras referentes ao exercício social encerrado em 30 de junho de 2025.\n\n**Resumo:** Os cotistas aprovaram as contas e demonstrações contábeis do fundo para o período mencionado.\n\n**Trecho-chave:**\n\"aprovaram, sem quaisquer ressalvas ou restrições, as Demonstrações Financeiras do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 01/10/2025\n\n**O QUE aconteceu:** A OLIVEIRA TRUST DTVM S.A., administradora do LA DEFENSE FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA, convocou os cotistas para uma assembleia especial ordinária a ser realizada por meio de consulta formal.\n\n**Resumo:** A assembleia será realizada para aprovar as contas e demonstrações contábeis do fundo referentes ao exercício social encerrado em 30 de junho de 2025.\n\n**Trecho-chave:**\n\"Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 30 de junho de 2025, devidamente auditadas.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1001014,
+    "data_entrega": "29/09/2025 17:25",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do La Défense Fundo de Investimento Imobiliário em 30 de junho de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo naquela data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundo"
+  }
+}

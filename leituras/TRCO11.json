@@ -1,0 +1,43 @@
+{
+  "ticker": "TRCO11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T04:33:56",
+  "relatorio": {
+    "id": 1250774,
+    "data_entrega": "16/07/2026 09:25",
+    "texto": "### Fatos Extraídos:\n\n1. **Locação das Unidades:** Em abril/2026, a locatária efetuou a sublocação dos conjuntos nº 41 e 42 para a empresa KLX HOLDING LTDA conforme permitido pelo contrato de locação vigente.\n   > \"Em abril/2026 a Locatária efetuou a sublocação dos conjuntos nº 41 e 42, para a empresa KLX HOLDING LTDA conforme permitido pelo contrato de locação vigente.\" (p. 3)\n\n2. **Ocupação:** As unidades da Torre Rio Claro Offices estão 100% ocupadas.\n   > \"Taxa de Ocupação: 100%\" (p. 3)\n\n3. **Patrimônio Líquido e Cotas:** O patrimônio líquido do fundo é R$ 34,191,199,42 e há 6 cotas em circulação.\n   > \"Patrimônio Líquido: R$ 34.191.199,42\" (p. 2)\n   > \"Número de Cotistas: 6\" (p. 2)\n\n4. **Receitas e Despesas:** O fundo registrou uma receita de locação de R$ 588,04 mil em junho/2026.\n   > \"Receitas de Locação 588,04\" (p. 3)\n\n5. **Aquisição do Imóvel:** O fundo utilizou os recursos da sua primeira emissão de cotas para pagar o sinal de R$ 35 milhões do compromisso de compra e venda.\n   > \"O Fundo utilizou os recursos da sua primeira emissão de cotas para pagar o sinal de R$ 35.000.000,00 do compromisso de compra e venda pela aquisição das unidades 41, 42, 43, 51, 52, 53, 61 e 62 da Torre Rio Claro Offices\" (p. 2)\n\n### O que observar em seguida:\n- Monitorar as sublocações e a ocupação das unidades.\n- Verificar o progresso na quitação do saldo devedor restante do compromisso de compra e venda."
+  },
+  "comunicados": {
+    "ids": [
+      1251384,
+      1117232,
+      1102942,
+      1260196,
+      1239575
+    ],
+    "datas": [
+      "16/07/2026",
+      "18/02/2026",
+      "05/02/2026",
+      "20/07/2026",
+      "03/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### Fato Relevante entregue em 16/07/2026\n\n**O QUE aconteceu:** A Locatária BM VAREJO EMPREENDIMENTOS S.A. não efetuou o pagamento do aluguel referente ao mês de junho de 2026.\n\n**Resumo:** O fundo comunicou que a locatária não pagou o aluguel e que será feita a cobrança da multa e dos encargos.\n\n**Trecho-chave:**\n\"A Locatária BM VAREJO EMPREENDIMENTOS S.A. não efetuou o pagamento do aluguel  referente ao mês de junho de 2026. A Administradora esclarece que efetuará a cobrança da multa e dos encargos devidos, nos termos previstos no Contrato de Locação.\"\n\n---\n\n### Fato Relevante entregue em 18/02/2026\n\n**O QUE aconteceu:** A locatária BM VAREJO EMPREENDIMENTOS S.A. pagou o aluguel referente ao mês de janeiro de 2026, incluindo multa e juros.\n\n**Resumo:** O fundo recebeu o pagamento do aluguel com encargos previstos no contrato de locação.\n\n**Trecho-chave:**\n\"Em 13 de fevereiro  de 2026, houve o recebimento do aluguel referente ao mês de janeiro de 2026, da locatária BM VAREJO EMPREENDIMENTOS S.A., conforme informado no Fato Relevante publicado em 05 de fevereiro de 2026, incluindo a multa de 5% (cinco por cento) e juros de 1% (um por cento) ao mês, conforme contrato de locação.\"\n\n---\n\n### Fato Relevante entregue em 05/02/2026\n\n**O QUE aconteceu:** A Locatária BM VAREJO EMPREENDIMENTOS S.A. não efetuou o pagamento do aluguel referente ao mês de janeiro de 2026.\n\n**Resumo:** O fundo comunicou que a locatária não pagou o aluguel e que será feita a cobrança da multa e dos encargos.\n\n**Trecho-chave:**\n\"A Locatária BM VAREJO EMPREENDIMENTOS S.A. não efetuou, na presente data, o pagamento do aluguel referente ao mês de janeiro de 2026, com vencimento nesta data. A Administradora esclarece que efetuará a cobrança da multa e dos encargos devidos, nos termos previstos no Contrato de Locação.\"\n\n---\n\n### ASSEMBLEIA AGE entregue em 20/07/2026\n\n**O QUE aconteceu:** A assembleia geral extraordinária deliberou sobre a não distribuição de rendimentos de, no mínimo, 95% dos resultados auferidos pelo fundo.\n\n**Resumo:** Os cotistas aprovaram a matéria objeto da consulta formal, permitindo que os rendimentos sejam utilizados para fazer frente às obrigações assumidas pela aquisição do imóvel do fundo.\n\n**Trecho-chave:**\n\"Foram recebidas respostas de cotistas que representam 97,27% do total de cotas emitidas, sendo que 97,27% aprovaram a matéria objeto da Carta Consulta.\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Menos cotistas que o mínimo para isenção de IR",
+      "Fundo novo — histórico curto"
+    ],
+    "cota": 10.2
+  }
+}

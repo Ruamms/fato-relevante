@@ -1,0 +1,60 @@
+{
+  "ticker": "RSPD11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T01:47:47",
+  "relatorio": {
+    "id": 1235905,
+    "data_entrega": "30/06/2026 18:46",
+    "texto": "### Fatos Extraídos do Relatório Gerencial\n\n1. **Entregas de Projetos:**\n   - O fundo entregou os empreendimentos Brooklin 90, LED Vila Madalena e Astéri.\n\n2. **Projeção de Retorno dos Projetos:**\n   - A projeção de retorno dos projetos de desenvolvimento residencial é de R$ 135,696,480.\n\n3. **Composição do Valor Patrimonial Gerencial:**\n   - O valor patrimonial gerencial atualizado do fundo é de R$ 138,412,578.\n   - A projeção do valor da cota (R$) é de R$ 928,87.\n\n4. **Histórico de Integralizações:**\n   - O total integralizado no fundo é de R$ 171,925,120.\n   - A última chamada de capital ocorreu em 14/05/2021 com a integralização de 56.228 cotas.\n\n5. **Distribuições de Rendimentos e Amortizações:**\n   - As distribuições de rendimentos e amortizações variam ao longo dos anos, sendo mais concentradas no final do prazo de duração do fundo.\n   - Em 2025, houve uma redução significativa na velocidade de vendas e maior dificuldade para repasse de financiamentos.\n\n6. **Vacância e Inadimplência:**\n   - Não há menção específica sobre vacância ou inadimplência nos empreendimentos.\n\n7. **Obras e Reformas:**\n   - Não há menção a obras ou reformas específicas nos empreendimentos.\n\n8. **Riscos Cientificados pela Gestão:**\n   - O fundo enfrenta riscos relacionados à redução da velocidade de vendas, maior dificuldade para repasse de financiamentos e pressões sobre os custos de construção.\n\n### O que observar em seguida:\n1. **Velocidade de Vendas:** Observar se há uma recuperação na velocidade de vendas nos próximos trimestres.\n2. **Custos de Construção:** Monitorar as variações dos custos de construção, especialmente do INCC-M, que pode impactar a margem de lucro dos empreendimentos."
+  },
+  "comunicados": {
+    "ids": [
+      1180458,
+      1133442,
+      1101538,
+      1238358,
+      1152855,
+      1026028,
+      1003892
+    ],
+    "datas": [
+      "05/05/2026",
+      "11/03/2026",
+      "04/02/2026",
+      "02/07/2026",
+      "01/04/2026",
+      "31/10/2025",
+      "01/10/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### O QUE aconteceu em 31/10/2025\n\n**Título:** Aprovadas as contas do exercício social findo em 30 de junho de 2025.\n\n**Resumo:**\nA OLIVEIRA TRUST DTVM S.A., administradora do RB CAPITAL DESENVOLVIMENTO RESIDENCIAL III FII - RESPONSABILIDADE LIMITADA, realizou a consulta formal para aprovar as contas e demonstrações contábeis do Fundo referentes ao exercício social findo em 30 de junho de 2025. O quórum necessário foi atingido com respostas dos cotistas representando 25,69% das cotas em circulação.\n\n**Trecho-chave:**\n\"Restaram aprovadas as contas e demonstrações contábeis do Fundo referentes ao período encerrado em 30 de junho de 2025.\"\n\n---\n\n### O QUE aconteceu em 11/03/2026\n\n**Título:** Pagamento de amortização extraordinária no valor total de R$ 14.000.000,00.\n\n**Resumo:**\nA RB ASSET MANAGEMENT LTDA., gestora do RB CAPITAL DESENVOLVIMENTO RESIDENCIAL III FII - RESPONSABILIDADE LIMITADA, decidiu proceder com o pagamento de amortização parcial de capital aos cotistas no valor total de R$ 14.000.000,00 (quatorze milhões de reais), correspondente ao valor de R$ 93,95279543 por cota.\n\n**Trecho-chave:**\n\"A Gestora, nos termos dos artigos Cláusula 7 do Anexo Descritivo do Regulamento do Fundo, decidiu proceder com o pagamento de amortização parcial de capital aos cotistas (“Amortização Extraordinária”), no montante total de R$ 14.000.000,00 (quatorze milhões de reais), correspondente ao valor de R$ 93,95279543 por cota.\"\n\n---\n\n### O QUE aconteceu em 04/02/2026\n\n**Título:** Pagamento de amortização extraordinária no valor total de R$ 14.000.000,00.\n\n**Resumo:**\nA RB ASSET MANAGEMENT LTDA., gestora do RB CAPITAL DESENVOLVIMENTO RESIDENCIAL III FII - RESPONSABILIDADE LIMITADA, decidiu proceder com o pagamento de amortização parcial de capital aos cotistas no valor total de R$ 14.000.000,00 (quatorze milhões de reais), correspondente ao valor de R$ 93,95279543 por cota.\n\n**Trecho-chave:**\n\"A Gestora, nos termos dos artigos Cláusula 7 do Anexo Descritivo do Regulamento do Fundo, decidiu proceder com o pagamento de amortização parcial de capital aos cotistas (“Amortização Extraordinária”), no montante total de R$ 14.000.000,00 (quatorze milhões de reais), correspondente ao valor de R$ 93,95279543 por cota.\"\n\n---\n\n### O QUE aconteceu em 05/05/2026\n\n**Título:** Pagamento de amortização extraordinária no valor total de R$ 8.000.000,00.\n\n**Resumo:**\nA RB ASSET MANAGEMENT LTDA., gestora do RB CAPITAL DESENVOLVIMENTO RESIDENCIAL III FII - RESPONSABILIDADE LIMITADA, decidiu proceder com o pagamento de amortização parcial de capital aos cotistas no valor total de R$ 8.000.000,00 (oito milhões de reais), correspondente ao valor de R$ 53,68731167 por cota.\n\n**Trecho-chave:**\n\"A Gestora, nos termos dos artigos Cláusula 7 do Anexo Descritivo do Regulamento do Fundo, decidiu proceder com o pagamento de amortização parcial de capital aos cotistas (“Amortização Extraordinária”), no montante total de R$ 8.000.000,00 (oito milhões de reais), correspondente ao valor de R$ 53,68731167 por cota.\"\n\n---\n\n### O QUE aconteceu em 02/07/2026\n\n**Título:** Pagamento de amortização extraordinária no valor total de R$ 8.000.000,00.\n\n**Resumo:**\nA RB ASSET MANAGEMENT LTDA., gestora do RB CAPITAL DESENVOLVIMENTO RESIDENCIAL III FII - RESPONSABILIDADE LIMITADA, decidiu proceder com o pagamento de amortização parcial de capital aos cotistas no valor total de R$ 8.000.000,00 (oito milhões de reais), correspondente ao valor de R$ 53,68731167 por cota.\n\n**Trecho-chave:**\n\"A Gestora, nos termos dos artigos Cláusula 7 do Anexo Descritivo do Regulamento do Fundo, decidiu proceder com o pagamento de amortização parcial de capital aos cotistas (“Amortização Extraordinária”), no montante total de R$ 8.000.000,00 (oito milhões de reais), correspondente ao valor de R$ 53,68731167 por cota.\"\n\n---\n\n### O QUE aconteceu em 01/10/2025\n\n**Título:** Convocação para a Assembleia Especial Ordinária.\n\n**Resumo:**\nA OLIVEIRA TRUST DTVM S.A., administradora do RB CAPITAL DESENVOLVIMENTO RESIDENCIAL III FII - RESPONSABILIDADE LIMITADA, convocou os cotistas para a Assembleia Especial Ordinária com a finalidade de aprovar as contas e demonstrações contábeis do Fundo referentes ao exercício social findo em 30 de junho de 2025.\n\n**Trecho-chave:**\n\"A OLIVEIRA TRUST DTVM S.A., sociedade devidamente autorizada pela Comissão de Valores Mobiliários - CVM para o exercício profissional de administração de carteira de títulos e valores mobiliários, por meio do Ato Declaratório n.º 6.696, de 21 de fevereiro de 2002, na qualidade de administradora do Fundo (“Administrador”) do Fundo, vem, por meio do presente edital de convocação (“Edital de Convocação”), convidar os senhores cotistas para a Assembleia Especial Ordinária, a ser realizada de forma não presencial.”\n\n---\n\n### O QUE aconteceu em 31/10/2025\n\n**Título:** Aprovadas as contas do exercício social findo em 30 de junho de 2025.\n\n**Resumo:**\nA OLIVEIRA TRUST DTVM S.A., administradora do RB CAPITAL DESENVOLVIMENTO RESIDENCIAL III FII - RESPONSABILIDADE LIMITADA, realizou a consulta formal para aprovar as contas e demonstrações contábeis do Fundo referentes ao exercício social findo em 30 de junho de 2025. O quórum necessário foi atingido com respostas dos cotistas representando 25,69% das cotas em circulação.\n\n**Trecho-chave:**\n\"Restaram aprovadas as contas e demonstrações contábeis do Fundo referentes ao período encerrado em 30 de junho de 2025.\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "VP/cota em queda relevante",
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares",
+      "Base de cotistas muito pequena"
+    ],
+    "cota": 700.0
+  },
+  "parecer": {
+    "id": 995716,
+    "data_entrega": "23/09/2025 12:30",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do RB Capital Desenvolvimento Residencial III Fundo de Investimento Imobiliário – FII em 30 de junho de 2025 e o desempenho de suas operações e fluxos de caixa para o exercício findo nesta data, de acordo com as práticas contábeis adotadas no "
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "ticker": "URHF11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T05:39:45",
+  "relatorio": {
+    "id": 1062976,
+    "data_entrega": "15/12/2025 18:26",
+    "texto": "### Fatos do Relatório Gerencial\n\n1. **Resultado Contábil e Distribuição:**\n   - Em novembro, o fundo apresentou um resultado contábil de R$ 1,43 por cota.\n   - O resultado em caixa totalizou R$ 1,32 por cota após descontos das despesas mensais.\n   - O valor distribuído foi de R$ 1,15 por cota.\n\n   *Trecho:* \"No mês, o fundo apresentou um resultado contábil de R$ 1,43 por cota. Desse valor, R$ 0,11 não foi realizado em caixa, o que impede sua distribuição.\" (p. 242)\n\n2. **Ativos e Alocação:**\n   - A carteira do fundo está composta principalmente por CRI (84,5% do patrimônio líquido).\n   - Os ativos estão distribuídos em segmentos como multipropriedade, loteamento, com taxas de juros variando entre IPCA + 12,65% a.a. e IPCA + 16,40% a.a.\n   \n   *Trecho:* \"Ativos em Carteira: % Patrimônio Liquido 84,5%\" (p. 231)\n\n3. **Obras e Vacância:**\n   - A carteira de obras representa 100% do patrimônio líquido.\n   - A razão PMT média é alta, indicando um bom fluxo de caixa das parcelas.\n\n   *Trecho:* \"Razão PMT Média 194,1%\" (p. 231)\n\n4. **Vacância e Inadimplência:**\n   - A inadimplência média da carteira é de 9,0%.\n   \n   *Trecho:* \"Inadimplência2 Média 9,0%\" (p. 231)\n\n5. **Cotistas e Liquidez:**\n   - O número de cotistas aumentou para 241 no mês atual, um aumento de 62,5% em relação ao último informe.\n   - A liquidez mensal é de R$ 241.370.\n\n   *Trecho:* \"Cotistas 241 cotistas\" (p. 231)\n\n### O que observar em seguida:\n- Monitorar a evolução da inadimplência, já que está acima do esperado.\n- Observar o impacto das obras no desempenho futuro do fundo, especialmente com a expectativa de inauguração adiada."
+  },
+  "comunicados": {
+    "ids": [
+      1107277,
+      1056497,
+      1019235
+    ],
+    "datas": [
+      "10/02/2026",
+      "08/12/2025",
+      "23/10/2025"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 10/02/2026\n\n**O que aconteceu:** O URCA HEDGE FUND MULTIESTRATÉGIA IMOBILIÁRIA encontra-se temporariamente desenquadrado dos limites regulatórios de concentração por ativo.\n\n**Resumo:** O fundo possui cinco operações com participação superior a 10% do patrimônio líquido, mas as operações são saudáveis e adimplentes. A gestão está buscando alternativas para retornar aos limites regulatórios de forma eficiente e prudente.\n\n**Trecho-chave:** \"A Gestão reitera seu compromisso com a condução responsável do portfólio e informa que já adotou uma postura ativa de reenquadramento, buscando alternativas que permitam o retorno aos limites previstos de forma eficiente e prudente, sem qualquer medida que implique liquidação forçada, realização de ativos em condições desfavoráveis ou aquisição de operações com preços incompatíveis apenas para fins de enquadramento.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 08/12/2025\n\n**O que aconteceu:** A assembleia geral ordinária do URCA HEDGE FUND MULTIESTRATÉGIA IMOBILIÁRIA aprovou as demonstrações contábeis referentes ao exercício social encerrado em 30 de junho de 2025.\n\n**Resumo:** Todos os cotistas presentes aprovaram as contas e demonstrações contábeis do fundo sem quaisquer ressalvas ou restrições. A ata da assembleia está disponível no site do administrador e na CVM.\n\n**Trecho-chave:** \"A maioria dos Cotista(s) presente(s) aprovou(aram), sem quaisquer ressalvas ou restrições, as contas e demonstrações contábeis do Fundo referentes ao exercício social encerrado em 30 de junho de 2025.\" (p. 6)\n\n---\n\n### ASSEMBLEIA AGO entregue em 23/10/2025\n\n**O que aconteceu:** O URCA HEDGE FUND MULTIESTRATÉGIA IMOBILIÁRIA convocou a assembleia geral ordinária para o dia 24 de novembro de 2025, às 09:15.\n\n**Resumo:** A assembleia terá como principal item a aprovação das contas e demonstrações contábeis do fundo referentes ao exercício social encerrado em 30 de junho de 2025. O voto por comunicação eletrônica deve ser realizado antes do início da assembleia.\n\n**Trecho-chave:** \"O BANCO DAYCOVAL S.A., sociedade com sede na Cidade de São Paulo, Estado de São Paulo, na Avenida Paulista, 1.793, 9º andar, Bela Vista, São Paulo - SP, inscrita no CNPJ/ME sob o nº 62.232.889/0001-90, convocou V. Sas. para a Assembleia Geral Ordinária, a ser realizada no dia 24 de novembro de 2025, às 09:15, para que seja deliberada a seguinte matéria, conforme ordem do dia:\" (p. 1)"
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Base de cotistas muito pequena",
+      "P/VP muito abaixo da média histórica"
+    ],
+    "cota": 58.67
+  },
+  "parecer": {
+    "id": 1001681,
+    "data_entrega": "29/09/2025 21:55",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Urca Hedge Fund Estratégia Imobiliária Fundo de Investimento Imobiliário - Responsabilidade Limitada em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas"
+  }
+}

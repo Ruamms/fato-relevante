@@ -1,0 +1,30 @@
+{
+  "ticker": "VIDS11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T03:29:28",
+  "comunicados": {
+    "ids": [
+      1093706,
+      1067075
+    ],
+    "datas": [
+      "27/01/2026",
+      "19/12/2025"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA GERAL ORDINÁRIA DE COTISTAS NÃO INSTALADA\n\n**Data:** 19 de janeiro de 2026  \n**O que aconteceu:** A assembleia geral ordinária de cotistas do VIC Desenvolvimento Vintage 20/21 FII não foi instalada.  \n**Resumo:** Não houve presença mínima necessária para a realização da assembleia, e as demonstrações financeiras anuais foram consideradas automaticamente aprovadas.  \n**Trecho-chave:**\n\"Para fins de registro a Administradora informa que não recebeu nenhum voto, juntamente com os documentos comprobatórios dos poderes ou da identificação do cotista, dentro do prazo estabelecido na Consulta Formal.\"\n\n### ASSEMBLEIA GERAL ORDINÁRIA DE COTISTAS CONVOCADA\n\n**Data:** 19 de dezembro de 2025  \n**O que aconteceu:** A administradora convocou a assembleia geral ordinária de cotistas para discutir e aprovar as demonstrações financeiras do exercício social findo em 30 de junho de 2025.  \n**Resumo:** A proposta da administradora foi enviada aos cotistas, mas não houve presença mínima necessária para a realização da assembleia.  \n**Trecho-chave:**\n\"O Administrador propõe que os Cotistas analisem as matérias constantes na Ordem do Dia; e ainda, deixa a disposição os canais de atendimento disponibilizados no Edital de Consulta Formal em caso de dúvidas.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1000931,
+    "data_entrega": "29/09/2025 16:51",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira, do VIC Desenvolvimento – Vintage 20/21 Fundo de Investimento Imobiliario em 30 de junho de 2025, o desempenho de suas operações e os seus respectivos fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adota"
+  }
+}

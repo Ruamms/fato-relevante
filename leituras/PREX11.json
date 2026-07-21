@@ -1,0 +1,18 @@
+{
+  "ticker": "PREX11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T07:04:20",
+  "comunicados": {
+    "ids": [
+      1168651
+    ],
+    "datas": [
+      "24/04/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado"
+    ],
+    "texto": "**Data: 24/04/2026**\n\n**Título:** Início das Negociações do TREND ETF IRFM P2 CLASSE DE ÍNDICE\n\n**Resumo:** O fundo iniciará suas negociações em 30 de abril de 2026 no mercado primário e em 4 de maio de 2026 no mercado secundário da B3.\n\n**Trecho-chave:**\n\"serão iniciados os negócios com suas cotas subscritas e integralizadas 30 de abril de 2026 no mercado primário e em 04 de maio de 2026 no mercado secundário da B3, pelo valor inicial de R$ 50,00.\" (p. 1)\n\n**Conexão com o contexto:** Este comunicado indica a data de início das negociações do fundo, que é um evento importante para os investidores e reflete diretamente no calendário operacional do fundo."
+  },
+  "modelo": "qwen2.5:7b"
+}

@@ -1,0 +1,20 @@
+{
+  "ticker": "IWMI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:42:15",
+  "comunicados": {
+    "ids": [],
+    "datas": [],
+    "rotulos": [],
+    "texto": null
+  },
+  "parecer": {
+    "id": 1237759,
+    "data_entrega": "01/07/2026 20:34",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente,emtodososaspectosrelevantes,aposiçãopatrimonialefinanceira do Buena Vista Neos Russell 2000 High Income Index Fundo de Índice - Responsabilidade Limitada em 31 de março de 2026 e o desempenho de suas operaçõesparaoexercíciofindonamesmadata,deacordocomaspráticascontábeis adotadas no Brasil aplicáveis aos Fundos "
+  }
+}

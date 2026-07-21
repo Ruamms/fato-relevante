@@ -1,0 +1,43 @@
+{
+  "ticker": "YEES11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T04:46:00",
+  "relatorio": {
+    "id": 1203984,
+    "data_entrega": "26/05/2026 17:14",
+    "texto": "### Fatos Extraídos:\n\n1. **Compras e Vendas de Ativos:**\n   - Em 22 de outubro de 2024, foi excluído do pipeline de investimento o projeto Yees! Tatuapé, localizado na cidade de São Paulo, por motivos comerciais e estratégicos.\n   - Três projetos foram aprovados para o portfólio: Mansões Residencial e Taquaral Residence em Campinas, e JR São Paulo II em Sorocaba.\n\n2. **Obras e Reformas:**\n   - O projeto Yees! Tatuapé foi incorporado ao portfólio do fundo quando já estava em fase de obras.\n   - Até o final do primeiro trimestre de 2026, foram vendidas 50% das unidades próprias da SPE do Tatuapé.\n\n3. **Vacância e Inadimplência:**\n   - Não há menção a dados específicos sobre vacância ou inadimplência no relatório.\n\n4. **Renegociações de Contrato:**\n   - O contrato de financiamento à produção foi assinado em dezembro de 2025, com liberação condicionada ao avanço físico da obra.\n\n5. **Alavancagem/Dívidas:**\n   - A SPE concluiu a assinatura do contrato de financiamento à produção junto à Caixa Econômica Federal.\n   - Até abril de 2026, a demanda mínima exigida para operacionalização do financiamento foi atingida.\n\n6. **Eventos Societários:**\n   - As informações sobre o projeto Yees! Tatuapé foram validadas por diligências jurídicas e técnicas em outubro de 2024.\n   - A assembleia geral extraordinária aprovou a inclusão do projeto Yees! Tatuapé no portfólio.\n\n7. **Riscos Citados pela Gestão:**\n   - O relatório menciona atrasos na obra, que se devem principalmente à contenção do ritmo de obras para limitar as despesas mensais e reduzir a exposição de caixa.\n   - A expectativa é de finalizar a estrutura e liberar as demais frentes de serviço no próximo trimestre.\n\n### O que observar em seguida:\n- Monitorar o avanço físico da obra do projeto Yees! Tatuapé, especialmente após a liberação dos recursos do financiamento.\n- Verificar se haverá novas alterações nos prazos e cronograma de entrega das obras."
+  },
+  "comunicados": {
+    "ids": [
+      1183654,
+      1183650
+    ],
+    "datas": [
+      "08/05/2026",
+      "08/05/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "**O QUE aconteceu:** Não houve instalação da Assembleia Geral Ordinária dos Cotistas do Hedge Yees Habitações Econômicas Fundo de Investimento Imobiliário de Responsabilidade Limitada.\n\n**Resumo:** A assembleia foi realizada por meio de consulta formal, mas não teve participação de cotistas, resultando na sua não instalação. As demonstrações financeiras do exercício social encerrado em 31 de dezembro de 2025 foram consideradas automaticamente aprovadas.\n\n**Trecho-chave:** \"Em virtude da ausência de manifestação de voto de cotistas, a instalação da presente assembleia restou prejudicada. Nos termos do parágrafo 3º do artigo 71 da parte geral Resolução CVM nº 175, de 23 de dezembro de 2022, e tendo em vista a ausência de opinião modificada no relatório dos auditores independentes, as demonstrações financeiras do Fundo relativas ao exercício social findo em 31 de dezembro de 2025 foram consideradas automaticamente aprovadas.\" (p. 1)\n\n**Conexão com o contexto:** A não instalação da assembleia e a aprovação automática das demonstrações financeiras podem indicar uma base de cotistas ainda pequena, conforme alerta no contexto do fundo."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos irregulares",
+      "Base de cotistas muito pequena"
+    ],
+    "cota": 102.0
+  },
+  "parecer": {
+    "id": 1147244,
+    "data_entrega": "27/03/2026 20:48",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Hedge Yees Habitações Econômicas Fundo de Investimento Imobiliário de Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "ticker": "BBSD11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:12:07",
+  "comunicados": {
+    "ids": [
+      1240142,
+      1238244
+    ],
+    "datas": [
+      "06/07/2026",
+      "02/07/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Assembleia Geral Ordinária (06/07/2026)\n\n**O QUE aconteceu:** A BB Asset Management informou sobre a realização da Assembleia Geral Ordinária do fundo BB ETF S&P DIVIDENDOS BRASIL FUNDO DE ÍNDICE.\n\n**Resumo:** A assembleia foi convocada em 29/06/2026 para deliberar sobre as demonstrações contábeis do fundo, mas não obteve quórum. As demonstrações contábeis relativas ao exercício social findo em 31/03/2026 foram consideradas aprovadas.\n\n**Trecho-chave:** \"Em razão da ausência de quórum na Assembleia, consideram-se aprovadas as demonstrações contábeis do FUNDO relativas ao exercício social findo em 31/03/2026, devidamente auditada pela PricewaterhouseCoopers Auditores Independentes Ltda.\" (p. 1)\n\n---\n\n### Assembleia Geral Ordinária (02/07/2026)\n\n**O QUE aconteceu:** A BB Asset Management publicou a ata da Assembleia Geral Ordinária do fundo BB ETF S&P DIVIDENDOS BRASIL FUNDO DE ÍNDICE.\n\n**Resumo:** A assembleia, realizada em 29/06/2026, não obteve manifestação de cotistas e as demonstrações contábeis relativas ao exercício social findo em 31/03/2026 foram consideradas automaticamente aprovadas.\n\n**Trecho-chave:** \"tendo em vista a ausência de manifestação de cotistas no processo de Assembleia Geral Ordinária do fundo, as Demonstrações Contábeis relativas ao exercício social findo em 31/03/2026 foram consideradas automaticamente aprovadas, por não apresentarem opinião modificada.\" (p. 1)\n\n---\n\n**Conexão com o contexto:** A ausência de quórum na assembleia e a aprovação das demonstrações contábeis se conectam aos indicadores financeiros do fundo, pois as demonstrações são um componente importante para avaliar o desempenho do fundo."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1206915,
+    "data_entrega": "29/05/2026 09:14",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do BB ETF S&P Dividendos Brasil Fundo de Índice Responsabilidade Limitada em 31 de março de 2026 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de"
+  }
+}

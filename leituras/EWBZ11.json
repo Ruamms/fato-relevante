@@ -1,0 +1,33 @@
+{
+  "ticker": "EWBZ11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T11:49:58",
+  "comunicados": {
+    "ids": [
+      1224073,
+      1226218,
+      1214072
+    ],
+    "datas": [
+      "18/06/2026",
+      "23/06/2026",
+      "08/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 18/06/2026\n\n**O QUE aconteceu:** Alteração no regulamento do FUNDO.\n\n**Resumo:** O BANCO BNP PARIBAS BRASIL S.A., como Administrador, informou que o regulamento do FUNDO foi alterado para incluir a \"Taxa Máxima de Custódia\", garantindo transparência e aderência à norma. Não há impacto financeiro ou custo adicional.\n\n**Trecho-chave:** \"A inclusão desse item não gera impacto financeiro ou custo adicional ao custodiante ou ao investidor.\" (p. 1)\n\n---\n\n### ASSEMBLEIA GERAL ORDINÁRIA DE COTISTAS entregue em 23/06/2026\n\n**O QUE aconteceu:** Assembleia não realizada.\n\n**Resumo:** A assembleia ordinária de cotistas, convocada para 23 de junho de 2026, não se realizou por falta de orientação de voto digitalizada por correio eletrônico. As demonstrações financeiras auditadas foram consideradas automaticamente aprovadas.\n\n**Trecho-chave:** \"A assembleia não foi instalada em razão do na não recebimento de orientação de voto digitalizada por correio eletrônico.\" (p. 1)\n\n---\n\n### CONVOCAÇÃO PARA A ASSEMBLEIA GERAL ORDINÁRIA entregue em 08/06/2026\n\n**O QUE aconteceu:** Convocação para assembleia ordinária de cotistas.\n\n**Resumo:** O BANCO BNP PARIBAS BRASIL S.A., como Administrador, convocou os cotistas para uma assembleia ordinária virtual em 23 de junho de 2026, com o objetivo de aprovar as demonstrações financeiras auditadas do exercício social encerrado em 31 de março de 2026.\n\n**Trecho-chave:** \"O Administrador, localizada na Avenida Presidente Juscelino Kubitscheck, n.º 1909, 9º andar, Torre Sul, São Paulo/SP, vem por meio da presente, nos termos dos Artigos 70, 72 e 75 da Resolução CVM nº 175, de 23 de dezembro de 2022 (“RCVM 175”), bem como nos termos do Regulamento do FUNDO (“Regulamento”), convocá-lo para participar da Assembleia Geral de cotistas do FUNDO.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208545,
+    "data_entrega": "29/05/2026 23:15",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe em 31 de março de 2026 e o desempenho de suas operações para o período de 27 de junho de 2025 (início das atividades) a 31 de março de 2026, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de índice."
+  }
+}

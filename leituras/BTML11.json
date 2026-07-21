@@ -1,0 +1,39 @@
+{
+  "ticker": "BTML11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T00:35:08",
+  "comunicados": {
+    "ids": [
+      1238404,
+      1223182,
+      1207889,
+      1030038,
+      1007335
+    ],
+    "datas": [
+      "02/07/2026",
+      "17/06/2026",
+      "29/05/2026",
+      "06/11/2025",
+      "06/10/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 02/07/2026\n\n**O QUE aconteceu:** Reajuste na carteira do Fundo Barra Malls.\n\n**Resumo:** O reajuste ocorreu no dia 30 de junho de 2026, com uma variação positiva de +15,4399% nas cotas, devido à atualização dos laudos de avaliação dos imóveis.\n\n**Trecho-chave:**\n\"O Fundo realizou reajuste na carteira no dia 30 de junho de 2026, observada uma variação positiva na precificação das cotas no importe de +15,4399% (quinze vírgula quatro três nove nove por cento), em razão da atualização dos laudos de avaliação dos imóveis.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 17/06/2026\n\n**O QUE aconteceu:** Distribuição extraordinária de rendimentos.\n\n**Resumo:** O Fundo Barra Malls realizará uma distribuição extraordinária de R$ 1,10 por cota, referente à recomposição de resultados do fundo investidor. A data-base para apuração é 17/06/2026 e a data de liquidação do pagamento será 24/06/2026.\n\n**Trecho-chave:**\n\"A RJI CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA., instituição administradora do BARRA MALLS FUNDO DE INVESTIMENTO IMOBILIÁRIO, informa que o Fundo realizará distribuição extraordinária de rendimentos no montante correspondente ao valor de R$ 1,10 (um real e quarenta centavos) por cota.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 29/05/2026\n\n**O QUE aconteceu:** Não haverá distribuição de rendimentos para maio/2026.\n\n**Resumo:** O Fundo Barra Malls não realizará distribuição de rendimentos no mês de maio/2026.\n\n**Trecho-chave:**\n\"A RJI CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA., instituição administradora do BARRA MALLS FUNDO DE INVESTIMENTO IMOBILIÁRIO, informa aos cotistas e ao mercado que NÃO HAVERÁ distribuição de rendimentos pelo fundo para o mês de fechamento de Maio/2026.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 06/11/2025\n\n**O QUE aconteceu:** Assembleia Geral de Cotistas realizada exclusivamente por envio de votos.\n\n**Resumo:** A assembleia foi realizada em 05 de novembro de 2025, sem presença física dos cotistas. A pauta única foi a aprovação das Demonstrações Financeiras do Fundo para o exercício findo em 30 de junho de 2025.\n\n**Trecho-chave:**\n\"Inobstante o envio do edital pela Administradora, não foram recebidos votos para a assembleia. Sendo assim, tendo em vista a inexistência de alteração da opinião pelo auditor independente do Fundo, conforme disposto no artigo 71, §3º, da Resolução 175 de 23 de dezembro de 2022, bem como item 7 do Ofício-Circular no 1/2024/CVM/SSE/SNC da Comissão de Valores Mobiliários, o item único da pauta foi aprovado.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 06/10/2025\n\n**O QUE aconteceu:** Rerratificação do Edital de Convocação para Assembleia Geral.\n\n**Resumo:** O edital de convocação para a assembleia geral de cotistas, inicialmente agendada para 30 de outubro de 2025, foi rerratificado com a data corrigida para 05 de novembro de 2025. A assembleia será realizada exclusivamente por envio de votos.\n\n**Trecho-chave:**\n\"A RJI CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA., na qualidade de administradora do BARRA MALLS FUNDO DE INVESTIMENTO IMOBILIÁRIO, rerratifica o Edital de Convocação endereçado aos cotistas em 1º de outubro de 2025, com intuito de corrigir a data da Assembleia Geral de Cotistas a ser realizada no dia 05 de novembro de 2025.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1001729,
+    "data_entrega": "29/09/2025 23:12",
+    "tipo": "abstencao",
+    "rotulo": "abstenção de opinião",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Em nossa opinião as demonstrações ﬁnanceiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e ﬁnanceira do Barra Malls Fundo de Investimento Imobiliário em 30 de junho de 2025 e o desempenho de suas operações e seus ﬂuxos de caixa para o exercício ﬁndo nesta data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos fundos de inves"
+  }
+}

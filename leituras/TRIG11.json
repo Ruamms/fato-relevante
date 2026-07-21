@@ -1,0 +1,36 @@
+{
+  "ticker": "TRIG11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T07:16:49",
+  "comunicados": {
+    "ids": [
+      1247724,
+      1200993,
+      1247723,
+      1223951
+    ],
+    "datas": [
+      "14/07/2026",
+      "21/05/2026",
+      "14/07/2026",
+      "18/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO ENTREGUE EM 14/07/2026\n\n**O QUE aconteceu:** As contas anuais do Fundo foram aprovadas.\n\n**Resumo:** A assembleia geral de cotistas realizada em 6 de julho de 2026 aprovou as contas anuais do ETF TRIGONO TEVA AÇÕES MICRO CAP / SMALL CAP FUNDO DE ÍNDICE referente ao exercício encerrado em 31 de março de 2026.\n\n**Trecho-chave:** \"foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de março de 2026.\"\n\n---\n\n### COMUNICADO AO MERCADO ENTREGUE EM 21/05/2026\n\n**O QUE aconteceu:** A forma de divulgação da remuneração foi atualizada.\n\n**Resumo:** A administradora do ETF TRIGONO TEVA AÇÕES MICRO CAP / SMALL CAP FUNDO DE ÍNDICE, por meio de ato do administrador, atualizou a forma de divulgação da remuneração dos prestadores de serviços essenciais, substituindo o \"Sumário de Remuneração\" pela Ferramenta ANBIMA (Plataforma de Transparência de Taxas).\n\n**Trecho-chave:** \"restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\"\n\n---\n\n### ASSEMBLEIA GERAL DE COTISTAS ENTREGUE EM 14/07/2026\n\n**O QUE aconteceu:** As contas anuais do Fundo foram aprovadas.\n\n**Resumo:** A assembleia geral de cotistas realizada em 6 de julho de 2026 aprovou as contas e demonstrações contábeis do ETF TRIGONO TEVA AÇÕES MICRO CAP / SMALL CAP FUNDO DE ÍNDICE referente ao exercício social encerrado em 31 de março de 2026.\n\n**Trecho-chave:** \"Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de março de 2026.\"\n\n---\n\n### ASSEMBLEIA GERAL DE COTISTAS ENTREGUE EM 18/06/2026\n\n**O QUE aconteceu:** Convocação para a assembleia geral de cotistas.\n\n**Resumo:** A administradora do ETF TRIGONO TEVA AÇÕES MICRO CAP / SMALL CAP FUNDO DE ÍNDICE convocou os cotistas para uma assembleia geral com o objetivo de aprovar as contas e demonstrações contábeis do Fundo referente ao exercício social encerrado em 31 de março de 2026.\n\n**Trecho-chave:** \"Aprovção das contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de março de 2026.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208581,
+    "data_entrega": "30/05/2026 02:14",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do ETF Trígono Teva Ações Micro Cap / Small Cap Fundo de Índice em 31 de março de 2026 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos Fundos de Investim"
+  }
+}

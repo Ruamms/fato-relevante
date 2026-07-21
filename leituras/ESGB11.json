@@ -1,0 +1,27 @@
+{
+  "ticker": "ESGB11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T11:49:09",
+  "comunicados": {
+    "ids": [
+      1202487
+    ],
+    "datas": [
+      "25/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado"
+    ],
+    "texto": "**Data:** 25/05/2026  \n**Título:** Ajuste na Forma de Divulgação da Remuneração dos Prestadores de Serviços Essenciais\n\nA BTG Pactual Serviços Financeiros S.A. DTVM informou que, conforme o Ofício-Circular Conjunto nº 1/2025/CVM/SIN/SSE, a forma de divulgação da remuneração dos prestadores de serviços essenciais foi atualizada para uso exclusivo da Ferramenta ANBIMA (Plataforma de Transparência de Taxas). Não haverá alteração nos valores pagos aos cotistas.\n\n*\"Considerando as interpretações adicionais divulgadas pelo Ofício-Circular Conjunto nº 1/2025/CVM/SIN/SSE, em especial quanto à substituição do 'Sumário de Remuneração' pela Ferramenta ANBIMA (Plataforma de Transparência de Taxas) como meio centralizado e adequado de divulgação da remuneração dos Prestadores de Serviços Essenciais da Classe, restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\" (p. 1)*"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208604,
+    "data_entrega": "30/05/2026 15:32",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira d a Classe Única de Cotas do BTG Pactual ESG Fundo de Índice S&P/B3 Brazil ESG – Responsabilidade Limitada em 31 de março de 2026 e o desempenho das suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas"
+  }
+}

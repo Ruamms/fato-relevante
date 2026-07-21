@@ -1,0 +1,27 @@
+{
+  "ticker": "GDIV11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:31:02",
+  "comunicados": {
+    "ids": [
+      1260171
+    ],
+    "datas": [
+      "20/07/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO"
+    ],
+    "texto": "### O QUE ACONTECEU:\n**20/07/2026 - Convocação para Assembleia Geral Ordinária do Fundo**\n\nA Hedge Investments Distribuidora de Títulos e Valores Mobiliários Ltda. convocou os cotistas do Buena Vista DEX Neos International High Income Fundo de Índice de Responsabilidade Limitada para uma assembleia geral ordinária, a ser realizada por meio de consulta formal.\n\n**RESUMO:**\nA assembleia será realizada virtualmente e os cotistas podem votar através da B3, agente de custódia ou diretamente com a administradora. As contas do exercício social encerrado em 31 de março de 2026 serão deliberadas.\n\n**CITAÇÃO CHAVE:**\n\"A Consulta Formal ocorrerá de forma não presencial, de modo que as deliberações serão tomadas única e exclusivamente por manifestação de voto dos cotistas\" (p. 1).\n\n---\n\n### O QUE ACONTECEU:\n**20/07/2026 - Manifestação de Voto**\n\nO anexo do comunicado apresenta a forma como os cotistas podem manifestar seu voto na consulta formal.\n\n**RESUMO:**\nOs cotistas têm várias opções para votar, incluindo o sistema eletrônico da B3, agente de custódia ou carta resposta enviada diretamente à administradora. A documentação necessária e prazos são detalhados no anexo.\n\n**CITAÇÃO CHAVE:**\n\"Em todos os casos, a manifestação de voto somente será considerada como válida se recebida pela Administradora até as 17h00 do dia da Consulta Formal.\" (p. 3)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1232817,
+    "data_entrega": "29/06/2026 17:47",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira Buena Vista Dex Neos Internacional High Income Fundo de Índice de Responsabilidade Limitada em 31 de março de 2026 e o desempenho das suas operações para o período de 28 de outubro de 2025 a 31 de março de 2026, de acordo com as práticas contá"
+  }
+}

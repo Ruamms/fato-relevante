@@ -1,0 +1,54 @@
+{
+  "ticker": "RBHG11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T00:17:45",
+  "relatorio": {
+    "id": 1235915,
+    "data_entrega": "30/06/2026 18:52",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Atualizações da Carteira:**\n   - **NEW VILLAGE:** As tratativas seguem em curso, com ênfase na recuperação do crédito e no acompanhamento da operação. O primeiro leilão ocorreu sem interessados para arrematação, enquanto o segundo, previsto para maio, foi suspenso e aguarda nova definição.\n   - **PESA:** Até o momento, a operação de venda não foi concluída. Seguimos atuando ativamente na busca de um novo comprador para viabilizar a efetivação da transação. Em assembleia, foi aprovada a extensão do prazo para conclusão da venda por mais três meses.\n   - **BRK:** Ficou acordado com a empresa o pagamento de parcelas fixas durante os próximos quatro meses. Em contrapartida à renegociação das condições da operação, será aplicada uma waiver fee equivalente a 0,5% do saldo devedor, cujo valor será capitalizado e incorporado ao saldo da dívida.\n   - **PORTO 5:** Alguns entraves burocráticos junto à Prefeitura têm dificultado a obtenção do Habite-se, o que vem impactando a liberação dos financiamentos bancários. Esperamos que haja evolução nesse processo ao longo dos próximos dois meses.\n\n2. **Atualizações do Valor Patrimonial:**\n   - Com relação ao valor patrimonial do Fundo, houve uma variação negativa de -0,6% no comparativo do mês anterior contra o mês atual. Essa variação decorre de uma reprecificação dos ativos realizada pelo administrador.\n\n3. **Cenário Macroeconômico:**\n   - Observamos, ao longo do mês, abertura modesta na curva de juros, especialmente nos prazos intermediários de um a três anos.\n   - A inflação segue apresentando piora em sua composição, com o boletim Focus já registra 14ª revisão consecutiva para o IPCA 2026, alcançando 5,3%.\n\n### O que observar em seguida:\n- **Progresso das tratativas de NEW VILLAGE e PESA:** Verificar se haverá novas definições nos próximos meses.\n- **Evolução do Porto 5:** Monitorar o processo burocrático para obtenção do Habite-se."
+  },
+  "comunicados": {
+    "ids": [
+      1209779,
+      1005406,
+      997071,
+      950220,
+      1223810,
+      1223805
+    ],
+    "datas": [
+      "01/06/2026",
+      "02/10/2025",
+      "23/09/2025",
+      "21/07/2025",
+      "18/06/2026",
+      "18/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### O QUE aconteceu em 01/06/2026\n\n**Título:** Proposta de Aquisição dos Ativos do Fundo pelo JPPA\n\n**Resumo:** O Gestor recebeu uma atualização da proposta para a aquisição total dos ativos do Fundo pelo JPPA, com novas condições e data-base. Após aprovação pelos cotistas, o Fundo será dissolvido e liquidado.\n\n**Trecho-chave:**\n\"Uma vez atendidas as condições precedentes estabelecidas na Proposta e aprovada a Aquisição pelos cotistas do Fundo e do JPPA, nos termos de seus regulamentos, pretende-se que: (i) o JPPA realize emissão de novas cotas, cujo valor considerará o valor patrimonial de suas cotas (“Novas Cotas JPPA”); (ii) o Fundo e o JPPA celebrem instrumento de compra e venda dos ativos, a fim de formalizar a Aquisição, de forma que o Preço de Aquisição será pago, pelo JPPA, por meio da entrega de Novas Cotas JPPA ao Fundo; e (iii) o Fundo subscreva Novas Cotas JPPA e as integralize por meio da conferência de seu crédito contra o JPPA oriundo da Aquisição, de modo que, em razão de tal integralização, o Fundo passe a ser titular de cotas de emissão do JPPA. Após a conclusão dos procedimentos mencionados acima relativos à Aquisição, pretende-se que o Fundo seja dissolvido e liquidado, ocasião em que seus cotistas receberão, proporcionalmente às suas participações, as Novas Cotas JPPA detidas pelo Fundo.\"\n\n---\n\n### O QUE aconteceu em 02/10/2025\n\n**Título:** Proposta de Aquisição Inicial dos Ativos do Fundo pelo JPPA\n\n**Resumo:** O Administrador e o Gestor receberam uma proposta para a aquisição total dos ativos do Fundo pelo JPPA, com condições indicativas. A aprovação pelos cotistas é necessária.\n\n**Trecho-chave:**\n\"Em 26 de setembro de 2025, o Administrador e o Gestor receberam do JPPA, representado por seu administrador e seu gestor, uma “Proposta para Aquisição de Ativos do Fundo” (“Proposta”), contendo condições indicativas para a possível aquisição total dos ativos do Fundo pretendida pelo JPPA (“Aquisição”), desde que implementadas determinadas condições, entre elas, a aprovação pelos cotistas do Fundo a respeito da operação proposta.\"\n\n---\n\n### O QUE aconteceu em 23/09/2025\n\n**Título:** Potencial Operação com o JPPA\n\n**Resumo:** O Administrador e o Gestor informaram que até a data não havia recebido nenhuma proposta formal de operação potencial entre o Fundo e o JPPA.\n\n**Trecho-chave:**\n\"Em 22 de setembro de 2025, o JPP Capital Recebíveis Imobiliários Fundo de Investimento Imobiliário de Responsabilidade Limitada, administrado pela Finaxis Corretora de Títulos e Valores Mobiliários S.A. (“JPPA”), publicou Fato Relevante por meio do qual informou estar avaliando uma potencial operação com o objetivo de unir, por meio do JPPA, os ativos e a base de investidores do Fundo (“Potencial Operação”). Informamos que até a presente data, o Administrador não recebeu qualquer proposta relacionada à Potencial Operação pelo JPPA.\"\n\n---\n\n### O QUE aconteceu em 21/07/2025\n\n**Título:** Webcast com a Equipe de Gestão do Fundo\n\n**Resumo:** O Fundo anunciou um webcast para discutir o desempenho e as perspectivas do fundo.\n\n**Trecho-chave:**\n\"Para acessar o evento cadastre-se direto no clique aqui. Haverá sessão de perguntas e respostas e as perguntas poderão ser enviadas pelos espectadores durante o evento.\"\n\n---\n\n### O QUE aconteceu em 18/06/2026\n\n**Título:** Convocação da Assembleia Geral Extraordinária de Cotistas\n\n**Resumo:** A Administração do Fundo convoca os cotistas para deliberar sobre a possibilidade de aquisição e alienação de ativos conflitados, incluindo certificados de recebíveis imobiliários, cotas de fundos de investimento imobiliário (FII) e outros valores mobiliários.\n\n**Trecho-chave:**\n\"1. Deliberar sobre as seguintes matérias:\n1.1) APROVAR, nos termos do artigo 31, inciso II, do Anexo Normativo III, da Resolução CVM 175, e do artigo 24, inciso (xi), do Regulamento, a possibilidade de aquisição e/ou alienação pelo Fundo, sem a necessidade de aprovação específica para cada evento a ser realizado, observada a estratégia de alocação dos recursos do Fundo, nos termos da política de investimentos disposta no  Regulamento, cujo objeto sejam: (a) certificados de recebíveis imobiliários originados, estruturados, distribuídos, prospectados e/ou cujos devedores sejam sociedades do grupo econômico do Administrador ou do Gestor, ou ainda, que tenham o Administrador ou o Gestor, ou fundos administrados pelo Administrador ou geridos pelo Gestor, ou ainda, por sociedades de seus respectivos grupos econômicos, como contrapartes; (b) cotas de fundos de investimento imobiliário (FII); (c) cotas de fundos de investimento em direitos creditórios (FIDC) que tenham como política de investimento, exclusivamente, atividades permitidas aos FII; e (d) debêntures, bônus de subscrição, seus cupons, direitos e recibos de subscrição, certificados de depósito de valores mobiliários, cotas de fundos de investimento, notas promissórias e quaisquer outros valores mobiliários, desde que se trate de emissores registrados na CVM e cujas atividades preponderantes sejam permitidas aos fundos de investimento imobiliário, que, em qualquer caso das alíneas previstas neste item, sejam administrados, distribuídos e/ou geridos pelo Administrador, pelo Gestor, por suas partes relacionadas e/ou sociedades dos respectivos grupos econômicos que sejam registrados na CVM (\"Ativos Alvo Conflitados\").\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 61.7
+  },
+  "parecer": {
+    "id": 1140149,
+    "data_entrega": "18/03/2026 15:17",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Rio Bravo Crédito Imobiliário High Grade Fundo de Investimento Imobiliário – FII Resp Limitada em 31 de dezembro de 202 5, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo naquela data, de acordo com as prátic"
+  }
+}

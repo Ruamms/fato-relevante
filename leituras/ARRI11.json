@@ -1,0 +1,44 @@
+{
+  "ticker": "ARRI11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T00:29:57",
+  "relatorio": {
+    "id": 1221475,
+    "data_entrega": "15/06/2026 17:53",
+    "texto": "### Fatos Extraídos do Relatório Gerencial\n\n1. **Cenário Econômico e Mercado:**\n   - O mês de maio apresentou um cenário negativo, com impactos da guerra no Oriente Médio e deterioração fiscal no Brasil.\n   - O Ibovespa recuou 7,22%, o real desvalorizou 1,36% e os juros locais de longo prazo tiveram uma forte correção.\n\n2. **Performance do Fundo:**\n   - ARRI11 distribuiu R$ 0,07 por cota no mês de maio.\n   - O fundo registrou variação negativa de 17,94% em relação ao IFIX (1,33%).\n\n3. **Carteira de Ativos:**\n   - A carteira do ARRI11 é composta principalmente por CRIs High Yield e outros fundos imobiliários.\n   - Os ativos estão distribuídos geograficamente entre os estados de MG, BA, PR, AM, TO, SC, RJ, SP.\n\n4. **Ativos em Destaque:**\n   - CRI Rio Branco (21I0776612): Devedor Rio Branco Empreendimento LTDA, taxa IPCA+ 10,50% a.a., vencimento 23/08/2028.\n   - CRI Socicam GRSA (21K0146621): Operação lastreada em contratos de locação não residencial, taxa IPCA+9,00% ao ano, vencimento 03/03/2030.\n\n5. **Distribuição de Cotas:**\n   - O número total de cotas do fundo é de 20,7 milhões.\n   - A cota patrimonial está avaliada em R$ 8,43.\n\n6. **Rentabilidade Histórica:**\n   - A rentabilidade histórica do fundo ARRI11 foi positiva nos últimos meses, com dividendos distribuídos acima da cotação de mercado.\n\n7. **Dívidas e Garantias:**\n   - Os ativos têm garantias como fidejussórias, aliança fiduciária, hipoteca do imóvel, entre outras.\n   - As taxas médias dos CRIs variam entre 4,50% a.a. (CDI) e 16,40% a.a. (IPCA+).\n\n8. **Riscos:**\n   - O fundo enfrenta riscos relacionados à inadimplência e ao desempenho econômico geral.\n\n### O que observar em seguida:\n- A evolução da guerra no Oriente Médio e seu impacto nos mercados.\n- As mudanças na taxa de juros e sua influência na performance do fundo."
+  },
+  "comunicados": {
+    "ids": [
+      1199497,
+      1166296
+    ],
+    "datas": [
+      "19/05/2026",
+      "17/04/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA AGO entregue em 19/05/2026\n\n**O QUE aconteceu:** A assembleia geral ordinária do Fundo ARRI11 foi realizada por meio de consulta formal.\n\n**Resumo:** A consulta formal sobre a aprovação das demonstrações financeiras do Fundo referentes ao exercício encerrado em 31 de dezembro de 2025 foi aprovada com 98,44% dos votos favoráveis.\n\n**Trecho-chave:**\n\"após análises das respostas dos Cotistas do Fundo à Consulta Formal, foi apurado que (a) Cotistas representando 3.17% das cotas em circulação aprovaram, sem quaisquer ressalvas ou restrições, as Demonstrações Financeiras do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025; (b) Cotistas representando 1,5% das cotas em circulação votaram no sentido de se abster da votação; (c) Cotistas representando 0,56% das cotas em circulação votaram no sentido de reprovar o único item da ordem do dia; e (d) Cotistas representando 0,03% das cotas em circulação votaram no sentido de se abster por conflito.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 17/04/2026\n\n**O QUE aconteceu:** A administradora do Fundo ARRI11 convocou a assembleia geral ordinária para aprovar as demonstrações financeiras do exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia foi convocada por meio de consulta formal, e os cotistas serão informados sobre como votar até o dia 18 de maio de 2026. O resultado será divulgado até o encerramento do dia 19 de maio de 2026.\n\n**Trecho-chave:**\n\"A Consulta Formal será apurada com a presença de qualquer número de cotistas, nos termos do Art. 74 da parte geral da RCVM nº 175, e a matéria descrita no item acima dependerá da aprovação de quórum simples, ou seja, por maioria de votos dos cotistas presentes, nos termos do Artigo 15 do Anexo Normativo III da RCVM 175.\"\n\n---\n\n**Conexão com o contexto:** A assembleia realizada e a consulta formal aprovaram as demonstrações financeiras do Fundo ARRI11 referentes ao exercício encerrado em 31 de dezembro de 2025, que estão alinhadas com os indicadores financeiros do fundo."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Emissão de cotas com VP/cota em queda",
+      "P/VP muito abaixo da média histórica"
+    ],
+    "cota": 4.68
+  },
+  "parecer": {
+    "id": 1151917,
+    "data_entrega": "31/03/2026 22:37",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

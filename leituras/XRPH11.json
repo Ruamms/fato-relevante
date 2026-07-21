@@ -1,0 +1,30 @@
+{
+  "ticker": "XRPH11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T07:26:55",
+  "comunicados": {
+    "ids": [
+      1204217,
+      1201709
+    ],
+    "datas": [
+      "26/05/2026",
+      "22/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 26/05/2026\n\n**O QUE aconteceu:** Alteração no regulamento do Fundo para a segregação das taxas devidas aos prestadores de serviço.\n\n**Resumo:** O Administrador aprovou a inclusão da segregação das taxas dos prestadores de serviço do Fundo na Plataforma de Transparência de Taxas, com o objetivo de aumentar a transparência para os cotistas e interessados.\n\n**Trecho-chave:**\n\"o Administrador aprovou, por Instrumento Particular do Administrador, a alteração do regulamento do Fundo para incluir que a segregação das taxas devidas aos prestadores de serviço s do Fundo passa a ser disponibilizada na Plataforma de Transparência de Taxas no endereço: https://data.anbima.com.br/busca/transparencia-de-taxas-de-fundos.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 22/05/2026\n\n**O QUE aconteceu:** Alteração no regulamento do Fundo para a segregação das taxas devidas aos prestadores de serviço.\n\n**Resumo:** O Administrador aprovou a inclusão da segregação das taxas dos prestadores de serviço do Fundo na Plataforma de Transparência de Taxas, com o objetivo de aumentar a transparência para os cotistas e interessados.\n\n**Trecho-chave:**\n\"o Administrador aprovou, por Instrumento Particular do Administrador, a alteração do regulamento do Fundo para incluir que a segregação das taxas devidas aos prestadores de serviço s do Fundo passa a ser disponibilizada na Plataforma de Transparência de Taxas no endereço: https://data.anbima.com.br/busca/transparencia-de-taxas-de-fundos.\" (p. 1)\n\n---\n\n**Conexão com o contexto:** Ambos os comunicados se referem à mesma alteração no regulamento do Fundo, visando aumentar a transparência das taxas devidas aos prestadores de serviço, conforme as diretrizes do Ofício-Circular-Conjunto nº 1/2025/CVM/SIN/SSE."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208622,
+    "data_entrega": "30/05/2026 19:23",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Hashdex Nasdaq XRP Fundo de Índice - Responsabilidade Limitada em 31 de março de 2026 e o desempenho de suas operações para o período de 24 de abril de 2025 a 31 de março de 2026, de acordo com as práticas contábeis adotadas no Brasil, apli"
+  }
+}

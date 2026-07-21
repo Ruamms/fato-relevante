@@ -1,0 +1,21 @@
+{
+  "ticker": "BNKS11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:17:18",
+  "comunicados": {
+    "ids": [
+      1242083,
+      1239517
+    ],
+    "datas": [
+      "08/07/2026",
+      "03/07/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### O QUE ACONTECEU: INVESTO BRASIL BANCOS B3 CLASSE DE ÍNDICE – RESPONSABILIDADE LIMITADA COMEÇA AS OPERAÇÕES NO MERCADO\n\n**Resumo:** O fundo de índice INVESTO BRASIL BANCOS B3 CLASSE DE ÍNDICE iniciou suas operações no mercado primário em 10 de julho de 2026 e no secundário em 13 de julho de 2026, com um valor inicial de R$ 50,00 por cota.\n\n**Trecho-chave:** \"serão iniciados os negócios com suas cotas subscritas e integralizadas 10 de julho de 2026 no mercado primário e em 13 de julho de 2026 no mercado secundário da B3, pelo valor inicial de R$ 50,00.\" (p. 1)\n\n---\n\n### O QUE ACONTECEU: INVESTO BRASIL BANCOS B3 CLASSE DE ÍNDICE – RESPONSABILIDADE LIMITADA ANUNCIA VALOR INICIAL\n\n**Resumo:** O fundo de índice INVESTO BRASIL BANCOS B3 CLASSE DE ÍNDICE anunciou que o valor inicial das cotas seria R$ 20,00.\n\n**Trecho-chave:** \"serão iniciados os negócios com suas cotas subscritas e integralizadas 10 de julho de 2026 no mercado primário e em 13 de julho de 2026 no mercado secundário da B3, pelo valor inicial de R$ 20,00.\" (p. 1)\n\n---\n\n**Conexão com o contexto:** O anúncio do valor inicial das cotas (R$ 20,00) foi posteriormente alterado para R$ 50,00, indicando uma possível revisão no planejamento financeiro do fundo após a data de divulgação original."
+  },
+  "modelo": "qwen2.5:7b"
+}

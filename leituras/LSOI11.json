@@ -1,0 +1,36 @@
+{
+  "ticker": "LSOI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T03:05:04",
+  "comunicados": {
+    "ids": [
+      938433,
+      955601,
+      1154231,
+      1154212
+    ],
+    "datas": [
+      "02/07/2025",
+      "29/07/2025",
+      "06/04/2026",
+      "06/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 02/07/2025\n\nO Fundo LCP Special Opportunities I anunciou a segunda emissão de cotas.\n\n**Resumo:** O fundo planeja emitir até 4,191.115 cotações com preço de R$ 12,02 por unidade, totalizando R$ 50.377.202,30.\n\n**Trecho-chave:**\n\"RESOLVE:\nI. Aprovar a 2ª ( segunda) emissão de cotas do Fundo (“ Cotas”) em volume de até 4.191.115 (quatro milhões cento e noventa e um mil cento e quinze)  Cotas, classe única, com preço de emissão de R$ 12,02 (doze reais e dois centavos ) por Cota, já considerando a taxa de distribuição primária, perfazendo o montante total de R$ 50.377.202,30 (cinquenta milhões trezentos e setenta e sete mil duzentos e dois reais e trinta centavos)  (“Montante Inicial da Oferta ”), conforme as características constantes no Regulamento (“ Segunda Emissão”), a serem distribuídas por meio de oferta pública, sob o rito de registro automático de distribuição, nos termos da Resolução CVM 160 (\" Oferta\"), com as seguintes características:\"\n\n### COMUNICADO AO MERCADO entregue em 29/07/2025\n\nA XP Investimentos Corretora de Câmbio, Títulos e Valores Mobiliários S.A. informou sobre a adaptação do regulamento do Fundo LCP Special Opportunities I às Resoluções da CVM.\n\n**Resumo:** O regulamento do fundo foi ajustado para se alinhar com as novas regras estabelecidas pela Comissão de Valores Mobiliários (CVM).\n\n**Trecho-chave:**\n\"Prezado cotista, \n\nA XP CORRETORA DE CÂMBIO, TÍTULOS E VALORES MOBILIÁRIOS S.A., com sede na Praia De Botafogo, 501, BLC I SAL 501, Botafogo, na cidade e Estado do Rio de Janeiro, CEP 22.250-911, inscrita no CNPJ nº 02.332.886/0001-04, na qualidade de instituição administradora (“Administradora”) do LCP SPECIAL OPPORTUNITIES I FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE ILIMITADA vem, por meio desta, informar os cotistas sobre a adaptação do regulamento do Fundo a Resolução da CVM nº 175, de 23 de dezembro de 2022, conforme alterada (“Resolução CVM 175”), realizada por meio de Instrumento Particular de Alteração.\"\n\n### ASSEMBLEIA GERAL ORDINÁRIA DE COTISTAS entregue em 06/04/2026\n\nA assembleia geral ordinária dos cotistas do Fundo LCP Special Opportunities I aprovou as demonstrações financeiras e o parecer dos auditores.\n\n**Resumo:** A assembleia foi realizada de forma não presencial, com participação representativa de 1.43% das cotações emitidas pelo fundo.\n\n**Trecho-chave:**\n\"Os cotistas aprovaram, sem quaisquer restrições ou ressalvas:\n(i) As Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 31.12.2025 , os quais estão disponíveis no website da CVM, através do endereço eletrônico https://www.gov.br/cvm/pt-br/assuntos/regulados/consultas-por-participante/fundos-de-investimento, seguindo a rota: Fundos Registrados > Inserir CNPJ do Fundo > Demonstrações contábeis, tendo os votos proferidos pela aprovação representando 1.43 % (um inteiro e quarenta e três centésimos por cento) do total das cotas emitidas pelo Fundo.\"\n\n**Conexão com o contexto:** A aprovação das demonstrações financeiras e o parecer dos auditores são relevantes para a avaliação do desempenho do fundo, que está apresentando crescimento significativo em seu patrimônio líquido."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1124992,
+    "data_entrega": "27/02/2026 22:26",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nesta data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

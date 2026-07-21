@@ -1,0 +1,45 @@
+{
+  "ticker": "XPGC11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T11:23:13",
+  "comunicados": {
+    "ids": [
+      1084842,
+      824322,
+      703280,
+      1170631,
+      1096315,
+      1180165,
+      1180164
+    ],
+    "datas": [
+      "15/01/2026",
+      "23/01/2025",
+      "23/07/2024",
+      "27/04/2026",
+      "29/01/2026",
+      "05/05/2026",
+      "05/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### O que aconteceu em 15/01/2026\n\n**Título:** Reavaliação Patrimonial Positiva\n\n**Resumo:** A reavaliação patrimonial do Fundo XP GRUPO CARNAÚBA resultou em um aumento de aproximadamente 2,4% no valor da cota.\n\n**Trecho-chave:**\n\"Esta Reavaliação ocasionou um impacto positivo de aproximadamente 2,4% (dois vírgula quatro por cento) no valor da cota de fechamento do dia 31/12/2025 em relação a cota do dia 30/12/2025.\"\n\n---\n\n### O que aconteceu em 23/01/2025\n\n**Título:** Reavaliação Patrimonial Positiva\n\n**Resumo:** A reavaliação patrimonial do Fundo XP GRUPO CARNAÚBA resultou em um aumento de aproximadamente 14% no valor da cota.\n\n**Trecho-chave:**\n\"Esta Reavaliação ocasionou um impacto positivo de aproximadamente 14% (quatorze por cento) no valor da cota de fechamento do dia 31/12/2024 em relação a cota do dia 30/12/2024.\"\n\n---\n\n### O que aconteceu em 23/07/2024\n\n**Título:** Emissão de Cotas Classe D\n\n**Resumo:** O Fundo XP GRUPO CARNAÚBA realizou a emissão de cota classe D, com um montante inicial de R$ 65.400.000,00.\n\n**Trecho-chave:**\n\"A Administradora aprovou, nesta data, por meio de ato próprio, a distribuição de cotas classe D por meio da 3ª (terceira) emissão de cotas do Fundo, no montante de, inicialmente, R$ 65.400.000,00 (sessenta e cinco milhões e quatrocentos mil reais), observada a possibilidade de aumento pela Opção de Lote Adicional ou de redução em razão de Distribuição Parcial.\"\n\n---\n\n### O que aconteceu em 27/04/2026\n\n**Título:** Comunicação da Apresentação Trimestral de Resultados - 1º trimestre de 2026\n\n**Resumo:** A Gestora do Fundo XP GRUPO CARNAÚBA informou a data e horário para a apresentação trimestral de resultados.\n\n**Trecho-chave:**\n\"Quarta-feira, 27 de maio de 2026\nÀs 10h00 (horário de Brasília)\nLink de acesso:\nhttps://bit.ly/call_desenvolvimento\nLink para envio de perguntas:\nhttps://bit.ly/perguntas_desenvolvimento\"\n\n---\n\n### O que aconteceu em 29/01/2026\n\n**Título:** Comunicação da Apresentação Trimestral de Resultados - 4º trimestre de 2025\n\n**Resumo:** A Gestora do Fundo XP GRUPO CARNAÚBA informou a data e horário para a apresentação trimestral de resultados.\n\n**Trecho-chave:**\n\"Terça-feira, 03 de março de 2026\nÀs 10h00 (horário de Brasília)\nLink de acesso:\nhttps://bit.ly/call_desenvolvimento\nLink para envio de perguntas:\nhttps://bit.ly/perguntas_desenvolvimento\"\n\n---\n\n### O que aconteceu em 05/05/2026\n\n**Título:** Assembleia Geral Ordinária de Cotistas do FII XP GRUPO CARNAÚBA\n\n**Resumo:** A assembleia foi realizada de forma não presencial, aprovando as demonstrações financeiras e outras matérias.\n\n**Trecho-chave:**\n\"Observado o art. 71 da Instrução CVM 175/2022, restam aprovadas:\n(i) As Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 31.12.2025.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1152007,
+    "data_entrega": "31/03/2026 23:05",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário XP Grupo Carnaúba Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotada"
+  }
+}

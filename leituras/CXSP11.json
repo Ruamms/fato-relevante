@@ -1,0 +1,30 @@
+{
+  "ticker": "CXSP11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T02:56:44",
+  "comunicados": {
+    "ids": [
+      1180234,
+      1179204
+    ],
+    "datas": [
+      "05/05/2026",
+      "04/05/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "**04/05/2026 - Assembleia Geral Ordinária de Cotistas**\n\n*O que aconteceu:* A assembleia geral ordinária de cotistas do Fundo de Investimento Imobiliário CAIXA Convida Suape RL foi realizada em 4 de maio de 2026, na sede da Administradora. A ordem do dia foi aprovada pela totalidade das Cotas Subscritas presentes.\n\n*\"Após promover as diligências necessárias e realizar o cômputo dos votos, a Administradora apurou que a matéria constante da Ordem do Dia foi aprovada pela totalidade das Cotas Subscritas presentes.\"* (p. 1)\n\nEsta assembleia se conecta aos indicadores de rendimentos e cotistas, pois trata das demonstrações financeiras do exercício social findo em 31 de dezembro de 2025."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1153074,
+    "data_entrega": "01/04/2026 21:31",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

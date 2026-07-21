@@ -1,0 +1,49 @@
+{
+  "ticker": "RBFY11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T02:37:35",
+  "relatorio": {
+    "id": 1235436,
+    "data_entrega": "30/06/2026 17:27",
+    "texto": "### Fatos Extraídos\n\n1. **Cotistas**: O número de cotistas é de apenas 82, abaixo do mínimo legal (100).\n2. **Empréstimo Imobiliário**: O fundo possui uma dívida de R$ 16,481,781,49 através de um CRI, representando uma alavancagem de 17,92% do patrimônio líquido.\n3. **Ocupação e Locação**: O empreendimento For You Paraíso registrou 78% de ocupação com um NOI de R$ 60/m² e RevPar de R$ 154.\n4. **Vendas de Unidades**: Até maio, foram assinados 94 Compromissos de Compra e Venda (CCV) para a venda de unidades residenciais, totalizando um valor bruto de vendas de R$ 48,7 milhões.\n5. **Cota Patrimonial**: A cota patrimonial do fundo é de R$ 94,84 mil.\n6. **Patrimônio Líquido**: O patrimônio líquido do fundo é de R$ 91,98 milhões.\n7. **Taxa de Administração**: A taxa de administração e gestão é de 1% ao ano.\n8. **Localização do Imóvel**: O empreendimento está localizado no Bairro Paraíso, próximo à Av. Paulista.\n\n### O que observar em seguida:\n- Monitorar a ocupação do imóvel, especialmente com a queda recente para 78%.\n- Observar o andamento das vendas de unidades residenciais e a quitação da dívida através dessas transações."
+  },
+  "comunicados": {
+    "ids": [
+      1124412,
+      1045608,
+      1171614,
+      1171600
+    ],
+    "datas": [
+      "27/02/2026",
+      "24/11/2025",
+      "28/04/2026",
+      "28/04/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO/E",
+      "Assembleia AGO/E"
+    ],
+    "texto": "### Comunicado ao Mercado entregue em 27/02/2026\n\n**O QUE aconteceu:** Disponibilização do Informe de Rendimentos Ano-CALENDÁRIO 2025.\n\n**Resumo:** O Rio Bravo For You FII disponibilizou o Informe de Rendimentos para os cotistas a partir da data, podendo ser acessado pelo Portal do Investidor ou Atendimento Digital da empresa.\n\n**Trecho-chave:**\n\"Os informes de rendimentos (IR) dos fundos listados no Anexo I estão disponíveis aos investidores a partir desta data no Portal do Investidor da Rio Bravo.\"\n\n---\n\n### Comunicado ao Mercado entregue em 24/11/2025\n\n**O QUE aconteceu:** Encerramento do Leilão das Cotas e Pagamentos Relacionados à Cisão do RIO BRAVO RENDA RESIDENCIAL.\n\n**Resumo:** O leilão das cotas resultantes da cisão do RIO BRAVO RENDA RESIDENCIAL foi encerrado em 14 de novembro, com o valor de R$70,0517 por cota. Os cotistas que migraram para o RBFY11 receberão reembolso proporcional e distribuição de rendimentos.\n\n**Trecho-chave:**\n\"Foi encerrado, em 14.11.2025, o leilão das 41 cotas, decorrentes do agrupamento da s frações de cotas do RBFY resultantes do procedimento de rateio no âmbito da cisão do RIO BRAVO RENDA RESIDENCIAL FUNDO DE INVESTIMENTO IMOBILIÁRIO DE RESPONSABILIDADE LIMITADA (RBRS11) (''Leilão''). O Leilão apurou o valor aproximado de R$ 70,0517 (setenta e um reais e cinco centavos ) por cota leiloada do RBFY11.\"\n\n---\n\n### Assembleia Agora/E entregue em 28/04/2026\n\n**O QUE aconteceu:** Deliberação sobre Demonstrações Financeiras e Alteração no Regulamento.\n\n**Resumo:** A assembleia aprovou as Demonstrações Financeiras do exercício de 2025, mas não conseguiu aprovar a alteração do Regulamento que permitiria alocação de recursos em fundos administrados pela própria distribuidora.\n\n**Trecho-chave:**\n\"Os cotistas que representam 0,17% (zero vírgula dezessete por cento) do total de cotas emitidas pelo Fundo e aptos ao exercício do direito de voto, deliberaram por aprovar a alteração do Regulamento do Fundo para alterar o Artigo 2.2 do anexo da Classe do Fundo, a vigorar com a seguinte nova redação:\"\n\n---\n\n**Conexão com Indicadores:** A aprovação das Demonstrações Financeiras confirma a situação atual do fundo em termos de desempenho financeiro, enquanto o não-approvamento da alteração no Regulamento pode indicar restrições operacionais ou preferências dos cotistas."
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Menos cotistas que o mínimo para isenção de IR",
+      "Fundo novo — histórico curto"
+    ],
+    "cota": 72.0
+  },
+  "parecer": {
+    "id": 1143460,
+    "data_entrega": "24/03/2026 18:13",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Rio Bravo For You Fundo de Investimento Imobiliário de Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o período de 01 de outubro a 31 de dezembro de 2025, de acordo com as pr"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "ticker": "LSOP11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T04:35:37",
+  "comunicados": {
+    "ids": [
+      1059201,
+      1026558
+    ],
+    "datas": [
+      "11/12/2025",
+      "03/11/2025"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 11/12/2025\n\n**O QUE aconteceu:** Cancelamento das cotas subscritas e não integralizadas na primeira emissão do fundo.\n\n**Resumo:** A administradora informou o cancelamento formal de 2.100.000 (dois milhões e cem mil) cotas subscritas mas não integralizadas no âmbito da primeira emissão do fundo, conforme aprovado anteriormente.\n\n**Trecho-chave:** \"Informamos que essas cotas estão sendo formalmente canceladas, conforme previamente aprovado no Instrumento Particular de Aprovação da 1ª Emissão de Cotas do Fundo.\" (p. 2)\n\n### COMUNICADO AO MERCADO entregue em 03/11/2025\n\n**O QUE aconteceu:** Lançamento da primeira oferta pública primária de distribuição de cotas.\n\n**Resumo:** A administradora e a gestora lançaram uma oferta para a emissão inicial de até 5.500.000 (cinco milhões, quinhentos mil) novas cotas do fundo, com preço unitário de R$10,00.\n\n**Trecho-chave:** \"A classe única de cotas do LCP SPECIAL OPPORTUNITIES III FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA, fundo de investimento imobiliário, inscrito no Cadastro Nacional de Pessoa Jurídica (CNPJ) sob o nº 63.429.256/0001-39 (\"Fundo\"), a VÓRTX DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA., instituição financeira com sede na cidade de São Paulo, estado de São Paulo, na Rua Gilberto Sabino, nº 215, 4° andar, Pinheiros, CEP 05425-020, inscrita no CNPJ sob o nº 22.610.500/0001-88, devidamente credenciada pela CVM para o exercício da atividade de administração de carteiras de títulos e valores mobiliários, nos termos do Ato Declaratório nº 14.820, de 8 de janeiro de 2016, na qualidade de administradora do Fundo (\"Administradora\"), LCP GESTORA DE RECURSOS LTDA., sociedade empresária limitada, com sede na Cidade de Curitiba, Estado do Paraná, na Avenida do Batel, n.º 1647, Sala 201, Edifício Landmark Batel, Batel, CEP 80.420-090, inscrita no CNPJ sob o n.º 46.382.187/0001- 36, devidamente credenciada pela CVM para o exercício da atividade de administração de carteiras de valores mobiliários, conforme Ato Declaratório da CVM n.º 20.293 de 31 de outubro de 2022. (\"Gestora\" e, em conjunto com o Fundo e a Administradora, os \"Ofertantes\"), em conjunto com a VÓRTX DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA., instituição financeira com sede na cidade de São Paulo, estado de São Paulo, na Rua Gilberto Sabino, nº 215, 4° andar, Pinheiros, CEP 05425-020, inscrita no CNPJ sob o nº 22.610.500/0001-88, na qualidade de instituição intermediária líder (\"Coordenador Líder\"), em conjunto com as seguintes instituições convidadas pelo Coordenador Líder, credenciadas junto à B3 S.A. - BRASIL, BOLSA, BALCÃO (“B3”)(“Participantes Especiais” e quando, em conjunto com o Coordenador Líder, “Instituições Participantes da Oferta”), comunicam, no âmbito da oferta pública primária de distribuição de, inicialmente, até 5.500.000 (cinco milhões, quinhentos mil) Novas Cotas, sendo 5.000.000 (cinco milhões) de cotas da Subclasse A e 500.000 (quinhentos mil) de cotas da subclasse B, podendo este volume ser diminuído em virtude da possibilidade de Distribuição Parcial, desde que observado o Montante Mínimo da Oferta (conforme ato societário).\" (p. 1-2)\n\n---\n\n**Conexão com indicadores:** Este comunicado anuncia a primeira oferta pública primária de distribuição de cotas do fundo, que pode impactar na dinâmica de mercado e no número total de cotistas, um dos indicadores mencionados."
+  },
+  "modelo": "qwen2.5:7b"
+}

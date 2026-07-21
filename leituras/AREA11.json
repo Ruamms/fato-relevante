@@ -1,0 +1,27 @@
+{
+  "ticker": "AREA11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:08:45",
+  "comunicados": {
+    "ids": [
+      1187356
+    ],
+    "datas": [
+      "12/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado"
+    ],
+    "texto": "**12/05/2026 - A atualização da forma de divulgação da remuneração dos Prestadores de Serviços Essenciais passa a ser realizada exclusivamente por meio da Ferramenta ANBIMA.**\n\nA BTG Pactual anunciou que, em conformidade com o Ofício-Circular CVM nº 1/2025, a forma de divulgação da remuneração dos Prestadores de Serviços Essenciais da Classe Única será atualizada para incluir um link na Ferramenta ANBIMA. Não haverá alterações nos valores pagos pelos cotistas.\n\n\"Considerando as interpretações adicionais divulgadas pelo Ofício-Circular Conjunto nº 1/2025/CVM/SIN/SSE, restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208556,
+    "data_entrega": "30/05/2026 01:31",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do BTG Pactual Teva AUVP Renda Automática ITBR IPCA Rendimento Fundo de Índice em 31 de março de 2026 e o desempenho de suas operações para o período de 22 de setembro de 2025 a 31 de março de 2026, de acordo com as práticas contábeis adotadas"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "ticker": "OLMP11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T04:52:55",
+  "comunicados": {
+    "ids": [
+      932125,
+      761550,
+      1233537,
+      1072537,
+      1219323,
+      1179572
+    ],
+    "datas": [
+      "25/06/2025",
+      "18/10/2024",
+      "30/06/2026",
+      "30/12/2025",
+      "12/06/2026",
+      "04/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 25/06/2025\n\n**O que aconteceu:** Houve reajuste na carteira do Fundo, com variação de 7,90% nas cotas.\n\n**Resumo:** A administradora informou um reajuste significativo nas cotas do fundo em junho de 2025.\n\n**Trecho-chave:**\n\"houve reajuste na carteira do Fundo, na data do dia 24 de junho de 2025, onde foi observada uma variação na precificação das cotas no importe de 7,90% (sete vírgula noventa por cento), em atenção ao novo laudo de avaliação dos ativos apresentado pela empresa Colliers Techinical Services Ltda.\"\n\n---\n\n### FATO RELEVANTE entregue em 18/10/2024\n\n**O que aconteceu:** Houve reajuste na carteira do Fundo, com variação de 4,66% nas cotas.\n\n**Resumo:** A administradora informou um reajuste nas cotas do fundo em outubro de 2024.\n\n**Trecho-chave:**\n\"houve reajuste na carteira do Fundo, na data do dia 17 de outubro de 2024 , onde foi observada uma variação na precificação das cotas no importe de 4,66% (quatro vígula sessenta e seis por cento), em atenção ao novo laudo de avaliação dos ativos apresentado pela empresa Colliers Techinical Services Ltda.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 30/12/2025\n\n**O que aconteceu:** Não haverá distribuição de rendimentos pelo Fundo.\n\n**Resumo:** O fundo anunciou que não realizará a distribuição de rendimentos no final de 2025.\n\n**Trecho-chave:**\n\"NÃO HAVERÁ distribuição de rendimentos pelo Fundo.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 30/06/2026\n\n**O que aconteceu:** Não haverá distribuição de rendimentos pelo Fundo.\n\n**Resumo:** O fundo anunciou novamente que não realizará a distribuição de rendimentos no final de 2026.\n\n**Trecho-chave:**\n\"NÃO HAVERÁ distribuição de rendimentos pelo Fundo.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 12/06/2026\n\n**O que aconteceu:** A assembleia aprovou as Demonstrações Financeiras do exercício social findo em 31 de dezembro de 2025 e solicitou aprimoramento das informações divulgadas.\n\n**Resumo:** Durante a assembleia, os cotistas aprovaram as demonstrações financeiras e pediram melhorias na divulgação de eventos relevantes do fundo.\n\n**Trecho-chave:**\n\"Os cotistas representantes de 100% (cem por cento) das cotas subscritas e integralizadas do Fundo aprovaram as Demonstrações Financeiras. Desse modo, a ordem única do dia foi aprovada.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 04/05/2026\n\n**O que aconteceu:** Rerratificação do Edital de Convocação para a Assembleia Geral de Cotistas no dia 12 de junho de 2026.\n\n**Resumo:** A administradora rerratificou o edital de convocação da assembleia, mantendo a data original.\n\n**Trecho-chave:**\n\"A RJI CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.  (“RJI” ou “Administradora”), na qualidade de administradora do STARK FUNDO DE INVESTIMENTO IMOBILIÁRIO, inscrito no CNPJ sob o nº 04.644.612/0001-78 (“Fundo”), vem, por meio desta, rerratificar o Edital de Convocação endereçado aos cotistas em 07 de abril de 2026, com intuito de postergar a data da assembleia para o dia 12  de junho de 2026.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1218387,
+    "data_entrega": "11/06/2026 22:38",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião , as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do STARK Fundo de Investimento Imobiliário em 3 1 de dezembro de 20 25 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos"
+  }
+}

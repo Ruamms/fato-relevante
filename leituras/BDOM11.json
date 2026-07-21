@@ -1,0 +1,33 @@
+{
+  "ticker": "BDOM11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:13:41",
+  "comunicados": {
+    "ids": [
+      1165840,
+      1226154,
+      1214000
+    ],
+    "datas": [
+      "17/04/2026",
+      "23/06/2026",
+      "08/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Ocorrências Relatadas nos Documentos\n\n#### 17/04/2026 - Comunicado ao Mercado\n**O QUE aconteceu:** Alteração no regulamento do FUNDO.\n**Resumo:** A partir de 06 de março de 2026, o regulamento do FUNDO foi alterado para adequar-se à nova regulamentação da CVM e ANBIMA.\n**Trecho-chave:**\n\"Considerando o Ofício -Circular-Conjunto 01/2025/CVM/SIN/SSE fica centralizado a Ferramenta ANBIMA (Plataforma de Transparência de Taxas) como instrumento adequado a ser adotado em substituição à divulgação de taxas no website de cada gestor, promoverá as alterações necessárias no regulamento do Fundo, de forma a adequá-lo à nova regulamentação.\" (p. 1)\n\n#### 23/06/2026 - Assembleia Geral Ordinária\n**O QUE aconteceu:** Não realização da assembleia.\n**Resumo:** A assembleia ordinária prevista para 23 de junho de 2026 não ocorreu, e as demonstrações financeiras foram consideradas automaticamente aprovadas.\n**Trecho-chave:**\n\"O BANCO BNP PARIBAS BRASIL S.A. na qualidade de (Administrador), do FUNDO vem, por meio deste, informar que a Assembleia Geral de Cotistas, que seria realizada excepcionalmente por meio eletrônico em 23 de junho de 2026, às 11h05, a fim de deliberar sobre a aprovação das demonstrações financeiras auditadas do FUNDO referentes ao exercício social encerrado em de 31 de março de 2026 (“Ordem do Dia”), não se realizou em razão do na não recebimento de orientação de voto digitalizada por correio eletrônico.\" (p. 1)\n\n#### 08/06/2026 - Convocação para Assembleia Geral Ordinária\n**O QUE aconteceu:** Convocação para a assembleia.\n**Resumo:** A convocação foi feita para a realização de uma assembleia ordinária virtual em 23 de junho de 2026, com o objetivo de aprovar as demonstrações financeiras auditadas do exercício social encerrado em 31 de março de 2026.\n**Trecho-chave:**\n\"O BANCO BNP PARIBAS BRASIL S.A. (“Administrador”), localizada na Avenida Presidente Juscelino Kubitscheck, n.º 1909, 9º andar, Torre Sul, São Paulo/SP, vem por meio da presente, nos termos dos Artigos 70, 72 e 75 da Resolução CVM nº 175, de 23 de dezembro de 2022 (“RCVM 175”) , bem como nos termos do Regulamento do FUNDO (“Regulamento”), convocá-lo para participar da Assembleia Geral de cotistas do FUNDO, que será realizada excepcionalmente por meio eletrônico e (envio de orientação de voto digitalizada por correio eletrônico) em 23 de junho de 2026 , 11h05, a fim de deliberar sobre a aprovação das demonstrações financeiras auditadas do FUNDO referentes ao exercício social encerrado em de 31 de março de 2026 (“Ordem do Dia”).\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208468,
+    "data_entrega": "29/05/2026 20:54",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe em 31 de março de 2026 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de índice."
+  }
+}

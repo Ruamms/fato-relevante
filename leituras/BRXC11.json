@@ -1,0 +1,36 @@
+{
+  "ticker": "BRXC11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:19:58",
+  "comunicados": {
+    "ids": [
+      1248117,
+      1187364,
+      1248130,
+      1248116
+    ],
+    "datas": [
+      "14/07/2026",
+      "12/05/2026",
+      "14/07/2026",
+      "14/07/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGE"
+    ],
+    "texto": "### O que aconteceu em 14/07/2026\n\n**Título:** Assembleia Geral de Cotistas Aprova Contas Anuais do Fundo\n\n**Resumo:** A assembleia geral de cotistas do BTG PACTUAL TEVA IABR SELECTOR FUNDO DE ÍNDICE aprovou as contas anuais referentes ao exercício encerrado em 31 de março de 2026.\n\n**Trecho-chave:**\n\"4.1. Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de março de 2026.\"\n\n---\n\n### O que aconteceu em 12/05/2026\n\n**Título:** Atualização da Forma de Divulgação da Remuneração dos Prestadores de Serviços Essenciais\n\n**Resumo:** A administradora do BTG PACTUAL TEVA IABR SELECTOR FUNDO DE ÍNDICE atualizou a forma de divulgação da remuneração dos prestadores de serviços essenciais, substituindo o \"Sumário de Remuneração\" pelo link da Ferramenta ANBIMA.\n\n**Trecho-chave:**\n1. Considerando as interpretações adicionais divulgadas pelo Ofício-Circular Conjunto nº 1/2025/CVM/SIN/SSE (\"Ofício-Circular CVM nº 1/2025\"), restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\n\n---\n\n**Observação:** A atualização na forma de divulgação da remuneração dos prestadores de serviços essenciais pode impactar em futuras informações financeiras e transparência do fundo."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208559,
+    "data_entrega": "30/05/2026 01:41",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do BTG Pactual Teva IABR Selector Fundo de Índice em 31 de março de 2026 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos Fundos de Investimento Financeir"
+  }
+}

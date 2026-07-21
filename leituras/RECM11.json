@@ -1,0 +1,52 @@
+{
+  "ticker": "RECM11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T11:27:36",
+  "relatorio": {
+    "id": 1241522,
+    "data_entrega": "07/07/2026 19:07",
+    "texto": "### Fatos do Relatório Gerencial\n\n1. **Distribuição de Dividendos**: O fundo distribuirá R$ 0,10 por cota no mês de junho, resultando em um dividend yield mensal de 1,26% e anualizado de 15,13%. (p. 2)\n2. **Alocações e Vendas**: O gestor alocou recursos no TRXY11 e vendeu posições nos fundos RECR11, VGHF11 e KNIP11. Também vendeu parte da posição do CRI Ativos Diversos. (p. 2)\n3. **Composição do Portfolio**: O portfolio está composto principalmente por FIIs (72%), seguido de CRIs (15,7%) e ações (0,8%). (p. 2-3)\n4. **Resultado do Mês**: O resultado líquido para o mês foi R$ 457.908, resultando em um dividend yield mensal de 1,26%. (p. 2-3)\n5. **Patrimônio Líquido e Cota Patrimonial**: O patrimônio líquido totalizou R$ 74.905.095, correspondente a R$ 8,92/cota. (p. 2-3)\n6. **Cotação do Mercado**: A cotação de fechamento foi de R$ 7,93/cota, resultando em um P/VP de 0,89. (p. 2-3)\n7. **Eventos Societários e Gestão**: O fundo atua como consultor de investimento em outros FII's da casa e possui aproximadamente R$ 3,5 bi sob gestão. (p. 6-7)\n8. **Riscos e Indicadores**: O relatório menciona vários indicadores financeiros, incluindo dividend yield, P/VP, e detalhes sobre as garantias dos CRIs. (p. 2-3)\n\n### O que observar em seguida:\n1. Monitorar a distribuição de dividendos e o valor da cotação do mercado.\n2. Observar as ações de alocação e venda de ativos no próximo relatório."
+  },
+  "comunicados": {
+    "ids": [
+      1210013,
+      1085122,
+      1085119,
+      1212039,
+      1173364
+    ],
+    "datas": [
+      "01/06/2026",
+      "15/01/2026",
+      "15/01/2026",
+      "03/06/2026",
+      "29/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 01/06/2026\n\n**O QUE aconteceu:** A BRL TRUST Distribuidora de Títulos e Valores Mobiliários S.A., administradora do REC Multiestratégia Fundo de Investimento Imobiliário - Responsabilidade Limitada, informou a aprovação dos termos da 2ª Emissão de cotas.\n\n**Resumo:** A administradora anunciou a aprovação dos termos para a segunda emissão de cotas do fundo e detalhou as características dessa oferta.\n\n**Trecho-chave:**\n\"foi celebrado o Instrumento Particular de Aprovação dos Termos e Condições da Distribuição Pública Primária de Cotas da 2ª Emissão do Rec Multiestratégia Fundo de Investimento Imobiliário – Responsabilidade Limitada, datado de 01 de junho de 2026, na qual os termos e condições da 2ª Emissão da Oferta foram aprovados.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 15/01/2026\n\n**O QUE aconteceu:** A BRL TRUST Distribuidora de Títulos e Valores Mobiliários S.A. contratou um formador de mercado para as cotas do fundo.\n\n**Resumo:** A administradora celebrou um contrato com a XP Investimentos para fornecer serviços de formador de mercado, visando fomentar a liquidez das cotas no mercado de bolsa organizado pela B3.\n\n**Trecho-chave:**\n\"O referido contrato tem por objeto a contratação de formador de mercado para as cotas do Fundo, admitidas à negociação no mercado de bolsa organizado pela B3 S.A. – Brasil, Bolsa, Balcão (B3), com vistas a fomentar a liquidez e contribuir para a formação eficiente de preços.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 03/06/2026\n\n**O QUE aconteceu:** A assembleia geral ordinária do fundo foi realizada por meio de consulta formal, aprovando as demonstrações financeiras referentes ao exercício social findo em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia aprovou sem ressalvas o único item da ordem do dia, que era a aprovação das demonstrações financeiras do fundo para o exercício de 2025.\n\n**Trecho-chave:**\n\"Foi APROVADO, sem qualquer ressalva ou restrição, o único item da ordem do dia, por cotistas desimpedidos e aptos a deliberar.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 29/04/2026\n\n**O QUE aconteceu:** Foi emitido um edital de convocação para uma assembleia geral ordinária do fundo, que será realizada por meio de consulta formal.\n\n**Resumo:** A assembleia foi convocada para aprovar as demonstrações financeiras do exercício social findo em 31 de dezembro de 2025 e detalhou os procedimentos para a participação dos cotistas na consulta formal.\n\n**Trecho-chave:**\n\"A BRL TRUST Distribuidora de Títulos e Valores Mobiliários S.A., na qualidade de administradora do Fundo, vem, por meio desta, convocar V.Sas. a participar da Assembleia Geral Ordinária do Fundo (AGO), a ser realizada de forma não presencial, por meio de consulta formal.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Fundo novo — histórico curto"
+    ],
+    "cota": 7.6
+  },
+  "parecer": {
+    "id": 1143889,
+    "data_entrega": "25/03/2026 12:55",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do REC Multiestratégia - Fundo de Investimento Imobiliário - Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adot"
+  }
+}

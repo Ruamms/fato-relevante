@@ -1,0 +1,60 @@
+{
+  "ticker": "BRIP11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T02:34:07",
+  "relatorio": {
+    "id": 939847,
+    "data_entrega": "04/07/2025 18:08",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Portfólio em Desinvestimento:** O fundo está em período de desinvestimento, com 2 ativos já completamente vendidos e cerca de 69,9% do capital devolvido aos cotistas (p. 3).\n   \n2. **Ativos Atuais no Portfólio:**\n   - Villa Perdizes (Welconx): Terreno adquirido em nov/20, lançamento em out/22 e conclusão de obras em abr/25.\n   - Movi Campo Belo (AAM): Terreno adquirido em nov/20, lançamento em fev/22 e conclusão de obras em jan/25.\n   - Sabino Pinheiros (MOS): Terreno adquirido em nov/20, lançamento em abr/22 e conclusão de obras em nov/24.\n   - Welconx Butantã: Terreno adquirido em dez/20, lançamento em dez/21 e conclusão de obras em fev/25.\n   - Oby Itaim (RFM & J-VM): Terreno adquirido em mar/21, lançamento em out/21 e conclusão de obras em set/24.\n   - Villa Pompéia (Welconx): Terreno adquirido em abr/21, lançamento em jun/23 e conclusão de obras prevista para fev/26.\n   - Oriz by Plano&Plano: Terreno adquirido em mai/21, lançamento em jun/23 e conclusão de obras prevista para nov/25.\n   - Casa Magnólia (Three DI): Terreno adquirido em mai/21, lançamento em maio/23 e conclusão de obras prevista para jun/25.\n   - Amyrá (JAL-GP): Terreno adquirido em nov/21, lançamento em nov/24 e conclusão de obras prevista para dez/25.\n   - INDI-70 (Gattaz): Terreno adquirido em dez/21, lançamento em mar/22 e conclusão de obras prevista para set/23.\n\n3. **Desinvestimento de Ativos:** O fundo já devolveu cerca de 69,9% do capital aos cotistas através da amortização integral do valor das cotas (p. 3).\n\n4. **Taxa de Administração:** A taxa de administração é de 2,05% a.a. (p. 1).\n\n### O que observar em seguida:\n- Monitorar o progresso das obras dos ativos restantes no portfólio.\n- Verificar as devoluções futuras e se elas estão alinhadas com as expectativas do fundo."
+  },
+  "comunicados": {
+    "ids": [
+      1214229,
+      1157146,
+      1104326,
+      1241072,
+      1183240,
+      1047303,
+      1021635
+    ],
+    "datas": [
+      "08/06/2026",
+      "08/04/2026",
+      "06/02/2026",
+      "07/07/2026",
+      "08/05/2026",
+      "26/11/2025",
+      "27/10/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Ocorrências Relacionadas aos Documentos\n\n#### 08/06/2026 - Fato Relevante\n**O que aconteceu:** A BRIO INVESTIMENTOS LTDA. e a BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., como gestor e administrador, respectivamente, do BRIO REAL ESTATE III - FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA (CNPJ/MF nº 34.895.752/0001-80), recomendaram a amortização das cotas no valor de R$ 9.000.390,75, equivalente a R$ 41,77 por cota.\n\n**Resumo:** O fundo realizará a amortização parcial das cotas, com pagamento previsto para o dia 29 de junho de 2026.\n\n**Trecho-chave:**\n\"O Gestor recomendou ao Administrador a amortização das cotas no montante de R$ 9.000.390,75 (nove milhões e trezentos e noventa reais e setenta e cinco centavos), equivalente ao valor de R$ 41,77 por cota.\"\n\n#### 08/04/2026 - Fato Relevante\n**O que aconteceu:** A BRIO INVESTIMENTOS LTDA. e a BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., como gestor e administrador, respectivamente, do BRIO REAL ESTATE III - FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA (CNPJ/MF nº 34.895.752/0001-80), recomendaram a amortização das cotas no valor de R$ 11.502.055,00.\n\n**Resumo:** O fundo realizará a amortização parcial das cotas, com pagamento previsto para o dia 28 de abril de 2026.\n\n**Trecho-chave:**\n\"O Gestor recomendou ao Administrador a amortização das cotas no montante de R$ 11.502.055,00 (onze milhões e quinhentos e dois mil e cinquenta e cinco reais), equivalente ao valor de R$ 53,38 por cota.\"\n\n#### 06/02/2026 - Fato Relevante\n**O que aconteceu:** A BRIO INVESTIMENTOS LTDA. e a BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., como gestor e administrador, respectivamente, do BRIO REAL ESTATE III - FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA (CNPJ/MF nº 34.895.752/0001-80), recomendaram a amortização das cotas no valor de R$ 6.000.978,75.\n\n**Resumo:** O fundo realizará a amortização parcial das cotas, com pagamento previsto para o dia 27 de fevereiro de 2026.\n\n**Trecho-chave:**\n\"O Gestor recomendou ao Administrador a amortização das cotas no montante de R$ 6.000.978,75 (seis milhões e novecentos e setenta e oito reais e setenta e cinco centavos), equivalente ao valor de R$ 27,85 por cota.\"\n\n#### 07/07/2026 - Comunicado ao Mercado\n**O que aconteceu:** A BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., como administradora do BRIO REAL ESTATE III - FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA, comunicou que não haverá distribuição de resultados em relação ao mês de junho/2026.\n\n**Resumo:** O fundo não realizará a distribuição de resultados referentes ao mês de junho/2026.\n\n**Trecho-chave:**\n\"Permanecemos a disposição para maiores esclarecimentos que se façam necessários.\"\n\n#### 08/05/2026 - Comunicado ao Mercado\n**O que aconteceu:** A BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., como administradora do BRIO REAL ESTATE III - FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA, comunicou que não haverá distribuição de resultados em relação ao mês de abril/2026.\n\n**Resumo:** O fundo não realizará a distribuição de resultados referentes ao mês de abril/2026.\n\n**Trecho-chave:**\n\"Permanecemos a disposição para maiores esclarecimentos que se façam necessários.\"\n\n#### 27/10/2025 - Assembleia Geral Ordinária\n**O que aconteceu:** A BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., como administradora do BRIO REAL ESTATE III - FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA, realizou a Assembleia Geral Ordinária por meio de consulta formal e aprovou as Demonstrações Financeiras do Fundo acompanhadas pelo Relatório do Auditor Independente referentes aos exercícios findos em 30 de junho de 2025 e 2024.\n\n**Resumo:** A assembleia aprovou as demonstrações financeiras do fundo sem ressalvas ou restrições.\n\n**Trecho-chave:**\n\"Diante do exposto, a matéria acima foi APROVADA sem qualquer ressalva ou restrição pelos cotistas desimpedidos e aptos a votar.\"\n\n#### 26/11/2025 - Assembleia Geral Ordinária\n**O que aconteceu:** A BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., como administradora do BRIO REAL ESTATE III - FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA, realizou a Assembleia Geral Ordinária por meio de consulta formal e aprovou as Demonstrações Financeiras do Fundo acompanhadas pelo Relatório do Auditor Independente referentes aos exercícios findos em 30 de junho de 2025 e 2024.\n\n**Resumo:** A assembleia aprovou as demonstrações financeiras do fundo sem ressalvas ou restrições.\n\n**Trecho-chave:**\n\"Diante do exposto, a matéria acima foi APROVADA sem qualquer ressalva ou restrição pelos cotistas desimpedidos e aptos a votar.\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "VP/cota em queda relevante",
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares",
+      "Base de cotistas muito pequena"
+    ],
+    "cota": 320.0
+  },
+  "parecer": {
+    "id": 999665,
+    "data_entrega": "26/09/2025 17:54",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Brio Real Estate III - Fundo de Investimento Imobiliário - Responsabilidade Limitada (anteriormente denominado Brio Real Estate III - Fundo de Investimento Imobiliário) em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos"
+  }
+}

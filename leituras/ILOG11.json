@@ -1,0 +1,27 @@
+{
+  "ticker": "ILOG11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T03:11:22",
+  "comunicados": {
+    "ids": [
+      1239634,
+      1093499,
+      1142683,
+      1131456
+    ],
+    "datas": [
+      "03/07/2026",
+      "27/01/2026",
+      "23/03/2026",
+      "09/03/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### Comunicação de Chamada de Capital - 03/07/2026\n\n**O que aconteceu:** Realização da 1ª chamada de capital referente a 1ª emissão de cotas.\n\n**Resumo:** O fundo ITAU RBR DESENVOLVIMENTO LOGÍSTICO FII realizou uma chamada de capital para emitir 299.257 cota(s) ao preço de R$100,00 por cota, totalizando R$ 29.925.700,00.\n\n**Trecho-chave:**\n\"O não atendimento, por qualquer Cotista, à Notificação de Chamada de Capital implicará sua constituição em mora, nos termos do item 4.9.2 do Anexo I do Regulamento.\"\n\n### Comunicação de Chamada de Capital - 27/01/2026\n\n**O que aconteceu:** Realização da 1ª chamada de capital referente a 1ª emissão de cotas.\n\n**Resumo:** O fundo ITAU RBR DESENVOLVIMENTO LOGÍSTICO FII realizou uma chamada de capital para emitir 177.392 cota(s) ao preço de R$100,00 por cota, totalizando R$ 17.739.200,00.\n\n**Trecho-chave:**\n\"O não atendimento, por qualquer Cotista, à Notificação de Chamada de Capital implicará sua constituição em mora, nos termos do item 4.3.8 do Regulamento.\"\n\n### Assembleia Geral Extraordinária - 23/03/2026\n\n**O que aconteceu:** Aprovação da alienação futura de imóveis e ativos imobiliários.\n\n**Resumo:** Os cotistas aprovaram, por 64.26% dos votos favoráveis, a autorização para a alienação futura de imóveis e ativos imobiliários detidos pelo fundo ao ITAU UNIBANCO ASSET MANAGEMENT LTDA., administrado pela INTRAG DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.\n\n**Trecho-chave:**\n\"Diante do exposto, foi APROVADO, sem qualquer ressalva ou restrição, pelos Cotistas, o item posto para deliberação.\"\n\n### Assembleia Geral Extraordinária - 09/03/2026\n\n**O que aconteceu:** Convocação da Assembleia Geral Extraordinária para deliberar sobre a alienação futura de imóveis e ativos imobiliários.\n\n**Resumo:** O fundo ITAU RBR DESENVOLVIMENTO LOGÍSTICO FII convocou uma assembleia extraordinária para deliberar sobre a possibilidade de alienação futura de imóveis e ativos imobiliários ao ITAU UNIBANCO ASSET MANAGEMENT LTDA., administrado pela INTRAG DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.\n\n**Trecho-chave:**\n\"Considerando que a Alienação terá como contraparte fundos de investimento imobiliários geridos pelo Gestor, administrados pelo Administrador e/ou suas partes relacionadas, tal operação é considerada situação de potencial conflito de interesses.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

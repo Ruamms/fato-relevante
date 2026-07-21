@@ -1,0 +1,39 @@
+{
+  "ticker": "HRES11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T11:28:40",
+  "comunicados": {
+    "ids": [
+      1153093,
+      1246175,
+      1222982,
+      1193211,
+      1193210
+    ],
+    "datas": [
+      "01/04/2026",
+      "13/07/2026",
+      "16/06/2026",
+      "15/05/2026",
+      "15/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 01/04/2026\n\n**O QUE aconteceu:** Ativo do Fundo remarcado pelo método de equivalência patrimonial.\n\n**Resumo:** O ativo do FII HIRE RESIDENCIAL I foi reavaliado, resultando numa variação negativa de 4,56% no valor do patrimônio líquido do Fundo em 31 de dezembro de 2025.\n\n**Trecho-chave:** \"o ativo do Fundo foi remarcado pelo método de equivalência patrimonial, devido a mudança de prática do imóvel de renda para venda, em 31 de dezembro de 2025, resultando em uma variação negativa de 4,56% no valor do patrimônio líquido do Fundo na Data-Base.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 16/06/2026\n\n**O QUE aconteceu:** Amortização parcial das cotas no montante de R$ 9.100.000,00.\n\n**Resumo:** O Fundo HIRE RESIDENCIAL I anunciou a amortização parcial de suas cotas no valor de R$ 9.100.000,00, com pagamento previsto para o dia 23 de junho de 2026.\n\n**Trecho-chave:** \"o evento de amortização parcial das cotas no montante de R$ 9.100.000,00 com pagamento previsto para o dia 23 de junho de 2026.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 13/07/2026\n\n**O QUE aconteceu:** Amortização parcial das cotas no montante de R$ 7.000.000,00.\n\n**Resumo:** O Fundo HIRE RESIDENCIAL I anunciou a amortização parcial de suas cotas no valor de R$ 7.000.000,00, com pagamento previsto para o dia 20 de julho de 2026.\n\n**Trecho-chave:** \"o evento de amortização parcial das cotas no montante de R$ 7.000.000,00 com pagamento previsto para o dia 20 de julho de 2026.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 15/05/2026\n\n**O QUE aconteceu:** Assembleia Geral Extraordinária do Fundo.\n\n**Resumo:** A assembleia foi convocada para deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo relativas ao exercício social findo em 31 de dezembro de 2025, devidamente auditadas.\n\n**Trecho-chave:** \"Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31/12/2025, devidamente auditadas.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 15/05/2026\n\n**O QUE aconteceu:** Assembleia Geral Extraordinária do Fundo.\n\n**Resumo:** A assembleia foi convocada para deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo relativas ao exercício social findo em 31 de dezembro de 2025, devidamente auditadas.\n\n**Trecho-chave:** \"Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31/12/2025, devidamente auditadas.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1157322,
+    "data_entrega": "08/04/2026 22:23",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o período de 13 de junho a 31 de dezembro de 2025, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento i"
+  }
+}

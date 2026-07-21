@@ -1,0 +1,33 @@
+{
+  "ticker": "TSNC11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T02:43:32",
+  "comunicados": {
+    "ids": [
+      1209774,
+      1081349,
+      1081343
+    ],
+    "datas": [
+      "01/06/2026",
+      "13/01/2026",
+      "13/01/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Assembleia AGE",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 01/06/2026\n\n**O QUE aconteceu:** A Classe TSNC11 do Transinc Fundo de Investimento Imobiliário celebrou um contrato para a compra de um terreno com área aproximada de 8.915,93 m².\n\n**Resumo:** O fundo adquiriu um terreno localizado em São Paulo por R$ 23.050.000,00, sendo que o pagamento será feito em duas fases: a primeira parcela de R$ 3.250.000,00 à vista e as demais em 36 parcelas mensais.\n\n**Trecho-chave:** \"A Classe celebrou, em 12 de maio de 2026, o Instrumento Particular de Contrato de Promessa de Venda e Compra de Imóvel com a Planik Empreendimentos Imobiliários Ltda., tendo por objeto um terreno com área aproximada de 8.915,93 m², localizado na Avenida General Waldomiro de Lima, nº 508, no bairro do Jabaquara, na cidade e estado de São Paulo.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGE entregue em 13/01/2026\n\n**O QUE aconteceu:** A assembleia geral dos cotistas aprovou a alienação do Edifício 508 Green Park, localizado na Avenida General Waldomiro de Lima, nº 508, no bairro Jabaquara, São Paulo.\n\n**Resumo:** Os cotistas aprovaram a venda do edifício pelo valor mínimo de R$ 40.000.000,00, podendo o pagamento ser feito a prazo em condições comerciais.\n\n**Trecho-chave:** \"Aprovar a autorização para a alienação do ativo Edifício 508 Green Park, localizado na Avenida General Waldomiro de Lima, nº 508, no bairro Jabaquara, São Paulo/SP, registrado sob a matrícula nº 173.073 do 8º Cartório de Registro de Imóveis da Capital, integrante do portfólio do Fundo, nos termos do Regulamento e da Resolução CVM nº 175, a terceiro identificado pelo gestor, pelo valor mínimo de R$ 40.000.000,00 (quarenta milhões de reais), admitindo-se pagamento a prazo em condições comerciais a serem definidas pelo gestor, desde que preservado o melhor interesse do Fundo e observadas as melhores práticas previstas pelo Código ANBIMA.\" (p. 2)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 990845,
+    "data_entrega": "15/09/2025 14:05",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Transinc Fundo de Investimento Imobiliário Responsabilidade Limitada em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil "
+  }
+}

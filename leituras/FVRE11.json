@@ -1,0 +1,45 @@
+{
+  "ticker": "FVRE11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T11:38:11",
+  "relatorio": {
+    "id": 916396,
+    "data_entrega": "02/06/2025 20:08",
+    "texto": "### Fatos do Relatório:\n\n1. **Patrimônio Líquido e Valor da Cota:**\n   - Patrimônio Líquido: R$ 11,604 milhões (p. 2).\n   - Valor da Cota: R$ 187,93 por cota (p. 5).\n\n2. **Número de Projetos e Status:**\n   - O portfólio está composto por 11 projetos aprovados e lançados.\n   - Todos os projetos estão em fase de conclusão ou vendas (p. 3, p. 4).\n\n3. **Desinvestimentos:**\n   - Desinvestimento total nos projetos TPA Bandeira Paulicéia e Cemara Sol nascente (p. 5).\n\n4. **Rendimentos e Distribuições:**\n   - Realizou uma distribuição de R$ 1,50 milhões em abril, acumulando R$ 86,70 milhões (p. 2).\n\n5. **Cotistas:**\n   - Número de cotistas: 167 (p. 2).\n\n6. **Riscos do Negócio Imobiliário:**\n   - Macroeconômico: risco de mudanças no cenário econômico que podem comprometer o desempenho dos empreendimentos.\n   - Comerciais: risco de falta de interesse ou aprovação de crédito habitacional, concorrência e ausência de demanda na região (p. 6).\n\n7. **Carteira Ativa:**\n   - Alocou R$ 70,1 milhões em 86,5% do capital subscrito nos 11 projetos aprovados (p. 4).\n\n### O que observar em seguida:\n- Monitorar o progresso das obras dos projetos restantes.\n- Observar as vendas pendentes e se haverá novas distribuições de rendimentos."
+  },
+  "comunicados": {
+    "ids": [
+      1119228,
+      1003051
+    ],
+    "datas": [
+      "23/02/2026",
+      "30/09/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante"
+    ],
+    "texto": "### Ocorrências em 23/02/2026\n\n**O que aconteceu:** Redução de capital no Ativo integrante da carteira do Fundo.\n\n**Resumo:** A realização de uma redução de capital no valor de R$ 1.500.000,00 no ativo VRE D3 S.A. resultou em uma diminuição do patrimônio do ativo e, consequentemente, na reavaliação do valor do Ativo, passando de R$ 11.439.300,00 para R$ 7.182.000,00.\n\n**Trecho-chave:** \"Ao longo do ano de 2025, o VRE D3 S.A., com o CNPJ de nº 17.901.699/0001 -63, ativo integrante da carteira do Fundo (“Ativo”) realizou redução de capital em favor do Fundo no valor de R$ 1.500.000,00 (um milhão e quinhentos mil reais), o que, consequentemente, diminuiu o patrimônio do Ativo ao longo do referido exercício.\"\n\n---\n\n### Ocorrências em 30/09/2025\n\n**O que aconteceu:** Alteração na classificação do Fundo.\n\n**Resumo:** O tipo ANBIMA do Fundo foi alterado de 'Tijolo Desenvolvimento Gestão Ativa' para 'Papel Fundos Gestão Ativa Multicategoria'.\n\n**Trecho-chave:** \"Diante do exposto acima, o Administrador serve-se do presente para comunicar que o Fundo, antes classificado como ‘ Tijolo Desenvolvimento Gestão Ativa ’, teve seu tipo ANBIMA alterado para ‘Papel Fundos Gestão Ativa Multicategoria’.\"\n\n---\n\n**Conexão com indicadores:** A redução de capital no ativo e a reavaliação do valor do ativo podem impactar negativamente o patrimônio líquido do fundo, que já estava em queda (-36,30% em 12 meses). A alteração na classificação do Fundo pode afetar sua exposição ao mercado e, consequentemente, suas performances financeiras."
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "VP/cota em queda relevante",
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares",
+      "Base de cotistas muito pequena"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 1149238,
+    "data_entrega": "30/03/2026 22:44",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do VRE Desenvolvimento III Fundo de Investimento Imobiliario em 31 de dezembro de 2025, o desempenho de suas operações e seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis "
+  }
+}

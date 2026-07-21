@@ -1,0 +1,45 @@
+{
+  "ticker": "BRHT11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T01:58:14",
+  "comunicados": {
+    "ids": [
+      1074701,
+      1065327,
+      994766,
+      1233530,
+      1207003,
+      1182092,
+      1173207
+    ],
+    "datas": [
+      "02/01/2026",
+      "17/12/2025",
+      "19/09/2025",
+      "30/06/2026",
+      "29/05/2026",
+      "07/05/2026",
+      "29/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGE"
+    ],
+    "texto": "### O QUE ACONTECEU: REAJUSTE NA CARTEIRA DO FUNDO BRHT11 EM 02/01/2026\n\n**Resumo:** Houve um reajuste positivo de +0,5498% nas cotas do Fundo de Investimento Imobiliário BR Hotéis.\n\n**Trecho-chave:**\n\"O Fundo registrou uma variação positiva na precificação das cotas no importe de +0,5498%, em razão da atualização do valor dos imóveis que compõem a carteira do Fundo.\"\n\n---\n\n### O QUE ACONTECEU: LIQUIDAÇÃO DO FUNDO BRHT11 EM 17/12/2025\n\n**Resumo:** O Fundo de Investimento Imobiliário BR Hotéis entrou em processo de liquidação, com cronograma detalhado estabelecido.\n\n**Trecho-chave:**\n\"O Fundo DE INVESTIMENTO IMOBILIÁRIO BR HOTEIS, inscrito no CNPJ sob o nº 15.461.076/0001-91, vem divulgar comunicado à V.Sas. acerca da LIQUIDAÇÃO do Fundo.\"\n\n---\n\n### O QUE ACONTECEU: AMORTIZAÇÃO NO FUNDO BRHT11 EM 19/09/2025\n\n**Resumo:** Foi realizada uma amortização no valor de R$ 5.000.000,00, conforme aprovado na Assembleia Geral de Cotistas.\n\n**Trecho-chave:**\n\"O Fundo realizou amortização na data do dia 19 de setembro de 2025, no valor de R$ 5.000.000,00 (cinco milhões de reais), conforme devidamente aprovado na Ata de Assembleia Geral de Cotistas realizada em 12 de setembro de 2025.\"\n\n---\n\n### O QUE ACONTECEU: NÃO HÁ DISTRIBUIÇÃO DE RENDIMENTOS NO FUNDO BRHT11 EM 30/06/2026\n\n**Resumo:** Não haverá distribuição de rendimentos pelo Fundo de Investimento Imobiliário BR Hotéis.\n\n**Trecho-chave:**\n\"NÃO HAVERÁ distribuição de rendimentos pelo Fundo.\"\n\n---\n\n### O QUE ACONTECEU: NÃO HÁ DISTRIBUIÇÃO DE RENDIMENTOS NO FUNDO BRHT11 EM 29/05/2026\n\n**Resumo:** Não haverá distribuição de rendimentos pelo Fundo de Investimento Imobiliário BR Hotéis.\n\n**Trecho-chave:**\n\"NÃO HAVERÁ distribuição de rendimentos pelo Fundo.\"\n\n---\n\n### O QUE ACONTECEU: ASSEMBLEIA GERAL DE COTISTAS EM 06/05/2026\n\n**Resumo:** Realizada a Assembleia Geral de Cotistas para aprovar as Demonstrações Financeiras do exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Os cotistas representantes de 38,52% (trinta e oito vírgula cinquenta e dois por cento) das cotas subscritas e integralizadas aprovaram o item, enquanto 10,86% (dez vírgula oitenta e seis por cento) das cotas subscritas e integralizadas reprovaram o item. Por fim, os cotistas representantes de 17,04% (dezessete vírgula zero quatro por cento) das cotas subscritas e integralizadas se abstiveram.\"\n\n---\n\n### O QUE ACONTECEU: Rerratificação da Proposta de Amortização em 29/04/2026\n\n**Resumo:** Foi rerratificada a proposta de amortização do Fundo, com nova data-base e prazo para pagamento.\n\n**Trecho-chave:**\n\"Assim, segue o quadro rerratificado:\n- Valor da amortização R$ 4.000.000,00 (quatro milhões de reais), respeitada a proporcionalidade das cotas de cada cotista.\n- Prazo para Pagamento Quinto dia subsequente a divulgação da Assembleia Geral de Cotistas, com a disponibilização dos recursos pelo Gestor do Fundo.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1150450,
+    "data_entrega": "31/03/2026 17:08",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião , as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário BR Hotéis – Em liquidação em 31 de dezembro de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data , de acordo com as práticas contábeis adotadas no Brasil, ap"
+  }
+}

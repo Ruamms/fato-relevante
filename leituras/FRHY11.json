@@ -1,0 +1,39 @@
+{
+  "ticker": "FRHY11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:56:57",
+  "comunicados": {
+    "ids": [
+      605103,
+      507611,
+      1071270,
+      1071283,
+      1071274
+    ],
+    "datas": [
+      "15/02/2024",
+      "14/08/2023",
+      "26/12/2025",
+      "26/12/2025",
+      "26/12/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 15/02/2024\n\n**O QUE aconteceu:** Inadimplência de Certificado de Recebível Imobiliário (CRI) causou oscilação atípica na cota do Fundo.\n\n**Resumo:** Houve inadimplência do CRI emitido pela Companhia Província de Securitização, que levou a uma remarcação e consequente oscilação atípica na cota do Fundo. O Administrador está tomando medidas conforme as regras estabelecidas.\n\n**Trecho-chave:** \"em decorrência da inadimplência do Certificado de Recebível Imobiliário emitido pela Companhia Província de Securitização, emissão 3, série 42 , houve oscilação atípica na cota do Fundo dada a sua remarcação.\"\n\n### FATO RELEVANTE entregue em 14/08/2023\n\n**O QUE aconteceu:** Inadimplências de Certificados de Recebíveis Imobiliários (CRIs) causaram oscilação atípica na cota do Fundo.\n\n**Resumo:** Houve inadimplência dos CRIs emitidos pela Companhia Província de Securitização e Habitasec Securitizadora, que levou a uma remarcação e consequente oscilação atípica na cota do Fundo. O Administrador e o Gestor estão tomando medidas conforme as regras estabelecidas.\n\n**Trecho-chave:** \"em decorrência das inadimplências dos certificados de recebíveis imobiliários emitidos pela Companhia Província de Securitização, emissão 3, série 42 e Habitasec Securitizadora, emissão 1, série 326 houve oscilação atípica na cota do Fundo dado as suas remarcações.\"\n\n### COMUNICADO AO MERCADO entregue em 26/12/2025\n\n**O QUE aconteceu:** Retificação de comunicado anterior sobre prorrogação da Consulta Formal.\n\n**Resumo:** O Administrador informou que antes da divulgação do Comunicado de Prorrogação, já havia recebido número suficiente de votos válidos para aprovar as matérias constantes da ordem do dia. A Consulta Formal foi regularmente aprovada e a prorrogação anterior não produzirá efeitos.\n\n**Trecho-chave:** \"antes da divulgação do referido Comunicado de Prorrogação, já havia sido recebido número suficiente de votos válidos para a aprovação das matérias constantes da ordem do dia, observado o quórum mínimo previsto no Regulamento do Fundo e na regulamentação aplicável.\"\n\n### ASSEMBLEIA GERAL EXTRAORDINÁRIA (AGE) entregue em 26/12/2025\n\n**O QUE aconteceu:** Deliberações aprovadas durante a AGE.\n\n**Resumo:** A AGE deliberou aprovar o termo de acordo com a PLATÔ para quitação de obrigações do Fundo, mediante alienação fiduciária do terreno Fazenda Tamboré Residencial. O termo de apuração foi publicado no site do Administrador e da CVM.\n\n**Trecho-chave:** \"Aprovação do termo de acordo a ser celebrado entre o Fundo e a PLATÔ – DESENVOLVIMENTO URBANO E PARTICIPAÇÕES LTDA., pessoa jurídica de direito privado, com sede na cidade de Barueri, estado de São Paulo, para quitação de todas as obrigações existentes perante o Fundo.\"\n\n### ASSEMBLEIA GERAL EXTRAORDINÁRIA (AGE) entregue em 26/12/2025\n\n**O QUE aconteceu:** Termo de Apuração da Consulta Formal.\n\n**Resumo:** O Administrador apurou os votos dos cotistas durante a Consulta Formal e constatou aprovação das matérias constantes do termo de acordo com a PLATÔ, para quitação de obrigações do Fundo. O Termo de Apuração foi publicado no site do Administrador e da CVM.\n\n**Trecho-chave:** \"Aprovação do termo de acordo a ser celebrado entre o Fundo e a PLATÔ – DESENVOLVIMENTO URBANO E PARTICIPAÇÕES LTDA., pessoa jurídica de direito privado, com sede na cidade de Barueri, estado de São Paulo, para quitação de todas as obrigações existentes perante o Fundo.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1013485,
+    "data_entrega": "14/10/2025 19:10",
+    "tipo": "ressalva",
+    "rotulo": "opinião com ressalva",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, exceto pelos possíveis efeitos do assunto descrito na seção a seguir, intitulada “Base para opinião com ressalva”, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fronteira Multi Fundo de Investimento Imobiliário de Responsabilidade Limitada em 30 de junho de 2025, o desempenho de suas ope"
+  }
+}

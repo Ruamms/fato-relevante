@@ -1,0 +1,35 @@
+{
+  "ticker": "ZIFI11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T02:59:45",
+  "relatorio": {
+    "id": 823008,
+    "data_entrega": "20/01/2025 18:07",
+    "texto": "### Fatos Extraídos do Relatório Gerencial\n\n1. **Participação na Cortel Holding S.A.:** O fundo detém uma participação de 2,09% no capital social da Cortel Holding S.A., empresa líder no setor brasileiro de serviços funerários.\n   > \"O Fundo detém em seu portfólio uma participação de 2,09% (dois vírgula zero nove por cento) do capital social da Cortel Holding S.A. (\"Cortel\"), uma empresa pioneira e líder no setor brasileiro de serviços funerários.\"\n\n2. **Participação na SPE Cortel SP:** A fundo possui participação direta na Sociedade de Propósito Específico (SPE) Cortel SP, administradora da concessão dos cemitérios e serviços funerários em São Paulo.\n   > \"Além disso, o Fundo possui uma participação direta na SPE Consórcio Cortel SP S.A. (“Cortel SP”), uma Sociedade de Propósito Específico (SPE) criada para administrar a concessão dos cemitérios e serviços funerários no município de São Paulo.\"\n\n3. **Concessões em São Paulo:** A Cortel SP administra cinco cemitérios em São Paulo, além de oferecer serviços funerários como sepultamento, cremação, agências funerárias e mais.\n   > \"A Cortel SP é uma das quatro concessionárias do serviço funerário da cidade de São Paulo, responsável pela gestão, administração e manutenção de cemitérios, crematórios, agências e serviços funerários referentes ao Bloco II da concessão realizada pela Prefeitura de São Paulo em 2022.\"\n\n4. **Investimentos em Benfeitorias:** A Cortel SP tem realizado investimentos significativos em benfeitorias nos cemitérios sob sua administração, como a construção de gavetas verticais e ossuários.\n   > \"A Cortel SP, desde o início de suas operações, tem investido em benfeitorias, destacando, por exemplo: Construção de gavetas verticais – cemitério Dom Bosco; Construção de lóculos de ossuário individual: cemitério Vila Nova Cachoeirinha; Construção de novo ossuário geral – cemitérios Vila Nova Cachoeirinha e Dom Bosco.\"\n\n5. **Evolução das Vendas e Serviços:** A Cortel SP tem apresentado crescimento nas vendas e serviços, com aumento no número de jazigos vendidos e empreendimentos.\n   > \"Cortel SP – Evolução de Vendas e Serviços 2024\"\n\n### O que Observar Em Seguida:\n1. **Evolução das Vendas e Serviços:** Monitorar os dados de vendas e serviços da Cortel SP, pois podem indicar o desempenho futuro do fundo.\n2. **Investimentos em Benfeitorias:** Verificar se as benfeitorias continuam a ser realizadas e quais novos projetos estão sendo planejados para manter o crescimento dos ativos."
+  },
+  "comunicados": {
+    "ids": [],
+    "datas": [],
+    "rotulos": [],
+    "texto": null
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Menos cotistas que o mínimo para isenção de IR",
+      "VP/cota em queda relevante",
+      "Rendimentos irregulares"
+    ],
+    "cota": 899.89
+  },
+  "parecer": {
+    "id": 867852,
+    "data_entrega": "28/03/2025 21:28",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do ZION Capital Fundo de Investimento Imobiliário em 31 de dezembro de 2024 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo naquela data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos "
+  }
+}

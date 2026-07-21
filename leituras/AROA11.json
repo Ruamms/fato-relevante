@@ -1,0 +1,33 @@
+{
+  "ticker": "AROA11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T00:56:30",
+  "comunicados": {
+    "ids": [
+      847647,
+      1210788,
+      1210785
+    ],
+    "datas": [
+      "25/02/2025",
+      "02/06/2026",
+      "02/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 25/02/2025\n\n**O que aconteceu:** A reavaliação do ativo do fundo resultou em um valor inferior ao atual valor contábil dos imóveis, representando uma variação negativa no valor do patrimônio líquido.\n\n**Resumo:** O AROEIRA 333 RENDA LOGÍSTICA FII realizou a reavaliação de seus ativos em dezembro de 2024 e constatou um valor inferior ao atual, o que impactou negativamente o patrimônio líquido do fundo.\n\n**Trecho-chave:** \"O ativo do fundo foi reavaliado a valor justo em dezembro de 2024 pela empresa especializada Compass Avaliações, resultando em valor 3,38% inferior ao atual valor contábil dos imóveis, o que representa uma variação negativa de 3,34% no valor do patrimônio líquido do fundo.\" (p. 1)\n\n### ASSEMBLEIA AGO entregue em 02/06/2026\n\n**O que aconteceu:** A assembleia geral ordinária do fundo foi convocada para deliberar sobre a aprovação das contas e demonstrações contábeis relativas ao exercício social findo em 31/12/2025.\n\n**Resumo:** O administrador do AROEIRA 333 RENDA LOGÍSTICA FII convocou uma assembleia geral para aprovar as contas e demonstrações contábeis do fundo, relativas ao exercício social findo em 31/12/2025.\n\n**Trecho-chave:** \"Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31/12/2025, devidamente auditadas, conforme disponíveis para consulta nos sites da Administradora e nos demais canais exigidos pela regulamentação em vigor.\" (p. 1)\n\n### ASSEMBLEIA AGO entregue em 02/06/2026\n\n**O que aconteceu:** A assembleia geral ordinária do fundo foi convocada para deliberar sobre a aprovação das contas e demonstrações contábeis relativas ao exercício social findo em 31/12/2025.\n\n**Resumo:** O administrador do AROEIRA 333 RENDA LOGÍSTICA FII convocou uma assembleia geral para aprovar as contas e demonstrações contábeis do fundo, relativas ao exercício social findo em 31/12/2025.\n\n**Trecho-chave:** \"Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31/12/2025, devidamente auditadas, conforme disponíveis para consulta nos sites da Administradora e nos demais canais exigidos pela regulamentação em vigor.\" (p. 1)\n\n**Conexão com o contexto:** A reavaliação do ativo do fundo e a convocação da assembleia para aprovar as contas podem impactar os indicadores financeiros, como a cotação e o patrimônio líquido, já que a reavaliação negativa pode refletir na situação financeira geral do fundo."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1150140,
+    "data_entrega": "31/03/2026 16:04",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira, do Fundo em 31 de dezembro de 202 5, o desempenho de suas operações e os seus respectivos fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos fundos de investimento imobiliári"
+  }
+}

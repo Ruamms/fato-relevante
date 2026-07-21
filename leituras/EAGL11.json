@@ -1,0 +1,42 @@
+{
+  "ticker": "EAGL11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T00:05:54",
+  "comunicados": {
+    "ids": [
+      1161824,
+      1118330,
+      879874,
+      1185786,
+      1217260,
+      1175638
+    ],
+    "datas": [
+      "14/04/2026",
+      "19/02/2026",
+      "14/04/2025",
+      "11/05/2026",
+      "11/06/2026",
+      "30/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 14/04/2026\n\n**O QUE aconteceu:** Contrato de prestação de serviços com a VIRACONDO HOLDING E INVESTIMENTOS LTDA foi rescindido.\n\n**Resumo:** O contrato entre o NEST EAGLE FII e a VIRACONDO para prestação de consultoria imobiliária especializada foi encerrado amigavelmente, sem alterações na política de investimento do fundo.\n\n**Trecho-chave:**\n\"Nos termos do referido distrato, as partes acordaram, de forma amigável e consensual, encerrar a prestação dos serviços anteriormente contratados, com efeitos a partir da data de assinatura do instrumento, conferindo-se plena, geral e irrevogável quitação recíproca quanto às obrigações decorrentes do contrato rescindido.\"\n\n---\n\n### FATO RELEVANTE entregue em 19/02/2026\n\n**O QUE aconteceu:** Ativo do fundo foi remarcado com base na avaliação realizada pela COLLIERS.\n\n**Resumo:** O valor da cota do NEST EAGLE FII foi recalculado para refletir o valor justo dos ativos, conforme instruções da CVM.\n\n**Trecho-chave:**\n\"O Administrador, na qualidade de representante legal do Fundo, contratou a empresa de COLLIERS TECHNICAL SERVICES LTDA (“COLLIERS”), para que, de acordo com seus critérios, metodologias e premissas, realizasse a avaliação do valor justo do ativo integrante da carteira do Fundo.\"\n\n---\n\n### FATO RELEVANTE entregue em 14/04/2025\n\n**O QUE aconteceu:** Realizada a segunda emissão de cotas do fundo.\n\n**Resumo:** O NEST EAGLE FII realizou uma nova emissão de cotas, com distribuição primária no Brasil e oferta pública sob regime de melhores esforços.\n\n**Trecho-chave:**\n\"O Administrador, na qualidade de representante legal do Fundo, informa aos cotistas do Fundo (Cotistas) e ao mercado em geral que foi aprovada, por meio do “Ato do Administrador”, formalizado pelo Administrador em 08 de abril de 2025, a realização da 2ª emissão de cotas do Fundo.”\n\n---\n\n### COMUNICADO AO MERCADO entregue em 11/05/2026\n\n**O QUE aconteceu:** Solicitação de esclarecimentos sobre a abstenção de opinião na auditoria das demonstrações financeiras.\n\n**Resumo:** O administrador do NEST EAGLE FII solicitou esclarecimentos à Grant Thornton sobre a abstenção de opinião nas demonstrações financeiras do exercício social de 2025, informando que medidas estão sendo tomadas para regularizar o processo.\n\n**Trecho-chave:**\n\"Em atenção à solicitação de esclarecimentos referente à abstenção de opinião emitida pela Grant Thornton Auditores Independentes Ltda. nas Demonstrações Financeiras do NEST EAGLE FUNDO DE INVESTIMENTO IMOBILIÁRIO – RESPONSABILIDADE LIMITADA, relativas ao exercício social de 2025, esclarecemos que a Administradora adotou as providências necessárias para o endereçamento dos pontos indicados pelos auditores independentes.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 11/06/2026\n\n**O QUE aconteceu:** Assembleia Geral Ordinária aprovou as contas e demonstrações contábeis do exercício social de 2025.\n\n**Resumo:** A assembleia geral ordinária do NEST EAGLE FII aprovou sem quaisquer ressalvas as contas e demonstrações contábeis referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"O(s) Cotista(s) presente(s) aprovou(aram), sem quaisquer ressalvas ou restrições, as contas e demonstrações contábeis do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 30/04/2026\n\n**O QUE aconteceu:** Convocação da Assembleia Geral Ordinária para aprovar as contas e demonstrações contábeis do exercício social de 2025.\n\n**Resumo:** O administrador convocou os cotistas para a assembleia geral ordinária, onde será deliberada sobre a aprovação das contas e demonstrações contábeis referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"O BANCO DAYCOVAL S.A. , sociedade com sede na Cidade de São Paulo, Estado de São Paulo, na Avenida Paulista, 1.793, 9º andar, Bela Vista, São Paulo - SP, inscrita no CNPJ/ME sob o nº 62.232.889/0001-90, na qualidade de instituição administradora do NEST EAGLE FUNDO DE INVESTIMENTO IMOBILIÁRIO DE RESPONSABILIDADE LIMITADA , inscrito no CNPJ/ MF sob o nº 54.422.883/0001-57 (Administradora e Fundo, respectivamente), nos termos do regulamento do Fundo, vem por meio desta, convocar V. Sas. (Cotistas) para a Assembleia Geral Ordinária (Assembleia), a ser realizada no dia 29 de maio de 2026, às 09:00 horas, através de plataforma de votação da Administradora.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1199875,
+    "data_entrega": "20/05/2026 11:51",
+    "tipo": "ressalva",
+    "rotulo": "opinião com ressalva",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, exceto pelos possíveis efeitos do assunto descrito na seção “Base para opinião com ressalva”, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Nest Eagle Fundo de Investimento Imobiliário de Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos"
+  }
+}

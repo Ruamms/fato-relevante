@@ -1,0 +1,60 @@
+{
+  "ticker": "EIRA11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T04:30:03",
+  "relatorio": {
+    "id": 1247700,
+    "data_entrega": "14/07/2026 18:05",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Emissão de Cotas:**\n   - Em março/2026, o EIRA11 concluiu sua 2ª emissão de cotas com captação total de R$ 15.174.557,97.\n   - Parte dos recursos foi integralizada em caixa (aproximadamente R$ 10mm) e outra parte por meio de ativos de um FII (aproximadamente R$ 5mm).\n   (p. 3)\n\n2. **Cenário Macroeconômico:**\n   - O início do ciclo de queda da Selic em março/2026 foi positivo para os FIIs, mas o mercado continua cauteloso.\n   - A alta do petróleo trouxe riscos adicionais ao cenário macroeconômico brasileiro.\n   (p. 4)\n\n3. **Alocação de Ativos:**\n   - Em maio/2026, o EIRA11 realizou uma alocação tática no CRI Matarazzo IV com remuneração de CDI + 4,95% a.a.\n   (p. 4)\n\n4. **Desempenho do Fundo:**\n   - Em maio/2026, o EIRA11 distribuiu R$ 1,14 por cota, equivalente a uma rentabilidade mensal de 1,09% sobre o preço de mercado.\n   (p. 8)\n\n5. **Cotistas e Cotas:**\n   - O número total de cotas do fundo é de aproximadamente 346.289.\n   - A quantidade de cotistas é de 242.\n   (p. 1, p. 7)\n\n### O que Observar em Seguida:\n- Monitorar a alocação tática no CRI Matarazzo IV e seu impacto na rentabilidade do fundo.\n- Observar o comportamento das curvas DI Futuro e NTN-B Futura para entender as expectativas de juros futuros."
+  },
+  "comunicados": {
+    "ids": [
+      1001517,
+      896496,
+      882428,
+      1132488,
+      1122462,
+      1179317,
+      1152637
+    ],
+    "datas": [
+      "29/09/2025",
+      "07/05/2025",
+      "16/04/2025",
+      "10/03/2026",
+      "26/02/2026",
+      "04/05/2026",
+      "01/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### O QUE aconteceu em 29/09/2025\n\n**Título:** Emissão de cotas com nova oferta pública.\n\n**Resumo:** A administradora e a gestora do fundo aprovaram uma nova emissão de cotas nominativas e escriturais.\n\n**Trecho-chave:**\n\"por meio de Instrumento Particular de Deliberação Conjunta, firmado entre a Administradora e a AROEIRA ASSET GESTÃO DE RECURSOS LTDA., aprovou-se a realização de oferta pública de distribuição primária de cotas.\"\n\n### O QUE aconteceu em 07/05/2025\n\n**Título:** Gestora solicita isenção da taxa de gestão.\n\n**Resumo:** A gestora solicitou a isenção do pagamento da taxa de gestão referente ao mês de maio de 2025, em benefício do fundo.\n\n**Trecho-chave:**\n\"em 02 de maio de 2025 a Administradora recebeu uma carta da Aroeira Asset Gestão de Recursos Ltda., solicitando a isenção do pagamento da taxa de gestão devida pelo Fundo à Gestora, no valor de R$15.000,00 (quinze mil reais), referente ao mês de maio de 2025, em benefício do Fundo.\"\n\n### O QUE aconteceu em 16/04/2025\n\n**Título:** Gestora solicita isenção da taxa de gestão.\n\n**Resumo:** A gestora solicitou a isenção do pagamento da taxa de gestão referente ao mês de abril de 2025, em benefício do fundo.\n\n**Trecho-chave:**\n\"em 03 de abril de 2025 a Administradora recebeu uma carta da Aroeira Asset Gestão de Recursos Ltda., solicitando a isenção do pagamento da taxa de gestão devida pelo Fundo à Gestora, no valor de R$15.000,00 (quinze mil reais), referente ao mês de abril de 2025, em benefício do Fundo.\"\n\n### O QUE aconteceu em 10/03/2026\n\n**Título:** Modificação da oferta pública de distribuição primária.\n\n**Resumo:** A administradora e a gestora retificaram o Prospecto Definitivo para permitir a integralização das cotas em bens e direitos que atendam à política do fundo, além de alterar o cronograma da oferta.\n\n**Trecho-chave:**\n\"O AROEIRA FUNDO DE INVESTIMENTO IMOBILIÁRIO – RESPONSABILIDADE LIMITADA, a QI CORRETORA DE TÍTULOS E VALORES MOBILIARIOS S.A., e a AROEIRA ASSET GESTÃO DE RECURSOS LTDA. vêm a público, por meio do presente comunicado (‘Comunicado ao Mercado de Modificação da Oferta’), COMUNICAR (a) a retificação do ‘Prospecto Definitivo da Oferta Pública de Distribuição da 2ª (Segunda) Emissão de Cotas da Classe Única do Aroeira Fundo de Investimento Imobiliário - Responsabilidade Limitada’ para prever a possibilidade de integralização das Cotas objeto da Oferta em bens e direitos que atendam à Política de Investimento da Classe, conforme prévia avaliação da Gestora.\"\n\n### O QUE aconteceu em 26/02/2026\n\n**Título:** Retificação do Prospecto Definitivo.\n\n**Resumo:** A administradora retificou o Prospecto Definitivo para corrigir um erro formal nos custos indicativos da oferta, sem aumento de custos aos cotistas e investidores.\n\n**Trecho-chave:**\n\"O AROEIRA FUNDO DE INVESTIMENTO IMOBILIÁRIO – RESPONSABILIDADE LIMITADA, a QI CORRETORA DE TÍTULOS E VALORES MOBILIARIOS S.A., e a AROEIRA ASSET GESTÃO DE RECURSOS LTDA. vêm a público, por meio do presente comunicado (‘Comunicado ao Mercado de Modificação da Oferta’), COMUNICAR (a) a retificação do ‘Prospecto Definitivo da Oferta Pública de Distribuição da 2ª (Segunda) Emissão de Cotas da Classe Única do Aroeira Fundo de Investimento Imobiliário - Responsabilidade Limitada’ em razão de erro formal nos Custos Indicativos da Oferta dispostos na seção ‘11.2. Demonstrativo dos custos da distribuição’, para promover o rearranjo dos Custos Indicativos da Oferta.\"\n\n### O QUE aconteceu em 04/05/2026\n\n**Título:** Apuração de assembleia ordinária.\n\n**Resumo:** A administradora apurou os votos na assembleia ordinária realizada por consulta formal, aprovando as demonstrações financeiras do fundo referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Após análise da resposta dos Cotistas à Consulta Formal, foi apurado o seguinte resultado:\nAPROVO NÃO APROVO ABSTENCÃO\n1,43% 0% 0%\"\n  \n### O QUE aconteceu em 01/04/2026\n\n**Título:** Convocação de assembleia ordinária.\n\n**Resumo:** A administradora convocou os cotistas para participar da assembleia ordinária por consulta formal e coleta de voto à distância, a ser realizada até 30 de abril de 2026.\n\n**Trecho-chave:**\n\"A QI CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., sociedade anônima, com sede na Cidade de São Paulo, estado de São Paulo, na Avenida Rebouças, nº 2.942, 7º ao 12º andar, Parte I, CEP 05402 -500, na qualidade de administradora do Fundo, inscrita no CNPJ/MF sob o nº 62.285.390/0001 -40, devidamente credenciada pela CVM para o exercício da atividade de administração de carteiras de títulos e valores mobiliários, convida os cotistas do Fundo para participar da Assembleia Geral Ordinária de Cotistas do Fundo, a ser realizada de forma não presencial, por meio de consulta formal e coleta de voto à distância.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Emissão de cotas com VP/cota em queda",
+      "Rendimentos irregulares",
+      "Base de cotistas muito pequena",
+      "Fundo novo — histórico curto"
+    ],
+    "cota": 104.55
+  },
+  "parecer": {
+    "id": 1152700,
+    "data_entrega": "01/04/2026 15:41",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o período de 10 de fevereiro a 31 de dezembro de 2025, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investim"
+  }
+}

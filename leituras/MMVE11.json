@@ -1,0 +1,45 @@
+{
+  "ticker": "MMVE11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T02:49:26",
+  "comunicados": {
+    "ids": [
+      1166992,
+      1076848,
+      979558,
+      1194555,
+      1007490,
+      1179325,
+      1150787
+    ],
+    "datas": [
+      "20/04/2026",
+      "07/01/2026",
+      "28/08/2025",
+      "15/05/2026",
+      "06/10/2025",
+      "04/05/2026",
+      "31/03/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 20/04/2026\n\n**O QUE aconteceu:** A QI Corretora de Títulos e Valores Mobiliários S.A. aprovou a terceira emissão de cotas do Fundo.\n\n**Resumo:** A administradora do MARESIAS FUNDO DE INVESTIMENTO IMOBILIÁRIO anunciou uma nova emissão de cotas, com um montante mínimo de R$ 499.940,00 e um máximo potencial de R$ 9.999.999,00.\n\n**Trecho-chave:**\n\"Por meio do Ato do Administrador, a 3ª (terceira) emissão de cotas do Fundo, no montante de, no mínimo, 7.142 (sete mil cento e quarenta e dois) Novas Cotas (...), totalizando até R$ 9.999.9990,00 (nove milhões novecentos e noventa e nove mil novecentos e noventa reais).\"\n\n### FATO RELEVANTE entregue em 07/01/2026\n\n**O QUE aconteceu:** A administradora realizou a remarcação do ativo imobiliário, resultando em uma variação positiva de 3,40% no PL/Cota.\n\n**Resumo:** A Singulare Corretora de Títulos e Valores Mobiliários S.A. remarcou o valor do ativo imobiliário do Fundo, levando a um aumento de 3,40% na cota.\n\n**Trecho-chave:**\n\"Em decorrência da referida remarcação, apurou-se uma variação positiva equivalente a 3,40% no PL/Cota do Fundo.\"\n\n### FATO RELEVANTE entregue em 28/08/2025\n\n**O QUE aconteceu:** A administradora comunicou uma variação negativa de -50% no valor do PL/cota do Fundo devido a um haircut, que foi posteriormente retirado.\n\n**Resumo:** O MARESIAS FUNDO DE INVESTIMENTO IMOBILIÁRIO teve seu PL/cota reduzido em 50% devido ao registro de um haircut no imóvel. Posteriormente, o haircut foi removido e a carteira do Fundo foi reprecificada com um impacto positivo de 103,3603%.\n\n**Trecho-chave:**\n\"em 18 de dezembro de 2023, o valor do PL/cota do Fundo apresentou uma variação negativa de aproximadamente -50%, em razão da averbação de haircut na matrícula do imóvel registrado sob o nº 34.459...\"\n\n### COMUNICADO AO MERCADO entregue em 15/05/2026\n\n**O QUE aconteceu:** Foi encerrado o período de exercício do direito de preferência para a terceira emissão de cotas.\n\n**Resumo:** A QI Corretora de Títulos e Valores Mobiliários S.A. informou que 1.777 novas cotas foram subscritas, com R$ 124.390,00 integralizados, deixando um saldo potencial de 141.080 novas cotas.\n\n**Trecho-chave:**\n\"De acordo com as informações recebidas da Administradora, na qualidade de escriturador das Novas Cotas do Fundo (...), foram subscritas e integralizadas 1.777 (mil setecentos e setenta e sete) Novas Cotas...\"\n\n### ASSEMBLEIA AGO entregue em 04/05/2026\n\n**O QUE aconteceu:** A assembleia geral ordinária de cotistas aprovou as demonstrações financeiras do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia, realizada por consulta formal, aprovou as demonstrações contábeis e o relatório dos auditores independentes para o ano de 2025.\n\n**Trecho-chave:**\n\"A Administradora declara que a matéria constante da Ordem do Dia foi aprovada, por cotistas desimpedidos e aptos a deliberar...\"\n\n### ASSEMBLEIA AGO entregue em 31/03/2026\n\n**O QUE aconteceu:** Foi convocada uma assembleia geral ordinária de cotistas para aprovar as demonstrações contábeis do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A QI Corretora de Títulos e Valores Mobiliários S.A. convocou os cotistas para uma assembleia virtual, onde serão deliberadas as demonstrações contábeis do Fundo referentes ao ano de 2025.\n\n**Trecho-chave:**\n\"A presente consulta será realizada por meio da plataforma Cuore para voto à distância, sendo que os documentos relativos a esta consulta estarão disponíveis para apreciação dos cotistas no site da Administradora...\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1147587,
+    "data_entrega": "30/03/2026 11:53",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Maresias Fundo de Investimento Imobiliário em 31 de dezembro de 2025 e o desempenho de suas operações para o exercício findo na mesma data , de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos Fundos de Investimentos Imobi"
+  }
+}

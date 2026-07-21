@@ -1,0 +1,39 @@
+{
+  "ticker": "GCOI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:45:38",
+  "comunicados": {
+    "ids": [
+      1009987,
+      901175,
+      1007426,
+      1022767,
+      998433
+    ],
+    "datas": [
+      "09/10/2025",
+      "13/05/2025",
+      "06/10/2025",
+      "28/10/2025",
+      "25/09/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 09/10/2025\n\n**O que aconteceu:** A administradora do fundo GALAPAGOS SPECIAL OPORTUNITIES FII informou sobre a alienação de três unidades residenciais.\n\n**Resumo:** O fundo vendeu três apartamentos localizados no Edifício Residencial Lumì, em Petrópolis, Porto Alegre/RS. Os recursos obtidos serão destinados conforme as políticas do fundo.\n\n**Trecho-chave:**\n\"O valor total das alienações das unidades é de R$ 7.285.000,00 (sete milhões e duzentos e oitenta e cinco mil reais), que equivalem a R$ 69,25 (sessenta e nove reais e vinte e cinco centavos) por cota.\"\n\n### FATO RELEVANTE entregue em 13/05/2025\n\n**O que aconteceu:** A administradora do fundo GALAPAGOS SPECIAL OPORTUNITIES FII informou sobre a solicitação de pagamento da taxa de gestão.\n\n**Resumo:** A administradora recebeu uma solicitação para o pagamento da taxa de gestão referente aos próximos seis meses, condicionado à alienação de ativos do fundo.\n\n**Trecho-chave:**\n\"caso o Fundo realize a alienação, de ao menos um de seus ativos, a Taxa de Gestão deverá ser provisionada mensalmente, porém a cobrança referente ao período contido entre a competência de abril/2025 e a alienação do referido ativo, deverá ser realizada apenas no 5º (quin to) dia útil do mês subsequente ao recebimento dos recursos advindos da alienação.\"\n\n### COMUNICADO AO MERCADO entregue em 06/10/2025\n\n**O que aconteceu:** A administradora do fundo GALAPAGOS SPECIAL OPORTUNITIES FII informou sobre a mudança no endereço eletrônico institucional.\n\n**Resumo:** Os novos e-mails para contato institucional são fii.adm@qitech.com.br.\n\n**Trecho-chave:**\n\"A partir de agora, nossos novos e-mails para contato institucional são: \n• fii.adm@qitech.com.br\"\n\n### ASSEMBLEIA AGO entregue em 28/10/2025\n\n**O que aconteceu:** A assembleia geral ordinária de cotistas do fundo GALAPAGOS SPECIAL OPORTUNITIES FII aprovou as demonstrações financeiras referentes ao exercício social encerrado em 30 de junho de 2025.\n\n**Resumo:** A assembleia foi realizada por meio de consulta formal e aprovou as demonstrações financeiras do fundo, com quórum adequado.\n\n**Trecho-chave:**\n\"Diante do exposto, a Administradora declara que a matéria constante da Ordem do Dia foi aprovada, por cotistas desimpedidos e aptos a deliberar, conforme os percentuais acima descritos.\"\n\n### ASSEMBLEIA AGO entregue em 25/09/2025\n\n**O que aconteceu:** A administradora do fundo GALAPAGOS SPECIAL OPORTUNITIES FII convocou a assembleia geral ordinária de cotistas para aprovar as demonstrações financeiras referentes ao exercício social encerrado em 30 de junho de 2025.\n\n**Resumo:** A assembleia foi realizada por meio de consulta formal e os cotistas foram convidados a participar, com a possibilidade de votar online até o dia 27 de outubro de 2025.\n\n**Trecho-chave:**\n\"A aprovação das Demonstrações Financeiras do Fundo referentes ao exercício social encerrado em 30 de junho de 2025, as quais os Cotistas declaram ter tido acesso, lido, estar ciente e de acordo com o seu inteiro teor.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 998369,
+    "data_entrega": "25/09/2025 13:14",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Galapagos Special Oportunities Fundo de Investimento Imobiliário em 30 de junho de 2025 e o desempenho de suas operações e seus fluxos de caixa para o exercício findo naquela data, de acordo com as práticas contábeis adotadas no Brasil, apl"
+  }
+}

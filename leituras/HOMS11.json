@@ -1,0 +1,30 @@
+{
+  "ticker": "HOMS11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T04:03:49",
+  "comunicados": {
+    "ids": [
+      1109230,
+      1095989
+    ],
+    "datas": [
+      "12/02/2026",
+      "29/01/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA AGO entregue em 29/01/2026\n\n**Data:** 29/01/2026  \n**Título:** Deliberação sobre aprovação das contas e demonstrações contábeis do exercício social findo em .  \n**Resumo:** A assembleia aprovou as contas e demonstrações contábeis do fundo, relativas ao exercício social findo em , devidamente auditadas.  \n**Trecho-chave:** \"Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em , devidamente auditadas, conforme disponíveis para consulta nos sites da Administradora e nos demais canais exigidos pela regulamentação em vigor.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 12/02/2026\n\n**Data:** 12/02/2026  \n**Título:** Aprovação das contas e demonstrações contábeis do exercício social findo em .  \n**Resumo:** A assembleia aprovou as contas e demonstrações contábeis do fundo, relativas ao exercício social findo em , devidamente auditadas.  \n**Trecho-chave:** \"APROVADA VÓRTX DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.\" (p. 3)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1016862,
+    "data_entrega": "17/10/2025 17:28",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário Rooftop III Responsabilidade Limitada em 30 de junho de 2025 e o desempenho de suas operações para o período de 31 de julho de 2024 (início das atividades) a 30 de junho de 2025, de acordo com as práticas c"
+  }
+}

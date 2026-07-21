@@ -1,0 +1,30 @@
+{
+  "ticker": "XBCI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T07:24:45",
+  "comunicados": {
+    "ids": [
+      1260164,
+      1171715
+    ],
+    "datas": [
+      "20/07/2026",
+      "28/04/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGE"
+    ],
+    "texto": "### ASSEMBLEIA AGO entregue em 20/07/2026\n\n**O QUE aconteceu:** Convocação para Assembleia Geral Ordinária de Cotistas.\n\n**Resumo:** A Hedge Investments Distribuidora de Títulos e Valores Mobiliários Ltda. convocou os cotistas do Fundo Buena Vista DEX VETTAFI NEOS BOOSTED BITCOIN HIGH INCOME para uma Assembleia Geral Ordinária, que será realizada por meio de consulta formal.\n\n**Trecho-chave:** \"A Consulta Formal ocorrerá de forma não presencial, de modo que as deliberações serão tomadas única e exclusivamente por manifestação de voto dos cotistas\" (p. 1).\n\n---\n\n### ASSEMBLEIA AGE entregue em 28/04/2026\n\n**O QUE aconteceu:** Decisões tomadas na Assembleia Geral Extraordinária de Cotistas.\n\n**Resumo:** A Hedge Investments Distribuidora de Títulos e Valores Mobiliários Ltda. informou sobre as decisões tomadas em uma Assembleia Geral Extraordinária, que deliberou pela aprovação da alteração da denominação social do Fundo e a modificação da data de pagamento das distribuições.\n\n**Trecho-chave:** \"Em relação ao item (i) da Ordem do Dia, a maioria dos Cotistas deliberou pela aprovação da alteração da denominação social do Fundo... Os votos proferidos representaram os seguintes percentuais em relação ao total da base votante do Fundo: 3,098% de votos favoráveis; e 0,001% de votos contrários.\" (p. 2)\n\n\"Em relação ao item (ii) da Ordem do Dia, a maioria dos Cotistas deliberou pela alteração da Cláusula 4.1. do Anexo da Classe Única do Regulamento... Os votos proferidos representaram os seguintes percentuais em relação ao total da base votante do Fundo: 3,098% de votos favoráveis; e 0,001% de votos contrários.\" (p. 2)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1233232,
+    "data_entrega": "29/06/2026 19:32",
+    "tipo": "nao_identificado",
+    "rotulo": "parecer não identificado no texto",
+    "grave": false,
+    "continuidade": false,
+    "trecho": ""
+  }
+}

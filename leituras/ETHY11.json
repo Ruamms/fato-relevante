@@ -1,0 +1,27 @@
+{
+  "ticker": "ETHY11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T11:49:26",
+  "comunicados": {
+    "ids": [
+      1260169
+    ],
+    "datas": [
+      "20/07/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO"
+    ],
+    "texto": "**O QUE aconteceu:** Convocação para Assembleia Geral Ordinária do Fundo.\n\n**Resumo:** A Hedge Investments Distribuidora de Títulos e Valores Mobiliários Ltda. convoca os cotistas do Buena Vista DEX VETTAFI Neos Ethereum High Income Fundo de Índice de Responsabilidade Limitada para uma Assembleia Geral Ordinária, que será realizada por meio de consulta formal.\n\n**Trecho-chave:** \"A Consulta Formal ocorrerá de forma não presencial, de modo que as deliberações serão tomadas única e exclusivamente por manifestação de voto dos cotistas\" (p. 1).\n\n---\n\n**O QUE aconteceu:** Convocação para Assembleia Geral Ordinária do Fundo.\n\n**Resumo:** A Hedge Investments Distribuidora de Títulos e Valores Mobiliários Ltda. convoca os cotistas do Buena Vista DEX VETTAFI Neos Ethereum High Income Fundo de Índice de Responsabilidade Limitada para uma Assembleia Geral Ordinária, que será realizada por meio de consulta formal.\n\n**Trecho-chave:** \"A Consulta Formal ocorrerá de forma não presencial, de modo que as deliberações serão tomadas única e exclusivamente por manifestação de voto dos cotistas\" (p. 1)."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1232811,
+    "data_entrega": "29/06/2026 17:46",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeiras do Buena Vista Dex Vettafi Neos Ethereum High Income Fundo de Índice de Responsabilidade Limitada em 31 de março de 2026 e o desempenho das suas operações para o período de 12 de dezembro de 2025 a 31 de março de 2026, de acordo com as prátic"
+  }
+}

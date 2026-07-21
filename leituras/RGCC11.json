@@ -1,0 +1,30 @@
+{
+  "ticker": "RGCC11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T02:45:41",
+  "comunicados": {
+    "ids": [
+      1221309,
+      1221216
+    ],
+    "datas": [
+      "15/06/2026",
+      "15/06/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "**15/06/2026 - Sumário da Consulta Formal do CICA JUNDIAI FUNDO DE INVESTIMENTO IMOBILIÁRIO**\n\nA assembleia aprovou as demonstrações financeiras relativas ao último exercício social findo em 31 de dezembro de 2025, e autorizou a administradora a adotar medidas necessárias para cumprir as determinações da consulta formal.\n\n*\"Os Cotistas representando 45% das cotas emitidas do Fundo, aprovaram as demonstrações financeiras, que incluem o balanço patrimonial, a demonstração de resultados, a demonstração de fluxos de caixa e as notas explicativas correspondentes, relativas ao último exercício social findo em 31 de dezembro de 2025, qual está disponível no website da CVM.\" (p. 1)*\n\nEsta aprovação se conecta aos indicadores do contexto, pois envolve a publicação das demonstrações financeiras, que são importantes para o entendimento do desempenho do fundo."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1226404,
+    "data_entrega": "23/06/2026 16:02",
+    "tipo": "abstencao",
+    "rotulo": "abstenção de opinião",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Não expressamos uma opinião sobre as demonstrações contábeis acima referidas do Cica Jundiaí Fundo de Investimento Imobiliário em 25 de fevereiro de 2026 , pois, devido à relevância dos assuntos descritos na seção a seguir intitulada “Base para abstenção de opinião”, não nos foi possível obter evidência de auditoria apropriada e suficiente para fundamentar nossa opinião de auditoria sobre essas de"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "ticker": "EQIR11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T02:04:32",
+  "relatorio": {
+    "id": 1239770,
+    "data_entrega": "03/07/2026 21:07",
+    "texto": "### Fatos Extraídos:\n\n1. **Movimentações no Mês:**\n   - Alocaram aproximadamente R$ 6 MM na operação de City a uma taxa de CDI+3,50%.\n   - Alocaram aproximadamente R$ 7 MM na operação de FGR a uma taxa de IPCA+10,50%.\n\n2. **Resultado do Mês:**\n   - O fundo registrou um lucro de R$ 1.241.060 no regime de caixa.\n   - A equipe de gestão optou por distribuir R$ 0,10 por cota.\n\n3. **Cotas e Patrimônio Líquido:**\n   - O fundo encerrou maio com um patrimônio líquido de R$ 9,69.\n   - A cota patrimonial foi de R$ 8,51, uma leve queda em relação ao mês anterior.\n\n4. **Carteira Consolidada:**\n   - A carteira está composta principalmente por CRI (92,8%), com 3,4% em cotas de FII e 3,7% em caixa.\n   - O IPCA+ representa 73,4% do patrimônio alocado em CRIs.\n\n5. **Exposição Geográfica:**\n   - A carteira está exposta a 11 estados diferentes, com São Paulo liderando com 25%.\n\n6. **Rendimentos e Dividendos:**\n   - O fundo distribuiu R$ 0,10 por cota em maio.\n   - O rendimento anualizado equivale a aproximadamente 105% da taxa DI ou 124% do CDI bruto.\n\n7. **Projeções e Alocação:**\n   - A gestão planeja aumentar o carrego, buscando equilibrar risco e retorno.\n   - Não há projeções mencionadas neste relatório que sejam garantia de rendimentos.\n\n8. **Rendimentos Acima do Resultado Financeiro:**\n   - Houve um excesso de R$ 6,153 milhões em rendimentos declarados (4T) sobre o resultado financeiro líquido (4T).\n\n9. **Cotações e Liquidez:**\n   - O fundo encerrou maio com 9.594 investidores.\n   - A cota patrimonial foi de R$ 8,51.\n\n### O que observar em seguida:\n- Monitorar a evolução da carteira após as recentes alocações.\n- Observar o comportamento dos rendimentos e se eles continuarão acima do resultado financeiro."
+  },
+  "comunicados": {
+    "ids": [
+      1202496,
+      1063743,
+      1026969
+    ],
+    "datas": [
+      "25/05/2026",
+      "15/12/2025",
+      "03/11/2025"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 25/05/2026\n\n**O QUE aconteceu:** A administradora BTG Pactual Serviços Financeiros S.A. informou sobre a atualização da forma de divulgação dos rendimentos.\n\n**Resumo:** A administração decidiu adotar o uso exclusivo da Ferramenta ANBIMA (Plataforma de Transparência de Taxas) para divulgar os rendimentos, sem alterações nos valores pagos aos cotistas.\n\n**Trecho-chave:**\n\"restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe. Não haverá qualquer alteração nos valores pagos pelos cotistas.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 15/12/2025\n\n**O QUE aconteceu:** A assembleia geral ordinária aprovou as contas e demonstrações contábeis do fundo.\n\n**Resumo:** Os cotistas aprovaram as contas e demonstrações contábeis do fundo, devidamente auditadas, relativas ao exercício social findo em 30 de junho de 2025.\n\n**Trecho-chave:**\n\"Aprovar as contas e demonstrações contábeis do Fundo, devidamente auditadas, relativas ao exercício social findo em 30 de junho de 2025.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 03/11/2025\n\n**O QUE aconteceu:** A assembleia geral ordinária convocou os cotistas para deliberar sobre a aprovação das contas e demonstrações contábeis do fundo.\n\n**Resumo:** A administradora BTG Pactual Serviços Financeiros S.A. convocou os cotistas para uma assembleia não presencial, por meio de consulta formal, para deliberar sobre as contas e demonstrações contábeis do fundo relativas ao exercício social findo em 30 de junho de 2025.\n\n**Trecho-chave:**\n\"Aprovação das contas e demonstrações contábeis do Fundo, devidamente auditadas, relativas ao exercício social findo em [data não especificada].\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares"
+    ],
+    "cota": 8.48
+  },
+  "parecer": {
+    "id": 986767,
+    "data_entrega": "08/09/2025 21:00",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

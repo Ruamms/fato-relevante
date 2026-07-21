@@ -1,0 +1,20 @@
+{
+  "ticker": "CRPT11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:25:03",
+  "comunicados": {
+    "ids": [],
+    "datas": [],
+    "rotulos": [],
+    "texto": null
+  },
+  "parecer": {
+    "id": 1238558,
+    "data_entrega": "02/07/2026 20:25",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente,emtodososaspectosrelevantes,aposiçãopatrimonialefinanceira do Empiricus Teva Criptomoedas Top20 Fundo de Índice em 31 de março de 2026 e o desempenho de suas operações para o exercício findo na mesma data, de acordo comaspráticascontábeisadotadasnoBrasilaplicáveisaosFundosdeInvestimentos Financeiros."
+  }
+}

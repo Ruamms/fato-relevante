@@ -1,0 +1,30 @@
+{
+  "ticker": "CEBB11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T04:30:28",
+  "comunicados": {
+    "ids": [
+      1057199,
+      1029930
+    ],
+    "datas": [
+      "09/12/2025",
+      "06/11/2025"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA AGO entregue em 09/12/2025\n\n**O QUE aconteceu:** Não houve quórum para instalação da Assembleia Geral Ordinária do Fundo.\n\n**Resumo:** A assembleia programada não ocorreu devido à ausência de cotistas, e as demonstrações contábeis foram automaticamente aprovadas.\n\n**Trecho-chave:**\n\"Em virtude do não comparecimento de quaisquer cotistas fora lavrado o Termo de Não Instalação da Assembleia Geral Ordinária e, diante da ausência de opinião modificada nas Demonstrações Contábeis devidamente auditadas do exercício social findo em 30 de junho de 2025, estas foram automaticamente aprovadas.\"\n\n### ASSEMBLEIA AGO entregue em 06/11/2025\n\n**O QUE aconteceu:** Foi convocada uma Assembleia Geral Ordinária para deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo referentes ao exercício social encerrado em 30 de junho de 2025.\n\n**Resumo:** A assembleia foi convocada com instruções específicas sobre o processo de votação eletrônica e os requisitos para participação dos cotistas. Em caso de não instalação, as demonstrações contábeis seriam automaticamente aprovadas.\n\n**Trecho-chave:**\n\"Entretanto, a Administradora informa aos Cotistas que: I. A Administradora ressalta que os votos por meio de comunicação eletrônica deverão ser realizados por meio da plataforma eletrônica , referidas manifestações de voto serão válidas e computadas desde que sejam recebidas pela Administradora antes do início da Assembleia.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1016396,
+    "data_entrega": "16/10/2025 18:16",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Baltimore Fundo de Investimento Imobiliário de Responsabilidade Limitada em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasi"
+  }
+}

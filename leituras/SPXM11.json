@@ -1,0 +1,45 @@
+{
+  "ticker": "SPXM11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:42:49",
+  "comunicados": {
+    "ids": [
+      1104412,
+      1004703,
+      942954,
+      1200654,
+      1198024,
+      1242548,
+      1242547
+    ],
+    "datas": [
+      "06/02/2026",
+      "02/10/2025",
+      "09/07/2025",
+      "21/05/2026",
+      "18/05/2026",
+      "08/07/2026",
+      "08/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 06/02/2026\n\n**O QUE aconteceu:** A 3ª Chamada de Capital da 1ª Emissão do Fundo foi aprovada e está prevista para ser liquidada no dia 19 de fevereiro de 2026.\n\n**Resumo:** O Fundo realizou uma nova chamada de capital, integralizando 277.048 cotas no valor total de R$ 2.770.480,00.\n\n**Trecho-chave:**\n\"Por meio da 3ª Chamada de Capital da 1ª Emissão, deverão ser integralizadas 277,048 (duzentos e setenta e sete mil e quarenta e oito) cotas, no valor de R$ 10,00 (dez reais) por cota, perfazendo o valor total de R$ 2,770,480.00 (dois milhões, setecentos e setenta mil, quatrocentos e oitenta reais), os quais correspondem a cotas subscritas e não integralizadas do Fundo.\"\n\n### FATO RELEVANTE entregue em 02/10/2025\n\n**O QUE aconteceu:** A 2ª Chamada de Capital da 1ª Emissão do Fundo foi aprovada e está prevista para ser liquidada no dia 7 de outubro de 2025.\n\n**Resumo:** O Fundo realizou uma nova chamada de capital, integralizando 277.048 cotas no valor total de R$ 2.770.480,00.\n\n**Trecho-chave:**\n\"A liquidação da 2ª Chamada de Capital está prevista para ocorrer no dia 07 de outubro de 2025.\"\n\n### FATO RELEVANTE entregue em 09/07/2025\n\n**O QUE aconteceu:** A Gestora informou que a cobrança da Taxa de Administração e Gestão será postergada voluntariamente para 7 de outubro de 2025.\n\n**Resumo:** A Gestora decidiu adiar a cobrança da taxa administrativa, sem impacto no valor patrimonial das cotas.\n\n**Trecho-chave:**\n\"A Gestora informa que a cobrança da sua remuneração, presente na Taxa de Administração e Gestão prevista no Capítulo 9 do Regulamento da Classe, correspondente às competências de junho, julho e agosto de 2025, será postergada, de forma voluntária, para a data de 7 de outubro de 2025.\"\n\n### COMUNICADO AO MERCADO entregue em 21/05/2026\n\n**O QUE aconteceu:** A forma de divulgação da remuneração dos Prestadores de Serviços Essenciais foi atualizada.\n\n**Resumo:** O Fundo adotou a Ferramenta ANBIMA para divulgar a remuneração, sem alterar os valores pagos aos cotistas.\n\n**Trecho-chave:**\n\"Considerando as interpretações adicionais divulgadas pelo Ofício-Circular Conjunto nº 1/2025/CVM/SIN/SSE (\"Ofício-Circular CVM nº 1/2025\"), restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\"\n\n### COMUNICADO AO MERCADO entregue em 18/05/2026\n\n**O QUE aconteceu:** As contas anuais do Fundo foram aprovadas na assembleia geral.\n\n**Resumo:** A assembleia geral dos cotistas aprovou as contas anuais do Fundo referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Na assembleia geral de cotistas realizada em 04 de maio de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\"\n\n### ASSEMBLEIA AGE entregue em 08/07/2026\n\n**O QUE aconteceu:** A assembleia geral extraordinária aprovou a orientação para o investimento no Fundo Investido.\n\n**Resumo:** Os cotistas do Fundo aprovaram a orientação ao Gestor para que vote favoravelmente na Assembleia Especial de Cotistas do Fundo Investido, em processo de estruturação.\n\n**Trecho-chave:**\n\"A aprovação da subscrição pela Classe de cotas de fundo de investimento imobiliário, em processo de estruturação, a ser administrado pela Administradora e gerido pelo Gestor, em montante a ser determinado pelo Gestor.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1149862,
+    "data_entrega": "31/03/2026 14:11",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do SPX Real Estate Desenvolvimento de Galpões Logísticos Feeder Bradesco FII Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa o exercício findo nessa data, de acordo com as práticas "
+  }
+}

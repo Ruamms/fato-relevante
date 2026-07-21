@@ -1,0 +1,47 @@
+{
+  "ticker": "KNRE11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T05:36:01",
+  "relatorio": {
+    "id": 1249597,
+    "data_entrega": "15/07/2026 17:47",
+    "texto": "### Fatos Extraídos:\n\n1. **Desinvestimento:** O fundo encontra-se em fase de desinvestimento, com distribuições realizadas compostas por rendimento e devolução de capital.\n2. **Portfólio Desinvestido:** Grandes ativos como CIDADE VIVA RESIDENCIAL, UNIDADES SERGUS / CINQUE TERRE, ILUMINI, entre outros, foram desinvestidos.\n3. **Mercado Imobiliário:** O mercado imobiliário de São Paulo apresentou um crescimento marginal nas vendas e lançamentos em 2026, com uma concentração maior em unidades menores (até 45 m²).\n4. **Rendimentos Irregulares:** Houve meses com dividend yield declarado acima de zero.\n5. **P/VP Baixo:** O P/VP atual é 0,53, muito abaixo da média histórica de 0,88 (114 meses observados).\n6. **Taxa de Administração:** A taxa de administração permanece em 2,25% a.a.\n7. **Cotas e Valor do Ativo:** O valor do ativo é R$ 12,0M, com 18,5 milhões de cotas no mercado secundário.\n\n### O que observar em seguida:\n- Monitorar o progresso das chamadas de capital e a liquidação dos ativos remanescentes.\n- Observar as vendas e lançamentos no mercado imobiliário de São Paulo."
+  },
+  "comunicados": {
+    "ids": [
+      1242332,
+      1049002,
+      1022721
+    ],
+    "datas": [
+      "08/07/2026",
+      "27/11/2025",
+      "28/10/2025"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGE"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 08/07/2026\n\n**O QUE aconteceu:** A Intrag Distribuidora de Títulos e Valores Mobiliários Ltda., administradora do KINEA II Real Estate Equity Fundo de Investimento Imobiliário, decidiu reduzir a sua parcela da Taxa Global do Fundo.\n\n**Resumo:** A administração do fundo decidiu renunciar a uma parte da taxa que recebe, alinhando-a ao nível de esforço atualmente requerido para a condução das atividades do fundo. A nova Taxa Global será de 0,055% ao ano sobre o patrimônio líquido do Fundo.\n\n**Trecho-chave:** \"A partir da presente data , a Taxa de Global prevista no regulamento do Fundo (‘Regulamento’) será equivalente a 0,055% (cinquenta e cinco milésimos por cento) ao ano sobre o patrimônio líquido do Fundo, calculada na forma do Regulamento, acrescida do valor fixo mensal de R$ 100,00 (cem reais).\"\n\n---\n\n### ASSEMBLEIA AGE entregue em 28/10/2025\n\n**O QUE aconteceu:** A assembleia geral extraordinária dos cotistas aprovou a prorrogação do prazo de duração do KINEA II Real Estate Equity Fundo de Investimento Imobiliário.\n\n**Resumo:** Os cotistas deliberaram pela aprovação da prorrogação do prazo de duração do fundo por mais um ano, estendendo-o até 14 de novembro de 2026. A assembleia foi realizada em 27 de novembro de 2025.\n\n**Trecho-chave:** \"a) Aprovação da prorrogação do prazo de duração do Fundo (“Prazo de Duração”), pelo prazo de 01 (um) ano que, nos termos da última aprovação havida pelos Cotistas do Fundo reunidos em Assembleia Geral Extraordinária, encerra-se em 14 de novembro de 2025, de modo que o Prazo de Duração do Fundo passe a se encerrar em 14 de novembro de 2026.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 27/11/2025\n\n**O QUE aconteceu:** A assembleia geral ordinária dos cotistas aprovou as demonstrações contábeis do fundo referentes ao exercício social findo em 30 de junho de 2025.\n\n**Resumo:** A assembleia foi realizada em 27 de novembro de 2025, e os documentos contábeis foram aprovados sem ressalvas. Não houve necessidade de envio do resumo das decisões aos cotistas, dado que todos compareceram.\n\n**Trecho-chave:** \"MATÉRIA DELIBERADA:  aprovadas as Demonstrações Contábeis do Fundo, devidamente acompanhadas do relatório dos auditores independentes, documentos disponibilizados aos cotistas nos termos da regulamentação em vigor, relativos ao exercício social findo em 30.06.2025\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares",
+      "P/VP muito abaixo da média histórica"
+    ],
+    "cota": 0.34
+  },
+  "parecer": {
+    "id": 1001534,
+    "data_entrega": "29/09/2025 20:49",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "ticker": "T10R0",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T07:14:37",
+  "comunicados": {
+    "ids": [
+      1228503,
+      1221533
+    ],
+    "datas": [
+      "25/06/2026",
+      "15/06/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA AGO entregue em 25/06/2026\n\n**O que aconteceu:** Edital de Convocação da Assembleia Geral de Cotistas retificado e ratificado.\n\n**Resumo:** O Itaú Unibanco S.A. retificou o edital original, alterando a ordem do dia e a data para manifestação à consulta formal eletrônica. A nova consulta se refere às Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes referentes ao exercício social encerrado em 31 de março de 2026.\n\n**Trecho-chave:** \"Deliberar sobre as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes referentes ao Fundo, relativos ao exercício social encerrado em 31 de março de 2026.\" (p. 1)\n\n### ASSEMBLEIA AGO entregue em 15/06/2026\n\n**O que aconteceu:** Edital de Convocação da Assembleia Geral de Cotistas enviado.\n\n**Resumo:** O Itaú Unibanco S.A. convocou os cotistas para deliberar sobre as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes referentes ao exercício social encerrado em 28/02/2026.\n\n**Trecho-chave:** \"Deliberar sobre as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes, relativos ao exercício social encerrado em 28/02/2026.\" (p. 1)\n\n---\n\n**Conexão com o contexto:** Ambos os documentos se referem a processos de consulta formal aos cotistas sobre as demonstrações financeiras do fundo, indicando que esses relatórios são um componente importante na gestão e transparência do IT NOW SP TESOURO AMERICANO 10 ANOS BRL FUNDO DE ÍNDICE."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1209687,
+    "data_entrega": "01/06/2026 17:21",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de março de 2026, e o desempenho de suas operações para o período de 26 de agosto de 2025 (início das atividades) a 31 de março de 2026, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de índice."
+  }
+}

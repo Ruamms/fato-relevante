@@ -1,0 +1,45 @@
+{
+  "ticker": "APXU11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:46:59",
+  "comunicados": {
+    "ids": [
+      1115609,
+      858625,
+      848165,
+      1198099,
+      1125078,
+      1198097,
+      1179482
+    ],
+    "datas": [
+      "13/02/2026",
+      "14/03/2025",
+      "26/02/2025",
+      "18/05/2026",
+      "28/02/2026",
+      "18/05/2026",
+      "04/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### O que aconteceu em 18/05/2026\n\n**Título:** Assembleia Geral de Cotistas Aprova Contas Anuais\n\n**Resumo:** A assembleia geral de cotistas do APEX URB FII aprovou as contas anuais referentes ao exercício encerrado em 30 de junho de 2025.\n\n**Trecho-chave:**\n\"Na assembleia geral de cotistas realizada em 08 de maio de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 30 de junho de 2025.\"\n\n---\n\n### O que aconteceu em 14/03/2025\n\n**Título:** Gestora Renuncia à Taxa de Consultoria\n\n**Resumo:** A gestora decidiu, de forma voluntária, renunciar à Taxa de Consultoria relativa ao ano de 2025. As taxas voltarão a ser cobradas a partir de janeiro de 2026.\n\n**Trecho-chave:**\n\"A Gestora resolveu, de forma voluntária, renunciar a Taxa de Consultoria referente ao ano de 2025. Nesses termos, a Taxa de Consultoria voltará a ser cobrada a partir de janeiro de 2026.\"\n\n---\n\n### O que aconteceu em 28/02/2026\n\n**Título:** Informes de Rendimentos Disponibilizados Digitalmente\n\n**Resumo:** A administradora informou que os Informes de Rendimentos referentes ao ano de 2025 estão disponíveis exclusivamente por meio digital, através do Portal do Investidor.\n\n**Trecho-chave:**\n\"Com o intuito de reduzir os custos de impressão e correios para os Fundos, bem como minimizar o uso de papel e seus impactos para o meio ambiente, os Informes de Rendimentos referentes ao ano de 2025, já estão disponíveis aos investidores, conforme previsto na Instrução Normativa RFB nº 2.060/2021, exclusivamente por meio digital, por meio do Portal.\"\n\n---\n\n### O que aconteceu em 13/02/2026\n\n**Título:** Gestora Renuncia à Taxa de Gestão e Consultoria\n\n**Resumo:** A gestora decidiu, de forma voluntária, renunciar às taxas de Gestão e Consultoria relativas ao ano de 2026. As taxas voltarão a ser cobradas a partir de janeiro de 2027.\n\n**Trecho-chave:**\n\"A Gestora decidiu, de forma voluntária, renunciar à Taxa de Gestão e à Taxa de Consultoria relativas ao ano de 2026, permanecendo ambas suspensas durante todo esse período. As referidas taxas voltarão a ser cobradas a partir de janeiro de 2027.\"\n\n---\n\n### O que aconteceu em 26/02/2025\n\n**Título:** Gestora Renuncia à Taxa de Gestão\n\n**Resumo:** A gestora decidiu, de forma voluntária, renunciar à Taxa de Gestão relativa ao ano de 2025. As taxas voltarão a ser cobradas a partir de janeiro de 2026.\n\n**Trecho-chave:**\n\"A Gestora resolveu, de forma voluntária, renunciar a Taxa de Gestão referente ao ano de 2025. Nesses termos, a Taxa de Gestão voltará a ser cobrada a partir de janeiro de 2026.\"\n\n---\n\n### O que aconteceu em 18/05/2026\n\n**Título:** Assembleia Geral Não Instalada\n\n**Resumo:** A assembleia geral para aprovar as contas do exercício encerrado em 30 de junho de 2025 não foi instalada, pois nenhum cotista compareceu.\n\n**Trecho-chave:**\n\"A assembleia de cotistas para aprovação de contas, referente ao exercício social encerrado em 30 de junho de 2025, d a APEX URB FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA foi devidamente convocada em 08 de abril de 2026, e ocorrida em 08 de maio de 2026 sendo certo que nenhum cotista compareceu, não sendo, portanto, possível sua instalação.\"\n\n---\n\n### Conexão com o Contexto\n\n- **Taxa de Gestão e Consultoria:** As renúncias das taxas de gestão e consultoria por parte da gestora (documentos de 13/02/2026 e 26/02/2025) podem impactar positivamente a cotação do fundo, reduzindo custos para os cotistas.\n- **Informes de Rendimentos:** A mudança na forma de disponibilização dos informes (documentos de 14/03/2025 e 28/02/2026) pode afetar a experiência do investidor, mas não altera diretamente os indicadores financeiros.\n- **Aprovação das Contas:** A aprovação das contas anuais (documentos de 18/05/2026 e 04/05/2026) é um passo regular na gestão do fundo, sem impacto direto nos indicadores financeiros."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1138294,
+    "data_entrega": "13/03/2026 22:15",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Apex URB Fundo de Investimento Imobiliário Responsabilidade Limitada em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil "
+  }
+}

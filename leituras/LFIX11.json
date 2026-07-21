@@ -1,0 +1,24 @@
+{
+  "ticker": "LFIX11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:44:20",
+  "comunicados": {
+    "ids": [
+      1211468,
+      1211463,
+      1190014
+    ],
+    "datas": [
+      "02/06/2026",
+      "02/06/2026",
+      "13/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### O QUE ACONTECEU: Alteração na Política de Investimentos do Fundo\n\n**Data:** 02/06/2026  \n**Título da Linha:** Alteração na política de investimentos do fundo Investo V8 Letra Financeira S1 DI B3.  \n**Resumo:** A BTG Pactual Serviços Financeiros S.A. DTVM aprovou alterações no \"CAPÍTULO 4 – POLÍTICA DE INVESTIMENTOS\", permitindo que o fundo invista em ativos financeiros de mesma natureza, mas diferentes emissões, limitados a 20% do montante envolvido na operação.  \n**Trecho-chave:** \"A Classe poderá investir em ativos financeiros que não façam parte do Índice de Referência, mas que sejam da mesma natureza daqueles, porém de diferentes emissões, limitados a 20% (vinte por cento) do montante envolvido na operação, observado o disposto no Anexo Normativo V da Resolução 175.\"  \n*(p. 1)*\n\n---\n\n### O QUE ACONTECEU: Convocação e Deliberação da Assembleia Especial de Cotistas\n\n**Data:** 08/05/2026  \n**Título da Linha:** Convocação para a Assembleia Especial de Cotistas do fundo Investo V8 Letra Financeira S1 DI B3.  \n**Resumo:** A BTG Pactual Serviços Financeiros S.A. DTVM convocou os cotistas para uma Assembleia Especial que ocorreria em 25 de maio de 2026, com a finalidade de aprovar alterações na política de investimentos do fundo.  \n**Trecho-chave:** \"Aprovar a alteração do ‘CAPÍTULO 4 – POLÍTICA DE INVESTIMENTO S’, do Anexo I da Classe Única de Cotas, do Regulamento do Fundo, a fim de alterar o item 4.1 para incluir o inciso “vi”, e incluir os itens 4.1.1 e 4.1.2.\"  \n*(p. 1)*\n\n---\n\n### O QUE ACONTECEU: Deliberações da Assembleia Especial de Cotistas\n\n**Data:** 25/05/2026  \n**Título da Linha:** Aprovação das deliberações na Assembleia Especial de Cotistas do fundo Investo V8 Letra Financeira S1 DI B3.  \n**Resumo:** Durante a Assembleia Especial realizada em 25 de maio de 2026, os cotistas aprovaram as deliberações propostas pela administradora, incluindo alterações na política de investimentos do fundo e aprovação do novo Regulamento Consolidado.  \n**Trecho-chave:** \"Aprovar a alteração do ‘CAPÍTULO 4 – POLÍTICA DE INVESTIMENTO S’, do Anexo I da Classe Única de Cotas, do Regulamento do Fundo, a fim de alterar o item 4.1 para incluir o inciso “vi”, e incluir os itens 4.1.1 e 4.1.2.\"  \n*(p. 1)*"
+  },
+  "modelo": "qwen2.5:7b"
+}

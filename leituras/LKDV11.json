@@ -1,0 +1,42 @@
+{
+  "ticker": "LKDV11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T02:56:31",
+  "comunicados": {
+    "ids": [
+      1118280,
+      1102240,
+      1096379,
+      1188119,
+      1188115,
+      1173631
+    ],
+    "datas": [
+      "19/02/2026",
+      "05/02/2026",
+      "29/01/2026",
+      "13/05/2026",
+      "13/05/2026",
+      "29/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Ocorrências Relacionadas ao Fundo LKDV11\n\n**19/02/2026 - Cancelamento da Amortização**\n- **O que aconteceu:** A administradora e a gestora informaram o cancelamento de uma amortização previamente planejada.\n- **Resumo:** Após reavaliação, a Gestora decidiu não proceder com a amortização anteriormente programada.\n- **Trecho-chave:** \"Em complemento ao Fato Relevante publicado no dia 29 de janeiro de 2026, comunicamos que, após a reavaliação da Gestora em relação as condições operacionais e estratégicas do Fundo, entendeu-se que o melhor cenário neste momento seria cancelar a amortização anteriormente prevista.\"\n\n**05/02/2026 - Amortização de Cotas**\n- **O que aconteceu:** Foi anunciada uma amortização parcial de capital em favor dos cotistas.\n- **Resumo:** A administradora e a gestora informaram sobre a amortização extraordinária, detalhando o cronograma para envio do custo médio de aquisição das cotas e pagamento da amortização.\n- **Trecho-chave:** \"I. Nos termos do item 8.2 do regulamento do Fundo, será efetuada uma amortização parcial de capital em favor dos cotistas, aproximadamente R$ 82,3217733607 por cota.\"\n\n**29/01/2026 - Amortização de Cotas**\n- **O que aconteceu:** Foi anunciada uma amortização parcial de capital em favor dos cotistas.\n- **Resumo:** A administradora e a gestora informaram sobre a amortização extraordinária, detalhando o cronograma para envio do custo médio de aquisição das cotas e pagamento da amortização.\n- **Trecho-chave:** \"I. Nos termos do item 8.2 do regulamento do Fundo, será efetuada uma amortização parcial de capital em favor dos cotistas, no montante total de R$ 5.500.000,00 (cinco milhões e quinhentos mil reais) bruto, correspondente a aproximadamente R$ 82,82 por cota.\"\n\n**13/05/2026 - Aprovação das Contas Anuais**\n- **O que aconteceu:** As contas anuais do Fundo referentes ao exercício encerrado em 31 de dezembro de 2025 foram aprovadas na assembleia geral.\n- **Resumo:** A administradora informou sobre a aprovação das contas anuais no exercício social findo em 31 de dezembro de 2025, realizada em 4 de maio de 2026.\n- **Trecho-chave:** \"A assembleia de cotistas para aprovação de contas, referente ao exercício social encerrado em 31 de dezembro de 2025, foi devidamente convocada em 01 de abril de 2026, e ocorrida em 04 de maio de 2026 sendo certo que nenhum cotista compareceu, não sendo, portanto, possível sua instalação.\"\n\n**29/04/2026 - Convocação para Assembleia**\n- **O que aconteceu:** Foi convocada uma assembleia geral de cotistas para aprovar as contas do exercício social encerrado em 31 de dezembro de 2025.\n- **Resumo:** A administradora convocou os cotistas para a assembleia com prazo de recebimento de votos até 4 de maio de 2026, para deliberarem sobre a aprovação das contas e demonstrações contábeis do Fundo.\n- **Trecho-chave:** \"Aos Cotistas do FUNDO DE INVESTIMENTO IMOBILIARIO DEVELOPMENT V1. A administradora convocou os cotistas para a assembleia com prazo de recebimento de votos até 04 de maio de 2026.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1141934,
+    "data_entrega": "23/03/2026 10:11",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "ticker": "SPYR11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T07:13:38",
+  "comunicados": {
+    "ids": [
+      1237562
+    ],
+    "datas": [
+      "01/07/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO"
+    ],
+    "texto": "**Data:** 30 de junho de 2026  \n**Título:** Assembleia Geral Ordinária Convocada para Deliberar sobre Demonstrações Contábeis  \n**Resumo:** A assembleia geral ordinária será realizada em 15 de julho de 2026, com o objetivo de deliberar sobre as demonstrações contábeis do exercício social findo em 31 de março de 2026. As demonstrações financeiras não contêm opinião modificada e estão disponíveis para prévia avaliação no site do fundo e na sede do administrador.  \n**Trecho-chave:** \"As Demonstrações Financeiras acima mencionadas não contêm opinião modificada e encontram-se disponíveis para prévia avaliação no endereço do Fundo na página <https://bradescoasset.com.br/pt/etfs/etf?ticker=SPYR11> e, também, na sede do Administrador, conforme determina o Parágrafo Único, do Artigo 26, do Anexo V, da Resolução CVM nº 175/22.\" (p. 1)\n\n---\n\n**Conexão com contexto:** Este documento se conecta ao contexto fornecido, pois apresenta as demonstrações contábeis que são relevantes para o acompanhamento financeiro do fundo."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1207047,
+    "data_entrega": "29/05/2026 10:48",
+    "tipo": "nao_identificado",
+    "rotulo": "parecer não identificado no texto",
+    "grave": false,
+    "continuidade": false,
+    "trecho": ""
+  }
+}

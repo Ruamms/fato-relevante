@@ -1,0 +1,36 @@
+{
+  "ticker": "YAGO11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:05:53",
+  "comunicados": {
+    "ids": [
+      767189,
+      425532,
+      1202967,
+      1168356
+    ],
+    "datas": [
+      "29/10/2024",
+      "07/03/2023",
+      "26/05/2026",
+      "23/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 29/10/2024\n\n**O QUE aconteceu:** A administradora do YAGO - FUNDO DE INVESTIMENTO IMOBILIÁRIO – FII distribuiu um pedido judicial de declaração de insolvência civil do Fundo.\n\n**Resumo:** O fundo apresentou um patrimônio líquido negativo e foi solicitada a declaração de insolvência civil.\n\n**Trecho-chave:**\n\"O Patrimônio Líquido do Fundo perfaz o montante negativo de R$ -2.337.866,80, com Total dos Passivos de R$ 56.432.127,45.\"\n\n### FATO RELEVANTE entregue em 07/03/2023\n\n**O QUE aconteceu:** A administradora do YAGO - FUNDO DE INVESTIMENTO IMOBILIÁRIO – FII informou a conclusão da transferência de ações para uma nova empresa.\n\n**Resumo:** A BRL TRUST Transferiu suas ações para a APEX FUND HOLDING LTDA, concluindo a operação.\n\n**Trecho-chave:**\n\"A Operação foi concluída.\"\n\n### ASSEMBLEIA GERAL ORDINÁRIA entregue em 26/05/2026\n\n**O QUE aconteceu:** Não houve instalação da assembleia geral ordinária, e as demonstrações financeiras foram aprovadas por falta de manifestação dos cotistas.\n\n**Resumo:** A assembleia foi realizada por meio de consulta formal, mas não houve participação suficiente para aprovar as demonstrações financeiras.\n\n**Trecho-chave:**\n\"ante a ausência de manifestação dos Cotistas do Fundo, não foi instalada a presente AGO, razão pela qual resta aprovada as Demonstrações Financeiras do Fundo nos termos da §3º do art. 71 do RCVM175.\"\n\n### ASSEMBLEIA GERAL ORDINÁRIA entregue em 23/04/2026\n\n**O QUE aconteceu:** Foi convocada uma assembleia geral ordinária para aprovar as demonstrações financeiras do fundo.\n\n**Resumo:** A assembleia foi convocada de forma não presencial, por meio de consulta formal, com prazo até 24 de maio de 2026 para manifestação dos cotistas.\n\n**Trecho-chave:**\n\"A Consulta Formal se dará com a manifestação de pelo menos 01 (um) Cotista, em conformidade com o disposto na legislação vigente e no Regulamento do Fundo.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1140154,
+    "data_entrega": "18/03/2026 15:20",
+    "tipo": "abstencao",
+    "rotulo": "abstenção de opinião",
+    "grave": true,
+    "continuidade": true,
+    "trecho": "Contudo, devido aos assuntos descritos na seção int itulada “Base para abstenção de opinião”, não nos foi possível obter evidência de auditoria aprop riada e suficiente para fundamentar nossa opinião de auditoria sobre essas demonstrações contábeis."
+  }
+}

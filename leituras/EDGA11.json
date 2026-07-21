@@ -1,0 +1,55 @@
+{
+  "ticker": "EDGA11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T00:44:54",
+  "relatorio": {
+    "id": 1218050,
+    "data_entrega": "11/06/2026 18:06",
+    "texto": "### Fatos Extraídos:\n\n1. **Vacância:** A vacância do imóvel é de 18,72%, com o mesmo valor no trimestre mais recente (p. 3).\n2. **Locações Recentes:**\n   - Nova locação da loja 107 para a Bramex após rescisão antecipada da Tramonto (p. 4).\n   - Ações judiciais contra o Grupo Mauá Bank por inadimplência das unidades Loja 103 e Sala 901 (p. 4).\n3. **Distribuição de Rendimentos:**\n   - O Fundo retomou a distribuição de rendimentos, anunciando R$ 0,02 por cota para outubro/2025 (p. 4).\n   - Prejuízo de R$ 885.247,45 em novembro/2025, equivalente a um impacto negativo de R$ 0,23 por cota (p. 4).\n4. **Locação Devolução:**\n   - Devolução da locatária Transatlantic e nova locação com a WN Facilities para garantir ocupação contínua (p. 5).\n\n### O que observar em seguida:\n1. Monitorar as ações judiciais contra o Grupo Mauá Bank.\n2. Observar a evolução do prejuízo causado pela inadimplência e a recuperação dos valores devidos."
+  },
+  "comunicados": {
+    "ids": [
+      1068023,
+      951425,
+      1198773,
+      1035894,
+      1198772,
+      1169243
+    ],
+    "datas": [
+      "22/12/2025",
+      "24/07/2025",
+      "18/05/2026",
+      "13/11/2025",
+      "18/05/2026",
+      "24/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 24/12/2025\n\n**O QUE aconteceu:** A inadimplência de locatários resultou em um impacto negativo na distribuição de rendimentos.\n\n**Resumo:** A Classe deixou de receber aluguéis e encargos, o que gerou um prejuízo de R$ 885.247,45, refletindo um impacto negativo de R$ 0,23 por cota.\n\n**Trecho-chave:**\n\"Em razão da inadimplência de determinados locatários, a Classe deixou de receber os aluguéis devidos, e arcou com encargos compusórios, tais como condomínio, IPTU e custas judiciais. Como consequência, não haverá resultado caixa disponível para a distribuição de rendimentos até que o prejuízo gerado pela inadimplência seja integralmente compensado.\"\n\n---\n\n### FATO RELEVANTE entregue em 24/07/2025\n\n**O QUE aconteceu:** A inadimplência de locatários resultou em um impacto negativo na distribuição de rendimentos.\n\n**Resumo:** A Classe deixou de receber aluguéis, o que gerou um prejuízo de R$ 885.247,45, refletindo um impacto negativo de R$ 0,23 por cota.\n\n**Trecho-chave:**\n\"Em razão da inadimplência de determinados locatários, a Classe deixou de receber os aluguéis devidos, o que resultou em um impacto negativo de , aproximandamente, R$ 0 ,066117 por cota na distribuição de rendimentos.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 18/05/2026\n\n**O QUE aconteceu:** As contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025 foram aprovadas na assembleia geral.\n\n**Resumo:** A assembleia geral de cotistas realizada em 06 de maio de 2026 aprovou as contas anuais do Fundo.\n\n**Trecho-chave:**\n\"Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 13/11/2025\n\n**O QUE aconteceu:** A administradora esclareceu que não há ato ou fato relevante que justifique a variação do valor da cota do Fundo.\n\n**Resumo:** A administradora informou à B3 que não tem conhecimento de ato ou fato relevante que possa justificar as oscilações recentes no mercado secundário.\n\n**Trecho-chave:**\n\"A Administradora esclarece que não tem conhecimento de ato ou fato relevante que possa justificar a variação do valor da cota do Fundo no mercado secundário de bolsa da B3 – Brasil, Bolsa e Balcão e que não tenha sido tempestivamente divulgado aos cotistas e ao mercado.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 18/05/2026\n\n**O QUE aconteceu:** As contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025 foram aprovadas.\n\n**Resumo:** A assembleia geral de cotistas realizada via manifestação de voto aprovou as contas e demonstrações contábeis do Fundo para o exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 24/04/2026\n\n**O QUE aconteceu:** A assembleia geral convocada para aprovar as contas e demonstrações contábeis do Fundo referente ao exercício social findo em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia geral foi convocada para deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, acompanhadas do relatório do auditor independente, referentes ao exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Aos Cotistas do FUNDO DE INVESTIMENTO IMOBILIARIO FII EDIFICIO GALERIA / Convocação para a Consulta Formal, com prazo de recebimento de votos até 06 de maio de 2026, para deliberarem sobre: (i) A aprovação das contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de dezembro de 2025.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Vacância física alta",
+      "Rendimentos irregulares"
+    ],
+    "cota": 13.23
+  },
+  "parecer": {
+    "id": 1146964,
+    "data_entrega": "27/03/2026 16:13",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

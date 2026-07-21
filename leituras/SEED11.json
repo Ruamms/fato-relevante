@@ -1,0 +1,43 @@
+{
+  "ticker": "SEED11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T01:07:17",
+  "relatorio": {
+    "id": 1247563,
+    "data_entrega": "14/07/2026 17:20",
+    "texto": "### Fatos do Relatório Gerencial SEED11\n\n1. **Composição da Carteira**: O fundo possui uma carteira diversificada, com ativos como HREC11 (R$ 118.320.000), HGBL11 (R$ 15.135.264), HERT11 (R$ 6.081.900), HGBS11 (R$ 3.900.000), HDEL11, CRI (R$ 8.454.706) e Renda Fixa (R$ 672.621). (p. 3)\n\n2. **Resultado Operacional**: O fundo distribuirá R$ 1,15 por cota sênior como rendimento referente ao mês de junho de 2026. (p. 4)\n\n3. **Patrimônio Líquido e Cotas**: O patrimônio líquido do fundo é de R$ 151,1 milhões, com 1.640.000 cotas em circulação. (p. 2)\n\n4. **Cotistas**: O número de cotistas é muito baixo, com apenas 131 cotistas no último informe mensal. (p. 2)\n\n5. **Renda Fixa e CRIs**: A renda fixa representa R$ 672.621 do total de ativos, enquanto os CRIs representam R$ 8.454.706. (p. 3)\n\n6. **Distribuição de Rendimentos**: O resultado operacional distribuído foi de R$ 1.474.201, com a cota sênior recebendo R$ 1,15 por cota. (p. 4)\n\n7. **Rentabilidade para o Investidor**: A rentabilidade bruta total do fundo é de 54,50% para as cotas seniores e -11,20% para as subordinadas no período analisado. (p. 4)\n\n8. **Política de Distribuição de Resultados**: O rendimento será distribuído priorizando os detentores de Cotas Seniores até o Benchmark, e os resultados remanescentes serão pagos aos detentores de Cotas Subordinadas. (p. 5)\n\n### O que observar em seguida:\n1. **Monitorar a Base de Cotistas**: Com apenas 131 cotistas, qualquer mudança nesse número pode impactar significativamente o fundo.\n2. **Analisar a Distribuição de Rendimentos Futuras**: Verificar se as distribuições futuras seguirão a política estabelecida e como isso afetará os rendimentos dos diferentes tipos de cota."
+  },
+  "comunicados": {
+    "ids": [
+      1021642,
+      999686
+    ],
+    "datas": [
+      "27/10/2025",
+      "26/09/2025"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA AGO entregue em 27/10/2025\n\n**Data:** 27/10/2025  \n**Título:** Não houve instalação da assembleia geral ordinária de cotistas.  \n**Resumo:** A assembleia foi realizada por meio de consulta formal, mas não obteve quórum para instalação devido à ausência de manifestação dos cotistas. As demonstrações financeiras do exercício social encerrado em 30/06/2025 foram consideradas automaticamente aprovadas.  \n**Trecho-chave:** \"Em virtude da ausência de manifestação de voto de cotistas, a instalação da presente assembleia restou prejudicada.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 26/09/2025\n\n**Data:** 26/09/2025  \n**Título:** Convocação para assembleia geral ordinária de cotistas por meio de consulta formal.  \n**Resumo:** A Hedge Investments Distribuidora de Títulos e Valores Mobiliários Ltda., administradora do Hedge Seed Fundo de Investimento Imobiliário, convocou os cotistas para uma assembleia virtual com o objetivo de aprovar as contas e demonstrações financeiras referentes ao exercício social encerrado em 30/06/2025.  \n**Trecho-chave:** \"HEDGE INVESTMENTS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA., inscrita no CNPJ sob o nº 07.253.654/0001-76, com sede na Avenida Brigadeiro Faria Lima, nº 3.600, 11º andar, cjto 112 (parte), Itaim Bibi, na cidade e Estado de São Paulo, na qualidade de instituição administradora (\"Administradora\") do HEDGE SEED FUNDO DE INVESTIMENTO IMOBILIÁRIO DE RESPONSABILIDADE LIMITADA\" (p. 1)"
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Base de cotistas muito pequena"
+    ],
+    "cota": 100.0
+  },
+  "parecer": {
+    "id": 999604,
+    "data_entrega": "26/09/2025 17:17",
+    "tipo": "ressalva",
+    "rotulo": "opinião com ressalva",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

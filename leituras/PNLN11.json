@@ -1,0 +1,50 @@
+{
+  "ticker": "PNLN11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T05:12:24",
+  "relatorio": {
+    "id": 1224289,
+    "data_entrega": "18/06/2026 18:48",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Alavancagem**: A alavancagem do fundo é de 54%, conforme mencionado na página 1 (p. 1).\n2. **Contrato de Locação**: O galpão está sob contrato atípico de longo prazo com uma locadora multinacional japonesa, previsto para iniciar no final de 2024, conforme informado na página 1 (p. 1).\n3. **Obra em Andamento**: A obra do galpão encontra-se em fase final, com 97% da execução física realizada e 62% financeiramente, segundo as curvas fiscais e financeiras apresentadas na página 4 (p. 4).\n4. **Localização do Ativo**: O galpão está localizado na divisa entre São Paulo e São Bernardo do Campo, com fácil acesso pela Rod. Anchieta, conforme mencionado na página 1 (p. 1).\n5. **Exposição Máxima**: A exposição máxima do fundo é de R$ 15,8 milhões, informada na página 1 (p. 1).\n\n### O que observar em seguida:\n- Monitorar a conclusão da obra e o início das operações locatícias.\n- Atentar para eventuais mudanças no valor patrimonial da cota, já que há uma tendência de queda.\n\nO relatório não menciona compras ou vendas recentes de ativos, nem renegociações de contratos. Não há informações sobre vacância e inadimplência, nem sobre eventos societários relevantes."
+  },
+  "comunicados": {
+    "ids": [
+      1235518,
+      1207170,
+      1214285,
+      1180524
+    ],
+    "datas": [
+      "30/06/2026",
+      "29/05/2026",
+      "08/06/2026",
+      "05/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 08/06/2026 - Assembleia Geral Ordinária Não Instalada\n\n**O que aconteceu:** A assembleia geral ordinária (AGO) não foi instalada devido à ausência de manifestação dos cotistas.\n\n**Resumo:** A AGO, convocada para 4 de junho de 2026, não teve presença suficiente dos cotistas e, por isso, a aprovação das demonstrações financeiras do exercício social findo em 31 de dezembro de 2025 foi aprovada sem instalação formal da assembleia.\n\n**Trecho-chave:**\n\"Ante a ausência de manifestação dos Cotistas do Fundo, não foi instalada a presente AGO, razão pela qual com fulcro no §3º do art. 71 do RCVM 175, resta aprovada a Demonstração Financeira do Fundo.\"\n\n---\n\n### 29/05/2026 - Não Distribuição de Resultados em Maio/2026\n\n**O que aconteceu:** Não houve distribuição de resultados no mês de maio/2026, devido à ausência de lucro.\n\n**Resumo:** O fundo não realizou a distribuição de resultados referente ao mês de maio/2026, pois não houve lucro auferido.\n\n**Trecho-chave:**\n\"em relação ao mês de MAIO/2026, não haverá distri buição de resultados em razão da ausência de lucro auferido.\"\n\n---\n\n### 30/06/2026 - Não Distribuição de Resultados em Junho/2026\n\n**O que aconteceu:** Não houve distribuição de resultados no mês de junho/2026, devido à ausência de lucro.\n\n**Resumo:** O fundo não realizou a distribuição de resultados referente ao mês de junho/2026, pois não houve lucro auferido.\n\n**Trecho-chave:**\n\"em relação ao mês de JUNHO/2026, não haverá distribuição de resultados em razão da ausência de lucro auferido.\"\n\n---\n\n### Conexões com o Contexto:\n- **Indicadores:** A falta de distribuição de resultados reflete a situação contábil do fundo, que teve um patrimônio líquido de R$ 21,7M e um valor do ativo de R$ 23,0M, com uma queda de -9,18% no valor do ativo nos últimos 12 meses."
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Menos cotistas que o mínimo para isenção de IR",
+      "Emissão de cotas com VP/cota em queda",
+      "Rendimentos irregulares"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 1147262,
+    "data_entrega": "27/03/2026 21:47",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Panorama Last Mile SBC - Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis ado"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "ticker": "RBRI11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T03:06:51",
+  "relatorio": {
+    "id": 1237808,
+    "data_entrega": "01/07/2026 22:17",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Taxa de Administração e Gestão:**\n   \"0,2% a.a. sobre Patrimônio Líquido\" (p. 1)\n\n2. **Projeção de Investimento Máximo:**\n   \"Fluxo de Investimento Projetado R$ 169 mi\" (p. 1)\n\n3. **Taxa de Performance:**\n   \"20% do que exceder IPCA + 6% a.a.\" (p. 1)\n\n4. **Projeção de Lucro Líquido Esperado:**\n   \"R$ 53 MM\" (p. 1)\n\n5. **Exposição Total de Capital Aprovado:**\n   \"R$ 1.443 MM\" (p. 2)\n\n6. **Segmentos de Mercado e Alocação do Portfólio:**\n   \"Alocação Total Prevista: 50% Econômico, 50% Médio\" (p. 2)\n   \"Margem MOIC: 1,38x\" (p. 1)\n\n7. **Projeção de VGV Total:**\n   \"Expectativa de VGV Total R$ 148 MM\" (p. 2)\n\n8. **Localização dos Ativos:**\n   - Conceição: 78,2%\n   - Pompeia: 7,3% (p. 2)\n   - Alcatrazes: 30,0% (p. 2)\n\n### O que observar em seguida:\n- Monitorar a evolução do capital comprometido e integralizado.\n- Observar as chamadas de capital futuras e suas justificativas."
+  },
+  "comunicados": {
+    "ids": [
+      1237752,
+      1154788,
+      1066074,
+      1124987,
+      1116633,
+      1068061,
+      1041394
+    ],
+    "datas": [
+      "01/07/2026",
+      "06/04/2026",
+      "18/12/2025",
+      "27/02/2026",
+      "13/02/2026",
+      "22/12/2025",
+      "17/11/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### O QUE aconteceu em 22/12/2025\n\n**Título:** Assembleia Geral Ordinária de Cotistas Aprova Contas do Exercício Social\n\n**Resumo:** A assembleia geral ordinária de cotistas aprovou as contas e demonstrações contábeis do fundo, relativas ao exercício social findo em 30 de junho de 2025.\n\n**Trecho-chave:**\n\"Matéria I. Aprovar as contas e demonstrações contábeis do Fundo, devidamente auditadas, relativas ao exercício social findo em 30 de junho de 2025.\nResultado: Matéria I Aprovada.\"\n\n### O QUE aconteceu em 17/11/2025\n\n**Título:** Convocação para Assembleia Geral Ordinária por Consulta Formal\n\n**Resumo:** A administradora convocou os cotistas para a assembleia geral ordinária do fundo, que será realizada de forma não presencial por meio de consulta formal. A assembleia tem como objeto aprovar as contas e demonstrações contábeis do exercício social findo em 30 de junho de 2025.\n\n**Trecho-chave:**\n\"1. Aprovação das contas e demonstrações contábeis do Fundo, devidamente auditadas, relativas ao exercício social findo em 30 de junho de 2025.\"\n\n### O QUE aconteceu em 18/12/2025\n\n**Título:** Amortização Extraordinária de Cotas\n\n**Resumo:** A administradora informou que será efetuada uma amortização parcial de cotas em favor dos cotistas, conforme cronograma estabelecido.\n\n**Trecho-chave:**\n\"Nos termos do capítulo 7 do regulamento do Fundo, será efetuada uma amortização parcial de cotas em favor dos cotistas ('Amortização Extraordinária'), conforme indicado no cronograma abaixo.\"\n\n### O QUE aconteceu em 06/04/2026\n\n**Título:** Amortização Extraordinária de Cotas\n\n**Resumo:** A administradora informou que será efetuada uma amortização parcial de cotas em favor dos cotistas, conforme cronograma estabelecido.\n\n**Trecho-chave:**\n\"Nos termos do capítulo 7 do regulamento do Fundo, será efetuada uma amortização parcial de cotas em favor dos cotistas ('Amortização Extraordinária'), conforme indicado no cronograma abaixo.\"\n\n### O QUE aconteceu em 01/07/2026\n\n**Título:** Amortização Extraordinária de Cotas\n\n**Resumo:** A administradora informou que será efetuada uma amortização parcial de cotas em favor dos cotistas, conforme cronograma estabelecido.\n\n**Trecho-chave:**\n\"Nos termos do capítulo 7 do regulamento do Fundo, será efetuada uma amortização parcial de cotas em favor dos cotistas ('Amortização Extraordinária'), conforme indicado no cronograma abaixo.\"\n\n### O QUE aconteceu em 27/02/2026\n\n**Título:** Informes de Rendimentos Disponibilizados Digitalmente\n\n**Resumo:** A administradora informou que os informes de rendimentos referentes ao ano de 2025 serão disponibilizados exclusivamente por meio digital, através do portal do investidor.\n\n**Trecho-chave:**\n\"Em complemento ao Comunicado ao Mercado de 2 de fevereiro de 2026 e ao Comunicado ao Mercado de 13 de fevereiro de 2026, a Administradora informa que, com o intuito de reduzir os custos de impressão e correios para os Fundos, bem como minimizar o uso de papel e seus impactos para o meio ambiente, os Informes de Rendimentos ('Informes') referentes ao ano de 2025, já estão disponíveis aos investidores, conforme previsto na Instrução Normativa RFB nº 2.060/2021, exclusivamente por meio digital, por meio do Portal do Investidor ('Portal').\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "VP/cota em queda relevante",
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares",
+      "Base de cotistas muito pequena",
+      "P/VP muito abaixo da média histórica"
+    ],
+    "cota": 225.02
+  },
+  "parecer": {
+    "id": 994954,
+    "data_entrega": "22/09/2025 09:53",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário - FII RBR Desenvolvimento III Responsabilidade Limitada em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábei"
+  }
+}

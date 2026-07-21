@@ -1,0 +1,30 @@
+{
+  "ticker": "CXDS11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T11:44:24",
+  "comunicados": {
+    "ids": [
+      1248672,
+      1244695
+    ],
+    "datas": [
+      "15/07/2026",
+      "13/07/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO/E",
+      "Assembleia AGO/E"
+    ],
+    "texto": "### Assembleia Agendada para 11 de Junho de 2026, Realizada em 10 de Julho de 2026\n\n**O QUE aconteceu:** A assembleia ordinária e extraordinária de cotistas do Fundo de Investimento Imobiliário CAIXA Desenvolvimento Imobiliário foi realizada no escritório da Administradora.\n\n**Resumo:** A assembleia deliberou sobre as demonstrações financeiras do exercício social findo em 31 de dezembro de 2025 e a distribuição de rendimentos considerando os resultados apurados no 2º semestre de 2025. O item (i) foi aprovado, enquanto o item (ii) foi reprovado.\n\n**Trecho-chave:** \"A matéria constante do item ‘i’ da Ordem do Dia foi aprovada pela totalidade das Cotas Subscritas presentes; e (ii) A matéria constante do item ‘ii’ da Ordem do Dia foi reprovada pela totalidade das Cotas Subscritas presentes, de maneira que os resultados apurados pelo Fundo no 2º semestre de 2025 não serão distribuídos ao Cotista e, portanto, permanecerão no patrimônio do Fundo.\" (p. 1)\n\n**Conexão com o contexto:** A assembleia rejeitou a distribuição dos rendimentos apurados no 2º semestre de 2025, mantendo os resultados no patrimônio do fundo, que já apresentava um déficit líquido e uma baixa taxa de distribuição de rendimentos."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1185527,
+    "data_entrega": "11/05/2026 17:49",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": true,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe Única Do Fundo De Investimento Imobiliário Caixa Desenvolvimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus respectivos fluxos de caixa para o exercício findo nessa data, d"
+  }
+}

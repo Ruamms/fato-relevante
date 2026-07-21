@@ -1,0 +1,33 @@
+{
+  "ticker": "VGII11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T04:34:38",
+  "comunicados": {
+    "ids": [
+      957821,
+      1217276,
+      1164875
+    ],
+    "datas": [
+      "31/07/2025",
+      "11/06/2026",
+      "15/04/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 31/07/2025\n\n**O QUE aconteceu:** Não houve distribuição de rendimentos no mês de julho/2025.\n\n**Resumo:** O Administrador informou que, conforme previsto no Regulamento do Fundo, não haverá distribuição de rendimentos para o mês de julho/2025, pois o Fundo não apresentou resultado positivo.\n\n**Trecho-chave:**\n\"Em relação ao mês de julho/2025, informamos que não haverá distribuição de rendimentos pois o Fundo não apresentou resultado.\"\n\n### EDITAL DE CONVOCAÇÃO DE ASSEMBLEIA GERAL ORDINÁRIA entregue em 15/04/2026\n\n**O QUE aconteceu:** Foi convocada uma Assembleia Geral Ordinária para o dia 15 de maio de 2026, às 08:30.\n\n**Resumo:** O Administrador do Fundo convocou a assembleia para deliberar sobre a aprovação das contas e demonstrações contábeis referentes ao exercício social encerrado em 31 de dezembro de 2025. A Assembleia foi programada para o dia 15 de maio de 2026.\n\n**Trecho-chave:**\n\"O BANCO DAYCOVAL S.A., sociedade com sede na Cidade de São Paulo, Estado de São Paulo, na Avenida Paulista, 1.793, 9º andar, Bela Vista, São Paulo - SP, inscrita no CNPJ/ME sob o nº 62.232.889/0001-90, na qualidade de instituição administradora do Valora CRI Infra II Fundo de Investimento Imobiliário de Responsabilidade Limitada, inscrito no CNPJ/ME sob o nº 52.649.680/0001-72 (‘Administradora’ e ‘Fundo’, respectivamente), nos termos do regulamento do Fundo, vem por meio desta, convocar V.Ss. (“Cotistas”) para a Assembleia Geral Ordinária (‘Assembleia’), a ser realizada no dia 15 de maio de 2026, às 08:30, para que seja deliberada a seguinte matéria, conforme ordem do dia.\"\n\n### RESUMO DAS DECISÕES DA ASSEMBLEIA GERAL ORDINÁRIA entregue em 11/06/2026\n\n**O QUE aconteceu:** Não houve quórum para instalação da Assembleia Geral Ordinária programada para o dia 15 de maio de 2026.\n\n**Resumo:** A assembleia não foi instalada por falta de cotistas, e as Demonstrações Contábeis do exercício social encerrado em 31 de dezembro de 2025 foram automaticamente aprovadas.\n\n**Trecho-chave:**\n\"Em virtude do não comparecimento de quaisquer Cotistas, constatou-se não ter o quórum legal mínimo de instalação para deliberar sobre a matéria constante na ordem do dia. Presentes somente os representantes do Administrador.\"\n\n**Conexão com indicadores:** A ausência de cotistas para a assembleia pode refletir a baixa aderência dos investidores, que já é um indicador negativo para o fundo."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1141036,
+    "data_entrega": "19/03/2026 19:51",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Valora CRI Infra II Fundo de Investimento Imobiliário de Responsabilidade Limitada em 31 de dezembro de 2025 , o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis ado"
+  }
+}

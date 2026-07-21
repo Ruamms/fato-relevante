@@ -1,0 +1,36 @@
+{
+  "ticker": "PABY11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T11:45:01",
+  "comunicados": {
+    "ids": [
+      1177201,
+      1150633,
+      1246875,
+      1226785
+    ],
+    "datas": [
+      "30/04/2026",
+      "31/03/2026",
+      "14/07/2026",
+      "23/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### 23/06/2026: Proposta de Deliberação em Assembleia Geral Extraordinária\n\n**O que aconteceu:** A administradora do Fundo Panamby propôs a deliberação em uma assembleia extraordinária sobre negociação com a Prefeitura Municipal de São Paulo envolvendo ativos do fundo, incluindo potencial doação com transferência de direito de construir.\n\n**Resumo:** A administradora apresentou uma proposta para aprovar negociações relacionadas aos ativos do fundo com a Prefeitura de São Paulo, permitindo discussão de cenários alternativos e estruturas negociais. As deliberações dependem da aprovação pela maioria dos cotistas.\n\n**Trecho-chave:**\n\"O Administrador propõe a aprovação das matérias da Ordem do Dia. Ademais, o Administrador informa que está à disposição para sanar eventuais dúvidas por meio dos canais de atendimento disponibilizados no Edital de Convocação da Consulta Formal.\"\n\n### 31/03/2026 e 30/04/2026: Suspensão da Distribuição Mensal\n\n**O que aconteceu:** A administradora do Fundo Panamby informou a suspensão da distribuição mensal de dividendos, medida que será reavaliada mensalmente.\n\n**Resumo:** A administradora notificou os cotistas e o mercado sobre a suspensão da distribuição mensal de dividendos no fundo. Esta decisão será reavaliada regularmente e informará quaisquer alterações.\n\n**Trecho-chave:**\n\"Esta medida será reavaliada mensalmente e tanto os cotistas, quanto o mercado serão informados acerca de qualquer alteração na situação supramencionada.\"\n\n### 14/07/2026: Prorrogação da Consulta Formal\n\n**O que aconteceu:** A administradora prorrogou a data final para a consulta formal de votos em assembleia extraordinária, estendendo-a até o dia 07 de agosto de 2026.\n\n**Resumo:** O Administrador prorrogou a Data Final da Consulta Formal do Fundo Panamby, permitindo que os cotistas enviem seus votos até 15 horas do dia 07 de agosto de 2026. A consulta se refere à aprovação de negociações com a Prefeitura Municipal de São Paulo.\n\n**Trecho-chave:**\n\"Prorrogar a Data Final da Consulta Formal, de modo que os votos deverão ser proferidos até às 15 horas do dia 07 de agosto de 2026, conforme solicitado pelos Cotistas, considerada, para todos os fins, como a data da realização da Assembleia Geral Extraordinária de Cotistas.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1149181,
+    "data_entrega": "30/03/2026 21:28",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": true,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário Panamby (“Fundo”) em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis ao"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "ticker": "SRVD11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:21:10",
+  "comunicados": {
+    "ids": [
+      963455,
+      730772,
+      1075563,
+      1066369
+    ],
+    "datas": [
+      "08/08/2025",
+      "02/09/2024",
+      "06/01/2026",
+      "19/12/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 08/08/2025\n\n**O QUE aconteceu:** A Serra Verde Fundo de Investimento Imobiliário divulgou a reavaliação negativa do seu patrimônio líquido.\n\n**Resumo:** O valor do patrimônio líquido do fundo diminuiu em 69,19% em relação à Data Base de 31 de dezembro de 2024.\n\n**Trecho-chave:**\n\"O laudo de avaliação da investida referente a 31 de dezembro de 2024 foi concluído em julho de 2025 pela empresa especializada B2R Capital, resultando em uma variação negativa de 69,19% no valor do patrimônio líquido do Fundo em sua Data Base.\"\n\n### FATO RELEVANTE entregue em 02/09/2024\n\n**O QUE aconteceu:** A Serra Verde Fundo de Investimento Imobiliário divulgou a reavaliação negativa do seu patrimônio líquido.\n\n**Resumo:** O valor do patrimônio líquido do fundo diminuiu em 54,74% em relação à Data Base de dezembro/2023.\n\n**Trecho-chave:**\n\"O ativo do fundo foi reavaliado a valor justo em dezembro/2023 pela empresa especializada B2R CAPITAL, resultando em valor 54,61% inferior ao valor contábil atual da referida investida, o que representa uma variação negativa de 54,74% no valor do patrimônio líquido do fundo.\"\n\n### ASSEMBLEIA AGE entregue em 06/01/2026\n\n**O QUE aconteceu:** A Serra Verde Fundo de Investimento Imobiliário realizou uma assembleia geral extraordinária (AGE) para aprovar a transferência da administração do fundo.\n\n**Resumo:** A assembleia aprovou a transferência da administração, escrituração, controladoria e custódia do fundo da Vórtx Distribuidora de Títulos e Valores Mobiliários Ltda. para a Qore Distribuidora de Títulos e Valores Mobiliários Ltda., com 65,17% dos votos favoráveis.\n\n**Trecho-chave:**\n\"A matéria da seguinte Ordem do Dia foi APROVADA, conforme quórum indicado abaixo:\n1) A transferência da administração, escrituração, controladoria e custódia do Fundo da Administradora para a QORE DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA., sociedade limitada com sede na Cidade de São Paulo, Estado de São Paulo, na Rua Fidêncio Ramos, n° 302, conjunto 101, Vila Olímpia, CEP 04551 -010, inscrita no CNPJ sob o nº 62.264.924/0001-52 (‘Nova Administradora’, ‘Nova Custodiante’, ou ‘Qore’), a partir da abertura de 05 de janeiro de 2026 (‘Data de Transferência’).\"\n\n### ASSEMBLEIA AGE entregue em 19/12/2025\n\n**O QUE aconteceu:** A Serra Verde Fundo de Investimento Imobiliário realizou uma assembleia geral extraordinária (AGE) para aprovar a transferência da administração do fundo.\n\n**Resumo:** A assembleia reiterou e confirmou a transferência da administração, escrituração, controladoria e custódia do fundo da Vórtx Distribuidora de Títulos e Valores Mobiliários Ltda. para a Qore Distribuidora de Títulos e Valores Mobiliários Ltda., com 65,17% dos votos favoráveis.\n\n**Trecho-chave:**\n\"A matéria da seguinte Ordem do Dia foi APROVADA, conforme quórum indicado abaixo:\n1) A transferência da administração, escrituração, controladoria e custódia do Fundo da Administradora para a QORE DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA., sociedade limitada com sede na Cidade de São Paulo, Estado de São Paulo, na Rua Fidêncio Ramos, n° 302, conjunto 101, Vila Olímpia, CEP 04551 -010, inscrita no CNPJ sob o nº 62.264.924/0001-52 (‘Nova Administradora’, ‘Nova Custodiante’, ou ‘Qore’), a partir da abertura de 05 de janeiro de 2026 (‘Data de Transferência’).\"\n\n**Conexão com indicadores:** A reavaliação negativa do patrimônio líquido e o baixo número de cotistas podem impactar negativamente os indicadores financeiros do fundo, como a cotação, P/VP, e o valor do ativo."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1020981,
+    "data_entrega": "27/10/2025 10:04",
+    "tipo": "ressalva",
+    "rotulo": "opinião com ressalva",
+    "grave": true,
+    "continuidade": true,
+    "trecho": "Em nossa opinião, exceto pelos possíveis efeitos que possam decorrer do assunto descrito na seção “Base para opinião com ressalva”, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Serra Verde Fundo de Investimento Imobiliário em 31 de dezembro de 2024, o desempenho de suas operações e os seus fluxos de ca"
+  }
+}

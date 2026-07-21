@@ -1,0 +1,20 @@
+{
+  "ticker": "GBTC11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:30:41",
+  "comunicados": {
+    "ids": [],
+    "datas": [],
+    "rotulos": [],
+    "texto": null
+  },
+  "parecer": {
+    "id": 1202659,
+    "data_entrega": "26/05/2026 11:05",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Buena Vista Hashdex Gold & Bitcoin Fundo de Índice – Responsabilidade Limitada em 31 de março de 2026, o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis a Fun"
+  }
+}

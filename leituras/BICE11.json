@@ -1,0 +1,45 @@
+{
+  "ticker": "BICE11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T01:59:41",
+  "comunicados": {
+    "ids": [
+      1223713,
+      1152901,
+      1124638,
+      1235234,
+      1208068,
+      1047340,
+      1021583
+    ],
+    "datas": [
+      "17/06/2026",
+      "01/04/2026",
+      "27/02/2026",
+      "30/06/2026",
+      "29/05/2026",
+      "26/11/2025",
+      "27/10/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 17/06/2026\n\n**O que aconteceu:** Amortização parcial das cotas no valor total de R$ 27.000.325,32.\n\n**Resumo:** O Gestor recomendou ao Administrador a amortização parcial das cotas do BICE11, com o pagamento previsto para 15 de julho de 2026.\n\n**Trecho-chave:**\n\"O Gestor recomendou ao Administrador a amortização das cotas no montante de R$ 27.000.325,32 (vinte e sete milhões e trezentos e vinte e cinco reais e trinta e dois centavos), equivalente ao valor de R $ 202,38 por cota.\"\n\n### FATO RELEVANTE entregue em 01/04/2026\n\n**O que aconteceu:** Amortização parcial das cotas no valor total de R$ 15.000.000,00.\n\n**Resumo:** O Gestor recomendou ao Administrador a amortização parcial das cotas do BICE11, com o pagamento previsto para 30 de abril de 2026.\n\n**Trecho-chave:**\n\"O Gestor recomendou ao Administrador a amortização das cotas no montante de R$ 15.000.000,00 (quinze milhões de reais), equivalente ao valor de R$ 112,43 por cota.\"\n\n### FATO RELEVANTE entregue em 27/02/2026\n\n**O que aconteceu:** Quitação integral do saldo devedor da devedora ICH Açaí Empreendimentos Imobiliários SPE LTDA.\n\n**Resumo:** A devedora ICH Açaí Empreendimentos Imobiliários quitou o seu saldo devedor em 03 de fevereiro de 2026, resultando em uma taxa interna de retorno (TIR) nominal de 43,0% a.a. para o Fundo.\n\n**Trecho-chave:**\n\"A devedora ICH Açaí Empreendimentos Imobiliários SPE LTDA do certificado de recebíveis imobiliários com ISIN BRPVSCCRI4U8 (denominado nos relatório gerenciais de “CRI Açaí”), emitido pela Companhia Província de Securitização  em 25 de setembro de 2024, quitou integralmente o seu saldo devedor em 03 de fevereiro de 2026 (“Transação”).\"\n\n### COMUNICADO AO MERCADO entregue em 30/06/2026\n\n**O que aconteceu:** Distribuição de capital no valor total de R$ 797.815,72.\n\n**Resumo:** O Gestor recomendou ao Administrador a distribuição de rendimentos no montante de R$ 797.815,72, equivalente ao valor de R$ 5,98 por cota vinculada ao ISIN BRBICECTF007.\n\n**Trecho-chave:**\n\"O pagamento será realizado no dia 07 de julho de 2026. Os cotistas detentores de cotas/recibos do fundo na data-base de 30 de junho de 2026 farão jus ao recebimento.\"\n\n### COMUNICADO AO MERCADO entregue em 29/05/2026\n\n**O que aconteceu:** Distribuição de capital no valor total de R$ 697.755,22.\n\n**Resumo:** O Gestor recomendou ao Administrador a distribuição de rendimentos no montante de R$ 697.755,22, equivalente ao valor de R$ 5,23 por cota vinculada ao ISIN BRBICECTF007.\n\n**Trecho-chave:**\n\"O pagamento será realizado no dia 08 de junho de 2026. Os cotistas detentores de cotas/recibos do fundo na data-base de 29 de maio de 2026 farão jus ao recebimento.\"\n\n### ASSEMBLEIA AGO entregue em 26/11/2025\n\n**O que aconteceu:** Aprovou as Demonstrações Contábeis do Fundo.\n\n**Resumo:** A assembleia aprovou sem ressalvas ou restrição a aprovação das Demonstrações Contábeis do Fundo acompanhada do Relatório do Auditor Independente referente ao exercício findo 30 de junho de 2025 e 2024.\n\n**Trecho-chave:**\n\"Diante do exposto, a matéria acima foi APROVADA sem qualquer ressalva ou restrição por cotistas desimpedidos e aptos a deliberar.\"\n\n### ASSEMBLEIA AGO entregue em 27/10/2025\n\n**O que aconteceu:** Convocação da Assembleia Geral Ordinária para aprovar as Demonstrações Contábeis do Fundo.\n\n**Resumo:** A assembleia foi convocada para aprovar as Demonstrações Contábeis do Fundo acompanhadas do Relatório do Auditor Independente referentes aos exercícios findos 30 de junho de 2025 e 2024.\n\n**Trecho-chave:**\n\"1. aprovação das Demonstrações Financeiras do Fundo acompanhada do Relatório do Auditor Independente referente ao exercício findo 30 de junho de 2025 e de 2024 (\"Demonstrações Financeiras\").\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 999667,
+    "data_entrega": "26/09/2025 17:57",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Brio Crédito Estruturado - Fundo de Investimento Imobiliário - Responsabilidade Limitada (anteriormente denominado Brio Crédito Estruturado - Fundo de Investimento Imobiliário) em 30 de junho de 2025, o desempenho de suas operações e os seu"
+  }
+}

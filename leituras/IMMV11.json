@@ -1,0 +1,30 @@
+{
+  "ticker": "IMMV11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:24:22",
+  "comunicados": {
+    "ids": [
+      1155472,
+      1078083
+    ],
+    "datas": [
+      "07/04/2026",
+      "09/01/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGE"
+    ],
+    "texto": "### Assembleia AGO entregue em 07/04/2026\n\n**O QUE aconteceu:** A assembleia geral de cotistas do Fundo ImmoB V Desenvolvimento FII aprovou as demonstrações contábeis referentes ao exercício social findo em 31.12.2025.\n\n**Resumo:** A assembleia foi realizada por videoconferência e todos os presentes, incluindo o representante do cotista detentor de todas as cotas e a administradora e gestora do fundo, concordaram com a aprovação das demonstrações contábeis.\n\n**Trecho-chave:** \"o Cotista aprovou a matéria elencada na Ordem do Dia.\" (p. 1)\n\n---\n\n### Assembleia AGE entregue em 09/01/2026\n\n**O QUE aconteceu:** A assembleia geral de cotistas do Fundo ImmoB V Desenvolvimento FII ratificou a dispensa de distribuição semestral dos rendimentos auferidos pelo fundo para o segundo semestre de 2025, em conformidade com um instrumento jurídico celebrado pelo fundo.\n\n**Resumo:** A assembleia foi realizada por videoconferência e todos os presentes, incluindo o representante do cotista detentor de todas as cotas e a administradora e gestora do fundo, concordaram com a ratificação da dispensa de distribuição semestral.\n\n**Trecho-chave:** \"o Cotista aprovou a matéria elencada na Ordem do Dia.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1147435,
+    "data_entrega": "30/03/2026 10:04",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

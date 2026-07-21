@@ -1,0 +1,33 @@
+{
+  "ticker": "WEB311",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T07:20:07",
+  "comunicados": {
+    "ids": [
+      1201717,
+      1213622,
+      1194054
+    ],
+    "datas": [
+      "22/05/2026",
+      "08/06/2026",
+      "15/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 22/05/2026\n\n**O QUE aconteceu:** O Administrador do Fundo alterou o regulamento para disponibilizar a segregação das taxas devidas aos prestadores de serviço no endereço da Plataforma de Transparência de Taxas.\n\n**Resumo:** A Administração do Fundo implementou uma nova medida de transparência, publicando as segregações das taxas em uma plataforma oficial.\n\n**Trecho-chave:**\n\"o Administrador aprovou, por Instrumento Particular do Administrador, a alteração do regulamento do Fundo para incluir que a segregação das taxas devidas aos prestadores de serviço s do Fundo passa a ser disponibilizada na Plataforma de Transparência de Taxas no endereço: https://data.anbima.com.br/busca/transparencia-de-taxas-de-fundos.\"\n\n---\n\n### ASSEMBLEIA GERAL EXTRAORDINÁRIA DE COTISTAS entregue em 15/05/22\n\n**O QUE aconteceu:** A Assembleia Geral Extraordinária de Cotistas do Fundo foi prorrogada para 22 de maio de 2026.\n\n**Resumo:** O Administrador prorrogou a data da AGE, permitindo que os votos sejam enviados até o dia 22 de maio de 2026.\n\n**Trecho-chave:**\n\"1) Prorrogar a data de realização da AGE, de modo que os votos deverão ser proferidos até às 23:59 do dia 22 de maio de 2026, conforme solicitado pelos Cotistas, considerada, para todos os fins, como a data da realização da AGE.\"\n\n**Conexão com o contexto:** Esta prorrogação se refere à possibilidade de incorporação do Fundo pelo HASHDEX MOMENTUM FUNDO DE ÍNDICE - RESPONSABILIDADE LIMITADA, conforme mencionado no documento de assembleia."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208600,
+    "data_entrega": "30/05/2026 12:10",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Hashdex Smart Contract Platforms Fundo de Índice - Responsabilidade Limitada em 31 de março de 2026 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos f"
+  }
+}

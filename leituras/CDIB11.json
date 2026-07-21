@@ -1,0 +1,24 @@
+{
+  "ticker": "CDIB11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:23:44",
+  "comunicados": {
+    "ids": [
+      1228408,
+      1209653,
+      1221401
+    ],
+    "datas": [
+      "25/06/2026",
+      "01/06/2026",
+      "15/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO"
+    ],
+    "texto": "### O que aconteceu em 01/06/2026\n\n**Resumo:** Foi iniciada a subscrição e integralização das cotas do fundo IT NOW TEVA ITBR SELIC IPCA TARGET 800 no mercado primário.\n\n**Trecho-chave:**\n\"Em 03 de junho de 2026, será iniciado o período de subscrição e integralização na Classe, no mercado primário, sob o código de negociação CDIB11, nome de pregão “” e código ISIN BRCDIBCTF009, pelo valor inicial de R$ 50,00 (cinquenta reais).\"\n\n### O que aconteceu em 25/06/2026\n\n**Resumo:** Foi cancelada a Assembleia Geral de Cotistas prevista para o dia 30/06/2026.\n\n**Trecho-chave:**\n\"Aviso de Cancelamento de Assembleia Geral de Cotistas  \nItaú Unibanco S.A ., inscrito no CNPJ sob o nº 60.701.190/0001-04, com sede na Praça \nAlfredo Egydio de Souza Aranha, nº 100, Torre Olavo Setubal, São Paulo – SP, habilitado \npara a administração de fundos de investimentos conforme Ato Declaratório CVM n º 990 \nde 06/07/1989, na qualidade de Administrador do IT NOW TEVA ITBR SELIC IPCA TARGET \n800 FUNDO DE ÍNDICE - RESPONSABILIDADE LIMITADA , inscrito no CNPJ sob o nº \n66.198.405/0001-94 (“Fundo”), vem, por meio deste, comunicar aos cotistas do Fundo o \ncancelamento da convocação da Assembleia Geral de Cotistas que seria realizada por meio \nde consulta formal no dia 30/06/2026 (“Assembleia”), conforme previamente convocada \npor meio do Edital de Convocação divulgado em 15/06/2026.  \nO cancelamento da referida Assembleia decorre do fato de que o Fundo foi constituído em \n2026, não havendo ainda demonstrações financeiras a serem objeto de  aprovação pelos \ncotistas.\"\n\n### O que aconteceu em 15/06/2026\n\n**Resumo:** Foi convocada uma Assembleia Geral de Cotistas para o dia 30/06/2026, com a finalidade de deliberar sobre as Demonstrações Financeiras.\n\n**Trecho-chave:**\n\"Edital de Convocação - Assembleia Geral de Cotistas  \nO Itaú Unibanco S.A., Praça Alfredo Egydio de Souza Aranha, nº 100, Torre Olavo \nSetubal, São Paulo – SP, CNPJ nº 60.701.190/0001-04, ato declaratório CVM nº \n990 de 06/07/1989., na qualidade de Administradora do IT NOW TEVA ITBR SELIC \nIPCA TARGET 800 FUNDO DE ÍNDICE - RESPONSABILIDADE LIMITADA, inscrito \nno CNPJ sob o nº 66.198.405/0001-94, vem submeter à consulta fo rmal eletrônica \nde quotistas a seguinte matéria:  \n(i) Deliberar sobre as Demonstrações Financeiras, Notas Explicativas e Parecer dos \nAuditores Independentes, relativos ao exercício social encerrado em 28/02/2026.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

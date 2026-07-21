@@ -1,0 +1,54 @@
+{
+  "ticker": "CARE11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T11:22:05",
+  "relatorio": {
+    "id": 878622,
+    "data_entrega": "11/04/2025 18:26",
+    "texto": "### Fatos Relevantes do Relatório:\n\n1. **Composição da Carteira:**\n   - O fundo detém 19,92% de participação na Cortel Holding S.A., empresa líder no setor de death care brasileiro.\n   - Possui 2.798 jazigos no Cemitério do Morumby em São Paulo.\n\n2. **Operação de Venda dos Jazigos:**\n   - Em junho de 2023, a assembleia aprovou a contratação da SPE Consórcio Cortel São Paulo para a venda dos jazigos.\n   - Até março de 2025 foram vendidos aproximadamente 74 jazigos.\n\n3. **Acordo com Comunidade Religiosa João XXIII e Parque Morumby Administração:**\n   - Contrato obrigando o fundo a construir gavetas em pelo menos 30 jazigos mensalmente até atingir 1.740 gavetas.\n\n4. **Empreendimento Imobiliário Vendido:**\n   - Venda realizada em maio de 2022, com pagamento em 120 parcelas mensais e semestrais.\n   - O comprador segue adimplente com os pagamentos.\n\n5. **Redução da Taxa de Administração:**\n   - A partir do mês de outubro/2024 até setembro/2025, a taxa de administração será reduzida para 1,55% ao ano sobre o patrimônio líquido.\n\n6. **Carteira da Cortel:**\n   - A Cortel possui diversos ativos em diferentes estados do Brasil, incluindo cemitérios e crematórios.\n   - Detém participação significativa na Metropax, maior empresa de planos funerários de Belo Horizonte.\n\n7. **Obras e Reformas:**\n   - O fundo está conduzindo operação comercial robusta para a venda dos jazigos do Morumby com estratégias comerciais bem definidas.\n   - Investimentos em campanhas publicitárias, equipe comercial especializada e sistema de controle integrado.\n\n8. **Vacância:**\n   - A vacância no fundo é 100%, refletindo a situação atual dos jazigos do Cemitério do Morumby.\n\n### O que observar em seguida:\n- Monitorar o progresso da venda dos jazigos do Cemitério do Morumby.\n- Observar as novas construções de gavetas conforme o cronograma estabelecido."
+  },
+  "comunicados": {
+    "ids": [
+      1104158,
+      1252782,
+      1238180,
+      1225627,
+      1225095
+    ],
+    "datas": [
+      "06/02/2026",
+      "17/07/2026",
+      "02/07/2026",
+      "22/06/2026",
+      "19/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 06/02/2026\n\n**O que aconteceu:** A administradora do fundo passou a ser a Mérito Distribuidora de Títulos e Valores Mobiliários Ltda.\n\n**Resumo:** A Mérito DTVM assumiu a administração do BRAZILIAN GRAVEYARD AND DEATH CARE SERVICES FII em substituição à Master S.A. Não houve alteração na política de investimentos ou estratégias.\n\n**Trecho-chave:**\n\"Passou a exercer a administração fiduciária do Fundo, em substituição à MASTER S.A. CORRETORA DE CÂMBIO, TÍTULOS E VALORES MOBILIÁRIOS.\"\n\n### COMUNICADO AO MERCADO entregue em 17/07/2026\n\n**O que aconteceu:** A administradora respondeu a um ofício do B3 sobre oscilações atípicas nas cotações.\n\n**Resumo:** A Mérito DTVM informou não possuir conhecimento de fato que justifique as oscilações atípicas das cotas do fundo.\n\n**Trecho-chave:**\n\"Prezado(a) Senhor(a), ... vimos solicitar que nos seja informado até 16/07/2026, se há algum fato do conhecimento dessa administradora que possam justificá-las.\"\n\n### COMUNICADO AO MERCADO entregue em 02/07/2026\n\n**O que aconteceu:** A administradora esclareceu dúvidas sobre a escolha de fundo em caso de cisão.\n\n**Resumo:** A cédula de votação da AGE trata apenas da estrutura do encerramento do Fundo, não abrangendo a escolha individual dos cotistas para permanecer ou migrar.\n\n**Trecho-chave:**\n\"Esclarecemos que a cédula de votação da presente AGE contempla, exclusivamente, a deliberação sobre a estrutura a ser adotada para o encerramento do Fundo...\"\n\n### ASSEMBLEIA AGE entregue em 22/06/2026\n\n**O que aconteceu:** A assembleia deliberou sobre a cisão parcial do fundo e as etapas subsequentes.\n\n**Resumo:** A assembleia aprovou a cisão parcial, estabelecendo procedimentos para o Novo Fundo, incluindo a elaboração de um plano de liquidação e vedando transações entre partes relacionadas.\n\n**Trecho-chave:**\n\"Em caso de aprovação da Cisão, deliberação para aprovar, no Novo Fundo: (II.A) que caberá à Administradora justificar formalmente, para o cotista votante, eventual indeferimento de seu voto...\"\n\n### ASSEMBLEIA AGE entregue em 19/06/2026\n\n**O que aconteceu:** A assembleia deliberou sobre a cisão parcial do fundo e as etapas subsequentes.\n\n**Resumo:** A assembleia aprovou a cisão parcial, estabelecendo procedimentos para o Novo Fundo, incluindo a elaboração de um plano de liquidação e vedando transações entre partes relacionadas.\n\n**Trecho-chave:**\n\"Em caso de aprovação da Cisão, deliberação para aprovar, no Novo Fundo: (II.A) que caberá à Administradora justificar formalmente, para o cotista votante, eventual indeferimento de seu voto...\"\n\n---\n\n**Conexões com indicadores:** As decisões sobre a cisão do fundo e as etapas subsequentes podem afetar significativamente os ativos do fundo e a distribuição dos valores aos cotistas."
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Vacância física alta",
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares",
+      "P/VP muito abaixo da média histórica"
+    ],
+    "cota": 2.23
+  },
+  "parecer": {
+    "id": 1088048,
+    "data_entrega": "20/01/2026 10:36",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Brazilian Graveyard And Death Care Services Fundo de Investimento Imobiliário - FII Responsabilidade Limitada em 11 de julho de 2025 e o desempenho de suas operações para o período de 1° de janeiro de 2025 a 11 de julho de 2025 (transferênc"
+  }
+}

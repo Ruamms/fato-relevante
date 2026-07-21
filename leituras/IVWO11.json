@@ -1,0 +1,18 @@
+{
+  "ticker": "IVWO11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:42:15",
+  "comunicados": {
+    "ids": [
+      1154578
+    ],
+    "datas": [
+      "06/04/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado"
+    ],
+    "texto": "**Data:** 06/04/2026\n\n**Título:** INVESTO FTSE EMERGING MARKETS ALL CAP CHINA A INCLUSION CLASSE DE ÍNDICE inicia negociação em B3.\n\n**Resumo:** O Fundo de índice INVESTO FTSE EMERGING MARKETS ALL CAP CHINA A INCLUSION CLASSE DE ÍNDICE iniciará suas operações no mercado primário da B3 a partir do dia 13/04/2026 e no secundário a partir do dia 14/04/2026, com valor inicial de R$ 20,00 por cota.\n\n**Trecho-chave:** \"Serão iniciados os negócios com suas cotas subscritas e integralizadas 13 de abril de 2026 no mercado primário e em 14 de abril de 2026 no mercado secundário da B3, pelo valor inicial de R$ 20,00.\" (p. 1)\n\n**Conexão com contexto:** Este comunicado indica a data de início das negociações do fundo, que pode influenciar o cenário geral dos investimentos imobiliários no mercado brasileiro, especialmente para aqueles interessados em ETFs focados em mercados emergentes chineses."
+  },
+  "modelo": "qwen2.5:7b"
+}

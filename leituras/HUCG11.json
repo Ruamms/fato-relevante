@@ -1,0 +1,51 @@
+{
+  "ticker": "HUCG11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T01:12:33",
+  "relatorio": {
+    "id": 1236550,
+    "data_entrega": "30/06/2026 22:31",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Cancelamento de Cotas**: O Fundo cancelou 1,552 cotas em fevereiro de 2026, reduzindo o total de cotas emitidas para 1,120,448 (p. 2).\n   \n2. **Vacância e Inadimplência**: A vacância do imóvel é de 0% e a inadimplência não foi mencionada no relatório (p. 6).\n\n3. **Aluguel e Valor de Mercado**: O valor do aluguel é R$ 1,027,083,95, com índice de correção IPCA (p. 5). O imóvel foi avaliado em R$ 139,225,675,82 em novembro de 2025 (p. 9).\n\n4. **Prazo e Garantia**: O contrato de locação tem vigência até maio de 2045 com opção de compra a cada 5 anos (p. 5). A garantia é uma fiança bancária correspondente a 18 meses de aluguel, ainda pendente (p. 5).\n\n5. **Fluxo de Caixa**: O fluxo de caixa das atividades operacionais foi positivo em R$ 4,564,106,62 no ano (p. 7).\n\n6. **Patrimônio Líquido e Cota Patrimonial**: O patrimônio líquido é de R$ 143,721 mil e a cota patrimonial é de R$ 128,2711 (p. 6).\n\n7. **Rendimento Dividendo/Cota Patrimonial**: A rentabilidade do rendimento dividendo/cota patrimonial foi de 0,57% em maio/2026 (p. 7).\n\n8. **Andamento das Obras**: As obras foram concluídas e o hospital entrou em operação em junho de 2025, mas ainda há pendências na fachada que estão sendo avaliadas pela administração do fundo (p. 10).\n\n### O que observar em seguida:\n- Monitorar as pendências na fachada e a regularização pelas construtoras.\n- Verificar o andamento da garantia bancária para a fiança de 18 meses de aluguel."
+  },
+  "comunicados": {
+    "ids": [
+      1211300,
+      910075,
+      887418,
+      1179894,
+      1148107
+    ],
+    "datas": [
+      "02/06/2026",
+      "22/05/2025",
+      "29/04/2025",
+      "05/05/2026",
+      "30/03/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 02/06/2026\n\n**O QUE aconteceu:** Cancelamento de cotas do Fundo HUCG11.\n\n**Resumo:** A administradora do Fundo HUCG11 informou que 1.552 cotas foram canceladas, reduzindo o número total de cotas emitidas para 1.120.448.\n\n**Trecho-chave:**\n\"Para amortização de parte da dívida mantida pela construtora responsável pela construção do Hospital Unimed Campina Grande, o Fundo recebeu da construtora como dação em pagamento, 1 .552 cotas de emissão do próprio Fundo, (HUCG11) . As referidas cotas foram efetivamente transferidas para o Fundo em 03/02/2026 pelo valor de R$ 138.360,80 (cento de trinta e oito mil trezentos e sessenta reais e oitenta centavos), e permaneceram em tesouraria até o dia 29/05/2026, data em que foram efetivamente canceladas por decisão da Administradora.\"\n\n### FATO RELEVANTE entregue em 22/05/2025\n\n**O QUE aconteceu:** Atraso na entrega de equipamentos e início do contrato de locação.\n\n**Resumo:** O Hospital Unimed Campina Grande iniciou a ocupação no dia 28 de abril de 2025, mas o contrato de locação só começou em junho de 2025 devido à falta de equipamentos necessários.\n\n**Trecho-chave:**\n\"Diante disso, Fundo e Unimed Campina Grande acordaram que o início da locação será o mês de junho de 2025, com vencimento do primeiro aluguel em julho de 2025.\"\n\n### FATO RELEVANTE entregue em 29/04/2025\n\n**O QUE aconteceu:** O Hospital Unimed Campina Grande iniciou a ocupação.\n\n**Resumo:** A Unimed Campina Grande assumiu o controle do hospital no dia 28 de abril de 2025, embora ainda existam pendências com a construtora.\n\n**Trecho-chave:**\n\"No Fato Relevante divulgado em 16 de abril de 2025 havíamos informado sobre a intenção da Unimed Campina Grande de antecipar a ocupação do HUCG ainda no dia 28 de abril de 2025. A ocupação se confirmou com a entregas das chaves na manhã desta última segunda-feira.\"\n\n### ASSEMBLEIA AGO entregue em 30/03/2026\n\n**O QUE aconteceu:** Convocação da Assembleia Geral Ordinária.\n\n**Resumo:** A administradora convocou os cotistas para a Assembleia Geral Ordinária, onde serão apreciadas e votadas as contas relativas ao exercício encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"CONSULTA FORMAL\nCOINVALORES CORRETORA DE CÂMBIO E VALORES MOBILIÁRIOS LTDA., inscrita no CNPJ sob o nº 00.336.036/0001-40, com sede na cidade de São Paulo, estado de São Paulo, na Avenida Brigadeiro Faria Lima, nº 1.800, Edifício Liége – conjuntos 21 e 22 - 2º andar, Jardim Paulistano, CEP 01451-001 (“Administradora”), na qualidade de administradora do FUNDO DE INVESTIMENTO IMOBILIÁRIO HOSPITAL UNIMED CAMPINA GRANDE- RESPONSABILIDADE LIMITADA, inscrito no CNPJ sob o nº 39.347.413/0001-85 (“Fundo”), vem convidar V.Sa., titular de cotas do Fundo na data desta Consulta, a participar da Assembleia Geral Ordinária do Fundo de classe única de cotas, cujas deliberações serão tomadas de forma não presencial, por meio de consulta formal.\"\n\n### ASSEMBLEIA AGO entregue em 05/05/2026\n\n**O QUE aconteceu:** Apuração dos votos da Assembleia Geral Ordinária.\n\n**Resumo:** A administradora apurou e certificou os resultados das votações realizadas na Assembleia Geral Ordinária, onde foram deliberadas as contas relativas ao exercício encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"ATA DE APURAÇÃO E CERTIFICAÇÃO DE CONSULTA A QUOTISTAS SOBRE A MATÉRIA DE COMPETÊNCIA DA ASSEMBLEIA GERAL ORDINÁRIA\n1. DATA, HORA E LOCAL: Aos quatro dias do mês de maio do ano de dois mil e vinte e seis, às 18:30 horas nesta cidade de São Paulo, na sede da COINVALORES CORRETORA DE CÂMBIO E VALORES MOBILIÁRIOS LTDA., inscrita no CNPJ sob o nº 00.336.036/0001 -40, localizada na cidade de São Paulo, Estado de São Paulo, na Avenida Brigadeiro Faria Lima, nº 1.800 - Edifício Liége - conjuntos 21 e 22 - 2º andar - Jardim Paulistano - CEP 01451-001, administradora do FUNDO DE INVESTIMENTO IMOBILIÁRIO HOSPITAL UNIMED CAMPINA GRANDE (\"Fundo\"), inscrito no CNPJ nº 39.347.413/0001-82, foram verificados e apurados os resultados dos votos proferidos pelos titulares de cotas do Fundo (\"Cotistas\") a respeito da matéria de competência da Assembleia Geral Ordinária realizada por meio de Consulta Formal enviada aos Cotistas na data de 30 de março de 2026.\""
+  },
+  "retrato": {
+    "selo": "Alertas leves",
+    "nivel": "leves",
+    "alertas": [
+      "Base de cotistas muito pequena"
+    ],
+    "cota": 92.8
+  },
+  "parecer": {
+    "id": 1148101,
+    "data_entrega": "30/03/2026 15:49",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário Hospital Unimed Campina Grande Responsa bilidade Limitada em 31 de dezembro de 2025, o desempenho das suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas co"
+  }
+}

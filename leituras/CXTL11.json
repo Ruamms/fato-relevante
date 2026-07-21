@@ -1,0 +1,48 @@
+{
+  "ticker": "CXTL11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T05:10:14",
+  "relatorio": {
+    "id": 1238493,
+    "data_entrega": "02/07/2026 18:53",
+    "texto": "### Fatos Extraídos:\n\n1. **Receita Estável e Contrato Adimplente:**\n   \"O Imóvel locado para a Atmosfera continua adimplente e contrato com vencimento em dezembro de 2031.\" (p. 6)\n\n2. **Dividendos Pagos:**\n   \"No dia 15/junho/26 o FII Caixa Seq Logística Renda pagou R$ 40.927,33 em dividendos – R$ 0,7636 por cota.\" (p. 6)\n\n3. **Reforma do Imóvel:**\n   \"O Fundo contratou serviços de engenharia para realização de reforma do telhado no imóvel localizado em Duque de Caxias/RJ, com investimento total de R$ 1.446.288,00.\" (p. 5)\n\n4. **Impacto na Distribuição de Dividendos:**\n   \"As distribuições de rendimentos do Fundo seguem impactadas ao longo do período de 12 meses iniciado na competência de junho de 2025.\" (p. 5)\n\n### O que observar em seguida:\n- Monitorar a conclusão da reforma e seu impacto no aluguel atual.\n- Observar o desempenho dos dividendos nos próximos meses, dada a restrição temporária de recursos para distribuição."
+  },
+  "comunicados": {
+    "ids": [
+      1072694,
+      936329,
+      1180180,
+      1179106
+    ],
+    "datas": [
+      "30/12/2025",
+      "30/06/2025",
+      "05/05/2026",
+      "04/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 30/12/2025\n\n**O QUE aconteceu:** A Caixa Econômica Federal reavaliou o imóvel integrante da carteira do Fundo sem alteração no valor.\n\n**Resumo:** O imóvel localizado em Duque de Caxias/RJ não teve sua avaliação patrimonial alterada, permanecendo em R$ 20.600.000,00.\n\n**Trecho-chave:**\n\"Imóvel 16/12/2024 30/12/2025 ∆% \nDUQUE DE CAXIAS/RJ 20.600.000,00 20.600.000,00 0,00%\" (p. 1)\n\n---\n\n### FATO RELEVANTE entregue em 30/06/2025\n\n**O QUE aconteceu:** O Fundo contratou serviços de engenharia para reforma do telhado do imóvel localizado em Duque de Caxias/RJ, com impacto nas distribuições de rendimentos.\n\n**Resumo:** O Fundo investirá R$ 1.446.288,00 na reforma do telhado do imóvel, sendo o pagamento feito mediante antecipação das receitas de aluguel, com impacto nas distribuições de rendimentos nos próximos 12 meses.\n\n**Trecho-chave:**\n\"O valor total do investimento realizado pelo Fundo para a reforma do Imóvel será de R$ 1.446.288,00 (um milhão, quatrocentos e quarenta e seis mil e duzentos e oitenta e oito reais) com o pagamento de um sinal de R$ 407.886,40 e o restante em 5 (cinco) parcelas mensais e consecutivas\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 05/05/2026\n\n**O QUE aconteceu:** A assembleia ordinária aprovou as demonstrações financeiras do Fundo referentes ao exercício social findo em 31 de dezembro de 2025.\n\n**Resumo:** Todos os cotistas presentes aprovaram as demonstrações financeiras do Fundo, que foram deliberadas durante a assembleia.\n\n---\n\n### ASSEMBLEIA AGO entregue em 04/05/2026\n\n**O QUE aconteceu:** A assembleia ordinária aprovou as demonstrações financeiras do Fundo referentes ao exercício social findo em 31 de dezembro de 2025.\n\n**Resumo:** Todos os cotistas presentes aprovaram as demonstrações financeiras do Fundo, que foram deliberadas durante a assembleia."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 235.0
+  },
+  "parecer": {
+    "id": 1153072,
+    "data_entrega": "01/04/2026 21:26",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nesta data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

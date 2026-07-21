@@ -1,0 +1,24 @@
+{
+  "ticker": "MCMV11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:02:15",
+  "comunicados": {
+    "ids": [
+      1048961,
+      1023112,
+      1013486
+    ],
+    "datas": [
+      "27/11/2025",
+      "29/10/2025",
+      "14/10/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 27/11/2025\n\n**O QUE aconteceu:** A administradora do fundo MCMV11 anunciou a realização da 1ª Chamada de Capital para integralização das cotas.\n\n**Resumo:** O fundo está solicitando aos investidores que subscreveram cotas o pagamento equivalente ao 11.61% do valor total subscrito, através de uma chamada de capital.\n\n**Trecho-chave:**\n\"i) A Administradora enviará no dia 27 de novembro de 2025 a 1ª Chamada de Capital da 1ª Emissão da Subclasse B de Cotas do Fundo para os investidores que possuem Compromisso de Investimento (''1ª Chamada de Capital'). Por meio da 1ª Chamada de Capital deverão ser integralizados pelos investidores que subscreveram cotas montante equivalente ao percentual de 11.61% multiplicado pelo valor total subscrito individualmente por cada investidor.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 29/10/2025\n\n**O QUE aconteceu:** O cronograma da oferta pública foi modificado.\n\n**Resumo:** As datas de início e encerramento do período de desistência foram incluídas, além das datas para a divulgação do comunicado e republicação dos documentos oficiais. A data final para coleta de intenções de investimento foi alterada para 30 de outubro de 2025.\n\n**Trecho-chave:**\n\"(i) alterar o cronograma indicativo da Oferta que constou no 'Comunicado ao Mercado de Modificação da Oferta Pública de Distribuição da 1ª (Primeira) Emissão de Cotas da Subclasse A e de Cotas da Subclasse B da Classe Única do BRM Minha Casa Minha Vida III Fundo de Investimento Imobiliário Responsabilidade Limitada' ('Comunicado ao Mercado de Modificação da Oferta 13.10') e no 'Prospecto Definitivo', ambos divulgados em 13 de outubro de 2025, a fim de (i.a) incluir a data da divulgação deste Comunicado ao Mercado de Modificação da Oferta, bem como de republicação da Lâmina da Oferta e do Prospecto Definitivo; (i.b) incluir as datas de início e de encerramento do período de desistência em decorrência da modificação da Oferta; (i.c) alterar a data de encerramento do Período de Coleta de Intenções de Investimento de 30 de outubro de 2025 para 31 de outubro de 2025.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 14/10/2025\n\n**O QUE aconteceu:** O cronograma da oferta pública foi modificado.\n\n**Resumo:** As datas do período de coleta de intenções de investimento e a data para o procedimento de alocação foram alteradas. A data final para coleta de intenções de investimento foi alterada para 30 de outubro de 2025, e a data para o procedimento de alocação foi alterada para 31 de outubro de 2025.\n\n**Trecho-chave:**\n\"(i) alterar o cronograma indicativo da Oferta que constou no 'Anúncio de Início da Oferta Pública de Distribuição da 1ª (Primeira) Emissão de Cotas da Subclasse A e de Cotas da Subclasse B da Classe Única do BRM Minha Casa Minha Vida III Fundo de Investimento Imobiliário Responsabilidade Limitada' ('Anúncio de Início') e no 'Prospecto Definitivo da Oferta Pública de Distribuição da 1ª (Primeira) Emissão de Cotas da Subclasse A e de Cotas da Subclasse B da Classe Única do BRM Minha Casa Minha Vida III Fundo de Investimento Imobiliário Responsabilidade Limitada' ('Prospecto Definitivo'), ambos divulgados em 30 de setembro de 2025, a fim de (i.a) incluir a data da divulgação deste Comunicado ao Mercado de Modificação da Oferta, bem como de republicação da Lâmina da Oferta e do Prospecto Definitivo; (i.b) alterar a data de encerramento do Período de Coleta de Intenções de Investimento de 31 de outubro de 2025 para 30 de outubro de 2025; e (i.c) alterar a data de realização o Procedimento de Alocação de 03 de outubro de 2025 para 31 de outubro de 2025.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

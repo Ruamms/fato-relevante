@@ -1,0 +1,41 @@
+{
+  "ticker": "JCAT11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T03:53:35",
+  "relatorio": {
+    "id": 952890,
+    "data_entrega": "25/07/2025 17:20",
+    "texto": "### Fatos Extraídos:\n\n1. **Mudança na Estrutura do Fundo:**\n   \"O número de cotas do Fundo passou para 71.135 a partir de abril, conforme aprovado em AGE realizada em março.\" (p. 4)\n\n2. **Transferência da Administração Fiduciária:**\n   \"Foi deliberada a transferência da administração fiduciária do Fundo para o Banco Daycoval S.A., aprovada em maio.\" (p. 4)\n\n3. **Evento de Importância:**\n   \"Em junho, o aeroporto sediou a quarta edição do Catarina Aviation Show, evento exclusivo para convidados que reúne os principais stakeholders da aviação executiva, da indústria automotiva e, desde 2024, também da indústria náutica.\" (p. 4)\n\n4. **Resultados Operacionais:**\n   \"O Aeroporto demonstrou forte crescimento em relação ao mesmo trimestre do ano anterior. Durante o período, a receita internacional aumentou +33% e doméstica +61%.\" (p. 5)\n\n5. **Indicadores Financeiros:**\n   \"A remuneração mínima de R$15,83 por cota foi paga trimestralmente, referente à rentabilidade do São Paulo Catarina Aeroporto Executivo Internacional, do trimestre anterior (1º Trimestre de 2025).\" (p. 6)\n\n### O que observar em seguida:\n- Monitorar as mudanças na estrutura administrativa e a transferência para o Banco Daycoval S.A.\n- Observar os resultados financeiros e operacionais do Aeroporto, especialmente no contexto de crescimento das receitas internacionais e domésticas."
+  },
+  "comunicados": {
+    "ids": [
+      1250796
+    ],
+    "datas": [
+      "16/07/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO"
+    ],
+    "texto": "**Data: 10/07/2026**\n**Título:** Convocação para Assembleia Geral Ordinária\n**Resumo:** A administradora do JHSF Catarina Aeroporto Executivo FII convoca os cotistas para a Assembleia Geral Ordinária no dia 10 de agosto de 2026, às 09:45, com o objetivo de aprovar as contas e demonstrações contábeis do exercício social encerrado em 31 de dezembro de 2025.\n**Trecho-chave:** \"O BANCO DAYCOVAL S.A. , sociedade com sede na Cidade de São Paulo, Estado de São Paulo, na Avenida Paulista, 1.793, 9º andar, Bela Vista, São Paulo - SP, CEP: 01311-200, inscrita no CNPJ/ME sob o nº 62.232.889/0001-90, na qualidade de instituição administradora do Fundo de Investimento Imobiliário JHSF Catarina Aeroporto Executivo - FII de Responsabilidade Limitada, inscrito no CNPJ/M F sob o nº 14.609.653/0001-87 (\"Administradora\" e \"Fundo\", respectivamente), nos termos do regulamento do Fundo, vem por meio desta, convocar V. Sas. (''Cotistas'') para a Consulta Formal da Assembleia Geral Ordinária (‘’Assembleia’'), a ser realizada no dia 10 de agosto de 2026, às 09:45 (horas/minutos), através de plataforma de votação da Administradora, para que seja deliberada a seguinte matéria, conforme ordem do dia:\" (p. 1)\n\n**Conexão com contexto:** A convocação para a Assembleia Geral Ordinária é relevante para o acompanhamento dos indicadores financeiros e administrativos do fundo, especialmente em relação à aprovação das contas e demonstrações contábeis."
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Menos cotistas que o mínimo para isenção de IR",
+      "VP/cota em queda relevante",
+      "Rendimentos irregulares"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 1201525,
+    "data_entrega": "22/05/2026 17:28",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário JHSF Catarina Aeroporto Executivo - FII de Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as prá"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "ticker": "YUFI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:13:25",
+  "comunicados": {
+    "ids": [
+      1233725,
+      1183659,
+      1230963
+    ],
+    "datas": [
+      "30/06/2026",
+      "08/05/2026",
+      "26/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 30/06/2026\n\n**O QUE aconteceu:** Não haverá distribuição de resultados no mês de junho/2026.\n\n**Resumo:** O fundo YUCA não realizará a distribuição de resultados para o mês de junho, conforme comunicado pela administradora BRL Trust Distribuidora de Títulos e Valores Mobiliários S.A.\n\n**Trecho-chave:**\n\"Em relação ao mês de junho/2026, não haverá distribuição de resultados.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 08/05/2026\n\n**O QUE aconteceu:** A administradora esclarece a ressalva apresentada pela auditora Baker Tilly nas demonstrações financeiras do fundo.\n\n**Resumo:** A administradora informou que adotou medidas para regularizar as demonstrações financeiras do fundo, após a ressalva de não apresentação de auditoria independente de algumas SPEs. O cronograma prevê a entrega das Demonstrações Financeiras reemissas no futuro.\n\n**Trecho-chave:**\n\"A Administradora e o Auditor Independente entenderam por bem, promover a entrega das Demonstrações Financeiras do Fundo dentro do prazo regulamentar, mas com abstenção de opinião, a fim de cumprirem com as suas obrigações regulatórias.\"\n\n---\n\n### ASSEMBLEIA GERAL ORDINÁRIA AGO entregue em 26/06/2026\n\n**O QUE aconteceu:** Convocação para Assembleia Geral Ordinária de Cotistas do Fundo.\n\n**Resumo:** A administradora convoca os cotistas para uma Assembleia Geral Ordinária, a ser realizada em 30 de julho de 2026, com o objetivo de aprovar as Demonstrações Financeiras relativas ao exercício findo em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"A BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., convida os cotistas do Fundo (‘Cotistas’), por meio desta, a participar da Assembleia Geral Ordinária de Cotistas do Fundo (“AGO”), a ser realizada de forma não presencial, por meio de coleta de voto a distância.\"\n\n---\n\n**Conexão com o contexto:** O comunicado sobre a ausência de distribuição de resultados e as medidas para regularizar as demonstrações financeiras refletem diretamente na situação atual do fundo YUFI11, que apresenta baixa cotação, P/VP muito acima da média histórica e problemas com a geração de resultado."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1151053,
+    "data_entrega": "31/03/2026 18:52",
+    "tipo": "abstencao",
+    "rotulo": "abstenção de opinião",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Não expressamos uma opinião sobre as demonstrações financeiras do Yuca Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 202 5, pois, devido a relevância dos assuntos descritos na seção a seguir intitulada “Base para abstenção de opinião”, não nos foi possível obter evidência de auditoria apropriada e suficiente para fundamentar nossa opinião de auditoria sobre essas"
+  }
+}

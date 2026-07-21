@@ -1,0 +1,30 @@
+{
+  "ticker": "BBOV11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:11:44",
+  "comunicados": {
+    "ids": [
+      1240070,
+      1238236
+    ],
+    "datas": [
+      "06/07/2026",
+      "02/07/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA AGO entregue em 06/07/2026\n\n**O QUE aconteceu:** Convocação para Assembleia Geral Ordinária.\n\n**Resumo:** A assembleia foi convocada com o objetivo de deliberar sobre as demonstrações contábeis do fundo, mas não alcançou o quórum necessário. Como resultado, as demonstrações contábeis relativas ao exercício social findo em 31/03/2026 foram consideradas aprovadas.\n\n**Trecho-chave:** \"consideram-se aprovadas as demonstrações contábeis do FUNDO relativas ao exercício social findo em 31/03/2026, devidamente auditada pela PricewaterhouseCoopers Auditores Independentes Ltda.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 02/07/2026\n\n**O QUE aconteceu:** Realização da Assembleia Geral Ordinária.\n\n**Resumo:** A assembleia foi realizada no dia 29/06/2026, e devido à ausência de manifestação dos cotistas, as demonstrações contábeis do exercício social findo em 31/03/2026 foram consideradas automaticamente aprovadas.\n\n**Trecho-chave:** \"as Demonstrações Contábeis relativas ao exercício social findo em 31/03/2026 foram consideradas automaticamente aprovadas, por não apresentarem opinião modificada.\" (p. 1)\n\n---\n\n**Conexão com o contexto:** As demonstrações contábeis aprovadas na assembleia se referem ao exercício social findo em 31/03/2026, que é um dos indicadores do contexto fornecido."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1206957,
+    "data_entrega": "29/05/2026 09:38",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe em 31 de março de 2026, o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento financeiro."
+  }
+}

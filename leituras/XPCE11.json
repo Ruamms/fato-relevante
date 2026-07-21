@@ -1,0 +1,30 @@
+{
+  "ticker": "XPCE11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T04:13:30",
+  "comunicados": {
+    "ids": [
+      1199702,
+      1199701
+    ],
+    "datas": [
+      "20/05/2026",
+      "20/05/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "**Data:** 20/05/2026  \n**Título:** Assembleia Geral Extraordinária do Fundo XPCE RE FUNDO DE INVESTIMENTO IMOBILIÁRIO será realizada por meio de consulta formal.  \n**Resumo:** A assembleia deliberará sobre a aprovação das contas e demonstrações contábeis do exercício social findo em 31/12/2025, relativas ao Fundo XPCE RE FUNDO DE INVESTIMENTO IMOBILIÁRIO.  \n**Trecho-chave:** \"Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31/12/2025, devidamente auditadas\" (p. 1).\n\n---\n\n**Data:** 20/05/2026  \n**Título:** Consulta Formal para a Assembleia Geral do Fundo XPCE RE FUNDO DE INVESTIMENTO IMOBILIÁRIO será realizada.  \n**Resumo:** A consulta formal visa aprovar as contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31/12/2025.  \n**Trecho-chave:** \"Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31/12/2025, devidamente auditadas\" (p. 1)."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1154191,
+    "data_entrega": "06/04/2026 10:21",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e fin anceira do XPCE RE Fundo de Investimento Imobiliário em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de"
+  }
+}

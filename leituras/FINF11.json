@@ -1,0 +1,36 @@
+{
+  "ticker": "FINF11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T02:25:44",
+  "comunicados": {
+    "ids": [
+      1247709,
+      963386,
+      1027752,
+      1006013
+    ],
+    "datas": [
+      "14/07/2026",
+      "08/08/2025",
+      "04/11/2025",
+      "03/10/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 14/07/2026\n\n**O QUE aconteceu:** Realização de Laudo de Avaliação Imobiliária e impacto positivo no Patrimônio Líquido do Fundo.\n\n**Resumo:** A Gleba Jacutinga, imóvel da Rio Jacutinga Participações S.A., foi reavaliado, resultando em um aumento de R$ 4.083.000,00 no valor do ativo e elevação do Patrimônio Líquido do Fundo.\n\n**Trecho-chave:**\n\"Em 30/06/2026, foi realizado Laudo de Avaliação Imobiliária , tendo como objeto a Gleba Jacutinga, situada no município de Cambé, Estado do Paraná, localizada à PR 445, km 85 – Lote 250 – A2 (“Imóvel”), de titularidade da Rio Jacutinga Participações S.A. , inscrita no CNPJ/MF sob o nº 18.651.594/0001-66, esta por sua vez, companhia investida do Fundo;\"\n\n### FATO RELEVANTE entregue em 08/08/2025\n\n**O QUE aconteceu:** Reavaliação do ativo Rio Jacutinga Participações S.A. e impacto positivo no valor do ativo.\n\n**Resumo:** O ativo Rio Jacutinga Participações S.A., proprietária da Gleba Jacutinga, foi reavaliado pelo Laudo de Avaliação Imobiliária, resultando em um aumento de R$ 59.968.000,00 no valor do ativo.\n\n**Trecho-chave:**\n\"A referida companhia é proprietária da Gleba Jacutinga, situada no município de Cambé, Estado do Paraná, localizada à PR 445, km 85 – Lote 250 – A2 – 2, e detida indiretamente pelo FII INFRA REAL ESTATE. \nA remarcação do ativo decorre do Laudo de Avaliação Imobiliária elaborado pela Cushman & Wakefield, o qual concluiu que o valor justo do referido imóvel é de R$ 77.968.000,00 (setenta e sete milhões, novecentos e sessenta e oito mil reais), sendo que, referida marcação a valor justo será feita na data-base de 30/06/2025.\"\n\n### ASSEMBLEIA AGO entregue em 04/11/2025\n\n**O QUE aconteceu:** Assembleia Geral Ordinária de Cotistas aprovou as Demonstrações Financeiras referentes ao exercício social findo em 30 de junho de 2025 e 2024.\n\n**Resumo:** A assembleia foi realizada por meio de Consulta Formal, com aprovação unânime das Demonstrações Financeiras dos exercícios sociais mencionados.\n\n**Trecho-chave:**\n\"APROVAÇÃO REJEIÇÃO ABSTENÇÃO\n98,76%\"\n\n### ASSEMBLEIA AGO entregue em 03/10/2025\n\n**O QUE aconteceu:** Convocação da Assembleia Geral Ordinária de Cotistas para aprovar as Demonstrações Financeiras referentes ao exercício social findo em 30 de junho de 2025 e 2024.\n\n**Resumo:** A assembleia foi convocada por meio de Consulta Formal, com prazo final para manifestação dos cotistas até o dia 03 de novembro de 2025."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 999776,
+    "data_entrega": "26/09/2025 18:25",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário Infra Real Estate - FII em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis "
+  }
+}

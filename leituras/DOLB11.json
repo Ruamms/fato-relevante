@@ -1,0 +1,30 @@
+{
+  "ticker": "DOLB11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:26:32",
+  "comunicados": {
+    "ids": [
+      1187131,
+      1223169
+    ],
+    "datas": [
+      "12/05/2026",
+      "17/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 12/05/2026\n\n**O QUE aconteceu:** A BTG Pactual Serviços Financeiros S.A. DTVM informou sobre a atualização da forma de divulgação da remuneração dos Prestadores de Serviços Essenciais.\n\n**Resumo:** A administradora do fundo decidiu substituir o \"Sumário de Remuneração\" pelo link da Ferramenta ANBIMA (Plataforma de Transparência de Taxas) para divulgar a remuneração, sem alterar os valores pagos aos cotistas.\n\n**Trecho-chave:**\n> \"1. Considerando as interpretações adicionais divulgadas pelo Ofício-Circular Conjunto nº 1/2025/CVM/SIN/SSE (\"Ofício-Circular CVM nº 1/2025\"), em especial quanto à substituição do 'Sumário de Remuneração' pela Ferramenta ANBIMA (Plataforma de Transparência de Taxas) como meio centralizado e adequado de divulgação da remuneração dos Prestadores de Serviços Essenciais da Classe, restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 17/06/2026\n\n**O QUE aconteceu:** A BTG Pactual Serviços Financeiros S.A. Distribuidora de Títulos e Valores Mobiliários convocou os cotistas do BTG PACTUAL REFERENCE SP/B3 CAMBIAL FUNDO DE INDICE para uma Consulta Formal.\n\n**Resumo:** Os cotistas foram convidados a votar sobre a aprovação das contas e demonstrações contábeis do fundo relativas ao exercício social findo em 31 de março de 2026, até o dia 3 de julho de 2026.\n\n**Trecho-chave:**\n> \"A BTG Pactual Serviços Financeiros S.A. Distribuidora de Títulos e Valores Mobiliários, sociedade anônima, com sede na Cidade e Estado do Rio de Janeiro, localizada à Praia de Botafogo, nº 501, Torre Corcovado, 5º Andar (Parte), Botafogo, e inscrita no CNPJ sob o nº 59.281.253/0001-23, devidamente autorizada pela Comissão de Valores Mobiliários  (“CVM”)  para  a  atividade  de  administração  de  carteiras  de  valores  mobiliários, de acordo com o Ato Declaratório CVM nº 8.695, de 20 de março de 2006 (‘Administradora’), na qualidade de administradora do BTG PACTUAL REFERENCE SP/B3 CAMBIAL FUNDO DE INDICE, inscrito no CNPJ sob o nº 60.310.645/0001-52 (‘Fundo’), bem como de sua classe única, vem, pela presente, convocar os cotistas do Fundo (“Cotistas”) para a Consulta Formal , com prazo de recebimento de votos até 3 de julho de 2026, para deliberarem sobre: (i) A aprovação das contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de março de 2026.\"\n\n**Conexão com o contexto:** Esta assembleia formal é uma parte do processo anual de aprovação das contas do fundo, que está relacionado aos indicadores financeiros e administrativos."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208568,
+    "data_entrega": "30/05/2026 01:54",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do BTG Pactual Reference S&P/B3 Cambial Fundo de Índice em 31 de março de 2026 e o desempenho de suas operações para o período de 28 de abril de 2025 a 31 de março de 2026, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos "
+  }
+}

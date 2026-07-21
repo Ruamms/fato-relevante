@@ -1,0 +1,30 @@
+{
+  "ticker": "GLPF11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T00:58:16",
+  "comunicados": {
+    "ids": [
+      1247671,
+      1199160
+    ],
+    "datas": [
+      "14/07/2026",
+      "19/05/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Assembleia Geral Extraordinária realizada em 19/05/2026\n\n**O que aconteceu:** A assembleia geral extraordinária do Fundo GLPF11 foi realizada por meio de consulta formal, aprovando as contas e demonstrações contábeis relativas ao exercício social findo em 31/12/2025.\n\n**Resumo:** Os cotistas votaram favoravelmente à aprovação das contas do fundo, que foram auditadas e estão disponíveis para consulta.\n\n**Trecho-chave:**\n\"Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31/12/2025, devidamente auditadas, conforme disponíveis para consulta nos sites da Administradora e nos demais canais exigidos pela regulamentação em vigor.\" (p. 1)\n\n---\n\n### Assembleia Geral Extraordinária realizada em 14/07/2026\n\n**O que aconteceu:** A assembleia geral extraordinária do Fundo GLPF11 foi realizada por meio de consulta formal, aprovando as contas e demonstrações contábeis relativas ao exercício social findo em 31/12/2025.\n\n**Resumo:** Os cotistas votaram favoravelmente à aprovação das contas do fundo, que foram auditadas e estão disponíveis para consulta.\n\n**Trecho-chave:**\n\"Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31/12/2025, devidamente auditadas, conforme disponíveis para consulta nos sites da Administradora e nos demais canais exigidos pela regulamentação em vigor.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1151106,
+    "data_entrega": "31/03/2026 18:59",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima refer idas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Galapagos Feeder Logístico Fundo de Investimento Imobil iário Responsabilidade Limitada em 31 de dezembro de 2025 e o desempenho de suas opera ções para o exercício findo na mesma data, de acordo com as práticas cont ábeis adotadas no Bras"
+  }
+}

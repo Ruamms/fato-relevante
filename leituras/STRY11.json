@@ -1,0 +1,27 @@
+{
+  "ticker": "STRY11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:32:17",
+  "comunicados": {
+    "ids": [
+      1217930,
+      1189429,
+      1216594,
+      1196072
+    ],
+    "datas": [
+      "11/06/2026",
+      "13/05/2026",
+      "10/06/2026",
+      "15/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 15/05/2026\n\n**O QUE aconteceu:** A Hedge Strategy Fundo de Investimento Imobiliário de Responsabilidade Limitada realizou uma Assembleia Geral Extraordinária por meio de consulta formal, aprovando a segunda emissão de cotas do fundo.\n\n**Resumo:** A assembleia deliberou sobre a 2ª Emissão de cotas, submetida ao rito de registro automático de distribuição, destinada exclusivamente a investidores profissionais.\n\n**Trecho-chave:**\n\"b. Regime de colocação e período de colocação: A oferta consistirá na distribuição pública primária de cotas, no Brasil, sob a coordenação da Administradora (“ Coordenador Líder ”), e sob o regime de melhores esforços de colocação, destinada exclusivamente a investidores profissionais, com registro de distribuição automaticamente concedido pela CVM, conforme procedimentos previstos no Anexo Normativo III da Resolução CVM 175, e na s demais disposições legais, regulamentares e autorregulatórias aplicáveis e em vigor (“Oferta”);\"\n\n**Conexão com o contexto:** Esta ação de emissão de cotas pode impactar no patrimônio líquido do fundo, que atualmente é R$ 12,7M.\n\n### ASSEMBLEIA AGE entregue em 10/06/2026\n\n**O QUE aconteceu:** A Hedge Strategy Fundo de Investimento Imobiliário de Responsabilidade Limitada realizou uma Assembleia Geral Extraordinária por meio de consulta formal, aprovando alterações no Regulamento do Fundo para permitir futuras amortizações extraordinárias.\n\n**Resumo:** Os cotistas aprovaram a mudança que permite que as futuras amortizações extraordinárias ocorram a exclusivo critério e determinação da Gestora do Fundo.\n\n**Trecho-chave:**\n\"Em relação a Ordem do Dia, foi aprovada, pela unanimidade de votos dos Cotistas, representando 100% (cem por cento) da base votante do Fundo, a alteração do item 3.2 do Anexo do Regulamento do Fundo visando prever que as futuras amortizações extraordinárias de Cotas ocorram a exclusivo critério e determinação da Gestora do Fundo.\"\n\n**Conexão com o contexto:** Esta mudança no regulamento pode afetar os futuros pagamentos aos cotistas, como na recente Amortização Extraordinária.\n\n### FATO RELEVANTE entregue em 11/06/2026\n\n**O QUE aconteceu:** A Hedge Strategy Fundo de Investimento Imobiliário de Responsabilidade Limitada realizou uma Amortização Extraordinária aos cotistas do fundo.\n\n**Resumo:** O Fundo pagou R$ 1.900.600,00 em amortização extraordinária a cada cota no valor de R$ 13,00, com pagamento previsto para o dia 15 de junho de 2026.\n\n**Trecho-chave:**\n\"Data-base 11 de junho de 2026\nMontante  R$ 1.900.600,00  \n(um milhão, novecentos mil e seiscentos reais) \nValor por cota  R$ 13,00 (treze reais) \nPagamento  15 de junho de 2026\"\n\n**Conexão com o contexto:** Esta Amortização Extraordinária pode impactar no patrimônio líquido do fundo e na distribuição de rendimentos aos cotistas."
+  },
+  "modelo": "qwen2.5:7b"
+}

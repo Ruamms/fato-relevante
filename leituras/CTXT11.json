@@ -1,0 +1,55 @@
+{
+  "ticker": "CTXT11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T02:20:32",
+  "relatorio": {
+    "id": 1228699,
+    "data_entrega": "25/06/2026 19:20",
+    "texto": "### Fatos Extraídos:\n\n1. **Vacância:** O relatório menciona que a vacância do imóvel é de 100%, com ofertas para diversos segmentos e locações temporárias.\n   > \"Vacância • Oferta de ITM para diversos segmentos e locações temporárias\" (p. 5)\n\n2. **Comercialização:** A administradora está trabalhando na comercialização do empreendimento, buscando demandas acima de 8.000 m².\n   > \"A estratégia de locação busca demandas acima de 8.000 m²\" (p. 3)\n\n3. **Resultado do Mês:** O fundo não auferiu resultado positivo no mês, com um resultado negativo de -R$ 0,14 por cota.\n   > \"Devido ao atual cenário de vacância, o Fundo não auferiu resultado positivo neste mês, e, por isso, não houve anúncio de distribuição. Em que o resultado do mês fechou em -R$ 0,14 por cota\" (p. 3)\n\n### O que observar em seguida:\n- A vacância permanece alta, com ofertas para diversos segmentos.\n- As negociações comerciais estão em andamento, mas sem efetivações no momento."
+  },
+  "comunicados": {
+    "ids": [
+      1133459,
+      1250381,
+      1219309,
+      1182235,
+      1173351
+    ],
+    "datas": [
+      "11/03/2026",
+      "15/07/2026",
+      "12/06/2026",
+      "07/05/2026",
+      "29/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 11/03/2026\n\n**O QUE aconteceu:** A administradora do fundo aprovou a realização da 6ª emissão de cotas.\n\n**Resumo:** O Fundo CTXT11 aprovou a emissão de 2.259.950 novas cotas com preço de R$ 5,43 por cota, totalizando um montante inicial de R$ 12.000.334,50.\n\n**Trecho-chave:** \"Aprovada a realização da 6ª (sexta) emissão (Novas Cotas), todas nominativas e escriturais, em série e classe únicas, com preço de emissão de R$ 5,31 (cinco reais e trinta e um centavos), considerando o Valor de Mercado apurado na média do período de 30 dias...\"\n\n### COMUNICADO AO MERCADO entregue em 29/04/2026\n\n**O QUE aconteceu:** A assembleia geral ordinária e extraordinária aprovou as demonstrações financeiras do exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** Os cotistas que representam 2,65% das cotas emitidas aprovaram as demonstrações financeiras do Fundo referentes ao exercício de 2025.\n\n**Trecho-chave:** \"Os cotistas que representam 2,65% (dois vírgula sessenta e cinco por cento) do total de cotas emitidas pelo Fundo e aptos ao exercício do direito de voto, deliberaram por aprovar as Demonstrações Financeiras do Fundo referentes ao exercício encerrado em 31 de dezembro de 2025.\"\n\n### COMUNICADO AO MERCADO entregue em 12/06/2026\n\n**O QUE aconteceu:** A administradora realizou a 3ª chamada de capital no âmbito da 6ª emissão de cotas.\n\n**Resumo:** A 3ª chamada de capital integralizou 276.244 cotas, totalizando R$ 1.500.004,92, já considerando o custo unitário e a taxa de distribuição primária.\n\n**Trecho-chave:** \"Será realizada, nesta data, a 3ª (terceira) chamada de capital no âmbito da 6ª (sexta) emissão de cotas do Fundo. Por meio desta chamada de capital, deverão ser integralizadas 276.244 (duzentos e setenta e seis mil, duzentos e quarenta e quatro) cotas...\"\n\n### COMUNICADO AO MERCADO entregue em 15/07/2026\n\n**O QUE aconteceu:** A administradora realizou a 4ª chamada de capital no âmbito da 6ª emissão de cotas.\n\n**Resumo:** A 4ª chamada de capital integralizou 276.244 cotas, totalizando R$ 1.500.004,92, já considerando o custo unitário e a taxa de distribuição primária.\n\n**Trecho-chave:** \"Será realizada, nesta data, a 4ª (quarta) chamada de capital no âmbito da 6ª (sexta) emissão de cotas do Fundo. Por meio desta chamada de capital, deverão ser integralizadas 276.244 (duzentos e setenta e seis mil, duzentos e quarenta e quatro) cotas...\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "VP/cota em queda relevante",
+      "Vacância física alta",
+      "Emissão de cotas com VP/cota em queda",
+      "Rendimentos irregulares",
+      "P/VP muito abaixo da média histórica"
+    ],
+    "cota": 4.83
+  },
+  "parecer": {
+    "id": 1147082,
+    "data_entrega": "27/03/2026 18:12",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": true,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Centro Têxtil Internacional Fundo de Investimento Imobiliário de Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o para o exercício findo nessa data, de acordo com as práticas"
+  }
+}

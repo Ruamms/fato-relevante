@@ -1,0 +1,61 @@
+{
+  "ticker": "PRSV11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T04:48:31",
+  "relatorio": {
+    "id": 1260247,
+    "data_entrega": "20/07/2026 19:00",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Vacância do Edifício Torre Boa Vista:** O edifício está 100% vago desde setembro de 2022, após o término do contrato com a ANAC.\n   > \"A alta disponibilidade, somada à baixa procura, mantém o imóvel 100% vago desde o término do contrato de locação com a ANAC em setembro de 2022.\" (p. 4)\n\n2. **Emissão de Cotas:** A 3ª emissão de cotas foi integralizada no mês de junho, enquanto a 4ª emissão foi aprovada para ocorrer em julho.\n   > \"No mês de junho de 2026, foi integralizado o percentual remanescente de 22,50% do capital comprometido da 3ª Emissão de Cotas, concluindo a integralização de 100% da emissão.\" (p. 5)\n   > \"Em 17 de julho de 2026, foi aprovada, em Assembleia Geral Extraordinária de Cotista, a realização da 4ª Emissão de Cotas do Fundo...\" (p. 5)\n\n3. **Desempenho do Mercado de Escritórios:** O mercado de escritórios corporativos no Rio de Janeiro manteve desempenho positivo com uma taxa de vacância de 25,2%.\n   > \"O mercado de escritórios corporativos no Rio de Janeiro manteve desempenho positivo no primeiro trimestre de 2026, encerrando o período com taxa de vacância de 25,2%, o que representa uma redução de 2,1% em relação ao mesmo período do ano anterior.\" (p. 4)\n\n4. **Alavancagem e Dívidas:** O fundo não distribuiu rendimento referente ao mês de junho.\n   > \"O Fundo não distribuiu rendimento referente ao mês de junho de 2026.\" (p. 5)\n\n### O que observar em seguida:\n1. **Vacância do Edifício Torre Boa Vista:** Verificar se haverá novas oportunidades de locação ou se a situação permanecerá estável.\n2. **Emissão de Cotas:** Monitorar o impacto da emissão de novas cotas no valor de mercado e na dinâmica financeira do fundo."
+  },
+  "comunicados": {
+    "ids": [
+      1058153,
+      988752,
+      987263,
+      1239536,
+      1004662,
+      1252750,
+      1252748
+    ],
+    "datas": [
+      "10/12/2025",
+      "11/09/2025",
+      "09/09/2025",
+      "03/07/2026",
+      "01/10/2025",
+      "17/07/2026",
+      "17/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 10/12/2025\n\n**O QUE aconteceu:** O ativo Torre Boa Vista, situado no Rio de Janeiro, foi avaliado a mercado e resultou em um valor 8,43% inferior ao valor contábil atual.\n\n**Resumo:** A avaliação do imóvel Torre Boa Vista reduziu o valor patrimonial da cota do fundo em 8,42%.\n\n**Trecho-chave:**\n\"resultando em valor 8,43% (oito inteiros e quarenta e três centésimos por cento) inferior ao valor contábil atual de referido imóvel, o que representa uma variação negativa de aproximadamente 8,42% (oito inteiros e quarenta e dois centésimos por cento) no valor patrimonial da cota do Fundo nesta data.\"\n\n### FATO RELEVANTE entregue em 11/09/2025\n\n**O QUE aconteceu:** Aprovada a 3ª Emissão de cotas do fundo, submetida ao rito de registro automático de distribuição.\n\n**Resumo:** O Fundo PRSV11 anunciou a 3ª Emissão de cotas, com 77.000 novas cotações sendo emitidas no mercado secundário da B3.\n\n**Trecho-chave:**\n\"A Oferta consistirá na distribuição pública primária de, inicialmente, 77.000 (setenta e sete mil) cotas (“Novas Cotas”), sob a coordenação da HEDGE INVESTMENTS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.\"\n\n### FATO RELEVANTE entregue em 09/09/2025\n\n**O QUE aconteceu:** Aprovada a 3ª Emissão de cotas do fundo, submetida ao rito de registro automático de distribuição.\n\n**Resumo:** O Fundo PRSV11 anunciou a 3ª Emissão de cotas, com 77.000 novas cotações sendo emitidas no mercado secundário da B3.\n\n**Trecho-chave:**\n\"A Oferta consistirá na distribuição pública primária de, inicialmente, 77.000 (setenta e sete mil) cotas (“Novas Cotas”), sob a coordenação da HEDGE INVESTMENTS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.\"\n\n### COMUNICADO AO MERCADO entregue em 03/07/2026\n\n**O QUE aconteceu:** Prorrogação do prazo para encerramento da Assembleia Geral Extraordinária.\n\n**Resumo:** O prazo para a Assembleia Geral Extraordinária foi prorrogado por mais 14 dias, encerrando-se em 17 de julho de 2026.\n\n**Trecho-chave:**\n\"A Consulta Formal fica prorrogada por mais 14 (quatorze) dias, encerrando-se em 17 de julho de 2026.\"\n\n### COMUNICADO AO MERCADO entregue em 01/10/2025\n\n**O QUE aconteceu:** Encerramento do período para exercício do direito de preferência da 3ª Emissão.\n\n**Resumo:** O período para a subscrição das novas cotações pela preferência dos cotistas foi encerrado, com 16.159 cotações sendo subscritas.\n\n**Trecho-chave:**\n\"De acordo com as informações recebidas da B3 e da Administradora, na qualidade de Escrituradora das Novas cotas do Fundo, até o momento foram subscritas 16.159 (dezesseis mil, cento e cinquenta e nove) Novas Cotas.\"\n\n### ASSEMBLEIA AGE entregue em 17/07/2026\n\n**O QUE aconteceu:** Aprovada a 4ª Emissão de cotas do fundo.\n\n**Resumo:** A maioria dos cotistas deliberou pela aprovação da 4ª Emissão, com Preço por Cota equivalente a R$ 32,28 (trinta e dois reais e vinte e oito centavos).\n\n**Trecho-chave:**\n\"Os Cotistas vinculados e/ou em posição de potencial conflito de interesses com o Fundo não foram considerados para fins de apuração do quórum de deliberação. Em relação à Ordem do Dia, a maioria dos Cotistas deliberou pela aprovação da 4ª Emissão, com Preço por Cota equivalente a R$ 32,28 (trinta e dois reais e vinte e oito centavos).\"\n\n### ASSEMBLEIA AGE entregue em 17/07/2026\n\n**O QUE aconteceu:** Aprovada a 4ª Emissão de cotas do fundo.\n\n**Resumo:** A maioria dos cotistas deliberou pela aprovação da 4ª Emissão, com Preço por Cota equivalente a R$ 32,28 (trinta e dois reais e vinte e oito centavos).\n\n**Trecho-chave:**\n\"Em relação à Ordem do Dia, a maioria dos Cotistas deliberou pela aprovação da 4ª Emissão, com Preço por Cota equivalente a R$ 32,28 (trinta e dois reais e vinte e oito centavos).\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "VP/cota em queda relevante",
+      "Vacância física alta",
+      "Emissão de cotas com VP/cota em queda",
+      "Rendimentos irregulares",
+      "P/VP muito abaixo da média histórica"
+    ],
+    "cota": 33.84
+  },
+  "parecer": {
+    "id": 1145663,
+    "data_entrega": "26/03/2026 17:06",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Presidente Vargas Fundo de Investimento Imobiliário de Responsabilidade Limitada (anteriormente denominado Presidente Vargas Fundo de Investimento Imobiliário) em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de ca"
+  }
+}

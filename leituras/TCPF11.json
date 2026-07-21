@@ -1,0 +1,33 @@
+{
+  "ticker": "TCPF11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T04:55:33",
+  "comunicados": {
+    "ids": [
+      1222830,
+      1181240,
+      1152833
+    ],
+    "datas": [
+      "16/06/2026",
+      "06/05/2026",
+      "01/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 16/06/2026\n\n**O QUE aconteceu:** A BR-Capital Distribuidora de Títulos e Valores Mobiliários S.A. informou que será realizada uma amortização parcial de cotas no valor de R$ 4,71 por cota.\n\n**Resumo:** A administradora do fundo corrigiu um erro em um comunicado anterior, indicando que o pagamento seria a título de distribuição de dividendos, mas na verdade será uma amortização parcial de cotas.\n\n**Trecho-chave:**\n\"A BR-Capital Distribuidora de Títulos e Valores Mobiliários S.A. , instituição financeira com sede na cidade de São Paulo, Estado de São Paulo, na Rua Surubim, nº 577, conjunto 101, Cidade Monções, CEP 04571- 050, inscrita no Cadastro Nacional da Pessoa Jurídica (“CNPJ”) sob o nº 44.077.014/0001-89, neste ato representada na forma de seu Estatuto Social, na qualidade de instituição administradora (\"Administradora\") do Treecorp Real Estate Fundo de Investimento Imobiliário Responsabilidade Limitada, informa aos cotistas do Fundo (“Cotistas”) e ao mercado em geral que, no dia 18 de junho de 2026, será realizada uma amortização parcial de cotas no valor de R$ 4,71 por cota. Portanto, vem por meio desta retificar o comunicado divulgado no dia 10 de junho na plataforma da B3, no qual constou que o pagamento ocorreria a título de distribuição de dividendos.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 06/05/2026\n\n**O QUE aconteceu:** A assembleia formal dos cotistas deliberou sobre as demonstrações financeiras do exercício encerrado em 31 de dezembro de 2025, bem como o relatório dos auditores independentes.\n\n**Resumo:** Todos os cotistas que responderam à consulta (representando 925 quotas) aprovaram as demonstrações financeiras e o relatório dos auditores independentes.\n\n**Trecho-chave:**\n\"ORDEM DO DIA: Deliberar e votar os seguintes assuntos: \n1 – Análise e deliberação acerca das Demonstrações Financeiras referentes ao exercício encerrado em 31 de dezembro de 2025, bem como do relatório dos Auditores Independentes. Quanto ao item 1 da Ordem do Dia:  Análise e deliberação acerca das Demonstrações Financeiras referentes ao exercício encerrado em 31 de dezembro de 2025, bem como do relatório dos Auditores Independentes; as demonstrações foram aprovadas pelo voto de quotistas representantes de 925 quotas, ou seja 100% dos cotistas que responderam à consulta.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 01/04/2026\n\n**O QUE aconteceu:** A administradora do fundo consultou os cotistas sobre a aprovação das demonstrações financeiras e relatório dos auditores independentes referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A consulta foi enviada aos cotistas para que se manifestassem até o dia 4 de maio sobre a aprovação das demonstrações financeiras e relatório dos auditores independentes. O documento contém instruções detalhadas sobre como os cotistas podem enviar suas manifestações.\n\n**Trecho-chave:**\n\"Prezado Cotista do \nTREECORP REAL ESTATE FUNDO DE INVESTIMENTO IMOBILIÁRIO I\nBR-CAPITAL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., (BR-CAPITAL) na qualidade de administradora do TREECORP REAL ESTATE FUNDO DE \nINVESTIMENTO IMOBILIÁRIO I  (O “FUNDO”), com base no artigo 27 do Regulamento do Fundo, vem pela presente consultar os cotistas, para que, até o dia 04 de maio, se manifestem por escrito sobre o seguinte: \nAnálise e deliberação acerca das Demonstrações Financeiras referentes ao exercício encerrado em 31 de dezembro de 2025, bem como do relatório dos Auditores Independentes. Este documento se encontra , para conhecimento e análise, no site do fundo http://www.brcapital.com.br/site/conteudo/pagina/1,199+Treecorp-Real-Estate-Fundo-De-Investimento-Imobiliario-I.html.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1150829,
+    "data_entrega": "31/03/2026 18:07",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acim a referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Treecorp Real Estate FII - Responsabilidade Limitada em 31 de dezembro de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nesta data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis "
+  }
+}

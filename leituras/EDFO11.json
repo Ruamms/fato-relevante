@@ -1,0 +1,54 @@
+{
+  "ticker": "EDFO11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T03:37:01",
+  "relatorio": {
+    "id": 1227712,
+    "data_entrega": "25/06/2026 10:07",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Vacância Física e Financeira:** O relatório informa que a vacância física é de 100,00%, o que está acima do limiar de alerta estabelecido (15,00%). A vacância financeira também é de 100,00%.\n2. **Rendimentos Acima do Resultado Financeiro:** Os rendimentos declarados no quarto trimestre foram de R$ 4,4M, enquanto o resultado financeiro líquido foi de R$ 2,9M, resultando em um excesso não coberto pelo resultado acumulado (reserva) de R$ 684,3mil.\n3. **Emissão de Cotas com VP/Cota em Queda:** Houve uma emissão de cotas no período de 24 meses, com o número de cotistas aumentando e a cota valor de mercado (VP/cota) ajustada caindo -14,72%.\n4. **Base de Cotistas Pequena:** O número de cotistas é muito pequeno, com apenas 443 cotistas no último informe mensal.\n5. **Projetos de Benfeitorias em Andamento:** Estudos para a implementação do estacionamento e do lobby foram finalizados, mas sua efetivação depende da aprovação em Assembleia Condominial. O projeto Plug-and-Play foi aprovado e seguirá com contratações.\n6. **Vacância de Aluguel:** Há uma unidade em processo de minuta para ocupação de outro andar, mas a vacância de aluguel é de 28,27%.\n7. **Aluguel em Atraso:** Não há aluguel em atraso no momento.\n8. **Resultado do Fundo:** O resultado do fundo foi positivo no mês de maio com R$ 247 mil distribuídos como dividendos.\n\n### O que Observar Em Seguida:\n1. **Vacância e Benfeitorias:** A vacância física alta é um ponto crítico, mas os projetos de benfeitoria podem ajudar a reduzir essa situação.\n2. **Rendimentos Acima do Resultado Financeiro:** Este fato indica uma possível distorção nos resultados financeiros que deve ser monitorada."
+  },
+  "comunicados": {
+    "ids": [
+      1093934,
+      1077560,
+      1003872,
+      1199557,
+      1165590
+    ],
+    "datas": [
+      "27/01/2026",
+      "08/01/2026",
+      "01/10/2025",
+      "19/05/2026",
+      "16/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 27/01/2026\n\n**O QUE aconteceu:** A OLIVEIRA TRUST DTVM S.A., administradora do Fundo EDIFÍCIO OURINVEST - RESPONSABILIDADE LIMITADA, comunicou a aprovação da segunda emissão de cotas.\n\n**Resumo:** A assembleia dos cotistas aprovou a oferta pública para distribuição de até 50.000 novas cotas do fundo, com um preço unitário de R$ 100,00 e uma taxa de distribuição primária de R$ 1,37.\n\n**Trecho-chave:** \"Os Cotistas aprovaram, de acordo com a consulta formal publicada em 23 de dezembro de 2025, conforme aprovada por cotistas que representam 45,71% das cotas em circulação do Fundo sem quaisquer ressalvas ou restrições, as características da Oferta...\"\n\n### FATO RELEVANTE entregue em 08/01/2026\n\n**O QUE aconteceu:** A OLIVEIRA TRUST DTVM S.A., administradora do Fundo EDIFÍCIO OURINVEST - RESPONSABILIDADE LIMITADA, divulgou o termo de apuração da consulta formal aos cotistas.\n\n**Resumo:** O termo detalha as condições da segunda emissão de cotações, incluindo o preço unitário, a taxa de distribuição primária e os critérios para aumento ou redução do montante total da oferta.\n\n**Trecho-chave:** \"A presente emissão representa a 2ª (segunda) emissão de Novas Cotas do Fundo; Tipo de Distribuição. Primária; Montante Total da Oferta. Até R$ 5.000.000,00 (cinco milhões de reais); Quantidade Total de Novas Cotas . Até 50.000 (cinquenta mil) Novas Cotas...\"\n\n### FATO RELEVANTE entregue em 01/10/2025\n\n**O QUE aconteceu:** A OLIVEIRA TRUST DTVM S.A., administradora do Fundo EDIFÍCIO OURINVEST - RESPONSABILIDADE LIMITADA, comunicou a prorrogação dos contratos de locação.\n\n**Resumo:** Os contratos de locação com Ouribank foram prorrogados até 1º de outubro de 2026, mantendo-se a obrigatoriedade de pagamento dos aluguéis e encargos durante o período de desocupação antecipada.\n\n**Trecho-chave:** \"Em 30 de setembro de 2025, foram celebrados aditivos contratuais que prorrogaram a vigência dos seguintes contratos de locação: 1. 3º Aditivo ao Contrato de Locação celebrado com OURIBANK S.A. BANCO MÚLTIPLO...\"\n\n### ASSEMBLEIA AGO entregue em 19/05/2026\n\n**O QUE aconteceu:** A OLIVEIRA TRUST DTVM S.A., administradora do Fundo EDIFÍCIO OURINVEST - RESPONSABILIDADE LIMITADA, divulgou o resultado da consulta formal aos cotistas.\n\n**Resumo:** As demonstrações financeiras do fundo referentes ao exercício encerrado em 31 de dezembro de 2025 foram aprovadas pelos cotistas representando 8.97% das cotas em circulação.\n\n**Trecho-chave:** \"Cotistas representando 8.97% das cotas em circulação aprovaram, sem quaisquer ressalvas ou restrições, as Demonstrações Financeiras do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n### ASSEMBLEIA AGO entregue em 16/04/2026\n\n**O QUE aconteceu:** A OLIVEIRA TRUST DTVM S.A., administradora do Fundo EDIFÍCIO OURINVEST - RESPONSABILIDADE LIMITADA, convocou a assembleia geral ordinária para aprovar as demonstrações financeiras.\n\n**Resumo:** A assembleia foi convocada para deliberar sobre as demonstrações financeiras do fundo referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:** \"A Consulta Formal será apurada com a presença de qualquer número de cotistas, nos termos do Art. 74 da parte geral da RCVM nº 175, e a matéria descrita no item acima dependerá da aprovação de quórum simples...\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Vacância física alta",
+      "Rendimentos acima do resultado financeiro",
+      "Emissão de cotas com VP/cota em queda",
+      "Base de cotistas muito pequena"
+    ],
+    "cota": 144.97
+  },
+  "parecer": {
+    "id": 1151924,
+    "data_entrega": "31/03/2026 22:39",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

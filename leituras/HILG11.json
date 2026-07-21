@@ -1,0 +1,39 @@
+{
+  "ticker": "HILG11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T01:33:50",
+  "comunicados": {
+    "ids": [
+      1060017,
+      1232055,
+      1223000,
+      1233380,
+      1233379
+    ],
+    "datas": [
+      "12/12/2025",
+      "29/06/2026",
+      "16/06/2026",
+      "29/06/2026",
+      "29/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 12/12/2025\n\n**O QUE aconteceu:** A administradora do HIRE LOG I - Fundo de Investimento Imobiliário celebrou um compromisso de compra e venda de um imóvel industrial.\n\n**Resumo:** O fundo adquiriu um galpão industrial em Cabreúva, SP, por R$140.903.000,00, dividido em duas parcelas.\n\n**Trecho-chave:**\n\"Este imóvel possui um galpão industrial com área de uso exclusivo de seus ocupantes de aproximadamente 30.035,71 m² e áreas e infraestruturas de uso comum entre os ocupantes exemplificadamente, mas não exaustivamente, portaria, vestiários, áreas de apoio ao motorista, refeitório, cozinha, ambulatório, infraestrutura de instalações (incêndio, água, esgoto e elétrica), salas administrativas, vagas de veículos leves e pesados e demais áreas de apoio a operação de múltiplos inquilinos que somam aproximadamente 3.102,14 m², totalizando aproximadamente 33.137,85 m² de área construída.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 29/06/2026\n\n**O QUE aconteceu:** A administradora respondeu a um ofício da B3 sobre uma ressalva contábil.\n\n**Resumo:** A administradora discorda do posicionamento da Deloitte quanto ao tratamento contábil adequado para as distribuições de rendimento, argumentando que os rendimentos não deveriam ter sido reconhecidos no balanço patrimonial até a data-base das demonstrações contábeis.\n\n**Trecho-chave:**\n\"O entendimento da Administradora fundamenta-se no item 10-D do Ofício-Circular nº 1/2024/CVM/SSE/SNC, segundo o qual “sobre os rendimentos a distribuir, ou seja, aqueles já declarados, porém não pagos, a informação deve se mostrar aderente àquela reconhecida no Passivo do Balanço Patrimonial\". Como os rendimentos em questão não haviam sido declarados até 31 de dezembro de 2025, o passivo correspondente não deveria, na visão da Administradora, ter sido reconhecido nessa data — o que sustenta o cumprimento das práticas e normas contábeis aplicáveis.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 16/06/2026\n\n**O QUE aconteceu:** A administradora comunicou sobre uma ressalva contábil encontrada na auditoria do exercício social de 2025.\n\n**Resumo:** A Deloitte indicou que o passivo da Classe do Fundo estaria subavaliado e o patrimônio líquido superavaliado em R$9.300 mil, em razão do não reconhecimento dos rendimentos declarados relativos ao período de 17 de junho a 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"A Deloitte indicou que, em 31 de dezembro de 2025, o passivo da Classe do Fundo estaria subavaliado e o patrimônio líquido superavaliado em R$ 9.300 mil, em razão do não reconhecimento dos rendimentos declarados relativos ao período de 17 de junho a 31 de dezembro de 2025 — cujo registro ocorreu em 8 de janeiro de 2026 e não na data-base das demonstrações contábeis.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 29/06/2026\n\n**O QUE aconteceu:** A administradora apresentou uma proposta para a assembleia geral extraordinária.\n\n**Resumo:** A proposta visa aprovar as contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31 de dezembro de 2025, devidamente auditadas.\n\n**Trecho-chave:**\n\"A deliberação constante acima visa aprovar as Demonstrações Financeiras do Fundo, elaborada por auditor independente.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1219654,
+    "data_entrega": "12/06/2026 22:40",
+    "tipo": "ressalva",
+    "rotulo": "opinião com ressalva",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, exceto quanto aos efeitos do assunto descrito na seção a seguir intitulada “Base para opinião com ressalva” , as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe em 31 de dezembro de 2025, o desempenho de suas operações e os seus respectivos fluxos de caixa para o período de 17 de junho"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "ticker": "PATL11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T11:40:58",
+  "relatorio": {
+    "id": 1245999,
+    "data_entrega": "13/07/2026 18:05",
+    "texto": "### Fatos Extraídos do Relatório Gerencial:\n\n1. **Amortização Parcial do Fundo:**\n   \"Conforme informado em Fato Relevante de 30/06/2026, foi concluída a amortização parcial do Fundo, no montante total de R$ 66,3283502/cota, composto por (i) R$ 59,0683502/cota em cotas do HGLG, calculado com base no valor de fechamento de 29 de junho de 2026, de R$ 151,55/cota, o que corresponde a um fator de proporção de 0,38976146 cota do HGLG por cota do PATL; e (ii) R$ 7,26/cota em moeda corrente nacional.\" (p. 4)\n\n2. **Cotas Distribuídas:**\n   \"O Fundo manteve, ainda, R$ 5 milhões em caixa para eventuais obrigações relacionadas à RMG. Ao término do período de seis meses, será realizada a amortização final, encerrando definitivamente as atividades do Fundo.\" (p. 4)\n\n3. **Cenário de FIIs:**\n   \"Em junho os fundos imobiliários recuaram novamente, em linha com o movimento de maio. O IFIX registrou queda de -1,21%, fechando o primeiro semestre com alta de 1,46%.\" (p. 3)\n\n4. **Vacância:**\n   \"No Brasil, as quedas foram generalizadas entre os setores, refletindo um movimento amplo de reprecificação, mais ligado à taxa de desconto do que a fundamentos setoriais. Entre os fundos de tijolo, Logística (-1,8%) liderou as perdas com contribuição negativa de 0,4% para o índice.\" (p. 3)\n\n5. **Rendimentos e Cotação:**\n   \"O IFIX encerrou o mês negociado a 0,90x o valor patrimonial, com volume médio diário acima de R$ 350 milhões.\" (p. 3)\n\n6. **Cenário Econômico:**\n   \"No cenário externo, houve redução das tensões entre Estados Unidos e Irã, com a assinatura do acordo de paz e a reabertura do Estreito de Ormuz. O petróleo devolveu o prêmio de risco e voltou a ser negociado próximo ao nível pré-guerra, em torno de US$ 70/barril.\" (p. 3)\n\n7. **Taxa de Administração:**\n   \"A taxa de administração total passou a ser cobrada sobre o valor de mercado desde que o PATL passou a integrar o IFIX em Janeiro/2021.\" (p. 2)\n\n8. **Gestão e Estrutura do Fundo:**\n   \"O Fundo tem por objetivo a obtenção de renda e eventual ganho de capital, a serem obtidos mediante investimento de, no mínimo, 2/3 do seu PL: (i) diretamente, mediante a aquisição de imóveis logísticos ou industriais, construídos ou em construção localizados no território nacional, e/ou direitos reais sobre tais imóveis.\" (p. 2)\n\n### O que observar em seguida:\n1. **Desenvolvimento da Amortização Final:** Acompanhe o processo de amortização final do fundo, previsto para seis meses após a venda dos ativos.\n2. **Evolução das Cotas do HGLG:** Verifique como as cotas do HGLG se comportam no mercado e quais são os impactos na cotação do PATL11."
+  },
+  "comunicados": {
+    "ids": [
+      1237778,
+      1236326,
+      1179592,
+      1012229,
+      1247701,
+      1192910
+    ],
+    "datas": [
+      "01/07/2026",
+      "30/06/2026",
+      "04/05/2026",
+      "13/10/2025",
+      "14/07/2026",
+      "14/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 01/07/2026\n\n**O que aconteceu:** Amortização parcial do PATL11.\n\n**Resumo:** O Fundo PATL11 realizará uma amortização parcial, entregando a cada cota detida pelos cotistas um valor total de R$ 66,328350, composto por cotas de emissão do HGLG e moeda corrente nacional.\n\n**Trecho-chave:**\n\"Em continuidade ao informado no Fato Relevante do Fundo, datado de 04 de maio de 2026, comunicamos a amortização parcial do Fundo, conforme previamente divulgado.\"\n\n---\n\n### FATO RELEVANTE entregue em 30/06/2026\n\n**O que aconteceu:** Amortização parcial do PATL11.\n\n**Resumo:** O Fundo PATL11 realizará uma amortização parcial, entregando a cada cota detida pelos cotistas um valor total de R$ 66,328350, composto por cotas de emissão do HGLG e moeda corrente nacional.\n\n**Trecho-chave:**\n\"Em continuidade ao informado no Fato Relevante do Fundo, datado de 04 de maio de 2026, comunicamos a amortização parcial do Fundo, conforme previamente divulgado.\"\n\n---\n\n### FATO RELEVANTE entregue em 04/05/2026\n\n**O que aconteceu:** Conclusão da alienação dos imóveis do PATL11.\n\n**Resumo:** O PATL11 concluiu a alienação total de seus imóveis para o HGLG11, recebendo R$ 354.900.000,00, e iniciará um processo de amortização parcial das cotas do Fundo.\n\n**Trecho-chave:**\n\"Em continuidade ao divulgado por meio do Fato Relevante de 02 de janeiro de 2026 e conforme aprovado na Assembleia Geral Extraordinária de Cotistas do Fundo apurada em 30 de dezembro de 2025, nesta data, foi lavrada a Escritura Pública de Venda e Compra (‘Escritura), por meio do qual o Fundo concluiu a alienação totalidade dos imóveis do Fundo.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 13/10/2025\n\n**O que aconteceu:** Inconsistência na distribuição de resultados.\n\n**Resumo:** Foi identificada uma inconsistência na nota de distribuição de resultados, com um saldo a maior de aproximadamente R$ 4 mil reais. A reapresentação das informações será feita no próximo exercício social.\n\n**Trecho-chave:**\n\"Na elaboração das demonstrações financeiras de 31 de dezembro de 2024, na nota explicativa 18. Distribuição de Resultados, foi identificado um saldo a maior de aproximadamente R$ 4 mil reais quando comparado ao efetivamente distribuído.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 14/07/2026\n\n**O que aconteceu:** Aprovou as contas e demonstrações contábeis do PATL11.\n\n**Resumo:** Os cotistas aprovaram as contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Deliberou pela matéria constante na Ordem do Dia.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 14/05/2026\n\n**O que aconteceu:** Proposta para aprovação das contas e demonstrações contábeis.\n\n**Resumo:** A Vórtx Distribuidora de Títulos e Valores Mobiliários propôs a aprovação das contas e demonstrações contábeis do PATL11, relativas ao exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31 de dezembro de 2025.\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "VP/cota em queda relevante",
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 64.15
+  },
+  "parecer": {
+    "id": 1152101,
+    "data_entrega": "31/03/2026 23:37",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Pátria Logística Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas n"
+  }
+}

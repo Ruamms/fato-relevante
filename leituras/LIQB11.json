@@ -1,0 +1,21 @@
+{
+  "ticker": "LIQB11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:46:59",
+  "comunicados": {
+    "ids": [
+      1245551,
+      1240727
+    ],
+    "datas": [
+      "13/07/2026",
+      "06/07/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 13/07/2026\n\n**O QUE aconteceu:** Início do período de negociação das cotas da Classe Única do BTG Pactual Teva ITBR Target 750 Fundo de Índice.\n\n**Resumo:** O fundo iniciou sua negociação no mercado secundário em 15 de julho de 2026, com o código de negociação \"LIQB11\" e valor inicial de R$ 100,00.\n\n**Trecho-chave:**\n\"Em 15 de julho de 2026, será iniciado o período negociação da Classe, no mercado secundário, sob o código de negociação ““LIQB11”, nome de pregão BTGP LIQB; e código ISIN BRLIQBCTF002, pelo valor inicial de R$ 100,00 (cem reais).\"\n\n### COMUNICADO AO MERCADO entregue em 06/07/2026\n\n**O QUE aconteceu:** Anúncio do início do período de negociação das cotas da Classe Única do BTG Pactual Teva ITBR Target 750 Fundo de Índice.\n\n**Resumo:** O fundo iniciou sua negociação no mercado secundário em 14 de julho de 2026, com o código de negociação \"LIQB11\" e valor inicial de R$ 100,00.\n\n**Trecho-chave:**\n\"Em 14 de julho de 2026, será iniciado o período negociação da Classe, no mercado secundário, sob o código de negociação ““LIQB11”, nome de pregão BTGP LIQB; e código ISIN BRLIQBCTF002, pelo valor inicial de R$ 100,00 (cem reais).\"\n\n**Conexão com indicadores do contexto:** Ambos os comunicados informam sobre o início da negociação das cotas do fundo, que reflete as variações e rentabilidade do Índice Teva ITBR Selic Target 750."
+  },
+  "modelo": "qwen2.5:7b"
+}

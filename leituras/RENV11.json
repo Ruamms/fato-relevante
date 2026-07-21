@@ -1,0 +1,49 @@
+{
+  "ticker": "RENV11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T05:23:59",
+  "relatorio": {
+    "id": 1229142,
+    "data_entrega": "26/06/2026 10:55",
+    "texto": "### Fatos Extraídos:\n\n1. **Portfólio atualizado**: O RENV11 possui duas usinas fotovoltaicas, ambas localizadas em operação:\n   - UFV Alexânia (Alexânia/GO): 1,34 MWp de potência instalada.\n   - UFV Mombaça (Mombaça/CE): 1,00 MWp de potência instalada.\n\n2. **Locações**: As usinas estão sob contratos de locação:\n   - UFV Alexânia: Locatário Yellot, com contrato de \"Energia Compensada\".\n   - UFV Mombaça: Locatário Gedisa, também com contrato de \"Energia Compensada\".\n\n3. **Capacidade instalada total**: 2,6 MWp.\n\n4. **Distribuição de dividendos**: A distribuição por cota é de R$ 0,08, representando um Dividend Yield (12 meses) de 1,25%.\n\n5. **Patrimônio líquido e valor de mercado**:\n   - Patrimônio Líquido: R$ 14,67M.\n   - Cota Patrimonial: R$ 6,23.\n   - Cota de Mercado: R$ 6,40.\n\n6. **Dividend Yield mensal**: 2,69 MWp.\n\n7. **Número de cotistas**: 899 (12 meses: +78,53%).\n\n8. **Taxa de administração**: 0,75% a.a.\n\n### O que observar em seguida:\n- Monitorar as gerações totais do portfólio e o histórico de proventos.\n- Observar os contratos de locação e seus termos para garantir estabilidade nas receitas."
+  },
+  "comunicados": {
+    "ids": [
+      980060,
+      979782,
+      865160,
+      1095579,
+      1089273
+    ],
+    "datas": [
+      "29/08/2025",
+      "28/08/2025",
+      "26/03/2025",
+      "29/01/2026",
+      "21/01/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 29/08/2025\n\n**O QUE aconteceu:** Remarcação positiva dos ativos do fundo, resultando em uma variação positiva de 51,55% no valor da cota patrimonial.\n\n**Resumo:** A ID Corretora de Títulos e Valores Mobiliários S.A. comunicou a remariação positiva dos ativos do CPV Energia Fundo de Investimento Imobiliário Responsabilidade Limitada, aumentando o valor da cota patrimonial em 51,55%.\n\n**Trecho-chave:** \"Em conformidade com o laudo de avaliação independente elaborado para fins de atualização dos ativos integrantes da carteira do Fundo, verificou-se a remarcação positiva de tais ativos, resultando em uma variação positiva de 51,55% no valor da cota patrimonial do Fundo.\"\n\n### FATO RELEVANTE entregue em 28/08/2025\n\n**O QUE aconteceu:** Remarcação positiva dos ativos do fundo, resultando em uma variação positiva no valor da cota patrimonial.\n\n**Resumo:** A ID Corretora de Títulos e Valores Mobiliários S.A. comunicou a remariação positiva dos ativos do CPV Energia Fundo de Investimento Imobiliário Responsabilidade Limitada, aumentando o valor da cota patrimonial.\n\n**Trecho-chave:** \"Em conformidade com o laudo de avaliação independente elaborado para fins de atualização dos ativos integrantes da carteira do Fundo, verificou-se a remarcação positiva de tais ativos, refletindo em uma variação positiva no valor da cota patrimonial do Fundo.\"\n\n### FATO RELEVANTE entregue em 26/03/2025\n\n**O QUE aconteceu:** Cogestor do fundo renunciou à função.\n\n**Resumo:** A Vórtex Distribuidora de Títulos e Valores Mobiliários S.A. comunicou a intenção da Armor Gestora de Recursos Ltda. de renunciar à função de cogestor do CPV Energia Fundo de Investimento Imobiliário Responsabilidade Limitada.\n\n**Trecho-chave:** \"Diante disso, a Administradora está empenhada em adotar as providências adequadas para aprovar a nova versão do regulamento do Fundo, conforme artigo 52, inciso III da Resolução CVM 175, bem como promover a rescisão do contrato de cogestão firmado entre o Fundo e o Cogestor.\"\n\n### ASSEMBLEIA GERAL DE COTISTAS AGO realizada em 29/01/2026\n\n**O QUE aconteceu:** Aprovou demonstração financeira do fundo referente ao exercício de 2025.\n\n**Resumo:** A assembleia geral de cotistas aprovou a demonstração financeira do CPV Energia Fundo de Investimento Imobiliário Responsabilidade Limitada referente ao exercício de 2025, com aprovação de 39,66% das cotas emitidas.\n\n**Trecho-chave:** \"Diante disso, a Administradora declara que mediante a aprovação de 39,66% (trinta e nove virgula sessenta e seis por cento) das cotas emitidas do Fundo, as deliberações foram aprovadas.\"\n\n### ASSEMBLEIA GERAL DE COTISTAS AGO realizada em 21/01/2026\n\n**O QUE aconteceu:** Aprovou demonstração financeira do fundo referente ao exercício de 2025.\n\n**Resumo:** A assembleia geral de cotistas aprovou a demonstração financeira do CPV Energia Fundo de Investimento Imobiliário Responsabilidade Limitada referente ao exercício de 2025, com aprovação de 39,66% das cotas emitidas.\n\n**Trecho-chave:** \"Diante disso, a Administradora declara que mediante a aprovação de 39,66% (trinta e nove virgula sessenta e seis por cento) das cotas emitidas do Fundo, as deliberações foram aprovadas.\""
+  },
+  "retrato": {
+    "selo": "Histórico insuficiente",
+    "nivel": "insuficiente",
+    "alertas": [],
+    "cota": 5.67
+  },
+  "parecer": {
+    "id": 1005803,
+    "data_entrega": "03/10/2025 14:50",
+    "tipo": "abstencao",
+    "rotulo": "abstenção de opinião",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, exceto pelos possíveis efeitos do assunto descrito na seção a seguir intitulada “Base para opinião com ressalva”, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do CPV Energia Fundo de Investimento Imobiliário Responsabilidade Limitada em 30 de junho de 2025, e o desempenho das suas operaç"
+  }
+}

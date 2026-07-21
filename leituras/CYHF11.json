@@ -1,0 +1,48 @@
+{
+  "ticker": "CYHF11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T23:56:11",
+  "relatorio": {
+    "id": 1250210,
+    "data_entrega": "15/07/2026 19:18",
+    "texto": "### Fatos do Relatório:\n\n1. **Distribuição e Rendimentos:**\n   - A distribuição de junho foi de R$ 0,11/cota, resultando em um yield anualizado de 14,35%.\n   - Desde o primeiro mês operacional (fevereiro/2024), a média de distribuição é de R$ 0,10/cota.\n\n2. **Movimentações no Portfólio:**\n   - Foram integralizadas R$ 2,9 MM em CRI CDT.\n   - Houve amortizações extraordinárias totalizando R$ 3,4 MM, distribuídas entre diferentes CRIs.\n\n3. **Portfólio Atual:**\n   - O portfólio é composto por 19 operações, sendo a maior parte (85%) de CRIs.\n   - A alocação do fundo está majoritariamente concentrada na região Sudeste e em segmentos residenciais.\n\n4. **Ativos Detalhados:**\n   - CRI Epiroc: Financiamento para construção de um ativo logístico, com garantias variadas.\n   - CRI Shopping Downtown: Expansão do shopping localizado na Barra da Tijuca/RJ, com garantias robustas.\n   - Co-incorporação Somos Level Home Resort: Operação de equity com a incorporadora Somos.\n\n5. **Riscos e Garantias:**\n   - A gestão destaca a importância das garantias em todas as operações, incluindo alianças fiduciárias, cessões fiduciárias, fundos de reserva, seguros, entre outros.\n   - As garantias variam conforme o ativo, mas geralmente envolvem imóveis, recebíveis e fundos de reserva.\n\n6. **Vacância e Inadimplência:**\n   - Não há menção específica sobre vacância ou inadimplência no relatório.\n\n7. **Obras em Andamento:**\n   - As obras estão quase 100% concluídas, com habite-se emitido para a maioria dos projetos.\n   - O fundo possui garantias robustas durante as fases de obras e após a conclusão das mesmas.\n\n8. **Planos Futuros:**\n   - A gestão prevê distribuições similares ou superiores às realizadas, devido à reserva legal relevante e ao aumento da taxa média de alocação do fundo.\n\n### O que observar em seguida:\n- Monitorar a evolução das obras e garantias dos ativos.\n- Observar o comportamento do mercado imobiliário e as taxas de juros, especialmente com a expectativa de manutenção de juros restritivos."
+  },
+  "comunicados": {
+    "ids": [
+      1235599,
+      1207751,
+      1068521,
+      1019237
+    ],
+    "datas": [
+      "30/06/2026",
+      "29/05/2026",
+      "23/12/2025",
+      "23/10/2025"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 30/06/2026\n\n**O QUE aconteceu:** Pagamento de dividendos no valor de R$ 0,11 por cota.\n\n**Resumo:** O Fundo CYRELA HEDGE FUND realizou o pagamento de R$ 2.312.332,88 aos cotistas em 01/07/2026, baseado no resultado da carteira durante o mês de junho de 2026.\n\n**Trecho-chave:** \"Será pago o valor de R$ 0,11 por cota, perfazendo o montante total de R$ 2.312.332,88 (dois milhões, trezentos e doze mil, trezentos e trinta e dois reais, e oitenta e oito centavchos) no dia 01/07/2026.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 29/05/2026\n\n**O QUE aconteceu:** Pagamento de dividendos no valor de R$ 0,10 por cota.\n\n**Resumo:** O Fundo CYRELA HEDGE FUND realizou o pagamento de R$ 2.102.120,80 aos cotistas em 01/06/2026, baseado no resultado da carteira durante o mês de maio de 2026.\n\n**Trecho-chave:** \"Será pago o valor de R$ 0,10 por cota, perfazendo o montante total de R$ 2.102.120,80 (dois milhões, cento e dois mil, cento e vinte reais, e oitenta centavos) no dia 01/06/2026.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 23/12/2025\n\n**O QUE aconteceu:** Não houve quórum para a Assembleia Geral Ordinária.\n\n**Resumo:** A assembleia programada para o dia 24 de novembro de 2025 não ocorreu devido à falta de cotistas. As demonstrações contábeis do exercício social encerrado em 30 de junho de 2025 foram automaticamente aprovadas.\n\n**Trecho-chave:** \"Em virtude do não comparecimento de quaisquer cotistas fora lavrado o Termo de Não Instalação da Assembleia Geral Ordinária e, diante da ausência de opinião modificada nas Demonstrações Contábeis devidamente auditadas do exercício social findo em 30 de junho de 2025, estes foram automaticamente aprovados.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 23/10/2025\n\n**O QUE aconteceu:** Convocação para Assembleia Geral Ordinária.\n\n**Resumo:** O Fundo CYRELA HEDGE FUND convocou os cotistas para a assembleia programada para o dia 24 de novembro de 2025, com a finalidade de aprovar as contas e demonstrações contábeis do exercício social encerrado em 30 de junho de 2025.\n\n**Trecho-chave:** \"O BANCO DAYCOVAL S.A. , sociedade com sede na Cidade de São Paulo, Estado de São Paulo, na Avenida Paulista, 1.793, 9º andar, Bela Vista, São Paulo - SP, inscrita no CNPJ/ME sob o nº 62.232.889/0001-90, na qualidade de instituição administradora do Cyrela Hedge Fund Fundo de Investimento Imobiliário - FII de Responsabilidade Limitada, inscrito no CNPJ/ME sob o nº 51.601.636/0001-20, nos termos do regulamento do Fundo, vem por meio desta, convocar V.Ss.\" (p. 1)"
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 1005421,
+    "data_entrega": "02/10/2025 22:47",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Cyrela Hedge Fund Fundo de Investimento Imobiliário - FII de Responsabilidade Limitada em 30 de junho de 2025 , o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis ado"
+  }
+}

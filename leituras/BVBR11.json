@@ -1,0 +1,33 @@
+{
+  "ticker": "BVBR11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:21:47",
+  "comunicados": {
+    "ids": [
+      1248279,
+      1248278,
+      1223698
+    ],
+    "datas": [
+      "15/07/2026",
+      "15/07/2026",
+      "17/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 15/07/2026\n\n**O que aconteceu:** As contas anuais do Fundo INVESTO CONSTANCIA FATORES DEFENSIVIDADE FUNDO DE INDICE foram aprovadas.\n\n**Resumo:** A assembleia geral de cotistas realizada em 6 de julho de 2026 aprovou as contas anuais do Fundo referente ao exercício encerrado em 31 de março de 2026.\n\n**Trecho-chave:**\n\"foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de março de 2026.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 15/07/2026\n\n**O que aconteceu:** As contas e demonstrações contábeis do Fundo INVESTO CONSTANCIA FATORES DEFENSIVIDADE FUNDO DE INDICE foram aprovadas.\n\n**Resumo:** A assembleia geral de cotistas realizada em 6 de julho de 2026 deliberou sobre a aprovação das contas e demonstrações contábeis do Fundo referente ao exercício social encerrado em 31 de março de 2026.\n\n**Trecho-chave:**\n\"Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de março de 2026.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 17/06/2026\n\n**O que aconteceu:** A administradora convocou os cotistas para a consulta formal sobre a aprovação das contas e demonstrações contábeis do Fundo.\n\n**Resumo:** A administradora BTG Pactual Serviços Financeiros S.A. Distribuidora de Títulos e Valores Mobiliários convocou os cotistas para deliberarem sobre a aprovação das contas e demonstrações contábeis do Fundo referente ao exercício social encerrado em 31 de março de 2026.\n\n**Trecho-chave:**\n\"Aprovacao das contas e demonstracoes contabeis do Fundo, acompanhadas do respectivo relatorio do auditor independente, relativas ao exercicio social findo em 31 de marco de 2026.\"\n\n**Conexão com o contexto:** Este documento conecta-se aos indicadores do contexto, pois aprovou as contas e demonstrações contábeis do Fundo, que são um dos elementos importantes para a avaliação financeira do fundo."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208572,
+    "data_entrega": "30/05/2026 02:01",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Investo Constância Fatores Defensividade Fundo de Índice em 31 de março de 2026 e o desempenho de suas operações para o período de 03 de dezembro de 2025 a 31 de março de 2026, de acordo com as práticas contábeis adotadas no Brasil aplicáve"
+  }
+}

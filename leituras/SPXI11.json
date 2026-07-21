@@ -1,0 +1,33 @@
+{
+  "ticker": "SPXI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T07:12:15",
+  "comunicados": {
+    "ids": [
+      1219312,
+      1228533,
+      1221472
+    ],
+    "datas": [
+      "12/06/2026",
+      "25/06/2026",
+      "15/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 12/06/2026\n\n**O QUE aconteceu:** Alteração da Política de Investimento e exclusão das Taxas Máxima de Administração e Gestão.\n\n**Resumo:** O IT NOW S&P500® TRN Fundo de Índice recebeu autorização para substituir o Fundo de Índice Estrangeiro pelo Vanguard S&P 500 UCITS ETF, considerando a redução tributária superior ao incremento na taxa. Além disso, as taxas Máxima de Administração e Gestão foram excluídas.\n\n**Trecho-chave:** \"a redução de tributação promovida com a substituição supera o incremento de taxa, sendo, portanto, benéfica aos Cotistas; e (ii) a alteração não possui materialidade.\" (p. 1)\n\n### ASSEMBLEIA AGO entregue em 25/06/2026\n\n**O QUE aconteceu:** Retificação do Edital de Convocação da Assembleia Geral de Cotistas.\n\n**Resumo:** O Itaú Unibanco S.A., Administrador do IT NOW S&P500® TRN Fundo de Índice, retificou e ratificou o Edital de Convocação para a Assembleia Geral de Cotistas, alterando a ordem do dia e a data de manifestação.\n\n**Trecho-chave:** \"submete à consulta formal eletrônica de cotistas a seguinte matéria: (i) Deliberar sobre as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes referentes ao Fundo, relativos ao exercício social encerrado em 31 de março de 2025 e 31 de março de 2026.\" (p. 1)\n\n### ASSEMBLEIA AGO entregue em 15/06/2026\n\n**O QUE aconteceu:** Convocação da Assembleia Geral de Cotistas.\n\n**Resumo:** O Itaú Unibanco S.A., Administrador do IT NOW S&P500® TRN Fundo de Índice, convocou a Assembleia Geral de Cotistas para deliberar sobre as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes referentes ao exercício social encerrado em 28/02/2026.\n\n**Trecho-chave:** \"submete à consulta formal eletrônica de quotistas a seguinte matéria: (i) Deliberar sobre as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes, relativos ao exercício social encerrado em 28/02/2026.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1209703,
+    "data_entrega": "01/06/2026 17:31",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do It Now S&P500® T RN Fundo de Índice Responsabilidade Limitada em 31 de março de 2026 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos Fundos de Investi"
+  }
+}

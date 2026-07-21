@@ -1,0 +1,36 @@
+{
+  "ticker": "SPAF11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:33:08",
+  "comunicados": {
+    "ids": [
+      1022869,
+      812478,
+      1214331,
+      1022709
+    ],
+    "datas": [
+      "28/10/2025",
+      "02/01/2025",
+      "08/06/2026",
+      "28/10/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 28/10/2025\n\n**O que aconteceu:** Renúncia do gestor do fundo.\n\n**Resumo:** O Banco Genial S.A. informou que a Gestora, Genial Gestão Ltda., notificou a renúncia da função de gestor do Fundo SPA FUNDO DE INVESTIMENTO IMOBILIÁRIO, e realizou uma assembleia geral para aprovar a renúncia e a nova versão do regulamento do fundo.\n\n**Trecho-chave:**\n\"GENIAL GESTÃO LTDA., sede na Cidade e Estado de São Paulo, na Avenida Brigadeiro Faria Lima, nº 3400, conjunto 91 parte, Itaim Bibi, CEP 04538-132, inscrita no CNPJ sob o nº 22.119.959/0001 -83, devidamente credenciado perante a Comissão de Valores Mobiliários (“CVM”) para o exercício da atividade de administração de carteiras de títulos e valores mobiliários, conforme Ato Declaratório nº 14.519 de 5 de setembro de 2015 (‘Gestora’) notificou a Administradora, no dia 20 de outubro de 2025, formalizando a sua renúncia da função de gestor da carteira do Fundo.\"\n\n### FATO RELEVANTE entregue em 02/01/2025\n\n**O que aconteceu:** Reavaliação anual do ativo do fundo.\n\n**Resumo:** A reavaliação anual do ativo Garda Empreendimentos e Participações S.A. resultou em uma variação positiva de 1,8% no valor patrimonial da cota na data base de 31 de dezembro de 2024.\n\n**Trecho-chave:**\n\"A reavaliação resultou em uma variação positiva de, aproximadamente, 1,8% (um vírgula oito por cento) no valor patrimonial da cota na data base de 31 de dezembro de 2024.\"\n\n### ASSEMBLEIA GERAL ORDINÁRIA DE COTISTAS entregue em 08/06/2026\n\n**O que aconteceu:** Aprovação das demonstrações financeiras do fundo.\n\n**Resumo:** A assembleia geral ordinária de cotistas aprovou as demonstrações financeiras, notas explicativas e parecer do auditor independente referentes ao exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Aos 08 de junho de 2026 às 18 horas, na dependência da sede do BANCO GENIAL S.A., inscrito no CNPJ/ME sob o nº 45.246.410/0001-55 (“Administrador”), situada na Praia de Botafogo, n° 228, sala 907 – Parte, Botafogo, cidade e Estado do Rio de Janeiro, CEP 22250 -906, exclusivamente de forma remota.\"\n\n### ASSEMBLEIA GERAL EXTRAORDINÁRIA DE COTISTAS entregue em 28/10/2025\n\n**O que aconteceu:** Aprovação da renúncia do gestor e consolidação do regulamento.\n\n**Resumo:** A assembleia geral extraordinária de cotistas aprovou a renúncia da Gestora e a nova versão do regulamento do fundo.\n\n**Trecho-chave:**\n\"i) Acolher a renúncia da Gestora  da função de gestora da carteira  do Fundo , a qual foi formalizada em 20 de outubro de 2025, com eficácia a partir de 27 de outubro de 2025, com a extinção de quaisquer direitos e obrigações decorrentes da função, outorgando -se, reciprocamente, ao Fundo e ao Gestor a mais ampla, irrevogável e irretratável quitação, para nada mais reclamar quanto a obrigações ou deveres uma da outra, a qualquer tempo e a qualquer título.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1149231,
+    "data_entrega": "30/03/2026 22:33",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do SPA Fundo de Investimento Imobiliário em 31 de dezembro de 2025, o desempenho de suas operações e seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos fundos de invest"
+  }
+}

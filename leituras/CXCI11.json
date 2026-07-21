@@ -1,0 +1,42 @@
+{
+  "ticker": "CXCI11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T00:40:25",
+  "relatorio": {
+    "id": 1244438,
+    "data_entrega": "10/07/2026 19:03",
+    "texto": "### Fatos Extraídos:\n\n1. **Desempenho do Fundo:**\n   - O fundo CXCI11 apresentou resultado positivo no mês de junho, com R$ 0,77 por cota (p. 6).\n   \n2. **Ativos Principais e Desempenho:**\n   - O BROF11 registrou rentabilidade de +18,72%, impulsionado pela manutenção da distribuição de rendimentos e anúncio de aditivo contratual com a SBM do Brasil (p. 5).\n   - O CACR11 teve rentabilidade positiva de +15,16% após uma queda acumulada superior a 70%, mas ainda apresenta problemas estruturais e descontos significativos (p. 5).\n   - O KNCR11 manteve seu perfil defensivo com rentabilidade de +1,88% (p. 6).\n\n3. **Ativos com Desempenho Negativo:**\n   - O RBRL11 registrou desvalorização de -9,90%, impactado pela elevada concentração em cotas do XPLG11 e redução da distribuição de rendimentos (p. 6).\n   - O TGAR11 apresentou rentabilidade negativa de -9,77% com a cota atingindo mínima histórica (p. 6).\n   - O FVPQ11 desvalorizou-se em -9,05%, refletindo deterioração dos fundamentos operacionais do Via Parque Shopping (p. 6).\n\n4. **Composição da Carteira:**\n   - A carteira do fundo mantém uma alocação significativa em FIIs de recebíveis imobiliários (93,24%) (p. 10).\n   - O fundo manteve posição confortável de reservas acumuladas, contribuindo para a previsibilidade da distribuição de rendimentos (p. 7).\n\n5. **Riscos e Eventos Societários:**\n   - O CACR11 teve reprovada as Demonstrações Financeiras de 2025 por cotistas em consulta formal (p. 5).\n   - O fundo manteve uma estratégia de preservação de caixa para os empreendimentos financiados, incorporando juros remuneratórios ao saldo devedor dos CRIs (p. 5).\n\n### O que observar em seguida:\n1. **Desempenho do CACR11:** Mantenha-se atento aos eventos estruturais e a possíveis recuperações no fundo.\n2. **Concentração de Riscos:** Observar o impacto da concentração de risco em ativos específicos, como o XPLG11 no RBRL11."
+  },
+  "comunicados": {
+    "ids": [
+      1180128,
+      1173507
+    ],
+    "datas": [
+      "05/05/2026",
+      "29/04/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Assembleia Geral Ordinária de Cotistas — 29/04/2026\n\n**O que aconteceu:** A assembleia geral ordinária de cotistas do Fundo de Investimento Imobiliário Caixa Carteira Imobiliária foi realizada no escritório da Administradora, aprovando as demonstrações financeiras referentes ao exercício social findo em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia foi bem-sucedida na aprovação das demonstrações financeiras do fundo para o ano de 2025.\n\n**Trecho-chave:**\n\"Após promover as diligências necessárias e realizar o cômputo dos votos, a Administradora apurou que a matéria constante da Ordem do Dia foi aprovada pela maioria das Cotas Subscritas presentes.\" (p. 1)\n\n**Conexão com indicadores:** A aprovação das demonstrações financeiras é um passo importante para o acompanhamento dos resultados do fundo, que podem ser observados nos indicadores como P/VP e rendimentos acumulados."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 65.59
+  },
+  "parecer": {
+    "id": 1147052,
+    "data_entrega": "27/03/2026 17:35",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário Caixa Carteira Imobiliária Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus respectivos fluxos de caixa para o exercício findo nessa data, de acordo com as prática"
+  }
+}

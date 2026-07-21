@@ -1,0 +1,30 @@
+{
+  "ticker": "BXPO11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:22:21",
+  "comunicados": {
+    "ids": [
+      1226149,
+      1213995
+    ],
+    "datas": [
+      "23/06/2026",
+      "08/06/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA AGO entregue em 23/06/2026\n\n**O QUE aconteceu:** A Assembleia Geral Ordinária de Cotistas do Fundo não se realizou.\n\n**Resumo:** A assembleia, que seria realizada excepcionalmente por meio eletrônico em 23 de junho de 2026, não ocorreu devido à falta de orientação de voto digitalizada por correio eletrônico. Como as demonstrações financeiras não contêm opinião modificada e a assembleia não foi instalada, elas foram consideradas automaticamente aprovadas.\n\n**Trecho-chave:** \"O BANCO BNP PARIBAS BRASIL S.A. na qualidade de (Administrador) do FUNDO vem, por meio deste, informar que a Assembleia Geral de Cotistas, que seria realizada excepcionalmente por meio eletrônico em 23 de junho de 2026, às 11h00, a fim de deliberar sobre a aprovação das demonstrações financeiras auditadas do FUNDO referentes ao exercício social encerrado em de 31 de março de 2026 (“Ordem do Dia”), não se realizou em razão do na não recebimento de orientação de voto digitalizada por correio eletrônico.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 08/06/2026\n\n**O QUE aconteceu:** Foi convocada uma Assembleia Geral Ordinária para deliberar sobre a aprovação das demonstrações financeiras auditadas do Fundo.\n\n**Resumo:** A assembleia seria realizada excepcionalmente por meio eletrônico em 23 de junho de 2026, às 11h00. Os cotistas deveriam enviar orientação de voto digitalizada até o dia 19 de junho de 2026 para que suas votações fossem computadas.\n\n**Trecho-chave:** \"O BANCO BNP PARIBAS BRASIL S.A.  (“Administrador”), localizada na Avenida Presidente Juscelino Kubitscheck, n.º 1909, 9º andar, Torre Sul, São Paulo/SP, vem por meio da presente, nos termos dos Artigos 70, 72 e 75 da Resolução CVM nº 175, de 23 de dezembro de 2022 (“RCVM 175”) , bem como nos termos do Regulamento do FUNDO (“Regulamento”), convocá -lo para participar da Assembleia Geral de cotistas do FUNDO, que será realizada excepcionalmente por meio eletrônico e (envio de orientação de voto digitalizada por correio eletrônico) em 23 de junho de 2026 , 11h00, a fim de deliberar sobre a aprovação das demonstrações financeiras auditadas do FUNDO referentes ao exercício social encerrado em de 31 de março de 2026 (“Ordem do Dia”).\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208466,
+    "data_entrega": "29/05/2026 20:53",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe em 31 de março de 2026 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de índice."
+  }
+}

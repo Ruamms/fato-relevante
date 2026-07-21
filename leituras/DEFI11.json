@@ -1,0 +1,33 @@
+{
+  "ticker": "DEFI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T11:47:51",
+  "comunicados": {
+    "ids": [
+      1201679,
+      1213615,
+      1194045
+    ],
+    "datas": [
+      "22/05/2026",
+      "08/06/2026",
+      "15/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 22/05/2026\n\n**O QUE aconteceu:** O Administrador do Fundo alterou o regulamento para disponibilizar as taxas devidas aos prestadores de serviço no site da Plataforma de Transparência de Taxas.\n\n**Resumo:** A Administração do Fundo implementou uma nova medida de transparência, disponibilizando online as taxas pagas a prestadores de serviços.\n\n**Trecho-chave:**\n\"o Administrador aprovou, por Instrumento Particular do Administrador, a alteração do regulamento do Fundo para incluir que a segregação das taxas devidas aos prestadores de serviço s do Fundo passa a ser disponibilizada na Plataforma de Transparência de Taxas no endereço: https://data.anbima.com.br/busca/transparencia-de-taxas-de-fundos.\"\n\n---\n\n### ASSEMBLEIA GERAL EXTRAORDINÁRIA DE COTISTAS entregue em 15/05/2026\n\n**O QUE aconteceu:** A data da Assembleia Geral Extraordinária de Cotistas foi prorrogada para o dia 22 de maio de 2026.\n\n**Resumo:** O Administrador do Fundo prorrogou a data da AGE, permitindo mais tempo aos cotistas para votar.\n\n**Trecho-chave:**\n\"1) Prorrogar a data de realização da AGE, de modo que os votos deverão ser proferidos até às 23:59 do dia 22 de maio de 2026, conforme solicitado pelos Cotistas, considerada, para todos os fins, como a data da realização da AGE.\"\n\n**Conexão com o contexto:** A prorrogação da AGE foi necessária em virtude das regras estabelecidas pela CVM, que exigem um período mínimo de 30 dias entre a solicitação e a incorporação do Fundo."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208597,
+    "data_entrega": "30/05/2026 12:02",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Hashdex DeFi Index Fundo de Índice - Responsabilidade Limitada em 31 de março de 2026 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de inves"
+  }
+}

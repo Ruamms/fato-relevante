@@ -1,0 +1,42 @@
+{
+  "ticker": "ZAVC11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T04:27:24",
+  "relatorio": {
+    "id": 1237523,
+    "data_entrega": "01/07/2026 18:16",
+    "texto": "### Fatos Extraídos do Relatório Gerencial\n\n1. **Operações Atreladas ao IPCA**: As operações com atualização atrelada ao IPCA apresentaram um bom resultado no mês, visto que o IPCA de março foi de 0,88%. (p. 3)\n2. **Amortizações e Operações Pre-pagas**: Os CRIs Ariatam e CRI Moov apresentaram amortização extraordinária de R$ 113 mil e R$ 330 mil respectivamente. (p. 3)\n3. **Novas Operações**: O fundo estruturou uma nova operação com um devedor que já tem bom histórico, focada em giro de estoque de apartamentos já performados em Belo Horizonte (MG), remunerada à IPCA + 14,98%. (p. 3)\n4. **Relatório do Agente de Medição**: Foi deliberado em assembleia a troca do Agente de Medição para o CRI Felicita, já que o relatório anterior não estava representando os avanços físicos da obra de forma fidedigna. (p. 3)\n5. **Pipeline de Operações**: O fundo finalizou o processo de estruturação e alocação em um CRI focado em dois empreendimentos residenciais bem vendidos localizados em São Paulo, capital, remunerado a CDI + 4%. (p. 3)\n6. **Composição da Carteira**: A carteira está composta principalmente por CRIs de segmentos como Construção, Incorporação e Varejo, com LTV médio de 46% e Duration médio de 1,9 anos. (p. 7)\n7. **Dividend Yield Anualizado**: O fundo apresenta um Dividend Yield anualizado de 16,8%. (p. 2)\n8. **Cotistas**: O número de cotistas aumentou para 841 no mês em análise, representando um aumento de 140,29% em relação ao ano anterior. (p. 2)\n\n### O que Observar Em Seguida:\n- Monitorar a evolução das obras e operações novas estruturadas.\n- Verificar as atualizações do Agente de Medição no CRI Felicita."
+  },
+  "comunicados": {
+    "ids": [
+      1248782,
+      1033143
+    ],
+    "datas": [
+      "15/07/2026",
+      "10/11/2025"
+    ],
+    "rotulos": [
+      "Assembleia AGE",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA GERAL EXTRAORDINÁRIA ENTREGUE EM 15/07/2026\n\n**O QUE ACONTECEU:** Transferência da administração do fundo.\n\n**RESUMO:** O Fundo ZAVIT Crédito Imobiliário está realizando uma Assembleia Geral Extraordinária para aprovar a transferência dos serviços de administração fiduciária, custódia, controladoria, distribuição e escrituração de cotas do atual administrador (Atual Administradora) para a Nova Administradora. A transferência será efetivada no dia 13 de agosto de 2026.\n\n**CITAÇÃO CHAVE:** \"a transferência dos serviços de administração fiduciária, custódia, controladoria, distribuição e escrituração de cotas do Fundo da Atual Administradora para a BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., inscrita no CNPJ/MF sob o nº , 13.486.793/0001-42, com sede na Cidade de São Paulo, Estado de São Paulo, na Rua Alves Guimarães, nº 1212, Pinheiros – CEP 05.410 -002, devidamente autorizada pela CVM a prestar os serviços de administração de carteiras e de custódia e escrituração de valores mobiliários, respectivamente.\"\n\n---\n\n### ASSEMBLEIA GERAL ORDINÁRIA ENTREGUE EM 10/11/2025\n\n**O QUE ACONTECEU:** Aprovação das contas do fundo.\n\n**RESUMO:** A assembleia ordinária aprovou as contas e demonstrações contábeis do Fundo ZAVIT Crédito Imobiliário relativas ao exercício social findo em 30/06/2025, devidamente auditadas.\n\n**CITAÇÃO CHAVE:** \"A Consulta Formal convocou os Cotistas a manifestarem-se a respeito da seguinte matéria: i. Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 30/06/2025, devidamente auditadas.\"\n\n**CONEXÃO COM O CONTEXTO:** A aprovação das contas do fundo contribui para a transparência financeira e confiabilidade dos indicadores apresentados no contexto."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 9.2
+  },
+  "parecer": {
+    "id": 999511,
+    "data_entrega": "26/09/2025 15:58",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Zavit Crédi to Imobiliário Fundo de Investimento Imobiliário – Responsabilidade Limitada em 30 de junho de 2025 e o desempenho de suas operações e seus fluxos de caixa para o exercício findo nesta data, de acordo com as práticas contábeis ado"
+  }
+}

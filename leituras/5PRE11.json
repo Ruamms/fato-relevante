@@ -1,0 +1,21 @@
+{
+  "ticker": "5PRE11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:06:42",
+  "comunicados": {
+    "ids": [
+      1228489,
+      1221559
+    ],
+    "datas": [
+      "25/06/2026",
+      "15/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 25/06/2026\n\n**O que aconteceu:** A assembleia geral de cotistas foi cancelada.\n\n**Resumo:** O fundo IT NOW TEVA ITBR PRÉ 5 ANOS FUNDO DE ÍNDICE RESPONSABILIDADE LIMITADA não possui demonstrações financeiras ainda, motivo pelo qual a assembleia convocada para aprovar as demonstrações foi cancelada.\n\n**Trecho-chave:**\n\"O cancelamento da referida Assembleia decorre do fato de que o Fundo foi constituído em 2026, não havendo ainda demonstrações financeiras a serem objeto de aprovação pelos cotistas.\" (p. 1)\n\n### EDITAL DE CONVOCAÇÃO - ASSEMBLEIA GERAL DE COTISTAS entregue em 15/06/2026\n\n**O que aconteceu:** Foi convocada uma assembleia geral de cotistas para aprovar as demonstrações financeiras do exercício social encerrado em 28/02/2026.\n\n**Resumo:** A assembleia foi convocada para ser realizada por meio de consulta formal eletrônica até o dia 30 de junho de 2026, com a finalidade de aprovar as demonstrações financeiras do exercício social mencionado.\n\n**Trecho-chave:**\n\"O Itaú Unibanco S.A., na qualidade de Administradora do IT NOW TE VA ITBR PRÉ 5 ANOS FUNDO DE ÍNDICE RESPONSABILIDADE LIMITADA, convoca os cotistas para a Assembleia Geral de Cotistas.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b"
+}

@@ -1,0 +1,30 @@
+{
+  "ticker": "GFDL11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:02:45",
+  "comunicados": {
+    "ids": [
+      1242966,
+      1210810
+    ],
+    "datas": [
+      "09/07/2026",
+      "02/06/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGE",
+      "Assembleia AGO"
+    ],
+    "texto": "### Assembleia Extraordinária de Cotistas realizada em 07/07/2026\n\n**O que aconteceu:** A assembleia especial extraordinária dos cotistas do FII Galapagos Feeder Desenvolvimento Logístico aprovou a não distribuição semestral de 95% do rendimento da Classe, com objetivo de reforçar o caixa para honrar pagamentos de dívidas.\n\n**Resumo:** A assembleia deliberou sobre a não distribuição de rendimentos para reforçar os fundos, visando garantir o pagamento de dívidas.\n\n**Trecho-chave:**\n\"Foi deliberado e aprovado pelos Cotistas representantes da totalidade das cotas em circulação da Classe, sem quaisquer ressalvas, a não distribuição semestral de 95% (noventa e cinco por cento) de rendimento da Classe, conforme exigido pela Lei 8.668 de julho de 1993, referente ao período de 01/01/2026 até 30/06/2026 para fins de reforço de caixa da Classe, com objetivo de honrar os pagamentos de dívidas da Classe.\"\n\n---\n\n### Convocação e Proposta para Assembleia Geral Ordinária em 02/06/2026\n\n**O que aconteceu:** A VÓRTX Distribuidora de Títulos e Valores Mobiliários LTDA. convocou os cotistas para a assembleia geral ordinária, onde será deliberada sobre a aprovação das contas e demonstrações contábeis do exercício social findo em 31/12/2025.\n\n**Resumo:** A assembleia terá como principal item a aprovação das contas anuais do fundo, com autorização para o administrador assinar documentos necessários.\n\n**Trecho-chave:**\n\"Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31/12/2025, devidamente auditadas, conforme disponíveis para consulta nos sites da Administradora e nos demais canais exigidos pela regulamentação em vigor.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1153676,
+    "data_entrega": "02/04/2026 17:39",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente,emtodososaspectosrelevantes,aposiçãopatrimonialefinanceira do Galapagos Feeder Desenvolvimento Logístico Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025 e o desempenho de suas operações para o período de 26 de março de 2025 (início das atividades) a 31 de dezembro de 2025, "
+  }
+}

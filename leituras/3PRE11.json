@@ -1,0 +1,21 @@
+{
+  "ticker": "3PRE11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:06:25",
+  "comunicados": {
+    "ids": [
+      1212053,
+      1212047
+    ],
+    "datas": [
+      "03/06/2026",
+      "03/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### O QUE ACONTECEU: INÍCIO DE SUBSCRIÇÃO E INTEGRALIZAÇÃO DAS COTAS DA CLASSE ÚNICA DO GALAPAGOS TEVA ITBR TESOURO PRÉ FIXADO 3 ANOS FUNDO DE ÍNDICE\nEm 09 de junho de 2026, será iniciado o período de subscrição e integralização da Classe, no mercado primário, sob o código de negociação \"3PRE11\", nome de pregão GLGP PRE 3A e código ISIN BR3PRECTF003, considerando-se o preço de emissão de R$ 50,00 (cinquenta reais) por cota da Classe (\"Cota\").\n\n*\"Em 09 de junho de 2026, será iniciado o período de subscrição e integralização da Classe, no mercado primário, (i) sob o código de negociação “3PRE11”, (ii) nome de pregão GLGP PRE 3A e (iii) código ISIN BR3PRECTF003, considerando-se o preço de emissão de R$ 50,00 (cinquenta reais) por cota da Classe (“Cota”).\" (p. 1)\n\n### O QUE ACONTECEU: INÍCIO DE NEGOCIAÇÃO DAS COTAS DA CLASSE ÚNICA DO GALAPAGOS TEVA ITBR TESOURO PRÉ FIXADO 3 ANOS FUNDO DE ÍNDICE\nEm 10 de junho de 2026, será iniciado o período de negociação das cotas subscritas e integralizadas da Classe, no mercado secundário.\n\n*\"Em 10 de junho de 2026, será iniciado o período de negociação das cotas subscritas e integralizadas da Classe, no mercado secundário, (i) sob o código de negociação “3PRE11”, (ii) nome de pregão GLGP PRE 3A e (iii) código ISIN : BR3PRECTF003.\" (p. 1)\n\n### Conexão com Indicadores do Contexto\nAmbos os comunicados informam sobre a data de início das operações da Classe Única, que está alinhada ao contexto fornecido, onde o fundo reflete as variações e rentabilidade do índice Teva ITBR Tesouro Pré Fixado 3 anos."
+  },
+  "modelo": "qwen2.5:7b"
+}

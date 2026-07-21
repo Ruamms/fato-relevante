@@ -1,0 +1,24 @@
+{
+  "ticker": "CDHY11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T01:13:14",
+  "comunicados": {
+    "ids": [
+      1167000,
+      1067331,
+      999876
+    ],
+    "datas": [
+      "20/04/2026",
+      "22/12/2025",
+      "26/09/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 20/04/2026\n\n**O QUE aconteceu:** Chamada de Capital para integralização de cotas.\n\n**Resumo:** A administradora do fundo anunciou a realização da 5ª chamada de capital, destinada à integralização de 14.040 cotas em diferentes subclasse.\n\n**Trecho-chave:**\n\"i) A Administradora enviará no dia 20 de abril de 2026 a comunicação sobre a Chamada de Capital do Fundo, sendo essa a 5ª Chamada da 1ª Emissão, para os investidores que possuem Compromisso de Investimento (\"Chamada de Capital\"). Por meio da 5ª Chamada de Capital deverão ser integralizadas 2.712 (duas mil, setecentas e doze) cotas na Subclasse A, 137 (cento e trinta e sete) cotas na Subclasse B, 1.775 (mil, setecentas e setenta e cinco) cotas na Subclasse C e 9.416 (nove mil, quatrocentas e dezesseis) cotas na Subclasse E, totalizando, portanto, 14.040 (quatorze mil e quarenta) cotas no Fundo.\"\n\n---\n\n### FATO RELEVANTE entregue em 22/12/2025\n\n**O QUE aconteceu:** Firmou compromisso de venda e compra para aquisição de direitos aquisitivos sobre três conjuntos localizados no Edifício Loeb.\n\n**Resumo:** O fundo firmou um acordo com a BC 343 SPE S.A. para adquirir direitos aquisitivos sobre imóveis em São Paulo, com garantias reais e estruturas contratuais robustas.\n\n**Trecho-chave:**\n\"I. O Fundo firmou compromisso de venda e compra para aquisição dos direitos aquisitivos sobre três conjuntos localizados no Edifício Loeb. A conclusão da operação está condicionada à finalização das obras de revitalização do empreendimento, bem como a extinção do condomínio edilício atual e a instituição de novo condomínio.\"\n\n---\n\n### FATO RELEVANTE entregue em 26/09/2025\n\n**O QUE aconteceu:** Chamada de Capital para integralização de cotas.\n\n**Resumo:** A administradora do fundo anunciou a realização da 3ª chamada de capital, destinada à integralização de 42.404 cotas em diferentes subclasse.\n\n**Trecho-chave:**\n\"i) A Administradora enviará no dia 26 de setembro de 2025 a comunicação sobre a Chamada de Capital do Fundo, sendo esta a 3ª Chamada da 1ª Emissão, para os investidores que possuem Compromisso de Investimento (\"Chamada de Capital\"). Por meio da 3ª Chamada de Capital deverão ser integralizadas 8.195 (oito mil, cento e noventa e cinco) cotas na Subclasse A, 425 (quatrocentas e vinte e cinco) cotas na Subclasse B, 5.400 (cinco mil e quatrocentas) cotas na Subclasse C e 28.384 (vinte e oito mil, trezentas e oitenta e quatro) cotas na Subclasse E, totalizando, portanto, 42.404 (quarenta e duas mil, quatrocentas e quatro) cotas no Fundo.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

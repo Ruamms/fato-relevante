@@ -1,0 +1,30 @@
+{
+  "ticker": "GLDI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:32:51",
+  "comunicados": {
+    "ids": [
+      1228493,
+      1221510
+    ],
+    "datas": [
+      "25/06/2026",
+      "15/06/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA AGO entregue em 25/06/2026\n\n**O que aconteceu:** O Itaú Unibanco ratificou e retificou o Edital de Convocação da Assembleia Geral de Cotistas, alterando a ordem do dia e a data de manifestação.\n\n**Resumo:** A assembleia foi convocada para deliberar sobre as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes referentes ao exercício social encerrado em 31 de março de 2026. A consulta formal eletrônica será realizada até o dia 7 de julho de 2026.\n\n**Trecho-chave:** \"Submete à consulta formal eletrônica de cotistas a seguinte matéria: (i) Deliberar sobre as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes referentes ao exercício social encerrado em 31 de março de 2026.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 15/06/2026\n\n**O que aconteceu:** O Itaú Unibanco convocou a Assembleia Geral de Cotistas para deliberar sobre as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes referentes ao exercício social encerrado em 28/02/2026.\n\n**Resumo:** A assembleia foi convocada para deliberar sobre as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social encerrado em 28/02/2026. A consulta formal eletrônica será realizada até o dia 30 de junho de 2026.\n\n**Trecho-chave:** \"Submete à consulta formal eletrônica de quotistas a seguinte matéria: (i) Deliberar sobre as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social encerrado em 28/02/2026.\" (p. 1)\n\n---\n\n**Conexão com o contexto:** Ambos os documentos se referem a consultas formais eletrônicas de cotistas para aprovar as Demonstrações Financeiras do Fundo, indicando que o processo de auditoria e aprovação das demonstrações financeiras é um procedimento regular no IT NOW GOLD BRL FUNDO DE ÍNDICE."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1209684,
+    "data_entrega": "01/06/2026 17:19",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de março de 2026, e o desempenho de suas operações para o período de 5 de novembro de 2025 (início das atividades) a 31 de março de 2026, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de índice."
+  }
+}

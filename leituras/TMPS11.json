@@ -1,0 +1,45 @@
+{
+  "ticker": "TMPS11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T02:50:52",
+  "relatorio": {
+    "id": 1248069,
+    "data_entrega": "14/07/2026 20:44",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Distribuição de Dividendos**: O fundo distribuiu R$ 1,80 por cota em junho, correspondendo a um dividend yield anualizado de 29,91% sobre a cota patrimonial e 33,85% sobre a cota de mercado. (p. 5)\n   \n2. **Venda do Portfólio HGPO11**: O TMPS concluiu o processo de liquidação da estratégia HGPO11, gerando um ganho de capital relevante para o fundo. (p. 5)\n\n3. **Cota Patrimonial e Cota de Mercado**: A cota patrimonial do fundo foi de R$ 78,67, enquanto a cota de mercado estava em R$ 73,20. (p. 3)\n\n4. **Patrimônio Líquido**: O patrimônio líquido do fundo foi de R$ 77,02 milhões no final de junho. (p. 3)\n\n5. **Valor do Ativo**: O valor do ativo do fundo foi de R$ 78,9 milhões no final de junho. (p. 3)\n\n6. **Cotistas e Cotas**: O número total de cotas era de 978,968, com 1.916 cotistas. (p. 3)\n\n7. **Rendimentos e Retorno**: O rendimento distribuído por cota foi de R$ 0,85 em junho, correspondendo a um dividend yield anualizado de 29,91% sobre a cota patrimonial e 33,85% sobre a cota de mercado. (p. 6)\n\n8. **Portfólio de Investimentos**: O portfólio do fundo estava composto principalmente por FIIs (81,12%) e CRI (16,52%). As posições mais significativas eram RBRY11, KNIP11, XPML11, RBRR11, e KNHY11. (p. 9-10)\n\n### O que observar em seguida:\n1. Monitorar a evolução do valor de mercado das cotas.\n2. Observar as novas estratégias de investimento após a liquidação da HGPO11."
+  },
+  "comunicados": {
+    "ids": [
+      1089552,
+      1065338,
+      1049000
+    ],
+    "datas": [
+      "21/01/2026",
+      "17/12/2025",
+      "27/11/2025"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 21/01/2026\n\n**O QUE aconteceu:** A administração do ITAÚ TEMPUS FUNDO DE INVESTIMENTO IMOBILIÁRIO (TMPS11) informou que a partir de 31 de março de 2026, as informações sobre remuneração passarão a ser divulgadas de forma segregada por meio da Plataforma ANBIMA de Transparência de Taxas.\n\n**Resumo:** A administração do fundo está adotando uma nova ferramenta para divulgar informações sobre remuneração, visando maior transparência.\n\n**Trecho-chave:**\n\"para fundos que adotam taxa global, a partir de 31 de março de 2026, as informações de remuneração passarão a ser divulgadas de forma segregada por meio da Plataforma ANBIMA de Transparência de Taxas ('Ferramenta ANBIMA').\"\n\n---\n\n### ASSEMBLEIA GERAL ORDINÁRIA (AGE) entregue em 17/12/2025\n\n**O QUE aconteceu:** A AGE do ITAÚ TEMPUS FUNDO DE INVESTIMENTO IMOBILIÁRIO (TMPS11) deliberou sobre a possibilidade de recompra de cotas pelo fundo, mas não obteve quórum suficiente para aprovar a matéria.\n\n**Resumo:** A assembleia decidiu por recompra de cotas, mas a proposta foi prejudicada pela falta de quórum.\n\n**Trecho-chave:**\n\"RESULTADO: Prejudicada a matéria por falta de quórum para deliberação da Ordem do Dia.\"\n\n---\n\n### ASSEMBLEIA GERAL ORDINÁRIA (AGO) entregue em 27/11/2025\n\n**O QUE aconteceu:** A AGE do ITAÚ TEMPUS FUNDO DE INVESTIMENTO IMOBILIÁRIO (TMPS11) aprovou as demonstrações contábeis do fundo referentes ao exercício social findo em 30.06.2025.\n\n**Resumo:** As demonstrações contábeis foram aprovadas, acompanhadas pelo relatório dos auditores independentes.\n\n**Trecho-chave:**\n\"MATÉRIA DELIBERADA: aprovadas as Demonstrações Contábeis do Fundo, devidamente acompanhadas do relatório dos auditores independentes, documentos disponibilizados aos cotistas nos termos da regulamentação em vigor, relativos ao exercício social findo em 30.06.2025.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "VP/cota em queda relevante"
+    ],
+    "cota": 74.1
+  },
+  "parecer": {
+    "id": 1001587,
+    "data_entrega": "29/09/2025 21:14",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

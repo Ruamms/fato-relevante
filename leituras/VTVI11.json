@@ -1,0 +1,39 @@
+{
+  "ticker": "VTVI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T04:21:15",
+  "comunicados": {
+    "ids": [
+      690130,
+      486463,
+      481488,
+      1051748,
+      1051747
+    ],
+    "datas": [
+      "01/07/2024",
+      "03/07/2023",
+      "22/06/2023",
+      "01/12/2025",
+      "01/12/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 01/07/2024\n\n**O que aconteceu:** A administradora do Fundo de Investimento Imobiliário (FII) VTVI11 realizou a reavaliação do imóvel, resultando em uma diminuição no valor justo.\n\n**Resumo:** A TIVIO CAPITAL reduziu o valor justo do imóvel do fundo para R$ 53.399.000,00, representando uma variação negativa de 12,13% em relação ao valor contábil atual.\n\n**Trecho-chave:** \"considerando o laudo de avaliação realizado pela empresa CBRE Consultoria do Brasil Ltda, entendeu-se que o valor justo que deve ser utilizado para marcação do imóvel é de R$ 53.399.000,00 (cinquenta e três milhões trezentos e noventa e nove mil reais), inferior ao valor contábil atual, resultando uma variação negativa de 12,13% em 28 de junho de 2024.\" (p. 1)\n\n**Conexão com o contexto:** Esta reavaliação afeta diretamente os indicadores do fundo, especialmente o Patrimônio Líquido e o Valor do Ativo.\n\n---\n\n### FATO RELEVANTE entregue em 03/07/2023\n\n**O que aconteceu:** A administradora do Fundo de Investimento Imobiliário (FII) VTVI11 realizou a reavaliação do imóvel, resultando em uma diminuição no valor justo.\n\n**Resumo:** A BV DISTRIBUIDORA reduziu o valor justo do imóvel do fundo para R$ 60.769.000,00, representando uma variação negativa de 3,84% em relação ao valor contábil atual.\n\n**Trecho-chave:** \"considerando o laudo de avaliação realizado pela empresa CBRE Consultoria do Brasil Ltda, entendeu-se que o valor justo que deve ser utilizado para marcação do imóvel é de R$ 60.769.000,00 (sessenta milhões setecentos e sessenta e nove mil reais), inferior ao valor contábil atual, resultando uma variação negativa de 3,84% em 30 de junho de 2023.\" (p. 1)\n\n**Conexão com o contexto:** Esta reavaliação afeta diretamente os indicadores do fundo, especialmente o Patrimônio Líquido e o Valor do Ativo.\n\n---\n\n### FATO RELEVANTE entregue em 22/06/2023\n\n**O que aconteceu:** A administradora do Fundo de Investimento Imobiliário (FII) VTVI11 anunciou a parceria estratégica com o Banco Bradesco e a contratação de Christian George Egan como CEO.\n\n**Resumo:** A BV DISTRIBUIDORA informou sobre a parceria estratégica entre banco BV e o Banco Bradesco, além da contratação do Chief Executive Officer (CEO) Christian George Egan para ocupar a posição na sociedade. A empresa também anunciou que sua denominação social será alterada para Tivio Capital.\n\n**Trecho-chave:** \"A BV Asset informa ainda que terá sua denominação social alterada para Tivio Capital DTVM S.A., passando a atuar sob a marca “TIVIO CAPITAL”.\" (p. 1)\n\n**Conexão com o contexto:** Este evento não diretamente afeta os indicadores financeiros do fundo, mas pode ter impactos operacionais e estratégicos.\n\n---\n\n### ASSEMBLEIA AGO entregue em 01/12/2025\n\n**O que aconteceu:** A assembleia geral ordinária de cotistas aprovou a Demonstração Contábil relativa ao exercício social findo em 30 de junho de 2025.\n\n**Resumo:** A BEM DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA. concluiu a consulta formal realizada, verificando a aprovação da Demonstração Contábil do exercício social findo em 30 de junho de 2025.\n\n**Trecho-chave:** \"Aprovou-se a Demonstração contábil relativamente ao exercício social findo em 30 de junho de 2025.\" (p. 1)\n\n**Conexão com o contexto:** Esta aprovação é um passo importante para a transparência financeira do fundo, mas não afeta diretamente os indicadores financeiros."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1001271,
+    "data_entrega": "29/09/2025 18:33",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliários."
+  }
+}

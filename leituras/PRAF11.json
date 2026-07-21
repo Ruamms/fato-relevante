@@ -1,0 +1,21 @@
+{
+  "ticker": "PRAF11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T07:04:08",
+  "comunicados": {
+    "ids": [
+      1215336,
+      1213856
+    ],
+    "datas": [
+      "09/06/2026",
+      "08/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 09/06/2026\n\n**O QUE aconteceu:** Redução da Taxa Global e Aprovação de Novo Regulamento.\n\n**Resumo:** A BTG Pactual Serviços Financeiros S.A. DTVM, administradora do fundo Galapagos Prata Física DEX, aprovou reduções na taxa global e publicou um novo regulamento para o fundo.\n\n**Trecho-chave:**\n\"1. Aprovar a redução da remuneração total paga a título de Taxa Global, de forma que a referida taxa do item 5.1 do Anexo I da Classe Única do Regulamento do Fundo passará a vigorar com a seguinte redação: TAXA BASE DE CÁLCULO E PERCENTUAL \nTaxa Global  \n0,20% (vinte centésimos por cento) ao ano, apropriada \ndiariamente e paga mensalmente, incidente sobre o Pa-\ntrimônio Líquido da Classe, rateada entre os Prestado-\nres de Serviços Essenciais, observado o mínimo mensal \nde (a) R$ 3.000,00 (três mil reais) durante os 3 (três) pri-\nmeiros meses de funcionamento da Classe, (b) R$ \n5.000,00 (cinco mil reais) do 4º (quarto) ao 6º (sexto) \nmês de funcionamento da Classe, e (c) R$ 10.000,00 \n(dez mil reais) do 7º (sétimo) mês de funcionamento em \ndiante.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 08/06/2026\n\n**O QUE aconteceu:** Início das Negociações das Cotas do Fundo Galapagos Prata Física DEX.\n\n**Resumo:** A BTG Pactual Serviços Financeiros S.A. DTVM informou o início de negociação das cotas do fundo Galapagos Prata Física DEX no mercado secundário, com código de negociação \"PRAF11\", nome de pregão GLPG PRATA e código ISIN BRPRAFCTF017.\n\n**Trecho-chave:**\n\"Em 10 de junho de 2026, será iniciado o período de negociação das cotas subscritas e integralizadas da Classe, no mercado secundário, (i) sob o código de negociação “PRAF11” , (ii) nome de pregão GLPG PRATA e (iii) código ISIN BRPRAFCTF017.\" (p. 1)\n\n**Conexão com Indicadores:** Este comunicado indica que o fundo já está em operação no mercado secundário, permitindo a liquidez das cotas aos investidores."
+  },
+  "modelo": "qwen2.5:7b"
+}

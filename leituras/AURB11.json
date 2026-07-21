@@ -1,0 +1,45 @@
+{
+  "ticker": "AURB11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T02:36:12",
+  "comunicados": {
+    "ids": [
+      1251368,
+      1119768,
+      920356,
+      1125040,
+      1117093,
+      1064659,
+      1040436
+    ],
+    "datas": [
+      "16/07/2026",
+      "23/02/2026",
+      "09/06/2025",
+      "28/02/2026",
+      "15/02/2026",
+      "16/12/2025",
+      "14/11/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 16/07/2026\n\n**Data:** 16/07/2026  \n**Título:** Distribuição extraordinária de rendimentos  \n**Resumo:** A administradora e a gestora do fundo anunciaram uma distribuição extraordinária de R$ 0,18 por cota.  \n**Trecho-chave:** \"A Administradora e a Gestora servem-se do presente para comunicar distribuição extraordinária na data de hoje, no valor de R$ 0,18 por cota para os cotistas que possuírem cotas da Classe Única no fechamento dos mercados do dia 16/07/2026, paga no dia 23 de julho de 2026.\"\n\n### FATO RELEVANTE entregue em 23/02/2026\n\n**Data:** 23/02/2026  \n**Título:** Renúncia voluntária da Taxa de Gestão  \n**Resumo:** A gestora do fundo decidiu renunciar à Taxa de Gestão referente ao exercício de 2026, e a cobrança será retomada em janeiro de 2027.  \n**Trecho-chave:** \"A Gestora decidiu, de forma voluntária e em benefício dos cotistas, renunciar à Taxa de Gestão referente ao exercício de 2026, conforme prevista no Capítulo 10 do Anexo I ao Regulamento do Fundo. Além disso, informa que a cobrança da Taxa de Gestão será retomada normalmente a partir de janeiro de 2027.\"\n\n### FATO RELEVANTE entregue em 09/06/2025\n\n**Data:** 09/06/2025  \n**Título:** Distrato da Promessa de Venda e Compra não concretizado  \n**Resumo:** A transação anteriormente divulgada não foi concretizada, e o fundo assinou um \"Distrato da Promessa de Venda e Compra\".  \n**Trecho-chave:** \"O Distrato foi celebrado de forma consensual entre as partes, sem imposição de penalidades e com renúncia recíproca a quaisquer pleitos ou obrigações adicionais relacionadas à Transação anteriormente divulgada.\"\n\n### COMUNICADO AO MERCADO entregue em 28/02/2026\n\n**Data:** 28/02/2026  \n**Título:** Informes de Rendimentos disponíveis exclusivamente por meio digital  \n**Resumo:** O fundo informou que os Informes de Rendimentos referentes ao ano de 2025 serão disponibilizados exclusivamente por meio digital, através do Portal do Investidor.  \n**Trecho-chave:** \"Em complemento ao Comunicado ao Mercado de 2 de fevereiro de 2026 e ao Comunicado ao Mercado de 13 de fevereiro de 2026, a Administradora informa que, com o intuito de reduzir os custos de impressão e correios para os Fundos, bem como minimizar o uso de papel e seus impactos para o meio ambiente, os Informes de Rendimentos referentes ao ano de 2025 já estão disponíveis aos investidores, exclusivamente por meio digital.\"\n\n### COMUNICADO AO MERCADO entregue em 15/02/2026\n\n**Data:** 15/02/2026  \n**Título:** Informes de Rendimentos disponíveis exclusivamente por meio digital (repetição)  \n**Resumo:** O fundo reiterou que os Informes de Rendimentos referentes ao ano de 2025 serão disponibilizados exclusivamente por meio digital, através do Portal do Investidor.  \n**Trecho-chave:** \"Em complemento ao Comunicado ao Mercado de 02 de fevereiro de 2026, a Administradora reitera que, com o intuito de reduzir os custos de impressão e correios para os Fundos, bem como minimizar o uso de papel e seus impactos para o meio ambiente, os Informes de Rendimentos referentes ao ano de 2025 serão disponibilizados aos investidores até o dia 27 de fevereiro de 2026, conforme previsto na Instrução Normativa RFB nº 2.060/2021, exclusivamente por meio digital.\"\n\n### ASSEMBLEIA AGO entregue em 16/12/2025\n\n**Data:** 16/12/2025  \n**Título:** Aprovação das contas e demonstrações contábeis do exercício social findo em 30 de junho de 2025  \n**Resumo:** A assembleia aprovou as contas e demonstrações contábeis do fundo, sem receber manifestações dos cotistas.  \n**Trecho-chave:** \"Por meio da Consulta Formal, os Cotistas foram convocados a deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, devidamente auditadas, relativas ao exercício social findo em 30 de junho de 2025. Não foram recebidas manifestações dos Cotistas à Consulta Formal. Assim, nos termos do Art. 71, § 3º da Resolução CVM 175, a matéria foi considerada aprovada pelos Cotistas, uma vez que as demonstrações contábeis do Fundo não apresentaram opinião modificada.\"\n\n### ASSEMBLEIA AGO entregue em 14/11/2025\n\n**Data:** 14/11/2025  \n**Título:** Convocação para Assembleia Geral Ordinária por meio de consulta formal  \n**Resumo:** A administradora convocou os cotistas para a assembleia ordinária, que será realizada por meio do procedimento de consulta formal.  \n**Trecho-chave:** \"A Administradora, na qualidade de instituição administradora do ALIANZA URBAN HUB RENDA FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA, inscrito no CNPJ sob o nº 41076823000188, vem, por meio da presente, convocar os titulares das cotas de emissão do Fundo (\"Cotistas\") para participar da Assembleia Geral Ordinária do Fundo, a ser realizada de forma não presencial, por meio do procedimento de consulta formal (‘Consulta Formal’, respectivamente), qual tem por objeto deliberar sobre: 1. Aprovação das contas e demonstrações contábeis do Fundo, devidamente auditadas, relativas ao exercício social findo em 30 de junho de 2025.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 999892,
+    "data_entrega": "26/09/2025 23:17",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Alianza Urban Hub Renda Fundo de Investimento Imobiliário Reponsabilidade Limitada em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adota"
+  }
+}

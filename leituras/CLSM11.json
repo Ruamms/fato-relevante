@@ -1,0 +1,40 @@
+{
+  "ticker": "CLSM11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T23:45:35",
+  "relatorio": {
+    "id": 1252581,
+    "data_entrega": "17/07/2026 17:31",
+    "texto": "### Fatos Extraídos do Relatório Gerencial:\n\n1. **Mudança na Taxa de Administração**: A taxa de administração foi reduzida em 80% até 14 de dezembro de 2026, passando a ser equivalente a 0,20% sobre o Patrimônio Líquido (PL) até essa data. (p. 3)\n\n2. **Ocupação Completa**: O fundo encerrou o mês de junho com 100% de ocupação. (p. 4)\n\n3. **Aquisição do Imóvel**: A aquisição do imóvel Citlog Sul de Minas Fase 3 foi concluída em dezembro de 2025, pelo valor total de R$ 285 milhões, e o saldo remanescente foi quitado em março de 2026. (p. 4)\n\n4. **Alavancagem**: O fundo possui uma dívida atual de R$ 77.012.533,32 com um relacionamento de dívida/PL de 36,77%. (p. 6)\n\n5. **Contratos de Locação**: A maior parte dos contratos de locação vence no futuro, com 41% da área bruta locada (ABL) tendo contratos que vencem em 2029 e além. (p. 6)\n\n6. **Vacância e Inadimplência**: O relatório não menciona nenhuma vacância ou inadimplência, indicando uma ocupação completa. (p. 4)\n\n7. **Eventos Relevantes**: Foi realizado um avaliação do imóvel pelo valor justo, resultando em um aumento de 0,10% no valor patrimonial da cota do fundo. (p. 10)\n\n8. **Imóveis e Obras**: O imóvel possui características como pé direito livre de 12m, capacidade de piso de 6t/m², docas cobertas com marquise, entre outros detalhes. (p. 7-9)\n\n### O que observar em seguida:\n1. **Taxa de Administração**: Verificar se a redução na taxa de administração afeta positivamente o rendimento distribuído.\n2. **Contratos de Locação**: Monitorar os contratos de locação vencendo no futuro, especialmente aqueles com prazos mais longos."
+  },
+  "comunicados": {
+    "ids": [
+      1204171,
+      1071211,
+      1063785,
+      1064199
+    ],
+    "datas": [
+      "26/05/2026",
+      "26/12/2025",
+      "15/12/2025",
+      "16/12/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGE"
+    ],
+    "texto": "### O QUE aconteceu em 26/05/2026\n\n**O Fundo foi avaliado a mercado, resultando em valor 0,07% superior ao valor contábil atual do imóvel.**\n\n*O valor patrimonial da cota do Fundo aumentou em 0,10%.*\n\n*\"Em cumprimento ao disposto na Instrução CVM nº 516, o imóvel do Fundo foi avaliado a mercado (valor justo) pela empresa Capright Brasil Ltda, resultando em valor 0,07% superior ao valor contábil atual do referido imóvel, o que representa uma variação positiva de 0,10% no valor patrimonial da cota do Fundo nesta data.\" (p. 1)*\n\n### O QUE aconteceu em 26/12/2025\n\n**A taxa global da Classe Única foi reduzida em 80%, passando a ser de 0,20% ao ano até 14 de dezembro de 2026.**\n\n*Informações adicionais estarão disponíveis nos relatórios gerenciais do Fundo no website da Administradora e na página do Fundo na CVM e B3.*\n\n*\"A referida taxa corresponderá, até 14 de dezembro de 2026, a 0,20% (vinte centésimos por cento) ao ano, incidente sobre o valor do patrimônio líquido da Classe Única.\" (p. 1)*\n\n### O QUE aconteceu em 15/12/2025\n\n**O Fundo concluiu a aquisição da totalidade do imóvel Citlog Sul de Minas 3, localizado na Avenida Porto Seco, nº 1.540, Bairro Aeroporto, cidade de Varginha, estado de Minas Gerais, pelo valor total de R$ 285.000.000,00.**\n\n*O pagamento será feito em duas partes: R$ 210.000.000,00 já pago mediante a compensação de créditos oriundos do Compromisso de Compra e Venda (CCV) detidos pelos vendedores contra o TRX REAL ESTATE FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA na 12ª emissão de cotas, e R$ 75.000.000,00 a ser pago em até 180 dias mediante securitização dos recebíveis imobiliários.*\n\n*\"O montante de R$ 210.000.000,00 (duzentos e dez milhões de reais) já pago mediante a compensação de créditos oriundos do Compromisso de Compra e Venda (\"CCV\") detidos pelos vendedores contra o TRX REAL ESTATE FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA na 12ª (décima segunda) emissão de cotas do TRXF11, sendo que este último, por sua vez, compensou os créditos pagos em decorrência do CCV na 1ª (primeira) emissão de cotas do Fundo em razão de cláusula de pessoa a declarar estabelecida no CCV, nos termos do artigo 467 e seguintes do Código Civil brasileiro (\"Parcela Compensação\"); e o saldo remanescente de R$ 75.000.000,00 (setenta e cinco milhões de reais) será pago pelo Fundo em até 180 dias contados desta data, mediante a estruturação de uma operação de securitização dos recebíveis imobiliários oriundos da compra e venda do Imóvel.\" (p. 2)*\n\n### O QUE aconteceu em 16/12/2025\n\n**A assembleia geral extraordinária dos cotistas aprovou a aquisição da totalidade do imóvel Citlog Sul de Minas 3, localizado na Avenida Porto Seco, nº 1.540, Bairro Aeroporto, cidade de Varginha, estado de Minas Gerais, pelo valor de R$ 285.000.000,00.**\n\n*O pagamento será feito em duas partes: R$ 210.000.000,00 já pago mediante a compensação de créditos oriundos do Compromisso de Compra e Venda (CCV) detidos pelos vendedores contra o TRX REAL ESTATE FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA na 12ª emissão de cotas, e R$ 75.000.000,00 a ser pago em até 180 dias mediante securitização dos recebíveis imobiliários oriundos da compra e venda do Imóvel.*\n\n*\"Em relação à Ordem do Dia , a unanimidade dos Cotistas, representando 100% (cem por cento) da base votante do Fundo, deliberou pela aprovação da aquisição da totalidade do imóvel situado na Avenida Porto Seco, nº 1.540, Bairro Aeroporto, na cidade de Varginha, Estado de Minas Gerais, objeto da matrícula nº 81.203 do Oficial de Registro de Imóveis da Comarca de Varginha, Estado de Minas Gerais (\"Imóvel\") pelo valor de R$ 285.000.000,00 (duzentos e oitenta e cinco milhões de reais), sendo a fração ideal de 85% (oitenta e cinco por cento) do Imóvel de propriedade do HEDGE DESENVOLVIMENTO LOGÍSTICO FUNDO DE INVESTIMENTO IMOBILIÁRIO DE RESPONSABILIDADE LIMITADA, inscrito no CNPJ sob o nº 44.514.162/0001 -13 (\"HDEL\"), pelo valor equivalente a R$ 242.250.000,00 (duzentos e quarenta e dois milhões e duzentos e cinquenta mil reais) a ser pago da seguinte forma: (a) R$ 167.249.909,34 (cento e sessenta e sete milhões, duzentos e quarenta e nove mil, novecentos e nove reais e trinta e quatro centavos) mediante a compensação de créditos oriundos do Compromisso de Compra e Venda (\"CCV\") detidos pelo HDEL contra o TRX REAL ESTATE FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA, inscrito no CNPJ sob o nº 28.548.288/0001 -52 (\"TRXF11\") na 12ª (décima segunda) emissão de cotas do TRXF11, sendo que este último por sua vez, indicou o Fundo para adquirir o Imóvel em razão de cláusula de pessoa a declarar estabelecida no CCV, e compensará os créditos pagos em decorrência do CCV com os créditos por ele devidos em razão da subscrição das cotas na 1ª (primeira) emissão de cotas do Fundo (\"Parcela Compensação\"); (b) R$ 90,66 (noventa reais e sessenta e seis centavos) em moeda corrente nacional, montante este também objeto de compensação pelo TRXF (\"Parcela Cash \"); e (c) o montante remanescente, equivalente a R$ 75.000.000,00 (setenta e cinco milhões de reais), em até 180 dias contados do pagamento da Parcela Compensação, mediante a securitização dos recebíveis imobiliários oriundos da compra e venda do Imóvel, sendo que referidos créditos imobiliários deverão ser cedidos pelo HDEL, em caráter definitivo, à securitizadora, sem qualquer coobrigação de pagamento por parte do Fundo – \"true sale\" (\"Parcela Final\"), ocasião na qual será celebrada Escritura de Compra e Venda.\" (p. 2)*"
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Menos cotistas que o mínimo para isenção de IR",
+      "Fundo novo — histórico curto"
+    ],
+    "cota": null
+  }
+}

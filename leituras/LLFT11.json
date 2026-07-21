@@ -1,0 +1,33 @@
+{
+  "ticker": "LLFT11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T06:47:29",
+  "comunicados": {
+    "ids": [
+      1247999,
+      1247998,
+      1223027
+    ],
+    "datas": [
+      "14/07/2026",
+      "14/07/2026",
+      "16/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 14/07/2026\n\n**O que aconteceu:** As contas anuais do Fundo foram aprovadas.\n\n**Resumo:** A assembleia geral de cotistas realizada em 3 de julho de 2026 aprovou as contas anuais do BTG PACTUAL TEVA TESOURO SELIC FUNDO DE INDICE referente ao exercício encerrado em 31 de março de 2026.\n\n**Trecho-chave:** \"Foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de março de 2026.\" (p. 1)\n\n---\n\n### ASSEMBLEIA GERAL DE COTISTAS entregue em 14/07/2026\n\n**O que aconteceu:** A assembleia geral aprovou as contas anuais do Fundo.\n\n**Resumo:** A assembleia geral de cotistas realizada via manifestação de voto em 3 de julho de 2026 aprovou as contas e demonstrações contábeis do BTG PACTUAL TEVA TESOURO SELIC FUNDO DE INDICE referente ao exercício social encerrado em 31 de março de 2026.\n\n**Trecho-chave:** \"Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de março de 2026.\" (p. 4)\n\n---\n\n### ASSEMBLEIA GERAL DE COTISTAS entregue em 16/06/2026\n\n**O que aconteceu:** A administradora convocou os cotistas para a assembleia geral.\n\n**Resumo:** A administradora BTG Pactual Serviços Financeiros S.A. Distribuidora de Títulos e Valores Mobiliários convocou os cotistas do BTG PACTUAL TEVA TESOURO SELIC FUNDO DE INDICE para deliberarem sobre a aprovação das contas e demonstrações contábeis do Fundo referente ao exercício social encerrado em 31 de março de 2026.\n\n**Trecho-chave:** \"Aprovacao das contas e demonstracoes contabeis do Fundo, acompanhadas do respectivo relatorio do auditor independente, relativas ao exercicio social findo em 31 de marco de 2026.\" (p. 2)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208580,
+    "data_entrega": "30/05/2026 02:13",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do BTG Pactual Teva Tesouro Selic Fundo de Índice em 31 de março de 2026 e o desempenho de suas operações para o período de 12 de junho de 2025 a 31 de março de 2026, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos Fundos"
+  }
+}

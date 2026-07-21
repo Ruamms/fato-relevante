@@ -1,0 +1,58 @@
+{
+  "ticker": "BLMG11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T23:35:49",
+  "relatorio": {
+    "id": 1237517,
+    "data_entrega": "01/07/2026 18:11",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Vacância e Inadimplência**: O relatório não menciona nenhuma informação sobre vacância ou inadimplência.\n2. **Compras/Vendas de Ativos**: Não há menção a compras ou vendas de ativos no período analisado.\n3. **Obras e Reformas**: Não há informações específicas sobre obras ou reformas em andamento.\n4. **Rendimentos Distribuídos**: Em maio de 2026, a distribuição do Fundo foi de R$ 0,39 por cota (p. 5).\n   > \"Em maio de 2026, a distribuição do Fundo foi de R$ 0,39 por cota\" (p. 5)\n5. **Alavancagem/Dívidas**: A alavancagem foi reduzida para aproximadamente 0% em outubro de 2022.\n   > \"Em 2025, observamos o início da recuperação\" e \"tivemos 2 anos de reestruturação, nos quais encerramos a alavancagem de aproximadamente 67% do valor dos ativos em out/22 para os atuais 0%\" (p. 7)\n6. **Eventos Societários**: Não há menções específicas a eventos societários no período analisado.\n7. **Riscos Citados pela Gestão**: O relatório não menciona explicitamente riscos associados ao fundo.\n\n### Observações a Acompanhar\n\n1. **Vacância e Inadimplência**: Verificar se há mudanças significativas em futuros relatórios, pois esses indicadores podem afetar o desempenho do fundo.\n2. **Alavancagem/Dívidas**: Monitorar a alavancagem para garantir que ela permaneça baixa e controlada."
+  },
+  "comunicados": {
+    "ids": [
+      1119739,
+      1118127,
+      1020326,
+      1012233,
+      995484,
+      1214730,
+      1193205
+    ],
+    "datas": [
+      "23/02/2026",
+      "19/02/2026",
+      "26/10/2025",
+      "13/10/2025",
+      "22/09/2025",
+      "09/06/2026",
+      "15/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 23/02/2026 - Programa de Recompra de Cotas\n\n**O que aconteceu:** Implementação de um programa de recompra de cotas.\n\n**Resumo:** O BlueMacaw Logística Fundo de Investimento Imobiliário anunciou um programa de recompra de até 10% das suas cotas, com início previsto para 5 de março de 2026 e término em 5 de março de 2027.\n\n**Trecho-chave:**\n\"(i) Data do início do Programa de Recompra: 05 de março de 2026;\n(iv) Prazo do Programa de Recompra: a duração do Programa de Recompra será de 12 meses contados da presente data, finalizando em 05 de março de 2027;\"\n\n### 19/02/2026 - Programa de Recompra de Cotas\n\n**O que aconteceu:** Implementação de um programa de recompra de cotas.\n\n**Resumo:** O BlueMacaw Logística Fundo de Investimento Imobiliário anunciou um programa de recompra de até 10% das suas cotas, com início previsto para 19 de fevereiro de 2026 e término em 19 de fevereiro de 2027.\n\n**Trecho-chave:**\n\"(i) Data do início do Programa de Recompra: 19 de fevereiro de 2026;\n(iv) Prazo do Programa de Recompra: a duração do Programa de Recompra será de 12 meses contados da presente data, finalizando em 19 de fevereiro de 2027;\"\n\n### 26/10/2025 - Venda de Ativos\n\n**O que aconteceu:** Venda de ativos do fundo.\n\n**Resumo:** O BlueMacaw Logística Fundo de Investimento Imobiliário concluiu a venda total das cotas do Triple A Fundo de Investimento Imobiliário e do terreno em Cabreúva para o GGRC11, um outro fundo de investimento imobiliário.\n\n**Trecho-chave:**\n\"Após a devida superação das condições precedentes, o  Fundo e o GGR Covepi Renda Fundo de Investimento Imobiliário – Responsabilidade Limitada concluíram, em 24 de outubro de 2025, a venda pelo Fundo ao GGRC11 (i) da totalidade das cotas do Triple A Fundo de Investimento Imobiliário, fundo constituído sob a forma de condomínio fechado, inscrito no CNPJ sob o nº 23.426.470/0001-17; e (ii) do terreno localizado no município de Cabreúva, Estado de São Paulo, situado na Via Prefeito João Zacchi, nº 1.000 – Bairro Pinhal, com área total de 429.725,78 m².\"\n\n### 13/10/2025 - Correção de Erros Contábeis\n\n**O que aconteceu:** Correção de erros contábeis.\n\n**Resumo:** O BlueMacaw Logística Fundo de Investimento Imobiliário identificou e corrigiu dois erros na elaboração das demonstrações financeiras, incluindo a inversão dos cabeçalhos das colunas de 2023 e 2024 e o cálculo incorreto do rendimento declarado.\n\n**Trecho-chave:**\n\"Na elaboração das demonstrações financeiras de 31 de dezembro de 2024, na nota explicativa 19. Distribuição de resultados, foram identificadas duas inconsistências, conforme abaixo:\n• As informações financeiras referentes as colunas de 2023 e 2024 estavam com os cabeçalhos invertidos, ou seja, os dados de 2023 estavam na coluna de 2024 e vice-versa.\n• O valor divulgado nas demonstrações financeiras referente aos rendimentos declarados levou em consideração os rendimentos divulgados de janeiro (referentes dezembro de 2023) a dezembro de 2024 (referentes a novembro de 2024).\"\n\n### 22/09/2025 - Venda de Ativos\n\n**O que aconteceu:** Avanço na venda de ativos.\n\n**Resumo:** O BlueMacaw Logística Fundo de Investimento Imobiliário e o GGRC11 celebraram os documentos definitivos para a venda do Triple A Fundo de Investimento Imobiliário e do terreno em Cabreúva, com prazo final para as condições precedentes serem atendidas até outubro de 2025.\n\n**Trecho-chave:**\n\"Após avanços na diligência, o Fundo e GGR Covepi Renda Fundo de Investimento Imobiliário – Responsabilidade Limitada celebraram, em 19 de setembro de 2025, os documentos definitivos relativamente à venda pelo Fundo ao GGRC11 (i) da totalidade das cotas do Triple A Fundo de Investimento Imobiliário, fundo constituído sob a forma de condomínio fechado, inscrito no CNPJ sob o nº 23.426.470/0001-17; e (ii) do terreno localizado no município de Cabreúva, Estado de São Paulo, situado na Via Prefeito João Zacchi, nº 1.000 – Bairro Pinhal, com área total de 429.725,78 m².\"\n\n### 09/06/2026 - Assembleia Geral Extraordinária\n\n**O que aconteceu:** Deliberação sobre as contas e demonstrações contábeis.\n\n**Resumo:** A assembleia geral extraordinária do BlueMacaw Logística Fundo de Investimento Imobiliário aprovou as contas e demonstrações contábeis relativas ao exercício social findo em 31 de dezembro de 2025, conforme previsto no regulamento do fundo.\n\n**Trecho-chave:**\n\"Prezados Senhores(as) Cotistas,\nA Consulta Formal convocou os Cotistas a manifestarem-se a respeito da seguinte matéria:\n    i.    Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao\nexercício social findo em 31/12/2025, devidamente auditadas, conforme disponíveis para consulta nos\nsites da Administradora e nos demais canais exigidos pela regulamentação em vigor.\nrestou APROVADA a Consulta Formal.\"\n\n### 15/05/2026 - Assembleia Geral Extraordinária\n\n**O que aconteceu:** Convocação para aprovação das contas e demonstrações contábeis.\n\n**Resumo:** A assembleia geral extraordinária do BlueMacaw Logística Fundo de Investimento Imobiliário foi convocada para deliberar sobre a aprovação das contas e demonstrações contábeis relativas ao exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Prezado Cotista,\nA VÓRTX DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA., com sede na Cidade e Estado\nde São Paulo, na Rua Gilberto Sabino, nº 215, 4º Andar, Pinheiros, inscrita no CNPJ/ME sob nº\n22.610.500/0001-88, na qualidade de instituição administradora do BLUEMACAW LOGÍSTICA FUNDO DE INVESTIMENTO IMOBILIÁRIO, inscrito no CNPJ/ME sob o n° 34.081.637/0001-71 (‘‘Administrador’’ e ‘‘Fundo’’, respectivamente) vem apresentar a V. Sa., na qualidade de cotista do\nFundo (“Cotista”), a seguinte proposta, a ser apreciada na Assembleia Geral Extraordinária do Fundo, a ser realizada de forma não presencial, por meio de consulta formal, que poderá ser respondida até 23/04/2026, nos termos do\nregulamento do Fundo e do Artigo 76, §5°, da Resolução CVM nº 175, de 23 de dezembro de 2022, conforme alterada (“Resolução CVM n° 175/22”), observada a legislação vigente e as demais disposições do Regulamento.\nEm 23/04/2026, foi enviada aos Cotistas do Fundo a Convocação da Consulta Formal para a Assembleia\nGeral, que contará com as seguintes matérias na Ordem do Dia:\n    (i) Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao\nexercício social findo em 31/12/2025, devidamente auditadas, conforme disponíveis para consulta nos\nsites da Administradora e nos demais canais exigidos pela regulamentação em vigor.\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "VP/cota em queda relevante",
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 30.59
+  },
+  "parecer": {
+    "id": 1152964,
+    "data_entrega": "01/04/2026 19:13",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe em 31 de dezembro de 2025 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

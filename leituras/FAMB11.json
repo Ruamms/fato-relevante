@@ -1,0 +1,53 @@
+{
+  "ticker": "FAMB11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T01:44:29",
+  "relatorio": {
+    "id": 920201,
+    "data_entrega": "09/06/2025 17:42",
+    "texto": "### Fatos Extraídos:\n\n1. **Vacância:** A taxa de ocupação do fundo é de apenas 10,69%, com uma vacância física alta de 89,31%. (p. 2)\n2. **Locatária:** A antiga locatária da CEF encerrou suas operações em janeiro/2021, resultando na vacância total do imóvel. (p. 2)\n3. **Distribuição de Rendimentos:** Não houve distribuição de rendimentos desde dezembro/2020 por conta da rescisão da locatária CEF. (p. 2)\n4. **Proposta Vitalis:** A proposta para a venda do único ativo do fundo foi rejeitada, e novas pautas estão em deliberação pelos cotistas. (p. 4)\n5. **Administradora:** Haverá uma transferência de administração do fundo para a ACTUAL DTVM S.A., prevista para junho/2025. (p. 4)\n6. **Acordo CEF:** Foi celebrado um acordo com a Caixa Econômica Federal para encerrar todas as ações judiciais, com pagamento em até 30 dias após a assinatura do acordo. (p. 4)\n7. **Patrimônio Líquido:** O patrimônio líquido do fundo é de R$ 119,1M, com uma queda significativa de -47,12% nos últimos 12 meses. (p. 3)\n\n### O que observar em seguida:\n- A situação da vacância e a busca por novas locações.\n- O andamento das pautas em deliberação pelos cotistas e as possíveis consequências para o fundo."
+  },
+  "comunicados": {
+    "ids": [
+      1241502,
+      1237538,
+      1230980,
+      1244324,
+      1244321
+    ],
+    "datas": [
+      "07/07/2026",
+      "01/07/2026",
+      "26/06/2026",
+      "10/07/2026",
+      "10/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 07/07/2026\n\n**O QUE aconteceu:** A ACTUAL DISTRIBUIDORA DE VALORES MOBILIÁRIOS S.A. informou a conclusão de negociações tributárias e obtenção de benefícios fiscais.\n\n**Resumo:** O Fundo obteve economias significativas em IPTU, o que deve reduzir as necessidades de chamadas de capital para reocupação do prédio.\n\n**Trecho-chave:**\n\"Concluiu, no mês de junho de 2026, a negociação tributária através de transações fiscais referentes aos anos de 2024 e 2025, que não tinham sido quitados até então, além da obtenção de benefícios tributários referentes ao Programa Reviver Centro, com a suspensão integral do IPTU de 2026, permanecendo apenas a cobrança da TCL – Taxa de Coleta de Lixo.\"\n\n### FATO RELEVANTE entregue em 01/07/2026\n\n**O QUE aconteceu:** A ACTUAL DISTRIBUIDORA DE VALORES MOBILIÁRIOS S.A. informou a assinatura de um contrato de locação que reduzirá a vacância do imóvel.\n\n**Resumo:** O Fundo obteve uma nova locação de aproximadamente 6.292m², o que resultará em uma vacância de 89,42%.\n\n**Trecho-chave:**\n\"Concluiu, na data de 12 de junho de 2026, a assinatura do contrato de locação de aproximadamente 6.292m² (metro quadrado) do imóvel.\"\n\n### FATO RELEVANTE entregue em 26/06/2026\n\n**O QUE aconteceu:** A ACTUAL DISTRIBUIDORA DE VALORES MOBILIÁRIOS S.A. informou a assinatura de um contrato de locação que reduzirá a vacância do imóvel.\n\n**Resumo:** O Fundo obteve uma nova locação de aproximadamente 6.292m², o que resultará em uma vacância de 89,42%.\n\n**Trecho-chave:**\n\"Concluiu, na data de 12 de junho de 2026, a assinatura do contrato de locação de aproximadamente 6.292m² (metro quadrado) do imóvel.\"\n\n### ASSEMBLEIA AGE entregue em 10/07/2026\n\n**O QUE aconteceu:** A ACTUAL DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS S.A. apresentou uma proposta para a 5ª emissão de cotas do Fundo.\n\n**Resumo:** O Fundo planeja emitir até R$ 8.500.493,61 em novas cotas com um preço de R$ 715,59 cada, destinadas exclusivamente a investidores profissionais.\n\n**Trecho-chave:**\n\"O montante da Oferta será de até R$ 8.500.493,61 (oito milhões quinhentos mil quatrocentos e noventa e três reais e sessenta e um centavos) (“Montante Inicial da Oferta”), correspondente a 11.879 (onze mil oitocentas e setenta e nove) Novas Cotas, podendo tal montante ser diminuído em virtude da Distribuição Parcial, desde que observado o Montante Mínimo da Oferta.\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "VP/cota em queda relevante",
+      "Vacância física alta",
+      "Rendimentos irregulares"
+    ],
+    "cota": 703.0
+  },
+  "parecer": {
+    "id": 1149319,
+    "data_entrega": "31/03/2026 09:24",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário - FII Edifício Almirante Barroso Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o período de 19 de junho de 2025 (data da transferência de"
+  }
+}

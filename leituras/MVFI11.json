@@ -1,0 +1,33 @@
+{
+  "ticker": "MVFI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T01:55:22",
+  "comunicados": {
+    "ids": [
+      1188261,
+      1188260,
+      1151711
+    ],
+    "datas": [
+      "13/05/2026",
+      "13/05/2026",
+      "31/03/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 13/05/2026\n\n**O que aconteceu:** As contas anuais do Fundo de Investimento Imobiliário MV9 - FII foram aprovadas na assembleia geral realizada em 30 de abril de 2026.\n\n**Resumo:** A assembleia foi realizada para aprovar as contas anuais do exercício encerrado em 31 de dezembro de 2025, mas não houve presença de cotistas.\n\n**Trecho-chave:**\n\"Na assembleia geral de cotistas realizada em 30 de abril de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 13/05/2026\n\n**O que aconteceu:** A assembleia de cotistas para aprovação das contas do exercício social encerrado em 31 de dezembro de 2025 não foi instalada, pois nenhum cotista compareceu.\n\n**Resumo:** A assembleia foi convocada mas não ocorreu por falta de presença de cotistas, resultando na aprovação automática das contas.\n\n**Trecho-chave:**\n\"Dessa forma, e considerando que as demonstrações contábeis não contêm ressalvas, ficam as mesmas consideradas automaticamente aprovadas.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 31/03/2026\n\n**O que aconteceu:** A administradora convocou os cotistas para aprovar as contas e demonstrações contábeis do exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia foi convocada com prazo até 30 de abril de 2026, mas não houve presença de cotistas para deliberar sobre a aprovação das contas.\n\n**Trecho-chave:**\n\"Aos Cotistas do FUNDO DE INVESTIMENTO IMOBILIARIO MV9 - FII / A BTG Pactual Serviços Financeiros S.A. Distribuidora de Títulos e Valores Mobiliários, sociedade anônima, com sede na Cidade e Estado do Rio de Janeiro, localizada à Praia de Botafogo, nº 501, Torre Corcovado, 5º Andar (Parte), Botafogo, e inscrita no CNPJ sob o nº 59.281.253/0001-23, devidamente autorizada pela Comissão de Valores Mobiliários (“CVM”) para a atividade de administração de carteiras de valores mobiliários, de acordo com o Ato Declaratório CVM nº 8 .695, de 20 de março de 2006 (\"Administradora\"), na qualidade de administradora do FUNDO DE INVESTIMENTO IMOBILIARIO MV9 - FII, inscrito no CNPJ sob o nº 23.537.203/0001-17 (“Fundo”), bem como de sua classe única, vem, pela presente, convocar os cotistas do Fundo (\"Cotistas\") para a Consulta Formal.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1140552,
+    "data_entrega": "19/03/2026 10:29",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do MV9 Fundo De Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil aplicáv"
+  }
+}

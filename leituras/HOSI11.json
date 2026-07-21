@@ -1,0 +1,45 @@
+{
+  "ticker": "HOSI11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T03:13:30",
+  "relatorio": {
+    "id": 1051786,
+    "data_entrega": "01/12/2025 18:36",
+    "texto": "### Fatos Extraídos:\n\n1. **Operação Vitacon Domingos de Morais:**\n   - Em julho de 2025, foram adquiridas 128 unidades do empreendimento Vitacon Domingos de Morais.\n   - Até outubro de 2025, 7 unidades foram vendidas, totalizando 105 unidades vendidas das 128 adquiridas.\n   - As vendas resultaram em um ganho de capital de R$ 18,9 milhões (70% sobre o valor de aquisição do portfólio).\n\n2. **Operação HOUSi Jaú:**\n   - Até outubro de 2025, foram vendidas 87 unidades de um total de 126.\n   - O fundo registrou VGV vendido de R$ 19,8 milhões.\n   - Ganho de capital projetado de 38% no fechamento de setembro de 2025.\n\n3. **Operação HOUSi Urussuí:**\n   - Até outubro de 2025, foram vendidas 105 unidades de um total de 115.\n   - O fundo registrou VGV vendido de R$ 46,8 milhões.\n   - Ganho de capital projetado de 19% no fechamento de setembro de 2025.\n\n4. **Operação Consolidada:**\n   - Em outubro de 2025, a operação consolidada do fundo atingiu 79% das unidades vendidas.\n   - O VGV vendido resultou em um ganho de capital projetado de 109% no fechamento de agosto de 2025.\n\n5. **Cota Patrimonial e Mercado:**\n   - Cota patrimonial: R$ 106,92/cota.\n   - Cota mercado: R$ 85,35/cota.\n   - Yield mensal anualizado: 10,08% a.a.\n\n### O que observar em seguida:\n- **Ganho de capital projetado** nas operações do fundo, especialmente no Vitacon Domingos de Morais e HOUSi Urussuí.\n- **Taxa de administração** variando com o patrimônio líquido do fundo."
+  },
+  "comunicados": {
+    "ids": [
+      949896,
+      1248344,
+      1152290
+    ],
+    "datas": [
+      "18/07/2025",
+      "15/07/2026",
+      "01/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Assembleia AGE",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 18/07/2025\n\n**O QUE aconteceu:** Aquisição de Unidades no Empreendimento Vitacon Domingos de Morais.\n\n**Resumo:** O Fundo HOSI11 adquiriu 128 unidades residenciais em um empreendimento localizado na cidade de São Paulo, por R$ 27 milhões. Esta aquisição foi realizada com recursos distribuídos ao Fundo pelas Sociedades Investidas.\n\n**Trecho-chave:**\n\"foi celebrado pelo Fundo o Contrato de Compromisso de Venda e Compra de Unidade Autônoma e Outros Pactos  (“Contrato”) com a Costa Prateada Desenvolvimento Imobiliário SPE Ltda. , inscrita no CNPJ/MF sob o nº 54.096.270/0001 -77 (\"Vendedora\"), tendo por objeto a aquisição de 128 (cento e vinte e oito) futuras unidades residenciais do empreendimento imobiliário denominado “ CONDOMÍNIO VITACON DOMINGOS DE MORAIS ”, localizado na cidade de São Paulo, Estado de São Paulo, na Rua Domingos de Morais, nº 3093, Vila Mariana  (“Unidades Adquiridas ” e “ Empreendimento”, respectivamente), totalizando as Unidades Adquiridas uma área privativa total de 2.816,35 m², pelo valor total de R$ 27.000.000,00 (vinte e sete milhões de reais), pagos à vista.\"\n\n### ASSEMBLEIA GERAL EXTRAORDINÁRIA DE COTISTAS entregue em 15/07/2026\n\n**O QUE aconteceu:** Ratificação da não distribuição semestral de lucros.\n\n**Resumo:** A assembleia aprovou a ratificação da não distribuição semestral de 95% dos lucros auferidos pelo Fundo no segundo semestre de 2025, com o restante sendo retido para investimentos futuros. O valor total do investimento no empreendimento Vitacon Domingos de Morais foi de R$ 27 milhões.\n\n**Trecho-chave:**\n\"A Administradora informa que o lucro acumulado auferido pelo Fundo, apurado segundo regime de caixa, no período correspondente ao 2º semestre de 2025, foi de R$ 4.116.436,11 (quatro milhões, cento e dezesseis mil, quatrocentos e trinta e seis reais e sessenta centavos). Ao longo do segundo semestre de 2025, foi distribuído aos Cotistas, a título de rendimentos, o montante de R$ 1.629.630,21 (um milhão, seiscentos e vinte e nove mil, seiscentos e trinta reais e vinte e um centavos), que corresponde a 39,59% dos lucros auferidos, apurados segundo o regime de caixa, até o final de 2025.\"\n\n### ASSEMBLEIA GERAL ORDINÁRIA DE COTISTAS entregue em 01/04/2026\n\n**O QUE aconteceu:** Aprovação das contas e demonstrações contábeis do Fundo.\n\n**Resumo:** A assembleia aprovou as contas e demonstrações contábeis do Fundo relativas ao exercício social findo em 31 de dezembro de 2024, conforme disponíveis para consulta nos sites da Administradora e demais canais exigidos pela regulamentação.\n\n**Trecho-chave:**\n\"restou aprovada a Consulta Formal, que deliberou pela matéria constante na Ordem do Dia.\"\n\n---\n\nConexões aos indicadores:\n- A aquisição de unidades no empreendimento Vitacon Domingos de Morais pode impactar positivamente o patrimônio líquido e o valor do ativo do Fundo.\n- A não distribuição dos lucros auferidos no segundo semestre de 2025 pode refletir na manutenção do capital para investimentos futuros, potencialmente beneficiando os cotistas a longo prazo."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 77.56
+  },
+  "parecer": {
+    "id": 1106108,
+    "data_entrega": "09/02/2026 19:03",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário Housi em 31 de dezembro de 2024, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos Fundos de Inv"
+  }
+}

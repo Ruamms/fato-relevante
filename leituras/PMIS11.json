@@ -1,0 +1,45 @@
+{
+  "ticker": "PMIS11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T01:20:17",
+  "relatorio": {
+    "id": 1240930,
+    "data_entrega": "07/07/2026 11:55",
+    "texto": "### Fatos Extraídos:\n\n1. **Alocação no Mês:**\n   - A alocação do fundo no mês de junho não teve movimentações relevantes na carteira.\n\n2. **Novo CRI Aprovado:**\n   - Foi aprovado em comitê um novo CRI do segmento residencial localizado em São Paulo, com remuneração de CDI+4,0% e primeira integralização prevista para julho.\n\n3. **Performance do Fundo:**\n   - O resultado do fundo foi R$ 0,0985/cota, representando um yield mensal de 1,27%, equivalente a 120,74% do rendimento do CDI no mesmo período.\n   - A reserva acumulada é de R$0,093/cota.\n\n4. **Comentário Macroeconômico:**\n   - O Copom reduziu a Selic em 0,25 p.p., de 14,50% para 14,25%, na reunião realizada nos dias 16-17.\n   - A decisão foi unânime e respaldada pela desaceleração do IPCA de maio e pelo alívio geopolítico associado às negociações entre EUA e Irã.\n\n5. **Indicadores do Fundo:**\n   - Cotação R$ 7,80 (12m: -1,64%).\n   - P/VP 0,84 (12m: —).\n   - Patrimônio líquido R$ 137,7M (12m: +0,06%).\n   - VP/cota 9,30 (12m: +0,06%).\n   - Nº de cotas 14,8M (12m: 0,00%).\n   - Valor do ativo R$ 139,3M (12m: -0,06%).\n   - DY mensal 1,05% (12m: 12,11% acumulado).\n   - Cotistas 6,5mil (12m: -7,77%).\n\n6. **Rendimentos Acima do Resultado Financeiro:**\n   - Rendimentos declarados no 4T de R$ 25,0M vs resultado financeiro líquido 4T de R$ 17,5M.\n   - O resultado acumulado (reserva) R$ 4,2M não cobre o excesso.\n\n### O que observar em seguida:\n- Monitorar a alocação do fundo e as movimentações futuras na carteira.\n- Observar os rendimentos declarados em relação ao resultado financeiro no próximo relatório."
+  },
+  "comunicados": {
+    "ids": [
+      955610,
+      1030447,
+      1030444
+    ],
+    "datas": [
+      "29/07/2025",
+      "07/11/2025",
+      "07/11/2025"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 29/07/2025\n\n**O que aconteceu:** A XP Corretora de Câmbio, Títulos e Valores Mobiliários S.A., administradora do PARAMIS HEDGE FUND, informou a adaptação do regulamento do Fundo à Resolução da CVM nº 175.\n\n**Resumo:** A administração realizou alterações no regulamento do fundo para se adequar às novas regras estabelecidas pela Comissão de Valores Mobiliários (CVM).\n\n**Trecho-chave:**\n\"O Fundo não sofreu qualquer alteração que dependa de deliberação dos cotistas, sendo certo que as alterações promovidas refletem apenas a adequação a Resolução CVM 175.\"\n\n---\n\n### ASSEMBLEIA GERAL ORDINÁRIA DE COTISTAS entregue em 03/11/2024\n\n**O que aconteceu:** A assembleia geral ordinária de cotistas do PARAMIS HEDGE FUND aprovou as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 30.06.2025.\n\n**Resumo:** Os cotistas votaram favoravelmente às demonstrações financeiras do fundo referente ao segundo semestre de 2025, sem restrições ou ressalvas.\n\n**Trecho-chave:**\n\"Os cotistas aprovaram, sem quaisquer restrições ou ressalvas: As Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 30.06.2025.\"\n\n---\n\n### ASSEMBLEIA GERAL ORDINÁRIA DE COTISTAS entregue em 07/11/2025\n\n**O que aconteceu:** A assembleia geral ordinária de cotistas do PARAMIS HEDGE FUND aprovou as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 30.06.2025.\n\n**Resumo:** Os cotistas votaram favoravelmente às demonstrações financeiras do fundo referente ao segundo semestre de 2025, sem restrições ou ressalvas.\n\n**Trecho-chave:**\n\"Os cotistas aprovaram, sem quaisquer restrições ou ressalvas: As Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 30.06.2025.\"\n\n---\n\n**Conexão com o contexto:** A aprovação das demonstrações financeiras na assembleia geral ordinária de 2024 e 2025 reflete a situação contábil do fundo, que tem um patrimônio líquido de R$ 137,7M (12m: +0,06%) e uma valorização por cota de R$ 9,30 (12m: +0,06%)."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 7.8
+  },
+  "parecer": {
+    "id": 1001725,
+    "data_entrega": "29/09/2025 23:09",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nesta data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos fundos de investimento imobiliário."
+  }
+}

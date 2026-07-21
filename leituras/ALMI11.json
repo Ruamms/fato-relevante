@@ -1,0 +1,48 @@
+{
+  "ticker": "ALMI11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T23:20:34",
+  "relatorio": {
+    "id": 1215259,
+    "data_entrega": "09/06/2026 18:06",
+    "texto": "### Fatos Extraídos:\n\n1. **Vacância do Imóvel:** A ocupação do fundo é de 59,2%, o que significa uma vacância física de 40,8%. (p. 5)\n2. **Locatários Atuais:** Os principais locatários incluem Altera Piranema Edf En Do Brasil Participações, Kuehnenagel Serviços Logísticos, Cabrera Consultoria Contábil e Tributária, entre outros. (p. 6)\n3. **Revisional de Contratos:** Até a presente data, 71% do imóvel está com contratos vencendo em 2025-2028, o que sugere uma oportunidade para ajustar aluguéis e manter a ocupação. (p. 7)\n4. **Administração Proativa:** A administração atua proativamente na renovação dos contratos conforme seus vencimentos, buscando manter a ocupação do imóvel. (p. 7)\n5. **Cotação e Distribuição de Rendimentos:** A cotação atual é de R$ 633,33, com uma distribuição mensal de rendimento de 2,518506525% ao mês. (p. 14)\n6. **Patrimônio Líquido e Valor Patrimonial/Cota:** O patrimônio líquido do fundo é de R$ 227,74 milhões e o valor patrimonial por cota é de R$ 2,05 mil. (p. 3)\n7. **Taxa de Administração:** A taxa de administração é de 0,383% ao ano sobre o patrimônio do fundo. (p. 3)\n\n### O que observar em seguida:\n1. Monitorar a renovação dos contratos vencendo entre 2025 e 2028.\n2. Observar as mudanças na ocupação do imóvel, especialmente no andar 21, que está parcialmente ocioso."
+  },
+  "comunicados": {
+    "ids": [
+      1198806,
+      1198805,
+      1194886
+    ],
+    "datas": [
+      "18/05/2026",
+      "18/05/2026",
+      "15/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 18/05/2026\n\n**O que aconteceu:** As contas anuais do Fundo TORRE ALMIRANTE foram aprovadas na assembleia geral de cotistas realizada em 13 de maio de 2026.\n\n**Resumo:** A assembleia geral de cotistas aprovou as demonstrações financeiras do exercício social encerrado em 31 de dezembro de 2025, indicando que o processo contábil foi aceito pelos cotistas.\n\n**Trecho-chave:**\n\"Na assembleia geral de cotistas realizada em 13 de maio de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\" (p. 1)\n\n### ASSEMBLEIA GERAL DE COTISTAS DO FII TORRE ALMIRANTE entregue em 18/05/2026\n\n**O que aconteceu:** A assembleia geral de cotistas do Fundo TORRE ALMIRANTE aprovou as contas anuais do exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** Durante a assembleia, os cotistas votaram e aprovaram as demonstrações financeiras do ano passado, indicando um processo contábil regular.\n\n**Trecho-chave:**\n\"4.1. Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\" (p. 3)\n\n### ASSEMBLEIA GERAL DE COTISTAS DO FII TORRE ALMIRANTE entregue em 15/05/2026\n\n**O que aconteceu:** A administradora do Fundo TORRE ALMIRANTE convocou os cotistas para uma assembleia geral com o objetivo de aprovar as contas anuais do exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A administradora enviou um comunicado aos cotistas convocando-os a votar sobre a aprovação das contas e demonstrações financeiras do Fundo para o exercício de 2025, com prazo até 13 de maio de 2026.\n\n**Trecho-chave:**\n\"A BTG Pactual Serviços Financeiros S.A. Distribuidora de Títulos e Valores Mobiliários, sociedade anônima, convocou os cotistas do Fundo para a Consulta Formal, com prazo de recebimento de votos até 13 de maio de 2026.\" (p. 1)\n\n**Conexão com o contexto:** Este documento preparatório para a assembleia reforça a importância da aprovação das contas anualmente, que foi posteriormente confirmada na assembleia geral realizada em 18/05/2026."
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Vacância física alta",
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares",
+      "P/VP muito abaixo da média histórica"
+    ],
+    "cota": 610.0
+  },
+  "parecer": {
+    "id": 1151947,
+    "data_entrega": "31/03/2026 22:44",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posi ção patrimonial e financeira do Fundo De Investimento Imobiliário - FII Torre Almirante Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa o exercício findo nessa data , de acordo com as práticas contábeis adotad"
+  }
+}

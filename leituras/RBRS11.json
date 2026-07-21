@@ -1,0 +1,58 @@
+{
+  "ticker": "RBRS11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T02:58:49",
+  "relatorio": {
+    "id": 1240773,
+    "data_entrega": "07/07/2026 09:24",
+    "texto": "### Fatos Extraídos:\n\n1. **Vacância:** A vacância no portfólio do fundo é de 36,70%, com a Urbic Vila Mariana tendendo a 78% e a Urbic Sabiá em 85%. (p. 14)\n2. **Operação Urbic Vila Mariana:** O empreendimento registrou um NOI positivo de R$ 65 mil ou R$ 54/m², com um RevPar de R$ 121. (p. 13-14)\n3. **Operação Urbic Sabiá:** O empreendimento encerrou o mês de maio com 85% de ocupação e registrou um NOI de R$ 116 mil ou R$ 53/m², com um RevPar de R$ 124. (p. 15-16)\n4. **Strategy:** A estratégia do fundo é focar na conversão gradual de parte do inventário para locação tradicional (long stay) e aumentar a previsibilidade das receitas. (p. 13, 15)\n5. **Patrimônio Líquido:** O patrimônio líquido do fundo é de R$ 73,392,606,42. (p. 3)\n6. **Cota Patrimonial:** A cota patrimonial é de R$ 96,01. (p. 8)\n\n### O que observar em seguida:\n- Monitorar a evolução da vacância e as estratégias de conversão para long stay.\n- Observar os resultados financeiros mensais e quaisquer mudanças nas operações dos imóveis."
+  },
+  "comunicados": {
+    "ids": [
+      1143451,
+      1117519,
+      1100685,
+      1124410,
+      1045606,
+      1170623,
+      1170621
+    ],
+    "datas": [
+      "24/03/2026",
+      "18/02/2026",
+      "03/02/2026",
+      "27/02/2026",
+      "24/11/2025",
+      "27/04/2026",
+      "27/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO/E",
+      "Assembleia AGO/E"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 24/03/2026\n\n**O QUE aconteceu:** Nova locação assinada com empresa de beleza no edifício Urbic Sabiá.\n\n**Resumo:** O Fundo Rio Bravo Renda Residencial assinou um contrato de locação para uma loja (fachada ativa) do edifício Urbic Sabiá, trazendo benefícios e impactando positivamente o resultado mensal em aproximadamente R$ 0,03/cota a partir do mês de outubro de 2026.\n\n**Trecho-chave:** \"A nova locação do Imóvel impactará positivamente o resultado mensal do Fundo em, aproximadamente, R$ 0,03/cota, somadas as receitas de aluguel - a partir do mês de outubro de 2026 - e os valores que o Fundo deixará de incorrer de despesas decorrentes da vacância.\"\n\n---\n\n### FATO RELEVANTE entregue em 18/02/2026\n\n**O QUE aconteceu:** Impactos negativos na operação do Urbic Vila Mariana.\n\n**Resumo:** A transição para a nova operadora no edifício Urbic Vila Mariana impactou negativamente o desempenho operacional, resultando em resultados negativos nos meses de dezembro de 2025 e janeiro de 2026. O Fundo está monitorando ativamente a situação.\n\n**Trecho-chave:** \"O Fundo obteve, no mês de dezembro de 2025, uma receita bruta de R$ 106.167,91 referente às operações de locação. Os custos totalizaram R$ 124.526,97, influenciados principalmente pelos reparos decorrentes das devoluções das unidades.\"\n\n---\n\n### FATO RELEVANTE entregue em 03/02/2026\n\n**O QUE aconteceu:** Troca de operadora no edifício Urbic Vila Mariana.\n\n**Resumo:** O Fundo comunicou o interesse em rescindir o contrato com a operadora 360 Suítes e iniciar a transição para a nova operadora, Viva. Esta mudança trouxe impactos temporários negativos nos resultados de dezembro de 2025 e janeiro de 2026.\n\n**Trecho-chave:** \"Com isso, foi dado início ao processo de transição operacional para a Viva, operadora que já atua no empreendimento For You Paraíso, ativo que integrou o portfólio do Fundo até recentemente, quando foi cindido para o RBFY11.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 27/02/2026\n\n**O QUE aconteceu:** Disponibilidade do Informe de Rendimentos Ano-Calendário 2025.\n\n**Resumo:** O Informe de Rendimentos dos fundos listados no Anexo I está disponível para acesso online a partir desta data. Os cotistas podem acessar o documento pelo Portal do Investidor da Rio Bravo ou pelo Atendimento Digital.\n\n**Trecho-chave:** \"Os informes de rendimentos (IR) dos fundos listados no Anexo I estão disponíveis aos investidores a partir desta data no Portal do Investidor da Rio Bravo.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 24/11/2025\n\n**O QUE aconteceu:** Encerramento do Leilão das Cotas.\n\n**Resumo:** O leilão das 40 cotas decorrentes do agrupamento de frações de cota resultantes da cisão do RBRS11 foi encerrado em 14/11/2025, com valor aproximado de R$ 40,37425 por cota. O reembolso será pago aos cotistas no dia 27/11/2025.\n\n**Trecho-chave:** \"O Leilão apurou o valor aproximado de R$40,37425 (quarenta reais e trinta e sete centavos) por cota leiloada do RBRS11, resultando em um montante total de R$ 1.614,97 (mil seiscentos e quatorze reais e noventa e sete centavos).\"\n\n---\n\n### ASSEMBLEIA AGO/E entregue em 27/04/2026\n\n**O QUE aconteceu:** Resultado da Consulta Formal.\n\n**Resumo:** A assembleia deliberou aprovar as Demonstrações Financeiras do Fundo referentes ao exercício encerrado em 31 de dezembro de 2025, mas não aprovou a alteração do Regulamento do Fundo para permitir a aplicação temporária de disponibilidades financeiras em ativos de renda fixa.\n\n**Trecho-chave:** \"Os cotistas que representam 1,92% (um vírgula noventa e dois por cento) do total de cotas emitidas pelo Fundo e aptos ao exercício do direito de voto, deliberaram por aprovar as Demonstrações Financeiras do Fundo referentes ao exercício encerrado em 31 de dezembro de 2025.\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Vacância física alta",
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 44.04
+  },
+  "parecer": {
+    "id": 1142595,
+    "data_entrega": "23/03/2026 18:19",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Rio Bravo Renda Residencial Fundo de Investimento Imobiliário de Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contáb"
+  }
+}

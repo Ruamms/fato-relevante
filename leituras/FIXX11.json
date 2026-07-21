@@ -1,0 +1,20 @@
+{
+  "ticker": "FIXX11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T11:49:59",
+  "comunicados": {
+    "ids": [],
+    "datas": [],
+    "rotulos": [],
+    "texto": null
+  },
+  "parecer": {
+    "id": 1231006,
+    "data_entrega": "26/06/2026 18:58",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Buena Vista Neos Enchanced Income 1-3 Month T-Bill ETF BR Index Fundo de Índice - Responsabilidade Limitada em 31 de março de 2026 e o desempenho de suas operações para o período de 10 de junho de 2025 a 31 de março de 2026, de acordo com a"
+  }
+}

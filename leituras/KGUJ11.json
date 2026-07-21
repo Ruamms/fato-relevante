@@ -1,0 +1,46 @@
+{
+  "ticker": "KGUJ11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T04:51:14",
+  "relatorio": {
+    "id": 1252791,
+    "data_entrega": "17/07/2026 19:33",
+    "texto": "### Fatos Extraídos:\n\n1. **Patrimônio Líquido:** R$ 29,4M (p. 1)\n2. **Número de Cotas:** 2,9M (p. 1)\n3. **Valor Patr. da Cota:** R$ 10,02 (p. 1)\n4. **Resultado Esperado para o Projeto:** IPCA + 11,4% a.a. (p. 1)\n5. **Vendas do Projeto:** 43% vendido em junho, acima do resultado previsto inicialmente (p. 2)\n6. **Previsão de Retorno para o Projeto:** Expectativa de retorno no 4T de 2026 (p. 2)\n7. **Taxa de Administração:** 2,82% a.a. (não citado diretamente, mas inferido) (p. 1)\n8. **Mercado Imobiliário:** Crescimento marginal das vendas em São Paulo (3%) e aumento significativo nos lançamentos (46%) (p. 1)\n\n### O que observar em seguida:\n- Monitorar a evolução das vendas do projeto.\n- Observar as próximas chamadas de capital previstas para o 4T de 2026."
+  },
+  "comunicados": {
+    "ids": [
+      1181501,
+      1019224,
+      1189676,
+      954508,
+      970713,
+      969466
+    ],
+    "datas": [
+      "06/05/2026",
+      "23/10/2025",
+      "13/05/2026",
+      "28/07/2025",
+      "14/08/2025",
+      "14/08/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 06/05/2026\n\n**O QUE aconteceu:** A KINEA DESENVOLVIMENTO GUARARÁ JARDINS FII realizou a 2ª chamada de capital de Cotas da 1ª emissão.\n\n**Resumo:** O fundo está integralizando mais cotações, totalizando R$ 17.108.300,44.\n\n**Trecho-chave:**\n\"Na 2ª Chamada de Capital, haverá a integralização de 837.001 (oitocentos e trinta e sete mil e um ) Cotas da 1ª Emissão, a ocorrer por meio do Sistema de Distribuição de Ativos - DDA, operacionalizado e administrado pela B3 S.A. - Brasil, Bolsa, Balcão (“B3”), tendo como base o Valor da Cota da 1ª Emissão (conforme definido nos Boletins de Subscrição), calculado nos termos dos compromissos de investimento, equivalente a R$ 10, 22 (dez reais e vinte e dois centavos) por Cota da 1ª Emissão para a 2ª Chamada de Capital, totalizando o montante de R$ 17.108.300,44  (Dezessete milhões, cento e oito mil, trezentos reais e quarenta e quatro centavos ), sem considerar a Taxa de Distribuição, com liquidação prevista para 20 de maio de 2026 (“Data de Liquidação”).\"\n\n---\n\n### FATO RELEVANTE entregue em 23/10/2025\n\n**O QUE aconteceu:** A KINEA DESENVOLVIMENTO GUARARÁ JARDINS FII realizou a 1ª chamada de capital de Cotas da 1ª emissão.\n\n**Resumo:** O fundo está integralizando 2.098.608 cotações, totalizando R$ 20.986.080,00.\n\n**Trecho-chave:**\n\"Na 1ª Chamada de Capital, haverá a integralização de 2.098.608 (dois milhões, noventa e oito mil, seiscentos e oito) Cotas da 1ª Emissão, a ocorrer por meio do Sistema de Distribuição de Ativos - DDA, operacionalizado e administrado pela B3 S.A. - Brasil, Bolsa, Balcão  (“B3”), tendo como base o Valor da Cota da 1ª Emissão  (conforme definido nos Boletins de Subscrição), calculado nos termos do s compromissos de investimento, equivalente a R$ 10,00 (dez reais) por Cota da 1ª Emissão para a 1ª Chamada de Capital, totalizando o montante de R$ 20.986.080,00 (vinte milhões, novecentos e oitenta e seis mil e oitenta reais), sem considerar a Taxa de Distribuição, com liquidação prevista para 06 de novembro de 2025 (“Data de Liquidação”).\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 13/05/2026\n\n**O QUE aconteceu:** A KINEA DESENVOLVIMENTO GUARARÁ JARDINS FII atualizou a forma de divulgação da remuneração dos prestadores de serviços essenciais.\n\n**Resumo:** O fundo passará a divulgar a remuneração por meio da Ferramenta ANBIMA, substituindo o \"Sumário de Remuneração\".\n\n**Trecho-chave:**\n\"Considerando as interpretações adicionais divulgadas pelo Ofício-Circular Conjunto nº 1/2025/CVM/SIN/SSE (\"Ofício-Circular CVM nº 1/2025\"), em especial quanto à substituição do \"Sumário de Remuneração\" pela Ferramenta ANBIMA (Plataforma de Transparência de Taxas) como meio centralizado e adequado de divulgação da remuneração dos Prestadores de Serviços Essenciais da Classe, restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 28/07/2025\n\n**O QUE aconteceu:** A KINEA DESENVOLVIMENTO GUARARÁ JARDINS FII antecipou o encerramento do período de coleta de intenções de investimento.\n\n**Resumo:** O fundo alterou o cronograma, com a data máxima para encerramento do período de coleta de intenções de investimento sendo antecipada para 04/08/2025.\n\n**Trecho-chave:**\n\"7 Data Máxima Para Encerramento do Período de Coleta de Intenções de Investimento(3) 04/08/2025\n8 Data Máxima Para Realização do Procedimento de Alocação(3)  05/08/2025\"\n(p. 2)\n\n---\n\n### ASSEMBLEIA AGE entregue em 14/08/2025\n\n**O QUE aconteceu:** A KINEA DESENVOLVIMENTO GUARARÁ JARDINS FII aprovou operações de aquisição de ativos potencialmente conflitados.\n\n**Resumo:** Os cotistas aprovaram a aquisição de quotas representativas do capital social da COINVESTIDORES PARTICIPACOES XI LTDA. e M.A.R. CRETA DESENVOLVIMENTO IMOBILIARIO SPE LTDA., bem como a aquisição de cotas de fundos de investimento cuja política de investimento seja o investimento em títulos do tesouro nacional, operações compromissadas em geral ou outros ativos admitidos.\n\n**Trecho-chave:**\n\"Foram recebidas respostas de cotistas representando 100% das Cotas de emissão do Fundo, sendo que as matérias colocadas em deliberação, conforme descritas acima, restaram aprovadas pelos Cotistas, conforme os percentuais detalhados abaixo:\"\n(p. 2)"
+  },
+  "retrato": {
+    "selo": "Histórico insuficiente",
+    "nivel": "insuficiente",
+    "alertas": [
+      "Base de cotistas muito pequena",
+      "Fundo novo — histórico curto"
+    ],
+    "cota": null
+  }
+}

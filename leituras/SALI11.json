@@ -1,0 +1,30 @@
+{
+  "ticker": "SALI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T05:47:18",
+  "comunicados": {
+    "ids": [
+      1035872,
+      998861
+    ],
+    "datas": [
+      "13/11/2025",
+      "25/09/2025"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA AGO entregue em 25/09/2025\n\n**Data:** 25/09/2025  \n**Título:** Deliberou aprovar as contas e demonstrações contábeis do Fundo.  \n**Resumo:** A assembleia geral extraordinária deliberou pela aprovação das contas e demonstrações contábeis do fundo, relativas ao exercício social findo em 30/06/2025, devidamente auditadas.  \n**Trecho-chave:**\n\"A deliberação constante acima visa aprovar as Demonstrações Financeiras do Fundo, elaborada por auditor independente.\" (p. 2)\n\n---\n\n### ASSEMBLEIA AGO entregue em 13/11/2025\n\n**Data:** 13/11/2025  \n**Título:** Deliberou aprovar as contas e demonstrações contábeis do Fundo.  \n**Resumo:** A assembleia geral deliberou pela aprovação das contas e demonstrações contábeis do fundo, relativas ao exercício social findo em 30/10/2025, devidamente auditadas.  \n**Trecho-chave:**\n\"APROVADA\" (p. 4)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 998207,
+    "data_entrega": "25/09/2025 10:29",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo, para a posição de 30 de junho de 2025 e o desempenho de suas operações para o exercício findo naquela data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário regulamentados pela "
+  }
+}

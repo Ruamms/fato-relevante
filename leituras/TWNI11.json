@@ -1,0 +1,33 @@
+{
+  "ticker": "TWNI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T03:54:06",
+  "comunicados": {
+    "ids": [
+      1188265,
+      1188264,
+      1151692
+    ],
+    "datas": [
+      "13/05/2026",
+      "13/05/2026",
+      "31/03/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Assembleia Geral de Cotistas realizada em 30/04/2026\n\n**O que aconteceu:** A assembleia geral de cotistas para aprovação das contas anuais do Fundo de Investimento Imobiliário Morumbi Town I referente ao exercício encerrado em 31 de dezembro de 2025 foi realizada.\n\n**Resumo:** A assembleia ocorreu em 30 de abril de 2026, mas não houve presença de cotistas, resultando na aprovação automática das contas pelo administrador.\n\n**Trecho-chave:**\n\"Rio de Janeiro, 11 de maio de 2026.  \nPrezado Cotista,  \nA assembleia geral de cotistas realizada em 30 de abril de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\"\n\n### Convocação para Assembleia Geral de Cotistas\n\n**O que aconteceu:** A administradora convocou os cotistas para uma assembleia geral com o objetivo de aprovar as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia foi convocada em 31 de março de 2026 e ocorreu em 30 de abril de 2026, mas não teve presença de cotistas, resultando na aprovação automática das contas pelo administrador.\n\n**Trecho-chave:**\n\"Rio de Janeiro, 11 de maio de 2026.  \nPrezado Cotista,  \nA assembleia geral de cotistas realizada em 30 de abril de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\"\n\n**Conexão com o contexto:** A aprovação automática das contas pela ausência de votos dos cotistas pode estar relacionada aos alertas de menos cotistas que o mínimo para isenção de IR e emissão de cotas com valor de preço ajustado em queda."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1140203,
+    "data_entrega": "18/03/2026 16:26",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Morumbi Town I Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 202 5 , o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas"
+  }
+}

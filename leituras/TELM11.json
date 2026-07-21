@@ -1,0 +1,59 @@
+{
+  "ticker": "TELM11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T04:44:47",
+  "relatorio": {
+    "id": 1226192,
+    "data_entrega": "23/06/2026 14:25",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Venda de Ativo Imobiliário:**\n   - A TELLUS vendeu à vista o imóvel 1201 do empreendimento Pinna, gerando um ganho de capital para o fundo.\n   - \"A Gestão já vinha ativivamente tratando a venda do ativo, que se concretizou no dia 29 de maio, conforme Fato Relevante divulgado no dia 2 de junho.\" (p. 4)\n\n2. **Alta Vacância:**\n   - A vacância física do fundo é alta, com 39,63%.\n   - \"Vacância 39,63% (12m: —)\" (p. 3)\n\n3. **Distribuição de Rendimentos:**\n   - O fundo distribuiu R$ 0,30 por cota no mês de maio, representando um dividend yield de 45,65% a.a.\n   - \"No dia 18 de junho, o TELM11 distribuiu R$ 0,30 por cota, referentes ao resultado do mês de maio.\" (p. 4)\n\n4. **Carteira de Ativos:**\n   - A carteira do fundo está composta principalmente por CRIs e imóveis residenciais.\n   - \"A alocação por classe de ativo é de 34,4% em CRIs, 10,7% em imóveis e 6,1% em FII.\" (p. 8)\n\n5. **Liquidez:**\n   - O fundo possui uma posição relevante de liquidez após a venda do ativo Pinna.\n   - \"O Fundo encerrou o período com uma posição relevante de liquidez, reflexo da recente alienação de um de seus ativos imobiliários.\" (p. 7)\n\n6. **Risco Principal:**\n   - O risco principal é a vacância, que está em 22,6%.\n   - \"Vacância Risco Principal Segmento 22,6%\" (p. 8)\n\n### O que Observar Em Seguida:\n\n1. **Monitorar a Vacância:** A alta vacância pode indicar problemas de locação e deve ser monitorada para garantir que não haja uma deterioração significativa no valor do fundo.\n2. **Liquidez:** Verificar se o aumento da liquidez após a venda do ativo Pinna será utilizado eficientemente em novas oportunidades de investimento ou se será distribuído aos cotistas."
+  },
+  "comunicados": {
+    "ids": [
+      1251555,
+      1212197,
+      1185608,
+      1204504,
+      1125047,
+      1204503,
+      1181482
+    ],
+    "datas": [
+      "16/07/2026",
+      "03/06/2026",
+      "11/05/2026",
+      "27/05/2026",
+      "28/02/2026",
+      "27/05/2026",
+      "06/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 16/07/2026\n\n**O QUE aconteceu:** 4ª Emissão de Cotas do TELM11.\n\n**Resumo:** O fundo realizou a 4ª emissão de cotas, destinada exclusivamente a investidores qualificados.\n\n**Trecho-chave:**\n\"foi aprovada, por meio do Ato Conjunto do Administrador e do Gestor do Tellus Multiestratégia – FII Fundo de Investimento Imobiliário Responsabilidade Limitada, formalizado em 10 de julho de 2026 ('Instrumento de Deliberação Conjunta'), a realização da 4ª (quarta) emissão de cotas da Classe ('Novas Cotas' e '4ª Emissão'), as quais serão objeto de oferta pública de distribuição primária, sob o regime de melhores esforços de colocação, submetida ao rito de registro automático perante a Comissão de Valores Mobiliários (CVM) e destinada exclusivamente a Investidores Qualificados.\"\n\n### FATO RELEVANTE entregue em 03/06/2026\n\n**O QUE aconteceu:** Venda da unidade residencial Pinna 5109.\n\n**Resumo:** O fundo vendeu uma unidade residencial por R$ 11,5 milhões, gerando um ganho de capital e reforçando a capacidade do gestor em realizar operações com alto valor agregado aos cotistas.\n\n**Trecho-chave:**\n\"O Fundo concluiu, em 29 de maio de 2026, a venda à vista dos direitos aquisitivos sobre a unidade residencial do empreendimento Pinna 5109, pelo valor bruto de R$ 11. 500.000,00 (onze milhões e quinhentos mil reais), integralmente recebidos nesta data.\"\n\n### FATO RELEVANTE entregue em 11/05/2026\n\n**O QUE aconteceu:** Notificação do vendedor sobre a desistência da opção de recompra.\n\n**Resumo:** O vendedor notificou formalmente sua desistência do exercício do direito de recompra, permitindo que o fundo comercializasse os direitos aquisitivos da unidade residencial no mercado.\n\n**Trecho-chave:**\n\"No dia 20/03/2026, o Fundo recebeu notificação formal do vendedor da unidade residencial do empreendimento Pinna, manifestando sua desistência do exercício do direito de recompra.\"\n\n### COMUNICADO AO MERCADO entregue em 27/05/2026\n\n**O QUE aconteceu:** Aprovação das contas anuais do fundo.\n\n**Resumo:** A assembleia geral de cotistas aprovou as contas anuais do fundo referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\"\n\n### COMUNICADO AO MERCADO entregue em 28/02/2026\n\n**O QUE aconteceu:** Informações sobre o acesso aos Informes de Rendimentos.\n\n**Resumo:** A administradora informou que os Informes de Rendimentos referentes ao ano de 2025 estarão disponíveis exclusivamente por meio digital, através do Portal do Investidor.\n\n**Trecho-chave:**\n\"Os Informes de Rendimentos ('Informes') referentes ao ano de 2025, já estão disponíveis aos investidores, conforme previsto na Instrução Normativa RFB nº 2.060/2021, exclusivamente por meio digital, por meio do Portal do Investidor ('Portal').\"\n\n### ASSEMBLEIA AGO entregue em 27/05/2026\n\n**O QUE aconteceu:** Aprovação das contas anuais.\n\n**Resumo:** A assembleia geral de cotistas aprovou as contas e demonstrações contábeis do fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n### ASSEMBLEIA AGO entregue em 06/05/2026\n\n**O QUE aconteceu:** Convocação para a assembleia geral.\n\n**Resumo:** A administradora convocou os cotistas para deliberarem sobre a aprovação das contas e demonstrações contábeis do fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"A BTG Pactual Serviços Financeiros S.A. Distribuidora de Títulos e Valores Mobiliários, sociedade anônima, com sede na Cidade e Estado do Rio de Janeiro, localizada à Praia de Botafogo, nº 501, Torre Corcovado, 5º Andar (Parte), Botafogo, e inscrita no CNPJ sob o nº 59.281.253/0001-23, devidamente autorizada pela Comissão de Valores Mobiliários ('CVM') para a atividade de administração de carteiras de valores mobiliários, de acordo com o Ato Declaratório CVM nº 8 .695, de 20 de março de 2006 ('Administradora'), na qualidade de administradora do TELLUS MULTIESTRATEGIA - FII FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA, inscrito no CNPJ sob o nº 45.188.099/0001-35 ('Fundo'), bem como de sua classe única, vem, pela presente, convocar os cotistas do Fundo ('Cotistas') para a Consulta Formal, com prazo de recebimento de votos até 22 de maio de 2026, para deliberarem sobre: (i) A aprovação das contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de dezembro de 2025.\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Vacância física alta",
+      "Base de cotistas muito pequena",
+      "Fundo novo — histórico curto"
+    ],
+    "cota": 10.3
+  },
+  "parecer": {
+    "id": 1152043,
+    "data_entrega": "31/03/2026 23:20",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira d a Classe Única de Cotas do Tellus Multiestratégia - FII Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de ac"
+  }
+}

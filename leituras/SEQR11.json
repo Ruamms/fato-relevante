@@ -1,0 +1,51 @@
+{
+  "ticker": "SEQR11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T00:49:05",
+  "relatorio": {
+    "id": 1235785,
+    "data_entrega": "30/06/2026 18:16",
+    "texto": "### Fatos Extraídos:\n\n1. **Dividendos e Distribuição:**\n   - O fundo distribuiu R$980,000 em dividendos no mês de maio, equivalente a R$ 0,5883 por cota.\n   - A distribuição foi feita aos detentores de cotas no dia 08/06/2026.\n\n2. **Vacância e Inadimplência:**\n   - O relatório não menciona nenhuma mudança significativa na vacância ou inadimplência, mantendo-os em 0%.\n\n3. **Obras e Reformas:**\n   - Não há menção a obras ou reformas em andamento nos imóveis do portfólio.\n\n4. **Alugueis e Reajustes:**\n   - O contrato de locação do imóvel em Jandira (SP) foi reajustado com base no IPCA acumulado dos últimos 12 meses.\n   - A gestão permanece ativa na supervisão dos ativos, assegurando a integridade física e avaliando alternativas para valorização.\n\n5. **Cotação e Valor do Ativo:**\n   - O fundo encerrou maio cotado a R$ 52,05, com uma queda de 6,7% no período.\n   - O valor de mercado do fundo foi reduzido para R$ 86,7 milhões.\n\n6. **Patrimônio Líquido:**\n   - O patrimônio líquido do fundo é de R$ 164,843,420,44.\n   - A cota reflete um valor implícito de R$ 2.019/m² para os ativos do portfólio.\n\n7. **Portfólio:**\n   - O fundo possui 5 imóveis no portfólio:\n     - Jandira (SP): Galpão logístico / alimentos, ocupado pela Roma Oeste.\n     - Loja Habitarte (SP): Loja varejo alimentar.\n     - Madureira (RJ): Contact center CRM / BPO, ocupado pelo Atento.\n     - Penha (RJ): Comercial urbano, parcialmente alugado para a Notre Dame Intermédica Saúde S.A. (\"GNDI\").\n     - Magna SAP (RS): Galpão automotivo.\n\n8. **Cotistas:**\n   - O número de cotistas reduziu em 13,48% nos últimos 12 meses, totalizando 4,1 mil cotistas.\n\n9. **Rendimentos e Yield:**\n   - A distribuição mensal de dividendos está entre R$0,58 e R$0,63 por cota.\n   - O yield anualizado para maio foi de 14,44%.\n\n### O que observar em seguida:\n- **Cotistas:** Monitorar a tendência de redução no número de cotistas.\n- **Patrimônio Líquido e Cotação:** Observar se há mudanças significativas no patrimônio líquido ou na cotação do fundo."
+  },
+  "comunicados": {
+    "ids": [
+      974850,
+      1185301,
+      1155694,
+      1233346,
+      1233341
+    ],
+    "datas": [
+      "19/08/2025",
+      "11/05/2026",
+      "07/04/2026",
+      "29/06/2026",
+      "29/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 19/08/2025\n\n**O QUE aconteceu:** O SEQUÓIA III RENDA IMOBILIÁRIA FII celebrou um contrato de locação com a Notre Dame Intermédica.\n\n**Resumo:** O fundo alugou parte do imóvel localizado na Penha, RJ, para a Notre Dame Intermédica Saúde S.A., uma das maiores operadoras de planos de saúde do Brasil. A área locada é de 2.508m², representando 31% do imóvel.\n\n**Trecho-chave:** \"O Fundo, através de sua subsidiária Carnegie 25 Empreendimentos Imobiliários S.A., concluiu a celebração de um contrato de locação com a Notre Dame Intermédica Saúde S.A., maior operadora de planos de saúde do Brasil (\"GNDI\"). Trata-se de um imóvel comercial urbano com 8.166m² de área locável, dos quais 2.508m², ou 31%, foram locadas para o GNDI.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 11/05/2026\n\n**O QUE aconteceu:** A Vórtx Distribuidora de Títulos e Valores Mobiliários Ltda. informou sobre a ressalva apresentada pela MCS Markup Auditores Independentes S/S Ltda.\n\n**Resumo:** As demonstrações financeiras do SEQUÓIA III RENDA IMOBILIÁRIA FII foram emitidas com qualificação por parte dos auditores, devido à falta de acesso às demonstrações financeiras da Carnegie 25 Empreendimentos Imobiliários S.A. A administradora está tomando medidas para resolver o problema.\n\n**Trecho-chave:** \"A ressalva se refere a não obtenção de acesso as demonstrações financeiras auditadas e demais documentações necessárias da Carnegie 25 Empreendimentos Imobiliários S.A. pela Administradora e pelos auditores.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 07/04/2026\n\n**O QUE aconteceu:** A Vórtx Distribuidora de Títulos e Valores Mobiliários Ltda. comunicou a divulgação das demonstrações financeiras qualificadas referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** As demonstrações financeiras do SEQUÓIA III RENDA IMOBILIÁRIA FII foram emitidas com qualificação por parte dos auditores, devido à falta de acesso às demonstrações financeiras da Carnegie 25 Empreendimentos Imobiliários S.A. A administradora está adotando medidas para gerenciar os impactos desta qualificação.\n\n**Trecho-chave:** \"A ressalva se refere a não obtenção de acesso as demonstrações financeiras auditadas e demais documentações necessárias da Carnegie 25 Empreendimentos Imobiliários S.A. pela Administradora e pelos auditores.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 29/06/2026\n\n**O QUE aconteceu:** A Vórtx Distribuidora de Títulos e Valores Mobiliários Ltda. convocou a assembleia geral extraordinária para aprovar as contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31/12/2025.\n\n**Resumo:** A assembleia será realizada de forma não presencial por meio de consulta formal. Os cotistas terão até 28/07/2026 para manifestar seus votos sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31/12/2025.\n\n**Trecho-chave:** \"i. Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31/12/2025, devidamente auditadas, conforme disponíveis para consulta nos sites da Administradora e nos demais canais exigidos pela regulamentação em vigor.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 53.27
+  },
+  "parecer": {
+    "id": 1226217,
+    "data_entrega": "23/06/2026 14:49",
+    "tipo": "abstencao",
+    "rotulo": "abstenção de opinião",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Em nossa opinião as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a demonstração da posição ﬁnanceira do Sequóia III Renda Imobiliária Fundo de Investimento Imobiliário - Responsabilidade Limitada (“Fundo”) em 31 de dezembro de 2025 as respectivas demonstrações do resultado, das mutações do patrimônio líquido e dos ﬂuxos de caixa para exercício "
+  }
+}

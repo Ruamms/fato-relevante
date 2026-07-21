@@ -1,0 +1,52 @@
+{
+  "ticker": "SPXS11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T00:08:54",
+  "relatorio": {
+    "id": 1224385,
+    "data_entrega": "18/06/2026 19:40",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Desvalorização da Carteira de Ações:** Durante o mês de maio e início de junho, a carteira de ações do Fundo apresentou uma desvalorização de 14,1%, enquanto o índice IMOB registrou uma queda de 3,7%.\n2. **Alocação em CRI Tríplice:** O Fundo alocou R$ 0,7 milhão no CRI Tríplice, a uma taxa de CDI + 4,9%, para o término da obra do empreendimento Ecohouse localizado em Goiânia.\n3. **Distribuição de Dividendos:** A distribuição de dividendos no valor de R$ 0,097/cota (Dividend Yield 1: 1,2% a.m. ou 14,8% a.a.) foi realizada durante o mês.\n4. **Liquidez do Fundo:** Em maio, a liquidez do Fundo foi de R$ 8,2 milhões, com um volume médio diário de R$ 411.000. No ano de 2026, esse volume aumentou para R$ 570.490.\n5. **Composição da Carteira:** Ao final de maio, a alocação do Fundo estava em 88%.\n6. **Desvalorização da Cota Patrimonial:** O valor da cota patrimonial (PL) foi de R$ 9,42 no mês, com um dividend yield anualizado de 13,1%.\n\n### Observações a Acompanhar\n\n- **Performance do Fundo em relação ao CDI Líquido:** Verificar como a rentabilidade do fundo SPXS11 se compara com o CDI líquido considerando uma alíquota de 15% de Imposto de Renda.\n- **Desenvolvimento das Obras e Operações de CRI:** Monitorar os avanços nas obras dos empreendimentos financiados por CRIs, como o Ecohouse e outros projetos mencionados."
+  },
+  "comunicados": {
+    "ids": [
+      846186,
+      1199000,
+      1196619,
+      1198998,
+      1169265
+    ],
+    "datas": [
+      "20/02/2025",
+      "19/05/2026",
+      "15/05/2026",
+      "19/05/2026",
+      "24/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 20/02/2025\n\n**O QUE aconteceu:** A administradora e a gestora decidiram pela não continuidade da prestação de serviços de formador de mercado para as cotas do Fundo, com rescisão efetiva em 07 de fevereiro de 2025.\n\n**Resumo:** O Fundo passou a contratar uma nova instituição financeira para prestar os serviços de formador de mercado.\n\n**Trecho-chave:**\n\"Em complemento ao Fato Relevante publicado no dia 10/08/2022, o Fundo em comum acordo com o BANCO FATOR, instituição financeira integrante do sistema de distribuição de valores mobiliários com escritório na Cidade de São Paulo, Estado de São Paulo, na Rua Doutor Renato Paes de Barros, 1017 – 12º andar, inscrito no CNPJ sob o nº 33.644.196/0001-06, decidiram pela não continuidade da prestação de serviços de formador de mercado para as cotas do Fundo, nos termos do Art. 31, IV, da Instrução CVM nº 472 (\"Antigo Formador de Mercado\"), com rescisão efetiva em 07 de fevereiro de 2025.\"\n\n### COMUNICADO AO MERCADO entregue em 19/05/2026\n\n**O QUE aconteceu:** As contas anuais do Fundo referentes ao exercício encerrado em 31 de dezembro de 2025 foram aprovadas na assembleia geral de cotistas realizada em 13 de maio de 2026.\n\n**Resumo:** A assembleia geral de cotistas aprovou as contas anuais do Fundo para o exercício de 2025.\n\n**Trecho-chave:**\n\"Colocamo-nos à disposição para prestar quaisquer esclarecimentos que se façam necessários. São Paulo, 19 de maio de 2026.\"\n\n### COMUNICADO AO MERCADO entregue em 15/05/2026\n\n**O QUE aconteceu:** A forma de divulgação da remuneração dos Prestadores de Serviços Essenciais foi atualizada para incluir o link da Ferramenta ANBIMA (Plataforma de Transparência de Taxas).\n\n**Resumo:** O formato de divulgação da remuneração dos Prestadores de Serviços Essenciais do Fundo foi alterado para uso exclusivo da Ferramenta ANBIMA.\n\n**Trecho-chave:**\n\"Considerando as interpretações adicionais divulgadas pelo Ofício-Circular Conjunto nº 1/2025/CVM/SIN/SSE (\"Ofício-Circular CVM nº 1/2025\"), em especial quanto à substituição do 'Sumário de Remuneração' pela Ferramenta ANBIMA (Plataforma de Transparência de Taxas) como meio centralizado e adequado de divulgação da remuneração dos Prestadores de Serviços Essenciais da Classe, restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\"\n\n### ASSEMBLEIA AGO entregue em 19/05/2026\n\n**O QUE aconteceu:** A assembleia geral de cotistas aprovou as contas anuais do Fundo referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia geral de cotistas deliberou aprovar as contas e demonstrações contábeis do Fundo para o exercício de 2025.\n\n**Trecho-chave:**\n\"4.1. Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\" (p. 1)\n\n### ASSEMBLEIA AGO entregue em 24/04/2026\n\n**O QUE aconteceu:** A administradora convocou os cotistas para uma assembleia geral com prazo de recebimento de votos até 13 de maio de 2026, para deliberarem sobre a aprovação das contas e demonstrações contábeis do Fundo referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A administradora convocou os cotistas para uma assembleia geral com o objetivo de aprovar as contas anuais do Fundo para o exercício de 2025.\n\n**Trecho-chave:**\n\"i) A aprovação das contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de dezembro de 2025.\" (p. 1)"
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares"
+    ],
+    "cota": 7.93
+  },
+  "parecer": {
+    "id": 1152243,
+    "data_entrega": "01/04/2026 00:28",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do SPX Real Estate Multiestrátegia Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa o exercício findo nessa data, de acordo com as práticas contábei"
+  }
+}
