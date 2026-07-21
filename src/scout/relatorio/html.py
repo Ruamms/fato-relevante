@@ -560,7 +560,18 @@ function calcAportes() {{
 function calcGordon() {{
   const el = document.getElementById('gd-justo');
   if (!el) return;
-  const d = num('gd-div'), r = num('gd-r') / 100, g = num('gd-g') / 100;
+  const inp = document.getElementById('gd-div');
+  const cap = document.getElementById('gd-cap');
+  // no modo "último" o campo é o dividendo MENSAL: anualiza × 12 internamente
+  const modo = inp ? inp.dataset.modo : '12m';
+  let d = num('gd-div');
+  if (modo === 'ult') {{
+    d = d * 12;
+    if (cap) cap.textContent = '× 12 = ' + d.toLocaleString('pt-BR', {{style: 'currency', currency: 'BRL', minimumFractionDigits: 2}}) + ' por ano';
+  }} else if (cap) {{
+    cap.textContent = inp && inp.dataset.periodo ? 'dividendos de ' + inp.dataset.periodo : '';
+  }}
+  const r = num('gd-r') / 100, g = num('gd-g') / 100;
   if (d <= 0 || r <= g) {{ el.textContent = (r <= g ? 'r precisa ser > g' : '—'); return; }}
   el.textContent = (d * (1 + g) / (r - g)).toLocaleString('pt-BR', {{style: 'currency', currency: 'BRL', minimumFractionDigits: 2}});
 }}
@@ -568,6 +579,7 @@ function calcGordon() {{
 function gordonBase(modo) {{
   const inp = document.getElementById('gd-div');
   if (!inp) return;
+  inp.dataset.modo = modo;
   inp.value = modo === 'ult' ? inp.dataset.vult : inp.dataset.v12m;
   calcGordon();
 }}
@@ -1334,6 +1346,10 @@ def _calculadora_gordon(
     if not preco or not div_padrao:
         return ""
     r_seed = f"{dy_anual:.1f}" if dy_anual else "10"
+    # o campo mostra: no modo 12m, o dividendo ANUAL (soma real); no modo último,
+    # o valor MENSAL — o × 12 é feito no calcGordon e exibido no caption gd-cap
+    modo_padrao = "12m" if tem_12m else "ult"
+    val_padrao = div_12m if tem_12m else ultimo_rend
     c12 = "checked" if tem_12m else ""
     cult = "" if tem_12m else "checked"
     janela = f" · {periodo}" if periodo else ""
@@ -1353,11 +1369,12 @@ def _calculadora_gordon(
     <div hidden>
       <p class="desc">Modelo de Gordon: <b>preço justo = dividendo × (1 + g) / (r − g)</b>. Tudo editável.</p>
       <div class="campos">
-        <div><label for="gd-div">Dividendo anual por cota (R$)</label>
-        <input type="number" id="gd-div" value="{div_padrao:.2f}" data-v12m="{div_12m:.2f}" data-vult="{ultimo_x12:.2f}" step="0.01" min="0" oninput="calcGordon()">
+        <div><label for="gd-div">Dividendo por cota (R$)</label>
+        <input type="number" id="gd-div" value="{val_padrao:.2f}" data-modo="{modo_padrao}" data-v12m="{div_12m:.2f}" data-vult="{ultimo_rend:.2f}" data-periodo="{periodo}" step="0.01" min="0" oninput="calcGordon()">
+        <div id="gd-cap" style="margin-top:4px;font-size:11px;color:#8b98a9"></div>
         <div style="margin-top:6px;font-size:12px;color:#8b98a9;line-height:1.8">
           <label style="all:unset;cursor:pointer;display:block"><input type="radio" name="gd-base" onchange="gordonBase('12m')" {c12}> {label_12m} — R$ {div_12m:.2f}{janela}</label>
-          <label style="all:unset;cursor:pointer;display:block"><input type="radio" name="gd-base" onchange="gordonBase('ult')" {cult}> Último dividendo × 12 (R$ {ultimo_rend:.2f}/mês) — R$ {ultimo_x12:.2f}</label>
+          <label style="all:unset;cursor:pointer;display:block"><input type="radio" name="gd-base" onchange="gordonBase('ult')" {cult}> Só o último dividendo mensal (R$ {ultimo_rend:.2f}) — anualiza × 12</label>
         </div></div>
         <div><label for="gd-r">Taxa de desconto r (% a.a.)</label>
         <input type="number" id="gd-r" value="{r_seed}" step="0.5" min="0.1" oninput="calcGordon()"></div>

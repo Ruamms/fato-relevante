@@ -18,13 +18,15 @@ def test_gordon_opt_in_com_aviso_e_sem_veredito():
     assert "não é recomendação" in html
     assert 'onclick="abrirGordon(this)"' in html
     assert "<div hidden>" in html  # corpo só aparece ao abrir
-    assert 'value="8.00"' in html  # dividendo padrão (12m completos) = soma dos 12 meses
+    assert 'value="8.00"' in html  # dividendo padrão (12m completos) = soma anual dos 12 meses
     assert 'value="8.0"' in html   # r pré-preenchido com o DY do próprio fundo
-    # duas bases via rádio, sem o usuário fazer a conta na mão
-    assert "data-v12m=\"8.00\"" in html and "data-vult=\"8.40\"" in html
+    # duas bases via rádio; no modo último o campo é MENSAL (0.70), não 0.70×12
+    assert 'data-v12m="8.00"' in html and 'data-vult="0.70"' in html
+    assert 'data-modo="12m"' in html  # 12m completos → começa no modo soma real
     assert "gordonBase('12m')" in html and "gordonBase('ult')" in html
     assert "Soma real dos últimos 12 meses" in html
-    assert "Último dividendo × 12" in html and "R$ 0.70/mês" in html
+    assert "Só o último dividendo mensal (R$ 0.70)" in html and "anualiza × 12" in html
+    assert 'id="gd-cap"' in html  # caption mostra o anual calculado internamente
     # janela exata da soma de 12m
     assert "07/2025 e 06/2026" in html
     # com 12 meses, a base padrão é a soma real (rádio dela marcado)
@@ -47,7 +49,8 @@ def test_gordon_menos_de_12m_padrao_ultimo_x12():
         periodo="02/2026 e 06/2026",
         n_meses=5,
     )
-    assert 'value="8.40"' in html  # dividendo padrão = último × 12
+    assert 'value="0.70"' in html  # campo começa no valor MENSAL (o × 12 é interno)
+    assert 'data-modo="ult"' in html  # padrão cai para o modo "último" com < 12 meses
     assert "Soma dos 5 meses com dados" in html  # rótulo reflete o histórico parcial
     assert 'onchange="gordonBase(\'ult\')" checked' in html  # base padrão = último × 12
 
