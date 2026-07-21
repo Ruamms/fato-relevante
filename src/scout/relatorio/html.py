@@ -565,6 +565,13 @@ function calcGordon() {{
   el.textContent = (d * (1 + g) / (r - g)).toLocaleString('pt-BR', {{style: 'currency', currency: 'BRL', minimumFractionDigits: 2}});
 }}
 
+function gordonBase(modo) {{
+  const inp = document.getElementById('gd-div');
+  if (!inp) return;
+  inp.value = modo === 'ult' ? inp.dataset.vult : inp.dataset.v12m;
+  calcGordon();
+}}
+
 function abrirGordon(botao) {{
   botao.hidden = true;
   botao.nextElementSibling.hidden = false;
@@ -1224,12 +1231,16 @@ def _secao_calculadoras(completo: AnaliseCompleta) -> str:
     rendimento = next(
         (valor for valor in reversed(dados.rend_por_mes) if valor), 0
     )
-    # dividendo REAL dos últimos 12 meses (soma), não o último mês × 12 — o que
-    # importa pro Gordon; e o DY do próprio fundo, usado como r inicial
-    div_anual = sum(v for v in dados.rend_por_mes[-12:] if v)
-    dy_anual = (100 * div_anual / preco) if preco else 0
-    # janela exata que gerou o dividendo padrão: rend_por_mes e dy_por_mes são
-    # paralelos e já cortados em [-12:], então as competências saem do dy_por_mes
+    # duas bases para o dividendo anual do Gordon:
+    #  - soma REAL dos últimos 12 meses (fiel, mas subestima quando há < 12 meses)
+    #  - último dividendo × 12 (anualiza o mês corrente; vira o padrão quando faltam meses)
+    div_12m = sum(v for v in dados.rend_por_mes[-12:] if v)
+    ultimo_x12 = rendimento * 12
+    n_meses = len(dados.dy_por_mes)
+    div_padrao = div_12m if n_meses >= 12 else ultimo_x12
+    dy_anual = (100 * div_padrao / preco) if preco else 0  # r inicial: com g=0 o justo parte da cotação
+    # janela exata da soma de 12m: rend_por_mes e dy_por_mes são paralelos e já
+    # cortados em [-12:], então as competências saem do dy_por_mes
     meses = [comp for comp, _ in dados.dy_por_mes]
     periodo = (
         f"{formato.competencia_br(meses[0])} e {formato.competencia_br(meses[-1])}"
@@ -1294,32 +1305,42 @@ def _secao_calculadoras(completo: AnaliseCompleta) -> str:
     ou emissões. Simulação matemática, não promessa de rentabilidade.</p>
   </div>
 
-  {_calculadora_gordon(preco, div_anual, dy_anual, rendimento, periodo)}
+  {_calculadora_gordon(preco, div_12m, ultimo_x12, dy_anual, rendimento, periodo, n_meses)}
 """
 
 
 def _calculadora_gordon(
-    preco: float, div_anual: float, dy_anual: float, ultimo_rend: float, periodo: str = ""
+    preco: float,
+    div_12m: float,
+    ultimo_x12: float,
+    dy_anual: float,
+    ultimo_rend: float,
+    periodo: str = "",
+    n_meses: int = 12,
 ) -> str:
     """Preço justo pelo Modelo de Gordon — EXTRA opt-in: só abre se o usuário
     clicar, e o aviso de "não é recomendação" fica sempre visível ANTES do botão.
     r (desconto) e g (crescimento) são premissas DO USUÁRIO — o Scout nunca
     afirma um preço justo; oferece a ferramenta e mostra os fatos ao lado.
 
-    Pré-preenche o dividendo com a SOMA real dos últimos 12 meses (não o último
-    mês × 12) e o r com o DY atual do próprio fundo — assim, com g=0, o preço
-    justo parte da cotação e o usuário só ajusta as premissas. `periodo` mostra a
-    janela exata (mm/aaaa a mm/aaaa) que gerou o dividendo padrão."""
-    if not preco or not div_anual:
+    O dividendo anual tem duas bases, escolhidas por rádio (sem o usuário abrir
+    conta): a SOMA real dos últimos 12 meses e o ÚLTIMO dividendo × 12. Quando o
+    fundo tem menos de 12 meses de histórico, a soma subestimaria o ano, então o
+    padrão passa a ser o último × 12. `periodo` mostra a janela (mm/aaaa a mm/aaaa)
+    da soma de 12 meses; `n_meses` é quantos meses realmente compõem essa soma.
+    r começa no DY do próprio fundo — assim, com g=0, o preço justo parte da cotação."""
+    tem_12m = n_meses >= 12
+    div_padrao = div_12m if tem_12m else ultimo_x12
+    if not preco or not div_padrao:
         return ""
     r_seed = f"{dy_anual:.1f}" if dy_anual else "10"
-    ref_ultimo = f" · último rendimento: R$ {ultimo_rend:.2f}/cota" if ultimo_rend else ""
-    hint_periodo = (
-        '<small style="display:block;color:#8b98a9;font-size:11px;margin-top:3px">'
-        f"valor padrão calculado nos dividendos distribuídos entre {periodo}</small>"
-        if periodo
-        else ""
+    c12 = "checked" if tem_12m else ""
+    cult = "" if tem_12m else "checked"
+    janela = f" · {periodo}" if periodo else ""
+    label_12m = (
+        "Soma real dos últimos 12 meses" if tem_12m else f"Soma dos {n_meses} meses com dados"
     )
+    base_padrao = "soma real dos últimos 12 meses" if tem_12m else "último dividendo × 12"
     return f"""
   <div class="calc">
     <h3>🧮 Preço justo (Modelo de Gordon){_ajuda("Preço justo (Gordon)")}</h3>
@@ -1333,7 +1354,11 @@ def _calculadora_gordon(
       <p class="desc">Modelo de Gordon: <b>preço justo = dividendo × (1 + g) / (r − g)</b>. Tudo editável.</p>
       <div class="campos">
         <div><label for="gd-div">Dividendo anual por cota (R$)</label>
-        <input type="number" id="gd-div" value="{div_anual:.2f}" step="0.01" min="0" oninput="calcGordon()">{hint_periodo}</div>
+        <input type="number" id="gd-div" value="{div_padrao:.2f}" data-v12m="{div_12m:.2f}" data-vult="{ultimo_x12:.2f}" step="0.01" min="0" oninput="calcGordon()">
+        <div style="margin-top:6px;font-size:12px;color:#8b98a9;line-height:1.8">
+          <label style="all:unset;cursor:pointer;display:block"><input type="radio" name="gd-base" onchange="gordonBase('12m')" {c12}> {label_12m} — R$ {div_12m:.2f}{janela}</label>
+          <label style="all:unset;cursor:pointer;display:block"><input type="radio" name="gd-base" onchange="gordonBase('ult')" {cult}> Último dividendo × 12 (R$ {ultimo_rend:.2f}/mês) — R$ {ultimo_x12:.2f}</label>
+        </div></div>
         <div><label for="gd-r">Taxa de desconto r (% a.a.)</label>
         <input type="number" id="gd-r" value="{r_seed}" step="0.5" min="0.1" oninput="calcGordon()"></div>
         <div><label for="gd-g">Crescimento g (% a.a.)</label>
@@ -1343,7 +1368,8 @@ def _calculadora_gordon(
         <div class="res"><div class="rotulo">Preço justo (com suas premissas)</div><div class="num" id="gd-justo">—</div></div>
         <div class="res"><div class="rotulo">Cotação atual (D-1)</div><div class="num">R$ {preco:.2f}</div></div>
       </div>
-      <p class="aviso">Dividendo = <b>soma real dos últimos 12 meses</b>{ref_ultimo}; r começa no
+      <p class="aviso">Base padrão do dividendo: <b>{base_padrao}</b> — troque no rádio acima (o
+      último × 12 anualiza o mês corrente, útil quando o fundo tem menos de 12 meses). r começa no
       <b>DY atual do fundo</b> e g em 0 (por isso o preço justo parte da cotação) — ajuste r e g com as
       SUAS premissas. Modelo teórico (crescimento perpétuo constante), sensível às premissas: não é
       recomendação nem promessa de retorno.</p>
