@@ -1224,6 +1224,10 @@ def _secao_calculadoras(completo: AnaliseCompleta) -> str:
     rendimento = next(
         (valor for valor in reversed(dados.rend_por_mes) if valor), 0
     )
+    # dividendo REAL dos últimos 12 meses (soma), não o último mês × 12 — o que
+    # importa pro Gordon; e o DY do próprio fundo, usado como r inicial
+    div_anual = sum(v for v in dados.rend_por_mes[-12:] if v)
+    dy_anual = (100 * div_anual / preco) if preco else 0
     dys = [valor for _, valor in dados.dy_por_mes]
     dy_medio = sum(dys) / len(dys) if dys else 0
     if not preco or not rendimento:
@@ -1282,18 +1286,23 @@ def _secao_calculadoras(completo: AnaliseCompleta) -> str:
     ou emissões. Simulação matemática, não promessa de rentabilidade.</p>
   </div>
 
-  {_calculadora_gordon(preco, rendimento)}
+  {_calculadora_gordon(preco, div_anual, dy_anual, rendimento)}
 """
 
 
-def _calculadora_gordon(preco: float, rendimento_mensal: float) -> str:
+def _calculadora_gordon(preco: float, div_anual: float, dy_anual: float, ultimo_rend: float) -> str:
     """Preço justo pelo Modelo de Gordon — EXTRA opt-in: só abre se o usuário
     clicar, e o aviso de "não é recomendação" fica sempre visível ANTES do botão.
     r (desconto) e g (crescimento) são premissas DO USUÁRIO — o Scout nunca
-    afirma um preço justo; oferece a ferramenta e mostra os fatos ao lado."""
-    if not preco or not rendimento_mensal:
+    afirma um preço justo; oferece a ferramenta e mostra os fatos ao lado.
+
+    Pré-preenche o dividendo com a SOMA real dos últimos 12 meses (não o último
+    mês × 12) e o r com o DY atual do próprio fundo — assim, com g=0, o preço
+    justo parte da cotação e o usuário só ajusta as premissas."""
+    if not preco or not div_anual:
         return ""
-    div_anual = rendimento_mensal * 12
+    r_seed = f"{dy_anual:.1f}" if dy_anual else "10"
+    ref_ultimo = f" · último rendimento: R$ {ultimo_rend:.2f}/cota" if ultimo_rend else ""
     return f"""
   <div class="calc">
     <h3>🧮 Preço justo (Modelo de Gordon){_ajuda("Preço justo (Gordon)")}</h3>
@@ -1309,7 +1318,7 @@ def _calculadora_gordon(preco: float, rendimento_mensal: float) -> str:
         <div><label for="gd-div">Dividendo anual por cota (R$)</label>
         <input type="number" id="gd-div" value="{div_anual:.2f}" step="0.01" min="0" oninput="calcGordon()"></div>
         <div><label for="gd-r">Taxa de desconto r (% a.a.)</label>
-        <input type="number" id="gd-r" value="10" step="0.5" min="0.1" oninput="calcGordon()"></div>
+        <input type="number" id="gd-r" value="{r_seed}" step="0.5" min="0.1" oninput="calcGordon()"></div>
         <div><label for="gd-g">Crescimento g (% a.a.)</label>
         <input type="number" id="gd-g" value="0" step="0.5" oninput="calcGordon()"></div>
       </div>
@@ -1317,8 +1326,9 @@ def _calculadora_gordon(preco: float, rendimento_mensal: float) -> str:
         <div class="res"><div class="rotulo">Preço justo (com suas premissas)</div><div class="num" id="gd-justo">—</div></div>
         <div class="res"><div class="rotulo">Cotação atual (D-1)</div><div class="num">R$ {preco:.2f}</div></div>
       </div>
-      <p class="aviso">Dividendo pré-preenchido com o rendimento real dos últimos 12 meses; r e g são
-      SUAS premissas. Modelo teórico (crescimento perpétuo constante), sensível às premissas — não é
+      <p class="aviso">Dividendo = <b>soma real dos últimos 12 meses</b>{ref_ultimo}; r começa no
+      <b>DY atual do fundo</b> e g em 0 (por isso o preço justo parte da cotação) — ajuste r e g com as
+      SUAS premissas. Modelo teórico (crescimento perpétuo constante), sensível às premissas: não é
       recomendação nem promessa de retorno.</p>
     </div>
   </div>"""
