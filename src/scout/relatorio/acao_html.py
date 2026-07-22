@@ -682,7 +682,7 @@ table.imoveis td:not(:first-child):not(:nth-child(2)), table.imoveis th:not(:fir
 
   {_secao_parecer(leitura)}
 
-  {_secao_ia(leitura, agora)}
+  {_secao_ia(leitura, agora, classe="empresa")}
 
   <div class="regras">
   <h2>As regras desta classe (Ações)</h2>

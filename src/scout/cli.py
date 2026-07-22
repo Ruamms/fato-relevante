@@ -142,10 +142,15 @@ def _exibir_acao(con, ticker: str, html: bool) -> bool:
     dados = acao_html.montar_dados_acao(con, ticker)
     if dados is None:
         return False
+    from pathlib import Path
+
+    from . import leituras
+
+    leitura = leituras.carregar(Path("leituras"), dados["ticker"])
     destino = armazenamento.diretorio_dados() / "relatorios"
     destino.mkdir(parents=True, exist_ok=True)
     caminho = destino / f"{dados['ticker']}.html"
-    caminho.write_text(acao_html.gerar(dados), encoding="utf-8")
+    caminho.write_text(acao_html.gerar(dados, leitura=leitura), encoding="utf-8")
     console.print(
         f"[bold]{dados['ticker']}[/] é uma ação ([green]{dados['empresa']['nome_pregao']}[/]) — "
         f"página da empresa gerada em [dim]{caminho}[/]"

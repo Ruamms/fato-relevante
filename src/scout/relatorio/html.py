@@ -1296,14 +1296,30 @@ def _bloco_evolucao(leitura: dict, completo: AnaliseCompleta | None) -> str:
     )
 
 
-def _secao_ia(leitura: dict | None, agora: datetime, completo: AnaliseCompleta | None = None) -> str:
+def _secao_ia(
+    leitura: dict | None,
+    agora: datetime,
+    completo: AnaliseCompleta | None = None,
+    classe: str = "fundo",
+) -> str:
     if leitura and leitura.get("sem_relatorio"):
         verificado = leitura.get("verificado_em", "")[:10]
         bloco_fatos = _bloco_fatos_ia(leitura)
+        quem = "pela empresa" if classe == "empresa" else "pelo fundo"
         nota_fatos = (
-            " Os <b>fatos relevantes e comunicados</b> publicados pelo fundo foram lidos pela IA e estão abaixo."
+            f" Os <b>fatos relevantes e comunicados</b> publicados {quem} foram lidos pela IA e estão abaixo."
             if bloco_fatos
-            else " Sem relatório, não há o que a IA ler."
+            else " Sem documentos novos, não há o que a IA ler."
+        )
+        # empresas não publicam relatório gerencial (isso é coisa de fundo/FNET):
+        # a introdução explica a fonte certa de cada classe
+        intro = (
+            "Companhias abertas não publicam relatório gerencial — os documentos que assustam são os "
+            "<b>fatos relevantes e comunicados ao mercado</b> (sistema IPE/CVM), e são eles que a IA lê aqui."
+            if classe == "empresa"
+            else "Este fundo <b>não publicou relatório gerencial</b> no FNET (é um documento opcional — "
+            "muitos fundos divulgam apenas os informes obrigatórios da CVM, que já alimentam os "
+            "indicadores e alertas desta página)."
         )
         rodape_fatos = (
             '<div class="nota" style="margin-top:12px">Resumo gerado por IA a partir dos documentos '
@@ -1315,9 +1331,7 @@ def _secao_ia(leitura: dict | None, agora: datetime, completo: AnaliseCompleta |
         return f"""
   <h2>🤖 Leitura por IA{_ajuda("Leitura por IA")}</h2>
   <div class="grafico">
-  <div class="nota" style="font-size:13px">Este fundo <b>não publicou relatório gerencial</b> no FNET
-  (é um documento opcional — muitos fundos divulgam apenas os informes obrigatórios da CVM,
-  que já alimentam os indicadores e alertas desta página).{nota_fatos}
+  <div class="nota" style="font-size:13px">{intro}{nota_fatos}
   Verificado em {_e(verificado)}; a checagem se repete a cada rodada de leituras.</div>
   {bloco_fatos}
   {rodape_fatos}
