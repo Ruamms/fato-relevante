@@ -101,4 +101,29 @@ def test_busca_viva_inclui_acoes(con):
     _semear_empresa(con)
     dados = acao_html.montar_dados_acao(con, "TSTA4", hoje=date(2026, 7, 21))
     ativos = modulo_site._ativos_busca([], [], [dados])
-    assert ativos == [{"t": "TSTA4", "n": "TESTECO", "c": "Ação", "s": "", "r": ""}]
+    # sem dfp_meta semeada, o selo cai honestamente em "insuficiente" (nunca aprovação)
+    assert ativos == [
+        {"t": "TSTA4", "n": "TESTECO", "c": "Ação", "s": "insuficiente", "r": "Histórico insuficiente"}
+    ]
+
+
+def test_selo_e_flags_na_pagina_e_listagem(con):
+    _semear_empresa(con)
+    # dfp_meta saudável + uma reapresentação p/ disparar flag
+    con.execute(
+        "INSERT INTO dfp_meta (cod_cvm, ano, dt_receb, versao, acoes_total, acoes_tesouro,"
+        " parecer_tipo, parecer_continuidade, parecer_trecho)"
+        " VALUES ('9999', 2025, '2026-02-20', 3, 1000000000, 0, 'Sem Ressalva', 0, NULL)"
+    )
+    con.execute(
+        "INSERT INTO auditores (cod_cvm, auditor, inicio, fim) VALUES ('9999','KPMG','2020-01-01',NULL)"
+    )
+    con.commit()
+    dados = acao_html.montar_dados_acao(con, "TSTA4", hoje=date(2026, 7, 21))
+    assert any("reapresentado" in f.titulo.lower() for f in dados["flags"].flags)
+    assert dados["selo"].nivel == "atencao"
+    pagina = acao_html.gerar(dados, agora=datetime(2026, 7, 21, 12, 0))
+    assert "🚩 Red flags" in pagina and "reapresentado" in pagina.lower()
+    assert "Atenção" in pagina  # selo no topo
+    listagem = modulo_site._indice_acoes([dados], datetime(2026, 7, 21, 12, 0))
+    assert "selo-dot" in listagem and "Atenção" in listagem

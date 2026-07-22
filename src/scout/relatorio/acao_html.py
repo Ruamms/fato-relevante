@@ -80,7 +80,30 @@ def montar_dados_acao(con: sqlite3.Connection, ticker: str, hoje: date | None = 
         (ticker,),
     ).fetchone()
 
+    # red flags societárias (A3, benchmarkadas) + selo — mesmos 5 níveis de FII/ETF
+    from .. import acao_flags, redflags
+
+    resultado_flags = acao_flags.avaliar(
+        {
+            "empresa": empresa,
+            "balancos": balancos,
+            "metas": armazenamento.dfp_meta_da_empresa(con, empresa["cod_cvm"]),
+            "auditores": armazenamento.auditores_da_empresa(con, empresa["cod_cvm"]),
+            "proventos_ano_por_ticker": {
+                p["ticker"]: armazenamento.proventos_por_ano(con, p["ticker"]) for p in papeis
+            },
+            "eventos": con.execute(
+                f"SELECT data, label, fator FROM acao_eventos WHERE ticker IN "
+                f"({','.join('?' * len(papeis))})",
+                [p["ticker"] for p in papeis],
+            ).fetchall(),
+        },
+        hoje=hoje,
+    )
+
     return {
+        "flags": resultado_flags,
+        "selo": redflags.selo(resultado_flags),
         "ticker": ticker,
         "empresa": empresa,
         "papeis": papeis,
@@ -305,6 +328,41 @@ def gerar(
             f"{formato.dia_br(ultimo_prov['data_com'])}) — fonte: B3.</li>"
         )
 
+    from .html import _COR_SELO, _COR_SEVERIDADE
+
+    selo_html = ""
+    if dados.get("selo"):
+        cor = _COR_SELO.get(dados["selo"].nivel, "#7C8894")
+        selo_html = (
+            f'<span class="selo" style="background:{cor}" title="{_e(dados["selo"].descricao)}">'
+            f"{_e(dados['selo'].rotulo)}</span>"
+        )
+
+    flags_html = ""
+    if dados.get("flags"):
+        resultado = dados["flags"]
+        partes = []
+        for flag in resultado.flags:
+            cor = _COR_SEVERIDADE[flag.severidade]
+            partes.append(
+                f'<div class="flag" style="border-left-color:{cor}">'
+                f'<span class="sev" style="color:{cor}">{_e(flag.severidade.value)}</span>'
+                f"<h3>{_e(flag.titulo)}</h3><p>{_e(flag.fato)}</p>"
+                f'<p class="evid">evidência: {_e(flag.evidencia)}</p>'
+                f'<p class="fonte">fonte: {_e(flag.fonte)}</p></div>'
+            )
+        if not partes and resultado.aprovadas:
+            partes.append('<p class="ok">✓ nenhum alerta disparado</p>')
+        if resultado.aprovadas:
+            itens_ok = "".join(f"<li>{_e(texto)}</li>" for texto in resultado.aprovadas)
+            partes.append(
+                '<p class="ok">✓ Verificações que rodaram e passaram sem alerta:</p>'
+                f'<ul class="ok">{itens_ok}</ul>'
+            )
+        for pendente in resultado.nao_avaliadas:
+            partes.append(f'<p class="na">· não avaliada: {_e(pendente)}</p>')
+        flags_html = f"<h2>🚩 Red flags</h2>{''.join(partes)}"
+
     auditor = (empresa["auditor"] or "").strip()
     meta_auditor = f" · auditor: {_e(_trunca(auditor, 40))}" if auditor else ""
     situacao = (empresa["situacao"] or "").strip().upper()
@@ -338,6 +396,16 @@ a {{ color:#8FCB9B; }}
 .card .extra {{ color:#9AA7B2; font-size:12px; margin-top:2px; }}
 .selo {{ display:inline-block; padding:3px 12px; border-radius:999px; font-weight:700;
   font-size:12px; color:#0F1416; white-space:nowrap; vertical-align:middle; }}
+.flag {{ background:#161D20; border:1px solid #1B2225; border-left:4px solid; border-radius:10px; padding:14px 16px; margin-bottom:10px; }}
+.flag .sev {{ font-size:12px; font-weight:800; letter-spacing:.08em; }}
+.flag h3 {{ font-size:16px; margin:2px 0 6px; }}
+.flag .evid {{ background:#0F1416; border:1px solid #1B2225; border-radius:7px; padding:6px 10px;
+  font-family:ui-monospace,Consolas,monospace; font-size:12.5px; color:#9AA7B2; margin-top:8px; }}
+.flag .fonte {{ color:#6B7681; font-size:12px; margin-top:5px; }}
+.ok {{ color:#7BD69A; font-size:14px; }} .na {{ color:#9AA7B2; font-size:13px; }}
+ul.ok {{ list-style:none; padding-left:6px; }}
+ul.ok li {{ color:#9AA7B2; margin:3px 0; }}
+ul.ok li::before {{ content:'✓  '; color:#7BD69A; font-weight:700; }}
 .regras {{ background:#161D20; border:1px solid #8FCB9B; border-radius:10px; padding:16px 18px; }}
 .regras h2 {{ margin:0 0 8px; font-size:16px; color:#8FCB9B; }}
 .regras li {{ margin:6px 0 6px 18px; font-size:14px; }}
@@ -357,11 +425,13 @@ table.imoveis td:not(:first-child):not(:nth-child(2)), table.imoveis th:not(:fir
 <div class="pagina">
   {marca_html("index.html", com_busca_ticker=com_menu)}
   {menu}
-  <h1>{_e(ticker)} <small title="{_e(empresa["nome"] or "")}">{_e(_trunca(empresa["nome_pregao"] or empresa["nome"] or "", 60))}</small> {aviso_situacao}</h1>
+  <h1>{_e(ticker)} <small title="{_e(empresa["nome"] or "")}">{_e(_trunca(empresa["nome_pregao"] or empresa["nome"] or "", 60))}</small> {selo_html}{aviso_situacao}</h1>
   <div class="meta">Ação · {_e(dados["multiplos"].get(ticker, {}).get("tipo") or "")} · {_e(_setor_curto(empresa))}
   · {_e(empresa["segmento_listagem"] or "—")}{meta_auditor} · página gerada em {agora.strftime("%d/%m/%Y %H:%M")}</div>
 
   <div class="cards">{"".join(cards)}</div>
+
+  {flags_html}
 
   {_secao_parecer(leitura)}
 

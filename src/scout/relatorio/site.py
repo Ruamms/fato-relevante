@@ -255,8 +255,8 @@ def _ativos_busca(fundos: list, etfs: list[dict], acoes: list[dict] | None = Non
                 "t": dados["ticker"],
                 "n": (empresa["nome_pregao"] or empresa["nome"] or "")[:48],
                 "c": "Ação",
-                "s": "",  # selo de ação só depois do benchmark (A3)
-                "r": "",
+                "s": dados["selo"].nivel if dados.get("selo") else "",
+                "r": dados["selo"].rotulo if dados.get("selo") else "",
             }
         )
     return ativos
@@ -665,6 +665,14 @@ def _indice_acoes(acoes: list[dict], agora) -> str:
             else "—"
         )
         nome = empresa["nome_pregao"] or empresa["nome"] or ""
+        selo_html = "—"
+        if dados.get("selo"):
+            cor = _COR_SELO.get(dados["selo"].nivel, "#7C8894")
+            motivos = "; ".join(f.titulo for f in dados["flags"].flags) or dados["selo"].descricao
+            selo_html = (
+                f'<span class="selo-dot" style="color:{cor}" title="{_e(motivos)}">'
+                f'<span class="pt" style="background:{cor}"></span>{_e(dados["selo"].rotulo)}</span>'
+            )
         busca = f"{dados['ticker']} {nome} {setor}".lower().replace('"', "")
         linhas.append(
             f'<tr data-busca="{busca}" data-classe="{_e(setor)}">'
@@ -672,7 +680,8 @@ def _indice_acoes(acoes: list[dict], agora) -> str:
             f'<td title="{_e(empresa["nome"] or "")}">{_e(_trunca(nome, 34))}</td>'
             f"<td>{_e(_trunca(setor, 26))}</td><td>{preco}</td><td>{variacao}</td>"
             f"<td>{fmt(m.get('pl'))}</td><td>{fmt(m.get('pvp'))}</td>"
-            f"<td>{fmt(m.get('dy'), formato.percentual)}</td></tr>"
+            f"<td>{fmt(m.get('dy'), formato.percentual)}</td>"
+            f'<td class="col-selo">{selo_html}</td></tr>'
         )
 
     def _rk(titulo, chave, rotulo, reverso=True):
@@ -758,7 +767,7 @@ tbody tr:hover td {{ background:#161D20; }}
    oninput="filtrar()">
   <div class="filtros"><button class="filtro ativo" onclick="filtraClasse(this, '')">Todos</button>{botoes}</div>
   <table id="acoes">
-    <thead><tr><th>papel</th><th>empresa</th><th>setor</th><th>preço (D-1)</th><th>12 meses</th><th>P/L</th><th>P/VP</th><th>DY 12m</th></tr></thead>
+    <thead><tr><th>papel</th><th>empresa</th><th>setor</th><th>preço (D-1)</th><th>12 meses</th><th>P/L</th><th>P/VP</th><th>DY 12m</th><th class="col-selo">selo</th></tr></thead>
     <tbody>{"".join(linhas)}</tbody>
   </table>
   <h2 class="rk-titulo">Rankings do dia</h2>

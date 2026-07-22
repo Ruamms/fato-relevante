@@ -730,6 +730,32 @@ def fundamentos_da_empresa(con: sqlite3.Connection, cod_cvm: str) -> list[sqlite
     ).fetchall()
 
 
+def dfp_meta_da_empresa(con: sqlite3.Connection, cod_cvm: str) -> list[sqlite3.Row]:
+    """Metadados societários da DFP por ano (entrega, versão, capital, parecer)."""
+    return con.execute(
+        "SELECT * FROM dfp_meta WHERE cod_cvm = ? ORDER BY ano", (cod_cvm,)
+    ).fetchall()
+
+
+def auditores_da_empresa(con: sqlite3.Connection, cod_cvm: str) -> list[sqlite3.Row]:
+    return con.execute(
+        "SELECT * FROM auditores WHERE cod_cvm = ? ORDER BY inicio", (cod_cvm,)
+    ).fetchall()
+
+
+def proventos_por_ano(con: sqlite3.Connection, ticker: str) -> dict[int, float]:
+    """{ano: R$/ação} somado pela data-com — base da regra 'proventos em prejuízo'."""
+    return {
+        int(linha[0]): float(linha[1])
+        for linha in con.execute(
+            "SELECT substr(data_com, 1, 4), SUM(valor) FROM acao_proventos"
+            " WHERE ticker = ? GROUP BY substr(data_com, 1, 4)",
+            (ticker.strip().upper(),),
+        )
+        if str(linha[0]).isdigit()
+    }
+
+
 def proventos_12m(con: sqlite3.Connection, ticker: str, hoje) -> float:
     """Soma dos proventos (R$/ação) com data-com nos últimos 365 dias — base do
     dividend yield. Zero (não None) quando o papel não pagou nada no período."""

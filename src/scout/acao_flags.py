@@ -108,14 +108,35 @@ def avaliar(dados: dict, hoje: date | None = None) -> redflags.Resultado:
             resultado.aprovadas.append("DFP do último exercício entregue no prazo")
 
     # --- 4. Diluição por emissão (ações novas sem lucro acompanhando) --------
+    # Salvaguardas contra falso-positivo (validadas na base real): (a) empresas
+    # preenchem a composição ora em MILHARES ora em UNIDADES entre anos — razão
+    # implausível (>3x) é mudança de unidade, não emissão; (b) desdobramento/
+    # grupamento/bonificação multiplica ações SEM diluir — evento societário B3
+    # entre os exercícios invalida a comparação crua.
     nome = "Diluição relevante por emissão de ações"
     serie_acoes = [(m["ano"], m["acoes_total"]) for m in metas if m["acoes_total"]]
+    evento_no_meio = False
+    if len(serie_acoes) >= 2:
+        ano_a, ano_b = serie_acoes[-2][0], serie_acoes[-1][0]
+        for evento in dados.get("eventos") or []:
+            rotulo = (evento["label"] or "").upper()
+            data = (evento["data"] or "")[:10]
+            if any(m in rotulo for m in ("DESDOBRA", "GRUPAMENTO", "BONIFICA")) and (
+                f"{ano_a}-12-31" < data <= f"{ano_b}-12-31"
+            ):
+                evento_no_meio = True
     if len(serie_acoes) < 2:
         resultado.nao_avaliadas.append(nome)
+    elif evento_no_meio:
+        resultado.nao_avaliadas.append(nome + " (evento societário no período distorce a comparação)")
     else:
         (ano_a, antes), (ano_b, depois) = serie_acoes[-2], serie_acoes[-1]
         crescimento = 100 * (depois - antes) / antes if antes else 0
-        if crescimento > 20:
+        if crescimento > 200 or (antes and depois / antes < 1 / 3):
+            # razão implausível: quase certo que a companhia mudou a unidade
+            # (mil ↔ unidade) no informe — dado inconsistente não vira alerta
+            resultado.nao_avaliadas.append(nome + " (unidade inconsistente no informe da CVM)")
+        elif crescimento > 20:
             lucros = {b["ano"]: b["lucro_liquido"] for b in balancos}
             lpa_antes = (lucros.get(ano_a) or 0) / antes if antes else None
             lpa_depois = (lucros.get(ano_b) or 0) / depois if depois else None
@@ -128,11 +149,12 @@ def avaliar(dados: dict, hoje: date | None = None) -> redflags.Resultado:
             resultado.flags.append(
                 RedFlag(
                     severidade=Severidade.MEDIA,
-                    titulo=f"Emissão diluiu a base de ações em {formato.percentual(crescimento)}",
+                    titulo=f"Base de ações cresceu {formato.percentual(crescimento)} entre {ano_a} e {ano_b}",
                     fato=(
                         f"O total de ações integralizadas cresceu {formato.percentual(crescimento)} "
-                        f"entre {ano_a} e {ano_b} — quem não acompanhou a emissão foi diluído. "
-                        "Emissão pode financiar crescimento; a pergunta é se o lucro acompanhou."
+                        f"no período. Pode ser emissão (dilui quem não acompanha), incorporação/fusão "
+                        "ou reestruturação societária — confira o evento no RI da companhia. "
+                        "A pergunta que importa: o lucro acompanhou o número de ações?"
                     ),
                     evidencia=(
                         f"{formato.moeda_compacta(antes).replace('R$ ', '')} → "

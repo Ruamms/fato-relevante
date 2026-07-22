@@ -66,7 +66,23 @@ def test_reapresentacao_dispara():
 def test_diluicao_por_emissao():
     dados = _dados(metas=[_meta(2023, acoes_total=1_000_000.0), _meta(2024, acoes_total=1_400_000.0)])
     r = acao_flags.avaliar(dados, hoje=date(2025, 7, 1))
-    assert any("diluiu" in f.titulo.lower() for f in r.flags)
+    assert any("Base de ações cresceu" in f.titulo for f in r.flags)
+
+
+def test_diluicao_salvaguardas_contra_falso_positivo():
+    # unidade inconsistente (mil ↔ unidade, caso RAPT real): razão implausível NÃO vira flag
+    dados = _dados(metas=[_meta(2023, acoes_total=329_331.0), _meta(2024, acoes_total=349_724_671.0)])
+    r = acao_flags.avaliar(dados, hoje=date(2025, 7, 1))
+    assert not any("Base de ações" in f.titulo for f in r.flags)
+    assert any("unidade inconsistente" in n for n in r.nao_avaliadas)
+    # desdobramento entre os exercícios (caso VIVT real): comparação crua invalidada
+    dados = _dados(
+        metas=[_meta(2023, acoes_total=1_650_000_000.0), _meta(2024, acoes_total=3_230_000_000.0)],
+        eventos=[{"data": "2024-06-10", "label": "DESDOBRAMENTO", "fator": 100.0}],
+    )
+    r = acao_flags.avaliar(dados, hoje=date(2025, 7, 1))
+    assert not any("Base de ações" in f.titulo for f in r.flags)
+    assert any("evento societário" in n for n in r.nao_avaliadas)
 
 
 def test_proventos_em_ano_de_prejuizo():
