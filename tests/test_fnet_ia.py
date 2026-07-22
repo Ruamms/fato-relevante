@@ -731,6 +731,46 @@ def test_cli_ia_lote_pdf_imagem_pula_sem_erro(con, zip_cvm, tmp_path, monkeypatc
     assert "TSTE11\tsem-texto" in historico
 
 
+def test_cli_ia_lote_2a_passada_automatica_em_timeout(con, zip_cvm, tmp_path, monkeypatch):
+    """Timeout de rede na 1ª tentativa deve disparar a 2ª passada automática,
+    que reprocessa só o fundo (agora responde) e limpa o _erros.txt."""
+    from typer.testing import CliRunner
+
+    from scout import cli as modulo_cli
+    from scout import ia as modulo_ia
+    from scout.cli import app
+    from scout.coleta import cvm
+    from scout.coleta import fnet as modulo_fnet
+
+    cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
+    monkeypatch.setenv("SCOUT_DATA_DIR", str(tmp_path))
+    monkeypatch.setattr(modulo_cli, "_preparar_ia", lambda modelo: "teste:1b")
+    monkeypatch.setattr(modulo_ia, "modelo_visao_instalado", lambda *a: None)
+    monkeypatch.setattr(modulo_fnet, "listar", lambda cnpj, quantidade=30, timeout=60, tentativas=3: _DOCUMENTOS)
+    caminho_pdf = tmp_path / "doc.pdf"
+    caminho_pdf.write_bytes(_pdf_minimo("Relatorio para o lote " * 60))
+    monkeypatch.setattr(
+        modulo_fnet, "_garantir_documento", lambda con_, cnpj, doc, destino, timeout=180, tentativas=3: caminho_pdf
+    )
+    chamadas = {"n": 0}
+
+    def _analisar(texto, ctx, modelo=None, ao_progresso=None):
+        chamadas["n"] += 1
+        if chamadas["n"] == 1:  # 1ª rodada: timeout de rede
+            raise TimeoutError("The read operation timed out")
+        return "leitura ok"  # 2ª passada: FNET respondeu
+
+    monkeypatch.setattr(modulo_ia, "analisar_relatorio", _analisar)
+    pasta = tmp_path / "leituras"
+
+    resultado = CliRunner().invoke(app, ["ia-lote", "--destino", str(pasta), "--sem-fatos"])
+    assert resultado.exit_code == 0, resultado.output
+    assert "2ª passada automática" in resultado.output
+    assert chamadas["n"] == 2  # 1 timeout + 1 sucesso na 2ª passada
+    assert (pasta / "TSTE11.json").exists()
+    assert not (pasta / "_erros.txt").exists()  # 2ª passada limpou
+
+
 def test_modelo_visao_instalado_casa_por_prefixo_e_marca():
     from scout import ia as modulo_ia
 

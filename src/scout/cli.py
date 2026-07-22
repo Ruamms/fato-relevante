@@ -1080,6 +1080,24 @@ def ia_lote(
         console.print(
             f"\n[bold]Lote concluído:[/] {novos} lidos, {pulados} já em dia, {len(falhas)} com erro."
         )
+        # 2ª passada AUTOMÁTICA só nos timeouts de rede (transitórios do FNET, que
+        # oscila sob carga): reprocessa esses sozinho, sequencialmente/gentil —
+        # é o que a rodada --apenas-erros já fazia à mão (9→1). Só na 1ª rodada
+        # (a recursão vai com apenas_erros=True, então não repete pra sempre).
+        _REDE = ("timed out", "stream has ended", "connection reset", "connection aborted", "timeout")
+        rede = [t for t, m in falhas if any(k in m.lower() for k in _REDE)]
+        if rede and not apenas_erros and not so_ticker:
+            console.print(
+                f"\n[bold]2ª passada automática[/] nos {len(rede)} fundos com timeout de rede "
+                "(o FNET oscila sob carga) — reprocessando só eles…"
+            )
+            _registrar(f"--- 2a passada automatica em {len(rede)} fundos com timeout de rede")
+            con.close()  # a recursão abre a sua própria conexão (close é idempotente)
+            ia_lote(
+                modelo=modelo, destino=destino, limite=None, so_ticker=None,
+                sem_fatos=sem_fatos, apenas_erros=True, modelo_visao=modelo_visao,
+            )
+            return
         if falhas:
             console.print(
                 f"Fundos com erro registrados em [bold]{arquivo_erros}[/] — "
