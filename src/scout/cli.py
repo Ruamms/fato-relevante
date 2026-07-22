@@ -242,13 +242,14 @@ def _executar_atualizacao(con) -> None:
         + len(cvm.anos_pendentes(con, hoje, cvm.nome_arquivo_trimestral))
         + len(b3.arquivos_pendentes(con, hoje))
     )
-    from .coleta import b3fundos, b3rf, cda, empresas, etf_renda, fundamentos, taxas_etf
+    from .coleta import b3fundos, b3rf, cda, empresas, etf_renda, fre, fundamentos, taxas_etf
 
     # empresas ANTES das cotações: o ajuste por eventos precisa dos papéis
     passos = [
         ("informes da CVM", lambda p: cvm.atualizar(con, ao_progredir=p)),
         ("empresas (IBrX-100)", lambda p: empresas.atualizar_empresas(con, ao_progredir=p)),
         ("balanços (DFP)", lambda p: fundamentos.atualizar(con, ao_progredir=p)),
+        ("FRE (administradores/partes)", lambda p: fre.atualizar(con, ao_progredir=p)),
         ("cotações da B3", lambda p: b3.atualizar(con, ao_progredir=p)),
         ("ETFs listados", lambda p: b3fundos.atualizar_etfs(con, ao_progredir=p)),
         ("carteiras de ETF", lambda p: cda.atualizar_composicao(con, ao_progredir=p)),

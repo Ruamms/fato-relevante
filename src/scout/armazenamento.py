@@ -51,6 +51,32 @@ CREATE TABLE IF NOT EXISTS auditores (
     fim     TEXT,
     PRIMARY KEY (cod_cvm, auditor, inicio)
 );
+CREATE TABLE IF NOT EXISTS administradores (
+    cod_cvm          TEXT NOT NULL,
+    nome             TEXT NOT NULL,
+    orgao            TEXT,   -- conselho de administração / diretoria / fiscal
+    cargo            TEXT,
+    profissao        TEXT,
+    controlador      INTEGER, -- eleito pelo controlador?
+    primeiro_mandato TEXT,    -- desde quando está na casa
+    mandatos         REAL,    -- nº de mandatos consecutivos
+    presenca         REAL,    -- % de participação nas reuniões
+    experiencia      TEXT,    -- resumo profissional declarado no FRE
+    referencia       TEXT,    -- Data_Referencia do FRE
+    PRIMARY KEY (cod_cvm, nome, cargo)
+);
+CREATE TABLE IF NOT EXISTS partes_relacionadas (
+    cod_cvm   TEXT NOT NULL,
+    parte     TEXT NOT NULL,
+    relacao   TEXT,
+    objeto    TEXT,
+    montante  REAL,
+    saldo     TEXT,
+    juros     TEXT,
+    data      TEXT,   -- Data_Transacao
+    referencia TEXT,
+    PRIMARY KEY (cod_cvm, parte, data, objeto)
+);
 CREATE TABLE IF NOT EXISTS informes_ativo (
     cnpj        TEXT NOT NULL,
     competencia TEXT NOT NULL,  -- AAAA-MM

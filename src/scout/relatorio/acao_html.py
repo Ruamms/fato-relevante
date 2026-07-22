@@ -101,7 +101,19 @@ def montar_dados_acao(con: sqlite3.Connection, ticker: str, hoje: date | None = 
         hoje=hoje,
     )
 
+    administradores = con.execute(
+        "SELECT * FROM administradores WHERE cod_cvm = ? ORDER BY orgao, nome",
+        (empresa["cod_cvm"],),
+    ).fetchall()
+    partes = con.execute(
+        "SELECT * FROM partes_relacionadas WHERE cod_cvm = ?"
+        " ORDER BY montante DESC NULLS LAST LIMIT 8",
+        (empresa["cod_cvm"],),
+    ).fetchall()
+
     return {
+        "administradores": administradores,
+        "partes_relacionadas": partes,
         "flags": resultado_flags,
         "selo": redflags.selo(resultado_flags),
         "ticker": ticker,
@@ -363,6 +375,79 @@ def gerar(
             partes.append(f'<p class="na">· não avaliada: {_e(pendente)}</p>')
         flags_html = f"<h2>🚩 Red flags</h2>{''.join(partes)}"
 
+    # --- Quem manda na empresa (FRE estruturado — conselho/diretoria/fiscal) --
+    secao_adm = ""
+    administradores = dados.get("administradores") or []
+    if administradores:
+        def _orgao_curto(texto: str) -> str:
+            t = (texto or "").lower()
+            if "conselho de administra" in t and "diretoria" in t:
+                return "Conselho + Diretoria"
+            if "conselho de administra" in t:
+                return "Conselho de Administração"
+            if "diretoria" in t:
+                return "Diretoria"
+            if "fiscal" in t:
+                return "Conselho Fiscal"
+            return texto or "—"
+
+        def _cargo_curto(texto: str) -> str:
+            partes_c = (texto or "").split(" - ", 1)
+            return partes_c[1] if len(partes_c) == 2 else (texto or "—")
+
+        linhas_adm = []
+        for a in administradores:
+            desde = a["primeiro_mandato"][:4] if a["primeiro_mandato"] else "—"
+            presenca = formato.percentual(a["presenca"]) if a["presenca"] is not None else "—"
+            badge = (
+                ' <span style="font-size:9.5px;font-weight:700;letter-spacing:.05em;'
+                'text-transform:uppercase;background:#1B2225;color:#9AA7B2;border:1px solid #263034;'
+                'border-radius:99px;padding:1px 7px">eleito p/ controlador</span>'
+                if a["controlador"]
+                else ""
+            )
+            titulo_exp = _e((a["experiencia"] or "")[:300])
+            linhas_adm.append(
+                f'<tr><td title="{titulo_exp}">{_e(a["nome"])}{badge}</td>'
+                f"<td>{_e(_orgao_curto(a['orgao']))}</td><td>{_e(_trunca(_cargo_curto(a['cargo']), 38))}</td>"
+                f"<td>{desde}</td><td>{presenca}</td></tr>"
+            )
+        referencia_adm = administradores[0]["referencia"] or ""
+        secao_adm = f"""
+  <h2>Quem manda na empresa</h2>
+  <div class="grafico">
+  <table class="imoveis">
+    <thead><tr><th>nome</th><th>órgão</th><th>cargo</th><th>na casa desde</th><th>presença</th></tr></thead>
+    <tbody>{''.join(linhas_adm)}</tbody>
+  </table>
+  <div class="nota">Formulário de Referência (FRE/CVM{f", ref. {formato.dia_br(referencia_adm)}" if referencia_adm else ""}) —
+  passe o mouse no nome para ver a experiência declarada · "presença" = % de participação nas reuniões do órgão</div>
+  </div>
+"""
+
+    secao_partes = ""
+    partes_rel = dados.get("partes_relacionadas") or []
+    if partes_rel:
+        linhas_pr = []
+        for p in partes_rel:
+            montante = formato.moeda_compacta(p["montante"]) if p["montante"] else "—"
+            linhas_pr.append(
+                f'<tr><td title="{_e((p["objeto"] or "")[:280])}">{_e(_trunca(p["parte"], 46))}</td>'
+                f'<td title="{_e((p["relacao"] or "")[:200])}">{_e(_trunca(p["relacao"] or "—", 40))}</td>'
+                f"<td>{montante}</td><td>{formato.dia_br(p['data']) if p['data'] else '—'}</td></tr>"
+            )
+        secao_partes = f"""
+  <h2>Transações com partes relacionadas</h2>
+  <div class="grafico">
+  <table class="imoveis">
+    <thead><tr><th>parte relacionada</th><th>relação com a empresa</th><th>montante</th><th>data</th></tr></thead>
+    <tbody>{''.join(linhas_pr)}</tbody>
+  </table>
+  <div class="nota">as maiores transações declaradas no FRE (negócios da empresa com quem é "de casa":
+  controlador, coligadas, administradores) — passe o mouse para ver o objeto do contrato · fatos declarados, não julgamento</div>
+  </div>
+"""
+
     auditor = (empresa["auditor"] or "").strip()
     meta_auditor = f" · auditor: {_e(_trunca(auditor, 40))}" if auditor else ""
     situacao = (empresa["situacao"] or "").strip().upper()
@@ -443,6 +528,10 @@ table.imoveis td:not(:first-child):not(:nth-child(2)), table.imoveis th:not(:fir
   </div>
 
   {secao_papeis}
+
+  {secao_adm}
+
+  {secao_partes}
 
   {secao_balanco}
 
