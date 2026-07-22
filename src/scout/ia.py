@@ -66,11 +66,43 @@ def modelos_instalados() -> list[str]:
         return []
 
 
-def extrair_texto_pdf(caminho: Path, max_paginas: int = 40) -> str:
-    from pypdf import PdfReader
+def _paginas_fitz(caminho: Path, max_paginas: int) -> list[str]:
+    try:
+        import fitz  # PyMuPDF
 
-    leitor = PdfReader(str(caminho))
-    paginas = [pagina.extract_text() or "" for pagina in leitor.pages[:max_paginas]]
+        with fitz.open(str(caminho)) as doc:
+            return [doc[i].get_text() or "" for i in range(min(doc.page_count, max_paginas))]
+    except Exception:
+        return []
+
+
+def _paginas_pypdf(caminho: Path, max_paginas: int) -> list[str]:
+    try:
+        from pypdf import PdfReader
+
+        leitor = PdfReader(str(caminho))
+        return [pagina.extract_text() or "" for pagina in leitor.pages[:max_paginas]]
+    except Exception:
+        return []
+
+
+def _paginas_pdf(caminho: Path, max_paginas: int) -> list[str]:
+    """Texto por página. PyMuPDF (fitz) é o principal — extrai bem melhor que o
+    pypdf em relatórios (tabelas, colunas, fontes embutidas), o mesmo motivo da
+    migração na leitura da taxa de ETF. Se o fitz vier curto (arquivo difícil),
+    tenta o pypdf e fica com o que extraiu MAIS — maximiza a recuperação de PDFs
+    que antes caíam como 'sem texto'. Nenhum dos dois faz OCR: PDF escaneado de
+    verdade (só imagem) continua sem texto."""
+    paginas = _paginas_fitz(caminho, max_paginas)
+    if sum(len(p) for p in paginas) < 500:
+        alternativa = _paginas_pypdf(caminho, max_paginas)
+        if sum(len(p) for p in alternativa) > sum(len(p) for p in paginas):
+            return alternativa
+    return paginas
+
+
+def extrair_texto_pdf(caminho: Path, max_paginas: int = 40) -> str:
+    paginas = _paginas_pdf(caminho, max_paginas)
     # marcadores [página N]: permitem ao modelo citar a página de cada trecho,
     # para o leitor conferir no PDF original
     texto = "\n".join(
