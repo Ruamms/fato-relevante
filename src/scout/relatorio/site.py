@@ -132,7 +132,14 @@ def gerar(
     }
     acoes_publicadas = []
     for empresa in armazenamento.empresas_listadas(con):
-        for papel in armazenamento.papeis_da_empresa(con, empresa["cod_cvm"]):
+        papeis_empresa = armazenamento.papeis_da_empresa(con, empresa["cod_cvm"])
+        # a leitura por IA é da EMPRESA (o lote grava no 1º papel): toda página
+        # de papel da mesma empresa exibe a mesma leitura
+        leitura_empresa = next(
+            (todas_leituras[p["ticker"]] for p in papeis_empresa if p["ticker"] in todas_leituras),
+            None,
+        )
+        for papel in papeis_empresa:
             dados_acao = acao_html.montar_dados_acao(con, papel["ticker"])
             if dados_acao is None or not dados_acao["cotacao"]:
                 continue  # papel sem pregão na base não gera página
@@ -141,7 +148,7 @@ def gerar(
                     dados_acao,
                     agora=agora,
                     com_menu=True,
-                    leitura=todas_leituras.get(papel["ticker"]),
+                    leitura=leitura_empresa,
                     publicados=tickers_acoes,
                 ),
                 encoding="utf-8",

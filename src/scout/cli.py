@@ -717,6 +717,21 @@ def ia_lote(
             for etf in armazenamento.etfs_listados(con)
             if etf["ticker"] not in vistos
         ]
+        # A5: EMPRESAS no fim da fila — fatos relevantes/comunicados vêm do IPE
+        # (índice anual da CVM, 1 download serve a fila toda) pelo mesmo fluxo
+        # sem_relatorio dos ETFs. Um papel por empresa basta (o fato é da empresa).
+        vistos_empresas: set[str] = set()
+        for empresa in armazenamento.empresas_listadas(con):
+            papeis_e = armazenamento.papeis_da_empresa(con, empresa["cod_cvm"])
+            if not papeis_e or empresa["cod_cvm"] in vistos_empresas:
+                continue
+            vistos_empresas.add(empresa["cod_cvm"])
+            fundos.append(
+                _NS(
+                    ticker=papeis_e[0]["ticker"], cnpj=empresa["cnpj"],
+                    cod_cvm=empresa["cod_cvm"], classe="empresa",
+                )
+            )
         if so_ticker:
             alvo = so_ticker.strip().upper()
             fundos = [f for f in fundos if f.ticker.upper() == alvo]
@@ -814,6 +829,16 @@ def ia_lote(
             try:
                 con_p = _con_worker()
                 destino_docs = armazenamento.diretorio_dados() / "documentos"
+                if getattr(resumo_p, "classe", None) == "empresa":
+                    from .coleta import ipe
+
+                    docs_p = ipe.listar(resumo_p.cod_cvm)
+                    for meta_p in docs_p:
+                        if meta_p["id"] not in leituras.ids_comunicados(
+                            leituras.carregar(pasta, resumo_p.ticker)
+                        ):
+                            ipe.garantir_documento(con_p, resumo_p.cnpj, meta_p, destino_docs)
+                    return docs_p, None
                 # 80 documentos: fundo movimentado publica dezenas de informes
                 # por ano e a DF anual cairia fora dos 30
                 docs_p = fnet.listar(
@@ -878,9 +903,14 @@ def ia_lote(
             inicio_fundo = _time.monotonic()
 
             def _ler_documentos(docs_meta: list[dict], contexto: str) -> str | None:
+                from .coleta import ipe as modulo_ipe
+
                 itens = []
                 for meta in docs_meta:
-                    caminho_doc = fnet._garantir_documento(
+                    garantir = (
+                        modulo_ipe.garantir_documento if meta.get("link") else fnet._garantir_documento
+                    )
+                    caminho_doc = garantir(
                         con, resumo.cnpj, meta, armazenamento.diretorio_dados() / "documentos",
                         timeout=90, tentativas=3,
                     )
