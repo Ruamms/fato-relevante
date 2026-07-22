@@ -135,6 +135,140 @@ def extrair_ano(conteudo: bytes, cod_cvms: set[int]) -> dict[int, dict]:
     return dados
 
 
+def extrair_meta_ano(conteudo: bytes, cod_cvms: set[int]) -> dict[int, dict]:
+    """Metadados societários do MESMO zip DFP (matéria-prima das red flags do A3):
+    entrega (DT_RECEB) e versão (>1 = reapresentado), composição do capital
+    (ações integralizadas + tesouraria) e o RELATÓRIO DO AUDITOR — o tipo vem
+    estruturado da própria CVM (TP_RELAT_AUD: Sem Ressalva/Com Ressalva/Adverso/
+    Negativa de Opinião) e o texto alimenta a detecção de continuidade."""
+    import re
+
+    from .. import parecer as modulo_parecer
+
+    zf = zipfile.ZipFile(io.BytesIO(conteudo))
+
+    def _ler(nome: str):
+        if nome not in zf.namelist():
+            return
+        with zf.open(nome) as f:
+            yield from csv.DictReader(io.TextIOWrapper(f, encoding="latin-1"), delimiter=";")
+
+    meta_csv = next((n for n in zf.namelist() if re.fullmatch(r"dfp_cia_aberta_\d{4}\.csv", n)), None)
+    if meta_csv is None:
+        return {}
+
+    dados: dict[int, dict] = {}
+    cod_por_cnpj: dict[str, int] = {}
+    for linha in _ler(meta_csv):
+        try:
+            cd = int(linha["CD_CVM"])
+        except (ValueError, KeyError, TypeError):
+            continue
+        if cd not in cod_cvms:
+            continue
+        versao = int(linha.get("VERSAO") or 1)
+        alvo = dados.setdefault(cd, {"versao": 0})
+        if versao >= alvo["versao"]:  # fica a versão vigente (a maior)
+            alvo["versao"] = versao
+            alvo["dt_receb"] = (linha.get("DT_RECEB") or "").strip() or None
+        cod_por_cnpj[linha.get("CNPJ_CIA") or ""] = cd
+
+    sufixo = meta_csv.replace("dfp_cia_aberta_", "").replace(".csv", "")
+    capital_versao: dict[int, int] = {}
+    for linha in _ler(f"dfp_cia_aberta_composicao_capital_{sufixo}.csv"):
+        cd = cod_por_cnpj.get(linha.get("CNPJ_CIA") or "")
+        if cd is None:
+            continue
+        versao = int(linha.get("VERSAO") or 1)
+        if versao < capital_versao.get(cd, 0):
+            continue
+        capital_versao[cd] = versao
+        alvo = dados.setdefault(cd, {"versao": versao})
+        alvo["acoes_total"] = _num(linha.get("QT_ACAO_TOTAL_CAP_INTEGR"))
+        alvo["acoes_tesouro"] = _num(linha.get("QT_ACAO_TOTAL_TESOURO"))
+
+    parecer_versao: dict[int, int] = {}
+    textos: dict[int, list[str]] = {}
+    for linha in _ler(f"dfp_cia_aberta_parecer_{sufixo}.csv"):
+        if "Auditor Independente" not in (linha.get("TP_PARECER_DECL") or ""):
+            continue  # declarações de diretoria/conselho fiscal não são o parecer
+        if "Declara" in (linha.get("TP_PARECER_DECL") or ""):
+            continue  # "Declaração dos Diretores sobre o Relatório do Auditor"
+        cd = cod_por_cnpj.get(linha.get("CNPJ_CIA") or "")
+        if cd is None:
+            continue
+        versao = int(linha.get("VERSAO") or 1)
+        if versao < parecer_versao.get(cd, 0):
+            continue
+        if versao > parecer_versao.get(cd, 0):
+            textos[cd] = []  # versão mais nova zera o texto acumulado
+        parecer_versao[cd] = versao
+        alvo = dados.setdefault(cd, {"versao": versao})
+        tipo = (linha.get("TP_RELAT_AUD") or "").strip()
+        if tipo:
+            alvo["parecer_tipo"] = tipo
+        textos.setdefault(cd, []).append(linha.get("TXT_PARECER_DECL") or "")
+
+    for cd, partes in textos.items():
+        texto = " ".join(partes)
+        resultado = modulo_parecer.classificar(texto)
+        alvo = dados[cd]
+        alvo["parecer_continuidade"] = 1 if resultado.get("continuidade") else 0
+        if resultado.get("continuidade") and resultado.get("trecho"):
+            alvo["parecer_trecho"] = resultado["trecho"][:300]
+
+    return dados
+
+
+def atualizar_auditores(con: sqlite3.Connection, hoje: date | None = None) -> int:
+    """Histórico de auditores via FCA (Formulário Cadastral): cada linha traz o
+    auditor com a JANELA de atuação (início/fim) — um ano de FCA cobre o
+    histórico. Matéria-prima da regra 'troca frequente de auditor'."""
+    import urllib.error
+    import urllib.request
+
+    from .. import armazenamento
+
+    hoje = hoje or date.today()
+    cnpj_para_cod = {
+        armazenamento.so_digitos(l["cnpj"]): str(l["cod_cvm"])
+        for l in con.execute("SELECT cnpj, cod_cvm FROM empresas WHERE no_ibrx100 = 1")
+    }
+    if not cnpj_para_cod:
+        return 0
+    total = 0
+    for ano in (hoje.year, hoje.year - 1):  # o zip do ano corrente pode não existir ainda
+        url = f"https://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/FCA/DADOS/fca_cia_aberta_{ano}.zip"
+        try:
+            requisicao = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(requisicao, timeout=120) as resposta:
+                conteudo = resposta.read()
+        except (urllib.error.URLError, OSError):
+            continue
+        zf = zipfile.ZipFile(io.BytesIO(conteudo))
+        nome = next((n for n in zf.namelist() if "auditor" in n.lower()), None)
+        if nome is None:
+            continue
+        with zf.open(nome) as f:
+            for linha in csv.DictReader(io.TextIOWrapper(f, encoding="latin-1"), delimiter=";"):
+                cod = cnpj_para_cod.get(armazenamento.so_digitos(linha.get("CNPJ_Companhia") or ""))
+                auditor = (linha.get("Auditor") or "").strip()
+                if not cod or not auditor:
+                    continue
+                con.execute(
+                    "INSERT OR REPLACE INTO auditores (cod_cvm, auditor, inicio, fim) VALUES (?, ?, ?, ?)",
+                    (
+                        cod, auditor,
+                        (linha.get("Data_Inicio_Atuacao_Auditor") or "").strip() or None,
+                        (linha.get("Data_Fim_Atuacao_Auditor") or "").strip() or None,
+                    ),
+                )
+                total += 1
+        con.commit()
+        break  # o primeiro ano disponível já traz as janelas históricas
+    return total
+
+
 def atualizar(
     con: sqlite3.Connection, hoje: date | None = None, ao_progredir=None
 ) -> str | None:
@@ -162,6 +296,22 @@ def atualizar(
         if not conteudo:
             continue
         dados = extrair_ano(conteudo, cod_cvms)
+        for cod_cvm, meta in extrair_meta_ano(conteudo, cod_cvms).items():
+            con.execute(
+                """
+                INSERT OR REPLACE INTO dfp_meta
+                    (cod_cvm, ano, dt_receb, versao, acoes_total, acoes_tesouro,
+                     parecer_tipo, parecer_continuidade, parecer_trecho)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                (
+                    str(cod_cvm), ano,
+                    meta.get("dt_receb"), meta.get("versao"),
+                    meta.get("acoes_total"), meta.get("acoes_tesouro"),
+                    meta.get("parecer_tipo"), meta.get("parecer_continuidade"),
+                    meta.get("parecer_trecho"),
+                ),
+            )
         for cod_cvm, campos in dados.items():
             con.execute(
                 """
@@ -186,6 +336,20 @@ def atualizar(
         )
         con.commit()
         novos_anos += 1
+
+    # auditores (FCA): 1 download leve, incremental por ano — janelas de atuação
+    marcador_fca = f"FCA_{hoje.year}"
+    if marcador_fca not in carregados:
+        try:
+            registros = atualizar_auditores(con, hoje)
+            if registros:
+                con.execute(
+                    "INSERT OR REPLACE INTO cargas (arquivo, carregado_em) VALUES (?, ?)",
+                    (marcador_fca, hoje.isoformat()),
+                )
+                con.commit()
+        except Exception:  # FCA fora do ar não derruba a carga da DFP
+            pass
 
     empresas = con.execute("SELECT COUNT(DISTINCT cod_cvm) FROM fundamentos").fetchone()[0]
     mensagem = f"fundamentos (DFP): {empresas} empresas com balanço ({novos_anos} anos nesta rodada)"

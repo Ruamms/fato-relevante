@@ -32,6 +32,25 @@ CREATE TABLE IF NOT EXISTS informes_gerais (
 );
 CREATE INDEX IF NOT EXISTS idx_gerais_admin ON informes_gerais (cnpj_administrador);
 CREATE INDEX IF NOT EXISTS idx_gerais_isin ON informes_gerais (isin);
+CREATE TABLE IF NOT EXISTS dfp_meta (
+    cod_cvm               TEXT NOT NULL,
+    ano                   INTEGER NOT NULL,
+    dt_receb              TEXT,     -- quando a DFP foi entregue à CVM
+    versao                INTEGER,  -- >1 = balanço reapresentado/republicado
+    acoes_total           REAL,     -- capital integralizado (composicao_capital)
+    acoes_tesouro         REAL,
+    parecer_tipo          TEXT,     -- classificação da própria CVM (TP_RELAT_AUD)
+    parecer_continuidade  INTEGER,  -- incerteza de continuidade operacional no texto
+    parecer_trecho        TEXT,
+    PRIMARY KEY (cod_cvm, ano)
+);
+CREATE TABLE IF NOT EXISTS auditores (
+    cod_cvm TEXT NOT NULL,
+    auditor TEXT NOT NULL,
+    inicio  TEXT,   -- Data_Inicio_Atuacao_Auditor (FCA)
+    fim     TEXT,
+    PRIMARY KEY (cod_cvm, auditor, inicio)
+);
 CREATE TABLE IF NOT EXISTS informes_ativo (
     cnpj        TEXT NOT NULL,
     competencia TEXT NOT NULL,  -- AAAA-MM
