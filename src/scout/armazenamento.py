@@ -746,7 +746,7 @@ def empresa_por_ticker(con: sqlite3.Connection, ticker: str) -> sqlite3.Row | No
     ).fetchone()
 
 
-def empresas_listadas(con: sqlite3.Connection, so_ibrx: bool = True) -> list[sqlite3.Row]:
+def empresas_listadas(con: sqlite3.Connection, so_ibrx: bool = False) -> list[sqlite3.Row]:
     """Empresas do escopo (v1 = IBrX-100), para o site e o lote."""
     filtro = "WHERE no_ibrx100 = 1" if so_ibrx else ""
     return con.execute(f"SELECT * FROM empresas {filtro} ORDER BY radical").fetchall()

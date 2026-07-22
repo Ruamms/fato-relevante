@@ -72,17 +72,24 @@ CADASTRO_CVM = {
 }
 
 
-def _mock_fontes(monkeypatch):
-    buscas = {"PETROBRAS": BUSCA_PETROBRAS, "AMBEV S/A": BUSCA_AMBEV}
+LISTA_BOLSA = [
+    {"issuingCompany": "PETR", "companyName": "PETROLEO BRASILEIRO S.A. PETROBRAS",
+     "tradingName": "PETROBRAS", "codeCVM": "9512", "segment": "N2", "market": "N2",
+     "cnpj": "33000167000101", "typeBDR": ""},
+    {"issuingCompany": "ABEV", "companyName": "AMBEV S.A.", "tradingName": "AMBEV S/A",
+     "codeCVM": "23264", "segment": "NM", "market": "NM", "cnpj": "7526557000100", "typeBDR": ""},
+]
+
+
+def _mock_fontes(monkeypatch, lista=None):
     detalhes = {"9512": DETALHE_PETR, "23264": DETALHE_ABEV}
     chamadas = {"detalhes": 0}
 
     monkeypatch.setattr(empresas, "composicao_ibrx", lambda indice="IBXX": COMPOSICAO_IBXX)
+    monkeypatch.setattr(empresas, "listar_bolsa", lambda con: lista if lista is not None else LISTA_BOLSA)
     monkeypatch.setattr(empresas.time, "sleep", lambda _s: None)
 
     def _chamar(url_base, endpoint, parametros):
-        if endpoint == "GetInitialCompanies":
-            return buscas.get(parametros["company"], {"results": []})
         if endpoint == "GetDetail":
             chamadas["detalhes"] += 1
             return detalhes[str(parametros["codeCVM"])]
@@ -112,7 +119,7 @@ def test_atualizar_cria_emissores_e_papeis(con, monkeypatch):
     assert petr["radical"] == "PETR"
     assert petr["cnpj"] == "33000167000101"
     assert petr["tipo_papel"] == "PN"
-    assert petr["no_ibrx100"] == 1
+    assert petr["no_ibrx100"] == 1  # PETR está no IBrX (flag informativa)
     assert "Petróleo" in petr["setor_b3"]
     # cadastro CVM casado por CNPJ
     assert petr["situacao"] == "ATIVO"
@@ -141,14 +148,16 @@ def test_quem_sai_do_indice_perde_o_escopo_mas_fica_na_base(con, monkeypatch):
     )
     empresas.atualizar_empresas(con, hoje=date(2026, 7, 27))
     assert armazenamento.empresa_por_ticker(con, "ABEV3")["no_ibrx100"] == 0
-    assert len(armazenamento.empresas_listadas(con)) == 1
-    assert len(armazenamento.empresas_listadas(con, so_ibrx=False)) == 2
+    # a flag do índice é informativa: a empresa segue no ESCOPO (base toda)
+    assert len(armazenamento.empresas_listadas(con)) == 2
+    assert len(armazenamento.empresas_listadas(con, so_ibrx=True)) == 1
 
 
 def test_radical_sem_match_nao_derruba_a_carga(con, monkeypatch):
-    _mock_fontes(monkeypatch)
-    composicao = COMPOSICAO_IBXX + [{"cod": "XYZW3", "asset": "INEXISTENTE", "type": "ON"}]
-    monkeypatch.setattr(empresas, "composicao_ibrx", lambda indice="IBXX": composicao)
+    lista = LISTA_BOLSA + [{"issuingCompany": "XYZW", "companyName": "INEXISTENTE",
+                            "tradingName": "INEXISTENTE", "codeCVM": "999999", "segment": "",
+                            "market": "MB", "cnpj": "", "typeBDR": ""}]
+    _mock_fontes(monkeypatch, lista=lista)  # GetDetail de 999999 explode no mock
     mensagem = empresas.atualizar_empresas(con, hoje=date(2026, 7, 20))
     assert "sem match na B3: XYZW" in mensagem
     assert len(armazenamento.empresas_listadas(con)) == 2

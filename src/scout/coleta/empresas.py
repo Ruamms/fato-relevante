@@ -231,11 +231,50 @@ def carregar_cadastro_cvm() -> dict[str, dict]:
     return cias
 
 
+def listar_bolsa(con: sqlite3.Connection) -> list[dict]:
+    """TODAS as companhias de BOLSA na B3 (expansão além do IBrX-100): a busca
+    paginada devolve ~3.500 registros (inclui BDRs e balcão); fica quem NÃO é
+    BDR e (tem segmento especial de listagem OU tem pregão recente no nosso
+    COTAHIST — o teste definitivo de 'negocia em bolsa', que pega o segmento
+    tradicional sem marcar deslistada antiga)."""
+    corte = f"{date.today().year}-{max(1, date.today().month - 3):02d}"
+    radicais_pregao = {
+        linha[0][:4]
+        for linha in con.execute(
+            "SELECT DISTINCT ticker FROM cotacoes_b3 WHERE competencia >= ?", (corte,)
+        )
+        if re.fullmatch(r"[A-Z]{4}\d{1,2}", linha[0])
+    }
+    empresas_bolsa: list[dict] = []
+    pagina = 1
+    while True:
+        dados = _chamar(
+            URL_EMPRESAS,
+            "GetInitialCompanies",
+            {"language": "pt-br", "pageNumber": pagina, "pageSize": 120, "company": ""},
+        )
+        for item in dados.get("results") or []:
+            if (item.get("typeBDR") or "").strip():
+                continue  # BDR é outra classe
+            radical = (item.get("issuingCompany") or "").strip().upper()
+            if not str(item.get("codeCVM") or "").strip().isdigit():
+                continue
+            if (item.get("market") or "").strip() or radical in radicais_pregao:
+                empresas_bolsa.append(item)
+        if pagina >= (dados.get("page") or {}).get("totalPages", 0):
+            break
+        pagina += 1
+        time.sleep(0.2)
+    return empresas_bolsa
+
+
 def atualizar_empresas(
     con: sqlite3.Connection, hoje: date | None = None, ao_progredir=None
 ) -> str | None:
-    """Sincroniza `empresas`/`papeis` (1x/semana): composição do IBrX-100,
-    detalhe B3 só de quem ainda não temos, cadastro CVM para todas."""
+    """Sincroniza `empresas`/`papeis` (1x/semana): TODAS as companhias de bolsa
+    (cobertura completa desde 22/07/2026 — antes só IBrX-100), detalhe B3 só de
+    quem ainda não temos, cadastro CVM para todas. Empresa NOVA na base dispara
+    o backfill dos zips (DFP/ITR/FRE/FCA) na mesma rodada."""
     hoje = hoje or date.today()
     carga = con.execute(
         "SELECT carregado_em FROM cargas WHERE arquivo = 'EMPRESAS_B3'"
@@ -245,60 +284,73 @@ def atualizar_empresas(
         if idade < DIAS_FRESCOR:
             return None
 
-    composicao = composicao_ibrx()
-    radicais_indice: dict[str, str] = {}  # radical -> nome de pregão
-    for item in composicao:
-        codigo = (item.get("cod") or "").strip().upper()
-        casamento = re.match(r"([A-Z]{4})\d", codigo)
-        if casamento:
-            radicais_indice.setdefault(casamento.group(1), (item.get("asset") or "").strip())
-
+    lista = listar_bolsa(con)
     conhecidos = {
         linha["radical"]: linha["cod_cvm"]
         for linha in con.execute("SELECT radical, cod_cvm FROM empresas")
     }
     novos, sem_match = 0, []
-    for radical, nome_pregao in radicais_indice.items():
-        if radical in conhecidos:
+    for item in lista:
+        radical = (item.get("issuingCompany") or "").strip().upper()
+        if not radical or radical in conhecidos:
             continue
-        empresa = buscar_empresa(nome_pregao, radical)
-        time.sleep(0.25)  # educação com a fonte
-        if not empresa or not empresa.get("codeCVM"):
+        cod_cvm = str(item["codeCVM"])
+        try:
+            detalhe = detalhar_empresa(cod_cvm)
+        except Exception:  # noqa: BLE001 — um emissor com erro não derruba a carga
             sem_match.append(radical)
             continue
-        cod_cvm = str(empresa["codeCVM"])
-        detalhe = detalhar_empresa(cod_cvm)
-        time.sleep(0.25)
-        cnpj = armazenamento.so_digitos(detalhe.get("cnpj") or empresa.get("cnpj"))
+        time.sleep(0.25)  # educação com a fonte
+        papeis = papeis_do_detalhe(detalhe, radical)
+        if not papeis:
+            continue  # sem código de ação/unit negociável (ex.: só debênture)
+        cnpj = armazenamento.so_digitos(detalhe.get("cnpj") or item.get("cnpj"))
         con.execute(
             """
             INSERT OR REPLACE INTO empresas
                 (cod_cvm, cnpj, radical, nome, nome_pregao, setor_b3,
                  segmento_listagem, no_ibrx100, atualizado_em)
-            VALUES (?, ?, ?, ?, ?, ?, ?, 1, ?)
+            VALUES (?, ?, ?, ?, ?, ?, ?, 0, ?)
             """,
             (
                 cod_cvm,
                 cnpj,
                 radical,
-                (detalhe.get("companyName") or empresa.get("companyName") or "").strip(),
-                (empresa.get("tradingName") or nome_pregao).strip(),
+                (detalhe.get("companyName") or item.get("companyName") or "").strip(),
+                (item.get("tradingName") or "").strip(),
                 (detalhe.get("industryClassification") or "").strip(),
-                (empresa.get("segment") or "").strip(),
+                (item.get("market") or item.get("segment") or "").strip(),
                 hoje.isoformat(),
             ),
         )
-        for ticker, isin, tipo in papeis_do_detalhe(detalhe, radical):
+        for ticker, isin, tipo in papeis:
             con.execute(
                 "INSERT OR REPLACE INTO papeis (ticker, cod_cvm, isin, tipo) VALUES (?, ?, ?, ?)",
                 (ticker, cod_cvm, isin, tipo),
             )
         novos += 1
 
-    # marca quem saiu do índice (escopo é dinâmico; a empresa fica na base)
-    con.execute("UPDATE empresas SET no_ibrx100 = 0")
-    for radical in radicais_indice:
-        con.execute("UPDATE empresas SET no_ibrx100 = 1 WHERE radical = ?", (radical,))
+    # a flag do IBrX-100 segue viva (informativa: as 100 mais líquidas)
+    try:
+        composicao = composicao_ibrx()
+    except Exception:  # noqa: BLE001
+        composicao = []
+    if composicao:
+        con.execute("UPDATE empresas SET no_ibrx100 = 0")
+        for item in composicao:
+            casamento = re.match(r"([A-Z]{4})\d", (item.get("cod") or "").strip().upper())
+            if casamento:
+                con.execute(
+                    "UPDATE empresas SET no_ibrx100 = 1 WHERE radical = ?", (casamento.group(1),)
+                )
+
+    # empresa nova no escopo: os zips DFP/ITR/FRE/FCA precisam reprocessar para
+    # incluí-la (os arquivos são os mesmos; só o filtro de cod_cvm cresce)
+    if novos:
+        con.execute(
+            "DELETE FROM cargas WHERE arquivo LIKE 'DFP_%' OR arquivo LIKE 'ITR_%'"
+            " OR arquivo LIKE 'FRE_%' OR arquivo LIKE 'FCA_%'"
+        )
 
     # cadastro CVM (setor de atividade, situação do registro, auditor)
     try:
@@ -314,7 +366,7 @@ def atualizar_empresas(
             )
 
     # eventos societários + dividendos/JCP (base do ajuste e do retorno total)
-    for empresa in con.execute("SELECT * FROM empresas WHERE no_ibrx100 = 1"):
+    for empresa in con.execute("SELECT * FROM empresas"):
         try:
             _gravar_eventos_e_proventos(con, empresa)
         except Exception:  # noqa: BLE001 — um emissor com erro não derruba a carga
@@ -325,11 +377,11 @@ def atualizar_empresas(
         (hoje.isoformat(),),
     )
     con.commit()
-    total = con.execute("SELECT COUNT(*) FROM empresas WHERE no_ibrx100 = 1").fetchone()[0]
+    total = con.execute("SELECT COUNT(*) FROM empresas").fetchone()[0]
     papeis = con.execute(
-        "SELECT COUNT(*) FROM papeis WHERE cod_cvm IN (SELECT cod_cvm FROM empresas WHERE no_ibrx100 = 1)"
+        "SELECT COUNT(*) FROM papeis"
     ).fetchone()[0]
-    mensagem = f"empresas do IBrX-100: {total} emissores, {papeis} papéis ({novos} novos)"
+    mensagem = f"empresas de bolsa: {total} emissores, {papeis} papéis ({novos} novos)"
     if sem_match:
         mensagem += f" · sem match na B3: {', '.join(sorted(sem_match))}"
     if ao_progredir:

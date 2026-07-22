@@ -291,7 +291,7 @@ def atualizar_trimestres(con: sqlite3.Connection, hoje: date | None = None, ao_p
     isolados. Incremental por ano (ITR_<ano>); o corrente sempre rebaixa."""
     hoje = hoje or date.today()
     cod_cvms = {
-        int(l["cod_cvm"]) for l in con.execute("SELECT cod_cvm FROM empresas WHERE no_ibrx100 = 1")
+        int(l["cod_cvm"]) for l in con.execute("SELECT cod_cvm FROM empresas")
         if str(l["cod_cvm"]).isdigit()
     }
     if not cod_cvms:
@@ -370,7 +370,7 @@ def atualizar_auditores(con: sqlite3.Connection, hoje: date | None = None) -> in
     hoje = hoje or date.today()
     cnpj_para_cod = {
         armazenamento.so_digitos(l["cnpj"]): str(l["cod_cvm"])
-        for l in con.execute("SELECT cnpj, cod_cvm FROM empresas WHERE no_ibrx100 = 1")
+        for l in con.execute("SELECT cnpj, cod_cvm FROM empresas")
     }
     if not cnpj_para_cod:
         return 0
@@ -416,7 +416,7 @@ def atualizar(
     hoje = hoje or date.today()
     cod_cvms = {
         int(linha["cod_cvm"])
-        for linha in con.execute("SELECT cod_cvm FROM empresas WHERE no_ibrx100 = 1")
+        for linha in con.execute("SELECT cod_cvm FROM empresas")
         if str(linha["cod_cvm"]).isdigit()
     }
     if not cod_cvms:

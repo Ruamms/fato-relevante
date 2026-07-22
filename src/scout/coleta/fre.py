@@ -156,7 +156,7 @@ def atualizar(con: sqlite3.Connection, hoje: date | None = None, ao_progredir=No
     hoje = hoje or date.today()
     cnpj_para_cod = {
         armazenamento.so_digitos(l["cnpj"]): str(l["cod_cvm"])
-        for l in con.execute("SELECT cnpj, cod_cvm FROM empresas WHERE no_ibrx100 = 1")
+        for l in con.execute("SELECT cnpj, cod_cvm FROM empresas")
     }
     if not cnpj_para_cod:
         return None
