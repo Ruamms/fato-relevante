@@ -122,6 +122,37 @@ def gerar(
     )
     progresso(f"etfs: {len(etfs_publicados)} páginas")
 
+    # páginas de AÇÃO (v1 = IBrX-100; uma página por PAPEL, mostrando a empresa)
+    from . import acao_html
+
+    tickers_acoes = {
+        papel["ticker"]
+        for empresa in armazenamento.empresas_listadas(con)
+        for papel in armazenamento.papeis_da_empresa(con, empresa["cod_cvm"])
+    }
+    acoes_publicadas = []
+    for empresa in armazenamento.empresas_listadas(con):
+        for papel in armazenamento.papeis_da_empresa(con, empresa["cod_cvm"]):
+            dados_acao = acao_html.montar_dados_acao(con, papel["ticker"])
+            if dados_acao is None or not dados_acao["cotacao"]:
+                continue  # papel sem pregão na base não gera página
+            (destino / f"{papel['ticker']}.html").write_text(
+                acao_html.gerar(
+                    dados_acao,
+                    agora=agora,
+                    com_menu=True,
+                    leitura=todas_leituras.get(papel["ticker"]),
+                    publicados=tickers_acoes,
+                ),
+                encoding="utf-8",
+            )
+            acoes_publicadas.append(dados_acao)
+            item("ações", len(acoes_publicadas), len(acoes_publicadas))
+    (destino / "acoes.html").write_text(
+        _indice_acoes(acoes_publicadas, agora or datetime.now()), encoding="utf-8"
+    )
+    progresso(f"ações: {len(acoes_publicadas)} páginas")
+
     apoio.salvar(destino, analytics)
     # fonte display auto-hospedada (sem CDN, sem fetch externo) — um único
     # arquivo no destino, cacheado pelo navegador; @font-face aponta para ela
@@ -132,7 +163,7 @@ def gerar(
     import json as _json
 
     (destino / "busca.json").write_text(
-        _json.dumps(_ativos_busca(publicados, etfs_publicados), ensure_ascii=False),
+        _json.dumps(_ativos_busca(publicados, etfs_publicados, acoes_publicadas), ensure_ascii=False),
         encoding="utf-8",
     )
     # tipo do FII (papel/tijolo/híbrido/FoF) derivado da carteira oficial (CVM)
@@ -141,7 +172,7 @@ def gerar(
         _indice(publicados, base, momento, tipos_fii), encoding="utf-8"
     )
     (destino / "index.html").write_text(
-        _home(publicados, etfs_publicados, momento, tipos_fii), encoding="utf-8"
+        _home(publicados, etfs_publicados, momento, tipos_fii, acoes_publicadas), encoding="utf-8"
     )
     (destino / "comparar.html").write_text(
         _pagina_comparar(publicados), encoding="utf-8"
@@ -152,7 +183,12 @@ def gerar(
     total_reportar = _injetar_reportar(destino, reportar)
     if total_reportar:
         progresso(f"botão de reportar em {total_reportar} páginas")
-    return {"paginas": len(publicados), "etfs": len(etfs_publicados), "destino": str(destino)}
+    return {
+        "paginas": len(publicados),
+        "etfs": len(etfs_publicados),
+        "acoes": len(acoes_publicadas),
+        "destino": str(destino),
+    }
 
 
 def _injetar_reportar(destino: Path, url: str) -> int:
@@ -189,7 +225,7 @@ def _injetar_analytics(destino: Path, codigo: str) -> int:
     return total
 
 
-def _ativos_busca(fundos: list, etfs: list[dict]) -> list[dict]:
+def _ativos_busca(fundos: list, etfs: list[dict], acoes: list[dict] | None = None) -> list[dict]:
     """Índice compacto da busca viva (home embutida + busca.json das páginas)."""
     ativos = []
     for resumo in fundos:
@@ -212,17 +248,35 @@ def _ativos_busca(fundos: list, etfs: list[dict]) -> list[dict]:
                 "r": dados["selo"].rotulo if dados["selo"] else "",
             }
         )
+    for dados in acoes or []:
+        empresa = dados["empresa"]
+        ativos.append(
+            {
+                "t": dados["ticker"],
+                "n": (empresa["nome_pregao"] or empresa["nome"] or "")[:48],
+                "c": "Ação",
+                "s": "",  # selo de ação só depois do benchmark (A3)
+                "r": "",
+            }
+        )
     return ativos
 
 
-def _home(fundos: list, etfs: list[dict], agora: datetime, tipos_fii: dict | None = None) -> str:
+def _home(
+    fundos: list,
+    etfs: list[dict],
+    agora: datetime,
+    tipos_fii: dict | None = None,
+    acoes: list[dict] | None = None,
+) -> str:
     """Home multi-classe: busca ao vivo em TUDO que temos + resumo por classe."""
     import json as _json
 
     from .. import tipo_fii as _tipo
 
     tipos_fii = tipos_fii or {}
-    ativos = _ativos_busca(fundos, etfs)
+    acoes = acoes or []
+    ativos = _ativos_busca(fundos, etfs, acoes)
     json_ativos = _json.dumps(ativos, ensure_ascii=False).replace("</", "<\\/")
     cores_selo = _json.dumps(_COR_SELO)
 
@@ -325,7 +379,7 @@ input#busca:focus {{ outline:2px solid #8FCB9B; outline-offset:1px; border-color
      oninput="buscar()" onkeydown="navegar(event)">
     <div id="resultados" hidden></div>
   </div>
-  <div class="meta" style="font-size:12px">a busca cobre tudo o que já analisamos: {len(fundos)} FIIs e {len(etfs)} ETFs</div>
+  <div class="meta" style="font-size:12px">a busca cobre tudo o que já analisamos: {len(fundos)} FIIs, {len(etfs)} ETFs{f" e {len(acoes)} ações" if acoes else ""}</div>
 
   <div class="blocos">
     <div class="bloco">
@@ -346,6 +400,13 @@ input#busca:focus {{ outline:2px solid #8FCB9B; outline-offset:1px; border-color
       <a class="btn" href="etfs.html">ver todos os ETFs</a>
       <div style="margin-top:10px">{pills}</div>
     </div>
+    {f'''<div class="bloco">
+      <h2>Ações</h2>
+      <div class="num">{len(acoes)}</div>
+      <p>Empresas do IBrX-100 com balanço oficial (DFP/CVM), múltiplos por papel (P/L, P/VP, DY),
+      ROE, EBITDA e proventos — e as regras da classe explicadas para leigo.</p>
+      <a class="btn" href="acoes.html">ver todas as ações</a>
+    </div>''' if acoes else ""}
   </div>
 
   <div class="rodape">Não é recomendação de investimento. Fontes: dados abertos da CVM, B3 (COTAHIST
@@ -566,6 +627,164 @@ function filtraClasse(botao, classe) {{
 }}
 // ?classe=X na URL (vindo do menu ou da home) pré-seleciona o filtro
 const classeUrl = new URLSearchParams(location.search).get('classe');
+if (classeUrl) {{
+  const botao = Array.from(document.querySelectorAll('.filtro')).find(b => b.textContent === classeUrl);
+  if (botao) filtraClasse(botao, classeUrl);
+}}
+{JS_MENU}
+</script>
+</body>
+</html>
+"""
+
+
+def _indice_acoes(acoes: list[dict], agora) -> str:
+    """Listagem das ações publicadas (v1 = IBrX-100) — filtro por setor + busca."""
+    from .. import formato
+    from .acao_html import _setor_curto, _trunca
+
+    setores = sorted({_setor_curto(d["empresa"]) for d in acoes})
+    botoes = "".join(
+        f'<button class="filtro" onclick="filtraClasse(this, \'{_e(setor)}\')">{_e(setor)}</button>'
+        for setor in setores
+    )
+
+    def _mult(d):
+        return d["multiplos"].get(d["ticker"], {})
+
+    linhas = []
+    for dados in sorted(acoes, key=lambda d: d["ticker"]):
+        empresa = dados["empresa"]
+        setor = _setor_curto(empresa)
+        m = _mult(dados)
+        fmt = lambda v, f=formato.decimal: f(v) if v is not None else "—"  # noqa: E731
+        preco = f"R$ {formato.decimal(dados['preco_atual'])}" if dados["preco_atual"] else "—"
+        variacao = (
+            formato.percentual(dados["variacao_12m"], sinal=True)
+            if dados["variacao_12m"] is not None
+            else "—"
+        )
+        nome = empresa["nome_pregao"] or empresa["nome"] or ""
+        busca = f"{dados['ticker']} {nome} {setor}".lower().replace('"', "")
+        linhas.append(
+            f'<tr data-busca="{busca}" data-classe="{_e(setor)}">'
+            f'<td><a href="{dados["ticker"]}.html">{dados["ticker"]}</a></td>'
+            f'<td title="{_e(empresa["nome"] or "")}">{_e(_trunca(nome, 34))}</td>'
+            f"<td>{_e(_trunca(setor, 26))}</td><td>{preco}</td><td>{variacao}</td>"
+            f"<td>{fmt(m.get('pl'))}</td><td>{fmt(m.get('pvp'))}</td>"
+            f"<td>{fmt(m.get('dy'), formato.percentual)}</td></tr>"
+        )
+
+    def _rk(titulo, chave, rotulo, reverso=True):
+        cand = [d for d in acoes if chave(d) is not None]
+        cand.sort(key=chave, reverse=reverso)
+        itens = "".join(
+            f'<li><span class="pos">{i}</span>'
+            f'<a href="{d["ticker"]}.html">{d["ticker"]}</a>'
+            f'<span class="val">{rotulo(d)}</span></li>'
+            for i, d in enumerate(cand[:5], 1)
+        )
+        return f'<div class="bloco"><h3>{titulo}</h3><ol>{itens or "<li>—</li>"}</ol></div>'
+
+    rankings = (
+        _rk(
+            "Maior dividend yield 12m",
+            lambda d: _mult(d).get("dy"),
+            lambda d: formato.percentual(_mult(d)["dy"]),
+        )
+        + _rk(
+            "Menor P/L (com lucro)",
+            lambda d: _mult(d).get("pl"),
+            lambda d: formato.decimal(_mult(d)["pl"]),
+            reverso=False,
+        )
+        + _rk(
+            "Maior ROE",
+            lambda d: d["indicadores"].get("roe"),
+            lambda d: formato.percentual(d["indicadores"]["roe"]),
+        )
+    )
+    return f"""<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ações — Scout</title>
+{relatorio_html.TAG_FAVICON}
+<style>
+:root {{ color-scheme: dark; }}
+* {{ box-sizing:border-box; margin:0; }}
+body {{ background:#0F1416; color:#EAEEF0; font-family:system-ui,sans-serif; line-height:1.5; }}
+.pagina {{ max-width:1020px; margin:0 auto; padding:28px 20px 40px; }}
+h1 {{ font-family:'Scout Display',system-ui,sans-serif; font-size:30px; font-weight:700; letter-spacing:-.02em; margin:8px 0 4px; }}
+.meta {{ color:#9AA7B2; font-size:13px; margin-bottom:12px; }}
+a {{ color:#8FCB9B; }}
+input#busca {{ width:100%; background:#161D20; color:#EAEEF0; border:1px solid #263034;
+  border-radius:10px; padding:11px 15px; font-size:15px; margin:8px 0 10px; }}
+.filtros {{ display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px; }}
+.filtro {{ background:#1B2225; color:#9AA7B2; border:1px solid #263034; border-radius:99px;
+  padding:4px 14px; font-size:12.5px; cursor:pointer; }}
+.filtro.ativo {{ background:#8FCB9B; color:#0F1416; border-color:#8FCB9B; font-weight:700; }}
+table {{ width:100%; border-collapse:collapse; font-size:13.5px; font-variant-numeric:tabular-nums; }}
+th {{ color:#9AA7B2; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em;
+  text-align:left; padding:8px 10px;
+  position:sticky; top:0; z-index:2; background:#0F1416;
+  box-shadow:inset 0 -1px 0 #263034; }}
+td {{ padding:7px 10px; border-bottom:1px solid #1B2225; }}
+td:nth-child(n+4), th:nth-child(n+4) {{ text-align:right; }}
+.rk-titulo {{ font-family:'Scout Display',system-ui,sans-serif; font-size:22px; font-weight:700; letter-spacing:-.01em; margin:34px 0 4px; }}
+.blocos {{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; margin-top:8px; }}
+.bloco {{ background:#161D20; border:1px solid #263034; border-radius:14px; padding:16px 18px; }}
+.bloco h3 {{ font-size:11px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:#9AA7B2; margin:0 0 12px; }}
+.bloco ol {{ margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:9px; }}
+.bloco li {{ display:flex; align-items:baseline; gap:10px; }}
+.bloco .pos {{ color:#6B7681; font-size:12px; width:16px; }}
+.bloco a {{ font-weight:700; min-width:66px; }}
+.bloco .val {{ margin-left:auto; color:#EAEEF0; font-weight:600; font-variant-numeric:tabular-nums; }}
+tbody tr:hover td {{ background:#161D20; }}
+.rodape {{ color:#9AA7B2; font-size:12.5px; border-top:1px solid #1B2225; margin-top:26px; padding-top:12px; }}
+{CSS_MENU}
+{relatorio_html.CSS_MARCA}
+</style>
+</head>
+<body>
+<div class="pagina">
+  {relatorio_html.marca_html("index.html")}
+  {menu_html()}
+  <h1>Ações</h1>
+  <div class="meta">{len(acoes)} papéis de empresas do IBrX-100 · balanço (DFP/CVM), múltiplos e
+  proventos com fonte oficial · <a href="index.html">início</a> · atualizado em {agora.strftime("%d/%m/%Y %H:%M")}</div>
+  <input id="busca" type="search" placeholder="Busque por ticker, empresa ou setor… (ex.: PETR, bancos, energia)"
+   oninput="filtrar()">
+  <div class="filtros"><button class="filtro ativo" onclick="filtraClasse(this, '')">Todos</button>{botoes}</div>
+  <table id="acoes">
+    <thead><tr><th>papel</th><th>empresa</th><th>setor</th><th>preço (D-1)</th><th>12 meses</th><th>P/L</th><th>P/VP</th><th>DY 12m</th></tr></thead>
+    <tbody>{"".join(linhas)}</tbody>
+  </table>
+  <h2 class="rk-titulo">Rankings do dia</h2>
+  <div class="meta" style="margin:0 0 14px">fatos ordenados com critério explícito — não recomendação · retorno passado não garante futuro</div>
+  <div class="blocos">{rankings}</div>
+  <div class="rodape">Não é recomendação de investimento. Fontes: B3 e CVM — critérios públicos:
+  <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a> ·
+  <a href="apoie.html">apoie o projeto</a></div>
+</div>
+<script>
+let classeAtiva = '';
+function filtrar() {{
+  const termo = document.getElementById('busca').value.trim().toLowerCase();
+  document.querySelectorAll('#acoes tbody tr').forEach(tr => {{
+    const casaTermo = termo === '' || tr.dataset.busca.includes(termo);
+    const casaClasse = classeAtiva === '' || tr.dataset.classe === classeAtiva;
+    tr.hidden = !(casaTermo && casaClasse);
+  }});
+}}
+function filtraClasse(botao, classe) {{
+  classeAtiva = classe;
+  document.querySelectorAll('.filtro').forEach(b => b.classList.toggle('ativo', b === botao));
+  filtrar();
+}}
+// ?setor=X na URL pré-seleciona o filtro
+const classeUrl = new URLSearchParams(location.search).get('setor');
 if (classeUrl) {{
   const botao = Array.from(document.querySelectorAll('.filtro')).find(b => b.textContent === classeUrl);
   if (botao) filtraClasse(botao, classeUrl);

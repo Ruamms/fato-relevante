@@ -134,6 +134,31 @@ def _exibir_etf(con, ticker: str, html: bool) -> bool:
     return True
 
 
+def _exibir_acao(con, ticker: str, html: bool) -> bool:
+    """Ticker de ação (IBrX-100): gera a página da empresa e abre no navegador."""
+    from . import armazenamento
+    from .relatorio import acao_html
+
+    dados = acao_html.montar_dados_acao(con, ticker)
+    if dados is None:
+        return False
+    destino = armazenamento.diretorio_dados() / "relatorios"
+    destino.mkdir(parents=True, exist_ok=True)
+    caminho = destino / f"{dados['ticker']}.html"
+    caminho.write_text(acao_html.gerar(dados), encoding="utf-8")
+    console.print(
+        f"[bold]{dados['ticker']}[/] é uma ação ([green]{dados['empresa']['nome_pregao']}[/]) — "
+        f"página da empresa gerada em [dim]{caminho}[/]"
+    )
+    if html:
+        import webbrowser
+
+        webbrowser.open(caminho.as_uri())
+    else:
+        console.print(f"  [dim]abra com: scout analisar {dados['ticker']} --html[/]")
+    return True
+
+
 def _exibir_raio_x(ticker: str, html: bool = False, interativo: bool = False) -> bool:
     from . import analise, armazenamento
     from .relatorio.terminal import renderizar
@@ -149,6 +174,8 @@ def _exibir_raio_x(ticker: str, html: bool = False, interativo: bool = False) ->
         completo = analise.montar_completo(con, ticker)
         if completo is None:
             if _exibir_etf(con, ticker, html):
+                return True
+            if _exibir_acao(con, ticker, html):
                 return True
             console.print(
                 f"[red]Ticker '{ticker.strip().upper()}' não encontrado nos informes da CVM.[/] "

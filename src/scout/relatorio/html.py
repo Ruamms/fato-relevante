@@ -187,6 +187,7 @@ def menu_html() -> str:
         <a href="etfs.html?classe=Cripto">Cripto</a>
       </div>
     </div>
+    <a href="acoes.html">Ações</a>
     <a href="apoie.html">Apoiar</a>
   </nav>
 """
