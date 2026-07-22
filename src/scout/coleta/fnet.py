@@ -34,9 +34,12 @@ def _buscar_com_retry(requisicao, timeout: int, tentativas: int, consumir):
     esporádicos) e o `timed out` costuma estourar no read() do corpo, não no
     open — se a leitura ficar fora do retry, um stall transitório vira erro
     definitivo mesmo o FNET voltando 2s depois. `consumir(resposta)` faz a
-    leitura (json.load ou .read()). Espera 5s/20s entre tentativas e trata
-    também IncompleteRead ('Stream has ended unexpectedly')."""
+    leitura (json.load ou .read()). Backoff ~5s/20s COM JITTER e trata também
+    IncompleteRead ('Stream has ended unexpectedly'). O jitter é essencial no
+    lote paralelo: sem ele, os workers que estouram no mesmo momento re-tentam
+    em sincronia e re-martelam o FNET juntos, perpetuando o congestionamento."""
     import http.client
+    import random
     import time
     import urllib.error
 
@@ -48,7 +51,8 @@ def _buscar_com_retry(requisicao, timeout: int, tentativas: int, consumir):
         except (urllib.error.URLError, OSError, TimeoutError, http.client.HTTPException, EOFError) as erro:
             ultimo_erro = erro
             if tentativa < tentativas - 1:
-                time.sleep(5 * (tentativa + 1) ** 2)
+                base = 5 * (tentativa + 1) ** 2
+                time.sleep(base + random.uniform(0, base))  # jitter: espalha a re-tentativa
     raise ultimo_erro
 
 

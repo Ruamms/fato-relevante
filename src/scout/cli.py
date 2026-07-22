@@ -755,7 +755,12 @@ def ia_lote(
         # checagens antes de a IA começar. `executor.map` PRESERVA A ORDEM — o
         # consumidor pareia `fundos[i]` com o i-ésimo item da fila. Timeout
         # curto: um fundo que pendura vira erro e é retomado na próxima rodada.
-        _PREFETCH_WORKERS = 8  # benchmark real: 5,1x vs serial quando o FNET oscila
+        # 8 era o mais rápido (5,1x vs serial), mas sob carga SUSTENTADA (lote de
+        # 751) o FNET estrangula e devolve read-timeout em massa — poucos fundos
+        # (ex.: --apenas-erros) quase não davam timeout. 5 pressiona menos e
+        # segue ~4x mais rápido que serial; ajustável por SCOUT_PREFETCH_WORKERS.
+        import os as _os
+        _PREFETCH_WORKERS = max(1, int(_os.environ.get("SCOUT_PREFETCH_WORKERS", "5")))
         # O FNET oscila de forma intermitente: a mesma requisição ora responde
         # em 0,2s ora pendura (medido: o listar do MXRF11 deu timeout na 1ª e
         # voltou em 1,8s na 2ª). O que resolve é o RETRY — sem ele, um stall
