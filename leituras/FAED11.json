@@ -1,11 +1,11 @@
 {
   "ticker": "FAED11",
   "modelo": "qwen2.5:7b",
-  "gerada_em": "2026-07-21T01:00:54",
+  "gerada_em": "2026-07-22T09:55:15",
   "relatorio": {
-    "id": 1214318,
-    "data_entrega": "08/06/2026 18:54",
-    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Aquisição de Ativos:**\n   \"A aquisição do ativo de Valinhos (anexo a sede) ocorreu em 29/02/2024, impactando a distribuição de rendimentos em sua total proporção, considerando a nova receita mensal, bem como a finalização do pagamento das despesas relacionadas a nova aquisição devidamente parceladas, no mês de agosto de 2024 (comp. julho de 2024), conforme gráfico acima.\" (p. 8)\n\n2. **Vacância:**\n   \"Até a presente data, a taxa de ocupação do Fundo é de 100%.\" (p. 5)\n\n3. **Cotas e Distribuição:**\n   - Cotação de fechamento: R$160,20\n   - Volume: R$ 790.410,53\n   - Data base: 08/04/2026\n   - Data de pagamento: 15/04/2026\n   - Rendimento: 1,72 (Mês de competência: Mar/26) (p. 9)\n\n### O que observar em seguida:\n- Monitorar a finalização das despesas relacionadas à nova aquisição no mês de agosto de 2024.\n- Observar as distribuições mensais e os impactos na cotação do fundo."
+    "id": 1261611,
+    "data_entrega": "21/07/2026 20:28",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Aquisição de Ativos:**\n   \"A aquisição do ativo de Valinhos (anexo a sede) ocorreu em 29/02/2024, impactando a distribuição de rendimentos em sua total proporção, considerando a nova receita mensal, bem como a finalização do pagamento das despesas relacionadas a nova aquisição devidamente parceladas, no mês de agosto de 2024 (comp. julho de 2024).\" (p. 9)\n\n2. **Ocupação:**\n   \"Até a presente data, a taxa de ocupação do Fundo é de 100%.\" (p. 5)\n\n3. **Contratos de Locação:**\n   - Leme: Contrato de locação típico com vencimento em 2031.\n   - Valinhos: Contrato de locação típico com vencimento em 2031.\n   - Valinhos2 (Anexo a Sede Administrativa): Contrato de locação atípico com vencimento em 2028.\n   - Taboão da Serra: Contrato de locação típico com vencimento em 2031. (p. 4)\n\n### O que observar em seguida:\n- Monitorar a distribuição de rendimentos após a aquisição do ativo de Valinhos.\n- Verificar as taxas de ocupação e os contratos de locação dos imóveis, especialmente o contrato atípico de Valinhos2."
   },
   "comunicados": {
     "ids": [
@@ -29,6 +29,16 @@
     "texto": "### COMUNICADO AO MERCADO ENTREGUE EM 11/05/2026\n\n**Data:** 06 de maio de 2026  \n**O QUE aconteceu:** As contas anuais do FII Anhanguera Educacional foram aprovadas.  \n**Resumo:** A assembleia geral de cotistas realizada em 4 de maio de 2026 aprovou as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.  \n**Trecho-chave:**\n\"Na assembleia geral de cotistas realizada em 04 de maio de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\"\n\n### COMUNICADO AO MERCADO ENTREGUE EM 27/02/2026\n\n**Data:** 27 de fevereiro de 2026  \n**O QUE aconteceu:** A administradora informou que os Informes de Rendimentos referentes ao ano de 2025 serão disponibilizados exclusivamente por meio digital.  \n**Resumo:** A administradora do FII Anhanguera Educacional, BTG Pactual Serviços Financeiros S.A., informou que os Informes de Rendimentos dos Fundos indicados no anexo I estarão disponíveis apenas por meio digital a partir de 2026.  \n**Trecho-chave:**\n\"Com o intuito de reduzir os custos de impressão e correios para os Fundos, bem como minimizar o uso de papel e seus impactos para o meio ambiente, os Informes de Rendimentos referentes ao ano de 2025 já estão disponíveis aos investidores, conforme previsto na Instrução Normativa RFB nº 2.060/2021, exclusivamente por meio digital.\"\n\n### ASSEMBLEIA GERAL DE COTISTAS ENTREGUE EM 11/05/2026\n\n**Data:** 04 de maio de 2026  \n**O QUE aconteceu:** As contas anuais do FII Anhanguera Educacional foram aprovadas.  \n**Resumo:** A assembleia geral de cotistas realizada via manifestação de voto em 4 de maio de 2026 aprovou as contas e demonstrações contábeis do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.  \n**Trecho-chave:**\n\"Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n### ASSEMBLEIA GERAL DE COTISTAS ENTREGUE EM 24/04/2026\n\n**Data:** 01 de abril de 2026  \n**O QUE aconteceu:** A administradora convocou os cotistas para a assembleia geral com prazo até 4 de maio de 2026.  \n**Resumo:** A administradora do FII Anhanguera Educacional, BTG Pactual Serviços Financeiros S.A., convocou os cotistas para deliberarem sobre a aprovação das contas e demonstrações contábeis do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.  \n**Trecho-chave:**\n\"Aos Cotistas do FUNDO DE INVESTIMENTO IMOBILIARIO - FII ANHANGUERA EDUCACIONAL, a administradora convocou os cotistas para deliberarem sobre a aprovação das contas e demonstrações contábeis do Fundo referente ao exercício social encerrado em 31 de dezembro de 2025.\""
   },
   "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos irregulares"
+    ],
+    "cota": 152.97
+  },
+  "anterior": {
+    "gerada_em": "2026-07-21T01:00:54",
+    "relatorio_data": "08/06/2026 18:54",
     "selo": "Atenção",
     "nivel": "atencao",
     "alertas": [

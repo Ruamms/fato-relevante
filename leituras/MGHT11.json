@@ -1,7 +1,7 @@
 {
   "ticker": "MGHT11",
   "modelo": "qwen2.5:7b",
-  "gerada_em": "2026-07-21T04:57:36",
+  "gerada_em": "2026-07-22T09:57:31",
   "relatorio": {
     "id": 1204163,
     "data_entrega": "26/05/2026 18:36",
@@ -13,15 +13,15 @@
       976907,
       1200634,
       1027874,
-      1225591,
-      1225588
+      1261624,
+      1225591
     ],
     "datas": [
       "01/09/2025",
       "22/08/2025",
       "21/05/2026",
       "04/11/2025",
-      "22/06/2026",
+      "21/07/2026",
       "22/06/2026"
     ],
     "rotulos": [
@@ -32,7 +32,7 @@
       "Assembleia AGE",
       "Assembleia AGE"
     ],
-    "texto": "### FATO RELEVANTE entregue em 01/09/2025\n\n**O QUE aconteceu:** A administradora do fundo recebeu um pedido de convocação para uma Assembleia Geral Extraordinária (AGE) enviada por um cotista que representa aproximadamente 29,27% das cotas emitidas.\n\n**Resumo:** O cotista solicitou a convocação da AGE com o objetivo de substituir a atual gestora do fundo pela IGUANA INVESTIMENTOS LTDA.\n\n**Trecho-chave:**\n\"O Cotista Solicitante requer ao Administrador que seja convocada em até 30 (trinta) dias a contar do recebimento desta, a AGE do Fundo, na forma de Consulta Formal, para que os cotistas do Fundo possam deliberar a respeito das matérias descritas a seguir.\"\n\n### FATO RELEVANTE entregue em 22/08/2025\n\n**O QUE aconteceu:** A administradora e gestora do fundo informaram sobre a conclusão da operação de venda do imóvel localizado na Rua Aspicuelta, Vila Madalena, São Paulo.\n\n**Resumo:** O imóvel foi vendido por R$ 18.000.000,00, sendo R$ 12.000.000,00 pagos à vista e R$ 6.000.000,00 em parcelas mensais de R$ 500.000,00 corrigidas pelo IPCA.\n\n**Trecho-chave:**\n\"O valor total da transação foi de R$ 18.000.000,00 (dezoito milhões de reais), sendo: i. R$ 12.000.000,00 pagos à vista, na data da assinatura da escritura pública de compra e venda; ii. R$ 6.000.000,00 pagos em 12 parcelas mensais de R$ 500.000,00, corrigidas pelo IPCA.\"\n\n### COMUNICADO AO MERCADO entregue em 21/05/2026\n\n**O QUE aconteceu:** A administradora informou sobre a atualização da forma de divulgação da remuneração dos prestadores de serviços essenciais do fundo.\n\n**Resumo:** A atualização foi feita para adequar-se às diretrizes estabelecidas pelo Ofício-Circular CVM nº 1/2025, passando a ser divulgada exclusivamente por meio da Ferramenta ANBIMA (Plataforma de Transparência de Taxas).\n\n**Trecho-chave:**\n\"Considerando as interpretações adicionais divulgadas pelo Ofício-Circular Conjunto nº 1/2025/CVM/SIN/SSE, restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\"\n\n### COMUNICADO AO MERCADO entregue em 04/11/2025\n\n**O QUE aconteceu:** A administradora corrigiu uma data incorreta na ata de uma Assembleia Geral de Cotistas (AGC).\n\n**Resumo:** A transferência da gestão para a IGUANA INVESTIMENTOS LTDA. foi antecipada do dia 03 de novembro de 2025 para o dia 05 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Considerando o cronograma de eventos societários e aliado à proximidade do período de come-cotas, não foi possível acomodar tal transferência na referida data. Dessa forma, comunicamos que a transferência da gestão ocorrerá em 05 de dezembro de 2025.\"\n\n### ASSEMBLEIA AGE entregue em 22/06/2026\n\n**O QUE aconteceu:** A administradora convocou uma Assembleia Geral Extraordinária (AGE) para deliberar sobre o Termo Liberação de Parcela Retida, Transação e Outras Avenças celebrado com George Grafas.\n\n**Resumo:** A AGE tem como objetivo ratificar um acordo que envolve a liberação de parcelas retidas pelo fundo ao vendedor da The Pearl Hotel Ltda., George Grafas.\n\n**Trecho-chave:**\n\"1. Ratificar o “Termo Liberação de Parcela Retida, Transação e Outras Avenças” celebrado em 19 de junho de 2026, entre George Grafas e o Fundo, e, na qualidade de intervenientes anuentes The Pearl Hotel Ltda. e Hotel Pérola Búzios Ltda. EPP.\""
+    "texto": "### FATO RELEVANTE entregue em 01/09/2025\n\n**Data:** 01/09/2025  \n**Título:** Fundo recebe pedido de convocação para Assembleia Geral Extraordinária  \n**Resumo:** A Administradora do Fundo MGHT11 recebeu um pedido de convocação para uma Assembleia Geral Extraordinária (AGE) enviado por um cotista que representa aproximadamente 29,27% das cotas emitidas.  \n**Trecho-chave:**\n\"recebeu, nesta data, pedido de convocação para a realização de Assembleia Geral Extraordinária, enviado por um cotista que representa aproximandamente 29,27% das cotas emitidas do Fundo.\"\n\n### FATO RELEVANTE entregue em 22/08/2025\n\n**Data:** 22/08/2025  \n**Título:** Fundo conclui operação de venda de imóvel localizado na Vila Madalena, São Paulo  \n**Resumo:** A Administradora e a Gestora do Fundo MGHT11 informaram que concluíram a operação de venda do imóvel localizado à Rua Aspicuelta, nºs 235, 237, 245, 247, 251 e 259, Vila Madalena, São Paulo - SP.  \n**Trecho-chave:**\n\"Foi concluída nesta data a operação de venda do imóvel localizado à Rua Aspicuelta, nºs 235, 237, 245, 247, 251 e 259, Vila Madalena, São Paulo - SP.\"\n\n### COMUNICADO AO MERCADO entregue em 04/11/2025\n\n**Data:** 04/11/2025  \n**Título:** Data de transferência da gestão corretamente informada  \n**Resumo:** A Administradora do Fundo MGHT11 esclareceu que a data de transferência da gestão para IGUANA INVESTIMENTOS LTDA. foi corrigida de 3 de novembro para 5 de dezembro de 2025, devido a um equívoco na comunicação anterior.  \n**Trecho-chave:**\n\"considerando o cronograma de eventos societários e aliado à proximidade do período de come-cotas, não foi possível acomodar tal transferência na referida data . Dessa forma, comunicamos que a transferência da gestão ocorrerá em 05 de dezembro de 2025.\"\n\n### COMUNICADO AO MERCADO entregue em 21/05/2026\n\n**Data:** 21/05/2026  \n**Título:** Atualização da forma de divulgação da remuneração dos Prestadores de Serviços Essenciais  \n**Resumo:** A Administradora do Fundo MGHT11 informou que, por meio de um ato do administrador, atualizou a forma de divulgação da remuneração dos Prestadores de Serviços Essenciais, passando a utilizar a Ferramenta ANBIMA (Plataforma de Transparência de Taxas) como meio centralizado e adequado.  \n**Trecho-chave:**\n\"Considerando as interpretações adicionais divulgadas pelo Ofício-Circular Conjunto nº 1/2025/CVM/SIN/SSE, restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\"\n\n### ASSEMBLEIA AGE entregue em 22/06/2026\n\n**Data:** 22/06/2026  \n**Título:** Fundo realiza Assembleia Geral Extraordinária para ratificar acordo com George Grafas  \n**Resumo:** A Administradora do Fundo MGHT11 realizou uma Assembleia Geral Extraordinária (AGE) para ratificar o \"Termo Liberação de Parcela Retida, Transação e Outras Avenças\" celebrado entre George Grafas e o Fundo. O acordo prevê a quitação ao George Grafas com relação às ações judiciais existentes envolvendo o Fundo, exceto as ações sob nº 0230933-76.2014.8.19.0001 e nº 0113045-37.2024.8.19.0001 que seguirão sob responsabilidade de George Grafas.  \n**Trecho-chave:**\n\"Ratificar o “Termo Liberação de Parcela Retida, Transação e Outras Avenças” celebrado em 19 de junho de 2026, entre George Grafas e o Fundo.\"\n\n### ASSEMBLEIA AGE entregue em 21/07/2026\n\n**Data:** 21/07/2026  \n**Título:** Resultado da Assembleia Geral Extraordinária para ratificar acordo com George Grafas  \n**Resumo:** A Assembleia Geral Extraordinária do Fundo MGHT11 aprovou o \"Termo Liberação de Parcela Retida, Transação e Outras Avenças\" celebrado entre George Grafas e o Fundo. O quórum qualificado dos cotistas foi suficiente para aprovar a matéria colocada em deliberação.  \n**Trecho-chave:**\n\"Aprovação Não Aprovação Abstenção Resultado\nMatéria (i) 54,586% 0,545% 0,052% aprovada\""
   },
   "retrato": {
     "selo": "Atenção",
@@ -41,7 +41,7 @@
       "VP/cota em queda relevante",
       "Rendimentos irregulares"
     ],
-    "cota": 12.04
+    "cota": 11.59
   },
   "parecer": {
     "id": 999888,

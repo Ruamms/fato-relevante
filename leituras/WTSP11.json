@@ -1,11 +1,11 @@
 {
   "ticker": "WTSP11",
   "modelo": "qwen2.5:7b",
-  "gerada_em": "2026-07-21T01:43:02",
+  "gerada_em": "2026-07-22T09:55:59",
   "relatorio": {
-    "id": 1225173,
-    "data_entrega": "22/06/2026 09:17",
-    "texto": "### Fatos Extraídos do Relatório\n\n1. **Resultado Operacional:**\n   - O resultado operacional líquido do empreendimento totalizou aproximadamente R$ 9,28 milhões no mês de maio.\n   - A torre de escritórios registrou uma ocupação próxima a 95% e o hotel e centro de eventos mantiveram um desempenho consistente.\n\n2. **Distribuição de Rendimentos:**\n   - O Fundo gerou resultado de R$ 0,59 por cota e distribuiu R$ 0,60 por cota no período.\n   - No Shopping D&D, a ocupação atingiu 91,7%, permanecendo próxima dos maiores níveis históricos do empreendimento.\n\n3. **Vacância:**\n   - A vacância do complexo WTC permaneceu estável em 2,81%.\n\n4. **Obras e Reformas:**\n   - Não foram mencionadas obras ou reformas específicas no relatório.\n\n5. **Rendimentos e Dividend Yield:**\n   - O dividend yield anualizado foi de 11,10% a.a., com distribuição mensal de R$ 0,60 por cota.\n   - Não houve rendimentos declarados acima do resultado financeiro no mês.\n\n6. **Cotistas e Cotas:**\n   - O número de cotistas foi de 235, mantendo-se estável em relação ao último informe mensal.\n\n7. **Patrimônio Líquido:**\n   - O patrimônio líquido do Fundo foi de R$ 119,3M no mês de maio.\n\n8. **Indicadores Financeiros:**\n   - A cota patrimonial foi de R$ 94,40 e o valor da cota no mercado secundário foi de R$ 67,00.\n\n### O que Observar em Seguida:\n1. **Vacância:** Verificar se há mudanças na vacância nos próximos relatórios.\n2. **Ocupação do Shopping D&D:** Monitorar a ocupação e o desempenho do shopping, especialmente no período pós-Páscoa."
+    "id": 1261666,
+    "data_entrega": "22/07/2026 09:11",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Resultado Operacional**: O resultado operacional líquido do empreendimento totalizou aproximadamente R$ 5,6 milhões no mês de junho, com distribuição de R$ 0,77 por cota.\n2. **Desempenho dos Ativos Imobiliários**:\n   - **Hotel e Centro de Eventos**: Desempenho inferior ao observado nos meses anteriores, refletindo a sazonalidade do período e o impacto temporário da Copa do Mundo de Clubes sobre a demanda por eventos corporativos e hospedagem.\n   - **Torre de Escritórios**: A ocupação permaneceu próxima de 95%, reforçando o reposicionamento do ativo e a continuidade da elevada demanda pelos espaços do empreendimento.\n   - **Shopping D&D**: A ocupação permaneceu em patamar elevado, atingindo 91,7%, enquanto as receitas de aluguel permaneceram em linha com o orçamento e superiores às registradas no mesmo período de 2025.\n3. **Vacância**: A vacância do fundo é de 2,81%.\n4. **Rendimentos**: O resultado operacional líquido do mês foi R$ 921.968, distribuído em R$ 0,77 por cota.\n5. **Cotas Distribuídas e Cotistas**: O número de cotistas é de 232.\n\n### O que Observar Em Seguida:\n- A vacância do fundo permanece baixa, indicando boa ocupação dos imóveis.\n- O desempenho do Hotel e Centro de Eventos foi afetado pela sazonalidade e Copa do Mundo de Clubes, mas os outros ativos (torre de escritórios e shopping) apresentaram bons resultados."
   },
   "comunicados": {
     "ids": [
@@ -32,6 +32,18 @@
     "texto": "### FATO RELEVANTE entregue em 03/06/2026\n\n**O Fundo recebeu uma doação de um imóvel.**\nO Fundo Ourinvest RE I recebeu, a título de doação, uma fração correspondente a 9% do lote de terreno sob n° 251, no Jardim Edith, em São Paulo. O valor atribuído ao imóvel é de R$ 12.310,74.\n\n*\"A doação foi realizada de forma gratuita, sem qualquer ônus ou encargo financeiro para o Fundo.\"* (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 22/04/2026\n\n**Prestação de serviços de escrituração do Fundo será iniciada em maio de 2026.**\nA prestação de serviços de escrituração do Fundo, pela Vórtx Distribuidora de Títulos e Valores Mobiliários Ltda., será iniciada em 1º de maio de 2026.\n\n*\"O atendimento aos cotistas, bem como toda e qualquer comunicação relacionada aos serviços de escrituração do Fundo deverá ser direcionada à Vórtx.\"* (p. 1)\n\n### ASSEMBLEIA AGO entregue em 22/04/2026\n\n**Consulta formal aos cotistas sobre as demonstrações financeiras do Fundo foi aprovada.**\nA apuração da consulta formal aos cotistas sobre a aprovação das demonstrações financeiras do Fundo, referentes ao período encerrado em 31 de dezembro de 2025, resultou na aprovação pela maioria dos votos.\n\n*\"Foram recebidas respostas de cotistas que representam 12,63% do total de cotas emitidas, sendo que 12,63% aprovaram a matéria objeto da Carta Consulta.\"* (p. 1)\n\n### ASSEMBLEIA AGO entregue em 20/03/2026\n\n**Consulta formal aos cotistas sobre as demonstrações financeiras do Fundo foi enviada.**\nA Ourinvest RE I enviou uma consulta formal aos cotistas para a aprovação das demonstrações financeiras do Fundo, referentes ao período encerrado em 31 de dezembro de 2025.\n\n*\"O Administrador solicita a análise por V.Sa. e o seu posicionamento quanto à consulta ora formulada, até às 23h59 do dia 20.04.2026.\"* (p. 1)"
   },
   "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares",
+      "Base de cotistas muito pequena"
+    ],
+    "cota": 58.95
+  },
+  "anterior": {
+    "gerada_em": "2026-07-21T01:43:02",
+    "relatorio_data": "22/06/2026 09:17",
     "selo": "Atenção",
     "nivel": "atencao",
     "alertas": [

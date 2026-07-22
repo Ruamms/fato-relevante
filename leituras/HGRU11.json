@@ -1,7 +1,7 @@
 {
   "ticker": "HGRU11",
-  "modelo": "qwen2.5:14b",
-  "gerada_em": "2026-07-19T08:43:57",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-22T09:42:08",
   "relatorio": {
     "id": 1246173,
     "data_entrega": "13/07/2026 19:34",
@@ -14,8 +14,8 @@
       1201741,
       1228820,
       1204268,
-      1168459,
-      1168457
+      1261636,
+      1261635
     ],
     "datas": [
       "01/07/2026",
@@ -23,8 +23,8 @@
       "22/05/2026",
       "25/06/2026",
       "26/05/2026",
-      "23/04/2026",
-      "23/04/2026"
+      "21/07/2026",
+      "21/07/2026"
     ],
     "rotulos": [
       "Fato Relevante",
@@ -32,10 +32,10 @@
       "Fato Relevante",
       "Comunicado ao Mercado",
       "Comunicado ao Mercado",
-      "Assembleia AGO",
-      "Assembleia AGO"
+      "Assembleia AGE",
+      "Assembleia AGE"
     ],
-    "texto": "### FATO RELEVANTE entregue em 01/07/2026\n\n**O que aconteceu:** O Fundo HGRU11 adquiriu cinco imóveis no Leblon e um imóvel em São Bernardo do Campo.\n\n**Resumo:**\n- O Fundo realizou a compra de cinco imóveis comerciais no bairro do Leblon, Rio de Janeiro, por R$ 100.425.000,00.\n- Um sexto imóvel foi adquirido em São Bernardo do Campo, SP, por R$ 50.000.000,00.\n\n**Trechos-chave:**\n\"O Fundo celebrou, em 01 de julho de 2026, Compromisso de Venda e Compra (“CVC”) e Escrituras de Cessão de Direitos Aquisitivos (“Documentos Operação”), sujeito à superação de determinadas condições, que compreendem negócios interligados, tendo por objeto a aquisição de 5 (cinco) imóveis locados para varejo, situados no Leblon, no Rio de Janeiro/RJ, pelo montante de R$ 100.425.000,00.\" (p. 1)\n\n\"O Fundo concluiu, em 01 de julho de 2026, mediante a lavratura de escritura de compra e venda (“Escritura”), a aquisição do imóvel situado à Avenida Pereira Barreto, nº 1479, na cidade de São Bernardo do Campo, estado de São Paulo (“Imóvel”), com ABL total de 10.542,66m², locado para instituição de ensino superior por meio de contrato de locação atípico, pelo preço de R$ 50.000.000,00.\" (p. 3)\n\n---\n\n### FATO RELEVANTE entregue em 18/06/2026\n\n**O que aconteceu:** O Fundo HGRU11 será rebalanceado em relação a um índice internacional.\n\n**Resumo:**\n- A operação de rebalanceamento da carteira do índice internacional ocorrerá no dia 19 de junho de 2026.\n- Este é um processo periódico conforme metodologia do índice, com ajustes na composição da carteira.\n\n**Trechos-chave:**\n\"Em 19 de junho de 2026, haverá rebalanceamento de carteira de índice internacional, com possível ajuste de composição da carteira, da qual o Fundo é parte.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 25/06/2026\n\n**O que aconteceu:** O período de subscrição de sobras e montante adicional da oferta pública foi encerrado.\n\n**Resumo:**\n- Foram subscritas e integralizadas 9.851 novas cotas durante o período de subscrição.\n- Restaram 11.595.990 novas cotas que poderão ser subscritas pelos investidores no âmbito da oferta.\n\n**Trechos-chave:**\n\"De acordo com as informações recebidas da Administradora, na qualidade de escriturador do Fundo (“Escriturador”), durante o Período de Subscrição de Sobras e de Montante Adicional foram subscritas e integralizadas 9.851 (nove mil, oitocentas e cinquenta e uma) Novas Cotas.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 26/05/2026\n\n**O que aconteceu:** O regulamento do Fundo foi alterado para incluir a segregação das taxas devidas aos prestadores de serviços na Plataforma de Transparência de Taxas da ANBIMA.\n\n**Resumo:**\n- A alteração visa atender às diretrizes do Ofício-Circular-Conjunto nº 1/2025/CVM/SIN/SSE.\n- O novo regulamento está disponível na Plataforma de Transparência de Taxas no site da ANBIMA.\n\n**Trechos-chave:**\n\"Em atenção às diretrizes do Ofício-Circular-Conjunto nº 1/2025/CVM/SIN/SSE, o Administrador aprovou, por Instrumento Particular do Administrador, a alteração do regulamento do Fundo para incluir que a segregação das taxas devidas aos prestadores de serviços do Fundo passa a ser disponibilizada na Plataforma de Transparência de Taxas no endereço: https://data.anbima.com.br/busca/transparencia-de-taxas-de-fundos.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 23/04/2026\n\n**O que aconteceu:** O Administrador convocou a Assembleia Geral Ordinária para aprovar as demonstrações financeiras do Fundo referentes ao exercício social de 2025.\n\n**Resumo:**\n- A assembleia será realizada via consulta formal, com prazo final de votação em 25 de maio de 2026.\n- O Administrador informa que está à disposição para sanar dúvidas dos cotistas.\n\n**Trechos-chave:**\n\"O Administrador propõe a aprovação das matérias da Ordem do Dia. Ademais, o Administrador informa que está à disposição para sanar eventuais dúvidas por meio dos canais de atendimento disponibilizados no Edital de Convocação da Consulta Formal.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 23/04/2026\n\n**O que aconteceu:** O Administrador convoca os cotistas para votar nas demonstrações financeiras do Fundo referentes ao exercício social de 2025.\n\n**Resumo:**\n- Os cotistas devem declarar seu voto eletronicamente até às 12 horas do dia 25 de maio de 2026.\n- A aprovação da matéria depende da manifestação favorável da maioria dos votos dos cotistas que enviarem resposta à consulta formal.\n\n**Trechos-chave:**\n\"O Cotista poderá declarar seu voto por meio de plataforma de voto eletrônico específica (“Cuore”). Na data de 25 de maio de 2026 será encaminhado um e-mail para cada Cotista, conforme e-mail previamente cadastrado, com o link de acesso à plataforma.\" (p. 1)"
+    "texto": "### FATO RELEVANTE entregue em 01/07/2026\n\n**O que aconteceu:** Operações de compra de imóveis no Leblon e São Bernardo do Campo.\n\n**Resumo:** O fundo adquiriu dois conjuntos de imóveis localizados no Leblon, Rio de Janeiro, e em São Bernardo do Campo, SP. As transações envolveram a aquisição de lojas comerciais e um imóvel locado para ensino superior.\n\n**Trecho-chave:**\n\"O Fundo celebrou, em 01 de julho de 2026, Compromisso de Venda e Compra (“CVC”) e Escrituras de Cessão de Direitos Aquisitivos (“Documentos Operação”), sujeito à superação de determinadas condições...\"\n\n### FATO RELEVANTE entregue em 18/06/2026\n\n**O que aconteceu:** Rebalanceamento da carteira do índice internacional.\n\n**Resumo:** O fundo passará por um rebalanceamento de carteira conforme o índice internacional, com possibilidade de ajuste na composição da carteira. Este é um evento periódico.\n\n**Trecho-chave:**\n\"Em 19 de junho de 2026, haverá rebalanceamento de carteira de índice internacional, com possível ajuste de composição da carteira...\"\n\n### FATO RELEVANTE entregue em 22/05/2026\n\n**O que aconteceu:** Aprovação da 7ª emissão de cotas do fundo.\n\n**Resumo:** O fundo aprovou a realização da 7ª emissão de cotas, destinada exclusivamente a investidores profissionais. As novas cotas serão ofertadas sob o regime de melhores esforços de colocação.\n\n**Trecho-chave:**\n\"O Administrador e a Gestora aprovaram na presente data, o “Instrumento Particular de Deliberação Conjunta do Pátria Renda Urbana – Fundo de Investimento Imobiliário – Responsabilidade Limitada”...\"\n\n### COMUNICADO AO MERCADO entregue em 25/06/2026\n\n**O que aconteceu:** Encerramento do direito de subscrição de sobras e de montante adicional da oferta pública de distribuição.\n\n**Resumo:** O fundo encerrou o período de exercício do direito de subscrição de sobras e de montante adicional, com a subscrição integralizadas de 9.851 novas cotas.\n\n**Trecho-chave:**\n\"De acordo com as informações recebidas da Administradora, na qualidade de escriturador do Fundo (“Escriturador”), durante o Período de Subscrição de Sobras e de Montante Adicional foram subscritas e integralizadas 9.851 (nove mil, oitocentas e cinquenta e uma) Novas Cotas...\"\n\n### COMUNICADO AO MERCADO entregue em 26/05/2026\n\n**O que aconteceu:** Alteração do regulamento para a segregação das taxas devidas aos prestadores de serviços.\n\n**Resumo:** O fundo alterou seu regulamento para permitir a segregação das taxas devidas aos prestadores de serviços, disponibilizando essas informações na Plataforma de Transparência de Taxas.\n\n**Trecho-chave:**\n\"Em atenção às diretrizes do Ofício-Circular-Conjunto nº 1/2025/CVM/SIN/SSE, o Administrador aprovou, por Instrumento Particular do Administrador, a alteração do regulamento do Fundo para incluir que a segregação das taxas devidas aos prestadores de serviços do Fundo passa a ser disponibilizada na Plataforma de Transparência de Taxas...\"\n\n### ASSEMBLEIA AGE entregue em 21/07/2026\n\n**O que aconteceu:** Convocação para a Assembleia Geral Extraordinária de cotistas.\n\n**Resumo:** O fundo convocou uma assembleia extraordinária para deliberar sobre a realização da 7ª emissão de cotas, destinada exclusivamente a investidores profissionais.\n\n**Trecho-chave:**\n\"O BANCO GENIAL S.A., instituição financeira devidamente autorizada pela Comissão de Valores Mobiliários (“CVM”) por meio do Ato Declaratório CVM nº 15.455, de 13 de janeiro de 2017, para exercer a atividade de administração de carteira de valores mobiliários, com sede na cidade e Estado do Rio de Janeiro, na Praia de Botafogo, n° 228, sala 907 (parte), Botafogo, inscrita no CNPJ sob o nº 45.246.410/0001 -55, na qualidade de administrador fiduciário (“Administrador”) do PATRIA RENDA URBANA – FUNDO DE INVESTIMENTO IMOBILIÁRIO – RESPONSABILIDADE LIMITADA...\"\n\n### ASSEMBLEIA AGE entregue em 21/07/2026\n\n**O que aconteceu:** Edital de convocação para a Assembleia Geral Extraordinária.\n\n**Resumo:** O fundo publicou um edital de convocação para uma assembleia extraordinária, onde os cotistas serão consultados sobre a realização da 7ª emissão de cotas.\n\n**Trecho-chave:**\n\"O BANCO GENIAL S.A., instituição financeira devidamente autorizada pela Comissão de Valores Mobiliários (“CVM”) por meio do Ato Declaratório CVM nº 15.455, de 13 de janeiro de 2017, para exercer a atividade de administração de carteira de valores mobiliários, com sede na cidade e Estado do Rio de Janeiro, na Praia de Botafogo, nº 228, sala 907 (parte), Botafogo, inscrita no CNPJ sob o n º 45.246.410/0001-55, na qualidade de administrador fiduciário do Fundo (\"Administrador\"), conforme orientação do PÁTRIA INVESTIMENTOS LTDA., sociedade limitada, com sede no município de São Paulo, Estado de São Paulo, na Avenida Cidade Jardim, nº 803, 8º andar, sala A, habilitado para a administração de carteiras de fundos de investimento conforme Ato Declaratório CVM nº 11.789, de 06 de julho de 2011, inscrito no CNPJ sob o nº 12.461.756/0001-17, na qualidade de gestor do Fundo (\"Gestor\"), vem, por meio deste edital de convocação...\""
   },
   "retrato": {
     "selo": "Atenção",
@@ -43,7 +43,7 @@
     "alertas": [
       "Rendimentos acima do resultado financeiro"
     ],
-    "cota": null
+    "cota": 126.0
   },
   "parecer": {
     "id": 1238891,

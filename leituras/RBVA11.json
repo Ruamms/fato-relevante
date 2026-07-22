@@ -1,11 +1,11 @@
 {
   "ticker": "RBVA11",
   "modelo": "qwen2.5:7b",
-  "gerada_em": "2026-07-20T20:04:01",
+  "gerada_em": "2026-07-22T09:44:23",
   "relatorio": {
-    "id": 1260483,
-    "data_entrega": "20/07/2026 19:22",
-    "texto": "### Fatos Extraídos do Relatório\n\n1. **Locação de Novos Espaços:** O Fundo celebrou dois contratos com a M3 Storage, uma empresa de self storage, ocupando imóveis em Santos/SP e no Bom Retiro, São Paulo/SP. Estes imóveis somam aproximadamente 5.026 m².\n\n2. **Vacância:** A vacância física do Fundo passou a ser de 6,9% no fechamento de junho, com a saída do Santander do imóvel localizado na Av. Senador Flaquer, 305, em Santo André.\n\n3. **Inadimplência:** A locatária Goodbe, do imóvel Monções, encontra-se inadimplente e uma ação de despejo foi ajuizada para retomada do imóvel.\n\n4. **Distribuição de Rendimentos:** A distribuição mensal foi de R$ 0,09/cota, seguindo o guidance para o semestre, com resultados extraordinários.\n\n5. **Novas Locações:** Cinco novas locações foram realizadas no primeiro semestre, algumas ainda sujeitas a períodos de carência ou fases iniciais de maturação.\n\n6. **Alavancagem:** O Fundo possui uma alavancagem de 12,66% do patrimônio líquido, com CRI (Certificado de Recebíveis Imobiliários) a vencer em diferentes períodos até 2035.\n\n7. **Vacância e Inadimplência:** O Fundo está trabalhando na redução gradual da vacância, focando na qualidade de ocupação e diversificação do portfólio.\n\n8. **Cota Patrimonial:** A cota patrimonial do fundo é de R$ 10,68, com um valor de mercado de R$ 9,15 (12m: +8,28%).\n\n### O que Observar em Seguida:\n- Monitorar a evolução das novas locações e sua contribuição para o resultado recorrente.\n- Atentar-se à resolução da inadimplência Goodbe e seu impacto nos rendimentos."
+    "id": 1261677,
+    "data_entrega": "22/07/2026 09:35",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Locações Novas e Renovações:**\n   - O Fundo celebrou dois contratos de locação com a M3 Storage, empresa de self storage, para ocupação dos imóveis localizados em Santos/SP e no Bom Retiro, em São Paulo/SP.\n   - A renovação do contrato de locação do imóvel Cipó-Guaçu com a Caixa Econômica Federal foi formalizada.\n\n2. **Vacância:**\n   - A vacância física do Fundo passou a ser de 6,9% no fechamento de junho.\n   - O Fundo está atuando na comercialização dos espaços vagos, com avanços em diversas negociações.\n\n3. **Inadimplência:**\n   - A locatária Goodbe do imóvel Monções encontra-se inadimplente e ação de despejo foi ajuizada para retomada do imóvel.\n\n4. **Distribuição de Rendimentos:**\n   - A distribuição mensal foi de R$ 0,09/cota, seguindo o guidance para o semestre.\n   - O resultado recorrente estimado para o segundo semestre de 2026 foi revisado para aproximadamente R$ 0,062/cota.\n\n5. **Obras e Reformas:**\n   - Não há menção explícita a obras ou reformas em andamento no relatório.\n\n6. **Vacância e Inadimplência:**\n   - A vacância física do Fundo permanece estável em 6,97%.\n   - A inadimplência da locatária Goodbe foi mencionada, mas sem impacto relevante esperado nos rendimentos.\n\n7. **Patrimônio Líquido e Valor de Mercado:**\n   - O patrimônio líquido do Fundo é de R$ 1,667 bilhão.\n   - O valor de mercado dos imóveis é de R$ 2,37 milhões.\n\n8. **Risco de Alavancagem:**\n   - Não há risco percebido de o Fundo deixar de pagar a sua alavancagem, uma vez que os pagamentos são garantidos pelos aluguéis recebidos.\n   - A relação alavancagem/patrimônio líquido é de 12,66%.\n\n### O que observar em seguida:\n- Monitorar as negociações em andamento para alocar os espaços vagos e reduzir a vacância.\n- Observar o desfecho da inadimplência da locatária Goodbe."
   },
   "comunicados": {
     "ids": [
@@ -43,11 +43,11 @@
     "alertas": [
       "Rendimentos acima do resultado financeiro"
     ],
-    "cota": 9.15
+    "cota": 9.0
   },
   "anterior": {
-    "gerada_em": "2026-07-19T17:11:48",
-    "relatorio_data": "25/06/2026 22:06",
+    "gerada_em": "2026-07-20T20:04:01",
+    "relatorio_data": "20/07/2026 19:22",
     "selo": "Atenção",
     "nivel": "atencao",
     "alertas": [
