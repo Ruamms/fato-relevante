@@ -130,6 +130,8 @@ def gerar(
         for empresa in armazenamento.empresas_listadas(con)
         for papel in armazenamento.papeis_da_empresa(con, empresa["cod_cvm"])
     }
+    # comparação setorial: medianas por setor calculadas 1× para o build inteiro
+    medianas = acao_html.medianas_setor(con)
     acoes_publicadas = []
     for empresa in armazenamento.empresas_listadas(con):
         papeis_empresa = armazenamento.papeis_da_empresa(con, empresa["cod_cvm"])
@@ -140,7 +142,7 @@ def gerar(
             None,
         )
         for papel in papeis_empresa:
-            dados_acao = acao_html.montar_dados_acao(con, papel["ticker"])
+            dados_acao = acao_html.montar_dados_acao(con, papel["ticker"], medianas=medianas)
             if dados_acao is None or not dados_acao["cotacao"]:
                 continue  # papel sem pregão na base não gera página
             (destino / f"{papel['ticker']}.html").write_text(

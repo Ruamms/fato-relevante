@@ -160,6 +160,42 @@ def test_checklist_de_fatos_na_pagina(con):
     assert "ROE acima de 10%" in pagina and "Liquidez acima de R$ 2 milhões/dia" in pagina
 
 
+def test_medianas_setor_e_comparacao_nos_cards(con):
+    _semear_empresa(con)  # TSTA (Energia)
+    # +5 empresas do MESMO setor com P/L conhecidos → mediana com amostra ≥5
+    for i, lucro in enumerate((10e9, 10e9, 20e9, 40e9, 80e9)):
+        cod = f"88{i}"
+        con.execute(
+            "INSERT INTO empresas (cod_cvm, cnpj, radical, nome, nome_pregao, setor_b3,"
+            " situacao, no_ibrx100, acoes_total) VALUES (?, ?, ?, ?, ?, 'Energia / X / Y', 'ATIVO', 0, 1000000000)",
+            (cod, f"9900000000010{i}", f"EN{i}A", f"ENERGETICA {i}", f"EN{i}"),
+        )
+        con.execute(
+            "INSERT INTO papeis (ticker, cod_cvm, isin, tipo) VALUES (?, ?, '', 'ON')",
+            (f"EN{i}A3", cod),
+        )
+        con.execute(
+            "INSERT INTO fundamentos (cod_cvm, ano, lucro_liquido, patrimonio_liquido, receita)"
+            " VALUES (?, 2025, ?, 100e9, 50e9)", (cod, lucro),
+        )
+        con.execute(
+            "INSERT INTO cotacoes_meta (ticker, preco_atual, cotado_em, atualizado_em)"
+            " VALUES (?, 40.0, '2026-07-20', '2026-07-21')", (f"EN{i}A3",),
+        )
+    con.commit()
+    medianas = acao_html.medianas_setor(con, hoje=date(2026, 7, 21))
+    # P/L das 6 (com TSTA): [2.0(TSTA), 4.0, 4.0, 2.0, 1.0, 0.5] → mediana 2.0, n=6
+    mediana_pl, n = medianas["Energia"]["pl"]
+    assert n == 6 and mediana_pl == 2.0
+    # cards mostram a régua do setor (factual, com o tamanho da amostra)
+    dados = acao_html.montar_dados_acao(con, "TSTA4", hoje=date(2026, 7, 21), medianas=medianas)
+    pagina = acao_html.gerar(dados, agora=datetime(2026, 7, 21, 12, 0))
+    assert "mediana do setor: 2,00 (6 cias)" in pagina
+    # sem medianas pré-computadas (CLI), a página sai sem a régua — nunca inventa
+    dados_cli = acao_html.montar_dados_acao(con, "TSTA4", hoje=date(2026, 7, 21))
+    assert dados_cli["setor_stats"] == {}
+
+
 def test_home_tem_pills_de_setor_das_acoes(con):
     _semear_empresa(con)
     dados = acao_html.montar_dados_acao(con, "TSTA4", hoje=date(2026, 7, 21))

@@ -42,9 +42,64 @@ _RODAPE = (
 )
 
 
-def montar_dados_acao(con: sqlite3.Connection, ticker: str, hoje: date | None = None) -> dict | None:
+_MIN_EMPRESAS_SETOR = 5  # mediana de setor só com amostra decente — senão mente
+
+_CAMPOS_SETOR = ("pl", "pvp", "dy", "roe", "margem_liquida")
+
+
+def medianas_setor(con: sqlite3.Connection, hoje: date | None = None) -> dict[str, dict]:
+    """{setor: {campo: (mediana, n)}} sobre TODAS as empresas da base — a régua
+    de comparação dos cards. Mediana (não média: outlier de small cap distorce)
+    e só com ≥{_MIN_EMPRESAS_SETOR} empresas com o dado. 1 papel por empresa
+    (o primeiro com preço) — a empresa não pode contar duas vezes no setor."""
+    import statistics
+
+    from ..coleta import fundamentos as modulo_fundamentos
+
+    hoje = hoje or date.today()
+    valores: dict[str, dict[str, list[float]]] = {}
+    for empresa in armazenamento.empresas_listadas(con):
+        setor = _setor_curto(empresa)
+        if not setor or setor == "—":
+            continue
+        balancos = armazenamento.fundamentos_da_empresa(con, empresa["cod_cvm"])
+        if not balancos:
+            continue
+        ind = modulo_fundamentos.indicadores(balancos[-1])
+        mult: dict = {}
+        for papel in armazenamento.papeis_da_empresa(con, empresa["cod_cvm"]):
+            m = modulo_fundamentos.multiplos_do_papel(con, papel["ticker"], hoje)
+            if m.get("pl") is not None or m.get("pvp") is not None or m.get("dy") is not None:
+                mult = m
+                break
+        candidatos = {
+            "pl": mult.get("pl"), "pvp": mult.get("pvp"), "dy": mult.get("dy"),
+            "roe": ind.get("roe"), "margem_liquida": ind.get("margem_liquida"),
+        }
+        alvo = valores.setdefault(setor, {campo: [] for campo in _CAMPOS_SETOR})
+        for campo, valor in candidatos.items():
+            if valor is not None:
+                alvo[campo].append(valor)
+    return {
+        setor: {
+            campo: (statistics.median(lista), len(lista))
+            for campo, lista in campos.items()
+            if len(lista) >= _MIN_EMPRESAS_SETOR
+        }
+        for setor, campos in valores.items()
+    }
+
+
+def montar_dados_acao(
+    con: sqlite3.Connection,
+    ticker: str,
+    hoje: date | None = None,
+    medianas: dict[str, dict] | None = None,
+) -> dict | None:
     """Reúne tudo que a página da ação precisa; None se o ticker não for um
-    papel conhecido (escopo v1 = IBrX-100)."""
+    papel conhecido. `medianas` = medianas_setor() pré-computadas (o build do
+    site calcula 1×; sem elas, a comparação setorial fica de fora — o CLI de
+    um papel só não paga o custo da base toda)."""
     from ..coleta import fundamentos as modulo_fundamentos
 
     hoje = hoje or date.today()
@@ -133,6 +188,7 @@ def montar_dados_acao(con: sqlite3.Connection, ticker: str, hoje: date | None = 
     ).fetchall()
 
     return {
+        "setor_stats": (medianas or {}).get(_setor_curto(empresa), {}),
         "trimestres_lucro": trimestres_lucro,
         "proventos_por_ano": proventos_ano,
         "preco_fim_ano": preco_fim_ano,
@@ -396,8 +452,17 @@ def gerar(
         return ""
 
     cards = []
+    setor_stats = dados.get("setor_stats") or {}
+    setor_nome = _setor_curto(empresa)
 
-    def _card(nome: str, valor: str, extra: str = "") -> None:
+    def _card(nome: str, valor: str, extra: str = "", campo_setor: str | None = None) -> None:
+        # comparação setorial: mediana do setor na nossa base (≥5 empresas com
+        # o dado) — régua factual, não julgamento ("acima da mediana" ≠ caro/barato)
+        if campo_setor and campo_setor in setor_stats:
+            mediana, n = setor_stats[campo_setor]
+            fmt = formato.percentual if campo_setor in ("dy", "roe", "margem_liquida") else formato.decimal
+            linha_setor = f"mediana do setor: {fmt(mediana)} ({n} cias)"
+            extra = f"{extra} · {linha_setor}" if extra else linha_setor
         extra_html = f'<div class="extra">{extra}</div>' if extra else ""
         cards.append(
             f'<div class="card"><div class="nome">{nome}{_ajuda(nome)}</div>'
@@ -417,19 +482,20 @@ def gerar(
             if mult.get("lucro_base") == "ttm"
             else "último anual"
         )
-        _card("P/L", formato.decimal(mult["pl"]), f"preço ÷ lucro por ação ({base_lucro})")
+        _card("P/L", formato.decimal(mult["pl"]), f"preço ÷ lucro por ação ({base_lucro})", campo_setor="pl")
     elif ultimo is not None and (ultimo["lucro_liquido"] or 0) <= 0:
         _card("P/L", "—", "empresa em prejuízo no último anual: P/L não se aplica")
     if mult.get("pvp") is not None:
-        _card("P/VP", formato.decimal(mult["pvp"]), "preço ÷ valor patrimonial por ação")
+        _card("P/VP", formato.decimal(mult["pvp"]), "preço ÷ valor patrimonial por ação", campo_setor="pvp")
     if mult.get("dy") is not None and mult.get("preco"):
         _card("Dividend yield 12m", formato.percentual(mult["dy"]),
-              f"R$ {formato.decimal(mult.get('proventos_12m') or 0)}/ação em proventos (data-com)")
+              f"R$ {formato.decimal(mult.get('proventos_12m') or 0)}/ação em proventos (data-com)",
+              campo_setor="dy")
     if ind.get("roe") is not None:
-        _card("ROE", formato.percentual(ind["roe"]), f"lucro ÷ patrimônio · anual {ultimo['ano']}")
+        _card("ROE", formato.percentual(ind["roe"]), f"lucro ÷ patrimônio · anual {ultimo['ano']}", campo_setor="roe")
     if ind.get("margem_liquida") is not None:
         _card("Margem líquida", formato.percentual(ind["margem_liquida"]),
-              f"lucro ÷ receita · anual {ultimo['ano']}")
+              f"lucro ÷ receita · anual {ultimo['ano']}", campo_setor="margem_liquida")
     if ind.get("ebitda") is not None:
         _card("EBITDA", formato.moeda_compacta(ind["ebitda"]),
               f"margem {formato.percentual(ind['margem_ebitda'])} · anual {ultimo['ano']}"
