@@ -299,6 +299,20 @@ def _home(
         f'<a class="pill" href="etfs.html?classe={_e(classe)}">{_e(classe)} <b>{total}</b></a>'
         for classe, total in sorted(classes_etf.items(), key=lambda kv: -kv[1])
     )
+    # pills de SETOR das ações (mesmo padrão das classes de ETF): linkam a
+    # acoes.html?setor=X, que pré-seleciona o filtro
+    from .acao_html import _setor_curto
+
+    setores_acoes: dict[str, int] = {}
+    for dados in acoes:
+        setor = _setor_curto(dados["empresa"])
+        if setor and setor != "—":
+            setores_acoes[setor] = setores_acoes.get(setor, 0) + 1
+    pills_acoes = " ".join(
+        f'<a class="pill" href="acoes.html?setor={_e(setor)}">{_e(setor)} <b>{total}</b></a>'
+        for setor, total in sorted(setores_acoes.items(), key=lambda kv: -kv[1])
+    )
+
     # chips de tipo do FII (papel/tijolo/híbrido/FoF), na ordem de relevância
     tipos_fii_contagem: dict[str, int] = {}
     for resumo in fundos:
@@ -420,6 +434,7 @@ input#busca:focus {{ outline:2px solid #8FCB9B; outline-offset:1px; border-color
       mais líquidas da bolsa (IBrX-100) — validamos a qualidade antes de expandir para as demais.
       Não achou uma empresa? É isso, não é erro.</p>
       <a class="btn" href="acoes.html">ver todas as ações</a>
+      <div style="margin-top:10px">{pills_acoes}</div>
     </div>''' if acoes else ""}
   </div>
 

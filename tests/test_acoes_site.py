@@ -138,6 +138,14 @@ def test_historico_de_proventos_com_dy(con):
     assert "DY 4,55%" in pagina
 
 
+def test_home_tem_pills_de_setor_das_acoes(con):
+    _semear_empresa(con)
+    dados = acao_html.montar_dados_acao(con, "TSTA4", hoje=date(2026, 7, 21))
+    home = modulo_site._home([], [], datetime(2026, 7, 21, 12, 0), {}, [dados])
+    # pill de setor linkando a listagem com o filtro pré-selecionado (?setor=)
+    assert '<a class="pill" href="acoes.html?setor=Energia">Energia <b>1</b></a>' in home
+
+
 def test_comparador_de_acoes(con):
     _semear_empresa(con)
     dados = acao_html.montar_dados_acao(con, "TSTA4", hoje=date(2026, 7, 21))
