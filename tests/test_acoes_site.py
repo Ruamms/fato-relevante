@@ -91,8 +91,9 @@ def test_indice_acoes_lista_e_rankings(con):
     dados = acao_html.montar_dados_acao(con, "TSTA4", hoje=date(2026, 7, 21))
     pagina = modulo_site._indice_acoes([dados], datetime(2026, 7, 21, 12, 0))
     assert "1 papéis de <b>todas as companhias listadas em bolsa na B3</b>" in pagina
-    # aviso de cobertura completa com honestidade sobre buracos de dado
-    assert "Cobertura completa" in pagina and "nunca número inventado" in pagina
+    # aviso de cobertura com honestidade sobre buracos de dado (sem changelog interno)
+    assert "todas as companhias listadas em bolsa na B3" in pagina
+    assert "nunca número inventado" in pagina and "22/07/2026" not in pagina
     assert 'href="TSTA4.html"' in pagina and "TESTECO" in pagina
     assert "Energia" in pagina  # setor curto (1º nível)
     assert "Maior dividend yield 12m" in pagina and "Menor P/L (com lucro)" in pagina

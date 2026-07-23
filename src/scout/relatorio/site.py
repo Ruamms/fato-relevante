@@ -435,9 +435,8 @@ input#busca:focus {{ outline:2px solid #8FCB9B; outline-offset:1px; border-color
       <div class="num">{len(acoes)}</div>
       <p>Balanço oficial (DFP/CVM), múltiplos por papel (P/L, P/VP, DY), ROE, EBITDA,
       proventos e red flags societárias — e as regras da classe explicadas para leigo.</p>
-      <p style="color:#6B7681;font-size:12px;margin-top:-6px">cobertura: todas as companhias
-      listadas em bolsa na B3 (validada primeiro nas 100 mais líquidas, expandida em 22/07/2026).
-      Empresa com pouco dado mostra "—"/"não avaliada" — nunca número inventado.</p>
+      <p style="color:#6B7681;font-size:12px;margin-top:-6px">todas as companhias listadas em
+      bolsa na B3 — onde falta dado oficial, mostramos "—", nunca número inventado.</p>
       <div class="linha-acoes"><a class="btn" href="acoes.html">ver todas as ações</a></div>
       <div class="chips">{pills_acoes}</div>
     </div>''' if acoes else ""}
@@ -823,9 +822,9 @@ tbody tr:hover td {{ background:#161D20; }}
   (DFP/CVM), múltiplos e proventos com fonte oficial · <a href="comparar-acoes.html">comparar ações</a> ·
   <a href="index.html">início</a> · atualizado em {agora.strftime("%d/%m/%Y %H:%M")}</div>
   <div class="meta" style="background:#161D20;border:1px solid #263034;border-radius:10px;padding:10px 14px;margin-bottom:4px">
-  <b>Cobertura completa:</b> todas as companhias de bolsa da B3 (o motor foi validado primeiro nas 100
-  mais líquidas e expandido em 22/07/2026). Small caps têm mais buraco de dado — onde falta, mostramos
-  "—" ou "não avaliada", <b>nunca número inventado</b>. Sentiu falta de uma empresa ou viu dado estranho?
+  Cobrimos <b>todas as companhias listadas em bolsa na B3</b> (BDRs ficam de fora por enquanto).
+  Small caps têm mais buraco de dado — onde falta, mostramos "—" ou "não avaliada",
+  <b>nunca número inventado</b>. Sentiu falta de uma empresa ou viu dado estranho?
   <a href="https://github.com/Ruamms/scout/issues">avise aqui</a>.</div>
   <input id="busca" type="search" placeholder="Busque por ticker, empresa ou setor… (ex.: PETR, bancos, energia)"
    oninput="filtrar()">
