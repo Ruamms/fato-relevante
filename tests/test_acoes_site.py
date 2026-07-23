@@ -57,6 +57,13 @@ def test_quem_manda_cruza_a_mesma_pessoa_em_outras_empresas(con):
     con.execute(
         "INSERT INTO papeis (ticker, cod_cvm, isin, tipo) VALUES ('OTRA3', '8888', 'BROTRAACNOR1', 'ON')"
     )
+    con.execute(
+        "INSERT INTO empresas (cod_cvm, cnpj, radical, nome, nome_pregao, situacao)"
+        " VALUES ('7777', '55444333000122', 'ANTG', 'ANTIGA S.A.', 'ANTIGACO', 'ATIVO')"
+    )
+    con.execute(
+        "INSERT INTO papeis (ticker, cod_cvm, isin, tipo) VALUES ('ANTG3', '7777', 'BRANTGACNOR2', 'ON')"
+    )
     con.executemany(
         "INSERT INTO administradores (cod_cvm, nome, orgao, cargo, cpf) VALUES (?, ?, ?, ?, ?)",
         [
@@ -71,17 +78,36 @@ def test_quem_manda_cruza_a_mesma_pessoa_em_outras_empresas(con):
             ("8888", "MARIA SEM CPF", "Conselho Fiscal", "C.F.(Suplente)", None),
         ],
     )
+    # carreira: CONSELHEIRA X esteve na ANTIGACO em 2018–2021 (só nos FREs antigos)
+    con.executemany(
+        "INSERT INTO administradores_hist (cod_cvm, ano, nome, cpf, orgao, cargo) VALUES (?, ?, ?, ?, ?, ?)",
+        [
+            ("7777", 2018, "CONSELHEIRA X", "12345678901", "Conselho de Administração", "Conselheiro"),
+            ("7777", 2021, "CONSELHEIRA X", "12345678901", "Conselho de Administração", "Conselheiro"),
+            # na OTRA ela é do quadro VIGENTE: o registro antigo não duplica a entrada
+            ("8888", 2020, "CONSELHEIRA X", "12345678901", "Conselho Fiscal", "C.F.(Efetivo)"),
+        ],
+    )
     con.commit()
     dados = acao_html.montar_dados_acao(con, "TSTA4", hoje=date(2026, 7, 21))
-    assert dados["adm_tambem_em"] == {
-        "CONSELHEIRA X": ["OTRA3"],
-        "MARIA SEM CPF": ["OTRA3"],
-    }
+    cruz = dados["adm_tambem_em"]
+    assert set(cruz) == {"CONSELHEIRA X", "MARIA SEM CPF"}  # homônimo NÃO cruzou
+    assert [e["ticker"] for e in cruz["CONSELHEIRA X"]] == ["OTRA3", "ANTG3"]
+    vigente, passada = cruz["CONSELHEIRA X"]
+    assert vigente["anos"] == "" and "Também está na OUTRACO hoje" in vigente["titulo"]
+    assert passada["anos"] == " (2018–2021)"
+    # o tooltip conta o período e o cargo: "Trabalhou na ... entre ... como ..."
+    assert "Trabalhou na ANTIGACO entre 2018 e 2021 como Conselheiro" in passada["titulo"]
+
     pagina = acao_html.gerar(
-        dados, agora=datetime(2026, 7, 21, 12, 0), publicados={"TSTA4", "OTRA3"}
+        dados, agora=datetime(2026, 7, 21, 12, 0), publicados={"TSTA4", "OTRA3", "ANTG3"}
     )
     assert "<th>também em</th>" in pagina
     assert 'href="OTRA3.html"' in pagina  # a página conversa com a da outra empresa
+    # 2+ empresas: a 1ª aparece direto e as demais ficam atrás do "+N"
+    assert ">+1</button>" in pagina
+    assert 'hidden' in pagina and 'ANTG3</a> (2018–2021)' in pagina
+    assert "function verOutras" in pagina
     # o CPF é SÓ chave de cruzamento — nunca aparece na página
     for cpf in ("12345678901", "11111111111", "22222222222"):
         assert cpf not in pagina

@@ -256,6 +256,7 @@ def _executar_atualizacao(con) -> None:
         ("balanços (DFP)", lambda p: fundamentos.atualizar(con, ao_progredir=p)),
         ("trimestres (ITR)", lambda p: fundamentos.atualizar_trimestres(con, ao_progredir=p)),
         ("FRE (administradores/partes)", lambda p: fre.atualizar(con, ao_progredir=p)),
+        ("carreira (FREs antigos)", lambda p: fre.atualizar_historico(con, ao_progredir=p)),
         ("bancos (IF.data)", lambda p: bancos.atualizar_bancos(con, ao_progredir=p)),
         ("cotações da B3", lambda p: b3.atualizar(con, ao_progredir=p)),
         ("ETFs listados", lambda p: b3fundos.atualizar_etfs(con, ao_progredir=p)),

@@ -110,6 +110,17 @@ CREATE TABLE IF NOT EXISTS administradores (
                               -- empresas (dado público da CVM) — NUNCA exibido
     PRIMARY KEY (cod_cvm, nome, cargo)
 );
+CREATE TABLE IF NOT EXISTS administradores_hist (
+    cod_cvm TEXT NOT NULL,
+    ano     INTEGER NOT NULL,  -- ano do zip FRE (anos passados são imutáveis)
+    nome    TEXT NOT NULL,
+    cpf     TEXT,              -- só dígitos; USO INTERNO no cruzamento — nunca exibido
+    orgao   TEXT,
+    cargo   TEXT,
+    PRIMARY KEY (cod_cvm, ano, nome, cargo)
+);
+CREATE INDEX IF NOT EXISTS idx_adm_hist_cpf ON administradores_hist (cpf);
+CREATE INDEX IF NOT EXISTS idx_adm_hist_nome ON administradores_hist (nome);
 CREATE TABLE IF NOT EXISTS partes_relacionadas (
     cod_cvm   TEXT NOT NULL,
     parte     TEXT NOT NULL,

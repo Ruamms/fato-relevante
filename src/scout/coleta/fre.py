@@ -178,6 +178,101 @@ def carregar_zip(con: sqlite3.Connection, conteudo: bytes, cnpj_para_cod: dict[s
     return n_adm, n_partes
 
 
+ANO_INICIAL_FRE = 2010  # primeiro ano do dataset FRE nos dados abertos
+
+
+def carregar_zip_historico(
+    con: sqlite3.Connection, conteudo: bytes, cnpj_para_cod: dict[str, str], ano: int
+) -> int:
+    """Guarda a fotografia do quadro de administradores do FRE de um ANO
+    passado — é o que permite dizer onde a pessoa JÁ esteve (a tabela
+    `administradores` só tem o FRE vigente). Última versão por companhia."""
+    from .. import armazenamento
+
+    zf = zipfile.ZipFile(io.BytesIO(conteudo))
+
+    def _ler():
+        nome = next((n for n in zf.namelist() if "administrador_membro" in n.lower()), None)
+        if not nome:
+            return
+        with zf.open(nome) as f:
+            yield from csv.DictReader(io.TextIOWrapper(f, encoding="latin-1"), delimiter=";")
+
+    versoes: dict[str, int] = {}
+    for linha in _ler():
+        cod = cnpj_para_cod.get(armazenamento.so_digitos(linha.get("CNPJ_Companhia") or ""))
+        if cod is None:
+            continue
+        versao = int(linha.get("Versao") or 1)
+        if versao > versoes.get(cod, 0):
+            versoes[cod] = versao
+
+    total = 0
+    codigos_limpos: set[str] = set()
+    for linha in _ler():
+        cod = cnpj_para_cod.get(armazenamento.so_digitos(linha.get("CNPJ_Companhia") or ""))
+        if cod is None or int(linha.get("Versao") or 1) != versoes.get(cod):
+            continue
+        nome = (linha.get("Nome") or "").strip()
+        if not nome:
+            continue
+        if cod not in codigos_limpos:
+            con.execute(
+                "DELETE FROM administradores_hist WHERE cod_cvm = ? AND ano = ?", (cod, ano)
+            )
+            codigos_limpos.add(cod)
+        con.execute(
+            """
+            INSERT OR REPLACE INTO administradores_hist (cod_cvm, ano, nome, cpf, orgao, cargo)
+            VALUES (?, ?, ?, ?, ?, ?)
+            """,
+            (
+                cod, ano, nome,
+                armazenamento.so_digitos(linha.get("CPF") or "") or None,
+                (linha.get("Orgao_Administracao") or "").strip() or None,
+                (linha.get("Cargo_Eletivo_Ocupado") or "").strip() or None,
+            ),
+        )
+        total += 1
+    con.commit()
+    return total
+
+
+def atualizar_historico(con: sqlite3.Connection, hoje: date | None = None, ao_progredir=None) -> str | None:
+    """Backfill dos FREs de anos PASSADOS (imutáveis: 1 download por ano, para
+    sempre). O ano corrente fica com o `atualizar` normal."""
+    from .. import armazenamento
+
+    hoje = hoje or date.today()
+    cnpj_para_cod = {
+        armazenamento.so_digitos(l["cnpj"]): str(l["cod_cvm"])
+        for l in con.execute("SELECT cnpj, cod_cvm FROM empresas")
+    }
+    if not cnpj_para_cod:
+        return None
+    carregados = {l[0] for l in con.execute("SELECT arquivo FROM cargas")}
+    total = anos = 0
+    for ano in range(ANO_INICIAL_FRE, hoje.year):
+        marcador = f"FRE_HIST_{ano}"
+        if marcador in carregados:
+            continue
+        conteudo = _baixar(ano)
+        if not conteudo:
+            continue  # fora do ar: tenta de novo na próxima rodada (sem marcador)
+        total += carregar_zip_historico(con, conteudo, cnpj_para_cod, ano)
+        anos += 1
+        con.execute(
+            "INSERT OR REPLACE INTO cargas (arquivo, carregado_em) VALUES (?, ?)",
+            (marcador, hoje.isoformat()),
+        )
+        con.commit()
+        if ao_progredir:
+            ao_progredir(f"FRE {ano}: quadro histórico carregado")
+    if not anos:
+        return None
+    return f"carreira: {total} registros de administradores em {anos} FREs antigos"
+
+
 def atualizar(con: sqlite3.Connection, hoje: date | None = None, ao_progredir=None) -> str | None:
     """Baixa o FRE do ano corrente (fallback: anterior) para as empresas do
     escopo. Incremental por marcador anual — 1 download leve por ano."""

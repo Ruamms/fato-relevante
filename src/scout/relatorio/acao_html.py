@@ -189,34 +189,72 @@ def montar_dados_acao(
 
     # a MESMA pessoa no FRE de outras empresas que cobrimos — chave é o CPF
     # (dado público do FRE, usado SÓ aqui, nunca exibido); sem CPF de um dos
-    # lados, vale o nome completo idêntico
-    tambem_em: dict[str, list[str]] = {}
+    # lados, vale o nome completo idêntico. O quadro VIGENTE entra sem sufixo;
+    # passagens registradas só em FREs antigos entram com a faixa de anos
+    tambem_em: dict[str, list[dict]] = {}
     if administradores:
         nomes = sorted({a["nome"] for a in administradores})
         cpfs = sorted({a["cpf"] for a in administradores if a["cpf"]})
         filtro_cpf = f" OR cpf IN ({','.join('?' * len(cpfs))})" if cpfs else ""
+        filtro_nomes = f"nome IN ({','.join('?' * len(nomes))})"
+        parametros = (empresa["cod_cvm"], *nomes, *cpfs)
         outros = con.execute(
-            "SELECT DISTINCT nome, cpf, cod_cvm FROM administradores"
-            f" WHERE cod_cvm <> ? AND (nome IN ({','.join('?' * len(nomes))}){filtro_cpf})",
-            (empresa["cod_cvm"], *nomes, *cpfs),
+            "SELECT DISTINCT nome, cpf, cod_cvm, orgao, cargo FROM administradores"
+            f" WHERE cod_cvm <> ? AND ({filtro_nomes}{filtro_cpf})",
+            parametros,
+        ).fetchall()
+        historico = con.execute(
+            "SELECT DISTINCT nome, cpf, cod_cvm, ano, cargo FROM administradores_hist"
+            f" WHERE cod_cvm <> ? AND ({filtro_nomes}{filtro_cpf})",
+            parametros,
         ).fetchall()
         ticker_da_empresa: dict[str, str] = {}
-        for cod in {o["cod_cvm"] for o in outros}:
+        nome_da_empresa: dict[str, str] = {}
+        for cod in {o["cod_cvm"] for o in outros} | {h["cod_cvm"] for h in historico}:
             papel_outro = next(iter(armazenamento.papeis_da_empresa(con, cod)), None)
             if papel_outro:
                 ticker_da_empresa[cod] = papel_outro["ticker"]
+                outra = con.execute(
+                    "SELECT nome_pregao, nome FROM empresas WHERE cod_cvm = ?", (cod,)
+                ).fetchone()
+                nome_da_empresa[cod] = (outra["nome_pregao"] or outra["nome"] or "") if outra else ""
+
+        def _mesma_pessoa(a, outro) -> bool:
+            if a["cpf"] and outro["cpf"]:
+                return a["cpf"] == outro["cpf"]
+            return outro["nome"] == a["nome"]
+
         for a in administradores:
-            achados = {
-                ticker_da_empresa[o["cod_cvm"]]
-                for o in outros
-                if o["cod_cvm"] in ticker_da_empresa
-                and (
-                    (a["cpf"] and o["cpf"] and a["cpf"] == o["cpf"])
-                    or ((not a["cpf"] or not o["cpf"]) and o["nome"] == a["nome"])
-                )
-            }
-            if achados:
-                tambem_em[a["nome"]] = sorted(achados)
+            atuais: dict[str, sqlite3.Row] = {}
+            for o in outros:
+                if o["cod_cvm"] in ticker_da_empresa and _mesma_pessoa(a, o):
+                    atuais.setdefault(o["cod_cvm"], o)
+            passagens: dict[str, list[sqlite3.Row]] = {}
+            for h in historico:
+                if h["cod_cvm"] in ticker_da_empresa and h["cod_cvm"] not in atuais and _mesma_pessoa(a, h):
+                    passagens.setdefault(h["cod_cvm"], []).append(h)
+            entradas = []
+            for cod in sorted(atuais, key=ticker_da_empresa.get):
+                o = atuais[cod]
+                cargo_o = o["cargo"] or o["orgao"] or "cargo não informado"
+                entradas.append({
+                    "ticker": ticker_da_empresa[cod],
+                    "anos": "",
+                    "titulo": f"Também está na {nome_da_empresa[cod]} hoje, como {cargo_o} (FRE vigente)",
+                })
+            for cod, regs in sorted(passagens.items(), key=lambda kv: -max(r["ano"] for r in kv[1])):
+                anos_h = [r["ano"] for r in regs]
+                inicio, fim = min(anos_h), max(anos_h)
+                faixa = str(inicio) if inicio == fim else f"{inicio}–{fim}"
+                periodo = f"em {inicio}" if inicio == fim else f"entre {inicio} e {fim}"
+                cargo_h = max(regs, key=lambda r: r["ano"])["cargo"] or "cargo não informado"
+                entradas.append({
+                    "ticker": ticker_da_empresa[cod],
+                    "anos": f" ({faixa})",
+                    "titulo": f"Trabalhou na {nome_da_empresa[cod]} {periodo} como {cargo_h} (FREs do período)",
+                })
+            if entradas:
+                tambem_em[a["nome"]] = entradas
 
     return {
         "setor_stats": (medianas or {}).get(_setor_curto(empresa), {}),
@@ -783,18 +821,28 @@ def gerar(
         tambem_em = dados.get("adm_tambem_em") or {}
 
         def _links_tambem(nome_adm: str) -> str:
-            tickers_outros = tambem_em.get(nome_adm) or []
-            if not tickers_outros:
+            entradas = tambem_em.get(nome_adm) or []
+            if not entradas:
                 return "—"
-            partes_l = [
-                f'<a href="{_e(t)}.html">{_e(t)}</a>' if publicados and t in publicados else _e(t)
-                for t in tickers_outros[:4]
-            ]
-            resto = len(tickers_outros) - 4
-            if resto > 0:
-                extras = ", ".join(tickers_outros[4:])
-                partes_l.append(f'<span title="{_e(extras)}">+{resto}</span>')
-            return " · ".join(partes_l)
+
+            def _uma(entrada: dict, oculta: bool) -> str:
+                t = entrada["ticker"]
+                link = f'<a href="{_e(t)}.html">{_e(t)}</a>' if publicados and t in publicados else _e(t)
+                separador = " · " if oculta else ""
+                return (
+                    f'<span class="adm-outra"{" hidden" if oculta else ""} '
+                    f'title="{_e(entrada["titulo"])}">{separador}{link}{_e(entrada["anos"])}</span>'
+                )
+
+            # 1 empresa aparece direto; mais de uma vira "+N" que expande as
+            # demais (o período e o cargo de cada uma ficam no tooltip)
+            partes_l = [_uma(entradas[0], False)] + [_uma(e, True) for e in entradas[1:]]
+            if len(entradas) > 1:
+                partes_l.append(
+                    f'<button class="ver-outras" onclick="verOutras(this)" '
+                    f'title="ver as outras {len(entradas) - 1}">+{len(entradas) - 1}</button>'
+                )
+            return "".join(partes_l)
 
         linhas_adm = []
         for a in administradores:
@@ -823,8 +871,9 @@ def gerar(
   </table>
   <div class="nota">Formulário de Referência (FRE/CVM{f", ref. {formato.dia_br(referencia_adm)}" if referencia_adm else ""}) —
   passe o mouse no nome para ver a experiência declarada · "presença" = % de participação nas reuniões do órgão ·
-  <b>também em</b> = a mesma pessoa no FRE vigente de outras companhias que cobrimos (cruzamento pelo
-  identificador do FRE); o histórico que a pessoa declara de empregos passados fica no texto de experiência</div>
+  <b>também em</b> = a mesma pessoa no FRE de outras companhias que cobrimos (cruzamento pelo
+  identificador do FRE): sem parênteses = quadro vigente; com anos = passagem registrada nos FREs
+  daquele período (desde 2010) · empresas que saíram da bolsa ficam de fora</div>
   </div>
 """
 
@@ -945,6 +994,10 @@ ul.ok li::before {{ content:'✓  '; color:#7BD69A; font-weight:700; }}
 .calc .gd-cap {{ margin-top:5px; max-width:170px; font-size:11px; color:#6B7681; line-height:1.5; }}
 .btn-topo {{ background:#1B2225; border:1px solid #33434A; color:#8FCB9B; padding:6px 14px; border-radius:8px; font-size:13px; font-weight:600; cursor:pointer; }}
 .btn-topo:hover {{ border-color:#8FCB9B; }}
+.adm-outra {{ white-space:nowrap; }}
+.ver-outras {{ background:#1B2225; border:1px solid #33434A; color:#8FCB9B; border-radius:99px;
+  padding:1px 8px; font-size:11px; font-weight:700; cursor:pointer; margin-left:6px; vertical-align:middle; }}
+.ver-outras:hover {{ border-color:#8FCB9B; }}
 .regras {{ background:#161D20; border:1px solid #8FCB9B; border-radius:10px; padding:16px 18px; }}
 .regras h2 {{ margin:0 0 8px; font-size:16px; color:#8FCB9B; }}
 .regras li {{ margin:6px 0 6px 18px; font-size:14px; }}
@@ -1008,6 +1061,12 @@ table.imoveis td:not(:first-child):not(:nth-child(2)), table.imoveis th:not(:fir
 <script>
 const num = id => {{ const el = document.getElementById(id); return el ? (parseFloat(el.value) || 0) : 0; }};
 const brl2 = v => v.toLocaleString('pt-BR', {{style: 'currency', currency: 'BRL', minimumFractionDigits: 2}});
+
+function verOutras(botao) {{
+  const celula = botao.parentElement;
+  celula.querySelectorAll('.adm-outra[hidden]').forEach(s => s.hidden = false);
+  botao.remove();
+}}
 
 function calcGraham() {{
   const el = document.getElementById('gr-justo');

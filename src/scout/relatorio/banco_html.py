@@ -163,8 +163,12 @@ def gerar(dados: dict, agora: datetime | None = None, com_menu: bool = False) ->
         f"<td>{formato.moeda_compacta(l['pl']) if l.get('pl') else '—'}</td></tr>"
         for l in reversed(dados["serie"])
     )
+    # rótulo SORTÁVEL (AAAA-Tn): o eixo X do grafico_linhas ordena os rótulos
+    # como string — "T1/25" embaralharia a cronologia (T1/24, T1/26, T2/25...)
     pontos_basileia = [
-        (_rotulo_tri(l["anomes"]), l["basileia"]) for l in dados["serie"] if l.get("basileia") is not None
+        (f"{l['anomes'] // 100}-T{l['anomes'] % 100 // 3}", l["basileia"])
+        for l in dados["serie"]
+        if l.get("basileia") is not None
     ]
     grafico_basileia = ""
     if len(pontos_basileia) >= 3:
