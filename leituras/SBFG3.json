@@ -1,0 +1,24 @@
+{
+  "ticker": "SBFG3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T23:46:17",
+  "comunicados": {
+    "ids": [
+      907089899081492480,
+      383033476862309508,
+      577352242463401843
+    ],
+    "datas": [
+      "08/05/2026",
+      "17/07/2026",
+      "12/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 08/05/2026\n\n**O que aconteceu:** Grupo SBF aprovou o cancelamento de 13.891.336 ações ordinárias, sem redução do capital social.\n\n**Resumo:** A Companhia concluiu seu programa de recompra de ações e encerrou-o com a aprovação do cancelamento das ações adquiridas.\n\n**Trecho-chave:**\n\"em reunião do Conselho de Administração da Companhia realizada nesta data, foi aprovado o cancelamento de 13.891.336 ações ordinárias, nominativas, escriturais e sem valor nominal, de emissão da Companhia e mantidas em tesouraria, adquiridas no âmbito do programa de recompra de ações aprovado pelo Conselho de Administração em 13 de dezembro de 2024 (\"Programa de Recompra Grupo SBF\"), sem redução do capital social.\"\n\n### COMUNICADO AO MERCADO entregue em 17/07/2026\n\n**O que aconteceu:** Não há informações específicas sobre eventos relevantes neste documento.\n\n**Resumo:** O comunicado apresenta uma visão geral dos negócios do Grupo SBF, incluindo receita líquida, margens e presença geográfica.\n\n**Trecho-chave:**\n\"O GRUPO SBF É UMA PLATAFORMA DE ESPORTE QUE CONECTA MARCAS E PESSOAS. FORMADA POR DUAS UNIDADES DE NEGÓCIOS: • CENTAURO • FISIA FUNDAÇÃO DA CENTAURO EM 1981 (45 ANOS) E AQUISIÇÃO DA NIKE EM 2020 RESPONSÁVEL PELA VENDA DE APROX. 70% DOS PRODUTOS NIKE NO BRASIL\"\n\n### COMUNICADO AO MERCADO entregue em 12/05/2026\n\n**O que aconteceu:** Grupo SBF divulgou os resultados financeiros do primeiro trimestre de 2026.\n\n**Resumo:** Os resultados mostraram crescimento nas receitas líquidas e lucro bruto, com destaque para o canal digital.\n\n**Trecho-chave:**\n\"DESTAQUES 1T26\nREFLEXO DA BASE CONSTRUÍDA EM 2025, QUE FORTALECEU NOSSA CAPACIDADE OPERACIONAL E COMERCIAL. MODERNIZAÇÃO DA REDE DE LOJAS CENTAURO INÍCIO DA REFORMA DE 23 LOJAS, COM 12 REFITS JÁ CONCLUÍDOS NO TRIMESTRE, TOTALIZANDO 21 LOJAS REVITALIZADAS. CONSISTÊNCIA NOS RESULTADOS DA CENTAURO CRESCIMENTO DE RECEITA LÍQUIDA EM TODOS OS CANAIS DA FISIA RESULTADOS SÓLIDOS +13,3% DE RECEITA LÍQUIDA VS. 1T25 E SSS DE 14,6%. NOS CANAIS: +14,2% EM LOJAS FÍSICAS E 20,8% DE GMV DIGITAL.\"\n\n**Conexão com indicadores:** O crescimento nas receitas líquidas e o aumento da margem bruta refletem a consistência operacional do Grupo SBF, conforme mencionado nos resultados financeiros."
+  },
+  "modelo": "qwen2.5:7b"
+}

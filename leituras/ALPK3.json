@@ -1,0 +1,27 @@
+{
+  "ticker": "ALPK3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T20:22:51",
+  "comunicados": {
+    "ids": [
+      29980542470050526,
+      957625033336170690,
+      396132817769235397,
+      870240236565192696
+    ],
+    "datas": [
+      "17/07/2026",
+      "17/04/2026",
+      "07/07/2026",
+      "06/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 17/07/2026\n\n**Data:** 17 de julho de 2026  \n**Título:** Desempenho do 2º Trimestre de 2026  \n**Resumo:** A ALLPARK registrou um aumento no número de operações, crescimento no fluxo de veículos atendidos e ticket médio. As receitas das plataformas digitais representaram 24,6% da receita líquida.  \n**Trecho-chave:**\n\"O desempenho do 2T26 se deve pelo aumento no número de operações, crescimento no fluxo de veículos atendidos, ticket médio e receitas de produtos digitais do Zul+. Nos estacionamentos, destacamos o crescimento nos setores de Shoppings, Saúde e Aeroportos.\"\n\n### FATO RELEVANTE entregue em 17/04/2026\n\n**Data:** 17 de abril de 2026  \n**Título:** Desempenho do 1º Trimestre de 2026  \n**Resumo:** A ALLPARK registrou um aumento no número de operações, crescimento no fluxo de veículos atendidos e ticket médio. As receitas das plataformas digitais representaram 25,3% da receita líquida.  \n**Trecho-chave:**\n\"O desempenho do 1T26 se deve pelo aumento no número de operações, crescimento no fluxo de veículos atendidos, ticket médio e receitas de produtos digitais do Zul+. Nos estacionamentos, destacamos o crescimento nos setores de Saúde, Aeroportos e Edifícios Comerciais.\"\n\n### COMUNICADO AO MERCADO entregue em 07/07/2026\n\n**Data:** 7 de julho de 2026  \n**Título:** Resultados do 1º Trimestre de 2026  \n**Resumo:** A ALLPARK registrou uma receita líquida de R$ 494,6 milhões no 1T26, com um crescimento de 28,3% em comparação ao mesmo período do ano anterior. O churn atingiu 0,22%, mantendo-se dentro dos patamares históricos.  \n**Trecho-chave:**\n\"R$ 494,6 MM\nR$ 360,0 MM\nem emissões de dívida\nè\nredução do custo médio da dívida para CDI+1,3%\nè\nalongamento do duration médio para 2,8 anos\"\n\n### COMUNICADO AO MERCADO entregue em 06/05/2026\n\n**Data:** 6 de maio de 2026  \n**Título:** Resultados do 1º Trimestre de 2026  \n**Resumo:** A ALLPARK registrou uma receita líquida de R$ 494,6 milhões no 1T26, com um crescimento de 28,3% em comparação ao mesmo período do ano anterior. O churn atingiu 0,22%, mantendo-se dentro dos patamares históricos.  \n**Trecho-chave:**\n\"R$ 494,6 MM\nR$ 360,0 MM\nem emissões de dívida\nè\nredução do custo médio da dívida para CDI+1,3%\nè\nalongamento do duration médio para 2,8 anos\""
+  },
+  "modelo": "qwen2.5:7b"
+}

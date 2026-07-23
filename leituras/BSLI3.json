@@ -1,0 +1,27 @@
+{
+  "ticker": "BSLI3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T20:49:08",
+  "comunicados": {
+    "ids": [
+      687796391592474339,
+      847517936819093230,
+      879478975651994465,
+      1133515285580034955
+    ],
+    "datas": [
+      "17/07/2026",
+      "02/07/2026",
+      "16/07/2026",
+      "01/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE ENTREGUE EM 17/07/2026\n\n**O QUE aconteceu:** O BRB encerrou o Memorando de Entendimentos com a Quadra Gestão de Recursos S.A. e decidiu não prosseguir com a operação.\n\n**Resumo:** A Companhia concluiu que as condições necessárias para a continuidade da negociação não estavam reunidas, especialmente em razão da ausência de conclusão das diligências e alterações relevantes no escopo originalmente estabelecido.\n\n**Trecho-chave:**\n\"Encerrado o período de vigência do Memorando de Entendimentos, o BRB concluiu que não estavam reunidas as condições necessárias para o prosseguimento da operação nos termos originalmente contemplados, em especial diante da ausência de conclusão das diligências necessárias e da evolução das discussões para alterações relevantes em relação ao escopo originalmente estabelecido.\"\n\n---\n\n### FATO RELEVANTE ENTREGUE EM 02/07/2026\n\n**O QUE aconteceu:** O BRB nomeou Janiele Queiroz Mendes Caroba como Diretora Executiva de Gestão de Pessoas (DIPES).\n\n**Resumo:** A nova diretora possui experiência em governança corporativa e sustentabilidade, tendo atuado em posições estratégicas na Caixa Econômica Federal e no BRB.\n\n**Trecho-chave:**\n\"A Senhora Janiele Queiroz Mendes Caroba possui sólida trajetória nas áreas jurídica, de governança e de sustentabilidade, com atuação em posições estratégicas na Caixa Econômica Federal e no BRB – Banco de Brasília.\"\n\n---\n\n### COMUNICADO AO MERCADO ENTREGUE EM 16/07/2026\n\n**O QUE aconteceu:** O BRB esclareceu que a notícia sobre um empréstimo de R$ 6,6 bilhões não configura fato relevante.\n\n**Resumo:** A Companhia informou que as informações divulgadas se referem a iniciativas e avaliações conduzidas pelo acionista controlador, sem ato ou deliberação formal da Companhia.\n\n**Trecho-chave:**\n\"A Companhia esclarece que suas informações se referem a iniciativas e avaliações conduzidas pelo acionista controlador, não havendo, até o momento, ato ou deliberação formal da Companhia correspondente aos termos, valores, cronograma ou demais condições mencionados na reportagem.\"\n\n---\n\n### COMUNICADO AO MERCADO ENTREGUE EM 01/07/226\n\n**O QUE aconteceu:** O BRB esclareceu que a notícia sobre um empréstimo de R$ 6,6 bilhões não configura fato relevante.\n\n**Resumo:** A Companhia informou que as informações divulgadas se referem a tratativas conduzidas pelo acionista controlador e não representam deliberação dos órgãos de administração da Companhia.\n\n**Trecho-chave:**\n\"As tratativas mencionadas na reportagem são conduzidas pelo acionista controlador e inserem-se no contexto do acordo celebrado na Ação Cível Originária nº 3.755, homologado pelo Supremo Tribunal Federal, e da Lei Distrital nº 7.919/2026.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

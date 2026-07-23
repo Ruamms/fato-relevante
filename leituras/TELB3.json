@@ -1,0 +1,21 @@
+{
+  "ticker": "TELB3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T23:54:58",
+  "comunicados": {
+    "ids": [
+      229730191312361693,
+      226740009084318544
+    ],
+    "datas": [
+      "17/07/2026",
+      "28/04/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 17/07/2026\n\n**O QUE aconteceu:** Substituição de Auditor Independente.\n\n**Resumo:** A TELEBRÁS anunciou a contratação da Metrópole Auditores Independentes Associados S/S como novo auditor independente, substituindo a Consult - Auditores Independentes. \n\n**Trecho-chave:**\n\"A presente substituição ocorre em virtude do encerramento do contrato de prestação de serviços de auditoria, de comum acordo, não havendo qualquer divergência contábil, fiscal ou de procedimentos de auditoria que tenha motivado o término da relação contratual.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 28/04/2026\n\n**O QUE aconteceu:** Posse do Conselho de Administração e Eleição do Presidente e Vice-Presidente.\n\n**Resumo:** A TELEBRÁS comunicou a posse dos novos membros do Conselho de Administração eleitos na 54ª Assembleia Geral Ordinária (AGO) e a eleição de JÚLIO FRANCISCO SEMEGHINI NETO como Presidente e GIL PINTO LOJA NETO como Vice-Presidente.\n\n**Trecho-chave:**\n\"Registra-se que os demais membros, o senhor JORGE RICARDO BITTAR, o senhor JÚLIO FRANCISCO SEMEGHINI NETO e o senhor JOÃO CALDEIRA BRANT MONTEIRO DE CASTRO permanecem no exercício de seus cargos em regime de prorrogação de mandato.\" (p. 1)\n\n**Conexão com indicadores:** A mudança na composição do Conselho de Administração pode impactar a governança corporativa e, por extensão, os indicadores financeiros da empresa."
+  },
+  "modelo": "qwen2.5:7b"
+}

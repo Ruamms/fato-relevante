@@ -1,0 +1,21 @@
+{
+  "ticker": "EKTR3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T21:07:12",
+  "comunicados": {
+    "ids": [
+      779834818284305136,
+      511745931258769852
+    ],
+    "datas": [
+      "23/06/2026",
+      "08/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 23/06/2026\n\n**O QUE aconteceu:** A ELEKTRO REDES S.A. anunciou a oferta pública de debêntures.\n\n**Resumo:** A empresa lançou uma oferta para emitir R$ 700 milhões em debêntures simples, não conversíveis em ações, com garantia adicional fidejussória, destinada exclusivamente a investidores profissionais. \n\n**Trecho-chave:**\n\"Nos termos da Resolução da Comissão de Valores Mobiliários (“CVM”) nº 160, de 13 de julho de 2022, conforme alterada (“Resolução CVM 160”), a ELEKTRO REDES S.A., sociedade por ações com registro de emissor de valores mobiliários, categoria “A”, perante a CVM, em fase operacional...\"\n\n### COMUNICADO AO MERCADO entregue em 08/05/2026\n\n**O QUE aconteceu:** A ELEKTRO REDES S.A. anunciou seus planos de investimento para os próximos anos.\n\n**Resumo:** A empresa planeja investir R$ 8 bilhões entre 2026 e 2030, com foco na expansão e reforço das redes de distribuição de energia.\n\n**Trecho-chave:**\n\"A Elektro Redes S.A. (“Neoenergia Elektro”), nos termos do disposto na Lei nº. 6.404, de 15 de dezembro de 1976, conforme alterada, na Resolução da Comissão de Valores Mobiliários nº 44, de 23 de agosto de 2021, comunica aos seus acionistas e ao mercado em geral que a Neoenergia Elektro pretende investir entre os anos de 2026 e 2030 um montante bruto de cerca de R$ 8 bilhões.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

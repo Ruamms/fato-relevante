@@ -1,0 +1,30 @@
+{
+  "ticker": "ETER3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T21:13:40",
+  "comunicados": {
+    "ids": [
+      6228009809478159,
+      537806388196541227,
+      209022460323704063,
+      817589622624306445,
+      198300149413439356
+    ],
+    "datas": [
+      "25/03/2026",
+      "24/03/2026",
+      "16/12/2025",
+      "12/05/2026",
+      "11/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 25/03/2026\n\n**O QUE aconteceu:** Pagamento de Dividendos\n\n**Resumo:** A Eternit S.A. aprovou o pagamento de proventos aos acionistas no valor bruto de R$ 10,544,325,72.\n\n**Trecho-chave:**\n\"em reunião do Conselho de Administração realizada nesta data, foi aprovado pagamento de proventos aos acionistas no valor bruto de R$ 10.544.325,72 (dez milhões, quinhentos e quarenta e quatro mil, trezentos e vinte cinco reais e setenta e dois centavos) em dividendos relativos ao exercício de 2025.\"\n\n### FATO RELEVANTE entregue em 16/12/2025\n\n**O QUE aconteceu:** Descontinuidade da Tégula S.A.\n\n**Resumo:** A Eternit S.A. decidiu descontinuar as atividades de telhas de concreto, operação realizada pela controlada Tégula S.A., devido a volumes operacionais significativamente abaixo do esperado e resultados deficitários.\n\n**Trecho-chave:**\n\"A Companhia, em reunião realizada nesta data, aprovou a descontinuidade das atividades da operação telhas de concreto, que era executada pela controlada Tégula S.A.\"\n\n### COMUNICADO AO MERCADO entregue em 12/05/2026\n\n**O QUE aconteceu:** Anúncio de Resultados do Primeiro Trimestre de 2026\n\n**Resumo:** A Eternit S.A. apresentou os resultados financeiros do primeiro trimestre de 2026, destacando o crescimento da unidade fabril de Goiânia e a resiliência operacional da fibrocimento.\n\n**Trecho-chave:**\n\"Destacam-se o ganho de tração da EliteMov, a aceleração da construção industrializada com +17,7% de crescimento na receita, e as vendas do fibrocimento que mantêm o ritmo mesmo com o mercado recuando 4%.\"\n\n### COMUNICADO AO MERCADO entregue em 11/05/2026\n\n**O QUE aconteceu:** Redução da Participação Acionária\n\n**Resumo:** A Eternit S.A. informou que recebeu correspondência de um acionista que reduziu sua participação acionária, deixando de deter 5% ou mais do capital social da companhia.\n\n**Trecho-chave:**\n\"A Companhia, em atendimento ao disposto no artigo 12 da Resolução da Comissão de Valores Mobiliários (CVM) nº 44, comunica aos seus acionistas e ao mercado em geral que recebeu correspondência do Sr. Mario Gonçalves dos Reis informando a redução de sua participação acionária.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

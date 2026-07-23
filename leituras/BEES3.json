@@ -1,0 +1,30 @@
+{
+  "ticker": "BEES3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T20:37:14",
+  "comunicados": {
+    "ids": [
+      24349704813997464,
+      188660829809995194,
+      223346454235587615,
+      315201897695914897,
+      638180561137562401
+    ],
+    "datas": [
+      "29/06/2026",
+      "23/03/2026",
+      "05/03/2026",
+      "13/05/2026",
+      "04/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### 29/06/2026 - Pagamento de Juros sobre o Capital Próprio (JCP) Intermediários\n\nO BANESTES S.A. aprovou o pagamento de JCP intermediários referentes ao 2º trimestre de 2026, no valor bruto unitário de R$ 0,07290518263 por ação ordinária (ON) e preferencial (PN). O valor líquido será de R$ 0,06014677567 por ação.\n\n\"O BANESTES S.A. (B3: BEES3 e BEES4), nos termos da Resolução CVM nº 44/2021, comunica aos seus acionistas e ao mercado em geral que, nesta data, o Conselho de Administração aprovou o pagamento de Juros sobre o Capital Próprio (JCP) intermediários, referentes ao 2º trimestre de 2026, no valor bruto unitário de R$ 0,07290518263 por ação ordinária (ON) e preferencial (PN).\"\n\n### 23/03/2026 - Pagamento de Juros sobre o Capital Próprio (JCP) Intermediários\n\nO BANESTES S.A. aprovou o pagamento de JCP intermediários referentes ao 1º trimestre de 2026, no valor bruto unitário de R$ 0,07448003515 por ação ordinária (ON) e preferencial (PN). O valor líquido será de R$ 0,06144602900 por ação.\n\n\"O BANESTES S.A. (B3: BEES3 e BEES4), nos termos da Resolução CVM nº 44/2021, comunica aos seus acionistas e ao mercado em geral que, nesta data, o Conselho de Administração aprovou o pagamento de Juros sobre o Capital Próprio (JCP) intermediários, referentes ao 1º trimestre de 2026, no valor bruto unitário de R$ 0,07448003515 por ação ordinária (ON) e preferencial (PN).\"\n\n### 05/03/2026 - Indicação do Novo Diretor-Presidente\n\nO BANESTES S.A. indicou o Sr. Carlos Artur Hauschild para o cargo de Diretor-Presidente, com mandato de 2026-2028.\n\n\"O BANESTES S.A. (B3: BEES3 e BEES4), nos termos da Resolução CVM nº 44/2021, comunica aos seus acionistas e ao mercado em geral que, nesta data, foi indicado pelo acionista controlador para o cargo de Diretor-Presidente do Banestes o Sr. Carlos Artur Hauschild para o mandato 2026-2028.\"\n\n### 13/05/2026 - Resultados do Primeiro Trimestre (1T26)\n\nO BANESTES S.A. divulgou os resultados financeiros do primeiro trimestre de 2026, com lucro líquido de R$ 91 milhões.\n\n\"lucro líquido 1T26: R$ 91 milhões\"\n\n### 04/05/2026 - Eleição dos Novos Administradores\n\nO BANESTES S.A. elegeram novos administradores para o mandato de 2026-2028, incluindo Carlos Artur Hauschild como Diretor-Presidente.\n\n\"1. Conselho de Administração\nPresidente • Maelcio Maurício Soares (Membro Independente)\nConselheiros • Carlos Artur Hauschild\n• João Luiz Pereira de Oliveira\n• José Marcos Travaglia\n• José Roberto Macedo Fontes (Membro Independente)\n• Katya Elvira Paste\n• Marcello Rinaldi (Membro Independente)\n• Sebastião José Balarini (Membro Independente)\"\n\n\"2. Diretoria Executiva\n• Carlos Artur Hauschild: Diretor-Presidente, acumulando a Diretoria de Negócios e de Recuperação de Ativos.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

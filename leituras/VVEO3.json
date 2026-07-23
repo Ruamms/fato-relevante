@@ -1,0 +1,30 @@
+{
+  "ticker": "VVEO3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-23T00:06:55",
+  "comunicados": {
+    "ids": [
+      664810225226872327,
+      32408639716068581,
+      467254336742534732,
+      708615359882566352,
+      62492446034362715
+    ],
+    "datas": [
+      "26/06/2026",
+      "11/06/2026",
+      "08/06/2026",
+      "30/06/2026",
+      "05/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 26/06/2026\n\n**O que aconteceu:** A Companhia aprovou um aumento de capital com possibilidade de integralização via capitalização de créditos.\n\n**Resumo:** A CM Hospitalar S.A. aprovou um aumento de capital, permitindo a subscrição em moeda corrente nacional ou mediante a capitalização de créditos decorrentes da titularidade das debêntures.\n\n**Trecho-chave:**\n\"Objetivando maximizar a adesão ao aumento de capital, foi aprovada, ainda, a possibilidade de integralização (i) à vista, em moeda corrente nacional; ou (ii) mediante a capitalização de créditos decorrentes da titularidade das debêntures da 4ª, 5ª, 6ª e 7ª emissões da Companhia atualmente em circulação.\"\n\n### FATO RELEVANTE entregue em 11/06/2026\n\n**O que aconteceu:** As assembleias gerais de debenturistas aprovaram alterações nas condições das debêntures.\n\n**Resumo:** As assembleias gerais de debenturistas da CM Hospitalar S.A. aprovaram várias alterações às condições das debêntures, incluindo prorrogação do vencimento e novas definições de covenants.\n\n**Trecho-chave:**\n\"Conforme aprovado pela administração da Companhia, o Aumento de Capital prevê o montante de até R$ 869.761.072,80, com a subscrição particular de até 966.401.192 novas ações ordinárias, pelo preço de emissão de R$ 0,90 por ação...\"\n\n### FATO RELEVANTE entregue em 08/06/2026\n\n**O que aconteceu:** As assembleias gerais de debenturistas aprovaram alterações nas condições das debêntures.\n\n**Resumo:** As assembleias gerais de debenturistas da CM Hospitalar S.A. aprovaram várias alterações às condições das debêntures, incluindo prorrogação do vencimento e novas definições de covenants.\n\n**Trecho-chave:**\n\"Conforme aprovado pela administração da Companhia, o Aumento de Capital prevê o montante de até R$ 869.761.072,80, com a subscrição particular de até 966.401.192 novas ações ordinárias, pelo preço de emissão de R$ 0,90 por ação...\"\n\n### COMUNICADO AO MERCADO entregue em 30/06/2026\n\n**O que aconteceu:** A CM Hospitalar S.A. informou sobre a aquisição de participação relevante por parte da Dynamo Administração de Recursos Ltda.\n\n**Resumo:** A Dynamo Administração de Recursos Ltda. e a Dynamo Internacional Gestão de Recursos Ltda. passaram a deter 15,161,956 ações, correspondendo a 4,70% do total de ações da CM Hospitalar S.A.\n\n**Trecho-chave:**\n\"A participação acionária detida tem por objetivo o investimento na Companhia, sem a intenção de alterar sua composição de controle ou estrutura administrativa.\"\n\n### COMUNICADO AO MERCADO entregue em 05/06/2026\n\n**O que aconteceu:** A CM Hospitalar S.A. informou sobre a aquisição de participação relevante por parte da gestora Perea Capital, LLC.\n\n**Resumo:** A gestora Perea Capital, LLC passou a deter 48,500,000 ações, correspondendo a 15,0% do total de ações da CM Hospitalar S.A.\n\n**Trecho-chave:**\n\"A participação acima mencionada possui caráter estritamente de investimento, não havendo qualquer intenção de alterar o controle da Companhia ou a composição de sua estrutura administrativa.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

@@ -1,0 +1,21 @@
+{
+  "ticker": "AGXY3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T20:20:45",
+  "comunicados": {
+    "ids": [
+      896175441383256060,
+      394753084420144214
+    ],
+    "datas": [
+      "30/06/2026",
+      "25/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 30/06/2026\n\n**O QUE aconteceu:** A divulgação das demonstrações financeiras referentes ao 4T25 e ao exercício social encerrado em 31 de dezembro de 2025 foi postergada para o dia 31 de julho de 2026.\n\n**Resumo:** A AgroGalaxy Participações S.A. informou que a divulgação das demonstrações financeiras do último trimestre de 2025 e do exercício social encerrado em 31 de dezembro de 2025 foi adiada novamente, desta vez para o dia 31 de julho de 2026.\n\n**Trecho-chave:** \"A divulgação de suas demonstrações financeiras referentes ao 4T25 e ao exercício social encerrado em 31 de dezembro de 2025, anteriormente prevista para o dia 30 de junho de 2026, será postergada para o dia 31 de julho de 2026.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 25/05/2026\n\n**O QUE aconteceu:** A divulgação das demonstrações financeiras referentes ao 4T25 e ao exercício social encerrado em 31 de dezembro de 2025 foi postergada para o dia 30 de junho de 2026.\n\n**Resumo:** A AgroGalaxy Participações S.A. informou que a divulgação das demonstrações financeiras do último trimestre de 2025 e do exercício social encerrado em 31 de dezembro de 2025 foi adiada novamente, desta vez para o dia 30 de junho de 2026.\n\n**Trecho-chave:** \"A divulgação de suas demonstrações financeiras referentes ao 4T25 e ao exercício social encerrado em 31 de dezembro de 2025, anteriormente prevista para o dia 29 de maio de 2026, será postergada para o dia 30 de junho de 2026.\" (p. 1)\n\n---\n\n**Conexão com o contexto:** Ambos os comunicados se referem a adiamentos nas datas de divulgação das demonstrações financeiras do exercício social encerrado em 31 de dezembro de 2025, indicando problemas na preparação e conformidade das informações financeiras."
+  },
+  "modelo": "qwen2.5:7b"
+}

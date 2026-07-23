@@ -1,0 +1,24 @@
+{
+  "ticker": "JALL3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T21:28:29",
+  "comunicados": {
+    "ids": [
+      261171958943039322,
+      527723807875437688,
+      295326481831659208
+    ],
+    "datas": [
+      "16/06/2026",
+      "03/07/2026",
+      "17/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### Fato Relevante entregue em 16/06/2026\n\n**O QUE aconteceu:** Projeções para a safra 2025/2027.\n\n**Resumo:** A Jalles Machado S.A. divulgou suas projeções para a safra 2025/2027, detalhando expectativas de produção e investimentos.\n\n**Trecho-chave:**\n\"Em cumprimento ao disposto na Resolução CVM nº 44 e às melhores práticas de governança corporativa, informa aos seus acionistas e ao mercado em geral a sua projeções para a safra 2025/2027, conforme tabela abaixo:\" (p. 1)\n\n### Comunicado Ao Mercado entregue em 03/07/2026\n\n**O QUE aconteceu:** Não há informações relevantes sobre eventos ou decisões específicas.\n\n**Resumo:** O documento contém apenas detalhes de localização e capacidade instalada das unidades da Jalles Machado S.A., sem mencionar novas decisões ou eventos.\n\n**Trecho-chave:**\n\"Jalles –\nCapacidade Instalada\n3.300.000 ton\n3.000.000 ton\n2.700.000 ton\nMoagem\n9.000.000 ton\" (p. 4)\n\n### Comunicado Ao Mercado entregue em 17/06/2026\n\n**O QUE aconteceu:** Anúncio de uma videoconferência para apresentação dos resultados do quarto trimestre da safra 2025/2026.\n\n**Resumo:** A Jalles Machado S.A. convocou uma videoconferência para discutir os resultados do quarto trimestre da safra 2025/2026, com data e horário definidos.\n\n**Trecho-chave:**\n\"Resultados do\n4º trimestre da\nSafra 2025/26\n\n17/06/2026\nQuarta -feira\n15:00 BRT \n1:00 p.m.\n(US EDT)\" (p. 1)\n\n**Conexão com o contexto:** As projeções para a safra 2025/2027 podem ser influenciadas pelos resultados do quarto trimestre da safra atual, já que os dados de produção e desempenho recentes são cruciais para estabelecer as expectativas futuras."
+  },
+  "modelo": "qwen2.5:7b"
+}

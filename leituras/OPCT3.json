@@ -1,0 +1,21 @@
+{
+  "ticker": "OPCT3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T21:53:03",
+  "comunicados": {
+    "ids": [
+      464225204336375615,
+      49745894015951291
+    ],
+    "datas": [
+      "09/06/2026",
+      "27/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### OCEANPACT SERVIÇOS MARÍTIMOS S.A. - COMUNICADO AO MERCADO entregue em 09/06/2026\n\n**O que aconteceu:** Redução da participação acionária relevante.\n\n**Resumo:** A Companhia informa a redução de participação acionária por parte dos fundos geridos pela Organon Capital, atingindo 4,67% do capital social total.\n\n**Trecho-chave:**\n\"Os fundos de investimentos por ela geridos reduziram sua participação acionária na Companhia, atingindo, em conjunto, 9.340.000 ações ordinárias (OPCT3), correspondentes a 4,67% do capital social total da Companhia.\" (p. 1)\n\n---\n\n### OCEANPACT SERVIÇOS MARÍTIMOS S.A. - COMUNICADO AO MERCADO entregue em 27/05/2026\n\n**O que aconteceu:** Redução da participação acionária relevante.\n\n**Resumo:** A Companhia informa a redução de participação acionária por parte dos fundos geridos pela Organon Capital, atingindo 4,67% do capital social total.\n\n**Trecho-chave:**\n\"Os fundos de investimentos por ela geridos reduziram sua participação acionária na Companhia, atingindo, em conjunto, 9.340.000 ações ordinárias (OPCT3), correspondentes a 4,67% do capital social total da Companhia.\" (p. 1)\n\n---\n\n**Conexão com o contexto:** Ambos os comunicados informam sobre a redução de participação acionária relevante, que pode impactar o cenário operacional e financeiro da companhia."
+  },
+  "modelo": "qwen2.5:7b"
+}

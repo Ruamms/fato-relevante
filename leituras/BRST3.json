@@ -1,0 +1,24 @@
+{
+  "ticker": "BRST3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T20:48:21",
+  "comunicados": {
+    "ids": [
+      360510263581331565,
+      765779345493400931,
+      213553044362252566
+    ],
+    "datas": [
+      "23/06/2026",
+      "17/07/2026",
+      "19/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 23/06/2026\n\n**O QUE aconteceu:** A Brisanet sagrou-se vencedora do 4º Leilão Reverso para a implementação de serviços móveis com tecnologia 4G, já preparado para o 5G.\n\n**Resumo:** A Companhia foi vencedora em 56 localidades, garantindo um repasse de R$ 11,2 milhões.\n\n**Trecho-chave:**\n\"A Companhia sagrou-se mais uma vez vencedora do certame em 56 localidades, assegurando um repasse no montante total de R$ 11,2 milhões. Este valor será recebido mediante a respectiva conclusão e entrega da infraestrutura exigida.\"\n\n### COMUNICADO AO MERCADO entregue em 17/07/2026\n\n**O QUE aconteceu:** A Brisanet divulgou seus dados operacionais para o mês de junho de 2026.\n\n**Resumo:** A Companhia consolidou sua base de clientes em 1.579.840, com 1.541.064 conectados por FTTH (Fiber to the Home). A cobertura abrange os nove estados do Nordeste e potencialmente 7,2 milhões de lares.\n\n**Trecho-chave:**\n\"Ao fim de junho de 2026, a Companhia consolidou sua base de clientes em 1.579.840, com 1.541.064 conectados por FTTH (Fiber to the Home). Nossa presença abrange os nove estados do Nordeste, com cobertura em 159 municípios e potencial para atender 7,2 milhões de lares.\"\n\n### COMUNICADO AO MERCADO entregue em 19/06/2026\n\n**O QUE aconteceu:** A Brisanet informou sobre a renúncia da conselheira Adriana Mozine Landwehrkamp.\n\n**Resumo:** A Companhia recebeu o pedido de renúncia apresentado pela Sra. Adriana Mozine Landwehrkamp, membro independente do Conselho de Administração, e informou que designará um substituto conforme estatutário.\n\n**Trecho-chave:**\n\"A Brisanet Serviços de Telecomunicações S.A. (B3: BRST3) (“Companhia”), em cumprimento ao disposto no artigo 157, §4º, da Lei nº 6.404, de 15 de dezembro de 1976, conforme alterada (“Lei das Sociedades por Ações”) e na Resolução da Comissão de Valores Mobiliários (“CVM”) n° 44, de 23 de agosto de 2021, conforme alterada (\"Resolução CVM 44\"), informa aos seus acionistas e ao mercado em geral que recebeu o pedido de renúncia apresentado pelo Sra. Adriana Mozine Landwehrkamp, ao cargo de membro independente do Conselho de Administração da Companhia.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

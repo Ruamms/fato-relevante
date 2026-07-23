@@ -1,0 +1,24 @@
+{
+  "ticker": "HBTS3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T21:26:25",
+  "comunicados": {
+    "ids": [
+      444967916267620675,
+      68006450602558262,
+      253009611706402880
+    ],
+    "datas": [
+      "26/12/2025",
+      "22/12/2025",
+      "19/12/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante"
+    ],
+    "texto": "### O que aconteceu em 26/12/2025:\nA controlada Habitasul Empreendimentos Imobiliários Ltda., autorizada pelo Conselho de Administração, alienou 14.700.000 quotas (49% do capital social) da subsidiária JI Administração Hoteleira Ltda. para a WISH S.A., no valor total de R$ 9,8 milhões, com pagamentos parcelados e vinculados aos resultados da JIAH, com prazo máximo de 10 anos.\n*\"A entrada da WISH na sociedade da JIAH está alinhada à estratégia do grupo para o fortalecimento e ganhos de eficiência operacional dos negócios hoteleiros.\"* (p. 1)\n\n### O que aconteceu em 22/12/2025:\nA controlada Habitasul Desenvolvimentos Imobiliários S.A., aprovou a venda de 812.065 ações ordinárias da Irani Papel e Embalagens S.A. (RANI3) para a Irani Participações S.A., pelo preço médio de R$ 8,62 por ação, totalizando R$ 7.000.000,30.\n*\"A venda das ações da Irani Papel e Embalagens S.A. foi realizada mediante transferência privada junto à B3.\"* (p. 1)\n\n### O que aconteceu em 19/12/2025:\nA Companhia aprovou a alienação de ações na Irani Papel e Embalagem S.A. (RANI3) e a cessão e assunção da dívida pelo grupo Habitasul.\n- Venda de 7.005.000 ações ordinárias para a Irani Participações S.A., totalizando R$ 60.383.100,00.\n- Venda de 2.766.844 ações ordinárias da subsidiária Habitasul Desenvolvimentos Imobiliários S.A. para a Irani Participações S.A., totalizando R$ 23.850.198,87.\n- Transferência integral da dívida no valor de R$ 84.233.298,87 do Banco BTG Pactual S.A. para a Irani Participações S.A.\n*\"A venda das ações e a transferência da dívida foram realizadas mediante transferência privada junto à B3.\"* (p. 1)"
+  },
+  "modelo": "qwen2.5:7b"
+}

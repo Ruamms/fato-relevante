@@ -1,0 +1,36 @@
+{
+  "ticker": "MSPA3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T21:45:50",
+  "comunicados": {
+    "ids": [
+      37125844641404308,
+      197438431550144225,
+      936774492602732855,
+      220482698779262089
+    ],
+    "datas": [
+      "16/06/2025",
+      "18/03/2025",
+      "15/05/2026",
+      "17/12/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 16/06/2025\n\n**O que aconteceu:** Adiamento Assembleia Geral Extraordinária.\n\n**Resumo:** A Companhia adiou a convocação e realização da Assembleia Geral Extraordinária para eleição do novo membro do Conselho de Administração, que deverá ocorrer até 28 de agosto de 2025, em virtude do processo de escolha ainda não ter sido concluído.\n\n**Trecho-chave:** \"em virtude do processo de escolha para indicação de candidato ao Conselho de Administração ainda não ter sido concluído, conforme deliberado na Assembleia Geral Ordinária, realizada em 30 de abril de 2025, a Companhia adiará a convocação e realização da Assembleia Geral Extraordinária para eleição do novo membro do Conselho de Administração, a qual deverá ocorrer até 28 de agosto de 2025.\"\n\n### FATO RELEVANTE entregue em 18/03/2025\n\n**O que aconteceu:** Antecipação da Divulgação de Resultados do exercício 2024.\n\n**Resumo:** A Companhia antecipou a data de divulgação das Demonstrações Financeiras Anuais e Demonstrações Financeiras Padronizada (DFP) do exercício findo em 31/12/2024, para o dia 24/03/2025.\n\n**Trecho-chave:** \"Em atendimento às disposições da Lei nº 6.404/76 e da Resolução CVM nº 44/21, a Companhia Melhoramentos de São Paulo (“Companhia”) (B3: MSPA3 e MSPA4) vem anunciar aos seus acionistas e ao mercado em geral que antecipará a data de divulgação, no site da Companhia e no sistema ENET, das Demonstrações Financeiras Anuais Completas e Demonstrações Financeiras Padronizada (“DFP”) do exercício findo em 31/12/2024, do dia 31/03/2025 para o dia 24/03/2025.\"\n\n### COMUNICADO AO MERCADO entregue em 17/12/2025\n\n**O que aconteceu:** Dispensas de obrigações regulatórias.\n\n**Resumo:** A Companhia Melhoramentos de São Paulo obteve dispensas de obrigações regulatórias ao ser classificada como Companhia de Menor Porte (CMP) e adotar o Regime Fácil da Resolução CVM nº 232/2025.\n\n**Trecho-chave:** \"Este documento tem por finalidade formalizar as dispensas de obrigações regulatórias que a CMSP irá usufruir ao ser classificada como Companhia de Menor Porte (CMP), adotando o Regime Fácil da resolução CVM n0 232 de 2025.\"\n\n### COMUNICADO AO MERCADO entregue em 15/05/2026\n\n**O que aconteceu:** Postergação da data de Divulgação de Resultados – 1º ITR26.\n\n**Resumo:** A Companhia postergou a data de divulgação dos resultados referentes ao 1º trimestre do exercício de 2026 (1ITR26), do dia 15/05/2025 para o dia 05 de junho de 2026, em virtude do protocolo do pedido de migração da Companhia para o Regime FÁCIL.\n\n**Trecho-chave:** \"A Companhia vem comunicar aos senhores acionistas e ao mercado em geral que, em virtude do protocolo do pedido de migração da Companhia para o Regime FÁCIL, conforme aprovado na Assembleia Geral Extraordinária de 11/12/2025, pendente de análise pela B3, postergará a data de divulgação, no site da Companhia e no sistema ENET, dos resultados referentes ao 1º trimestre do exercício de 2026 (1ITR26), do dia 15/05/2025 para o dia 05 de junho de 2026.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 197438431550144225,
+    "data_entrega": "18/03/2025 00:00",
+    "tipo": "nao_identificado",
+    "rotulo": "parecer não identificado no texto",
+    "grave": false,
+    "continuidade": false,
+    "trecho": ""
+  }
+}

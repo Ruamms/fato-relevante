@@ -1,0 +1,24 @@
+{
+  "ticker": "DXCO3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T21:04:38",
+  "comunicados": {
+    "ids": [
+      657489360699327427,
+      937928559200639311,
+      6268965513828459
+    ],
+    "datas": [
+      "25/05/2026",
+      "26/05/2026",
+      "08/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### 25/05/2026 - Encerramento de Unidade Industrial em Urussanga (SC)\n\nA Companhia Dexco S.A. decidiu encerrar as atividades industriais da unidade de Urussanga, SC, no segmento de Revestimentos Cerâmicos, concentrando suas operações nas unidades de Criciúma (SC) e Botucatu (SP). Essa medida faz parte do plano para melhorar a eficiência operacional e assegurar a sustentabilidade do negócio. Não haverá impacto relevante nos resultados da Companhia.\n\n*\"No segmento de Revestimentos Cerâmicos, a Companhia decidiu concentrar suas operações industriais nas unidades de Criciúma (SC) e Botucatu (SP), com o encerramento, a partir desta data, das atividades industriais da unidade de Urussanga (SC).\"* (p. 1)\n\n### 26/05/2026 - Resultados do Primeiro Trimestre de 2026\n\nOs resultados financeiros do primeiro trimestre de 2026 (1T26) foram divulgados, mostrando um aumento na receita líquida e no EBITDA ajustado e recorrente. A Companhia registrou uma receita líquida de R$ 346 milhões, um crescimento de 89% em comparação ao primeiro trimestre do ano anterior (1T25). O EBITDA ajustado e recorrente foi de R$ 478 milhões, com um aumento expressivo de 38,3% em relação ao mesmo período do ano passado.\n\n*\"O 1T26 marca um trimestre de forte geração de caixa, sustentado principalmente pela evolução do EBITDA recorrente e pela melhora estrutural do capital de giro, reforçando a trajetória de desalavancagem financeira da Companhia.\"* (p. 4)\n\n### 08/04/2026 - Aquisição de Participação Acionária Relevante\n\nA Companhia Dexco S.A. recebeu notificação de que fundos de investimento sob gestão da SPX Gestão de Recursos Ltda. passaram a ser titulares de participação acionária relevante, detendo 46.446.348 ações ordinárias, representando aproximadamente 5,05% do total de ações emitidas pela Companhia.\n\n*\"Os Fundos passaram a deter, em conjunto, 46.446.348 ações ordinárias da Companhia, que representam posição equivalente a cerca de 5,05% do total de ações emitidas pela Companhia.\"* (p. 1)"
+  },
+  "modelo": "qwen2.5:7b"
+}

@@ -1,0 +1,24 @@
+{
+  "ticker": "LUXM3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T21:37:22",
+  "comunicados": {
+    "ids": [
+      440624217963677565,
+      810221045424417795,
+      890988332500594990
+    ],
+    "datas": [
+      "29/04/2025",
+      "21/11/2025",
+      "03/09/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 29/04/2025\n\n**O que aconteceu:** Aumento do capital social mediante capitalização de Reserva de Lucros.\n\n**Resumo:** A Companhia aumentou seu capital social para R$ 90.000.000,00, emitindo 20.784.000 novas ações gratuitamente aos acionistas existentes.\n\n**Trecho-chave:**\n\"foi aprovado o aumento do capital social da Companhia para R$ 90.000.000,00, mediante capitalização de R$ 30.000.000,00 da Reserva de Lucros – Reserva para Investimentos e/ou Capital de Giro, passando o mesmo de R$ 60.000.000,00 para R$ 90.000.000,00.\"\n\n### COMUNICADO AO MERCADO entregue em 21/11/2025\n\n**O que aconteceu:** Mudança de Auditor Independente.\n\n**Resumo:** A Companhia trocou sua auditora independente da BDO RCS Auditores Independentes SS pela Ernst & Young Auditores Independentes SS, seguindo a rotatividade estabelecida pela Resolução CVM 23/2021.\n\n**Trecho-chave:**\n\"comunica a seus acionistas e ao mercado em geral, que em reunião realizada no dia 18 de novembro de 2025, o Conselho de Administração da Companhia, aprovou a contratação de prestação de serviços de auditoria externa, pelo prazo de um ano, com a Ernst & Young Auditores Independentes SS.\"\n\n### COMUNICADO AO MERCADO entregue em 03/09/2025\n\n**O que aconteceu:** Aumento na participação acionária.\n\n**Resumo:** O Rainbow Fund passou a deter 11,7029% das ações preferenciais da Companhia após aquisição de mais 750.000 ações.\n\n**Trecho-chave:**\n\"A TREVISA INVESTIMENTOS S.A. (“Trevisa” ou “Companhia”), nos termos do artigo 12 da Instrução CVM nº 44, de 23 de agosto de 2021, comunica aos seus acionistas e ao mercado em geral que recebeu, em 02 de setembro de 2025, notificação da Rainbow Fund, L.P. (“Rainbow Fund”), inscrita no CNPJ sob nº 15.737.719/0001-87, informando que, após a aquisição de 750.000 ações preferenciais de emissão da Companhia, passou a deter um total de 2.713.200 ações preferenciais, que representam 11,7029% do total das ações desta espécie.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

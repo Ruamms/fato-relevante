@@ -1,0 +1,30 @@
+{
+  "ticker": "BMEB3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T20:42:18",
+  "comunicados": {
+    "ids": [
+      1082104534975703280,
+      948879097185511744,
+      748315547750608458,
+      836002823787746777,
+      540982718989429372
+    ],
+    "datas": [
+      "18/03/2026",
+      "04/03/2026",
+      "04/03/2026",
+      "06/05/2026",
+      "09/03/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 18/03/2026\n\n**O QUE aconteceu:** CVM deferiu o pedido de cancelamento do registro da Mercantil Financeira.\n\n**Resumo:** A CVM aprovou o pedido para cancelar o registro da Mercantil Financeira como companhia aberta, e as ações deixarão de ser negociadas na B3 a partir de 19/03/2026. \n\n**Trecho-chave:**\n\"O Banco Mercantil esclarece que, com o Cancelamento de Registro da Mercantil Financeira, as ações ordinárias e preferenciais de emissão da Mercantil Financeira deixarão de ser negociadas na B3 S.A. – Brasil, Bolsa, Balcão a partir de amanhã, 19 de março de 2026.\"\n\n### FATO RELEVANTE entregue em 04/03/2026\n\n**O QUE aconteceu:** Conselho de Administração da Mercantil Financeira aprovou o cancelamento do registro.\n\n**Resumo:** O Conselho de Administração da Mercantil Financeira aprovou o cancelamento do seu registro como companhia aberta, com base na realização bem-sucedida da oferta pública de aquisição (OPA) e cumprimento dos requisitos legais.\n\n**Trecho-chave:**\n\"A Companhia esclarece que, nos termos do artigo 55, §3º da Resolução CVM 80, a Superintendência de Registro de Valores Mobiliários dispõe do prazo de 15 dias úteis para analisar o pedido de Cancelamento de Registro.\"\n\n### FATO RELEVANTE entregue em 04/03/2026\n\n**O QUE aconteceu:** Pagamento complementar de dividendos.\n\n**Resumo:** O Banco Mercantil do Brasil informou sobre a retificação do valor dos dividendos complementares, sem alteração no total a ser distribuído. Os pagamentos serão feitos em 18/03/2026.\n\n**Trecho-chave:**\n\"O valor total aprovado foi de R$ 5.029.350,45 (cinco milhões, vinte nove mil, trezentos e cinquenta reais, quarenta e cinco centavos), sobre o qual incidirá retenção do imposto de renda na fonte, conforme aplicável e de acordo com a legislação vigente, desconsiderando-se as ações em tesouraria.\"\n\n### COMUNICADO AO MERCADO entregue em 06/05/2026\n\n**O QUE aconteceu:** Resultados financeiros do primeiro trimestre de 2026.\n\n**Resumo:** O Banco Mercantil do Brasil apresentou resultados recorde, com lucro líquido de R$ 273 milhões no primeiro trimestre de 2026. A carteira de crédito rentável e segura contribuiu para o crescimento da receita de serviços.\n\n**Trecho-chave:**\n\"PELO 14º TRIMESTRE CONSECUTIVO, O BANCO APRESENTA MAIS UM LUCRO LÍQUIDO RECORDE. 3T26: R$ 273 MILHÕES.\"\n\n### COMUNICADO AO MERCADO entregue em 09/03/2026\n\n**O QUE aconteceu:** Aprovação do aumento de capital pelo Banco Central do Brasil.\n\n**Resumo:** O Banco Central do Brasil aprovou o aumento de capital social da Companhia, e as ações subscritas serão emitidas em até 5 dias úteis após a aprovação. \n\n**Trecho-chave:**\n\"O Conselho de Administração da Companhia convocará, oportunamente, uma assembleia geral para deliberar a respeito da alteração do artigo 5º do Estatuto Social da Companhia, para atualização do valor do capital social integralizado e da quantidade de ações emitidas pela Companhia.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

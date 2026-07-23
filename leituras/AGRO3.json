@@ -1,0 +1,30 @@
+{
+  "ticker": "AGRO3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T20:20:19",
+  "comunicados": {
+    "ids": [
+      951708723523616752,
+      918846627159480300,
+      218216262882490303,
+      522514247797676428,
+      810105385600574708
+    ],
+    "datas": [
+      "07/05/2026",
+      "04/05/2026",
+      "13/04/2026",
+      "08/05/2026",
+      "06/02/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 13/04/2026\n\n**O que aconteceu:** A BrasilAgro vendeu parte do contrato de compra e venda da Fazenda Rio do Meio, localizada no Município de Correntina, Bahia.\n\n**Resumo:** A Companhia rescindiu o acordo com o comprador inadimplente, sem litígio. O valor presente dos recebíveis era R$ 47,1 milhões em 31/12/2025, e a área remanescente será reincorporada ao portfólio.\n\n**Trecho-chave:**\n\"O contrato original, firmado em 01 de setembro de 2021, previa a venda de 4.559 hectares, dos quais 3.212,12 hectares úteis, pelo valor equivalente a 746.579 sacas de soja. Da área total objeto do contrato, 365,75 hectares úteis já foram pagos e escriturados em nome do comprador e 627,87 hectares úteis poderão ser escriturados, observadas as condições suspensivas previstas no acordo.\"\n\n### FATO RELEVANTE entregue em 04/05/2026\n\n**O que aconteceu:** A BrasilAgro vendeu uma área de 921 hectares (501,5 hectares úteis) da Fazenda Morotí, localizada no Paraguai.\n\n**Resumo:** O valor nominal da transação foi de US$ 1,5 milhão, com um ganho estimado de 14,2% em dólares e 23,2% em reais. A área foi originalmente adquirida por US$ 1,756 por hectare útil.\n\n**Trecho-chave:**\n\"O valor nominal da transação foi de US$ 1,5 milhão, equivalente a aproximadamente US$ 3.062 por hectare útil. Desse montante, o comprador realizou um pagamento inicial de US$350,7 mil, realizará um pagamento adicional de US$853 mil mediante o cumprimento de condições suspensivas e pagará o saldo remanescente, de aproximadamente US$300,7 mil, em três parcelas anuais iguais.\"\n\n### FATO RELEVANTE entregue em 07/05/2026\n\n**O que aconteceu:** A BrasilAgro acompanhou as estimativas das operações agrícolas para o ano-safra 2025/2026.\n\n**Resumo:** Houve redução na área plantada, especialmente nas culturas de safrinha, devido à queda nos preços das commodities e expectativa de menor produtividade. A produção projetada foi reduzida em 4% em relação à estimativa inicial.\n\n**Trecho-chave:**\n\"A Companhia optou por reduzir a área plantada, priorizando a rentabilidade e a alocação eficiente de capital.\"\n\n### COMUNICADO AO MERCADO entregue em 08/05/2026\n\n**O que aconteceu:** O comunicado apresenta os resultados financeiros do terceiro trimestre de 2026.\n\n**Resumo:** A receita líquida foi R$ 637,3 milhões, o EBITDA ajustado foi R$ 76,1 milhões e houve um prejuízo líquido. A venda da Fazenda Morotí contribuiu para os resultados.\n\n**Trecho-chave:**\n\"Venda da Fazenda Morotí\nLocalização: Paraguai\nValor nominal: US$ 1,5 milhão\nTIR Estimada: US$ 3.062 por ha útil\nUS$ 14,2%\nR$ 23,2%\""
+  },
+  "modelo": "qwen2.5:7b"
+}

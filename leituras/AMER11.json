@@ -1,0 +1,24 @@
+{
+  "ticker": "AMER11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T20:25:55",
+  "comunicados": {
+    "ids": [
+      778228416520777222,
+      368325062700864026,
+      287089100354693539
+    ],
+    "datas": [
+      "03/07/2026",
+      "09/07/2026",
+      "30/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### Fato Relevante entregue em 03/07/2026\n\n**O QUE aconteceu:** Conclusão da Venda da UPI Uni.Co.\n\n**Resumo:** Americanas concluiu a venda de sua Unidade de Participação Interestadual (UPI) para a BandUP! após a verificação do cumprimento das condições precedentes previstas no contrato. \n\n**Trecho-chave:**\n\"Americanas S.A. – Em Recuperação Judicial, em atendimento ao disposto no art. 157, §4º, Lei nº 6.404/76 e na Resolução CVM nº 44/2021 e em continuidade ao Fato Relevante de 30 de setembro de 2025, aos Comunicados ao Mercado de 24 de novembro de 2025 e 06 de fevereiro de 2026, vem informar aos seus acionistas e ao mercado em geral que, após a verificação do cumprimento e/ou renuncias das condições precedentes previstas no Contrato de Compra e Venda e Outras Avenças, celebrado em 1º de abril de 2026 (‘Contrato’), foi realizado, em 2 de julho de 2026, o fechamento da alienação da UPI Uni.Co (conforme definido no Plano de Recuperação Judicial da Companhia).\"\n\n---\n\n### Comunicado ao Mercado entregue em 09/07/2026\n\n**O QUE aconteceu:** Informações sobre a implementação do Plano de Recuperação Judicial.\n\n**Resumo:** Americanas informa que está cumprindo regular e integralmente todos os compromissos assumidos no Plano de Recuperação Judicial (PRJ) e não há atrasos ou incompletude de pagamentos a credores. \n\n**Trecho-chave:**\n\"Americanas S.A. – Em Recuperação Judicial, tendo em vista notícia divulgada na mídia impressa a respeito do cumprimento do seu Plano de Recuperação Judicial homologado pelo Juízo da 4ª Vara Empresarial da Comarca da Capital do Estado do Rio de Janeiro (‘PRJ’), vem informar aos seus acionistas e ao mercado em geral que a Americanas vem cumprindo regular e integralmente todos os compromissos assumidos no PRJ e não há qualquer atraso ou incompletude de pagamentos a credores da Companhia nos termos previstos no PRJ.\"\n\n---\n\n### Comunicado ao Mercado entregue em 30/06/2026\n\n**O QUE aconteceu:** Resposta à notícia sobre suposto valor de fraude na Americanas.\n\n**Resumo:** Americanas esclarece que o suposto montante de R$ 54 bilhões teria sido apurado em inquérito da Polícia Federal cujos autos estão sob sigilo. A empresa não tem acesso ao referido inquérito e entende que os valores relativos aos lançamentos indevidos e às fraudes contábeis detectadas, no montante de R$ 25,3 bilhões, foram previamente divulgados.\n\n**Trecho-chave:**\n\"A Americanas S.A. – Em Recuperação Judicial, fazemos referência ao Ofício nº 173/2026-SLE (“Ofício”), abaixo transcrito, sobre o qual a Americanas S.A. – Em Recuperação Judicial (‘Americanas’ ou ‘Companhia’) presta os seguintes esclarecimentos.\n\n“29 de junho de 2026\n173/2026-SLE\nAMERICANAS S.A.\nAt. Sebastien Durchon\nDiretor de Relações com Investidores\nRef.: Solicitação de esclarecimentos sobre notícia veiculada na imprensa\nPrezado senhor,\nEm notícia veiculada pelo jornal Valor Econômico, em 29/06/2026, sob o título ‘Análise: Um número intrigante na volta do caso Americanas’ constam, entre outras informações, que:\n Ao deflagrar uma operação contra acionistas, conselheiros e credores da Americanas, na semana passada, a Polícia Federal disse ser de R$ 54 bilhões o tamanho da fraude na varejista - e determinou um bloqueio em igual magnitude dos bens dos investigados. O número intrigou quem acompanha o caso.\n A própria empresa, quando refez seus balanços, afirmou que os desmandos contábeis foram de cerca de R$ 25 bilhões. Foi esse valor, inclusive, que norteou o acordo de recuperação judicial da companhia, firmado no fim de 2023.\n Para cobrir o rombo, acionistas de referência fizeram um aporte de R$ 12 bilhões. Credores converteram dívidas em valor equivalente a esse. No total, houve a capitalização da empresa em aproximadamente R$ 24 bilhões. O restante do ajuste foi feito com a emissão de uma debênture.\n A Americanas saiu desse processo, em tese, saneada, pouco alavancada e desde então tem se dedicado à recuperação de suas operações, que foram naturalmente afetadas pela crise.\n Agora, é preciso entender o que significam os R$ 54 bilhões, e o que acontecerá com o balanço da companhia. De acordo com a Polícia Federal, o número corresponde ao tamanho da fraude apurada pela perícia forense, que levou mais de dois anos nesse trabalho.”\n\n**Conexão com indicadores:** O comunicado responde à notícia sobre um suposto valor de R$ 54 bilhões de fraude na Americanas, que poderia impactar os indicadores financeiros da empresa."
+  },
+  "modelo": "qwen2.5:7b"
+}

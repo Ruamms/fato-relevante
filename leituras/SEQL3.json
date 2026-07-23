@@ -1,0 +1,33 @@
+{
+  "ticker": "SEQL3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T23:49:20",
+  "comunicados": {
+    "ids": [
+      62767137606557427,
+      980047584356097395,
+      627091101338380963
+    ],
+    "datas": [
+      "20/05/2026",
+      "18/05/2026",
+      "04/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 20/05/2026\n\n**O QUE aconteceu:** A Sequoia Logística e Transportes S.A. informou sobre atrasos na divulgação das demonstrações financeiras.\n\n**Resumo:** A companhia adiou o prazo para divulgar as demonstrações financeiras do exercício de 2025 e informações trimestrais até junho de 2026, devido a procedimentos adicionais de auditoria.\n\n**Trecho-chave:**\n\"Considerando que a conclusão das DFs 2025 impacta diretamente a finalização e divulgação das informações trimestrais subsequentes, a Companhia informa que a divulgação das DFs 2025 está prevista para ocorrer até o dia 28 de maio de 2026, e a divulgação do 1T26 está prevista para ocorrer em 30 de junho de 2026.\" (p. 1)\n\n---\n\n### FATO RELEVANTE entregue em 18/05/2026\n\n**O QUE aconteceu:** A Sequoia Logística e Transportes S.A. realizou uma assembleia para repactuar as condições financeiras das debêntures.\n\n**Resumo:** A assembleia aprovou a repactuação, estendendo o prazo de carência dos pagamentos até fevereiro de 2036, com vencimento em 2036. Em caso de redução da participação do controlador para menos de 50%, o prazo será reduzido.\n\n**Trecho-chave:**\n\"A Assembleia deliberou, por aprovação unânime da totalidade das debêntures em circulação presentes, a repactuação das condições financeiras das Debêntures da Primeira Série cujos pagamentos se iniciariam já no início de 2026, contemplando: (a) definição do saldo devedor de R$ 24.229.174 em março de 2026; (b) carência dos pagamentos de juros e da amortização de princial até fevereiro de 2031, com pagamentos trimestrais até o vencimento; e (c) vencimento repactuado para fevereiro de 2036.\" (p. 1)\n\n---\n\n### FATO RELEVANTE entregue em 04/05/2026\n\n**O QUE aconteceu:** A Sequoia Logística e Transportes S.A. realizou uma assembleia para repactuar as condições financeiras das debêntures.\n\n**Resumo:** A assembleia aprovou a repactuação, estendendo o prazo de carência dos pagamentos até fevereiro de 2031, com vencimento em 2031. Em caso de redução da participação do controlador para menos de 50%, o prazo será reduzido.\n\n**Trecho-chave:**\n\"A Assembleia deliberou, por aprovação unânime da totalidade das debêntures em circulação presentes, a repactuação das condições financeiras das Debêntures da Primeira Série cujos pagamentos se iniciariam já no início de 2026, contemplando: (a) definição do saldo devedor em R$ 24.229.174 para março de 2026; (b) carência dos pagamentos de juros e da amortização de princiapl até fevereiro de 2031, com pagamentos trimestrais até o vencimento; e (c) vencimento repactuado para fevereiro de 2031.\" (p. 1)\n\n---\n\n**Conexão com indicadores:** As alterações nas condições financeiras das debêntures podem afetar a gestão do caixa da empresa, o que pode influenciar em indicadores como fluxo de caixa e capacidade de pagamento de dívidas."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 62767137606557427,
+    "data_entrega": "20/05/2026 00:00",
+    "tipo": "nao_identificado",
+    "rotulo": "parecer não identificado no texto",
+    "grave": false,
+    "continuidade": false,
+    "trecho": ""
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "ticker": "ONCO11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T21:52:44",
+  "comunicados": {
+    "ids": [
+      907962300096066290,
+      108074623374605485,
+      900660716477744007,
+      288473304732757816
+    ],
+    "datas": [
+      "14/07/2026",
+      "01/07/2026",
+      "17/07/2026",
+      "15/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### Fato Relevante entregue em 14/07/2026\n\n**O QUE aconteceu:** A Oncoclínicas do Brasil Serviços Médicos S.A. (ONCO3) protocolou um pedido de Recuperação Extrajudicial (RE).\n\n**Resumo:** A companhia busca implementar uma reestruturação financeira para lidar com dívidas no valor aproximado de R$ 5,1 bilhões.\n\n**Trecho-chave:**\n\"Em 13 de julho de 2026, a Companhia distribuiu um pedido de Recuperação Extrajudicial (\"RE\") a fim de implementar um ambiente jurídico estável, seguro e transparente para a negociação e implementação da reestruturação e reperfilamento das dívidas financeiras quirografárias da Companhia no montante aproximado de R$ 5,1 bilhões, bem como outros créditos intercompany (\"Créditos Abrangidos\").\"\n\n### Fato Relevante entregue em 01/07/2026\n\n**O QUE aconteceu:** A Oncoclínicas do Brasil Serviços Médicos S.A. recebeu um Ofício da Superintendência de Registro de Valores Mobiliários (SRE) da Comissão de Valores Mobiliários (CVM), que concluiu que o Josephina III Fundo de Investimento em Participações não está obrigado a realizar uma OPA estatutária.\n\n**Resumo:** A CVM decidiu que o Josephina III não precisa realizar a oferta pública de ações prevista no Estatuto Social da Oncoclínicas, após a companhia divulgar uma reorganização societária.\n\n**Trecho-chave:**\n\"Nos termos do Ofício, a SRE concluiu que o Josephina III não está obrigado a realizar a OPA prevista no referido dispositivo estatutário, em razão da reorganização societária divulgada pela Oncoclínicas por meio de Comunicado ao Mercado de 4 de novembro de 2024.\"\n\n### Comunicação ao Mercado entregue em 17/07/2026\n\n**O QUE aconteceu:** A Oncoclínicas do Brasil Serviços Médicos S.A. informou sobre alterações na participação acionária relevante.\n\n**Resumo:** O Josephina III Fundo de Investimento em Participações alienou ações da ONCO3, passando a deter 9,91% do capital social total da companhia. A Centaurus Brazil TRS LLC reduziu sua exposição econômica em 85%.\n\n**Trecho-chave:**\n\"O Josephina III realizou alienação privada de 55.000.000 (cinquenta e cinco milhões) de ações ordinárias emitidas pela Companhia, passando a deter 112.498.778 (cento e doze milhões, quatrocentas e noventa e oito mil, setecentas e setenta e oito) ações, o que representa aproximadamente 9,91% do total de ações emitidas.\"\n\n### Comunicação ao Mercado entregue em 15/07/2026\n\n**O QUE aconteceu:** A Oncoclínicas do Brasil Serviços Médicos S.A. esclareceu uma notícia veiculada na mídia sobre um possível interesse da IG4 Capital Investimentos Ltda.\n\n**Resumo:** A companhia recebeu uma Oferta Não Vinculante Indicativa da IG4, mas reiterou que não há definição de eventual operação com a empresa ou outros interessados.\n\n**Trecho-chave:**\n\"A Companhia esclarece que o recebimento da Oferta Não Vinculante Indicativa não implica em qualquer aceitação, compromisso ou obrigação por parte da Companhia. Nesse sentido, não há qualquer definição acerca de eventual operação com a IG4 Capital ou com qualquer outro interessado e seus assessores.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

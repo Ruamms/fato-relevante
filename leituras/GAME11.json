@@ -1,11 +1,11 @@
 {
   "ticker": "GAME11",
   "modelo": "qwen2.5:7b",
-  "gerada_em": "2026-07-20T22:51:22",
+  "gerada_em": "2026-07-22T20:03:54",
   "relatorio": {
-    "id": 1239744,
-    "data_entrega": "03/07/2026 20:08",
-    "texto": "### Fatos do Relatório:\n\n1. **Movimentações no Portfólio:**\n   - O fundo realizou aquisições pontuais em um novo FII (Guardian Liquidez DI) com objetivo de dividir o saldo em caixa com CRIs de alta liquidez.\n   - Houve ajustes nas posições em fundos imobiliários, incluindo a aquisição de um novo FII.\n\n2. **Cenário Macroeconômico:**\n   - O principal índice do mercado de fundos imobiliários (IFIX) registrou desempenho negativo no mês.\n   - A política monetária está em processo de flexibilização, com expectativas de um terceiro corte consecutivo da taxa Selic.\n   - As projeções indicam uma inflação próxima de 5,3% para 2026.\n\n3. **Realocação de Ativos:**\n   - A gestão direcionou esforços prioritários à realocação integral do capital gerado ao longo do mês, especialmente considerando a redução gradual devido a amortização ordinária dos ativos.\n   - O protagonismo das movimentações no âmbito do GAHF permaneceu, com alocações em CRIs “táticos” e agora ao novo FII.\n\n4. **Resultados do Mês:**\n   - O resultado do mês foi de R$0,111/cota.\n   - A distribuição de dividendos nos próximos exercícios será mantido no patamar mínimo de R$0,100/cota.\n   - As reservas de resultado acumulado seguem robustas, fechando o mês no patamar de R$0,107/cota.\n\n5. **Guardian Hedge Fund (GAHF):**\n   - O GAHF é um veículo estruturado para acelerar a estratégia de reciclagem do portfólio e apoiar a captação da 3ª emissão de cotas.\n   - O fundo passará a concentrar todas as operações envolvendo fundos imobiliários, atuando como um fundo de fundos.\n\n6. **Performance Histórica:**\n   - A rentabilidade acumulada do GAME11 desde o IPO supera os principais indicadores comparáveis de mercado.\n   - O DY do fundo foi de 1,12% no mês, equivalente a IPCA + 8,09%.\n\n7. **Liquidez e Base de Investidores:**\n   - A média diária de negociações do fundo atingiu R$ 222,6mil/dia.\n   - O número de cotistas encerrou o mês com 21.047.\n\n### O que observar em seguida:\n- Monitorar as aquisições e realocações no portfólio do GAME11, especialmente as movimentações recentes no GAHF.\n- Observar os impactos da política monetária e inflação na performance do fundo."
+    "id": 1262280,
+    "data_entrega": "22/07/2026 19:51",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Cotação e Liquidez**: A cotação da cota do GAME11 foi de R$ 8,85 no final de junho, com uma variação negativa de -0,34% em relação ao mês anterior. O preço médio das cotas nos últimos 12 meses foi de R$ 8,75.\n\n2. **Performance do Fundo**: A rentabilidade acumulada desde o IPO do fundo é de 78,8%, superando a rentabilidade do benchmark (77,2%) e o IFIX (40,3%). O dividendo yield (DY) no último ano foi de 13,24%.\n\n3. **Portfólio**: O Guardian Hedge Fund (GAHF) concentra-se em FIIs de terceiros, com uma alocação significativa em ativos indexados ao IPCA e outros ativos imobiliários.\n\n4. **Movimentações no Portfólio**: Houve aquisições pontuais para explorar assimetrias de risco e retorno, principalmente no ITIP11, que apresentou desvalorização considerável.\n\n5. **Reservas de Resultado**: As reservas de resultado do fundo seguem robustas, com um valor acumulado não distribuído de R$ 328 milhões.\n\n6. **Cenário Macroeconômico**: A inflação está prevista para ser fraca no curto prazo, com a Selic mantendo-se em patamares elevados. O IPCA deve permanecer próximo de 5,15% para 2026.\n\n7. **Dividendos e Distribuição**: Os dividendos serão mantidos no patamar mínimo de R$ 0,100/cota, com a manutenção de um saldo elevado em reservas de resultado.\n\n8. **Reservas de Resultado**: As reservas de resultado acumuladas não distribuídas são robustas, atingindo R$ 328 milhões no final do mês.\n\n### O que Observar Em Seguida:\n\n1. **Acompanhe a evolução das reservas de resultado** e como elas serão utilizadas para enfrentar o cenário econômico previsto.\n   \n2. **Observação da alocação estratégica no GAHF**, especialmente em ativos indexados ao IPCA, que devem passar por um vale de índices mais brandos nos próximos meses."
   },
   "comunicados": {
     "ids": [
@@ -26,6 +26,17 @@
     "texto": "### O que aconteceu em 06/11/2025\n\n**Título:** Emissão de Cotas do Fundo Guardian Multiestratégia Imobiliária I\n\n**Resumo:** O Banco Daycoval S.A., administrador do fundo, aprovou a emissão e distribuição primária das cotas da 3ª emissão do fundo.\n\n**Trecho-chave:**\n\"foi formalizado o ato do Administrador (Ato do Administrador), nos termos do item 8.6 do Anexo ao regulamento do Fundo, datado de 18 de setembro de 2025, devidamente registrado junto à CVM (Regulamento), que aprovou a emissão e a realização da distribuição primária das cotas da 3ª (terceira) emissão do Fundo.\"\n\n### O que aconteceu em 15/06/2026\n\n**Título:** Assembleia Geral Ordinária Aprova Contas do Exercício de 2025\n\n**Resumo:** A assembleia geral ordinária aprovou as contas e demonstrações contábeis referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"A maioria dos Cotista(s) presente(s) aprovaram, sem quaisquer ressalvas ou restrições, as contas e demonstrações contábeis do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n### O que aconteceu em 28/04/2026\n\n**Título:** Convocação para Assembleia Geral Ordinária\n\n**Resumo:** A administradora convocou os cotistas para a assembleia geral ordinária, programada para o dia 28 de maio de 2026, com a finalidade de aprovar as contas e demonstrações contábeis do exercício social encerrado em 31 de dezembro de 225.\n\n**Trecho-chave:**\n\"O BANCO DAYCOVAL S.A., sociedade com sede na Cidade de São Paulo, Estado de São Paulo, convocou V. Sas. (Cotistas) para a Assembleia Geral Ordinária (Assembleia), a ser realizada no dia 28 de maio de 2026, às 09:00, para que seja deliberada a seguinte matéria, conforme ordem do dia:\""
   },
   "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Emissão de cotas com VP/cota em queda"
+    ],
+    "cota": 8.27
+  },
+  "anterior": {
+    "gerada_em": "2026-07-20T22:51:22",
+    "relatorio_data": "03/07/2026 20:08",
     "selo": "Atenção",
     "nivel": "atencao",
     "alertas": [

@@ -1,0 +1,24 @@
+{
+  "ticker": "HBOR3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T21:24:23",
+  "comunicados": {
+    "ids": [
+      249556234091186321,
+      152029844109109755,
+      489356547083951343
+    ],
+    "datas": [
+      "03/07/2026",
+      "17/07/2026",
+      "14/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 03/07/2026\n\n**O QUE aconteceu:** A HBR Realty Empreendimentos Imobiliários S.A. protocolou uma oferta pública de permuta unificada para aquisição do controle da Helbor Empreendimentos S.A.\n\n**Resumo:** A HBR propôs uma OPA pela Helbor, com o objetivo de integrar as duas empresas e formar uma nova plataforma de negócios diversificada. A oferta é condicionada à aquisição de pelo menos 50,1% do capital social da Helbor.\n\n**Trecho-chave:** \"a Oferta é fruto da convicção da administração da HBR de que, com a sua liquidação, surgirá uma nova plataforma de negócios, única, diversificada e resiliente, capaz de se beneficiar da consolidação da operação de renda recorrente da HBR, focada nos segmentos varejista e corporativo, com a expertise de incorporação da Helbor.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 17/07/2026\n\n**O QUE aconteceu:** A Helbor apresentou resultados operacionais preliminares para o segundo trimestre de 2026.\n\n**Resumo:** Os resultados indicaram uma queda significativa nas vendas e lançamentos, com um VSO (Velocidade de Vendas) reduzido em comparação ao mesmo período do ano anterior.\n\n**Trecho-chave:** \"No 2T26, as Vendas Brutas Totais somaram R$ 338,5 milhões, uma queda de 27,5% em relação ao 2T25 e de 19,4% frente ao 1T26.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 14/07/2026\n\n**O QUE aconteceu:** A CAIXA Asset informou que atingiu uma participação relevante de 5,26% nas ações ordinárias da Helbor Empreendimentos S.A.\n\n**Resumo:** A CAIXA Asset aumentou sua participação acionária na Helbor para 5,26%, sem intenção de influenciar o controle ou estrutura administrativa da empresa.\n\n**Trecho-chave:** \"a CAIXA Asset infórmed que atingiu pósiça ó de 7.045.266 açó es órdina rias emitidas pela Helbór, equivalendó a 5,26% dó tótal de açó es órdina rias emitidas pela Cómpanhia.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b"
+}

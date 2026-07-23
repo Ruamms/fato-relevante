@@ -1,0 +1,24 @@
+{
+  "ticker": "VITT3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-23T00:02:32",
+  "comunicados": {
+    "ids": [
+      14857437557609166,
+      411177543140928965,
+      447210030223198162
+    ],
+    "datas": [
+      "09/06/2026",
+      "15/07/2026",
+      "15/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 09/06/2026\n\n**O que aconteceu:** Fim do 5° Programa de Recompra de Ações, Cancelamento de Ações e Início do 6º Programa de Recompra de Ações.\n\n**Resumo:** A Vittia S.A. concluiu o 5º Programa de Recompra de Ações e aprovou um novo programa (6º).\n\n**Trecho-chave:**\n\"Além disso, a Companhia informa que seu Conselho de Administração, em reunião realizada nesta data, aprovou: \n(i) O cancelamento de 4.455.436 ações ordinárias de emissão da Companhia mantidas em tesouraria, adquiridas no âmbito do 5º programa de recompra de ações da Companhia aprovado em reunião do Conselho de Administração realizada em 29 de outubro de 2025...\"\n\n### COMUNICADO AO MERCADO entregue em 15/07/2026\n\n**O que aconteceu:** Contratação de Financiamento de Longo Prazo – FINEP.\n\n**Resumo:** A Vittia S.A. obteve um financiamento de R$ 153 milhões com a FINEP para investir em pesquisa e desenvolvimento tecnológico.\n\n**Trecho-chave:**\n\"O valor total do projeto de inovação aprovado pela FINEP é de R$ 169 milhões, sendo a parcela financiável correspondente a R$ 153 milhões (90%). O prazo total do financiamento será de 16 anos. O projeto envolve diversas iniciativas de pesquisa de novas tecnologias biológicas e tem prazo de execução de 48 meses.\"\n\n### COMUNICADO AO MERCADO entregue em 15/07/2026\n\n**O que aconteceu:** Renúncia da Vice-Presidente Independente do Conselho de Administração.\n\n**Resumo:** O Sr. Fabio Torretta renunciou ao cargo de Vice-Presidente Independente do Conselho de Administração, e o conselheiro Denis Arroyo Alves foi nomeado para substituí-lo.\n\n**Trecho-chave:**\n\"Na mesma reunião, foi aprovada a nomeação do conselheiro Denis Arroyo Alves para o cargo de Vice-Presidente do Conselho de Administração, bem como o seu enquadramento como conselheiro independente, nos termos do Regulamento do Novo Mercado da B3 S.A. – Brasil, Bolsa, Balcão, para exercer o cargo até a realização da próxima Assembleia Geral.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

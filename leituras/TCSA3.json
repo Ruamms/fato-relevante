@@ -1,0 +1,30 @@
+{
+  "ticker": "TCSA3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T23:53:54",
+  "comunicados": {
+    "ids": [
+      1058118549260428269,
+      687685344020965305,
+      253421748705946761,
+      1055375252234637037,
+      289568060182977910
+    ],
+    "datas": [
+      "01/06/2026",
+      "30/04/2026",
+      "19/03/2026",
+      "14/05/2026",
+      "22/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### O que aconteceu em 01/06/2026:\n**O que aconteceu:** A Tecnisa consumou a venda de quotas de participação no Jardim das Perdizes para o BTGI Quartzo.\n**Resumo:** A Tecnisa vendeu 26,09% do capital social da Windsor Investimentos Imobiliários Ltda. ao BTGI Quartzo, passando a ser titular de 26,41% do capital social da Windsor.\n**Trecho-chave:**\n\"foi consumada, nesta data, a venda de quotas de titularidade da Companhia, correspondentes à participação de 26,09% (vinte e seis inteiros e nove centésimos por cento) do capital social da Windsor Investimentos Imobiliários Ltda., CNPJ 08.303.528/0001-41 (“Windsor”) para o BTGI Quartzo Participações S.A., CNPJ 21.948.105/0001-47, empresa pertencente ao Grupo BTG Pactual  (“BTGI Quartzo”) - (“Operação”).\"\n\n### O que aconteceu em 30/04/2026:\n**O que aconteceu:** A Tecnisa assinou o contrato de venda de quotas para a Windsor.\n**Resumo:** A Tecnisa assinou um contrato com o BTGI Quartzo para vender 26,09% do capital social da Windsor Investimentos Imobiliários Ltda. por R$ 260,9 milhões.\n**Trecho-chave:**\n\"assim informa aos seus acionistas e ao mercado em geral que, nesta data, a Companhia assinou o Contrato de Compra e Venda de Quotas com BTGI Quartzo Participações S.A., CNPJ 21.948.105/0001-47, empresa pertencente ao Grupo BTG Pactual (‘BTGI Quartzo’) para a venda de quotas de titularidade da Companhia correspondentes à participação de 26,09% (vinte e seis inteiros e nove centésimos por cento) do capital social da Windsor Investimentos Imobiliários Ltda., CNPJ 08.303.528/0001-41 (‘Windsor’), por R$ 260.900.000,00 (duzentos e sessenta milhões e novecentos mil reais), que serão pagos à vista, após a concretização da operação e sujeito a acréscimos e/ou deduções previstos no referido instrumento.\"\n\n### O que aconteceu em 19/03/2026:\n**O que aconteceu:** A Tecnisa descontinuou o guidance do Jardim das Perdizes.\n**Resumo:** A Tecnisa decidiu retirar as projeções de lançamentos e margem bruta para o empreendimento Jardim das Perdizes, motivada por mudanças significativas no contexto macroeconômico e reestruturação da estratégia operacional.\n**Trecho-chave:**\n\"A Companhia decidiu retirar as projeções de lançamentos e margem bruta para o empreendimento Jardim das Perdizes (guidance), conforme divulgadas em 27 de março de 2024. A decisão foi motivada por mudanças significativas no contexto macroeconômico, bem como pela reestruturação da estratégia operacional para os projetos envolvidos na projeção.\"\n\n### O que aconteceu em 15/05/2026:\n**O que aconteceu:** A Tecnisa entregou o comunicado ao mercado com a apresentação de resultados.\n**Resumo:** A Tecnisa divulgou detalhes sobre sua estratégia, desempenho operacional e financeiro, incluindo a venda de participação no Jardim das Perdizes e controle das despesas administrativas.\n**Trecho-chave:**\n\"Velocidade de vendas de 17% no trimestre\n5\nControle das Despesas Administrativas\nRedução de 15% em relação ao 1T25\nSujeito a condições precedentes\n\n[página 4]\nV E N D A D E P A R T I C I P A Ç Ã O\nAssinatura de Contrato de Compra e Venda de \nQuotas do Jardim das Perdizes com BTG Pactual\nJardim das Perdizes\nNova participação TECNISA: 26,41%\nValor da proposta: R$ 260,9 milhões\nParticipação a vender: 26,09%\"\n**Conexão com o contexto:** O comunicado ao mercado menciona detalhes sobre a venda de participação no Jardim das Perdizes, que foi objeto de comunicados anteriores."
+  },
+  "modelo": "qwen2.5:7b"
+}

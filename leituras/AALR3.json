@@ -1,0 +1,30 @@
+{
+  "ticker": "AALR3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T20:18:12",
+  "comunicados": {
+    "ids": [
+      517793303456039626,
+      266430489326712280,
+      608012909414003247,
+      93478208612968363,
+      1000058365830881542
+    ],
+    "datas": [
+      "14/07/2026",
+      "10/06/2026",
+      "08/06/2026",
+      "01/06/2026",
+      "01/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### O QUE ACONTECEU: Alteração na Data de Divulgação das Demonstrações Financeiras e Eleição do Conselho de Administração\n\n**14/07/2026 - Fato Relevante**\n\nA Alliança Saúde e Participações S.A. informou que a data estimada para divulgação das demonstrações financeiras individuais e consolidadas relativas ao exercício social encerrado em 31 de dezembro de 2025 foi alterada. A nova data prevista é o dia 29 de julho de 2026.\n\n**Resumo:** A Alliança iniciou um processo interno de reestruturação financeira após mudança no controle, o que demandou tempo para a elaboração das demonstrações financeiras e afetou também as datas de divulgação trimestral. As novas datas previstas são: 29/07/2026 (Demonstrações Financeiras de 2025), 27/08/2026 (ITR – 1T26) e 29/09/2026 (ITR – 2T26).\n\n**Trecho-chave:**\n\"Após a alteração do seu controle, a Companhia deu início a um amplo processo interno de reestruturação financeira, abrangendo a revisão de processos e controles internos. Esse processo, necessário para que as demonstrações financeiras da Companhia reflitam adequadamente sua situação econômico-financeira, tem demandado uma série de medidas, tais como a realização de testes contábeis adicionais, a discussão de seus respectivos efeitos, bem como o atendimento de demandas complementares do auditor independente.\"\n\n**10/06/2026 - Fato Relevante**\n\nA Alliança Saúde e Participações S.A. informou que a Assembleia Geral Extraordinária realizada em 10 de junho de 2026 aprovou a eleição dos atuais conselheiros, resultando na seguinte composição do Conselho de Administração: José Luiz Mendes Ramos Júnior (Presidente), Thalis Leon de Avila Saint Yves (Vice-Presidente e Conselheiro Independente) e João de Saint Brisson Paes de Carvalho (Conselheiro Independente).\n\n**Resumo:** A Alliança reorganizou seu Conselho de Administração após a mudança no controle, com novos membros sendo eleitos. O mandato dos conselheiros será até a Assembleia Geral Ordinária que deliberará sobre as contas da administração e demonstrações financeiras referentes ao exercício social encerrado em 31 de dezembro de 2027.\n\n**Trecho-chave:**\n\"Conforme Assembleia Geral Extraordinária da Companhia, realizada em 10 de junho de 2026, aprovou a eleição dos atuais conselheiros, tendo o Conselho de Administração a seguinte composição: (i) Sr. José Luiz Mendes Ramos Júnior – Presidente do Conselho; (ii) Sr. Thalis Leon de Avila Saint Yves – Vice-Presidente e Conselheiro Independente; (iii) e o João de Saint Brisson Paes de Carvalho – Conselheiro Independente.\"\n\n**08/06/2026 - Fato Relevante**\n\nA Alliança Saúde e Participações S.A. informou que a subsidiária Cura concluiu a captação de R$ 50,000,000,00 através da terceira emissão de debêntures simples.\n\n**Resumo:** A Alliança enfrenta uma grave situação de esvaziamento do fluxo de caixa e buscou recursos por meio de captações. A Cura, subsidiária da Alliança, realizou a 3ª emissão de debêntures simples, levantando R$ 50 milhões.\n\n**Trecho-chave:**\n\"O Grupo Alliança tem enfrentado uma grave situação de esvaziamento praticamente total de seu fluxo de caixa, e, em razão disto, vem buscando captar recursos perante acionistas e credores. Nesse contexto, a Companhia informa que o Cura – Centro de Ultrassonografia e Radiologia S.A. (‘Cura’), subsidiária da Companhia, concluiu a captação de R$ 50.000.000,00 (cinquenta milhões de reais), por meio da 3ª emissão de debêntures simples.\"\n\n**01/06/2026 - Comunicado ao Mercado**\n\nA Alliança Saúde e Participações S.A. esclareceu que o desenquadramento do Comitê de Auditoria apontado pela B3 foi temporário, pois a companhia já está tomando medidas para regularização após a Assembleia Geral Extraordinária.\n\n**Resumo:** A Alliança informou que possui conhecimento do desenquadramento do Comitê de Auditoria e está tomando medidas para regularização. O Comitê permanece em pleno funcionamento, com autonomia operacional e estrutura adequada.\n\n**Trecho-chave:**\n\"A Companhia esclarece que possui conhecimento do desenquadramento e já está tomando as medidas para regularização na mesma data em que for confirmada a composição do Conselho de Administração da Companhia, o que deve ocorrer após Assembleia Geral Extraordinária a ser realizada no próximo dia 10 de junho de 2026.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

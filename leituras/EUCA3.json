@@ -1,0 +1,21 @@
+{
+  "ticker": "EUCA3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T21:14:04",
+  "comunicados": {
+    "ids": [
+      454409234351723233,
+      368982621189318467
+    ],
+    "datas": [
+      "17/06/2026",
+      "13/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### O QUE ACONTECEU: Redução de Participação Acionária Relevante\n\n**O que aconteceu:** A ECONÔMICO AGRO PASTORIL INDUSTRIAL S.A passou a deter 30.649.818 ações preferenciais, representando aproximadamente 49,95% do total de ações preferenciais emitidas pela Eucatex S/A.\n\n**Resumo:** A companhia informa que não tem intenção de alterar a composição do controle ou estrutura administrativa da empresa e destaca que esta mudança não visa atingir qualquer participação acionária em particular.\n\n**Trecho-chave:**\n\"passou a deter 30.649.818 (trinta milhões, seiscentos e quarenta e nove mil, oitocentos e dezoito) ações preferenciais, que representam aproximadamente 49,95% do total de ações preferenciais emitidas pela Companhia.\" (p. 1)\n\n### O QUE ACONTECEU: Divulgação de Resultados\n\n**O que aconteceu:** A Eucatex S/A divulgou seus resultados referentes ao primeiro trimestre de 2026.\n\n**Resumo:** A apresentação contém declarações sobre perspectivas de negócios, projeções e metas operacionais e financeiras da companhia. As considerações futuras não são garantias de desempenho e envolvem riscos e incertezas.\n\n**Trecho-chave:**\n\"As informações contidas nesta apresentação e eventuais declarações que possam ser feitas durante a videoconferência, relativas às perspectivas de negócios, projeções e metas operacionais e financeiras da Eucatex, constituem-se em crenças e premissas da Administração da Companhia, bem como em informações atualmente disponíveis.\" (p. 1)\n\n**Conexão com o Contexto:** O documento de divulgação de resultados apresenta as perspectivas futuras da empresa, que podem ser afetadas por condições econômicas e de mercado, conforme mencionado no contexto fornecido."
+  },
+  "modelo": "qwen2.5:7b"
+}

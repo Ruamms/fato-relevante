@@ -1,0 +1,21 @@
+{
+  "ticker": "RANI3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T23:39:07",
+  "comunicados": {
+    "ids": [
+      321799814550889746,
+      1101237094925900209
+    ],
+    "datas": [
+      "17/07/2026",
+      "15/07/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 17/07/2026\n\n**O que aconteceu:** A Moody’s Local Brasil publicou um relatório de crédito sobre a Irani Papel e Embalagem S.A.\n\n**Resumo:** A Companhia recebeu uma avaliação do mercado creditício, o que pode impactar sua imagem e potencial acesso a novos recursos financeiros.\n\n*\"A Moody’s Local Brasil publicou relatório de crédito a respeito da Companhia.\"* (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 15/07/2026\n\n**O que aconteceu:** A Irani Papel e Embalagem S.A. divulgou sua agenda de divulgação dos resultados do segundo trimestre de 2026.\n\n**Resumo:** A Companhia planeja divulgar seus resultados financeiros no dia 31 de julho, antes da abertura do mercado, e realizar um Webinar para apresentar esses dados.\n\n*\"No dia 31 de julho de 2026: Antes da abertura do mercado, divulgaremos os resultados referentes ao 2T26.\"* (p. 1)\n\n**Conexão com o contexto:** A divulgação dos resultados está relacionada aos indicadores financeiros do segundo trimestre, que podem influenciar a avaliação de crédito mencionada no comunicado posterior."
+  },
+  "modelo": "qwen2.5:7b"
+}

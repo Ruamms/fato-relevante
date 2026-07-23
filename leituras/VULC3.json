@@ -1,0 +1,24 @@
+{
+  "ticker": "VULC3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-23T00:05:45",
+  "comunicados": {
+    "ids": [
+      7266051033900976,
+      743027686001955052,
+      653673717487409137
+    ],
+    "datas": [
+      "29/04/2026",
+      "08/05/2026",
+      "05/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### 08/05/2026 - Comunicado ao Mercado\n\n**O QUE aconteceu:** Análise do mercado de calçados esportivos no Brasil.\n\n**Resumo:** O comunicado destaca o crescimento do mercado de calçados esportivos no Brasil, com foco em dados demográficos e comportamento de consumo.\n\n**Trecho-chave:**\n\"Brasil é o 4º maior mercado do mundo com 801,0 milhões¹ de pares consumidos por ano. Considerando apenas calçados esportivos, o consumo é de 0,4 pares por habitante2.\"\n\n---\n\n### 05/05/2026 - Comunicado ao Mercado\n\n**O QUE aconteceu:** Apresentação dos resultados do primeiro trimestre de 2026.\n\n**Resumo:** Os resultados mostram crescimento nas receitas e lucros líquidos, mas uma redução no lucro líquido recorrente em comparação com o mesmo período anterior.\n\n**Trecho-chave:**\n\"RECEITA LÍQUIDA R$ 776,4 milhões no 1T26, crescimento de 10,7% em relação aos R$ 701,2 milhões registrados no 1T25. LUCRO LÍQUIDO RECORRENTE E MARGEM LÍQUIDA RECORRENTE R$ 86,1 milhões no 1T26, com recuo de 18,9% em relação ao 1T25.\"\n\n---\n\n### 29/04/2026 - Fato Relevante\n\n**O QUE aconteceu:** Aprovou um novo plano de opção de compra de ações para funcionários e administradores.\n\n**Resumo:** A Vulcabras S.A. aprovou um novo plano de opção de compra de ações, que será divulgado em detalhes por meio dos canais habituais da empresa.\n\n**Trecho-chave:**\n\"A Assembleia Geral Ordinária e Extraordinária realizada em 29 de abril de 2026 (‘AGOE 2026’), aprovou o novo plano de opção de compra de ações apresentado pela administração da Companhia, para funcionários e administradores da Companhia e de sociedades que estejam sob o seu controle direto ou indireto ('Plano 2026').\"\n\n---\n\n**Conexão com Indicadores do Contexto:** O plano de opções de ações pode influenciar positivamente os resultados financeiros futuros, considerando o crescimento previsto no mercado de calçados esportivos."
+  },
+  "modelo": "qwen2.5:7b"
+}

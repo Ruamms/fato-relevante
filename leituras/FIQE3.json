@@ -1,0 +1,27 @@
+{
+  "ticker": "FIQE3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T21:18:16",
+  "comunicados": {
+    "ids": [
+      879009444010845810,
+      728886498218240650,
+      36605901782260933,
+      810479855991976714
+    ],
+    "datas": [
+      "06/05/2026",
+      "05/05/2026",
+      "08/07/2026",
+      "27/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### O QUE ACONTECEU EM 27/05/2026\n\n**Título:** Unifique Telecomunicações S.A. adquire carteira de clientes e ativos da G9 TELECOMUNICAÇÕES LTDA.\n\n**Resumo:** A Unifique Telecomunicações S.A. celebrou um contrato para aquisição da carteira de clientes e ativos da G9 TELECOMUNICAÇÕES LTDA, alinhada à estratégia de crescimento com tecnologia de fibra óptica no mercado catarinense.\n\n**Trecho-chave:** \"A aquisição está alinhada à estratégia da Companhia de crescimento e consolidação de sua base de clientes atendidos com tecnologia de fibra óptica no mercado de Santa Catarina, bem como de expansão da infraestrutura de transporte via fibra óptica, visando à implementação de Estações Rádio Base (ERBs) para o Serviço Móvel Pessoal (SMP) com tecnologia 5G.\" (p. 2)\n\n---\n\n### O QUE ACONTECEU EM 08/07/2026\n\n**Título:** Unifique Telecomunicações S.A. nomeia novos diretores.\n\n**Resumo:** A Unifique Telecomunicações S.A. nomeou o Sr. Erolf Schotten como Diretor de Negócios e Expansão, e o Sr. Vitor Elísio Góes de Oliveira Menezes como Diretor de Relações Institucionais e Regulatório.\n\n**Trecho-chave:** \"O Sr. Erolf Schotten retorna ao time executivo da Unifique como Diretor de Negócios e Expansão, sendo responsável por liderar a estratégia de expansão da Companhia no estado de São Paulo.\" (p. 1)\n\n---\n\n### O QUE ACONTECEU EM 05/05/2026\n\n**Título:** Unifique Telecomunicações S.A. vence leilão de faixa de 700 MHz.\n\n**Resumo:** A Unifique Telecomunicações S.A. e sua controlada, a Amazônia 5G, foram declaradas vencedoras do leilão da faixa de 700 MHz promovido pela ANATEL, com propostas no valor de R$ 3.418.493,29 e R$ 7.010.114,86 respectivamente.\n\n**Trecho-chave:** \"A Companhia foi declarada vencedora do Lote A4, referente à subfaixa de radiofrequências de 708 MHz a 718 MHz e de 763 MHz a 773 MHz, com proposta no valor de R$ 3.418.493,29 (três milhões, quatrocentos e dezoito mil, quatrocentos e noventa e três reais e vinte e nove centavos); e sua controlada AMAZÔNIA SERVIÇOS DIGITAIS E TELECOMUNICAÇÕES S.A. (“Amazônia 5G”) foi declarada vencedora do Lote A1, referente à subfaixa de radiofrequências de 708 MHz a 718 MHz e de 763 MHz a 773 MHz, com proposta no valor de R$ 7.010.114,86 (sete milhões, dez mil, cento e quatorze reais e oitenta e seis centavos).\" (p. 2)\n\n---\n\n### O QUE ACONTECEU EM 06/05/2026\n\n**Título:** Unifique Telecomunicações S.A. informa aplicabilidade do Art. 256 da Lei 6.404/76 – Aquisição da Amazônia 5G.\n\n**Resumo:** A Unifique Telecomunicações S.A. informou que a aquisição da Amazônia 5G deve ser ratificada pelos acionistas em Assembleia Geral Extraordinária, devido ao preço médio das ações adquiridas ultrapassar 1,5x o valor do patrimônio líquido por ação.\n\n**Trecho-chave:** \"a Companhia verificou que, embora a operação não caracterize investimento relevante nos termos dos artigos 247 e 256, inciso I, da Lei das S.A., a aquisição deverá ser ratificada pelos acionistas em Assembleia Geral Extraordinária a ser oportunamente convocada, ensejando, ainda, direito de recesso aos acionistas dissidentes, nos termos do artigo 256 da Lei das S.A., tendo em vista que o preço médio de cada ação adquirida da AMAZÔNIA 5G ultrapassa 1,5x (uma vez e meia) o valor do patrimônio líquido por ação de emissão da AMAZÔNIA 5G.\" (p. 2)"
+  },
+  "modelo": "qwen2.5:7b"
+}

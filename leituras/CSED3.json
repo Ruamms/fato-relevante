@@ -1,0 +1,21 @@
+{
+  "ticker": "CSED3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T20:59:32",
+  "comunicados": {
+    "ids": [
+      604843412748915222,
+      113041981485763692
+    ],
+    "datas": [
+      "13/07/2026",
+      "22/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### O QUE ACONTECEU EM 13/07/2026\n\n**Título:** Autorização para 60 vagas de Medicina no Centro Universitário Módulo\n\n**Resumo:** A Cruzeiro do Sul Educacional recebeu autorização para oferecer mais 60 vagas anuais em Medicina, elevando o total de cursos de Medicina em operação pela companhia.\n\n**Trecho-chave:**\n\"A CRUZEIRO DO SUL EDUCACIONAL (“Companhia”) (CSED3) comunica a seus acionistas e ao mercado em geral que a Secretaria de Regulação e Supervisão de Educação Superior (“SERES”) do Ministério da Educação (“MEC”), através da Portaria nº 354 de 10 de julho de 2026, publicada nesta data, deferiu o pedido de autorização de 60 (sessenta) vagas anuais para o curso de graduação de Medicina do Centro Universitário Módulo - MÓDULO, localizado no município de Caraguatatuba, no Estado de São Paulo.\"\n\n**Conexão com contexto:** Este aumento na oferta de vagas em medicina reflete a tendência de expansão da companhia no mercado educacional brasileiro, conforme indicado nos gráficos sobre o mercado de educação superior no Brasil.\n\n---\n\n### O QUE ACONTECEU EM 22/05/2026\n\n**Título:** Apresentação Institucional\n\n**Resumo:** Documento apresenta expectativas e previsões para o futuro da companhia, mas não contém informações específicas sobre eventos recentes.\n\n**Trecho-chave:**\n\"Esta apresentação pode conter previsões acerca de eventos futuros. Tais previsões refletem apenas expectativas dos administradores da Companhia sobre condições futuras da economia, além do setor de atuação, do desempenho e dos resultados financeiros da Companhia, dentre outros.\"\n\n**Conexão com contexto:** O documento não apresenta novidades relevantes para o mercado em termos de fatos concretos."
+  },
+  "modelo": "qwen2.5:7b"
+}

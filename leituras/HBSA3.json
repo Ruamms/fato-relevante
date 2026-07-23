@@ -1,0 +1,24 @@
+{
+  "ticker": "HBSA3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T21:25:57",
+  "comunicados": {
+    "ids": [
+      543862134859048692,
+      1114209329960638947,
+      346847297669690854
+    ],
+    "datas": [
+      "05/06/2026",
+      "01/06/2026",
+      "29/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 05/06/2026\n\n**O QUE aconteceu:** A HIDROVIAS DO BRASIL S.A. divulgou o edital de primeira convocação e a proposta da administração para uma assembleia geral de debenturistas.\n\n**Resumo:** A assembleia será realizada para deliberar sobre alterações nas condições das debêntures, incluindo a flexibilização do resgate antecipado facultativo e a reclassificação de um evento de vencimento antecipado.\n\n**Trecho-chave:**\n\"as Alterações fazem parte da estratégia de reestruturação das dívidas da Companhia, com foco em garantir maior flexibilidade na gestão de passivos, promovendo maior equilíbrio entre os diversos instrumentos que compõem a sua estrutura de endividamento.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 01/06/2026\n\n**O QUE aconteceu:** A HIDROVIAS DO BRASIL S.A. informou sobre a aquisição de ações por parte da Alaska Investimentos Ltda.\n\n**Resumo:** A Alaska adquiriu 15,01% das ações ordinárias da Companhia através de fundos sob sua gestão, sem intenção de alterar a estrutura administrativa ou controlar a empresa.\n\n**Trecho-chave:**\n\"A participação acionária tem por objetivo a mera realização de operações financeiras, não objetiva alterar a composição do controle ou a estrutura administrativa da Companhia e, por fim, não tem o objetivo de atingir qualquer participação acionária em particular.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 29/05/2026\n\n**O QUE aconteceu:** A HIDROVIAS DO BRASIL S.A. informou sobre a aquisição de ações por parte da Alaska Investimentos Ltda.\n\n**Resumo:** A Alaska adquiriu 15,01% das ações ordinárias da Companhia através de fundos sob sua gestão, sem intenção de alterar a estrutura administrativa ou controlar a empresa.\n\n**Trecho-chave:**\n\"A participação acionária tem por objetivo a mera realização de operações financeiras, não objetiva alterar a composição do controle ou a estrutura administrativa da Companhia e, por fim, não tem o objetivo de atingir qualquer participação acionária em particular.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

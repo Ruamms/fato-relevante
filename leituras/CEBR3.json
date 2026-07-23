@@ -1,0 +1,21 @@
+{
+  "ticker": "CEBR3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T20:54:03",
+  "comunicados": {
+    "ids": [
+      54999218608147087,
+      1062606780493662537
+    ],
+    "datas": [
+      "01/07/2026",
+      "19/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### O que aconteceu em 01/07/2026\n\n**Resumo:** A CEB informou a redução da participação acionária relevante de um gestor de fundos, que passou a deter menos de 10% das ações preferenciais classe A.\n\n**Citação do trecho-chave:**\n\"Os fundos sob gestão da Trígono Capital Ltda. passaram a deter participação inferior ao patamar de 10% (dez por cento) das ações preferenciais classe A de emissão da Companhia.\"\n\n---\n\n### O que aconteceu em 19/06/2026\n\n**Resumo:** A CEB esclareceu que não há evidências de operações financeiras envolvendo seu FGCG e a BRB, negando possíveis rumores.\n\n**Citação do trecho-chave:**\n\"não há registros ou informações que indiquem a formalização, negociação ou implementação de operação financeira com as características mencionadas.\"\n\n**Conexão com o contexto:** Este comunicado responde a rumores sobre possíveis operações envolvendo a CEB e seu FGCG, mantendo a companhia alinhada às normas de transparência."
+  },
+  "modelo": "qwen2.5:7b"
+}

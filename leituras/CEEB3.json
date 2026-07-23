@@ -1,0 +1,24 @@
+{
+  "ticker": "CEEB3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T20:55:28",
+  "comunicados": {
+    "ids": [
+      278289996555717445,
+      1099720935837300839,
+      721885256841392229
+    ],
+    "datas": [
+      "11/05/2026",
+      "08/05/2026",
+      "08/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 11/05/2026\n\n**O que aconteceu:** A Companhia de Eletricidade do Estado da Bahia - COELBA elegeram a Sra. Fabiana Carvalho Lopes como Diretora Presidente.\n\n**Resumo:** A companhia nomeou uma nova diretora para substituir o Sr. Thiago Freire Guth, com mandato de 3 anos.\n\n**Trecho-chave:**\n\"A Companhia aprovou, nesta data, a eleição da Sra. Fabiana Carvalho Lopes para o cargo de Diretora Presidente da Companhia, em substituição ao Sr. Thiago Freire Guth.\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 08/05/2026\n\n**O que aconteceu:** A Companhia de Eletricidade do Estado da Bahia - COELBA anunciou planos para investimentos entre 2026 e 2030.\n\n**Resumo:** A companhia planeja investir R$ 25 bilhões em expansão e reforço das redes de distribuição, visando suportar o crescimento econômico da área de concessão.\n\n**Trecho-chave:**\n\"A Neoenergia Coelba pretende investir entre os anos de 2026 e 2030 um montante bruto de cerca de R$ 25 bilhões.\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 08/05/2026\n\n**O que aconteceu:** A Companhia de Eletricidade do Estado da Bahia - COELBA assinou um Termo Aditivo de Prorrogação da Concessão.\n\n**Resumo:** A concessão foi prorrogada por 30 anos, até agosto de 2057, sem onerosidades para a companhia.\n\n**Trecho-chave:**\n\"A Neoenergia Coelba assinou o Termo Aditivo de Prorrogação da Concessão da Companhia, sem qualquer onerosidade, por um período adicional de 30 anos.\" (p. 1)\n\n**Conexão com indicadores do contexto:** O prazo estendido da concessão alinha-se com a estratégia de investimento em redes de distribuição de eletricidade pela Neoenergia, assegurando rentabilidade e qualidade no serviço para seus clientes."
+  },
+  "modelo": "qwen2.5:7b"
+}

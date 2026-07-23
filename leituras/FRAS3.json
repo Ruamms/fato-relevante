@@ -1,0 +1,27 @@
+{
+  "ticker": "FRAS3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T21:18:58",
+  "comunicados": {
+    "ids": [
+      540271422914928539,
+      947464417420550736,
+      400980599028901231,
+      565684739077405262
+    ],
+    "datas": [
+      "15/07/2026",
+      "13/07/2026",
+      "20/07/2026",
+      "22/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### 15/07/2026 - Retificação ao Fato Relevante de Juros sobre o Capital Próprio\n\nA FRASLE MOBILITY S.A. retificou um fato relevante divulgado em 13 de julho de 2026, alterando a alíquota do Imposto de Renda Retido na Fonte incidente sobre os Juros sobre o Capital Próprio (JCP). O valor líquido por ação foi ajustado para R$ 0,207551, já deduzido o imposto de renda na fonte à alíquota de 17,5%, ressalvadas as exceções legais.\n\n*\"Considerando a vigência da Lei Complementar nº 224/2025, que alterou a alíquota do Imposto de Renda Retido na Fonte incidente sobre os Juros sobre o Capital Próprio, onde se lê valor líquido de R$ 0,213840 por ação, com imposto de renda na fonte de 15%, leia-se valor líquido de R$ 0,207551 por ação, já deduzido o imposto de renda na fonte à alíquota de 17,5%, ressalvadas as exceções legais.\" (p. 1)*\n\n### 13/07/2026 - Fato Relevante Juros sobre o Capital Próprio\n\nA FRASLE MOBILITY S.A. comunicou a distribuição de Juros Sobre o Capital Próprio (JCP) para os acionistas, com início do pagamento em 24 de agosto de 2026. O valor bruto por ação é R$ 0,251577, e o montante total bruto é de R$ 69.771.130,19.\n\n*\"No dia 24 de agosto de 2026, será iniciado o pagamento de Juros Sobre o Capital Próprio (“JCP”), cuja distribuição foi aprovada pelo Conselho de Administração da Companhia, em reunião realizada nesta data.\" (p. 1)*\n\n### 20/07/2026 - Comunicado ao Mercado Sobre Prática de Divulgação Mensal\n\nA FRASLE MOBILITY S.A. anunciou a descontinuação da prática de divulgar mensalmente a receita líquida consolidada, com o último comunicado no formato vigente referenciando novembro de 2026 e previsto para publicação em 21 de dezembro de 2026.\n\n*\"A partir do exercício de 2027, descontinuará a prática de divulgação mensal da receita líquida consolidada, sendo que o último Comunicado ao Mercado no formato vigente terá como mês de referência novembro de 2026.\" (p. 1)*\n\n### 22/06/2026 - Comunicado ao Mercado com Receita Líquida Consolidada\n\nA FRASLE MOBILITY S.A. divulgou a receita líquida consolidada referente ao mês de junho de 2026, que foi de R$ 483,1 milhões (informações preliminares e não auditadas).\n\n*\"Receita Líquida Consolidada (R$ Milhões):  \nJun\n2T\nAcumulado\n2026¹\n483,1\n1.384,7\n2.634,8\" (p. 1)*"
+  },
+  "modelo": "qwen2.5:7b"
+}

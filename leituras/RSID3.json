@@ -1,0 +1,27 @@
+{
+  "ticker": "RSID3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T23:44:01",
+  "comunicados": {
+    "ids": [
+      647683474910116866,
+      985750443241324836,
+      1095067617285861472,
+      81131668213207527
+    ],
+    "datas": [
+      "28/05/2026",
+      "19/05/2026",
+      "18/05/2026",
+      "01/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### Fato Relevante entregue em 28/05/2026\n\n**O QUE aconteceu:** A Assembleia Geral de Credores foi suspensa e retomada virtualmente.\n\n**Resumo:** A companhia decidiu suspender a Assembleia Geral de Credores presencial e realizar-a exclusivamente na modalidade virtual em 27 de julho de 2026.\n\n**Trecho-chave:**\n\"foi aprovada, por ampla maioria dos créditos presentes, a suspensão da AGC e a sua retomada exclusivamente na modalidade virtual, a ser realizada no dia 27 de julho de 2026, às 14h, no endereço eletrônico que será oportunamente disponibilizado pelo Administrador Judicial.\"\n\n---\n\n### Fato Relevante entregue em 19/05/2026\n\n**O QUE aconteceu:** O registro da companhia foi suspenso por descumprimento de obrigações financeiras.\n\n**Resumo:** A companhia teve seu registro de companhia aberta suspenso pela CVM, devido à falta de entrega das Informações Trimestrais (ITR) referentes ao primeiro trimestre de 2025.\n\n**Trecho-chave:**\n\"A Companhia vem enfrentando dificuldades na elaboração e divulgação de suas informações financeiras decorrentes, principalmente, da necessidade de revisão e regularização de registros contábeis relativos a exercícios anteriores.\"\n\n---\n\n### Fato Relevante entregue em 18/05/2026\n\n**O QUE aconteceu:** A Assembleia Geral de Credores não foi instalada na primeira convocação.\n\n**Resumo:** A Assembleia Geral de Credores não foi instalada no dia 18 de maio de 2026, devido à ausência do quórum mínimo legal exigido. A segunda convocação será realizada em 28 de maio de 2026.\n\n**Trecho-chave:**\n\"A Assembleia Geral de Credores (AGC) não foi instalada em primeira convocação, em razão da ausência do quórum mínimo legal exigido.\"\n\n---\n\n### Comunicado ao Mercado entregue em 01/07/2026\n\n**O QUE aconteceu:** A Diretora Jurídica renunciou ao cargo.\n\n**Resumo:** A Sra. Daiane de Camargo Freitas renunciou ao cargo de Diretora Jurídica da companhia em 30 de junho de 2026.\n\n**Trecho-chave:**\n\"A Companhia agradece a dedicação e a contribuição da Sra. Daiane Camargo no exercício de suas funções e deseja sucesso em seus novos desafios.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

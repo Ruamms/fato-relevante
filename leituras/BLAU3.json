@@ -1,0 +1,27 @@
+{
+  "ticker": "BLAU3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T20:41:18",
+  "comunicados": {
+    "ids": [
+      346222397526109346,
+      9616244758152406,
+      1056874510710680565,
+      441700625750179714
+    ],
+    "datas": [
+      "25/06/2026",
+      "08/06/2026",
+      "20/05/2026",
+      "08/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### Ocorrências mais recentes\n\n**Data: 25/06/2026**\n- **Título:** Emissão de Notas Comerciais Escriturais\n- **Resumo:** A Blau Farmacêutica S.A. aprovou a emissão de notas comerciais escriturais para distribuição pública, com valor total de R$ 250.000.000,00.\n- **Trecho-chave:**\n  > \"A Companhia, em reunião realizada em 25 de junho de 2026, aprovou a 2ª (segunda) emissão de notas comerciais escriturais, em série única, para distribuição pública, sob o rito de registro automático, no valor total de R$ 250.000.000,00 (duzentos e cinquenta milhões de reais), com valor nominal unitário de R$1.000,00 (mil reais) na data de sua emissão.\"\n\n**Data: 08/06/2026**\n- **Título:** Emissão de Notas Comerciais Privadas\n- **Resumo:** A Blau Farmacêutica S.A. aprovou a emissão de notas comerciais privadas com valor total de R$ 350.000.000,00.\n- **Trecho-chave:**\n  > \"A Companhia, em reunião realizada nesta data, aprovou a emissão de notas comerciais privadas, sendo o credor o Banco do Brasil S.A., no valor total de R$ 350.000.000,00 (trezentos e cinquenta milhões de reais), com prazo de vencimento de 24 meses, e remuneração de CDI + 0,97% a.a.\"\n\n**Data: 20/05/2026**\n- **Título:** Participação em Live\n- **Resumo:** O CFO da Blau Farmacêutica participará de uma live com a Simpla Invest no dia 21/05, às 20:00 horas.\n- **Trecho-chave:**\n  > \"A Companhia, em atendimento ao disposto na Resolução CVM nº 44/21 e no Ofício-Circular nº 7/2020 – CVM/SEP, comunica aos seus acionistas e ao mercado em geral a participação do Sr. Douglas Rodrigues, CFO e DRI, em evento em português ao vivo com a Simpla Invest, a ser transmitido no dia 21/05, às 20:00 horas.\"\n\n**Data: 08/05/2026**\n- **Título:** Apresentação de Resultados\n- **Resumo:** A Blau Farmacêutica S.A. apresentou seus resultados do primeiro trimestre de 2026, com crescimento significativo em receita e EBITDA recorrente.\n- **Trecho-chave:**\n  > \"Crescimento de Receita e EBITDA Recorrente, com alavancagem zero\n  Lançamentos BRL 29 mi\n  Receita Líquida BRL 435 mi\n  Margem EBITDA Rec. 23,9%\n  Lucro Líquido Rec. BRL 36 mi\n  Margem Bruta 41,4%\"\n  \n### Conexão com o Contexto\n\nA emissão de notas comerciais escriturais e privadas, bem como a apresentação dos resultados do primeiro trimestre, refletem a estratégia financeira da Blau Farmacêutica para reforçar seu caixa e gerenciar seus passivos."
+  },
+  "modelo": "qwen2.5:7b"
+}

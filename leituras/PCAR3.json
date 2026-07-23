@@ -1,0 +1,21 @@
+{
+  "ticker": "PCAR3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T21:55:34",
+  "comunicados": {
+    "ids": [
+      109693281695547717,
+      279271780219044400
+    ],
+    "datas": [
+      "17/07/2026",
+      "02/07/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 17/07/2026\n\n**O que aconteceu:** A Companhia Brasileira de Distribuição respondeu a um ofício da B3 sobre uma notícia veiculada na imprensa.\n\n**Resumo:** A companhia esclareceu que o plano de recuperação extrajudicial do GPA foi bem recebido pelos credores, com apenas seis impugnações apresentadas. As impugnações foram refutadas judicialmente e a Companhia confia na rejeição do plano.\n\n**Trecho-chave:**\n\"Em resposta ao Ofício, a Companhia presta os seguintes esclarecimentos.\nQuanto ao primeiro e ao segundo itens, a Companhia confirma que, em 13 de julho de \n2026, encerraram-se os prazos para a eleição das opções de pagamento e para a \napresentação de impugnações ao plano de recuperação extrajudicial (art. 164, § 2º, da Lei \nnº 11.101/2005 – “LFR”).\"\n\n### COMUNICADO AO MERCADO entregue em 02/07/2026\n\n**O que aconteceu:** A Companhia Brasileira de Distribuição informou sobre a conclusão da operação de alienação à Raia Drogasil S.A. (RD) de sua participação societária na Stix Fidelidade e Inteligência S.A., correspondente a 66,7% do capital social.\n\n**Resumo:** A venda foi concluída, encerrando a joint venture com a RD. Durante um período de transição, o programa Stix será mantido em condições equivalentes às atuais para preservar os benefícios aos clientes.\n\n**Trecho-chave:**\n\"Com a conclusão da Operação, a Companhia, a Stix e a RD celebraram instrumento particular \npara estabelecer período de transição, com o objetivo de preservar a experiência dos clientes \nnas lojas. Durante o período de transição, o GPA e a RD manterão o programa em condições \noperacionais equivalentes às atualmente praticadas, incluindo a possibilidade de acúmulo e \nresgate de Pontos Stix pelos clientes do GPA.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

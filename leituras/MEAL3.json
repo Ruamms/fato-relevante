@@ -1,0 +1,30 @@
+{
+  "ticker": "MEAL3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T21:40:18",
+  "comunicados": {
+    "ids": [
+      452181643522296510,
+      134249882524074615,
+      406626515108544474,
+      1000884525827674931,
+      1067342401569591501
+    ],
+    "datas": [
+      "09/07/2026",
+      "08/05/2026",
+      "29/04/2026",
+      "15/05/2026",
+      "31/03/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### O QUE aconteceu em 09/07/2026\n\n**Resumo:** A International Meal Company Alimentação S.A. recebeu uma orientação da B3 sobre o reenquadramento da cotação de suas ações.\n\n**Trecho-chave:**\n\"A Companhia informa que continuará acompanhando a evolução da cotação de suas ações ao longo dos próximos 90 (noventa) dias, nos termos do Regulamento de Emissores da B3. Não obstante, caso, ao término desse período de acompanhamento, a cotação das ações de emissão da Companhia permaneça em patamar inferior ao mínimo previsto no Regulamento de Emissores da B3, a Administração poderá, caso necessário, submeter ao Conselho de Administração proposta de convocação de Assembleia Geral de Acionistas para deliberar sobre eventual grupamento das ações de emissão da Companhia, em conformidade com a regulamentação aplicável.\"\n\n### O QUE aconteceu em 08/05/2026\n\n**Resumo:** A International Meal Company Alimentação S.A. informou que os Acordos de Acionistas celebrados anteriormente foram extintos.\n\n**Trecho-chave:**\n\"A Companhia esclarece, ainda, que não há quaisquer acordos de acionistas em vigor arquivados em sua sede, e que adotará as providências necessárias para refletir a extinção dos Acordos de Acionistas perante a CVM, a B3 S.A. – Brasil, Bolsa, Balcão e em seus registros internos.\"\n\n### O QUE aconteceu em 29/04/2026\n\n**Resumo:** A International Meal Company Alimentação S.A. firmou um contrato para vender sua subsidiária RA Catering do Brasil Ltda. a Aerovip Fortaleza Serviços Comerciais Ltda.\n\n**Trecho-chave:**\n\"A operação, em linha com a alienação de outros ativos operacionais de catering já realizadas pela Companhia, reforça a estratégia de concentrar esforços em ativos estratégicos e sinérgicos, além de contribuir para o fortalecimento de sua posição de caixa e liquidez.\"\n\n### COMUNICADO AO MERCADO ENTREGUE EM 15/05/2026\n\nEste comunicado não é um Fato Relevante, mas sim um relatório de resultados. Não há informações específicas sobre eventos relevantes.\n\n### COMUNICADO AO MERCADO ENTREGUE EM 31/03/2026\n\nEste comunicado também não é um Fato Relevante, mas sim um relatório de resultados. Não há informações específicas sobre eventos relevantes.\n\n---\n\n**Conexão com o contexto:** \n- O documento mais recente (09/07/2026) se conecta ao contexto do reenquadramento da cotação das ações e pode afetar os indicadores financeiros futuros, como a alavancagem e o fluxo de caixa operacional."
+  },
+  "modelo": "qwen2.5:7b"
+}

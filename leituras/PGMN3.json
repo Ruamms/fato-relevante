@@ -1,0 +1,24 @@
+{
+  "ticker": "PGMN3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T23:31:58",
+  "comunicados": {
+    "ids": [
+      798147355583127140,
+      112917322258562209,
+      230981276308741056
+    ],
+    "datas": [
+      "16/06/2026",
+      "09/07/2026",
+      "26/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 16/06/2026\n\n**O QUE aconteceu:** Empreendimentos Pague Menos S.A. aprovou um novo programa de recompra de ações.\n\n**Resumo:** A Companhia planeja adquirir até 7 milhões de suas próprias ações para entrega aos funcionários ou manutenção em tesouraria, com duração de seis meses.\n\n**Trecho-chave:**\n\"Objetivo: Aquisição, pela Companhia, de ações ordinárias, nominativas, escriturais e sem valor nominal de emissão da própria Companhia (“Ações”), respeitados os limites legais e com base em recursos disponíveis, para entrega aos seus funcionários e administradores, no âmbito do plano de ações restritas da Companhia vigente à época, ou manutenção em tesouraria e posterior cancelamento ou alienação no mercado.\"\n\n### COMUNICADO AO MERCADO entregue em 09/07/2026\n\n**O QUE aconteceu:** Empreendimentos Pague Menos S.A. informou sobre a renúncia de membros do Conselho de Administração.\n\n**Resumo:** O Conselho de Administração recebeu cartas de renúncia dos membros Sami Foguel e Maria Morais Ribeiro, que deixarão suas funções em 1º de agosto de 2026. Uma assembleia geral extraordinária será convocada para eleger novos membros.\n\n**Trecho-chave:**\n\"A EMPREENDIMENTOS PAGUE MENOS S.A. (“Companhia”) (B3: PGMN3), informa aos seus acionistas e ao mercado em geral que o Conselho de Administração da Companhia recebeu, nesta data, cartas de renúncia apresentadas pelos seguintes membros do Conselho de Administração...\"\n\n### COMUNICADO AO MERCADO entregue em 26/06/2026\n\n**O QUE aconteceu:** Empreendimentos Pague Menos S.A. informou sobre a participação acionária relevante.\n\n**Resumo:** O Morgan Stanley atingiu uma posição de 5% das ações ordinárias da Companhia, sem intenção de alterar a composição do controle ou estrutura administrativa.\n\n**Trecho-chave:**\n\"A EMPREENDIMENTOS PAGUE MENOS S.A (“Companhia”) (B3: PGMN3), em cumprimento ao disposto no Artigo 12 da Resolução da Comissão de Valores Mobiliários (“CVM”) nº 44, de 23 de agosto de 2021, conforme alterada, comunica aos seus acionistas e ao mercado em geral que recebeu, nesta data, correspondência encaminhada pelo Morgan Stanley...\"\n\n**Conexão com o contexto:** A participação relevante do Morgan Stanley pode impactar a governança da Companhia, já que a Companhia está passando por mudanças administrativas."
+  },
+  "modelo": "qwen2.5:7b"
+}

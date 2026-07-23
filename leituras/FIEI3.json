@@ -1,0 +1,24 @@
+{
+  "ticker": "FIEI3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T21:17:06",
+  "comunicados": {
+    "ids": [
+      966628821830223043,
+      440424025580979655,
+      387745817448958259
+    ],
+    "datas": [
+      "14/02/2026",
+      "02/09/2025",
+      "13/08/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 14/02/2026\n\n**O QUE aconteceu:** O prazo de vigência do MOU entre a FICA e a BRZ expirou sem que as partes conseguissem chegar a um consenso.\n\n**Resumo:** As negociações para uma potencial combinação de negócios entre a FICA e a BRZ não avançaram, resultando no encerramento do MOU.\n\n**Trecho-chave:**\n\"expirou o prazo de vigência do instrumento vinculante celebrado entre a Companhia e a BRZ EMPREENDIMENTOS E CONSTRUÇÕES S.A. (BRZ), sem que as partes tenham conseguido chegar a um consenso acerca dos termos e condições finais da potencial combinação de negócios entre a Companhia e a BRZ.\" (p. 1)\n\n---\n\n### FATO RELEVANTE entregue em 02/09/2025\n\n**O QUE aconteceu:** As Companhias estão avaliando possíveis alternativas para a capitalização da Companhia Resultante, incluindo uma eventual oferta pública de ações.\n\n**Resumo:** A BRZ e a FICA estão considerando estratégias para a unificação das suas bases acionárias em uma única companhia aberta, com a possibilidade de realizar uma oferta pública de ações.\n\n**Trecho-chave:**\n\"estão sendo avaliadas possíveis alternativas de capitalização da Companhia Resultante, incluindo, dentre outras, a realização de uma eventual oferta pública de ações (Potencial Oferta).\" (p. 1)\n\n---\n\n### FATO RELEVANTE entregue em 13/08/2025\n\n**O QUE aconteceu:** As Companhias celebraram um MOU para potenciais combinações de negócios e unificação das bases acionárias.\n\n**Resumo:** A BRZ e a FICA assinaram um MOU estabelecendo as diretrizes principais para uma possível combinação de negócios, que incluiria a unificação das suas respectivas bases acionárias em uma única companhia aberta.\n\n**Trecho-chave:**\n\"Os administradores das Companhias celebraram, nesta data, instrumento vinculante (MOU) estabelecendo as principais diretrizes e condições para potencial combinação de negócios das Companhias e unificação das suas respectivas bases acionárias em uma única companhia aberta (Companhia Resultante).\" (p. 1)\n\n**Conexão com indicadores:** Este MOU estabeleceu as bases para a possível combinação de negócios entre as duas empresas, que foi posteriormente avaliada e levou à avaliação de possíveis ofertas públicas de ações em documentos subsequentes."
+  },
+  "modelo": "qwen2.5:7b"
+}

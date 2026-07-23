@@ -1,0 +1,27 @@
+{
+  "ticker": "OSXB3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T21:53:47",
+  "comunicados": {
+    "ids": [
+      6455914004988158,
+      1039317775825162682,
+      352537477563338192,
+      630832204593034839
+    ],
+    "datas": [
+      "10/07/2026",
+      "10/07/2026",
+      "26/06/2026",
+      "13/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### O QUE ACONTECEU: FATO RELEVANTE ENTREGUE EM 10/07/2026\n\n**Resumo:** A OSX Brasil S.A., em recuperação judicial, informou que a Assembleia Geral de Credores foi reconvenida e sua sessão retomada. Os credores solicitaram alterações no Plano de Recuperação Judicial, levando à suspensão da assembleia até 03/08/2026.\n\n**Trecho-chave:**\n\"Submetida a questão à deliberação, a Assembleia Geral de Credores, representando 99,68%, resolveu suspender os trabalhos, ficando designada para o dia 03/08/2026, às 14h, a sessão em continuação da Assembleia Geral de Credores.\"\n\n### O QUE ACONTECEU: FATO RELEVANTE ENTREGUE EM 26/06/2026\n\n**Resumo:** A OSX Brasil S.A., em recuperação judicial, informou que a Assembleia Geral de Credores foi reconvenida e sua sessão retomada. Os credores decidiram suspender por 14 dias o voto do Plano de Recuperação Judicial.\n\n**Trecho-chave:**\n\"Os trabalhos da Assembleia Geral de Credores serão retomados em 10 de julho de 2026, às 10h.\"\n\n### O QUE ACONTECEU: COMUNICADO AO MERCADO ENTREGUE EM 13/05/2026\n\n**Resumo:** O comunicado apresenta os resultados do primeiro trimestre de 2026 da OSX Brasil S.A., destacando a receita líquida e o caixa.\n\n**Trecho-chave:**\n\"Esta apresentação contém declarações e perspectivas futuras baseadas nas estratégias e crenças relativas às oportunidades de crescimento da OSX Brasil S.A. (''OSX'') e suas subsidiárias (constituídas por análises feitas por sua administração).\"\n\n**Conexão com o contexto:** O comunicado apresenta os resultados financeiros, que podem influenciar a percepção dos investidores sobre a situação atual da empresa em recuperação judicial."
+  },
+  "modelo": "qwen2.5:7b"
+}

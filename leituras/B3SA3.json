@@ -1,0 +1,24 @@
+{
+  "ticker": "B3SA3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T20:35:28",
+  "comunicados": {
+    "ids": [
+      439171568561053757,
+      67358626985372191,
+      1126581361454315017
+    ],
+    "datas": [
+      "19/05/2026",
+      "15/07/2026",
+      "15/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### 19/05/2026: Eleição do Diretor-Presidente da B3\n\n**O que aconteceu:** A B3 S.A. informou a eleição de Christian George Egan como Diretor-Presidente (CEO) da Companhia.\n\n**Resumo:** O Conselho de Administração aprovou a eleição, resultado de um processo de sucessão conduzido pela companhia.\n\n**Trecho-chave:**\n\"A B3 S.A. – Brasil, Bolsa, Balcão (“B3” ou “Companhia”) informa aos seus acionistas e ao mercado em geral que o Conselho de Administração, em reunião realizada nesta data, aprovou a eleição de Christian George Egan para o cargo de Diretor-Presidente (CEO) da Companhia.\"\n\n---\n\n### 15/07/2026: Alienação de Participação Acionária\n\n**O que aconteceu:** A B3 S.A. informou sobre a alienação de ações por parte da BlackRock, Inc., resultando em uma participação aproximada de 9,996% das ações ordinárias.\n\n**Resumo:** A BlackRock alienou ações e ADRs da B3, passando a deter aproximadamente 9,996% do total de ações ordinárias emitidas pela Companhia.\n\n**Trecho-chave:**\n\"A B3 S.A. – Brasil, Bolsa, Balcão (“Companhia” ou “B3”) comunica que, nos termos do Artigo 12 da Resolução CVM nº 44/21, e do Estatuto Social da Companhia, recebeu, na data de ontem, correspondência da BlackRock, Inc., na qual informa que alienou ações de emissão da Companhia, passando a deter, de forma agregada, 500.308.957 ações ordinárias e 1.379.748 ADRs, representativos de 4.139.244 ações ordinárias, totalizando 504.448.201 ações ordinárias, representando aproximadamente 9,996% do total de ações ordinárias de emissão da Companhia.\"\n\n---\n\n### 15/07/2026: Destaques Operacionais de Junho de 2026\n\n**O que aconteceu:** A B3 S.A. divulgou os destaques operacionais do mês de junho de 2026.\n\n**Resumo:** Foram apresentados dados sobre volume médio diário, receita por contrato médio e outras métricas relevantes para o mercado.\n\n**Trecho-chave:**\n\"A B3 divulga os destaques operacionais de junho de 2026. Informações adicionais estão disponíveis no site de relações com investidores da B3.\"\n\n---\n\n### Conexão com Indicadores do Contexto\n\n- **Eleição do Diretor-Presidente:** Esta mudança na liderança pode impactar a estratégia e direção futura da empresa, afetando potencialmente os indicadores financeiros e operacionais.\n- **Alienação de Participação Acionária:** A participação significativa da BlackRock reflete a importância do mercado estrangeiro para a B3, podendo influenciar o desempenho e as decisões estratégicas da empresa."
+  },
+  "modelo": "qwen2.5:7b"
+}

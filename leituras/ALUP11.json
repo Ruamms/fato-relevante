@@ -1,0 +1,24 @@
+{
+  "ticker": "ALUP11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T20:23:32",
+  "comunicados": {
+    "ids": [
+      1121356302673162709,
+      137397230407169720,
+      311511407435341207
+    ],
+    "datas": [
+      "03/07/2026",
+      "15/07/2026",
+      "10/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 03/07/2026\n\n**O que aconteceu:** A ALUPAR INVESTIMENTO S.A. foi declarada vencedora do Lote 7 do Leilão de Transmissão nº 01/2026 – 2ª Etapa, promovido pela ANEEL.\n\n**Resumo:** A companhia obteve o direito de construir uma linha de transmissão de energia elétrica no estado de São Paulo, com prazo de energização em junho de 2031 e prazo de concessão de 30 anos.\n\n**Trecho-chave:**\n\"Por meio do Consórcio Olympus XX, foi declarada vencedora do Lote 7 do Leilão de Transmissão nº 01/2026 – 2ª Etapa, promovido pela Agência Nacional de Energia Elétrica (\"ANEEL\"), em sessão pública realizada, nesta data, na B3 S.A. – Brasil, Bolsa, Balcão.\"\n\n### COMUNICADO AO MERCADO entregue em 15/07/2026\n\n**O que aconteceu:** A Phronesis Investimentos Ltda. informou a Alupar Investimento S.A. sobre a aquisição de participação acionária relevante.\n\n**Resumo:** Os fundos geridos pela Phronesis passaram a detê-las 5,45% das ações preferenciais e 1,29% das ações ordinárias da Alupar, ultrapassando o patamar de 5% nas ações preferenciais.\n\n**Trecho-chave:**\n\"A Phronesis declarou que os fundos de investimento por ela geridos adquiriram ações de emissão da Companhia, sendo que, em 15 de julho de 2026, suas participações, de forma agregada, passaram a ser de (i) 17.293.544 ações preferenciais, representando, aproximadamente, 5,45% do total de ações preferenciais de emissão da Companhia; e (ii) 8.646.772 ações ordinárias, representando, aproximadamente, 1,29% do total de ações ordinárias de emissão da Companhia.\"\n\n### COMUNICADO AO MERCADO entregue em 10/07/2026\n\n**O que aconteceu:** A controlada TECP – Transmissora de Energia Central Paulistana obteve a Licença de Instalação (LI) nº 1566/2026 para o projeto de ampliação da Linha de Transmissão de 500 kV Silvânia – Nova Ponte 3 – Ribeirão Preto.\n\n**Resumo:** A Alupar Investimento S.A. obteve a Licença de Instalação necessária para iniciar as obras do projeto, reafirmando sua estratégia de expansão com disciplina ambiental e financeira.\n\n**Trecho-chave:**\n\"A referida licença substitui integralmente a Licença de Instalação (LI) nº 1561/2026, objeto do Comunicado ao Mercado divulgado em 20 de maio de 2026, passando a contemplar, além da ampliação das subestações, a instalação da linha de transmissão associada ao empreendimento.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

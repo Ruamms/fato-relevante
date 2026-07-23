@@ -1,0 +1,18 @@
+{
+  "ticker": "SOND3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T23:51:42",
+  "comunicados": {
+    "ids": [
+      1151118311843927245
+    ],
+    "datas": [
+      "18/12/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante"
+    ],
+    "texto": "### O QUE ACONTECEU: Dividendos Intermediários Aprovados\n\nA Sondotécnica Engenharia de Solos S.A. aprovou a distribuição de dividendos intermediários aos seus acionistas, com base no saldo de lucros acumulados e na Reserva de Lucros para Investimento em Migração Tecnológica e Transformação Digital.\n\n**Resumo:** A companhia decidiu distribuir R$ 22.154.789,07 em dividendos intermediários, equivalente a R$ 8,56 por ação ordinária e R$ 9,41 por cada ação preferencial Classe “A” ou “B”.\n\n**Trecho-chave:** \"SONDOTÉCNICA ENGENHARIA DE SOLOS S/A, sociedade anônima, com sede na cidade do Rio de Janeiro, RJ, na Rua Voluntários da Pátria, nº 45 – 8º andar (CEP 22270-900), inscrita no CNPJ sob o nº 33.386.210/0001-9, em atendimento ao disposto no § 4º do artigo 157 da Lei nº 6.404/1976 e na Resolução CVM nº 44/2021, que o Conselho de Administração da Companhia, em reunião realizada em 18 de dezembro de 2025, aprovou a distribuição de dividendos intermediários aos acionistas da Companhia.\"\n\n---\n\n### Conexão com Indicadores do Contexto:\nA aprovação dos dividendos reflete o desempenho financeiro positivo da companhia no período, indicando um bom fluxo de caixa e capacidade de distribuição de lucros aos acionistas."
+  },
+  "modelo": "qwen2.5:7b"
+}

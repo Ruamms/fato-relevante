@@ -1,0 +1,21 @@
+{
+  "ticker": "CGAS3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T20:56:16",
+  "comunicados": {
+    "ids": [
+      474002181255798950,
+      186271304544553995
+    ],
+    "datas": [
+      "18/03/2026",
+      "10/09/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante"
+    ],
+    "texto": "### FATO RELEVANTE ENTREGUE EM 18/03/2026\n\n**O que aconteceu:** Paulo Roberto Belem Junior renunciou ao cargo de Diretor Financeiro e de Relações com Investidores, sendo substituído por Thiago da Fonseca Rodrigues.\n\n**Resumo:** A Comgás anunciou a renúncia do atual diretor financeiro e relações com investidores, Paulo Roberto Belem Junior, que permanecerá no cargo até 23 de março de 2026. Thiago da Fonseca Rodrigues assumirá a função em 23 de março.\n\n**Trecho-chave:** \"A Diretoria Financeira e de Relações com Investidores da Companhia será assumida por Thiago da Fonseca Rodrigues em 23 de março de 2026.\" (p. 1)\n\n---\n\n### FATO RELEVANTE ENTREGUE EM 10/09/2025\n\n**O que aconteceu:** A Comgás recebeu a Nota Técnica Final e o Relatório Circunstanciado da 5ª Revisão Tarifária Ordinária, estabelecendo novos valores para a Margem Máxima (P0) e Fator X.\n\n**Resumo:** A ARSESP publicou a Nota Técnica Final que determinou o valor de R$ 1,0280 por metro cúbico como Margem Máxima (P0) e estabeleceu um Fator X de 0,6854% ao ano para compartilhar com os consumidores a eficiência operacional.\n\n**Trecho-chave:** \"A Nota Técnica Final nº SEI – 133.00002513/2023-17 determinou, em relação à Margem Máxima (P0), o valor de R$ 1,0280 por metro cúbico.\" (p. 1)\n\n**Conexão com indicadores:** A decisão sobre a Margem Máxima e Fator X afeta diretamente os custos operacionais da Comgás, impactando seus resultados financeiros futuros."
+  },
+  "modelo": "qwen2.5:7b"
+}

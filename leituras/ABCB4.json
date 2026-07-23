@@ -1,0 +1,24 @@
+{
+  "ticker": "ABCB4",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T20:18:40",
+  "comunicados": {
+    "ids": [
+      332354817966128378,
+      147524578133515654,
+      532107744533532408
+    ],
+    "datas": [
+      "06/02/2026",
+      "24/06/2026",
+      "25/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 25/05/2026\n\n**O que aconteceu:** O Banco ABC Brasil S.A. divulgou seu Relatório Anual Integrado 2025.\n\n**Resumo:** O relatório consolida informações financeiras e não financeiras, refletindo a integração da estratégia do banco com os fatores ESG, seguindo diretrizes internacionais de reportagem sustentável.\n\n**Trecho-chave:**\n\"O Relatório Anual Integrado 2025, submetido à asseguração externa independente, segue as diretrizes internacionalmente reconhecidas da Global Reporting Initiative (GRI) e indicadores do Sustainability Accounting Standards Board (SASB), e também apresenta o reporte das informações climáticas conforme recomendações da Task Force on Climate-related Financial Disclosure.\"\n\n**Conexão com o contexto:** O relatório anual integrado reflete a estratégia do banco em relação aos fatores ESG, que são relevantes para a avaliação de riscos e oportunidades no cenário atual.\n\n---\n\n### FATO RELEVANTE entregue em 06/02/2026\n\n**O que aconteceu:** O Banco ABC Brasil S.A. divulgou suas projeções de crescimento de carteira e despesas para o ano de 2026 (Guidance 2026).\n\n**Resumo:** A Companhia projetou um crescimento da carteira de crédito expandida entre 6% a 10%, com uma alta mais significativa no segmento Middle, de 12% a 18%. As despesas estão previstas para crescer entre 4% a 8%, enquanto o índice de eficiência deve ficar entre 37,5% a 39,5%.\n\n**Trecho-chave:**\n\"Crescimento da Carteira de Crédito Expandida\n6% a 10%\nCrescimento da Carteira de Crédito Expandida Segmento Middle  \n     \n12% a 18%\nCrescimento de Despesas   \nPessoal, Outras Administrativas e PLR \n \n4% a 8%\nÍndice de Eficiência   \nDespesas/Receitas \n37,5% a 39,5%\"\n\n**Conexão com o contexto:** As projeções de crescimento e eficiência refletem as estratégias do banco em relação ao mercado financeiro e econômico previstos para 2026."
+  },
+  "modelo": "qwen2.5:7b"
+}

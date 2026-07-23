@@ -1,0 +1,27 @@
+{
+  "ticker": "MELK3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T21:41:19",
+  "comunicados": {
+    "ids": [
+      330234382708149829,
+      637950783714564337,
+      555478033313418260,
+      820761819498976455
+    ],
+    "datas": [
+      "29/04/2026",
+      "30/03/2026",
+      "14/07/2026",
+      "13/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 29/04/2026\n\n**O QUE aconteceu:** A MELNICK DESENVOLVIMENTO IMOBILIÁRIO S.A. aprovou a distribuição de dividendos.\n\n**Resumo:** A companhia aprovou o pagamento de R$ 94,106,651,47 em dividendos, correspondendo a aproximadamente 88,40% do lucro líquido do exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:** \"Aprovada, entre outras matérias, a distribuição de dividendos no montante de R$ 94.106.651,47 (noventa e quatro milhões, cento e seis mil, seiscentos e cinquenta e um reais e quarenta e sete centavos), correspondente a aproximadamente 88,40% (oitenta e oito vírgula quarenta por cento) do lucro líquido referente ao exercício social findo em 31 de dezembro de 2025.\"\n\n### FATO RELEVANTE entregue em 30/03/2026\n\n**O QUE aconteceu:** A MELNICK DESENVOLVIMENTO IMOBILIÁRIO S.A. aprovou a emissão de notas comerciais escriturais.\n\n**Resumo:** A companhia aprovou a emissão de notas comerciais sem garantia real ou fidejussória, com prazo até 3 anos, totalizando inicialmente R$ 100 milhões.\n\n**Trecho-chave:** \"Aprovada, em Reunião do Conselho de Administração realizada em 30 de março de 2026, a realização de sua 2ª (segunda) emissão de notas comerciais escriturais, sem garantia real ou fidejussória, em até 2 (duas) séries, com prazo de até 3 (três) anos.\"\n\n### COMUNICADO AO MERCADO entregue em 14/07/2026\n\n**O QUE aconteceu:** A MELNICK DESENVOLVIMENTO IMOBILIÁRIO S.A. divulgou dados preliminares e não auditados do segundo trimestre de 2026.\n\n**Resumo:** As vendas brutas no 2T26 foram de R$ 131 milhões, com entregas de R$ 530 milhões em VGV bruto.\n\n**Trecho-chave:** \"No 2T26 as vendas brutas e líquidas foram de R$ 131 milhões e R$ 108 milhões, respectivamente. Nos 6M26, as vendas brutas e líquidas foram de, respectivamente, R$ 473 milhões e R$ 408 milhões.\"\n\n### COMUNICADO AO MERCADO entregue em 13/05/2026\n\n**O QUE aconteceu:** A MELNICK DESENVOLVIMENTO IMOBILIÁRIO S.A. divulgou resultados do primeiro trimestre de 2026.\n\n**Resumo:** O lucro líquido no 1T26 foi de R$ 25 milhões, com uma margem bruta ex-financiamentos de 28,5%.\n\n**Trecho-chave:** \"Resultados: R$ 25 mi De lucro líquido, crescimento de 86% em relação ao 1T25.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

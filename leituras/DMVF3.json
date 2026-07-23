@@ -1,0 +1,21 @@
+{
+  "ticker": "DMVF3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T21:02:44",
+  "comunicados": {
+    "ids": [
+      781446059154345105,
+      59473330908301573
+    ],
+    "datas": [
+      "17/06/2026",
+      "29/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 17/06/2026\n\n**O que aconteceu:** Renúncia do membro do Conselho de Administração e convocação de Assembleia Geral Extraordinária.\n\n**Resumo:** A d1000 Varejo Farma Participações S.A. informou sobre a renúncia do Sr. Jonathan Matthew McGowens, membro do Conselho de Administração, e convocou uma Assembleia Geral Extraordinária para eleger seu substituto.\n\n**Trecho-chave:** \"tomou conhecimento da renúncia do membro do Conselho de Administração, Sr. Jonathan Matthew McGowens, eleito em votação realizada na Assembleia Geral Ordinária da Companhia realizada em 29 de abril de 2026.\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 29/05/2026\n\n**O que aconteceu:** Aquisição de participação relevante por Profarma.\n\n**Resumo:** A d1000 Varejo Farma Participações S.A. informou a aquisição de 2.095.100 ações ordinárias, elevando sua participação societária para 72,6% do capital social da Companhia.\n\n**Trecho-chave:** \"adquiriu 2.095.100 ações ordinárias de emissão da Companhia, e que sua participação societária totalizou 36.744.437 ações ordinárias, representando 72,6% do total do capital social da Companhia.\" (p. 1)\n\n**Conexão com o contexto:** A aquisição de Profarma resultou em uma participação relevante na companhia, que pode afetar o controle acionário e a estrutura administrativa da d1000 Varejo Farma Participações S.A., conforme mencionado no comunicado."
+  },
+  "modelo": "qwen2.5:7b"
+}

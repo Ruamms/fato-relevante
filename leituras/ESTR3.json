@@ -1,0 +1,24 @@
+{
+  "ticker": "ESTR3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T21:12:59",
+  "comunicados": {
+    "ids": [
+      940853453124400390,
+      825660578223507691,
+      435571924252833305
+    ],
+    "datas": [
+      "16/06/2026",
+      "20/05/2026",
+      "11/09/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante"
+    ],
+    "texto": "### O que aconteceu em 20/05/2026\n\n**Omissão de atividades empresariais durante o processo de Recuperação Judicial.**\n\nA Manufatura de Brinquedos Estrela S.A. ajuizou um pedido de Recuperação Judicial, envolvendo várias sociedades do Grupo Estrela. A decisão judicial permitiu a continuidade das operações das empresas recuperandas durante o processo.\n\n**Trecho-chave:**\n\"Conforme dispõe o art. 64 da Lei nº 11.101/2005, as empresas recuperandas e respectivos sócios, acionistas, administradores e diretores, continuam à frente da condução da atividade empresarial.\"\n\n### O que aconteceu em 11/09/2025\n\n**Quitação de débitos tributários.**\n\nA Manufatura de Brinquedos Estrela S.A. formalizou um acordo para quitar seus débitos tributários com a Fazenda Nacional, envolvendo várias sociedades do Grupo Estrela.\n\n**Trecho-chave:**\n\"O valor total dos débitos negociados no ‘Acordo’ é de R$ 747.857.976,06 (setecentos e quarenta e sete milhões, oitocentos e cinquenta e sete mil novecentos e setenta e seis reais e seis centavos), com efetivas reduções dos juros, multas e encargos no montante de 65% do crédito tributário.\"\n\n### O que aconteceu em 16/06/2026\n\n**Deferimento da Recuperação Judicial.**\n\nA Manufatura de Brinquedos Estrela S.A. obteve o deferimento para processar a Recuperação Judicial, abrangendo várias sociedades do Grupo Estrela.\n\n**Trecho-chave:**\n\"MANUFATURA DE BRINQUEDOS ESTRELA S/A., em 15 de junho de 2026, o MM. Juízo da 1ª Vara Cível da Comarca de Três Pontas/MG deferiu o processamento da Recuperação Judicial da Companhia e das demais sociedades integrantes do Grupo Estrela.\"\n\n**Conexão com indicadores:**\nO deferimento da Recuperação Judicial é uma medida crucial para a reestruturação financeira do grupo, após a ação de 20/05/2026."
+  },
+  "modelo": "qwen2.5:7b"
+}

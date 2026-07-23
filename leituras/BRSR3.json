@@ -1,0 +1,30 @@
+{
+  "ticker": "BRSR3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T20:47:37",
+  "comunicados": {
+    "ids": [
+      97477259644196712,
+      886236275136047077,
+      440702543490851024,
+      264726310936762563,
+      738711197282818523
+    ],
+    "datas": [
+      "02/07/2026",
+      "18/06/2026",
+      "09/06/2026",
+      "10/06/2026",
+      "08/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE ENTREGUE EM 02/07/2026\n\n**O QUE ACONTECEU:** O Banrisul concluiu a renegociação do contrato de cessão dos serviços relacionados à folha de pagamento.\n\n**RESUMO:** O Banrisul firmou um contrato definitivo com o Estado do Rio Grande do Sul para prestação de serviços de folha de pagamento, envolvendo aproximadamente 294 mil servidores. O valor total a ser pago é R$1.234.044.000,00.\n\n**TRECHO-CHAVE:** \"O contrato firmado junto ao Estado estabelece o pagamento, em parcela única, no valor de R$1.234.044.000,00 (um bilhão, duzentos e trinta e quatro milhões e quarenta e quatro mil reais) referente aos serviços relacionados à folha de pagamento dos servidores vinculados à Administração Direta - Secretaria da Fazenda do Estado do Rio Grande do Sul – Tesouro do Estado; e dos servidores inativos e pensionistas vinculados ao IPERGS - Instituto de Previdência do Estado do Rio Grande do Sul.\"\n\n---\n\n### FATO RELEVANTE ENTREGUE EM 18/06/2026\n\n**O QUE ACONTECEU:** O Banrisul concluiu as condições da renegociação do contrato de cessão dos serviços relacionados à folha de pagamento.\n\n**RESUMO:** As condições foram aprovadas pelo Conselho de Administração e incluem um valor total de R$1.229.440.800,00 para servidores ativos e inativos do Estado do Rio Grande do Sul, além de R$35.000.000,00 estimado para autarquias e fundações.\n\n**TRECHO-CHAVE:** \"1. Preço: R$ 70,00 (setenta reais) por CPF de Servidor/mês, que na data-base de abril de 2026 corresponde a:  \na) Estado do Rio Grande do Sul: R$1.229.440.800,00 (um bilhão, duzentos e vinte e nove milhões, quatrocentos e quarenta mil e oitocentos reais), que corresponde a R$ 1.067.711.400,00 (um bilhão, sessenta e sete milhões, setecentos e onze mil e quatrocentos reais) referente aos serviços relacionados à folha de pagamento dos servidores vinculados à Administração Direta - Secretaria da Fazenda do Estado do Rio Grande do Sul – Tesouro do Estado - CNPJ nº 87.958.674/0001-81; e R$ 161.729.400,00 (cento e sessenta e um milhões, setecentos e vinte e nove mil e quatrocentos reais) referente aos serviços relacionados à folha de pagamento dos servidores inativos e pensionistas vinculados ao IPERGS - Instituto de Previdência do Estado do Rio Grande do Sul – CNPJ nº 92.829.100/0001-43; e  \nb) Autarquias e Fundações do Estado do Rio Grande do Sul: R$ 35.000.000,00 (trinta e cinco milhões de reais), valor estimado considerando o número de servidores vinculados às demais entidades (autarquias e fundações) ligadas à administração do Estado, indicadas pela Secretaria da Fazenda, através de contratos a serem formalizados individualmente.\"\n\n---\n\n### COMUNICADO AO MERCADO ENTREGUE EM 10/06/2026\n\n**O QUE ACONTECEU:** O Banrisul reapresentou o Boletim de Voto à Distância para a AGE 2026.\n\n**RESUMO:** O Boletim foi ajustado para refletir integralmente as informações relativas ao candidato indicado pelo Conselho de Administração dos acionistas minoritários detentores de ações preferenciais. A data limite para envio da instrução de voto é 26 de junho de 2026.\n\n**TRECHO-CHAVE:** \"O BANCO DO ESTADO DO RIO GRANDE DO SUL S.A. (“Banrisul”), em cumprimento ao disposto no § 6º do artigo 26 da Resolução CVM nº 81/2022, vem a público informar aos seus acionistas e ao mercado em geral que, nesta data, reapresentou o Boletim de Voto à Distância (“BVD”) referente à Assembleia Geral Extraordinária a ser realizada em 30 de junho de 2026.”\n\n---\n\n### COMUNICADO AO MERCADO ENTREGUE EM 09/06/2026\n\n**O QUE ACONTECEU:** O Banrisul anunciou o pagamento de Juros sobre Capital Próprio (JSCP) referente ao segundo trimestre de 2026.\n\n**RESUMO:** Serão pagos R$ 90.000.000,00 em JSCP aos acionistas ON, PNA e PNB, com pagamento previsto para o dia 26 de junho de 2026.\n\n**TRECHO-CHAVE:** \"Será distribuído o valor total de R$ 90.000.000,00 (noventa milhões de reais), sendo que o valor bruto unitário por tipo e classe de ação será de R$0,22006263 por ação ON, R$0,22006263 por ação PNA e R$0,22006263 por ação PNB havendo incidência de Imposto de Renda conforme legislação vigente.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

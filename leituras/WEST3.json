@@ -1,0 +1,24 @@
+{
+  "ticker": "WEST3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-23T00:08:12",
+  "comunicados": {
+    "ids": [
+      711292928102509762,
+      475921692314000476,
+      737730681593432691
+    ],
+    "datas": [
+      "03/06/2026",
+      "08/07/2026",
+      "26/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### O QUE ACONTECEU EM 26/06/2026\n\n**Título:** Redução do Capital Social e Alteração no Valor de Restituição aos Acionistas\n\n**Resumo:** A Westwing Comércio Varejista S.A. informou que, após a aprovação da redução do capital social, foram emitidas novas ações ordinárias por meio do plano de opções de compra de ações, o que resultou em um ajuste no valor de restituição aos acionistas.\n\n**Trecho-chave:**\n\"Entre a data de aprovação da Redução de Capital e a presente, foram emitidas 11.143 ações ordinárias, em razão do exercício de opções no âmbito do plano de opção de compra de ações da Companhia (stock option plan), passando o total de ações ex-tesouraria de 11.109.348 para 11.120.491 ações.\"\n\n**Conexão com Indicadores:** A alteração no número de ações ex-tesouraria afetou o cálculo do valor por ação a ser restituído aos acionistas, impactando os indicadores financeiros relacionados à redução do capital social.\n\n---\n\n### O QUE ACONTECEU EM 08/07/2026\n\n**Título:** Alienação de Participação Relevante pela HIX Investimentos LTDA.\n\n**Resumo:** A Westwing Comércio Varejista S.A. informou que a HIX Investimentos LTDA. alienou 100.000 ações ordinárias, reduzindo sua participação na companhia para aproximadamente 4,54% do capital social.\n\n**Trecho-chave:**\n\"A Companhia não é responsável pelo conteúdo das informações apresentadas em anexo.\"\n\n**Conexão com Indicadores:** A alienação de ações pela HIX Investimentos pode afetar o controle acionário e as dinâmicas de mercado, mas não há detalhes específicos sobre impactos financeiros ou operacionais.\n\n---\n\n### O QUE ACONTECEU EM 03/06/2026\n\n**Título:** Mudanças na Administração com Eleição do Novo Diretor Financeiro.\n\n**Resumo:** O Conselho de Administração da Westwing Comércio Varejista S.A. deliberou sobre a renúncia do Sr. Guilherme Saccomani ao cargo de Diretor Financeiro Interino e elegeram o Sr. Fabio Nishiyama para o cargo de Diretor Financeiro, com posse prevista para 15 de junho de 2026.\n\n**Trecho-chave:**\n\"O Sr. Fabio Nishiyama possui mais de 20 anos de experiência em finanças corporativas, com sólida atuação no setor varejista.\"\n\n**Conexão com Indicadores:** A mudança na liderança financeira pode afetar a gestão e estratégias financeiras da companhia, mas não há detalhes específicos sobre impactos imediatos."
+  },
+  "modelo": "qwen2.5:7b"
+}

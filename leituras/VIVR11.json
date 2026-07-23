@@ -1,0 +1,24 @@
+{
+  "ticker": "VIVR11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-23T00:03:06",
+  "comunicados": {
+    "ids": [
+      826112774699113363,
+      1015058569509882188,
+      386751516430880086
+    ],
+    "datas": [
+      "30/04/2026",
+      "12/06/2026",
+      "22/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 30/04/2026\n\n**O que aconteceu:** A Viver Incorporadora e Construtora S.A. aprovou um grupamento de ações.\n\n**Resumo:** A Companhia realizou um grupamento das suas ações ordinárias na proporção de 10:1, com objetivo de adequar o valor de negociação das ações ao mercado de valores mobiliários brasileiro e aumentar a liquidez delas no mercado secundário.\n\n**Trecho-chave:** \"O Grupamento tem como objetivo o enquadramento da cotação das ações de emissão da Companhia em valor igual ou superior a R$ 1,00 (um real) por unidade, conforme exigido no artigo 46, inciso I, do Regulamento de Emissores da B3 S.A. – Brasil, Bolsa, Balcão (\"B3\").\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 22/05/2026\n\n**O que aconteceu:** A Viver Incorporadora e Construtora S.A. alterou a data de divulgação dos resultados do primeiro trimestre de 2026.\n\n**Resumo:** A Companhia adiou a divulgação dos resultados financeiros do 1T26 para o dia 8 de junho de 2026, com apresentação marcada para 12 de junho de 2026 às 14 horas (Horário de Brasília).\n\n**Trecho-chave:** \"Divulgação de Resultados 1T26: 08 de junho de 2026\" e \"Apresentação de Resultados 1T26: 12 de junho de 2026, às 14 horas (Horário de Brasília)\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 12/06/2026\n\n**O que aconteceu:** A Viver Incorporadora e Construtora S.A. divulgou os resultados do primeiro trimestre de 2026.\n\n**Resumo:** O comunicado destaca a conclusão do Station Vila Madalena, a redução da dívida total para R$ 21 milhões e a geração de recebíveis de R$ 26,7 milhões. A Companhia também abordou sua visão de futuro focada em novas oportunidades de investimento na cidade de São Paulo.\n\n**Trecho-chave:** \"A obtenção do Habite-se do Station Vila Madalena representa a conclusão de um ciclo relevante para a Companhia e o início da conversão dos recebíveis em caixa por meio dos repasses das unidades comercializadas.\" (p. 5)"
+  },
+  "modelo": "qwen2.5:7b"
+}

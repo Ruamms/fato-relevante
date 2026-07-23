@@ -1,0 +1,36 @@
+{
+  "ticker": "AMAR3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T20:24:04",
+  "comunicados": {
+    "ids": [
+      118945393641635191,
+      143615907617336642,
+      175373960608047149,
+      759234046247856826
+    ],
+    "datas": [
+      "26/03/2026",
+      "02/01/2026",
+      "26/05/2026",
+      "18/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 26/03/2026\n\n**O que aconteceu:** Renúncia e eleição de membros do Conselho de Administração.\n\n**Resumo:** A MARISA LOJAS S.A. informou a renúncia das conselheiras Maria Laura Peixoto Santos Tarnow e Andrea Maria Meirelles de Menezes, respectivamente, Presidente do Conselho de Administração e membro independente. O Conselho nomeou Ivan Murias como novo Presidente do Conselho de Administração e Adriana Caetano como nova conselheira independente.\n\n**Trecho-chave:** \"O Sr. Ivan Murias, como membro independente e Presidente do Conselho de Administração da Companhia, em substituição direta à Sra. Andrea Maria Meirelles de Menezes.\" (p. 2)\n\n### FATO RELEVANTE entregue em 02/01/2026\n\n**O que aconteceu:** Reversão de decisão sobre restituição de demonstrações financeiras.\n\n**Resumo:** A MARISA LOJAS S.A. informou que a CVM reverteu sua decisão anterior, determinando que não seria necessário refazer as demonstrações financeiras da empresa.\n\n**Trecho-chave:** \"A Companhia tomou conhecimento da decisão do Colegiado da CVM de 30 de dezembro de 2025 que, dando provimento ao recurso apresentado pela Companhia, reverteu a decisão da área técnica.\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 26/05/2026\n\n**O que aconteceu:** Eleição de membros do Comitê Estatutário de Auditoria e Riscos.\n\n**Resumo:** A MARISA LOJAS S.A. informou a eleição dos novos membros do Comitê Estatutário de Auditoria e Riscos, incluindo Ivan Luiz Murias dos Santos como membro independente em substituição a Sérgio Moreno.\n\n**Trecho-chave:** \"A Companhia comunica que foi aprovada a eleição dos membros do Comitê Estatutário de Auditoria e Riscos da Companhia, com a manutenção da composição anteriormente vigente, ressalvada a eleição do Sr. Ivan Luiz Murias dos Santos em substituição ao Sr. Sérgio Moreno.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 143615907617336642,
+    "data_entrega": "02/01/2026 00:00",
+    "tipo": "nao_identificado",
+    "rotulo": "parecer não identificado no texto",
+    "grave": false,
+    "continuidade": false,
+    "trecho": ""
+  }
+}

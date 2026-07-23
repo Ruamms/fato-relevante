@@ -1,0 +1,30 @@
+{
+  "ticker": "CCTY3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T20:53:42",
+  "comunicados": {
+    "ids": [
+      68845824725653802,
+      297425216109615722,
+      314741486760269858,
+      1065424066562151493,
+      791504110446239630
+    ],
+    "datas": [
+      "26/06/2026",
+      "20/05/2026",
+      "06/05/2026",
+      "12/06/2026",
+      "05/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 26/06/2026\n\n**O QUE aconteceu:** A OZ EARTH PARTICIPAÇÕES S.A. e a SCA EMPREENDIMENTOS E NEGÓCIOS LTDA. renegociaram os termos da operação de compra e venda de ações.\n\n**Resumo:** A OZ reduziu o número de ações adquiridas junto à SCA, passando a detê-las em 36.962 (24,085%).\n\n**Trecho-chave:**\n\"Conforme o Fato Relevante divulgado em 27 de março de 2026, a OZ havia adquirido a totalidade das ações de titularidade da SCA, do CRIXUS SPECIAL RETURN FUNDO DE INVESTIMENTO EM PARTICIPAÇÃO MULTIESTRATÉGIA, inscrito no CNPJ sob o n.º 46.282.024/0001-81 (“Crixus”), e da BPS CAPITAL E PARTICIPAÇÕES SOCIETÁRIAS S.A., inscrita no CNPJ/MF sob o nº 30.197.332/0001-78 (“BPS Capital”), totalizando 55.378 (cinquenta e cinco mil, trezentas e setenta e oito) ações ordinárias, representativas de 36,082% (trinta e seis vírgula zero oitenta e dois por cento) do capital social total da Companhia. Em decorrência da renegociação ora informada, mantidas integralmente as aquisições realizadas junto ao Crixus e à BPS Capital, a OZ passará a deter 36.962 (trinta e seis mil, novecentas e sessenta e duas) ações ordinárias de emissão da Companhia, representativas de aproximadamente 24,085% (vinte e quatro vírgula zero oitenta e cinco por cento) do total das ações de emissão da Companhia.\"\n\n---\n\n### FATO RELEVANTE entregue em 20/05/2026\n\n**O QUE aconteceu:** A BELORA RDVC CITY DESENVOLVIMENTO IMOBILIÁRIO S.A. retificou o edital de convocação para a Assembleia Geral Ordinária e Extraordinária (AGOE).\n\n**Resumo:** A AGOE foi transferida do local original, na Av. Brigadeiro Faria Lima, para Rua Sader Macul, Itaim Bibi, com nova data marcada para 27 de maio de 2026.\n\n**Trecho-chave:**\n\"A AGOE, que seria realizada na sede social da Companhia, localizada na Av. Brigadeiro Faria Lima, nº 2.369, conjunto 1.404, 14º andar, Jardim Paulistano, São Paulo — SP, CEP 01452-922, passará a ser realizada no seguinte endereço: Rua Sader Macul, nº 96, Itaim Bibi, São Paulo — SP, CEP 04542-090.\"\n\n---\n\n### FATO RELEVANTE entregue em 06/05/2026\n\n**O QUE aconteceu:** A BELORA RDVC CITY DESENVOLVIMENTO IMOBILIÁRIO S.A. retificou o edital de convocação para a Assembleia Geral Ordinária e Extraordinária (AGOE).\n\n**Resumo:** A AGOE foi transferida do local original, na Av. Brigadeiro Faria Lima, para Rua Sader Macul, Itaim Bibi, com nova data marcada para 27 de maio de 2026.\n\n**Trecho-chave:**\n\"A AGOE, que seria realizada na sede social da Companhia, localizada na Av. Brigadeiro Faria Lima, nº 2.369, conjunto 1.404, 14º andar, Jardim Paulistano, São Paulo — SP, CEP 01452-922, passará a ser realizada no seguinte endereço: Rua Sader Macul, nº 96, Itaim Bibi, São Paulo — SP, CEP 04542-090.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 12/06/2026\n\n**O QUE aconteceu:** O fundo divulgou a demonstração do resultado do quarto trimestre de 2025.\n\n**Resumo:** O prejuízo operacional foi de R$3.424 milhares, e o prejuízo do exercício foi de R$3.425 milhares.\n\n**Trecho-chave:**\n\"Prejuízo operacional (3.424)\n(3.424)\nDespesa financeira\n(1)\n(1)\nPrejuízo do exercício (3.425)\n(3.425)\nAtribuído A:\nParticipação dos controladores (3.425)\n(3.425)\"\n\n---\n\n### CONEXÃO COM O CONTEXTUAL\n\n- **Fato Relevante 26/06/2026:** Relacionado à alteração na participação acionária da Companhia.\n- **Fatos Relevantes 20/05/2026 e 06/05/2026:** Informações sobre a retificação do local e data da Assembleia Geral Ordinária e Extraordinária (AGOE).\n- **Comunicado ao Mercado 12/06/2026:** Relacionado aos resultados financeiros do quarto trimestre de 2025."
+  },
+  "modelo": "qwen2.5:7b"
+}

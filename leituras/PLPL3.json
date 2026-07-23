@@ -1,0 +1,21 @@
+{
+  "ticker": "PLPL3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T23:33:20",
+  "comunicados": {
+    "ids": [
+      129614902017063561,
+      1012390762531074366
+    ],
+    "datas": [
+      "16/07/2026",
+      "03/07/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### Comunicação do Mercado Entregue em 03/07/2026\n\n**Título:** Diretora de Incorporação Renuncia e Novo Diretor Vice-Presidente de Negócios Contratado\n\n**Resumo:**\nA Plano&Plano Desenvolvimento Imobiliário S.A. comunicou a renúncia da Sra. Renée Garófalo Silveira ao cargo de Diretora de Incorporação, bem como a contratação do Sr. Thiago Rocha de Castro para o cargo de Diretor Vice-Presidente de Negócios.\n\n**Trecho-chave:**\n\"O Conselho de Administração expressa seus votos de agradecimento à Sra. Renée Garófalo Silveira pela inestimável contribuição prestada ao longo de seus 20 anos no crescimento e desenvolvimento da Companhia.\" (p. 1)\n\n---\n\n### Comunicação do Mercado Entregue em 16/07/2026\n\n**Título:** Prévia Operacional 2º Trimestre de 2026\n\n**Resumo:**\nA Plano&Plano Desenvolvimento Imobiliário S.A. divulgou a prévia dos resultados operacionais do 2º trimestre de 2026, com destaque para uma diminuição no volume de lançamentos e vendas líquidas em comparação ao mesmo período do ano anterior.\n\n**Trecho-chave:**\n\"No segundo trimestre de 2026 a Plano&Plano lançou 5 novos empreendimentos, somando 3.138 unidades, alcançando um VGV de R$ 826,0 milhões, o que reflete uma diminuição de 16,2% em relação ao primeiro trimestre de 2026.\" (p. 3)"
+  },
+  "modelo": "qwen2.5:7b"
+}

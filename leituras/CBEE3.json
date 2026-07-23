@@ -1,0 +1,30 @@
+{
+  "ticker": "CBEE3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T20:52:29",
+  "comunicados": {
+    "ids": [
+      661875126943507374,
+      708768358384019563,
+      846854685254614760,
+      323935075780214928,
+      191408495925734518
+    ],
+    "datas": [
+      "24/04/2026",
+      "24/12/2025",
+      "21/10/2025",
+      "03/12/2025",
+      "13/10/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### Ocorrência em 24/04/2026\n\n**Título:** Rating de Crédito Corporativo Nacional da Ampla Energia e Serviços S.A. revisado para AA+ (bra).\n\n**Resumo:** A agência de rating Fitch Ratings revisou o Rating de Crédito Corporativo Nacional da Ampla Energia e Serviços S.A. de AAA (bra) para AA+ (bra), com perspectiva negativa.\n\n**Trecho-chave:**\n\"A AMPLA ENERGIA E SERVIÇOS S.A. (“Companhia”), em atendimento ao disposto no artigo 157, §4º, da Lei nº 6.404, de 15 de dezembro de 1976 e na Resolução CVM nº 44, de 23 de agosto de 2021, conforme alteradas, informa que, nesta data, a Fitch Ratings revisou o Rating de Crédito Corporativo Nacional da Companhia de AAA (bra) para AA+ (bra), com perspectiva negativa.\"\n\n---\n\n### Ocorrência em 24/12/2025\n\n**Título:** Aumento de Capital e Emissão de Notas Comerciais Escriturais.\n\n**Resumo:** O Conselho de Administração da Ampla Energia e Serviços S.A. aprovou o aumento de capital social e a emissão de notas comerciais escriturais, em série única, com garantia fidejussória (aval) da Enel Brasil S.A.\n\n**Trecho-chave:**\n\"em reunião realizada em 16 de dezembro de 2025, o aumento de capital social da Companhia, dentro do limite do capital autorizado, exclusivamente mediante a capitalização de créditos de titularidade da acionista Enel Brasil S.A. no valor total de R$1.600.000.000,00 (um bilhão e seiscentos milhões de reais), com a emissão de 73.184.395 (setenta e três milhões, cento e oitenta e quatro mil, trezentas e noventa e cinco) novas ações ordinárias nominativas, sem valor nominal, ao preço de emissão de R$21,8625842 por ação (\"Aumento de Capital\").\"\n\n---\n\n### Ocorrência em 21/10/2025\n\n**Título:** ANEEL Negou Provimento ao Recurso Administrativo Interposto pela Ampla Energia e Serviços S.A.\n\n**Resumo:** A Agência Nacional de Energia Elétrica (ANEEL) negou provimento ao recurso administrativo interposto pela Ampla Energia e Serviços S.A. em relação a mútuos celebrados entre a Companhia e suas partes relacionadas, além de determinar a instalação de um procedimento fiscalizatório.\n\n**Trecho-chave:**\n\"A AMPLA ENERGIA E SERVIÇOS S.A (“Companhia”), em cumprimento ao disposto na Resolução CVM nº 44/2021, informa aos seus acionistas e ao mercado em geral que, nesta data, a Agência Nacional de Energia Elétrica – ANEEL (\"ANEEL\"), por meio de deliberação de sua Diretoria Colegiada, negou provimento ao Recurso Administrativo interposto pela Ampla Energia e Serviços S.A. – AMPLA, em face do Despacho nº 1.860, datado de 21 de junho de 2024, que indeferiu o pedido de anuência prévia quanto ao aditamento e pedido de refinanciamento de determinados contratos de mútuos celebrados entre, como mutuante, a Companhia e, na condição de mutuária, determinadas partes relacionadas.\"\n\n---\n\n### Ocorrência em 03/12/2025\n\n**Título:** Esclarecimento sobre Notícia Veiculada pelo Jornal Valor Econômico.\n\n**Resumo:** A Ampla Energia e Serviços S.A. esclarece que a reportagem publicada trata dos mesmos fatos já informados anteriormente, relacionados à fiscalização da ANEEL sobre mútuos celebrados entre a Companhia e suas partes relacionadas.\n\n**Trecho-chave:**\n\"Em atenção ao Ofício, a Companhia esclarece que a reportagem acima trata dos mesmos fatos já esclarecidos e informados pela Companhia ao mercado no âmbito do Fato Relevante divulgado em 21 de outubro de 2025 (\"Fato Relevante 21.10\").\"\n\n---\n\n### Ocorrência em 13/10/2025\n\n**Título:** Esclarecimento sobre Notícia Veiculada pelo Jornal Valor Online.\n\n**Resumo:** A Ampla Energia e Serviços S.A. esclarece que a notícia publicada trata de irregularidades apontadas pela ANEEL em relação a mútuos celebrados entre a Companhia e suas partes relacionadas, sem que isso represente um fato relevante.\n\n**Trecho-chave:**\n\"O diretor da Agência Nacional de Energia Elétrica (Aneel), Fernando Mosna, identificou irregularidades e indícios de infrações graves cometidas pela Enel Rio (Ampla Energia e Serviços S.A.) em operações de empréstimos intragrupo (mútuo), realizados sem autorização prévia da agência.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

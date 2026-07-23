@@ -1,0 +1,30 @@
+{
+  "ticker": "BHIA3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T20:39:11",
+  "comunicados": {
+    "ids": [
+      255269115471336249,
+      174588644769198478,
+      86262684122438782,
+      1105943807773395468,
+      1106907479395708385
+    ],
+    "datas": [
+      "26/03/2026",
+      "25/03/2026",
+      "25/03/2026",
+      "29/05/2026",
+      "13/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### O QUE aconteceu em 29/05/2026\n\n**Título:** Composição do Comitê de Auditoria Estatutário\n\n**Resumo:** A Companhia alterou a composição do seu Comitê de Auditoria, Riscos e Compliance.\n\n**Trecho-chave:**\n\"GRUPO CASAS BAHIA S.A. (\"Companhia\") (B3: BHIA3), em atendimento ao disposto no art. 33, XXIX, da Resolução CVM nº 80/22, conforme alterada, comunica aos seus acionistas e ao mercado em geral, conforme deliberado pelo Conselho de Administração da Companhia em reunião realizada em 27 de maio de 2026, a alteração na composição do Comitê de Auditoria, Riscos e Compliance (‘Comitê’), a qual passa a ser a seguinte: \n• Jackson Medeiros de Farias Schneider, como Coordenador do Comitê; \n• Rogério Paulo Calderón Peres, como membro do Comitê; \n• Luiz Carlos Passetti, como membro do Comitê; e \n• Paulo Romagnoli, como membro do Comitê.\"\n\n---\n\n### O QUE aconteceu em 26/03/2026\n\n**Título:** Investigação Interna de Supostas Liberações Indevidas de Créditos de ICMS\n\n**Resumo:** A Companhia anunciou a instauração de um Comitê Independente para investigar supostas liberações indevidas de créditos de ICMS.\n\n**Trecho-chave:**\n\"Na presente data a Companhia tomou conhecimento de notícias veiculadas na mídia relativas a uma suposta investigação conduzida por autoridades públicas tendo por objetivo apurar alegadas liberações indevidas de créditos de ICMS no Estado de São Paulo. Também conforme as referidas notícias, tais liberações indevidas teriam sido feitas em favor de grandes empresas varejistas, dentre as quais a Companhia.\"\n\n---\n\n### O QUE aconteceu em 25/03/2026\n\n**Título:** Conclusão do Aporte no FIDC Risco Sacado Casas Bahia\n\n**Resumo:** A Companhia concluiu a oferta pública de cotas da segunda emissão do FIDC, aumentando o seu capital.\n\n**Trecho-chave:**\n\"O Grupo Casas Bahia S.A. (“Companhia” “Casas Bahia”) (B3: BHIA3) comunica aos seus acionistas e ao mercado em geral, que, no âmbito do Plano de Transformação da Estrutura de Capital da Companhia, e em continuidade aos fatos relevantes divulgados em 22 de setembro de 2025, foi concluída a oferta pública de cotas da segunda emissão do GCB Fornecedores Fundo de Investimento em Direitos Creditórios Comerciais Responsabilidade Limitada, CNPJ/MF nº 61.799.604/0001-34) (“FIDC”), veículo estruturado com objetivo de otimizar a operação de risco sacado da Companhia.\"\n\n---\n\n### O QUE aconteceu em 25/03/2026\n\n**Título:** Emissão de Notas Comerciais Escriturais\n\n**Resumo:** A Companhia protocolou um pedido de registro automático para a emissão de notas comerciais escriturais.\n\n**Trecho-chave:**\n\"A GRUPO CASAS BAHIA S.A. (“Companhia”) (B3: BHIA3), nos termos do artigo 157, parágrafo 4º, da Lei 6.404, de 15 de dezembro de 1976, conforme alterada (“Lei das S.A.”), e da Resolução da Comissão de Valores Mobiliários (“CVM”) nº 44, de 23 de agosto de 2021, conforme alterada, informa aos seus acionistas e ao mercado em geral que, em continuidade ao Comunicado ao Mercado divulgado em 11 de março de 2026, foi protocolado, na presente data, perante a CVM, pedido de registro automático de oferta pública de distribuição de notas comerciais escriturais, com garantia real, em série única da 35ª (trigésima quinta) emissão da Companhia (“Notas Comerciais Escriturais” e “Emissão”, respectivamente).\"\n\n---\n\n### O QUE aconteceu em 13/05/2026\n\n**Título:** Resultados do Primeiro Trimestre de 2026 (1T26)\n\n**Resumo:** A Companhia divulgou seus resultados financeiros e operacionais para o primeiro trimestre de 2026.\n\n**Trecho-chave:**\n\"RESULTADOS\n1T26\n➢ EBITDA Ajustado de R$ 597 MM (+4,7% a/a) e margem de 8,1%\n➢ Geração de R$ 852 MM de fluxo de caixa livre da firma no tri (+R$ 1,2 Bi a/a)\ne R$ 2,7 Bi de fluxo de caixa livre da firma últimos 6 meses (+R$ 1,7 Bi a/a)\""
+  },
+  "modelo": "qwen2.5:7b"
+}

@@ -1,0 +1,21 @@
+{
+  "ticker": "POSI3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T23:35:15",
+  "comunicados": {
+    "ids": [
+      206975852026500384,
+      497931795746196567
+    ],
+    "datas": [
+      "19/06/2026",
+      "11/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 19/06/2026\n\n**Título:** Executivos realizam entrevista sobre estratégia de transformação da Positivo Tecnologia.\n\n**Resumo:** Os executivos Fabio Faigle e André Kriger discutiram a estratégia de transformação da Positivo Tecnologia em provedor brasileiro de infraestrutura de TI integrada durante uma entrevista com a Ágora Investimentos, que será disponibilizada no canal do YouTube da empresa.\n\n**Trecho-chave:** \"A POSITIVO TECNOLOGIA S.A. (''Companhia'') (B3: POSI3), comunica que os executivos da companhia Fabio Faigle, CFO, e André Kriger, Vice Presidente de Estratégia, realizaram uma entrevista com a Ágora Investimentos (“Ágora”), intitulada “O Novo Ciclo da Positivo Tecnologia”...\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 11/06/2026\n\n**Título:** Café da Manhã com Investidores discute estratégia de transformação.\n\n**Resumo:** A Positivo Tecnologia realizou um café da manhã com investidores para apresentar sua agenda estratégica, focando na transformação do modelo de negócio do fabricante de hardware em provedor integrado de soluções de infraestrutura e serviços de TI.\n\n**Trecho-chave:** \"AGENDA ESTRATÉGICA: DA VISÃO À REALIDADE\" (p. 1)\n\n**Conexão com indicadores:** O documento apresenta a transformação do modelo de negócio da Positivo Tecnologia, que passará de fabricante de hardware para provedor integrado de soluções de infraestrutura e serviços de TI, refletindo mudanças significativas em sua estratégia e portfólio."
+  },
+  "modelo": "qwen2.5:7b"
+}

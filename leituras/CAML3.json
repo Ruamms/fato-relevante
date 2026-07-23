@@ -1,0 +1,21 @@
+{
+  "ticker": "CAML3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T20:50:24",
+  "comunicados": {
+    "ids": [
+      364977859412060028,
+      656143799235540361
+    ],
+    "datas": [
+      "14/07/2026",
+      "07/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 14/07/2026\n\n**O QUE aconteceu:** Apresentação de Resultados do Primeiro Trimestre de 2026 (1T26).\n\n**Resumo:** A receita líquida e o EBITDA apresentaram variações, com destaque para o aumento no volume de vendas em todos os segmentos.\n\n**Trecho-chave:**\n\"R$ 2,7 bilhões Receita Líquida (-0,7% YoY e +6,6% QoQ)\nR$ 210 milhões EBITDA (-9,9% YoY e +8,9% QoQ) \n7,9% Margem EBITDA\n(-0,8pp YoY e +0,2pp QoQ)\"\n\n### COMUNICADO AO MERCADO entregue em 07/05/2026\n\n**O QUE aconteceu:** Apresentação de Resultados do Quarto Trimestre de 2025 (4T25) e Ano Fiscal de 2025.\n\n**Resumo:** A receita líquida e o EBITDA apresentaram variações, com destaque para a expansão no volume de vendas em todos os segmentos.\n\n**Trecho-chave:**\n\"R$2,5 bilhões Receita Líquida (-16,5 % YoY)\nR$192,8 milhões EBITDA\n(-0,5% YoY) \n7,7% Margem EBITDA\n(+1,2pp YoY)\"\n\n**Conexão com indicadores:** As variações nos preços e volumes de vendas refletem diretamente nas margens financeiras apresentadas."
+  },
+  "modelo": "qwen2.5:7b"
+}

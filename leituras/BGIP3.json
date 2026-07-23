@@ -1,0 +1,24 @@
+{
+  "ticker": "BGIP3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T20:37:44",
+  "comunicados": {
+    "ids": [
+      639450021178705094,
+      1011751469988424754,
+      197858239602041103
+    ],
+    "datas": [
+      "18/09/2025",
+      "11/05/2026",
+      "13/08/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 18/09/2025\n\n**O que aconteceu:** O BANESE firmou um contrato de comercialização exclusiva de produtos de seguro de acidentes pessoais e prestamista.\n\n**Resumo:** A companhia estabeleceu uma parceria com a MONGERAL AEGON SEGUROS E PREVIDÊNCIA S.A. para vender seus serviços através dos canais do BANESE por um período de 10 anos.\n\n**Trecho-chave:**\n\"firmou nesta data contrato de comercialização e distribuição de produtos de seguro de acidentes pessoais e prestamista, nos canais de venda do BANESE, em caráter de exclusividade, pelo prazo de 10 (dez) anos, com a MONGERAL AEGON SEGUROS E PREVIDÊNCIA S.A. (MAG).\"\n\n### COMUNICADO AO MERCADO entregue em 13/08/2025\n\n**O que aconteceu:** O BANESE adiou o prazo de divulgação dos resultados do segundo trimestre de 2025.\n\n**Resumo:** A companhia informou que a data de divulgação foi postergada para 30 de setembro de 2025, em virtude das operações relacionadas à Resolução CMN n° 4.966/2021 e da Resolução do Banco Central do Brasil (BCB) nº 487.\n\n**Trecho-chave:**\n\"por questões operacionais decorrentes da implantação da Resolução CMN n° 4.966/2021, a partir do atual exercício e, nos termos do que faculta a Resolução do Banco Central do Brasil (BCB) nº 487, de 10 de julho de 2025, a data de divulgação dos resultados do 2º trimestre de 2025 será postergada para o dia 30 de setembro de 2025.\"\n\n### COMUNICADO AO MERCADO entregue em 11/05/2026\n\n**O que aconteceu:** O BANESE elegera um novo membro do Comitê de Auditoria.\n\n**Resumo:** A companhia comunicou a homologação pelo Banco Central do Brasil da eleição de Elíbio Estréla para o Comitê de Auditoria, com mandato até 2029.\n\n**Trecho-chave:**\n\"Foi eleito para o Comitê o Sr.: ELÍBIO ESTRÊLA - Membro.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

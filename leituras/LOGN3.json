@@ -1,0 +1,21 @@
+{
+  "ticker": "LOGN3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T21:35:22",
+  "comunicados": {
+    "ids": [
+      1128007986446696026,
+      294426574900543258
+    ],
+    "datas": [
+      "14/05/2026",
+      "30/04/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 30/04/2026\n\n**O que aconteceu:** Alfandegamento da Retroárea Penedo do TVV.\n\n**Resumo:** A Log-In realizou o alfandegamento de uma nova área, a Retroárea Penedo, no Terminal de Vila Velha (TVV), com 70.000 m², que começará a operar em maio para atender à demanda do mercado.\n\n**Trecho-chave:**\n\"A nova área, chamada Retroárea Penedo, possui aproximadamente 70.000 m², correspondente a 60% da área total do TVV. A Retroárea Penedo começará a operar no mês de maio para atender à crescente demanda do mercado de importação e exportação de cargas, incluindo contêineres, granito, produtos siderúrgicos e fertilizantes.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 14/05/2026\n\n**O que aconteceu:** Apresentação de Resultados do Primeiro Trimestre de 2026.\n\n**Resumo:** O ROL da Log-In permaneceu estável, com crescimento no TVV e no Transporte Rodoviário de Cargas, compensado pela retração na Navegação Costeira. Houve aumento nos custos de serviços prestados, impactando negativamente o EBITDA ajustado.\n\n**Trecho-chave:**\n\"ROL estável no 1T26, com crescimento no TVV e no Transporte Rodoviário de Cargas, parcialmente compensados pela retração da ROL da Navegação Costeira, principalmente Feeder; Aumento do Custo dos Serviços Prestados (CSP) concentrado nos custos da Navegação Costeira (+14,4%), decorrente do maior volume movimentado nos trades de Cabotagem e Mercosul, com impacto direto no aumento dos custos variáveis; O EBITDA ajustado e a margem EBITDA ajustado recuaram no comparativo dos trimestres, impactados principalmente pelo desempenho do Feeder (em função do encerramento do serviço SSN (abril/2025)), e pela pressão sobre a receita unitária na Navegação Costeira, parcialmente compensados pela recuperação operacional do TVV.\" (p. 3)"
+  },
+  "modelo": "qwen2.5:7b"
+}

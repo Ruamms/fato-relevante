@@ -1,0 +1,27 @@
+{
+  "ticker": "TECN3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T23:54:37",
+  "comunicados": {
+    "ids": [
+      967790199381374537,
+      807826189919847548,
+      234247117821796428,
+      592395548364421692
+    ],
+    "datas": [
+      "22/12/2025",
+      "10/12/2025",
+      "12/05/2026",
+      "12/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 22/12/2025\n\n**O QUE aconteceu:** A Companhia aprovou a distribuição de dividendos.\n\n**Resumo:** A Technos S.A. aprovou a distribuição de R$ 25,000,000,00 em dividendos, sendo R$ 15,000,000,00 na primeira parcela e R$ 10,000,000,00 na segunda.\n\n**Trecho-chave:** \"foi aprovada, 'ad referendum' da Assembleia Geral Ordinária que deliberar sobre a destinação do resultado do exercício social de 2025, a declaração e distribuição de dividendos, no valor total de R$ 25.000.000,00 (vinte e cinco milhões de reais) com base no balanço patrimonial de 30 de setembro de 2025\" (p. 1).\n\n---\n\n### FATO RELEVANTE entregue em 10/12/2025\n\n**O QUE aconteceu:** A Companhia aprovou o cancelamento de ações.\n\n**Resumo:** A Technos S.A. aprovou o cancelamento de 450,000 ações ordinárias sem valor nominal, representando 62,9% das ações em tesouraria e 0,7% do capital social total.\n\n**Trecho-chave:** \"foi aprovado por unanimidade, o cancelamento de 450.000 (quatrocentos e cinquenta mil) ações ordinárias, sem valor nominal, de emissão da Companhia e sem redução do valor do Capital Social da Companhia\" (p. 1).\n\n---\n\n### COMUNICADO AO MERCADO entregue em 12/05/2026\n\n**O QUE aconteceu:** A Companhia divulgou os resultados do primeiro trimestre de 2026.\n\n**Resumo:** Os resultados do primeiro trimestre de 2026 mostraram uma receita líquida de R$91,2M, com um lucro bruto de R$48,9M e uma margem bruta de 53,6%. O EBITDA ajustado foi de R$14,0M.\n\n**Trecho-chave:** \"Lucro Bruto e Margem Bruta: LB R$48,9M, MB 53,6%, +5,7% ,+0,2 p.p.\" (p. 4).\n\n---\n\n### COMUNICADO AO MERCADO entregue em 12/05/2026\n\n**O QUE aconteceu:** A Companhia divulgou os resultados do primeiro trimestre de 2026.\n\n**Resumo:** Os resultados do primeiro trimestre de 2026 mostraram uma receita líquida de R$91,2M, com um lucro bruto de R$48,9M e uma margem bruta de 53,6%. O EBITDA ajustado foi de R$14,0M.\n\n**Trecho-chave:** \"Lucro Bruto e Margem Bruta: LB R$48,9M, MB 53,6%, +5,7% ,+0,2 p.p.\" (p. 4)."
+  },
+  "modelo": "qwen2.5:7b"
+}

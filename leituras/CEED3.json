@@ -1,0 +1,21 @@
+{
+  "ticker": "CEED3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T20:55:53",
+  "comunicados": {
+    "ids": [
+      57283682579413573,
+      389000467781378506
+    ],
+    "datas": [
+      "02/04/2026",
+      "18/11/2025"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### 02/04/2026 - Alteração na Composição do Comitê de Auditoria Estatutário (CAE) da CEEE-D\n\nA Companhia Estadual de Distribuição de Energia Elétrica – CEEE-D realizou alterações no Comitê de Auditoria Estatutário (CAE), com efeitos a partir do dia 1º de abril de 2026. O Sr. Tiago de Almeida Noel renunciou ao cargo de membro e Coordenador do CAE, sendo substituído pelo Sr. Tinn Freire Amado.\n\n**Trecho-chave:**\n\"ocorreram as seguintes alterações na composição do Comitê de Auditoria Estatutário (“CAE”) da Companhia, com efeitos a partir de 1º de abril de 2026: (i) renúncia do Sr. Tiago de Almeida Noel ao cargo de membro e Coordenador do CAE; (ii) eleição do Sr. Tinn Freire Amado ao cargo de membro e Coordenador do CAE.\"\n\n---\n\n### 18/11/2025 - Reajuste Tarifário Anual da CEEE-D\n\nA Equatorial S.A. e a Companhia Estadual de Distribuição de Energia Elétrica – CEEE-D, Distribuidora de Energia S.A., informaram que a ANEEL homologou o reajuste anual das tarifas da CEEE-D em 19,53%. A parcela B da CEEE-D teve um reajuste positivo de 4,6%.\n\n**Trecho-chave:**\n\"O Reajuste Tarifário Anual (RTA) foi estabelecido pela ANEEL com efeito médio a ser percebido pelo consumidor de 19,53%.\"\n\n---\n\n### Conexão com Indicadores do Contexto\n\nO reajuste tarifário anunciado em 18/11/2025 pode impactar os resultados financeiros da CEEE-D e, por extensão, dos fundos imobiliários que investem nela."
+  },
+  "modelo": "qwen2.5:7b"
+}

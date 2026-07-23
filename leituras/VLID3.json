@@ -1,0 +1,27 @@
+{
+  "ticker": "VLID3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-23T00:04:01",
+  "comunicados": {
+    "ids": [
+      564489379415620851,
+      580917088583843565,
+      413331236237389286,
+      13049350102910501
+    ],
+    "datas": [
+      "17/06/2026",
+      "21/05/2026",
+      "27/05/2026",
+      "07/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### Fato Relevante entregue em 17/06/2026\n\n**Data:** 17 de junho de 2026  \n**Título:** Companhia conclui Programa de Recompra e aprova Novo Programa  \n**Resumo:** A Valid Soluções S.A. concluiu o Programa de Recompra de ações, cancelou as ações adquiridas e abriu um novo programa para recompra.  \n**Trecho-chave:**\n\"O Conselho de Administração, em reunião realizada nesta data, aprovou o encerramento do Programa, ocorrido em 17 de junho de 2026, após atingido o limite de até 2.000.000 (dois milhões) de ações e na forma do art. 30, §1º, \"b\", da Lei nº 6.404/76 e da Resolução CVM nº 77/22, também foi deliberado o cancelamento das 2.000.000 (dois milhões) de ações ordinárias adquiridas em seu âmbito, nominativas, sem valor nominal e equivalentes a 53,62% das ações então mantidas em tesouraria, sem alteração do valor do capital social e com a respectiva contabilização na forma da lei.\"\n\n### Fato Relevante entregue em 21/05/2026\n\n**Data:** 21 de maio de 2026  \n**Título:** Diretor Financeiro, Operacional e de Relações com Investidores encerra funções  \n**Resumo:** Olavo Vaz encerrará suas funções como CFO, COO e DRI em 29 de maio de 2026. Walter Silva assumirá as mesmas funções a partir do dia 1° de junho de 2026.  \n**Trecho-chave:**\n\"A Valid Soluções S.A. comunica ao mercado e aos seus acionistas que, em comum acordo entre as partes, o Sr. Olavo Vaz encerrará suas funções como Diretor Financeiro (CFO), Operacional (COO) e Diretor de Relações com Investidores (DRI) da Companhia em 29 de maio de 2026.\"\n\n### Comunicado ao Mercado entregue em 27/05/2026\n\n**Data:** 27 de maio de 2026  \n**Título:** Aquisição de Participação Relevante  \n**Resumo:** A Valid Soluções S.A. recebeu a informação de que uma gestora, Alaska Investimentos Ltda., detém agora uma participação relevante na companhia.  \n**Trecho-chave:**\n\"A Valid Soluções S.A. comunica aos seus acionistas, investidores e ao mercado em geral que recebeu no dia 27 de maio de 2026 a comunicação da gestora Alaska Investimentos Ltda Alaska, informando que a quantidade de ações ordinárias da Valid detida pelo conjunto de fundos de investimentos e carteiras administradas sob a sua gestão, conforme descrito em quadro abaixo, ultrapassou os limites descritos na Resolução CVM nº 44/02, passando a deter participação relevante na base acionária da Companhia.\"\n\n### Comunicado ao Mercado entregue em 07/05/2026\n\n**Data:** 7 de maio de 2026  \n**Título:** Apresentação de Resultados do Primeiro Trimestre de 2026  \n**Resumo:** A Valid Soluções S.A. apresentou seus resultados financeiros do primeiro trimestre de 2026, contendo declarações prospectivas que refletem crenças e expectativas atuais em relação aos resultados futuros.  \n**Trecho-chave:**\n\"Esta apresentação contém declarações prospectivas que refletem crenças e expectativas atuais em relação aos resultados financeiros futuros e outros aspectos das atividades.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

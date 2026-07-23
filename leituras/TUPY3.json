@@ -1,0 +1,27 @@
+{
+  "ticker": "TUPY3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-23T00:00:15",
+  "comunicados": {
+    "ids": [
+      895784045062280679,
+      771748887005973703,
+      511844590070479054,
+      70735509312403986
+    ],
+    "datas": [
+      "11/06/2026",
+      "04/05/2026",
+      "01/06/2026",
+      "15/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### 11/06/2026 - Renúncia de membro do Conselho de Administração\n\nA Tupy S.A. comunicou a renúncia do Sr. José Mucio Monteiro Filho ao cargo de membro do Conselho de Administração, por razões pessoais e profissionais, com efeitos a partir de 10 de junho de 2026.\n\n*\"A Companhia recebeu correspondência do Sr. José Mucio Monteiro Filho informando sua renúncia, por razões de ordem pessoal e profissional, ao cargo de membro do Conselho de Administração da Companhia, com efeitos a partir de 10 de junho de 2026.\" (p. 1)\n\n### 04/05/2026 - Conclusão do processo de sucessão e eleição do Diretor Presidente\n\nA Tupy S.A. informou que concluiu o processo de sucessão para o cargo de Diretor-Presidente, eleito o Sr. Harro Ricardo Schlorke Burmann, com início de seu mandato em 1º de junho de 2026.\n\n*\"O Conselho de Administração concluiu o processo de sucessão do cargo de Diretor-Presidente e deliberou pela eleição do Sr. Harro Ricardo Schlorke Burmann para o cargo de Diretor-Presidente (CEO), com início de seu mandato em 1º de junho de 2026.\" (p. 1)\n\n### 01/06/2026 - Videocast TUPY3 Comenta – Novo CEO\n\nA Tupy S.A. informou que está disponível a entrevista gravada pelo novo Diretor Presidente, Sr. Harro Burmann.\n\n*\"A gravação pode ser acessada no canal (https://www.youtube.com/@TupySA).\" (p. 1)\n\n### 15/05/2026 - Relação com Investidores\n\nO comunicado apresenta os destaques do primeiro trimestre de 2026, destacando a execução da estratégia e o aumento da geração de caixa.\n\n*\"o Maior geração de caixa da história para um 1T: R$ 198 milhões\" (p. 3)\n\nO documento também apresenta dados financeiros e segmentação de receitas.\n\n*“Receita Líquida de R$ 2,3 bilhões (-7% vs. 1T25); margem de 4,3%; Maior geração de caixa da história para um 1T: R$ 198 milhões” (p. 3)\n\n*“Origem [% Receita] Segmentos [% Receita] 41% LatAm; 3% Outros; 18% Europa; 8% Distribuição; 85% Componentes Estruturais & Contratos de Manufatura; 7% Energia & Descarbonização; 61% Am.Norte; 39% ME; 1T25 LTM 1T26 LTM 10.550 9.516 -10%; 1T25 2T25 3T25 4T25 1T26 2.483 2.627 2.399 2.183 2.306 -7%” (p. 3)\n\n*“Componentes Estruturais & Contratos de Manufatura: 1T25 1T26 671 595 -11%; Mercado Interno 96% Das Receitas; Mercado Externo 67% Das Receitas” (p. 4)\n\n*“Energia & Descarbonização: Mercado Interno 154 1T25 131 +17%; Mercado Externo 17 1T25 32 -48%; 17% Das Receitas; 1% Das Receitas” (p. 5)\n\n*“Peças de Reposição (Aftermarket): Mercado Interno 106 1T25 110 -3%; Mercado Externo 21 1T25 22 -5%; 12% Das Receitas; 1% Das Receitas” (p. 6)"
+  },
+  "modelo": "qwen2.5:7b"
+}

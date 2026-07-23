@@ -1,0 +1,24 @@
+{
+  "ticker": "SALT3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T23:45:29",
+  "comunicados": {
+    "ids": [
+      469326353005170405,
+      262074632935629088,
+      977624564996862361
+    ],
+    "datas": [
+      "22/04/2026",
+      "15/05/2026",
+      "15/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### O que aconteceu em 22/04/2026\n\nA Companhia Grupo Salta Educação S.A. celebrou o 3° Aditamento ao Acordo de Acionistas, formalizando ajustes nos Planos de Incentivo de Longo Prazo e outras atualizações necessárias.\n\n*\"O Aditamento teve como finalidade formalizar as alterações decorrentes de ajustes nos Planos de Incentivo de Longo Prazo da Companhia, bem como outros ajustes de atualização necessários.\"* (p. 1)\n\n### O que aconteceu em 15/05/2026\n\nA Companhia Grupo Salta Educação S.A. comunicou a divulgação antecipada das informações trimestrais referentes ao primeiro trimestre de 2026, traduzidas para o inglês.\n\n*\"A Companhia esclarece que a antecipação da referida data está em conformidade com os prazos regulamentares da B3 S.A. – Brasil, Bolsa, Balcão (“B3”) e da Comissão de Valores Mobiliários (\"CVM\"), bem como informa que o calendário de eventos corporativos atualizado se encontra disponível para consulta por meio dos websites da Companhia (https://ri.gruposaltaedu.com/), da CVM (www.gov.br/cvm/pt-br) e da B3 (www.b3.com.br).\"* (p. 1)"
+  },
+  "modelo": "qwen2.5:7b"
+}

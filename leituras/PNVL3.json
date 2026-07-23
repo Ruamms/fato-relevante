@@ -1,0 +1,27 @@
+{
+  "ticker": "PNVL3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T23:34:56",
+  "comunicados": {
+    "ids": [
+      381786725474672383,
+      494598902690289928,
+      599787468964178895,
+      107228831768378055
+    ],
+    "datas": [
+      "28/02/2026",
+      "25/02/2026",
+      "07/05/2026",
+      "24/03/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### O QUE ACONTECEU: DIMED S.A. comunica renúncia de membro do Conselho de Administração\n\n**Resumo:** A DIMED S.A. informa que recebeu a renúncia do Sr. Cristiano Gioia Lauretti ao cargo de membro do Conselho de Administração, mantendo o conselho com 5 membros, dos quais 2 são independentes.\n\n**Citação do trecho-chave:** \"A Companhia agradece o Sr. Cristiano Gioia Lauretti por sua dedicação e profissionalismo durante o período em que atuou como membro do Conselho de Administração.\"\n\n---\n\n### O QUE ACONTECEU: DIMED S.A. divulga novas projeções financeiras e operacionais\n\n**Resumo:** A DIMED S.A. aprovou projeções financeiras e operacionais para o ciclo estratégico com horizonte até 2030, incluindo receita bruta entre R$11,5 bilhões e R$12 bilhões, margem EBITDA de 6,7% a 7%, e expansão da rede entre 950 e 1.000 lojas.\n\n**Citação do trecho-chave:** \"As projeções divulgadas contemplam os seguintes indicadores consolidados para o ano de 2030: • Receita Bruta: entre R$ 11,5 bilhões e R$ 12 bilhões; • Margem EBITDA: entre 6,7% e 7%; • Expansão da rede: entre 950 e 1.000 lojas em operação.\"\n\n---\n\n### O QUE ACONTECEU: DIMED S.A. divulga resultados do primeiro trimestre de 2026\n\n**Resumo:** Os resultados do primeiro trimestre de 2026 mostraram receita bruta do varejo de R$1,56 bilhão, EBITDA ajustado de R$81,2 milhões e lucro líquido ajustado de R$38,5 milhões. A companhia também destacou o crescimento da participação em vendas digitais e a expansão do mercado share na Região Sul.\n\n**Citação do trecho-chave:** \"Resultado Operacional: R$ 1,56 B; Receita Bruta do Varejo: R$ 81,2 M; Lucro Líquido Ajustado: R$ 38,5 M.\"\n\n---\n\n### O QUE ACONTECEU: DIMED S.A. divulga resultados do quarto trimestre de 2025\n\n**Resumo:** Os resultados do quarto trimestre de 2025 mostraram uma margem operacional ajustada de 5,4%, EBITDA ajustado de R$319,4 milhões e lucro líquido ajustado de R$135,3 milhões. A receita bruta do varejo aumentou em 17% comparado ao ano anterior.\n\n**Citação do trecho-chave:** \"Results: Operational; Margem Operacional Ajustada: +21,4% vs 2024; EBITDA Ajustado: R$ 319.4 Mi; Lucro Líquido Ajustado: R$ 135.3 Mi.\"\n\n---\n\n### Conexão com o contexto:\n- As projeções financeiras e operacionais divulgadas em fevereiro de 2026 (R$11,5 bilhões a R$12 bilhões para a receita bruta em 2030) se alinham com os resultados do primeiro trimestre de 2026, que mostraram uma receita bruta do varejo de R$1,56 bilhão."
+  },
+  "modelo": "qwen2.5:7b"
+}

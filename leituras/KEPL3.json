@@ -1,0 +1,24 @@
+{
+  "ticker": "KEPL3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T21:29:32",
+  "comunicados": {
+    "ids": [
+      619633276375498322,
+      81544018655064958,
+      1044369861523341993
+    ],
+    "datas": [
+      "22/05/2026",
+      "06/07/2026",
+      "30/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 22/05/2026\n\n**O QUE aconteceu:** A Kepler Weber S/A efetivou a compra de 17.924 ações ordinárias da Procer, aumentando sua participação no capital social para 62,6%.\n\n**Resumo:** A Kepler Weber concluiu a aquisição de ações da Procer, reforçando sua posição na empresa.\n\n**Trecho-chave:**\n\"concluiu nesta data de dois dos acionistas fundadores da Procer Automação S/A (“Procer”), a aquisição de 17.924 (dezessete mil e novecentos e vinte e quatro) ações ordinárias de emissão desta controlada, aumentando, portanto, a sua participação no capital social nesta sociedade, chegando em 62,6% nesta data.\"\n\n### COMUNICADO AO MERCADO entregue em 06/07/2026\n\n**O QUE aconteceu:** Um executivo da Kepler Weber S/A participou de uma entrevista online sobre a atuação da empresa no mercado.\n\n**Resumo:** O Diretor Financeiro e de Relações com Investidores, Renato Arroyo, participou de uma entrevista na MRT News sobre a performance da Kepler Weber.\n\n**Trecho-chave:**\n\"Evento: Entrevista | MRT News.\"\n\"Executivo: Renato Arroyo – Diretor Financeiro e de Relações com Investidores.\"\n\n### COMUNICADO AO MERCADO entregue em 30/06/2026\n\n**O QUE aconteceu:** Um executivo da Kepler Weber S/A participou de uma entrevista online sobre a atuação da empresa no mercado de armazenagem de grãos.\n\n**Resumo:** O Diretor Presidente, Bernardo Osborn Gomes Nogueira, participou de uma entrevista na CNN Money sobre o desempenho da Kepler Weber no mercado de armazenagem de grãos.\n\n**Trecho-chave:**\n\"Evento: Entrevista | CNN Money.\"\n\"Executivo: Bernardo Nogueira – Diretor Presidente.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

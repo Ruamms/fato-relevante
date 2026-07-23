@@ -1,0 +1,24 @@
+{
+  "ticker": "BMGB4",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T20:42:58",
+  "comunicados": {
+    "ids": [
+      559697644225827015,
+      644030216228068478,
+      985493737997541648
+    ],
+    "datas": [
+      "18/06/2026",
+      "26/06/2026",
+      "29/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 18/06/2026\n\n**O que aconteceu:** Conclusão das assinaturas do 7º Aditamento ao Acordo de Acionistas.\n\n**Resumo:** O Banco Bmg S.A. concluiu as assinaturas do 7º Aditamento ao Acordo de Acionistas, atualizando a quantidade de ações ordinárias e formalizando a adesão do Jera2026 Fundo de Investimento Multimercado Crédito Privado.\n\n**Trecho-chave:** \"em 18 de junho de 2026, foram concluidas as assinaturas do 7º Aditamento ao Acordo de Acionistas do Banco entre Espólio de Flávio Pentagna Guimarães, Bmg Participações S.A., Água Boa Participações S.A., Antônio Mourão Guimarães Neto, Rivage Participações S.A., São Judas Tadeu Participações S.A., Ângela Annes Guimarães, Regina Annes Guimarães, Ricardo Annes Guimarães e Jera2026 Fundo de Investimento Multimercado Crédito Privado.\"\n\n### COMUNICADO AO MERCADO entregue em 26/06/2026\n\n**O que aconteceu:** Conclusão da oferta pública de distribuição de cotas.\n\n**Resumo:** O Banco Bmg S.A. concluiu a oferta pública de distribuição de cotas da primeira emissão pela Classe A do Fundo de Investimento em Direitos Creditórios Consig Premium I – Responsabilidade Limitada, no montante total de R$ 750 milhões.\n\n**Trecho-chave:** \"foi encerrada a oferta pública de distribuição de cotas da primeira emissão pela Classe A do Fundo de Investimento em Direitos Creditórios Consig Premium I – Responsabilidade Limitada, no montante total de R$ 750 milhões.\"\n\n### COMUNICADO AO MERCADO entregue em 29/05/2026\n\n**O que aconteceu:** Aprovação da transferência de direitos creditórios.\n\n**Resumo:** O Conselho de Administração do Banco Bmg S.A. aprovou, em 26 de maio de 2026, a transferência sem retenção de riscos e benefícios no volume de até R$ 750 milhões para o Fundo de Investimento em Direitos Creditórios Consig Premium I – Responsabilidade Limitada.\n\n**Trecho-chave:** \"o Conselho de Administração do Bmg aprovou, em 26 de maio deste ano, a realização da transferência, sem retenção de riscos e benefícios, no volume de até R$ 750 milhões, pela Companhia à classe A do Fundo de Investimento em Direitos Creditórios Consig Premium I – Responsabilidade Limitada.\"\n\n**Conexão com indicadores:** Este comunicado se conecta ao contexto fornecido, pois menciona a transferência de direitos creditórios para o fundo, que é um dos passos planejados no processo descrito no contexto."
+  },
+  "modelo": "qwen2.5:7b"
+}

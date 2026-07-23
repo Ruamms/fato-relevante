@@ -1,0 +1,24 @@
+{
+  "ticker": "OFSA3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T21:50:33",
+  "comunicados": {
+    "ids": [
+      1091541082680490008,
+      474770528815156716,
+      909034949401113754
+    ],
+    "datas": [
+      "01/10/2025",
+      "08/05/2026",
+      "06/03/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 01/10/2025\n\nOuroFino S.A. concluiu a incorporação de sua subsidiária integral Ouro Fino Agronegócio Ltda.\n\nA Companhia realizou a incorporação da Ouro Fino Agronegócio, conforme previsto no Protocolo e Justificação, após a confirmação do cumprimento das Condições Suspensivas estabelecidas. A Incorporação resultou na extinção da Ouro Fino Agronegócio e sua sucessão pela Companhia.\n\n\"Companhia manterá seus acionistas e o mercado em geral informados sobre quaisquer atualizações relevantes em relação à Incorporação.\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 06/03/2026\n\nOuroFino S.A. lançou seis produtos em 2025, por meio de desenvolvimento interno, parcerias e novos negócios.\n\nA Companhia registrou um crescimento significativo nas receitas líquidas consolidadas no quarto trimestre de 2025 (4T25), com uma alta de 19,5% em comparação ao mesmo período do ano anterior. O EBITDA ajustado também cresceu 27,4%, atingindo R$ 282,5 milhões.\n\n\"Receita líquida consolidada cresceu 19,5%, atingindo R$ 1.225 milhões contra 2024.\" (p. 3)\n\n### COMUNICADO AO MERCADO entregue em 08/05/2026\n\nOuroFino S.A. apresentou os resultados do primeiro trimestre de 2026 (1T26).\n\nOs resultados financeiros do primeiro trimestre de 2026 mostraram um aumento significativo na receita líquida total, que cresceu 32,1% em comparação ao mesmo período do ano anterior. O lucro bruto também aumentou 46,9%, com uma margem bruta de 53,9%. A margem EBITDA ajustada melhorou para 17,8%, e o lucro líquido ajustado dobrou, atingindo 20,8 milhões.\n\n\"Receita Líquida - Total cresceu 32,1%, atingindo R$ 250,5 milhões contra 1T25. Lucro Bruto cresceu 46,9% no 1T26, atingindo R$ 134,9 milhões.\" (p. 4)\n\n### Conexão com o Contexto\n\n- A incorporação da Ouro Fino Agronegócio Ltda., mencionada no Fato Relevante de outubro de 2025, pode ter contribuído para a expansão do portfólio e a melhoria dos resultados financeiros apresentados nos comunicados subsequentes."
+  },
+  "modelo": "qwen2.5:7b"
+}

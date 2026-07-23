@@ -1,0 +1,21 @@
+{
+  "ticker": "ROMI3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T23:43:25",
+  "comunicados": {
+    "ids": [
+      469671426360950858,
+      394281970908486302
+    ],
+    "datas": [
+      "15/07/2026",
+      "30/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### O QUE ACONTECEU EM 15/07/2026\n\n**O que aconteceu:** A ROMI S.A. divulgou seus resultados do segundo trimestre de 2026.\n\n**Resumo:** A companhia apresentou um forte desempenho, com receita operacional líquida de R$ 88,7 milhões e uma carteira de pedidos de R$ 486,9 milhões. Além disso, a empresa celebrou os 70 anos da Romi-Isetta.\n\n**Trecho-chave:** \"Em maio de 2026, a ROMI participou da FEIMEC, destacando soluções com inteligência artificial, o ROMI Pulse e a nova geração do VTL 850.\" (p. 3)\n\n---\n\n### O QUE ACONTECEU EM 30/06/2026\n\n**O que aconteceu:** A ROMI S.A. anunciou eventos de divulgação dos resultados do segundo trimestre de 2026.\n\n**Resumo:** A empresa convidou investidores para uma teleconferência e webcast, programados para o dia 15 de julho de 2026, com transmissão ao vivo em português e tradução simultânea para inglês. Durante esse período, a ROMI entrou em um \"período de silêncio\" para evitar vazamento de informações.\n\n**Trecho-chave:** \"A teleconferência contará com uma apresentação de slides e será transmitida ao vivo via webcast.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b"
+}

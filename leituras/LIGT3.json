@@ -1,0 +1,30 @@
+{
+  "ticker": "LIGT3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T21:33:28",
+  "comunicados": {
+    "ids": [
+      801239426818403617,
+      670730305345039727,
+      944240841934871638,
+      783027094678463636,
+      880396718738145874
+    ],
+    "datas": [
+      "15/07/2026",
+      "14/05/2026",
+      "11/05/2026",
+      "14/06/2026",
+      "11/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 15/07/2026\n\n**O que aconteceu:** Homologação do Aumento de Capital e Exercício dos Bônus de Subscrição.\n\n**Resumo:** A Light S.A. homologou o aumento de capital, emitindo novas ações ordinárias e bônus de subscrição. O mercado será atualizado sobre as liberações das ações em lotes.\n\n**Trecho-chave:**\n\"Em reunião realizada nesta data, o Conselho de Administração da Companhia homologou o aumento de capital da Companhia, dentro do limite do capital autorizado previsto no artigo 5º do seu Estatuto Social, no montante total de R$1.500.000.000,72 (um bilhão e quinhentos milhões de reais e setenta e dois centavos), superior, portanto, à subscrição mínima de R$1.000.000.000,48 (um bilhão de reais e quarenta e oito centavos), mediante a emissão de 238.473.768 (duzentos e trinta e oito milhões, quatrocentos e setenta e três mil, setecentas e sessenta e oito) novas ações ordinárias, nominativas e sem valor nominal.\"\n\n### FATO RELEVANTE entregue em 14/05/2026\n\n**O que aconteceu:** Aprovou o Aumento de Capital.\n\n**Resumo:** O Conselho de Administração da Light S.A. aprovou um aumento de capital, com emissão de novas ações ordinárias e bônus de subscrição.\n\n**Trecho-chave:**\n\"Em reunião realizada nesta data, o Conselho de Administração da Companhia aprovou o aumento de capital da Companhia, dentro do limite do capital autorizado previsto no artigo 5º do seu Estatuto Social, no montante de, no mínimo, R$1.000.000.000,48 (um bilhão de reais e quarenta e oito centavos) e, no máximo, R$1.500.000.000,72 (um bilhão e quinhentos milhões de reais e setenta e dois centavos), mediante a emissão para subscrição privada de, no mínimo, 158.982.512 (cento e cinquenta e oito milhões, novecentos e oitenta e dois mil, quinhentas e doze) novas ações ordinárias, nominativas, escriturais e sem valor nominal.\"\n\n### FATO RELEVANTE entregue em 11/05/2026\n\n**O que aconteceu:** Projeção de investimentos para os próximos cinco anos.\n\n**Resumo:** A Light S.A. reiterou a projeção de investimentos acumulados para os próximos cinco anos, estimando R$10 bilhões em capex da Light SESA.\n\n**Trecho-chave:**\n\"Projeção 2026 - 2030\nIndicador \nResultado Esperado (acumulado) \nCapex nominal da Light SESA \n~R$10 bilhões\"\n\n### COMUNICADO AO MERCADO entregue em 14/06/2026\n\n**O que aconteceu:** Correção de informações sobre participação acionária relevante.\n\n**Resumo:** A Light S.A. corrigiu as informações divulgadas anteriormente, informando que a participação detida pelos fundos sob gestão do Itaú Unibanco não atingiu 5% das ações ordinárias da Companhia.\n\n**Trecho-chave:**\n\"A Asset Management reforça, ainda, que a participação detida pelos fundos sob sua gestão não possui como objetivo influenciar o controle ou a estrutura administrativa da Companhia, permanecendo inalterada a intenção previamente informada.\"\n\n### COMUNICADO AO MERCADO entregue em 11/06/2026\n\n**O que aconteceu:** Informações sobre participação acionária relevante.\n\n**Resumo:** A Light S.A. informou que a soma das ações e outros valores mobiliários detidos pelos fundos de investimento geridos pelo Itaú Unibanco atingiu 5,02% e foi reduzida para 4,99% das ações ordinárias da Companhia.\n\n**Trecho-chave:**\n\"Conforme as correspondências recebidas (em anexo), a soma das ações e de outros valores mobiliários e instrumentos financeiros derivativos referenciados em tais ações, conforme aplicável: (i) atingiu, em 08/06/2026, 18.726.104 ações ordinárias, equivalentes a 5,02% das ações ordinárias de emissão da Companhia, configurando participação acionária relevante; e (ii) foi reduzida, em 10/06/2026, para 18.606.505 ações ordinárias, equivalentes a 4,99% das ações ordinárias de emissão da Companhia.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

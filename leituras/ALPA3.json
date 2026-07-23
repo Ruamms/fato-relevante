@@ -1,0 +1,21 @@
+{
+  "ticker": "ALPA3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T20:22:00",
+  "comunicados": {
+    "ids": [
+      961834778861489969,
+      533703197402269969
+    ],
+    "datas": [
+      "13/07/2026",
+      "08/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 13/07/2026\n\n**O QUE aconteceu:** Anúncio da agenda de divulgação dos resultados do 2T26.\n\n**Resumo:** A Alpargatas anunciou a data e horário para a divulgação dos resultados financeiros do segundo trimestre de 2026, bem como detalhes sobre uma videoconferência.\n\n**Trecho-chave:**\n\"DIVULGAÇÃO DOS RESULTADOS\n06 de agosto de 2026, quinta-feira (após o fechamento do mercado).\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 08/05/2026\n\n**O QUE aconteceu:** Anúncio dos resultados financeiros do primeiro trimestre de 2026.\n\n**Resumo:** O comunicado apresenta uma série de métricas e estratégias para o crescimento da Alpargatas, tanto no Brasil quanto internacionalmente, destacando a performance nas vendas, marketing, simplificação operacional e alocação de capital.\n\n**Trecho-chave:**\n\"MODELO DE CRES­CIMENTO NO BRASIL\n• Vencer no canal Especializado\n• Acelerar a expansão do canal Alimentar Moderno\n• Mitigar o declínio do canal Alimentar Tradicional\n• Melhora consistente nos níveis de serviço (OTIF), que atingiram 86%, acompanhada de crescimento de volume no DTC (+12%) e no canal Especializado (+5%), sustentando crescimento recorrente de sell-out.\"\n\n**Conexão com o contexto:** As estratégias mencionadas no comunicado do primeiro trimestre (2026) refletem os esforços contínuos da Alpargatas para manter seu crescimento, conforme indicado nos dados do contexto."
+  },
+  "modelo": "qwen2.5:7b"
+}

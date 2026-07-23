@@ -1,0 +1,27 @@
+{
+  "ticker": "GRND3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T21:21:57",
+  "comunicados": {
+    "ids": [
+      986997422164003644,
+      784196674489389421,
+      669216858451680992,
+      12172093856007566
+    ],
+    "datas": [
+      "27/05/2026",
+      "10/04/2026",
+      "08/05/2026",
+      "08/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 27/05/2026\n\n**O que aconteceu:** Grendene celebrou o oitavo aditamento e consolidação ao Acordo de Acionistas.\n\n**Resumo:** A Grendene atualizou a quantidade de ações livres de emissão da empresa detidas por um acionista de referência, sem alterar seus direitos políticos ou econômicos. \n\n**Trecho-chave:**\n\"O Oitavo Aditamento e Consolidação do Acordo tem por único objetivo atualizar a quantidade de ações livres de emissão da Companhia – portanto, não vinculadas ao Acordo – de determinado acionista de referência da Companhia, integrante do bloco de controle e signatário do Acordo.\"\n\n### FATO RELEVANTE entregue em 10/04/2026\n\n**O que aconteceu:** Grendene celebrou o sétimo aditamento e consolidação ao Acordo de Acionistas.\n\n**Resumo:** O aditamento refletiu a transferência das ações de um acionista para um fundo de investimento, resultando na substituição do acionista original pelo fundo no acordo.\n\n**Trecho-chave:**\n\"O Aditamento e Consolidação do Acordo tem por principal objetivo refletir a transferência permitida da totalidade das ações de emissão da Companhia que pertenciam a um dos acionistas de referência e integrante do bloco de controle da Companhia na pessoa física para um fundo de investimento em ações detido exclusivamente por tal acionista.\"\n\n### COMUNICADO AO MERCADO entregue em 08/05/2026\n\n**O que aconteceu:** Grendene realizou uma videoconferência para apresentar os resultados do primeiro trimestre de 2026.\n\n**Resumo:** A empresa relatou resiliência operacional, adaptação de mix e canais ao ambiente de consumo, bem como solidez financeira. Houve crescimento no volume consolidado, disciplina na gestão das despesas, maior participação de categorias acessíveis e evolução dos canais de maior giro.\n\n**Trecho-chave:**\n\"O trimestre refletiu a adaptação de mix e de canais ao ambiente de consumo.\"\n\n### COMUNICADO AO MERCADO entregue em 08/05/2026\n\n**O que aconteceu:** Grendene realizou uma videoconferência para apresentar os resultados do primeiro trimestre de 2026.\n\n**Resumo:** A empresa relatou resiliência operacional, adaptação de mix e canais ao ambiente de consumo, bem como solidez financeira. Houve crescimento no volume consolidado, disciplina na gestão das despesas, maior participação de categorias acessíveis e evolução dos canais de maior giro.\n\n**Trecho-chave:**\n\"O trimestre refletiu a adaptação de mix e de canais ao ambiente de consumo.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

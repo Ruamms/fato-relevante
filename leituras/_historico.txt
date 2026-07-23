@@ -1384,3 +1384,249 @@
 2026-07-22 19:10:14	--- 2a passada automatica em 35 fundos com timeout de rede
 2026-07-22 19:10:32	--- lote iniciado · modelo qwen2.5:7b · 37 fundos na fila
 2026-07-22 19:10:51	--- lote encerrado · 0 lidos, 37 em dia/sem relatório, 0 erros
+2026-07-22 19:52:47	--- lote iniciado · modelo qwen2.5:7b · 1052 fundos na fila
+2026-07-22 19:54:17	KNIP11	erro	The read operation timed out
+2026-07-22 19:55:20	GARE11	lido	63s
+2026-07-22 19:55:51	VGIR11	erro	The read operation timed out
+2026-07-22 19:56:32	KORE11	erro	The read operation timed out
+2026-07-22 19:58:04	AFHI11	erro	The read operation timed out
+2026-07-22 19:58:04	BPCA11	erro	The read operation timed out
+2026-07-22 19:58:04	FRLS11	erro	The read operation timed out
+2026-07-22 19:58:08	HREC11	erro	The read operation timed out
+2026-07-22 19:58:50	CLIN11	erro	The read operation timed out
+2026-07-22 19:59:37	KISU11	erro	The read operation timed out
+2026-07-22 19:59:43	PORD11	erro	The read operation timed out
+2026-07-22 20:00:59	HDOF11	erro	The read operation timed out
+2026-07-22 20:01:50	BTYU11	erro	The read operation timed out
+2026-07-22 20:02:57	CIXM11	erro	The read operation timed out
+2026-07-22 20:03:54	GAME11	lido	57s
+2026-07-22 20:05:56	ASMT11	erro	The read operation timed out
+2026-07-22 20:06:18	VVRI11	erro	The read operation timed out
+2026-07-22 20:08:43	DVLP11	erro	The read operation timed out
+2026-07-22 20:09:17	TSNC11	erro	The read operation timed out
+2026-07-22 20:10:47	BNFS11	erro	The read operation timed out
+2026-07-22 20:13:13	5PRE11	erro	The read operation timed out
+2026-07-22 20:13:33	ARGE11	erro	The read operation timed out
+2026-07-22 20:14:55	BMMT11	erro	The read operation timed out
+2026-07-22 20:15:23	BXPO11	erro	HTTP Error 520: <none>
+2026-07-22 20:15:45	ESGB11	erro	The read operation timed out
+2026-07-22 20:16:50	FIND11	erro	The read operation timed out
+2026-07-22 20:18:12	AALR3	sem-relatorio-fatos-lidos	70s
+2026-07-22 20:18:40	ABCB4	sem-relatorio-fatos-lidos	29s
+2026-07-22 20:19:18	AERI3	sem-relatorio-fatos-lidos	38s
+2026-07-22 20:19:18	AFLT3	sem-relatorio
+2026-07-22 20:20:19	AGRO3	sem-relatorio-fatos-lidos	60s
+2026-07-22 20:20:45	AGXY3	sem-relatorio-fatos-lidos	26s
+2026-07-22 20:20:56	AHEB3	sem-relatorio-fatos-lidos	11s
+2026-07-22 20:21:36	ALLD3	sem-relatorio-fatos-lidos	40s
+2026-07-22 20:22:00	ALPA3	sem-relatorio-fatos-lidos	24s
+2026-07-22 20:22:51	ALPK3	sem-relatorio-fatos-lidos	51s
+2026-07-22 20:23:32	ALUP11	sem-relatorio-fatos-lidos	41s
+2026-07-22 20:24:04	AMAR3	sem-relatorio-fatos-lidos	33s
+2026-07-22 20:24:46	AMBP3	sem-relatorio-fatos-lidos	41s
+2026-07-22 20:25:55	AMER11	sem-relatorio-fatos-lidos	70s
+2026-07-22 20:26:49	AMOB3	sem-relatorio-fatos-lidos	53s
+2026-07-22 20:27:42	ARML3	sem-relatorio-fatos-lidos	54s
+2026-07-22 20:29:07	ARND3	sem-relatorio-fatos-lidos	85s
+2026-07-22 20:29:48	ATED3	sem-relatorio-fatos-lidos	40s
+2026-07-22 20:30:48	AVLL11	sem-relatorio-fatos-lidos	61s
+2026-07-22 20:31:57	AZEV11	sem-relatorio-fatos-lidos	68s
+2026-07-22 20:32:48	AZTE11	sem-relatorio-fatos-lidos	52s
+2026-07-22 20:33:46	AZUL3	sem-relatorio-fatos-lidos	58s
+2026-07-22 20:34:41	B1003	sem-relatorio-fatos-lidos	55s
+2026-07-22 20:35:28	B3SA3	sem-relatorio-fatos-lidos	47s
+2026-07-22 20:35:28	BALM3	sem-relatorio
+2026-07-22 20:35:28	BAUH3	sem-relatorio
+2026-07-22 20:36:21	BAZA3	sem-relatorio-fatos-lidos	53s
+2026-07-22 20:37:14	BEES3	sem-relatorio-fatos-lidos	53s
+2026-07-22 20:37:44	BGIP3	sem-relatorio-fatos-lidos	30s
+2026-07-22 20:39:11	BHIA3	sem-relatorio-fatos-lidos	87s
+2026-07-22 20:39:49	BIED3	sem-relatorio-fatos-lidos	38s
+2026-07-22 20:40:24	BIOM11	sem-relatorio-fatos-lidos	35s
+2026-07-22 20:41:18	BLAU3	sem-relatorio-fatos-lidos	54s
+2026-07-22 20:42:18	BMEB3	sem-relatorio-fatos-lidos	60s
+2026-07-22 20:42:58	BMGB4	sem-relatorio-fatos-lidos	40s
+2026-07-22 20:43:18	BMIN3	sem-relatorio-fatos-lidos	20s
+2026-07-22 20:44:16	BMOB3	sem-relatorio-fatos-lidos	58s
+2026-07-22 20:45:08	BNBR3	sem-relatorio-fatos-lidos	52s
+2026-07-22 20:45:43	BPAR3	sem-relatorio-fatos-lidos	35s
+2026-07-22 20:46:20	BRBI11	sem-relatorio-fatos-lidos	38s
+2026-07-22 20:47:37	BRSR3	sem-relatorio-fatos-lidos	77s
+2026-07-22 20:48:21	BRST3	sem-relatorio-fatos-lidos	44s
+2026-07-22 20:49:08	BSLI3	sem-relatorio-fatos-lidos	47s
+2026-07-22 20:49:39	CALI11	sem-relatorio-fatos-lidos	30s
+2026-07-22 20:49:51	CAMB3	sem-relatorio-fatos-lidos	12s
+2026-07-22 20:50:24	CAML3	sem-relatorio-fatos-lidos	33s
+2026-07-22 20:51:14	CASH3	sem-relatorio-fatos-lidos	51s
+2026-07-22 20:52:29	CBEE3	sem-relatorio-fatos-lidos	75s
+2026-07-22 20:53:42	CCTY3	sem-relatorio-fatos-lidos	73s
+2026-07-22 20:54:03	CEBR3	sem-relatorio-fatos-lidos	20s
+2026-07-22 20:55:02	CEDO3	sem-relatorio-fatos-lidos	59s
+2026-07-22 20:55:28	CEEB3	sem-relatorio-fatos-lidos	27s
+2026-07-22 20:55:53	CEED3	sem-relatorio-fatos-lidos	25s
+2026-07-22 20:55:53	CEGR3	sem-relatorio
+2026-07-22 20:56:16	CGAS3	sem-relatorio-fatos-lidos	23s
+2026-07-22 20:57:19	CGRA3	sem-relatorio-fatos-lidos	63s
+2026-07-22 20:57:43	CLSC3	sem-relatorio-fatos-lidos	25s
+2026-07-22 20:58:32	COCE3	sem-relatorio-fatos-lidos	49s
+2026-07-22 20:59:05	CRPG3	sem-relatorio-fatos-lidos	33s
+2026-07-22 20:59:32	CSED3	sem-relatorio-fatos-lidos	27s
+2026-07-22 20:59:54	CSUD3	sem-relatorio-fatos-lidos	22s
+2026-07-22 20:59:54	CTKA3	sem-relatorio
+2026-07-22 21:00:36	DASA3	sem-relatorio-fatos-lidos	42s
+2026-07-22 21:01:38	DESK3	sem-relatorio-fatos-lidos	62s
+2026-07-22 21:02:21	DEXP3	sem-relatorio-fatos-lidos	43s
+2026-07-22 21:02:44	DMVF3	sem-relatorio-fatos-lidos	23s
+2026-07-22 21:03:21	DOHL3	sem-relatorio-fatos-lidos	37s
+2026-07-22 21:04:01	DOTZ3	sem-relatorio-fatos-lidos	40s
+2026-07-22 21:04:01	DTCY3	sem-relatorio
+2026-07-22 21:04:38	DXCO3	sem-relatorio-fatos-lidos	37s
+2026-07-22 21:05:49	EALT3	sem-relatorio-fatos-lidos	71s
+2026-07-22 21:06:47	ECOM3	sem-relatorio-fatos-lidos	58s
+2026-07-22 21:06:47	EGGY3	sem-relatorio
+2026-07-22 21:07:12	EKTR3	sem-relatorio-fatos-lidos	26s
+2026-07-22 21:08:16	EMAE3	sem-relatorio-fatos-lidos	63s
+2026-07-22 21:09:33	ENJU3	sem-relatorio-fatos-lidos	77s
+2026-07-22 21:10:48	ENMT3	sem-relatorio-fatos-lidos	75s
+2026-07-22 21:10:48	EPAR3	sem-relatorio
+2026-07-22 21:11:33	EQPA3	sem-relatorio-fatos-lidos	45s
+2026-07-22 21:12:23	ESPA3	sem-relatorio-fatos-lidos	51s
+2026-07-22 21:12:59	ESTR3	sem-relatorio-fatos-lidos	36s
+2026-07-22 21:13:40	ETER3	sem-relatorio-fatos-lidos	41s
+2026-07-22 21:14:04	EUCA3	sem-relatorio-fatos-lidos	24s
+2026-07-22 21:14:47	EVEN3	sem-relatorio-fatos-lidos	43s
+2026-07-22 21:15:37	FESA3	sem-relatorio-fatos-lidos	49s
+2026-07-22 21:16:30	FHER3	sem-relatorio-fatos-lidos	54s
+2026-07-22 21:17:06	FIEI3	sem-relatorio-fatos-lidos	35s
+2026-07-22 21:18:16	FIQE3	sem-relatorio-fatos-lidos	71s
+2026-07-22 21:18:58	FRAS3	sem-relatorio-fatos-lidos	42s
+2026-07-22 21:19:33	FRIO3	sem-relatorio-fatos-lidos	35s
+2026-07-22 21:19:51	GEPA3	sem-relatorio-fatos-lidos	17s
+2026-07-22 21:20:36	GFSA3	sem-relatorio-fatos-lidos	45s
+2026-07-22 21:21:08	GPAR3	sem-relatorio-fatos-lidos	32s
+2026-07-22 21:21:57	GRND3	sem-relatorio-fatos-lidos	49s
+2026-07-22 21:22:51	GSHP3	sem-relatorio-fatos-lidos	55s
+2026-07-22 21:23:39	HAGA3	sem-relatorio-fatos-lidos	48s
+2026-07-22 21:24:23	HBOR3	sem-relatorio-fatos-lidos	44s
+2026-07-22 21:25:19	HBRE3	sem-relatorio-fatos-lidos	55s
+2026-07-22 21:25:57	HBSA3	sem-relatorio-fatos-lidos	38s
+2026-07-22 21:26:25	HBTS3	sem-relatorio-fatos-lidos	28s
+2026-07-22 21:26:36	HETA3	sem-relatorio-fatos-lidos	11s
+2026-07-22 21:27:31	IFCM3	sem-relatorio-fatos-lidos	55s
+2026-07-22 21:27:51	INEP3	sem-relatorio-fatos-lidos	20s
+2026-07-22 21:28:29	JALL3	sem-relatorio-fatos-lidos	38s
+2026-07-22 21:28:29	JOPA3	sem-relatorio
+2026-07-22 21:29:04	JSLG3	sem-relatorio-fatos-lidos	35s
+2026-07-22 21:29:32	KEPL3	sem-relatorio-fatos-lidos	28s
+2026-07-22 21:30:25	LAND3	sem-relatorio-fatos-lidos	53s
+2026-07-22 21:31:19	LAVV3	sem-relatorio-fatos-lidos	54s
+2026-07-22 21:32:01	LEVE3	sem-relatorio-fatos-lidos	43s
+2026-07-22 21:33:28	LIGT3	sem-relatorio-fatos-lidos	87s
+2026-07-22 21:34:06	LJQQ3	sem-relatorio-fatos-lidos	38s
+2026-07-22 21:34:51	LOGG3	sem-relatorio-fatos-lidos	45s
+2026-07-22 21:35:22	LOGN3	sem-relatorio-fatos-lidos	31s
+2026-07-22 21:35:43	LPSB3	sem-relatorio-fatos-lidos	22s
+2026-07-22 21:36:48	LUPA3	sem-relatorio-fatos-lidos	65s
+2026-07-22 21:37:22	LUXM3	sem-relatorio-fatos-lidos	34s
+2026-07-22 21:37:49	LWSA3	sem-relatorio-fatos-lidos	28s
+2026-07-22 21:37:49	MAPT3	sem-relatorio
+2026-07-22 21:39:01	MATD3	sem-relatorio-fatos-lidos	71s
+2026-07-22 21:39:26	MDIA3	sem-relatorio-fatos-lidos	26s
+2026-07-22 21:40:18	MEAL3	sem-relatorio-fatos-lidos	51s
+2026-07-22 21:41:19	MELK3	sem-relatorio-fatos-lidos	61s
+2026-07-22 21:41:56	MGEL3	sem-relatorio-fatos-lidos	37s
+2026-07-22 21:42:37	MILS3	sem-relatorio-fatos-lidos	41s
+2026-07-22 21:43:54	MLAS3	sem-relatorio-fatos-lidos	77s
+2026-07-22 21:44:22	MNDL3	sem-relatorio-fatos-lidos	29s
+2026-07-22 21:45:02	MNPR3	sem-relatorio-fatos-lidos	40s
+2026-07-22 21:45:50	MSPA3	sem-relatorio-fatos-lidos	48s
+2026-07-22 21:46:29	MTRE3	sem-relatorio-fatos-lidos	39s
+2026-07-22 21:47:12	MTSA3	sem-relatorio-fatos-lidos	43s
+2026-07-22 21:47:58	MWET3	sem-relatorio-fatos-lidos	46s
+2026-07-22 21:48:42	MYPK3	sem-relatorio-fatos-lidos	44s
+2026-07-22 21:49:01	NORD3	sem-relatorio-fatos-lidos	20s
+2026-07-22 21:49:27	NUTR3	sem-relatorio-fatos-lidos	26s
+2026-07-22 21:49:56	OBTC3	sem-relatorio-fatos-lidos	28s
+2026-07-22 21:50:33	OFSA3	sem-relatorio-fatos-lidos	38s
+2026-07-22 21:51:43	OIBR3	sem-relatorio-fatos-lidos	69s
+2026-07-22 21:52:44	ONCO11	sem-relatorio-fatos-lidos	61s
+2026-07-22 21:53:03	OPCT3	sem-relatorio-fatos-lidos	20s
+2026-07-22 21:53:47	OSXB3	sem-relatorio-fatos-lidos	43s
+2026-07-22 21:54:37	PASS3	sem-relatorio-fatos-lidos	51s
+2026-07-22 21:55:05	PATI3	sem-relatorio-fatos-lidos	28s
+2026-07-22 21:55:35	PCAR3	sem-relatorio-fatos-lidos	29s
+2026-07-22 21:56:27	PDGR3	sem-relatorio-fatos-lidos	53s
+2026-07-22 23:22:22	--- lote interrompido pelo usuário em PDTC3
+2026-07-22 23:22:22	--- lote encerrado · 137 lidos, 798 em dia/sem relatório, 24 erros
+2026-07-22 23:22:22	--- 2a passada automatica em 23 fundos com timeout de rede
+2026-07-22 23:26:20	--- lote iniciado · modelo qwen2.5:7b · 1052 fundos na fila
+2026-07-22 23:27:47	KNIP11	erro	The read operation timed out
+2026-07-22 23:28:35	FCFL11	lido	48s
+2026-07-22 23:28:44	MIST11	erro	The read operation timed out
+2026-07-22 23:28:47	EDGA11	erro	The read operation timed out
+2026-07-22 23:29:10	RZLC11	erro	The read operation timed out
+2026-07-22 23:30:04	PDTC3	sem-relatorio-fatos-lidos	17s
+2026-07-22 23:30:39	PEAB3	sem-relatorio-fatos-lidos	35s
+2026-07-22 23:31:17	PFRM3	sem-relatorio-fatos-lidos	38s
+2026-07-22 23:31:58	PGMN3	sem-relatorio-fatos-lidos	41s
+2026-07-22 23:32:42	PINE3	sem-relatorio-fatos-lidos	44s
+2026-07-22 23:32:53	PLAS3	sem-relatorio-fatos-lidos	11s
+2026-07-22 23:33:20	PLPL3	sem-relatorio-fatos-lidos	27s
+2026-07-22 23:34:07	PMAM3	sem-relatorio-fatos-lidos	47s
+2026-07-22 23:34:56	PNVL3	sem-relatorio-fatos-lidos	48s
+2026-07-22 23:35:15	POSI3	sem-relatorio-fatos-lidos	20s
+2026-07-22 23:35:56	PRNR3	sem-relatorio-fatos-lidos	41s
+2026-07-22 23:36:49	PSVM11	sem-relatorio-fatos-lidos	53s
+2026-07-22 23:37:40	PTBL3	sem-relatorio-fatos-lidos	51s
+2026-07-22 23:38:15	QUAL3	sem-relatorio-fatos-lidos	35s
+2026-07-22 23:38:51	RAIZ4	sem-relatorio-fatos-lidos	37s
+2026-07-22 23:39:07	RANI3	sem-relatorio-fatos-lidos	15s
+2026-07-22 23:39:42	RCSL3	sem-relatorio-fatos-lidos	36s
+2026-07-22 23:41:13	REDE3	sem-relatorio-fatos-lidos	91s
+2026-07-22 23:42:24	RIAA3	sem-relatorio-fatos-lidos	71s
+2026-07-22 23:43:05	RNEW3	sem-relatorio-fatos-lidos	41s
+2026-07-22 23:43:25	ROMI3	sem-relatorio-fatos-lidos	20s
+2026-07-22 23:43:25	RPAD3	sem-relatorio
+2026-07-22 23:44:01	RSID3	sem-relatorio-fatos-lidos	36s
+2026-07-22 23:44:34	RSUL3	sem-relatorio-fatos-lidos	33s
+2026-07-22 23:45:10	RVEE3	sem-relatorio-fatos-lidos	37s
+2026-07-22 23:45:29	SALT3	sem-relatorio-fatos-lidos	19s
+2026-07-22 23:46:17	SBFG3	sem-relatorio-fatos-lidos	48s
+2026-07-22 23:47:13	SCAR3	sem-relatorio-fatos-lidos	56s
+2026-07-22 23:48:32	SEER3	sem-relatorio-fatos-lidos	79s
+2026-07-22 23:49:20	SEQL3	sem-relatorio-fatos-lidos	48s
+2026-07-22 23:50:24	SHOW3	sem-relatorio-fatos-lidos	64s
+2026-07-22 23:51:03	SHUL3	sem-relatorio-fatos-lidos	39s
+2026-07-22 23:51:03	SNSY3	sem-relatorio
+2026-07-22 23:51:22	SOJA3	sem-relatorio-fatos-lidos	19s
+2026-07-22 23:51:42	SOND3	sem-relatorio-fatos-lidos	20s
+2026-07-22 23:52:09	SYNE3	sem-relatorio-fatos-lidos	28s
+2026-07-22 23:52:48	TASA3	sem-relatorio-fatos-lidos	38s
+2026-07-22 23:53:54	TCSA3	sem-relatorio-fatos-lidos	66s
+2026-07-22 23:54:37	TECN3	sem-relatorio-fatos-lidos	43s
+2026-07-22 23:54:58	TELB3	sem-relatorio-fatos-lidos	21s
+2026-07-22 23:55:44	TFCO4	sem-relatorio-fatos-lidos	47s
+2026-07-22 23:56:20	TGMA3	sem-relatorio-fatos-lidos	35s
+2026-07-22 23:56:51	TOKY11	sem-relatorio-fatos-lidos	32s
+2026-07-22 23:58:07	TPIS3	sem-relatorio-fatos-lidos	76s
+2026-07-22 23:58:59	TRIS3	sem-relatorio-fatos-lidos	52s
+2026-07-22 23:59:24	TTEN3	sem-relatorio-fatos-lidos	25s
+2026-07-23 00:00:15	TUPY3	sem-relatorio-fatos-lidos	51s
+2026-07-23 00:00:58	UCAS3	sem-relatorio-fatos-lidos	43s
+2026-07-23 00:01:53	UNIP3	sem-relatorio-fatos-lidos	55s
+2026-07-23 00:02:32	VITT3	sem-relatorio-fatos-lidos	39s
+2026-07-23 00:03:06	VIVR11	sem-relatorio-fatos-lidos	35s
+2026-07-23 00:04:01	VLID3	sem-relatorio-fatos-lidos	55s
+2026-07-23 00:04:26	VSTE3	sem-relatorio-fatos-lidos	25s
+2026-07-23 00:05:09	VTRU3	sem-relatorio-fatos-lidos	43s
+2026-07-23 00:05:45	VULC3	sem-relatorio-fatos-lidos	36s
+2026-07-23 00:06:55	VVEO3	sem-relatorio-fatos-lidos	70s
+2026-07-23 00:07:30	WDCN3	sem-relatorio-fatos-lidos	35s
+2026-07-23 00:08:12	WEST3	sem-relatorio-fatos-lidos	42s
+2026-07-23 00:08:39	WHRL3	sem-relatorio-fatos-lidos	27s
+2026-07-23 00:09:19	WIZC3	sem-relatorio-fatos-lidos	39s
+2026-07-23 00:09:59	WLMM3	sem-relatorio-fatos-lidos	40s
+2026-07-23 00:09:59	--- lote encerrado · 60 lidos, 988 em dia/sem relatório, 4 erros
+2026-07-23 00:09:59	--- 2a passada automatica em 4 fundos com timeout de rede
+2026-07-23 00:10:16	--- lote iniciado · modelo qwen2.5:7b · 4 fundos na fila
+2026-07-23 00:10:41	--- lote encerrado · 0 lidos, 4 em dia/sem relatório, 0 erros

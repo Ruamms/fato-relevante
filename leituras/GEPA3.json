@@ -1,0 +1,21 @@
+{
+  "ticker": "GEPA3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T21:19:51",
+  "comunicados": {
+    "ids": [
+      496051133024122027,
+      1108454836977740390
+    ],
+    "datas": [
+      "01/08/2025",
+      "16/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### O QUE ACONTECEU: Transação entre partes relacionadas\n\n**Ocorrência:** A RIO PARANAPANEMA ENERGIA S.A. celebrou um Contrato de Empréstimo com a China Three Gorges (Luxembourg) Energy S.à.r.l.\n\n**Resumo:** A companhia obteve um empréstimo de RMB 350 milhões do CTG Lux, com uma taxa anual de 2,04% e prazo de 24 meses, visando a proteção cambial através de instrumentos derivativos. \n\n**Trecho-chave:** \"O Contrato de Empréstimo tem por objeto o empréstimo, à Companhia pela CTG Lux, do valor de RMB 350.000.000,00 (trezentos e cinquenta milhões de Renminbi), sobre o qual incidirá uma taxa de 2,04% ao ano, com prazo de 24 (vinte e quatro) meses, considerando a contratação de instrumento derivativo para proteção contra a variação cambial.\" (p. 1)\n\n### Conexão aos Indicadores do Contexto\nA transação entre partes relacionadas pode impactar os indicadores financeiros da companhia, especialmente no que diz respeito ao custo de financiamento e à dívida líquida."
+  },
+  "modelo": "qwen2.5:7b"
+}

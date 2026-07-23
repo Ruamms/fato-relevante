@@ -1,0 +1,21 @@
+{
+  "ticker": "WHRL3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-23T00:08:39",
+  "comunicados": {
+    "ids": [
+      269011088690776437,
+      847096983761331638
+    ],
+    "datas": [
+      "07/05/2026",
+      "20/04/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 20/04/2026\n\n**O QUE aconteceu:** A Whirlpool S.A. comunicou a mudança da produção anteriormente realizada na fábrica de Pilar, na Argentina, para a fábrica localizada na cidade de Rio Claro, Estado de São Paulo, Brasil.\n\n**Resumo:** Como parte do processo contínuo de revisão e aprimoramento da estrutura produtiva, a Whirlpool decidiu internalizar as operações fabris, transferindo a produção para uma unidade brasileira. A decisão foi tomada considerando as condições dos mercados atuais.\n\n**Trecho-chave:**\n\"A Companhia adquiriu determinados ativos industriais e bens operacionais da Whirlpool AR.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 07/05/2026\n\n**O QUE aconteceu:** O Conselho de Administração da Whirlpool S.A. aprovou a substituição do Sr. Gustavo Gelati Ambar pelo Sr. Carlos Roberto Barbery como Diretor Presidente, com efeitos imediatos.\n\n**Resumo:** Carlos Roberto Barbery ingressou na Whirlpool em 2006 e acumula experiência em marketing, finanças e operações de vendas. Jorge Rodrigo Giordan foi eleito Diretor Vice-Presidente, com efeitos imediatos, e Silvio Luis da Silva Ferraioli como Diretor Vice-Presidente a partir de 1º de junho de 2026.\n\n**Trecho-chave:**\n\"Carlos Roberto Barbery ingressou na Whirlpool em 2006 na equipe de Marketing da América Latina. Nos primeiros seis anos, atuou em desenvolvimento de produtos, gestão de categorias e marcas, trade marketing e vendas.\" (p. 1)\n\n---\n\n**Conexão com o contexto:** A mudança na diretoria da Whirlpool pode estar relacionada à reorganização produtiva anunciada no comunicado anterior, refletindo a continuidade das estratégias de eficiência operacional e alocação de recursos."
+  },
+  "modelo": "qwen2.5:7b"
+}

@@ -1,0 +1,39 @@
+{
+  "ticker": "OIBR3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T21:51:43",
+  "comunicados": {
+    "ids": [
+      630182206845247655,
+      27024199082421705,
+      1052590892008423987,
+      1054651355232002933,
+      444901418039480249
+    ],
+    "datas": [
+      "11/07/2026",
+      "09/07/2026",
+      "30/06/2026",
+      "14/07/2026",
+      "10/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 11/07/2026\n\n**O QUE aconteceu:** Oi S.A., em recuperação judicial, celebrou um contrato para a alienação judicial de uma unidade produtiva isolada (UPI) relacionada aos serviços telefônicos.\n\n**Resumo:** A Oi vendeu uma UPI com ativos e clientes relacionados à prestação de serviços telefônicos fixos, voz fixa, tridígito, interconexões, infraestrutura e base de clientes para Método Telecomunicações. As condições precedentes incluem aprovação pela ANATEL e CADE.\n\n**Trecho-chave:**\n\"O Contrato tem por objeto a alienação judicial de uma unidade produtiva isolada (UPI), composta por 100% (cem por cento) das ações de emissão da Oi Serviços Telefônicos S.A. (“Operação”), para cujo capital social a Companhia contribuirá determinados ativos relativos à operação de serviços telefônicos que compreende, dentre outros, (a) a prestação de serviços telefônicos fixos comutados (STFC); (b) a continuidade de prestação de serviços de voz fixa por meio de acessos coletivos e individuais nas localidades onde a Oi é Carrier of Last Resort (“COLR”) até dezembro de 2028; (c) a prestação de serviços de tridígito (números únicos de utilidade pública), i.e., 190, 192 e 193; (d) interconexões; (e) infraestrutura de torres (mastros, postes, cavaletes, bases, cabeamento e ativos correlatos); (f) a prestação de serviços e manutenção de telefones de uso público; além (g) da base de clientes, dos contratos de trabalho, dos contratos com fornecedores relativos ao cumprimento dos serviços objeto desta UPI, dos equipamentos terminais associados e demais ativos, direitos e obrigações relacionados à referida operação (\"UPI Serviços Telefônicos\").\"\n\n### FATO RELEVANTE entregue em 09/07/2026\n\n**O QUE aconteceu:** Oi S.A., em recuperação judicial, manifestou-se sobre a continuidade do Grupo Oi.\n\n**Resumo:** A Oi informou que o julgamento dos Agravos de Instrumento contra a decisão que convolou a recuperação judicial do Grupo Oi em falência foi suspenso após pedido de vista. A disponibilidade de caixa diminuiu para R$ 19,6 milhões ao final de julho, o que pode tornar a operação insustentável a partir de agosto.\n\n**Trecho-chave:**\n\"A íntegra das petições está à disposição dos acionistas e credores nos websites da Companhia (www.oi.com.br/ri e https://recjud.com.br) e no Sistema Empresas.NET da CVM (www.cvm.gov.br).\"\n\n### FATO RELEVANTE entregue em 30/06/2026\n\n**O QUE aconteceu:** Oi S.A., em recuperação judicial, informou sobre o início do julgamento dos Agravos de Instrumento contra a decisão que convolou a recuperação judicial do Grupo Oi em falência.\n\n**Resumo:** A Desembargadora da 1ª Câmara de Direito Privado votou pelo desprovimento dos recursos. No entanto, o julgamento foi suspenso após pedido de vista do Desembargador Dr. Augusto Alves Moreira Júnior.\n\n**Trecho-chave:**\n\"Durante o julgamento, a Desembargadora da 1ª Câmara de Direito Privado do Tribunal de Justiça do Estado do Rio de Janeiro, Dra. Monica Maria Costa Di Piero, relatora dos Agravos de Instrumento, votou pelo desprovimento dos referidos recursos.\"\n\n### COMUNICADO AO MERCADO entregue em 14/07/2026\n\n**O QUE aconteceu:** Oi S.A., em recuperação judicial, esclareceu a situação das Informações Trimestrais e Demonstrações Financeiras.\n\n**Resumo:** A divulgação dessas informações foi adiada até a conclusão da auditoria independente conduzida pela PwC. O Juízo da Recuperação Judicial deferiu a instauração de um incidente em segredo de justiça para juntar documentação contábil.\n\n**Trecho-chave:**\n\"No referido despacho, o Juízo da Recuperação Judicial destacou que a questão relativa à divulgação das Informações Financeiras encontra-se esclarecida, reconhecendo que sua divulgação deve aguardar a conclusão dos trabalhos de auditoria independente atualmente conduzidos pela PricewaterhouseCoopers Auditores Independentes Ltda. (\"PwC\").\"\n\n### COMUNICADO AO MERCADO entregue em 10/07/2026\n\n**O QUE aconteceu:** Oi S.A., em recuperação judicial, realizou uma reunião com acionistas minoritários para esclarecer questões sobre a situação atual do Grupo Oi.\n\n**Resumo:** A reunião foi realizada para promover o diálogo e prestar esclarecimentos sobre temas de interesse dos acionistas. Nenhuma informação relevante ainda não divulgada publicamente foi compartilhada durante a reunião.\n\n**Trecho-chave:**\n\"A Companhia esclarece que, durante a reunião, não foram divulgadas informações relevantes ainda não disponibilizadas publicamente ao mercado, tendo os esclarecimentos prestados se baseado em informações e materiais já divulgados pela Companhia por meio de seus canais oficiais.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1054651355232002933,
+    "data_entrega": "14/07/2026 00:00",
+    "tipo": "nao_identificado",
+    "rotulo": "parecer não identificado no texto",
+    "grave": false,
+    "continuidade": false,
+    "trecho": ""
+  }
+}

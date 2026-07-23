@@ -1,0 +1,27 @@
+{
+  "ticker": "RIAA3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T23:42:24",
+  "comunicados": {
+    "ids": [
+      156766796680789818,
+      119253611334460358,
+      279035367270412355,
+      1320134150265112
+    ],
+    "datas": [
+      "19/03/2026",
+      "23/02/2026",
+      "07/05/2026",
+      "06/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 19/03/2026\n\n**O QUE aconteceu:** A Guararapes Confecções S.A. suspendeu os estudos sobre a realização de uma oferta pública subsequente de distribuição primária de ações.\n\n**Resumo:** Diante da instabilidade geopolítica e volatilidade do mercado, a empresa decidiu pausar seus estudos sobre a oferta pública de ações, mantendo sua estratégia estratégica inalterada.\n\n**Trecho-chave:**\n\"A Guararapes Confecções S.A. (“Companhia”) (B3: RIAA3), em atendimento ao disposto no artigo 157, parágrafo 4º, da Lei nº 6.404, de 15 de dezembro de 1976, conforme alterada (“Lei das Sociedades por Ações”), na Resolução da Comissão de Valores Mobiliários (“CVM”) nº 44, de 23 de agosto de 2021, conforme alterada, e em continuidade ao fato relevante divulgado pela Companhia em 6 de fevereiro de 2026 e 23 de fevereiro de 2026, comunicar aos seus acionistas e ao mercado em geral que, diante da recente instabilidade do cenário geopolítico e consequente volatilidade do mercado de capitais, decidiu suspender os estudos a respeito da realização de oferta pública subsequente de distribuição primária de ações ordinárias de sua emissão (“Potencial Oferta”).\"\n\n---\n\n### FATO RELEVANTE entregue em 23/02/2026\n\n**O QUE aconteceu:** A Guararapes Confecções S.A. anunciou a avaliação da possibilidade de realizar uma oferta pública subsequente de distribuição primária de ações.\n\n**Resumo:** A empresa está avaliando a realização de uma oferta pública de ações com valor estimado inicial de R$ 400 milhões, destinada a investidores profissionais, e planeja utilizar os recursos para expansão operacional.\n\n**Trecho-chave:**\n\"A Guararapes Confecções S.A. (“Companhia”) (B3: RIAA3) vem, em atendimento ao disposto no artigo 157, parágrafo 4º, da Lei nº 6.404, de 15 de dezembro de 1976, conforme alterada (“Lei das Sociedades por Ações”), na Resolução da Comissão de Valores Mobiliários (“CVM”) nº 44, de 23 de agosto de 2021, conforme alterada, e em continuidade ao fato relevante divulgado pela Companhia em 6 de fevereiro de 2026, comunicar aos seus acionistas e ao mercado em geral que está avaliando a possibilidade de realização de uma oferta pública subsequente de distribuição primária de ações ordinárias de emissão da Companhia (\"Ações\"), com valor estimado de, inicialmente, R$ 400.000.000,00 (quatrocentos milhões de reais), a ser realizada no Brasil e destinada exclusivamente a investidores profissionais.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 07/05/2026\n\n**O QUE aconteceu:** A Guararapes Confecções S.A. divulgou o resultado do primeiro trimestre de 2026.\n\n**Resumo:** O EBITDA de Mercadorias aumentou 23,7% em comparação com o mesmo período do ano anterior, alcançando R$135 milhões. A empresa também apresentou um lucro líquido recorde no primeiro trimestre.\n\n**Trecho-chave:**\n\"R$135 MM EBITDA Mercadorias\n+23,7% vs. 1T25 e 8,1% Mg. EBITDA Mercadorias\nA melhor margem dos últimos 9 anos  \n+10,1% SSS de Vestuário\n11 trimestres consecutivos de crescimento \n+5,8% vs. 1T25 em mais um trimestre consistente\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 06/05/2026\n\n**O QUE aconteceu:** A Guararapes Confecções S.A. foi incluída na Carteira do Índice de Sustentabilidade Empresarial (ISE) da B3 pelo quarto ano consecutivo.\n\n**Resumo:** A empresa subiu 24 posições no ranking do ISE, passando a figurar entre as 30 empresas mais sustentáveis da B3. Este reconhecimento reflete o compromisso contínuo da Guararapes com a geração de valor de longo prazo.\n\n**Trecho-chave:**\n\"A Guararapes Confecções S.A., “Companhia” ou “Guararapes” (B3: RIAA3), comunica aos seus \nacionistas e ao mercado em geral que, pelo quarto ano consecutivo, foi selecionada para integrar a \nCarteira do Índice de Sustentabilidade Empresarial (ISE) da B3. O índice reúne 69 companhias de \ncapital aberto com as melhores performances em práticas Ambientais, Sociais e de Governança \n(ASG). A permanência da Guararapes na carteira do ISE reflete uma trajetória consistente de evolução e transformação, na qual a sustentabilidade costura, de forma transversal, os pilares da estratégia de negócio, a governança corporativa e as diretrizes de crescimento.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

@@ -1,0 +1,24 @@
+{
+  "ticker": "WLMM3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-23T00:09:59",
+  "comunicados": {
+    "ids": [
+      899199928114316641,
+      1022789744981715042,
+      295115695422174631
+    ],
+    "datas": [
+      "29/05/2026",
+      "04/12/2025",
+      "14/11/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante"
+    ],
+    "texto": "### O que aconteceu em 29/05/2026\n\n**Título:** Distribuição de Juros sobre Capital Próprio\n\n**Resumo:** A WLM PARTICIPAÇÕES E COMÉRCIO DE MÁQUINAS VEÍCULOS S.A. aprovou uma proposta para distribuir juros sobre o capital próprio, no valor bruto de R$10.000.001,25, com exceção dos acionistas imunes e/ou isentos.\n\n**Trecho-chave:**\n\"O Conselho de Administração da WLM PARTICIPAÇÕES E COMÉRCIO DE MÁQUINAS VEÍCULOS S.A., na reunião de 29/05/2026, aprovou proposta da Diretoria Executiva, “ad referendum” da Assembleia Geral Ordinária a ser realizada no ano de 2027, de distribuição de Juros sobre o Capital Próprio da Companhia, no montante bruto de R$10.000.001,25 (dez milhões de reais, um real e vinte e cinco centavos), do qual será deduzido o valor equivalente a 17,5% (dezessete e meio por cento) do valor relativo ao Imposto de Renda Retido na Fonte (“IRRF”), na forma da legislação em vigor...\"\n\n### O que aconteceu em 04/12/2025\n\n**Título:** Realização de Assembleia Geral Extraordinária e Aumento do Capital Social\n\n**Resumo:** A WLM PARTICIPAÇÕES E COMÉRCIO DE MÁQUINAS E VEÍCULOS S.A. aprovou a realização de uma AGE para aprovar o pagamento de dividendos complementares e aumentar o capital social da companhia.\n\n**Trecho-chave:**\n\"A WLM PARTICIPAÇÕES E COMÉRCIO DE MÁQUINAS E VEÍCULOS S.A. em 03 de dezembro de 2025, às 18h00min, o Conselho de Administração aprovou a realização de uma Assembleia Geral Extraordinária (AGE) no dia 26 de dezembro de 2025, às 11 horas, na sede social da Companhia, para apreciação da proposta da Administração para (i) a constituição e pagamento de dividendos complementares calculados sobre o saldo da reserva de lucros de exercícios anteriores, no montante de R$36.000.000,00...\"\n\n### O que aconteceu em 14/11/2025\n\n**Título:** Criação de Nova Sociedade Empresária Limitada\n\n**Resumo:** A WLM PARTICIPAÇÕES E COMÉRCIO DE MÁQUINAS E VEÍCULOS S.A. criou uma nova sociedade empresária limitada, denominada Ekotruck Sustentabilidade em Frotas Ltda., com 99,9% do capital social detido pela companhia.\n\n**Trecho-chave:**\n\"A WLM PARTICIPAÇÕES E COMÉRCIO DE MÁQUINAS E VEÍCULOS S.A. em 11 de setembro de 2025, às 10h30min, o Conselho de Administração aprovou a constituição de uma nova sociedade empresária limitada, denominada Ekotruck Sustentabilidade em Frotas Ltda. inscrita no CNPJ sob o nº 62.849.368/0001-86.\""
+  },
+  "modelo": "qwen2.5:7b"
+}
