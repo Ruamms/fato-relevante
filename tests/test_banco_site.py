@@ -52,6 +52,33 @@ def test_sem_serie_nao_gera_pagina(con):
     assert banco_html.montar_dados_banco(con, "C009") is None
 
 
+def test_busca_viva_inclui_bancos(con):
+    _semear_banco(con)
+    dados = banco_html.montar_dados_banco(con, "C001")
+    ativos = modulo_site._ativos_busca([], [], [], [dados])
+    # sem ticker: a URL vem explícita em `u` e o nome curto é o que se busca
+    assert ativos == [
+        {
+            "t": "",
+            "n": "BANCO TESTE",
+            "c": "Banco",
+            "s": dados["selo"].nivel,
+            "r": dados["selo"].rotulo,
+            "u": "banco-C001.html",
+        }
+    ]
+
+
+def test_home_busca_cobre_bancos(con):
+    _semear_banco(con)
+    dados = banco_html.montar_dados_banco(con, "C001")
+    home = modulo_site._home([], [], datetime(2026, 7, 23, 12, 0), {}, [], [dados])
+    assert "1 bancos" in home  # cobertura declarada embaixo da caixa de busca
+    assert '"u": "banco-C001.html"' in home or '"u":"banco-C001.html"' in home
+    assert "a.u || (a.t + '.html')" in home  # link usa a URL explícita
+    assert "Bancos (CDB)" in home  # card continua com a contagem derivada da lista
+
+
 def test_indice_bancos_lista_e_rankings(con):
     _semear_banco(con)
     dados = banco_html.montar_dados_banco(con, "C001")

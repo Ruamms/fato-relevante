@@ -194,7 +194,10 @@ def gerar(
     import json as _json
 
     (destino / "busca.json").write_text(
-        _json.dumps(_ativos_busca(publicados, etfs_publicados, acoes_publicadas), ensure_ascii=False),
+        _json.dumps(
+            _ativos_busca(publicados, etfs_publicados, acoes_publicadas, bancos_publicados),
+            ensure_ascii=False,
+        ),
         encoding="utf-8",
     )
     # tipo do FII (papel/tijolo/híbrido/FoF) derivado da carteira oficial (CVM)
@@ -203,7 +206,7 @@ def gerar(
         _indice(publicados, base, momento, tipos_fii), encoding="utf-8"
     )
     (destino / "index.html").write_text(
-        _home(publicados, etfs_publicados, momento, tipos_fii, acoes_publicadas, len(bancos_publicados)), encoding="utf-8"
+        _home(publicados, etfs_publicados, momento, tipos_fii, acoes_publicadas, bancos_publicados), encoding="utf-8"
     )
     (destino / "comparar.html").write_text(
         _pagina_comparar(publicados), encoding="utf-8"
@@ -256,8 +259,18 @@ def _injetar_analytics(destino: Path, codigo: str) -> int:
     return total
 
 
-def _ativos_busca(fundos: list, etfs: list[dict], acoes: list[dict] | None = None) -> list[dict]:
-    """Índice compacto da busca viva (home embutida + busca.json das páginas)."""
+def _ativos_busca(
+    fundos: list,
+    etfs: list[dict],
+    acoes: list[dict] | None = None,
+    bancos: list[dict] | None = None,
+) -> list[dict]:
+    """Índice compacto da busca viva (home embutida + busca.json das páginas).
+
+    Entradas sem ticker (bancos) trazem a URL explícita em `u`; o JS usa
+    `a.u || a.t + '.html'` para montar o link."""
+    from . import banco_html
+
     ativos = []
     for resumo in fundos:
         ativos.append(
@@ -290,6 +303,18 @@ def _ativos_busca(fundos: list, etfs: list[dict], acoes: list[dict] | None = Non
                 "r": dados["selo"].rotulo if dados.get("selo") else "",
             }
         )
+    for dados in bancos or []:
+        banco = dados["banco"]
+        ativos.append(
+            {
+                "t": "",
+                "n": banco_html.nome_curto(banco["nome"])[:48],
+                "c": "Banco",
+                "s": dados["selo"].nivel if dados.get("selo") else "",
+                "r": dados["selo"].rotulo if dados.get("selo") else "",
+                "u": f"{banco_html.slug(banco['cod_inst'])}.html",
+            }
+        )
     return ativos
 
 
@@ -299,7 +324,7 @@ def _home(
     agora: datetime,
     tipos_fii: dict | None = None,
     acoes: list[dict] | None = None,
-    n_bancos: int = 0,
+    bancos: list[dict] | None = None,
 ) -> str:
     """Home multi-classe: busca ao vivo em TUDO que temos + resumo por classe."""
     import json as _json
@@ -308,7 +333,9 @@ def _home(
 
     tipos_fii = tipos_fii or {}
     acoes = acoes or []
-    ativos = _ativos_busca(fundos, etfs, acoes)
+    bancos = bancos or []
+    n_bancos = len(bancos)
+    ativos = _ativos_busca(fundos, etfs, acoes, bancos)
     json_ativos = _json.dumps(ativos, ensure_ascii=False).replace("</", "<\\/")
     cores_selo = _json.dumps(_COR_SELO)
 
@@ -333,6 +360,12 @@ def _home(
         f'<a class="pill" href="acoes.html?setor={_e(setor)}">{_e(setor)} <b>{total}</b></a>'
         for setor, total in sorted(setores_acoes.items(), key=lambda kv: -kv[1])
     )
+    partes_busca = [f"{len(fundos)} FIIs", f"{len(etfs)} ETFs"]
+    if acoes:
+        partes_busca.append(f"{len(acoes)} ações")
+    if bancos:
+        partes_busca.append(f"{n_bancos} bancos")
+    cobertura_busca = " e ".join(x for x in (", ".join(partes_busca[:-1]), partes_busca[-1]) if x)
 
     # chips de tipo do FII (papel/tijolo/híbrido/FoF), na ordem de relevância
     tipos_fii_contagem: dict[str, int] = {}
@@ -424,11 +457,11 @@ input#busca:focus {{ outline:2px solid #8FCB9B; outline-offset:1px; border-color
 
   <div class="busca-caixa">
     <input id="busca" type="search" autocomplete="off"
-     placeholder="Digite um ticker ou nome… (ex.: MXRF11, BOVA, shopping)"
+     placeholder="Digite um ticker ou nome… (ex.: MXRF11, BOVA, Daycoval)"
      oninput="buscar()" onkeydown="navegar(event)">
     <div id="resultados" hidden></div>
   </div>
-  <div class="meta" style="font-size:12px">a busca cobre tudo o que já analisamos: {len(fundos)} FIIs, {len(etfs)} ETFs{f" e {len(acoes)} ações" if acoes else ""}</div>
+  <div class="meta" style="font-size:12px">a busca cobre tudo o que já analisamos: {cobertura_busca}</div>
 
   <div class="blocos">
     <div class="bloco">
@@ -490,12 +523,14 @@ function buscar() {{
   ).slice(0, 8);
   if (window.scoutBusca) scoutBusca(termo, achados.length > 0);
   if (!achados.length) {{
-    caixa.innerHTML = '<a><span class="nm">nada encontrado — cobrimos FIIs e ETFs da B3</span></a>';
+    caixa.innerHTML = '<a><span class="nm">nada encontrado — cobrimos FIIs, ETFs, ações e bancos emissores de CDB</span></a>';
     caixa.hidden = false;
     return;
   }}
   caixa.innerHTML = achados.map(a =>
-    `<a href="${{a.t}}.html"><span class="tk">${{a.t}}</span><span class="nm">${{a.n}}</span>` +
+    `<a href="${{a.u || (a.t + '.html')}}">` +
+    (a.t ? `<span class="tk">${{a.t}}</span>` : '') +
+    `<span class="nm">${{a.n}}</span>` +
     (a.s ? `<span class="ponto" style="background:${{CORES_SELO[a.s] || '#7C8894'}}" title="${{a.r}}"></span>` : '') +
     `<span class="badge">${{a.c}}</span></a>`
   ).join('');
@@ -1132,7 +1167,7 @@ tbody tr:hover td {{ background:#161D20; }}
   CDB não tem página própria — <b>o risco é o banco emissor</b>. O FGC cobre até R$ 250 mil por CPF
   <b>por conglomerado</b> (não por corretora), e a saúde de quem emite está toda aqui, com fonte oficial.
   Sem comparação de taxas: taxa de prateleira é dado comercial — fato sobre o emissor, nunca "vale a pena".</div>
-  <input id="busca" type="search" placeholder="Busque pelo nome do banco… (ex.: Master, Inter, Daycoval)"
+  <input id="busca" type="search" placeholder="Busque pelo nome do banco… (ex.: Inter, Daycoval, C6)"
    oninput="filtrar()">
   <table id="bancos">
     <thead><tr><th>banco</th><th>Basileia</th><th>captações</th><th>carteira</th><th>lucro no ano</th><th class="col-selo">selo</th></tr></thead>

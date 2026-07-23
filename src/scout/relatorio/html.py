@@ -246,7 +246,9 @@ async function buscaTopo() {
   if (window.scoutBusca) scoutBusca(termo, achados.length > 0);
   if (!achados.length) { caixa.hidden = true; caixa.innerHTML = ''; return; }
   caixa.innerHTML = achados.map(a =>
-    `<a href="${a.t}.html"><span class="tk">${a.t}</span><span class="nm">${a.n}</span>` +
+    `<a href="${a.u || (a.t + '.html')}">` +
+    (a.t ? `<span class="tk">${a.t}</span>` : '') +
+    `<span class="nm">${a.n}</span>` +
     (a.s ? `<span class="ponto" style="background:${CORES_SELO_TOPO[a.s] || '#7C8894'}" title="${a.r}"></span>` : '') +
     `<span class="badge">${a.c}</span></a>`
   ).join('');
