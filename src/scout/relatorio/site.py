@@ -160,6 +160,24 @@ def gerar(
     (destino / "acoes.html").write_text(
         _indice_acoes(acoes_publicadas, agora or datetime.now()), encoding="utf-8"
     )
+
+    # páginas de BANCO emissor (R3 Renda Fixa): só conglomerados com série IF.data
+    from . import banco_html
+
+    bancos_publicados = []
+    for linha in con.execute("SELECT cod_inst FROM bancos ORDER BY cod_inst"):
+        dados_banco = banco_html.montar_dados_banco(con, linha["cod_inst"])
+        if dados_banco is None:
+            continue
+        (destino / f"{banco_html.slug(linha['cod_inst'])}.html").write_text(
+            banco_html.gerar(dados_banco, agora=agora, com_menu=True), encoding="utf-8"
+        )
+        bancos_publicados.append(dados_banco)
+    if bancos_publicados:
+        (destino / "bancos.html").write_text(
+            _indice_bancos(bancos_publicados, agora or datetime.now()), encoding="utf-8"
+        )
+    progresso(f"bancos: {len(bancos_publicados)} páginas")
     if acoes_publicadas:
         (destino / "comparar-acoes.html").write_text(
             _pagina_comparar_acoes(acoes_publicadas), encoding="utf-8"
@@ -185,7 +203,7 @@ def gerar(
         _indice(publicados, base, momento, tipos_fii), encoding="utf-8"
     )
     (destino / "index.html").write_text(
-        _home(publicados, etfs_publicados, momento, tipos_fii, acoes_publicadas), encoding="utf-8"
+        _home(publicados, etfs_publicados, momento, tipos_fii, acoes_publicadas, len(bancos_publicados)), encoding="utf-8"
     )
     (destino / "comparar.html").write_text(
         _pagina_comparar(publicados), encoding="utf-8"
@@ -281,6 +299,7 @@ def _home(
     agora: datetime,
     tipos_fii: dict | None = None,
     acoes: list[dict] | None = None,
+    n_bancos: int = 0,
 ) -> str:
     """Home multi-classe: busca ao vivo em TUDO que temos + resumo por classe."""
     import json as _json
@@ -440,6 +459,15 @@ input#busca:focus {{ outline:2px solid #8FCB9B; outline-offset:1px; border-color
       <div class="linha-acoes"><a class="btn" href="acoes.html">ver todas as ações</a></div>
       <div class="chips">{pills_acoes}</div>
     </div>''' if acoes else ""}
+    {f'''<div class="bloco">
+      <h2>Bancos (CDB)</h2>
+      <div class="num">{n_bancos}</div>
+      <p>O CDB da corretora é um empréstimo AO BANCO — aqui está a saúde de quem emite:
+      Basileia, captações, lucro e red flags, com dados oficiais do Banco Central (IF.data).</p>
+      <p style="color:#6B7681;font-size:12px;margin-top:-6px">o FGC cobre R$ 250 mil por CPF
+      por CONGLOMERADO (não por corretora) — as regras explicadas em cada página.</p>
+      <div class="linha-acoes"><a class="btn" href="bancos.html">ver todos os bancos</a></div>
+    </div>''' if n_bancos else ""}
   </div>
 
   <div class="rodape">Não é recomendação de investimento. Fontes: dados abertos da CVM, B3 (COTAHIST
@@ -988,6 +1016,155 @@ const parametros = new URLSearchParams(location.search);
   if (ticker && DADOS[ticker]) document.getElementById(id).value = ticker;
 }});
 renderiza();
+{JS_MENU}
+</script>
+</body>
+</html>
+"""
+
+
+def _indice_bancos(bancos: list[dict], agora) -> str:
+    """Listagem dos bancos emissores (R3 Renda Fixa) — top 10 por captações,
+    busca, selo; rankings de fatos logo abaixo."""
+    from .. import formato
+    from .banco_html import _rotulo_tri, nome_curto, slug
+
+    ordenados = sorted(
+        bancos, key=lambda d: d["atual"].get("captacoes") or 0, reverse=True
+    )
+    linhas = []
+    for posicao, dados in enumerate(ordenados):
+        banco, atual = dados["banco"], dados["atual"]
+        nome = nome_curto(banco["nome"])
+        selo_html = "—"
+        if dados.get("selo"):
+            cor = _COR_SELO.get(dados["selo"].nivel, "#7C8894")
+            motivos = "; ".join(f.titulo for f in dados["flags"].flags) or dados["selo"].descricao
+            selo_html = (
+                f'<span class="selo-dot" style="color:{cor}" title="{_e(motivos)}">'
+                f'<span class="pt" style="background:{cor}"></span>{_e(dados["selo"].rotulo)}</span>'
+            )
+        fmt = lambda v: formato.moeda_compacta(v) if v else "—"  # noqa: E731
+        basileia = formato.percentual(atual["basileia"]) if atual.get("basileia") is not None else "—"
+        busca = f"{nome} {banco['tcb'] or ''}".lower().replace('"', "")
+        oculta = ' class="banco-extra" hidden' if posicao >= 10 else ""
+        linhas.append(
+            f'<tr data-busca="{busca}"{oculta}>'
+            f'<td><a href="{slug(banco["cod_inst"])}.html">{_e(nome[:38])}</a></td>'
+            f"<td>{basileia}</td><td>{fmt(atual.get('captacoes'))}</td>"
+            f"<td>{fmt(atual.get('carteira'))}</td><td>{fmt(atual.get('lucro'))}</td>"
+            f'<td class="col-selo">{selo_html}</td></tr>'
+        )
+
+    def _rk(titulo, chave, rotulo, reverso=True, minimo_capt=1e9):
+        cand = [d for d in bancos if chave(d) is not None and (d["atual"].get("captacoes") or 0) > minimo_capt]
+        cand.sort(key=chave, reverse=reverso)
+        itens = "".join(
+            f'<li><span class="pos">{i}</span>'
+            f'<a href="{slug(d["banco"]["cod_inst"])}.html">{_e(nome_curto(d["banco"]["nome"])[:22])}</a>'
+            f'<span class="val">{rotulo(d)}</span></li>'
+            for i, d in enumerate(cand[:5], 1)
+        )
+        return f'<div class="bloco"><h3>{titulo}</h3><ol>{itens or "<li>—</li>"}</ol></div>'
+
+    rankings = (
+        _rk("Maior Basileia (captações > R$ 1 bi)",
+            lambda d: d["atual"].get("basileia"),
+            lambda d: formato.percentual(d["atual"]["basileia"]))
+        + _rk("Maiores captações",
+              lambda d: d["atual"].get("captacoes"),
+              lambda d: formato.moeda_compacta(d["atual"]["captacoes"]))
+        + _rk("Menor Basileia (captações > R$ 1 bi)",
+              lambda d: d["atual"].get("basileia"),
+              lambda d: formato.percentual(d["atual"]["basileia"]), reverso=False)
+    )
+    trimestre = _rotulo_tri(ordenados[0]["atual"]["anomes"]) if ordenados else "—"
+    return f"""<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bancos emissores — Scout</title>
+{relatorio_html.TAG_FAVICON}
+<style>
+:root {{ color-scheme: dark; }}
+* {{ box-sizing:border-box; margin:0; }}
+body {{ background:#0F1416; color:#EAEEF0; font-family:system-ui,sans-serif; line-height:1.5; }}
+.pagina {{ max-width:1020px; margin:0 auto; padding:28px 20px 40px; }}
+h1 {{ font-family:'Scout Display',system-ui,sans-serif; font-size:30px; font-weight:700; letter-spacing:-.02em; margin:8px 0 4px; }}
+.meta {{ color:#9AA7B2; font-size:13px; margin-bottom:12px; }}
+a {{ color:#8FCB9B; }}
+input#busca {{ width:100%; background:#161D20; color:#EAEEF0; border:1px solid #263034;
+  border-radius:10px; padding:11px 15px; font-size:15px; margin:8px 0 10px; }}
+.btn-todos {{ display:block; margin:12px auto 0; background:#1B2225; border:1px solid #263034;
+  color:#8FCB9B; padding:8px 22px; border-radius:8px; font-size:13.5px; font-weight:600; cursor:pointer; }}
+.btn-todos:hover {{ border-color:#8FCB9B; }}
+table {{ width:100%; border-collapse:collapse; font-size:13.5px; font-variant-numeric:tabular-nums; }}
+th {{ color:#9AA7B2; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em;
+  text-align:left; padding:8px 10px; position:sticky; top:0; z-index:2; background:#0F1416;
+  box-shadow:inset 0 -1px 0 #263034; }}
+td {{ padding:7px 10px; border-bottom:1px solid #1B2225; }}
+td:not(:first-child), th:not(:first-child) {{ text-align:right; }}
+.rk-titulo {{ font-family:'Scout Display',system-ui,sans-serif; font-size:22px; font-weight:700; letter-spacing:-.01em; margin:34px 0 4px; }}
+.blocos {{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; margin-top:8px; }}
+.bloco {{ background:#161D20; border:1px solid #263034; border-radius:14px; padding:16px 18px; }}
+.bloco h3 {{ font-size:11px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:#9AA7B2; margin:0 0 12px; }}
+.bloco ol {{ margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:9px; }}
+.bloco li {{ display:flex; align-items:baseline; gap:10px; }}
+.bloco .pos {{ color:#6B7681; font-size:12px; width:16px; }}
+.bloco a {{ font-weight:700; }}
+.bloco .val {{ margin-left:auto; color:#EAEEF0; font-weight:600; font-variant-numeric:tabular-nums; }}
+tbody tr:hover td {{ background:#161D20; }}
+.rodape {{ color:#9AA7B2; font-size:12.5px; border-top:1px solid #1B2225; margin-top:26px; padding-top:12px; }}
+{CSS_MENU}
+{relatorio_html.CSS_MARCA}
+</style>
+</head>
+<body>
+<div class="pagina">
+  {relatorio_html.marca_html("index.html")}
+  {menu_html()}
+  <h1>Bancos emissores de CDB</h1>
+  <div class="meta">{len(bancos)} conglomerados com dados no IF.data (BCB) até <b>{trimestre}</b> ·
+  Basileia, captações e red flags de quem emite o CDB/LCI/LCA que a corretora te oferece ·
+  <a href="index.html">início</a> · atualizado em {agora.strftime("%d/%m/%Y %H:%M")}</div>
+  <div class="meta" style="background:#161D20;border:1px solid #263034;border-radius:10px;padding:10px 14px;margin-bottom:4px">
+  CDB não tem página própria — <b>o risco é o banco emissor</b>. O FGC cobre até R$ 250 mil por CPF
+  <b>por conglomerado</b> (não por corretora), e a saúde de quem emite está toda aqui, com fonte oficial.
+  Sem comparação de taxas: taxa de prateleira é dado comercial — fato sobre o emissor, nunca "vale a pena".</div>
+  <input id="busca" type="search" placeholder="Busque pelo nome do banco… (ex.: Master, Inter, Daycoval)"
+   oninput="filtrar()">
+  <table id="bancos">
+    <thead><tr><th>banco</th><th>Basileia</th><th>captações</th><th>carteira</th><th>lucro no ano</th><th class="col-selo">selo</th></tr></thead>
+    <tbody>{"".join(linhas)}</tbody>
+  </table>
+  <button id="ver-todos" class="btn-todos" onclick="mostrarTodos()"
+   {"hidden" if len(bancos) <= 10 else ""}>Mostrar todos os {len(bancos)} bancos
+   (acima: os {min(len(bancos), 10)} maiores por captações)</button>
+  <h2 class="rk-titulo">Rankings do dia</h2>
+  <div class="meta" style="margin:0 0 14px">fatos ordenados com critério explícito — não recomendação ·
+  Basileia alta não é "seguro" nem baixa é "vai quebrar": é o colchão de capital, leia a página do banco</div>
+  <div class="blocos">{rankings}</div>
+  <div class="rodape">Não é recomendação de investimento. Fonte: IF.data (Banco Central) — critérios públicos:
+  <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a> ·
+  <a href="apoie.html">apoie o projeto</a></div>
+</div>
+<script>
+let todosVisiveis = false;
+function filtrar() {{
+  const termo = document.getElementById('busca').value.trim().toLowerCase();
+  document.querySelectorAll('#bancos tbody tr').forEach(tr => {{
+    const casa = termo === '' || tr.dataset.busca.includes(termo);
+    const recolhida = termo === '' && !todosVisiveis && tr.classList.contains('banco-extra');
+    tr.hidden = !casa || recolhida;
+  }});
+  const botao = document.getElementById('ver-todos');
+  if (botao) botao.hidden = todosVisiveis || termo !== '' || !document.querySelector('.banco-extra');
+}}
+function mostrarTodos() {{
+  todosVisiveis = true;
+  filtrar();
+}}
 {JS_MENU}
 </script>
 </body>
