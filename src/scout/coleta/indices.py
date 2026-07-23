@@ -18,7 +18,9 @@ from .. import armazenamento
 SERIES_SGS = {"CDI": 4391, "IPCA": 433}
 URL = (
     "https://api.bcb.gov.br/dados/serie/bcdata.sgs.{codigo}/dados"
-    "?formato=json&dataInicial=01/01/2016"
+    # desde 2011: as séries de cotação (FII/ação) começam em 2011 — índice
+    # começando depois derruba a linha do CDI/IPCA na janela "máximo"
+    "?formato=json&dataInicial=01/01/2011"
 )
 URL_IFIX = (
     "https://sistemaswebb3-listados.b3.com.br/indexStatisticsProxy/IndexCall/GetPortfolioDay/{token}"
