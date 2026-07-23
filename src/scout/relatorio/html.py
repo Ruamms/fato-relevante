@@ -615,6 +615,8 @@ table.imoveis td.col-selo, table.imoveis th.col-selo {{ text-align:left; }}
 
   {_secao_parecer(leitura)}
 
+  {_secao_posicoes(raiox, publicados=publicados)}
+
   {_secao_imoveis(raiox)}
 
   {_secao_administrador(raiox, publicados=publicados)}
@@ -868,6 +870,49 @@ def _secao_flags(raiox: RaioX) -> str:
     for nota in raiox.notas:
         partes.append(f'<p class="na">· {_e(nota)}</p>')
     return "".join(partes)
+
+
+def _secao_posicoes(raiox: RaioX, publicados: set[str] | None = None, limite: int = 10) -> str:
+    """O que o fundo tem DENTRO (FoF: cotas de outros fundos; papel: CRIs) —
+    relação de ativos declarada no informe anual, com link e selo cruzados
+    quando o ativo é um fundo que o Scout também analisa."""
+    if not raiox.posicoes:
+        return ""
+
+    linhas = []
+    for indice, posicao in enumerate(raiox.posicoes):
+        oculta = ' class="posicao-extra" hidden' if indice >= limite else ""
+        if posicao.ticker and publicados and posicao.ticker in publicados:
+            nome = f'<a href="{_e(posicao.ticker)}.html">{_e(posicao.ticker)}</a>'
+        else:
+            nome = _e(posicao.nome[:52])
+        valor = formato.moeda_compacta(posicao.valor) if posicao.valor else "—"
+        pct = formato.percentual(posicao.pct) if posicao.pct is not None else "—"
+        linhas.append(
+            f"<tr{oculta}><td>{nome}</td><td>{valor}</td><td>{pct}</td>"
+            f"<td>{_selo_tabela(posicao.selo, posicao.motivos)}</td></tr>"
+        )
+    botao = ""
+    if len(raiox.posicoes) > limite:
+        botao = (
+            f'<button class="ver-mais" onclick="verMais(this, \'posicao-extra\')" '
+            f'data-mais="ver todos os {len(raiox.posicoes)} ativos" data-menos="mostrar menos">'
+            f"ver todos os {len(raiox.posicoes)} ativos</button>"
+        )
+    return f"""
+  <h2>O que o fundo tem dentro ({len(raiox.posicoes)})</h2>
+  <div class="grafico" style="overflow-x:auto">
+  <table class="imoveis">
+    <thead><tr><th>ativo</th><th>valor contábil</th><th>% do declarado</th><th>alerta</th></tr></thead>
+    <tbody>{"".join(linhas)}</tbody>
+  </table>
+  {botao}
+  <div class="nota">relação de ativos do informe ANUAL (CVM), exercício encerrado em {_e(raiox.posicoes_em)} —
+  a carteira de hoje pode estar diferente · valores contábeis declarados pelo próprio fundo ·
+  quando o ativo é um fundo que o Scout também analisa, o link leva ao raio-x dele e a coluna
+  <b>alerta</b> mostra o selo daquela página</div>
+  </div>
+"""
 
 
 def _secao_imoveis(raiox: RaioX, limite: int = 10) -> str:

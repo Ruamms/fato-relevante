@@ -80,6 +80,14 @@ CREATE TABLE IF NOT EXISTS bancos_tri (
     basileia          REAL,   -- 100·PR/RWA (calculado, determinístico)
     PRIMARY KEY (cod_inst, anomes)
 );
+CREATE TABLE IF NOT EXISTS fii_posicoes_anuais (
+    cnpj            TEXT NOT NULL,    -- formatado como no CSV da CVM (00.000.000/0001-00)
+    data_referencia TEXT NOT NULL,    -- fim do exercício do fundo (AAAA-MM-DD)
+    item            INTEGER NOT NULL, -- ordem no bloco (nomes podem repetir)
+    nome_ativo      TEXT NOT NULL,    -- ticker (FoF), código de CRI (papel) ou imóvel (tijolo)
+    valor           REAL,             -- valor contábil declarado
+    PRIMARY KEY (cnpj, data_referencia, item)
+);
 CREATE TABLE IF NOT EXISTS fre_docs (
     cod_cvm    TEXT PRIMARY KEY,
     id_doc     INTEGER,  -- documento FRE vigente no RAD (última versão)
@@ -703,6 +711,21 @@ def documento(con: sqlite3.Connection, cnpj: str, id_fnet: int) -> sqlite3.Row |
 def serie_imoveis(con: sqlite3.Connection, cnpj: str) -> list[sqlite3.Row]:
     return con.execute(
         "SELECT * FROM imoveis WHERE cnpj = ? ORDER BY competencia, nome", (cnpj,)
+    ).fetchall()
+
+
+def posicoes_anuais_fii(con: sqlite3.Connection, cnpj: str) -> list[sqlite3.Row]:
+    """Relação de ativos do informe ANUAL mais recente do fundo (valor contábil),
+    maiores primeiro — é onde o FoF declara quais fundos tem dentro."""
+    return con.execute(
+        """
+        SELECT * FROM fii_posicoes_anuais
+         WHERE cnpj = ?
+           AND data_referencia = (
+               SELECT MAX(data_referencia) FROM fii_posicoes_anuais WHERE cnpj = ?)
+         ORDER BY valor DESC, item
+        """,
+        (cnpj, cnpj),
     ).fetchall()
 
 

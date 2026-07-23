@@ -8,10 +8,11 @@ evidência e fonte.
 from __future__ import annotations
 
 import dataclasses
+import re
 import sqlite3
 
 from . import armazenamento, formato, ranking, redflags, series
-from .modelos import FundoIrmao, Imovel, IndicadorLinha, RaioX
+from .modelos import FundoIrmao, Imovel, IndicadorLinha, PosicaoDeclarada, RaioX
 from .redflags.contexto import Contexto
 
 # regra disparada -> linha de indicador que ganha o ⚠
@@ -368,6 +369,7 @@ def montar_raio_x(
 
     atual = serie[-1]
     tipo, tipo_fonte = _tipo_do_fundo(con, fundo.cnpj)
+    posicoes, posicoes_em = _posicoes_declaradas(con, fundo.cnpj, tipo)
     return RaioX(
         ticker=ticker,
         nome=fundo.nome,
@@ -387,6 +389,8 @@ def montar_raio_x(
         imoveis_em=formato.competencia_br(imoveis_atuais[0]["competencia"])
         if imoveis_atuais
         else "",
+        posicoes=posicoes,
+        posicoes_em=posicoes_em,
         imoveis_por_estado=_imoveis_por_estado(imoveis_atuais),
         setores_inquilinos=[
             (linha["setor"], 100 * linha["pct"])
@@ -407,6 +411,61 @@ def montar_raio_x(
         red_flags_avaliadas=True,
         exemplo=False,
     )
+
+
+_PADRAO_TICKER = re.compile(r"[A-Z]{4}\d{1,2}[A-Z]?")
+
+
+def _posicoes_declaradas(
+    con: sqlite3.Connection, cnpj: str, tipo: str | None
+) -> tuple[list[PosicaoDeclarada], str]:
+    """Relação de ativos do informe ANUAL (FoF: cotas de fundos; papel: CRIs).
+
+    Fundo de tijolo fica de fora — os imóveis dele já aparecem, mais frescos
+    e detalhados, na seção do informe trimestral. Quando o nome do ativo é um
+    ticker que também analisamos, calculamos o selo daquele fundo (sem
+    cotação, como nos fundos irmãos) — é o que faz as páginas conversarem."""
+    from . import tipo_fii
+
+    if tipo == tipo_fii.TIJOLO:
+        return [], ""
+    linhas = armazenamento.posicoes_anuais_fii(con, cnpj)
+    if not linhas:
+        return [], ""
+    total = sum(linha["valor"] or 0 for linha in linhas)
+    posicoes = []
+    for linha in linhas:
+        nome = linha["nome_ativo"]
+        candidato = nome.strip().upper()
+        ticker, selo, motivos = "", None, ()
+        if _PADRAO_TICKER.fullmatch(candidato):
+            alvo = armazenamento.resolver_fundo(con, candidato)
+            if alvo:
+                ticker = candidato
+                serie_alvo = armazenamento.serie_complemento(con, alvo.cnpj)
+                if serie_alvo:
+                    cadastro_alvo = armazenamento.cadastro_do_fundo(con, alvo.cnpj)
+                    contexto = Contexto(
+                        serie=serie_alvo,
+                        vp_ajustada=series.serie_vp_ajustada(serie_alvo),
+                        imoveis_atuais=armazenamento.imoveis_atuais(con, alvo.cnpj),
+                        resultados=armazenamento.serie_resultados(con, alvo.cnpj),
+                        situacao_cvm=cadastro_alvo["situacao"] if cadastro_alvo else None,
+                    )
+                    resultado = redflags.avaliar(contexto)
+                    selo = redflags.selo(resultado)
+                    motivos = tuple(flag.titulo for flag in resultado.flags)
+        posicoes.append(
+            PosicaoDeclarada(
+                nome=nome,
+                ticker=ticker,
+                valor=linha["valor"],
+                pct=(100 * (linha["valor"] or 0) / total) if total else None,
+                selo=selo,
+                motivos=motivos,
+            )
+        )
+    return posicoes, formato.competencia_br(linhas[0]["data_referencia"][:7])
 
 
 def _montar_imoveis(imoveis_atuais: list[sqlite3.Row]) -> list[Imovel]:

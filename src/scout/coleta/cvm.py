@@ -19,6 +19,7 @@ from datetime import date
 
 URL_BASE = "https://dados.cvm.gov.br/dados/FII/DOC/INF_MENSAL/DADOS/"
 URL_BASE_TRIMESTRAL = "https://dados.cvm.gov.br/dados/FII/DOC/INF_TRIMESTRAL/DADOS/"
+URL_BASE_ANUAL = "https://dados.cvm.gov.br/dados/FII/DOC/INF_ANUAL/DADOS/"
 # cadastro vivo de todos os fundos: gestora e administrador por CNPJ
 URL_REGISTRO = "https://dados.cvm.gov.br/dados/FI/CAD/DADOS/registro_fundo_classe.zip"
 ANO_INICIAL = 2016
@@ -66,6 +67,10 @@ def nome_arquivo_trimestral(ano: int) -> str:
     return f"inf_trimestral_fii_{ano}.zip"
 
 
+def nome_arquivo_anual(ano: int) -> str:
+    return f"inf_anual_fii_{ano}.zip"
+
+
 def _baixar_url(url: str, tentativas: int = 3) -> bytes:
     """Download com retry: a CVM tem janelas de indisponibilidade curtas
     (madrugadas/fins de semana) que não devem derrubar uma atualização."""
@@ -87,6 +92,10 @@ def baixar(ano: int) -> bytes:
 
 def baixar_trimestral(ano: int) -> bytes:
     return _baixar_url(URL_BASE_TRIMESTRAL + nome_arquivo_trimestral(ano))
+
+
+def baixar_anual(ano: int) -> bytes:
+    return _baixar_url(URL_BASE_ANUAL + nome_arquivo_anual(ano))
 
 
 def anos_pendentes(
@@ -119,6 +128,21 @@ def atualizar(
         arquivo = nome_arquivo_trimestral(ano)
         imoveis, resultados = carregar_zip_trimestral(con, baixar_trimestral(ano), arquivo)
         mensagem = f"{arquivo}: {imoveis} imóveis, {resultados} resultados"
+        resumo.append(mensagem)
+        if ao_progredir:
+            ao_progredir(mensagem)
+    # informe ANUAL: só os 2 últimos anos interessam (o que buscamos é a relação
+    # de ativos MAIS RECENTE por fundo — FoF declara ali quais fundos tem dentro)
+    for ano in (hoje.year - 1, hoje.year):
+        arquivo = nome_arquivo_anual(ano)
+        try:
+            conteudo = baixar_anual(ano)
+        except urllib.error.HTTPError as erro:
+            if erro.code == 404:
+                continue  # arquivo do ano corrente ainda não publicado
+            raise
+        posicoes = carregar_zip_anual(con, conteudo, arquivo)
+        mensagem = f"{arquivo}: {posicoes} posições declaradas"
         resumo.append(mensagem)
         if ao_progredir:
             ao_progredir(mensagem)
@@ -210,6 +234,55 @@ def carregar_zip_trimestral(
     )
     con.commit()
     return n_imoveis, n_resultados
+
+
+def carregar_zip_anual(con: sqlite3.Connection, conteudo: bytes, arquivo: str) -> int:
+    """Carrega do informe anual a relação de ativos com valor contábil — o
+    bloco onde o FoF declara as posições (TGAR11, SPXS11, ...), o de papel os
+    CRIs e o de tijolo os imóveis. Fica só a última versão de cada informe."""
+    with zipfile.ZipFile(io.BytesIO(conteudo)) as zf:
+        try:
+            linhas = _ler_csv(zf, "ativo_valor_contabil")
+        except ValueError:  # anos antigos sem o bloco
+            linhas = []
+    # agrupa por (cnpj, data de referência) ficando com a MAIOR versão
+    grupos: dict[tuple[str, str], tuple[int, list[dict]]] = {}
+    for linha in linhas:
+        cnpj = (linha.get("CNPJ_Fundo") or "").strip()
+        referencia = (linha.get("Data_Referencia") or "").strip()[:10]
+        nome = (linha.get("Nome_Ativo") or "").strip()
+        if not cnpj or not referencia or not nome:
+            continue
+        versao = _inteiro(linha.get("Versao"))
+        chave = (cnpj, referencia)
+        atual = grupos.get(chave)
+        if atual is None or versao > atual[0]:
+            grupos[chave] = (versao, [linha])
+        elif versao == atual[0]:
+            atual[1].append(linha)
+    total = 0
+    for (cnpj, referencia), (_versao, grupo) in grupos.items():
+        con.execute(
+            "DELETE FROM fii_posicoes_anuais WHERE cnpj = ? AND data_referencia = ?",
+            (cnpj, referencia),
+        )
+        for item, linha in enumerate(grupo):
+            con.execute(
+                """
+                INSERT OR REPLACE INTO fii_posicoes_anuais
+                    (cnpj, data_referencia, item, nome_ativo, valor)
+                VALUES (?, ?, ?, ?, ?)
+                """,
+                (cnpj, referencia, item, (linha.get("Nome_Ativo") or "").strip(),
+                 _numero(linha.get("Valor"))),
+            )
+            total += 1
+    con.execute(
+        "INSERT OR REPLACE INTO cargas (arquivo, carregado_em) VALUES (?, datetime('now'))",
+        (arquivo,),
+    )
+    con.commit()
+    return total
 
 
 def _gravar_imoveis(con: sqlite3.Connection, linhas: list[dict]) -> int:

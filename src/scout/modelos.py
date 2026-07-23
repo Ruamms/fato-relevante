@@ -67,6 +67,19 @@ class Imovel:
 
 
 @dataclass(frozen=True)
+class PosicaoDeclarada:
+    """Um ativo da relação do informe ANUAL (FoF: cotas de outros fundos;
+    papel: CRIs; valor contábil declarado pelo próprio fundo)."""
+
+    nome: str
+    ticker: str  # "" quando o nome não é um ticker que o Scout analisa
+    valor: float | None
+    pct: float | None  # % sobre o total declarado no bloco
+    selo: Selo | None = None  # selo da página do alvo, quando analisado
+    motivos: tuple[str, ...] = ()
+
+
+@dataclass(frozen=True)
 class FundoIrmao:
     """Outro fundo do mesmo administrador, para o cruzamento do raio-x."""
 
@@ -99,6 +112,8 @@ class RaioX:
     notas: list[str] = field(default_factory=list)
     imoveis: list[Imovel] = field(default_factory=list)
     imoveis_em: str = ""  # competência do informe trimestral dos imóveis
+    posicoes: list[PosicaoDeclarada] = field(default_factory=list)  # FoF/papel
+    posicoes_em: str = ""  # data de referência do informe anual da relação
     imoveis_por_estado: list[tuple[str, float]] = field(default_factory=list)  # (UF, % da área)
     setores_inquilinos: list[tuple[str, float]] = field(default_factory=list)  # (setor, % da receita)
     administrador: str = ""
