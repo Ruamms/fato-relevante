@@ -92,6 +92,21 @@ def test_posicoes_do_etf_com_cross_link(con, zip_cvm):
     assert 'href="TSTE11.html"' in pagina  # o cross-link do usuário
     assert "PETR4" in pagina
 
+    # com o mapa de selos, a coluna "alerta" mostra o selo da página do alvo
+    from scout import redflags
+
+    selo_ok = redflags.selo(redflags.Resultado(aprovadas=["regra"] * 5))
+    pagina = etf_html.gerar(
+        dados,
+        agora=datetime(2026, 7, 20, 0, 0),
+        publicados={"TSTE11", "PETR4"},
+        selos={"TSTE11": selo_ok, "PETR4": selo_ok},
+    )
+    assert "<th>alerta</th>" in pagina
+    assert 'href="PETR4.html"' in pagina  # ação publicada também vira link
+    assert pagina.count("ponto-posicao") >= 2  # selo nas duas posições cobertas
+    assert "ainda não cobrimos" in pagina  # nota explica o "—"
+
 
 def test_extrair_carteira_completa_com_quantidade():
     import io

@@ -193,6 +193,7 @@ def gerar(
     com_menu: bool = False,
     leitura: dict | None = None,
     publicados: set[str] | None = None,
+    selos: dict | None = None,
 ) -> str:
     from .html import (
         CSS_BUSCA_TOPO,
@@ -200,6 +201,7 @@ def gerar(
         JS_BUSCA_TOPO,
         JS_MENU,
         JS_GRAFICO_HOVER,
+        _COR_SELO,
         _secao_ia,
         _secao_parecer,
         menu_html,
@@ -296,9 +298,14 @@ def gerar(
         posicoes = dados["posicoes"]
 
         def _linha_posicao(posicao) -> str:
+            # alvo efetivo: fundos são resolvidos pelo CNPJ (ticker_alvo);
+            # ações/units carregam o próprio ticker no campo `codigo`
+            alvo = posicao["ticker_alvo"]
+            if not alvo and posicao["codigo"] and publicados and posicao["codigo"] in publicados:
+                alvo = posicao["codigo"]
             rotulo = _e(posicao["codigo"] or _trunca(posicao["nome"], 44))
-            if posicao["ticker_alvo"] and publicados and posicao["ticker_alvo"] in publicados:
-                rotulo = f'<a href="{_e(posicao["ticker_alvo"])}.html">{_e(posicao["ticker_alvo"])}</a>'
+            if alvo and publicados and alvo in publicados:
+                rotulo = f'<a href="{_e(alvo)}.html">{_e(alvo)}</a>'
             elif posicao["ticker_alvo"]:
                 rotulo = _e(posicao["ticker_alvo"])
             badge = (
@@ -313,16 +320,27 @@ def gerar(
             qtd_txt = formato.compacto(qtd) if qtd else "—"
             preco = posicao.get("preco_hoje")
             preco_txt = f"R$ {formato.decimal(preco)}" if preco else "—"
+            # o selo da PÁGINA do ativo (quando o Scout também o analisa) vira
+            # a coluna de alerta — as páginas conversam entre si
+            selo_alvo = (selos or {}).get(alvo) if alvo else None
+            if selo_alvo:
+                cor = _COR_SELO.get(selo_alvo.nivel, "#7C8894")
+                alerta_txt = (
+                    f'<span class="ponto-posicao" style="background:{cor}"></span>'
+                    f'<span title="{_e(selo_alvo.descricao)}">{_e(selo_alvo.rotulo)}</span>'
+                )
+            else:
+                alerta_txt = "—"
             return (
                 f"<tr><td>{rotulo}{badge}</td><td>{nome_completo}</td>"
                 f"<td>{qtd_txt}</td><td>{preco_txt}</td>"
-                f"<td>{formato.percentual(posicao['pct'])}</td></tr>"
+                f"<td>{formato.percentual(posicao['pct'])}</td><td>{alerta_txt}</td></tr>"
             )
 
         competencia_pos = formato.competencia_br(posicoes[0]["competencia"]) if posicoes[0].get("competencia") else "—"
         cabecalho = (
             "<thead><tr><th>ativo</th><th>nome</th><th>quantidade</th>"
-            "<th>preço hoje</th><th>% da carteira</th></tr></thead>"
+            "<th>preço hoje</th><th>% da carteira</th><th>alerta</th></tr></thead>"
         )
         topo = "".join(_linha_posicao(p) for p in posicoes[:10])
         cobertura = (dados.get("reprecificacao") or {}).get("cobertura_pct") or 0
@@ -334,8 +352,9 @@ def gerar(
         )
         nota_datada = (
             f"posição informada à CVM na carteira de <b>{competencia_pos}</b> (CDA) — a carteira de hoje "
-            f"pode estar diferente{nota_cobertura} · quando o ativo é um fundo que o Scout também analisa, "
-            "o link leva ao raio-x dele"
+            f"pode estar diferente{nota_cobertura} · quando o Scout também analisa o ativo (FII, ETF ou "
+            "ação), o link leva ao raio-x dele e a coluna <b>alerta</b> mostra o selo daquela página; "
+            "“—” = ativo que ainda não cobrimos (renda fixa, exterior)"
         )
         completa = ""
         if len(posicoes) > 10:
@@ -455,6 +474,8 @@ a {{ color:#8FCB9B; }}
 .card .valor .compacto {{ font-size:15px; line-height:1.35; display:block; }}
 .badge-posicao {{ font-size:9.5px; font-weight:700; letter-spacing:.05em; text-transform:uppercase;
   background:#1B2225; color:#8FCB9B; border:1px solid #263034; border-radius:99px; padding:1px 7px; }}
+.ponto-posicao {{ display:inline-block; width:8px; height:8px; border-radius:50%;
+  margin-right:6px; vertical-align:middle; }}
 .card .extra {{ color:#9AA7B2; font-size:12px; margin-top:2px; }}
 .selo {{ display:inline-block; padding:3px 12px; border-radius:999px; font-weight:700;
   font-size:12px; color:#0F1416; white-space:nowrap; vertical-align:middle; }}

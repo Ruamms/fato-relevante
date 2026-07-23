@@ -95,34 +95,9 @@ def gerar(
         if posicao % 50 == 0:
             progresso(f"páginas: {posicao}/{len(fundos)}")
 
-    # páginas de ETF (classe própria — ver docs/ETFS.md)
-    from ..coleta import cda as coleta_cda
-    from . import etf_html
-
-    classificacoes = coleta_cda.carregar_classificacoes()
-    etfs_publicados = []
-    for etf in armazenamento.etfs_listados(con):
-        dados_etf = etf_html.montar_dados_etf(con, etf["ticker"], classificacoes)
-        if dados_etf is None or not (dados_etf["cotacao"] or dados_etf["pl"]):
-            continue  # sem preço nem carteira: página vazia não ajuda ninguém
-        (destino / f"{etf['ticker']}.html").write_text(
-            etf_html.gerar(
-                dados_etf,
-                agora=agora,
-                com_menu=True,
-                leitura=todas_leituras.get(etf["ticker"]),
-                publicados=tickers_no_site | {e["ticker"] for e in armazenamento.etfs_listados(con)},
-            ),
-            encoding="utf-8",
-        )
-        etfs_publicados.append(dados_etf)
-        item("etfs", len(etfs_publicados), len(etfs_publicados))
-    (destino / "etfs.html").write_text(
-        _indice_etfs(etfs_publicados, agora or datetime.now()), encoding="utf-8"
-    )
-    progresso(f"etfs: {len(etfs_publicados)} páginas")
-
-    # páginas de AÇÃO (v1 = IBrX-100; uma página por PAPEL, mostrando a empresa)
+    # páginas de AÇÃO (uma página por PAPEL, mostrando a empresa) — montadas
+    # ANTES dos ETFs: as "Principais posições" do ETF linkam qualquer ativo
+    # que o Scout publica e mostram o selo dele (as páginas conversam)
     from . import acao_html
 
     tickers_acoes = {
@@ -160,6 +135,52 @@ def gerar(
     (destino / "acoes.html").write_text(
         _indice_acoes(acoes_publicadas, agora or datetime.now()), encoding="utf-8"
     )
+
+    # páginas de ETF (classe própria — ver docs/ETFS.md), em duas passadas:
+    # montar tudo primeiro para saber quais páginas existirão e o selo de cada
+    # uma, e só então gerar — as posições linkam FII/ETF/ação com o selo do alvo
+    from ..coleta import cda as coleta_cda
+    from . import etf_html
+
+    classificacoes = coleta_cda.carregar_classificacoes()
+    etfs_montados = []
+    for etf in armazenamento.etfs_listados(con):
+        dados_etf = etf_html.montar_dados_etf(con, etf["ticker"], classificacoes)
+        if dados_etf is None or not (dados_etf["cotacao"] or dados_etf["pl"]):
+            continue  # sem preço nem carteira: página vazia não ajuda ninguém
+        etfs_montados.append(dados_etf)
+    selos_cruzados = {resumo.ticker: resumo.selo for resumo in publicados if resumo.selo}
+    selos_cruzados.update(
+        {dados["ticker"]: dados["selo"] for dados in acoes_publicadas if dados.get("selo")}
+    )
+    selos_cruzados.update(
+        {dados["etf"]["ticker"]: dados["selo"] for dados in etfs_montados if dados.get("selo")}
+    )
+    publicados_cruzados = (
+        tickers_no_site
+        | {dados["etf"]["ticker"] for dados in etfs_montados}
+        | {dados["ticker"] for dados in acoes_publicadas}
+    )
+    etfs_publicados = []
+    for dados_etf in etfs_montados:
+        ticker_etf = dados_etf["etf"]["ticker"]
+        (destino / f"{ticker_etf}.html").write_text(
+            etf_html.gerar(
+                dados_etf,
+                agora=agora,
+                com_menu=True,
+                leitura=todas_leituras.get(ticker_etf),
+                publicados=publicados_cruzados,
+                selos=selos_cruzados,
+            ),
+            encoding="utf-8",
+        )
+        etfs_publicados.append(dados_etf)
+        item("etfs", len(etfs_publicados), len(etfs_publicados))
+    (destino / "etfs.html").write_text(
+        _indice_etfs(etfs_publicados, agora or datetime.now()), encoding="utf-8"
+    )
+    progresso(f"etfs: {len(etfs_publicados)} páginas")
 
     # páginas de BANCO emissor (R3 Renda Fixa): só conglomerados com série IF.data
     from . import banco_html
