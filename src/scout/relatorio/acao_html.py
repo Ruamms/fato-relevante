@@ -187,12 +187,44 @@ def montar_dados_acao(
         (empresa["cod_cvm"],),
     ).fetchall()
 
+    # a MESMA pessoa no FRE de outras empresas que cobrimos — chave é o CPF
+    # (dado público do FRE, usado SÓ aqui, nunca exibido); sem CPF de um dos
+    # lados, vale o nome completo idêntico
+    tambem_em: dict[str, list[str]] = {}
+    if administradores:
+        nomes = sorted({a["nome"] for a in administradores})
+        cpfs = sorted({a["cpf"] for a in administradores if a["cpf"]})
+        filtro_cpf = f" OR cpf IN ({','.join('?' * len(cpfs))})" if cpfs else ""
+        outros = con.execute(
+            "SELECT DISTINCT nome, cpf, cod_cvm FROM administradores"
+            f" WHERE cod_cvm <> ? AND (nome IN ({','.join('?' * len(nomes))}){filtro_cpf})",
+            (empresa["cod_cvm"], *nomes, *cpfs),
+        ).fetchall()
+        ticker_da_empresa: dict[str, str] = {}
+        for cod in {o["cod_cvm"] for o in outros}:
+            papel_outro = next(iter(armazenamento.papeis_da_empresa(con, cod)), None)
+            if papel_outro:
+                ticker_da_empresa[cod] = papel_outro["ticker"]
+        for a in administradores:
+            achados = {
+                ticker_da_empresa[o["cod_cvm"]]
+                for o in outros
+                if o["cod_cvm"] in ticker_da_empresa
+                and (
+                    (a["cpf"] and o["cpf"] and a["cpf"] == o["cpf"])
+                    or ((not a["cpf"] or not o["cpf"]) and o["nome"] == a["nome"])
+                )
+            }
+            if achados:
+                tambem_em[a["nome"]] = sorted(achados)
+
     return {
         "setor_stats": (medianas or {}).get(_setor_curto(empresa), {}),
         "trimestres_lucro": trimestres_lucro,
         "proventos_por_ano": proventos_ano,
         "preco_fim_ano": preco_fim_ano,
         "administradores": administradores,
+        "adm_tambem_em": tambem_em,
         "partes_relacionadas": partes,
         "flags": resultado_flags,
         "selo": redflags.selo(resultado_flags),
@@ -748,6 +780,22 @@ def gerar(
             partes_c = (texto or "").split(" - ", 1)
             return partes_c[1] if len(partes_c) == 2 else (texto or "—")
 
+        tambem_em = dados.get("adm_tambem_em") or {}
+
+        def _links_tambem(nome_adm: str) -> str:
+            tickers_outros = tambem_em.get(nome_adm) or []
+            if not tickers_outros:
+                return "—"
+            partes_l = [
+                f'<a href="{_e(t)}.html">{_e(t)}</a>' if publicados and t in publicados else _e(t)
+                for t in tickers_outros[:4]
+            ]
+            resto = len(tickers_outros) - 4
+            if resto > 0:
+                extras = ", ".join(tickers_outros[4:])
+                partes_l.append(f'<span title="{_e(extras)}">+{resto}</span>')
+            return " · ".join(partes_l)
+
         linhas_adm = []
         for a in administradores:
             desde = a["primeiro_mandato"][:4] if a["primeiro_mandato"] else "—"
@@ -763,18 +811,20 @@ def gerar(
             linhas_adm.append(
                 f'<tr><td title="{titulo_exp}">{_e(a["nome"])}{badge}</td>'
                 f"<td>{_e(_orgao_curto(a['orgao']))}</td><td>{_e(_trunca(_cargo_curto(a['cargo']), 38))}</td>"
-                f"<td>{desde}</td><td>{presenca}</td></tr>"
+                f"<td>{desde}</td><td>{presenca}</td><td>{_links_tambem(a['nome'])}</td></tr>"
             )
         referencia_adm = administradores[0]["referencia"] or ""
         secao_adm = f"""
   <h2>Quem manda na empresa</h2>
-  <div class="grafico">
+  <div class="grafico" style="overflow-x:auto">
   <table class="imoveis">
-    <thead><tr><th>nome</th><th>órgão</th><th>cargo</th><th>na casa desde</th><th>presença</th></tr></thead>
+    <thead><tr><th>nome</th><th>órgão</th><th>cargo</th><th>na casa desde</th><th>presença</th><th>também em</th></tr></thead>
     <tbody>{''.join(linhas_adm)}</tbody>
   </table>
   <div class="nota">Formulário de Referência (FRE/CVM{f", ref. {formato.dia_br(referencia_adm)}" if referencia_adm else ""}) —
-  passe o mouse no nome para ver a experiência declarada · "presença" = % de participação nas reuniões do órgão</div>
+  passe o mouse no nome para ver a experiência declarada · "presença" = % de participação nas reuniões do órgão ·
+  <b>também em</b> = a mesma pessoa no FRE vigente de outras companhias que cobrimos (cruzamento pelo
+  identificador do FRE); o histórico que a pessoa declara de empregos passados fica no texto de experiência</div>
   </div>
 """
 

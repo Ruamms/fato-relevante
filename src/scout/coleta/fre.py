@@ -122,8 +122,8 @@ def carregar_zip(con: sqlite3.Connection, conteudo: bytes, cnpj_para_cod: dict[s
             """
             INSERT OR REPLACE INTO administradores
                 (cod_cvm, nome, orgao, cargo, profissao, controlador, primeiro_mandato,
-                 mandatos, presenca, experiencia, referencia)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                 mandatos, presenca, experiencia, referencia, cpf)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """,
             (
                 cod, nome,
@@ -136,6 +136,9 @@ def carregar_zip(con: sqlite3.Connection, conteudo: bytes, cnpj_para_cod: dict[s
                 _num(linha.get("Percentual_Participacao_Reunioes")),
                 (linha.get("Experiencia_Profissional") or "").strip()[:600] or None,
                 (linha.get("Data_Referencia") or "").strip()[:10] or None,
+                # CPF é dado público do FRE, mas aqui é SÓ chave de cruzamento
+                # entre empresas — nunca vai para página ou export
+                armazenamento.so_digitos(linha.get("CPF") or "") or None,
             ),
         )
         n_adm += 1

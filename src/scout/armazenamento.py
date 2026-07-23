@@ -106,6 +106,8 @@ CREATE TABLE IF NOT EXISTS administradores (
     presenca         REAL,    -- % de participação nas reuniões
     experiencia      TEXT,    -- resumo profissional declarado no FRE
     referencia       TEXT,    -- Data_Referencia do FRE
+    cpf              TEXT,    -- só dígitos; USO INTERNO no cruzamento entre
+                              -- empresas (dado público da CVM) — NUNCA exibido
     PRIMARY KEY (cod_cvm, nome, cargo)
 );
 CREATE TABLE IF NOT EXISTS partes_relacionadas (
@@ -428,6 +430,14 @@ def _migrar(con: sqlite3.Connection) -> None:
             con.execute("ALTER TABLE fundamentos ADD COLUMN da REAL")
             # re-baixa a DFP para preencher o D&A (base do EBITDA)
             con.execute("DELETE FROM cargas WHERE arquivo LIKE 'DFP_%'")
+            con.commit()
+    if "administradores" in tabelas:
+        colunas_adm = {linha[1] for linha in con.execute("PRAGMA table_info(administradores)")}
+        if "cpf" not in colunas_adm:
+            con.execute("ALTER TABLE administradores ADD COLUMN cpf TEXT")
+            # re-sincroniza o FRE para preencher o CPF (chave do cruzamento
+            # "também em" entre empresas; nunca exibido)
+            con.execute("DELETE FROM cargas WHERE arquivo LIKE 'FRE_%'")
             con.commit()
     if "cargas" in tabelas:
         # Expansão A9 (22/07/2026): o marcador semanal EMPRESAS_B3 fica "fresco"

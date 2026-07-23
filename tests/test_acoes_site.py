@@ -48,6 +48,45 @@ def test_montar_dados_acao_none_para_desconhecido(con):
     assert acao_html.montar_dados_acao(con, "XXXX9") is None
 
 
+def test_quem_manda_cruza_a_mesma_pessoa_em_outras_empresas(con):
+    _semear_empresa(con)
+    con.execute(
+        "INSERT INTO empresas (cod_cvm, cnpj, radical, nome, nome_pregao, situacao)"
+        " VALUES ('8888', '99888777000166', 'OTRA', 'OUTRA S.A.', 'OUTRACO', 'ATIVO')"
+    )
+    con.execute(
+        "INSERT INTO papeis (ticker, cod_cvm, isin, tipo) VALUES ('OTRA3', '8888', 'BROTRAACNOR1', 'ON')"
+    )
+    con.executemany(
+        "INSERT INTO administradores (cod_cvm, nome, orgao, cargo, cpf) VALUES (?, ?, ?, ?, ?)",
+        [
+            # mesma pessoa nas duas empresas: cruza pelo CPF
+            ("9999", "CONSELHEIRA X", "Conselho de Administração", "Conselheiro", "12345678901"),
+            ("8888", "CONSELHEIRA X", "Conselho Fiscal", "C.F.(Efetivo)", "12345678901"),
+            # HOMÔNIMOS com CPFs diferentes: NÃO cruza (o nome igual não basta)
+            ("9999", "JOAO DA SILVA", "Diretoria", "Diretor", "11111111111"),
+            ("8888", "JOAO DA SILVA", "Diretoria", "Diretor", "22222222222"),
+            # FRE antigo sem CPF de um dos lados: vale o nome completo idêntico
+            ("9999", "MARIA SEM CPF", "Conselho Fiscal", "C.F.(Suplente)", None),
+            ("8888", "MARIA SEM CPF", "Conselho Fiscal", "C.F.(Suplente)", None),
+        ],
+    )
+    con.commit()
+    dados = acao_html.montar_dados_acao(con, "TSTA4", hoje=date(2026, 7, 21))
+    assert dados["adm_tambem_em"] == {
+        "CONSELHEIRA X": ["OTRA3"],
+        "MARIA SEM CPF": ["OTRA3"],
+    }
+    pagina = acao_html.gerar(
+        dados, agora=datetime(2026, 7, 21, 12, 0), publicados={"TSTA4", "OTRA3"}
+    )
+    assert "<th>também em</th>" in pagina
+    assert 'href="OTRA3.html"' in pagina  # a página conversa com a da outra empresa
+    # o CPF é SÓ chave de cruzamento — nunca aparece na página
+    for cpf in ("12345678901", "11111111111", "22222222222"):
+        assert cpf not in pagina
+
+
 def test_montar_dados_e_multiplos(con):
     _semear_empresa(con)
     dados = acao_html.montar_dados_acao(con, "TSTA4", hoje=date(2026, 7, 21))
