@@ -4,6 +4,8 @@ REM  Ciclo completo, um clique:
 REM    1) atualiza a base (CVM + B3)
 REM    2) SO ENTAO le em lote com IA (Ollama) sobre dados frescos
 REM    3) commita e da push do que mudou (leituras + taxas de ETF)
+REM    4) dispara o workflow do site no GitHub (gh CLI) — publica na hora,
+REM       sem esperar a proxima rodada agendada
 REM  atualizar e ler_relatorios NUNCA rodam juntos (disputariam FNET/SQLite).
 REM ============================================================================
 setlocal
@@ -27,12 +29,13 @@ call ".venv\Scripts\scout.exe" ia-lote
 call :agora T2
 
 echo.
-echo === [3/3] Commit e push do que mudou... ===
+echo === [3/4] Commit e push do que mudou... ===
 git add leituras dados/taxas_etfs.csv
 git diff --cached --quiet
 if errorlevel 1 (
     git commit -m "leituras + taxas: rodada automatica (atualizar + ia-lote) %DATE% %TIME%"
     git push origin main
+    if not errorlevel 1 call :publicar_site
 ) else (
     echo Nada novo para commitar.
 )
@@ -51,6 +54,22 @@ echo   Leitura IA (Ollama)  : %D_LER%
 echo   TOTAL                : %D_TOT%
 pause
 exit /b 0
+
+REM --- dispara a publicacao do site no GitHub Actions (workflow_dispatch) ---
+:publicar_site
+echo.
+echo === [4/4] Disparando a publicacao do site (GitHub Actions)... ===
+set "GH=gh"
+where gh >nul 2>nul
+if errorlevel 1 set "GH=C:\Program Files\GitHub CLI\gh.exe"
+"%GH%" workflow run site.yml
+if errorlevel 1 (
+    echo [AVISO] Nao consegui disparar o workflow — gh nao encontrado ou deslogado.
+    echo         Dispare manualmente: https://github.com/Ruamms/scout/actions/workflows/site.yml
+) else (
+    echo Workflow disparado — acompanhe em https://github.com/Ruamms/scout/actions
+)
+goto :eof
 
 REM --- cronometro (cmd puro): tempo em centesimos desde a meia-noite ---
 :agora

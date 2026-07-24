@@ -1215,7 +1215,8 @@ def ia_lote(
                 "reprocesse só eles com [bold]scout ia-lote --apenas-erros[/]"
             )
         console.print(
-            f"Para publicar no site: [bold]git add {pasta} && git commit -m 'leituras' && git push[/]"
+            f"Para publicar no site: [bold]git add {pasta} && git commit -m 'leituras' && git push[/] "
+            "e dispare a publicação: [bold]gh workflow run site.yml[/]"
         )
     finally:
         con.close()
