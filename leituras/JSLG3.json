@@ -1,7 +1,7 @@
 {
   "ticker": "JSLG3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-23T20:09:00",
+  "verificado_em": "2026-07-24T12:23:44",
   "comunicados": {
     "ids": [
       436309806248347493,
@@ -19,5 +19,11 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### FATO RELEVANTE entregue em 17/07/2026\n\n**O QUE aconteceu:** A JSL S.A. divulgou uma estimativa de receita bruta para o ano-calendário de 2030.\n\n**Resumo:** A companhia estima uma receita bruta de R$ 21,4 bilhões em 2030, com um crescimento médio anual de 14% a partir de 2025. Essa projeção é baseada na capacidade operacional e no processo de consolidação do setor logístico.\n\n**Trecho-chave:** \"A Companhia estima sua Receita Bruta para o ano-calendário de 2030 o valor de R$ 21,4 bilhões, uma projeção de crescimento médio anual de 14% ao ano desde 2025.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 17/07/2026\n\n**O QUE aconteceu:** A JSL S.A. realizou uma apresentação sobre o novo ciclo de geração de valor.\n\n**Resumo:** A companhia destacou a criação das empresas independentes e as bases preparadas para um novo ciclo transformacional, incluindo relistagem, fundação, IPO, aquisições e crescimento consistente em receita bruta e EBITDA.\n\n**Trecho-chave:** \"O NOVO CICLO DE GERAÇÃO DE VALOR / INÍCIO DE UM NOVO CICLO TRANSFORMACIONAL\" (p. 4)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 17/07/2026\n\n**O QUE aconteceu:** A JSL S.A. apresentou dados financeiros e estratégicos.\n\n**Resumo:** O comunicado destaca a receita bruta, EBITDA, margem EBITDA, giro de caixa líquido (CAPEX) e alavancagem desde o 3T20 até o atual momento, mostrando um crescimento significativo em todos esses indicadores.\n\n**Trecho-chave:** \"CAGR: 25% / RECEITA BRUTA / + R$8,1 bi / EBITDA Aj¹ / + R$1.5 bi / EBITDA Margin Aj¹ / + 3,4 p.p.\" (p. 6)\n\n---\n\n**Conexão com o contexto:** As projeções e dados financeiros apresentados no comunicado ao mercado refletem a estimativa de receita bruta para 2030 mencionada no fato relevante, demonstrando o compromisso da JSL em manter um crescimento consistente."
+  },
+  "processos": {
+    "id": 159235,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "### Processo nº 0427983-81.2012.8.19.0001 (Cível)\n**Natureza:** Cível  \n**Valor envolvido:** R$ 85.216.062,75  \n**Chance de perda:** Remota  \n*\"Trata-se de ação popular ajuizada pelo Ministério Público do Estado do Rio de Janeiro na qual se discute a aquisição de veículos pela Polícia do Rio de Janeiro com gestão e manutenção de frota.\"*\n\n### Processo nº 0152872-07.2014.8.19.0001 (Cível)\n**Natureza:** Cível  \n**Valor envolvido:** R$ 134.801.360,00  \n**Chance de perda:** Remota  \n*\"Trata-se de ação civil pública proposta pelo Ministério Público do Estado da Bahia para discutir suposto ato de improbidade administrativa praticado pela Companhia e outras 27 pessoas.\"*\n\n### Processo nº 0315594-41.2015.8.05.0001 (Cível)\n**Natureza:** Cível  \n**Valor envolvido:** R$ 4.023.664,20  \n**Chance de perda:** Possível  \n*\"Trata-se de ação civil pública proposta pelo Ministério Público do Estado da Bahia para discutir suposto ato de improbidade administrativa praticado pela Companhia.\"*\n\n### Processo nº 0015304-72.2013.8.26.0361 (Cível)\n**Natureza:** Cível  \n**Valor envolvido:** R$ 3.000.000,00  \n**Chance de perda:** Possível  \n*\"Trata-se de Ação Civil Pública que discute o contrato de concessão dos serviços de transporte público coletivo urbano de Mogi das Cruzes.\"*\n\n### Processo nº 1007206-52.2021.4.01.3814 (Cível)\n**Natureza:** Cível  \n**Valor envolvido:** R$ 100.000,00  \n**Chance de perda:** Possível  \n*\"Trata-se de Ação Civil Pública ajuizada pelo Ministério Público Federal em face da Companhia, por suposto excesso de peso em seus veículos de transporte de carga.\"*"
   }
 }

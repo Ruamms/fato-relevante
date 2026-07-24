@@ -1,7 +1,7 @@
 {
   "ticker": "ASAI3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-23T18:22:22",
+  "verificado_em": "2026-07-24T12:10:47",
   "comunicados": {
     "ids": [
       51219848015007854,
@@ -16,5 +16,11 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### COMUNICADO AO MERCADO entregue em 16/07/2026\n\n**O QUE aconteceu:** Esclarecimentos sobre questionamentos da CVM/B3 - Notícia divulgada na mídia.\n\n**Resumo:** A Sendas Distribuidora S.A. esclarece que notícias publicadas sobre o lançamento de farmácias dentro das lojas do Assaí são alinhadas com seu planejamento estratégico e prevê a abertura de 25 farmácias até o final de 2026.\n\n**Trecho-chave:**\n\"O projeto está alinhado com o planejamento estratégico da Companhia divulgado na apresentação Investors’ Day 2025, de 18 de novembro de 2025, e na apresentação de resultados publicada como Fato Relevante em 11 de fevereiro de 2026 (páginas 3 e 18).\"\n\n### COMUNICADO AO MERCADO entregue em 07/07/2026\n\n**O QUE aconteceu:** Redução da participação acionária por parte da Ninety One UK Ltd.\n\n**Resumo:** A Sendas Distribuidora S.A. informa a redução de participação acionária para 4,99% em ações ordinárias por parte da Ninety One UK Ltd.\n\n**Trecho-chave:**\n\"A Companhia recebeu correspondência da Ninety One UK Ltd comunicando a redução de participação acionária na Companhia, passando a deter 4,99% em ações ordinárias.\""
+  },
+  "processos": {
+    "id": 159511,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Processo nº 17227.720117/2022-75**\n   - Natureza: Tributário\n   - Valor envolvido: R$ 253.248.528,98\n   - Chance de perda: Possível\n   - Resumo: Auto de infração visando a cobrança de IRPJ e CSLL, sob alegação de dedução indevida de amortizações de ágio.\n\n2. **Processo nº 17227.722501/2023-93**\n   - Natureza: Tributário\n   - Valor envolvido: R$ 270.283.817,99\n   - Chance de perda: Possível\n   - Resumo: Auto de infração visando a cobrança de IRPJ e CSLL, sob alegação de dedução indevida de amortizações de ágio.\n\n3. **Execução Fiscal nº 5046422-36.2024.4.02.5101**\n   - Natureza: Tributário\n   - Valor envolvido: R$ 226.356.625,45\n   - Chance de perda: Possível\n   - Resumo: Execução Fiscal visando a cobrança de IRPJ, sob alegação de dedução indevida de amortizações de ágio.\n\n4. **Execução Fiscal nº 1501082-38.2023.8.26.0405 e 1501083-23.2023.8.26.0405**\n   - Natureza: Tributário\n   - Valor envolvido: R$ 248.729.939,43\n   - Chance de perda: Possível (R$ 237.221.148,11) e Remota (R$ 11.508.791,33)\n   - Resumo: Execuções Fiscais em que se discute crédito indevido de ICMS.\n\n5. **Processo nº 1009099-55.2021.8.26.0320**\n   - Natureza: Cível\n   - Valor envolvido: R$ 260.000.000,00\n   - Chance de perda: Possível\n   - Resumo: Ação Civil Pública visando indenização por danos morais coletivos.\n\nNão há processos relevantes de natureza ambiental ou outras categorias mencionadas no relatório."
   }
 }

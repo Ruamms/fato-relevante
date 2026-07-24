@@ -1,7 +1,7 @@
 {
   "ticker": "BMIN3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-23T18:44:11",
+  "verificado_em": "2026-07-24T12:12:53",
   "comunicados": {
     "ids": [
       741848619766909536,
@@ -16,5 +16,11 @@
       "Fato Relevante"
     ],
     "texto": "### O QUE aconteceu: PAGAMENTO DE DIVIDENDOS AOS ACIONISTAS\n\n**Resumo:** O Banco Mercantil de Investimentos S.A. (BMIN3; BMIN4) declarou e pagará dividendos no valor total de R$ 3.099.831,62 para o exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:** \"O valor total aprovado foi de R$ 3.099.831,62 (três milhões, noventa e nove mil, oitocentos e trinta e um reais, sessenta e dois centavos), sobre o qual incidirá retenção do imposto de renda na fonte, conforme aplicável e de acordo com a legislação vigente.\" (p. 1)\n\n---\n\n### O QUE aconteceu: PAGAMENTO DE DIVIDENDOS AOS ACIONISTAS\n\n**Resumo:** O Banco Mercantil de Investimentos S.A. (BMIN3; BMIN4) declarou e pagará dividendos no valor total de R$ 2.449.876,81 para o exercício social encerrado em 2024.\n\n**Trecho-chave:** \"O pagamento será efetuado em 19 de fevereiro de 2025 na proporção da participação de cada acionista no capital social do Banco, sendo certo que farão jus ao pagamento os acionistas constantes da base acionária do Banco em 7 de fevereiro de 2025 (data-com).\" (p. 1)"
+  },
+  "processos": {
+    "id": 159382,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Tributário**\n   - **Natureza:** Tributário\n   - **Valor envolvido:** R$266.279.489,53\n   - **Chance de perda:** Provável\n   - **Resumo:** \"A ação ressricaória nº 7.687/MG questiona a decisão do Mandado de Segurança impetrado em 1994 para assegurar o direito à dedução fiscal da diferença de correção monetária do balanço de 1989.\"\n\n2. **Tributário**\n   - **Natureza:** Tributário\n   - **Valor envolvido:** R$17.226.544,45\n   - **Chance de perda:** Não se aplica (processo incluído na Transação Tributária 2025)\n   - **Resumo:** \"Execução Fiscal nº 0022407-85.2017.4.01.3800, Embargos à Execução Fiscal 0030101-08.2017.4.01.3800 questiona a execução fiscal devido à decadência e prescrição.\""
   }
 }

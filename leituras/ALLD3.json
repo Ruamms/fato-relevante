@@ -1,7 +1,7 @@
 {
   "ticker": "ALLD3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-23T18:12:00",
+  "verificado_em": "2026-07-24T12:09:49",
   "comunicados": {
     "ids": [
       1119534857397988115,
@@ -19,5 +19,11 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### FATO RELEVANTE ENTREGUE EM 09/06/2026\n\n**O QUE ACONTECEU:** ALLIED TECNOLOGIA S.A. aprovou um novo Plano de Outorga de Opções de Compra de Ações (SOP 2026).\n\n**RESUMO:** A companhia outorgará opções de compra de ações aos administradores, executivos e empregados, limitadas a 5% do capital social.\n\n**TRECHO-CHAVE:**\n\"ALLIED TECNOLOGIA S.A. (“Companhia”) vem, nos termos da Resolução da Comissão de Valores Mobiliários (“CVM”) nº 44, de 23 de agosto de 2021, conforme alterada, informar aos seus acionistas e ao mercado em geral que, na Assembleia Geral Extraordinária da Companhia realizada nesta data, foi aprovado o novo Plano de Outorga de Opções de Compra de Ações da Companhia, que tem como beneficiários administradores, executivos e empregados da Companhia e de suas controladas (“SOP 2026”).\"\n\n**CONEXÃO COM O CONTEXTO:** Este fato relevante se conecta com a estratégia de expansão e retenção de talentos mencionada no comunicado ao mercado, indicando um esforço para manter e incentivar o desempenho dos funcionários.\n\n---\n\n### COMUNICADO AO MERCADO ENTREGUE EM 28/05/2026\n\n**O QUE ACONTECEU:** ALLIED TECNOLOGIA S.A. divulgou os resultados do primeiro trimestre de 2026 (1T26).\n\n**RESUMO:** Os resultados mostraram uma melhora na rentabilidade, com avanço no EBITDA e lucro líquido.\n\n**TRECHO-CHAVE:**\n\"Melhora da rentabilidade, com avanço do EBITDA, lucro líquido e margem bruta\n1,20\n1,16\n1T25\n1T26\n-3,1%\nReceita \nLíquida\nR$ bi\nCaixa\nFinal\nR$ 290,4 mi\nCom pagamento de \nR$ 40 milhões em \nproventos no trimestre\n15,1\n24,7\n1T25\n1T26\n+63,9%\nLucro \nLíquido\nR$ mi\n50,5\n58,6\n1T25\n1T26\n+16,1%\nEBITDA\nR$ mi\nMargem bruta de 13,6% \n(+1,4 p.p.)\n146,4\n158,0\n1T25\n1T26\n+7,9%\"\n**CONEXÃO COM O CONTEXTO:** Este comunicado ao mercado reflete diretamente os resultados financeiros mencionados no contexto.\n\n---\n\n### COMUNICADO AO MERCADO ENTREGUE EM 07/05/2026\n\nEste documento é idêntico ao anterior, portanto, não há novos fatos a serem relatados."
+  },
+  "processos": {
+    "id": 158805,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Tributário**\n   - **Natureza**: Tributário\n   - **Valor envolvido**: R$ 25.277.558,68 (atualizado)\n   - **Chance de perda**: Possível\n   - **Resumo**: Trata-se de um procedimento fiscal em que a empresa foi acusada de deduzir indevidamente descontos comerciais, resultando em uma multa e obrigatoriedade de pagamento atualizado.\n\n2. **Tributário**\n   - **Natureza**: Tributário\n   - **Valor envolvido**: R$ 16.846.671,12 (atualizado)\n   - **Chance de perda**: Possível\n   - **Resumo**: Mandado de Segurança preventivo com pedido liminar, negando a segurança e possibilidade de reversão dos depósitos judiciais.\n\n3. **Tributário**\n   - **Natureza**: Tributário\n   - **Valor envolvido**: R$ 15.509.302,01 (atualizado)\n   - **Chance de perda**: Remota\n   - **Resumo**: Mandado de Segurança preventivo com pedido liminar, negando a segurança e possibilidade de reversão dos depósitos judiciais.\n\n4. **Tributário**\n   - **Natureza**: Tributário\n   - **Valor envolvido**: R$ 11.677.845,61 (atualizado)\n   - **Chance de perda**: Remota\n   - **Resumo**: Mandado de Segurança preventivo com pedido liminar, negando a segurança e possibilidade de reversão dos depósitos judiciais.\n\n5. **Tributário**\n   - **Natureza**: Tributário\n   - **Valor envolvido**: R$ 31.173.437,96 (atualizado)\n   - **Chance de perda**: Possível\n   - **Resumo**: Processo administrativo para cobrança de ICMS com multa de 100% sobre a remessa de mercadorias sem comprovação de internamento."
   }
 }

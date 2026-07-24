@@ -1,7 +1,7 @@
 {
   "ticker": "SNEL11",
-  "modelo": "qwen2.5:14b",
-  "gerada_em": "2026-07-20T07:37:25",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-24T11:47:00",
   "relatorio": {
     "id": 1233124,
     "data_entrega": "29/06/2026 18:56",
@@ -12,8 +12,8 @@
       1223118,
       1096178,
       998685,
+      1263258,
       1242748,
-      1225096,
       1182082,
       1154509
     ],
@@ -21,8 +21,8 @@
       "16/06/2026",
       "29/01/2026",
       "25/09/2025",
+      "23/07/2026",
       "09/07/2026",
-      "19/06/2026",
       "07/05/2026",
       "06/04/2026"
     ],
@@ -35,7 +35,7 @@
       "Assembleia AGO",
       "Assembleia AGO"
     ],
-    "texto": "### 16/06/2026 - FATO RELEVANTE\n\n**O que aconteceu:** Aprovada a realização da distribuição pública primária de cotas da 5ª emissão.\n\n**Resumo:** O documento detalha as principais características da oferta, incluindo o número de séries das cotas (única), quantidade total de novas cotas (221.320.140) e preço por nova cota (R$ 8,32).\n\n**Trecho-chave:**\n\"A Emissão será realizada em série única;\" (p. 1)\n\n---\n\n### 29/01/2026 - FATO RELEVANTE\n\n**O que aconteceu:** O Fundo adquiriu ativos de geração distribuída solar totalizando 87,5 MWp.\n\n**Resumo:** A aquisição incluiu contratos em oito estados brasileiros e apresentou uma taxa interna de retorno real projetada de 14,44% ao ano. Os novos ativos aumentam a capacidade de geração total do portfólio em aproximadamente 153.460 MWh por ano.\n\n**Trecho-chave:**\n\"O Fundo celebrou 20 contratos de aquisição de ativos de geração distribuída solar (“Novos Ativos”), totalizando 87,5 MWp de capacidade instalada e com preço total de aquisição de R$ 436.203.412,83\" (p. 1)\n\n---\n\n### 09/07/2026 - COMUNICADO AO MERCADO\n\n**O que aconteceu:** Encerramento do período de exercício do direito de preferência da 5ª emissão.\n\n**Resumo:** Durante o período, foram colocadas 120.136 novas cotas na B3 e restaram remanescentes 221.200.004 novas cotas no montante de R$ 1.840.384.033,28.\n\n**Trecho-chave:**\n\"Durante o prazo para o exercício do direito de preferência, iniciado em 23 de junho de 2025 (inclusive) e encerrado em 06 de julho de 2026 (inclusive) na B3 e em 07 de julho de 2026 (inclusive) no escriturador (“Período de Preferência” e “Direito de Preferência”, respectivamente), os Cotistas puderam exercer o Direito de Preferência na subscrição das Novas Cotas\" (p. 1)\n\n---\n\n### 19/06/2026 - COMUNICADO AO MERCADO\n\n**O que aconteceu:** Divulgação de nova versão do Prospecto.\n\n**Resumo:** O prospecto foi atualizado para incluir informações sobre a cotação mínima, média e máxima dos últimos cinco anos, dois trimestres e seis meses.\n\n**Trecho-chave:**\n\"comunicar a divulgação de nova versão do Prospecto na presente data, conforme divulgado originalmente em 16 de junho de 2026, para incluir as informações referente a (i) cotação mínima, média e máxima de cada ano, nos últimos 5 (cinco) anos; (ii) cotação mínima, média e máxima de cada trimestre, nos últimos 2 (dois) anos; e (iii) cotação mínima, média e máxima de cada mês, nos últimos 6 (seis) meses\" (p. 1)\n\n---\n\n### 07/05/2026 - ASSEMBLEIA AGO\n\n**O que aconteceu:** Aprovação das demonstrações financeiras do Fundo referentes ao exercício social de 2025.\n\n**Resumo:** Os cotistas aprovaram as demonstrações financeiras, com um quórum de aproximadamente 2,83% das cotas emitidas. \n\n**Trecho-chave:**\n\"A aprovação das Demonstrações Financeiras do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025\" (p. 1)\n\n---\n\n### 06/04/2026 - ASSEMBLEIA AGO\n\n**O que aconteceu:** Convocação para a Assembleia Geral Ordinária.\n\n**Resumo:** A assembleia foi convocada por meio de consulta formal e coleta de voto à distância, com o objetivo de aprovar as demonstrações contábeis do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025. \n\n**Trecho-chave:**\n\"A QI CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., sociedade anônima, com sede na Cidade de São Paulo, estado de São Paulo, na Avenida Rebouças, nº 2.942, 7º ao 12º andar, Parte I, CEP 05402-500, na qualidade de administradora do Fundo\" (p. 1)"
+    "texto": "### FATO RELEVANTE entregue em 16/06/2026\n\n**O QUE aconteceu:** A QI Corretora de Títulos e Valores Mobiliários S.A. anunciou a aprovação do Ato da Gestora para a distribuição pública primária de cotas da 5ª emissão.\n\n**Resumo:** A administradora e gestora do fundo aprovaram a oferta pública de novas cotas, com detalhes sobre o número, preço e características das cotações.\n\n**Trecho-chave:**\n\"foi formalizado o ‘Ato da Gestora da Classe Única do Suno Energias Limpas Fundo de Investimento Imobiliário IS Responsabilidade Limitada’ (‘Ato de Aprovação da Oferta’), celebrado em 16 de junho de 2026, por meio do qual a SUNO GESTORA DE RECURSOS LTDA., na qualidade de Gestora do Fundo, aprovou a realização da distribuição pública primária de cotas da 5ª (quinta) emissão.\"\n\n### FATO RELEVANTE entregue em 29/01/2026\n\n**O QUE aconteceu:** A administradora informou sobre a aquisição de novos ativos de geração distribuída solar.\n\n**Resumo:** O fundo adquiriu 87,5 MWp de capacidade instalada em 22 cidades de 8 estados brasileiros, com previsão de aumento na geração total do portfólio e diversificação geográfica.\n\n**Trecho-chave:**\n\"O Fundo celebrou 20 contratos de aquisição de ativos de geração distribuída solar (‘Novos Ativos’), totalizando 87,5 MWp de capacidade instalada e com preço total de aquisição de R$ 436.203.412,83.\"\n\n### COMUNICADO AO MERCADO entregue em 23/07/2026\n\n**O QUE aconteceu:** A administradora comunicou o encerramento do período para exercício do direito de preferência e a distribuição das sobras.\n\n**Resumo:** Foram distribuídas 121.981 cotações no direito de preferência, com remanescentes disponíveis para investidores não institucionais e institucionais.\n\n**Trecho-chave:**\n\"O 1º Período de Coleta de Intenções de Investimento para Investidores Não Institucionais e Institucionais na B3 teve início em 23 de junho de 2026 (inclusive) e seguirá vigente até 24 de julho de 2026, observado o disposto no Prospecto.\"\n\n### COMUNICADO AO MERCADO entregue em 09/07/2026\n\n**O QUE aconteceu:** A administradora informou sobre a distribuição das sobras e encerramento do período de exercício do direito de preferência.\n\n**Resumo:** Houve a colocação de 120.136 cotações durante o período de preferência, com remanescentes disponíveis para investidores não institucionais e institucionais.\n\n**Trecho-chave:**\n\"No Período de Preferência, houve a colocação de 120.136 (cento e vinte mil e cento e trinta e seis) Novas Cotas junto à B3 e não houve a colocação de Novas Cotas junto ao escriturador, restando remanescentes, portanto, 221.200.004 (duzentos e vinte e um milhões, duzentas mil e quatro) Novas Cotas.\"\n\n### ASSEMBLEIA AGO entregue em 07/05/2026\n\n**O QUE aconteceu:** A administradora apurou a aprovação das demonstrações financeiras do fundo referentes ao exercício de 31 de dezembro de 2025.\n\n**Resumo:** Os cotistas aprovaram as demonstrações financeiras por quórum adequado, sem oposição significativa.\n\n**Trecho-chave:**\n\"A aprovação das Demonstrações Financeiras do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025, as quais os Cotistas declaram ter tido acesso, lido, estar ciente e de acordo com o seu inteiro teor.\"\n\n### ASSEMBLEIA AGO entregue em 06/04/2026\n\n**O QUE aconteceu:** A administradora convocou a assembleia geral ordinária para aprovar as demonstrações contábeis do exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia foi convocada por e-mail, com detalhes sobre o quórum necessário e os critérios de participação dos cotistas.\n\n**Trecho-chave:**\n\"A QI CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., sociedade anônima, com sede na Cidade de São Paulo, estado de São Paulo, na Avenida Rebouças, nº 2.942, 7º ao 12º andar, Parte I, CEP 05402-500, na qualidade de administradora do Fundo, inscrita no CNPJ/MF sob o nº 62.285.390/0001-40, devidamente credenciada pela CVM para o exercício da atividade de administração de carteiras de títulos e valores mobiliários, conforme Ato Declaratório nº 1.498, de 28 de agosto de 1990, na qualidade de instituição administradora (‘Administrador’) do Fundo, vem CONVOCAR os cotistas do Fundo para participar da Assembleia Geral Ordinária de Cotistas do Fundo.\""
   },
   "retrato": {
     "selo": "Atenção",
@@ -43,7 +43,7 @@
     "alertas": [
       "Rendimentos irregulares"
     ],
-    "cota": 8.36
+    "cota": 8.33
   },
   "parecer": {
     "id": 1153958,

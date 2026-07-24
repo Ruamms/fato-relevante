@@ -1,7 +1,7 @@
 {
   "ticker": "NUTR3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-23T20:38:30",
+  "verificado_em": "2026-07-24T12:29:34",
   "comunicados": {
     "ids": [
       502321993736015152,
@@ -16,5 +16,11 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### COMUNICADO AO MERCADO entregue em 24/03/2026\n\n**O que aconteceu:** A NUTRIPLANT INDÚSTRIA E COMÉRCIO S.A. anunciou a migração para o Segmento Básico de listagem da B3 S.A., em decorrência da descontinuidade do segmento Bovespa Mais.\n\n**Resumo:** A companhia passa a estar dispensada da obrigação de manter um percentual mínimo de ações em livre circulação, já que o Segmento Básico não prevê requisito mínimo obrigatório de free float.\n\n**Trecho-chave:**\n\"A Companhia foi informada pela B3 que, a partir de 16 de março de 2026, com a descontinuidade do Bovespa Mais e Bovespa Mais Nível 2, as companhias serão automaticamente migradas para o Segmento Básico, de forma que permanecerão listadas e suas ações admitidas à negociação no ambiente da B3.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 22/04/2026\n\n**O que aconteceu:** A NUTRIPLANT INDÚSTRIA E COMÉRCIO S.A. comunicou a divulgação dos resultados do primeiro trimestre de 2026 e estabeleceu um período de silêncio.\n\n**Resumo:** A companhia agendou a divulgação para o dia 12 de maio de 2026, antes da abertura do mercado, e informou que estará em período de silêncio de 27 de abril até 11 de maio de 2025.\n\n**Trecho-chave:**\n\"Divulgação de resultados do primeiro trimestre de 2026 (“1T26”) da Companhia está agendada para o dia 12 de maio de 2026 (antes da abertura do mercado). Em atenção às melhores práticas de governança corporativa, a Companhia informa que estará em período de silêncio (quiet period) de 27 de abril até 11 de maio de 2025.\" (p. 1)\n\n---\n\n**Conexão com o contexto:** A migração para o Segmento Básico de listagem da B3 S.A., anunciada em março, não afeta a continuidade das operações e negociação das ações na bolsa, conforme comunicado em abril."
+  },
+  "processos": {
+    "id": 158182,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Cível**\n   - **Valor envolvido:** R$ 89.004.485,00 atualizado até 31/12/2023\n   - **Chance de perda:** Remota\n   - **Resumo:** Em 23/11/22 foi deferido o novo pedido de recuperação extrajudicial e determinado o seu processamento nos termos do art. 164 da Lei n. 11.101/05.\n\n2. **Trabalhista**\n   - **Valor envolvido:** R$ 80.000,00 atualizado até 31/12/24\n   - **Chance de perda:** Provável\n   - **Resumo:** Reclamatória trabalhista com julgamento favorável à Reclamante condenando a Nutriplant como devedor solidário. Juiz liberou os valores depositados como depósito recursal para reclamante, aguardando cálculo do valor faltante.\n\n3. **Cível**\n   - **Valor envolvido:** R$ 4.945.231,14 atualizado até 31/12/2021\n   - **Chance de perda:** Não se aplica.\n   - **Resumo:** Execução de Título Extrajudicial. Há Confissão de Dívida da Nutriplant no valor de US$ 908.720. Ações NUTR3 de propriedade da Tripto Participações foram dadas em garantia.\n\n4. **Trabalhista**\n   - **Valor envolvido:** R$ 63.153,00\n   - **Chance de perda:** Provável\n   - **Resumo:** Reclamatória trabalhista com julgamento favorável à Reclamante condenando a Nutriplant como devedor solidário. Juiz liberou os valores depositados como depósito recursal para reclamante, aguardando cálculo do valor faltante.\n\n5. **Tributário**\n   - **Valor envolvido:** R$ 1.903.075,76 atualizado até 12/2024\n   - **Chance de perda:** Não se aplica.\n   - **Resumo:** Trata-se de Impugnações administrativas apresentada em face do Despachos Decisórios emitidos pela Delegacia da Receita Federal, que reconheceu e deferiu parcialmente o crédito pleiteado."
   }
 }

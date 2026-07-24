@@ -1962,3 +1962,93 @@
 2026-07-23 22:12:00	--- 2a passada automatica em 27 fundos com timeout de rede
 2026-07-23 22:12:19	--- lote iniciado · modelo qwen2.5:7b · 28 fundos na fila
 2026-07-23 22:12:53	--- lote encerrado · 0 lidos, 28 em dia/sem relatório, 0 erros
+2026-07-24 11:37:29	--- lote iniciado · modelo qwen2.5:7b · 1052 fundos na fila
+2026-07-24 11:39:01	PBLV11	erro	The read operation timed out
+2026-07-24 11:39:01	HGLG11	erro	The read operation timed out
+2026-07-24 11:39:01	BTLG11	erro	The read operation timed out
+2026-07-24 11:39:01	PMRV11	erro	The read operation timed out
+2026-07-24 11:40:52	MXRF11	lido	111s
+2026-07-24 11:40:52	HGBS11	erro	The read operation timed out
+2026-07-24 11:43:10	RZTR11	lido	138s
+2026-07-24 11:43:10	RBRX11	erro	The read operation timed out
+2026-07-24 11:45:11	BPML11	lido	121s
+2026-07-24 11:47:00	SNEL11	lido	109s
+2026-07-24 11:48:49	XPIN11	lido	109s
+2026-07-24 11:50:26	AFHI11	lido	97s
+2026-07-24 11:51:31	BVAR11	sem-relatorio-fatos-lidos	64s
+2026-07-24 11:51:31	AZPL11	erro	The read operation timed out
+2026-07-24 11:51:31	APXM11	erro	The read operation timed out
+2026-07-24 11:51:31	MANA11	erro	The read operation timed out
+2026-07-24 11:51:31	RPRI11	erro	The read operation timed out
+2026-07-24 11:51:31	PCIV11	erro	The read operation timed out
+2026-07-24 11:51:31	NSLU11	erro	The read operation timed out
+2026-07-24 11:52:40	SPXS11	lido	69s
+2026-07-24 11:53:46	JFLL11	lido	66s
+2026-07-24 11:53:46	GCRI11	erro	The read operation timed out
+2026-07-24 11:55:52	RBRS11	erro	The read operation timed out
+2026-07-24 11:56:50	AERO11	erro	The read operation timed out
+2026-07-24 11:56:57	HGIC11	erro	The read operation timed out
+2026-07-24 11:57:32	FTLZ11	erro	The read operation timed out
+2026-07-24 11:58:33	VRCD11	erro	The read operation timed out
+2026-07-24 11:58:50	NCRI11	erro	The read operation timed out
+2026-07-24 11:58:55	RRCI11	erro	The read operation timed out
+2026-07-24 11:59:48	EIRA11	erro	The read operation timed out
+2026-07-24 12:00:19	MMPD11	erro	The read operation timed out
+2026-07-24 12:01:33	GFDL11	sem-relatorio-fatos-lidos	31s
+2026-07-24 12:02:10	AVUR11	sem-relatorio-fatos-lidos	36s
+2026-07-24 12:02:51	SPXD11	sem-relatorio-fatos-lidos	41s
+2026-07-24 12:02:51	SJAU11	erro	The read operation timed out
+2026-07-24 12:02:51	RCFA11	erro	The read operation timed out
+2026-07-24 12:02:55	QTZD11	erro	The read operation timed out
+2026-07-24 12:03:44	PATL11	erro	The read operation timed out
+2026-07-24 12:06:01	LTNB11	erro	HTTP Error 520: <none>
+2026-07-24 12:07:41	PFJR11	erro	The read operation timed out
+2026-07-24 12:08:51	SMAB11	erro	The read operation timed out
+2026-07-24 12:09:49	XSPI11	erro	The read operation timed out
+2026-07-24 12:10:40	ALLD3	sem-relatorio
+2026-07-24 12:10:47	ARML3	sem-relatorio
+2026-07-24 12:11:38	ASAI3	sem-relatorio
+2026-07-24 12:12:38	AZZA3	sem-relatorio
+2026-07-24 12:12:51	B1003	sem-relatorio
+2026-07-24 12:12:53	BIOM11	sem-relatorio
+2026-07-24 12:13:22	BMIN3	sem-relatorio
+2026-07-24 12:13:41	CAMB3	sem-relatorio
+2026-07-24 12:14:50	CLSC3	sem-relatorio
+2026-07-24 12:15:40	CRPG3	sem-relatorio
+2026-07-24 12:16:18	CTKA3	sem-relatorio
+2026-07-24 12:17:27	DASA3	sem-relatorio
+2026-07-24 12:18:48	DOTZ3	sem-relatorio
+2026-07-24 12:19:12	ECOM3	sem-relatorio
+2026-07-24 12:19:13	EGIE3	sem-relatorio
+2026-07-24 12:20:37	EMAE3	sem-relatorio
+2026-07-24 12:22:03	ENGI11	sem-relatorio
+2026-07-24 12:22:04	ESPA3	sem-relatorio
+2026-07-24 12:22:04	GOAU3	sem-relatorio
+2026-07-24 12:22:19	GSHP3	sem-relatorio
+2026-07-24 12:22:30	HAGA3	sem-relatorio
+2026-07-24 12:22:52	HBRE3	sem-relatorio
+2026-07-24 12:23:44	INEP3	sem-relatorio
+2026-07-24 12:24:47	JSLG3	sem-relatorio
+2026-07-24 12:26:10	LAND3	sem-relatorio
+2026-07-24 12:28:11	LPSB3	sem-relatorio
+2026-07-24 12:28:11	LWSA3	sem-relatorio
+2026-07-24 12:29:34	MDIA3	sem-relatorio
+2026-07-24 12:29:34	MNPR3	sem-relatorio
+2026-07-24 12:30:26	NUTR3	sem-relatorio
+2026-07-24 12:31:37	ORVR11	sem-relatorio
+2026-07-24 12:32:41	PDGR3	sem-relatorio
+2026-07-24 12:33:31	PEAB3	sem-relatorio
+2026-07-24 12:35:17	PINE3	sem-relatorio
+2026-07-24 12:36:33	RAIZ4	sem-relatorio
+2026-07-24 12:37:38	REDE3	sem-relatorio
+2026-07-24 12:38:01	RPAD3	sem-relatorio
+2026-07-24 12:38:35	RSUL3	sem-relatorio
+2026-07-24 12:38:36	SMFT3	sem-relatorio
+2026-07-24 12:39:26	TFCO4	sem-relatorio
+2026-07-24 12:40:53	UNIP3	sem-relatorio
+2026-07-24 12:41:46	VSTE3	sem-relatorio
+2026-07-24 12:42:57	VTRU3	sem-relatorio
+2026-07-24 12:42:57	--- lote encerrado · 12 lidos, 1010 em dia/sem relatório, 30 erros
+2026-07-24 12:42:57	--- 2a passada automatica em 29 fundos com timeout de rede
+2026-07-24 12:43:18	--- lote iniciado · modelo qwen2.5:7b · 30 fundos na fila
+2026-07-24 12:43:43	--- lote encerrado · 0 lidos, 30 em dia/sem relatório, 0 erros

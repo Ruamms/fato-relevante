@@ -1,7 +1,7 @@
 {
   "ticker": "INEP3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-23T19:57:53",
+  "verificado_em": "2026-07-24T12:22:52",
   "comunicados": {
     "ids": [
       3288790706385443,
@@ -16,5 +16,11 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### COMUNICADO AO MERCADO entregue em 03/06/2026\n\n**O que aconteceu:** A Inepar S/A. Indústria e Construções – Em Recuperação Judicial reconduziu a diretoria e reestruturou o Comitê de Novos Negócios.\n\n**Resumo:** A empresa realizou mudanças na estrutura administrativa, incluindo a recondução dos membros atuais da diretoria e a formação de um novo Comitê de Novos Negócios com representantes diversificados.\n\n**Trecho-chave:**\n\"Na Reunião do Conselho de Administração, realizada em 27/05/2026, foram reconduzidos os membros da Diretoria e houve a reestruturação do Comitê de Novos Negócios.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 29/06/2026\n\n**O que aconteceu:** A B3 informou sobre oscilações atípicas nos valores mobiliários da Inepar S/A. Indústria e Construções – Em Recuperação Judicial.\n\n**Resumo:** A empresa esclareceu que não há fato conhecido que justifique as oscilações registradas, reiterando a conformidade com os requisitos legais de transparência.\n\n**Trecho-chave:**\n\"A Inepar esclarece que não há nenhum fato de nosso conhecimento, que justifique o aumento do número de negócios e da quantidade de ações de emissão da Companhia negociada nas datas indicadas.\"\n\n**Conexão com contexto:** Este comunicado responde à questão levantada sobre oscilações atípicas mencionada no contexto, esclarecendo que não há fato relevante conhecido."
+  },
+  "processos": {
+    "id": 159057,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Tributário**\n   - **Natureza**: Tributário\n   - **Valor envolvido**: R$ 78.156.613,41\n   - **Chance de perda**: Possível\n   - **Resumo do objeto**: Trata-se de execução fiscal movida pelo Município de Araraquara sobre a suposta cobrança de ISSQN.\n\n2. **Tributário**\n   - **Natureza**: Tributário\n   - **Valor envolvido**: R$ 493.625,44\n   - **Chance de perda**: Possível\n   - **Resumo do objeto**: Trata-se de suposta cobrança de ISSQN sobre a atividade industrialização.\n\n3. **Cível**\n   - **Natureza**: Cível\n   - **Valor envolvido**: R$ 210.086.884,31\n   - **Chance de perda**: Provável\n   - **Resumo do objeto**: Acordo celebrado com a Petros FIDC para dação em pagamento de imóvel, mas a execução foi retomada.\n\n4. **Trabalhista**\n   - **Natureza**: Trabalhista\n   - **Valor envolvido**: R$ 5.307.145,49\n   - **Chance de perda**: Provável\n   - **Resumo do objeto**: Equiparação salarial e piso salarial.\n\n5. **Trabalhista**\n   - **Natureza**: Trabalhista\n   - **Valor envolvido**: R$ 5.525.341,12\n   - **Chance de perda**: Provável / Alteração para Possível\n   - **Resumo do objeto**: Reconhecimento de vínculo de pejotização.\n\n6. **Cível**\n   - **Natureza**: Cível\n   - **Valor envolvido**: R$ 54.036.754,02\n   - **Chance de perda**: Possível\n   - **Resumo do objeto**: Ação monitória para cobrança de crédito em razão do pagamento de indenização securitária.\n\n7. **Tributário**\n   - **Natureza**: Tributário\n   - **Valor envolvido**: R$ 166.795.325,71\n   - **Chance de perda**: Possível\n   - **Resumo do objeto**: Ação ajuizada por Fernandes & Silva Sociedade de Advogados visando à cobrança de montante.\n\n8. **Cível**\n   - **Natureza**: Cível\n   - **Valor envolvido**: R$ 459.152.172,00\n   - **Chance de perda**: Provável\n   - **Resumo do objeto**: Acordo celebrado com BRL Trust Distribuidora de Títulos e Valores Mobiliários que foi declarado rescindido pelo credor."
   }
 }

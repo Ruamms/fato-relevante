@@ -1,7 +1,7 @@
 {
   "ticker": "XPIN11",
-  "modelo": "qwen2.5:14b",
-  "gerada_em": "2026-07-20T19:15:07",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-24T11:48:49",
   "relatorio": {
     "id": 1233062,
     "data_entrega": "29/06/2026 18:31",
@@ -9,6 +9,7 @@
   },
   "comunicados": {
     "ids": [
+      1263128,
       1236212,
       1165727,
       1117180,
@@ -16,6 +17,7 @@
       1133939
     ],
     "datas": [
+      "23/07/2026",
       "30/06/2026",
       "16/04/2026",
       "17/02/2026",
@@ -25,11 +27,12 @@
     "rotulos": [
       "Fato Relevante",
       "Fato Relevante",
+      "Fato Relevante",
       "Comunicado ao Mercado",
       "Assembleia AGE",
       "Assembleia AGE"
     ],
-    "texto": "### 30/06/2026\n**O que aconteceu:** XPIN11 concluiu a alienação de seu portfólio imobiliário e iniciou procedimentos para liquidação e encerramento.\n**Resumo:** O fundo anunciou uma estrutura de entrega aos cotistas em duas tranches: uma amortização parcial com distribuição de cotas do XPLG11 e pagamento em dinheiro, seguida por uma liquidação final que incluirá a entrega de cotas do IVBP11 e caixa remanescente.\n**Trecho-chave:** \"A entrega aos cotistas ocorrerá em duas tranches: (i) uma amortização parcial, mediante a entrega de 2.306.732 cotas do XPLG11 aos cotistas do XPIN11, correspondendo a 0,32260081 cotas de XPLG11 para cada cota de XPIN11 , e o pagamento de parcela em caixa no valor de R$ 18.000.000,00\" (p. 1).\n\n### 16/04/2026\n**O que aconteceu:** O fundo concluiu a alienação dos imóveis para o XPLG11.\n**Resumo:** A operação foi formalizada com uma escritura pública de venda e compra, pelo valor total de R$ 287.632.802,31, que foi integralmente quitada pelas partes. O fundo adquirente passou a ser titular dos direitos e obrigações dos imóveis.\n**Trecho-chave:** \"A operação foi concluída pelo valor total de R$ 287.632.802,31 (duzentos e oitenta e sete milhões, seiscentos e trinta e dois mil, oitocentos e dois reais e trinta e um centavos), tendo o preço sido integralmente quitado, nos termos pactuados entre as partes.\" (p. 1).\n\n### 17/02/2026\n**O que aconteceu:** XPIN11 comunicou esclarecimentos sobre a proposta de alienação dos imóveis para o IBBP11.\n**Resumo:** O fundo detalhou a operação proposta pelo IBBP11, incluindo o valor da aquisição dos imóveis e a quitação das obrigações do fundo. Foi apresentado um comparativo entre o patrimônio líquido contábil, o valor de mercado e o valor da operação almejada.\n**Trecho-chave:** \"A tabela abaixo apresenta comparativo entre o Patrimônio Líquido Contábil, o Valor de Mercado e o Valor da Operação (almejado).\" (p. 2).\n\n### 27/03/2026\n**O que aconteceu:** A assembleia geral extraordinária aprovou a alienação dos imóveis para o XP Log.\n**Resumo:** Os cotistas do fundo votaram e aprovaram, por 78,22%, a alienação dos imóveis pelo valor de R$ 287.632.802,31 ao XP Log até 17 de abril de 2026.\n**Trecho-chave:** \"Voto Única Matéria Aprovado: 78,22%\" (p. 2).\n\n### 12/03/2026\n**O que aconteceu:** O fundo convocou assembleia geral extraordinária para deliberar sobre a alienação dos imóveis remanescentes.\n**Resumo:** A assembleia foi convocada para deliberar sobre a autorização da alienação de três empreendimentos logísticos pelo valor total de R$ 287.632.802,31 ao XP Log até 17 de abril de 2026.\n**Trecho-chave:** \"A autorização para que o Fundo, até 17 de abril de 2026, aliene os Imóveis (conforme definido na Consulta Formal), pelo valor total de R$ 287.632.802,31\" (p. 1)."
+    "texto": "### FATO RELEVANTE entregue em 23/07/2026\n\n**O que aconteceu:** Amortização Parcial, Liquidação Final e Encerramento do Fundo\n\n**Resumo:** O XPIN11 concluiu a alienação de seu portfólio imobiliário aos fundos XPLG11 e IBBP11, iniciando o processo de liquidação e encerramento. A entrega de cotas do IVBP11 aos cotistas será realizada após um período de restrição à negociação.\n\n**Trecho-chave:**\n\"Em continuidade aos Fatos Relevantes anteriormente divulgados e conforme deliberado na Assembleia Geral Extraordinária de Cotistas do Fundo, o XPIN11 concluiu a alienação da totalidade de seu portfólio imobiliário aos fundos INVISTA BRAZILIAN BUSINESS PARK FII (IBBP11) e XP LOG FII (XPLG11), bem como a quitação integral das obrigações financeiras a ele vinculadas, incluindo o CRI anteriormente emitido.\"\n\n### FATO RELEVANTE entregue em 30/06/2026\n\n**O que aconteceu:** Amortização Parcial e Liquidação Final do Fundo\n\n**Resumo:** O XPIN11 concluiu a alienação de seu portfólio imobiliário aos fundos IBBP11 e XPLG11, iniciando o processo de liquidação. A entrega de cotas do IVBP11 aos cotistas ocorrerá em duas etapas: uma amortização parcial e uma liquidação final.\n\n**Trecho-chave:**\n\"Em continuidade aos Fatos Relevantes anteriormente divulgados e conforme deliberado na Assembleia Geral Extraordinária de Cotistas do Fundo, o XPIN11 concluiu a alienação da totalidade de seu portfólio imobiliário aos fundos INVISTA BRAZILIAN BUSINESS PARK FII (IBBP11) e XP LOG FII (XPLG11), bem como a quitação integral das obrigações financeiras a ele vinculadas, incluindo o CRI anteriormente emitido.\"\n\n### ASSEMBLEIA AGE entregue em 27/03/2026\n\n**O que aconteceu:** Deliberação para Venda dos Imóveis do Fundo\n\n**Resumo:** Os cotistas aprovaram a venda dos imóveis remanescentes do fundo ao XP Log, por um valor total de R$ 287.632.802,31.\n\n**Trecho-chave:**\n\"Foi deliberada pelos cotistas a seguinte matéria:\n1. A autorização para que o Fundo, até 17 de abril de 2026, aliene os Imóveis (conforme definido na Consulta Formal), pelo Preço de Aquisição, ao XP Log, atualmente administrado pela XP INVESTIMENTOS CORRETORA DE CÂMBIO, TÍTULOS E VALORES MOBILIÁRIOS S.A., inscrita no CNPJ sob o nº 02.332.886/0001-04, e gerido pela XP VISTA ASSET MANAGEMENT LTDA., inscrita no CNPJ sob o nº 16.789.525/0001-98, conforme os termos e condições previstos na Consulta Formal.\"\n\n### COMUNICADO AO MERCADO entregue em 17/02/2026\n\n**O que aconteceu:** Esclarecimentos sobre a Proposta de Reestruturação do Fundo\n\n**Resumo:** O fundo esclareceu os detalhes da proposta do IBBP11 para aquisição dos imóveis, incluindo o valor e as obrigações assumidas.\n\n**Trecho-chave:**\n\"A operação proposta pelo IBBP11 considera (i) o valor de R$ 339.118.818,14 para aquisição dos Imóveis, (ii) a assunção/quitação das 'Obrigações do Fundo' contidas na página 7 do Relatório Gerencial Mensal do XP Industrial FII1, bem como (iii) a assunção integral dos investimentos relativos às manutenções corretivas e preventivas necessárias à preservação dos Imóveis.\"\n\n### ASSEMBLEIA AGE entregue em 12/03/2026\n\n**O que aconteceu:** Convocação para Deliberação sobre a Venda de Imóveis Remanescentes\n\n**Resumo:** A administradora convocou os cotistas para deliberar sobre a venda dos imóveis remanescentes do fundo ao XP Log, por um valor total de R$ 287.632.802,31.\n\n**Trecho-chave:**\n\"MATÉRIA OBJETO DA CONSULTA FORMAL: Deliberar sobre A ÚNICA MATÉRIA DE CONSULTA, estando todos os itens abaixo sujeitos a única aprovação:\n1) a autorização para que o Fundo, até 17 de abril de 2026, aliene os Imóveis (conforme abaixo definidos), conforme a melhor proposta selecionada pela Gestora, pelo valor total de R$ 287.632.802,31 (duzentos e oitenta e sete milhões, seiscentos e trinta e dois mil, oitocentos e dois reais e trinta e um centavos), ao XP LOG FUNDO DE INVESTIMENTO IMOBILIÁRIO - FII, inscrito no CNPJ sob o nº 26.502.794/0001-85 (\"XP Log\"), atualmente administrado pela XP INVESTIMENTOS CORRETORA DE CÂMBIO, TÍTULOS E VALORES MOBILIÁRIOS S.A., inscrita no CNPJ sob o nº 02.332.886/0001-04, e gerido pela XP VISTA ASSET MANAGEMENT LTDA., inscrita no CNPJ sob o nº 16.789.525/0001-98, observados os seguintes termos e condições e o disposto na Proposta da Administradora (\"Operação\").\""
   },
   "retrato": {
     "selo": "Alerta grave",

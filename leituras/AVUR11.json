@@ -1,21 +1,21 @@
 {
   "ticker": "AVUR11",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-21T05:07:17",
+  "verificado_em": "2026-07-24T12:02:10",
   "comunicados": {
     "ids": [
-      1243083,
-      1117605
+      1263091,
+      1243083
     ],
     "datas": [
-      "09/07/2026",
-      "18/02/2026"
+      "23/07/2026",
+      "09/07/2026"
     ],
     "rotulos": [
       "Assembleia AGE",
       "Assembleia AGE"
     ],
-    "texto": "### ASSEMBLEIA AGE entregue em 18/02/2026\n\n**O QUE aconteceu:** A assembleia especial extraordinária dos cotistas do ARCH VANGUARDA UNIDADES RESIDENCIAIS FII deliberou sobre a possibilidade de realização de operações com ativos e ativos financeiros de liquidez, bem como a autorização para a prática de todos os atos necessários à efetivação dessas deliberações.\n\n**Resumo:** A assembleia aprovou a possibilidade de realizar operações com ativos e ativos financeiros de liquidez, incluindo cotas de fundos administrados pela mesma gestora, até o limite de 100% do Patrimônio Líquido da Classe.\n\n**Trecho-chave:**\n\"Instalada a Assembleia e após a discussão das matérias constantes da ordem do dia, de acordo com o quórum estabelecido no Regulamento, por unanimidade de votos e sem quaisquer restrições, os Cotistas aprovaram:\" (p. 2)\n\n---\n\n### ASSEMBLEIA AGE entregue em 09/07/2026\n\n**O QUE aconteceu:** A administradora do ARCH VANGUARDA UNIDADES RESIDENCIAIS FII convocou uma assembleia geral extraordinária de cotistas para deliberar sobre a atualização do regulamento do fundo, incluindo alterações operacionais, regulamentares e redacionais, bem como a adequação do público-alvo das subclasses.\n\n**Resumo:** A assembleia propõe a aprovação da alteração do regulamento do fundo para estabelecer que a Subclasse A será destinada exclusivamente a investidores qualificados e a Subclasse B será destinada exclusivamente a investidores profissionais. Além disso, serão atualizados os limites de concentração da carteira da classe.\n\n**Trecho-chave:**\n\"MATÉRIAS OBJETO DA CONSULTA FORMAL:\nI. A aprovação da alteração do Regulamento do Fundo, para promover a atualização dos Termos Definidos, mediante a inclusão, alteração e exclusão de definições dos itens abaixo, mas não se limitando: (p. 1)\n\n---\n\n**Conexão com o contexto:** A proposta de alteração do regulamento e da adequação do público-alvo das subclasses pode afetar os investidores atuais e futuros do fundo, potencialmente impactando a cotação e outros indicadores financeiros."
+    "texto": "### ASSEMBLEIA AGE entregue em 23/07/2026\n\n**Data:** 23/07/2026  \n**Título:** Aprovada a atualização do Regulamento do Fundo e alteração do público-alvo das Subclasses.  \n**Resumo:** A assembleia geral extraordinária de cotistas aprovou as propostas para atualizar o regulamento, incluindo mudanças nas definições, regras operacionais e regulamentares, além da mudança no público-alvo das subclasses.  \n**Trecho-chave:**\n\"Com base nas manifestações recebidas no âmbito da Consulta Formal, a Administradora apurou o seguinte:\nFoi APROVADO o item (1) da Ordem do Dia, conforme abaixo:\nMATÉRIA 1\nAPROVADO\nREPROVADO\nABSTENÇÃO\nABSTENÇÃO POR CONFLITO\n100%\n0%\n0%\n0%\"\n\n---\n\n### ASSEMBLEIA AGE entregue em 09/07/2026\n\n**Data:** 09/07/2026  \n**Título:** Convocação para Assembleia Geral Extraordinária de Cotistas.  \n**Resumo:** A administradora do fundo convoca os cotistas para uma assembleia geral extraordinária onde serão deliberadas propostas para atualizar o regulamento e alterar o público-alvo das subclasses.  \n**Trecho-chave:**\n\"O BANCO DAYCOVAL S.A., sociedade com sede na Cidade de São Paulo, Estado de São Paulo, na Avenida Paulista, 1.793, 9º andar, Bela Vista, São Paulo - SP, CEP: 01311-200, inscrita no CNPJ sob o nº 62.232.889/0001-96, na qualidade de instituição administradora do ARCH VANGUARDIA UNIDADES RESIDENCIAIS FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA, inscrito no CNPJ sob o nº 57.109.239/0001-11 (“Administradora” e “Fundo”, respectivamente), nos termos do regulamento do Fundo, vem por meio desta, convocar V. Sas. (“Cotistas”) para Assembleia Geral Extraordinária de Cotistas (“Assembleia”), cujas deliberações serão tomadas por meio de consulta formal (Consulta Formal) a ser realizada no dia 20 de julho de 2026, às 10h para que seja deliberada a seguinte matéria, conforme ordem do dia:\""
   },
   "modelo": "qwen2.5:7b"
 }

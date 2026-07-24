@@ -1,11 +1,17 @@
 {
   "ticker": "RPAD3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-23T21:15:06",
+  "verificado_em": "2026-07-24T12:37:38",
   "comunicados": {
     "ids": [],
     "datas": [],
     "rotulos": [],
     "texto": null
+  },
+  "processos": {
+    "id": 158288,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "Não há processos relevantes declarados na seção de PROCESSOS JUDICIAIS do Formulário de Referência (FRE) da RPAD3."
   }
 }

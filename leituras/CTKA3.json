@@ -1,11 +1,17 @@
 {
   "ticker": "CTKA3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-23T19:17:39",
+  "verificado_em": "2026-07-24T12:15:40",
   "comunicados": {
     "ids": [],
     "datas": [],
     "rotulos": [],
     "texto": null
+  },
+  "processos": {
+    "id": 158026,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Tributário**\n   - **Natureza**: Tributário\n   - **Valor envolvido**: R$ 105.494.266,91\n   - **Chance de perda**: Possível\n   - **Resumo do objeto**: \"Auto de Infração que exige o pagamento de multa isolada equivalente a 150%, em razão da Karsten supostamente ter promovido compensações de forma contrária a legislação, com base em direito creditório inexistente.\"\n\n2. **Tributário**\n   - **Natureza**: Tributário\n   - **Valor envolvido**: R$ 50.416.086,48\n   - **Chance de perda**: Possível\n   - **Resumo do objeto**: \"Multa por supostamente apresentar escriturações digitais com informações inexatas, incompletas ou omitidas nos anos de 2012 a 2014.\"\n\n3. **Tributário**\n   - **Natureza**: Tributário\n   - **Valor envolvido**: R$ 19.103.031,03\n   - **Chance de perda**: Possível\n   - **Resumo do objeto**: \"Contribuições previdenciárias e destinadas a terceiros (partes empresa e empregados), nos anos de 2000 a 2006.\"\n\n4. **Tributário**\n   - **Natureza**: Tributário\n   - **Valor envolvido**: R$ 8.520.280,29\n   - **Chance de perda**: Possível\n   - **Resumo do objeto**: \"Créditos de PIS e Cofins aproveitados de forma extemporânea no período de 2012 a 2013.\"\n\n5. **Trabalhista**\n   - **Natureza**: Trabalhista\n   - **Valor envolvido**: R$ 1.291.599,23\n   - **Chance de perda**: Possível\n   - **Resumo do objeto**: \"Doença ocupacional\" (processo em 02ª Vara do Trabalho de Blumenau).\n\n6. **Trabalhista**\n   - **Natureza**: Trabalhista\n   - **Valor envolvido**: R$ 1.058.180,00\n   - **Chance de perda**: Possível\n   - **Resumo do objeto**: \"Doença ocupacional\" (processo em 02ª Vara do Trabalho de Rio do Sul).\n\n7. **Trabalhista**\n   - **Natureza**: Trabalhista\n   - **Valor envolvido**: R$ 1.016.864,03\n   - **Chance de perda**: Possível\n   - **Resumo do objeto**: \"Doença ocupacional\" (processo em 04ª Vara do Trabalho de Blumenau)."
   }
 }

@@ -1,7 +1,7 @@
 {
   "ticker": "CRPG3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-23T19:12:08",
+  "verificado_em": "2026-07-24T12:14:50",
   "comunicados": {
     "ids": [
       664492322350690415,
@@ -19,5 +19,11 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### FATO RELEVANTE entregue em 24/10/2025\n\n**O que aconteceu:** A Tronox Pigmentos do Brasil S.A. recebeu aprovação definitiva para a aplicação de direitos antidumping sobre dióxido de titânio importado da China.\n\n**Resumo:** A Companhia foi notificada pelo GECEX que a proposta de direito antidumping contra o dióxido de titânio importado da China foi aprovada, reforçando o compromisso das autoridades brasileiras com a defesa comercial.\n\n**Trecho-chave:** \"A Companhia entende que a aplicação, de forma definitiva, de direitos antidumping reforça o compromisso das autoridades brasileiras com a defesa comercial, e é uma medida fundamental para reestabelecer a justa concorrência no mercado nacional de pigmentos de dióxido de titânio.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 25/03/2026\n\n**O que aconteceu:** A Tronox Pigmentos do Brasil S.A. alterou o auditor independente da Companhia, passando a ser a PricewaterhouseCoopers Brasil Ltda.\n\n**Resumo:** O Conselho de Administração deliberou pela substituição da KPMG Auditores Independentes Ltda por PwC, motivada pelo vencimento do prazo de rotatividade e alinhamento com o Grupo Tronox.\n\n**Trecho-chave:** \"A Companhia informa que a KPMG manifestou sua anuência em relação à substituição.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 18/03/2026\n\n**O que aconteceu:** A Tronox Pigmentos do Brasil S.A. recebeu indicação de candidatos para o Conselho de Administração e Conselho Fiscal da Companhia.\n\n**Resumo:** A gestora de recursos Trígono Capital Ltda indicou candidatos para os conselhos de administração e fiscal, que serão votados na próxima Assembleia Geral Ordinária.\n\n**Trecho-chave:** \"A Companhia anexa a este Comunicado ao Mercado cópia da correspondência recebida, acompanhada dos respectivos currículos e declarações de desimpedimento.\" (p. 1)"
+  },
+  "processos": {
+    "id": 158308,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Tributário**  \n   - **Valor envolvido**: R$114.131 (R$109.159 em 31/12/2025)  \n   - **Chance de perda**: Remota  \n   - **Objeto**: Ação anulatória PB que questiona a exigibilidade do pagamento de ICMS sobre a transferência de propriedade de estoques e bens do ativo imobilizado, por meio de integralização de cotas do capital social.\n\n2. **Trabalhista**  \n   - **Valor envolvido**: R$2.627 (R$2.484 em 31/12/2024)  \n   - **Chance de perda**: Possível  \n   - **Objeto**: Ação coletiva movida pelo Sindicato dos Trabalhadores que questiona a validade da cláusula quarta da Convenção Coletiva de Trabalho, indexando salários.\n\n3. **Cível**  \n   - **Valor envolvido**: R$39.825 (R$30.612 em 31/12/2024)  \n   - **Chance de perda**: Possível  \n   - **Objeto**: Ação de reintegração de posse e indenizatória por perdas e danos contra a Companhia, questionando a incorporação do Parque Real Serra Verde ao terreno Fazenda Machadinho.\n\n4. **Trabalhista**  \n   - **Valor envolvido**: R$28.733 (R$29.875 em 31/12/2024)  \n   - **Chance de perda**: Possível  \n   - **Objeto**: Processos trabalhistas com expectativa de perda possível, sem detalhes específicos.\n\n5. **Trabalhista**  \n   - **Valor envolvido**: R$34.879 (R$24.209 em 31/12/2024)  \n   - **Chance de perda**: Possível  \n   - **Objeto**: Processos trabalhistas com expectativa de perda possível, sem detalhes específicos.\n\n6. **Tributário**  \n   - **Valor envolvido**: R$58.788 (R$156.519 em 31/12/2024)  \n   - **Chance de perda**: Possível  \n   - **Objeto**: Processos fiscais com expectativa de perda possível, sem detalhes específicos.\n\n7. **Tributário**  \n   - **Valor envolvido**: R$28.733 (R$29.875 em 31/12/2024)  \n   - **Chance de perda**: Possível  \n   - **Objeto**: Processos cíveis com expectativa de perda possível, sem detalhes específicos.\n\n8. **Não há processos relevantes declarados**"
   }
 }
